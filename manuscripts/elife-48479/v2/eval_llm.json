@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "Zebrafish neurod1+ cells represent enteroendocrine cells (EECs) with specific characteristics. These cells express the secretory marker 2F11, do not overlap with goblet cells or enterocyte markers, are post-mitotic, require ~30 hours to differentiate, and express hormones (PYY, CCK, somatostatin, glucagon) in region-specific patterns along the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence (immunofluorescence, transgenic reporters, EdU tracing) consistently demonstrate that neurod1+ cells in zebrafish intestine are EECs. The characterization includes appropriate negative controls (non-overlap with other cell types), temporal analysis of differentiation, and spatial mapping of hormone expression. The data are internally consistent and well-documented with imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "Zebrafish EECs respond to specific nutrients through calcium signaling. Long-chain fatty acids (palmitate, linoleate, dodecanoate) but not short-chain fatty acids (butyrate) activate EECs in the proximal intestine. Glucose activates EECs via Sglt1-dependent transport, as demonstrated by NaCl enhancement, phlorizin inhibition, and response to galactose but not fructose. Cysteine activates EECs primarily in the mid-intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging data provide direct functional evidence for nutrient-specific EEC responses. The Sglt1 mechanism is well-supported by pharmacological inhibition (phlorizin), substrate specificity (glucose/galactose vs fructose), and sodium dependence. The regional specificity of responses (fatty acids/glucose in proximal intestine, cysteine in mid-intestine) is consistently demonstrated. Controls (BSA vehicle, no stimulation) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C33",
+      "C35"
+    ],
+    "result": "High fat feeding significantly reduces EEC calcium responses to palmitate and glucose after 6 hours, but does not impair responses to cysteine. This represents a nutrient-specific and region-specific impairment of EEC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging data clearly demonstrate reduced EEC responses to palmitate and glucose following high fat feeding, with appropriate controls. The preservation of cysteine responses provides an important internal control showing the effect is not due to general EEC dysfunction. The regional specificity (proximal vs mid-intestine) is consistent with the localization of different EEC subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "High fat feeding induces a morphological transition in proximal intestinal EECs from 'open-type' (with apical extensions to the lumen) to 'closed-type' (without apical extensions). This change is not due to cell turnover or apoptosis, but represents dynamic retraction of existing EECs. The effect is region-specific (proximal but not distal intestine) and occurs in both larval and adult zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (confocal imaging, photoconversion tracing, apoptosis assays, cell volume measurements, time-lapse imaging) provide strong evidence that the morphological change represents active remodeling of existing EECs rather than cell replacement. The Kaede tracing experiments definitively rule out cell turnover. The quantification of morphology scores provides objective measurement. The conservation in adult zebrafish strengthens the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "EEC silencing is reversible. Following high fat meal clearance (~20 hours), EEC calcium responses to palmitate are restored, apical extensions return, and morphology scores normalize. The same EECs persist through this process without apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recovery experiments with calcium imaging, morphology quantification, and Kaede tracing provide strong evidence for reversibility. The parallel time course of meal clearance and functional recovery suggests a causal relationship. The Kaede tracing definitively shows that the same cells recover rather than being replaced. This is a critical finding establishing EEC silencing as a physiological adaptation rather than pathological damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "High fat feeding increases expression of EEC hormone transcripts (especially pyyb and ccka) without changing EEC transcription factor expression or total EEC number. Despite increased transcript levels, PYY protein fluorescence intensity decreases at 5-8 hours post-feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qRT-PCR data clearly show increased hormone transcript expression with appropriate controls and replication. The lack of change in transcription factors and EEC number is important for ruling out altered EEC differentiation. However, the apparent discrepancy between increased transcripts and decreased protein could reflect secretion, but this interpretation requires caution as the immunofluorescence quantification may be affected by morphological changes. The temporal dynamics are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "High fat feeding induces ER stress in EECs, as evidenced by increased expression of UPR genes (Grp94, Bip) and activation of the xbp1\u03b4-gfp reporter. ER stress is necessary for EEC silencing, as the ER stress inhibitor TUDCA prevents high fat-induced morphological changes. Chemical induction of ER stress (thapsigargin, brefeldin A) is sufficient to reduce EEC nutrient responses and morphology scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence (qRT-PCR, transgenic reporter, pharmacological inhibition, chemical induction) converge to support a causal role for ER stress in EEC silencing. The TUDCA rescue experiment is particularly strong evidence for necessity. The sufficiency experiments with thapsigargin and BFA demonstrate that ER stress alone can induce key features of EEC silencing. The temporal dynamics (ER stress at 2 hours, silencing at 6 hours) are consistent with a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Lipase activity is required for high fat-induced EEC silencing. Orlistat treatment during high fat feeding preserves EEC calcium responses to glucose and palmitate, prevents morphological changes, reduces ER stress activation (xbp1\u03b4-gfp), and reduces NF-\u03baB activation. Both orlistat and TUDCA reduce NF-\u03baB activation in EECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The orlistat experiments provide strong evidence that lipid digestion products (not intact triglycerides) drive EEC silencing. The effects on multiple readouts (calcium responses, morphology, ER stress, NF-\u03baB) are internally consistent. The reduction of both ER stress and NF-\u03baB by orlistat or TUDCA suggests these pathways are linked. The experiments are well-controlled with appropriate vehicle controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Palmitate treatment alone reduces EEC responses to subsequent palmitate stimulation but does not affect morphology, glucose responses, or induce significant ER stress. This indicates that free fatty acids are insufficient to fully recapitulate high fat meal-induced EEC silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The palmitate-only experiments provide an important dissection of the mechanisms underlying EEC silencing. The selective effect on palmitate responses without morphological changes or ER stress induction suggests that additional components of the high fat meal (or their digestion products) are required for full EEC silencing. This is a well-designed control that strengthens the overall mechanistic model. However, the interpretation would benefit from testing additional fatty acids or combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Gut microbiota are required for high fat-induced EEC silencing. Germ-free zebrafish are resistant to high fat-induced changes in EEC morphology and maintain calcium responses to palmitate. High fat feeding induces less ER stress and NF-\u03baB activation in germ-free compared to conventionalized zebrafish. This effect is independent of Myd88 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gnotobiotic experiments provide definitive evidence for a microbiota requirement. The comparison of germ-free and conventionalized animals with appropriate controls is the gold standard for demonstrating microbiota dependence. The preservation of EEC function in germ-free animals during high fat feeding is striking. The myd88 mutant data rule out a major role for canonical TLR signaling, narrowing the potential mechanisms. The experiments are well-designed and appropriately powered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "High fat feeding increases intestinal microbiota abundance ~20-fold and alters community composition. In media, high fat feeding decreases Betaproteobacteria and increases Gammaproteobacteria (including Acinetobacter, Pseudomonas, Aeromonas) and Cytophagia (Flectobacillus). In the gut, high fat feeding increases Cytophagia (Flectobacillus) and results in a 100-fold increase in Acinetobacter sp. relative abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 16S rRNA sequencing data with appropriate statistical analysis (PERMANOVA, LEfSe) provide robust characterization of microbiota changes. The CFU data confirm increased bacterial density. The distinction between gut and media samples is important for interpretation. The statistical significance is reported with effect sizes. However, the relatively small sample size (n=3 per group based on methods) and the p-values near the significance threshold (p=0.049 for several comparisons) suggest some caution in interpretation. The 100-fold enrichment of Acinetobacter in the gut is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Acinetobacter sp. ZOR0008 is sufficient to induce EEC silencing during high fat feeding. Monoassociation with this strain significantly reduces EEC morphology scores and calcium responses to palmitate following high fat feeding, similar to conventionalized animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The monoassociation experiments provide strong evidence for sufficiency of Acinetobacter sp. ZOR0008. The comparison across multiple bacterial strains with only Acinetobacter showing effects strengthens the specificity. The similarity to conventionalized animals suggests this strain captures a key aspect of the microbiota effect. However, the screen was limited in scope (9 strains), and it's possible other strains or combinations might also be sufficient. The colonization efficiency data show comparable bacterial loads across strains, ruling out simple density effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "ROS signaling does not mediate microbiota-dependent EEC silencing. ROS scavengers (NAC, L-NAME) do not prevent high fat-induced EEC silencing. No significant differences in intestinal ROS (CM-H2DCFDA fluorescence) are detected among germ-free, conventionalized, and Acinetobacter-monoassociated zebrafish with or without high fat feeding. Aeromonas and Acinetobacter do not show significant ROS production in vitro in high fat media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple approaches (pharmacological inhibition, fluorescent indicator, in vitro bacterial culture) consistently fail to support a role for ROS. This is important negative data that helps narrow the potential mechanisms. The experiments are appropriately designed with relevant controls. However, the CM-H2DCFDA assay is a general indicator and may not detect all forms of oxidative stress. The in vitro bacterial cultures may not fully recapitulate in vivo conditions.",
+    "result_type": "MINOR"
+  }
+]

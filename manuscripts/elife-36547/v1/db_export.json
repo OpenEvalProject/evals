@@ -1,0 +1,1985 @@
+{
+  "submission": {
+    "id": "bf156cb5-212c-4405-8636-240795e0e66a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-16T22:44:27.527473Z",
+    "updated_at": "2025-11-16T22:44:27.527473Z"
+  },
+  "content": [
+    {
+      "id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "content_type": "manuscript",
+      "content_text": "# PDF-1 neuropeptide signaling regulates sexually dimorphic gene expression in shared sensory neurons of C. elegans\n\n## Authors\n\n- Zo\u00eb A Hilbert<sup>1</sup> ([ORCID: 0000-0002-3833-6912](https://orcid.org/0000-0002-3833-6912))\n- Dennis H Kim<sup>1</sup> ([ORCID: 0000-0002-4109-5152](https://orcid.org/0000-0002-4109-5152)) \u2020\n\n### Affiliations\n\n1. Department of Biology Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSexually dimorphic behaviors are a feature common to species across the animal kingdom, however how such behaviors are generated from mostly sex-shared nervous systems is not well understood. Building on our previous work which described the sexually dimorphic expression of a neuroendocrine ligand, DAF-7, and its role in behavioral decision-making in C. elegans (Hilbert and Kim, 2017), we show here that sex-specific expression of daf-7 is regulated by another neuroendocrine ligand, Pigment Dispersing Factor (PDF-1), which has previously been implicated in regulating male-specific behavior (Barrios et al., 2012). Our analysis revealed that PDF-1 signaling acts sex- and cell-specifically in the ASJ neurons to regulate the expression of daf-7, and we show that differences in PDFR-1 receptor activity account for the sex-specific effects of this pathway. Our data suggest that modulation of the sex-shared nervous system by a cascade of neuroendocrine signals can shape sexually dimorphic behaviors.\n\n## Introduction\n\nBehavioral differences between the sexes of animal species can make major contributions to the reproductive fitness of the organism. While sex-specific behaviors can be readily observed, the mechanistic basis of such behavioral differences is less well understood. Morphological differences, including the existence of sex-specific neurons, have been documented in the nervous systems of many species, but differences in sex-shared neurons have also been implicated in generating sex-specific behaviors. In particular, how sex-specific behavioral circuits are generated within the features of the nervous system common to both sexes has been the focus of recent studies in diverse organisms. Studies of the mouse vomeronasal organ (VNO) has suggested that the functional circuits for both male- and female-specific behaviors such as courtship and aggression are intact in the brains of both sexes and are modulated by VNO activity in response to pheromone cues (Kimchi et al., 2007; Stowers et al., 2002). In a similar vein, the Drosophila male pheromone 11-cis Vaccenyl acetate (cVa) has been shown to be sensed by the same neurons in the two sexes but stimulates distinct sex-specific behavioral responses (Datta et al., 2008; Kohl et al., 2013; Kurtovic et al., 2007; Ruta et al., 2010). These examples and others have provided some insight into the sexual dimorphisms present in the nervous system and their contributions to behavior, although many open questions remain (Dulac and Kimchi, 2007; Stowers and Logan, 2010; Yang and Shah, 2014).\n\nIn the nematode Caenorhabditis elegans, behavioral differences between the two sexes\u2014hermaphrodites and males\u2014range from behaviors exclusively performed by one sex, such as egg laying by hermaphrodites and the mating program of males (Liu and Sternberg, 1995), to those in which the two sexes differ in their responses to the same stimuli, including differing responses to pheromone (Fagan et al., 2018; Jang et al., 2012; Srinivasan et al., 2008), food-related cues (Ryan et al., 2014), and conditioning to aversive stimuli (Sakai et al., 2013; Sammut et al., 2015). While sex-specific neurons regulate corresponding behaviors in C. elegans, the 294 neurons that are common to the nervous systems of both hermaphrodites and males have emerged as major contributors to a number of different sexually dimorphic behaviors (Barr et al., 2018; Barrios et al., 2012, 2008; Fagan et al., 2018; Lee and Portman, 2007; Mowrey et al., 2014; Sakai et al., 2013). In particular, recent work has uncovered sexually dimorphic differences in axonic and dendritic morphology and synaptic connectivity within the sex shared nervous system, which can modulate neuronal circuits and behavior (Hart and Hobert, 2018; Oren-Suissa et al., 2016; Serrano-Saiz et al., 2017a; Weinberg et al., 2018). In addition, studies of sexually dimorphic gene expression (Hilbert and Kim, 2017; Ryan et al., 2014; Serrano-Saiz et al., 2017a) and neurotransmitter identity (Gendrel et al., 2016; Pereira et al., 2015; Serrano-Saiz et al., 2017a, 2017b) have suggested that sexual differentiation of neurons within the sex-shared nervous system of C. elegans is critical for the establishment of sexually dimorphic behaviors.\n\nWe have previously demonstrated that daf-7, which encodes a TGF\u03b2 family neuroendocrine ligand that regulates diverse aspects of C. elegans behavior and physiology (Chang et al., 2006; Fletcher and Kim, 2017; Gallagher et al., 2013; Greer et al., 2008; Milward et al., 2011; Ren et al., 1996; Shaw et al., 2007; White and Jorgensen, 2012; You et al., 2008), is expressed in a sex-specific and context-dependent manner in the sex-shared ASJ chemosensory neurons and functions to promote exploratory behaviors (Hilbert and Kim, 2017; Meisel et al., 2014). Regulation of daf-7 expression in the ASJ neurons requires the integration of sensory and internal state information including the sex and age of the animal, its nutritional state, and the type of bacterial species it encounters in its environment (Hilbert and Kim, 2017). These stimuli feed into the regulation of daf-7 expression in the two ASJ neurons in a hierarchical manner, which enables the animal to make behavioral decisions taking into account past experiences as well as its current environment.\n\nHere, we report the identification of a second neuroendocrine signaling pathway, the Pigment Dispersing Factor (PDF-1) pathway, which functions to regulate the expression of daf-7 and its effects on behavior in a sex-specific manner. We show that PDF-1 pathway signaling, which has previously been shown to be essential for male mate-searching behavior (Barrios et al., 2012), functions sex-specifically in the ASJ neurons themselves to regulate daf-7 expression. Further, we demonstrate that the sex-specificity of PDF-1 regulation of daf-7 derives from differences in the activation of PDF-1 signaling downstream of the PDF-1 receptor gene, pdfr-1, in the ASJ neurons. Our data suggest that the gating of neuronal responses to neuropeptide modulators through sex-specific restriction of receptor activity is a mechanism by which sex-specific behaviors can be generated from the largely sex-shared nervous system of C. elegans.\n\n## Results and discussion\n\n### PDF-1 neuropeptide signaling regulates the sex-specific expression of daf-7 in the ASJ chemosensory neurons\n\nTo explore the molecular and genetic mechanisms that underlie the sex-specificity of daf-7 expression, we identified a number of candidate genes that had previously been shown to be involved in the regulation of mate-searching behavior or other aspects of male physiology and tested mutants of these genes for effects on daf-7 expression in the male ASJ neurons. Through this approach, we identified the PDF-1 neuropeptide signaling pathway as a regulator of daf-7 expression in the ASJ neurons (Figure 1). The PDF neuropeptide signaling pathway is conserved among insects, crustaceans and nematodes. In Drosophila melanogaster, PDF signaling has been well studied for its critical role in the regulation of circadian rhythmicity (Helfrich-F\u00f6rster, 1995; Park and Hall, 1998; Park et al., 2000; Renn et al., 1999), but it has also been shown to modulate geotaxis (Mertens et al., 2005), pheromone production and mating behaviors (Fujii and Amrein, 2010; Kim et al., 2013; Krupp et al., 2013). In C. elegans, PDF-1 signaling has been established as an important regulator of locomotion, roaming behaviors, quiescence, and notably, male mate-searching behavior (Figure 1A; Barrios et al., 2012; Choi et al., 2013; Flavell et al., 2013; Janssen et al., 2008, 2009; Meelkop et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36547/elife-36547-fig1-v1.jpg)\n\n**Figure 1.:** (A) PDF-1 signaling activates cAMP production and regulates both roaming behavior and male mate-searching behavior in C. elegans. (B\u2013C) Maximum fluorescence values of pdaf-7::gfp in the ASJ (B) and ASI (C) neurons of adult male animals. ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars represent standard deviation (SD). ns, not significant. n\u00a0=\u00a015 animals for all genotypes. (D) Probability of leaving values for epistasis experiment between daf-7(ok3125) and a PDF-1 overexpressing line. Values plotted are the mean\u00a0+SEM for three independent experiments. Significance determined by unpaired t-test with Welch\u2019s correction. ns, not significant. n\u00a0=\u00a060 total animals for all genotypes except the daf-7(ok3125); qdEx149 strain where n\u00a0=\u00a048. (E) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of hermaphrodites after 16 hr on P. aeruginosa. Significance determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars represent SD. ns, not significant. n\u00a0=\u00a015 animals for all genotypes. (F) Lawn occupancy of animals on P. aeruginosa after 16 hr. ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Values plotted indicate the mean\u00a0+\u00a0SD for three replicates. Number of animals assayed are as follows: WT (n\u00a0=\u00a089), daf-7 (n\u00a0=\u00a066), pdf-1 (n\u00a0=\u00a0117), pdfr-1 (n\u00a0=\u00a0105).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36547/elife-36547-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative mate-searching data curves for WT (dashed black), daf-7 mutant (light blue), pdf-1(+) transgenics (dark blue), and the daf-7; pdf-1(+) double (light blue dashed) males. n\u00a0=\u00a020 animals for each curve shown except for daf-7;pdf-1(+) where n\u00a0=\u00a016 animals. (B) Representative mate searching data curves for WT (dashed black), pdf-1 mutant (orange), and pdf-1 mutant males with daf-7 overexpressed from ASJ (red). n\u00a0=\u00a020 for all genotypes.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36547/elife-36547-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Maximum fluorescence values of pdaf-7::gfp expression in ASJ for males exposed to E. coli (black) or P. aeruginosa (green) for 16 hr. ***p<0.001, *p<0.05 as determined by unpaired t-tests with Welch\u2019s correction. n\u00a0=\u00a015 animals for all genotypes and conditions. (B) Lawn occupancy of animals on P. aeruginosa after 16 hr. Significance as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. ns, not significant. Values plotted indicate the mean\u00a0+\u00a0SEM for three independent experiments. 30 animals were assayed per experiment (n\u00a0=\u00a090 across all experiments for all genotypes).\n\nWe observed that males with mutation of either the PDF-1 neuropeptide ligand or its receptor, PDFR-1, have markedly attenuated expression of daf-7 in the ASJ neuron pair (Figure 1B). The ASI chemosensory neurons are established sites of daf-7 expression in both male and hermaphrodite animals (Ren et al., 1996; Schackwitz et al., 1996), so we asked if the PDF-1 signaling pathway also regulates daf-7 expression in these neurons. In the PDF-1 pathway mutant males, we observe no difference in daf-7 levels in the ASI neurons when compared to WT (Figure 1C), suggesting that the PDF-1 pathway specifically affects the regulation of daf-7 in the ASJ neuron pair.\n\nExpression of daf-7 in the ASJ neuron pair of males is required for the male-specific mate-searching behavioral program (Hilbert and Kim, 2017), while the PDF-1 pathway has similarly been implicated as a regulator of this same behavior (Barrios et al., 2012). Given the role that this PDF-1 pathway plays in regulating the expression of daf-7, we set out to determine if the effects of the PDF-1 pathway on mate-searching behavior are the result of PDF-1 and DAF-7 functioning through a single pathway or through separate parallel pathways. Overexpression of the pdf-1 genomic sequence confers increased mate-searching behavior in male animals (Figure 1D; Barrios et al., 2012). We introduced a daf-7 mutation into these transgenic PDF-1 overexpressing lines and observed that the effect of PDF-1 overexpression on mate-searching behavior was suppressed by loss of daf-7 function (Figure 1D and Figure 1\u2014figure supplement 1A). However, we observed that overexpression of daf-7 in the ASJ neurons of pdf-1(tm1996) mutant males could not rescue the mate-searching defects of these animals (Figure 1\u2014figure supplement 1B). Taken together, the results of this epistasis analysis suggest that PDF-1 regulates mate-searching behavior in males through the regulation of daf-7 expression in the ASJ neurons and through additional mechanisms functioning in parallel to DAF-7 signaling.\n\nWe have previously reported that daf-7 expression serves a dual role in the ASJ neurons, functioning in males to promote food-leaving behaviors (Hilbert and Kim, 2017), but also being induced by the presence of Pseudomonas aeruginosa in both sexes to promote pathogen avoidance behaviors (Meisel et al., 2014). Given this and our interest in identifying male-specific regulators of daf-7 expression, we asked if the PDF-1 pathway is required for the upregulation of daf-7 expression in response to P. aeruginosa. We did not observe a requirement for PDF-1 signaling in the induction of daf-7 expression in the ASJ neurons after 16 hr on P. aeruginosa; both pdf-1 and pdfr-1 mutant hermaphrodites had equivalent levels of daf-7 expression when compared to control animals (Figure 1E). Similarly, males that are mutant for either the PDF-1 ligand or receptor (and show little to no daf-7 expression in their ASJ neurons on E. coli, see Figure 1B) were capable of upregulating daf-7 expression in ASJ upon exposure to P. aeruginosa (Figure 1\u2014figure supplement 2A). Given the previously established function of daf-7 expression in the ASJ neurons of hermaphrodites in promoting pathogen avoidance behavior (Meisel et al., 2014), these results predict that mutants in the PDF-1 pathway should have no defects in their ability to avoid a lawn of pathogenic P. aeruginosa. Consistent with this expectation, we observed that while daf-7 mutant hermaphrodites fail to avoid a lawn of pathogenic bacteria, the pdf-1 and pdfr-1 mutant hermaphrodites appear wild-type for their ability to perform this behavior (Figure 1F). Similarly, pdf-1 and pdfr-1 mutant males also displayed robust pathogen avoidance despite their defects in the male-specific mate searching behavior (Figure 1\u2014figure supplement 2B; Barrios et al., 2012). These data suggest that the PDF-1 signaling pathway acts sex-specifically to regulate daf-7 expression in the ASJ neurons and its effects on downstream sexually dimorphic behavioral programs.\n\n### PDF-1 signaling acts cell-autonomously in the ASJ neurons to promote daf-7 expression\n\nThe PDF-1 neuropeptide ligand is secreted from multiple neurons in the head region of the animal where a similarly large number of neurons express the PDFR-1 receptor (Barrios et al., 2012; Janssen et al., 2009; Meelkop et al., 2012). To identify the relevant site of action for this pathway in the regulation of daf-7 expression in males, we used the pdfr-1(ok3425) mutant animals and introduced pdfr-1 cDNA transgenes into specific neurons using heterologous cell-specific promoters. We observed that while the pdfr-1 mutant males lack daf-7 expression in the ASJ neurons, introduction of a genomic DNA fragment carrying the pdfr-1 locus fully rescued this phenotype and restored daf-7 expression in the ASJ neurons (Figure 2A and B). Furthermore, we observed that expression of pdfr-1 under the control of the ASJ-specific trx-1 promoter\u00a0was sufficient to rescue daf-7 expression in the ASJ neurons of the mutant male animals, suggesting that PDF-1 signals to its receptor, PDFR-1, in the ASJ neurons to influence daf-7 expression specifically in the male (Figure 2A and B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36547/elife-36547-fig2-v1.jpg)\n\n**Figure 2.:** (A) pdaf-7::gfp expression in pdfr-1(ok3425) mutant (top), genomic rescue (middle), and ASJ-specific rescue (bottom) male animals. Filled arrowheads indicate the ASI neurons; dashed arrowheads indicate the ASJ neurons. Scale bar indicates 50 \u03bcm. (B) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of pdfr-1 rescue males. ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars represent SD. n\u00a0=\u00a015 animals for all genotypes. (C) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of WT males (black) and animals with ASJ-specific RNAi of either GFP (green) or pdfr-1(gray). ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars indicate SD. n\u00a0=\u00a015 animals for all conditions. (D) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of WT, pdfr-1(ok3425) mutants, and animals with floxed pdfr-1 rescued under the control of a 5 kb distal reporter as reported in Flavell et al. (2013) (left three columns). pdfr-1 function was removed either in all neurons or specifically in ASJ using cell-specific expression of Cre recombinase (right three columns). ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. ns, not significant. Error bars indicate SD. n\u00a0=\u00a012\u201315 animals for each condition.\n\nTo assess the necessity of pdfr-1 function in ASJ for the regulation of daf-7 expression in males, we knocked down pdfr-1 expression in the ASJ neurons via cell-specific RNAi (Esposito et al., 2007). We observed that animals with RNAi targeting pdfr-1 in the ASJ neurons exhibited reduced daf-7 expression in ASJ comparable to what we observed with ASJ-specific RNAi of GFP, our positive control (Figure 2C). Additionally, we generated transgenic animals carrying a floxed copy of the pdfr-1 cDNA under the control of a 5 kb region of the endogenous pdfr-1 promoter, which has been previously reported to rescue roaming behaviors in the C. elegans hermaphrodite (Flavell et al., 2013). We observed that this construct partially rescued daf-7 expression in the ASJ neurons of pdfr-1(ok3425) mutant males, and ASJ-specific expression of the Cre recombinase suppressed the rescuing effects of this transgene (Figure 2D), strongly suggestive that PDFR-1 activity in the ASJ neurons is required for daf-7 expression. These results indicate that the PDF-1 signaling pathway functions cell-autonomously in the ASJ neuron pair to regulate the sexually dimorphic expression of daf-7.\n\nThe PDFR-1 receptor is a secretin-family G-protein coupled receptor (GPCR), which has been shown to stimulate G\u03b1s signaling and upregulation of cAMP production in transfected cells as well as in both Drosophila melanogaster and C. elegans neurons (Figure 1A; Flavell et al., 2013; Hyun et al., 2005; Janssen et al., 2008; Lear et al., 2005; Mertens et al., 2005; Shafer et al., 2008). Using a gain-of-function variant of the adenylate cyclase, ACY-1 (Flavell et al., 2013; Saifee et al., 2011; Schade et al., 2005), we asked if activation of the pathway downstream of PDFR-1 specifically in ASJ was sufficient to rescue the defects in daf-7 expression that we observe in the pdfr-1 mutant males. We observed that in pdfr-1 mutant males with transgenic expression of the acy-1(gf) cDNA only in the ASJ neurons, daf-7 expression was fully rescued (Figure 3A). This ability to bypass PDFR-1 by activation of cAMP production specifically in the ASJ neuron pair further suggest that the PDF-1 signaling pathway acts directly on the ASJ neurons in order to regulate daf-7 expression in male animals. Given the hierarchical nature of the regulation of daf-7 expression in the male ASJ neurons (Hilbert and Kim, 2017), we asked if acy-1 function may serve a broader role coordinating the many inputs of this hierarchy into changes in daf-7 expression. We previously reported that starvation of adult male animals efficiently suppresses daf-7 expression in the ASJ neurons in wild-type animals (Hilbert and Kim, 2017; Figure 3B). Notably, ASJ-specific expression of the acy-1(gf) variant in starved males did not suppress the effects of starvation on daf-7 expression in ASJ (Figure 3B), suggestive that the effects of starvation act downstream of or in parallel to PDFR-1-ACY-1 signaling.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36547/elife-36547-fig3-v1.jpg)\n\n**Figure 3.:** (A) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of males expressing the gain-of-function ACY-1(P260S) cDNA specifically in ASJ. ***p<0.001 as determined by unpaired t-test with Welch\u2019s correction. Error bars represent SD. n\u00a0=\u00a015 animals for all genotypes. (B) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of WT and ASJ-specific acy-1(gf) expressing fed (filled circles) and starved (open circles) males. ***p<0.001 as determined by unpaired t-test with Welch\u2019s correction. Error bars indicate SD. n\u00a0=\u00a015 animals for all conditions.\n\n### Sex differences in PDF-1 receptor activity underlie the sex-specific regulation of daf-7 transcription in ASJ\n\nThe sex-specificity of the effects of the PDF-1 pathway on daf-7 regulation and mate searching behavior is intriguing given very little evidence of differences in the expression or function of this neuropeptide pathway between the two C. elegans sexes (Barrios et al., 2012; Janssen et al., 2008, 2009). It was recently shown that pdf-1 is produced by the newly identified male-specific MCM neurons and is required for the regulation of sex-specific learning in males, but interestingly, ablation of these neurons has no effect on mate-searching behavior (Sammut et al., 2015). Nevertheless, we wondered if there might be unidentified sex differences in the signaling or expression of this PDF-1 neuropeptide pathway in neurons such as ASJ, which would confer\u00a0its sex-specific\u00a0effects on the regulation of daf-7 gene expression. To this end, we asked if activation of the PDF-1 signaling pathway in the ASJ neurons of hermaphrodites might be sufficient to drive daf-7 expression inappropriately in these animals. We first looked at hermaphrodite animals carrying the same ASJ-expressed acy-1(gf) transgene and observed significant upregulation of daf-7 expression in the ASJ neurons of these hermaphrodites (Figure 4A). We next asked whether we could observe daf-7 expression in the ASJ neurons of hermaphrodite animals with heterologous expression of pdfr-1 in only the ASJ neurons. Strikingly, we found that in hermaphrodites with overexpression of pdfr-1 cDNA in the ASJ neurons, daf-7 expression was also upregulated similar to what we observed in the acy-1(gf) transgenic strains (Figure 4B). We also quantified daf-7 expression in the ASJ neurons of hermaphrodites carrying the genomic pdfr-1 fragment with all of the endogenous regulatory sequence and observed no upregulation of expression in those animals. This control suggests that daf-7 expression in ASJ cannot be triggered simply as the result of overexpression of pdfr-1 (Figure 4B), rather, these results suggest that expression of PDFR-1 specifically in the hermaphrodite ASJ neurons is sufficient to allow daf-7 expression in these neurons.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36547/elife-36547-fig4-v1.jpg)\n\n**Figure 4.:** (A) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of WT hermaphrodites and hermaphrodites where ACY-1 has been activated (via the gain of function P260S mutant) specifically in ASJ. ***p<0.001 as determined by unpaired t-test with Welch\u2019s correction. Error bars represent SD. n\u00a0=\u00a015 animals for both genotypes. (B) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of hermaphrodites overexpressing pdfr-1 from either a genomic fragment or under the control of a heterologous ASJ-specific promoter. ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars represent SD. ns, not significant. n\u00a0=\u00a015 animals for all genotypes except pdfr-1(ok3425); qdEx151 where n\u00a0=\u00a010 animals. (C) Model for the sex-specific regulation of daf-7 expression in the ASJ chemosensory neurons by the PDF-1 signaling pathway.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36547/elife-36547-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) pdfr-1 transcripts in a WT male animal. mRNA can be observed in neurons as well as diffusely in muscle and throughout the body. Magnified image of an ASJ neuron is shown on bottom. Arrows indicate pdfr-1 transcripts. Scale bar represents 5 \u00b5m. (B) pdfr-1 mRNA in a pdfr-1(ok3425) mutant male. No mRNA can be visualized indicating the specificity of the designed probe set. (C) pdfr-1 transcripts in a male carrying a genomic fragment including the pdfr-1 locus on an extrachromosomal transgenic array. Animals carrying this array have increased pdfr-1 expression but with all the endogenous regulatory sequence, facilitating easier analysis of expression in specific neurons, such as ASJ. (D) pdfr-1 mRNA in a pdfr-1(ok3425) male with heterologous expression of pdfr-1 cDNA in the ASJ neurons. No transcripts can be observed outside of the ASJ neurons. All images presented in (A)-(D) are maximum intensity z-projections of 28 stacked exposures of pdfr-1 mRNA. ASJ neurons are outlined in each image by a white dotted line as localized by either ptrx-1::gfp or pdaf-7::gfp (for the ASJ rescue line). Animals are representative samples from mixed stage populations. All images were taken at 100x magnification. Scale bar indicates 50 \u00b5m. (E) Representative FISH images of endogenous pdfr-1 mRNA molecules in adult hermaphrodite (top) and male (bottom) ASJ neurons. White dotted lines indicate outline of ASJ cell body as localized by ptrx-1::gfp. Animals imaged carried a transgene with the pdfr-1 genomic locus to increase expression (see Figure 4\u2014figure supplement 1C). Male images are representative of animals where puncta can be observed. Scale bar represents 5 \u00b5m. (F) Quantification of pdfr-1 probe fluorescence in ASJ of 9 hermaphrodite and 10 male ASJ neurons. Magenta data points indicate animals where pdfr-1 mRNA puncta were visible in the ASJ neurons.\n\nWe note that establishing the neuronal expression pattern of pdfr-1 has been challenging because of the apparent complexity of defining putative regulatory regions of the gene (Barrios et al., 2012; Flavell et al., 2013; Janssen et al., 2008). We sought to examine the transcription of pdfr-1 in male and hermaphrodite animals using fluorescence in situ hybridization (FISH). We generated fluorescent probes for a region of the pdfr-1 coding sequence that is shared among all isoforms and verified the specificity of these probes\u00a0for\u00a0the\u00a0pdfr-1\u00a0coding\u00a0sequence by examining expression in the pdfr-1(ok3425) deletion mutant, where we observed no fluorescent signal (Figure 4\u2014figure supplement 1B), and in our ASJ-specific rescue lines, where we could only observe fluorescence in the ASJ neurons (Figure 4\u2014figure supplement 1D). Imaging of pdfr-1 transcription in WT animals revealed a diffuse expression pattern with fluorescent signal observable in muscle tissue as well as in neurons, but with few cells having strong signal and many cells with only scattered fluorescent spots, including the ASJ neurons (Figure 4\u2014figure supplement 1A). To corroborate and confirm these observations, we also imaged pdfr-1 transcripts in animals carrying our genomic rescuing fragment, which amplified probe fluorescence throughout the nervous system and muscle (Figure 4\u2014figure supplement 1C). We expect that because of the intact endogenous regulatory sequence on this genomic fragment, the mRNA localization we observe in this strain should still be representative of the wild-type expression pattern of pdfr-1. While we observe qualitative differences in the abundance of pdfr-1 mRNA in the ASJ neurons between males and hermaphrodites, we did not detect pdfr-1 mRNA in all male animals examined. We observed puncta of pdfr-1 mRNA in the ASJ neurons of about 20% of adult male animals (Figure 4\u2014figure supplement 1E and F), whereas similarly aged hermaphrodites did not have a corresponding subpopulation of animals with puncta of pdfr-1 mRNA. Further analysis of the expression pattern of pdfr-1 will be required to definitively identify any sexual dimorphism in the expression of this gene. Nevertheless, our functional studies demonstrating that PDFR-1 expression in the ASJ neurons is both necessary and sufficient for daf-7 expression suggest that the expression or activity of the PDFR-1 receptor may be regulated in a sexually dimorphic manner in these neurons.\n\n### The PDF-1-DAF-7 neuroendocrine signaling cascade regulates sex-specific behavior through the sex-shared ASJ neurons\n\nBuilding on our previous work on the sexually dimorphic regulation of the neuroendocrine gene daf-7 and its role in promoting male decision-making behaviors (Hilbert and Kim, 2017), we have presented here a set of experiments which implicate the PDF-1 neuropeptide signaling pathway as a critical male-specific regulator of daf-7 expression in the ASJ neurons. Our data suggest that sexually dimorphic regulation of the PDF-1 receptor, PDFR-1, may serve as a gating mechanism, allowing the ASJ neurons of adult male C. elegans to respond to the PDF-1 ligand. We suggest that this ligand-receptor interaction activates a downstream signaling cascade in ASJ terminating in the transcriptional activation of daf-7, which in turn promotes male-specific decision-making behaviors (Figure 4C, left). We hypothesize that the relative lack of expression or activity of pdfr-1 in the hermaphrodite ASJ neurons prevents the activation of this pathway and consequently daf-7 expression is not induced under normal growth conditions in adult hermaphrodites (Figure 4C, right). Strikingly, heterologous expression of the PDF-1 receptor in the hermaphrodite ASJ neurons was sufficient to drive daf-7 expression in an inappropriate physiological context (the hermaphrodite nervous system).\u00a0All together, our data suggest that the PDF-1 pathway plays an integral role in facilitating sex-specific differences in gene expression and behavior.\n\nWhile recent work has revealed sexual dimorphisms at the level of gene expression, neuronal connectivity and neurotransmitter release in the sex-shared nervous system of C. elegans (Hart and Hobert, 2018; Hilbert and Kim, 2017; Oren-Suissa et al., 2016; Pereira et al., 2015; Ryan et al., 2014; Serrano-Saiz et al., 2017a, 2017b; Weinberg et al., 2018), the role of neuromodulators and other neuroendocrine signals in facilitating sex-specific responses of neurons in the shared neuronal circuitry has been relatively unexplored. Here, we propose a model in which two pathways, the PDF-1 and DAF-7/TGF\u03b2 pathways, act in concert as a neuroendocrine signaling cascade to regulate sex-specific behavior within the context of the sex-shared ASJ neurons (Figure 4C). Our data suggest that the PDF-1 pathway functions in tuning the response of the ASJ neurons to this endogenous neuromodulator in a sex-specific manner. Interestingly, recent work in mice has uncovered a similar phenomenon wherein the neuromodulator oxytocin facilitates sex-specific social preference in male mice by modulating the ability of subsets of neurons to respond to social cues (Yao et al., 2017). The parallels between this work and ours underscore the role of neuroendocrine signaling through sex-shared nervous system components in shaping sexually dimorphic neuronal activity and behavior in evolutionarily diverse animals.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Caenorhabditis elegans)</td>\n      <td>pdf-1</td>\n      <td>NA</td>\n      <td>WBGene00020317</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (C. elegans)</td>\n      <td>pdfr-1</td>\n      <td>NA</td>\n      <td>WBGene00015735</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (C. elegans)</td>\n      <td>daf-7</td>\n      <td>NA</td>\n      <td>WBGene00000903</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (C. elegans)</td>\n      <td>acy-1</td>\n      <td>NA</td>\n      <td>WBGene00000068</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>ksIs2</td>\n      <td>PMID: 11677050</td>\n      <td>WBTransgene00000788</td>\n      <td>pdaf-7::gfp</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Moerman Fosmid Library</td>\n      <td>Source Bioscience</td>\n      <td>WRM0629dH07, WRM0627cG01, WRM0641dA07, WRM068aD11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pPD95.75</td>\n      <td>Fire Lab C. elegans Vector Kit</td>\n      <td>Addgene plasmid # 1494</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCFJ90</td>\n      <td>PMID:18953339</td>\n      <td>Addgene plasmid # 19327</td>\n      <td>pmyo-2::mCherry, used as co-injection marker</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pZH42</td>\n      <td>this paper</td>\n      <td></td>\n      <td>pdf-1 genomic DNA in pUC19</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pZH48</td>\n      <td>this paper</td>\n      <td></td>\n      <td>ptrx-1::pdfr-1(cDNA, b isoform, no STOP codon)::F2A::mCherry:: unc-54 3'UTR</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pZH53</td>\n      <td>this paper</td>\n      <td></td>\n      <td>ptrx-1::ACY-1(P260S)::unc-54 3'UTR</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pZH58</td>\n      <td>this paper</td>\n      <td></td>\n      <td>pdfr-1p(distal, 5 kb)::loxP::pdfr-1 cDNA(B isoform)::loxP::unc-54 3'UTR</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pZH59</td>\n      <td>this paper</td>\n      <td></td>\n      <td>ptrx-1::nCre</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pJDM30</td>\n      <td>PMID: 25303524</td>\n      <td></td>\n      <td>ptrx-1::daf-7</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSF11</td>\n      <td>PMID: 23972393</td>\n      <td></td>\n      <td>ptag-168::nCre, gift of C. Bargmann\u00a0and S. Flavell</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBuilder HiFi DNA Assembly Master Mix</td>\n      <td>NEB</td>\n      <td>E2621</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Alexa Fluor 647 DHS ester</td>\n      <td>Invitrogen/Thermo Fisher\u00a0Scientific</td>\n      <td>A20006</td>\n      <td>dye used for conjugation of FISH\u00a0probes</td>\n    </tr>\n  </tbody>\n</table>\n\n### C. elegans strains\n\nC. elegans strains were cultured as previously described (Brenner, 1974; Hilbert and Kim, 2017). For a complete list of strains used in this study please see Supplementary file 1.\n\n### Cloning and transgenic strain generation\n\nFor the pdf-1 overexpression transgene, a 6.5 kb region of sequence containing the pdf-1 promoter, coding sequence and 3\u2019UTR were amplified from the fosmid WRM0641dA07 from the Moerman fosmid library. This fragment was cloned into the pUC19 vector backbone by Gibson assembly (Gibson et al., 2009) to generate plasmid pZH42. ASJ-specific overexpression of daf-7 transgenes in the pdf-1(tm1996) mutant background were established by reinjection of the plasmid pJDM30 which contains daf-7 cDNA under the control of the trx-1 promoter (Meisel et al., 2014).\n\nFor the ASJ-specific pdfr-1 rescue construct, the B isoform of the pdfr-1 cDNA with no stop codon was amplified from cDNA generated with an Ambion RetroScript kit using primers based on previously described annotation of the isoform (Barrios et al., 2012). The trx-1 ASJ-specific promoter was amplified as previously described (Hilbert and Kim, 2017). An F2A::mCherry fragment was amplified off a plasmid that was a gift from C. Pender and H.R. Horvitz. All fragments were cloned into the pPD95.75 backbone with an intact unc-54 3\u2019UTR by Gibson assembly to generate plasmid pZH48. Genomic rescue of pdfr-1 was done by injection of the WRM0629dH07 fosmid from the Moerman fosmid library.\n\nCloning for cell-specific RNAi experiments was carried out similarly to the method previously described (Esposito et al., 2007). A 1.2 kb fragment of the ASJ-specific trx-1 promoter was amplified from the fosmid WRM0627cG01 from the Moerman fosmid library with overlap to either pdfr-1 or GFP in either the sense or antisense direction. A 1.8 kb exon rich region of the pdfr-1 coding sequence was amplified from the fosmid WRM0629dH07. A 1 kb fragment containing part of the GFP coding sequence was amplified from the plasmid, pPD95.75. The GFP and pdfr-1 fragments were cloned in the sense and anti-sense directions with the trx-1 promoter into the pUC19 plasmid backbone using Gibson Assembly. PCR with nested primers was then used to amplify only the promoter and gene sequence off the plasmid backbone and these PCR products were purified and used for injections. Both sense and anti-sense PCR products were injected at a concentration of 20 ng/\u03bcL along with pCFJ90 (Fr\u00f8kjaer-Jensen et al., 2008) at 2.5 ng/\u03bcL and 1 kb ladder as carrier DNA.\n\nFor the floxed pdfr-1 rescue strain, the pdfr-1 cDNA was amplified with primers carrying loxP sequences on either side. The 5 kb pdfr-1 promoter was amplified from the fosmid WRM068aD11. These fragments were cloned into a pPD95.75 backbone with an intact unc-54 3\u2019UTR by Gibson Assembly to generate plasmid pZH58. ASJ-specific Cre lines were generated by swapping the trx-1 promoter into the plasmid pSF11 (gift of S. Flavell and C. Bargmann) in place of the tag-168 pan-neuronal promoter to generate plasmid pZH59. Pan-neuronal Cre lines were generated by re-injection of pSF11 at a concentration of 20 ng/\u03bcL. For all Cre lines, pCFJ90 was used as a co-injection marker at a concentration of 2.5 ng/\u03bcL.\n\nFor the ACY-1(gf) construct, the 3.8 kb acy-1(P260S) fragment was amplified from genomic DNA extracted from the strain CX15050 (gift from S. Flavell and C. Bargmann) which carries a transgenic array with the acy-1(P260S) cDNA under the control of a different promoter. This fragment was cloned into a plasmid backbone carrying the trx-1 promoter and unc-54 3\u2019UTR to generate pZH53. All fosmids and plasmids were verified by sequencing and injected at a concentration of 50 ng/\u03bcL along with a plasmid carrying pofm-1::gfp at 50 ng/\u03bcL as a co-injection marker unless otherwise noted. At least three independent transgenic lines were obtained and analyzed for each construct and one or two representative lines are shown. For a list of all primers used in this paper, please see Supplementary file 2.\n\n### Measurement of gene expression in ASI and ASJ neurons\n\nQuantification of daf-7 expression was performed as described in (Hilbert and Kim, 2017) using the ksIs2(pdaf-7::gfp) transgene (Murakami et al., 2001). All adult quantifications were done on animals 72 hr after egg lay. Quantification of animals on P. aeruginosa were performed as before.\n\n### Starvation assays\n\nStarvation assays and measurement of pdaf-7::gfp fluorescence in the ASJ neurons of starved males was performed as previously described (Hilbert and Kim, 2017).\n\n### Mate-Searching assays\n\nMate-searching assays were performed as previously described (Hilbert and Kim, 2017; Lipton et al., 2004).\n\n### P. aeruginosa lawn avoidance assays\n\nP. aeruginosa plates were prepared as described in (Hilbert and Kim, 2017). Animals were synchronized by treatment with bleach and allowed to hatch and arrest as L1 larvae before being dropped onto E. coli plates. L4 animals were transferred to the center of the P. aeruginosa lawn, incubated at 25\u02daC and then scored for avoidance after 16 hr.\n\nFor male lawn avoidance assays shown in Figure 1\u2014figure supplement 2B, plates and animals were prepared using the same method as for hermaphrodites, but males were placed individually onto plates seeded with P. aeruginosa as L4s. Plates were incubated at 25\u02daC and then scored for avoidance after 16 hr. These experiments were repeated three times, with 30 individual animals per genotype in each replicate.\n\n### Fluorescence In Situ Hybridization\n\nFISH was performed as previously described (Hilbert and Kim, 2017; Raj et al., 2008). The pdfr-1 probe was constructed by pooling together 36 unique 20 nucleotide oligos that tile across base-pairs 580\u20131540 in the pdfr-1 B-isoform cDNA. This sequence is contained in all isoforms of pdfr-1 so should anneal to any endogenous pdfr-1 mRNA. After pooling, oligos were coupled to Alexa Fluor 647 NHS ester (Invitrogen/Thermo Fisher Scientific) and then purified by HPLC.\n\n### Statistical analysis\n\nAll statistical analysis was performed using the Graphpad Prism software. Statistical tests used for each experiment are listed in the figure legend.\n",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36547.013](https://doi.org/10.7554/eLife.36547.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A sexually dimorphic neuroendocrine cascade acts through shared sensory neurons to regulate behavior in C. elegans\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Oliver Hobert as the Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Piali Sengupta (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn brief, both reviewers appreciate the value of this follow-up study, but they also agree that a set of additional experiments is required to firm up the conclusions of this study. You can see their comments in detail below. In summary, the following set of experiments are essential:\n\n1) Proper quantification of smFISH experiments. Examination at different stages.\n\n2) To show necessity, remove pdfr-1 specifically from ASJ and assess effects on daf-7 expression.\n\n3) Clarify the placement of acy-1 in the pathways regulating daf-7 expression: are the effects of acy-1(gf) suppressed by starvation? Does acy-1(lf) block the effect of PA14 or pdfr-1 overexpression in hermaphrodites?\n\n4) Test whether daf-7 expression in ASJ suppresses the leaving phenotype of pdfr-1 or pdf-1 mutants.\n\nLess important: show the behavioural phenotype of pdf-1 and pdfr-1 mutant males in the pathogenic bacteria avoidance assay like shown for hermaphrodites (Figure 1E).\n\nReviewer #1:\n\nThis is nice follow up to the authors' previous paper and is appropriate for publication as a Research Advance with a few relatively small revisions.\n\n1) The FISH data shown in Figure 3C need to be quantified in both males and hermaphrodites.\n\n2) The effects of acy-1(gf) on daf-7 expression in both males and hermaphrodites is intriguing. While the interpretation that acy-1 acts downstream of pdfr-1 is consistent with these data, it's also possible that multiple pathways \u2013 including those induced by Pseudomonas or blocked by starvation \u2013 might act via cAMP production. For example, cAMP (Khanna Sci Reports, 2016) can affect daf-7 expression in ASI. Might the manipulation of cAMP levels via acy(gf) be engaging a common regulatory mechanism for daf-7 expression? Given the hierarchical nature of the starvation signal, one could expect that the effects of acy-1(gf) would be blocked in starved males if this is indeed specific to the PFDR-1 pathway. Alternatively, acy-1 mutations may block the effect of PA14 or pdfr-1 overexpression in hermaphrodites, especially considering acy-1 mutants have been previously reported to have a pathogen susceptibility phenotype (Alper, 2008). It would be useful to perform a few simple experiments here to clarify the placement of acy-1(gf) in the hierarchy and to strengthen the conclusions of this work.\n\n3) Along similar lines, does acy-1(gf) or daf-7 expression in ASJ suppress the leaving phenotype of pdfr-1 or pdf-1 mutants?\n\n4) The authors may wish to modify the model figure to clearly indicate that the inclusion of acy-1 is based on inferring the effects of acy(gf) overexpression, especially based on point #2 above.\n\nReviewer #2:\n\nIn this manuscript, Hilbert and Kim report that male-specific expression of daf-7 in ASJ is regulated by the neuropeptide pathway PDF acting directly on ASJ. These findings expand on their previous work showing that daf-7 expression in ASJ is regulated in a sex-specific and age-specific manner to regulate mate-searching behaviour in males.\n\nThe authors present convincing evidence that PDF signalling regulates the expression of daf-7 specifically in ASJ and specifically in males. However, what is not so convincing to me is that daf-7 expression is regulated cell-autonomously, through male-specific expression of pdfr-1 in ASJ.\n\nThe model that they propose is not fully consistent with some of their previous findings. In their previous paper they carried out sex-transformation experiments which showed that daf-7 expression in ASJ requires ASJ to be masculine but that masculinization of ASJ alone is not sufficient for daf-7 to come on. These results indicate that there is cell non-autonomous regulation of daf-7 expression. In the current manuscript, daf-7 expression can be induced in hermaphrodites by forcing expression of pdfr-1 in ASJ, indicating that the source of PDF is not sexually dimorphic. These two sets of data are more consistent with the model that PDF regulates daf-7 expression in ASJ cell non-autonomously, by acting on other pdfr-1-expressing neurons that are sexually dimorphic.\n\nThe evidence that the authors present for cell-autonomous effect of pdfr-1 on ASJ is that daf-7 expression in ASJ can be induced in both males and hermaphrodites by overexpressing pdfr-1 in ASJ, but this could be an overexpression phenotype that does not reflect the endogenous mechanism. Stronger evidence in support of a direct action of PDF on ASJ would be to show necessity of pdfr-1 specifically in ASJ. This should be done by removing pdfr-1 only in ASJ (by cell specific RNAi for example).\n\nThe second piece of evidence they provide is the detection of pdfr-1 mRNA in the ASJ of males by smFISH, but the smFISH experiments are not totally convincing. The smFISH experiments should be quantified: what proportion of males express pdfr-1 in ASJ? And what proportion of hermaphrodites? They only show 3 photos, and in one photo of hermaphrodite ASJ, I can see what looks to me like puncta. The overlap of smFISH with the ASJ labelled with GFP for identification should also be shown.\n\nAdditional comments:\n\nIn their previous paper, they showed that daf-7 expression in the ASJ of males is regulated by age (only ON in adults). A better understanding of the temporal regulation of the PDF pathway should be provided. Is pdfr-1 expressed in ASJ only in adult males or earlier as well? At what stage does daf-7 come on in the ASJ of hermaphrodites and males that ectopically overexpress pdfr-1 in ASJ from early larval stages?\n\nAnother conclusion of the manuscript is that PDF regulates mate searching through the expression of daf-7 in ASJ. This is based on the observation that the daf-7 mutation suppresses the enhanced food leaving induced by PDF overexpression. But, can the food leaving defects of pdfr-1 mutants be rescued by expression of pdfr-1 or daf-7 only in ASJ?\n\nThe authors should show the behavioural phenotype of pdf-1 and pdfr-1 mutant males in the pathogenic bacteria avoidance assay like they do for hermaphrodites (Figure 1E).\n",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1fec74f4-712b-494c-b184-c665d159f7f3",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C1",
+      "claim": "daf-7 encodes a TGF\u03b2 family neuroendocrine ligand that regulates diverse aspects of C. elegans behavior and physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that daf-7, which encodes a TGF\u03b2 family neuroendocrine ligand that regulates diverse aspects of C. elegans behavior and physiology (Chang et al., 2006; Fletcher and Kim, 2017; Gallagher et al., 2013; Greer et al., 2008; Milward et al., 2011; Ren et al., 1996; Shaw et al., 2007; White and Jorgensen, 2012; You et al., 2008), is expressed in a sex-specific and context-dependent manner in the sex-shared ASJ chemosensory neurons and functions to promote exploratory behaviors (Hilbert and Kim, 2017; Meisel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "efaa8638-b33e-47dc-8fb7-b6b2f56858d9",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C2",
+      "claim": "daf-7 is expressed in a sex-specific and context-dependent manner in the sex-shared ASJ chemosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that daf-7, which encodes a TGF\u03b2 family neuroendocrine ligand that regulates diverse aspects of C. elegans behavior and physiology (Chang et al., 2006; Fletcher and Kim, 2017; Gallagher et al., 2013; Greer et al., 2008; Milward et al., 2011; Ren et al., 1996; Shaw et al., 2007; White and Jorgensen, 2012; You et al., 2008), is expressed in a sex-specific and context-dependent manner in the sex-shared ASJ chemosensory neurons and functions to promote exploratory behaviors (Hilbert and Kim, 2017; Meisel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "277269e0-5bea-44f7-a2e1-07b4dbdf32c6",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C3",
+      "claim": "daf-7 functions to promote exploratory behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that daf-7, which encodes a TGF\u03b2 family neuroendocrine ligand that regulates diverse aspects of C. elegans behavior and physiology (Chang et al., 2006; Fletcher and Kim, 2017; Gallagher et al., 2013; Greer et al., 2008; Milward et al., 2011; Ren et al., 1996; Shaw et al., 2007; White and Jorgensen, 2012; You et al., 2008), is expressed in a sex-specific and context-dependent manner in the sex-shared ASJ chemosensory neurons and functions to promote exploratory behaviors (Hilbert and Kim, 2017; Meisel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "a7682762-5f3e-4641-a59b-6338e62b8c15",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C4",
+      "claim": "Regulation of daf-7 expression in the ASJ neurons requires the integration of sensory and internal state information including the sex and age of the animal, its nutritional state, and the type of bacterial species it encounters in its environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of daf-7 expression in the ASJ neurons requires the integration of sensory and internal state information including the sex and age of the animal, its nutritional state, and the type of bacterial species it encounters in its environment (Hilbert and Kim, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior research study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "0e36b241-cb0f-401f-b80c-003cd98d2b16",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C5",
+      "claim": "PDF-1 pathway signaling is essential for male mate-searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the identification of a second neuroendocrine signaling pathway, the Pigment Dispersing Factor (PDF-1) pathway, which functions to regulate the expression of daf-7 and its effects on behavior in a sex-specific manner. We show that PDF-1 pathway signaling, which has previously been shown to be essential for male mate-searching behavior (Barrios et al., 2012), functions sex-specifically in the ASJ neurons themselves to regulate daf-7 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior research study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "748a6fe0-ecf0-4619-b1df-9d5af778f604",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C6",
+      "claim": "PDF-1 pathway signaling functions sex-specifically in the ASJ neurons to regulate daf-7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that PDF-1 pathway signaling, which has previously been shown to be essential for male mate-searching behavior (Barrios et al., 2012), functions sex-specifically in the ASJ neurons themselves to regulate daf-7 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "28e429e4-f1c9-4d43-825d-a5c1c53a6592",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C7",
+      "claim": "The sex-specificity of PDF-1 regulation of daf-7 derives from differences in the activation of PDF-1 signaling downstream of the PDF-1 receptor gene, pdfr-1, in the ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we demonstrate that the sex-specificity of PDF-1 regulation of daf-7 derives from differences in the activation of PDF-1 signaling downstream of the PDF-1 receptor gene, pdfr-1, in the ASJ neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "26d7c8ce-83e1-4eb5-a675-5bcab91a78df",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C8",
+      "claim": "Males with mutation of the PDF-1 neuropeptide ligand have markedly attenuated expression of daf-7 in the ASJ neuron pair.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that males with mutation of either the PDF-1 neuropeptide ligand or its receptor, PDFR-1, have markedly attenuated expression of daf-7 in the ASJ neuron pair (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "f76f7728-d5a2-4f3c-ad25-09745ff95421",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C9",
+      "claim": "Males with mutation of the PDFR-1 receptor have markedly attenuated expression of daf-7 in the ASJ neuron pair.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that males with mutation of either the PDF-1 neuropeptide ligand or its receptor, PDFR-1, have markedly attenuated expression of daf-7 in the ASJ neuron pair (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "5dea233c-26f0-4009-a5e5-4197b4a932cf",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C10",
+      "claim": "In PDF-1 pathway mutant males, there is no difference in daf-7 levels in the ASI neurons when compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PDF-1 pathway mutant males, we observe no difference in daf-7 levels in the ASI neurons when compared to WT (Figure 1C), suggesting that the PDF-1 pathway specifically affects the regulation of daf-7 in the ASJ neuron pair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "60fc16bb-11ff-4ebc-adec-54d9a30224a6",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C11",
+      "claim": "The PDF-1 pathway specifically affects the regulation of daf-7 in the ASJ neuron pair.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PDF-1 pathway mutant males, we observe no difference in daf-7 levels in the ASI neurons when compared to WT (Figure 1C), suggesting that the PDF-1 pathway specifically affects the regulation of daf-7 in the ASJ neuron pair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that PDF-1 pathway mutations affect daf-7 in ASJ but not ASI neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "e15cc5d5-9b88-493d-a208-895b86acc027",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C12",
+      "claim": "Expression of daf-7 in the ASJ neuron pair of males is required for the male-specific mate-searching behavioral program.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of daf-7 in the ASJ neuron pair of males is required for the male-specific mate-searching behavioral program (Hilbert and Kim, 2017), while the PDF-1 pathway has similarly been implicated as a regulator of this same behavior (Barrios et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "f2f8e239-6d89-49bc-9c81-488ee8de1c75",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C13",
+      "claim": "Overexpression of the pdf-1 genomic sequence confers increased mate-searching behavior in male animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of the pdf-1 genomic sequence confers increased mate-searching behavior in male animals (Figure 1D; Barrios et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and a citation to a prior research study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "e0ff6b1f-fbb8-4be0-9de8-810090528930",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C14",
+      "claim": "The effect of PDF-1 overexpression on mate-searching behavior is suppressed by loss of daf-7 function.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduced a daf-7 mutation into these transgenic PDF-1 overexpressing lines and observed that the effect of PDF-1 overexpression on mate-searching behavior was suppressed by loss of daf-7 function (Figure 1D and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "23ebb4ab-6306-41c9-9776-5d23d8589de7",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C15",
+      "claim": "Overexpression of daf-7 in the ASJ neurons of pdf-1(tm1996) mutant males cannot rescue the mate-searching defects of these animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that overexpression of daf-7 in the ASJ neurons of pdf-1(tm1996) mutant males could not rescue the mate-searching defects of these animals (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "ecf21d50-e609-4777-86bf-b25b2999e6ed",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C16",
+      "claim": "PDF-1 regulates mate-searching behavior in males through the regulation of daf-7 expression in the ASJ neurons and through additional mechanisms functioning in parallel to DAF-7 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results of this epistasis analysis suggest that PDF-1 regulates mate-searching behavior in males through the regulation of daf-7 expression in the ASJ neurons and through additional mechanisms functioning in parallel to DAF-7 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the results of the epistasis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "62a12688-feae-4a44-b8cb-7481708ec105",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C17",
+      "claim": "daf-7 expression is induced by the presence of Pseudomonas aeruginosa in both sexes to promote pathogen avoidance behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously reported that daf-7 expression serves a dual role in the ASJ neurons, functioning in males to promote food-leaving behaviors (Hilbert and Kim, 2017), but also being induced by the presence of Pseudomonas aeruginosa in both sexes to promote pathogen avoidance behaviors (Meisel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "8ae90352-11b2-450c-9804-a19d22508caf",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C18",
+      "claim": "PDF-1 signaling is not required for the upregulation of daf-7 expression in response to P. aeruginosa in hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe a requirement for PDF-1 signaling in the induction of daf-7 expression in the ASJ neurons after 16 hr on P. aeruginosa; both pdf-1 and pdfr-1 mutant hermaphrodites had equivalent levels of daf-7 expression when compared to control animals (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "52ec1b40-055f-4c97-9cd7-49205a218634",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C19",
+      "claim": "Males that are mutant for either the PDF-1 ligand or receptor are capable of upregulating daf-7 expression in ASJ upon exposure to P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, males that are mutant for either the PDF-1 ligand or receptor (and show little to no daf-7 expression in their ASJ neurons on E. coli, see Figure 1B) were capable of upregulating daf-7 expression in ASJ upon exposure to P. aeruginosa (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "7269ff92-ba41-497f-b098-e3aef4dfb47a",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C20",
+      "claim": "daf-7 mutant hermaphrodites fail to avoid a lawn of pathogenic P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, we observed that while daf-7 mutant hermaphrodites fail to avoid a lawn of pathogenic bacteria, the pdf-1 and pdfr-1 mutant hermaphrodites appear wild-type for their ability to perform this behavior (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "8184ad3d-5631-41d8-8711-59265ef37dc5",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C21",
+      "claim": "pdf-1 and pdfr-1 mutant hermaphrodites appear wild-type for their ability to avoid a lawn of pathogenic P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, we observed that while daf-7 mutant hermaphrodites fail to avoid a lawn of pathogenic bacteria, the pdf-1 and pdfr-1 mutant hermaphrodites appear wild-type for their ability to perform this behavior (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "b7121343-211f-419a-86a2-cf86cc20f485",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C22",
+      "claim": "pdf-1 and pdfr-1 mutant males display robust pathogen avoidance despite their defects in the male-specific mate searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, pdf-1 and pdfr-1 mutant males also displayed robust pathogen avoidance despite their defects in the male-specific mate searching behavior (Figure 1\u2014figure supplement 2B; Barrios et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2B and a citation to a prior research study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "c4ba94f0-cd1f-4134-af71-79fa2fe23f8b",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C23",
+      "claim": "The PDF-1 signaling pathway acts sex-specifically to regulate daf-7 expression in the ASJ neurons and its effects on downstream sexually dimorphic behavioral programs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the PDF-1 signaling pathway acts sex-specifically to regulate daf-7 expression in the ASJ neurons and its effects on downstream sexually dimorphic behavioral programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing sex-specific effects of PDF-1 signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "fd19a61b-3c2c-4c9c-a735-552b7b4fb342",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C24",
+      "claim": "The PDF-1 neuropeptide ligand is secreted from multiple neurons in the head region of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDF-1 neuropeptide ligand is secreted from multiple neurons in the head region of the animal where a similarly large number of neurons express the PDFR-1 receptor (Barrios et al., 2012; Janssen et al., 2009; Meelkop et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "2d04789f-27fb-452a-aa7a-19ed1fa410a8",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C25",
+      "claim": "A large number of neurons express the PDFR-1 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDF-1 neuropeptide ligand is secreted from multiple neurons in the head region of the animal where a similarly large number of neurons express the PDFR-1 receptor (Barrios et al., 2012; Janssen et al., 2009; Meelkop et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "304cb6ed-acb9-487a-9e3b-44d73096d463",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C26",
+      "claim": "Introduction of a genomic DNA fragment carrying the pdfr-1 locus fully rescued the lack of daf-7 expression in the ASJ neurons of pdfr-1 mutant males.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that while the pdfr-1 mutant males lack daf-7 expression in the ASJ neurons, introduction of a genomic DNA fragment carrying the pdfr-1 locus fully rescued this phenotype and restored daf-7 expression in the ASJ neurons (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "301fb2ce-0cdd-4286-b865-7fbb71aaa826",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C27",
+      "claim": "Expression of pdfr-1 under the control of the ASJ-specific trx-1 promoter is sufficient to rescue daf-7 expression in the ASJ neurons of pdfr-1 mutant male animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that expression of pdfr-1 under the control of the ASJ-specific trx-1 promoter was sufficient to rescue daf-7 expression in the ASJ neurons of the mutant male animals, suggesting that PDF-1 signals to its receptor, PDFR-1, in the ASJ neurons to influence daf-7 expression specifically in the male (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "bd188e13-1750-4912-8b85-462837ca7be4",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C28",
+      "claim": "PDF-1 signals to its receptor, PDFR-1, in the ASJ neurons to influence daf-7 expression specifically in the male.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that expression of pdfr-1 under the control of the ASJ-specific trx-1 promoter was sufficient to rescue daf-7 expression in the ASJ neurons of the mutant male animals, suggesting that PDF-1 signals to its receptor, PDFR-1, in the ASJ neurons to influence daf-7 expression specifically in the male (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the rescue experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "9ef1a1c4-9991-4426-9495-b977350f53c9",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C29",
+      "claim": "Animals with ASJ-specific RNAi targeting pdfr-1 exhibited reduced daf-7 expression in ASJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that animals with RNAi targeting pdfr-1 in the ASJ neurons exhibited reduced daf-7 expression in ASJ comparable to what we observed with ASJ-specific RNAi of GFP, our positive control (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "96e07798-4384-4436-af58-3852a3e6db87",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C30",
+      "claim": "ASJ-specific expression of the Cre recombinase suppressed the rescuing effects of a floxed pdfr-1 transgene on daf-7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that this construct partially rescued daf-7 expression in the ASJ neurons of pdfr-1(ok3425) mutant males, and ASJ-specific expression of the Cre recombinase suppressed the rescuing effects of this transgene (Figure 2D), strongly suggestive that PDFR-1 activity in the ASJ neurons is required for daf-7 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "0688f744-d5fb-47e8-ba7f-fc39d6f35268",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C31",
+      "claim": "PDFR-1 activity in the ASJ neurons is required for daf-7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that this construct partially rescued daf-7 expression in the ASJ neurons of pdfr-1(ok3425) mutant males, and ASJ-specific expression of the Cre recombinase suppressed the rescuing effects of this transgene (Figure 2D), strongly suggestive that PDFR-1 activity in the ASJ neurons is required for daf-7 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the Cre recombinase experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "e695f5fc-2940-419b-9bd8-c79a52420aa0",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C32",
+      "claim": "The PDF-1 signaling pathway functions cell-autonomously in the ASJ neuron pair to regulate the sexually dimorphic expression of daf-7.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the PDF-1 signaling pathway functions cell-autonomously in the ASJ neuron pair to regulate the sexually dimorphic expression of daf-7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the cell-specific rescue and knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "9d6debb0-3d52-4462-9ce6-262d9851dd92",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C33",
+      "claim": "The PDFR-1 receptor is a secretin-family G-protein coupled receptor (GPCR).",
+      "claim_type": "EXPLICIT",
+      "source": "The PDFR-1 receptor is a secretin-family G-protein coupled receptor (GPCR), which has been shown to stimulate G\u03b1s signaling and upregulation of cAMP production in transfected cells as well as in both Drosophila melanogaster and C. elegans neurons (Figure 1A; Flavell et al., 2013; Hyun et al., 2005; Janssen et al., 2008; Lear et al., 2005; Mertens et al., 2005; Shafer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "4b834542-eca3-4e2e-bad6-1cdb6dc9fc72",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C34",
+      "claim": "PDFR-1 has been shown to stimulate G\u03b1s signaling and upregulation of cAMP production in transfected cells as well as in both Drosophila melanogaster and C. elegans neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDFR-1 receptor is a secretin-family G-protein coupled receptor (GPCR), which has been shown to stimulate G\u03b1s signaling and upregulation of cAMP production in transfected cells as well as in both Drosophila melanogaster and C. elegans neurons (Figure 1A; Flavell et al., 2013; Hyun et al., 2005; Janssen et al., 2008; Lear et al., 2005; Mertens et al., 2005; Shafer et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior research studies and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "4b1cb24d-827f-46df-9d3a-8447635981a3",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C35",
+      "claim": "In pdfr-1 mutant males with transgenic expression of the acy-1(gf) cDNA only in the ASJ neurons, daf-7 expression was fully rescued.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in pdfr-1 mutant males with transgenic expression of the acy-1(gf) cDNA only in the ASJ neurons, daf-7 expression was fully rescued (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "96110397-62be-4bbd-8331-7e86418a291c",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C36",
+      "claim": "The PDF-1 signaling pathway acts directly on the ASJ neurons in order to regulate daf-7 expression in male animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability to bypass PDFR-1 by activation of cAMP production specifically in the ASJ neuron pair further suggest that the PDF-1 signaling pathway acts directly on the ASJ neurons in order to regulate daf-7 expression in male animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the ability of acy-1(gf) to rescue daf-7 expression in pdfr-1 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "7de2e902-f4a5-4549-ab92-263e088169ad",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C37",
+      "claim": "Starvation of adult male animals efficiently suppresses daf-7 expression in the ASJ neurons in wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that starvation of adult male animals efficiently suppresses daf-7 expression in the ASJ neurons in wild-type animals (Hilbert and Kim, 2017; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to a prior research study and experimental data shown in Figure 3B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "24cc8341-cf60-4903-9254-7e637252f72e",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C38",
+      "claim": "ASJ-specific expression of the acy-1(gf) variant in starved males did not suppress the effects of starvation on daf-7 expression in ASJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ASJ-specific expression of the acy-1(gf) variant in starved males did not suppress the effects of starvation on daf-7 expression in ASJ (Figure 3B), suggestive that the effects of starvation act downstream of or in parallel to PDFR-1-ACY-1 signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "fafd9c3c-b13e-4bc9-90c1-a0c737836aad",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C39",
+      "claim": "The effects of starvation act downstream of or in parallel to PDFR-1-ACY-1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ASJ-specific expression of the acy-1(gf) variant in starved males did not suppress the effects of starvation on daf-7 expression in ASJ (Figure 3B), suggestive that the effects of starvation act downstream of or in parallel to PDFR-1-ACY-1 signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that acy-1(gf) cannot overcome starvation effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "0d97f32e-81d3-41b6-96a6-2c39775168fd",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C40",
+      "claim": "pdf-1 is produced by the newly identified male-specific MCM neurons and is required for the regulation of sex-specific learning in males.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently shown that pdf-1 is produced by the newly identified male-specific MCM neurons and is required for the regulation of sex-specific learning in males, but interestingly, ablation of these neurons has no effect on mate-searching behavior (Sammut et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior research study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "0e223584-0a65-48e0-8ae6-d75f1f736c34",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C41",
+      "claim": "Ablation of the male-specific MCM neurons has no effect on mate-searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently shown that pdf-1 is produced by the newly identified male-specific MCM neurons and is required for the regulation of sex-specific learning in males, but interestingly, ablation of these neurons has no effect on mate-searching behavior (Sammut et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior research study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "b7b545bb-eb95-4631-9fd7-1adb36900bff",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C42",
+      "claim": "Hermaphrodite animals carrying the ASJ-expressed acy-1(gf) transgene show significant upregulation of daf-7 expression in the ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We first looked at hermaphrodite animals carrying the same ASJ-expressed acy-1(gf) transgene and observed significant upregulation of daf-7 expression in the ASJ neurons of these hermaphrodites (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "5f8600f4-6fe2-448f-856b-3dab7b02f482",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C43",
+      "claim": "In hermaphrodites with overexpression of pdfr-1 cDNA in the ASJ neurons, daf-7 expression was upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that in hermaphrodites with overexpression of pdfr-1 cDNA in the ASJ neurons, daf-7 expression was also upregulated similar to what we observed in the acy-1(gf) transgenic strains (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "f7a916a6-a286-49bf-98e0-96d8854ac513",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C44",
+      "claim": "Hermaphrodites carrying the genomic pdfr-1 fragment with all of the endogenous regulatory sequence showed no upregulation of daf-7 expression in the ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We also quantified daf-7 expression in the ASJ neurons of hermaphrodites carrying the genomic pdfr-1 fragment with all of the endogenous regulatory sequence and observed no upregulation of expression in those animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "883e4ed1-d75a-48cf-b87c-881a5c9eeed9",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C45",
+      "claim": "Expression of PDFR-1 specifically in the hermaphrodite ASJ neurons is sufficient to allow daf-7 expression in these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This control suggests that daf-7 expression in ASJ cannot be triggered simply as the result of overexpression of pdfr-1 (Figure 4B), rather, these results suggest that expression of PDFR-1 specifically in the hermaphrodite ASJ neurons is sufficient to allow daf-7 expression in these neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the comparison of genomic and cDNA overexpression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "e76701cc-1760-4bfd-9997-9b69d5d94be5",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C46",
+      "claim": "PDF signaling has been well studied for its critical role in the regulation of circadian rhythmicity in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, PDF signaling has been well studied for its critical role in the regulation of circadian rhythmicity (Helfrich-F\u00f6rster, 1995; Park and Hall, 1998; Park et al., 2000; Renn et al., 1999), but it has also been shown to modulate geotaxis (Mertens et al., 2005), pheromone production and mating behaviors (Fujii and Amrein, 2010; Kim et al., 2013; Krupp et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "ad17292c-09cd-4cf8-ae7c-e4883ca2a839",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C47",
+      "claim": "PDF signaling has been shown to modulate geotaxis in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, PDF signaling has been well studied for its critical role in the regulation of circadian rhythmicity (Helfrich-F\u00f6rster, 1995; Park and Hall, 1998; Park et al., 2000; Renn et al., 1999), but it has also been shown to modulate geotaxis (Mertens et al., 2005), pheromone production and mating behaviors (Fujii and Amrein, 2010; Kim et al., 2013; Krupp et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior research study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "39eab1bf-5c08-4a5c-8931-32e593ba47a5",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C48",
+      "claim": "PDF signaling has been shown to modulate pheromone production and mating behaviors in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, PDF signaling has been well studied for its critical role in the regulation of circadian rhythmicity (Helfrich-F\u00f6rster, 1995; Park and Hall, 1998; Park et al., 2000; Renn et al., 1999), but it has also been shown to modulate geotaxis (Mertens et al., 2005), pheromone production and mating behaviors (Fujii and Amrein, 2010; Kim et al., 2013; Krupp et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "1bdf762e-14a4-42b6-9144-5acff732ceed",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C49",
+      "claim": "In C. elegans, PDF-1 signaling has been established as an important regulator of locomotion, roaming behaviors, quiescence, and male mate-searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, PDF-1 signaling has been established as an important regulator of locomotion, roaming behaviors, quiescence, and notably, male mate-searching behavior (Figure 1A; Barrios et al., 2012; Choi et al., 2013; Flavell et al., 2013; Janssen et al., 2008, 2009; Meelkop et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior research studies and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "f2a789ce-7977-41bd-b1e4-35ea9e0488b5",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C50",
+      "claim": "The ASI chemosensory neurons are established sites of daf-7 expression in both male and hermaphrodite animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The ASI chemosensory neurons are established sites of daf-7 expression in both male and hermaphrodite animals (Ren et al., 1996; Schackwitz et al., 1996), so we asked if the PDF-1 signaling pathway also regulates daf-7 expression in these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "72435ac8-db6c-4281-8c7b-d113100023d7",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C51",
+      "claim": "The PDF neuropeptide signaling pathway is conserved among insects, crustaceans and nematodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDF neuropeptide signaling pathway is conserved among insects, crustaceans and nematodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the conservation of the PDF pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "2e4e2064-9016-42d3-97e0-c968a043f0ee",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C52",
+      "claim": "The 294 neurons that are common to the nervous systems of both hermaphrodites and males have emerged as major contributors to a number of different sexually dimorphic behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "While sex-specific neurons regulate corresponding behaviors in C. elegans, the 294 neurons that are common to the nervous systems of both hermaphrodites and males have emerged as major contributors to a number of different sexually dimorphic behaviors (Barr et al., 2018; Barrios et al., 2012, 2008; Fagan et al., 2018; Lee and Portman, 2007; Mowrey et al., 2014; Sakai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "be3b7263-a46f-4391-bf6b-39619306113d",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C53",
+      "claim": "Recent work has uncovered sexually dimorphic differences in axonic and dendritic morphology and synaptic connectivity within the sex shared nervous system, which can modulate neuronal circuits and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, recent work has uncovered sexually dimorphic differences in axonic and dendritic morphology and synaptic connectivity within the sex shared nervous system, which can modulate neuronal circuits and behavior (Hart and Hobert, 2018; Oren-Suissa et al., 2016; Serrano-Saiz et al., 2017a; Weinberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "2d559db8-df84-40a3-b4be-8dea45d0bc9b",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C54",
+      "claim": "Studies of sexually dimorphic gene expression and neurotransmitter identity have suggested that sexual differentiation of neurons within the sex-shared nervous system of C. elegans is critical for the establishment of sexually dimorphic behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, studies of sexually dimorphic gene expression (Hilbert and Kim, 2017; Ryan et al., 2014; Serrano-Saiz et al., 2017a) and neurotransmitter identity (Gendrel et al., 2016; Pereira et al., 2015; Serrano-Saiz et al., 2017a, 2017b) have suggested that sexual differentiation of neurons within the sex-shared nervous system of C. elegans is critical for the establishment of sexually dimorphic behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "c3056485-f7a2-45db-b935-7820a2aaa516",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C55",
+      "claim": "Studies of the mouse vomeronasal organ (VNO) have suggested that the functional circuits for both male- and female-specific behaviors such as courtship and aggression are intact in the brains of both sexes and are modulated by VNO activity in response to pheromone cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of the mouse vomeronasal organ (VNO) has suggested that the functional circuits for both male- and female-specific behaviors such as courtship and aggression are intact in the brains of both sexes and are modulated by VNO activity in response to pheromone cues (Kimchi et al., 2007; Stowers et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "182e4286-1bf9-4c3a-8bd9-f0cb32349bd0",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C56",
+      "claim": "The Drosophila male pheromone 11-cis Vaccenyl acetate (cVa) has been shown to be sensed by the same neurons in the two sexes but stimulates distinct sex-specific behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In a similar vein, the Drosophila male pheromone 11-cis Vaccenyl acetate (cVa) has been shown to be sensed by the same neurons in the two sexes but stimulates distinct sex-specific behavioral responses (Datta et al., 2008; Kohl et al., 2013; Kurtovic et al., 2007; Ruta et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "278ac776-c6f1-4bf6-83d1-3e9821f6b901",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C57",
+      "claim": "Behavioral differences between the sexes of animal species can make major contributions to the reproductive fitness of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral differences between the sexes of animal species can make major contributions to the reproductive fitness of the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the role of sex-specific behaviors in reproductive fitness.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "fdeef2d3-ffc2-4dd2-a3ab-bcf58e0a2c12",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C58",
+      "claim": "Morphological differences, including the existence of sex-specific neurons, have been documented in the nervous systems of many species.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphological differences, including the existence of sex-specific neurons, have been documented in the nervous systems of many species, but differences in sex-shared neurons have also been implicated in generating sex-specific behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about sexual dimorphism in nervous systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "9f77b422-2385-4a3f-a295-8e0a9f487497",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C59",
+      "claim": "Differences in sex-shared neurons have been implicated in generating sex-specific behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphological differences, including the existence of sex-specific neurons, have been documented in the nervous systems of many species, but differences in sex-shared neurons have also been implicated in generating sex-specific behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the role of sex-shared neurons in behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "24614255-d16f-4ae3-9d1e-470c585d374e",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C60",
+      "claim": "Sexually dimorphic regulation of the PDF-1 receptor, PDFR-1, may serve as a gating mechanism, allowing the ASJ neurons of adult male C. elegans to respond to the PDF-1 ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that sexually dimorphic regulation of the PDF-1 receptor, PDFR-1, may serve as a gating mechanism, allowing the ASJ neurons of adult male C. elegans to respond to the PDF-1 ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing sex-specific effects of PDFR-1 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "e4328de9-41a7-4480-9f50-6a41d916d2eb",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C61",
+      "claim": "The relative lack of expression or activity of pdfr-1 in the hermaphrodite ASJ neurons prevents the activation of the PDF-1 pathway and consequently daf-7 expression is not induced under normal growth conditions in adult hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the relative lack of expression or activity of pdfr-1 in the hermaphrodite ASJ neurons prevents the activation of this pathway and consequently daf-7 expression is not induced under normal growth conditions in adult hermaphrodites (Figure 4C, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a hypothesis based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "0fc703f4-9a5e-40ee-9a25-6c1a130b8a57",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C62",
+      "claim": "Heterologous expression of the PDF-1 receptor in the hermaphrodite ASJ neurons was sufficient to drive daf-7 expression in an inappropriate physiological context.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, heterologous expression of the PDF-1 receptor in the hermaphrodite ASJ neurons was sufficient to drive daf-7 expression in an inappropriate physiological context (the hermaphrodite nervous system).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing daf-7 expression in hermaphrodites with ASJ-specific pdfr-1 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "73f0ae2f-8599-4731-8bd5-81d64ea35cfa",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C63",
+      "claim": "The PDF-1 pathway plays an integral role in facilitating sex-specific differences in gene expression and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, our data suggest that the PDF-1 pathway plays an integral role in facilitating sex-specific differences in gene expression and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the overall experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "a654ffb7-6814-4ce9-81b7-4bf00e01db9d",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C64",
+      "claim": "Two pathways, the PDF-1 and DAF-7/TGF\u03b2 pathways, act in concert as a neuroendocrine signaling cascade to regulate sex-specific behavior within the context of the sex-shared ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose a model in which two pathways, the PDF-1 and DAF-7/TGF\u03b2 pathways, act in concert as a neuroendocrine signaling cascade to regulate sex-specific behavior within the context of the sex-shared ASJ neurons (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a model proposed based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "7989c78f-5825-4d76-a7c9-35dd45d39e57",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C65",
+      "claim": "The PDF-1 pathway functions in tuning the response of the ASJ neurons to this endogenous neuromodulator in a sex-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the PDF-1 pathway functions in tuning the response of the ASJ neurons to this endogenous neuromodulator in a sex-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing sex-specific effects of PDF-1 signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "b046606c-bad8-412e-919a-7c819dfdcb79",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C66",
+      "claim": "Recent work in mice has uncovered that the neuromodulator oxytocin facilitates sex-specific social preference in male mice by modulating the ability of subsets of neurons to respond to social cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent work in mice has uncovered a similar phenomenon wherein the neuromodulator oxytocin facilitates sex-specific social preference in male mice by modulating the ability of subsets of neurons to respond to social cues (Yao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior research study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "b825fcd0-845b-4936-9932-d2090c64cc94",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C67",
+      "claim": "Neuroendocrine signaling through sex-shared nervous system components plays a role in shaping sexually dimorphic neuronal activity and behavior in evolutionarily diverse animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The parallels between this work and ours underscore the role of neuroendocrine signaling through sex-shared nervous system components in shaping sexually dimorphic neuronal activity and behavior in evolutionarily diverse animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of findings in C. elegans and mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "27fa25d4-752d-434e-90ec-ef9a25e9bb1d",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C68",
+      "claim": "Puncta of pdfr-1 mRNA were observed in the ASJ neurons of about 20% of adult male animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed puncta of pdfr-1 mRNA in the ASJ neurons of about 20% of adult male animals (Figure 4\u2014figure supplement 1E and F), whereas similarly aged hermaphrodites did not have a corresponding subpopulation of animals with puncta of pdfr-1 mRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "d4ed257b-137e-4d28-8a64-d46475049b52",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C69",
+      "claim": "Similarly aged hermaphrodites did not have a corresponding subpopulation of animals with puncta of pdfr-1 mRNA in ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed puncta of pdfr-1 mRNA in the ASJ neurons of about 20% of adult male animals (Figure 4\u2014figure supplement 1E and F), whereas similarly aged hermaphrodites did not have a corresponding subpopulation of animals with puncta of pdfr-1 mRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "42f444d0-f1c4-4198-bb1e-56b383b2b6db",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C70",
+      "claim": "PDFR-1 expression in the ASJ neurons is both necessary and sufficient for daf-7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our functional studies demonstrating that PDFR-1 expression in the ASJ neurons is both necessary and sufficient for daf-7 expression suggest that the expression or activity of the PDFR-1 receptor may be regulated in a sexually dimorphic manner in these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the rescue and knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "cadd970f-9212-469f-9ea6-c0f0f5ba542b",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "claim_id": "C71",
+      "claim": "The expression or activity of the PDFR-1 receptor may be regulated in a sexually dimorphic manner in the ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our functional studies demonstrating that PDFR-1 expression in the ASJ neurons is both necessary and sufficient for daf-7 expression suggest that the expression or activity of the PDFR-1 receptor may be regulated in a sexually dimorphic manner in these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on the functional studies.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6693e912-8de7-4009-81d5-2860e329985d",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PDF-1 pathway signaling functions sex-specifically in the ASJ neurons to regulate daf-7 expression. Mutations in either the PDF-1 ligand or PDFR-1 receptor markedly attenuate daf-7 expression in male ASJ neurons but not in ASI neurons, demonstrating neuron-specific regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 show clear experimental evidence (Figure 1B) that pdf-1 and pdfr-1 mutants reduce daf-7 in male ASJ neurons. Claim C10 demonstrates specificity by showing no effect in ASI neurons (Figure 1C). The sex-specificity is well-supported by multiple lines of evidence showing effects only in males under normal conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "a1c047f4-fc16-43e2-917b-fb9525fc3061",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PDF-1 signaling acts cell-autonomously in the ASJ neurons to regulate daf-7 expression. ASJ-specific expression of pdfr-1 is both necessary and sufficient to rescue daf-7 expression in pdfr-1 mutant males, as demonstrated by rescue experiments, RNAi knockdown, and Cre-lox conditional deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple complementary approaches converge on the same conclusion. Claims C26-C27 show ASJ-specific rescue (Figure 2A-B), C29 shows RNAi knockdown reduces daf-7 (Figure 2C), and C30 shows Cre-mediated deletion blocks rescue (Figure 2D). The combination of gain-of-function and loss-of-function experiments provides strong support for cell-autonomous action.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "4af5e284-7c49-4ab9-92dd-4b427968b3f4",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Activation of cAMP signaling via gain-of-function ACY-1 in ASJ neurons bypasses the requirement for PDFR-1 and rescues daf-7 expression in pdfr-1 mutant males. However, this activation cannot overcome starvation-induced suppression of daf-7, suggesting starvation acts downstream or in parallel to PDFR-1-ACY-1 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 demonstrates that acy-1(gf) fully rescues daf-7 in pdfr-1 mutants (Figure 3A), supporting the pathway model. Claim C38 shows acy-1(gf) cannot overcome starvation effects (Figure 3B), providing clear evidence for pathway ordering. The epistasis logic is sound and the data are consistent with the proposed signaling hierarchy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "2e0e4e4e-1263-41a3-ba68-e1742619b539",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Heterologous expression of PDFR-1 or activation of downstream cAMP signaling in hermaphrodite ASJ neurons is sufficient to induce daf-7 expression, which is normally absent in hermaphrodites. This demonstrates that the sex-specificity arises from differential PDFR-1 activity rather than downstream pathway components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 show that both acy-1(gf) and pdfr-1 cDNA overexpression induce daf-7 in hermaphrodite ASJ (Figures 4A-B). Claim C44 provides a critical control showing genomic pdfr-1 does not cause overexpression artifacts. The logic that PDFR-1 expression is sufficient to confer competence for daf-7 expression is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "4795e4ed-3bae-4c20-af65-ac0cc69b21ba",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PDF-1 regulates mate-searching behavior through both daf-7-dependent and daf-7-independent mechanisms. PDF-1 overexpression increases mate-searching, which is suppressed by daf-7 loss-of-function. However, daf-7 overexpression cannot rescue pdf-1 mutant defects, indicating parallel pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The epistasis analysis is logically sound. Claim C14 shows daf-7 mutation suppresses PDF-1 overexpression effects (Figure 1D), placing daf-7 downstream. Claim C15 shows daf-7 overexpression cannot rescue pdf-1 mutants (Figure 1\u2014supplement 1B), indicating PDF-1 has additional functions. The bidirectional epistasis appropriately supports the conclusion of both dependent and independent mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "dde5abff-401e-4450-9c41-5b9fed807808",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PDF-1 signaling is not required for pathogen-induced daf-7 expression or pathogen avoidance behavior. Both pdf-1 and pdfr-1 mutants show normal daf-7 upregulation in response to P. aeruginosa and exhibit wild-type pathogen avoidance in both sexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 demonstrate that PDF-1 pathway mutants maintain daf-7 induction by P. aeruginosa (Figures 1E, 1\u2014supplement 2A). Claims C20-C22 show corresponding behavioral data where pdf-1/pdfr-1 mutants avoid pathogens normally (Figures 1F, 1\u2014supplement 2B). This clearly establishes context-dependent regulation and supports the sex-specific role of PDF-1 in mate-searching but not pathogen response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "3f5404b0-04a3-434e-8c17-b4063c22706f",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FISH analysis reveals that pdfr-1 mRNA puncta are detectable in ASJ neurons of approximately 20% of adult males but not in hermaphrodites. The authors suggest this may reflect sexually dimorphic regulation of PDFR-1 expression or activity, though functional studies demonstrate PDFR-1 expression is necessary and sufficient for daf-7 regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 report FISH observations (Figure 4\u2014supplement 1E-F), but the low detection rate (20% of males) and absence in hermaphrodites is difficult to reconcile with the robust functional requirement shown in rescue experiments. The authors acknowledge this limitation and note that further analysis is needed. The functional data (C70) are strong, but the expression data are incomplete and potentially reflect technical limitations of FISH detection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "42d9810c-2704-4399-b931-7663ba3c594e",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a model where sexually dimorphic regulation of PDFR-1 serves as a gating mechanism allowing male ASJ neurons to respond to PDF-1, creating a neuroendocrine signaling cascade (PDF-1\u2192PDFR-1\u2192daf-7) that regulates sex-specific behavior through sex-shared neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative model (Claims C60, C64-C65, Figure 4C) is well-supported by the collective experimental evidence. The cell-autonomous action of PDFR-1, the ability to induce daf-7 in hermaphrodites by PDFR-1 expression, and the sex-specific behavioral effects all support this gating mechanism model. While C61 is explicitly a hypothesis, it is reasonable given the data. The model provides a coherent framework explaining the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "8693a150-c477-43b5-837f-77c3042fc396",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about daf-7: it encodes a TGF\u03b2 ligand regulating C. elegans behavior and physiology, is expressed sex-specifically in ASJ neurons, promotes exploratory and mate-searching behaviors in males, and is induced by P. aeruginosa to promote pathogen avoidance in both sexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C4, C12, C17) are all supported by citations to prior work, primarily the authors' own previous publications (Hilbert and Kim, 2017; Meisel et al., 2014) and other established literature. They provide necessary context for the current study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims about PDF-1 signaling: PDF-1 is essential for male mate-searching behavior, is secreted from multiple head neurons, signals through the GPCR PDFR-1 to activate G\u03b1s/cAMP signaling, and regulates various behaviors in C. elegans and other organisms. The pathway is conserved across invertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C5, C24-C25, C33-C34, C40-C41, C46-C51) are all supported by appropriate citations to prior literature. They establish the known functions of PDF-1 signaling and provide context for investigating its role in daf-7 regulation. The claims accurately represent prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc",
+      "content_id": "76b87e26-efca-4fa5-b9e0-24484d56aa6e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims about sexual dimorphism in nervous systems: sex-shared neurons contribute to sexually dimorphic behaviors across species through differences in morphology, connectivity, gene expression, and neuromodulation. Examples from C. elegans, mice, and Drosophila demonstrate conserved principles of how sex-specific behaviors arise from shared neural circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These contextual claims (C52-C59, C66-C67) are supported by appropriate citations and represent established knowledge in the field. They provide important framing for the significance of the current findings. Claim C67 appropriately draws parallels to oxytocin signaling in mice, highlighting the broader relevance of neuromodulatory gating mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "9daebe3c-aa89-41e7-ae24-816523c1969e",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "PDF-1 pathway mutations (pdf-1 and pdfr-1) markedly attenuate daf-7 expression specifically in the ASJ neurons of males, with no effect on daf-7 levels in ASI neurons, suggesting the PDF-1 pathway specifically regulates daf-7 in ASJ.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly state that 'the authors present convincing evidence that PDF signalling regulates the expression of daf-7 specifically in ASJ and specifically in males.' This finding is accepted without challenge and forms the foundation for subsequent critiques about mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "PDFR-1 acts cell-autonomously in ASJ neurons to regulate daf-7 expression, as demonstrated by ASJ-specific rescue experiments with pdfr-1 transgenes, ASJ-specific RNAi knockdown, and Cre-lox conditional deletion experiments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 explicitly challenges this conclusion, stating 'what is not so convincing to me is that daf-7 expression is regulated cell-autonomously' and notes that overexpression 'could be an overexpression phenotype that does not reflect the endogenous mechanism.' Reviewer 2 requests additional necessity experiments: 'Stronger evidence in support of a direct action of PDF on ASJ would be to show necessity of pdfr-1 specifically in ASJ. This should be done by removing pdfr-1 only in ASJ (by cell specific RNAi for example).' This is listed as an essential experiment (#2).",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "f330b5c0-02b2-4d1a-b99e-6631c96fca3a",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "smFISH experiments show pdfr-1 mRNA puncta in ASJ neurons of ~20% of adult males but not hermaphrodites, supporting the hypothesis that PDFR-1 expression/activity is sexually dimorphically regulated in ASJ.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 states 'the smFISH experiments are not totally convincing' and requests proper quantification: 'The smFISH experiments should be quantified: what proportion of males express pdfr-1 in ASJ? And what proportion of hermaphrodites?' This is listed as essential experiment #1. Reviewer 2 also notes 'in one photo of hermaphrodite ASJ, I can see what looks to me like puncta' and requests that 'overlap of smFISH with the ASJ labelled with GFP for identification should also be shown.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "1a4d6ce4-a2fe-42c3-b3f4-61c0a8db21c6",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "ASJ-specific expression of gain-of-function acy-1 (adenylate cyclase) rescues daf-7 expression in pdfr-1 mutant males, suggesting PDF-1 acts via cAMP signaling. However, acy-1(gf) cannot overcome starvation-induced suppression of daf-7, suggesting starvation acts downstream or parallel to PDFR-1-ACY-1 signaling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raises significant concerns about pathway placement: 'While the interpretation that acy-1 acts downstream of pdfr-1 is consistent with these data, it's also possible that multiple pathways...might act via cAMP production' and notes that 'cAMP (Khanna Sci Reports, 2016) can affect daf-7 expression in ASI.' Reviewer 1 requests clarifying experiments (essential #3): 'are the effects of acy-1(gf) suppressed by starvation? Does acy-1(lf) block the effect of PA14 or pdfr-1 overexpression in hermaphrodites?' and suggests modifying the model figure to 'clearly indicate that the inclusion of acy-1 is based on inferring the effects of acy(gf) overexpression.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "a9dfd560-8e67-4e28-a914-c37d9ae9fbb3",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Epistasis analysis shows that daf-7 mutation suppresses the enhanced mate-searching behavior caused by PDF-1 overexpression, but daf-7 overexpression in ASJ cannot rescue pdf-1 mutant defects, suggesting PDF-1 regulates mate-searching both through daf-7 and through parallel mechanisms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 requests additional behavioral rescue experiments (essential #4): 'does acy-1(gf) or daf-7 expression in ASJ suppress the leaving phenotype of pdfr-1 or pdf-1 mutants?' Reviewer 2 similarly asks: 'can the food leaving defects of pdfr-1 mutants be rescued by expression of pdfr-1 or daf-7 only in ASJ?' These requests indicate the epistasis analysis is incomplete and the parallel pathway conclusion needs further support.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "90bde1dc-ed58-4253-885f-8320879f9b23",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "PDF-1 signaling is not required for pathogen-induced upregulation of daf-7 in ASJ or for pathogen avoidance behavior in either sex, demonstrating sex-specific regulation where PDF-1 affects male mate-searching but not shared pathogen avoidance responses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this sex-specific finding but request additional data. Reviewer 2 notes it is 'less important' but requests: 'The authors should show the behavioural phenotype of pdf-1 and pdfr-1 mutant males in the pathogenic bacteria avoidance assay like they do for hermaphrodites (Figure 1E).' The core claim is not challenged, only the completeness of the data presentation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "38b99850-ad36-473f-a51a-26ff8fa0f315",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Overexpression of pdfr-1 cDNA (but not genomic pdfr-1) in hermaphrodite ASJ neurons is sufficient to induce daf-7 expression, suggesting PDFR-1 expression in ASJ is sufficient to allow daf-7 expression even in the inappropriate hermaphrodite context.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 challenges the interpretation of these overexpression experiments, stating they 'could be an overexpression phenotype that does not reflect the endogenous mechanism.' Reviewer 2 argues these data are 'more consistent with the model that PDF regulates daf-7 expression in ASJ cell non-autonomously, by acting on other pdfr-1-expressing neurons that are sexually dimorphic,' which contradicts the authors' cell-autonomous model. The sufficiency claim is questioned as potentially artifactual.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "5de1fe30-8ca4-48aa-a058-e3f912f2dd24",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose a model where sexually dimorphic regulation of PDFR-1 in ASJ serves as a gating mechanism, with PDF-1 and DAF-7/TGF\u03b2 pathways acting as a neuroendocrine cascade to regulate sex-specific behavior through sex-shared ASJ neurons.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 states the proposed model 'is not fully consistent with some of their previous findings' and notes that previous sex-transformation experiments showed 'masculinization of ASJ alone is not sufficient for daf-7 to come on...indicating there is cell non-autonomous regulation.' The model is challenged as potentially incorrect, pending the essential experiments requested to clarify cell-autonomy and pathway hierarchy.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9",
+      "content_id": "4e0c6656-f63e-4b6d-b034-2918e3b01e14",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about daf-7 function, PDF-1 pathway components and their known roles, sexual dimorphism in nervous systems, and comparative findings in other species provide established context for the study.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are based on prior published work and established knowledge. Reviewers do not challenge any of these background claims. Reviewer 1 describes the work as 'a nice follow up to the authors' previous paper,' implicitly accepting the foundational context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "748a6fe0-ecf0-4619-b1df-9d5af778f604",
+      "result_id": "6693e912-8de7-4009-81d5-2860e329985d"
+    },
+    {
+      "claim_id": "28e429e4-f1c9-4d43-825d-a5c1c53a6592",
+      "result_id": "6693e912-8de7-4009-81d5-2860e329985d"
+    },
+    {
+      "claim_id": "26d7c8ce-83e1-4eb5-a675-5bcab91a78df",
+      "result_id": "6693e912-8de7-4009-81d5-2860e329985d"
+    },
+    {
+      "claim_id": "f76f7728-d5a2-4f3c-ad25-09745ff95421",
+      "result_id": "6693e912-8de7-4009-81d5-2860e329985d"
+    },
+    {
+      "claim_id": "5dea233c-26f0-4009-a5e5-4197b4a932cf",
+      "result_id": "6693e912-8de7-4009-81d5-2860e329985d"
+    },
+    {
+      "claim_id": "60fc16bb-11ff-4ebc-adec-54d9a30224a6",
+      "result_id": "6693e912-8de7-4009-81d5-2860e329985d"
+    },
+    {
+      "claim_id": "c4ba94f0-cd1f-4134-af71-79fa2fe23f8b",
+      "result_id": "6693e912-8de7-4009-81d5-2860e329985d"
+    },
+    {
+      "claim_id": "304cb6ed-acb9-487a-9e3b-44d73096d463",
+      "result_id": "a1c047f4-fc16-43e2-917b-fb9525fc3061"
+    },
+    {
+      "claim_id": "301fb2ce-0cdd-4286-b865-7fbb71aaa826",
+      "result_id": "a1c047f4-fc16-43e2-917b-fb9525fc3061"
+    },
+    {
+      "claim_id": "bd188e13-1750-4912-8b85-462837ca7be4",
+      "result_id": "a1c047f4-fc16-43e2-917b-fb9525fc3061"
+    },
+    {
+      "claim_id": "9ef1a1c4-9991-4426-9495-b977350f53c9",
+      "result_id": "a1c047f4-fc16-43e2-917b-fb9525fc3061"
+    },
+    {
+      "claim_id": "96e07798-4384-4436-af58-3852a3e6db87",
+      "result_id": "a1c047f4-fc16-43e2-917b-fb9525fc3061"
+    },
+    {
+      "claim_id": "0688f744-d5fb-47e8-ba7f-fc39d6f35268",
+      "result_id": "a1c047f4-fc16-43e2-917b-fb9525fc3061"
+    },
+    {
+      "claim_id": "e695f5fc-2940-419b-9bd8-c79a52420aa0",
+      "result_id": "a1c047f4-fc16-43e2-917b-fb9525fc3061"
+    },
+    {
+      "claim_id": "4b1cb24d-827f-46df-9d3a-8447635981a3",
+      "result_id": "4af5e284-7c49-4ab9-92dd-4b427968b3f4"
+    },
+    {
+      "claim_id": "96110397-62be-4bbd-8331-7e86418a291c",
+      "result_id": "4af5e284-7c49-4ab9-92dd-4b427968b3f4"
+    },
+    {
+      "claim_id": "24cc8341-cf60-4903-9254-7e637252f72e",
+      "result_id": "4af5e284-7c49-4ab9-92dd-4b427968b3f4"
+    },
+    {
+      "claim_id": "fafd9c3c-b13e-4bc9-90c1-a0c737836aad",
+      "result_id": "4af5e284-7c49-4ab9-92dd-4b427968b3f4"
+    },
+    {
+      "claim_id": "b7b545bb-eb95-4631-9fd7-1adb36900bff",
+      "result_id": "2e0e4e4e-1263-41a3-ba68-e1742619b539"
+    },
+    {
+      "claim_id": "5f8600f4-6fe2-448f-856b-3dab7b02f482",
+      "result_id": "2e0e4e4e-1263-41a3-ba68-e1742619b539"
+    },
+    {
+      "claim_id": "f7a916a6-a286-49bf-98e0-96d8854ac513",
+      "result_id": "2e0e4e4e-1263-41a3-ba68-e1742619b539"
+    },
+    {
+      "claim_id": "883e4ed1-d75a-48cf-b87c-881a5c9eeed9",
+      "result_id": "2e0e4e4e-1263-41a3-ba68-e1742619b539"
+    },
+    {
+      "claim_id": "0fc703f4-9a5e-40ee-9a25-6c1a130b8a57",
+      "result_id": "2e0e4e4e-1263-41a3-ba68-e1742619b539"
+    },
+    {
+      "claim_id": "f2f8e239-6d89-49bc-9c81-488ee8de1c75",
+      "result_id": "4795e4ed-3bae-4c20-af65-ac0cc69b21ba"
+    },
+    {
+      "claim_id": "e0ff6b1f-fbb8-4be0-9de8-810090528930",
+      "result_id": "4795e4ed-3bae-4c20-af65-ac0cc69b21ba"
+    },
+    {
+      "claim_id": "23ebb4ab-6306-41c9-9776-5d23d8589de7",
+      "result_id": "4795e4ed-3bae-4c20-af65-ac0cc69b21ba"
+    },
+    {
+      "claim_id": "ecf21d50-e609-4777-86bf-b25b2999e6ed",
+      "result_id": "4795e4ed-3bae-4c20-af65-ac0cc69b21ba"
+    },
+    {
+      "claim_id": "8ae90352-11b2-450c-9804-a19d22508caf",
+      "result_id": "dde5abff-401e-4450-9c41-5b9fed807808"
+    },
+    {
+      "claim_id": "52ec1b40-055f-4c97-9cd7-49205a218634",
+      "result_id": "dde5abff-401e-4450-9c41-5b9fed807808"
+    },
+    {
+      "claim_id": "7269ff92-ba41-497f-b098-e3aef4dfb47a",
+      "result_id": "dde5abff-401e-4450-9c41-5b9fed807808"
+    },
+    {
+      "claim_id": "8184ad3d-5631-41d8-8711-59265ef37dc5",
+      "result_id": "dde5abff-401e-4450-9c41-5b9fed807808"
+    },
+    {
+      "claim_id": "b7121343-211f-419a-86a2-cf86cc20f485",
+      "result_id": "dde5abff-401e-4450-9c41-5b9fed807808"
+    },
+    {
+      "claim_id": "27fa25d4-752d-434e-90ec-ef9a25e9bb1d",
+      "result_id": "3f5404b0-04a3-434e-8c17-b4063c22706f"
+    },
+    {
+      "claim_id": "d4ed257b-137e-4d28-8a64-d46475049b52",
+      "result_id": "3f5404b0-04a3-434e-8c17-b4063c22706f"
+    },
+    {
+      "claim_id": "42f444d0-f1c4-4198-bb1e-56b383b2b6db",
+      "result_id": "3f5404b0-04a3-434e-8c17-b4063c22706f"
+    },
+    {
+      "claim_id": "cadd970f-9212-469f-9ea6-c0f0f5ba542b",
+      "result_id": "3f5404b0-04a3-434e-8c17-b4063c22706f"
+    },
+    {
+      "claim_id": "24614255-d16f-4ae3-9d1e-470c585d374e",
+      "result_id": "42d9810c-2704-4399-b931-7663ba3c594e"
+    },
+    {
+      "claim_id": "e4328de9-41a7-4480-9f50-6a41d916d2eb",
+      "result_id": "42d9810c-2704-4399-b931-7663ba3c594e"
+    },
+    {
+      "claim_id": "73f0ae2f-8599-4731-8bd5-81d64ea35cfa",
+      "result_id": "42d9810c-2704-4399-b931-7663ba3c594e"
+    },
+    {
+      "claim_id": "a654ffb7-6814-4ce9-81b7-4bf00e01db9d",
+      "result_id": "42d9810c-2704-4399-b931-7663ba3c594e"
+    },
+    {
+      "claim_id": "7989c78f-5825-4d76-a7c9-35dd45d39e57",
+      "result_id": "42d9810c-2704-4399-b931-7663ba3c594e"
+    },
+    {
+      "claim_id": "1fec74f4-712b-494c-b184-c665d159f7f3",
+      "result_id": "8693a150-c477-43b5-837f-77c3042fc396"
+    },
+    {
+      "claim_id": "efaa8638-b33e-47dc-8fb7-b6b2f56858d9",
+      "result_id": "8693a150-c477-43b5-837f-77c3042fc396"
+    },
+    {
+      "claim_id": "277269e0-5bea-44f7-a2e1-07b4dbdf32c6",
+      "result_id": "8693a150-c477-43b5-837f-77c3042fc396"
+    },
+    {
+      "claim_id": "a7682762-5f3e-4641-a59b-6338e62b8c15",
+      "result_id": "8693a150-c477-43b5-837f-77c3042fc396"
+    },
+    {
+      "claim_id": "e15cc5d5-9b88-493d-a208-895b86acc027",
+      "result_id": "8693a150-c477-43b5-837f-77c3042fc396"
+    },
+    {
+      "claim_id": "62a12688-feae-4a44-b8cb-7481708ec105",
+      "result_id": "8693a150-c477-43b5-837f-77c3042fc396"
+    },
+    {
+      "claim_id": "0e36b241-cb0f-401f-b80c-003cd98d2b16",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "fd19a61b-3c2c-4c9c-a735-552b7b4fb342",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "2d04789f-27fb-452a-aa7a-19ed1fa410a8",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "9d6debb0-3d52-4462-9ce6-262d9851dd92",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "4b834542-eca3-4e2e-bad6-1cdb6dc9fc72",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "0d97f32e-81d3-41b6-96a6-2c39775168fd",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "0e223584-0a65-48e0-8ae6-d75f1f736c34",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "e76701cc-1760-4bfd-9997-9b69d5d94be5",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "ad17292c-09cd-4cf8-ae7c-e4883ca2a839",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "39eab1bf-5c08-4a5c-8931-32e593ba47a5",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "1bdf762e-14a4-42b6-9144-5acff732ceed",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "f2a789ce-7977-41bd-b1e4-35ea9e0488b5",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "72435ac8-db6c-4281-8c7b-d113100023d7",
+      "result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1"
+    },
+    {
+      "claim_id": "2e4e2064-9016-42d3-97e0-c968a043f0ee",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "be3b7263-a46f-4391-bf6b-39619306113d",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "2d559db8-df84-40a3-b4be-8dea45d0bc9b",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "c3056485-f7a2-45db-b935-7820a2aaa516",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "182e4286-1bf9-4c3a-8bd9-f0cb32349bd0",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "278ac776-c6f1-4bf6-83d1-3e9821f6b901",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "fdeef2d3-ffc2-4dd2-a3ab-bcf58e0a2c12",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "9f77b422-2385-4a3f-a295-8e0a9f487497",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "b046606c-bad8-412e-919a-7c819dfdcb79",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "b825fcd0-845b-4936-9932-d2090c64cc94",
+      "result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc"
+    },
+    {
+      "claim_id": "26d7c8ce-83e1-4eb5-a675-5bcab91a78df",
+      "result_id": "9daebe3c-aa89-41e7-ae24-816523c1969e"
+    },
+    {
+      "claim_id": "f76f7728-d5a2-4f3c-ad25-09745ff95421",
+      "result_id": "9daebe3c-aa89-41e7-ae24-816523c1969e"
+    },
+    {
+      "claim_id": "5dea233c-26f0-4009-a5e5-4197b4a932cf",
+      "result_id": "9daebe3c-aa89-41e7-ae24-816523c1969e"
+    },
+    {
+      "claim_id": "60fc16bb-11ff-4ebc-adec-54d9a30224a6",
+      "result_id": "9daebe3c-aa89-41e7-ae24-816523c1969e"
+    },
+    {
+      "claim_id": "304cb6ed-acb9-487a-9e3b-44d73096d463",
+      "result_id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14"
+    },
+    {
+      "claim_id": "301fb2ce-0cdd-4286-b865-7fbb71aaa826",
+      "result_id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14"
+    },
+    {
+      "claim_id": "bd188e13-1750-4912-8b85-462837ca7be4",
+      "result_id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14"
+    },
+    {
+      "claim_id": "9ef1a1c4-9991-4426-9495-b977350f53c9",
+      "result_id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14"
+    },
+    {
+      "claim_id": "96e07798-4384-4436-af58-3852a3e6db87",
+      "result_id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14"
+    },
+    {
+      "claim_id": "0688f744-d5fb-47e8-ba7f-fc39d6f35268",
+      "result_id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14"
+    },
+    {
+      "claim_id": "e695f5fc-2940-419b-9bd8-c79a52420aa0",
+      "result_id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14"
+    },
+    {
+      "claim_id": "27fa25d4-752d-434e-90ec-ef9a25e9bb1d",
+      "result_id": "f330b5c0-02b2-4d1a-b99e-6631c96fca3a"
+    },
+    {
+      "claim_id": "d4ed257b-137e-4d28-8a64-d46475049b52",
+      "result_id": "f330b5c0-02b2-4d1a-b99e-6631c96fca3a"
+    },
+    {
+      "claim_id": "42f444d0-f1c4-4198-bb1e-56b383b2b6db",
+      "result_id": "f330b5c0-02b2-4d1a-b99e-6631c96fca3a"
+    },
+    {
+      "claim_id": "cadd970f-9212-469f-9ea6-c0f0f5ba542b",
+      "result_id": "f330b5c0-02b2-4d1a-b99e-6631c96fca3a"
+    },
+    {
+      "claim_id": "4b1cb24d-827f-46df-9d3a-8447635981a3",
+      "result_id": "1a4d6ce4-a2fe-42c3-b3f4-61c0a8db21c6"
+    },
+    {
+      "claim_id": "96110397-62be-4bbd-8331-7e86418a291c",
+      "result_id": "1a4d6ce4-a2fe-42c3-b3f4-61c0a8db21c6"
+    },
+    {
+      "claim_id": "24cc8341-cf60-4903-9254-7e637252f72e",
+      "result_id": "1a4d6ce4-a2fe-42c3-b3f4-61c0a8db21c6"
+    },
+    {
+      "claim_id": "fafd9c3c-b13e-4bc9-90c1-a0c737836aad",
+      "result_id": "1a4d6ce4-a2fe-42c3-b3f4-61c0a8db21c6"
+    },
+    {
+      "claim_id": "f2f8e239-6d89-49bc-9c81-488ee8de1c75",
+      "result_id": "a9dfd560-8e67-4e28-a914-c37d9ae9fbb3"
+    },
+    {
+      "claim_id": "e0ff6b1f-fbb8-4be0-9de8-810090528930",
+      "result_id": "a9dfd560-8e67-4e28-a914-c37d9ae9fbb3"
+    },
+    {
+      "claim_id": "23ebb4ab-6306-41c9-9776-5d23d8589de7",
+      "result_id": "a9dfd560-8e67-4e28-a914-c37d9ae9fbb3"
+    },
+    {
+      "claim_id": "ecf21d50-e609-4777-86bf-b25b2999e6ed",
+      "result_id": "a9dfd560-8e67-4e28-a914-c37d9ae9fbb3"
+    },
+    {
+      "claim_id": "8ae90352-11b2-450c-9804-a19d22508caf",
+      "result_id": "90bde1dc-ed58-4253-885f-8320879f9b23"
+    },
+    {
+      "claim_id": "52ec1b40-055f-4c97-9cd7-49205a218634",
+      "result_id": "90bde1dc-ed58-4253-885f-8320879f9b23"
+    },
+    {
+      "claim_id": "7269ff92-ba41-497f-b098-e3aef4dfb47a",
+      "result_id": "90bde1dc-ed58-4253-885f-8320879f9b23"
+    },
+    {
+      "claim_id": "8184ad3d-5631-41d8-8711-59265ef37dc5",
+      "result_id": "90bde1dc-ed58-4253-885f-8320879f9b23"
+    },
+    {
+      "claim_id": "b7121343-211f-419a-86a2-cf86cc20f485",
+      "result_id": "90bde1dc-ed58-4253-885f-8320879f9b23"
+    },
+    {
+      "claim_id": "c4ba94f0-cd1f-4134-af71-79fa2fe23f8b",
+      "result_id": "90bde1dc-ed58-4253-885f-8320879f9b23"
+    },
+    {
+      "claim_id": "b7b545bb-eb95-4631-9fd7-1adb36900bff",
+      "result_id": "38b99850-ad36-473f-a51a-26ff8fa0f315"
+    },
+    {
+      "claim_id": "5f8600f4-6fe2-448f-856b-3dab7b02f482",
+      "result_id": "38b99850-ad36-473f-a51a-26ff8fa0f315"
+    },
+    {
+      "claim_id": "f7a916a6-a286-49bf-98e0-96d8854ac513",
+      "result_id": "38b99850-ad36-473f-a51a-26ff8fa0f315"
+    },
+    {
+      "claim_id": "883e4ed1-d75a-48cf-b87c-881a5c9eeed9",
+      "result_id": "38b99850-ad36-473f-a51a-26ff8fa0f315"
+    },
+    {
+      "claim_id": "0fc703f4-9a5e-40ee-9a25-6c1a130b8a57",
+      "result_id": "38b99850-ad36-473f-a51a-26ff8fa0f315"
+    },
+    {
+      "claim_id": "24614255-d16f-4ae3-9d1e-470c585d374e",
+      "result_id": "5de1fe30-8ca4-48aa-a058-e3f912f2dd24"
+    },
+    {
+      "claim_id": "e4328de9-41a7-4480-9f50-6a41d916d2eb",
+      "result_id": "5de1fe30-8ca4-48aa-a058-e3f912f2dd24"
+    },
+    {
+      "claim_id": "73f0ae2f-8599-4731-8bd5-81d64ea35cfa",
+      "result_id": "5de1fe30-8ca4-48aa-a058-e3f912f2dd24"
+    },
+    {
+      "claim_id": "a654ffb7-6814-4ce9-81b7-4bf00e01db9d",
+      "result_id": "5de1fe30-8ca4-48aa-a058-e3f912f2dd24"
+    },
+    {
+      "claim_id": "7989c78f-5825-4d76-a7c9-35dd45d39e57",
+      "result_id": "5de1fe30-8ca4-48aa-a058-e3f912f2dd24"
+    },
+    {
+      "claim_id": "1fec74f4-712b-494c-b184-c665d159f7f3",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "efaa8638-b33e-47dc-8fb7-b6b2f56858d9",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "277269e0-5bea-44f7-a2e1-07b4dbdf32c6",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "a7682762-5f3e-4641-a59b-6338e62b8c15",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "0e36b241-cb0f-401f-b80c-003cd98d2b16",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "e15cc5d5-9b88-493d-a208-895b86acc027",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "62a12688-feae-4a44-b8cb-7481708ec105",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "fd19a61b-3c2c-4c9c-a735-552b7b4fb342",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "2d04789f-27fb-452a-aa7a-19ed1fa410a8",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "9d6debb0-3d52-4462-9ce6-262d9851dd92",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "4b834542-eca3-4e2e-bad6-1cdb6dc9fc72",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "0d97f32e-81d3-41b6-96a6-2c39775168fd",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "0e223584-0a65-48e0-8ae6-d75f1f736c34",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "e76701cc-1760-4bfd-9997-9b69d5d94be5",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "ad17292c-09cd-4cf8-ae7c-e4883ca2a839",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "39eab1bf-5c08-4a5c-8931-32e593ba47a5",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "1bdf762e-14a4-42b6-9144-5acff732ceed",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "f2a789ce-7977-41bd-b1e4-35ea9e0488b5",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "72435ac8-db6c-4281-8c7b-d113100023d7",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "2e4e2064-9016-42d3-97e0-c968a043f0ee",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "be3b7263-a46f-4391-bf6b-39619306113d",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "2d559db8-df84-40a3-b4be-8dea45d0bc9b",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "c3056485-f7a2-45db-b935-7820a2aaa516",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "182e4286-1bf9-4c3a-8bd9-f0cb32349bd0",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "278ac776-c6f1-4bf6-83d1-3e9821f6b901",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "fdeef2d3-ffc2-4dd2-a3ab-bcf58e0a2c12",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "9f77b422-2385-4a3f-a295-8e0a9f487497",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "b046606c-bad8-412e-919a-7c819dfdcb79",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    },
+    {
+      "claim_id": "b825fcd0-845b-4936-9932-d2090c64cc94",
+      "result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "a4fde5f6-dc8c-4f05-a8ca-0fec1ffe04a6",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6693e912-8de7-4009-81d5-2860e329985d",
+      "peer_result_id": "9daebe3c-aa89-41e7-ae24-816523c1969e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the core finding that PDF signaling regulates daf-7 expression specifically in ASJ neurons and specifically in males (C8-C11). OpenEval emphasizes the experimental evidence from Figure 1B-C, while peer reviewers explicitly state this is 'convincing evidence' that forms the foundation for their subsequent critiques. Strong agreement on this fundamental claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "88dde573-0bbd-4a68-98c5-ea2f8c97fd02",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a1c047f4-fc16-43e2-917b-fb9525fc3061",
+      "peer_result_id": "8dda6cb4-8743-4a97-98ef-8f329ba79c14",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on cell-autonomous action (C26-C32). OpenEval finds the evidence SUPPORTED through multiple complementary approaches (rescue, RNAi, Cre-mediated deletion). Peer Reviewer 2 rates this UNCERTAIN, explicitly challenging the conclusion and stating overexpression 'could be an overexpression phenotype that does not reflect the endogenous mechanism.' Reviewer requests additional necessity experiments (ASJ-specific RNAi) as essential experiment #2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "aabb0889-43c1-4ec8-8a13-dbfbc2a404a3",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "4af5e284-7c49-4ab9-92dd-4b427968b3f4",
+      "peer_result_id": "1a4d6ce4-a2fe-42c3-b3f4-61c0a8db21c6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on epistasis analysis and pathway placement (C35-C39). OpenEval finds the logic sound and data consistent with PDFR-1\u2192ACY-1\u2192DAF-7 hierarchy. Peer Reviewer 1 rates UNCERTAIN, noting 'it's also possible that multiple pathways...might act via cAMP production' and requests clarifying experiments (essential #3) including whether acy-1(gf) effects are suppressed by starvation and whether acy-1(lf) blocks other pathway manipulations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "3d55dc2f-a11a-469a-b8d7-2835bbda362c",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "2e0e4e4e-1263-41a3-ba68-e1742619b539",
+      "peer_result_id": "38b99850-ad36-473f-a51a-26ff8fa0f315",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Strong disagreement on PDFR-1 sufficiency claims (C42-C45, C62). OpenEval finds the overexpression data well-supported with appropriate controls. Peer Reviewer 2 rates UNCERTAIN, arguing these data 'could be an overexpression phenotype' and are 'more consistent with the model that PDF regulates daf-7 expression in ASJ cell non-autonomously,' directly contradicting the authors' cell-autonomous interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "da061ff8-3a64-4165-ab91-1008ee2ea46c",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4795e4ed-3bae-4c20-af65-ac0cc69b21ba",
+      "peer_result_id": "a9dfd560-8e67-4e28-a914-c37d9ae9fbb3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial disagreement on epistasis completeness (C13-C16). OpenEval finds the bidirectional epistasis logically sound and SUPPORTED. Peer reviewers rate UNCERTAIN, not challenging the logic but requesting additional behavioral rescue experiments (essential #4): whether acy-1(gf) or daf-7 expression in ASJ can suppress leaving phenotypes of pdfr-1/pdf-1 mutants. The epistasis analysis is viewed as incomplete.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "288e1f6c-e9d4-4728-bc87-14fbf63ea84b",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "dde5abff-401e-4450-9c41-5b9fed807808",
+      "peer_result_id": "90bde1dc-ed58-4253-885f-8320879f9b23",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on sex-specific pathogen response (C18-C22). Both evaluations support the finding that PDF-1 pathway mutants maintain normal daf-7 induction and pathogen avoidance. Peer reviewers accept the core claim but request additional data presentation (male behavioral phenotypes in pathogen assay), described as 'less important.' Minor concern about data completeness rather than validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "c7996ba9-275e-4205-9c6f-a2a40d8fe24e",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "3f5404b0-04a3-434e-8c17-b4063c22706f",
+      "peer_result_id": "f330b5c0-02b2-4d1a-b99e-6631c96fca3a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on limitations of FISH data (C68-C71). Both evaluations rate UNCERTAIN. OpenEval notes the low detection rate (20% of males) is 'difficult to reconcile with the robust functional requirement' and acknowledges technical limitations. Peer Reviewer 2 states 'the smFISH experiments are not totally convincing' and requests proper quantification and demonstration of overlap with ASJ markers (essential experiment #1).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "aa856ae2-18c8-4b89-9f6f-0e3d2be363e8",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "42d9810c-2704-4399-b931-7663ba3c594e",
+      "peer_result_id": "5de1fe30-8ca4-48aa-a058-e3f912f2dd24",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on integrative model validity (C60-C65). OpenEval finds the gating mechanism model SUPPORTED by collective experimental evidence and provides a 'coherent framework.' Peer Reviewer 2 rates UNCERTAIN, stating the model 'is not fully consistent with some of their previous findings' regarding sex-transformation experiments showing masculinization of ASJ alone is insufficient, indicating 'cell non-autonomous regulation.' Model validity depends on resolving essential experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "f9f0bd84-fa8b-40eb-8b2c-b58e979a040a",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "8693a150-c477-43b5-837f-77c3042fc396",
+      "peer_result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Full agreement on background claims from prior work (C1-C4, C12, C17). Both evaluations support these contextual claims as appropriately cited and established. OpenEval notes they are 'supported by citations to prior work' and peer reviewers implicitly accept them, describing the work as 'a nice follow up to the authors' previous paper.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "487aa6fb-b454-4adf-90bb-a13c48cf8108",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "1b6e91cf-0f4d-41a1-a0c9-19cd772346a1",
+      "peer_result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Full agreement on background literature claims (C5, C24-C25, C33-C34, C40-C41, C46-C51). Both evaluations support these as appropriately cited prior knowledge. OpenEval confirms they 'establish the known functions of PDF-1 signaling' and peer reviewers do not challenge any background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    },
+    {
+      "id": "502dc3d9-bb27-4ee4-b665-76c85f3b0d92",
+      "submission_id": "bf156cb5-212c-4405-8636-240795e0e66a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "067ea386-e4e6-4eef-91cc-d9d290a8c0cc",
+      "peer_result_id": "f4f57941-1afa-4e4f-bb47-bba9ccfa19b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Full agreement on contextual and comparative claims (C52-C59, C66-C67). Both evaluations support these as established knowledge with appropriate citations. OpenEval notes they 'provide important framing for the significance' and peer reviewers accept the foundational context without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T22:44:27.527473Z"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "SuhB associates with the CRISPR-II boxA region in S. Typhimurium. ChIP-qPCR data show robust SuhB association downstream of the putative boxA in CRISPR-II but not at the rpsA control gene, and this association is substantially reduced by a single base pair substitution in the boxA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns about inferring Nus factor involvement from SuhB occupancy alone, noting that 'it is unclear whether SuhB is always associated with Nus antitermination complexes, or if it might work alone.' They requested either additional experiments to test for relevant Nus factor(s) at the boxA sequences or clearer text about the role of SuhB versus the inferred role of Nus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "BoxA-mediated antitermination prevents Rho termination in CRISPR arrays. Reporter fusion assays show that mutation of the boxA substantially reduces expression of a long fusion (spanning 11 spacers) but not a short fusion (2 spacers) in the absence of BCM, while BCM treatment equalizes expression. Additionally, BCM increases expression even with an intact boxA, suggesting some Rho termination occurs upstream of the boxA and that Nus factors cannot prevent all Rho termination events.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned whether the mechanism is truly antitermination versus an alternative role for SuhB in crRNA maturation, noting 'the data might equally support the possibility that SuhB facilitates/stimulates crRNA maturation rather than promoting antitermination.' They requested either RNAP occupancy data at promoter-proximal vs -distal spacers or testing of CRISPR RNA processing efficiency, or tempering the conclusion. The large BCM effect also prompted requests for control transcripts to assess specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mutation of the CRISPR-II boxA reduces Cascade binding to chromosomal sites associated with distal spacers (9-23) but not proximal spacers (1-2) or CRISPR-I spacers. ChIP-seq data show 3.7- to 10.7-fold decreases in Cas5 binding for spacers 9-23, which is reversed by BCM treatment. BCM treatment of wild-type cells also increases Cascade binding to these spacers, indicating the BoxA prevents only a subset of Rho termination events.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers found the ChIP-seq data convincing, stating 'the results are convincing' and 'the paper is well written.' However, they requested clarification of statistical methods, noting 'it is less clear which of the blue data points cluster away from the orange data points in a statistically significant manner' in some figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mutation of the CRISPR-I boxA reduces Cascade binding to chromosomal sites associated with spacers 9-17, with the effect increasing as a function of spacer position. The effect is reversed by BCM treatment. Unexpectedly, spacers 18-23 are unaffected, suggesting an additional promoter within spacer 16 or 17. The overall effect is smaller than for CRISPR-II, suggesting more RNAP evades Rho termination at CRISPR-I.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these findings as part of the convincing ChIP-seq data demonstrating the role of Rho and Nus in CRISPR transcription. The observation of an additional promoter was noted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mutation of nusE reduces Cascade binding to distal spacers from both CRISPR arrays, with the effect being smaller than boxA mutations. Complementation with wild-type NusE or BCM treatment reverses the effect, confirming that Nus factors prevent premature Rho termination of CRISPR arrays and impact the ability to use the majority of spacers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns about the interpretation of Nus factor involvement, requesting either additional experiments to test for relevant Nus factor(s) or clearer text about the role of SuhB versus Nus. The inability to delete nusB or suhB was noted, and the partial effect of the nusE mutation was acknowledged but not fully resolved in terms of mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In V. cholerae, spacers 1-37 are active in CRISPR immunity, but mutation of the boxA renders spacers 20-37 largely ineffective. Conjugation efficiency assays show that spacers 20-37 have 44.5- to 262-fold higher conjugation efficiencies in the boxA mutant, with spacers 28-36 showing complete loss of interference. This demonstrates that an intact boxA is needed to prevent premature Rho termination and maintain spacer effectiveness.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers found this functional demonstration of the impact on CRISPR immunity convincing and did not raise specific concerns about these V. cholerae experiments. The data directly support the biological relevance of the antitermination mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C107"
+    ],
+    "result": "A boxA motif matching the E. coli consensus is strongly enriched upstream of CRISPR arrays in 52 of 187 bacterial genera examined, predominantly in Proteobacteria, Bacteroidetes, and Cyanobacteria. This indicates BoxA-mediated antitermination of CRISPR arrays is distributed broadly across the bacterial kingdom.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised significant concerns about the computational approach, noting that the analysis 'was generated while working under the assumption that CRISPR arrays appear downstream of cas2' which 'excludes many systems with slightly different genomic architectures.' They requested 'a more unbiased approach' searching 'directly upstream of the first repeat in a CRISPR array' and clarification of which CRISPR Type(s) harbor boxA sequences. They also questioned the phylogenetic analysis, requesting it be performed on SuhB rather than NusB since SuhB was detected at the boxA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Fifty of 52 species with putative boxA sequences have at least one type I CRISPR system, while none of the 15 species with only type II-C systems have boxA sequences. Type II-C systems have CRISPR arrays oriented opposite to cas2 and contain repeat-internal promoters, which may provide an alternative mechanism to avoid Rho termination.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers requested clarification of which CRISPR Type(s) were found to harbor boxA sequences and how this relates to the work by Lin et al., 2019. The explanation about type II-C systems was accepted as a reasonable hypothesis for why these systems lack boxA sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Rho termination provides selective pressure against increased CRISPR array length in bacteria.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenged this claim, stating 'the possible role of Rho in limiting adaption seems indirect at best' and noting that 'the role of Nus would be expected to have an opposing impact on CRISPR length, so it is unclear how this explains an abundance of short CRISPRs.' In the second round, the editor stated 'Data presented by the authors, clearly demonstrates that Rho limits the length of CRISPR transcripts and Nus antagonizes Rho-dependent termination, but as the reviewer points out, the possible role of Rho in limiting adaption (i.e., length of the CRISPR locus) seems indirect at best.' The editor requested that speculation be omitted from the Abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ChIP-qPCR data for RNAP indicate that transcription continues through the boxA into the CRISPR array in the engineered S. Typhimurium strain. In wild-type cells lacking the constitutive promoter, there is little RNAP occupancy within the CRISPR array, suggesting no active promoter between cas2 and the start of the array.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested clarification about the engineered promoter system, asking to 'explain where the natural transcriptional start sites are located relative to the engineered promoter' and questioning 'what is the relevance of a GC-rich Rut if it is upstream of the natural promoter?' They also requested data for the H-NS knockout or an explanation for its omission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "S. Typhimurium Cascade binds to 236 chromosomal regions, with binding sites associated with five enriched sequence motifs corresponding to a PAM (AWG) and seed regions of spacers 1, 2, 3, 4, and 11 from CRISPR-I. 152 binding sites were uniquely associated with single spacers, and deletion of CRISPR-I specifically reduced Cas5 association at sites assigned to CRISPR-I spacers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers found this ChIP-seq characterization convincing and did not raise specific concerns about the Cascade binding data or PAM identification. This provided the foundation for assessing spacer effectiveness in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Nus factors are broadly conserved across bacteria, as shown by phylogenetic analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned the phylogenetic analysis, noting that 'it was SuhB which was detected at the CRISPR-II boxA sequence' and requesting that 'the phylogenetic analysis should be performed on SuhB' rather than NusB. They suggested 'phylogenetic comparisons of CRISPRs, BoxA, SuhB and NusB may be necessary to speculate about the widespread distribution of this mechanism.'",
+    "result_type": "MINOR"
+  }
+]

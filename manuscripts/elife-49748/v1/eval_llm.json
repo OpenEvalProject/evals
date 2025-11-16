@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C80",
+      "C81"
+    ],
+    "result": "The 14 clinical UPEC isolates showed high genetic diversity, with strains belonging to three phylogroups, 13 sequence types, and 13 serogroups. The majority (10/14) belonged to the B2 phylogroup, consistent with previous studies. B1 strains carried fewer virulence factors than B2 strains, suggesting UTIs can be established by UPEC strains with vastly diverse virulence genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C80, and C81 are well-supported by phylogenetic analysis, MLST typing, serotyping data (Tables 1-2, Figure 1\u2014figure supplement 2), and virulence factor presence/absence analysis (Figure 1A). The findings are consistent with cited literature (Foxman 2010; Schreiber et al. 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Genetically diverse UPEC strains share a common transcriptional program during human UTI. High gene expression correlation was observed for the core genome (but not accessory genome) across all 14 patient samples (median 0.91), which was distinct from in vitro urine cultures (median correlation between conditions 0.73-0.74). PCA analysis confirmed patient samples form a tight cluster distinct from in vitro cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C22 are strongly supported by Pearson correlation analysis (Figure 2A-D) and PCA (Figure 2E) of RNA-seq data from 14 patient samples and matched in vitro cultures. The statistical measures are clearly reported with specific median values, and the conclusion is independently confirmed by two complementary analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C32",
+      "C34"
+    ],
+    "result": "The in vivo gene expression program is marked by upregulation of translational machinery. Differential expression analysis identified 492 differentially expressed genes, with 30% of upregulated genes (48/149) being ribosomal proteins. Almost 25% of core genome reads mapped to r-proteins during infection versus only 7% during exponential growth in urine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23, C24, C32, and C34 are supported by DESeq2 differential expression analysis (Figure 3A-B, Table 5) and read mapping analysis (Figure 4B). The statistical cutoffs are clearly defined (log2 FC > 2, adjusted p < 0.05), and the proportions are calculated from RNA-seq data. The findings are consistent across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C35",
+      "C36"
+    ],
+    "result": "Infection-specific downregulation of metabolic pathways was observed, including amino acid biosynthesis and sugar metabolism, with a switch from sugar transporters to amino acid transporters. The proportion of core genome reads dedicated to catabolic genes decreased from 20% in vitro to 11% in patients, and amino acid biosynthesis genes decreased from 5% to 1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C35, and C36 are supported by differential expression analysis (Figure 3B), pathway analysis (Table 5), and read proportion calculations (Figure 4C-D). The specific percentages are clearly reported and the patterns are consistent across multiple functional categories. Four sugar transporters (C27) were exceptions, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C62",
+      "C87"
+    ],
+    "result": "The authors propose that upregulation of translational machinery provides a mechanism for rapid UPEC growth within the host, facilitated by switching to a more specialized catabolism and scavenging lifestyle. Resource reallocation from metabolic gene expression to replication/translational machinery is proposed to drive rapid growth during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C38, C62, and C87 represent mechanistic interpretations of the observed data. While the transcriptional changes are well-documented (C4, C23-C26, C34-C36), the causal link to growth rate is inferred rather than directly demonstrated. However, the interpretation is reasonable given: (1) the magnitude of ribosomal upregulation, (2) consistency with bacterial growth laws (C63-C64), (3) support from cited literature on UPEC growth rates (Burnham et al. 2018; Forsyth et al. 2018), and (4) validation in mouse model (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C60"
+    ],
+    "result": "Approximately 50% of total reads mapped to the core genome regardless of whether bacteria were isolated from patients or cultured in vitro, indicating a fixed proportion of cellular resources dedicated to core genome expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C60 are supported by RNA-seq alignment analysis (Figure 4A). The finding is consistent across all samples and provides important context for understanding resource allocation. However, the interpretation that this represents 'fixed cellular resources' (C60) is somewhat speculative, as RNA abundance doesn't directly measure resource allocation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C59",
+      "C73"
+    ],
+    "result": "Analysis of a previously published dataset (Subashchandrabose et al. 2014) showed consistent trends of increased r-protein production and decreased catabolic enzyme expression during human UTI. UPEC maintain conserved gene expression during UTI and grow faster in the host compared to in vitro conditions, consistent across multiple studies and patient cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C59, and C73 are supported by reanalysis of published data (Figure 4\u2014figure supplement 1, Tables 6-7) and consistency with cited literature (Bielecki et al. 2014; Burnham et al. 2018; Forsyth et al. 2018). The replication across independent datasets strengthens the main findings. However, one outlier sample (HM26) with only 2% r-protein reads is noted but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Growth rate experiments with strain HM43 showed doubling times of 33 min in LB and 54 min in urine. The proportion of r-protein transcripts was approximately three times larger in LB than urine, but still significantly lower than during infection. Mouse infection exhibited r-protein expression similar to human infection. Exponential growth in rich medium alone cannot recapitulate the transcriptional signature observed during human infection, indicating the resource reallocation is infection-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by growth curve measurements (Figure 5A), RNA-seq analysis of HM43 under different conditions (Figure 5B-C), and mouse UTI model data (Tables 8-9). The experiments directly test whether growth rate alone explains the transcriptional changes and demonstrate that the infection-specific pattern is not simply due to rapid growth. The negative correlation between r-protein and catabolic gene expression (C44) is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Gene set enrichment analysis identified 22 transcriptional factors whose regulon expression differed between infection and in vitro cultures. 18/22 regulons were expressed at higher levels in vitro, accounting for 50% of downregulated genes. Expression of catabolic genes controlled by the Crp regulator was lower in patients, suggesting catabolite repression plays an important role in bacterial growth rate during UTI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by GSEA analysis (Table 10, Figure 6). The statistical analysis is appropriate and the proportions are clearly calculated. The interpretation regarding Crp and catabolite repression (C52) is reasonable given the data and cited literature (You et al. 2013), though the causal role is inferred rather than experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C76"
+    ],
+    "result": "The authors propose that the infection-specific gene expression program may be driven by environmental signals sensed by regulators such as NarL, ModE, MetJ, GadE, and YdeO. Simultaneous sensing of multiple environmental cues leads to global down-regulation of metabolic regulons, freeing cellular resources (e.g., RNA polymerase) for allocation to genes required for rapid growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55 and C76 represent a proposed model based on regulon analysis showing multiple environment-responsive regulators are differentially expressed. While the identification of these regulators is data-supported (C47-C48), the mechanistic model of how they coordinate resource reallocation is speculative. The authors appropriately acknowledge this is a proposed model (C54-C55 use 'propose'), but direct experimental validation of the environmental signals and their coordinated action is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors propose that the observed resource reallocation is equivalent to the bacterial 'growth law,' where increases in ribosomal gene expression occur at the expense of metabolic gene expression. They propose that decreased metabolic gene expression allows reallocation of RNA polymerase toward rRNA synthesis and ribosomal protein expression, representing a common feature adopted by diverse UPEC to promote rapid growth during UTI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 connect the observed data to established bacterial growth theory. The bacterial growth law (C64) is well-established in the literature (Basan 2018; Scott et al. 2010), and the observed patterns (C34-C36) are consistent with this framework. The proposed mechanism involving RNA polymerase competition (C66-C67) is based on cited literature (Jin et al. 2012). While the specific mechanism is not directly tested, the interpretation is reasonable and well-grounded in established theory. The authors appropriately acknowledge alternative mechanisms cannot be excluded (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C85"
+    ],
+    "result": "There was no relationship between patients' previous UTI history and bacterial genotype or gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C85 are supported by analysis of patient history data with bacterial genotyping (Figure 1\u2014figure supplement 2) and PCA analysis showing no clustering by UTI history (Figure 2\u2014figure supplement 3C-D). The negative finding is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Expression of iron acquisition genes was detected in both in vitro and patient samples, with high strain-to-strain variability for some genes (hma, iutA, iucC, fyuA). High fim operon expression (9/14) and low flg operon expression (12/14) were detected in most cases, with one patient (HM07) showing high expression of both, potentially indicating a mixed population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by RNA-seq data (Figure 1B-C). The variability in virulence factor expression is clearly shown and is consistent with cited literature (Subashchandrabose et al. 2014). The interpretation of mixed population in HM07 (C15) is speculative but reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "A core genome of 2653 genes was identified as present in all 14 UPEC strains and the reference E. coli MG1655 strain using get_homologues software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by comparative genomic analysis using established methods (get_homologues). The parameters (90% sequence identity, 50% coverage) are clearly stated and the core genome size is reasonable for E. coli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "High correlation of gene expression was observed between any two isolates cultured in vitro for both core and accessory genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by Pearson correlation analysis (Figure 2A). This is an expected control result showing that identical culture conditions produce similar gene expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "99% of core genome was expressed during in vitro culture versus 94% in patient samples. Patient samples contained a higher proportion of genes expressed at low levels. The majority of differentially expressed genes (343/492) were downregulated in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by RNA-seq data analysis (Figure 2\u2014figure supplement 2). These observations provide important context for understanding the global transcriptional changes. However, the lower expression in patient samples could partially reflect lower sequencing depth in some samples (6/14 did not reach saturation, Figure 2\u2014figure supplement 1), though the authors' quality control analysis suggests this doesn't substantially affect conclusions except for HM66.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "B1 and B2 strains clustered separately in PCA analysis, with a number of genes expressed differentially between phylogroups, suggesting variation in gene regulatory elements between phylogroups has a small but discernible role in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by PCA analysis (Figure 2\u2014figure supplement 3A,C) and differential expression analysis (Figure 2\u2014source data 1-2). The interpretation (C84) is reasonable given the observed clustering and differential expression, though the specific regulatory mechanisms are not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Treatment with MICROBEnrich kit does not affect measured gene expression, as validated by RT-PCR experiments comparing treated and untreated samples from strains HM86 and HM56.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by RT-PCR validation experiments (Figure 1\u2014figure supplement 5, Supplementary file 1). This addresses an important methodological concern since patient samples were treated with the kit but original in vitro samples were not. The validation strengthens confidence in the comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Four sugar transporters (ptsG, fruA, fruB, and gntU) were expressed at higher levels in patients, as exceptions to the general pattern of downregulated sugar transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by differential expression analysis (Figure 3\u2014figure supplement 1). This exception to the general pattern is appropriately noted and documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "UPEC strains can differ dramatically in the specific virulence factors utilized, and expression of virulence factors can change from patient to patient, suggesting the need for specific factors might vary during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are supported by the observed diversity in virulence factor carriage (Figure 1A) and variability in expression across patient samples (Figure 1B-C, Figure 1\u2014figure supplement 3-4). The interpretation (C57) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "All studies including the current one were performed using bacterial RNA isolated from patient urine that was immediately stabilized upon collection. The authors acknowledge that gene expression of UPEC residing in the bladder may differ from UPEC isolated from patient urine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C72 accurately describe the methodology and acknowledge an important limitation. This is a valid caveat that the authors appropriately discuss. The limitation applies to all similar studies in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Filtered urine lacks some proteins present in unfiltered urine (Greene et al. 2015), and supplementation with specific proteins/metabolites could potentially recapitulate the in vivo phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by citation. Claim C75 is speculation about future experiments, appropriately presented as such. This represents a reasonable direction for follow-up work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77",
+      "C79"
+    ],
+    "result": "The authors suggest that identifying and targeting environmental cues is a promising approach to limit UPEC growth during UTI, and that the common transcriptional program provides a platform to design universal therapeutic strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77 and C79 represent speculative therapeutic implications of the findings. While the identification of a common transcriptional program is well-supported, the translation to therapeutic strategies is highly speculative and would require substantial additional work to validate. No experimental evidence for therapeutic targeting is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C58",
+      "C69",
+      "C70"
+    ],
+    "result": "Background claims about UPEC as the major causative agent of UTIs (70% of cases), affecting 150 million people annually, the lack of a defined common virulence genotype, and that the core genome is enriched for metabolic genes. Three recent studies have characterized UPEC gene expression in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, C8, C58, C69, and C70 represent background knowledge and literature review, appropriately cited from published sources (Flores-Mireles et al. 2015; Foxman 2010; Schreiber et al. 2017; Bielecki et al. 2014; Hagan et al. 2010; Subashchandrabose et al. 2014). These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The discovery of a common transcriptional program of UPEC in patients significantly expands understanding of bacterial adaptation to the human host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 represents a statement about the significance of the findings. Given the well-supported identification of a conserved transcriptional program across genetically diverse strains (C3, C18-C22) and the mechanistic insights into resource allocation (C4, C23-C26, C34-C36), this assessment of significance is reasonable.",
+    "result_type": "MINOR"
+  }
+]

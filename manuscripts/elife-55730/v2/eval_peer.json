@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C7",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cardiac endothelial cells (ECs) express cardiomyocyte myofibril (CMF) genes at the RNA level, as demonstrated by bulk RNASeq showing CMF mRNAs among the highest expressed genes in cardiac ECs. The authors argue this expression is tissue-specific to cardiac ECs and unlikely to be solely due to contamination based on correlation analyses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised significant concerns about potential contamination from cardiomyocytes in the bulk RNASeq data, noting that 'the ATAC-seq data is on bulk RNA and so could be contaminated by some cardiomyocytes' and that 'only the most abundant cardiomyocyte RNAs seem to be expressed by EC.' They requested more rigorous experimentation to rule out contamination, including concerns about 'cardiomyocyte-EC doublets, or cell-free RNA sticking to antibodies or beads, or to glycocalyx of the EC cells.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Single-cell RNASeq analysis revealed that 59.3% of cardiac ECs expressed at least one CMF gene, with most cells expressing only 1-2 genes in a stochastic pattern. The presence of both spliced and unspliced CMF transcripts at higher frequency in cardiac ECs than cardiomyocytes was interpreted as evidence of cell-intrinsic expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed concern that 'the presence of cardiomyocyte RNAs in the EC single-cell datasets might be due to contamination' and suggested possibilities including 'cardiomyocyte-EC doublets' or RNA capture by 'positively charged EC glycocalyx.' They requested additional experiments such as 'single-cell RNA seq analysis before and after RNAse treatment' to address these concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Nuclear isolation and RNA in situ hybridization experiments demonstrated CMF gene expression in isolated cardiac EC nuclei and co-localization of Tnnt2 RNA within ECs in tissue sections. Approximately 12% of endothelial nuclei showed Tnnt2 expression, consistent with single-cell data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged improvements after revision, they maintained concerns about specificity. In the second round, reviewers stated 'The RNA scope data is much improved, but some concerns regarding specificity remain' and requested 'a Z-plane view of the CDH5/TNNT2 overlap from the RNA scope data \u2013 to document that the overlap extends to the Z plane.' The initial review noted 'The RNA scope data was insufficient to determine whether the signals only originate from EC' and requested 'higher resolution and accompanied by antibody staining of EC-specific junction markers.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "ATAC-Seq analysis of FACS-isolated nuclei revealed that cardiac EC nuclei have open chromatin at CMF genes quantitatively similar to cardiomyocyte nuclei, while maintaining expected open chromatin at EC-specific genes and closed chromatin at fibroblast genes. Shared peaks between ECs and cardiomyocytes were enriched for cardiac transcription factor binding sites (GATA4, MEF2).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns about the bulk ATAC-seq approach, noting 'the ATAC-seq data is on bulk RNA and so could be contaminated by some cardiomyocytes.' They requested 'more rigorous experimentation such as dual single-cell RNA and ATAC-seq to show that bona fide EC have epigenetic patterns suggestive of cardiomyocyte gene expression.' Reviewers also questioned why 'closed chromatin is found in active genes (Figure 5) is not well-explained' and requested analysis of 'epigenetic marks that indicate active transcription of genes.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of cardiac EC-enriched genes showed that genes with open chromatin were enriched for CMF and fatty acid metabolism terms, while genes with closed chromatin showed fibroblast-like annotations, suggesting some transcripts may originate outside ECs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not specifically challenge this analysis, which provides internal validation by distinguishing genes with open versus closed chromatin in cardiac ECs. This result supports the interpretation that chromatin accessibility correlates with genuine EC expression versus potential contamination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Culture experiments demonstrated that chromatin at CMF genes completely closed within the culture time span while EC-specific genes remained open, leading to the conclusion that open chromatin at CMF genes requires active maintenance by the surrounding parenchyma in vivo.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise specific concerns about the culture experiments or the interpretation that chromatin accessibility at CMF genes is lost upon removal from the in vivo cardiac environment. This result was accepted as supporting evidence for the role of local cues in maintaining the chromatin state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors conclude that cardiac ECs possess transcriptional and epigenetic signatures of cardiomyocytes with significant EC-intrinsic transcriptional contribution, though they acknowledge that functional consequences and protein translation remain to be determined.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "In the second round of review, editors specifically requested that 'authors amend the Discussion to better reflect the idea that the work focuses on transcriptional and epigenetic regulation of myocardial genes in cardiac endothelial cells, and that protein translation/function remains an open question.' This indicates reviewers felt the conclusions needed to be tempered regarding the functional significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose that chromatin is maintained open at CMF genes in all cardiac ECs but transcription rates are low and stochastic, with no defined subset of ECs expressing CMF genes, based on the discrepancy between bulk chromatin accessibility and single-cell expression patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not specifically challenge this interpretation, which reconciles the observation that bulk ATAC-seq shows widespread open chromatin while single-cell RNA-seq shows only subset expression. This mechanistic model was accepted as a reasonable explanation of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors hypothesize that open chromatin at CMF genes may reflect epigenetic memory of shared developmental origin between cardiomyocytes and ECs, potentially maintained by cardiac transcription factors like MEF2C and GATA4, and that CMF gene expression may play a role in cardiac EC maturity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these hypotheses, which are appropriately presented as speculative interpretations. The mechanistic proposals regarding transcription factors are supported by the motif enrichment data and cited literature, though they remain to be experimentally validated.",
+    "result_type": "MINOR"
+  }
+]

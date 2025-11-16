@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The heterochronic pathway genes lin-28, let-7, and lin-41 control the timing of sexually dimorphic neuronal differentiation in C. elegans males. Loss-of-function mutations in lin-28 and lin-41 cause precocious differentiation of AIM and CEM neurons, while loss of let-7 or gain-of-function lin-41 blocks male-specific differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent genetic manipulations (C22-C27, C31-C34, C38-C42, C45-C48) consistently demonstrate temporal control by the heterochronic pathway. The opposing phenotypes of loss-of-function versus gain-of-function alleles provide strong genetic evidence. Quantification in Figure 1D,F supports the claims with n=15 for each genotype. The precocious phenotypes in lin-28 and lin-41(lf) mutants and blocked differentiation in let-7(lf) and lin-41(gf) mutants are internally consistent with the proposed regulatory hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C49",
+      "C146"
+    ],
+    "result": "The timing of male-specific neuronal differentiation is independent of gonadal signals and the lin-4 miRNA. Neither germline removal nor gonad ablation affects the AIM neurotransmitter switch, and lin-4 mutants show normal timing of differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 are supported by both genetic (glp-1 mutants) and physical ablation experiments shown in Figure 1\u2014figure supplement 2. The negative results for lin-4 (C37, C49, C146) are important controls that distinguish L4-specific timing from earlier L2-specific heterochronic events. However, the manuscript notes these are unpublished observations ('data not shown'), which slightly weakens reproducibility assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C82",
+      "C87"
+    ],
+    "result": "The lin-29 transcription factor is the relevant effector of lin-41 in controlling the AIM neurotransmitter switch but not CEM differentiation. Lin-29 null mutants and lin-29a-specific mutants completely block the AIM neurotransmitter switch while CEM differentiation remains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential requirement for lin-29 in AIM versus CEM neurons (C53-C54) is well-supported by loss-of-function analysis in Figure 1C-F. The generation of two independent lin-29a-specific alleles (xe38 and xe40) that phenocopy the null allele (C82) provides strong genetic evidence. The cell-type-specific effects (C55) demonstrate that lin-41 acts through distinct effectors in different neurons, which is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The transcriptional co-factor mab-10 is not required for lin-29 function in male-specific neuronal differentiation, despite being a direct target of LIN-41 and functioning with lin-29 in epidermal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The newly generated mab-10 null allele (xe44) shows normal AIM and CEM differentiation (C59, Figure 1D,F), demonstrating tissue-specific cofactor requirements. This negative result is important for defining the specificity of the pathway. However, the manuscript notes in the Methods that the mab-10::mCherry allele is not fully functional, which raises questions about whether xe44 is a true null or whether there might be redundancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The heterochronic pathway components show temporally controlled, sexually non-dimorphic expression in the nervous system. lin-28 is downregulated by L2, lin-41 is downregulated at L4 in a let-7-dependent manner, and let-7 activity increases at L4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Expression analysis using fosmid reporters (C62), endogenously tagged alleles (C63), and let-7 activity sensors (C65-C66) provides multiple lines of evidence for temporal control. The control construct with unc-54 3'UTR (C66) is an appropriate negative control. The lack of sexual dimorphism in expression (C68) is important for establishing that temporal and sexual specificity arise at the level of downstream effectors rather than pathway components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77"
+    ],
+    "result": "The lin-29a isoform is expressed in a male-specific, temporally controlled manner in 21 out of 116 sex-shared neuron classes, with expression initiating at L4 and persisting through adulthood. Expression is restricted to sex-shared neurons, not male-specific neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple CRISPR-engineered reporter alleles (gfp::lin-29a, lin-29a/b::gfp, lin-29b::gfp) provide comprehensive expression analysis (C69-C73, Figure 3). The specificity to sex-shared neurons (C72) is a surprising and important finding. The temporal onset at L4 (C76) correlates with the timing of sexual differentiation. The detailed neuronal identification across 21 neuron classes (C73) represents substantial characterization work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "LIN-41 directly represses lin-29a translation to control the timing of LIN-29A protein accumulation in the nervous system. lin-41 loss-of-function causes premature lin-29a expression, while let-7 loss-of-function and lin-41 gain-of-function reduce lin-29a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis experiments (C79-C80, Figure 4) are consistent with direct translational repression. The claim of direct repression (C81) is supported by citing previous biochemical analysis (Aeschimann et al., 2017), which strengthens the mechanistic interpretation. The opposing effects of lin-41(lf) versus lin-41(gf) on lin-29a expression provide strong genetic evidence for regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "lin-29a is necessary and sufficient to control the AIM neurotransmitter switch. Cell-autonomous expression of lin-29a rescues the switch in mutants, induces it prematurely in juveniles, and can impose male-specific features in hermaphrodites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sufficiency experiments using AIM-specific expression (C83-C86, Figure 5B) are well-designed and demonstrate three key points: cell autonomy, temporal sufficiency, and sex-specificity override. The use of two independent transgenic lines for each construct strengthens the conclusions. The premature induction in L1 larvae (C84) and sex conversion in hermaphrodites (C86) are particularly compelling demonstrations of sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "lin-29a controls multiple aspects of male-specific neuronal differentiation beyond the AIM neurotransmitter switch, including expression of srj-54 in AIM, dmd-5 in AVG, daf-7 in ASJ, and male-specific branching of PDB neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent molecular markers (C88, C90, C92) and morphological features (C96-C97) demonstrate broad roles for lin-29a. The specificity of effects (C93) - non-sexually dimorphic expression unaffected - is an important control. The PDB branching phenotype (Figure 6C) provides quantitative morphological data (n=10). These diverse phenotypes establish lin-29a as a master regulator rather than a gene-specific factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "lin-29a mutant males show normal overall morphology and body patterning, unlike lin-29 null mutants. The male tail appears normal and automated morphometric analysis reveals no significant differences from wild-type males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinction between lin-29a-specific and lin-29 null phenotypes (C99-C100) is important for interpreting behavioral defects. The automated WormTracker analysis (C101, Figure 7B) provides objective, quantitative morphological measurements. This establishes that behavioral phenotypes are due to neuronal defects rather than gross morphological abnormalities, strengthening the neurobiological interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "lin-29a mutant males are defective in mating behaviors including vulva location and mate searching. The mate searching defects can be partially rescued by restoring lin-29a expression specifically in AIM neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral assays (C102-C103, C105, Figure 7C-D) demonstrate functional consequences of lin-29a loss. The partial rescue by AIM-specific expression (C107) provides evidence for cell-autonomous function and suggests multiple neurons contribute to the behavior. The similarity to daf-7 mutant phenotypes (C106) is consistent with the loss of daf-7 expression in ASJ neurons. Sample sizes (n=15) are adequate for behavioral assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "lin-29a mutant males show feminization of specific locomotory and postural features including head bend, neck bend, midbody bend, wavelength, and crawling amplitude. Restoring lin-29a expression in the motor circuit partially rescues some feminized features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The automated WormTracker analysis (C109, Figure 8) provides objective, high-dimensional behavioral phenotyping with n=20 animals. The specificity of effects - many sexually dimorphic features are unaffected - demonstrates that lin-29a controls a subset of dimorphic behaviors. The inference that phenotypes result from neuronal defects (C110) is well-supported by the lack of morphological differences. The partial rescue by motor circuit expression (C112) provides anatomical localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C118"
+    ],
+    "result": "The sex-specificity of lin-29a expression is controlled by the sex determination pathway through TRA-1. Removal of tra-1 or nervous system-specific degradation of TRA-1 derepresses lin-29a expression in hermaphrodites with male-typical cellular specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tra-1 mutant analysis (C113) and tissue-specific masculinization experiments (C114, Figure 9A) provide strong evidence for sex-determination pathway control. The maintenance of cellular specificity in masculinized hermaphrodites (C114) demonstrates that sex-specificity and neuron-type specificity are independently controlled. The intersectional model (C118) integrates temporal, sexual, and spatial control mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C157"
+    ],
+    "result": "The neuron-type specificity of lin-29a expression is controlled by terminal selector transcription factors. unc-86 is required for expression in AIM, ttx-3 for ASK, and unc-3 for motor circuit neurons including ventral nerve cord motor neurons and command interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The terminal selector mutant analysis (C115-C117, Figure 9B) demonstrates cell-type-specific control. The use of multiple terminal selectors controlling different subsets of lin-29a-expressing neurons (C157) provides strong evidence for the intersectional model. This explains how a single gene can be expressed in diverse neuron types - each requires its own terminal selector plus temporal and sexual inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C133",
+      "C134"
+    ],
+    "result": "LIN-41 also represses mab-3 and dmd-3, two DM domain transcription factors that show male-specific, temporally controlled expression in distinct sex-shared neurons. These genes are regulated by similar intersectional mechanisms involving let-7, tra-1, and neuron-specific terminal selectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR-tagged mab-3 and dmd-3 alleles (C123, C125) reveal novel expression patterns and L4-specific onset (C124, C126). The loss of temporal specificity in let-7 mutants (C127) and sex-specificity control by tra-1 (C128) parallel lin-29a regulation. Terminal selector requirements (C129, C131, C133) complete the intersectional model. This demonstrates that the regulatory logic extends beyond lin-29a to other effectors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "LIN-29 is an ortholog of human ZNF362 and ZNF384 based on sequence homology of zinc finger domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence alignment (C21, Figure 1A) shows conservation of zinc finger domains and DNA-contacting residues. The manuscript notes using multiple orthology tools (Kim et al., 2018; Wang et al., 2017) and detailed analysis of DNA binding features. However, functional orthology would require additional evidence beyond sequence similarity. The claim is appropriately limited to sequence-based orthology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The lin-28/let-7 pathway's role in controlling timing of sexual maturation is phylogenetically conserved. Studies in mice and humans link lin-28 and let-7 to puberty timing, mutations in human makorin (lep-2 ortholog) affect puberty, and Drosophila lin-28/let-7 control pupal-to-adult transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conservation claims (C135-C138) are well-supported by multiple citations to published studies in mammals and flies. This contextualizes the C. elegans findings within a broader evolutionary framework. However, the manuscript appropriately notes (C139) that direct regulatory linkage to sexual differentiation transcription factors has not been established in vertebrates or flies, identifying an important gap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Sexual dimorphisms in the C. elegans nervous system include sex-specific neurons and sexually dimorphic features of sex-shared neurons. Most sexually dimorphic features differentiate during the fourth larval stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C6-C14) are well-supported by citations to established literature. They provide essential context for the current work. The timing of differentiation at L4 (C14) is particularly important as it motivated the investigation of L4-specific heterochronic genes. These are appropriately cited prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Heterochronic genes control the timing of developmental events in C. elegans. The pathway includes lin-28, let-7, and lin-41, with LIN-28 negatively regulating let-7 processing and LIN-41 being a key let-7 target. Their role in postmitotic cells is less well defined than in controlling cell division patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C15-C20) summarize well-established prior work on the heterochronic pathway, appropriately cited. The acknowledgment that roles in postmitotic cells are less well defined (C20) motivates the current investigation. This represents accurate representation of the field's knowledge state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "Background on CEM neurons, lin-41 function, lin-29 regulation, and mab-10 function based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C43-C44, C50-C52, C56-C58, C60) accurately represent prior published work. They provide necessary background for interpreting the current findings. The citations are appropriate and the claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C91",
+      "C94",
+      "C95",
+      "C104",
+      "C108",
+      "C130",
+      "C132"
+    ],
+    "result": "Background information on neuronal connectivity, gene expression patterns, and transcription factor functions from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims cite established findings about synaptic connectivity (C74-C75), gene expression (C91), neuronal morphology (C94-C95), behavior (C104, C108), and transcription factors (C130, C132). The citations are appropriate and provide context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C147",
+      "C149"
+    ],
+    "result": "Discussion of gaps in knowledge and conservation of pathway components across species, including absence of established regulatory linkages in vertebrates/flies, multiple let-7 targets, conservation of lin-41, and limited studies in vertebrate brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C139-C145, C147, C149) appropriately identify gaps in the field and areas for future investigation. They are based on absence of published findings (knowledge-based evidence) or limited studies. The acknowledgment of what is not known is important for contextualizing the significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C148",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Synthesis and interpretation: lin-41 relays temporal information to distinct neuron-specific outputs including lin-29a and DM domain transcription factors. These effectors act in neurons at different levels of information processing, and the modular organization shows conceptual similarities to vertebrate sexual dimorphism mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These synthetic claims (C148-C156) integrate the experimental findings into a coherent model. The modular organization concept (C155) is well-supported by the data showing distinct effectors in different neuron types. The comparison to vertebrate mechanisms (C156) is appropriately tentative ('conceptual similarities'). The identification of novel expression patterns (C153) and incomplete coverage (C154) appropriately acknowledge limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C158",
+      "C160"
+    ],
+    "result": "Speculation about potential direct regulation and feedforward regulatory architecture based on presence of conserved binding sites and regulatory relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C158, C160) are explicitly speculative. C158 notes 'could potentially be direct' based on conserved UNC-3 binding sites, and C160 proposes a feedforward architecture that is inferred but not directly tested. The manuscript appropriately indicates these require 'further biochemical studies' for confirmation. These represent reasonable hypotheses but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "lin-29a expression does not extend to all sex-shared neurons with sexually dimorphic features, such as PHC neurons which remodel during sexual maturation but do not express lin-29a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that PHC neurons show sexual dimorphism without lin-29a expression (C119-C120) is important for defining the scope of lin-29a function. This motivates the investigation of other LIN-41 targets like dmd-3 that are expressed in PHC. The claim is supported by expression analysis and prior knowledge of PHC remodeling.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C69"
+    ],
+    "result": "pATOM36 from trypanosomes and the yeast Mim1/Mim2 complex are functional analogues despite lacking sequence or topological similarity. This is demonstrated through reciprocal complementation experiments where pATOM36 rescues yeast mim1\u0394/mim2\u0394 defects and Mim1/Mim2 rescues trypanosome pATOM36 ablation phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C69 are strongly supported by extensive reciprocal complementation data shown in Figures 2-8. The yeast complementation (Figures 2-5) demonstrates rescue of growth, protein levels, complex assembly, import capacity, and morphology defects. The trypanosome complementation (Figures 6-8) shows restoration of ATOM complex assembly and mitochondrial morphology. Both proteins form native-like complexes when heterologously expressed (Figures 1B, 6D-E), supporting functional equivalence despite structural differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "pATOM36 expressed in yeast localizes to the mitochondrial outer membrane with its C-terminus facing the cytosol and forms oligomeric complexes of 140-250 kDa, similar to its native behavior in T. brucei, though the higher molecular weight TAC-associated complex is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 are well-supported by biochemical characterization in Figure 1A-B. Protease protection shows cytosolic C-terminal exposure (C14-C15), alkaline extraction confirms integral membrane localization (C16), and BN-PAGE demonstrates formation of 140-250 kDa complexes similar to T. brucei (C17). The absence of the >480 kDa TAC complex (C18) is expected as yeast lacks TAC components. These data collectively demonstrate proper membrane integration and complex formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "pATOM36 rescues growth defects of yeast cells lacking Mim1 and/or Mim2 on respiratory carbon sources at multiple temperatures, with rescue capacity comparable to re-expression of the native Mim proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are strongly supported by drop-dilution growth assays in Figure 2A-B and Figure 2\u2014figure supplement 1. The data show rescue of single deletions (mim1\u0394, mim2\u0394) and the double deletion (mim1\u0394/mim2\u0394) across multiple temperatures (15\u00b0C, 30\u00b0C, 37\u00b0C) and carbon sources (glucose, glycerol). The rescue is comparable to native protein complementation, demonstrating functional equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "pATOM36 expression in mim1\u0394/mim2\u0394 yeast cells restores steady-state levels of MIM substrates Tom20 and Tom70, eliminates precursor protein accumulation, and rescues TOM complex assembly, though it has minimal effect on Ugo1 levels, suggesting substrate preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 are well-supported by immunoblot and BN-PAGE data in Figure 3A-D. Quantification shows significant restoration of Tom20 and Tom70 levels (C26, Figure 3B), minimal effect on Ugo1 (C27), elimination of Hsp60 precursor accumulation (C30), and complete rescue of TOM complex assembly (C33-C34). The differential effects on substrates (C28) are clearly demonstrated, though the mechanistic basis for substrate preference remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "pATOM36 cannot complement defects in mas37\u0394 cells, demonstrating specificity for MIM substrates and supporting the notion that Tom22 follows a distinct import pathway from Tom20 and Tom70.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by data in Figure 3\u2014figure supplement 1 showing that pATOM36 fails to rescue TOB complex levels, \u03b2-barrel protein levels (Tom40, Porin), or Tom22 levels in mas37\u0394 cells. This negative control demonstrates specificity for MIM substrates (C38) and supports the inference about distinct Tom22 import pathways (C39), though the latter is based on indirect evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "pATOM36 directly interacts with Tom70 and functionally improves import and assembly of Tom20 but not Ugo1 in mitochondria lacking Mim1/2, while having no effect on non-MIM substrates (pSu9-DHFR, Fis1), demonstrating substrate-specific rescue capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are well-supported by in vitro import assays (Figure 4A-E) and GST-pulldown experiments (Figure 3E). The Tom70 interaction is demonstrated biochemically (C41), Tom20 import and assembly are markedly improved (C42-C43), while Ugo1 import is not rescued (C44). Controls with pSu9-DHFR and Fis1 show no effect (C45-C46), confirming specificity. The substrate preference conclusion (C47) is well-justified by the differential effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "pATOM36 expression reverses mitochondrial fragmentation in mim1\u0394 and/or mim2\u0394 yeast cells, restoring tubular mitochondrial morphology comparable to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is strongly supported by fluorescence microscopy data in Figure 5A-B. Quantitative analysis shows that pATOM36 expression restores tubular morphology (>90% of cells) in all deletion strains tested, comparable to wild-type levels. The statistical analysis with n\u2265100 cells per experiment across three independent experiments provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mim1-myc and Mim2-HA expressed in T. brucei localize exclusively to mitochondria as integral membrane proteins with native topology (N-terminus cytosolic, C-terminus in IMS) and form a ~230 kDa complex similar to the native yeast MIM complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are well-supported by biochemical characterization in Figure 6B-E. Subcellular fractionation shows exclusive mitochondrial localization (C49), alkaline extraction confirms integral membrane status (C50), protease protection demonstrates native topology (C51), and BN-PAGE shows formation of ~230 kDa complexes (C53) that migrate similarly to yeast complexes (C54). The conclusion of native-like complex formation (C55) is well-justified by the combined data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "Mim1/2 expression in pATOM36-depleted T. brucei cells causes a milder growth phenotype, restores ATOM complex subunit levels and assembly, and rescues mitochondrial morphology defects, though it cannot prevent kDNA loss and ATOM40 complex assembly is incomplete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 are supported by data in Figures 7-8. Growth curves show milder phenotype (C59), immunoblots demonstrate restoration of ATOM subunit levels (C60), BN-PAGE shows improved complex assembly (C61-C62), and microscopy confirms morphology rescue (C65). However, kDNA loss persists (C58) and ATOM40 assembly is incomplete (C63), indicating partial complementation. The conclusion that Mim1/2 can replace pATOM36's protein biogenesis function (C66) is justified despite these limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Expression of Mim1 or Mim2 alone cannot complement pATOM36 ablation phenotypes in T. brucei, indicating that successful complementation requires similar amounts of both Mim1 and Mim2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by data in Figure 8\u2014figure supplement 1 showing that individual expression of either Mim1-myc or Mim2-HA fails to rescue ATOM complex assembly defects or growth arrest. The inference that balanced expression is required (C68) is reasonable based on the failure of single protein expression, though direct titration experiments would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The MIM complex cannot carry out pATOM36's role in mitochondrial DNA (kDNA) inheritance in trypanosomes, consistent with pATOM36's dual function that is not shared by the MIM complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by data in Figure 7A showing persistent kDNA loss despite Mim1/2 expression in pATOM36-depleted cells. This is expected given that the MIM complex lacks TAC localization and kDNA maintenance functions that are unique to pATOM36. The limitation is well-documented and does not diminish the significance of the protein biogenesis complementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C81"
+    ],
+    "result": "Mim1/Mim2 and pATOM36 are products of convergent evolution that arose after eukaryotic supergroups diverged, with the MIM complex restricted to fungi and likely absent from LECA. Their evolution was driven by the need to facilitate assembly of \u03b1-helical TOM subunits that joined the ancestral Tom40-based import system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8 and C73-C76 are based on phylogenetic inference from the restricted distribution of these proteins and their functional similarity despite lack of sequence homology. While the convergent evolution hypothesis (C7) is well-supported by the reciprocal complementation data, the specific timing claims (C8, C73-C75) and LECA composition (C76) are speculative inferences lacking direct phylogenetic analysis or ancestral reconstruction. Claim C81 about evolutionary drivers is reasonable speculation but not directly tested. More rigorous phylogenetic analysis would be needed to support these evolutionary claims definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C84"
+    ],
+    "result": "pATOM36 shows variable capacity to support biogenesis of different MIM substrates in yeast, with Tom20 as the most favorable substrate and Ugo1 as the least favorable, possibly because Ugo1-like carrier proteins are absent from T. brucei mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is well-supported by the differential effects on Tom20, Tom70, and Ugo1 shown in Figures 3-4. However, claim C84 is speculative reasoning about the mechanistic basis for substrate preference. While the speculation is reasonable given that Ugo1 is fungi-specific, it lacks direct experimental support. The substrate preference itself is clearly demonstrated, but the mechanistic explanation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The successful reciprocal complementation and formation of similar-sized complexes in heterologous systems strongly suggest that Mim1/Mim2 and pATOM36 complexes do not contain additional proteins and that their essential function does not require species-specific cofactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are based on inference from complementation success and complex size similarity (Figures 1B, 6D-E). While the reasoning is logical, the conclusion that complexes contain no additional proteins is not definitively proven. Mass spectrometry or other proteomic approaches would be needed to confirm complex composition. The inference about not requiring additional factors (C87) is reasonable but indirect. The claims represent plausible interpretations but lack direct experimental verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Mim1/Mim2 and pATOM36 all contain GxxxG(A) motifs in their transmembrane segments consistent with oligomerization. Mim1 can form a cation-selective channel, and if this is functionally relevant, pATOM36 would be expected to form a similar pore structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is supported by sequence analysis in Figure 1\u2014figure supplement 1 showing GxxxG(A) motifs. Claim C94 reasonably connects these motifs to oligomerization. Claim C95 is supported by citation to electrophysiology work (Kr\u00fcger et al., 2017). However, claim C96 is speculative\u2014the functional relevance of Mim1 channel activity is uncertain, and whether pATOM36 forms a pore is untested. The speculation is reasonable given functional similarity but lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C102",
+      "C103"
+    ],
+    "result": "It remains unclear whether convergent evolution of Mim1/Mim2 and pATOM36 resulted in similar 3D structures and mechanisms or structurally different solutions achieving the same function. The mechanism of action\u2014whether direct catalysis of insertion or formation of membrane microdomains\u2014is also unresolved, though the complexes are hypothesized to behave similarly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 and C102-C103 appropriately acknowledge current knowledge gaps about structural and mechanistic details. These are honest assessments of what the current data cannot address. Structural studies would be needed to determine if convergent evolution produced similar or different 3D architectures (C97-C99), and mechanistic studies are needed to distinguish between direct insertase activity versus microdomain formation (C102). The hypothesis that they behave similarly (C103) is reasonable given functional equivalence but remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The successful reciprocal complementation opens opportunities for future comparative studies to define fundamental shared features of the two biogenesis complexes, with functional constraints helping to reveal their mechanism of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are reasonable forward-looking statements about research directions enabled by the reciprocal complementation system. The logic is sound\u2014having two functionally equivalent but structurally distinct systems provides a powerful comparative approach to identify essential mechanistic features. These are appropriate concluding statements about future work rather than claims about current findings.",
+    "result_type": "MINOR"
+  }
+]

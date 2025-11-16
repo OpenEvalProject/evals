@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C37"
+    ],
+    "result": "The authors developed an optogenetic system using LOVTRAP (LOV2-Zdk) to specifically tune ligand binding half-life without altering other binding parameters. Blue light intensity controls LOV2-Zdk dissociation, tuning binding half-life from ~500 ms to 10 seconds, which matches the physiological range of TCR-pMHC interactions. The system demonstrates reversible, repeatable binding cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C26, and C37 collectively demonstrate successful development of the optogenetic system. In vitro measurements (C37, C24, Figure 2A-B) show light-dependent control of binding half-life in the physiological range. Cellular experiments (C25-C26, Figure 1C-D, Videos 1-2) confirm reversible LOV2 accumulation and dissociation. The binding interface remains constant while light modulates kinetics, addressing the limitation identified in C2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C38"
+    ],
+    "result": "LOV2 binding to the Zdk-CAR induces downstream signaling, measured by DAG accumulation and ZAP70 recruitment. Blue light gates DAG production in a dose-dependent manner. Signaling is specific to LOV2 presence and occurs with kinetics consistent with prior T cell signaling measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C32, and C38 are well-supported by microscopy data (Figures 1C-E, 2C, Videos 3, 6-7). Negative controls without LOV2 show no light-dependent DAG changes (C28, Figure 1\u2014figure supplement 1C). ZAP70 colocalization (C29) and DAG diffusion patterns (C30) match expected signaling behavior. The ~30s rise time (C32) is consistent with prior measurements (C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "At constant receptor occupancy, increasing ligand binding half-life increases DAG levels. The strongest signaling increase occurs for binding half-lives between 4-7 seconds. Binding half-life predicts DAG levels better than receptor occupancy across different LOV2 concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are strongly supported by systematic analysis across multiple LOV2 concentrations (Figures 3B-E, Figure 3\u2014figure supplements 1-2). The experimental design cleverly decouples occupancy from half-life by varying LOV2 concentration. Strong correlation between DAG and half-life (C43, \u03c1~0.74) versus poor correlation with occupancy (C44) provides compelling evidence. The 4-7s threshold (C40) aligns with prior literature estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The degree of kinetic proofreading is quantified as n = 2.7 \u00b1 0.5 (95% CI), which could amplify a 10-fold difference in binding half-life into a ~5,000-fold difference in DAG levels under non-saturating conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by model fitting to experimental data (Figure 4\u2014figure supplements 1-2). The value n = 2.7 \u00b1 0.5 is derived from multiple datasets and normalization schemes, providing robustness. The authors appropriately acknowledge this is a conservative estimate assuming strong proofreading steps and that the amplification calculation applies under non-saturating conditions. The model is intentionally simple to minimize free parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ZAP70 recruitment shows no detectable kinetic proofreading and depends solely on CAR occupancy, not binding half-life. This localizes kinetic proofreading to steps downstream of ZAP70 recruitment and upstream of DAG production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by ZAP70 reporter experiments (Figure 4\u2014figure supplement 3) showing n \u2248 0 for ZAP70 recruitment versus n = 2.7-2.8 for DAG. The contrast between ZAP70 (occupancy-dependent) and DAG (half-life-dependent) responses clearly localizes proofreading to the proximal signaling pathway. This is a key mechanistic finding that narrows the location of kinetic discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The study provides direct experimental evidence for kinetic proofreading in T cell signaling, demonstrating that small differences in ligand binding half-life are amplified into large changes in downstream signaling. This discrimination occurs in the proximal signaling pathway between ZAP70 recruitment and DAG accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, and C9-C13 represent the central conclusion supported by the entire body of experimental work. The optogenetic approach (C3) successfully isolated binding half-life as a variable, the dose-response experiments (C39-C45) demonstrated half-life dependence, the quantification (C46) measured proofreading strength, and the ZAP70 experiments (C53-C55) localized the mechanism. This comprehensive evidence directly validates the kinetic proofreading model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The observed kinetic proofreading (n = 2.7) can account for much but not all of the required ligand discrimination. Given that T cells respond to 1-10 foreign-pMHCs among 10\u2075-10\u2076 self-pMHCs (requiring 10\u2074-10\u2075-fold discrimination) and binding half-lives differ by ~10-fold, additional mechanisms beyond kinetic proofreading are likely needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide appropriate context and limitations. The calculations are based on cited literature values (C48, C50) and the measured n = 2.7. The conclusion that kinetic proofreading is necessary but insufficient (C51-C52) is logically sound: 10-fold half-life difference with n = 2.7 yields ~5,000-fold amplification, which is substantial but falls short of the required 10\u2074-10\u2075-fold discrimination. The suggestion of additional mechanisms (C52) is appropriately speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Cells with high CAR occupancy but short binding half-life show ZAP70 recruitment without high DAG levels, consistent with a two-step ZAP70 activation model. This suggests Lck-mediated kinetic proofreading occurs through ZAP70 phosphorylation rather than ITAM phosphorylation or ZAP70 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 and C67 are supported by the differential responses of ZAP70 versus DAG to binding half-life. The observation (C61) matches predictions from prior two-step models (C62-C63). The inference about Lck's role (C65) is reasonable given no proofreading at ZAP70 recruitment (C53-C54) combined with prior work showing Lck is rate-limiting (C64). The mechanistic reasoning about ZAP70 phosphorylation proximity to the receptor (C67) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The CAR system shows similar kinetic proofreading (n = 2.7) as complementary TCR optogenetic experiments measuring calcium release. This suggests kinetic proofreading emerges from shared proximal signaling elements rather than being completed entirely at the receptor level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by comparison to the companion study (Yousefi et al., 2019) and the ZAP70 data. The similar degree of proofreading in CAR (DAG) and TCR (calcium) systems, both downstream of PLC\u03b3 (C70), combined with lack of proofreading at ZAP70 recruitment (C53-C55), supports the conclusion that proofreading emerges from proximal signaling pathway components (C71) rather than receptor-specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The CAR is expressed at 62-238 \u00d7 10\u00b3 molecules per cell, slightly lower than native TCR (273-547 \u00d7 10\u00b3). Cells respond to LOV2 densities of ~40-1,200 molecules/\u03bcm\u00b2, comparable to other CAR systems and slightly less sensitive than primary T cells with pMHCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by flow cytometry measurements (Figure 1\u2014figure supplement 4) and comparison to literature values. The receptor expression levels and ligand sensitivity are appropriate for the experimental system and validate that the CAR functions in a physiologically relevant range. These are important characterization data but represent system validation rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Within the same field of view, cells with high or low receptor occupancy showed similar DAG levels when exposed to similar blue light doses, suggesting receptor occupancy alone does not determine signaling strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is directly observed in microscopy data (Figure 1C-E). This qualitative observation motivated the systematic quantitative analysis that followed (C39-C45). While important for hypothesis generation, this observation alone is less definitive than the subsequent controlled experiments that varied LOV2 concentration to decouple occupancy from half-life.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The degree of kinetic proofreading is similar with or without anti-\u03b22m antibody-mediated adhesion (n = 2.7 \u00b1 0.5 vs n = 2.8 \u00b1 0.2). This suggests CD45 exclusion does not contribute measurably to kinetic proofreading at the ZAP70 recruitment level in this CAR system, though it may differ for native TCR-pMHC interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 address an important control regarding CD45 exclusion effects. The similar proofreading values with/without anti-\u03b22m (C58, Figure 4\u2014figure supplement 3) support the conclusion that CD45 exclusion is not driving the observed kinetic proofreading (C59). The caveat about potential differences with native TCR (C60) is appropriately cautious given size-dependence of CD45 exclusion effects. This represents important validation of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Conventional altered peptide approaches simultaneously change binding half-life and mechanical stability because both depend on the binding interface. The TCR is mechanosensitive and can form catch bonds with foreign-pMHC, making it difficult to isolate the contribution of binding kinetics versus force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C19 describe the motivation for developing the optogenetic approach. These are well-established limitations in the field supported by multiple citations (C18-C19). The biophysical constraint that binding interface mutations affect both kinetics and mechanics (C17) is sound. This provides important context but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C14",
+      "C15",
+      "C16",
+      "C41",
+      "C42",
+      "C66",
+      "C68"
+    ],
+    "result": "Background claims about T cell biology: self-pMHCs outnumber foreign-pMHCs by orders of magnitude; low-affinity pMHCs are less potent even at equal occupancy; stimulatory pMHCs have longer half-lives; kinetic proofreading operates in other biological systems; and various mechanistic details about TCR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C14-C16, C41-C42, C66, and C68 represent background knowledge and prior work, all supported by appropriate citations. These provide essential context for interpreting the current findings but are not novel results from this study. They establish the scientific foundation and motivation for the work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C31",
+      "C32"
+    ],
+    "result": "DAN-D4 binding to liposomes is significantly influenced by phospholipid head group composition. At constant cholesterol (40%), DAN-D4 binding to exofacial leaflet-mimicking liposomes (PC/SM) was more than double that to cytoplasmic leaflet-mimicking liposomes (PC/PE/PS/PI), demonstrating that D4 binding thresholds differ between membrane compositions and cannot be directly interpreted as cholesterol concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C31-C32 are well-supported by experimental data in Figure 1A showing differential binding to different liposome compositions at constant cholesterol. The quantitative measurement (>2-fold difference) and the logical inference that varied binding cannot be interpreted solely as cholesterol concentration are both justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C63",
+      "C64"
+    ],
+    "result": "DAN-D4 binding to liposomes is strongly influenced by acyl chain saturation. Increasing unsaturation from DPPC (no double bonds) to POPC (one double bond) to DOPC (two double bonds) progressively enhanced DAN-D4 binding at constant cholesterol (40%), demonstrating that D4 recognizes accessible cholesterol rather than total cholesterol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C63 are directly supported by experimental data in Figure 1B showing dose-dependent enhancement of binding with increasing acyl chain unsaturation. The inference in C64 that D4 recognizes accessible rather than bulk cholesterol is a reasonable conclusion from this phospholipid-dependent binding pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "DAN-D4 binding to liposomes is highly sensitive to cytosolic proteins. Rat liver cytosol reduced DAN-D4 binding in a dose-dependent manner with near-complete ablation at 1.5 mg/ml, suggesting that microinjected DAN-D4 binding to the cytoplasmic leaflet could be severely diminished in live cells regardless of cholesterol content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45-C46 are directly supported by experimental data in Figure 1C. The inference in C47 is reasonable given the high protein concentration in cells (~100 mg/ml, C43) compared to the concentration that ablates binding (1.5 mg/ml). However, the extrapolation from in vitro to in vivo conditions involves some uncertainty about protein identity and binding mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "mCherry-tagged D4 variants (D4D434A and D4D434A,A463W) bind to the cytoplasmic leaflet of the plasma membrane in live cells in a cholesterol-dependent manner. These probes were displaced from the membrane following cholesterol extraction with methyl-\u03b2-cyclodextrin, indicating that lack of binding by microinjected DAN-D4 variants is not due to insufficient cholesterol in the cytoplasmic leaflet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are directly supported by experimental data in Figure 2A-B showing membrane localization and cholesterol-dependent displacement. The inference in C52 is logical: if mCherry-D4 variants bind but DAN-D4 variants do not, the difference is likely due to the probe properties rather than cholesterol availability. However, quantification in Figure 2C shows statistical significance but limited sample details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C36",
+      "C58",
+      "C73"
+    ],
+    "result": "Liposome-based calibration cannot serve as a reliable proxy for D4 binding to plasma membrane leaflets in live cells, and quantitative interpretation of D4 binding for cholesterol partitioning is not feasible. The authors conclude that Liu et al. may have underestimated cytoplasmic leaflet cholesterol and that D4 tools cannot assess transbilayer cholesterol distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conclusions (C33, C35, C36, C58, C73) are supported by the collective experimental evidence showing: (1) phospholipid composition affects D4 binding independent of cholesterol (C21-C32), (2) protein interference (C45-C47), and (3) mCherry-D4 variants bind where DAN-D4 does not (C49-C52). The inference that Liu et al. underestimated cytoplasmic cholesterol (C33) is reasonable but speculative. The broader conclusion (C73) is well-justified by the demonstrated confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C13",
+      "C14",
+      "C38",
+      "C39"
+    ],
+    "result": "Liu et al. used D4 as a cholesterol sensor with liposome-based calibrations to conclude that cholesterol is predominantly in the exofacial leaflet (~10-fold enrichment) with total plasma membrane cholesterol at 22-23 mol%. Their key evidence was that microinjected D4 variants failed to bind the cytoplasmic leaflet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C3-C5, C12-C14, C38-C39) accurately describe the methodology and conclusions of Liu et al. (2017) as cited. They represent the authors' characterization of prior work being critiqued and are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The majority of studies report that cholesterol constitutes 35-40 mol% of plasma membrane lipids, with most studies supporting either more cholesterol in the cytoplasmic leaflet or an even distribution between leaflets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by appropriate citations (van Meer et al., 2008; Kobayashi and Menon, 2018; Steck and Lange, 2018) and represent the established consensus in the field that the authors use to contextualize why Liu et al.'s findings were surprising.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PFO and D4 require a minimum cholesterol threshold to bind membranes, and this threshold is strongly influenced by phospholipid composition including head groups, acyl chain length, and especially acyl chain saturation. D4 binding depends on cholesterol exposure as determined by surrounding phospholipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C17-C18, C20, C26-C28) are supported by appropriate citations to established literature (Flanagan et al., 2009; Nelson et al., 2008; Sokolov and Radhakrishnan, 2010; He et al., 2017; Maekawa and Fairn, 2015a) and represent accepted knowledge that provides mechanistic context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C48"
+    ],
+    "result": "Previous studies have shown that wild-type D4, D434S mutant, mCherry-D4, and mCherry-D4D434S are capable of binding to the cytoplasmic leaflet of the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C48 are supported by citations to prior work (Maekawa and Fairn, 2015b; Abe et al., 2012) and establish the context for why Liu et al.'s negative results with microinjected D4 variants were surprising.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Following cholesterol extraction, mCherry-D4 variants form bright puncta in the cytosol, which cannot result from increased endomembrane cholesterol and may represent aggregates or binding to unidentified structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is supported by observation in Figure 2B. Claim C54 provides logical reasoning that cholesterol extraction would lower, not raise, endomembrane cholesterol. However, C55 is speculative about the nature of the puncta without additional characterization. This observation is interesting but the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Cholesterol can flip spontaneously between membrane leaflets with t1/2 < 1s, making a 10-fold gradient energetically costly to maintain. Exogenous probes binding cholesterol on one leaflet could trap cholesterol and alter distribution, as demonstrated by D4 homologs triggering cellular cholesterol depletion responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C69 are supported by citation to Steck and Lange, 2018 and Leventis and Silvius, 2001. Claim C71 is supported by citation to Infante and Radhakrishnan, 2017. The inference in C70 about probe-induced cholesterol trapping is logical given the rapid flip-flop rate and is supported by the cited example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Cholesterol must be shielded from the aqueous environment by surrounding phospholipids due to its small hydroxyl head group, with the degree of shielding influenced by lateral lipid packing including acyl chain composition and head group structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 represent established biophysical principles about cholesterol-phospholipid interactions that provide mechanistic context for why phospholipid composition affects D4 binding. These are well-accepted concepts in membrane biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The lipophilic DAN or Nile red fluorophores may increase D4 affinity to cytosolic proteins, while mCherry is unlikely to alter this affinity, potentially explaining differential binding behavior between microinjected DAN-D4 and expressed mCherry-D4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 are speculative hypotheses proposed to explain the differential behavior of DAN-D4 versus mCherry-D4. While the hypothesis is reasonable and consistent with the data showing protein interference (C45-C46), there is no direct experimental evidence testing the relative protein-binding affinities of different fluorophore-conjugated D4 variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C25",
+      "C34",
+      "C59",
+      "C60",
+      "C67",
+      "C68",
+      "C72"
+    ],
+    "result": "General background claims about plasma membrane cholesterol, membrane complexity, D4 properties, and biosensor usage in cell biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C25, C34, C59-C60, C67-C68, C72) represent established knowledge, contextual information, or general statements that frame the study. They are appropriately supported by citations or represent accepted concepts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C37",
+      "C41",
+      "C42"
+    ],
+    "result": "Hypotheses about factors that could influence D4 binding: cholesterol thresholds may depend on factors beyond concentration, phospholipids could influence probe accessibility, and cytoplasmic proteins could interfere with D4 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These speculative claims (C15-C16, C37, C41-C42) introduce hypotheses that are subsequently tested experimentally. C15-C16 and C37 are reasonable hypotheses based on known biology. C41-C42 are directly tested and supported by the protein interference data (C45-C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Based on the current evidence, it is unlikely that there is a significantly higher proportion of cholesterol in the exofacial leaflet compared to the cytosolic leaflet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 represents the authors' overall conclusion based on their experimental findings. This conclusion is supported by the evidence showing: (1) liposome calibrations are unreliable due to phospholipid effects, (2) protein interference confounds microinjection experiments, and (3) mCherry-D4 variants do bind the cytoplasmic leaflet. However, the claim is appropriately cautious ('unlikely' rather than definitively ruling out asymmetry) since the study critiques methodology rather than directly measuring cholesterol distribution.",
+    "result_type": "MAJOR"
+  }
+]

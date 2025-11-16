@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Punishment risk modulates reward-seeking behavior in rats. Animals showed increased response times (RT) and immobility during instrumental actions as punishment probability increased across blocks, while reward retrieval latency remained unchanged. RT variability increased with punishment risk and varied systematically with distance from previous shocks. Rats showed anticipatory RT increases before experiencing shocks in later blocks, suggesting learning of action-punishment contingency. Control sessions without punishment showed no RT changes across blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide converging evidence from behavioral measurements, statistical analyses (GLM repeated measures with significant p-values), control experiments, and video documentation. The dissociation between instrumental RT (increased) and reward RT (unchanged) supports the interpretation of anxiety-like state rather than reduced motivation. The systematic relationship between RT and trial lag from shock (C8) and anticipatory RT increases (C10-C11) provide evidence for learning. Control data (C12) rules out confounds like fatigue or satiety.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Diazepam, an anxiolytic drug, attenuated punishment-induced increases in RT without affecting reward retrieval latency. This pharmacological validation confirms that the behavioral changes reflect an anxiety-like state rather than general motor or motivational impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by appropriate pharmacological validation using diazepam (2 mg/kg) with statistical analysis (Repeated measures ANOVA, p=0.019). The selective effect on instrumental RT but not reward RT (C15, p=0.852) strengthens the interpretation that punishment induces anxiety-like behavior. The use of saline controls and within-subjects design is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Single neurons in mPFC, VTA putative DA, and VTA non-DA populations encode punishment risk during reward-seeking behavior with distinct temporal profiles. VTA DA neurons showed phasic excitatory responses concentrated around action execution, while mPFC and non-DA neurons displayed temporally diffuse patterns. The most robust punishment encoding occurred during the peri-action epoch. Substantial proportions of mPFC and non-DA neurons also modulated baseline firing rates, suggesting representation of punishment on longer timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 are supported by electrophysiological recordings from histologically verified electrodes, appropriate cell classification methods (C17, combining firing rate, waveform, and reward response properties), and statistical analyses (repeated measures ANOVA with significant interactions, C22). The \u03c9PEV analysis with trial-shuffled controls provides rigorous quantification of punishment encoding. The temporal dissociation between DA (phasic) and non-DA/mPFC (diffuse) responses is well-documented in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Different neuronal populations show distinct directional responses to punishment risk. mPFC neurons showed bidirectional modulation with no net change, while the majority of VTA DA neurons showed excitatory responses specifically during action. VTA non-DA neurons showed predominantly excitatory modulation. Control experiments with punishment-free blocks showed minimal firing rate changes, ruling out confounding factors. This heterogeneity may enable diverse representation of motivational and emotional aspects of punishment risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by appropriate statistical analyses and control experiments (C30). The bidirectional responses in mPFC (C27) and predominantly excitatory responses in DA neurons (C28) are well-documented with statistical support. The control experiment (C30, Figure 5) effectively rules out confounds like satiety, fatigue, or temporal drift. However, C33 is speculative about functional significance and represents an interpretation rather than a direct finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Neural population trajectories in mPFC and VTA track trial-by-trial variation in response time during punishment risk, despite limited single-neuron correlations. Population-level analysis using GPFA revealed significant correlations between neural trajectory deviation and RT deviation from baseline, particularly in the highest punishment risk block. No correlations were observed in control sessions without punishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 are supported by appropriate population-level analysis using GPFA, a validated dimensionality reduction method. The finding that single neurons show limited RT correlation (C34-C35) but populations show strong correlations (C36-C40) is methodologically sound and biologically plausible. The block-specific emergence of correlations in the riskiest block (C39-C40) and absence in control sessions (C41) strengthen the interpretation. However, the dimensionality choice (5D) and population size requirements (10-25 units) should be better justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Theta oscillations (5-15 Hz) in mPFC and VTA emerge during punishment-free actions and decline as a function of punishment risk. Coherence between regions decreased with punishment, and Granger causality analysis revealed VTA-to-mPFC directionality in theta oscillations during punishment-free actions that diminished with punishment risk. Control sessions showed no punishment-dependent changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 are supported by comprehensive LFP analyses including power spectral density, coherence, and Granger causality with appropriate statistical tests (repeated measures ANOVA with significant interactions). The VTA-to-mPFC directionality (C49-C51) is well-established through Granger causality analysis. The control for motor activity (C45) is important but relies on inference rather than direct measurement. Control data (C54) effectively rules out non-specific effects. The interpretation of 'entrainment' (C52-C53) is reasonable but somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Within-region phase-locking of spikes to local theta oscillations occurs during action and declines with punishment risk, particularly in VTA DA neurons. Substantial proportions of neurons showed significant phase-locking in punishment-free blocks, with phase synchrony emerging during action. Time-lagged analysis revealed negative lags, indicating entrainment by preceding oscillation cycles. DA neurons showed greater phase-locking than non-DA neurons, and DA neuronal phase-locking declined significantly with punishment while non-DA phase-locking did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 are supported by appropriate phase-locking analyses using Rayleigh's test and time-lagged PLV calculations. The resampling approach (1000 iterations of 100 spikes) addresses spike count variability. The differential effects on DA vs. non-DA neurons (C64-C67) are statistically significant and biologically meaningful. However, some findings show only trends (C60, p=0.077; C62, p=0.071) rather than reaching significance, which should be interpreted cautiously. The inference of 'entrainment' from negative lags (C59) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Inter-regional phase-locking between mPFC spikes and VTA theta oscillations shows VTA-to-mPFC directionality that declines with punishment risk. A substantial proportion of mPFC neurons were phase-locked to VTA theta during punishment-free actions, with synchrony emerging during action and showing negative lags indicating VTA-to-mPFC directionality. This entrainment declined with punishment contingency. VTA neuronal phase-locking to mPFC theta was weaker, confirming directionality. Control sessions showed no changes across blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 are supported by comprehensive inter-regional phase-locking analyses with appropriate statistical tests. The asymmetry in phase-locking strength (C75, Wilcoxon p<0.001) confirms VTA-to-mPFC directionality. The decline with punishment (C73, p=0.003) is statistically significant. Control data (C77) rules out non-specific effects. However, some statistical tests show marginal significance (C70, p=0.066), and the interpretation of 'entrainment' and 'synchronization' involves inference beyond direct measurements. The functional interpretation (C78-C79) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript addresses a gap in knowledge about neural representation of punishment risk during reward-seeking behavior, which is common in natural settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 accurately describe the motivation and context for the study. These are general knowledge claims about the prevalence of punishment risk in reward-seeking and the state of the field, which are reasonable and well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study builds on established knowledge about VTA and mPFC roles in reward processing, aversive behavior, and their anatomical connectivity. Previous work has shown VTA-mPFC projections are sensitive to stress and anxiogenic drugs, and optogenetic stimulation elicits anxiety-like behavior. Neural oscillations can coordinate neuronal activity to support cognitive and affective functions. The importance of punishment risk encoding for adaptive behavior is well-established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C98 are appropriately cited background claims that establish the rationale for the study. The citations appear relevant and support the stated claims about prior work. These claims provide necessary context but are not novel findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

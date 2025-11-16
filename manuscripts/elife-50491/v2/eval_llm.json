@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C182",
+      "C183"
+    ],
+    "result": "The study performed bulk RNA-Seq on mouse SGNs at five developmental ages (E15.5, P1, P8, P14, P30) and compared their transcriptomes with hair cells (HCs) and glial cells to identify previously unknown SGN-specific genes, which were classified as constant or dynamic based on expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C29, C30, C31, C32, C33, C182, and C183 collectively describe the experimental design and primary findings. The methodology is clearly stated with appropriate reference cell types (HCs and glia), and the identification of SGN-specific genes with temporal classification is a direct result of the transcriptome comparison. The approach is sound and the findings are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C64"
+    ],
+    "result": "The RNA-Seq data showed high quality with an average of 21.5 million reads per library, ~85% mapping rate, detection of ~15,000 genes (TPM>1), and distinct clustering of SGNs from HCs and glia, as well as age-dependent clustering of SGNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 and C64 provide comprehensive quality metrics for the RNA-Seq data. The sequencing depth, mapping rates, and gene detection numbers are appropriate for bulk RNA-Seq. The Pearson correlation analysis (C55) and clustering patterns (C56, C57) provide strong evidence for sample purity and biological validity. Quality control at both pre- and post-sequencing stages (C64) ensures data reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Validation experiments confirmed that tdTomato+ cells in ShhCre/+; Rosa26-Ai9/+ mice were SGNs, expressing neuronal marker Mafb but not glial marker Sox10, and RNA-Seq data showed enrichment of neural genes and depletion of HC- and glial-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C58-C60 provide converging evidence from immunofluorescence and RNA-Seq that the isolated cells were indeed SGNs. The marker expression patterns (Mafb+/Sox10-) and gene enrichment/depletion profiles are consistent with SGN identity. This validation is critical for ensuring the accuracy of downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Computational analysis identified 21 SGN-specific genes with constant expression and 68 with dynamic expression patterns, including Mafb, a known regulator of SGN development that showed dynamic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe the computational identification of SGN-specific genes. The detection of Mafb (C67-C69), a known SGN developmental regulator, validates the sensitivity and accuracy of the bioinformatics pipeline (C70). The classification into constant and dynamic genes is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Eight SGN-specific genes (Elavl4, Esrrg, Scrt1, Scrt2, Stmn3, Shox2, Gabbr2, Celf4) were validated by RNA in situ hybridization at P1, confirming their specific expression in SGN regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 describe validation experiments using RNA in situ hybridization. All eight tested genes showed SGN-specific expression (C73), which validates the RNA-Seq data quality (C74). This orthogonal validation method strengthens confidence in the computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C92"
+    ],
+    "result": "Analysis of gene dynamics in SGNs identified 8,047 constantly expressed genes (enriched for ribosomal proteins and spliceosome) and 8 categories of dynamic genes (enriched for ion channels), revealing nine distinct expression patterns during SGN development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 and C92 describe the gene dynamics analysis. The identification of constant and dynamic gene categories with functional enrichment patterns (ribosomal proteins, ion channels) is well-supported by the data. The example of transiently upregulated ion channel genes (C80) provides specific validation of the classification scheme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Two knockin mouse strains were generated using CRISPR/Cas9: Scrt2-P2A-tdTomato and Celf4-3xHA-P2A-iCreER-T2A-EGFP, with proper genetic validation including Southern blotting to confirm no random insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35, C97-C101 describe the generation and validation of the knockin mice. The use of CRISPR/Cas9 with 2A-peptide approach maintains endogenous gene expression (C99), and Southern blotting confirms proper targeting without random insertions (C100). PCR genotyping enables identification of different genotypes (C101). The methodology is sound and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Characterization of Scrt2-tdTomato/+ mice showed that Scrt2 expression is turned on between E10.5 and E13.5 in SGNs and is permanently maintained from embryonic to adult ages, with no expression in hair cells or glial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C120 provide comprehensive temporal and spatial characterization of Scrt2 expression. The data show consistent tdTomato expression in Map2+/Sox10- cells (SGNs) across multiple ages (E13.5, E15.5, P1, P8, P14, P30), with no expression in HCs or glia. The temporal onset between E10.5 and E13.5 is well-documented. This validates Scrt2 as a constant SGN-specific gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Characterization of Celf4-iCreER/+ mice confirmed that Celf4 expression gradually increases from E15.5 to P30 in SGNs (and VGNs), with low protein levels at E15.5 and considerably increased levels by P1, maintained through P30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C142 demonstrate dynamic Celf4 expression through multiple lines of evidence: RNA-Seq (C121), qPCR (C122), and protein detection via HA tag (C137-C140). EGFP+ cells were confirmed as SGNs (Map2+/Sox10-) at multiple ages. The gradual increase in expression validates Celf4 as a dynamic SGN-specific gene. Expression in VGNs (C141) is also documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C161",
+      "C162"
+    ],
+    "result": "Fate mapping using Celf4-iCreER/+; Rosa26-Ai9/+ mice with tamoxifen at P1/P2, P8/P9, or P30/P31 showed efficient labeling of SGNs (33.5-52.4% at P11, 32.5-44.4% at P18, 13.0-21.5% at P40), with no labeling in controls without tamoxifen, confirming tamoxifen-dependent Cre activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C151, C161-C162 describe fate mapping experiments with appropriate controls. tdTomato+ cells expressed SGN markers (Tuj1, Map2) but not glial markers (Sox10, Sox2), confirming SGN identity. The lack of labeling without tamoxifen (C161-C162) validates the inducible system. Quantification shows consistent labeling across cochlear turns at each age (C150), though labeling efficiency decreases with age (C151), possibly due to reduced tamoxifen uptake or Cre activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C163"
+    ],
+    "result": "Embryonic fate mapping (tamoxifen at E10.5, analysis at E18.5) showed Celf4 expression in SGN progenitors with preferential development into basal (14.3%) and middle (5.04%) turn SGNs compared to apical (0.60%), suggesting Celf4 expression is turned on by E10.5 and maintained at high levels through adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 and C163 describe embryonic fate mapping. tdTomato+ cells were confirmed as SGNs (Mafb+/Sox2-). The significant difference in labeling efficiency across cochlear turns (C159) suggests spatial or temporal heterogeneity in Celf4 expression during early development (C160). This supports the conclusion that Celf4 is expressed in neuroblasts by E10.5 (C163), though the differential labeling pattern requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Co-labeling experiments showed that both Scrt2 and Celf4 are expressed in Type II SGNs (tdTomato+/Gata3+) as well as Type I SGNs (tdTomato+/Gata3-low) at P30/P40.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C173 demonstrate expression in both SGN subtypes using Gata3 as a Type II marker. The observation of tdTomato+/Gata3+ cells confirms Type II expression, while tdTomato+/Gata3-low cells represent Type I SGNs. This is important for understanding the utility of these markers for labeling all SGN subtypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C181"
+    ],
+    "result": "Both Celf4 and Scrt2 are expressed in multiple brain regions (olfactory bulb, cortex, hippocampus, cerebellum) in addition to SGNs, suggesting they may be general regulators of neuron development rather than SGN-exclusive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C178 and C181 document expression in brain regions using both Celf4-iCreER and Scrt2-tdTomato mice. The detection of both mRNA (EGFP) and protein (HA) for Celf4 (C176) and identification of likely Purkinje cells for Scrt2 (C178) provide strong evidence. This is consistent with prior literature (C174, C179, C180) and appropriately qualifies the 'SGN-specific' designation as being within the cochlea only.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C206",
+      "C207"
+    ],
+    "result": "The bulk RNA-Seq approach achieved greater sequencing depth (~15,000 genes with TPM>1) compared to previous single-cell studies (~2,000-8,000 genes), and the washing procedure effectively removed blood cell contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C204 and C206-C207 compare the current approach with previous studies. The detection of ~15,000 genes is substantially higher than single-cell approaches (C204), which is expected for bulk RNA-Seq. The depletion of blood cell markers (Hbb-bs, Hbb-bt) validates the washing procedure (C206-C207). These technical advantages support the quality and comprehensiveness of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C31",
+      "C38",
+      "C185",
+      "C208"
+    ],
+    "result": "The study provides a comprehensive, high-quality bulk RNA-Seq dataset of SGNs at five developmental ages with deep sequencing coverage, identifying previously unknown SGN-specific genes and validating the data through multiple approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, C31, C38, C185, and C208 summarize the overall contribution. The identification of previously unknown SGN-specific genes (C5, C31) is validated through RNA in situ hybridization and knockin mouse characterization (C7). The comprehensive nature (C38, C185) and high quality (C208) are supported by the extensive quality control, sequencing depth, and validation experiments described throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C129",
+      "C130",
+      "C131",
+      "C215",
+      "C218",
+      "C221",
+      "C227",
+      "C242",
+      "C244"
+    ],
+    "result": "The two knockin mouse strains (Scrt2-tdTomato/+ and Celf4-iCreER/+) provide useful genetic tools for future SGN research, enabling fluorescent labeling, lineage tracing, temporal gene manipulation, and SGN sorting applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C39, C129-C131, C215, C218, C221, C227, C242, and C244 describe the utility of the generated mouse strains. The design features (fluorescent labeling, inducible Cre, HA tagging) enable multiple experimental applications. The characterization data demonstrate that these tools work as intended. The advantages over existing tools (e.g., Mapt-EGFP, C222-C227) are well-articulated. These are valuable resources for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "The study acknowledges that because only HCs and glial cells were used as reference cells, other cochlear cell types may also express the identified 'SGN-specific' genes, requiring future comprehensive validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C198 appropriately acknowledge a limitation of the study. The detection of Celf4 in mesenchymal cells (C197) supports this caveat. This is a reasonable limitation given the experimental design, and the authors appropriately call for future validation (C198). This honest assessment strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Mafb, which regulates postsynaptic density formation, belongs to the gene category significantly down-regulated between P1 and P8 (-d--), and this category of 226 genes is enriched for channel-related and cell adhesion genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 link a known functional gene (Mafb) to a specific dynamic expression pattern and show that genes in this category are enriched for functionally related genes. The enrichment analysis using three different ontology annotations (C86, referenced in Figure 3K-M) provides robust support. This demonstrates biological coherence in the gene classification scheme.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Deafness-associated genes, including known HC genes (Cdh23, Cib2) and Esrrb (which causes DFNB35), were over-represented among genes up-regulated between E15.5 and P1 (u---).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 identify enrichment of deafness-associated genes in a specific dynamic category. The inclusion of well-known HC genes (C88-C89) and a gene with established links to hearing loss (Esrrb, C90-C91) validates the biological relevance of this gene category. This suggests that genes in this category may be important for early SGN development and hearing function.",
+    "result_type": "MINOR"
+  }
+]

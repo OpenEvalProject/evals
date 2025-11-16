@@ -1,0 +1,455 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors generated induced excitatory neurons (iNeurons, iNs) from chimpanzee, bonobo, and human pluripotent stem cells by expressing the transcription factor neurogenin-2 (NGN2). Single-cell RNA sequencing and morphological analyses were performed for two chimpanzee, one bonobo, and three human cell lines, while all eight cell lines were used for electrophysiological recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C27, and C28 describe the experimental system and design. The methods section provides detailed protocols for generating rtTA/Ngn2-positive PSC lines and the experimental workflow is clearly documented with appropriate cell line information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "During differentiation, both ape and human cells showed downregulation of stem cell markers (NANOG, OCT4, SOX2), developed neuron-like morphology by day 7, and formed dense networks by day 14. Neurites were positive for TUJI from day 3, and by day 35, cells expressed mature neuronal markers MAP2 and SYN1, with SYN1-positive puncta suggesting synaptic connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe basic characterization of neuronal differentiation supported by immunostaining data (Figures 1C-D, Figure 3\u2014figure supplement 1C) and phase-contrast imaging. These are standard validation markers for neuronal differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C7"
+    ],
+    "result": "The establishment of axo-dendritic polarity occurred similarly in apes and humans. At day 3, TUJI largely colocalized with neurofilaments (suggesting cells were not yet polarized), but by day 7, colocalization decreased, indicating establishment of axo-dendritic polarity. The timing of polarity establishment did not differ between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C7 are supported by immunostaining data showing cytoskeletal marker distribution (Figure 1E, Figure 1\u2014figure supplement 2). The inference about polarity is reasonable based on the colocalization patterns, and the lack of species differences is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The majority of iNs (25/26 cells) had a single axon, which was always the longest neurite and positive for axonal markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by sparse labeling and tracing data (Figure 2\u2014figure supplement 1) with clear quantification (n=26 cells). This validates the morphological analysis approach used in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Both apes and humans showed unipolar, bipolar, and multipolar iNs at all time points analyzed. For apes, 69% were multipolar, 26% bipolar, and 5% unipolar; for humans, 58% were multipolar, 36% bipolar, and 7% unipolar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe morphological heterogeneity supported by quantification from morphological analysis (Figure 2A-D). The percentages are clearly stated and based on all neurons from all time points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C5"
+    ],
+    "result": "At early stages of maturation (days 7 and 14), ape multipolar and bipolar iNs had neurite trees of larger total length than human iNs, with more Sholl intersections at day 14. This indicates that ape iNs have larger neurite trees than human iNs at early stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C5 are supported by morphological quantification with statistical testing (Figure 2G-H, K-L). The Mann-Whitney U test p-values are provided (p<0.05 for all comparisons), and the data show consistent patterns across both multipolar and bipolar neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C8"
+    ],
+    "result": "At later time points (days 21 and 35), total neurite length and number of arborizations did not differ between ape and human iNs, indicating that neurites eventually reached the same level of structural complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C8 are supported by morphological quantification showing no significant differences at later timepoints. This complements the early differences and supports the delayed maturation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C6",
+      "C48"
+    ],
+    "result": "Human multipolar iNs had slightly longer axons at day 35 compared to ape iNs (p=0.0094). For other neurites (excluding the longest), human neurons had longer total neurite length at day 14 (p=0.0009 for multipolar), but showed no difference at days 21 and 35.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C6, and C48 are supported by morphological quantification (Figure 2I, M-N) with statistical testing. However, the biological significance of these small differences is unclear, and the authors note that batch effects were normalized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Single-cell RNA sequencing identified eight clusters of cells based on gene expression patterns, including neural progenitors, intermediate cells, three neuronal sub-populations (differentiated by TAC1, SSTR2/GAL, and PIEZO2/GAL expression), and fibroblasts. Ape and human cells occurred in all clusters at different proportions, with all three neuronal sub-classes present in similar proportions across species and time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 describe the scRNAseq clustering analysis supported by Figure 3A-E. The clustering approach is standard (Seurat), and the identification of cell types is based on established marker genes. The quantification of cell proportions is clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C25",
+      "C113"
+    ],
+    "result": "Based on scRNAseq, 54.6-35.4% of ape cells and 80.8-34.3% of human cells were identified as sensory neurons expressing markers PRPH, NTRK2, POU4F1, and PHOX2B. The iNs expressed VGLUT2 (47.1% ape, 38.8% human) but not GAD1/2, suggesting glutamatergic identity. This demonstrates that NGN2 induces not only cortical fate but also sensory fate in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64, C25, and C113 are supported by scRNAseq data (Figure 3F) showing expression of sensory neuron markers. The identification is based on established markers cited from previous literature. This is a novel finding that extends previous characterizations of NGN2-induced neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Both scRNAseq and immunofluorescence analyses showed that iNs express both cortical markers (CUX1: 90%, BRN2: 50-60%) and sensory markers (ISLET1: 60%, NAV1.7: 60-65%), with 8-14% co-expressing both marker types. The vast majority of iNs are upper layer (II-IV) cortical neurons, with a substantial proportion being cortical sensory neurons. The same populations are present in similar proportions in apes and humans, suggesting NGN2 induces heterogeneous yet similar fates across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C70-C78, C80-C82 are supported by both scRNAseq (Figure 3\u2014figure supplement 3) and immunofluorescence data (Figure 3\u2014figure supplements 4-5). The convergence of mRNA and protein-level evidence strengthens these conclusions. The identification of cortical sensory neurons is a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Differential gene expression analysis showed that human iNs had similar numbers of higher expressed genes across time points, while ape iNs showed varying numbers. Within each species, iNs sub-clusters showed similar numbers of higher expressed genes at each time point and high correlation (>0.7) of enriched GO terms, indicating functional similarity among sub-clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by differential gene expression analysis and Pearson correlation of GO terms (Figure 4A-B). The analysis approach is appropriate, though the biological interpretation of these patterns could be more thoroughly explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C2",
+      "C97"
+    ],
+    "result": "Gene Ontology enrichment analysis revealed that genes involved in axonogenesis and axon guidance were enriched in both species from day 5 (more strongly in apes). Critically, genes for dendrite development and morphogenesis were enriched from day 5 in apes but not in humans. Genes for synapse organization were enriched from day 5 in apes but only from day 14 in humans. Genes for ion transmembrane transport were enriched from day 14 in apes but not even by day 35 in humans. This demonstrates that genes associated with dendrites and synapses become prominently expressed later in human iNs than in ape iNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91, C2, and C97 are supported by GO enrichment analysis with statistical testing (binomial test, p<0.05) (Figure 4C). The temporal differences in gene expression are consistent across multiple functional categories and provide strong molecular evidence for delayed maturation in humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "SynGO enrichment analysis showed that neuron-expressed genes for synaptic organization, pre-synaptic process, and trans-synaptic signaling started expression in ape iNs from day 5 but only from days 14-28 in humans. Most post-synaptic process genes were enriched in apes from day 14 but not in humans until day 35. Differences were more obvious at early time points. Synaptic gene expression was not enriched in progenitor cells compared to iPSCs, suggesting changes are part of neuronal maturation rather than NGN2 expression per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by SynGO enrichment analysis (FDR<0.05) (Figure 4E, Figure 4\u2014figure supplements 1-2). The use of a synapse-specific database strengthens the conclusions. The control comparison with progenitors vs iPSCs appropriately addresses whether differences are due to NGN2 or maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Electrophysiological characterization showed that resting membrane potential (Vrmp) was stable and similar between species. Cell resistance (Rcell) increased initially then decreased as expected for maturing neurons. Cell capacitance (Ccell) increased over time, with human cells slightly but significantly lower than apes. The time constant (R*C) was stable at ~16 ms (ape: 17.4 ms, human: 15.3 ms), similar to previously reported values. At days 14-16, ape cells had higher time constants due to higher Rcell and lower Ccell. Overall, differentiation was accompanied by maturation of basic electrical properties consistent with other neuronal systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 are supported by electrophysiological measurements (Figure 5\u2014figure supplement 1A-B) with two-way ANOVA statistical testing. The measurements are standard for neuronal characterization, and the comparison to literature values (Eyal et al., 2016) validates the system. The small differences in Ccell and time constant at d14-16 are statistically significant but of unclear biological significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C3",
+      "C108"
+    ],
+    "result": "Upon induced depolarization, iNs showed single action potentials as early as day 2. Ape iNs showed repetitive action potentials robustly by days 14-16, while human iNs fired mainly single APs until day 21, after which repetitive firing became established. This occurred despite similar expression of mRNAs for sodium, potassium, and calcium channels in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107, C3, and C108 are supported by current-clamp recordings (Figure 5A-B) with two-way ANOVA showing significant species and day effects (pspec=2.96E-6). The scRNAseq data (Figure 5\u2014figure supplement 1B) confirms that channel expression differences do not explain the functional differences, strengthening the delayed maturation interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C4"
+    ],
+    "result": "Ape iNs developed spontaneous excitatory activity (sEPSCs) after 2-3 weeks of differentiation, while the majority of human iNs remained silent at these times. sEPSCs became frequent in human iNs only after 3-4 weeks. No spontaneous synaptic activity was observed before day 14 in either species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 and C4 are supported by sEPSC measurements (Figure 5C-D) with two-way ANOVA showing significant species effects (pspec=0.0035). The glutamatergic identity was verified with kynurenic acid (Figure 5\u2014figure supplement 1C). This provides strong functional evidence for delayed maturation in humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C23",
+      "C24",
+      "C114",
+      "C124"
+    ],
+    "result": "Human iNs develop slower than chimpanzee and bonobo iNs from structural, transcriptional, and functional perspectives. This delayed maturation is a cell-intrinsic feature of human neurons, as it occurs in cortical sensory neurons as a downstream effect of NGN2-induced differentiation. The difference in timing likely depends on functions downstream of NGN2, since NGN2 is exogenously expressed in both species yet differences persist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C23-C24, C114, and C124 represent the main conclusion supported by converging evidence from morphology (C42-C45), transcriptomics (C87-C94), and electrophysiology (C106-C107, C109-C110). The use of direct conversion isolates cell-intrinsic properties from environmental factors, strengthening the conclusion. The inference about downstream mechanisms (C10) is reasonable given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C26",
+      "C69"
+    ],
+    "result": "NGN2 induces heterogeneous neuronal fates, including multiple neuronal subtypes. The heterogeneity of iNs cultures has been under-estimated and was revealed using scRNAseq. Despite this heterogeneity, the same cell populations are found in apes and humans at different proportions, suggesting NGN2 induces similar fates in both species. The delayed maturation is a general feature of human neurons across different subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116, C26, and C69 are supported by scRNAseq data showing multiple neuronal clusters (Figure 3B) and similar cell type distributions across species (Figure 3D, Figure 3\u2014figure supplements 4-5). The citation to Lin, 2020 supports the claim about under-estimation. The generality of delayed maturation across subtypes is inferred from observing the phenomenon in multiple cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors provide background context from prior literature: differences in cognitive abilities between humans and non-human primates are thought to depend on greater neuron numbers and more complex neural architectures in humans; primate brains contain more neural stem/progenitor cells than other mammals; some neuron types differ structurally among primates; human cortical pyramidal neurons have longer and more branched dendrites than chimpanzee neurons; human iPSC-derived pyramidal neurons mature slower than chimpanzee neurons and have higher dendrite complexity; and the human brain develops and matures slower than closely related primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 are background statements supported by citations to previous literature. These provide appropriate context for the current study. The authors correctly cite relevant prior work on neuronal differences between species and delayed human brain development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C117"
+    ],
+    "result": "The NGN2 direct conversion paradigm allows uncoupling of cell cycle progression of neural progenitors and developmental processes from neuronal maturation, offering a powerful tool to directly study intrinsic differences in the dynamics of neuronal maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C117 describe the rationale for using the direct conversion system. This is based on established knowledge about NGN2-mediated neuronal conversion and is a valid experimental approach for isolating cell-intrinsic maturation properties from developmental timing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Several fundamental properties of neurons (establishment of axo-dendritic polarity, onset of voltage-gated channel expression, basic electrical properties) show little or no differences between apes and humans. However, synapse-associated genes become expressed later in human neurons, and electrical activity within cells (APs) and between cells (sEPSCs) appears later in human neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 summarize the key findings distinguishing conserved vs. delayed features. This is supported by the polarity data (C34-C36), channel expression data (C108), basic electrical properties (C98-C104), transcriptional data (C87-C94), and functional data (C106-C107, C109-C110). The distinction between conserved and delayed features is important for understanding the specificity of the maturation delay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The findings are consistent with prior literature showing that expression changes of genes associated with synaptic functions and spine formation occur later in humans than other primates in post-mortem brains, that iNs morphological maturation follows a similar pattern with ape neurons having more complex neurites until day 14, and that slower neuronal development has been described in organoids and at the organ level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 appropriately contextualize the current findings within prior literature. The citations are relevant and the comparison strengthens the interpretation that the observed delayed maturation is consistent with broader patterns of human brain development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "Sensory neurons are interesting from an evolutionary perspective because the development and evolution of working memory in humans is linked to higher integration of sensory functions in the human prefrontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 provides evolutionary context for the finding of cortical sensory neurons, supported by citations to relevant literature. This appropriately motivates the significance of studying sensory neuron maturation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors hypothesize that maturation of synaptic contacts might be driven by two mechanisms: a transcriptional driver at early time points (setting iNs apart transcriptionally and morphologically) and a post-transcriptional driver at later time points (setting iNs apart functionally). This hypothesis is compatible with post-transcriptional and post-translational mechanisms governing synapse function, and activity-dependent regulation might contribute to amplifying differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128 present a speculative hypothesis based on the observation that transcriptional differences are milder at later timepoints while functional differences remain dramatic. While the hypothesis is plausible and supported by citations to literature on post-transcriptional regulation, it has not been tested experimentally in this study. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "At the molecular level, a possible driver for maturation differences is SRGAP2, which has undergone three duplication events on the modern human lineage. Expression of the human-specific SRGAP2C variant leads to neoteny in spine maturation and might contribute to human brain evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 propose a molecular mechanism based on prior literature (Charrier et al., 2012; Dennis et al., 2012). This is appropriately presented as speculation about possible drivers rather than a tested conclusion. The citations are relevant to the observed phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The later onset of neurite outgrowth has been speculated to result in more complex dendritic trees. At day 35, human multipolar neurons have slightly longer axons than ape neurons. Longer axons would make contacts over greater distances possible, which may be relevant given that the human brain is three times bigger than ape brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C134 present speculation about the functional consequences of the observed differences. While C132 is supported by data (Figure 2I), the speculation about dendritic complexity (C131) and the implications for brain connectivity (C133-C134) are not tested. The authors appropriately frame these as future research directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The NGN2-induced generation of cells expressing progenitor markers and differentiated neurons is in line with previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 appropriately contextualizes the observation of heterogeneous cell populations (including progenitors) within prior literature on NGN2 and ASCL1-induced neuronal populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The smaller population of sensory iNs not expressing cortical markers is likely to be a population of nociceptive peripheral neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is a reasonable inference based on the marker expression patterns and is supported by citation to Lin, 2020. This interpretation is consistent with the expression of nociceptive markers (TAC1, PIEZO2, etc.) in a subset of cells.",
+    "result_type": "MINOR"
+  }
+]

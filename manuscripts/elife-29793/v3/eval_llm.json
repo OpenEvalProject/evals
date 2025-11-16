@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C34",
+      "C35",
+      "C62",
+      "C63",
+      "C75"
+    ],
+    "result": "Rat position can be decoded from ACC neural activity with high spatiotemporal resolution (~10 cm median accuracy) using a deep artificial neural network (dANN), which outperformed Bayesian methods by 36%. This accuracy is much finer than individual ACC neuron spatial selectivity and requires approximately 30 randomly selected or 17 optimally selected ACC units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, C34, and C62 establish the core finding with statistical support (t(6)=9.0, p=0.0001). Claims C24, C28-29 provide methodological validation through downsampling and greedy selection analyses. The dANN's superior performance (C25-27) is well-documented with appropriate controls. The spatial resolution achieved (C34-35, C63, C75) is quantified and contextualized relative to individual neuron properties and body size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The position decoder is robust to moderate spike timing noise (25 ms jitter increased error by only 1.3% or 0.14 cm), with only 0.07% of samples deviating >25 cm. Feeder classification accuracy was unaffected by noise but eliminated by shuffling spike intervals, indicating that activity patterns at feeders are sufficiently distinct and that excursions are not artifacts of random variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-33 demonstrate decoder robustness with appropriate statistical tests (t(6)=4.8, p=0.003). Claims C48-50 provide independent validation that excursions are not classification errors through noise robustness tests (t(6)=1.02, p=0.35 for noise; t(6)=32.6, p=3e-8 for shuffling). The convergent evidence from multiple approaches strengthens the conclusion that the decoder is reliable and excursions represent genuine neural phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Position-related features of ACC neural activity used by the decoder are stable within sessions despite changes in effort and reward contingencies across blocks, as evidenced by no significant difference in decoding error when training on alternating versus first-half trials (0.6 cm difference, t6=1.28, p=0.24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-37 provide evidence for within-session stability through appropriate cross-validation analysis. The non-significant result (p=0.24) supports the stability claim, though the test has limited power to detect small effects. The conclusion is appropriately qualified as providing 'some evidence' rather than definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C65"
+    ],
+    "result": "ACC neurons normally encoded the rat's current position, but brief excursions (median 400 ms duration) occurred almost exclusively at target feeders where decoded position shifted to the alternate remote feeder location. These excursions consisted of consecutive time points encoding the alternate feeder before returning to actual position, occurred while stationary, mostly after reinforcement, and were statistically unlikely by chance (\u03c7\u00b2=484, p=1E-40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-3, C38-42, C44-46, and C65 collectively establish the excursion phenomenon with strong statistical evidence (\u03c7\u00b2=484, p=1E-40). The spatial specificity (C39, C42), temporal characteristics (C44-46), and trajectory patterns (C40) are well-documented through multiple analyses. The convergence of spatial, temporal, and statistical evidence provides robust support for this novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C109",
+      "C110"
+    ],
+    "result": "The excursion phenomenon is involved in computations related to evaluating choice options rather than general reward qualities or planning the immediately next action, as evidenced by excursions occurring exclusively at target feeders (not center feeder) and not terminating at the center feeder despite the next action always being a return there.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C109-110 provide converging evidence through task design constraints and behavioral patterns. The absence of excursions at the center feeder (C42, C109-110) despite equivalent reward and the enforced return trajectory strongly supports the interpretation. However, this remains an inference from negative evidence (absence of excursions at center) rather than direct demonstration of the proposed function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C51",
+      "C52",
+      "C53",
+      "C92"
+    ],
+    "result": "Neural activity patterns during excursions are distinct from non-excursion patterns at the same feeder (AUC=0.94) but show moderate overlap with patterns from the alternate feeder (AUC=0.75), suggesting that encoding features shift to become more similar to the unselected feeder during excursions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C51-53, C92 provide quantitative discrimination analysis with appropriate metrics (AUC from ROC analysis). The high discrimination between excursion and non-excursion at same feeder (C51) combined with moderate discrimination between excursions from different feeders (C52) supports the interpretation (C53). However, the authors acknowledge limitations due to low excursion numbers at preferred feeders and potential confounds from temporal compression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C66"
+    ],
+    "result": "Excursions recruited neurons encoding choice (36% of cells) and reward (30% of cells), occurred more frequently at less-preferred feeders (r\u00b2=0.86, F(6)=31.5, p=0.002), and were more likely when rats were forced to select or chose the less-preferred option. This suggests ACC evaluates unrealized choice outcomes at remote locations, particularly after disfavored reinforcements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-6, C54-61, C66 provide converging evidence linking excursions to choice evaluation. The strong anti-correlation between excursion frequency and feeder preference (C56, r\u00b2=0.86, p=0.002) is statistically robust. The activation of choice/reward-encoding neurons during excursions (C59-61) provides mechanistic support. However, C6 and C66 involve interpretive leaps from correlation to function, and reward/location confounds are acknowledged but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C79",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors propose that ACC forms a topographically-organized mental model isomorphic with task space by multiplexing position with choice-related information, which can be mentally navigated via excursions to recall multimodal information about utility of remote locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C64, C79, C88-89 represent theoretical proposals and speculations based on the data rather than directly tested hypotheses. While the proposals are consistent with the observed phenomena (spatial encoding, excursions, choice/reward encoding), they extend beyond what the data directly demonstrate. The authors appropriately frame these as proposals and possibilities rather than established facts, but they remain speculative interpretations requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C116",
+      "C113"
+    ],
+    "result": "The task design (forced alternation, short blocks) prevents rigorous testing of whether excursions influence future choice on a trial-by-trial basis, though excursions may have probabilistic influence on future choice and could trigger memory traces promoting response shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C116, C113 appropriately acknowledge a critical limitation of the study design. The authors correctly identify that their correlational findings cannot establish causal influence of excursions on behavior. C113 and C116 are explicitly labeled as speculative. This honest assessment of limitations is important for interpreting the functional significance of excursions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C78"
+    ],
+    "result": "Whether ACC encodes pure spatial signals or spatially-locked actions/stimuli/events remains unclear, but the spatial information is multiplexed with other task features (reward, effort) and under some circumstances the state-space trajectory is isomorphic with real-world spatial coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76, C78 appropriately acknowledge a fundamental ambiguity in interpreting the spatial encoding. The task's repetitive nature and stereotyped movements create confounds between space and actions/events (C74). The multiplexing claim (C76) is supported by the encoding of choice/reward alongside position. The isomorphism claim (C78) is supported by the decoding accuracy but qualified as occurring 'under some circumstances,' appropriately limiting the generalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establish that ACC/mPFC play roles in memory and decision control, influence hippocampal memory retrieval, encode task features related to reinforcement and decisions with broad spatial selectivity, utilize hippocampal place cell information, and are involved in cost-benefit optimization and encoding unattained rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-23 are background knowledge claims supported by appropriate citations to prior literature. These establish the context for the current work and are not novel findings of this study. The citations appear appropriate and the claims accurately represent the cited work based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C73",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C90",
+      "C91",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C118"
+    ],
+    "result": "Discussion claims relate current findings to prior literature on ACC spatial encoding, fictive outcome signaling, conflict resolution, replay phenomena, default mode network, evolutionary conservation, and human cognition, drawing connections and proposing broader implications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-118 (excluding those grouped elsewhere) represent discussion points connecting the current findings to broader literature. These are appropriately supported by citations and represent reasonable interpretations and contextualizations of the findings. Many are explicitly speculative (C100, C105, C113) or acknowledge limitations (C86, C117). The connections drawn are plausible but extend beyond direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Methodological details describe the task design (figure-8 track with choice conflict between reward and effort), recording locations (mostly ACC), behavioral performance (162-256 trials/session), and apparatus specifications (track dimensions, feeder locations, reward type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C119-125 provide methodological details that are straightforward descriptions of the experimental setup. These are adequately documented and appear internally consistent. C119 is supported by Figure 1C showing recording locations. These details are necessary for reproducibility and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The excursions were relatively brief compared to feeder occupancy time, raising the possibility of temporal compression similar to replay events, and the brain dynamics involved are likely coordinated with other brain regions beyond ACC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-95 are explicitly speculative interpretations. C94 acknowledges that temporal compression could introduce confounds for classification analysis, which is an honest limitation. C95 proposes multi-region coordination but provides no direct evidence from simultaneous recordings in other areas. These remain plausible hypotheses requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

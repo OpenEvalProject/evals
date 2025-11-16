@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Reanalysis of Lorteije et al. (2015) data shows that the Hyafil and Moreno-Bote (H&M) flat models predict stronger interactions between L1 and L2 decisions than observed in the behavioral data. Both H&M models show decreased L2 accuracy when L1 is correct (visible as flattened psychometric functions), while monkey data shows much weaker interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide converging evidence from model simulations and data reanalysis shown in Figure 1, demonstrating quantitative mismatch between H&M model predictions and behavioral data. The statistical comparison is clear and the conclusion (C52) follows logically from the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "V4 neurophysiological data reveals that L1 evidence strength has distinct effects on different L2 branches: boosting TT, suppressing DT and DD (all P<10\u207b\u00b3), but not affecting TD (p>0.3). This pattern is incompatible with H&M's flat model, which predicts increased activity for both TT and TD branches, and is consistent with hierarchical decision-making with local interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide statistically significant neurophysiological evidence with appropriate p-values. The comparison with H&M model predictions (C61-C62, Figure 2B) demonstrates clear qualitative differences. The inference to hierarchical processing (C64-C65) is well-supported by the distinct branch-specific effects that cannot be explained by global inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45"
+    ],
+    "result": "The H&M model's self-excitation mechanism causes unstable, exponentially-increasing neural activity that is incompatible with neurophysiological data from Lorteije et al. (2015) and other studies. Evidence accumulation without information loss about later samples is incompatible with strong self-excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 provides direct observational evidence from H&M's own Figure 3C. Claims C40-C41 appropriately cite empirical neurophysiological constraints. Claim C44 cites multiple studies establishing that evidence accumulation can occur without loss of late sample information. The logical incompatibility (C45) follows from these established constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The H&M models fail to explain two critical aspects of the data: (1) the lack of influence of L2 accuracy on L1 sensitivity, and (2) the absence of influence of L1 luminance strength on the TD branch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C86-C87) are supported by direct testing of H&M models against empirical data, as shown in the neurophysiological analyses (Figure 2). The conclusion (C88) appropriately summarizes the model's failure to account for both behavioral and neurophysiological results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "In a curve-tracing task from Pooresmaeili and Roelfsema (2014), V1 neuronal activity showed serial decision-making: activity for L1 segments near fixation was enhanced before L2 segments beyond the crossing. This temporal pattern refutes flat models that predict simultaneous processing of all alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C146 provide direct neurophysiological evidence of temporal ordering in V1 activity (Figure 3). The inference to serial processing (C96, C145) is well-supported by the temporal sequence. The refutation of flat models (C97, C121) logically follows since flat models predict simultaneous decisions at all levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C122",
+      "C123"
+    ],
+    "result": "Human psychophysical experiments show that decision-making strategy depends on task complexity: with two hierarchical levels, evidence accumulation is largely parallel, but adding a third level (increasing total decisions to seven) switches processing to serial mode. This demonstrates limited capacity for parallel decision-making (between 3-7 decisions) and conditions where L1 and L2 evidence accumulation can be decoupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by experimental data shown in Figure 4a-b, with clear psychophysical kernel evidence. The inference to limited capacity (C105-C106) is reasonable given the shift from parallel to serial processing with increased complexity. The conclusion about independent accumulators (C107, C123) is well-supported by the observed flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Hierarchical decision-making is a highly flexible process where evidence can be integrated by separate accumulators, allowing adaptation to task demands. Parallel accumulation occurs only when permitted by task structure (not exclusive-or) and when capacity is not exceeded. Flat models lack this required flexibility and fail to account for serial decision-making situations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion about flexibility (C115-C116) is well-supported by the diverse experimental evidence showing both parallel (Lorteije et al., Figure 4a) and serial (Figure 3, Figure 4b) processing depending on task structure and complexity. The constraints on parallel processing (C117-C118) are empirically grounded. The rejection of flat models (C119-C121) follows logically from their inability to explain the observed flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C142",
+      "C143"
+    ],
+    "result": "The two H&M models have problematic properties: the first uses infinite bounds collapsing after 500ms, while the second uses high constant bounds that are not reached in a large fraction of trials and produces unrealistically long response times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 accurately describe the H&M model variants. Claims C142-C143 are supported by simulation results shown in Figure 1\u2014figure supplement 1, demonstrating quantitative mismatch with monkey response time data. The evidence clearly shows model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The H&M model results critically depend on three features: (1) infinite bounds that collapse rapidly (not observed in neurophysiology), (2) noise that does not scale with evidence strength, and (3) strong self-excitation causing suboptimal decision-making and exponentially-increasing firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims identify critical model assumptions (C81, C83-C84) and note the lack of neurophysiological support for collapsing bounds (C82). The consequences of self-excitation (C85) are demonstrated in the model analysis. This provides a fair critical assessment of the H&M model's dependencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The H&M model reduced L1-L2 interaction by implementing high bounds, strong recurrent excitation, and non-scaling sensory noise. Self-excitation was needed to explain high weights on early samples, since high-bound models without self-excitation produce flat psychophysical kernels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 accurately describes H&M model features. Claim C37 is supported by citation to Brunton et al. 2013 establishing the relationship between high bounds and flat kernels. Claim C36 provides reasonable inference about why self-excitation was included in the H&M model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Attractor networks could potentially stabilize firing rates in the H&M model, but attractors act as bounds and would increase the dependency of L2 accuracy on L1 difficulty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 appropriately suggests attractor networks as a potential solution with proper citations. Claim C43 provides valid theoretical reasoning about why this solution would not resolve the fundamental problem. This is appropriate speculation about model modifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Hierarchical models require mechanisms for interactions between decisions. Lorteije et al. (2015) showed that L2 difficulty biases L1 choice in both behavior and V4 firing rates. Since H&M's global inhibition is refuted, alternative mechanisms like confidence-based biasing may play this role, supported by prior studies showing confidence can guide decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by data from the cited study. The inference about alternative mechanisms (C71-C72) is reasonable speculation given the refutation of global inhibition. Claim C74 appropriately cites supporting literature. This provides balanced discussion of mechanistic requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors disagree with H&M's parsimony claim, noting that H&M models contain many parameters and have the same shortcomings as the simpler flat model explored in Lorteije et al. (2015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 accurately represents H&M's claim. The disagreement (C78) and observation about parameter count (C79) are straightforward. Claim C80 is supported by the demonstrated failures of H&M models shown throughout the manuscript. This is appropriate critical evaluation of parsimony claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Multiple factors may influence whether hierarchical decision-making is parallel or serial, including stimulus configuration (exclusive-or structure vs. independent evidence) and the number of simultaneous decisions required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 provide specific examples of how task structure differs between studies, supported by the experimental designs. Claim C101 is supported by the empirical demonstration in Figure 4 showing the shift from parallel to serial with increased decision number. These are reasonable inferences from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Multi-unit activity was recorded from V1 and V4 in 2 monkeys. For Figure 2A analysis, trials were grouped into quartiles based on L1 evidence strength (averaged over first two samples), including only correct trials. Data represents 31 sites from 19 recording sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims provide clear description of data collection and analysis procedures. The sample sizes and analysis approach are explicitly stated and appropriate for the analyses conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The two-level hierarchical task (Figure 4a) is novel unpublished data. Three subjects completed 1825-2534 trials each, making left/right (L1) and up/down (L2) decisions. Luminance samples had Gaussian noise (\u03c3=10 cd/m\u00b2), background was 50 cd/m\u00b2, and target luminance was adjusted to maintain ~75% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims clearly describe the experimental design and parameters for the new experiment. The sample sizes and stimulus parameters are appropriate and clearly specified.",
+    "result_type": "MINOR"
+  }
+]

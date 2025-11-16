@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C53",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study used 3' Seq to identify and quantify polyadenylation sites (PAS) in nuclear and total mRNA fractions from 52 Yoruba HapMap lymphoblastoid cell lines. After quality control and filtering for internal priming, 41,810 PAS were identified in 15,043 genes with at least 5% mean usage, with 35,032 PAS in total mRNA and 39,164 in nuclear fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific details about sample preparation, library generation, sequencing, data processing, and filtering steps (C105-C121). The quantitative results for PAS identification are clearly stated (C53, C112-C114) with appropriate quality control measures including filtering for internal priming (C110) and identity verification (C111). The experimental design is sound and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C18",
+      "C21",
+      "C22",
+      "C26",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Comprehensive characterization of PAS revealed that 67% of expressed protein-coding genes harbor multiple PAS, with 48.3% of identified PAS located in 3' UTRs and 30.6% in introns. Intronic PAS showed lower average usage (16.9%) compared to 3' UTR PAS (46.2%), and genes with single PAS tend to be more highly expressed than those with multiple PAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative characterization of PAS distribution and usage is well-supported by the data (C16, C21, C22, C26). The methodological approach for defining PAS usage as a ratio is clearly described (C57), and appropriate filtering for internal priming artifacts was implemented (C55, C56). The validation using nuclear/total mRNA ratio correlation with decay measures (C54) supports the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C62",
+      "C63"
+    ],
+    "result": "Differential analysis between nuclear and total mRNA fractions identified 591 PAS in 585 genes that are preferentially used in the nucleus (\u226520% higher usage at 10% FDR), with 387 being intronic. Of these, 134 PAS showed \u22641% usage in total mRNA, and 83.4% of nuclear-enriched intronic PAS were absent from comprehensive annotations, suggesting many intronic transcripts undergo rapid decay or nuclear retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential usage analysis is well-executed with appropriate statistical thresholds (10% FDR, 20% usage difference) and clear quantitative results (C27-C30). The comparison with external databases (C30) strengthens the novelty claim. The interpretation that these transcripts undergo rapid decay or nuclear retention (C63) is reasonable given the data, though the hypothesis about rapid degradation (C62) remains speculative without direct decay measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Analysis of intronic PAS supports the telescripting model, where U1 snRNP protects introns from premature cleavage and polyadenylation. Introns with the weakest 5' splice sites harbored more PAS (1.5x enrichment, p=8.07\u00d710\u207b\u2078\u2077), and the top 10% most highly used intronic PAS had weaker 5' splice sites than lowly used PAS or random introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of splice site strength using MaxEntScore provides quantitative support for the telescripting model (C59, C60). The statistical significance is strong (p=8.07\u00d710\u207b\u2078\u2077), and the correlation between weak splice sites and PAS presence is well-documented. However, the interpretation relies on existing models from the literature rather than direct experimental validation of the telescripting mechanism in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C64",
+      "C65"
+    ],
+    "result": "apaQTL mapping identified 602 nuclear apaQTLs in 479 genes and 443 total mRNA apaQTLs in 353 genes at 10% FDR. Lead apaQTL SNPs are enriched near their associated PAS and at 3' ends of gene bodies. Only 97 (21.9%) of total mRNA apaQTLs were not detected in nuclear fraction, and these showed weaker associations. While apaQTL SNPs are enriched in polyadenylation signal motifs, variants altering these motifs do not explain the majority of apaQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The QTL mapping is methodologically sound with appropriate statistical corrections (10% FDR, 1000 permutations) and covariate adjustments (C116-C121). The quantitative results are clearly stated (C2, C31, C32), and the positional enrichment analysis (C33) is well-documented. The conclusion that signal motif disruption is not the major mechanism (C65) is supported by enrichment analysis, though the alternative mechanisms remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C66",
+      "C67",
+      "C88",
+      "C89"
+    ],
+    "result": "Comparison of apaQTL effect sizes between nuclear and total mRNA fractions revealed high correlation (r\u00b2=0.66, p<10\u207b\u00b9\u2076), with 152 nuclear-specific apaQTLs identified. The vast majority of genetic variants affecting PAS usage in total mRNA showed similar effect sizes in the nucleus, indicating that inter-individual variation in APA is primarily driven by co-transcriptional mechanisms rather than post-transcriptional processes like isoform-specific decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effect size correlation analysis (C88) provides strong quantitative evidence for co-transcriptional mechanisms (C89). The high correlation (r\u00b2=0.66) and statistical significance support the conclusion. The lack of enrichment in RNA binding protein sites (C67) further supports that post-transcriptional decay mechanisms are not the primary driver. However, the study acknowledges some apaQTLs may still affect decay (C95-C98), showing appropriate nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C38",
+      "C41",
+      "C70",
+      "C71",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Intronic apaQTL effect sizes show negative correlation with eQTL effect sizes (p=8.97\u00d710\u207b\u2077), suggesting genetic variants can decrease mRNA expression by increasing usage of intronic PAS that produce transcripts subject to rapid decay. This mechanism was estimated to explain 17.3% of otherwise unexplained eQTLs, and 13 nuclear-specific apaQTLs were also identified as eQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative correlation between intronic apaQTL and eQTL effect sizes is statistically significant (C4, p=8.97\u00d710\u207b\u2077) and mechanistically plausible given that intronic polyadenylation can produce transcripts subject to nonsense-mediated decay (C97). The estimate that 17.3% of unexplained eQTLs are associated with PAS usage (C41) provides quantitative support. However, the causal interpretation (C5, C71) is inferential rather than experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C99"
+    ],
+    "result": "apaQTLs and unexplained eQTLs show similar chromatin state enrichment patterns, being more likely to lie in transcription elongation regions and less likely in enhancers or promoters compared to explained eQTLs. eQTLs and apaQTLs colocalize for the majority of genes with both, highlighting APA as an important eQTL mechanism independent of enhancers and promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chromatin state enrichment analysis (C72) using GM12878 ChromHMM annotations provides clear evidence for distinct regulatory mechanisms. The colocalization analysis (C73) strengthens the connection between apaQTLs and eQTLs. The conclusion that APA represents an independent regulatory mechanism (C74, C99) is well-supported by the convergent evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C75",
+      "C77",
+      "C102",
+      "C103"
+    ],
+    "result": "24 apaQTLs were identified that affect protein expression but not mRNA expression, with 5 of these also associated with ribosome occupancy. An additional 19 pQTLs were associated with APA but not with steady-state gene expression or ribosome occupancy, indicating multiple pathways by which APA can impact protein levels independently of mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of protein-specific apaQTLs (C45, C46, C47) provides direct evidence that APA can affect protein expression independently of mRNA levels. The statistical power argument (C102) is reasonable given the larger sample sizes for mRNA measurements. The finding that some pQTLs associate with ribosome occupancy while others do not (C103) suggests multiple regulatory mechanisms, though the specific pathways remain to be fully characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C51",
+      "C52",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "19% of apaQTLs (including SNPs in LD with r\u00b2>0.9) are significantly associated with at least one trait in the UCSC GWAS catalog. LDscore regression analysis showed that 14 of 35 tested traits had significant heritability enrichment in 1 kb regions around PAS, including 15.35% of SNP heritability for rheumatoid arthritis (7.88-fold enrichment, p=0.0025). Specific examples include apaQTLs in C10orf88 associated with LDL cholesterol and in ELL2 associated with multiple myeloma risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GWAS enrichment analysis is methodologically sound with appropriate LD consideration (r\u00b2>0.9) and multiple testing correction. The heritability enrichment analysis using LDscore regression (C48) provides quantitative evidence for disease relevance. The specific examples (C51, C52) with literature citations strengthen the claims. However, the causal mechanisms linking these apaQTLs to disease remain to be established experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C100",
+      "C101",
+      "C104"
+    ],
+    "result": "The study reveals complex modes of genetic regulation by APA that challenge the linear model of genetic effects moving from chromatin to mRNA to protein. APA mediates genetic effects on mRNA expression, protein expression, and disease risk through multiple co- and post-transcriptional pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C101, C104) is well-supported by the convergent evidence from multiple analyses showing APA effects at different regulatory levels. The challenge to the linear regulatory model (C100) is justified by the identification of apaQTLs that affect protein but not mRNA levels, and by the chromatin state analysis showing APA operates independently of enhancers/promoters. The claim of complex regulation (C78) is supported by the diverse mechanisms identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study addresses limitations of previous APA studies that were restricted to 3' UTRs and used standard RNA-seq. While 3' Seq is susceptible to mispriming artifacts, stringent filtering was applied, and an estimated 10-20% of unannotated intronic PAS may be false positives. However, main analyses were robust to removal of these potentially false positive sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge both the advantages of their approach and its limitations (C83-C85). The estimate of 10-20% false positives among unannotated intronic PAS (C86) is honest and based on adenosine enrichment analysis. Critically, the robustness analysis showing main conclusions hold after removing these sites (C87) strengthens confidence in the results. This transparent handling of potential artifacts is scientifically rigorous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Disruption of canonical polyadenylation signal motifs does not appear to be a major mechanism for generating apaQTLs. Alternative mechanisms such as variation in RNA polymerase II pausing and elongation rate, supported by findings in Drosophila, may underlie the genetic effects on PAS usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the conclusion that signal motif disruption is not the major mechanism is supported by enrichment analysis (C90), the proposed alternative mechanisms involving RNAPII pausing (C91, C94) are largely speculative and based on findings in Drosophila (C92, C93) rather than direct evidence in the human LCL system studied. These remain plausible hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  }
+]

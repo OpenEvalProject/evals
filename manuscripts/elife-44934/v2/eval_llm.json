@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "BK channels are modular proteins regulated by both cytosolic Ca2+ and voltage, with distinct structural domains (VSD, CTD with RCK1/RCK2) that independently modulate channel gating. In the absence of Ca2+, very positive voltages are required for channel activation, making Ca2+ sensor activation necessary for physiological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are all supported by extensive citations to prior literature and represent well-established background knowledge about BK channel structure and function. These claims provide the foundational context for the study and are not contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work suggests energetic interactions between voltage and Ca2+ sensors are important for BK channel activation, with the CTD-VSD interface mediating crosstalk. However, the strength and mechanism of this interaction remain debated, and the RCK1 site has been specifically implicated in communicating Ca2+-dependent changes to the VSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 accurately summarize the state of prior knowledge and open questions in the field, all supported by appropriate citations. These claims establish the motivation for the current study by identifying gaps in understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study's main findings are that Ca2+ sensor occupancy strongly impacts VSD activation through a coordinated mechanism where Ca2+ binding to a single \u03b1-subunit affects all VSDs equally, with RCK1 and RCK2 sites contributing equally to decrease the free energy for VSD activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 represent the primary conclusions of the study and are supported by the experimental data from gating current measurements and mutational analysis presented in the Results section. The coordinated interaction mechanism is validated through model fitting (C78), and the equal contribution of RCK1 and RCK2 is demonstrated through mutant analysis (C88, C89, C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "The fast IG-ON relaxation reflects voltage sensor movement in the closed channel conformation, occurring before channel opening, as demonstrated by kinetic analysis showing the gating current decays before ionic current activation reaches exponential time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C26 are directly supported by experimental data shown in Figure 1A-B. The temporal separation between gating current decay and ionic current activation provides clear evidence that the measured gating currents reflect closed-state voltage sensor movements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "OFF-gating currents show Ca2+-dependent changes in amplitude and kinetics, with at least two resolvable components. The fast component time constants agree with two-state model predictions, while the slow component increases with Ca2+ concentration, reflecting increased channel open probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by experimental data in Figure 2 and supplementary figures. The kinetic analysis and model fitting provide consistent evidence for the interpretation of the OFF-gating current components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C44",
+      "C46",
+      "C49"
+    ],
+    "result": "The standard Horrigan-Aldrich model assumes a single Ca2+-binding site per subunit and independent CTD-VSD interaction (Scheme I). At extreme Ca2+ concentrations, VSD activation is mechanism-independent, but at intermediate concentrations, Scheme II (concerted interaction) predicts distinct behavior characterized by a five-component Boltzmann function. Ca2+-binding is slow enough to ignore re-equilibration during gating current measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C44, C46, and C49 describe the theoretical framework and modeling assumptions. C41 accurately describes the HA model based on citations. C44 and C46 are logical inferences from the model structure. C49 is supported by kinetic simulations shown in Figure 3\u2014figure supplement 2, demonstrating that fast Ca2+ re-equilibration cannot explain the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Model II (Scheme II), where Ca2+ binding to one subunit affects all VSDs equally, reproduces the Ca2+-dependent gating charge movement better than Model I (independent subunit interaction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by the model fitting results shown in Figure 4B-D and Table 1. The Akaike Information Criterion analysis strongly favors Model II (wi = 0.004 for one-site model, wi = 0.995 for two-site Model II), providing quantitative support for the concerted interaction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C61",
+      "C64"
+    ],
+    "result": "Mutations in RCK1 (D362A/D367A and M513I) and RCK2 (5D5A) sites show that both high-affinity Ca2+-binding sites contribute approximately equally (~4 kJ/mol each) to decreasing the free energy for VSD activation, suggesting independent allosteric pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C58, C61, and C64 are supported by experimental data from mutant analysis shown in Figures 5 and 6. The similar energetic contributions (\u0394\u0394G ~4 kJ/mol) from disrupting either RCK1 or RCK2 sites provide strong evidence for equal and additive effects, supporting independent pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "Selective disruption of RCK1 (D362A/D367A) or RCK2 (5D5A) Ca2+-binding sites by neutralizing coordinating residues reveals that both sites contribute equally (~4 kJ/mol) to VSD activation, and their combined effect mimics full Ca2+ occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 and C91 are directly supported by the mutant gating current data in Figure 5. The experimental measurements show nearly identical energetic contributions from each site, and the additive nature of the effects supports the conclusion of independent contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Fluorescence studies show that Ca2+-binding causes VSD rearrangements and voltage-dependent gating ring reorganization. These conformational changes are attributable to VSD operation rather than pore opening, as mutations affecting pore equilibrium do not alter voltage-dependent gating ring reorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, and C75 are supported by citations to prior fluorescence studies (Savalli et al., 2012; Miranda et al., 2013, 2018). These claims accurately represent findings from the cited literature and provide important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The concerted CTD-VSD communication may be analogous to the mechanism in bacterial K+ channels (MthK), where Ca2+-binding triggers symmetric gating ring rearrangement propagated to transmembrane domains. Each Ca2+-binding event may produce gradual gating ring expansion affecting all four voltage sensors through protein-protein interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C81 are explicitly speculative (C81 states \"we can speculate\"). While C80 is supported by citations to structural studies, the analogy to bacterial channels and the proposed gradual expansion mechanism remain hypothetical. The speculation is reasonable but lacks direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The CTD-VSD communication pathway involves non-covalent interactions between the RCK1 N-lobe and S0-S4 transmembrane segments. Ca2+-binding causes the RCK1 N-lobe to pull on S6 and modify contact surfaces with adjacent voltage sensors. Prior work suggested RCK1 is primarily responsible for CTD-VSD coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84, C85, and C86 are supported by citations to structural and functional studies. However, the current study's findings (C89, C91) challenge the prior view that RCK1 is primarily responsible, showing instead that RCK2 contributes equally. This represents an important advance over prior understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The two RCK sensors appear to contribute independently to VSD modulation, though modest cooperativity between them cannot be ruled out. Prior studies suggest intrasubunit cooperativity is more relevant than intersubunit cooperativity, but the current study's cooperativity analysis produced results inconsistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C99 present a mixed picture. The independence of RCK1 and RCK2 contributions is supported by the additive effects (C88, C91). However, C98 notes that including cooperativity in the model produces results \"at odds with previous reports,\" and the model fitting with cooperativity yields unrealistic KD values (Table 1). The cooperativity question remains unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "While Model II (concerted CTD-VSD interaction) better explains the data than Model I (independent interaction), more work is needed to develop improved models that more accurately reproduce CTD-VSD interaction properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is a reasonable concluding statement acknowledging the study's limitations. The AIC analysis clearly favors Model II, but the authors appropriately note that neither model perfectly captures all aspects of the mechanism, particularly regarding cooperativity between Ca2+ sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study used human BK \u03b1-subunit and mutants expressed in Xenopus oocytes, with recordings made using inside-out patch-clamp. Gating currents were elicited by 1 ms voltage steps from -90 to 350 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are straightforward methodological details that are adequately described. The methods are standard for this type of study and appear appropriate for measuring gating currents.",
+    "result_type": "MINOR"
+  }
+]
