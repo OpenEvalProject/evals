@@ -1,0 +1,163 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PP2A-B55 is the phosphatase responsible for dephosphorylating pEndos during M phase exit. This was demonstrated through multiple experimental approaches: inhibitor profiling showing okadaic acid and fostriecin sensitivity; RNAi depletion of PP2A subunits in Drosophila S2 cells and HeLa cells; genetic analysis of Drosophila twins mutants lacking the B55 subunit; biochemical fractionation showing co-purification of anti-Endos and anti-CDKS activities with PP2A-B55 components; and direct activity assays with purified recombinant PP2A-B55 heterotrimers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not explicitly challenge the identification of PP2A-B55 as the pEndos phosphatase, but raised concerns about methodological rigor. Point 1 requests clarification on assay linearity and whether Michaelis-Menten kinetics are appropriate for analyzing a strongly-bound inhibited complex. Point 2 notes that most data are single points without variation estimates, making it difficult to judge assay reliability. Point 5 raises the caveat that asynchronous mammalian cells may not capture the physiological phosphatase active only briefly during anaphase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C19",
+      "C39",
+      "C40",
+      "C47",
+      "C48",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PP2A-B55 exhibits dramatically different kinetic parameters for pEndos versus CDK-phosphorylated substrates: the Km for pEndos is 4-5 orders of magnitude lower (nanomolar range) while the kcat is 2-3 orders of magnitude slower. This results in differential sensitivity to inhibitors like tautomycetin and phosphomimetic Endos. The authors propose this reflects 'inhibition by unfair competition' where pEndos binds with very high affinity but is dephosphorylated slowly.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned the appropriateness of applying Michaelis-Menten kinetics to analyze 'the substrate-enzyme relationship of a strongly-bound component of an inhibited complex' (Point 1). They also noted inconsistencies in inhibitor sensitivities between experiments (e.g., fostriecin data in Figure 2 vs Figure 6B) and requested clarification on whether the kinetic framework is valid for this system. The lack of replicates (Point 2) further limits confidence in the precise kinetic parameter estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PP2A-B55 can auto-reactivate by dephosphorylating its own pEndos inhibitor. Thiophosphorylated Endos has an IC50 of ~197 pM (only ~2-fold higher than okadaic acid), representing a 3000-fold increase in binding affinity over nonphosphorylated Endos. In time-course experiments, PP2A-B55 cannot recognize pCDKS substrate until the majority of pEndos is dephosphorylated, with a clear ~35 min delay before pCDKS dephosphorylation accelerates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers did not directly challenge these findings, Point 1 raises fundamental questions about whether 'dephosphorylation of endosulfine within the complex would presumably mean that the rate would be independent of the dilution of the complex' and asks if there is evidence for this. The auto-reactivation model depends critically on the kinetic framework being appropriate, which reviewers questioned. Additionally, Point 5 asks whether 'the mechanism that they propose is rapid enough to account for the reactivation of phosphatases in mitotic exit.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C75"
+    ],
+    "result": "The intracellular concentrations of PP2A-B55 (100-250 nM) and Endos (500 nM-1 \u03bcM) were estimated from Western blot quantitation, yielding a ~5:1 ratio consistent with mass spectrometry data. During M phase, approximately 50% of Endos is phosphorylated in mammalian cells and approaches 100% in frog egg extracts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly raised concerns about stoichiometry in Point 4: 'For their proposed mechanism to be valid, pEndos has to present in molar excess over active PP2A-B55 in mitosis because otherwise there would be free PP2A-B55 available to dephosphorylate pCDKS. The authors should measure the amounts of phospho-Endos to PP2A-B55 to address this point.' This indicates the reviewers found the stoichiometry measurements insufficient or unconvincing for validating the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Theoretical modeling predicts that PP2A-B55 is released from pEndos sequestration within 74 seconds after Gwl inactivation, enabling rapid M phase exit. If pEndos were only an inhibitor and not a substrate, many hours would be required for desequestration. Thus, dephosphorylation of pEndos by PP2A-B55 is an absolute requirement for rapid M phase-to-interphase transition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised two critical concerns about the temporal logic. Point 3 notes: 'it is assumed that at exit from M-phase, Gwl is inactivated prior to the reactivation of PP2A-B55. Nonetheless, presumably the inactivation of Gwl requires active/reactivated PP2A-B55, because Gwl is activated through direct phosphorylation by CDK1. The authors should discuss why and how Gwl inactivation at anaphase onset is anticipated to occur prior to, or in the absence of, reactivation of PP2A-B55.' Point 5 asks 'whether the mechanism that they propose is rapid enough to account for the reactivation of phosphatases in mitotic exit.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Fcp1 is not the physiologically relevant pEndos phosphatase. RNAi depletion of >90% of Fcp1 had no effect on anti-Endos activity. Purified Fcp1 has <1/1000th the efficiency of PP2A-B55 at physiological pEndos concentrations, and cells contain >10-fold more PP2A-B55 than Fcp1. Fcp1 is okadaic acid-resistant and does not co-fractionate with anti-Endos activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the exclusion of Fcp1 as the pEndos phosphatase. This negative result is presented with multiple lines of converging evidence (RNAi, purified enzyme kinetics, protein abundance, inhibitor sensitivity, fractionation) and appears to have been accepted without comment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Anti-Endos activity exhibits distinct biochemical properties compared to anti-CDKS activity: it is relatively resistant to inhibition by phosphomimetic Endos (S68D) and is much less affected by extract dilution, unlike anti-CDKS and anti-H1v1.0 activities which increase dramatically upon dilution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these differential biochemical properties. These observations are part of the characterization that distinguishes anti-Endos from anti-CDKS activities and helps support the unusual kinetic properties of the pEndos-PP2A-B55 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Background claims establishing the Gwl\u2192pEndos\u22a3PP2A-B55 pathway and cell cycle context. These include: Gwl phosphorylates Endos during M phase; pEndos inhibits PP2A-B55; PP2A-B55 dephosphorylates CDK substrates at M phase exit; the pathway is critical for M phase entry/maintenance; M phase exit is rapid (<5 min in Xenopus); and historical precedent exists with PP1 and Inhibitor-1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background claims supported by prior literature and not challenged by reviewers. They provide the conceptual framework for the study but are not novel findings being evaluated.",
+    "result_type": "MINOR"
+  }
+]

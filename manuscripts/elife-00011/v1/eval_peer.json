@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Nascent-Seq methodology validation: The authors demonstrate that Nascent-Seq predominantly captures nascent RNA attached to elongating Pol II, with 76% of reads mapping to introns, 5' to 3' gradients, and extension past polyadenylation sites\u2014features absent from conventional RNA-Seq.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not explicitly validate the Nascent-Seq methodology but raised major concerns about sequencing depth, normalization methods, and whether differences between Nascent-Seq and RNA-Seq reflect genuine biology or technical artifacts. They requested detailed read mapping statistics and clarification of quantification methods to confirm conclusions are based on genuine biological phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Genome-wide rhythmic transcription: Approximately 15% of expressed genes in mouse liver manifest transcriptional rhythms, with heterogeneous but non-uniformly distributed phases of maximal transcription (very few genes peak at ZT16-20).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the data as 'compelling,' they raised concerns about whether rhythms are truly circadian or light-driven due to LD conditions rather than constant darkness. They also questioned the consistency and reproducibility of the rhythmic gene identification, requesting comparisons with other labs' data using the same algorithms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C25",
+      "C26",
+      "C27",
+      "C4",
+      "C5"
+    ],
+    "result": "Disconnect between transcriptional and mRNA rhythms: Only 41.6% of rhythmically transcribed genes show rhythmic mRNA expression, and about 70% of genes with rhythmic mRNA expression lack robust transcriptional rhythms, indicating a prominent role for post-transcriptional regulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers identified this as a key finding but expressed major concerns about whether the disconnect reflects genuine biology or technical artifacts from comparing two different methods. They noted confusion about how percentages were calculated (342/822 vs 342/1204) and requested clarification of the analysis methods, normalization procedures, and better explanation of the ratios used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "R-R genes (rhythmic transcription and rhythmic mRNA): For genes with both rhythmic transcription and mRNA (342 genes), mRNA phase is highly correlated with nascent RNA phase (r=0.92), amplitudes are correlated (r=0.76), and this set includes clock genes and well-characterized clock-controlled genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise specific concerns about the R-R gene characterization, implicitly accepting these findings as part of the overall dataset. The correlation analyses and inclusion of known clock genes provide internal validation that was not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C107",
+      "C108"
+    ],
+    "result": "AR-R genes (arrhythmic transcription, rhythmic mRNA): Most cycling mRNAs (862/1204) likely undergo post-transcriptional regulation. These genes show variable transcription with elevated levels coinciding with mRNA peaks, and higher transcriptional variability correlates with rhythmic mRNA expression, suggesting post-transcriptional buffering.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised significant concerns about whether the observed variability reflects genuine biology or technical limitations. They questioned whether quantification methods and normalization affect variance, whether sequencing depth contributes to differences, and requested analysis of data consistency between replicates. The interpretation of transcriptional 'noise' being buffered by post-transcriptional mechanisms was not explicitly validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "R-AR genes (rhythmic transcription, arrhythmic mRNA): 58.4% of rhythmically transcribed genes do not show robust mRNA oscillations. These genes do not have altered nascent RNA/mRNA ratios or longer half-lives; some result from read-through transcription from adjacent genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not explicitly address R-AR genes but their general concerns about normalization, sequencing depth, and technical artifacts apply to this category. The lack of mechanistic explanation for why rhythmic transcription doesn't produce rhythmic mRNA in these genes was not directly challenged but falls under the broader uncertainty about technical vs. biological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "CLK:BMAL1 ChIP-Seq characterization: CLK and BMAL1 target many DNA binding sites (759 and 1579 respectively) with significant overlap on 211 peaks, enriched for the canonical CACGTG sequence, identifying 184 direct target genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested detailed information about ChIP-seq read depth and mapping statistics but did not explicitly challenge the ChIP-seq findings. The lack of provided sequencing statistics makes it difficult to evaluate whether the binding site identification is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C28",
+      "C29",
+      "C6"
+    ],
+    "result": "Phase disconnect between CLK:BMAL1 binding and transcription: Despite uniform BMAL1 binding at ZT3-5, transcriptional phases of target genes are heterogeneous and broadly distributed, indicating a disconnect between DNA binding and transcriptional output.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not explicitly validate this finding but their concerns about LD vs. DD conditions and technical artifacts apply. The interpretation that other transcription factors must collaborate with CLK:BMAL1 to determine transcriptional phase was not directly challenged but remains uncertain given the methodological concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C132"
+    ],
+    "result": "BMAL1 knockout validation: In Bmal1\u2212/\u2212 mice, only Rev-Erb\u03b1 pre-mRNA levels are at trough levels of wild-type, while Per1, Per2, and Cry1 pre-mRNAs are higher than wild-type trough, indicating other transcriptional regulators contribute to these genes' transcription.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about the Bmal1\u2212/\u2212 validation experiments. This genetic evidence provides orthogonal support for the conclusion that CLK:BMAL1 is not solely responsible for target gene transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Nascent-Seq/RNA-Seq ratio correlates with gene function and mRNA stability: Genes with high ratios are enriched for ncRNA, transcription regulation, and chromatin organization functions and have short mRNA half-lives; genes with low ratios are enriched for ribosome and mitochondrial functions and have long half-lives.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned whether the quantification method affects variance and whether normalization is appropriate, which directly impacts the validity of these ratio-based analyses. They requested clarification on whether read per base pair values are adjusted for total reads and whether intron/exon sampling biases affect the ratios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C91",
+      "C92"
+    ],
+    "result": "Rhythmic non-coding RNA transcription: Nascent-Seq detected rhythmic transcription of ncRNAs including pri-miRNAs (e.g., pri-miRNA 122a) and long non-coding RNAs, with CLK:BMAL1 targeting 12 ncRNA genes including a cluster of four rhythmically transcribed ncRNAs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise specific concerns about the ncRNA findings. The detection of rhythmic ncRNA transcription, including previously characterized pri-miRNA 122a, was implicitly accepted as part of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Per2 antisense transcription: Per2 has a prominent antisense transcript at times of low Per2 sense transcription, with the 5' end coinciding with Pol II peaks, suggesting antisense transcription as an additional mechanism for the disconnect between CLK:BMAL1 binding phase and transcriptional phase.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted that strand-specific libraries were used for some experiments but did not challenge the antisense transcription findings. The observation is presented as data-driven rather than interpretive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C78"
+    ],
+    "result": "miRNA involvement in AR-R genes with low transcriptional variability: About 20% of AR-R genes show higher variability at mRNA than nascent level and have enriched predicted miRNA target sites, suggesting miRNAs contribute to mRNA cycling of genes with low transcriptional variability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not explicitly address this finding, but their general concerns about variance quantification and normalization apply. The miRNA target site enrichment is computational prediction rather than experimental validation, adding to uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C122"
+    ],
+    "result": "Functional enrichment of AR-R genes with high transcriptional variability: These genes are enriched for responsive genes (GO: response to stimulus) and metabolic genes, indicating their intrinsic transcriptional responsiveness is linked to variable transcriptional profiles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not explicitly address this functional enrichment analysis, but their concerns about technical artifacts and the need for better methods description apply. The interpretation linking gene function to transcriptional variability remains uncertain without validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Enrichment of other transcription factor motifs near CLK:BMAL1 sites: Motifs for HNF3/FOXA1, SP1, and E4BP4 are enriched adjacent to CLK:BMAL1 binding sites, supporting the notion of transcription factor collaboration.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the motif enrichment analysis. This computational finding provides supporting evidence for the collaboration hypothesis without requiring additional validation.",
+    "result_type": "MINOR"
+  }
+]

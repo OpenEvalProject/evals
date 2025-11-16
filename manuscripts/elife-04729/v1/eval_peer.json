@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study identified eQTL for 1787 genes (17.2%) and ASE for 510 genes (23.4%) at 10% FDR. eQTL were enriched near transcription start sites and in gene bodies, particularly near transcription end sites. Genes with eQTL were more likely to exhibit ASE and vice versa, with correlated effect sizes and directions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not explicitly critique these core eQTL/ASE detection results but raised concerns about potential confounding from admixture and lack of hidden factor correction. They suggested that 'if there is some structure to the data that is both present and correlated in genotype and gene expression space, the number discoveries will be artificially inflated,' indicating uncertainty about whether the reported numbers are reliable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Detection of ASE was most strongly favored for highly expressed genes (p < 10\u207b\u00b2\u2070\u2078), whereas detection of eQTL was most strongly favored for genes with high local SNP density (p < 10\u207b\u2077\u00b2).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns about ASE methodology, specifically questioning whether 'detection of ASE in their study is independent of the number of input individuals once a testable site has been selected' and noting that 'ASE has different variances in effect size when it is estimated from a few individuals for very highly expressed genes.' This suggests the relationship between expression level and ASE detection may be confounded by methodological issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C8"
+    ],
+    "result": "The study demonstrated surprisingly high power to detect eQTL using RNA-seq data alone, despite genotyping being limited to transcribed regions. The RNA-seq pipeline reduced detectable eQTL by 50-60% compared to array-based approaches, suggesting that with array data, approximately 3500-4000 genes might have shown eQTL in baboons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the methodological feasibility claims. The editorial comment states that 'Figure 1 and 3 should not be main figures. The pipeline should be moved to the supplement,' treating the pipeline validation as established rather than questioning its validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study found that baboons had a MAF spectrum with more intermediate frequency variants, higher SNP density (45.4 vs 20.3 variants per gene), and slower LD decay compared to YRI. Simulations suggested these factors increased eQTL detection power by 2.35-fold overall, or approximately 6-fold when considering larger effect sizes in baboons, consistent with the empirical 6.16-fold increase observed.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed concern that admixture in the baboon population 'could increase the number of hets and has the potential to increase the length of haplotypes (both observations of the study)' and 'could explain many of the observations of the study.' They requested additional analyses to rule out admixture as a confounding factor, suggesting the power differences attributed to demographic factors may be partially or wholly explained by admixture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Genes with eQTL in baboons were more likely to have eQTL in YRI (p = 2.39 \u00d7 10\u207b\u2077). These genes showed reduced phyloP conservation scores (p < 10\u207b\u2075\u00b3) and were less likely to have orthologues in deeply diverged species (p = 1.78 \u00d7 10\u207b\u2078), suggesting eQTL are most likely detected for lineage-specific, rapidly evolving genes and that genes vary in their tolerance of genetic perturbation in a manner conserved across species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised a critical methodological concern: 'the negative correlation between conservation and probability of eQTL in a gene in baboons at least may be driven by the technical issue that only coding SNPs were tested and therefore conserved genes will tend to have low MAF and therefore low power.' This suggests the conservation findings may be confounded by technical limitations rather than reflecting true biological patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Genes involved in basic cellular metabolic processes were under-enriched among genes with eQTL in both species, while genes with eQTL were enriched for loci involved in antigen processing, catalytic activity, and interaction with the extracellular environment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these functional enrichment findings. The lack of critique, combined with the consistency of these results with the conservation findings, suggests implicit acceptance of these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C84"
+    ],
+    "result": "A strong negative correlation was observed between eQTL effect size and MAF (r = -0.723, p < 10\u207b\u00b2\u2078\u2070). However, simulations with constant effect sizes recapitulated this correlation, suggesting it does not provide strong support for widespread negative selection on gene expression phenotypes within species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted 'a comment regarding the lack of an association between effect size and minor allele frequency compared to Battle et al., 2014' and stated 'We are not sure that these studies can be easily compared to provide a definitive statement regarding negative selection in baboons here. A caveat regarding study differences might suffice.' This indicates the reviewers found the negative selection interpretation uncertain and not directly comparable to larger human studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C72"
+    ],
+    "result": "The study provided the first heritability estimates for gene expression in wild primates. The median additive genetic PVE was 28.4%, with trans effects (23.8%) explaining more variance than cis effects (2.9%). Genes with detected eQTL or ASE showed larger cis-acting components (10.2% and 5.0% respectively).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested clarification on 'what goes into the ptrans matrix' and whether 'trans defined as on other chromosomes,' indicating uncertainty about how these variance components were calculated. The lack of clarity on the trans definition raises questions about the interpretation of the cis/trans partitioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Age explained modest variance (median 1.89% PVE, significantly greater than chance, p < 10\u207b\u00b9\u00b9), while sex explained minimal variance (median 0.82%, not significant, p = 0.100) with large sex effects constrained to X chromosome genes. Maternal social connectedness to males explained significant variance (median 1.9%, p = 4.19 \u00d7 10\u207b\u00b3).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these environmental and demographic effect findings. The lack of critique suggests acceptance of these results as reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study generated 1.89 billion RNA-seq reads from 63 wild baboons, with 67.2% mapping to the baboon genome. After processing, 10,409 genes were analyzed, with approximately 97% of variant sites estimated as true positives and 98.7% median correlation between true and inferred genotypes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned why 'a hidden factor correction not applied' given that 'these types of corrections dramatically improve eQTL discovery,' expressing concern that 'if there is some structure to the data that is both present and correlated in genotype and gene expression space, the number discoveries will be artificially inflated.' This raises uncertainty about the data processing and quality control procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The Amboseli population has experienced recent admixture between yellow baboons and closely related anubis baboons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers stated this 'is slightly concerning as it could increase the number of hets and has the potential to increase the length of haplotypes (both observations of the study). It further could explain many of the observations of the study.' They requested multiple analyses to address admixture effects, indicating this is a major unresolved concern affecting interpretation of the results.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "C. elegans forms a memory of familiar bacteria and displays increased feeding rates on familiar food compared to novel food. This behavioral plasticity persists for 7-8 hours after training, is independent of nutritional status, and requires at least 9 hours of exposure during adulthood to develop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C13 collectively demonstrate that C. elegans exhibits familiarity-based feeding plasticity. The data in Figures 1-3 show consistent, statistically significant increases in feeding rates on familiar vs. novel bacteria across multiple bacterial strains, with appropriate controls for nutritional status and developmental effects. The duration-dependent memory formation (6 hr insufficient, 9 hr sufficient) provides strong evidence for a learning process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C31"
+    ],
+    "result": "Recognition of familiar bacteria increases feeding rate by activating serotonin signaling. The tph-1 null mutation (which blocks serotonin biosynthesis) eliminates the difference in feeding rates between familiar and novel food, while exogenous serotonin treatment increases feeding on novel food to levels comparable to familiar food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C31 are well-supported by genetic and pharmacological evidence in Figures 4A-D and 5. The tph-1 mutant phenotype and serotonin rescue experiments provide converging evidence that serotonin signaling is necessary and sufficient for the familiarity-induced feeding increase. The logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C29",
+      "C30"
+    ],
+    "result": "Serotonin activates feeding via the SER-7 receptor, which is more active on familiar food than novel food. The ser-7 null mutant fails to activate feeding in response to serotonin and shows substantially decreased feeding rates on familiar food compared to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21, C29-C30 are supported by receptor mutant screens (Figure 6), feeding assays on familiar food (Figure 7A,B), and epistasis analysis (Figure 8A). The statistical analysis in Figure 4H demonstrating greater SER-7 effect on familiar vs. novel food is methodologically sound, though the detailed statistical approach in Materials and Methods is complex and could benefit from independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Serotonin has dual effects on feeding: activation via SER-7 and inhibition via SER-4 and MOD-1. The inhibitory signal is active only on familiar food and is stronger on HB101 than DA1878. The ser-4; mod-1 double mutant retains the ability to discriminate familiar from novel food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are supported by genetic epistasis experiments in Figures 4E-G, 7C-F, and 9. The demonstration of opposing serotonin signals is well-controlled, though the bacterial strain-specific differences in inhibitory signaling (C27) lack mechanistic explanation. The preservation of familiarity discrimination in ser-4; mod-1 mutants (C28) appropriately demonstrates that SER-7 is the primary receptor for this behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ADF chemosensory neurons regulate feeding in response to familiar bacteria through serotonin release. Cell-specific rescue of tph-1 in ADF, but not NSM, restores feeding responses, and this rescue is independent of the serotonin transporter MOD-5, indicating direct (humoral) serotonin signaling from ADF to downstream targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C45-C47 are strongly supported by cell-specific rescue experiments (Figure 8A,B), laser ablation studies (Figure 8C,D), and MOD-5 independence experiments (Figure 8A). The convergence of genetic rescue, ablation, and transporter mutant data provides robust evidence for ADF as the critical serotonergic neuron. The mod-5 independence is particularly important for establishing humoral signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Serotonin from ADF activates SER-7 in MC motor neurons, which in turn activates cholinergic transmission from MC to pharyngeal muscles to increase feeding rate. Cell-specific expression of SER-7 in MC (using flp-21 or flp-2 promoters) rescues feeding, and this rescue requires functional cholinergic transmission (eat-2 dependent).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C57-C59 are supported by cell-specific rescue experiments (Figure 8E,F) and genetic epistasis with eat-2 (Figure 8E). The demonstration that SER-7 expression in MC is sufficient for rescue, while expression in M4 is not, provides strong evidence for MC as the critical target. The eat-2 epistasis experiment appropriately demonstrates that MC acts through cholinergic transmission. However, some data in Figure 8E,F were previously published (Song and Avery, 2012), which should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ADF neurons are selectively activated by familiar food but not novel food, as measured by calcium imaging. Substantial increases in ADF activity (\u0394R/R) are observed in response to familiar food, while only marginal changes occur with novel food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by calcium imaging data in Figure 12A-C. The ratiometric calcium imaging approach using Cameleon YC3.60 is appropriate, and the quantification method (signed area under \u0394R/R) is reasonable. However, the sample sizes for individual recordings are not clearly stated in the figure, and the slow time course of ADF activation (~120 seconds) is notable and could reflect indirect activation or slow sensory processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Familiar food induces greater serotonin release from ADF compared to novel food, as measured by increased serotonin-positive serotonin-uptaking cells. This increase is likely due to increased serotonin release from ADF rather than changes in uptake efficiency or NSM activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 rely on an indirect assay of serotonin release (counting serotonin-positive uptake cells in tph-1; Ex[ADF::tph-1(+)] animals). While the logic is reasonable and supported by Figure 11D, the statistical analysis using Fisher's method to combine three independent experiments (detailed in Methods) is complex. The interpretation that increased serotonin-positive cells reflects ADF release rather than uptake efficiency (C65) is inferential and based on exclusion of alternatives rather than direct evidence. The method cannot distinguish between increased release and increased uptake efficiency definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Worms sense taste and/or smell of novel bacteria, which overrides the stimulatory effect of familiar bacteria on feeding. Conditioned media from novel bacteria suppress feeding on familiar food to levels comparable to novel food, while media from familiar bacteria do not alter feeding on novel bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by conditioned media experiments in Figure 14B,C. The experimental design appropriately tests whether soluble cues (taste/smell) from bacteria can modulate feeding. The asymmetric effect (novel media suppress familiar food response, but familiar media don't enhance novel food response) supports a model where novel food cues actively suppress the ADF-serotonin pathway. Controls showing that media don't affect feeding on the same bacterial type are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "In tph-1; Ex[ADF::tph-1(+)] animals, serotonin synthesized in ADF is detected in other serotonergic neurons, but this uptake is blocked by mod-5 mutation. This observation suggests serotonin can be taken up by other neurons, but the mod-5 independence of ADF rescue indicates this uptake is not required for the feeding response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C43-C44 are supported by immunohistochemistry data in Figure 11B,C. The observation that serotonin appears in non-ADF neurons in the presence of functional MOD-5 but not in mod-5 mutants is clear. However, C41 is speculative about two possible mechanisms, and the subsequent experiments (C45-C46) resolve this by showing MOD-5 independence, making the uptake pathway functionally irrelevant for the feeding response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "HSN neurons are not necessary for familiarity-based feeding plasticity because males (which lack HSN) show increased feeding on familiar food compared to novel food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by data in Figure 10 showing that male worms exhibit the same familiarity discrimination as hermaphrodites. This is a straightforward control experiment that appropriately rules out HSN involvement. The logic is sound: if HSN were required, males would not show the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "HB101 and DA1878 are benign bacteria that support C. elegans growth at similar rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by citation to Avery and Shtonda, 2003. This is an important control to ensure that differences in feeding rates are not due to nutritional quality differences between bacteria. The citation is appropriate and the claim is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C55",
+      "C56"
+    ],
+    "result": "Background information on C. elegans serotonergic neurons, serotonin receptors, and pharyngeal circuitry is provided, citing established literature. This includes the identity of serotonergic neurons (NSM, ADF, HSN, RIH, AIM), serotonin uptake mechanisms (MOD-5), SER-7 expression in pharyngeal neurons, MC function in feeding, and EAT-2 function in cholinergic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C35-C36, C42, C48-C51, C55-C56 are all supported by appropriate citations to established literature (Sze et al., 2000; Jafari et al., 2011; Bargmann and Horvitz, 1991; Ranganathan et al., 2001; Hobson et al., 2006; Avery and Horvitz, 1989; Song and Avery, 2012; McKay et al., 2004). These claims provide necessary background context and are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Familiarity discrimination affects food intake across species, and C. elegans has the capacity to sense food quality and form memories of sensory cues. Some species increase consumption of familiar food (possibly to avoid pathogens) while others decrease it (possibly for nutritional balance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 provide background on familiarity discrimination across species and C. elegans sensory/memory capabilities, supported by multiple citations (Pliner et al., 1993; Wang and Provenza, 1996; Diaz-Cenzano and Chotro, 2010; Morin-Audebrand et al., 2012; Shtonda and Avery, 2006; Zhang et al., 2005; Bargmann, 2006). These are appropriate contextual claims, though C74-C75 include speculative evolutionary explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Discussion and speculation about the evolutionary advantages of endocrine serotonin signaling, the relationship to pathogen avoidance learning, the neural circuit model for ADF regulation, predictions about natural habitat behavior, and explanations for why NSM doesn't contribute to familiar food responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C91 are primarily speculative or discussion points. C80, C87-C88, C91 are supported by citations to prior work on pathogen avoidance. C81-C82 present a reasonable model based on the data but are speculative about circuit architecture. C84 cites preliminary unpublished data about 24-hour memory, which cannot be evaluated. C79, C83, C85-C86, C89-C90 are speculative interpretations about evolutionary advantage, natural behavior, or mechanistic explanations. These are reasonable hypotheses but not directly tested.",
+    "result_type": "MINOR"
+  }
+]

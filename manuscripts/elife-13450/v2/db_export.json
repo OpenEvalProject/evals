@@ -1,0 +1,2141 @@
+{
+  "submission": {
+    "id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-16T01:37:30.017760Z",
+    "updated_at": "2025-11-16T01:37:30.017760Z"
+  },
+  "content": [
+    {
+      "id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "content_type": "manuscript",
+      "content_text": "# Nucleosome breathing and remodeling constrain CRISPR-Cas9 function\n\n## Authors\n\n- R Stefan Isaac<sup>1</sup>\n- Fuguo Jiang<sup>3</sup>\n- Jennifer A Doudna<sup>4</sup>\n- Wendell A Lim<sup>9</sup> \u2020\n- Geeta J Narlikar<sup>1</sup> \u2020\n- Ricardo Almeida<sup>10</sup>\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n2. Tetrad Graduate Program University of California, San Francisco San Francisco United States\n3. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n4. California Institute for Quantitative Biosciences University of California, Berkeley Berkeley United States\n5. Department of Molecular and Cell Biology Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n6. Department of Chemistry University of California, Berkeley Berkeley United States\n7. Physical Biosciences Division Lawrence Berkeley National Laboratory Berkeley United States\n8. Innovative Genomics Initiative University of California, Berkeley Berkeley United States\n9. Department of Cellular and Molecular Pharmacology Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n10. Center for Systems and Synthetic Biology University of California, San Francisco San Francisco United States\n11. California Institute for Quantitative Biosciences University of California, San Francisco San Francisco United States\n12. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe CRISPR-Cas9 bacterial surveillance system has become a versatile tool for genome editing and gene regulation in eukaryotic cells, yet how CRISPR-Cas9 contends with the barriers presented by eukaryotic chromatin is poorly understood. Here we investigate how the smallest unit of chromatin, a nucleosome, constrains the activity of the CRISPR-Cas9 system. We find that nucleosomes assembled on native DNA sequences are permissive to Cas9 action. However, the accessibility of nucleosomal DNA to Cas9 is variable over several orders of magnitude depending on dynamic properties of the DNA sequence and the distance of the PAM site from the nucleosome dyad. We further find that chromatin remodeling enzymes stimulate Cas9 activity on nucleosomal templates. Our findings imply that the spontaneous breathing of nucleosomal DNA together with the action of chromatin remodelers allow Cas9 to effectively act on chromatin in vivo.\n\n## Introduction\n\nThe recent development of CRISPR (clustered regularly interspaced short palindromic repeats) systems, particularly the type II CRISPR-Cas9 mechanism from Streptomyces pyogenes, as an artificial tool for genome engineering, gene regulation, and live imaging is a remarkable achievement with profound impact in a wide variety of research fields and applications (Makarova et al., 2015; Doudna and Charpentier, 2014; Cong et al., 2013; Jinek et al., 2012; 2013; Mali et al., 2013). Despite its successful adoption across numerous eukaryotic organisms, relatively few details are known of the mechanism by which bacterial CRISPR-Cas9 systems operate in eukaryotic cells (Doudna and Charpentier, 2014; Ghorbal et al., 2014; Vyas et al., 2015).\n\nCRISPR-Cas9 originated in bacteria, where genomic DNA generally consists of supercoiled circular molecules associated with nucleoid-associated proteins (Travers and Muskhelishvili, 2005). In contrast, eukaryotic chromosomes are linear, packaged with histone octamers into nucleosomes, and further organized into higher-order structures (Luger et al., 1997; Olins and Olins, 1974; Woodcock et al., 1976; Dixon et al., 2012). The packaging of DNA into nucleosomes generally inhibits the binding of sequence specific DNA binding factors. In the simplest model, nucleosomes would analogously inhibit Cas9 action. Further, in eukaryotes ATP-dependent chromatin remodelers reposition, remove, or restructure nucleosomes to regulate the access of DNA binding factors (Clapier and Cairns, 2009; Narlikar et al., 2013). It can therefore be imagined that the action of remodelers also regulates the action of Cas9 on nucleosomes.\n\nTo quantitatively test the above models we performed biochemical studies to measure Cas9 activity on nucleosomes assembled with native and artificial nucleosome positioning sequences. We find that the combination of nucleosome breathing, by which DNA transiently disengages from the histone octamer, and the action of chromatin remodeling enzymes allow Cas9 to act on nucleosomal DNA with rates comparable to naked DNA. The results provide a biochemical explanation for the efficacy of Cas9 in eukaryotic cells.\n\n## Results\n\n### Nucleosomes assembled on the 601 sequence inhibit Cas9 binding and cleavage of target DNA\n\nTo determine if a nucleosome inhibits the ability of Cas9 to scan, recognize, and cleave sgRNA-directed DNA targets, we performed in vitro Cas9 cleavage assays using mononucleosomes (single nucleosomes on short dsDNA molecules) reconstituted using the Widom 601 positioning sequence with 80 base pairs of flanking DNA on both sides (referred to as 601 80/80 particles, Figure 1A) (Lowary and Widom, 1998). The 601 sequence is an artificially derived sequence with high affinity for the histone octamer and has proved a valuable tool for assembling well positioning nucleosomes for biochemical studies. Using sgRNAs targeting the nucleosomal dyad, entry/exit sites, and flanking DNA, we measured the rates of Cas9 cleavage with naked 601 DNA and the 601 80/80 particles. Targeting the DNA flanking the nucleosome showed cleavage rates comparable to those of naked DNA. Cleavage rates at entry/exit sites of the nucleosome were much lower compared to naked DNA (~23\u201328x decrease cleavage rate vs. DNA alone) (Figure 1B,C). Targeting near the nucleosomal dyad resulted in further inhibition of cutting by Cas9 (~1000x decrease vs. DNA alone) (Figure 1C,D). Previous work has shown that nucleosomal DNA transiently disengages from the histone octamer, a process termed as nucleosomal\u00a0DNA unpeeling\u00a0or\u00a0breathing. The equilibrium for DNA unpeeling gets progressively more unfavorable the closer the DNA site gets to the dyad (Polach and Widom, 1995; Li and Widom, 2004; Luger et al., 2012). The nucleosome-mediated inhibition of Cas9 activity is more pronounced near the dyad suggesting that Cas9 cleavage occurs on DNA that is transiently disengaged from the histone octamer.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13450/elife-13450-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of sgRNAs designed against the assembled 601 80/80 nucleosome substrates targeting the flanking regions, entry/exit sites, and near the nucleosomal dyad. (B) Cleavage assay comparing Cas9 cleavage on 80/80 DNA and 80/80 nucleosomes when loaded with sgRNA #3. (C) Kinetics of cleavage with sgRNA #3. (D) Comparison of the relative rates of cleavage on nucleosomes to DNA at various positions along the 80/80 nucleosome construct. The position reported is the site of cleavage by Cas9. Represented values are mean \u00b1 SEM from three replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13450/elife-13450-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic illustrating the stepwise mechanism of Cas9 binding to DNA targets and subsequent nucleolytic cleavage. (B) Gel shift assay comparing dCas9 binding to 0/0 DNA and nucleosomes while loaded with sgRNA #3 targeting the nucleosome dyad. Band shift pattern appears as discrete lower band (dCas9 bound to sgRNA-specified target, arrowhead) and higher, super shift bands (additional dCas9 PAM-only binding events). (C) Quantification of (B). Represented values are mean \u00b1 SEM from three replicates.\n\nNucleosomes block the ability of Cas9 to cleave DNA, but it is unclear at which step of Cas9 activity this occurs. Cas9 recognizes DNA target sites in a two-step process that begins with binding to the DNA protospacer adjacent motif (PAM, in this case 'NGG') through its C-terminal PAM-interacting region, followed by sequential melting of the DNA double strand and annealing of the sgRNA guide segment to the unwound target DNA strand (Figure 1\u2014figure supplement 1A) (Sternberg et al., 2014; Jiang et al., 2015). Complete annealing of the 20-nt guide RNA to the target DNA is required to drive a progressive conformational transformation that authorizes Cas9 to simultaneously cleave both DNA strands (Sternberg et al., 2015; Josephs et al., 2016). Given this order of events, it is conceivable that nucleosomes can interfere with any of the steps preceding and including DNA cleavage.\n\nTo identify the point at which nucleosomes disrupt Cas9 function, we assessed binding of nuclease-dead Cas9 (dCas9) to mononucleosomal particles by an electrophoretic mobility shift assay. We performed dCas9 binding assays using 601 0/0 nucleosomal particles which are devoid of naked DNA overhangs. Binding of dCas9 pre-loaded with core targeting sgRNA with 601 0/0 nucleosomes is undetectable whereas binding to naked DNA control is still robust (Figure 1\u2014figure supplement 1B). The presence of super shifts in the gel migration pattern suggests that multiple dCas9 molcules are engaging the same DNA substrate molecule. We investigated this further and determined that, in our binding assay, the highly transient dCas9 binding to PAMs within target DNA is observable as super shifts, likely due to a combination of a high number of PAMs on the target DNA (23 NGG PAMs present in 601 0/0 sequence) and common caging effects of gel binding assays. The absence of a super shift binding pattern with 0/0 nucleosomes (Figure 1\u2014figure supplement 1B, right) suggests that dCas9 cannot stably interact with PAMs located on nucleosomes, in a manner consistent with a recently published study (Hinz et al., 2015).\n\n### Nucleosomes assembled on a native DNA sequence are permissive to Cas9 action\n\nThe artificial Widom 601 is an atypically strong nucleosome positioning sequence that shows ~100-fold less breathing dynamics compared to physiological nucleosome positioning sequences, such as the 5S rRNA gene (Anderson et al., 2002; Partensky and Narlikar, 2009). To determine how Cas9 contends with nucleosomes assembled on this physiological positioning sequence, we performed cleavage experiments with nucleosomes assembled from 5S rRNA gene sequences from Xenopus borealis (Figure 2A). Cas9-mediated cleavage at sites near the entry/exit of the nucleosome is substantially enhanced (700\u2013fold) with 5S nucleosomes compared to 601 particles (Figure 2B\u2013D). In the context of 601, cutting at this site is 1000-fold slower than in naked DNA. In contrast, with 5S nucleosomes, cutting at the comparable site is only 1.5-fold slower than in naked DNA. However, Cas9 cleavage near the dyad is inhibited to a similar extent on both 5S and 601 nucleosomes, showing that the 5S-specific enhancement of Cas9 activity does not extend all the way to the nucleosomal dyad. These results support our interpretation that nucleosomal DNA breathing substantially enhances Cas9 binding to nucleosomes and demonstrate that nucleosomal DNA sequence, through its influence on nucleosome stability, can regulate Cas9 activity over a large dynamic range.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13450/elife-13450-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic illustrating nucleosome breathing and how it can enable Cas9 binding to a target in the nucleosome. (B) Cleavage assay comparing Cas9 cleavage of 601 and 5S 0/0 nucleosomes when loaded with sgRNAs targeting comparable positions at core and entry sites. (C) Quantification of (B). (D) Cas9 cleavage rates on 601 and 5S nucleosomes when targeted to core and entry sites. Values were normalized against naked DNA control rates. Represented values are mean \u00b1 SEM from three replicates. Additional gel panels shown in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13450/elife-13450-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative gel images of Cas9 cleavage experiments with 601 (left) and 5S (right) 0/0 particles using sgRNAs targeting entry (top) or core (bottom) sites, including DNA control experiments. Samples were resolved on 12% (entry) or 8% (core) polyacrylamide gels. Cleavage with sgRNAs targeting the entry site on both 5S and 601 substrates generates a short cleavage product (13 bp) which partially denatures and runs as two bands (single and double stranded) on 12% polyacrylamide gels.\n\n### Nucleosome remodeling enhances Cas9 activity\n\nWe next investigated whether chromatin remodeling could enhance Cas9 activity towards chromatin substrates. Nucleosome positioning in vivo is strongly dependent on ATP-dependent chromatin remodelers, which are capable of loading, repositioning, and removing nucleosomes from the chromatin fiber. To measure how chromatin remodelers can influence Cas9 activity, we performed experiments where we pre-incubated 601 nucleosomes with remodeler enzymes prior to Cas9-mediated cleavage. For our experiments with the human ISWI-family remodeler SNF2h, we used asymmetric nucleosomes that possess flanking DNA only on the entry side (601 80/0 particles). When incubated with 601 80/0 particles, SNF2h promotes sliding of the nucleosome towards the center of the DNA molecule (Figure 3A\u2013B, Figure 3\u2014figure supplement 1) (L\u00e4ngst et al., 1999; He et al., 2006; Yang et al., 2006). We then performed in vitro cleavage experiments where 80/0 particles, pre-remodeled with SNF2h, were incubated with Cas9:sgRNA complex with its target site located within the nucleosome exit region. Remodeling 80/0 nucleosomes by SNF2h resulted in a strong enhancement of Cas9 cleavage to ~34%, showing that SNF2h slides the nucleosome enough to improve Cas9\u2019s accessibility to the target site and that Cas9 is now able to bind and cleave at a higher rate (Figure 3A\u2013D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13450/elife-13450-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of Cas9 cleavage assay with remodeling. Cas9 is presented with 601 nucleosomes either untreated or previously remodeled with SNF2h or RSC remodelers. (B) Assay comparing cleavage on untreated and remodeled 80/0 nucleosomes when Cas9 is targeted to exit site (depicted in green). These asymmetric nucleosomes are recentered by SNF2h, exposing the exit target site to Cas9 (C) Quantification of (B). (D) Cleavage rates of 80/0 nucleosomes by Cas9 relative to naked DNA, in the presence or absence of SNF2h. SNF2h improves Cas9 cleavage to ~35% of the naked DNA cleavage rate. (E) Assay comparing Cas9-mediated cleavage at entry site of 80/80 symmetric 601 nucleosomes, either untreated or previously treated with RSC remodeler. RSC can destabilize nucleosome structure and reposition nucleosomes towards the DNA ends. (F) Quantification of (E) (G) Comparison of the rates of cleavage of nucleosomes normalized to DNA control with and without the action of RSC chromatin remodeler. Mean enhancement rates of Cas9 activity by chromatin remodeling are shown. (H) Cleavage rates of 80/80 nucleosomes by Cas9 relative to naked DNA, in the presence or absence of RSC. Cas9 cleavage is substantially enhanced by RSC, attaining ~63% of the naked DNA cleavage rate. Represented values are mean \u00b1 SEM from three replicates. Additional gel panels shown in Figure 3\u2014figure supplement 1. (I) Model of Cas9 activity in vivo in eukaryotes. Left, stable and strongly positioned nucleosomes impede Cas9 activity (downward arrows). However, nucleosomes in vivo are generally more dynamic (breathing), allowing Cas9 opportunities to target underlying DNA (center). Cas9 accessibility to nucleosomal DNA can be further enhanced by the activity of chromatin remodelers that destabilize and/or reposition nucleosomes (right).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13450/elife-13450-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative gel images of Cas9 cleavage experiments with 601 80/0 asymmetric particles and SNF2h chromatin remodeler, including DNA control experiments. Cas9 was loaded with sgRNA targeting the exit site of the nucleosome. SNF2h re-centers asymmetric nucleosomes such as 80/0 (Figure 3\u2014figure supplement 3), exposing the Cas9 target site. (B) Quantification of (A). (C) Representative gel images of Cas9 cleavage experiments with 601 80/80 symmetric nucleosomes and RSC chromatin remodeler, including DNA control experiments. Cas9 was targeted to the entry site of the nucleosome. RSC destabilizes nucleosomal structure and repositions nucleosomes to the ends of the DNA molecule. (D) Quantification of (C). Represented values are mean \u00b1 SEM from three replicates.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13450/elife-13450-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Assay comparing Cas9 cleavage of 601 80/0 nucleosomes simultaneously with chromatin remodeling byr SNF2h. The 601 80/0 asymmetric nucleosomes are recentered by SNF2h, exposing the exit target site to Cas9 (B) Quantification of (A). (C) Cleavage rates of 80/0 nucleosomes by Cas9 relative to naked DNA, in the presence or absence of SNF2h. SNF2h improves Cas9 cleavage to ~40% of the naked DNA cleavage rate, similarly to sequential remodeling and cleavage assays shown in Figure 3A\u2013D. Results shown for single experiment performed.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/13450/elife-13450-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Gel\u2010shift nucleosome remodeling assay comparing positioned and SNF2h\u2010remodeled 80/0 nucleosomes (left) or RSC-remodeled 80/80 nucleosomes (right). Migration pattern for all three forms (centered, end-positioned nucleosomes and free DNA) is illustrated (center). Remodeling reactions were carried out 1\u2009hr before being quenched and run on a 5% Acrylamide 0.5x TBE gel. SNF2h remodels 80/0 end\u2010positioned nucleosomes in a range of nucleosome positions biased towards the center of the DNA molecule, whereas RSC has the opposite bias of repositioned centered nucleosomes towards the ends of the DNA molecule. Images shown for single experiments performed, as previously described (Yang et al., 2006; Rowe and Narlikar, 2010).\n\nWe also performed this experiment by simultaneously adding SNF2h and Cas9 and found a similar rate enhancement (Figure 3\u2014figure supplement 2).\n\nWhile the ISWI remodeler SNF2h predominantly slides nucleosomes, remodelers from the SWI/SNF class have multiple outcomes, which include generation of DNA loops and eviction of the histone octamer in addition to nucleosome sliding (Rowe and Narlikar, 2010; Narlikar et al., 2001; Lorch et al., 1998; Schnitzler et al., 1998; Clapier and Cairns, 2009). To determine if the types of remodeled products generated influence Cas9 activity, we performed similar experiments using 601 80/80 particles and the yeast chromatin remodeler RSC. We find that RSC activity also dramatically enhances cleavage on 601 80/80 nucleosomes when Cas9 is targeted to the entry site, negating most of the inhibitory influence of the nucleosome on Cas9 (Figure 3E\u2013F). These results demonstrate that two different classes of chromatin remodeling enzymes can significantly enhance Cas9 access to DNA targets normally obscured by nucleosomes.\n\n## Discussion\n\nHere we demonstrate, using detailed biochemical studies with a variety of nucleosomal templates, that (i) the intrinsic stability of the histone-DNA interactions, (ii) the location of the target site within the nucleosomes (nucleosome positioning), and (iii) the action of chromatin remodeling enzymes play critical roles in regulating the activity of S. pyogenes Cas9. Below we discuss the implications of our results.\n\nNucleosomes have been shown to inhibit the action of DNA binding factors. Recent work using nucleosomes assembled on the 601 sequence has led to the qualitatively similar conclusion that nucleosomes are refractory for Cas9 action (Hinz et al., 2015; Horlbeck et al., 2016). The comparison here between Cas9 action on 601 nucleosomes vs. nucleosomes assembled on the native 5S sequence suggests a more refined model for how nucleosomes regulate Cas9 action. We find that Cas9 sites near the entry/exit sites of 5S nucleosomes are cleaved ~700-fold better than the corresponding sites within 601 nucleosomes. Given that DNA breathing occurs at least 100-fold more in 5S nucleosomes than 601 nucleosomes we propose that Cas9 gains access to nucleosomal DNA when the DNA is transiently unpeeled from the histone octamer. This model also explains why sites closer to the entry/exit sites are cut more readily by Cas9 than sites near the dyad. This is because DNA unpeeling up to the dyad is substantially less favored (100-fold) for both the 601 and 5S nucleosomes than DNA unpeeling near their respective entry/exit sites (Anderson and Widom, 2000).\n\nIn vivo, as in vitro, the precise position of nucleosomes can greatly affect DNA factor binding. Chromatin remodeling enzymes can move nucleosomes away or towards the factor binding sites to respectively enhance or inhibit factor binding. We find that Cas9 activity can also benefit from chromatin remodeling to access nucleosomal DNA, as evidenced by the strong enhancements of Cas9 cleavage resulting from the action of the chromatin remodelers SNF2h and RSC. These two remodelers produce distinct nucleosomal arrangements yet still substantially alleviate nucleosome-mediated occlusion of Cas9 activity.\n\nIn combination, our data lead to a comprehensive model that reconciles both biochemical evidence and in vivo observations to explain how Cas9 is able to access nucleosomal DNA in live cells (Figure 3I). In vivo, the majority of nucleosomes are not located on strong positioning sequences, and therefore may be permissive to Cas9 binding, especially at target sites that are readily accessible by DNA unpeeling. Chromatin remodeling activities can further provide diverse mechanisms to potentiate Cas9 activity at sites located close to the nucleosomal dyad or within more strongly positioned nucleosomes, which would otherwise be refractory to Cas9 action. We hypothesize that the combination of spontaneous DNA unpeeling and remodeling contributes to the widespread success of CRISPR-Cas9 in eukaryotic cells.\n\nInterestingly, most applications of CRISPR-Cas9 in vivo have focused on genome engineering of protein-coding genes and other functional genomic elements associated with gene expression, which are typically associated with high rates of nucleosome remodeling (Clapier and Cairns, 2009). It is also conceivable that Cas9 can temporarily gain access to less accessible regions of the genome during specific points of cell cycle (e.g. DNA replication), leading to sufficient DNA cleavage events to promote NHEJ-mediated mutagenesis or HDR-mediated DNA integration at appreciable rates. Recent studies on Cas9\u2019s behavior by single molecule imaging have also demonstrated that Cas9 favors more accessible euchromatin regions but is not completely excluded from transcriptionally silent heterochromatin (Knight et al., 2015). For other CRISPR applications that require stable binding of nuclease-deficient dCas9 to DNA, such as transcriptional regulation and live-cell imaging with fluorescent dCas9, even modest nucleosome phasing could have a dramatic impact (Gilbert et al., 2013; Mali et al., 2013; Chen et al., 2013; Ma et al., 2015). For example, the +1 nucleosome in RNA pol II-transcribed genes is strongly positioned with phasing that dissipates gradually with each following nucleosome. Several high resolution studies conducted in parallel to our work have established that the +1 nucleosome and resulting nucleosome phasing can exert a strong influence on dCas9\u2019s DNA-binding ability for transcriptional regulation, but the effect is less striking on genome editing with Cas9 (Horlbeck et al., 2016; Smith et al., 2016).\n\nOur observations suggest that sgRNA design strategies that avoid targeting near the dyad of strongly phased nucleosomes are likely to be more successful than current methods. Large scale nucleosome positioning or DNA accessibility maps are now readily available and can inform CRISPR sgRNA design in order to avoid targeting regions of low accessibility (Jiang and Pugh, 2009; Thurman et al., 2012; Wu et al., 2014; Hsieh et al., 2015). Alternatively, whole cell chromatin de-condensation or de-repression using chromatin factor drugs such as HDAC or DNA methyltransferase inhibitors may be an alternative and attractive strategy for improving CRISPR-Cas9 activity towards densely compact regions of chromatin (Haaf, 1995; T\u00f3th et al., 2004).\n\n## Materials\u00a0and\u00a0methods\n\n### Cas9 and sgRNA preparation\n\nWild-type Streptococcus pyogenes Cas9 and catalytically-inactive Cas9 (dCas9) containing D10A and H840A mutations were individually cloned into a custom pET-based expression vector encoding an N-terminal 6xHis-tag followed by a small ubiquitin-related modifier (SUMO) fusion tag and a Ulp1 protease cleavage site. Recombinant Cas9 variants were then expressed in Escherichia coli strain BL21 (DE3) (Novagen) and further purified to homogeneity as previously described (Jiang et al., 2015).\n\nSingle guide RNAs (sgRNAs) were prepared by in vitro run-off transcription using recombinant His-tagged T7 RNA polymerase and PCR product templates. Briefly, the DNA templates containing a T7 promoter, a 20-nt target DNA sequence (listed in Table 1) and an optimal 78-nt sgRNA scaffold were PCR amplified using Phusion Polymerase (NEB) according to manufacturer\u2019s protocol. The following PCR products were used directly as DNA templates for in vitro RNA synthesis in 1x transcription buffer (30\u2009mM Tris-HCl pH 8.1, 20\u2009mM MgCl2, 2\u2009mM spermidine, 10\u2009mM DTT, 0.1% Triton X-100, 5\u2009mM each NTP, and 100\u2009\u03bcg mL-1 T7 RNA polymerase). After incubation at 37\u00b0C for 4\u20138\u2009hr, the reactions were further treated with RNase-free DNase\u00a0I (Promega) at 37\u00b0C for 30\u2009min to remove the DNA templates. The synthesized sgRNAs were purified by Ambion MEGAclear kit and eluted into DEPC-treated H2O for downstream experiments.\n\n**Table 1.**\n Spacer sequences for sgRNAs used in biochemistry experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>sgRNA #</th>\n      <th>Guide sequence</th>\n      <th>PAM</th>\n      <th>Target strand</th>\n      <th>Figures where used</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>601_1</td>\n      <td>CGAGTTCATCCCTTATGTGA</td>\n      <td>TGG</td>\n      <td>Antisense</td>\n      <td>Figure 1D</td>\n    </tr>\n    <tr>\n      <td>601_2 (entry)</td>\n      <td>AATTGAGCGGCCTCGGCACC</td>\n      <td>GGG</td>\n      <td>Sense</td>\n      <td>Figure 1D, Figure 2B\u2013D, Figure 2\u2014figure supplement 1, Figure 3E\u2013H, Figure 3\u2014figure supplement 1D\u2013E</td>\n    </tr>\n    <tr>\n      <td>601_3 (core)</td>\n      <td>CCCCCGCGTTTTAACCGCCA</td>\n      <td>AGG</td>\n      <td>Antisense</td>\n      <td>Figure 1B\u2013D, Figure 1\u2014figure supplement 1B\u2013C, Figure 2B\u2013D, Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>601_4</td>\n      <td>GTATATATCTGACACGTGCC</td>\n      <td>TGG</td>\n      <td>Sense</td>\n      <td>Figure 1D</td>\n    </tr>\n    <tr>\n      <td>601_5</td>\n      <td>TCGCTGTTCAATACATGCAC</td>\n      <td>AGG</td>\n      <td>Sense</td>\n      <td>Figure 1D</td>\n    </tr>\n    <tr>\n      <td>601_6</td>\n      <td>GCGACCTTGCCGGTGCCAGT</td>\n      <td>CGG</td>\n      <td>Antisense</td>\n      <td>Figure 1D</td>\n    </tr>\n    <tr>\n      <td>5S_1 (entry)</td>\n      <td>TCTGATCTCTGCAGCCAAGC</td>\n      <td>AGG</td>\n      <td>Sense</td>\n      <td>Figure 2B\u2013E, Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>5S_2 (core)</td>\n      <td>TATGGCCGTAGGCGAGCACA</td>\n      <td>AGG</td>\n      <td>Antisense</td>\n      <td>Figure 2B\u2013E, Figure 2\u2014figure supplement 1</td>\n    </tr>\n  </tbody>\n</table>\n\n### Nucleosome reconstitution\n\nGradient salt dialysis was used to assemble mono-nucleosomes on DNA templates containing the 147 bp long 601 or the 5S positioning sequence from X. borealis (listed in Table 2), and labeled with fluorescein on the 5\u2019 upstream end. Histones and histone octamers were prepared as previously described (Luger et al., 1999).\n\n**Table 2.**\n Sequences for DNA molecules used for biochemical assays (Positioning sequence highlighted in grey).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>601 80/80</td>\n      <td>CGGGATCCTAATGACCAAGGAAAGCATGATTCTTCACACCGAGTTCATCCCTTATGTGATGGACCCTATACGCGGCCGCCCTGGAGAATCCCGGTGCCGagGCCGCTCAATTGGTCGTAGACAGCTCTAGCACCGCTTAAACGCACGTACGCGCTGTCCCCCGCGTTTTAACCGCCAAGGGGATTACTCCCTAGTCTCCAGGCACGTGTCAGATATATACATCCTGTGCATGTATTGAACAGCGACCTTGCCGGTGCCAGTCGGATAGTGTTCCGAGCTCCCACTCTAGAGGATCCCCGGGTACCGA</td>\n    </tr>\n    <tr>\n      <td>601 0/0</td>\n      <td>CTGGAGAATCCCGGTGCCGagGCCGCTCAATTGGTCGTAGACAGCTCTAGCACCGCTTAAACGCACGTACGCGCTGTCCCCCGCGTTTTAACCGCCAAGGGGATTACTCCCTAGTCTCCAGGCACGTGTCAGATATATACATCCTGT</td>\n    </tr>\n    <tr>\n      <td>601 80/0</td>\n      <td>CGGGATCCTAATGACCAAGGAAAGCATGATTCTTCACACCGAGTTCATCCCTTATGTGATGGACCCTATACGCGGCCGCCCTGGAGAATCCCGGTGCCGagGCCGCTCAATTGGTCGTAGACAGCTCTAGCACCGCTTAAACGCACGTACGCGCTGTCCCCCGCGTTTTAACCGCCAAGGGGATTACTCCCTAGTCTCCAGGCACGTGTCAGATATATACATCCTGT</td>\n    </tr>\n    <tr>\n      <td>5S 0/0</td>\n      <td>GGCCCGACCCTGCTTGGCTGCAGAGATCAGACGATATCGGGCACTTTCAGGGTGGTATGGCCGTAGGCGAGCACAAGGCTGACTTTTCCTCCCCTTGTGCTGCCTTCTGGGGGGGGCCCAGCCGGATCCCCGGGCGAGCTCGAATT</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cas9 cleavage assays\n\nCleavage assays were conducted as previously described with the following modifications (Anders and Jinek, 2014). Cas9:sgRNA complexes were reconstituted by incubating Cas9 and sgRNA for 10 min at 37\u00b0C. Reactions contained 5 nM fluorescein labeled DNA or nucleosomes and 100 nM Cas9:sgRNA. In combined cleavage and remodeling experiments, 25 nM SNF2h or 3 nM RSC was first incubated with 5 nM naked DNA or nucleosomes for 45 min at 37\u00b0C (Narlikar et al., 2001). Cleavage assays were carried out in reaction buffer (20\u2009mM Tris-HCl pH 7.5, 70\u2009mM KCl, 5\u2009mM MgCl2, 5% Glycerol, and 1\u2009mM DTT) at 25\u00b0C. For SNF2h and RSC remodeling experiments, 0.2\u2009mM ATP was also added. For RSC remodeling experiments, 1\u2009mM MgCl2 was used. Time points were quenched using stop buffer (20\u2009mM Tris-HCl pH 7.5, 70\u2009mM EDTA, 2% SDS, 20% glycerol, and 0.2 mg/mL xylene cyanol and bromophenol blue). Proteins were digested with 3 mg/mL of Proteinase K and incubated at 50\u00b0C for 20 min. Samples were resolved on 1x TBE, 10% Polyacrylamide gels for 4\u2009hr at 140\u00a0V before visualizing using a Typhoon scanner (GE Healthcare) and quantifying with Image\u00a0J (Schneider et al., 2012). For band quantification, background intensity was first subtracted after averaging the intensity of three areas. For cleavage gels, fraction uncleaved was determined by measuring the intensity of the uncleaved band compared to the total intensity for the lane. Similarly, fraction unbound was determined by measuring the intensity of the unbound band compared to the total intensity for the lane.\n\nAll experiments were performed in triplicate. Experiment variability is presented as the standard error of the mean, calculated by the standard deviation divided by the square root of N.\n\nPropagation of error for Rates of Cleavage on Nucleosomes to Rates of Cleavage on DNA was calculated as follows:\n\n$$\nError=\\frac{k_{Nucleosome}}{k_{DNA}}\\sqrt{(\\frac{SEM_{Nucleosomes}}{k_{Nucleosomes}})^{2}+(\\frac{SEM_{DNA}}{k_{DNA}})^{2}}\n$$\n\nData were fit on Graphpad Prism using a standard one phase decay model:\n\n$$\nY=(Y_{0}\u2212Plateau)e^{\u2212kt}+Plateau\n$$\n\nwhere Y is the fraction of uncleaved DNA, Y0 is the value of Y at time = 0, k is the observed rate constant (min-1) and t is time (min).\n\n### Native gel mobility shift\u00a0assays\n\ndCas9 and a 2x molar ratio of sgRNA were incubated for 10\u2009min at 37\u00b0C. Various concentrations of dCas9:sgRNA complex were incubated with 20 nM naked DNA or nucleosomes in binding buffer (20\u2009mM Tris-HCl pH 7.5, 100\u2009mM KCl, 5\u2009mM MgCl2, 5% Glycerol, 1\u2009mM DTT, and 0.02% NP-40). Samples were incubated at room temperature for 1\u2009hr before being run on native 0.5X TBE 6% polyacrylamide gels, visualized on a Typhoon scanner, and quantified using ImageJ. Fraction unbound was measured as the intensity of all unbound species divided by the total intensity. Fraction unbound was then converted to fraction bound:\n\n$$\nFractionBound=1\u2212FractionUnbound,\n$$\n\nand binding curves were fit with:\n\n$$\nFractionBound=\\frac{[Cas9:sgRNA]^{n}}{([Cas9:sgRNA]^{n}+K_{1/2}^{n})}\n$$\n",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karen Adelman, National Institute of Environmental Health Sciences , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.13450.048](https://doi.org/10.7554/eLife.13450.048)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the paper was accepted for publication after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Nucleosome Positioning, Dynamics and Remodeling Constrain CRISPR-Cas9 Function\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and Jessica Tyler as the Senior Editor. Our decision has been reached after consultation between the reviewers.\n\nBased on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife. The reviewers agree that the work was performed to a high standard and addresses an important problem. However, the advances represented by this study are relatively small in light of recent publications on this topic. Although the reviewers did have suggestions for increasing impact, we feel that these fall outside the realm of typical revisions at eLife.\n\nReviewer #1:\n\nThis short article from the Narlikar lab presents a detailed biochemical analysis of the effects of nucleosomes on binding and activity of CRISPR-Cas9. The main take-home is that nucleosomes block binding of Cas9 to PAM sites, thereby strongly inhibiting CRISPR-Cas9 cleavage activity.\n\nThe authors begin by studying cleavage of mononucleosomal DNA comprising the 601 element with 80 bp of DNA on either side. They use sgRNAs that target sites within the nucleosome dyad, at the entry/exit sites, or within linker DNA. In full agreement with recently published work (Hinz et al. Biochemistry 2015), they find that linker DNA is efficiently cleaved, but that DNA sites near the dyad are nearly completely protected by the nucleosome. Presumably due to DNA breathing, a low level of cleavage is observed at entry/exit sites. This data is clear and very well presented.\n\nNext, the authors investigate which step is inhibited, and use gel shifts to demonstrate that the initial binding of Cas9 to PAM-containing DNA is blocked by nucleosomes. However, they also report a curious, non-specific binding of Cas9 to linker DNA that obscures this result, and forces them to use only 601 particles lacking linker DNA. This detracts from the resulting conclusions in that they can't compare specific binding near the dyad to binding at entry sites or linker regions. But the basic finding remains convincing: chromatin blocks Cas9 from binding PAM sites.\n\nFinally, the authors show that if a chromatin remodeler is used to move the nucleosome off the PAM site being targeted before Cas9 is mixed with DNA, then it can be more efficiently cleaved. I am not clear on what more we learn from this experiment, other than that it's another way to show that the position of a PAM site within a nucleosome dictates the efficiency of cleavage by CRISPR-Cas9.\n\nOverall, the manuscript is well written, the experiments are very nicely performed and presented, and the findings are compelling. However, I am not sure how much new is learned here beyond previous publications. The position-specific inhibition of CRISPR-Cas9 cleavage by nucleosomes was recently shown using nearly identical assays. So the novel aspect of this work is the delineation of the binding step as the point of inhibition, rather than unwinding or later steps. This is nice, but is I am not sure whether it represents a big step forward in our understanding, thus my enthusiasm for this work is only moderate. I wonder if the authors could perhaps provide more new information by performing an analysis of cleavage during remodeling (rather than afterwards) and by using a remodeler that doesn't reposition nucleosomes, but just makes them more dynamic, generating loops of potentially accessible DNA, etc.\n\nAlso, all the work thus far has been done on the 601 DNA sequence, which is much more stable and translationally inflexible than other sequences, and this must be considered in interpretation.\n\nReviewer #2:\n\nThis manuscript studies the effect of nucleosome position on Cas9 binding to and cleavage of DNA targets. This is a very important subject given the current poor understanding of how Cas9 interacts with chromatinized DNA. This is a short study simply showing reduced cutting by Cas9 when nucleosomes are present. This is an interesting observation, but the cursory nature of the investigation and the previous report of essentially identical results decreases the overall impact of the work. The study would be significantly strengthened by a deeper analysis how Cas9 finds and interacts targets on nucleosomal and non-nucleosomal DNA.\n\n1) The 2015 paper from Hinz, Laughery and Wyrick shows essentially identical results to the main points of this study. Although the current study includes the analysis of Cas9 cutting in the present of Snf2h, this is not assessed in depth.\n\n2) Only a single gRNA and target site combination is studied. Because of the widely observed differences in activity of different gRNAs, it is important to study different gRNAs and determine that the results shown here are not unique to one or more particular targets. A similar problem is shown in Figure 1D, where the experiment is designed to study the variable of position within the nucleosome, but the variable of sequence identity of the target site is also changing and therefore convoluting the results. Since only a single target DNA strand was analyzed, it's difficult to generalize the observations. It would strengthen the conclusions to evaluate target site position independent of sequence.\n\n3) The authors should consider making an additional effort to resolving their model with the many published studies showing Cas9 gene editing and dCas9 binding in heterochromatin. Some of these studies even show remodeling of chromatin in mammalian cells \u2013 how might this happen given the new results shown here? Does the proposed model in Figure 3E help predict gene editing activity within eukaryotic cells? Or does it at least explain differences in gene editing efficiency between target sites already described in the literature? Can the authors use the referenced nucleosome positioning maps to explain published data (or new data on gene editing in cells that they generate)?\n",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3f86d846-068b-4c4a-a29b-32725330a222",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C1",
+      "claim": "The CRISPR-Cas9 bacterial surveillance system has become a versatile tool for genome editing and gene regulation in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR-Cas9 bacterial surveillance system has become a versatile tool for genome editing and gene regulation in eukaryotic cells, yet how CRISPR-Cas9 contends with the barriers presented by eukaryotic chromatin is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to established applications in the field and citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "cd9fcbb3-746b-4526-a0bf-c955b9348ae3",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C2",
+      "claim": "How CRISPR-Cas9 contends with the barriers presented by eukaryotic chromatin is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR-Cas9 bacterial surveillance system has become a versatile tool for genome editing and gene regulation in eukaryotic cells, yet how CRISPR-Cas9 contends with the barriers presented by eukaryotic chromatin is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the knowledge gap that motivated the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "6a409eb2-2845-4eef-ac37-ca384f7bb982",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C3",
+      "claim": "Nucleosomes assembled on native DNA sequences are permissive to Cas9 action.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that nucleosomes assembled on native DNA sequences are permissive to Cas9 action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing Cas9 activity on 5S nucleosomes versus 601 nucleosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "6bd99208-0138-4835-a139-be02d2f33ed5",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C4",
+      "claim": "The accessibility of nucleosomal DNA to Cas9 is variable over several orders of magnitude depending on dynamic properties of the DNA sequence and the distance of the PAM site from the nucleosome dyad.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the accessibility of nucleosomal DNA to Cas9 is variable over several orders of magnitude depending on dynamic properties of the DNA sequence and the distance of the PAM site from the nucleosome dyad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing different cleavage rates at different positions and with different DNA sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "8bcafe44-4774-4944-a3da-e244f9589a81",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C5",
+      "claim": "Chromatin remodeling enzymes stimulate Cas9 activity on nucleosomal templates.",
+      "claim_type": "EXPLICIT",
+      "source": "We further find that chromatin remodeling enzymes stimulate Cas9 activity on nucleosomal templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing enhanced Cas9 cleavage in the presence of SNF2h and RSC remodelers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "35d71936-a65f-49dd-9130-5e395eb5b295",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C6",
+      "claim": "The spontaneous breathing of nucleosomal DNA together with the action of chromatin remodelers allow Cas9 to effectively act on chromatin in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings imply that the spontaneous breathing of nucleosomal DNA together with the action of chromatin remodelers allow Cas9 to effectively act on chromatin in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biochemical data presented and knowledge of in vivo chromatin dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "53911497-9d8c-4ffa-8d33-9a0c35e173dc",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C7",
+      "claim": "CRISPR systems, particularly the type II CRISPR-Cas9 mechanism from Streptomyces pyogenes, have been developed as artificial tools for genome engineering, gene regulation, and live imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent development of CRISPR (clustered regularly interspaced short palindromic repeats) systems, particularly the type II CRISPR-Cas9 mechanism from Streptomyces pyogenes, as an artificial tool for genome engineering, gene regulation, and live imaging is a remarkable achievement with profound impact in a wide variety of research fields and applications (Makarova et al., 2015; Doudna and Charpentier, 2014; Cong et al., 2013; Jinek et al., 2012; 2013; Mali et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "9af85d2b-babc-4005-8a9a-5ed48243bba4",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C8",
+      "claim": "Relatively few details are known of the mechanism by which bacterial CRISPR-Cas9 systems operate in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its successful adoption across numerous eukaryotic organisms, relatively few details are known of the mechanism by which bacterial CRISPR-Cas9 systems operate in eukaryotic cells (Doudna and Charpentier, 2014; Ghorbal et al., 2014; Vyas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations indicating the knowledge gap in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "e859e76f-04f2-4e8b-b523-d493e4cb4caa",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C9",
+      "claim": "CRISPR-Cas9 originated in bacteria, where genomic DNA generally consists of supercoiled circular molecules associated with nucleoid-associated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-Cas9 originated in bacteria, where genomic DNA generally consists of supercoiled circular molecules associated with nucleoid-associated proteins (Travers and Muskhelishvili, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established knowledge about bacterial DNA organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "3ef8ad3f-f41f-4361-b8f3-255a3b478c96",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C10",
+      "claim": "Eukaryotic chromosomes are linear, packaged with histone octamers into nucleosomes, and further organized into higher-order structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, eukaryotic chromosomes are linear, packaged with histone octamers into nucleosomes, and further organized into higher-order structures (Luger et al., 1997; Olins and Olins, 1974; Woodcock et al., 1976; Dixon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established knowledge about eukaryotic chromatin structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "245368d7-a369-4754-a41a-fe2c906a08e0",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C11",
+      "claim": "The packaging of DNA into nucleosomes generally inhibits the binding of sequence specific DNA binding factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The packaging of DNA into nucleosomes generally inhibits the binding of sequence specific DNA binding factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the chromatin field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "bc10489f-4fdb-4206-80fc-8d681e8fc784",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C12",
+      "claim": "In eukaryotes ATP-dependent chromatin remodelers reposition, remove, or restructure nucleosomes to regulate the access of DNA binding factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in eukaryotes ATP-dependent chromatin remodelers reposition, remove, or restructure nucleosomes to regulate the access of DNA binding factors (Clapier and Cairns, 2009; Narlikar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established knowledge about chromatin remodelers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "10c3402a-6065-411f-88d5-0faba4c8c01b",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C13",
+      "claim": "The Widom 601 sequence is an artificially derived sequence with high affinity for the histone octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "The 601 sequence is an artificially derived sequence with high affinity for the histone octamer and has proved a valuable tool for assembling well positioning nucleosomes for biochemical studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the 601 sequence, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1c664080-17d7-4df8-a78b-60050ca49155",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C14",
+      "claim": "Targeting DNA flanking the nucleosome showed cleavage rates comparable to those of naked DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting the DNA flanking the nucleosome showed cleavage rates comparable to those of naked DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "a987b8de-b723-4a53-a90b-a3fbb3a3e957",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C15",
+      "claim": "Cleavage rates at entry/exit sites of the nucleosome were much lower compared to naked DNA (~23\u201328x decrease cleavage rate vs. DNA alone).",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage rates at entry/exit sites of the nucleosome were much lower compared to naked DNA (~23\u201328x decrease cleavage rate vs. DNA alone) (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "c8ffcb99-0365-4ead-9538-adaea5571002",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C16",
+      "claim": "Targeting near the nucleosomal dyad resulted in further inhibition of cutting by Cas9 (~1000x decrease vs. DNA alone).",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting near the nucleosomal dyad resulted in further inhibition of cutting by Cas9 (~1000x decrease vs. DNA alone) (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "2de5342f-4761-4638-9be6-f447d88da4ef",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C17",
+      "claim": "Nucleosomal DNA transiently disengages from the histone octamer, a process termed as nucleosomal DNA unpeeling or breathing.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that nucleosomal DNA transiently disengages from the histone octamer, a process termed as nucleosomal DNA unpeeling or breathing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "923c6de9-c3ae-4846-8595-669e50608563",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C18",
+      "claim": "The equilibrium for DNA unpeeling gets progressively more unfavorable the closer the DNA site gets to the dyad.",
+      "claim_type": "EXPLICIT",
+      "source": "The equilibrium for DNA unpeeling gets progressively more unfavorable the closer the DNA site gets to the dyad (Polach and Widom, 1995; Li and Widom, 2004; Luger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "5f1226a6-34ba-42e7-8bd6-ea26a3a9e85b",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C19",
+      "claim": "The nucleosome-mediated inhibition of Cas9 activity is more pronounced near the dyad suggesting that Cas9 cleavage occurs on DNA that is transiently disengaged from the histone octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleosome-mediated inhibition of Cas9 activity is more pronounced near the dyad suggesting that Cas9 cleavage occurs on DNA that is transiently disengaged from the histone octamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and knowledge of DNA breathing.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "02026257-2edc-4854-a3de-a6cdc0105b32",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C20",
+      "claim": "Cas9 recognizes DNA target sites in a two-step process that begins with binding to the DNA protospacer adjacent motif (PAM, in this case 'NGG') through its C-terminal PAM-interacting region, followed by sequential melting of the DNA double strand and annealing of the sgRNA guide segment to the unwound target DNA strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 recognizes DNA target sites in a two-step process that begins with binding to the DNA protospacer adjacent motif (PAM, in this case 'NGG') through its C-terminal PAM-interacting region, followed by sequential melting of the DNA double strand and annealing of the sgRNA guide segment to the unwound target DNA strand (Figure 1\u2014figure supplement 1A) (Sternberg et al., 2014; Jiang et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous work and illustrated in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "f8839295-3a80-457f-b6a8-c80385fb7f04",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C21",
+      "claim": "Complete annealing of the 20-nt guide RNA to the target DNA is required to drive a progressive conformational transformation that authorizes Cas9 to simultaneously cleave both DNA strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete annealing of the 20-nt guide RNA to the target DNA is required to drive a progressive conformational transformation that authorizes Cas9 to simultaneously cleave both DNA strands (Sternberg et al., 2015; Josephs et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "228373ba-aaff-4b22-a8a2-cffebaf03919",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C22",
+      "claim": "Binding of dCas9 pre-loaded with core targeting sgRNA with 601 0/0 nucleosomes is undetectable whereas binding to naked DNA control is still robust.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of dCas9 pre-loaded with core targeting sgRNA with 601 0/0 nucleosomes is undetectable whereas binding to naked DNA control is still robust (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "c8841ff1-7806-413a-bdac-9862d01c3896",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C23",
+      "claim": "The presence of super shifts in the gel migration pattern suggests that multiple dCas9 molecules are engaging the same DNA substrate molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of super shifts in the gel migration pattern suggests that multiple dCas9 molcules are engaging the same DNA substrate molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the gel shift pattern observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1ff23484-ab63-4aac-807f-5033d05e9d50",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C24",
+      "claim": "In the binding assay, the highly transient dCas9 binding to PAMs within target DNA is observable as super shifts, likely due to a combination of a high number of PAMs on the target DNA (23 NGG PAMs present in 601 0/0 sequence) and common caging effects of gel binding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated this further and determined that, in our binding assay, the highly transient dCas9 binding to PAMs within target DNA is observable as super shifts, likely due to a combination of a high number of PAMs on the target DNA (23 NGG PAMs present in 601 0/0 sequence) and common caging effects of gel binding assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental observations and knowledge of gel binding assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "2ae59368-25ea-40b3-8d44-8f802f5cb3cc",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C25",
+      "claim": "The absence of a super shift binding pattern with 0/0 nucleosomes suggests that dCas9 cannot stably interact with PAMs located on nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of a super shift binding pattern with 0/0 nucleosomes (Figure 1\u2014figure supplement 1B, right) suggests that dCas9 cannot stably interact with PAMs located on nucleosomes, in a manner consistent with a recently published study (Hinz et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on experimental data and supported by citation to a published study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "fbd8629c-02ce-4e44-96d0-104791c2da68",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C26",
+      "claim": "The artificial Widom 601 is an atypically strong nucleosome positioning sequence that shows ~100-fold less breathing dynamics compared to physiological nucleosome positioning sequences, such as the 5S rRNA gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The artificial Widom 601 is an atypically strong nucleosome positioning sequence that shows ~100-fold less breathing dynamics compared to physiological nucleosome positioning sequences, such as the 5S rRNA gene (Anderson et al., 2002; Partensky and Narlikar, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "cddc75cf-5b4c-4345-9c15-46de42dc4d50",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C27",
+      "claim": "Cas9-mediated cleavage at sites near the entry/exit of the nucleosome is substantially enhanced (700\u2013fold) with 5S nucleosomes compared to 601 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-mediated cleavage at sites near the entry/exit of the nucleosome is substantially enhanced (700\u2013fold) with 5S nucleosomes compared to 601 particles (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "60cc8a24-1866-4d75-9509-c2c6bbbf0d8f",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C28",
+      "claim": "In the context of 601, cutting at the entry/exit site is 1000-fold slower than in naked DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of 601, cutting at this site is 1000-fold slower than in naked DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "edeb6544-db7b-40cf-9e84-d9f09cf57d89",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C29",
+      "claim": "With 5S nucleosomes, cutting at the entry/exit site is only 1.5-fold slower than in naked DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, with 5S nucleosomes, cutting at the comparable site is only 1.5-fold slower than in naked DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "9d79c335-b258-4ea7-b0a5-8c0733e825d3",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C30",
+      "claim": "Cas9 cleavage near the dyad is inhibited to a similar extent on both 5S and 601 nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cas9 cleavage near the dyad is inhibited to a similar extent on both 5S and 601 nucleosomes, showing that the 5S-specific enhancement of Cas9 activity does not extend all the way to the nucleosomal dyad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "2ecb1bf0-19d9-4aba-8905-805a91b08b15",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C31",
+      "claim": "Nucleosomal DNA breathing substantially enhances Cas9 binding to nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our interpretation that nucleosomal DNA breathing substantially enhances Cas9 binding to nucleosomes and demonstrate that nucleosomal DNA sequence, through its influence on nucleosome stability, can regulate Cas9 activity over a large dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data comparing 601 and 5S nucleosomes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "652dd184-8f21-4730-a0a7-782aff01c947",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C32",
+      "claim": "Nucleosomal DNA sequence, through its influence on nucleosome stability, can regulate Cas9 activity over a large dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our interpretation that nucleosomal DNA breathing substantially enhances Cas9 binding to nucleosomes and demonstrate that nucleosomal DNA sequence, through its influence on nucleosome stability, can regulate Cas9 activity over a large dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing different cleavage rates with different DNA sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "897ed305-d013-47cd-a8c4-d25974c4636f",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C33",
+      "claim": "Nucleosome positioning in vivo is strongly dependent on ATP-dependent chromatin remodelers, which are capable of loading, repositioning, and removing nucleosomes from the chromatin fiber.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosome positioning in vivo is strongly dependent on ATP-dependent chromatin remodelers, which are capable of loading, repositioning, and removing nucleosomes from the chromatin fiber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the chromatin field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "80be0638-870e-4b01-828d-da32b9eb5462",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C34",
+      "claim": "When incubated with 601 80/0 particles, SNF2h promotes sliding of the nucleosome towards the center of the DNA molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "When incubated with 601 80/0 particles, SNF2h promotes sliding of the nucleosome towards the center of the DNA molecule (Figure 3A\u2013B, Figure 3\u2014figure supplement 1) (L\u00e4ngst et al., 1999; He et al., 2006; Yang et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in figures and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "4a9c1ca1-d4ab-4bea-967b-2b68a3ad8d52",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C35",
+      "claim": "Remodeling 80/0 nucleosomes by SNF2h resulted in a strong enhancement of Cas9 cleavage to ~34%.",
+      "claim_type": "EXPLICIT",
+      "source": "Remodeling 80/0 nucleosomes by SNF2h resulted in a strong enhancement of Cas9 cleavage to ~34%, showing that SNF2h slides the nucleosome enough to improve Cas9's accessibility to the target site and that Cas9 is now able to bind and cleave at a higher rate (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "7d3c4c08-4b2a-4427-ab46-18f1debd8fec",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C36",
+      "claim": "SNF2h slides the nucleosome enough to improve Cas9's accessibility to the target site.",
+      "claim_type": "EXPLICIT",
+      "source": "Remodeling 80/0 nucleosomes by SNF2h resulted in a strong enhancement of Cas9 cleavage to ~34%, showing that SNF2h slides the nucleosome enough to improve Cas9's accessibility to the target site and that Cas9 is now able to bind and cleave at a higher rate (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "e56d3a30-7615-4b58-8f23-e5d0c017d755",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C37",
+      "claim": "Remodelers from the SWI/SNF class have multiple outcomes, which include generation of DNA loops and eviction of the histone octamer in addition to nucleosome sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "While the ISWI remodeler SNF2h predominantly slides nucleosomes, remodelers from the SWI/SNF class have multiple outcomes, which include generation of DNA loops and eviction of the histone octamer in addition to nucleosome sliding (Rowe and Narlikar, 2010; Narlikar et al., 2001; Lorch et al., 1998; Schnitzler et al., 1998; Clapier and Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "6d76be41-f227-4da8-9188-404b17cb1877",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C38",
+      "claim": "RSC activity dramatically enhances cleavage on 601 80/80 nucleosomes when Cas9 is targeted to the entry site, negating most of the inhibitory influence of the nucleosome on Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that RSC activity also dramatically enhances cleavage on 601 80/80 nucleosomes when Cas9 is targeted to the entry site, negating most of the inhibitory influence of the nucleosome on Cas9 (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "ba2eeb12-183a-40b5-a20d-ccbfe7acdcf4",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C39",
+      "claim": "Two different classes of chromatin remodeling enzymes can significantly enhance Cas9 access to DNA targets normally obscured by nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that two different classes of chromatin remodeling enzymes can significantly enhance Cas9 access to DNA targets normally obscured by nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with SNF2h and RSC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1e75bc11-6cf4-4f6c-aca8-1a5aa6f14939",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C40",
+      "claim": "The intrinsic stability of the histone-DNA interactions plays a critical role in regulating the activity of S. pyogenes Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate, using detailed biochemical studies with a variety of nucleosomal templates, that (i) the intrinsic stability of the histone-DNA interactions, (ii) the location of the target site within the nucleosomes (nucleosome positioning), and (iii) the action of chromatin remodeling enzymes play critical roles in regulating the activity of S. pyogenes Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "e5b49f9e-1888-4dac-8481-3c8d959451cd",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C41",
+      "claim": "The location of the target site within the nucleosomes (nucleosome positioning) plays a critical role in regulating the activity of S. pyogenes Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate, using detailed biochemical studies with a variety of nucleosomal templates, that (i) the intrinsic stability of the histone-DNA interactions, (ii) the location of the target site within the nucleosomes (nucleosome positioning), and (iii) the action of chromatin remodeling enzymes play critical roles in regulating the activity of S. pyogenes Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "cd11fe4b-7a57-48db-ac3d-c383334b4324",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C42",
+      "claim": "The action of chromatin remodeling enzymes plays a critical role in regulating the activity of S. pyogenes Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate, using detailed biochemical studies with a variety of nucleosomal templates, that (i) the intrinsic stability of the histone-DNA interactions, (ii) the location of the target site within the nucleosomes (nucleosome positioning), and (iii) the action of chromatin remodeling enzymes play critical roles in regulating the activity of S. pyogenes Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "9e8c9f1d-c090-46ba-abb5-4b41245c408d",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C43",
+      "claim": "Nucleosomes have been shown to inhibit the action of DNA binding factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes have been shown to inhibit the action of DNA binding factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the chromatin field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "35b6a55d-c9ba-423d-8b75-8965a13d461c",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C44",
+      "claim": "Recent work using nucleosomes assembled on the 601 sequence has led to the qualitatively similar conclusion that nucleosomes are refractory for Cas9 action.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work using nucleosomes assembled on the 601 sequence has led to the qualitatively similar conclusion that nucleosomes are refractory for Cas9 action (Hinz et al., 2015; Horlbeck et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "e53c1b8c-79b7-41c0-bdee-f39dd03f7c20",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C45",
+      "claim": "Cas9 gains access to nucleosomal DNA when the DNA is transiently unpeeled from the histone octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that DNA breathing occurs at least 100-fold more in 5S nucleosomes than 601 nucleosomes we propose that Cas9 gains access to nucleosomal DNA when the DNA is transiently unpeeled from the histone octamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental data and knowledge of DNA breathing.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "9b078f80-70fa-4920-b44c-32c9336ed726",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C46",
+      "claim": "DNA unpeeling up to the dyad is substantially less favored (100-fold) for both the 601 and 5S nucleosomes than DNA unpeeling near their respective entry/exit sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because DNA unpeeling up to the dyad is substantially less favored (100-fold) for both the 601 and 5S nucleosomes than DNA unpeeling near their respective entry/exit sites (Anderson and Widom, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1fb0605f-fb08-44f7-910f-917c99d6396d",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C47",
+      "claim": "In vivo, the precise position of nucleosomes can greatly affect DNA factor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, as in vitro, the precise position of nucleosomes can greatly affect DNA factor binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the chromatin field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "da95eb3f-1c0d-4397-9f3c-aa341d0ad65e",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C48",
+      "claim": "Chromatin remodeling enzymes can move nucleosomes away or towards the factor binding sites to respectively enhance or inhibit factor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin remodeling enzymes can move nucleosomes away or towards the factor binding sites to respectively enhance or inhibit factor binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the chromatin field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "2a71e38d-a8cb-471e-af28-fcb44b2a5266",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C49",
+      "claim": "Cas9 activity can benefit from chromatin remodeling to access nucleosomal DNA, as evidenced by the strong enhancements of Cas9 cleavage resulting from the action of the chromatin remodelers SNF2h and RSC.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Cas9 activity can also benefit from chromatin remodeling to access nucleosomal DNA, as evidenced by the strong enhancements of Cas9 cleavage resulting from the action of the chromatin remodelers SNF2h and RSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1f3ed064-4825-4556-a632-1192d6b8b1ca",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C50",
+      "claim": "SNF2h and RSC produce distinct nucleosomal arrangements yet still substantially alleviate nucleosome-mediated occlusion of Cas9 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These two remodelers produce distinct nucleosomal arrangements yet still substantially alleviate nucleosome-mediated occlusion of Cas9 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and knowledge of remodeler mechanisms.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "f731a552-3f69-4dbb-9850-c0eee72f3d2f",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C51",
+      "claim": "In vivo, the majority of nucleosomes are not located on strong positioning sequences, and therefore may be permissive to Cas9 binding, especially at target sites that are readily accessible by DNA unpeeling.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, the majority of nucleosomes are not located on strong positioning sequences, and therefore may be permissive to Cas9 binding, especially at target sites that are readily accessible by DNA unpeeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of in vivo chromatin and the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "ea2c0daf-0edc-40b4-9066-e0c9cc97f16a",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C52",
+      "claim": "Chromatin remodeling activities can further provide diverse mechanisms to potentiate Cas9 activity at sites located close to the nucleosomal dyad or within more strongly positioned nucleosomes, which would otherwise be refractory to Cas9 action.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin remodeling activities can further provide diverse mechanisms to potentiate Cas9 activity at sites located close to the nucleosomal dyad or within more strongly positioned nucleosomes, which would otherwise be refractory to Cas9 action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and knowledge of chromatin remodeling.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "f05bfb93-60b1-46fc-a9a1-eb11067c0a10",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C53",
+      "claim": "The combination of spontaneous DNA unpeeling and remodeling contributes to the widespread success of CRISPR-Cas9 in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the combination of spontaneous DNA unpeeling and remodeling contributes to the widespread success of CRISPR-Cas9 in eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental data and knowledge of in vivo chromatin.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "c1d0d70f-337a-413d-8d59-b710be189f70",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C54",
+      "claim": "Most applications of CRISPR-Cas9 in vivo have focused on genome engineering of protein-coding genes and other functional genomic elements associated with gene expression, which are typically associated with high rates of nucleosome remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most applications of CRISPR-Cas9 in vivo have focused on genome engineering of protein-coding genes and other functional genomic elements associated with gene expression, which are typically associated with high rates of nucleosome remodeling (Clapier and Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knowledge of CRISPR applications and citation about chromatin remodeling.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "67532915-8add-4145-931d-b87fa9801858",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C55",
+      "claim": "Cas9 can temporarily gain access to less accessible regions of the genome during specific points of cell cycle (e.g. DNA replication), leading to sufficient DNA cleavage events to promote NHEJ-mediated mutagenesis or HDR-mediated DNA integration at appreciable rates.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also conceivable that Cas9 can temporarily gain access to less accessible regions of the genome during specific points of cell cycle (e.g. DNA replication), leading to sufficient DNA cleavage events to promote NHEJ-mediated mutagenesis or HDR-mediated DNA integration at appreciable rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on knowledge of cell cycle and DNA repair mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "7c51a950-0bfd-457c-bd45-1f87f61d6488",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C56",
+      "claim": "Cas9 favors more accessible euchromatin regions but is not completely excluded from transcriptionally silent heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies on Cas9's behavior by single molecule imaging have also demonstrated that Cas9 favors more accessible euchromatin regions but is not completely excluded from transcriptionally silent heterochromatin (Knight et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1dfe03c7-c446-474c-99fc-933f7271a20a",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C57",
+      "claim": "For CRISPR applications that require stable binding of nuclease-deficient dCas9 to DNA, such as transcriptional regulation and live-cell imaging with fluorescent dCas9, even modest nucleosome phasing could have a dramatic impact.",
+      "claim_type": "EXPLICIT",
+      "source": "For other CRISPR applications that require stable binding of nuclease-deficient dCas9 to DNA, such as transcriptional regulation and live-cell imaging with fluorescent dCas9, even modest nucleosome phasing could have a dramatic impact (Gilbert et al., 2013; Mali et al., 2013; Chen et al., 2013; Ma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and citations to applications.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "d0f2a3b1-7234-4e28-98b0-a116fae726cc",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C58",
+      "claim": "The +1 nucleosome in RNA pol II-transcribed genes is strongly positioned with phasing that dissipates gradually with each following nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the +1 nucleosome in RNA pol II-transcribed genes is strongly positioned with phasing that dissipates gradually with each following nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleosome positioning at genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "11cf0861-fe12-4a6d-baf8-6a460f2a9c85",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C59",
+      "claim": "The +1 nucleosome and resulting nucleosome phasing can exert a strong influence on dCas9's DNA-binding ability for transcriptional regulation, but the effect is less striking on genome editing with Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Several high resolution studies conducted in parallel to our work have established that the +1 nucleosome and resulting nucleosome phasing can exert a strong influence on dCas9's DNA-binding ability for transcriptional regulation, but the effect is less striking on genome editing with Cas9 (Horlbeck et al., 2016; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "8feb587b-1b46-4240-8290-fe019615f24a",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C60",
+      "claim": "sgRNA design strategies that avoid targeting near the dyad of strongly phased nucleosomes are likely to be more successful than current methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that sgRNA design strategies that avoid targeting near the dyad of strongly phased nucleosomes are likely to be more successful than current methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "e5bf23c5-7ec2-4961-9144-66db95edcb22",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C61",
+      "claim": "Large scale nucleosome positioning or DNA accessibility maps are now readily available and can inform CRISPR sgRNA design in order to avoid targeting regions of low accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Large scale nucleosome positioning or DNA accessibility maps are now readily available and can inform CRISPR sgRNA design in order to avoid targeting regions of low accessibility (Jiang and Pugh, 2009; Thurman et al., 2012; Wu et al., 2014; Hsieh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies providing such maps.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "ec9e92af-7e1c-4495-9ec1-ada42ef8f762",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C62",
+      "claim": "Whole cell chromatin de-condensation or de-repression using chromatin factor drugs such as HDAC or DNA methyltransferase inhibitors may be an alternative and attractive strategy for improving CRISPR-Cas9 activity towards densely compact regions of chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, whole cell chromatin de-condensation or de-repression using chromatin factor drugs such as HDAC or DNA methyltransferase inhibitors may be an alternative and attractive strategy for improving CRISPR-Cas9 activity towards densely compact regions of chromatin (Haaf, 1995; T\u00f3th et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to studies on chromatin drugs.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "d8e659a5-5cd4-457d-9302-75271461634b",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C63",
+      "claim": "Wild-type Streptococcus pyogenes Cas9 and catalytically-inactive Cas9 (dCas9) containing D10A and H840A mutations were individually cloned into a custom pET-based expression vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type Streptococcus pyogenes Cas9 and catalytically-inactive Cas9 (dCas9) containing D10A and H840A mutations were individually cloned into a custom pET-based expression vector encoding an N-terminal 6xHis-tag followed by a small ubiquitin-related modifier (SUMO) fusion tag and a Ulp1 protease cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "d1e2e98d-b3e7-46dd-b76d-3415bd26dd02",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C64",
+      "claim": "Recombinant Cas9 variants were expressed in Escherichia coli strain BL21 (DE3) and further purified to homogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant Cas9 variants were then expressed in Escherichia coli strain BL21 (DE3) (Novagen) and further purified to homogeneity as previously described (Jiang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "3e489ee3-4f84-4846-a0c5-80a8966e1e1c",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C65",
+      "claim": "Single guide RNAs (sgRNAs) were prepared by in vitro run-off transcription using recombinant His-tagged T7 RNA polymerase and PCR product templates.",
+      "claim_type": "EXPLICIT",
+      "source": "Single guide RNAs (sgRNAs) were prepared by in vitro run-off transcription using recombinant His-tagged T7 RNA polymerase and PCR product templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "bf2b15bb-4261-4228-bc11-d9f2b4ba2d63",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C66",
+      "claim": "Gradient salt dialysis was used to assemble mono-nucleosomes on DNA templates containing the 147 bp long 601 or the 5S positioning sequence from X. borealis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradient salt dialysis was used to assemble mono-nucleosomes on DNA templates containing the 147 bp long 601 or the 5S positioning sequence from X. borealis (listed in Table 2), and labeled with fluorescein on the 5' upstream end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "a71d6d7c-a600-4294-b9a2-5f07a389bd36",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C67",
+      "claim": "Histones and histone octamers were prepared as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "Histones and histone octamers were prepared as previously described (Luger et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "e0331783-46ef-4791-9ef6-89571cd6e143",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C68",
+      "claim": "Cleavage assays were conducted with modifications to a previously described protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage assays were conducted as previously described with the following modifications (Anders and Jinek, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "73678274-0267-4011-ae6f-8b847a08b306",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C69",
+      "claim": "Cas9:sgRNA complexes were reconstituted by incubating Cas9 and sgRNA for 10 min at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9:sgRNA complexes were reconstituted by incubating Cas9 and sgRNA for 10 min at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "201d8fd1-bed9-4d0c-a500-bb012fcc546c",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C70",
+      "claim": "Reactions contained 5 nM fluorescein labeled DNA or nucleosomes and 100 nM Cas9:sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactions contained 5 nM fluorescein labeled DNA or nucleosomes and 100 nM Cas9:sgRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "821a8d47-5321-47dc-a677-d8366273b418",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C71",
+      "claim": "In combined cleavage and remodeling experiments, 25 nM SNF2h or 3 nM RSC was first incubated with 5 nM naked DNA or nucleosomes for 45 min at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In combined cleavage and remodeling experiments, 25 nM SNF2h or 3 nM RSC was first incubated with 5 nM naked DNA or nucleosomes for 45 min at 37\u00b0C (Narlikar et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "709b9bac-8349-4cb1-959a-03fcfb9cdb77",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C72",
+      "claim": "All experiments were performed in triplicate.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed in triplicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "2eef0d1d-3ad7-4d3e-8844-7f169e827d74",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C73",
+      "claim": "Experiment variability is presented as the standard error of the mean, calculated by the standard deviation divided by the square root of N.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiment variability is presented as the standard error of the mean, calculated by the standard deviation divided by the square root of N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "499f9dd9-4e6c-4169-a60a-7c7a72fd0f73",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C74",
+      "claim": "SNF2h remodels 80/0 end-positioned nucleosomes in a range of nucleosome positions biased towards the center of the DNA molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "SNF2h remodels 80/0 end\u2010positioned nucleosomes in a range of nucleosome positions biased towards the center of the DNA molecule, whereas RSC has the opposite bias of repositioned centered nucleosomes towards the ends of the DNA molecule.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "8e7fd085-b63f-4b44-9c53-8efb9c69f572",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C75",
+      "claim": "RSC has the opposite bias of repositioned centered nucleosomes towards the ends of the DNA molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "SNF2h remodels 80/0 end\u2010positioned nucleosomes in a range of nucleosome positions biased towards the center of the DNA molecule, whereas RSC has the opposite bias of repositioned centered nucleosomes towards the ends of the DNA molecule.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1718c4c8-5b3d-4f03-81d2-223a3f7a85ed",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C76",
+      "claim": "SNF2h improves Cas9 cleavage to ~35% of the naked DNA cleavage rate.",
+      "claim_type": "EXPLICIT",
+      "source": "SNF2h improves Cas9 cleavage to ~35% of the naked DNA cleavage rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "074ec196-9a1c-4744-a788-d9ace1d44421",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C77",
+      "claim": "Cas9 cleavage is substantially enhanced by RSC, attaining ~63% of the naked DNA cleavage rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 cleavage is substantially enhanced by RSC, attaining ~63% of the naked DNA cleavage rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "6f871819-e368-4498-83a3-1a6b7f91949c",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "claim_id": "C78",
+      "claim": "SNF2h improves Cas9 cleavage to ~40% of the naked DNA cleavage rate in simultaneous remodeling and cleavage assays.",
+      "claim_type": "EXPLICIT",
+      "source": "SNF2h improves Cas9 cleavage to ~40% of the naked DNA cleavage rate, similarly to sequential remodeling and cleavage assays shown in Figure 3A\u2013D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6128e0d6-5305-4226-8c4d-a9ae463a8036",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nucleosomes assembled on the 601 sequence inhibit Cas9 cleavage in a position-dependent manner. Flanking DNA is cleaved at rates comparable to naked DNA (C14), entry/exit sites show ~23-28x inhibition (C15), and dyad sites show ~1000x inhibition (C16). This position-dependent inhibition suggests Cas9 accesses DNA via transient nucleosome breathing (C19), with target site location playing a critical role in regulating Cas9 activity (C40, C41).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 provide quantitative experimental data showing position-dependent inhibition on 601 nucleosomes. The interpretation that Cas9 accesses DNA via breathing (C19) is consistent with known nucleosome dynamics (C17-C18) and the observed position-dependent effects. The data directly support the conclusion that target site location regulates Cas9 activity (C40-C41).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "3b0b2d2a-d5ea-4a3d-b68b-450ccef992e0",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "dCas9 cannot stably bind to PAM sites located within nucleosomes. Gel shift assays show robust dCas9 binding to naked DNA with super-shift patterns indicating multiple PAM interactions (C22-C24), but no binding is detected with 601 0/0 nucleosomes (C22, C25), suggesting nucleosomes block the initial PAM recognition step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 provide direct experimental evidence from gel shift assays showing dCas9 binding to naked DNA but not nucleosomes. The interpretation of super-shifts as multiple PAM binding events (C23-C24) is reasonable given the high number of PAMs present. The absence of binding to nucleosomes (C25) is consistent with cited work and supports the conclusion that nucleosomes block PAM recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nucleosomes assembled on the native 5S sequence are permissive to Cas9 action compared to the artificial 601 sequence. At entry/exit sites, 5S nucleosomes show 700-fold enhanced cleavage compared to 601 (C27), with rates only 1.5-fold slower than naked DNA (C29) versus 1000-fold slower for 601 (C28). This enhancement correlates with ~100-fold greater DNA breathing in 5S versus 601 nucleosomes (C26), supporting the model that Cas9 accesses nucleosomal DNA via transient DNA unpeeling (C31, C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 provide quantitative experimental data showing dramatic differences between 5S and 601 nucleosomes at entry/exit sites. The correlation with known breathing dynamics (C26, cited) provides a mechanistic explanation. However, the similar inhibition at dyad sites for both sequences (C30) is also consistent with the breathing model, as dyad unpeeling is equally unfavorable for both. The data strongly support the DNA breathing mechanism (C31, C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "c99cfa60-0417-4704-b06e-74bc60420ea3",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ISWI-family remodeler SNF2h enhances Cas9 cleavage of nucleosomal DNA by sliding nucleosomes to expose target sites. SNF2h remodels 601 80/0 nucleosomes toward the center (C34, C74), resulting in ~34-40% cleavage efficiency relative to naked DNA (C35, C76, C78), demonstrating that chromatin remodeling plays a critical role in regulating Cas9 activity (C42, C49).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 provide experimental data showing SNF2h-mediated enhancement of Cas9 cleavage, with consistent quantification across sequential (C35, C76) and simultaneous (C78) remodeling experiments. The mechanism of nucleosome sliding (C34, C74) is supported by gel shift data and is consistent with known SNF2h activity. The conclusion that remodeling regulates Cas9 activity (C42, C49) is directly supported by these data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The SWI/SNF-family remodeler RSC enhances Cas9 cleavage through distinct mechanisms including nucleosome destabilization and repositioning. RSC repositions nucleosomes toward DNA ends (C37, C75) and dramatically enhances Cas9 cleavage to ~63% of naked DNA rates (C38, C77). Together with SNF2h results, this demonstrates that two different classes of chromatin remodelers can significantly enhance Cas9 access to nucleosomal DNA (C39, C42, C50).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C77 provide quantitative experimental data showing RSC-mediated enhancement of Cas9 activity. The distinct mechanisms of RSC versus SNF2h (C37, C50, C75) are supported by experimental data and cited literature. The conclusion that different remodeler classes enhance Cas9 activity (C39, C42, C50) is well-supported by the combined SNF2h and RSC data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "bdc96214-8c37-4728-ad24-35c074d23144",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The combination of spontaneous nucleosomal DNA breathing and chromatin remodeling allows Cas9 to effectively act on chromatin in vivo. In vivo, most nucleosomes are not on strong positioning sequences and may be permissive to Cas9 (C51), while chromatin remodeling can potentiate activity at less accessible sites (C52), contributing to the widespread success of CRISPR-Cas9 in eukaryotic cells (C6, C53).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C53 represent the central model integrating all experimental findings. The in vitro data on DNA breathing (5S vs 601) and remodeling (SNF2h, RSC) provide strong biochemical support for this model. The extrapolation to in vivo conditions (C51-C52) is reasonable given that most nucleosomes in vivo are indeed on weaker positioning sequences than 601. While direct in vivo validation is not provided, the model is well-supported by the biochemical data and consistent with known chromatin biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "e4bf8545-55e6-4a1c-9fb0-0fc2e91869b9",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Nucleosome positioning and phasing have differential effects on Cas9 genome editing versus dCas9-based applications. Recent studies show that nucleosome phasing strongly influences dCas9 binding for transcriptional regulation but has less effect on Cas9 genome editing (C56, C59). The authors suggest that sgRNA design strategies should avoid targeting near strongly phased nucleosome dyads (C60), and that nucleosome positioning maps can inform sgRNA design (C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C59 are supported by citations to parallel studies. The design recommendations (C60-C61) are logical inferences from the experimental data showing position-dependent inhibition. However, these are primarily recommendations for future applications rather than direct experimental findings from this study. The evaluation is SUPPORTED because the recommendations are well-justified by the data, though they represent suggested applications rather than tested outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "c4d11326-95a8-45f3-93bc-c88d89720c9f",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors speculate on mechanisms and strategies for Cas9 activity in different chromatin contexts. They note that most CRISPR applications target actively remodeled regions (C54), suggest Cas9 may access heterochromatin during cell cycle events like replication (C55), propose that nucleosome phasing could impact dCas9 applications (C57), and suggest chromatin-modifying drugs as a strategy to improve Cas9 activity in compact chromatin (C62).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C55 and C62 are explicitly speculative (\"conceivable,\" \"may be\") and lack direct experimental support in this study. Claim C57 is an inference based on the dCas9 binding data but is not directly tested. While these speculations are reasonable given the experimental findings and cited literature, they represent hypotheses for future investigation rather than supported conclusions from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "a6d81684-2366-4138-906e-f2879a6e849e",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on CRISPR-Cas9 technology, chromatin structure, and nucleosome dynamics. This includes established knowledge about CRISPR applications (C1, C7), the knowledge gap regarding Cas9-chromatin interactions (C2, C8), fundamental differences between bacterial and eukaryotic DNA organization (C9-C10), nucleosome inhibition of DNA binding factors (C11, C43), chromatin remodeling mechanisms (C12, C33, C47-C48), the 601 positioning sequence (C13), nucleosome breathing dynamics (C17-C18, C46), Cas9 mechanism (C20-C21), and nucleosome positioning at genes (C58).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge in the field, supported by appropriate citations throughout. They provide essential context for interpreting the experimental results but do not constitute novel findings from this study. The accuracy of these background claims can be verified through the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "3d74eeac-2df0-41bc-9de2-d610733432d6",
+      "content_id": "7352a723-57d8-47c8-893d-c79078cdc1e4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript describes detailed methods for protein expression, nucleosome reconstitution, and biochemical assays. Cas9 variants were expressed in E. coli and purified (C63-C64), sgRNAs were prepared by in vitro transcription (C65), nucleosomes were assembled by gradient salt dialysis (C66-C67), and cleavage assays were performed with specified conditions (C68-C71). All experiments were performed in triplicate with standard error of the mean reported (C72-C73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological claims describe standard biochemical techniques with appropriate citations to established protocols. The experimental design includes proper replication (C72) and statistical reporting (C73). The methods are sufficiently detailed and follow established practices in the field, supporting the reproducibility of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "b76de5fd-39a1-47bd-ad3c-51ef39239b27",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Cas9 cleavage of nucleosomal DNA on the 601 sequence is position-dependent: linker DNA is efficiently cleaved, entry/exit sites show ~23-28x inhibition, and dyad sites show ~1000x inhibition compared to naked DNA. This position-dependent inhibition is attributed to DNA breathing dynamics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states this finding is 'in full agreement with recently published work (Hinz et al. Biochemistry 2015)' and describes the data as 'clear and very well presented.' Reviewer 2 notes 'essentially identical results to the main points' were shown in the 2015 Hinz paper, confirming the findings but questioning novelty.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "cf2a9f02-6fff-4a35-8f2a-a469afd2156b",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "dCas9 binding to PAM sites within nucleosomes is blocked, as shown by gel shift assays where binding to 601 0/0 nucleosomes is undetectable while binding to naked DNA remains robust.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'the basic finding remains convincing: chromatin blocks Cas9 from binding PAM sites' and describes this as 'the delineation of the binding step as the point of inhibition.' This is accepted as a novel contribution, though Reviewer 1 questions whether it represents 'a big step forward.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Nucleosomes assembled on the physiological 5S sequence show dramatically enhanced Cas9 accessibility (~700-fold at entry/exit sites) compared to the artificial 601 sequence, demonstrating that DNA sequence dynamics and nucleosome stability regulate Cas9 activity over several orders of magnitude.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 notes 'all the work thus far has been done on the 601 DNA sequence, which is much more stable and translationally inflexible than other sequences, and this must be considered in interpretation.' The 5S data addresses this concern but the generalizability remains questioned. Reviewer 2 emphasizes 'only a single gRNA and target site combination is studied' and requests evaluation of 'target site position independent of sequence.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "a5872537-decb-44bc-8409-c46a9ef41545",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Chromatin remodelers SNF2h and RSC enhance Cas9 cleavage on nucleosomal templates by repositioning nucleosomes away from target sites, with SNF2h improving cleavage to ~34-40% and RSC to ~63% of naked DNA rates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states 'I am not clear on what more we learn from this experiment, other than that it's another way to show that the position of a PAM site within a nucleosome dictates the efficiency of cleavage' and suggests the analysis should be deeper, including 'cleavage during remodeling (rather than afterwards)' and using remodelers that don't reposition but 'just make them more dynamic.' Reviewer 2 notes 'the current study includes the analysis of Cas9 cutting in the present of Snf2h, this is not assessed in depth.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "b44fa5e1-e655-42e5-9f6b-66c40caa27a1",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors propose a model where Cas9 accesses nucleosomal DNA through transient DNA breathing/unpeeling from the histone octamer, and that the combination of spontaneous DNA breathing and chromatin remodeling contributes to CRISPR-Cas9 success in eukaryotic cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 accepts the DNA breathing interpretation, stating 'Presumably due to DNA breathing, a low level of cleavage is observed at entry/exit sites' without challenge. The mechanistic model is consistent with the data presented and prior knowledge cited. However, Reviewer 2 requests the authors 'consider making an additional effort to resolving their model with the many published studies showing Cas9 gene editing and dCas9 binding in heterochromatin.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors discuss implications for in vivo CRISPR applications, including that most applications target actively remodeled regions, that nucleosome phasing may particularly impact dCas9-based applications, and that sgRNA design strategies should consider nucleosome positioning maps.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 explicitly asks 'Does the proposed model in Figure 3E help predict gene editing activity within eukaryotic cells? Or does it at least explain differences in gene editing efficiency between target sites already described in the literature? Can the authors use the referenced nucleosome positioning maps to explain published data (or new data on gene editing in cells that they generate)?' This indicates the in vivo relevance claims are not adequately supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "77d31a42-fad1-4a96-b748-3e7b1e049f66",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Background claims establishing that CRISPR-Cas9 is widely used in eukaryotes, that chromatin structure differs between bacteria and eukaryotes, that nucleosomes inhibit DNA binding factors, and that chromatin remodelers regulate factor access.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established background facts cited from the literature. Reviewers do not challenge these foundational claims, which provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "13fa9031-2476-4575-a377-bac6e4ae0d72",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Methodological details describing protein expression, nucleosome assembly, cleavage assays, and statistical analysis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'the manuscript is well written, the experiments are very nicely performed and presented' and 'the work was performed to a high standard.' The methods are not questioned by either reviewer.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "d30dd51a-eae7-4d91-bd83-0f0c047c541d",
+      "content_id": "b65774e1-30c7-4ec7-9dfb-a5c5ee86debe",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Non-specific dCas9 binding to multiple PAM sites on DNA produces super-shift patterns in gel assays, likely due to high PAM density and gel caging effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 describes this as 'a curious, non-specific binding of Cas9 to linker DNA that obscures this result, and forces them to use only 601 particles lacking linker DNA. This detracts from the resulting conclusions in that they can't compare specific binding near the dyad to binding at entry sites or linker regions.' This indicates the interpretation is problematic and limits the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1c664080-17d7-4df8-a78b-60050ca49155",
+      "result_id": "6128e0d6-5305-4226-8c4d-a9ae463a8036"
+    },
+    {
+      "claim_id": "a987b8de-b723-4a53-a90b-a3fbb3a3e957",
+      "result_id": "6128e0d6-5305-4226-8c4d-a9ae463a8036"
+    },
+    {
+      "claim_id": "c8ffcb99-0365-4ead-9538-adaea5571002",
+      "result_id": "6128e0d6-5305-4226-8c4d-a9ae463a8036"
+    },
+    {
+      "claim_id": "5f1226a6-34ba-42e7-8bd6-ea26a3a9e85b",
+      "result_id": "6128e0d6-5305-4226-8c4d-a9ae463a8036"
+    },
+    {
+      "claim_id": "1e75bc11-6cf4-4f6c-aca8-1a5aa6f14939",
+      "result_id": "6128e0d6-5305-4226-8c4d-a9ae463a8036"
+    },
+    {
+      "claim_id": "e5b49f9e-1888-4dac-8481-3c8d959451cd",
+      "result_id": "6128e0d6-5305-4226-8c4d-a9ae463a8036"
+    },
+    {
+      "claim_id": "228373ba-aaff-4b22-a8a2-cffebaf03919",
+      "result_id": "3b0b2d2a-d5ea-4a3d-b68b-450ccef992e0"
+    },
+    {
+      "claim_id": "c8841ff1-7806-413a-bdac-9862d01c3896",
+      "result_id": "3b0b2d2a-d5ea-4a3d-b68b-450ccef992e0"
+    },
+    {
+      "claim_id": "1ff23484-ab63-4aac-807f-5033d05e9d50",
+      "result_id": "3b0b2d2a-d5ea-4a3d-b68b-450ccef992e0"
+    },
+    {
+      "claim_id": "2ae59368-25ea-40b3-8d44-8f802f5cb3cc",
+      "result_id": "3b0b2d2a-d5ea-4a3d-b68b-450ccef992e0"
+    },
+    {
+      "claim_id": "6a409eb2-2845-4eef-ac37-ca384f7bb982",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "fbd8629c-02ce-4e44-96d0-104791c2da68",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "cddc75cf-5b4c-4345-9c15-46de42dc4d50",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "60cc8a24-1866-4d75-9509-c2c6bbbf0d8f",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "edeb6544-db7b-40cf-9e84-d9f09cf57d89",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "9d79c335-b258-4ea7-b0a5-8c0733e825d3",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "2ecb1bf0-19d9-4aba-8905-805a91b08b15",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "652dd184-8f21-4730-a0a7-782aff01c947",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "e53c1b8c-79b7-41c0-bdee-f39dd03f7c20",
+      "result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a"
+    },
+    {
+      "claim_id": "80be0638-870e-4b01-828d-da32b9eb5462",
+      "result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3"
+    },
+    {
+      "claim_id": "4a9c1ca1-d4ab-4bea-967b-2b68a3ad8d52",
+      "result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3"
+    },
+    {
+      "claim_id": "7d3c4c08-4b2a-4427-ab46-18f1debd8fec",
+      "result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3"
+    },
+    {
+      "claim_id": "499f9dd9-4e6c-4169-a60a-7c7a72fd0f73",
+      "result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3"
+    },
+    {
+      "claim_id": "1718c4c8-5b3d-4f03-81d2-223a3f7a85ed",
+      "result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3"
+    },
+    {
+      "claim_id": "6f871819-e368-4498-83a3-1a6b7f91949c",
+      "result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3"
+    },
+    {
+      "claim_id": "cd11fe4b-7a57-48db-ac3d-c383334b4324",
+      "result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3"
+    },
+    {
+      "claim_id": "2a71e38d-a8cb-471e-af28-fcb44b2a5266",
+      "result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3"
+    },
+    {
+      "claim_id": "e56d3a30-7615-4b58-8f23-e5d0c017d755",
+      "result_id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b"
+    },
+    {
+      "claim_id": "6d76be41-f227-4da8-9188-404b17cb1877",
+      "result_id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b"
+    },
+    {
+      "claim_id": "8e7fd085-b63f-4b44-9c53-8efb9c69f572",
+      "result_id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b"
+    },
+    {
+      "claim_id": "074ec196-9a1c-4744-a788-d9ace1d44421",
+      "result_id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b"
+    },
+    {
+      "claim_id": "cd11fe4b-7a57-48db-ac3d-c383334b4324",
+      "result_id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b"
+    },
+    {
+      "claim_id": "ba2eeb12-183a-40b5-a20d-ccbfe7acdcf4",
+      "result_id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b"
+    },
+    {
+      "claim_id": "1f3ed064-4825-4556-a632-1192d6b8b1ca",
+      "result_id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b"
+    },
+    {
+      "claim_id": "35d71936-a65f-49dd-9130-5e395eb5b295",
+      "result_id": "bdc96214-8c37-4728-ad24-35c074d23144"
+    },
+    {
+      "claim_id": "f05bfb93-60b1-46fc-a9a1-eb11067c0a10",
+      "result_id": "bdc96214-8c37-4728-ad24-35c074d23144"
+    },
+    {
+      "claim_id": "f731a552-3f69-4dbb-9850-c0eee72f3d2f",
+      "result_id": "bdc96214-8c37-4728-ad24-35c074d23144"
+    },
+    {
+      "claim_id": "ea2c0daf-0edc-40b4-9066-e0c9cc97f16a",
+      "result_id": "bdc96214-8c37-4728-ad24-35c074d23144"
+    },
+    {
+      "claim_id": "7c51a950-0bfd-457c-bd45-1f87f61d6488",
+      "result_id": "e4bf8545-55e6-4a1c-9fb0-0fc2e91869b9"
+    },
+    {
+      "claim_id": "11cf0861-fe12-4a6d-baf8-6a460f2a9c85",
+      "result_id": "e4bf8545-55e6-4a1c-9fb0-0fc2e91869b9"
+    },
+    {
+      "claim_id": "8feb587b-1b46-4240-8290-fe019615f24a",
+      "result_id": "e4bf8545-55e6-4a1c-9fb0-0fc2e91869b9"
+    },
+    {
+      "claim_id": "e5bf23c5-7ec2-4961-9144-66db95edcb22",
+      "result_id": "e4bf8545-55e6-4a1c-9fb0-0fc2e91869b9"
+    },
+    {
+      "claim_id": "c1d0d70f-337a-413d-8d59-b710be189f70",
+      "result_id": "c4d11326-95a8-45f3-93bc-c88d89720c9f"
+    },
+    {
+      "claim_id": "67532915-8add-4145-931d-b87fa9801858",
+      "result_id": "c4d11326-95a8-45f3-93bc-c88d89720c9f"
+    },
+    {
+      "claim_id": "1dfe03c7-c446-474c-99fc-933f7271a20a",
+      "result_id": "c4d11326-95a8-45f3-93bc-c88d89720c9f"
+    },
+    {
+      "claim_id": "ec9e92af-7e1c-4495-9ec1-ada42ef8f762",
+      "result_id": "c4d11326-95a8-45f3-93bc-c88d89720c9f"
+    },
+    {
+      "claim_id": "3f86d846-068b-4c4a-a29b-32725330a222",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "cd9fcbb3-746b-4526-a0bf-c955b9348ae3",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "53911497-9d8c-4ffa-8d33-9a0c35e173dc",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "9af85d2b-babc-4005-8a9a-5ed48243bba4",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "e859e76f-04f2-4e8b-b523-d493e4cb4caa",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "3ef8ad3f-f41f-4361-b8f3-255a3b478c96",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "245368d7-a369-4754-a41a-fe2c906a08e0",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "bc10489f-4fdb-4206-80fc-8d681e8fc784",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "10c3402a-6065-411f-88d5-0faba4c8c01b",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "2de5342f-4761-4638-9be6-f447d88da4ef",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "923c6de9-c3ae-4846-8595-669e50608563",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "02026257-2edc-4854-a3de-a6cdc0105b32",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "f8839295-3a80-457f-b6a8-c80385fb7f04",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "897ed305-d013-47cd-a8c4-d25974c4636f",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "9e8c9f1d-c090-46ba-abb5-4b41245c408d",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "35b6a55d-c9ba-423d-8b75-8965a13d461c",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "9b078f80-70fa-4920-b44c-32c9336ed726",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "1fb0605f-fb08-44f7-910f-917c99d6396d",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "da95eb3f-1c0d-4397-9f3c-aa341d0ad65e",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "d0f2a3b1-7234-4e28-98b0-a116fae726cc",
+      "result_id": "a6d81684-2366-4138-906e-f2879a6e849e"
+    },
+    {
+      "claim_id": "d8e659a5-5cd4-457d-9302-75271461634b",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "d1e2e98d-b3e7-46dd-b76d-3415bd26dd02",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "3e489ee3-4f84-4846-a0c5-80a8966e1e1c",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "bf2b15bb-4261-4228-bc11-d9f2b4ba2d63",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "a71d6d7c-a600-4294-b9a2-5f07a389bd36",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "e0331783-46ef-4791-9ef6-89571cd6e143",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "73678274-0267-4011-ae6f-8b847a08b306",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "201d8fd1-bed9-4d0c-a500-bb012fcc546c",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "821a8d47-5321-47dc-a677-d8366273b418",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "709b9bac-8349-4cb1-959a-03fcfb9cdb77",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "2eef0d1d-3ad7-4d3e-8844-7f169e827d74",
+      "result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6"
+    },
+    {
+      "claim_id": "1c664080-17d7-4df8-a78b-60050ca49155",
+      "result_id": "b76de5fd-39a1-47bd-ad3c-51ef39239b27"
+    },
+    {
+      "claim_id": "a987b8de-b723-4a53-a90b-a3fbb3a3e957",
+      "result_id": "b76de5fd-39a1-47bd-ad3c-51ef39239b27"
+    },
+    {
+      "claim_id": "c8ffcb99-0365-4ead-9538-adaea5571002",
+      "result_id": "b76de5fd-39a1-47bd-ad3c-51ef39239b27"
+    },
+    {
+      "claim_id": "5f1226a6-34ba-42e7-8bd6-ea26a3a9e85b",
+      "result_id": "b76de5fd-39a1-47bd-ad3c-51ef39239b27"
+    },
+    {
+      "claim_id": "1e75bc11-6cf4-4f6c-aca8-1a5aa6f14939",
+      "result_id": "b76de5fd-39a1-47bd-ad3c-51ef39239b27"
+    },
+    {
+      "claim_id": "e5b49f9e-1888-4dac-8481-3c8d959451cd",
+      "result_id": "b76de5fd-39a1-47bd-ad3c-51ef39239b27"
+    },
+    {
+      "claim_id": "228373ba-aaff-4b22-a8a2-cffebaf03919",
+      "result_id": "cf2a9f02-6fff-4a35-8f2a-a469afd2156b"
+    },
+    {
+      "claim_id": "2ae59368-25ea-40b3-8d44-8f802f5cb3cc",
+      "result_id": "cf2a9f02-6fff-4a35-8f2a-a469afd2156b"
+    },
+    {
+      "claim_id": "6a409eb2-2845-4eef-ac37-ca384f7bb982",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "6bd99208-0138-4835-a139-be02d2f33ed5",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "fbd8629c-02ce-4e44-96d0-104791c2da68",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "cddc75cf-5b4c-4345-9c15-46de42dc4d50",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "60cc8a24-1866-4d75-9509-c2c6bbbf0d8f",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "edeb6544-db7b-40cf-9e84-d9f09cf57d89",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "9d79c335-b258-4ea7-b0a5-8c0733e825d3",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "2ecb1bf0-19d9-4aba-8905-805a91b08b15",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "652dd184-8f21-4730-a0a7-782aff01c947",
+      "result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5"
+    },
+    {
+      "claim_id": "8bcafe44-4774-4944-a3da-e244f9589a81",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "80be0638-870e-4b01-828d-da32b9eb5462",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "4a9c1ca1-d4ab-4bea-967b-2b68a3ad8d52",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "7d3c4c08-4b2a-4427-ab46-18f1debd8fec",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "6d76be41-f227-4da8-9188-404b17cb1877",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "ba2eeb12-183a-40b5-a20d-ccbfe7acdcf4",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "cd11fe4b-7a57-48db-ac3d-c383334b4324",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "2a71e38d-a8cb-471e-af28-fcb44b2a5266",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "1f3ed064-4825-4556-a632-1192d6b8b1ca",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "499f9dd9-4e6c-4169-a60a-7c7a72fd0f73",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "8e7fd085-b63f-4b44-9c53-8efb9c69f572",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "1718c4c8-5b3d-4f03-81d2-223a3f7a85ed",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "074ec196-9a1c-4744-a788-d9ace1d44421",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "6f871819-e368-4498-83a3-1a6b7f91949c",
+      "result_id": "a5872537-decb-44bc-8409-c46a9ef41545"
+    },
+    {
+      "claim_id": "e53c1b8c-79b7-41c0-bdee-f39dd03f7c20",
+      "result_id": "b44fa5e1-e655-42e5-9f6b-66c40caa27a1"
+    },
+    {
+      "claim_id": "9b078f80-70fa-4920-b44c-32c9336ed726",
+      "result_id": "b44fa5e1-e655-42e5-9f6b-66c40caa27a1"
+    },
+    {
+      "claim_id": "f731a552-3f69-4dbb-9850-c0eee72f3d2f",
+      "result_id": "b44fa5e1-e655-42e5-9f6b-66c40caa27a1"
+    },
+    {
+      "claim_id": "ea2c0daf-0edc-40b4-9066-e0c9cc97f16a",
+      "result_id": "b44fa5e1-e655-42e5-9f6b-66c40caa27a1"
+    },
+    {
+      "claim_id": "f05bfb93-60b1-46fc-a9a1-eb11067c0a10",
+      "result_id": "b44fa5e1-e655-42e5-9f6b-66c40caa27a1"
+    },
+    {
+      "claim_id": "c1d0d70f-337a-413d-8d59-b710be189f70",
+      "result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc"
+    },
+    {
+      "claim_id": "67532915-8add-4145-931d-b87fa9801858",
+      "result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc"
+    },
+    {
+      "claim_id": "7c51a950-0bfd-457c-bd45-1f87f61d6488",
+      "result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc"
+    },
+    {
+      "claim_id": "1dfe03c7-c446-474c-99fc-933f7271a20a",
+      "result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc"
+    },
+    {
+      "claim_id": "11cf0861-fe12-4a6d-baf8-6a460f2a9c85",
+      "result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc"
+    },
+    {
+      "claim_id": "8feb587b-1b46-4240-8290-fe019615f24a",
+      "result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc"
+    },
+    {
+      "claim_id": "e5bf23c5-7ec2-4961-9144-66db95edcb22",
+      "result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc"
+    },
+    {
+      "claim_id": "ec9e92af-7e1c-4495-9ec1-ada42ef8f762",
+      "result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc"
+    },
+    {
+      "claim_id": "3f86d846-068b-4c4a-a29b-32725330a222",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "cd9fcbb3-746b-4526-a0bf-c955b9348ae3",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "53911497-9d8c-4ffa-8d33-9a0c35e173dc",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "9af85d2b-babc-4005-8a9a-5ed48243bba4",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "e859e76f-04f2-4e8b-b523-d493e4cb4caa",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "3ef8ad3f-f41f-4361-b8f3-255a3b478c96",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "245368d7-a369-4754-a41a-fe2c906a08e0",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "bc10489f-4fdb-4206-80fc-8d681e8fc784",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "10c3402a-6065-411f-88d5-0faba4c8c01b",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "2de5342f-4761-4638-9be6-f447d88da4ef",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "923c6de9-c3ae-4846-8595-669e50608563",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "02026257-2edc-4854-a3de-a6cdc0105b32",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "f8839295-3a80-457f-b6a8-c80385fb7f04",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "897ed305-d013-47cd-a8c4-d25974c4636f",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "e56d3a30-7615-4b58-8f23-e5d0c017d755",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "9e8c9f1d-c090-46ba-abb5-4b41245c408d",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "35b6a55d-c9ba-423d-8b75-8965a13d461c",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "1fb0605f-fb08-44f7-910f-917c99d6396d",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "da95eb3f-1c0d-4397-9f3c-aa341d0ad65e",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "d0f2a3b1-7234-4e28-98b0-a116fae726cc",
+      "result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66"
+    },
+    {
+      "claim_id": "d8e659a5-5cd4-457d-9302-75271461634b",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "d1e2e98d-b3e7-46dd-b76d-3415bd26dd02",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "3e489ee3-4f84-4846-a0c5-80a8966e1e1c",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "bf2b15bb-4261-4228-bc11-d9f2b4ba2d63",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "a71d6d7c-a600-4294-b9a2-5f07a389bd36",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "e0331783-46ef-4791-9ef6-89571cd6e143",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "73678274-0267-4011-ae6f-8b847a08b306",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "201d8fd1-bed9-4d0c-a500-bb012fcc546c",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "821a8d47-5321-47dc-a677-d8366273b418",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "709b9bac-8349-4cb1-959a-03fcfb9cdb77",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "2eef0d1d-3ad7-4d3e-8844-7f169e827d74",
+      "result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72"
+    },
+    {
+      "claim_id": "c8841ff1-7806-413a-bdac-9862d01c3896",
+      "result_id": "d30dd51a-eae7-4d91-bd83-0f0c047c541d"
+    },
+    {
+      "claim_id": "1ff23484-ab63-4aac-807f-5033d05e9d50",
+      "result_id": "d30dd51a-eae7-4d91-bd83-0f0c047c541d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "1198f7e1-fddd-461b-8e0e-da9682961179",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6128e0d6-5305-4226-8c4d-a9ae463a8036",
+      "peer_result_id": "b76de5fd-39a1-47bd-ad3c-51ef39239b27",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C14-C16, C19, C40-C41. Both evaluate as SUPPORTED. OpenEval emphasizes the experimental data and mechanistic interpretation, while peer reviewers confirm findings are 'clear and very well presented' but note overlap with Hinz et al. 2015, questioning novelty rather than validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "4c66412f-d2e2-4585-9bd5-fdcc4e82ab8e",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3d74eeac-2df0-41bc-9de2-d610733432d6",
+      "peer_result_id": "13fa9031-2476-4575-a377-bac6e4ae0d72",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on methodological claims C63-C73. Both evaluate as SUPPORTED. OpenEval notes standard techniques with proper replication, peer reviewers state 'experiments are very nicely performed and presented' and 'work was performed to a high standard.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "465d0034-fc62-44ad-8d61-b34c0f7b6046",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "a6d81684-2366-4138-906e-f2879a6e849e",
+      "peer_result_id": "77d31a42-fad1-4a96-b748-3e7b1e049f66",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on background/contextual claims (C1-C2, C7-C13, C17-C18, C20-C21, C33, C43-C44, C46-C48, C58). Both evaluate as SUPPORTED. These are established facts from literature that neither evaluation challenges.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "0062b75e-0e84-481d-a257-50f9997f28c4",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a",
+      "peer_result_id": "4ade0499-76d6-4f3f-872a-b5a100e0dcf5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address 5S vs 601 comparison (C26-C32) and breathing mechanism (C3, C31). OpenEval evaluates as SUPPORTED, emphasizing strong support for breathing model. Peer review evaluates as UNCERTAIN, questioning generalizability beyond single gRNA/target combination and requesting position-independent sequence evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "13df8031-3685-4418-8238-c09798b4a380",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "3b0b2d2a-d5ea-4a3d-b68b-450ccef992e0",
+      "peer_result_id": "cf2a9f02-6fff-4a35-8f2a-a469afd2156b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address dCas9 binding to naked DNA vs nucleosomes (C22, C25). OpenEval evaluates as SUPPORTED with reasonable interpretation. Peer review also SUPPORTED, accepting 'chromatin blocks Cas9 from binding PAM sites' as convincing and novel, though questioning broader significance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "494db423-77e8-4638-8c0f-b1fcc93d3361",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "3b0b2d2a-d5ea-4a3d-b68b-450ccef992e0",
+      "peer_result_id": "d30dd51a-eae7-4d91-bd83-0f0c047c541d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address super-shift interpretation (C23-C24). OpenEval evaluates as SUPPORTED, calling interpretation 'reasonable given high number of PAMs.' Peer review evaluates as UNCERTAIN, describing it as 'curious, non-specific binding' that 'obscures results' and limits conclusions about specific vs non-specific binding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1f5cbb34-7a65-4a76-941e-b13cae3c719c",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "c99cfa60-0417-4704-b06e-74bc60420ea3",
+      "peer_result_id": "a5872537-decb-44bc-8409-c46a9ef41545",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address SNF2h remodeling effects (C34-C36, C42, C49, C74, C76, C78). OpenEval evaluates as SUPPORTED with consistent quantification. Peer review (R4) evaluates as UNCERTAIN, questioning what is learned beyond position-dependent cleavage and requesting deeper analysis including cleavage during (not after) remodeling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "0a5e9545-b042-41b2-a26e-d38e65deec89",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "e6b0edd6-b04d-44fe-aa62-cc91c745e02b",
+      "peer_result_id": "a5872537-decb-44bc-8409-c46a9ef41545",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R5 addresses RSC remodeling (C37-C39, C42, C50, C75, C77) evaluated as SUPPORTED. Peer R4 addresses both SNF2h and RSC remodeling experiments (includes C5, C38-C39, C50, C75, C77) evaluated as UNCERTAIN, noting analysis 'is not assessed in depth.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "02853544-4332-4c72-b43a-c79c3c05f082",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "bdc96214-8c37-4728-ad24-35c074d23144",
+      "peer_result_id": "b44fa5e1-e655-42e5-9f6b-66c40caa27a1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address central model and in vivo extrapolation (C51-C53). OpenEval evaluates as SUPPORTED, noting model is 'well-supported by biochemical data' though lacking direct in vivo validation. Peer review also SUPPORTED for breathing mechanism (C45-C46) but requests reconciliation with published heterochromatin studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "46373fa4-63a2-41bd-8c2d-2b9995ac1a33",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "e4bf8545-55e6-4a1c-9fb0-0fc2e91869b9",
+      "peer_result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address design recommendations and applications (C56, C59-C61). OpenEval evaluates as SUPPORTED, noting recommendations are 'logical inferences' and 'well-justified by data' though representing suggested applications. Peer review evaluates as UNCERTAIN, explicitly questioning whether model predicts in vivo editing activity or explains published efficiency differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "1c767857-82c2-48d7-8fc0-8941ebdf475c",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "c4d11326-95a8-45f3-93bc-c88d89720c9f",
+      "peer_result_id": "4ee69f2f-ed21-4ff9-9f88-3efb2efdf9fc",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address speculative claims (C54-C55, C57, C62). OpenEval evaluates as UNCERTAIN, noting claims are 'explicitly speculative' and 'lack direct experimental support.' Peer review also UNCERTAIN, questioning in vivo relevance and requesting validation against published data or new cellular experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    },
+    {
+      "id": "c78b6ece-f48f-4a33-8eca-291ac7d6fb5a",
+      "submission_id": "763bbf82-49e1-4ad6-b227-783259d0b54d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "49a0a4d1-4169-4741-b42e-6b8c8b2b320a",
+      "peer_result_id": "b44fa5e1-e655-42e5-9f6b-66c40caa27a1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on breathing mechanism claim C45. OpenEval R3 evaluates breathing model as SUPPORTED. Peer R5 also accepts breathing interpretation without challenge, stating 'Presumably due to DNA breathing' as consistent with data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-16T01:37:30.017760Z"
+    }
+  ]
+}

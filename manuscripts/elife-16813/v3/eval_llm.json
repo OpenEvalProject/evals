@@ -1,0 +1,432 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C98"
+    ],
+    "result": "SynGAP-\u03b11 is a highly abundant Ras/Rap GAP in the PSD that binds to all three PDZ domains of PSD-95 and could occupy 10-15% of available PDZ domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C17, C18, C27, C28, C29, C30, and C98 establish the identity, abundance, and binding properties of synGAP-\u03b11. These claims are well-supported by multiple citations to prior work (C1, C27, C28, C29, C98) and experimental data showing binding to PDZ domains (C2, C18). The calculation of 10-15% occupancy (C3, C30) is based on reasonable assumptions about isoform abundance and stoichiometry, though it involves inference from literature values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C19",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Phosphorylation by CaMKII and PLK2 reduces synGAP-\u03b11's affinity for PDZ domains of PSD-95, with CaMKII producing a stronger effect than PLK2, while CDK5 has no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C19, C57-C66 demonstrate that phosphorylation by CaMKII and PLK2 reduces binding to PDZ domains through multiple experimental approaches (Figures 3A-E). The data show CaMKII produces ~10-fold reduction (C4, C62, C80) while PLK2 produces ~40% reduction (C5, C64), and CDK5 has no effect (C63). The requirement for both Ca2+/CaM and CaMKII (C58, C59) and the time course data (C61, C62) provide strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The affinities of r-synGAP-\u03b11 for individual PDZ domains and multi-domain constructs were measured by SPR, showing KD values of 220\u00b130 nM for PDZ1, 1500\u00b1100 nM for PDZ2, 620\u00b170 nM for PDZ3, KDapp of 350\u00b140 nM for PDZ12, and KDapp of 4.7\u00b10.6 nM for PDZ123.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 report quantitative binding affinities measured by SPR (Figures 4-5, Table 1). The measurements appear technically sound with appropriate controls and replicates. The observation of avidity effects (higher affinity for multi-domain constructs) is consistent with the experimental design. The KDapp values for multi-domain constructs are appropriately designated as 'apparent' since the equation assumes single binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Mutational analysis reveals that phosphorylation of S1283 has the most potent effect on reducing PDZ binding, with S1123 also contributing, and that cumulative phosphorylation of multiple sites can achieve maximal reduction in binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 describe systematic mutational analysis (Figure 6) showing that S1283D mutation significantly reduces binding (C74, p<0.0001), while S to A mutations generally do not affect unphosphorylated binding (C73). The triple mutant S1093A/S1123A/S1283A significantly interferes with phosphorylation-induced loss of binding (C76, p=0.0074), supporting the conclusion that multiple sites contribute (C77, C79). The data are internally consistent and statistically analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Phosphorylation by CaMKII for 10 min increases the KDapp of r-synGAP-\u03b11 for PDZ123 approximately 10-fold, while the S1283D phosphomimetic mutation increases it approximately 4-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 report quantitative SPR measurements (Figure 7, Table 1) showing that CaMKII phosphorylation increases KDapp ~10-fold (from 4.7\u00b10.6 nM to 46\u00b110 nM) and S1283D mutation increases it ~4-fold (to 16\u00b13 nM). These measurements are consistent with the qualitative binding assays and provide quantitative support for the model. The measurements appear technically sound with appropriate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C161"
+    ],
+    "result": "Ca2+/CaM binds directly to r-synGAP-\u03b11 and enhances its phosphorylation by CDK5 in a substrate-directed manner, as demonstrated by increased phosphorylation rates in the presence of Ca2+/CaM and Ca2+-dependent binding to CaM-Sepharose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C85, C87, C88, and C161 demonstrate that Ca2+/CaM enhances CDK5 phosphorylation of synGAP-\u03b11 (Figure 8A-B) but not histone H1 (Figure 8C-D), indicating substrate-directed enhancement. The Ca2+-dependent binding to CaM-Sepharose (C88, Figure 8-supplement 1) provides direct evidence for Ca2+/CaM binding. The requirement for both Ca2+ and CaM (C85) supports specific binding rather than non-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "R-synGAP-\u03b11 binds Ca2+/CaM with high affinity (KD = 9\u00b11 nM by SPR, 31\u00b13 nM by CaM-Sepharose binding), while sr-synGAP binds with much lower affinity (KD = 210\u00b130 nM), suggesting the high-affinity binding site is in the regulatory disordered region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 report Ca2+/CaM binding affinities measured by two independent methods (SPR and CaM-Sepharose binding, Figure 9). The KD values from the two methods are in reasonable agreement (9\u00b11 nM vs 31\u00b13 nM for r-synGAP-\u03b11). The much lower affinity of sr-synGAP (210\u00b130 nM) supports the conclusion that the high-affinity site is in the C-terminal regulatory region (C93). Ca2+/CaM has no effect on GAP activity (C89), ruling out that as a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C95",
+      "C96",
+      "C97",
+      "C162"
+    ],
+    "result": "Binding of Ca2+/CaM selectively reduces r-synGAP-\u03b11's affinity for PDZ3 by ~25%, with a more specific but weaker effect than phosphorylation, and the effects of Ca2+/CaM and phosphorylation are not additive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C95, C96, C97, and C162 demonstrate that Ca2+/CaM selectively reduces binding to PDZ3 and PDZ123 but not PDZ1 or PDZ2 (Figure 10A). The ~25% reduction (C162) is weaker than the effect of phosphorylation (C95). The non-additivity of Ca2+/CaM and phosphorylation effects (C96, C97, Figure 10B) is clearly demonstrated. The data are internally consistent and statistically analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C108",
+      "C124"
+    ],
+    "result": "PSDs from Syngap+/- mice show ~24% less synGAP relative to PSD-95 and significantly increased ratios of TARPs (~12%), LRRTM2 (~14%), and neuroligin-2 (~9%) to PSD-95, while neuroligin-1 is unchanged, supporting the hypothesis that reduced synGAP increases availability of PDZ domains for other binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23, C100-C104, C108, and C124 present quantitative Western blot analysis from Syngap+/- mice (Figure 11). The data show statistically significant changes in synGAP (p=0.0007, d=1.75), TARPs (p=0.017, d=0.93), LRRTM2 (p=0.0035, d=0.66), and neuroligin-2 (p=0.019, d=0.64), while neuroligin-1 is unchanged (d=0.07). The experimental design includes appropriate biological replicates (6 animals per group) and technical replicates. The results directly test and support the central hypothesis of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "AMPARs are trapped at the postsynaptic membrane in 'slots' consisting principally of PDZ domains on PSD-95, which also bind NMDARs, neuroligins, LRRTMs, and TARPs, with phosphorylation by CaMKII increasing TARP affinity for PDZ domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 establish the background model of AMPAR trapping and PDZ domain function. These claims are well-supported by multiple citations to prior work (Opazo and Choquet 2011, Shi et al. 2001, Opazo et al. 2012, Tomita et al. 2005, Kornau et al. 1995, Varoqueaux et al. 2006, Linhoff et al. 2009, Siddiqui et al. 2010, Dosemeci et al. 2007). The claims provide essential context for interpreting the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The PSD is an organized complex with PSD-95 as the principal scaffold protein, containing ~300 molecules of PSD-95 with 900 PDZ domains in an average PSD, and these complexes exist in dynamic equilibrium governed by concentrations and affinities of binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C32-C34 describe the structural organization and dynamics of the PSD. These are well-established facts supported by multiple citations (Kennedy 2000, Sheng and Kim 2011, Chen et al. 2005, Sugiyama et al. 2005, Kurakin et al. 2007, Sturgill et al. 2009, Schapitz et al. 2010). The claims provide essential background for the model proposed in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C112",
+      "C113"
+    ],
+    "result": "Prior work shows that activation of NMDARs and CaMKII causes dispersal of synGAP away from the PSD and increased AMPAR trapping within minutes, with rates compatible with the hypothesis that reduced synGAP binding opens slots for AMPAR complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C112, and C113 synthesize prior findings from other groups (Yang et al. 2013, Araki et al. 2015, Makino and Malinow 2009, Opazo et al. 2010, 2012) to support the authors' model. The temporal correlation between synGAP dispersal and AMPAR trapping is well-documented in the cited literature. The inference that these processes are mechanistically linked (C39, C113) is reasonable but remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior work shows that absence of synGAP in cultured neurons leads to precocious spine maturation and larger PSD-95 clusters, which is rescued by wt-synGAP-\u03b11 but not by synGAP\u0394SXV lacking the PDZ ligand, supporting the model that synGAP-\u03b11 competes for PDZ domain binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C114-C117 describe prior work from Vazquez et al. 2004 showing that the PDZ ligand is required for synGAP-\u03b11 to rescue phenotypes in synGAP KO neurons. The failure of synGAP\u0394SXV to rescue despite proper localization (C47, C116) strongly supports the model that PDZ domain binding is functionally important. The inference that synGAP-\u03b11 competes for PDZ domains (C117) is well-supported by these data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Prior work shows that overexpression of synGAP-\u03b11 (with PDZ ligand) but not \u03b12 (without PDZ ligand) increases silent neurons, despite both isoforms localizing normally, supporting the hypothesis that synGAP-\u03b11 restricts AMPAR auxiliary protein binding to PDZ domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C118-C120 describe prior work from McMahon et al. 2012 showing differential effects of \u03b11 and \u03b12 isoforms on synaptic strength. The observation that only the PDZ ligand-containing isoform affects synaptic function (C49, C50), despite both localizing normally (C51, C119), strongly supports the model. The inference that this reflects competition for PDZ domains (C120) is the most parsimonious explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C121"
+    ],
+    "result": "Neurons from synGAP-deficient mice have more AMPARs at synapses than wt neurons, which may result from increased binding of TARPs and LRRTMs to PDZ domains made available by reduced synGAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C121 connect prior observations of increased AMPARs in synGAP-deficient neurons (Kim et al. 2003, Vazquez et al. 2004, Rumbaugh et al. 2006) to the current findings of increased TARPs and LRRTMs in Syngap+/- PSDs. The inference that these are causally related (C121) is supported by the current data (Figure 11) and citations to work on TARP/LRRTM function (Tomita et al. 2005, de Wit et al. 2009).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C122",
+      "C123",
+      "C167"
+    ],
+    "result": "SYNGAP1 haploinsufficiency causes 2-9% of sporadic cases of nonsyndromic intellectual disability with co-morbid ASD or epilepsy, with a population prevalence potentially as high as 0.03-0.1%, and reduces synGAP levels by 50% in mouse brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C122, C123, and C167 establish the clinical significance of SYNGAP1 mutations. The frequency estimates (2-9% of sporadic ID cases) are supported by citations to Hamdan et al. 2011 and Berryer et al. 2013. The population prevalence calculation (0.03-0.1%) is an inference based on these frequencies and the overall prevalence of sporadic ID. The 50% reduction in synGAP in Syngap+/- mice (C56) is supported by citation to Vazquez et al. 2004.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "SynGAP expression begins at birth and increases during synapse formation, with complete deletion causing neonatal lethality and heterozygous deletion causing behavioral defects, larger spines, and precocious synapse formation leading to elevated E/I ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 describe the developmental expression and phenotypes of synGAP mutations in mice. These are well-documented findings supported by multiple citations (Vazquez et al. 2004, Barnett et al. 2006, Kim et al. 2003, Komiyama et al. 2002, Carlisle et al. 2008, Clement et al. 2012, 2013). The claims provide important context for understanding the developmental consequences of synGAP haploinsufficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The increased presence of TARPs, LRRTMs, and neuroligin-2 in Syngap+/- PSDs is likely a primary effect of the mutation because overexpression effects are rapid (12-24 hr), not due to mislocalization, independent of GAP activity, and require the PDZ ligand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 argue that the observed changes in PSD composition are primary rather than secondary effects. The arguments are based on the rapid time course of overexpression effects (C134), proper localization (C135), independence from GAP activity (C136), and requirement for the PDZ ligand (C136). These observations, supported by citations to Vazquez et al. 2004 and McMahon et al. 2012, make the PDZ competition model the most parsimonious explanation (C137).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The changes in PSD composition in Syngap+/- mice cannot be explained by reduced GAP activity because synGAP has higher GAP activity toward Rap than Ras, which would predict increased endocytosis and fewer AMPAR binding proteins, opposite to what is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 present a logical argument ruling out GAP activity as the primary mechanism. The reasoning is sound: synGAP has higher GAP activity toward Rap than Ras (C139, supported by Walkup et al. 2015), so reduced GAP activity would increase Rap more than Ras (C140), leading to increased endocytosis (C141, supported by Zhu et al. 2002) and fewer AMPAR binding proteins (C142), opposite to the observed increase. This strengthens the case for the PDZ competition model (C143).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C150"
+    ],
+    "result": "Neuroligin-2 normally associates with inhibitory synapses, but overexpression of PSD-95 redistributes it to excitatory synapses, similar to the effect of synGAP reduction, suggesting both manipulations increase PDZ3 domain availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 and C150 connect the current findings on neuroligin-2 to prior work. The observation that synGAP reduction has the same effect as PSD-95 overexpression (C107) is supported by citations to Varoqueaux et al. 2004, Levinson et al. 2005, and Prange et al. 2004. The inference that both manipulations increase PDZ3 availability is logical and consistent with the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Reduction of synGAP affinity for PDZ domains after phosphorylation may be sufficient to decrease its competitive binding but is likely not sufficient for complete dispersal from the PSD, as synGAP\u0394SXV and \u03b12 isoforms still localize to PSDs despite lacking PDZ ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 acknowledge limitations of the model based on prior observations that synGAP isoforms without PDZ ligands still localize to PSDs (Vazquez et al. 2004, Yang et al. 2013, McMahon et al. 2012). The inference that reduced affinity may affect competition without causing complete dispersal (C159, C160) is reasonable and appropriately cautious. This demonstrates scientific rigor in acknowledging that additional mechanisms likely contribute to synGAP localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The high abundance of synGAP in the PSD and its high-affinity Ca2+/CaM binding suggest it may act as a Ca2+/CaM buffer, competing with ~10 other regulatory enzymes for limiting Ca2+/CaM in the spine during synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C166 propose a speculative function for Ca2+/CaM binding to synGAP. While the high affinity binding is well-documented (C90-C92) and the competition among Ca2+/CaM-binding enzymes is established (C165, Kennedy 2013), the buffering hypothesis (C166) is speculative. The functional consequences of Ca2+/CaM binding to synGAP remain unclear (C163), and no direct evidence for buffering is presented. This is appropriately presented as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The authors propose that acute phosphorylation of synGAP-\u03b11 during LTP could initiate PSD rearrangement, but additional processes would be needed for stabilization, and the restriction of neuroligin-2 binding may be more significant during development, with potential therapeutic implications for SYNGAP1 haploinsufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C154, C168-C170 present speculative extensions of the model and future directions. While the hypotheses are logical and consistent with the data, they require additional experiments to test (C144, C146). The proposals about LTP consolidation (C147-C149), developmental significance (C151-C152), E/I balance (C153-C154, C169), and therapeutic approaches (C170) are reasonable but speculative. These are appropriately presented as hypotheses for future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C31",
+      "C35",
+      "C40",
+      "C41",
+      "C42",
+      "C99",
+      "C110",
+      "C111",
+      "C125"
+    ],
+    "result": "The authors propose a model where phosphorylation-induced reduction of synGAP-\u03b11 affinity for PDZ domains allows other components to compete more effectively, shifting PSD composition to a new equilibrium, which may be significant for the pathology of ID, ASD, and epilepsy in SYNGAP1 haploinsufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C31, C35, C40-C42, C99, C110, C111, and C125 articulate the central model of the paper. The model is well-supported by the experimental data showing phosphorylation reduces PDZ binding (C4-C5, C19, C57-C66), the equilibrium principles (C33-C35), and the changes in PSD composition in Syngap+/- mice (C100-C104). The connection to human pathology (C125) is speculative but reasonable given the clinical significance of SYNGAP1 mutations (C53-C55, C167).",
+    "result_type": "MAJOR"
+  }
+]

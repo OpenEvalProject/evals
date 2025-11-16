@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In a Pavlovian learning task with novel fractal cues predicting probabilistic juice rewards (p=0.25, 0.50, 0.75), monkeys developed differential anticipatory lick responses over ~10 trials, indicating they learned cue values from experienced reward frequencies. Dopamine neuron recordings (n=70) were obtained during this task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 describe the Pavlovian task design and behavioral learning outcome. The behavioral result (C18) is supported by statistical analysis (p<0.01, one-way ANOVA) and shown in Figure 1B. The experimental design is clearly described and the sample size is reported. The inference that monkeys learned cue values (C19) is reasonable given the differential licking behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Dopamine responses to cues in the Pavlovian task showed two temporal components: an early novelty response (0.1-0.2s) that decreased over trials but did not differentiate by reward probability, and a late component (0.2-0.6s) that became probability-dependent after ~6 trials. This indicates dopamine neurons learned cue values from experienced reward frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 describe the temporal structure and learning dynamics of dopamine responses. Statistical support is provided for both components (power function fits p<0.05 for 55/70 neurons; one-way ANOVA p<0.05 for 26/70 neurons showing probability differentiation). The data are shown in Figure 2 and supported by appropriate statistical tests. The conclusion (C26) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Dopamine responses to reward delivery developed gradually to reflect prediction errors based on learned cue values. Responses to large rewards were larger after low-probability cues, while responses to small rewards showed greater depression after high-probability cues. The late cue response component, but not the early component, contributed to reward prediction error computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe reward prediction error coding during learning. Statistical support is provided (p<0.02 for differentiation after 9 and 16 trials; multiple linear regression p=0.0001, 0.43, 0.021 for reward size, early and late cue responses). The pattern is consistent with prediction error theory and shown in Figure 3. The regression analysis (C31) appropriately tests the contribution of different response components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Reinforcement learning models with adaptive learning rates and novelty terms best explained dopamine responses in the Pavlovian task. The late cue response component correlated strongly with model value estimates (R\u00b2=0.93, p=0.00003), and novelty responses correlated with model novelty estimates (R\u00b2=0.63, p=0.001). The early and late components showed distinct temporal dynamics with different learning rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe computational modeling results. Model comparison is reported in supplementary materials, and regression analyses show strong fits between model predictions and neural data. The finding of distinct learning rates for early vs. late components (C35, p<0.0001) is statistically supported. Results are shown in Figure 4 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In a choice task between familiar (p=0.50) and novel cues, monkeys initially explored novel options with faster reaction times, then shifted to preferring higher-probability options after ~5 trials (75% choice rate, p<0.001). Dopamine recordings (n=99) were obtained during this task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe the choice task design and behavioral results. Statistical support is provided for initial exploration (p<0.01, Mann-Whitney U test) and learning (p<0.001, one-way ANOVA). The behavioral pattern is shown in Figure 5B-C. Sample size is clearly reported. The inference about rapid learning (C40) is supported by the behavioral data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In the choice task, dopamine responses showed two components: an early novelty response (0.1-0.2s) that decreased over trials but did not encode learned values, and a late component (0.4-0.65s) that developed value coding from the 5th trial onward (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe dopamine response components during choice learning. Statistical support is provided (76/99 neurons showed novelty decay p<0.05; population responses differentiated p<0.01 from 5th trial). Results are shown in Figure 6A-B. The two-component structure parallels the Pavlovian findings, strengthening the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Dopamine responses to rewards in the choice task developed to reflect prediction errors based on chosen cue probabilities. Responses to large rewards were larger after low-probability choices, and responses to small rewards showed greater depression after low-probability choices (p<0.001 and p=0.02 respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe reward prediction error coding in the choice task. Statistical support is provided for both large and small reward responses. The pattern is consistent with prediction error theory and shown in Figure 6C-D. The conclusion (C48) appropriately summarizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Dopamine responses during choice reflected chosen value, with larger responses for higher-probability choices (p<0.02 population, p<0.02 in 11/99 single cells). This choice sensitivity developed rapidly (significant after 5 trials) and emerged 130ms before saccade onset, suggesting the signal reflects an already-computed choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe choice-dependent dopamine responses. Statistical support is provided at both population and single-cell levels. The temporal analysis (C52) is rigorous, showing pre-saccadic activity. Results are shown in Figure 7A-C. The interpretation about timing (C54) is reasonable but somewhat speculative, as noted in the claim evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "When monkeys chose the familiar cue, dopamine responses were larger when the unchosen novel cue had low versus high probability (p=0.01), indicating dopamine responses are sensitive to both chosen and unchosen option values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 describe unchosen value coding. Statistical support is provided (p=0.01, one-way ANOVA) and shown in Figure 7D. This is a novel finding that extends beyond simple chosen value coding. The effect is demonstrated despite extensive experience with the familiar cue, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Reinforcement learning models with adaptive learning rates and novelty terms best explained choice behavior. Dopamine responses correlated with chosen value (R\u00b2=0.65, p=0.005) and negatively with unchosen value (R\u00b2=0.84, p=0.0001), but relative chosen value (chosen minus unchosen) provided the best fit (R\u00b2=0.91, p=0.00005, significant in 15/99 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe computational modeling of choice behavior and neural responses. Model comparison is reported in supplementary materials. Regression analyses show progressively better fits for relative chosen value compared to chosen or unchosen value alone. Results are shown in Figure 8. The conclusion about relative value coding (C61) is well-supported by the regression analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C69",
+      "C70"
+    ],
+    "result": "Across both tasks, dopamine responses showed distinct novelty and value components, with value signals arising from experienced reward frequencies. Prediction error responses at reward time gradually reflected learned values. These findings are compatible with prior work showing dopamine responses increase monotonically with expected value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C65, C69-C70 summarize the main findings across both experiments. These summary claims are supported by the detailed results from both tasks. The compatibility with prior work (C65) is appropriately noted. The overall conclusion about learning from reward frequencies is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C96"
+    ],
+    "result": "During choice, dopamine signals coded relative chosen value (chosen minus unchosen), extending previous findings of chosen value coding to show that dopamine responses also reflect unchosen option value. This represents a novel, more nuanced coding scheme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C96 highlight the novel contribution regarding relative value coding. This is supported by the regression analyses showing better fits for relative value (Figure 8C) and the unchosen value effect (Figure 7D). The claim of novelty is justified as it extends beyond simple chosen value coding reported previously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Computational modeling revealed that adaptive learning rates (adjusting based on past prediction errors) best explained both neural responses and behavior. Value-dependent responses continued updating after novelty responses stabilized, indicating distinct temporal dynamics for the two components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe key modeling insights. Model comparison favored adaptive learning rates (reported in supplementary files). The observation about distinct time courses (C74) is supported by the modeling results and consistent with the different learning rates recovered for early vs. late components. These findings are supported by citations to similar work in humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Behavioral preferences and dopamine cue responses reflected reward probability earlier during learning than dopamine reward responses. This temporal difference might suggest that behavioral preferences and cue responses originate in other brain structures rather than relying primarily on dopamine reward prediction errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 describes an observation about temporal differences, which appears to be supported by the data (behavioral learning ~5-6 trials, cue responses ~6 trials, reward responses ~9-16 trials). However, C76 is explicitly speculative (\"might suggest\"). The interpretation requires additional experiments to test whether other brain structures drive the earlier behavioral and cue responses. The observation is valid but the mechanistic interpretation is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Dopamine novelty responses decreased over trials and were mainly present in the early response component. These novelty signals correlated with exploratory behavior but did not reflect optimistic value initialization, as reward prediction errors developed in a pattern inconsistent with optimistic initialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 describe novelty response properties and test the optimistic initialization hypothesis. The decrease in novelty responses is well-documented (C77-C78). The logic testing optimistic initialization (C79-C81) is sound: if novelty inflated initial values, early reward prediction errors should be small and grow over trials, but the opposite pattern was observed (Figure 3). The correlation with exploration (C82) is shown in Figure 5. The conclusion (C83) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Dopamine responses to novel situations might set downstream neuronal dynamics to an activity regime optimal for learning, given dopamine projections to cortical and subcortical decision-making structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is explicitly speculative (\"might set\") and supported only by anatomical citations about dopamine projections. While the speculation is reasonable given the observed novelty responses and known anatomy, it requires direct experimental testing of downstream effects. This is a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Choice-predictive dopamine responses appearing >100ms before saccade onset reflect prediction errors for an already-computed choice and might not directly participate in current choice computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is partially speculative (\"might not directly participate\"). While the timing data (130ms pre-saccade) is solid (C52), the interpretation about whether these signals participate in choice computation requires additional experiments (e.g., causal manipulations). The timing is consistent with the interpretation but does not prove it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The current study used probabilistic reward prediction, not allowing examination of dopamine responses to fully predicted rewards. Nevertheless, both excitation and suppression of dopamine responses to rewards developed in a manner consistent with prediction error signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 acknowledge a limitation (probabilistic vs. deterministic prediction) while noting that the observed pattern is consistent with prediction error theory. This is an appropriate acknowledgment of scope. The consistency with prediction error signaling (C91) is supported by the data in Figures 3 and 6.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C99"
+    ],
+    "result": "The current results confirm chosen value coding by dopamine responses and show that choice-dependent signals arise early in both learning blocks and within trials. These findings provide a cellular correlate for counterfactual prediction error coding, showing flexible encoding of both choice options at the level of dopamine action potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C99 relate current findings to prior work on chosen value and counterfactual prediction errors. The confirmation of chosen value coding is supported by Figure 7. The connection to counterfactual prediction errors (C99) is reasonable given the unchosen value sensitivity (C55-C56) and is related to human striatal dopamine data (C98). The claim of providing a \"cellular correlate\" is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C105"
+    ],
+    "result": "These findings suggest dopamine signals might play a critical role in computing flexible values for economic decision-making and updating neuronal decision mechanisms in a rapid and flexible manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103 and C105 are explicitly speculative (\"might play\", \"point to a possible function\"). While the data show rapid, flexible dopamine responses that correlate with decision variables, demonstrating a causal role in decision-making requires additional experiments (e.g., optogenetic manipulations during learning). These are reasonable hypotheses for future work but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Two male rhesus monkeys were used with appropriate ethical approval. Dopamine neurons were identified using established electrophysiological criteria: long waveform (>2.5ms), low baseline firing (<8 impulses/s), and phasic activation to unexpected reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 describe methods for subject selection and neuron identification. The criteria for dopamine neuron identification are well-established (cited to Schultz & Romo, 1987) and include multiple converging criteria. Ethical approval is documented. These methodological details are appropriate and standard for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work established that dopamine neurons encode reward prediction errors that increase with reward probability and expected value, and that dopamine responses are acquired gradually during learning. However, how dopamine neurons learn to encode probabilistic reward values from experienced frequencies remained unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 establish the background and motivation for the study. These are primarily citations to prior work (C3, C9-C14) and statements of established knowledge (C1-C2). The gap in knowledge (C15) appropriately motivates the current study. These background claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C64",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92",
+      "C94",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Prior work established that dopamine responses increase monotonically with expected value, respond to unpredictable but not fully predicted rewards, encode prediction errors to conditioned stimuli, show chosen value coding during choice, and serve as teaching signals that induce value learning in striatum and cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C85-C89, C92, C94, C100-C102 summarize relevant prior work through citations. These provide context for interpreting the current findings. The citations appear appropriate and the characterizations of prior work are consistent with the cited studies. These are standard background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C104"
+    ],
+    "result": "The relative value coding observed implies that choosing the same option produces different dopamine responses depending on the alternative option value. This is compatible with recent human striatal dopamine data showing counterfactual prediction error coding and corresponds well with findings on economic utility encoding and the necessity of phasic dopamine for consistent choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98, C104 relate current findings to other recent work. C97 is a logical implication of the relative value coding result. C98 appropriately connects to human data on counterfactual prediction errors (Kishida et al., 2016). C104 relates to other recent findings on utility encoding and choice consistency. These connections are well-supported and appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,486 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A high-throughput screen of >30,000 compounds identified four inhibitors of MSI1 RNA-binding activity: Chembridge compound 7409829 (Ki ~15-54 \u00b5M), aurintricarboxylic acid (ATA, Ki ~0.23-1.55 \u00b5M), GW7647 (a PPAR\u03b1 agonist, Ki ~6.5-21 \u00b5M), and oleic acid (18:1, \u03c9-9, Ki ~1.2-1.4 \u00b5M). The Ki of oleic acid is approximately two orders of magnitude below its critical micelle concentration (CMC \u2265 75 \u00b1 8 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 describe a well-executed high-throughput screen with appropriate validation using two independent assays (FP and F-EMSA). The identification of four hits with measured Ki values, including proper controls for CMC determination, provides strong evidence. ATA is appropriately noted as a known non-specific inhibitor (C41), adding appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Analysis of PubChem database records shows oleic acid scored positive in only 4% of 754 bioassays, affecting only 14 unique proteins, suggesting specificity of MSI1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide database analysis supporting specificity. The low hit rate (4%) and limited number of responsive proteins (14) from a large dataset (754 assays) provide reasonable evidence that oleic acid is not a promiscuous inhibitor, though the inference of specificity (C51) could be strengthened with additional controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Structure-activity relationship analysis demonstrates that omega-9 cis unsaturated fatty acids between 18-22 carbons specifically inhibit MSI1, with erucic acid (22:1, \u03c9-9) being the most potent (Ki ~640-820 nM). The \u03c9-9 double bond in cis configuration is required, as saturated fatty acids (stearic, palmitic, myristic) and trans-oleic acid (elaidic acid) fail to inhibit. Modifications to the carboxylate (oleamide, ethyl oleate) also abolish activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C68 present a comprehensive structure-activity relationship with systematic testing of chain length, saturation, double bond geometry, and functional group modifications. The data consistently support the structural requirements for inhibition. The conclusion that erucic acid is most potent (C68) and that specific structural features are required (C62, C63, C67) is well-supported by the experimental measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "MSI2 was inhibited by fatty acids with similar specificity to MSI1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by Figure 1\u2014figure supplement 2 showing parallel inhibition patterns. Given the 69% sequence identity between MSI1 and MSI2 (C26), this result is expected and provides validation of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Oleic acid directly binds MSI1 protein, as demonstrated by tryptophan fluorescence quenching (Kd ~2.6 \u00b5M), which is specific to oleic acid (not elaidic acid) and does not occur with the NATA control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide strong evidence for direct protein-fatty acid interaction through tryptophan fluorescence experiments with appropriate controls (elaidic acid, NATA). The Kd from fluorescence (2.6 \u00b5M) matches the Ki from binding assays (~1.2-1.4 \u00b5M), supporting the conclusion of direct binding (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "MSI1 RRM1 domain contains a hydrophobic cavity on the alpha-helical surface (absent in RRM2) and is sufficient for both RNA recognition (Kd ~75 nM) and fatty acid inhibition with similar potency to the full-length protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 identify the minimal functional domain through structural analysis and biochemical validation. The observation of a hydrophobic cavity in RRM1 but not RRM2 (C74-C75), combined with demonstration that RRM1 alone binds RNA (C76) and is inhibited by oleic acid (C77), strongly supports the conclusion that RRM1 is sufficient (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "NMR titration experiments show that RNA binding causes chemical shift changes primarily on the \u03b2-sheet surface (F23, G64, F65), while oleic acid addition causes signal loss for residues W29, Q30, L36, C49, L50, R53, S60, G62, V74, T89, and K98, likely due to chemical exchange between free and bound states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe NMR experiments that map RNA and fatty acid binding sites. The observation of chemical shift changes for RNA (C79-C80) and signal intensity loss for oleic acid (C81-C82) are appropriate NMR signatures. The interpretation of chemical exchange (C83) is reasonable given the intermediate exchange regime suggested by line broadening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Computational docking models predict that oleic acid and eicosenoic acid insert their \u03c9-9 end into the hydrophobic cavity of MSI1 RRM1 and position their carboxylate termini adjacent to arginine residues R53 or R61.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 present computational predictions that are later validated by mutagenesis (C106-C109). While computational docking alone provides moderate evidence, the subsequent experimental validation of R53 and R61 importance strengthens confidence in these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Circular dichroism shows oleic acid (but not elaidic acid) alters MSI1 secondary structure, while analytical ultracentrifugation demonstrates this does not induce aggregation at concentrations below the CMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 use orthogonal biophysical methods to characterize the conformational change. The CD data show secondary structure changes (C86), while AUC rules out aggregation (C87), providing complementary evidence for a conformational change rather than non-specific aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Molecular dynamics simulations predict that oleic acid binding induces MSI1 RRM1 to adopt a more open conformation with increased SASA and radius of gyration, stabilizes \u03b1-helix 1 C-terminus, causes \u03b1-helix 2 fraying, and forms a \u03b2-sheet in loop 5. This prevents loop 5 from approaching \u03b1-helix 1, repositions K88 away from the first RNA nucleotide, causes W29 to stack with Q30 (preventing RNA stacking), and increases strand 4 flexibility. These predictions are consistent with CD and tryptophan fluorescence data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C99 present extensive MD simulation results that are validated by experimental data (C98-C99). The simulations provide a detailed mechanistic model explaining how fatty acid binding disrupts RNA recognition. The consistency between computational predictions and experimental observations (CD, fluorescence, NMR) strengthens confidence, though direct structural validation (e.g., crystal structure) would be ideal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Site-directed mutagenesis reveals that residues G35, G64, H83, R53, and R61 are important for fatty acid inhibition. R53E and R61E mutations reduce inhibition 3-fold and 5-fold respectively, while the double mutant R53E/R61E reduces inhibition 35-fold, indicating these arginines act in a partially redundant manner. R61E also strongly affects RNA binding (18-fold), while R53E has minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C111 provide systematic mutagenesis validation of the binding model. The additive effects of R53E and R61E mutations (C106-C108) support the model that both arginines interact with the fatty acid carboxylate. The differential effects on RNA binding (C110-C111) provide additional mechanistic insight. The data are internally consistent and support the proposed binding mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Oleic acid treatment (50 \u00b5M) strongly inhibits proliferation of CG-4 oligodendrocyte progenitor cells (which express MSI1) but has little effect on HEK293T cells (which do not express MSI1). Stearic acid (which does not inhibit MSI1) has no effect on proliferation in either cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 demonstrate cell-type-specific effects correlating with MSI1 expression. The differential response between CG-4 (MSI1+) and HEK293T (MSI1-) cells (C112-C114), combined with the negative control using stearic acid (C115-C116), provides strong evidence linking oleic acid effects to MSI1 inhibition. However, the authors appropriately note they cannot rule out other cellular pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "MSI1 binds to all seven consensus sites in the Scd1 3\u2032-UTR (sites 2 and 7 with affinity comparable to the aptamer), SCD1 transcripts co-immunoprecipitate with MSI1 from CG-4 cells, and MSI1 overexpression in HEK293T cells increases SCD protein levels 2.5-fold (p=0.018) without significantly affecting SCD1 mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 establish SCD1 as an MSI1 target through multiple complementary approaches: in vitro binding (C117-C119), co-IP from cells (C120), and functional validation by overexpression (C121-C122). The increase in protein without mRNA change (C121-C122) is consistent with translational regulation. The evidence converges to support SCD1 as a bona fide MSI1 target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Lipidomics analysis of HEK293T cells shows MSI1 overexpression causes significant changes in 54 of 312 lipids (FDR=0.05), with 50 showing increases. 38 of these fall into three classes: cholesterol esters, 16:0 TAG, and 16:1 TAG\u2014lipids made using SCD products. This indicates SCD activity is upregulated by MSI1, consistent with increased SCD expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 provide functional validation that MSI1 regulation of SCD has downstream metabolic consequences. The lipidomics data showing specific increases in SCD-dependent lipid classes (C125-C126) provides strong support for functional regulation. The statistical analysis (FDR=0.05) and consistency with known SCD biology (C126) strengthen the conclusion that SCD activity is upregulated (C127-C128).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Bioinformatic analysis reveals 1275 of 2107 annotated 3\u2032-UTRs for genes involved in lipid/cholesterol/fatty acid biosynthesis contain at least one MSI1 binding element, and 8 of 64 genes that associate with MSI1 in RIP-ChIP experiments are involved in lipid metabolic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 provide bioinformatic context suggesting MSI1 may regulate lipid metabolism more broadly than just SCD. The high prevalence of MSI1 binding elements (C129) and enrichment in RIP-ChIP data (C130) support this possibility, though presence of binding sites does not guarantee functional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors conclude that long chain \u03c9-9 fatty acids (18-22 carbons) are allosteric inhibitors of MSI1 RNA-binding activity, SCD (which catalyzes \u03c9-9 desaturation) is an MSI1 regulatory target, and MSI1 controls cellular proliferation through a feedback loop involving SCD and its products like oleic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 synthesize the major findings into a coherent model. The allosteric inhibition mechanism (C131) is well-supported by structural and biochemical data. SCD as a target (C132-C133) is validated by binding, co-IP, western blot, and lipidomics. The feedback loop model (C134) is a reasonable integration of the findings, though direct demonstration of the complete loop in a physiological context would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "In the oligodendrocyte lineage, oleic acid is abundant in myelin produced by mature oligodendrocytes, CG-4 cells show global lipid profile changes upon differentiation, and MSI1 expression is anti-correlated with oleic acid levels (OPCs express MSI1, mature oligodendrocytes do not), suggesting a biological role for fatty acid-mediated MSI1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 provide biological context linking the biochemical findings to oligodendrocyte biology. The anti-correlation between MSI1 and oleic acid (C139) is supported by literature citations (C136, C138) and the authors' lipidomics data (C137). This provides a plausible physiological context, though direct demonstration of this regulatory mechanism in vivo would be needed for definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Both GW7647 and oleic acid function as PPAR agonists and inhibit MSI1, suggesting MSI1 and PPARs may regulate gene expression reciprocally, and PPAR\u03b3 agonists accelerate oligodendrocyte maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C142 propose a connection between MSI1 and PPAR signaling. While C140 and C141 are factual (supported by citations and knowledge), the speculation about reciprocal regulation (C142) is not directly tested. This remains an interesting hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C165",
+      "C176",
+      "C177"
+    ],
+    "result": "The authors claim MSI1 is the first example of a fatty acid-responsive RNA-binding protein and that MSI1 RRM1 acts as a metabolite sensor, representing the first example of such activity for the RRM motif, the most abundant RNA-binding motif in eukaryotic genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165, C176-C177 assert novelty. The comprehensive literature review in the discussion and the unique combination of fatty acid sensing with RNA-binding regulation support this claim of novelty. The experimental evidence demonstrating metabolite-responsive RNA binding is strong, justifying the claim that this is the first example for the RRM domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C178",
+      "C179"
+    ],
+    "result": "A survey of RRM structures reveals several with surface cavities on the alpha-helical face that may comprise metabolite-binding pockets, leading to the prediction that a network of RNA regulatory proteins act as metabolite sensors, possibly replacing bacterial riboswitch regulation largely lost in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C178-C179 present structural bioinformatics observations and speculation about broader implications. While the structural survey (C178) is data-based, the prediction of a network of metabolite-sensing RRM proteins (C179) is speculative and requires experimental validation. This represents an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "MSI1 is expressed in stem and progenitor cells of neural and epithelial lineage, particularly in astrocytes and glial/neural progenitor cells but not mature neurons or oligodendrocytes. MSI1 knockout mice show severe phenotypes including ataxia, hydrocephaly, early death, small brains with expanded progenitors and fewer mature cells, and reduced differentiation capacity. MSI1 plays an early role in regulating neurogenesis and gliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 summarize established literature about MSI1 biology, all supported by appropriate citations. This background information provides essential context for the study but represents prior work rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MSI1 contains two RRMs, is homologous to Drosophila Musashi, and binds RNA with consensus sequence (G/A)U1-3AGU identified by SELEX. Known targets include NUMB (a NOTCH repressor) and p21WAF1. MSI1 negatively regulates Numb translation in NIH 3T3 cells but acts as a translational activator in Xenopus oocytes. MSI1 promotes proliferation in brain and epithelial cancers, and depletion reduces proliferation and increases apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C25 provide additional background on MSI1 structure, function, and disease relevance, all supported by citations to prior literature. This establishes the importance of studying MSI1 but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MSI2 is 69% identical to MSI1, expressed in partially overlapping tissues, regulates hematopoiesis, and is involved in acute myeloid leukemia. MSI2 is highly expressed in myeloid leukemia cells, and depletion reduces proliferation and increases apoptosis. MSI2 loss restores NUMB expression and impairs blast crisis, with MSI2 expression levels correlating with poor prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 provide background on MSI2, the paralog of MSI1, establishing the broader biological importance of the Musashi protein family. All claims are supported by appropriate citations to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "MSI1 binds with high affinity to the CCCR005 aptamer fragment, which contains two copies of the MSI1 consensus sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe the RNA reagent used throughout the study. The high-affinity binding is demonstrated by FP and F-EMSA (Figure 1B-D), providing the foundation for the inhibitor screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "SCD (isoforms SCD1 and SCD5) catalyzes conversion of saturated to monounsaturated fatty acids, which are used in synthesis of phospholipids, TAGs, cholesterol esters, and signaling molecules. SCD is essential for cellular proliferation, metabolism, and signaling, and is implicated in obesity, diabetes, hyperlipidemia, and cancer. SCD is upregulated in tumors and activates oncogenic Akt and AMPK pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C153 provide comprehensive background on SCD biology and disease relevance, all supported by appropriate citations. This establishes why SCD is an important MSI1 target but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "SCD regulates SFA/MUFA homeostasis and plays an integral role in lipid signaling. SFAs act as proinflammatory ligands for Toll-like receptors, while MUFAs are converted to polyunsaturated fatty acids and then eicosanoids by cyclooxygenases. SCD is linked to Wnt signaling through palmitic/palmitoleic acid conversion. The SFA/MUFA balance must be tightly controlled, with SCD serving as an essential gatekeeper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C160 provide additional context on SCD's role in lipid signaling and metabolism, all supported by citations. This background explains the broader implications of MSI1 regulation of SCD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Fatty acids regulate transcription factors including SREBP (involved in lipid homeostasis), stimulate proinflammatory cytokine expression in adipocytes, inhibit Her-2/neu oncogene transcription in tumor cells, and bind oleate-activated transcription factors (OAFs) in yeast to regulate metabolism and stress response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 provide examples of fatty acid-mediated gene regulation, all supported by citations. This establishes precedent for metabolite-responsive regulation but highlights that MSI1 represents a novel mechanism at the post-transcriptional level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Integration of metabolite sensing and post-transcriptional regulation is widespread in bacteria (e.g., riboswitches, TRAP) but relatively rare in eukaryotes. Examples include TPP riboswitches in plants/fungi, cytosolic aconitase (iron-responsive), and several metabolite-sensitive enzymes with RNA-binding activity (GAPDH, glutamate dehydrogenase, thymidylate synthase, dihydrofolate reductase). This suggests metabolite-mediated post-transcriptional regulation is more prevalent than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C175 provide comprehensive background on metabolite-responsive post-transcriptional regulation, all supported by appropriate citations. This contextualizes the MSI1 findings within the broader field and highlights the novelty of the discovery.",
+    "result_type": "MINOR"
+  }
+]

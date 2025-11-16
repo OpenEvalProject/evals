@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C67"
+    ],
+    "result": "VEGF-A signaling is dispensable for angioblast migration to the midline in zebrafish. Multiple loss-of-function approaches (morpholino knockdown of vegfaa/vegfab, kdrl null mutation, pharmacological inhibition of Vegfr2, and Shh inhibition) all failed to affect angioblast migration, although later vascular defects (intersegmental vessel formation) were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 and C67 provide convergent evidence from genetic, pharmacological, and morpholino-based approaches showing that VEGF-A signaling does not regulate angioblast migration during the 12-17 hpf window. The positive control (intersegmental vessel defects at 24 hpf, C11) validates that VEGF-A signaling was effectively disrupted. Appropriate staging controls (C76) were used to rule out developmental delays. This challenges the prevailing model based on prior work in Xenopus (C72-C73) and mice (C70-C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Both Apelin receptors (aplnra and aplnrb) are required for angioblast migration to the midline. The receptors are expressed in angioblasts, and loss of both receptors (via morpholino or genetic mutation) completely abolishes migration, while single receptor loss causes partial defects with dose-dependent severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 and C82-C86 demonstrate receptor requirement through multiple complementary approaches: expression analysis (in situ hybridization), morpholino knockdown, and genetic mutants (TALEN/CRISPR-generated). The phenocopy between MO and mutant approaches (C21) strengthens confidence. The dose-dependent effects (C19, C22) and complete penetrance of double deficiency (C20) support a critical role. Genetic characterization is thorough (C78-C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Apelin receptors regulate angioblast migration but not specification. aplnrb is co-expressed with the early angioblast marker etv2, but receptor deficiency does not affect etv2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 distinguish between specification and migration defects through co-expression analysis and functional testing. The normal etv2 expression in aplnra/aplnrb double-deficient embryos (C24) provides clear evidence that the migration defect is not secondary to specification failure. This is an important control for interpreting the migration phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Apelin (Apln) is not sufficient to regulate angioblast migration. Both morpholino knockdown and genetic null mutation of apln show no vasculogenesis defects, despite receptor requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 demonstrate through both MO and genetic approaches that Apln alone is insufficient for angioblast migration, despite receptor expression in the notochord (C16). The concordance between MO and mutant (C26) strengthens this conclusion. This creates a ligand-receptor mismatch that motivates investigation of alternative ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C87",
+      "C88"
+    ],
+    "result": "Elabela (Ela) is a ligand for Apelin receptors that is expressed by the notochord and is required for angioblast migration. Ela deficiency causes strong impairment of migration, and ela expression is temporally regulated with strong early expression that decreases after angioblasts reach the midline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C87-C88 establish Ela as the primary ligand through expression analysis (notochord expression at appropriate timing) and genetic loss-of-function (elabr13 null mutant). The temporal expression pattern (C87-C88) correlates with the migration window. The identification of Ela as the relevant ligand resolves the ligand-receptor mismatch from the Apln studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Ela and Apln have partially redundant but temporally distinct functions in angioblast migration. Ela acts as the major endogenous attractant with strong early expression, while Apln has a minor additive role with later expression. Double ela/apln mutants phenocopy receptor deficiency with dose-dependent severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 and C63-C65 demonstrate genetic interaction through systematic analysis of double heterozygous crosses. The dose-dependency (C36-C38) and complete phenocopy of receptor deficiency in double mutants (C39) provide strong evidence for ligand redundancy. The temporal expression differences (C35, C63-C64) support distinct developmental roles. The genetic analysis is rigorous with appropriate phenotypic categorization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The notochord is the source of signals guiding angioblast migration. Notochord mutants (noto and ta) show perturbed angioblast migration and reduced/absent ela expression, with phenotypic severity correlating with the degree of notochord deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 establish the notochord as the source of guidance signals through analysis of notochord-deficient mutants. The correlation between notochord defects, ela expression loss, and migration defects (C47-C50) supports a causal relationship. The differential phenotypes (noto: complete failure; ta: partial migration, C47-C48) correlate with ela expression levels (C49-C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C91"
+    ],
+    "result": "Midline Ela expression is necessary and sufficient to regulate angioblast migration. Mosaic Ela overexpression in the midline rescues angioblast migration in ta mutant embryos with statistical significance (p < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C91 demonstrate sufficiency through rescue experiments using shh promoter-driven ela expression. The statistical analysis (chi-square test, p < 0.001, n=61 vs n=32) provides quantitative support. Combined with loss-of-function data, this establishes necessity and sufficiency. The rescue experiment is a critical test of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C92",
+      "C93"
+    ],
+    "result": "Ela acts as a chemoattractant (not just a motogen) for angioblasts during midline migration. Ectopic Ela expression attracts angioblasts in notochord mutants (>52% vs 20% for controls), and aplnr-deficient angioblasts retain motility and filopodia but fail to migrate directionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 and C92-C93 distinguish chemoattraction from general motility through ectopic expression experiments and motility analysis. The quantitative data showing preferential angioblast localization near Ela-expressing cells (C55-C56, C92-C93) with statistical significance (p=0.0001 and p=0.0089) supports chemoattraction. The retained motility in receptor-deficient cells (C54) argues against a general motility defect. This addresses an alternative mechanism proposed in prior work (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Apelin receptor signaling is cell-autonomously required in angioblasts for migration. Transplantation experiments show that aplnr-deficient angioblasts fail to migrate in wild-type hosts (9.4% vs 93.6%), while wild-type angioblasts migrate normally in aplnr-deficient hosts (81.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 establish cell autonomy through well-designed transplantation experiments with appropriate controls. The quantitative data with sample sizes (n=39, 62, 15 angioblasts) and statistical analysis (2-way ANOVA, p<0.001) provide strong support. The reciprocal transplants (C59 vs C60) definitively demonstrate that receptor function is required in the migrating cells, not the environment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C62",
+      "C66",
+      "C68"
+    ],
+    "result": "The Ela-Aplnr signaling pathway represents a novel mechanism for regulating vasculogenesis in vertebrate embryos. This pathway was not previously implicated in angioblast migration and is strictly required for guided migration to the midline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C62, C66, and C68 synthesize the major findings into a coherent model. The novelty claim (C6) is supported by lack of prior literature on this specific role. The comprehensive experimental evidence from expression, loss-of-function, gain-of-function, and cell autonomy studies collectively support this as a bona fide novel pathway. The strict requirement (C66) distinguishes it from VEGF-A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C75"
+    ],
+    "result": "Angioblasts are specified in the lateral plate mesoderm, migrate between somites to the midline between 12-15 hpf, and coalesce to form the dorsal aorta and cardinal vein underneath the notochord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C75 describe the basic developmental process supported by time-lapse imaging (Figure 1, Video 1) and established knowledge. This provides essential context for the experimental work but represents confirmatory rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior studies identified Apelin receptor requirements in myocardial development in zebrafish and mice that could not be fully phenocopied by Apelin deficiency, suggesting additional ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 accurately cite prior literature establishing precedent for ligand-receptor mismatch in the Apelin system. This contextualizes the current findings and motivated investigation of alternative ligands. The citations appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C94"
+    ],
+    "result": "The Ela-Aplnr signaling pathway may represent a novel therapeutic target in human disease, as therapeutic intervention with vascular growth currently focuses predominantly on VEGF-A signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69 and C94 are speculative regarding therapeutic potential. While the discovery of a novel vascular signaling pathway (supported by current work) and the clinical relevance of anti-angiogenic therapy (C94, general knowledge) are both valid, the translational potential requires additional evidence in mammalian systems and disease models. The zebrafish findings may not directly translate to human pathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Prior work proposed VEGF-A as a chemoattractant for angioblast migration based on studies in Xenopus (ectopic expression) and mice (global knockout phenotypes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C70-C73 accurately represent prior literature that established the prevailing model. The current work challenges this model in zebrafish, highlighting potential species-specific differences or alternative interpretations of the mouse knockout phenotypes. The citations appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C89",
+      "C90"
+    ],
+    "result": "Methodological details including gene orthology, staging methods, nomenclature, mutagenesis approaches, and control experiments are documented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 and C89-C90 provide essential methodological information including zebrafish gene orthologs (C74), staging (C76), alternative nomenclature (C77), mutagenesis details (C78-C81), and validation of Shh inhibition (C89-C90). These support reproducibility and interpretation but are not primary results.",
+    "result_type": "MINOR"
+  }
+]

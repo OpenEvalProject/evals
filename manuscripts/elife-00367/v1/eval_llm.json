@@ -1,0 +1,407 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Three engineered strategies enable yeast growth on low sucrose: forming multicellular clumps, importing sucrose before hydrolysis, and increasing invertase expression. All three engineered strains outcompeted the ancestral wild-type strain in 1 mM sucrose, though the high invertase strain (EngHiInvertase) was a weaker competitor than the clumpy (EngClumpy) and sucrose import (EngSucImport) strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C17-18, C21-25 are supported by experimental data in Figures 1-2 and Table 1. The growth assays demonstrate that each strategy enables growth from single cells in low sucrose, and competition experiments quantify relative fitness. The data clearly show all three strategies work, with differential competitive abilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Experimental evolution of ten independent yeast populations in 1 mM sucrose resulted in all populations displaying a clumpy phenotype after 25-35 serial dilutions. Each evolved clone strongly outcompeted its ancestor, eliminating it within two passages, demonstrating that efficient use of public goods selects for undifferentiated multicellularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-31 are well-supported by the experimental evolution data shown in Figures 3 and Table 1. The consistent evolution of clumpy phenotypes across all 10 independent populations provides strong evidence for selection favoring multicellularity. Competition assays confirm fitness advantages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "All multicellular evolved clones form clumps through incomplete cell separation rather than flocculation. Two-color fluorescence experiments demonstrate that each clump contains cells of only one color, indicating clumps arise from repeated division of single cells rather than aggregation of separate cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-35 are supported by the two-color fluorescence experiments shown in Figure 4. The monochromatic clumps provide clear evidence for incomplete separation. Control strains (FLO1 for flocculation, AMN1-RM11 for incomplete separation) validate the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C36",
+      "C37"
+    ],
+    "result": "Of 12 evolved clones, 11 formed multicellular clumps, 10 increased invertase (SUC2) expression 3-21 fold, none imported sucrose, and 11 increased hexose transporter expression. The increase in hexose transporter expression was an unanticipated evolutionary strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-16, C36-37 are supported by RNA sequencing data (Table 2) and competition assays with suc2-1cyt strains (Table 4). The RNA-seq provides quantitative expression data, while the suc2-1cyt competitions demonstrate dependence on secreted invertase, ruling out sucrose import.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Bulk segregant analysis identified 80 putative causal mutations across 53 genes from 1521 total mutations in 12 evolved clones. ACE2 and UBR1 were mutated in at least half the clones, and genes in three pathways (glucose sensing/RGT1, growth regulation/IRA1-IRA2, and transcription/Mediator) were mutated in many clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-39, C106-108 are supported by whole genome sequencing and bulk segregant analysis data in Table 5. The methodology appropriately separates causal from hitchhiking mutations through sexual crosses and selection. The high ratio of non-causal to causal mutations (1441:80) is expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Most putative causal mutations are likely loss-of-function, with ACE2 mutations being particularly important for the clumpy phenotype. ACE2 was mutated in 8 clones (6 nonsense mutations), and all 6 clones with ACE2 nonsense mutations showed \u226510-fold reductions in cell separation genes (CTS1, DSE1, DSE2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-45 are supported by the high frequency of nonsense mutations (31% in singly-mutated genes) and RNA-seq data showing reduced expression of cell separation genes. The inference about loss-of-function is reasonable given the nonsense mutation frequency matches known rates for URA3 and CAN1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "UBR1, encoding an E3 ubiquitin ligase in the N-end rule pathway, was mutated in 6 of 12 clones (4 nonsense mutations). Additionally, RAD6, which encodes the ubiquitin-conjugating enzyme that forms a heterodimer with Ubr1, had a missense mutation in a seventh clone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-50 are supported by whole genome sequencing data (Table 5) and prior knowledge about the N-end rule pathway. The high frequency of nonsense mutations strongly suggests loss-of-function is beneficial. The RAD6 mutation in a seventh clone further implicates this pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The Rgt1 glucose-sensing pathway was mutated in 8 of 12 clones (SNF3, MTH1, or RGT1), with no clones having two mutations in the pathway. MTH1 loss-of-function mutations have been selected in other glucose-limited evolution experiments, while SNF3 mutations may be gain-of-function, including one (snf3-A231D) near a known dominant mutation (SNF3-R229K).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-58 are supported by sequencing data (Table 5) and citations to prior work. The pattern of mutations (2 nonsense in MTH1, 2 nonsense + 1 missense in RGT1, 3 missense in SNF3) and lack of double mutants suggests pathway-level selection. The speculation about SNF3 gain-of-function is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The Ras-cAMP pathway, which regulates cell growth in response to nutrients, was mutated in 4 clones (IRA1 or IRA2). Loss-of-function mutations in IRA1/IRA2 are predicted to elevate cAMP by increasing Ras activity, potentially allowing growth at lower external sugar concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-63 are supported by sequencing data (Table 5) and established pathway knowledge. The inference about elevated cAMP and improved growth at low sugar is reasonable based on known pathway function, though direct measurement of cAMP levels would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Four Mediator complex proteins were mutated (SIN4, CSE2, MED1, NUT1), with both SIN4 mutations occurring at residue 128 (G128D, G128S). The sin4-G128D mutation was previously identified as a suppressor of SWI6 deletion, and HXT3 (a known SBF target) was elevated 108-fold and 32-fold in the two clones carrying SIN4 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-68 are supported by sequencing data (Table 5) and RNA-seq data (Tables 2 and 5). The recurrent mutation at SIN4 residue 128 and dramatic HXT3 upregulation in these clones provide strong evidence for a functional connection. The link to SBF and cell cycle regulation is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The HXT6/7 locus showed copy number amplification from 2 to 3 repeats in EvoClone7C, which was present in the backcrossed strain indicating potential causality. This type of amplification has been observed in other experimental evolution studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-70 are supported by read depth analysis from whole genome sequencing and citations to prior work. The persistence of the amplification in backcrossed strains suggests it is causal rather than a hitchhiker. The precedent from other studies strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Recreation experiments demonstrate that putative causal mutations are necessary and sufficient for the evolved phenotype. Recreated strains (Recreated2 with 5 mutations, Recreated9 with 8 mutations) showed similar morphology and outcompeted the ancestor, while reverted strains lost fitness and clumpiness. Bulk segregant analysis confirmed 12 of 13 mutations were causal (gcn2-I1528L may be a false positive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-80 are strongly supported by recreation/reversion experiments (Figure 7, Table 1) and bulk segregant analysis (Figure 8). The recreated strains phenocopy the evolved clones, reverted strains lose the phenotype, and segregation analysis confirms individual mutation effects. This is rigorous validation of causal mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C118",
+      "C119"
+    ],
+    "result": "Specific mutations were selected in low sucrose but not low monosaccharide, demonstrating that multicellular clumps were specifically selected by sucrose rather than being a general response to low sugar. An ace2\u0394 strain and a mck1-G227Vfs249 irc8-G57V gin4-W19* strain recapitulate the morphology of evolved clones and outcompete the ancestor in sucrose but not monosaccharide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-85, C118-119 are supported by bulk segregant analysis in different media (Figure 8) and competition assays (Table 1). The differential selection in sucrose vs. monosaccharide provides strong evidence that multicellularity is specifically advantageous for utilizing extracellularly hydrolyzed nutrients, not just low sugar in general.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Evolved clones were specifically adapted to sucrose, showing no strong fitness advantage over the ancestor in 1 mM glucose + 1 mM fructose (the monosaccharide equivalent). The engineered clumpy strain (EngClumpy) outcompeted the ancestor in low sucrose but not low monosaccharide, though clumpiness alone was insufficient to match evolved strain fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C114-117 are supported by competition data (Table 1). The lack of fitness advantage in monosaccharide demonstrates specificity for sucrose utilization. The comparison between EngClumpy and evolved clones shows that multicellularity is necessary but not sufficient, requiring additional adaptations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Evolved clones showed reduced fitness in high glucose compared to their ancestor. Recreated strains performed as well as or better than evolved clones but worse than the ancestor in high glucose, suggesting both causal alleles and hitchhiking alleles contribute to reduced fitness in this environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-89 are supported by competition data (Table 1). The comparison between evolved, recreated, and ancestor strains provides evidence for antagonistic pleiotropy. However, the inference about hitchhiking alleles contributing to reduced fitness could be strengthened by testing individual mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "RT-qPCR analysis of allelic combinations in Recreated2 showed that HXT4 expression increase is clearly due to the MTH1 loss-of-function mutation (mth1-H154Tfs156), while SUC2 expression is a complex phenotype under quantitative control of multiple genes. Clumpiness in EvoClone2 is caused by the ACE2 loss-of-function mutation (ace2-L323*).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-92 are supported by RT-qPCR data (Figure 8\u2014figure supplement 1) and microscopy observations. The systematic testing of allelic combinations provides strong evidence for the genetic basis of expression changes. The ACE2 result is particularly clear-cut.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "RNA sequencing revealed that four cell separation genes (AMN1, CTS1, DSE2, SCW11) had significantly reduced expression in all 11 clumpy evolved clones, with three additional genes (DSE1, SUN4, DSE4) reduced in 9-10 clones. These genes were not reduced in the non-clumpy clone (EvoClone7B) or control strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-111 are supported by RNA sequencing data (Table 3). The consistent downregulation of cell separation genes across clumpy clones and absence of downregulation in the non-clumpy clone provides strong evidence linking gene expression changes to the clumpy phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "All evolved clones depend on secreted invertase for growth, as demonstrated by competition assays where evolved clones quickly outcompeted versions lacking the SUC2 signal sequence. RT-qPCR confirmed that SUC2 expression was not reduced in suc2-1cyt strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-113 are supported by competition data (Table 4) and RT-qPCR measurements. The consistent competitive advantage of secreted invertase across all clones and verification that expression levels are maintained in suc2-1cyt strains rule out sucrose import as a strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Most evolved clones (10/12) increased invertase expression despite the engineered high invertase strain having only a small competitive advantage. The authors propose that high invertase expression makes sense in combination with multicellularity and elevated hexose transporter expression, as these strategies act synergistically. Low extracellular glucose induces both hexose transporters and invertase, suggesting single mutations could increase both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-130 are supported by RNA-seq data (Table 2), competition data (Table 1), and established knowledge of glucose regulation. The reasoning about synergistic effects is logical and well-supported. However, the speculation about clumpiness indirectly elevating invertase expression (C129) is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study demonstrates that combining rational design with experimental evolution can evaluate hypotheses about evolutionary strategies. Yeast evolved a mixture of three strategies (increased enzyme secretion, increased transporter expression, and multicellular clumps) when selected in low sucrose, supporting the hypothesis that sharing of public goods was the initial selection for undifferentiated multicellularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C96-98 are supported by the overall experimental design and results. The integration of engineering, evolution, and genetic analysis provides strong support for the public goods hypothesis. However, C96 is somewhat speculative in its generalization to all unicellular organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "For organisms with rigid cell walls (yeast, algae, bacteria), the large target size for mutations in cell separation enzymes and control circuits makes it easy to evolve undifferentiated multicellularity. Lab yeast strains were selected to be unicellular during domestication, but clumpiness varies in wild isolates and may be recurrently selected. Organisms without cell walls would need innovations like cadherins to evolve multicellular clumps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-103 are supported by the experimental results, citations to prior work, and logical inference. The argument about target size is well-reasoned. However, the speculation about recurrent selection in wild yeast (C102) and requirements for cell wall-less organisms (C103) are plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors speculate that undifferentiated multicellularity may have existed 2 billion years ago, but complex multicellularity did not radiate for over a billion years later. They propose that a simple division of labor, where limited cells increase enzyme secretion, could improve clumping effectiveness and may have been a precursor to complex multicellularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-95 are supported by citation to fossil evidence, but C104-105 are speculative extrapolations from the experimental data. While the speculation is interesting and logically consistent with the results, it lacks direct experimental support and represents a hypothesis for future testing rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Multicellular organisms have evolved from unicellular ancestors at least 25 times. Two proposed driving forces are protection (from predation, environmental stress, phagocytosis) and more efficient nutrient usage. Previous work by the authors showed that sharing public goods favors clumps over isolated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-4 are background claims supported by citations to prior literature. These establish the context for the current study and are appropriately referenced. C4 specifically cites the authors' previous work, which is the foundation for the current experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Saccharomyces cerevisiae utilizes sucrose by secreting invertase, with >95% remaining in the cell wall where it hydrolyzes sucrose to glucose and fructose. Lab yeast strains cannot grow from low density in low sucrose due to diffusion, but forming multicellular clumps overcomes this limitation by allowing cells to capture monosaccharides from neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-8 are well-established facts supported by citations to prior literature. Claims C9-10 are logical inferences based on diffusion physics and prior work (Koschwanez et al., 2011). These provide the mechanistic rationale for why multicellularity would be advantageous in low sucrose.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Mal11 is a maltose importer that can also import sucrose, but it is not expressed in the lab yeast strains used in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-20 are supported by citations to prior work (Stambuk et al., 1999; Brown et al., 2010). This background information explains why the authors needed to engineer MAL11 expression to test the sucrose import strategy.",
+    "result_type": "MINOR"
+  }
+]
