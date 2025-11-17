@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript reviews prior literature establishing that traveling waves are ubiquitous in cortex, occur across multiple spatial and temporal scales, exhibit diverse propagation patterns (plane, radial, spiral), span mesoscale to macroscale regions, and propagate at varying velocities across different frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C8-C18) accurately summarize established literature on cortical traveling waves, supported by appropriate citations throughout. The characterization of wave diversity, spatial scales, and frequency-dependent properties reflects consensus knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The cortex exhibits modular structural and functional organization with non-uniform tangential connectivity that is higher within cortical areas than between areas, observed across multiple scales including columnar organization. This modularity likely restricts activity spread and segregates circuits to prevent uncontrolled excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 accurately describe cortical modularity based on well-established anatomical and functional studies. The inference that modularity restricts spread (C24) is reasonable given connectivity patterns, though the tension between this and widespread traveling waves motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Traveling waves are typically measured with macroscopic methods (EEG, ECoG, VSD) that have limited spatial resolution and cannot directly assess local spiking activity. These methods suffer from volume conduction, signal spread, and integration of distant sources, making it unclear whether waves reflect single-neuron level propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C34 accurately describe well-known limitations of field potential and optical imaging methods, supported by appropriate citations. The characterization of spatial blurring, volume conduction effects, and VSD signal sources reflects established biophysics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Previous studies have raised concerns about methodological limitations in wave detection, including that axonal propagation may not activate target neurons, that measurement artifacts can create false wave patterns, and that single-cell evidence for waves cannot be generalized. The criteria for distinguishing true waves from wave-like patterns remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C45 accurately summarize prior concerns about wave measurement validity, supported by appropriate citations. The identification of knowledge gaps (C44-C45) appropriately motivates the current study's investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "EEG simulations demonstrate that sequentially activating two discrete brain areas with temporal delays produces continuous phase latency patterns with high PLDC values (near 1) across a wide range of distances and delays, appearing as traveling waves. Filtering further increases PLDC values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C49 are directly supported by the EEG simulation results in Figure 1. The forward modeling approach using Brainstorm is appropriate, and the demonstration that discrete sequential activation can mimic continuous waves is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In turtle cortex ex vivo, visual stimulation elicited LFP responses starting ~200ms post-stimulus with high low-frequency power. Averaged responses showed clear wave propagation from anterolateral to posteromedial at 1.8\u00b10.35 mm/s, consistent with prior reports. PLDC values near 1 suggested wave propagation, while shuffled controls yielded PLDC near zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are well-supported by the experimental data in Figure 2. The characterization of response timing, spectral properties, propagation direction, and velocity is clearly documented. The shuffling control (C57) appropriately validates the PLDC metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "While LFP phase crossings were temporally continuous (DIP test p=0.85), spike timings were segregated into temporal groups (DIP test p<0.0002). DIP values were consistently larger for spikes versus LFP across trials, with this difference significant both on average and in pairwise comparisons, replicated across multiple animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are strongly supported by the DIP test analysis in Figure 2H, K, M. The statistical approach is appropriate for detecting multimodality, and the consistency across trials and animals strengthens the conclusion. However, the DIP test assumes specific distributional properties that may not fully capture complex spatiotemporal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ALSA (average local spiking activity) onset times did not evolve continuously across space but were organized in two separate sequentially activated spatial groups, contrasting with continuous LFP patterns. DIP test comparisons between LFP and ALSA showed consistent differences across trials and experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by Figure 2J, L, N. The ALSA metric provides a more robust estimate of local excitability than single spikes. However, the spatial smoothing inherent in ALSA calculation may itself influence the detection of modularity, and the choice of smoothing parameters is not fully justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C73"
+    ],
+    "result": "The central finding is that LFP measurements showing wave-like propagation in turtle cortex are underlain by discrete, consecutively activated neuronal populations rather than continuously propagating wavefronts of spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C73 represent the main experimental conclusion, supported by the combined evidence from LFP versus spike/ALSA comparisons in Figure 2. However, the interpretation depends on the validity of the DIP test for distinguishing continuous versus modular activation, and alternative explanations (e.g., sparse sampling of a continuous wave) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Propagating patterns were detected in other frequency bands (12-35 Hz) in turtle cortex, showing complex patterns including plane, radial, and spiral waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is supported by Figure 2\u2014figure supplement 5, but the authors explicitly state they could not perform statistical analysis comparing these waves with spiking patterns due to low spike rates. Without this analysis, it remains uncertain whether higher-frequency waves also reflect modular activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C5",
+      "C75"
+    ],
+    "result": "An analytical model of two sequentially activated Gaussians demonstrates that wave-like patterns emerge when \u0394x\u22642\u03c3x (spatial profile is concave), with propagation velocity increasing with distance between centers and frequency. The model generates diverse patterns (plane, radial, spiral-like) depending on Gaussian arrangement and phase relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C68-C72, C75 are supported by the analytical derivations in Figure 3 and Appendix 1. The mathematical analysis is sound and provides clear conditions for when sequential activation appears wave-like. However, the model is highly simplified (only two Gaussians) and may not capture the complexity of real cortical activation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The main parameter affecting wave-like pattern detection is the distance between modules relative to their spatial spread. Spatial spread increases with medium conductance and distance from source in potential-based measurements, being large in EEG and substantial in ECoG. Even in MEA recordings, large spread was observed despite minimal distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by the analytical model results and are consistent with volume conduction theory. The observation of large spread in MEA recordings (C80) is particularly important, though the inference about mechanisms (volume conduction through tissue, non-local synaptic currents) remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "VSD measurements suffer from light scatter and integrate subthreshold potentials from large areas including long-distance inputs. Averaging may smooth boundaries between modules, potentially explaining smoother LFP profiles after averaging versus single trials in turtle cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 accurately describe VSD limitations based on cited literature. The inference about averaging effects (C86-C87) is reasonable and supported by comparison of Figure 2D versus 2G, I, though direct experimental manipulation of averaging would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Discriminability between Gaussian activations decreases with increased temporal spread (\u03c3t), as occurs with filtering. Filtering into narrow frequency bands smoothens sharp transients and markedly increased PLDC in EEG simulations by smoothing activation boundaries between modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by the analytical model and Figure 1\u2014figure supplement 1C-D. The demonstration that filtering promotes wave-like appearance is important for interpreting frequency-band-specific wave analyses common in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PLM/PLDC analysis, while valuable for distinguishing stationary bumps from waves, does not consider sequentially activated local populations. The underlying assumption is that stationary bumps have flat latency maps, but sequential Gaussian activation can meet phase latency conditions for waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide important critique of existing methods. The limitation of PLM/PLDC is clearly demonstrated by the simulation and analytical results. However, the authors do not propose alternative metrics that could distinguish true waves from sequential modular activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Wave-like pattern propagation direction is determined by module location, and speed by distance and temporal delay between modules. For narrow-band signals, velocities increase with frequency and may reverse with phase lag changes. These predictions align with literature showing bidirectional propagation and frequency-dependent velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 are supported by the analytical model (Equations 2, 4) and Figure 3G-H. The connection to empirical observations of frequency-dependent and bidirectional waves (C100-C102) strengthens the model's relevance, though direct experimental validation in the turtle preparation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "While some reports suggest waves are underlain by axonal propagation, such waves travel at high speeds incompatible with the diversity of observed wave velocities and local neuronal interaction mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 accurately represent a tension in the literature between axonal propagation mechanisms and observed wave diversity. The argument is logical but relies on inference rather than direct experimental evidence in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The temporal grouping of spike timings in turtle cortex is spatially aligned with the structural transition between areas D1 and D2, though this transition was not evident in LFPs, possibly due to longer decay constants and existing connections between areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 make an interesting connection between observed spiking patterns and known anatomy. However, the authors acknowledge that turtle cortex modularity has not been systematically mapped, and the spatial alignment is inferred rather than rigorously demonstrated. The explanation for why LFP doesn't show the boundary is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "True traveling waves at single-cell resolution have been demonstrated in developing systems (retina, cortex) but are scarcely reported during wakefulness in mature cortex. Waves may dominate in reduced consciousness states (anesthesia, sleep) or pathological conditions (epilepsy) where modularity breaks down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C114 provide important context distinguishing developmental/pathological waves from mature cortical function. The citations appropriately support these distinctions. However, the inference about why waves dominate in certain states (C111, C113) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Calcium imaging data supports both sequential activations and traveling motifs, but no analysis has discriminated between waves and sequential sources. Low temporal resolution and wide point spread functions may mask modularity and promote wave detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 accurately identify limitations of calcium imaging for distinguishing waves from modular activation. The characterization of temporal resolution and optical artifacts is appropriate, though the authors do not provide direct experimental evidence from calcium imaging in their own study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The ex vivo turtle preparation allows large-scale 2D sampling of both spiking and LFP activity. Previous work showed waves following visual stimulation, and basic excitability features are similar between turtle and mammalian cortex despite different layered organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 appropriately justify the experimental model. The citations support similarity in basic excitability features. However, the claim that 'substantial differences in field potential and spike spread are not expected' (C121) is somewhat strong given known differences in cortical architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Activation profiles resembling continuous traveling waves in EEG simulations can be underlain by consecutive activation of two discrete cortical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 summarizes the EEG simulation result, directly supported by Figure 1. This is a key finding demonstrating that discrete activation can appear as continuous waves in macroscopic recordings.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C47",
+      "C48",
+      "C50",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C73"
+    ],
+    "result": "Using LMNG detergent instead of DDM for protein solubilization resulted in improved cryo-EM density for the cytoplasmic region of Cx26, enabling visualization and modeling of the KVRIEG motif (residues Gln124-Ile128) and better definition of the N-terminus in the NConst conformation. The improved structures show that pore constriction by the N-terminal helix correlates with specific positions of TM1, TM2, and the KVRIEG motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C73 provide converging structural evidence from cryo-EM showing improved density and modeling of previously disordered regions. The 2.0-2.3 \u00c5 resolution maps (C45, C47) with clear side-chain density (C50, C61) support the modeling of the KVRIEG motif (C62-C63) and its proximity to Arg104 (C64). The correlation between structural elements (C48, C73) is directly observed in the density maps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The conformational change between NFlex and NConst states involves a ~90\u00b0 rotation of Trp24 on TM1, with structural incompatibilities between the two states: the NFlex TM2 position would clash with NConst TM1, and the NConst linker conformation is incompatible with the NFlex KVRIEG motif position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe specific structural observations with quantitative measurements (90\u00b0 rotation, C67) and steric clash analysis (C70, C72) that are directly observable in the cryo-EM structures. The structural incompatibilities provide mechanistic insight into the conformational coupling between different protein regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Focused classification on a single subunit revealed additional density for the cytoplasmic loop (residues 107-123 region) in a conformation resembling AlphaFold2 predictions, though only the classified subunit adopted this conformation. Analysis suggests Cx26 is a flexible molecule with limited cooperativity between hexamer subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 describe results from focused classification showing partial loop density (C75) that was modeled using AlphaFold2 as a guide (C76). The observation that only the classified subunit shows this conformation (C81) and steric clashes prevent symmetric arrangement (C82) provide direct evidence for the flexibility and limited cooperativity conclusion (C83). However, the low resolution of the loop density (C75) and ambiguous placement of residues 109-114 (C77) indicate limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Functional dye transfer assays demonstrate that while wild-type Cx26 gap junctions permit rapid dye transfer at PCO2 of 35 mmHg, the K125E mutant forms gap junction-like structures that are constitutively closed and do not permit dye transfer at either 35 or 55 mmHg PCO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 present clear functional data from dye transfer assays with appropriate controls (WT vs K125E, different PCO2 levels). The results show morphological gap junctions form (C85) but lack function (C86-C87), with quantification provided in Figure 4d. The experimental design includes proper replicates (n=6-7 cell pairs) and the conclusion directly follows from the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Structural analysis of K125E and K125R mutants shows that K125E biases the conformational equilibrium toward the NConst (closed) state, with 43% of K125E particles in the NConst-like conformation compared to only 10% for K125R. The K125E90 structure (2.5 \u00c5 resolution) is very similar to LMNG-NConst (RMSD 0.35 \u00c5) but differs substantially from LMNG-NFlex (RMSD 2 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C98 provide quantitative structural comparisons with appropriate resolution metrics (C89, C94) and RMSD values (C96-C97). The particle distribution analysis (C92-C93) shows a clear shift in conformational equilibrium. The structural similarity measurements are standard and well-supported by the cryo-EM data. The interpretation that K125E biases toward closed conformation (C98) is consistent with both structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Comparison of WT and K125E proteins vitrified in HEPES buffer (without CO2) shows that K125E is sufficient to bias the conformation toward the closed state even in the absence of CO2, though the resolution is lower (4.2-4.9 \u00c5) and CO2 may have additional effects on protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 present data from HEPES buffer experiments that control for CO2 effects. The lower resolution (C99) is acknowledged, but the observation of TM2 movement and N-terminus changes (C100) supports the conclusion that K125E alone can bias conformation (C101). The speculation about additional CO2 effects (C102) is appropriately cautious given the resolution differences between buffer conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Comparative structural analysis shows that the NConst conformation represents a unique closed state where TM2 position is an outlier compared to other connexin structures, preventing the N-terminus from adopting the pore-lining position seen in other connexins and instead forcing it outward to constrict the pore. The KVRIEG motif forms an extended conformation resembling AlphaFold2 predictions, acting as a break in TM3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 provide comparative structural analysis across multiple connexin structures with clear structural reasoning. The identification of TM2 as an outlier (C107) and the mechanistic explanation for N-terminus positioning (C109-C110) are supported by structural superpositions shown in Figure 6. The comparison with AlphaFold2 predictions (C104-C105) provides independent validation of the KVRIEG motif conformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "A lipid-like molecule is consistently observed in the pore when protein is solubilized with either LMNG or DDM, strongly suggesting it is a lipid rather than detergent. This lipid appears to be displaced only when the N-terminus adopts the pore-lining position, and in NConst structures it remains because TM2 prevents the N-terminus from adopting that position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 present a logical argument based on the persistence of density across different detergents (C116) and comparison with other connexin structures (C117). The inference that the molecule is lipid rather than detergent is reasonable given the evidence. The mechanistic explanation for lipid displacement (C118-C119) is consistent with the structural observations, though the functional significance remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The correlation between dye transfer assays showing K125E gap junctions are closed and structural data showing K125E adopts the NConst conformation supports the hypothesis that CO2-mediated closure occurs through carbamylation of K125. The data suggest that even at high PCO2, wild-type protein is not completely carbamylated during vitrification, consistent with the labile nature of the carbamylation reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 integrate functional and structural data to support the carbamylation hypothesis. The correlation between functional closure (C84-C87) and structural conformation (C92-C98) is clear (C125). The interpretation about incomplete carbamylation (C127) is reasonable given the observation of mixed conformations in WT protein and the known lability of carbamylation (C128). The logic is sound though direct detection of carbamylation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "While both K125 and R104 are necessary for CO2-dependent closure, the structural data show K125/E125 is near R104 in the NConst structures but without a clear direct interaction. The negative charge at position 125 is important for conformational change, but attributing closure to a single K125-R104 salt bridge may be an oversimplification, with other interactions and possibly multiple carbamylation events potentially contributing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C140 present a nuanced interpretation of the mechanism. The necessity of both residues is supported by cited functional data (C129, C137). The structural observation of proximity without clear interaction (C131-C132) is honestly reported. The conclusion that a single salt bridge explanation is oversimplified (C138) is appropriately cautious given the structural ambiguity and is supported by the double cysteine mutant data (C135-C136). The speculation about multiple carbamylation events (C139-C140) is reasonable but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "The observation that some K125R protein adopts the NConst conformation suggests Cx26 is a conformationally flexible protein where introduction of negative charge at position 125 stabilizes one particular conformation rather than causing a conformational change per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 present an interpretation based on the observation that K125R shows ~10% NConst conformation (C93). This supports a model of conformational selection/stabilization rather than induced fit. The interpretation is consistent with the structural data showing multiple conformations in all constructs, though the distinction between stabilization and induction may be semantic at the molecular level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The disease-causing A88V mutation (KIDS syndrome) is located at the flexion point of TM2 within 4.2 \u00c5 of Trp24, which moves during the TM1 conformational change. The bulkier valine would hinder adoption of the NConst conformation, explaining why this mutation results in leaky hemichannels and prevents CO2 sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C148 connect structural observations to disease phenotypes. The location of A88 at the TM2 flexion point (C143) and its proximity to Trp24 (C147) are direct structural observations. The cited functional effects of A88V (C144-C146) provide independent validation. The mechanistic explanation that valine would hinder the NConst conformation (C148) is a reasonable inference based on steric considerations, though direct structural or functional validation of this specific mechanism is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Reconstructions of the full dodecamer show no influence of individual subunit conformation on neighboring subunits, suggesting stochastic conformational changes with limited cooperativity between hexamer subunits. This contrasts with studies showing cooperativity in Cx26 hemichannels in cell membranes but is consistent with Cx43 gap junction studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C124 describe an observation from the structural analysis (C122) and compare it to other studies (C123-C124). However, the lack of observed cooperativity could reflect limitations of the cryo-EM approach (frozen snapshots, detergent solubilization, lack of membrane environment) rather than true absence of cooperativity. The contrast with cell-based studies (C124) suggests the in vitro conditions may not fully recapitulate native behavior. Additional experiments in more native-like conditions would be needed to definitively establish the degree of cooperativity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background information establishing that connexins form hexameric hemichannels that dock to form dodecameric gap junction channels, are regulated by various stimuli including CO2 (for \u03b2-connexins like Cx26), and that Cx26 mutations cause deafness. Previous work showed PCO2-dependent positioning of the N-terminus, with high PCO2 favoring a constricted (NConst) conformation and low PCO2 favoring an open (NFlex) conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 summarize established knowledge and the authors' previous work, all supported by appropriate citations. These provide essential context for the current study but do not represent new findings. The claims accurately represent the cited literature and establish the foundation for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background on the carbamylation hypothesis: CO2 regulation is proposed to occur through carbamylation of K125 in the KVRIEG motif, a labile reaction that introduces negative charge. The K125E mutation mimics carbamylation and causes constitutively open hemichannels, while K125R prevents CO2-mediated opening of hemichannels and closing of gap junctions. Previous structures showed PCO2 effects but did not resolve K125 or R104.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C40 summarize the carbamylation hypothesis and supporting mutational data from prior work, all appropriately cited. These establish the mechanistic framework being tested in the current study. The claims accurately represent the cited literature and provide essential background for interpreting the new structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C65",
+      "C66"
+    ],
+    "result": "Technical details of cryo-EM data collection and processing, including resolution metrics (2.0 \u00c5 for LMNG90), comparison with previous results, observations about lipid density in the pore, structural differences in TM1 compared to previous models, and the historical disorder of the cytoplasmic loop in connexin structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C66 provide technical details about data quality, processing, and structural observations. The resolution metrics (C45) and comparisons with previous structures (C46, C52, C66) are standard reporting. The observations about TM1 differences (C53-C55) and cytoplasmic loop disorder (C56-C60) provide important context for the improvements achieved. These are well-supported technical details but represent methodological advances rather than primary biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C120"
+    ],
+    "result": "Unassigned density near K125 may represent a bound small molecule, and with minor side-chain adjustments, the pore center could be closed in the NConst structures, though the first three N-terminal residues remain difficult to position unambiguously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78 and C120 represent speculative interpretations of ambiguous density. The inability to definitively assign the density near K125 (C78) and unambiguously position the first three N-terminal residues limits confidence in the closure mechanism. While the speculation is reasonable, these limitations prevent definitive conclusions about the exact closed state structure and potential small molecule binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "A88 and W24 are located near R143, where the common R143W mutation causes non-syndromic hearing loss. The data provide mechanistic insight into conformational changes underlying Cx26 pore closure, useful for understanding how mutations lead to disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 note the structural proximity of residues involved in disease mutations (C149-C150) and provide a summary statement about the study's significance (C151). The structural observation is valid, and the general conclusion about mechanistic insight is supported by the totality of the structural and functional data presented. However, this represents a summary conclusion rather than a specific testable result.",
+    "result_type": "MINOR"
+  }
+]

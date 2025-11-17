@@ -12,48 +12,49 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C16, C23, C24, C25, and C30 collectively demonstrate a robust negative correlation between astrocyte Ca2+ event rate and SWA across multiple behavioral states (Figure 1D, F, G, H). The data include appropriate statistical tests (Pearson's correlation, rank sum tests) and consistent patterns across different analyses, providing strong support for this relationship.",
+    "evaluation": "Claims C16, C23, C24, C25, and C30 collectively demonstrate a robust negative correlation between astrocyte Ca2+ event rate and SWA across multiple behavioral states, supported by statistical analysis (Pearson's correlation, p<0.0005) and consistent patterns across different experimental conditions (Figure 1D, F, G, H).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C31",
-      "C32",
-      "C35"
-    ],
-    "result": "The inverse relationship between astrocyte Ca2+ and SWA is partially dependent on IP3R2, with the most dramatic change in correlation observed during sleep in IP3R2 KO mice.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C31, C32, and C35 demonstrate that IP3R2 KO mice show decreased correlation between Ca2+ and SWA (Figure 1I) and reduced SWA modulation around Ca2+ events (Figure 2C-D). The data support partial, not complete, dependence on IP3R2, which is appropriately qualified in the claims.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
+      "C26",
       "C27",
       "C28",
       "C29"
     ],
-    "result": "While individual Ca2+ event features (size, duration, amplitude) do not differ between sleep and stationary wake, principal component analysis reveals unique spatial, temporal, and amplitude signatures of sleep-specific astrocyte Ca2+ events when multiple features are incorporated.",
+    "result": "Astrocyte Ca2+ events exhibit unique spatiotemporal signatures across behavioral states when multiple features are analyzed together using principal component analysis, despite no individual feature differences between sleep and stationary wake.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27, C28, and C29 demonstrate that PCA incorporating 20 event features reveals significant differences between sleep and stationary wake that are not apparent when examining individual features (Figure 1\u2014figure supplement 1). This multi-dimensional analysis approach is methodologically sound and the statistical tests (K-S tests) are appropriate.",
+    "evaluation": "Claims C26-C29 demonstrate that while individual Ca2+ event features (size, duration, amplitude) do not differ between sleep and stationary wake when analyzed separately (C27), PCA incorporating 20 event features reveals significant differences across all five principal components examined (C28), supported by two-sample Kolmogorov-Smirnov tests (Figure 1\u2014figure supplement 1).",
     "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C35"
+    ],
+    "result": "The relationship between astrocyte Ca2+ event rate and SWA is partially dependent on IP3R2, with the most dramatic change in correlation observed during sleep in IP3R2 KO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C35 demonstrate that IP3R2 KO mice show decreased correlation between Ca2+ and SWA (Figure 1I) and reduced SWA modulation around Ca2+ events (Figure 2C-D), with the most pronounced effect during sleep, indicating partial IP3R2 dependence of the astrocyte-SWA relationship.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
       "C33",
-      "C35"
+      "C34"
     ],
-    "result": "Ca2+ events are preceded by decreases in SWA and followed by increases in SWA during sleep and stationary wake, with this modulation being decreased in IP3R2 KO mice.",
+    "result": "Astrocyte Ca2+ events are preceded by decreases in SWA and followed by increases in SWA, with significantly higher modulation during sleep compared to stationary wake.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C33 and C35 are supported by Ca2+ event-triggered averages showing consistent SWA patterns around Ca2+ events (Figure 2C) and reduced modulation in IP3R2 KO mice (Figure 2C-D). The temporal relationship is clearly demonstrated and statistically validated.",
+    "evaluation": "Claims C33 and C34 are supported by Ca2+ event-triggered averages showing consistent temporal patterns of SWA modulation around Ca2+ events (Figure 2C), with statistical confirmation that modulation is significantly higher during sleep (Figure 2D, rank sum test).",
     "result_type": "MAJOR"
   },
   {
@@ -63,30 +64,19 @@
       "C37",
       "C38",
       "C39",
-      "C78"
+      "C40",
+      "C41",
+      "C92"
     ],
-    "result": "Gi-DREADD activation in astrocytes increases Ca2+ event frequency and significantly increases SWA during sleep without affecting total time spent in sleep/wake or SWA during wake. CNO alone (without DREADD expression) does not alter Ca2+ dynamics or sleep features.",
+    "result": "Gi-DREADD activation in astrocytes increases Ca2+ event frequency and SWA during sleep without affecting sleep duration or wake SWA, and these effects are dependent on IP3R2.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36-C39 and C78 demonstrate that Gi-DREADD activation specifically increases sleep depth (SWA) without affecting sleep duration (Figure 3C-H). The control experiment (C78, Figure 3\u2014figure supplement 2) validates that CNO alone has no effect, strengthening the conclusion that observed effects are DREADD-specific. Statistical tests (paired t-tests) are appropriate.",
+    "evaluation": "Claims C36-C41 and C92 collectively demonstrate that Gi-DREADD activation increases astrocyte Ca2+ (Figure 3C-D) and sleep SWA (Figure 3E) via IP3R2-dependent mechanisms (Figure 3I-J), while not affecting sleep duration (Figure 3F, H) or wake SWA (Figure 3G). Control experiments confirm CNO alone has no effect (C92, Figure 3\u2014figure supplement 2).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
-    "claim_ids": [
-      "C40",
-      "C41"
-    ],
-    "result": "In IP3R2 KO mice expressing Gi-DREADDs, CNO administration does not significantly increase astrocyte Ca2+ or SWA, indicating that Gi-DREADD effects on sleep depth are dependent on IP3R2.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C40 and C41 demonstrate that the Gi-DREADD effects require IP3R2 (Figure 3I-J). This genetic control experiment strengthens the mechanistic interpretation of the Gi-DREADD results and is appropriately analyzed with paired t-tests.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
     "claim_ids": [
       "C42",
       "C43",
@@ -95,73 +85,81 @@
       "C46",
       "C47"
     ],
-    "result": "Gi-DREADD activation preferentially increases SWA by altering delta wave amplitude rather than slow oscillation amplitude. While both delta waves and slow oscillations show increased peak-trough amplitude, the change in delta waves is significantly greater.",
+    "result": "Gi-DREADD activation in astrocytes preferentially increases SWA by enhancing delta wave amplitude more than slow oscillation amplitude, without changing the rate of either waveform type.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C42-C47 demonstrate that Gi-DREADD activation affects delta waves more than slow oscillations (Figure 4). The waveform characterization is based on established methods, and the differential effects are statistically validated (paired t-tests). This provides mechanistic insight into how astrocytes regulate sleep depth.",
+    "evaluation": "Claims C42-C47 demonstrate that Gi-DREADD activation does not change delta wave or slow oscillation rates (C43, Figure 4E) but significantly increases peak-trough amplitude for both waveforms, with delta waves showing significantly greater changes than slow oscillations (C46, Figure 4L), supported by paired t-tests and cumulative distribution analyses.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R7",
     "claim_ids": [
       "C48",
       "C49",
       "C50",
       "C51"
     ],
-    "result": "Ca2+ event rate increases before sleep-to-wake transitions and decreases before wake-to-sleep transitions, with these bidirectional changes being abolished in IP3R2 KO mice, particularly the increase in the last third of sleep.",
+    "result": "Astrocyte Ca2+ event rate exhibits bidirectional changes preceding sleep-wake transitions, with increases before sleep-to-wake transitions and decreases before wake-to-sleep transitions, and these changes are abolished in IP3R2 KO mice.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C48-C51 demonstrate bidirectional Ca2+ changes preceding state transitions (Figure 5A, D) and their dependence on IP3R2 (Figure 5B, D). The analysis dividing periods into thirds is methodologically sound, and statistical tests (paired and unpaired t-tests) are appropriate. This suggests a role for astrocytes in state transitions.",
+    "evaluation": "Claims C48-C51 demonstrate consistent bidirectional Ca2+ dynamics preceding state transitions (Figure 5A), with quantitative confirmation that event rate increases in the last third of sleep and decreases in the last third of wake (C49, Figure 5D), and that these patterns are abolished in IP3R2 KO mice (C50-C51, Figure 5B, D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C85"
+    ],
+    "result": "Gq-DREADD activation in astrocytes produces a brief initial increase in Ca2+ (5-10 minutes) followed by near-complete suppression of Ca2+ activity lasting 2-3 hours, across all tested CNO concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C85 describe an unexpected biphasic response to Gq-DREADD activation, with initial Ca2+ increase followed by ~97% suppression (Figure 6C-D), consistent across multiple CNO doses (0.1-1 mg/kg, Figure 6\u2014figure supplement 1F-H), representing a novel finding about Gq-DREADD effects in awake astrocytes.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C52",
-      "C53",
-      "C54",
       "C55",
       "C56",
-      "C57"
+      "C57",
+      "C71"
     ],
-    "result": "Gq-DREADD activation produces a brief initial Ca2+ increase followed by prolonged Ca2+ suppression. During Ca2+ suppression, mice spend more time in sleep with fewer sleep-to-wake and wake-to-sleep transitions, but SWA during sleep is unchanged. During the initial high Ca2+ period, mice spend less time sleeping.",
+    "result": "During the Ca2+ suppression period following Gq-DREADD activation, mice spend more time in sleep and make fewer sleep-to-wake and wake-to-sleep transitions, without changes in SWA.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C52-C57 demonstrate that Gq-DREADD manipulation affects sleep duration but not sleep depth (Figure 6C-H). The unexpected Ca2+ suppression is well-documented with imaging data, and the bidirectional effects on sleep time (increased during suppression, decreased during elevation) support a causal role for Gq-GPCR signaling in sleep/wake transitions. Statistical tests are appropriate.",
+    "evaluation": "Claims C55-C57 and C71 demonstrate that Gq-DREADD-induced Ca2+ suppression increases sleep time (Figure 6E) and decreases both sleep-to-wake and wake-to-sleep transitions (Figure 6F), while not affecting SWA (C59, Figure 6H), supported by paired t-tests across 11 mice.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C58",
-      "C4",
-      "C66",
-      "C67",
-      "C68"
+      "C58"
     ],
-    "result": "Astrocytic Gi- and Gq-GPCR signaling separately control NREM sleep depth and duration, respectively. Gi-GPCR-induced Ca2+ increases SWA (sleep depth) through delta wave enhancement, while Gq-GPCR Ca2+ signaling mediates sleep/wake transitions (sleep duration).",
+    "result": "During the initial high Ca2+ period after Gq-DREADD activation, mice show decreased sleep time compared to saline controls.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4, C58, C66, C67, and C68 represent the central conclusion that astrocytes regulate distinct sleep features via differential GPCR signaling. This is supported by the convergent evidence from Gi-DREADD experiments (affecting SWA but not duration) and Gq-DREADD experiments (affecting duration but not SWA). The separation of these mechanisms is well-demonstrated.",
-    "result_type": "MAJOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is based on a small subset of animals (n=4) that exhibited sleep during the brief initial high Ca2+ period (Figure 6G). While statistically significant, the limited sample size and short duration of this period make this finding less robust than other results in the study.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C59",
       "C60",
       "C61"
     ],
-    "result": "SWA in contralateral frontal cortex (FC) is modulated around V1 Ca2+ events, with V1-FC coherence increased following astrocyte Ca2+ events and before sleep-to-wake transitions.",
+    "result": "V1-FC coherence (5-10 Hz) is higher immediately following astrocyte Ca2+ events, and astrocyte event-locked coherence (0-15 Hz) increases in the 15 seconds prior to sleep-to-wake transitions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C59-C61 demonstrate that local V1 astrocyte Ca2+ events are associated with changes in remote FC activity (Figure 7C-E). The coherence analysis is methodologically sound with appropriate statistical tests (paired and unpaired t-tests with Bonferroni correction). This suggests astrocytes may coordinate cortex-wide activity.",
+    "evaluation": "Claims C60 and C61 demonstrate increased inter-cortical coherence associated with astrocyte Ca2+ events (Figure 7D, paired t-test with Bonferroni correction) and preceding state transitions (Figure 7E, unpaired t-test), suggesting astrocytes may coordinate activity across distant cortical regions.",
     "result_type": "MAJOR"
   },
   {
@@ -170,48 +168,79 @@
       "C62",
       "C63",
       "C64",
-      "C65",
-      "C20",
-      "C22",
-      "C69"
+      "C65"
     ],
-    "result": "Gi-DREADD activation in V1 increases SWA in contralateral frontal cortex, with this remote effect driven by increases in slow oscillation amplitude rather than delta waves. The magnitude of slow oscillation change is similar in V1 and FC, suggesting slow oscillations travel between cortical regions.",
+    "result": "Gi-DREADD activation in V1 astrocytes increases SWA in contralateral frontal cortex through selective enhancement of slow oscillation amplitude, with similar magnitude changes in V1 and FC slow oscillations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C20, C22, C62-C65, and C69 demonstrate that local astrocyte manipulation has cortex-wide effects (Figure 7F-J). The differential effects on delta waves (local) versus slow oscillations (remote) are well-characterized and statistically validated. The similar magnitude of slow oscillation changes in V1 and FC supports the propagation hypothesis, though alternative mechanisms (e.g., subcortical involvement) are not ruled out.",
+    "evaluation": "Claims C62-C65 demonstrate that local V1 astrocyte activation produces remote effects in FC, with significant SWA increases (Figure 7F-H) driven by slow oscillation amplitude changes (Figure 7I-J), and similar magnitude changes in V1 (8.8\u00b13.2%) and FC (6.8\u00b12.2%) slow oscillations (C64), suggesting propagation of slow oscillations across cortex.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C87"
+      "C4",
+      "C18",
+      "C19",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
     ],
-    "result": "The Ca2+ suppression observed after Gq-DREADD activation may be due to depletion of intracellular Ca2+ stores and/or interference with store-operated Ca2+ channels, as evidenced by elevated baseline fluorescence and similar suppression in ex vivo slices exposed to neuromodulator cocktails.",
+    "result": "Astrocytic Gi- and Gq-coupled GPCR signaling separately control NREM sleep depth and duration, respectively, with Gi-GPCR-induced Ca2+ sufficient to increase SWA and Gq-GPCR signaling necessary for sleep-wake transitions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C83-C87 propose a mechanism for the unexpected Gq-DREADD Ca2+ suppression. While the ex vivo data (Figure 6\u2014figure supplement 1J) show similar suppression with neuromodulator cocktails, and elevated fluorescence suggests clamped Ca2+ levels (C84), the mechanism remains speculative (C83 is explicitly labeled as speculation). Additional experiments would be needed to definitively establish the mechanism.",
-    "result_type": "MINOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18, C19, C66-C68, and C70 represent the central finding of the manuscript, demonstrating functional dissociation between Gi- and Gq-GPCR pathways in astrocytes. This is supported by comprehensive experimental evidence showing Gi-DREADD increases SWA without affecting sleep duration (Figures 3E-F), while Gq-DREADD manipulation affects sleep duration and transitions without changing SWA (Figures 6E-F, 6H).",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C26"
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C69"
     ],
-    "result": "Locomotory wake Ca2+ events are larger in size and duration than events observed during sleep or stationary wake.",
+    "result": "Astrocytic signaling causes differential changes in local versus remote cortex, with local V1 changes driven by delta waves and remote FC changes driven by slow oscillations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C26 is supported by data in Figure 1\u2014figure supplement 1A showing significant differences in event size and duration between locomotory wake and other states (rank sum test). This characterizes state-specific differences in Ca2+ dynamics.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C5, C20-C22, and C69 demonstrate spatial specificity of astrocyte effects, with local V1 manipulation preferentially affecting delta waves (Figure 4) while remote FC shows selective slow oscillation changes (Figure 7I-J), supported by paired t-tests and immunohistochemistry confirming restricted viral expression (Figure 3\u2014figure supplement 1, Figure 6\u2014figure supplement 1).",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Endogenous astrocyte Ca2+ is modulated in relation to both sleep duration and sleep depth, but Gi-DREADD experiments suggest SWA does not directly influence sleep duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 synthesize findings showing astrocyte Ca2+ correlates with both SWA (Figure 1) and precedes state transitions (Figure 5), yet Gi-DREADD can increase SWA without affecting sleep duration (Figure 3E-F), suggesting these regulatory mechanisms can be dissociated despite endogenous coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Both Gi- and Gq-GPCRs increase intracellular Ca2+ in astrocytes, yet there is functional dissociation between these pathways, suggesting astrocytes interpret Ca2+ dynamics differently depending on GPCR signaling context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 synthesize the key mechanistic insight that despite both GPCR types increasing Ca2+ (supported by citations and experimental data), they produce distinct functional outcomes (sleep depth vs. duration), suggesting Ca2+ is not the sole determinant of astrocyte function but rather GPCR-specific signaling cascades are critical. However, C82-C83 involve some speculation about parallel functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
     "claim_ids": [
       "C1",
       "C2",
@@ -227,49 +256,51 @@
       "C14",
       "C15"
     ],
-    "result": "Background claims establishing the context for the study, including characteristics of NREM sleep, prior knowledge about sleep regulation mechanisms, and astrocyte properties relevant to sleep.",
+    "result": "Background claims establishing that NREM sleep is characterized by SWA and serves critical functions, that sleep depth and duration can be independently controlled, and that astrocytes express GPCRs responsive to neuromodulators and regulate SWA under anesthesia.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C3, C6-C15 represent established knowledge from prior literature, appropriately cited. These provide necessary context but are not novel findings of this study. The claims accurately represent the cited literature.",
+    "evaluation": "Claims C1-C15 represent established knowledge from prior literature, supported by multiple citations throughout the introduction. These provide the scientific foundation and rationale for the current study but are not novel findings from this work.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R16",
+    "result_id": "R18",
     "claim_ids": [
-      "C70",
-      "C71",
-      "C72",
-      "C73",
       "C74",
       "C75",
       "C76",
       "C77",
+      "C78",
       "C79",
-      "C80",
-      "C81",
-      "C82"
+      "C84",
+      "C86",
+      "C88",
+      "C89",
+      "C91",
+      "C93"
     ],
-    "result": "Discussion claims citing prior work on sleep regulation, delta waves versus slow oscillations, and previous DREADD studies in astrocytes.",
+    "result": "Additional background claims from the discussion citing prior work on astrocyte Ca2+ changes with circadian rhythm and sleep deprivation, roles of GABA and glutamate in sleep, astrocyte receptor expression, and delta wave/slow oscillation characteristics.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C70-C77, C79-C82 represent prior literature cited in the discussion to contextualize the current findings. These are appropriately cited and accurately represent the referenced work.",
+    "evaluation": "Claims C74-C79, C84, C86, C88-C89, C91, and C93 represent established findings from prior literature cited in the discussion to contextualize the current results. These are appropriately cited and provide important context but are not novel findings from this manuscript.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R17",
+    "result_id": "R19",
     "claim_ids": [
-      "C88",
-      "C89",
-      "C90",
-      "C91"
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
     ],
-    "result": "Methodological details including animal subjects, housing conditions, recording times, and image analysis approach.",
+    "result": "Methodological details describing the IP3R2 KO mouse model, recording time windows (ZT 2-5), use of AQuA software for Ca2+ event detection, and criteria for sleep scoring and waveform detection.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88-C91 describe methodological details that are clearly stated in the Materials and methods section. These are factual descriptions of the experimental procedures used.",
+    "evaluation": "Claims C94-C99 describe methodological approaches used in the study. These are clearly documented in the Materials and methods section and are essential for reproducibility, but represent technical details rather than scientific findings.",
     "result_type": "MINOR"
   }
 ]

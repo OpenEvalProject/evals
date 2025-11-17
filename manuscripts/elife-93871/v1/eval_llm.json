@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CCL5 and heparin undergo liquid-liquid phase separation (LLPS) in vitro in a concentration-dependent and salt-sensitive manner. At optimal ratios (1:20 CCL5:heparin), large round droplets form that are dynamic, fusogenic, and show rapid FRAP recovery. High salt concentrations attenuate phase separation, while the A22K-CCL5 mutant with higher positive charge forms aggregates instead of phase-separated droplets. These results indicate that CCL5-heparin LLPS is mediated by weak electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 provide converging experimental evidence from microscopy (C7-C10), FRAP (C11), salt titration (C12), and mutant analysis (C13) that collectively demonstrate CCL5-heparin LLPS with appropriate biophysical properties. The interpretation that weak electrostatic interactions drive this process (C14-C15) is well-supported by the salt and charge-density experiments. The comparison to RNA-binding protein phase separation (C85) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The BBXB motif (44RKNR47) of CCL5 is critical for heparin binding and phase separation. Mutation of this motif to 44AANA47 significantly reduces droplet formation in vitro, and molecular docking analysis shows that heparin tetrasaccharide forms crucial electrostatic contacts with Arg44, Lys45, and Arg47 at the CCL5 dimer interface, with significantly higher binding free energy for the mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 provide complementary experimental (C19, turbidity/microscopy) and computational (C20-C21, molecular docking and binding free energy) evidence that the 44RKNR47 motif is essential for CCL5-heparin interaction. The mutant phenotype (C19) validates the prior structural knowledge (C16-C17) and the computational predictions (C20-C21) provide molecular-level support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "CCL5 immobilized on heparin-beads, but not Ni-NTA beads, forms gradients through diffusion in Matrigel. His-CCL5-EGFP diffuses considerable distances from heparin-beads forming shallow gradients, while no diffusion occurs from Ni-NTA beads. The 44AANA47 mutant shows significantly weaker binding and no diffusion from heparin-beads. This suggests that heparin-mediated phase separation enables rapid exchange and gradient formation, while direct immobilization on Ni-NTA beads does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide direct experimental evidence (microscopy and 3D imaging, C22-C25) comparing two immobilization methods with contrasting results. The interpretation (C26-C27) that phase separation enables diffusion while direct binding does not is logically consistent with the data. The mutant control (C24) strengthens the conclusion by showing specificity for the heparin-binding motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "CCL5-heparin-beads show robustly higher chemotactic activity for THP-1 cells compared to CCL5-Ni-NTA beads, which show essentially no chemotaxis. The 44AANA47 mutant on heparin-beads shows reduced activity compared to wild-type. This indicates that chemotactic function requires gradient formation via phase separation, not just immobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide functional validation of the gradient formation results through Transwell chemotaxis assays. The dramatic difference between heparin-beads and Ni-NTA beads (C28-C29), combined with the mutant control (C30), strongly supports the interpretation (C31) that functional gradients, not mere immobilization, drive chemotaxis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CCL5 forms phase-separated condensates on the surface of CHO-K1 cells (which express HS) but not on CHO-677 cells (which lack HS). The condensates on CHO-K1 show ~40% fluorescence recovery in FRAP, indicating liquid-like properties. This demonstrates that HS on the cell surface is essential for CCL5 phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 use a well-controlled cell line pair (CHO-K1 vs CHO-677) to demonstrate HS-dependent phase separation on cell surfaces. The microscopy data (C32-C33), Z-stack imaging, and FRAP analysis (C34) provide strong evidence for liquid-like condensates. The interpretation (C35-C36) is directly supported by the genetic difference between the cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "HS on the cell surface is essential for CCL5 chemotactic activity. CHO-K1 cells with CCL5 show significantly higher chemotactic activity than CCL5 alone or CHO-677 cells with CCL5. Addition of soluble heparin abolishes phase separation on CHO-K1 and attenuates chemotactic activity. The 44AANA47 mutant shows no obvious condensates on CHO-K1 and reduced chemotactic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 provide comprehensive functional validation using Transwell assays with multiple controls: HS-deficient cells (C38), competitive inhibition with heparin (C39-C40), and the heparin-binding mutant (C41-C42). The convergence of these independent approaches strongly supports the conclusion (C43) that HS is essential for both phase separation and chemotaxis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CCL5-EGFP released from transfected CHO-K1 cells forms phase-separated condensates on HUVEC cells that fuse over time and show liquid-like FRAP properties. CCL5-EGFP establishes concentration gradients on HUVEC cells with decreasing intensity at increasing distances from source cells. Gradients form on CHO-K1 but not CHO-677 cells. CCL5-EGFP transfected CHO-K1 cells show stronger chemotactic activity than wild-type CHO-K1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 demonstrate gradient formation in a more physiologically relevant cell-cell context. The microscopy data (C44-C47) show condensate formation, fusion, FRAP recovery, and spatial gradients. The HS-dependence is confirmed by the CHO-K1 vs CHO-677 comparison (C48), and functional relevance is shown by enhanced chemotaxis (C49). This provides strong support for the physiological relevance of the phase separation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C87",
+      "C88"
+    ],
+    "result": "HUVEC and CHO-K1 cells in the presence of CCL5 show significantly higher chemotactic activity for human blood cells than CCL5 alone or CHO-677 with CCL5. Despite high variability in total cell numbers across blood samples, the trend of chemotactic activity is consistent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C87-C88 extend the findings to primary human blood cells, increasing physiological relevance. While the authors acknowledge high experimental variability (C87), they demonstrate consistent trends across samples (C88). The use of HUVEC (endothelial cells) and the HS-dependence shown by CHO-677 controls support the conclusion, though the high variability somewhat weakens the quantitative interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In vivo peritoneal injection experiments in mice show that wild-type CCL5 induces robust recruitment of inflammatory cells (~4-fold over saline control), while the 44AANA47 mutant shows reduced recruitment. Co-injection of heparin with wild-type CCL5 attenuates cell recruitment. This demonstrates that CCL5-HS phase separation contributes to chemotaxis function in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide critical in vivo validation of the in vitro findings. The use of the heparin-binding mutant (C52) and competitive inhibition with exogenous heparin (C53) provide mechanistic controls. The conclusion (C54) is well-supported by the convergence of these approaches, though additional mechanistic details (e.g., direct visualization of gradients in vivo) would strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "CCL5 (RANTES) is a 68-amino acid inflammatory chemokine that recruits various leukocytes through chemokine gradients. It reversibly self-assembles into high-MW oligomers (>600 kDa), binds heparin with high affinity, and its oligomerization for gradient formation is modulated by GAGs on the cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background information about CCL5 that is well-established in the literature and supported by appropriate citations. These claims establish the biological context and prior knowledge necessary for interpreting the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C75",
+      "C76",
+      "C89",
+      "C90"
+    ],
+    "result": "Background claims establish that chemokines are immobilized on GAGs including HS to form gradients, that LLPS is an important mechanism for biomolecular organization, that HS is ubiquitously expressed on endothelial cells, and that the BBXB motif in CC chemokines mediates GAG binding. However, the molecular mechanisms of HS in CCL5 chemotaxis had not been previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C90 (excluding those already grouped) provide literature context and establish the knowledge gap addressed by this study. All claims are appropriately cited and represent established knowledge in the field. These provide essential background but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C72",
+      "C73",
+      "C74",
+      "C79",
+      "C80"
+    ],
+    "result": "The study concludes that co-phase separation of CCL5 with HS establishes specific chemokine concentration gradients for chemotactic activity. The interaction is mediated by weak multivalent electrostatic binding that facilitates LLPS and diffusion. Mutations in the heparin-binding motif result in loss of binding and chemotactic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C72-C74, C79-C80 represent summary conclusions that integrate the experimental findings. These conclusions are well-supported by the convergence of in vitro, cell-based, and in vivo experiments presented in the other result groups. The mechanistic interpretation of weak electrostatic interactions is supported by salt-sensitivity and mutant analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors speculate that HS on cell surfaces has sufficient capacity to interact with chemokines and control their activity, that overexpression of CCL5 may represent acute inflammation, that a physiological balance between CCL5 and HS modulates chemokine activity, and that HS mimetics could be developed as therapeutic agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78, C81-C82 are explicitly speculative (marked as SPECULATION in evidence_type). While these hypotheses are reasonable extensions of the findings, they lack direct experimental support in this study. C78 is partially supported by the overexpression experiment (C49), but the connection to acute inflammation is speculative. These represent interesting future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

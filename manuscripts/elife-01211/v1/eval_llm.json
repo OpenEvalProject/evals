@@ -3,10 +3,6 @@
     "result_id": "R1",
     "claim_ids": [
       "C3",
-      "C21",
-      "C22",
-      "C26",
-      "C27",
       "C28",
       "C29",
       "C30",
@@ -17,138 +13,108 @@
       "C35",
       "C36",
       "C37",
-      "C38",
-      "C39",
-      "C40",
-      "C41",
-      "C42"
+      "C38"
     ],
-    "result": "The flexible \u03b2-hairpin arms of Fis dimers contact the DNA binding domain (DBD) of Hin, specifically at residues Arg154 and Leu155 in helix 1 of the DBD. Crosslinking experiments using AMAS and BMOE with various spacer lengths identified five positions within helix 1 (K146C, H147C, E150C, Q151C, K158C) that crosslink with Fis-Q21C. Mutagenesis showed that R154A and L155A severely impair Fis-activated DNA inversion (>50-fold reduction for L155A), but these mutations do not affect DNA binding or Fis-independent recombination by hyperactive Hin mutants.",
+    "result": "The flexible \u03b2-hairpin arms of Fis dimers contact the DNA binding domain (DBD) helix 1 of Hin, specifically through residues Arg154 and Leu155 on Hin. Crosslinking experiments using AMAS and BMOE with varying spacer lengths identified five positions within DBD helix 1 (K146C, H147C, E150C, Q151C, and K158C) that crosslink to Fis-Q21C. Mutagenesis showed that Hin-L155A exhibits >50-fold reduced inversion rates, while rescue experiments with hyperactive Hin-H107Y/L155A demonstrated that these residues specifically function in Fis-activation rather than catalysis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The crosslinking data (C21-C33) provide direct physical evidence for proximity between Fis \u03b2-hairpin arms and Hin DBD helix 1. The mutagenesis data (C34-C42) demonstrate functional importance of R154 and L155, with appropriate controls showing these residues specifically affect Fis-activation rather than catalytic activity or DNA binding. The rescue experiments with H107Y hyperactive mutant confirm specificity.",
+    "evaluation": "The crosslinking data (C28-C34) with multiple spacer lengths and positions provides strong spatial evidence for Fis-Hin DBD proximity. The mutagenesis data (C35-C36) demonstrates functional importance, and rescue experiments (C37-C38) confirm specificity for Fis-activation. The convergence of structural, biochemical, and functional data strongly supports this result.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C43",
-      "C44",
-      "C45"
+      "C39",
+      "C40"
     ],
-    "result": "Fis contacts only two of the four Hin subunits within the cleaved invertasome, specifically those bound to hix1L and hix2R (the bottom two subunits in the model). Site-specific crosslinking experiments using substrates that allow labeling of individual Hin subunits showed that Fis-Hin crosslinks form only when Hin is bound to hix1L or hix2R, but not at hix1R or hix2L.",
+    "result": "Fis contacts only two of the four Hin subunits within the DNA-cleaved invertasome, specifically those bound to hix1L and hix2R half-sites. Site-specific crosslinking experiments using substrates that allow labeling of individual Hin subunits demonstrated that Fis-Hin crosslinks only occur with subunits bound to hix1L and hix2R, but not hix1R or hix2L.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The site-specific crosslinking experiments (C43-C44) using specially designed substrates provide direct evidence for which Hin subunits contact Fis. The experimental design is sound, using restriction site placement to selectively label different Hin subunits. This result is critical for understanding invertasome architecture.",
+    "evaluation": "The site-specific crosslinking approach (C39-C40) using substrates with strategically placed EcoRI sites provides direct experimental evidence for which Hin subunits contact Fis. The data from both BMOE (cysteine-cysteine) and AMAS (cysteine-lysine) crosslinking consistently show the same pattern, strongly supporting the conclusion.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C79",
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85"
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
     ],
-    "result": "A basic region (helix-B) on the Hin catalytic domain containing residues Lys47, Arg48, and Lys51 contacts enhancer DNA between the two Fis binding sites. FeBABE-mediated DNA scission experiments localized this contact to AT-rich sequences in the enhancer center. Mutations of helix-B residues (particularly R48A/K51A double mutants) severely impair Fis-activated inversion but do not affect Fis-independent recombination by hyperactive mutants. The basic character of these residues is uniquely conserved among DNA invertases but not resolvases.",
+    "result": "Basic residues in the Hin helix-B region (Lys47, Arg48, Lys51) function in Fis/enhancer-dependent activation. Single mutations show moderate effects (3-fold reduction), but double mutations (K47A/R48A and R48A/K51A) severely impair Fis-activated inversion. Rescue experiments with hyperactive Hin-H107Y demonstrate these residues specifically function in Fis-activation. Helix-B mutants also show increased processive DNA exchange (8-fold increase in knotting on short spacer substrates), indicating destabilized enhancer association.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The FeBABE scission data (C60-C61) provide direct physical evidence for proximity between helix-B and enhancer DNA. The mutagenesis data (C47-C51) demonstrate functional importance with appropriate controls. The enhancer sequence substitution experiments (C62-C64) show modest effects of AT-rich sequences. The conservation analysis (C83-C85) supports the functional specificity of these residues for DNA invertases.",
+    "evaluation": "The mutagenesis data (C41-C43) shows clear functional effects that are specific to Fis-activation as demonstrated by rescue experiments. The knotting data (C45-C46) provides independent topological evidence for destabilized enhancer interactions. The convergence of functional and topological data strongly supports the role of helix-B in enhancer-dependent activation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C107",
-      "C108",
-      "C109",
-      "C110"
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
     ],
-    "result": "The Fis/enhancer association with the Hin tetramer restricts DNA exchange to a single 180\u00b0 rotation by preventing multiple subunit rotations. Wild-type Hin generates only ~5% knotted products with short spacers but 30% with long spacers. Helix-B mutants (R48A, K51A) show ~40% knotting even with short spacers (8-fold increase), indicating destabilized enhancer association. The small loop between hixL and enhancer prevents multiple DNA windings through torsional strain.",
+    "result": "The Hin helix-B region contacts enhancer DNA between the two Fis binding sites. FeBABE-coupled Hin-N54C generates DNA scission sites in the center of the enhancer, between the Fis dimer binding sites. Replacement of A/T-rich segments in this region with G/C-rich sequences reduces inversion rates 2.5-fold, while replacement of most intervening sequence reduces rates 5-fold, indicating a modest sequence preference.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The single-round knotting experiments (C55-C59) provide quantitative evidence for the regulatory role of Fis/enhancer in limiting processive recombination. The comparison between wild-type and mutant Hin, and between short and long spacers, provides strong support for the proposed mechanism. The topological analysis is consistent with the invertasome model (C109).",
+    "evaluation": "The FeBABE scission data (C47-C48) provides direct spatial evidence for helix-B proximity to enhancer DNA. The enhancer mutagenesis data (C49-C50) demonstrates functional importance of this DNA region. While the sequence effects are modest (2.5-5 fold), they are consistent and reproducible, supporting the conclusion of helix-B-DNA contacts.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C65",
-      "C66",
-      "C67",
-      "C68",
-      "C89",
-      "C90"
+      "C52",
+      "C53",
+      "C54",
+      "C68"
     ],
-    "result": "Fis productively interacts with inactive Hin dimers at an early step to promote formation of catalytically-active tetramers. Disulfide-linked Hin-M101C dimers that are locked in an inactive conformation can be crosslinked to Fis, and these Fis-crosslinked dimers can subsequently transition into active tetramers competent for DNA cleavage after reduction of the disulfide bond.",
+    "result": "Fis productively contacts inactive Hin dimers at an early step to promote formation of catalytically-active tetramers. Disulfide-linked Hin-M101C dimers that are locked in an inactive conformation can be crosslinked to Fis, and upon reduction of the disulfide bond, these Fis-crosslinked Hin dimers can transition into active tetramers competent for DNA cleavage.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The experimental design using disulfide-locked Hin dimers (C66-C68) is elegant and provides direct evidence that Fis contacts Hin dimers before tetramer formation. The controls showing that crosslinking must occur before disulfide reduction are appropriate. This result establishes the temporal order of events in invertasome assembly.",
+    "evaluation": "The experimental design (C52-C54, C68) using disulfide-locked Hin dimers provides strong evidence for Fis interaction with inactive dimers. The demonstration that crosslinked Fis-Hin dimers can proceed to form active tetramers after disulfide reduction directly supports the proposed early interaction. Controls showing no crosslinking when DTT is added before crosslinker rule out artifacts.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C69",
-      "C70",
-      "C111",
-      "C112"
+      "C55",
+      "C56",
+      "C75"
     ],
-    "result": "DNA ligation by Hin can efficiently occur when Hin remains covalently crosslinked to Fis. Both Fis-Hin crosslinked and uncrosslinked complexes promote DNA ligation with >85% efficiency, indicating that the invertasome normally remains intact throughout the entire reaction including the final ligation step.",
+    "result": "DNA ligation by Hin proceeds efficiently when Hin remains covalently crosslinked to Fis, demonstrating that the invertasome normally remains intact throughout the entire reaction. Both Fis-Hin crosslinked and uncrosslinked complexes efficiently promote DNA ligation (>85% and >95% loss of covalent Hin-DNA product, respectively).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The ligation experiments with crosslinked Fis-Hin complexes (C69, C111) provide direct evidence that Fis association does not inhibit the final chemical step. The high efficiency of ligation (~85-95%) in crosslinked complexes is compelling. This contradicts an earlier proposal for Gin and is supported by topological data cited from previous work.",
+    "evaluation": "The ligation data (C55-C56) with crosslinked complexes provides direct experimental evidence that Fis-Hin association does not inhibit the final chemical step. The high efficiency of ligation in crosslinked complexes strongly supports the conclusion that the invertasome remains intact. This is further supported by citations to previous topological studies (C75).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C71",
-      "C72",
-      "C74",
-      "C76",
-      "C77",
-      "C78",
-      "C92",
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97"
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
     ],
-    "result": "A molecular model of the invertasome was constructed showing that Hin contacts the Fis/enhancer at four distinct locations: (1) DBDs of two Hin subunits with Fis \u03b2-hairpin arms, and (2) catalytic domains with enhancer DNA between Fis dimers. The model shows an S-shaped enhancer DNA structure due to Fis-induced bending. During conformational changes from pre-activated to DNA-cleaved tetramer, the Hin DBDs undergo small positional changes relative to Fis, while helix-B moves substantially (~50\u00b0 angle change) to clamp onto enhancer DNA.",
+    "result": "A molecular model of the Hin invertasome was constructed based on the Fis-bound enhancer structure, Hin tetramer models, and experimental constraints from crosslinking and mutagenesis. The model positions Fis \u03b2-hairpin arms proximal to Hin DBD helix 1 (specifically Arg154 and Leu155) and Hin helix-B basic residues (Lys47, Arg48, Lys51) against enhancer DNA. Conservation analysis shows that key Hin residues (Arg154, Leu155, Gln151 in DBD; Lys47, Arg48, Lys51 in helix-B) are uniquely conserved among DNA invertases but not resolvases.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The molecular model integrates multiple lines of experimental evidence (crosslinking, mutagenesis, FeBABE scission) with existing structural data. The model is consistent with all experimental observations and provides a coherent structural framework. However, the model is based on manual docking and homology modeling rather than direct structural determination, which introduces some uncertainty in precise atomic details.",
+    "evaluation": "The model (C57-C61) is well-constrained by extensive experimental data including crosslinking distances, mutagenesis, and FeBABE scission sites. The conservation analysis (C62-C65) provides strong supporting evidence that the identified residues have invertase-specific functions. The model is consistent with all experimental observations and is supported by previous structural studies (C60).",
     "result_type": "MAJOR"
   },
   {
@@ -156,54 +122,53 @@
     "claim_ids": [
       "C2",
       "C4",
-      "C14",
       "C18",
-      "C87",
-      "C88",
-      "C99",
-      "C100",
-      "C101",
-      "C102",
-      "C104"
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C67",
+      "C69"
     ],
-    "result": "The Fis/enhancer system promotes synapsis and remodeling of Hin dimers into the active tetramer through multiple mechanisms. Wild-type Hin cannot form active tetramers without Fis/enhancer. DNA supercoiling energy appears essential for synapsis. Conformational energy from the Fis/enhancer segment and attractive electrostatic forces between helix-B and enhancer DNA drive tetramer assembly and the final conformational change into the active structure.",
+    "result": "The Fis/enhancer system promotes synapsis and remodeling of Hin dimers into a chemically-active tetramer competent for DNA chemistry and exchange. The invertasome functions to ensure intramolecular DNA inversion, promote conformational changes required for DNA chemistry, and limit subunit rotation to a single 180\u00b0 step. Conformational energy from DNA supercoiling appears essential to promote synapsis, as Fis-Hin interactions are not observed in solution assays.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "While the requirement for Fis/enhancer is well-established (C87-C88), the proposed mechanisms for energy transduction (C99-C102, C104) are largely speculative. The claims about supercoiling energy, conformational energy harvesting, and electrostatic forces are reasonable hypotheses but lack direct experimental validation. These represent proposed mechanisms rather than demonstrated facts.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result synthesizes multiple lines of evidence including the demonstration of Fis-dimer interactions (C67-C68), the requirement for supercoiling (C69), and the multiple regulatory functions of the invertasome (C20-C23). The claims are well-supported by both current experimental data and citations to previous work. The inference about supercoiling energy (C69) is reasonable given the lack of detectable solution interactions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C105",
-      "C106"
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
     ],
-    "result": "In the invertasome model, supercoiling energy in the looped DNA drives clockwise rotation of the top subunit pair relative to the bottom pair fixed on the enhancer. A single 180\u00b0 rotation results in DNA inversion with loss of four supercoils, as previously shown for Hin and Gin.",
+    "result": "The multiple connections stabilizing the Hin tetramer onto the Fis/enhancer element restrict processive subunit exchanges. A single 180\u00b0 rotation results in inversion with loss of four supercoils. When the hix-enhancer distance is short (~100 bp), the small loop inhibits additional rotations due to torsional strain. The structures of knotted DNA products from processive reactions are consistent with DNA exchange initiating within the invertasome model.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The topological prediction of four supercoil loss is supported by citations to previous experimental work (C106). The model is consistent with established topological data for Hin and Gin recombination. However, the specific mechanism of how supercoiling energy drives rotation is inferred from the model rather than directly demonstrated.",
-    "result_type": "MINOR"
+    "evaluation": "The topological analysis (C70-C74) is well-supported by citations to previous work on DNA topology and knotting. The inference about torsional strain in small loops (C71) is mechanistically sound and consistent with experimental observations of processive recombination under different conditions (C72). The consistency of knotted product structures with the model (C73) provides strong supporting evidence.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C113",
-      "C114",
-      "C115",
-      "C116",
-      "C117",
-      "C118",
-      "C119",
-      "C120"
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
     ],
-    "result": "Comparison with Sin and \u03b3\u03b4/Tn3 resolvases reveals conserved regulatory principles. Sin uses DBD helix 1 for synapsis (analogous to Fis-Hin interaction) and residues near helix-B (F52, R54) for regulatory contacts. \u03b3\u03b4/Tn3 resolvases use a cluster of residues (R2, R32, K54, E56) in the 2-3' interface. In all systems, these regulatory interactions are dispensable in hyperactive mutants, suggesting that protein-protein or DNA-protein forces on the helix-B region promote remodeling into active tetramers.",
+    "result": "Comparison with Sin and \u03b3\u03b4/Tn3 resolvases reveals conserved regulatory principles across serine recombinases. Sin uses DBD helix 1 for regulatory dimer interactions and residues near helix-B (Phe52, Arg54) for regulatory-catalytic subunit interactions. \u03b3\u03b4/Tn3 resolvases use a cluster of residues (Arg2, Arg32, Lys54, Glu56) comprising the 2-3' interface. In all cases, these interactions are dispensable in hyperactive mutants, suggesting that protein-protein or DNA-protein forces acting on the helix-B region promote remodeling into active tetrameric conformations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The comparison draws on well-cited literature for Sin and resolvase systems (C113, C117-C119). The parallel between regulatory mechanisms is well-reasoned and supported by the observation that all systems can bypass regulation through hyperactive mutations. This comparative analysis strengthens the general significance of the Hin findings.",
-    "result_type": "MINOR"
+    "evaluation": "The comparative analysis (C76-C81) is well-supported by citations to previous work on Sin and resolvases. The identification of analogous regulatory interfaces across different serine recombinases strengthens the proposed mechanism for Hin. The generalization about helix-B region function (C81) is a reasonable inference based on the convergent evidence from multiple systems.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
@@ -217,80 +182,21 @@
       "C11",
       "C12",
       "C13",
+      "C14",
       "C15",
       "C16",
       "C17",
       "C19",
-      "C20"
-    ],
-    "result": "Background information on serine recombinases and the Hin system: Hin is a DNA invertase regulated by a Fis-bound enhancer element. Serine recombinases form tetrameric synaptic complexes, cleave all four DNA strands via 5'-phosphoserine linkages, and exchange strands by 180\u00b0 subunit rotation. Hin inverts ~1 kb DNA in Salmonella between hix sites, switching flagellin gene expression for immune evasion. The enhancer can activate inversion from many kb away by DNA looping.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "These are well-established facts about serine recombinases and the Hin system, supported by appropriate citations to the literature (C6-C11, C16-C17, C19-C20). This background information provides essential context for the study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C23",
       "C24",
-      "C25"
+      "C25",
+      "C26",
+      "C27"
     ],
-    "result": "Hin contains 10 lysines per subunit (six in catalytic domain, four in DBD). Two DBD lysines are in an unstructured C-terminal segment not present in other invertases that can be deleted without affecting Fis-activated inversion.",
+    "result": "Background on serine recombinases and the Hin system: Hin is a DNA invertase subclass serine recombinase regulated by a remote Fis/enhancer element. Serine recombinases form tetrameric synaptic complexes, cleave all four DNA strands simultaneously, and exchange DNA by 180\u00b0 subunit rotation. Hin inverts ~1 kb DNA between hix sites in Salmonella, switching flagellin gene expression for immune evasion. Wild-type Hin requires the Fis/enhancer system for activity, though hyperactive mutants have been isolated.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "This is a straightforward structural description supported by the figure (C23) and functional data showing the C-terminal segment is dispensable (C25). The citation to the crystal structure (C24) provides additional support.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C73",
-      "C75"
-    ],
-    "result": "The hin enhancer contains two Fis binding sites separated by 47 bp. Previous helical phasing experiments showed that enhancer shape is critical for function.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "This structural information is well-supported by citations to previous work (C73, C75). These are established facts about the enhancer that provide context for the current study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C91"
-    ],
-    "result": "Remodeling into the active tetramer may occur through an intermediate captured by crystal structures of TP901 integrase and \u03b3\u03b4 resolvase.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "This is explicitly stated as speculation ('may occur') based on analogy to crystal structures of related proteins. While reasonable, this is a hypothesis rather than a demonstrated result. The claim appropriately reflects uncertainty.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C103"
-    ],
-    "result": "Spring-like mechanisms contributing to assembly of active recombination complexes have been proposed for the Tn10 transpososome.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "This is a citation to previous work on a related system, appropriately referenced. It provides context for the proposed mechanisms in Hin.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C86"
-    ],
-    "result": "Both \u03b3\u03b4/Tn3 and Sin resolvases contain regulatory residues near helix-B that mediate protein-protein contacts during synaptic complex assembly.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "This is well-supported by multiple citations to the literature on resolvase systems. It provides important comparative context.",
+    "evaluation": "These background claims (C1, C6-C27) are well-established knowledge in the field, supported by appropriate citations to previous work. They provide essential context for understanding the current study but do not represent new findings.",
     "result_type": "MINOR"
   }
 ]

@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on SWR1 function and chromatin architecture at gene promoters. SWR1 is a conserved chromatin remodeler that deposits H2A.Z into +1 nucleosomes adjacent to nucleosome-depleted regions (NDRs) at gene promoters. The affinity of SWR1 for nucleosomes is enhanced by long-linker DNA and histone acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the biological context for the study and are well-supported by multiple citations to prior literature (C7-C13). The characterization of SWR1's function (C1) is consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C2",
+      "C31"
+    ],
+    "result": "SWR1 exhibits a kinetic binding preference for NDR-length DNA over shorter linker DNA. The on-rate (kbind) increases linearly with DNA length from 20 bp to 150 bp (1\u00d710^6 to 3.6\u00d710^7 M^-1 s^-1), and this affinity is primarily limited by the on-rate rather than off-rate for DNA >60 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic measurements are directly supported by single-molecule colocalization data in Figure 1F-G showing linear increase in kbind with DNA length (R\u00b2=0.99) and the ability of longer DNA to accommodate multiple SWR1 molecules (C20). The conclusion that affinity is on-rate limited (C31) is appropriately inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "SWR1 binding lifetime (tbound) increases dramatically with DNA length, showing ~120-fold increase from 20 bp (1.5\u00b10.3 s) to 150 bp (~3 min at low laser power). The lifetime is sensitive to ionic strength and competitor DNA but unchanged by ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding lifetime measurements are well-supported by TIRF data in Figure 1G and supplementary figures. The dramatic increase at 80+ bp and sensitivity to salt/competitor DNA are clearly demonstrated. The lack of ATP effect on tbound (C26) is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C74"
+    ],
+    "result": "SWR1 undergoes Brownian diffusion on nucleosome-free DNA. Single-particle tracking shows SWR1 is mobile on lambda DNA with a diffusion coefficient of 0.013\u00b10.002 \u03bcm\u00b2/s, which is 40-fold larger than immobile dCas9 control. MSD analysis confirms linear relationship indicating Brownian diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a novel and well-supported finding. The mobility is clearly demonstrated by kymographs (Figure 2), MSD analysis shows linear relationship confirming Brownian diffusion (C33), and the diffusion coefficient is appropriately compared to an immobile control (C35). This represents the first demonstration of chromatin remodeler sliding on DNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C3",
+      "C4"
+    ],
+    "result": "ATP binding (not hydrolysis) enhances SWR1 diffusion on DNA. The diffusion coefficient increases from 0.013 \u03bcm\u00b2/s (no ATP) to 0.024 \u03bcm\u00b2/s (1 mM ATP), with ATP\ud835\udefeS producing similar enhancement. ATP also reduces the fraction of immobile molecules from 32% to 9%. Movement remains non-directional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ATP enhancement is well-demonstrated by comparing diffusion in ATP vs ATP\u03b3S vs ADP conditions (Figure 3). The lack of significant difference between ATP and ATP\u03b3S (C41) strongly supports that binding rather than hydrolysis drives the effect. MSD plots remain linear, confirming non-directional movement (C37). Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C6",
+      "C87"
+    ],
+    "result": "The Swc2 DNA-binding domain contributes to SWR1 diffusive behavior. Isolated Swc2 DBD also diffuses on DNA with a diffusion coefficient (1.04\u00b10.09 \u03bcm\u00b2/s) ~40-fold larger than full SWR1, consistent with its smaller size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The diffusion of Swc2 DBD is clearly demonstrated in Figure 4. The 40-fold difference in diffusion coefficient between Swc2 DBD and full SWR1 is appropriately attributed to size differences. The structural relationship between Swc2 and the core ATPase (C87) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C89"
+    ],
+    "result": "SWR1 and Swc2 DBD utilize predominantly helically-coupled sliding with occasional hopping. Both show increased diffusion and decreased binding lifetime with increasing salt, features of hopping. However, median diffusion coefficients fall below theoretical limits for rotation-coupled sliding, with some individual traces exceeding this limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mixed sliding/hopping model is well-supported by multiple lines of evidence: salt-dependent diffusion increase (C50-C51, Figure 4A-B), competitor DNA effects (C53-C54), comparison to theoretical limits (C56-C58, Figure 4C), and established biophysical principles (C52, C89). The conclusion of predominantly sliding with occasional hopping (C59) is appropriately inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C5",
+      "C90",
+      "C91"
+    ],
+    "result": "SWR1 cannot efficiently bypass protein roadblocks. In dual-color tracking with dCas9 barriers, 67% of encounters showed reflection, 30% showed SWR1 stuck at dCas9, and only 3% showed bypass events. This supports predominantly sliding diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The roadblock experiments are well-designed and clearly presented in Figure 5. The quantification of encounter types (C60-C62) is appropriate, and the conclusion that inability to bypass supports sliding (C63) is consistent with prior literature on protein diffusion mechanisms (C90-C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SWR1 diffusion is confined by nucleosomes on sparse nucleosome arrays. On arrays with ~40 nucleosomes, SWR1 shows confined diffusion (\u03b1=0.24) compared to free diffusion on naked DNA (\u03b1=0.88). The confinement length (~0.23 \u03bcm) is consistent with internucleosomal spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleosome array experiments are well-executed with appropriate characterization (C64-C65, Figure 6B-E). The MSD analysis clearly shows confined diffusion (C68-C70, Figure 6F), and the calculated confinement length (C72) is reasonably consistent with expected internucleosomal spacing. The conclusion of confinement between nucleosomes (C73) is appropriately inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82"
+    ],
+    "result": "SWR1's diffusion coefficient is comparable to other proteins using facilitated diffusion, and would allow rapid scanning of NDRs. With only 7% of yeast nucleosomes being SWR1 targets, 1D diffusion from NDRs could facilitate target search, requiring only 46 ms to scan a 150 bp NDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to other diffusing proteins (C75) is supported by appropriate citations. The genomic context (C76-C78) is well-established from prior studies. The scanning time calculation (C82) is appropriately derived from the measured diffusion coefficient and NDR length, though it assumes continuous diffusion which may not fully reflect in vivo conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C21"
+    ],
+    "result": "The Cy3-labeled SWR1 complex is functionally active. Cy3-Swc7 was successfully incorporated into the SWR1 complex and exhibits histone exchange activity identical to wild-type SWR1. Cy3-Swc7 alone shows no DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional validation is well-documented with glycerol gradient (C84, Figure 1\u2014figure supplement 1A) and EMSA data (C83, Figure 1\u2014figure supplement 1B). The lack of Cy3-Swc7 binding to DNA alone (C21) is stated but data not shown, which is a minor limitation but does not undermine the overall validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C30",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C88",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Prior work context and in vivo relevance. Facilitated diffusion is established for DNA-binding proteins. Recent in vivo studies show chromatin remodelers have enhanced bound-state diffusion compared to histones. SWR1 belongs to SF2 translocases and has low basal ATP hydrolysis. Various factors affect SWR1 localization in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite and summarize prior literature establishing the context for the current study. The citations appear accurate and relevant to the claims made. This provides important background but represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Hopping diffusion represents a trade-off between scanning speed and accuracy, with implications for target bypass as shown for LacI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is appropriately supported by citation to prior work on LacI diffusion mechanisms and provides relevant context for interpreting the SWR1 results.",
+    "result_type": "MINOR"
+  }
+]

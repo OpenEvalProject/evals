@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C140"
+    ],
+    "result": "CONCEPT organoids self-organize into concentric zones of telencephalic and ocular tissues along a center-periphery axis, with FOXG1+ telencephalon, PAX2+ VSX2- optic stalk, PAX2+ VSX2+ optic disc, and VSX2+ neuroretinal tissues positioned sequentially from center to periphery, mimicking the spatial organization observed in E13.5 mouse embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C41, and C140 collectively demonstrate concentric tissue organization through immunostaining (Figures 1H-K, 2H-L) and in situ hybridization (Figures 1P-W) showing marker expression patterns. The spatial arrangement of FOXG1+, PAX2+, VSX2+, and morphogen-expressing zones is well-documented across multiple time points (days 15-26) with consistent patterns. The comparison to E13.5 mouse embryos provides developmental context supporting the biological relevance of this organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C104",
+      "C105",
+      "C106",
+      "C113"
+    ],
+    "result": "RGCs in CONCEPT organoids grow directional axons toward and along a circular path defined by adjacent PAX2+ VSX2+ optic disc cells, with PAX2+ VSX2- optic stalk cells forming an inner boundary, recapitulating in vivo RGC axon pathfinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45-C46, C49-C51, and C104-C106 are strongly supported by immunostaining data (Figures 2A-L, 7A-F) showing POU4F2+ RGCs with TUBB3+ and CNTN2+ axons following circular paths adjacent to PAX2+ VSX2+ cells. The observation that axons exit the circular path where PAX2+ optic disc cells are absent (C105, Figure 7A-F) provides compelling evidence for the guidance role of these cells. Multiple experiments (N>5) and reproducibility in hiPSCs (C107, Figure 7\u2014supplement 1) strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "Single-cell RNA sequencing of CONCEPT organoids at day 24 identified 14 cell clusters comprising telencephalic and ocular cell types, including a PAX2+ VSX2+ optic disc population (cluster 2) that differentially expresses COL9A3, COL13A1, CYP1B1, FGF8, and FGF9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C59-C62, and C68-C72 are supported by scRNA-seq data (Figure 4) showing 10,218 cells clustered into 14 groups with clear marker expression patterns. The identification of cluster 2 as optic disc cells is supported by co-expression of PAX2 and VSX2 (Figure 4F), differential expression of known optic disc markers like COL13A1 (C71, validated by Sandberg-Lall et al., 2000), and spatial correspondence with immunostaining data (Figure 2H-L). The sequencing depth (27,842 reads, 2,967 genes per cell) is adequate for cell type identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Cluster 11 comprises differentiating retinal neurons, predominantly early RGCs expressing ATOH7, POU4F2, SNCG, and the cell surface marker CNTN2, with smaller populations expressing photoreceptor and amacrine/horizontal cell markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by scRNA-seq data (Figure 4Q-X) showing cluster 11 cells express neurogenic marker ATOH7 and RGC markers POU4F2 and SNCG. The co-expression of CNTN2 with POU4F2 (Figure 4R-S) identifies CNTN2 as an RGC-specific marker. The presence of small populations expressing OTX2/CRX and TFAP2C/PTF1A (C80) indicates heterogeneity within the cluster, which is expected during retinal differentiation. The inference that cluster 11 comprises predominantly early RGCs is well-supported by the marker expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C99",
+      "C100",
+      "C112",
+      "C114",
+      "C115",
+      "C118"
+    ],
+    "result": "CNTN2 is a specific cell-surface marker for differentiating human RGCs that enables one-step isolation of approximately 385,000 RGCs from 100 retinal organoids via MACS, yielding cells expressing RGC markers TUBB3, POU4F2, ISL1, RBPMS, and SNCG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C99-C100, C112, and C114-C118 are supported by multiple lines of evidence: scRNA-seq showing CNTN2 co-expression with POU4F2 (Figure 4R-S), immunostaining confirming CNTN2 localization to RGC cell membranes (Figure 7A-D), successful MACS isolation yielding 385,000 RGCs from 100 organoids (C114), and expression of multiple RGC markers in isolated cells (Figure 7L-P). The method is validated by both molecular markers and cell counts, establishing CNTN2 as a functional marker for RGC isolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Isolated RGCs exhibit electrophysiological properties of excitable cells, including hyperpolarized resting membrane potential (-20.1\u00b16.4 mV), ability to fire action potentials when held at -70 mV (6/9 cells), voltage-gated potassium currents sensitive to TEA, and voltage-gated sodium currents sensitive to TTX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by whole-cell patch clamp recordings (Figure 8) with appropriate controls and statistical analysis. The resting membrane potential measurement (C119, n=9), action potential generation (C120, 6/9 cells), and pharmacological characterization of ion channels (C122-C123) with TEA and TTX provide converging evidence. Statistical significance is demonstrated for both potassium (p=0.019, Mann-Whitney U test) and sodium currents (p=0.035). However, the hyperpolarized resting potential (-20.1 mV) is unusually depolarized for neurons, which may indicate incomplete maturation or culture conditions affecting membrane properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Optic disc cells differentially express FGF8 and FGF9, and FGFR inhibition (PD 161570, 1 \u00b5M, days 17-24) drastically reduces RGC differentiation and directional axon growth, demonstrating that FGF signaling mediated by FGFRs is required for early RGC development in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C125-C132 are supported by scRNA-seq data showing FGF8/FGF9 expression in cluster 2 (Figure 4K-L), in situ hybridization confirming expression in PAX2+ optic disc cells (Figure 9B-E), and FGFR inhibition experiments (Figure 9F-K, N=3/3). The drastic reduction in RGC numbers and loss of directional axon growth after FGFR inhibition provides strong functional evidence. Expression of FGFR1 and MAP2K2 in RGCs (C128, Figure 9\u2014supplement 1) supports the signaling mechanism. The persistence of FGF8 expression after inhibition (C129) confirms the inhibitor acts downstream of ligand production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "CONCEPT organoids and human fetal retinas (HGW9) share similar expression signatures, with cluster 18 from HGW9 retinas expressing PAX2, COL9A3, CYP1B1, SEMA5A, and FGF9 similar to cluster 2 in CONCEPT organoids (64/113 shared DEGs), and both showing CNTN2 co-expression with POU4F2 in RGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C86-C94, and C97 are supported by comparative transcriptomic analysis (Figure 5) showing overlap in marker expression between CONCEPT cluster 2 and HGW9 cluster 18 (64/113 DEGs shared). Integrated clustering analysis (Figure 5N-R) demonstrates that most H18 cells group with CONCEPT cluster 2 (optic disc), with both expressing PAX2 and VSX2. The observation that HGW9 is at a more advanced stage (C94) is appropriately noted. GO term enrichment analysis (Figure 6) shows many shared terms between the datasets, supporting transcriptomic similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58"
+    ],
+    "result": "CONCEPT organoids contain lens cells that undergo terminal differentiation, expressing crystallin markers (CRYAA, CRY B, CRY G), exhibiting denucleation, and forming lentoid bodies with ball-and-socket structures characteristic of terminally differentiated lens fiber cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 and C58 are supported by immunostaining showing crystallin expression (Figure 3A-D, K-L), lack of DAPI staining indicating denucleation (Figure 3C-F), and electron microscopy revealing ball-and-socket structures (Figure 3M-N) consistent with terminally differentiated lens fiber cells (C57, Biswas et al., 2010). The formation of lentoid bodies in suspension culture (Figure 3I-J) that survive for months demonstrates robust lens differentiation. Multiple experiments (N>5) support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Telencephalic cells in CONCEPT organoids at day 24 comprise both dorsal telencephalic cells (clusters 4, 8, 9, 1 expressing SOX3, FGFR2, PRRX1, EDNRB) and ventral telencephalic cells (clusters 12, 3, 10 expressing DLX2, DLX6-AS1, DLX1, RGS16), with mouse orthologs showing corresponding regional expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by scRNA-seq data (Figure 4\u2014supplements 3-5) showing differential expression of dorsal and ventral telencephalic markers, with validation from mouse in situ hybridization data confirming regional specificity of orthologous genes. The absence of diencephalon and midbrain/hindbrain markers (C63) supports the telencephalic identity. The inference that telencephalic cells comprise both dorsal and ventral populations (C66) is well-supported by the marker expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "PAX2+ VSX2- cells at edges of telencephalic clusters express optic stalk markers VAX1, CNTNAP2, ALDHA3, and LAMP5, and form an inner boundary for RGC axon growth, with expression patterns consistent with mouse optic stalk development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C108-C109, and C111 are supported by scRNA-seq data (Figure 4M-P) showing PAX2+ VSX2- cells express optic stalk markers, immunostaining confirming VAX1/2 expression at the inner boundary (Figure 7I-J), and ALDH1A3 expression bordering the axon growth path (Figure 7G-H). Mouse in situ hybridization data (Figure 4\u2014supplement 8, Figure 7K) validates the optic stalk identity of these markers. The spatial organization is consistent with the optic stalk's role in confining RGC axon growth in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Gabriel et al.'s organoids lack the PAX2+ optic disc/stalk, FOXG1+ telencephalic, and VSX2+ neuroretinal cell clusters found in CONCEPT organoids, with only 8 and 5 scattered PAX2+ cells at days 30 and 60 respectively, indicating fundamental differences between the two organoid systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by comparative analysis of Gabriel et al.'s published dataset (Figure 4\u2014supplement 10) showing extremely rare PAX2+ cells (8 at day 30, 5 at day 60) scattered across clusters rather than forming distinct populations. The near-absence of FOXG1+, SIX3+, and ATOH7+ progenitors in Gabriel et al.'s day 30 organoids (C84) further supports the conclusion of striking differences. The analysis appropriately uses the published dataset and reproduces the original clustering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C136",
+      "C137",
+      "C142"
+    ],
+    "result": "Cysts are hollow spheres of columnar epithelium induced from hESCs embedded in Matrigel that efficiently generate telencephalic and ocular tissues without extrinsic factors, with tissue patterning originating from attachment of the radially-symmetric epithelium to the culture surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C136-C137, and C142 are supported by experimental observations showing cyst formation (Figure 1C), epithelial structure confirmed by TJP1::GFP localization, and efficient generation of telencephalic/ocular tissues without added factors. The inference that tissue patterning originates from attachment (C142) is supported by the observation that suspended cysts do not form apparent patterning. However, the mechanism of pattern formation could benefit from additional experimental validation beyond morphological observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "GO term enrichment analysis of DEGs from cluster 2 (CONCEPT organoids) and cluster 18 (HGW9 fetal retinas) shows overlapping functional annotations including extracellular matrix, cell adhesion, and developmental processes, indicating transcriptomic similarities in PAX2+ optic disc cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by GO term enrichment analysis (Figure 6) showing top enriched terms for both datasets with many overlapping categories. The analysis uses appropriate gene sets (top 200 DEGs for cluster 2, 113 DEGs for cluster 18) and standard GO enrichment methods. The overlap in functional annotations provides additional support for the similarity between CONCEPT optic disc cells and human fetal optic disc cells beyond individual marker genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Isolated RGCs in dissociated culture grow neurites in random directions rather than directionally, and show downregulation of CNTN2 in a portion of cells, indicating differences in axon pathfinding cues between CONCEPT organoids and purified RGC cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by immunostaining data (Figure 7L-M) showing random neurite outgrowth in isolated RGCs compared to directional growth in organoids, and POU4F2+ cells lacking CNTN2 expression. The inference that these differences reflect altered axon pathfinding cues (C116) is reasonable given the loss of spatial organization in dissociated culture. This observation is important for understanding the limitations of isolated RGC cultures versus organoid systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "CONCEPT organoids generated from hiPSCs show very similar findings to those from hESCs, demonstrating reproducibility across multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is supported by data from hiPSC-derived organoids (Figure 7\u2014supplement 1) showing POU4F2+ RGCs with CNTN2+ axons growing along circular paths adjacent to PAX2+ optic disc cells, consistent with hESC-derived organoids. This demonstrates the robustness of the CONCEPT system across different pluripotent stem cell lines, which is important for generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Both CONCEPT organoids and HGW9 fetal retinas lack expression of astrocyte markers OLIG2, CD44, and GFAP, indicating astrocytes have not been generated at these developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by scRNA-seq data (Figure 4\u2014supplement 11) showing undetectable expression of astrocyte markers in both CONCEPT organoids at day 24 and HGW9 fetal retinas. This observation is consistent with the developmental timeline, as astrocytes typically appear later in retinal development. The inference that astrocytes have not been generated is well-supported by the absence of marker expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Cluster 6 differentially expresses RPE markers PMEL, HSD17B2, DCT, and MITF, indicating these cells are mostly differentiating RPE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by scRNA-seq data (Figure 4\u2014supplement 6) showing differential expression of established RPE markers in cluster 6. The inference that these are differentiating RPE cells is well-supported by the marker expression pattern. This demonstrates that CONCEPT organoids generate multiple ocular cell types including RPE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C42",
+      "C43",
+      "C48",
+      "C57",
+      "C98",
+      "C109",
+      "C110",
+      "C133",
+      "C134",
+      "C135",
+      "C138",
+      "C139",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Background knowledge claims about mammalian eye and brain development, including spatial organization of telencephalic and eye fields, expression patterns of key transcription factors (Foxg1, Pax6, Vsx2, Pax2, Mitf) and morphogens (Fgf8, Bmp4, Bmp7), RGC markers (Pou4f2, Tubb3, Cntn2), and axon guidance mechanisms in mice and other model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C28, C31-C34, C42-C43, C48, C57, C98, C109-C110, C133-C135, and C138-C139, C143-C146 represent established knowledge from the literature, supported by appropriate citations to peer-reviewed publications. These claims provide essential context for interpreting the CONCEPT organoid results and are well-established in developmental biology. The citations are appropriate and the knowledge claims are accurate representations of the cited work.",
+    "result_type": "MINOR"
+  }
+]

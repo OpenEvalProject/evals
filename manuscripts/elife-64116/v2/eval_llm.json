@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors conducted a systematic literature review documenting that drug resistance evolution follows two patterns: single-step (large benefit per mutation) and multi-step (small benefits per mutation). They compiled experimental data showing a wide range of mutational effects, with many resistance mutation benefits below typical clinical MIC breakpoint values (often 10xMIC or higher), suggesting multiple mutations are often necessary for high-level resistance. Fitness costs range from almost none to 25% reduction in growth rate, with a very weak positive correlation (R\u00b2 = 0.07, p=0.09) with log(benefit). The average benefit of resistance mutations to AMPs is substantially lower than for commonly used antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review (C3, C19, C21, C27) is well-documented in Table 1 and Figure 1, compiling data from multiple experimental studies. The statistical analysis of cost-benefit relationships (C24, C25) is clearly presented with appropriate metrics. The inference that low benefits necessitate multiple mutations (C23) logically follows from the comparison with clinical breakpoints (C22). The claim about lack of prior systematic review (C20) is reasonable given the novelty of this compilation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Using stochastic PKPD modeling, the authors demonstrate that treatment failure probability is always close to 1 for single-step resistance but decreases rapidly when multiple mutations are required, approaching 0 when three or more mutations are necessary. Counterintuitively, higher mutational diversity was observed with single-step than multi-step resistance evolution, explained by extinction at high doses/low benefits and high mutational costs at low doses/high benefits. These results are robust to variations in cost-benefit correlation assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results (C28-C30) are clearly shown in Figure 2A with appropriate stochastic modeling methodology. The diversity findings (C32) are supported by Shannon index calculations in Figure 2B. The mechanistic explanations (C34, C35) are consistent with the analytical invasion criteria (C33) derived in Materials and Methods. Robustness analyses (C31) in supplementary figures strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors compared three pharmacokinetic profiles (peak, ramp, constant) and found that constant PKs distinctly lowered treatment failure probability and mutational diversity compared to peak and ramp PKs, which showed similar magnitudes of resistance evolution. However, ramp PKs led to more than twice the mutational diversity with multi-step resistance patterns. Treatment failure and mutational diversity were lower for AMPs with peak and constant PK treatments compared to antibiotics, with mutations accumulating at sublethal drug doses but with substantially lower maximal diversity in AMP treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PK comparisons (C37, C38) are well-supported by simulation results in Figure 3B, C and supplementary figures. The diversity observations (C39, C42, C43) are documented with Shannon index calculations. The AMP vs AB comparisons (C41) are consistent with prior findings (Yu et al., 2018) and supported by the simulation data. The complex relationship between diversity and treatment failure (C40) is appropriately characterized as non-trivial given the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The steeper dose-response curve of AMPs makes their resistance dynamics more sensitive to PK shape than antibiotics. Specifically, ramp PKs lead to a drastic increase in treatment failure with AMPs, especially in multi-step scenarios, with an intermediate range of ramp duration (48-84 hr) showing increased treatment failure with AMPs over antibiotics. This paradoxical effect occurs because a narrow mutant selection window can create optimal selection conditions for sequential emergence of resistance mutations with ramp PKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sensitivity of AMPs to PK shape (C44, C45) is demonstrated in Figures 2, 3 and supplementary figures. The ramp duration analysis (C47) is shown in Figure 3\u2014figure supplement 5A. The mechanistic explanation (C48) based on selection coefficients is consistent with the model dynamics. The comparative performance of AMPs vs ABs (C46) is documented in Figure 3\u2014figure supplement 4. The increased risk with ramp treatments (C49) follows logically from the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The number of resistance mutations was the main determinant of treatment outcome, but with complex dependence on PK and PD characteristics. Bacteriostatic antimicrobials slow down mutation rise compared to bactericidal ones only for ramp and constant PK treatments, not peak PKs, which allow bacterial regrowth due to drug decay. Mutational diversity only increased for AMP treatments with bacteriostatic drug action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main determinant claim (C50) is a reasonable summary of the comprehensive simulation results. The bacteriostatic vs bactericidal comparison (C51, C52) is supported by Figure 3\u2014figure supplement 6A with clear mechanistic explanation. The diversity observation for AMPs (C53) is documented in Figure 3\u2014figure supplement 6B. However, the bacteriostatic analysis is somewhat limited as it introduces additional model assumptions (clearance rate) that may affect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In adaptive treatment scenarios, the resistant subpopulation threshold above which adaptive treatment outperforms aggressive treatment can be much lower in multi-step scenarios than single-step ones. This occurs because all partially sensitive bacteria serve as competitors for fully resistant cells, but only the subpopulation one mutation away from full resistance constitutes the risk population. The difference in time to treatment failure between adaptive and aggressive treatment can be several-fold larger for multi-step than single-step resistance patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The threshold analysis (C56) is supported by analytical derivations and simulations shown in Figure 4A. The mechanistic explanation (C57) is consistent with the mathematical model structure shown in Figure 4B. The time-to-failure comparison (C58) is documented in Figure 4\u2014figure supplement 2. The trade-off description (C54) and threshold concept (C55) are appropriately cited to Hansen et al., 2017. The analytical framework extends prior single-step work to multi-step scenarios in a mathematically sound manner.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "When horizontal gene transfer (HGT) was incorporated into the model, HGT carriers dominated the remaining pathogen population at treatment end, but HGT addition did not change the probability of treatment failure. This holds true as long as the acquisition rate from the environment is lower than the mutation rate. Initial population rescue is due to mutations, whereas HGT resistance is acquired later during infection and then spreads rapidly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HGT simulation results (C59, C60) are clearly shown in Figure 2\u2014figure supplements 3 and 4. The condition on acquisition rate (C61) is explicitly stated and examined in the Discussion. The temporal dynamics explanation (C62) is consistent with the model structure and simulation results. However, the generalizability is limited by the specific parameter assumptions about HGT rates, which are acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Multi-step resistance can be a surprisingly strong inhibitor of resistance evolution and mutational diversity, depending on drug class and administration route. The number of mutations necessary for resistance strongly affects predictions of treatment outcome and optimality in a manner robust to variations in mutation rates and cost per mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main finding (C64) is well-supported by the comprehensive simulation results in Figure 3. The robustness claim (C65) is documented in Figure 2\u2014figure supplements 2 and 5. The intuitive baseline (C63) provides appropriate context. These represent the core conclusions of the study, integrating results across multiple treatment scenarios and parameter variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors discuss that mutational input limited to low benefits leads to decreased drug resistance evolution, and limited access to high-benefit mutations curtails MIC increase beyond a threshold. The pattern of resistance evolution is likely associated with molecular mechanisms: efflux pumps yield low benefits while specific drug target mutations yield high benefits. MIC increase was low for drugs with unspecific resistance mechanisms (two-component systems, lipopolysaccharide modifications) and high for drugs with specific target modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental support claims (C66, C67) are appropriately cited to Drlica 2003, Allen et al. 2004, and Chevereau et al. 2015. The mechanistic associations (C68, C69) are supported by citation to Hughes and Andersson 2017. The MIC patterns (C70, C71) are consistent with the compiled data in Table 1 and supported by multiple citations. The biofilm observation (C72) is appropriately cited to Santos-Lopez et al. 2019. These discussion points appropriately contextualize the modeling results with experimental literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The risk of resistance evolution is not related to emerging mutational diversity in a trivial manner, being limited by either fast extinction or high mutational cost. Mutational diversity arises from a combination of selection pressure, bacterial growth, and fitness costs, and cannot be predicted from mutational benefit or treatment failure probability alone. Drug choice should depend not only on PD characteristics but also on specific drug PK in the target body compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The non-trivial relationship claim (C73) is supported by the complex patterns in Figure 2 and Figure 3\u2014figure supplements 1 and 2. The multifactorial nature of diversity (C76) is a reasonable inference from the simulation results. The utility of diversity measurements (C75) is supported by reference to Figure 3\u2014figure supplement 3. The drug choice recommendation (C77) follows logically from the demonstrated PK-PD interactions. These represent important interpretive conclusions from the modeling work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The steepness of the PD curve (\u03ba) governs not only the size of the mutant selection window but generally shapes selection pressure for resistance evolution in a qualitative manner. Natural AMP expression patterns resemble ramp PKs, which could suggest why natural AMP production in cocktails is favorable, as cocktails would limit selection pressure and resistance evolution potential to individual components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The \u03ba analysis (C78) is supported by selection coefficient calculations and citations to Yu et al. 2018 and Chevereau et al. 2015. The natural AMP expression claim (C81) is appropriately cited to Johnston et al. 2014 and Haine et al. 2008. The cocktail speculation (C82) is appropriately framed as a suggestion with citation to Zanchi et al. 2017. The treatment failure observation (C83) is supported by Figure 3\u2014figure supplement 1 and citation to Jochumsen et al. 2016. The speculative nature of C82 is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "AMP-like drugs colistin and daptomycin are typically applied as short IV treatments resembling peak PKs and remain active as last-resort drugs for multi-drug-resistant pathogens. Multi-step patterns appear to be the common mechanism for AMP resistance evolution, while both single- and multi-step evolution is common for antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical application claims (C84, C85) are appropriately cited to Liu et al. 2011 and Tsuji et al. 2019. The AMP resistance pattern claim (C86) is supported by Table 1 and multiple citations (Spohn et al. 2019, Jochumsen et al. 2016, Joo et al. 2016). The AB pattern claim (C87) is supported by multiple citations. These claims appropriately connect the modeling results to clinical practice and known resistance mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Distributions of mutational effects have rarely been characterized experimentally for drug resistance, but this information is crucial for PKPD models to accurately predict resistance evolution and population diversity. Epistasis and compensatory mutations can influence resistance dynamics but are not well characterized; the authors expect their main results to be robust to such variations, though compensatory mutations might be necessary to allow multi-step resistance patterns to arise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The literature gap claim (C88) is appropriately cited to Chevereau et al. 2015. The importance claim (C89) is a reasonable inference from the study's findings. The epistasis discussion (C90, C91) acknowledges limitations with appropriate citation to Jochumsen et al. 2016. However, the robustness expectation (C91) and compensatory mutation speculation (C92, C93) are not directly tested in the study. These represent important limitations and future directions but lack empirical validation within this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Rescue of the pathogen population through HGT resistance occurs only if the initial acquisition rate is higher than the mutation rate. Using typical experimentally measured conjugation rates, environmental donors must be more abundant than 10\u2075 cells/ml to be faster than chromosomal mutation rates. For AMPs, spread of HGT resistance from gut microbiota appears low, so treatment failure risk is mainly shaped by beneficial mutations available to the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HGT rate threshold (C94) is a clear conclusion from the simulation results. The quantitative calculation (C95) appropriately uses cited experimental values (Licht et al. 1999, Rodr\u00edguez-Rojas et al. 2014, Stecher et al. 2012). The plasmid transfer variability (C96, C97) is appropriately cited to Cairns et al. 2018 and Dimitriu et al. 2019. The AMP-specific claims (C98, C99) are appropriately cited to Kintses et al. 2019. These represent reasonable interpretations of the HGT modeling results in context of experimental literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Most simulations assumed a completely susceptible pathogen population at treatment onset. Starting from a heterogeneous population increases treatment failure but still results in less than 50% treatment failure on average in multi-step resistance scenarios. If multiple steps are necessary for full resistance, the threshold for choosing adaptive over aggressive treatment can be much lower than with single-step resistance. Adaptive treatment is likely superior for containment of resistant infections for drugs where multi-step patterns are the most common resistance mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling assumption (C100) is appropriately cited to Balmer and Tanner 2011. The heterogeneous population results (C101) are documented in Figure 2\u2014figure supplement 6 and Figure 3\u2014figure supplement 7. The adaptive treatment threshold (C102) is supported by Figure 4 and analytical derivations. The neutral heterogeneity inference (C103) is logical. The adaptive treatment recommendation (C104) follows from the analysis but appropriately acknowledges practical difficulties in determining resistant subpopulation sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The model assumptions are not specific to bacterial populations or antimicrobials, making them broadly applicable to other drug treatments like cancer therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the claim (C105) is appropriately cited to Chakrabarti and Michor 2017 for cancer therapy applications, the generalizability assertion is not directly tested in this study. The model does use general population genetic principles, but the specific parameter values and validation are focused on bacterial antimicrobial resistance. The claim represents a reasonable speculation about broader applicability but lacks empirical support within this work.",
+    "result_type": "MINOR"
+  }
+]

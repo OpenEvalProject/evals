@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C99",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors developed a photogrammetry-based terrain reconstruction method that achieves median reconstruction errors of 4.5 cm for the overall terrain and 4.0 cm at foothold locations, which is substantially below the average foot length (25.8 cm). This method eliminates parallax errors from flat ground plane assumptions and IMU drift errors present in previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 provide quantitative validation of reconstruction accuracy with appropriate context (C27-C28). The method addresses specific limitations of prior work (C104-C106) and the error magnitudes are reasonable for the application. The validation approach comparing multiple reconstructions of the same terrain is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A convolutional neural network trained on retinocentric depth images achieved above-chance performance (median AUC > 0.5) in predicting foothold locations for all nine subjects, demonstrating that depth information contributes to foothold selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 show consistent above-chance CNN performance across all subjects using appropriate train-test splits. This finding is consistent with prior work (C29) showing depth information affects gaze patterns. The AUC metric appropriately quantifies discriminability between foothold and non-foothold locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Walkers prefer flatter paths: the median chosen path segment slope (mean 9.5\u00b0 \u00b1 1.7\u00b0) was significantly lower than simulated viable path slopes (mean 14.9\u00b0 \u00b1 3.3\u00b0), with simulated slopes being 5.56\u00b0 larger on average (t(8)=7.64, p<<0.001). This preference is consistent with minimizing energetic costs associated with vertical displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide strong quantitative evidence with appropriate statistical testing. The simulation approach constrains viable paths based on biomechanical limits (C35) and individual walking parameters. The interpretation regarding energetic costs (C32-C34) is well-supported by cited literature, though direct energetic measurements were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Walkers choose more tortuous (curved) paths to avoid height changes: path tortuosity increased with the slope of straight alternative paths. At the lowest slope levels, average tortuosity was near 1 (straight), but increased across increasing quantiles of straight path slope, indicating a trade-off between path directness and flatness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 provide comprehensive quantitative characterization of the tortuosity-slope relationship. The analysis appropriately compares chosen paths to simulated straight alternatives with fixed endpoints. The observed pattern (C53-C54) supports the interpretation of a trade-off (C55), though the correlation is modest and variable across subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The strength of the slope-tortuosity trade-off varies with walker biomechanics: longer leg lengths were associated with lower correlation coefficients between straight path slope and tortuosity (r=-0.83, p=0.005), suggesting that walkers with shorter legs are more likely to choose longer paths to avoid steep slopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 demonstrate a significant relationship between leg length and path selection strategy with appropriate statistical support. This finding is mechanistically plausible as the energetic cost of vertical displacement should scale with leg length. However, the small sample size (n=9) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Eight of nine subjects showed significant correlations between straight path slope and chosen path tortuosity in per-path-segment analysis, though substantial variability exists. This suggests walkers use flexible learned heuristics rather than strict criteria for the slope-tortuosity trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 provides statistical support for the slope-tortuosity relationship at the individual path level. The interpretation (C60) regarding heuristics vs. strict criteria is reasonable given the observed variability, though alternative explanations (e.g., local terrain constraints) are not fully ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C80",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Walkers use vision to plan paths that account for terrain structure, selecting flatter routes that require planning ahead and changing direction to avoid height changes. This behavior reflects sensorimotor decision mechanisms integrating multiple factors including sensory information, motor constraints, costs, and path planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C2-C6, C69-C73, C80-C84) are well-supported by the specific quantitative findings regarding path slope preferences, tortuosity-slope relationships, and CNN performance. The inference that planning is required (C72-C73) follows logically from the observed behavior, though the specific planning horizon is not directly measured in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C81"
+    ],
+    "result": "The terrain reconstruction and integration procedures provide greater precision than previous outdoor walking studies and enable novel analysis of how visual environment structure influences foothold selection. These methods should be generally useful for analyzing visually guided behavior in natural environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by the demonstrated improvements over prior work (elimination of parallax and drift errors). Claim C63 accurately characterizes a gap in the field. Claim C81 regarding general utility is a reasonable inference given the successful application, though broader validation would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The preference for flatter paths is likely driven by energetic costs of vertical displacement, consistent with prior work showing humans converge to energetic optima on flat ground and can minimize costs on uneven terrain by modulating speed. Walkers may be adjusting behavior to minimize energetic costs in natural outdoor terrains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 appropriately cite prior work on energetic optimization. However, claims C64 and C68 are speculative as no direct energetic measurements were made in this study. The inference is plausible and well-motivated, but remains unvalidated. Future work measuring actual energetic costs would be needed to confirm this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The planning horizon in natural rocky terrain may differ from laboratory studies, with prior work suggesting 2 steps (lab), 5 steps (gaze in natural terrain), or 8-9 steps (biomechanical models). Differences may reflect terrain complexity, working memory load, or the role of peripheral vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C77 appropriately cite prior work on planning horizons. However, claims C78-C79 are speculative attempts to reconcile discrepancies between studies. The current study does not directly measure planning horizon, so these remain unresolved questions requiring future investigation with combined eye tracking and biomechanical modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The dataset comprises 4,230 steps from 9 participants (347-603 steps each) walking over rocky terrain in Austin, TX and Berkeley, CA, recorded using mobile eye tracking (120 Hz eyes, 30 Hz scene) and motion capture (100 Hz, 17 IMUs) with synchronized timestamps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C98 provide comprehensive methodological documentation of the dataset, equipment, and experimental procedures. The technical specifications are clearly stated and the synchronization approach (C93) is sound. The dataset size is adequate for the analyses performed, though relatively small for some statistical comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Gaze is clustered 2-3 steps ahead (from prior work), and off-path gaze points that precede turns may reflect how the visual system collects information for the trade-off between straight and flat paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 appropriately cites prior findings. Claim C101 describes an observation in the current data. However, claims C102-C103 regarding the functional role of off-path gaze are speculative. While the temporal pattern is suggestive, no quantitative analysis directly links off-path gaze to subsequent turning decisions. This remains a hypothesis for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C10",
+      "C13",
+      "C63"
+    ],
+    "result": "Prior to this work, relatively little was known about vision-guided locomotion in natural environments. While gaze and body tracking technology is available, measurement of visual input in natural environments has been limited, and most locomotion research uses laboratory treadmill settings. Analysis of the relationship between visual environment structure and foothold/path selection has been missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8, C10, C13, and C63 accurately characterize the state of the field and gaps in prior work. These statements are supported by the cited literature and provide appropriate context for the current study's contributions. The characterization is fair and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C32",
+      "C33",
+      "C35",
+      "C44",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior work has established that: visually guided walking involves complex sensorimotor decisions; humans converge to energetic optima and adopt preferred gaits; walkers use vision to find footholds in complex terrain; gaze patterns change with terrain demands; and deviations from preferred gait (including turns and vertical displacement) are energetically costly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C11-C12, C14-C17, C32-C33, C35, C44, C65-C67 appropriately cite and characterize prior work that provides the foundation for the current study. The citations appear accurate and relevant. Claim C21 correctly identifies the data source. These claims provide essential context but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

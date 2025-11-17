@@ -1,0 +1,2409 @@
+{
+  "submission": {
+    "id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-17T00:00:40.812892Z",
+    "updated_at": "2025-11-17T00:00:40.812892Z"
+  },
+  "content": [
+    {
+      "id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "content_type": "manuscript",
+      "content_text": "# A multi-gene predictive model for the radiation sensitivity of nasopharyngeal carcinoma based on machine learning\n\n## Authors\n\n- Kailai Li<sup>1</sup> ([ORCID: 0009-0000-7444-995X](https://orcid.org/0009-0000-7444-995X))\n- Junyi Liang<sup>1</sup>\n- Nan Li<sup>2</sup>\n- Jianbo Fang<sup>1</sup>\n- Xinyi Zhou<sup>1</sup>\n- Jian Zhang<sup>1</sup> ([ORCID: 0000-0001-7217-0111](https://orcid.org/0000-0001-7217-0111)) \u2020\n- Anqi Lin<sup>1</sup> \u2020\n- Peng Luo<sup>1</sup> ([ORCID: 0000-0002-8215-2045](https://orcid.org/0000-0002-8215-2045)) \u2020\n- Hui Meng<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Oncology, Zhujiang Hospital, Southern Medical University Guangzhou China ([ROR:02mhxa927](https://ror.org/02mhxa927))\n2. Department of Radiation Oncology, Nanfang Hospital, Southern Medical University Guangzhou China ([ROR:01eq10738](https://ror.org/01eq10738))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRadiotherapy resistance in nasopharyngeal carcinoma (NPC) is a major cause of recurrence and metastasis. Identifying radiotherapy-related biomarkers is crucial for improving patient survival outcomes. This study developed the nasopharyngeal carcinoma radiotherapy sensitivity score (NPC-RSS) to predict radiotherapy response. By evaluating 113 machine learning algorithm combinations, the glmBoost+NaiveBayes model was selected to construct the NPC-RSS based on 18 key genes, which demonstrated good predictive performance in both public and in-house datasets. The study found that NPC-RSS is closely associated with immune features, including chemokine factors and their receptor families and the major histocompatibility complex (MHC). Gene functional analysis revealed that NPC-RSS influences key signaling pathways such as Wnt/\u03b2-catenin, JAK-STAT, NF-\u03baB, and T cell receptors. Cell line validation confirmed that SMARCA2 and CD9 gene expression is consistent with NPC-RSS. Single-cell analysis revealed that the radiotherapy-sensitive group exhibited richer immune infiltration and activation states. NPC-RSS can serve as a predictive tool for radiotherapy sensitivity in NPC, offering new insights for precise screening of patients who may benefit from radiotherapy.\n\n## Introduction\n\nNasopharyngeal carcinoma (NPC), which originates from the nasopharyngeal mucosal epithelium, is a malignant tumor with distinct epidemiological, histopathological, clinical, and therapeutic features among head and neck tumors (Chua et al., 2016; Ferlay et al., 2015; Wei and Sham, 2005). According to the most recent global cancer statistics, a total of 133,354 new cases of nasopharyngeal cancer were reported, accounting for only 0.7% of all new cancer cases that year (Sung et al., 2021). Although the incidence of nasopharyngeal cancer is relatively low compared with other cancer types, it has a unique geographic distribution. About 70% of new nasopharyngeal cancer cases occur in Eastern and Southeastern Asia, while the rest are mainly in South-Central Asia, North Africa, and East Africa (Chen et al., 2019). Currently, radiotherapy is used as the primary curative treatment for patients with NPC. With the continuous advancement of radiotherapy technology, recent studies have shown that hyperfractionated intensity-modulated radiotherapy increases the 3-year overall survival rate in these patients from 55.0% to 74.6% compared to conventional fractionated intensity-modulated radiotherapy (You et al., 2023). However, approximately 20\u201330% of patients experience locoregional recurrence of the tumor due to radiation resistance (Lee et al., 2015; Ma and Chan, 2005; Agulnik and Epstein, 2008). Studies have shown that radiotherapy resistance is the main reason for treatment failure in nasopharyngeal cancer patients (Linkous and Yazlovitskaya, 2012; Ribassin-Majed et al., 2017). Given the importance of radiotherapy in nasopharyngeal cancer treatment, it is imperative to investigate the molecular mechanisms of radiotherapy resistance and develop strategies to enhance the radiosensitivity of nasopharyngeal cancer cells.\n\nIn recent years, artificial intelligence (AI) has been deeply integrated into the medical field (Khan, 2023). Machine learning (ML), an important branch of AI, has the ability to process nonlinear data, discover new patterns, and generate predictive models after learning from existing data. Machine learning plays a crucial role in developing predictive markers for tumor treatment and prognosis. Recent studies have focused on utilizing machine learning techniques to construct predictive models for these purposes. These studies employ various methods and algorithms, including integrated learning, immune-derived feature extraction, and AI network-guided signatures. For instance, one study utilized machine learning through tumor MR image feature mapping for patient stratification in adjuvant chemotherapy for locally advanced NPC (Teng et al., 2023). Another study employed machine learning based on MRI/DWI radiomics signatures to predict the prognosis of NPC (Hu et al., 2022). Additionally, machine learning-based algorithms have been developed to create predictive models for identifying lncRNAs associated with tumor-infiltrating immune cells, aiming to improve prognosis and immunotherapy response in cancer patients (Liu et al., 2022; Zhang et al., 2022). These studies aim to enhance patient outcomes and prognosis while providing superior predictive power for personalized clinical treatment strategies. However, there is still a lack of machine learning-based biomarkers for predicting radiotherapy sensitivity in NPC.\n\nIn this study, a combination of multiple machine learning methods and transcriptomic data from nasopharyngeal cancer patients was used to construct a biomarker that can predict the sensitivity to radiotherapy in nasopharyngeal cancer patients, termed the Nasopharyngeal Carcinoma Radiosensitivity Score (NPC-RSS). In addition, we explored the biological mechanisms underlying the relationship between NPC-RSS and radiotherapy response in nasopharyngeal cancer patients. We anticipate that the construction of NPC-RSS will guide the selection of radiotherapy strategies for NPC patients, thereby improving the clinical outcomes and prognosis of these patients.\n\n## Results\n\n### Construction of the NPC-RSS model\n\nAs shown in Figure 1, 48 models were successfully constructed, and the area under the curve (AUC) of each model was calculated in both the training and validation sets. The best model combination was found to be glmBoost + NaiveBayes after sample weighting: the glmBoost algorithm was used to screen out the most valuable gene features, and then the NaiveBayes algorithm was employed to identify the most reliable model (Figure 2A). The model identified 18 genes, which were used as candidate genes for subsequent studies. The NPC-RSS was constructed using logistic regression, and the model prediction formula after secondary modeling was: P(Y=1)=\u201315.3906 + 2.7369 * C1QTNF3+3.8292 * CA11 + 7.6856 * CD9 - 15.9445 * CDK5RAP3 - 11.2475 * CLDN1 + 14.3984 * DMC1 - 6.2474 * EYA1 + 1.6897 * IFI44L+10.0473 * KNG1 + 0.9464 * KREMEN1 - 6.5371 * NT5DC2 - 10.4192 * NTRK3 + 8.1306 * PSG4 - 0.5755 * RFX4 - 2.1728 * RHOBTB3 - 7.1597 * SLC1A2+22.6640 * SMARCA2 - 0.3858 * TRIM58. The top 5 genes characterized in the NPC-RSS, in order of their contribution to radiotherapy sensitivity and weighting coefficients, are SMARCA2, DMC1, CD9, PSG4, and KNG1. The genes with absolute values of weight coefficients greater than 10 were SMARCA2, DMC1, KNG1, NTRK3, CLDN1, and CDK5RAP3 (Figure 2B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99849/elife-99849-fig1-v1.jpg)\n\n**Figure 1.:** Differentially expressed genes obtained from local NPC transcriptome data, grouped according to radiosensitivity and radioresistance, were used to predict radiotherapy sensitivity scores (NPC-RSS) of NPC patients using 12 machine learning algorithms, including Lasso, Ridge, Enet, Stepglm, SVM, glmBoost, LDA, plsRglm, RandomForest, GBM, XGBoost, and NaiveBayes. Additionally, 48 other combinations of validated frameworks were constructed to predict the radiotherapy sensitivity score (NPC-RSS) of nasopharyngeal carcinoma patients. The most effective NPC-RSS was finally constructed based on the combination of glmBoost + NaiveBayes, which yielded the best AUC. The role and biological significance of NPC-RSS in NPC radiotherapy sensitivity were comprehensively explored through tumor immune microenvironment analysis, pathway enrichment analysis, and single-cell transcriptomic analysis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99849/elife-99849-fig2-v1.jpg)\n\n**Figure 2.:** (A) Based on 48 combined validation frameworks, including 12 machine learning algorithms (Lasso, Ridge, Enet, Stepglm, SVM, glmBoost, LDA, plsRglm, RandomForest, GBM, XGBoost, and NaiveBayes), the area under the curve (AUC) of each model was calculated for both the training (n=34) and validation sets (n=20). Heatmaps were generated based on the sample-weighted AUC values. (B) Demonstration of NPC-RSS genes with absolute values of weight coefficients greater than 10, based on the glmBoost and NaiveBayes combination. (C) Receiver operating characteristic (ROC) curves for the training and validation sets. (D) Volcano plot depicting differentially expressed genes between the sensitive and resistant groups of the CNE-2 cell line. (E) Timeline of resistance strain induction in the CNE-2 cell line. Expression of the top 5 weighted genes in the NPC-RSS signature for the CNE-2 cell line. Data are presented as mean \u00b1 SD (n=3 biological replicates). Statistical significance was determined by Student's t-test (*p < 0.05, **p < 0.01\uff0c***p<0.001). (G) Heatmap of differentially expressed genes between the sensitive and resistant groups of the CNE-2 cell line. (H) Heatmap of z-scores for NPC-RSS genes in the CNE-2 cell line. (I) Analysis of differences in sensitivity scores among CNE-2 cell lines. Data are presented as mean \u00b1 SD (n=3 biological replicates). *p < 0.05, **p < 0.01\uff0c***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99849/elife-99849-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data are presented as mean \u00b1 SD (n=34). Statistical significance was determined by Student's t-test (*p < 0.05, **p < 0.01, ***p < 0.001).\n\nThe prediction model constructed using these 18 genes demonstrated good diagnostic efficacy, with an area under the receiver operating characteristic (ROC) curve (AUC) of 0.996 for the training set. The GSE32389 dataset was employed as an external validation set, yielding an AUC of 0.823, which demonstrated the model\u2019s robustness. The overall sample-weighted AUC for the combined training and validation sets was 0.932 (Figure 2C). The genes used to construct the model were derived from our center\u2019s NPC transcriptome expression data and underwent differential expression analysis, resulting in 2932 differentially expressed genes (DEGs; Figure 2D).\n\nOur previous analysis revealed that 18 gene features were consistently expressed in the NPC dataset. Furthermore, these 18 gene features exhibited significant differential expression between the sensitive and resistant groups (Figure 2\u2014figure supplement 1).\n\n### In vitro validation of NPC-RSS\n\nThe induction process of CNE2-RS radiation-resistant cells is shown in Figure 2E. RNA was transcribed into cDNA, sequenced, and analyzed upstream by a high-throughput sequencer to obtain count data, which was further transformed into FPKM values for subsequent analysis. Differential analysis was performed between the parental and resistant groups using the limma package. The analysis results showed that SMARCA2 and CD9, among the key genes of NPC-RSS, were significantly highly expressed in the sensitive group (p<0.001, t-test), which was consistent with the expression trend of the key genes in the previously constructed NPC-RSS (Figure 2F). The heatmap of the differential analysis is shown in Figure 2G. We also clustered these data based on the 18 genes in NPC-RSS after Z-score normalization for the heatmap. The results were consistent with the expression trend in NPC-RSS (Figure 2H). Meanwhile, we calculated the radiotherapy sensitivity scores of three pairs of replicated CNE2-P and CNE2-RS samples using NPC-RSS and used the mean values for statistical testing. The results showed that the sensitivity scores of the sensitive group were significantly higher than those of the resistant group, further confirming the reliability of NPC-RSS (Figure 2I).\n\n### Annotation of key NPC-RSS genes and immune-related features\n\nTo thoroughly explore the potential mechanism by which the NPC-RSS predicts radiosensitivity, we stratified the local NPC data into groups based on the NPC-RSS developed in this study and examined the association between these groups and immune infiltration. The proportion of immune cell content in each patient and the correlations among immune cells were visualized using various formats. The results demonstrated a significant elevation in the levels of T follicular helper cells, regulatory T cells (Tregs), and activated NK cells in the samples from the radiosensitive group compared to those from the radioresistant group (Figure 3A), suggesting that the radiosensitive group exhibited a more immunologically active infiltration profile.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99849/elife-99849-fig3-v1.jpg)\n\n**Figure 3.:** (A) Comparison of immune cell infiltration between NPC-sensitive and resistant tissue groups (n=34). *p<0.05, p<0.01\uff0c***p<0.001. (B) Bubble plot depicting the correlation between the top 5 weight-ranked gene features in the NPC-RSS (SMARCA2, DMC1, CD9, PSG4, KNG1) and tumor-immune-infiltrating cells in the radiotherapy-sensitive group. Bubble size represents the proximity of the p-value to zero, with orange and blue colors indicating the strength of positive and negative correlations, respectively. (C) Analysis of interactions among 22 different immune cell types in patients from the NPC-sensitive group. *p<0.05, p<0.01, *p<0.001. (D) Correlation analysis of the top 5 weight-ranked genes in the NPC-RSS (SMARCA2, DMC1, CD9, PSG4, KNG1) with functionally diverse immune genes in the radiotherapy-sensitive group. *p<0.05, p<0.01, ***p<0.001.\n\nIn this study, we further explored the relationship between NPC-RSS key genes and immune cells. We found that several key genes were highly correlated with immune cells: SMARCA2 was significantly positively correlated with resting CD4 + memory T cells; DMC1 was significantly positively correlated with resting NK cells; CD9 was significantly positively correlated with resting CD4 + memory T cells; and KNG1 was significantly negatively correlated with M1 macrophages, \u03b3\u03b4 T cells, monocytes, eosinophils, neutrophils, and other immune cell types (Figure 3B). Furthermore, all these immune cell types were significantly correlated with each other (Figure 3C). Correlations between these five key genes and various immune factors, including immunomodulators, chemokines, and cellular receptors, were obtained from the TISIDB database (Figure 3D). These analyses suggest that the NPC-RSS key genes are closely associated with the level of immune cell infiltration and play a crucial role in the immune microenvironment.\n\n### Validation of NPC-RSS at the single-cell level\n\nThe expression patterns of key NPC-RSS genes at the single-cell level exhibited a stronger correlation with model predictions. We analyzed the single-cell transcriptome profiles of four patients. Among the four patients, three were sensitive to radiotherapy, while one was resistant. Following single-cell suspension preparation, library construction, sequencing analysis, and quality control of the obtained data, we acquired transcriptome data for a total of 28,957 cells. Among these, 22,796 cells were derived from the radiotherapy-sensitive group, and 6161 cells were from the radiotherapy-resistant group. Unsupervised clustering was performed on the 28,957 cells obtained from sequencing to identify cell subpopulations based on the similarity of their gene expression profiles. As illustrated in Figure 4, 17 cell subpopulations were identified through clustering. By examining the expression profiles of cell-type-specific marker genes, we determined that these 17 cell subpopulations belonged to seven distinct cell types: T cells, myeloid cells, B cells, epithelial cells, neutrophils, fibroblasts, and mast cells (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/99849/elife-99849-fig4-v1.jpg)\n\n**Figure 4.:** (A) Clustered UMAP plot of three radiotherapy-sensitive and one radiotherapy-resistant sample with a total of 28,957 cells (n=4). Each color represents a cellular subpopulation (see cellular subpopulation annotations on the right). (B) Myeloid cells, epithelial cells, fibroblasts, and mast cells were significantly more abundant in samples from the radiotherapy-sensitive group compared to the radiotherapy-resistant group. (C) NPC-RSS scores displayed on all cells, with redder colors indicating higher scores. (D) NPC-RSS model gene expression in all cell subpopulations. Redder colors indicate higher expression, while bluer colors indicate lower expression. (E) Histogram showing the percentage of seven cell subpopulations in the radiotherapy-sensitive and radiotherapy-resistant groups. Different colors indicate different cell subpopulations. (F) Expression of marker genes used to annotate various cell subpopulations.\n\nT cells expressed CD3D, CD8A, and CD4 genes. Myeloid cells expressed C1QB, LYZ, and AIF1 genes. B cells expressed MS4A1 and CD79A genes. Epithelial cells specifically expressed KRT5 and EPCAM genes. Neutrophils expressed specific marker genes. Fibroblasts expressed DCN and COL1A1 genes. Mast cells expressed CPA3, TPSAB1, and MS4A2 as marker genes. We used NPC-RSS to calculate the radiotherapy sensitivity scores of each cell. The predicted scores of cells in the sensitive group were significantly higher than those in the resistant group, especially in epithelial cells, myeloid cells, fibroblasts, and mast cells (Figure 4B). The sensitivity scores of all cells are shown in Figure 4C. Moreover, most of the 18 genes in the NPC-RSS were related to immune cells (Figure 4D). Interestingly, the radiotherapy-sensitive group showed significant dominance in terms of immune cells, whereas the radiotherapy-resistant group was mainly composed of malignant epithelial and stromal cells (Figure 4E). It is noteworthy that T cells, myeloid cells, epithelial cells, mast cells, and fibroblasts consisted of multiple cell subpopulations (Figure 4F), suggesting that these cell types may be heterogeneous.\n\n### Pathway enrichment analysis findings\n\nNext, we investigated the specific signaling pathways associated with the key genes of NPC-RSS and explored the potential molecular mechanisms by which these genes influence radiosensitivity in NPC. GSVA results demonstrated that high expression of SMARCA2 enriched signaling pathways such as WNT_BETA_CATENIN_SIGNALING, PI3K_AKT_MTOR_SIGNALING, TGF_BETA_SIGNALING, and NOTCH_SIGNALING (Figure 5A). Similarly, high expression of DMC1 enriched INTERFERON_GAMMA_RESPONSE and IL2_STAT5_SIGNALING pathways (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/99849/elife-99849-fig5-v1.jpg)\n\n**Figure 5.:** (A) GSVA of SMARCA2. (B) GSVA of DMC1. (C) GSEA of SMARCA2. (D) GSEA of DMC1. (E) Pearson correlation bubble plot of the top five NPC-RSS genes (SMARCA2, DMC1, CD9, PSG4, and KNG1) with radiosensitization-related genes. The larger the bubble, the closer the p-value is to zero; the more orange the color, the stronger the positive correlation; the more green the color, the stronger the negative correlation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99849/elife-99849-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Data are presented as mean \u00b1 SD (n=34). Statistical significance was determined by Student's t-test (*p < 0.05, **p < 0.01, ***p < 0.001).\n\nMoreover, GSEA results showed that SMARCA2 was enriched in pathways such as the JAK-STAT signaling pathway, NF-kappa B signaling pathway, and T cell receptor signaling (Figure 5C). DMC1 was enriched in pathways such as cell adhesion molecules, Hedgehog signaling pathway, and phosphatidylinositol signaling system (Figure 5D). These findings suggest that NPC-RSS key genes may influence radiotherapy sensitivity in NPC patients through these pathways.\n\n### Correlation between NPC-RSS key genes and radiosensitization genes\n\nRadiosensitivity-related genes were obtained by searching the GeneCards database (https://www.genecards.org/) for the term \"Radiosensitivity.\" The local NPC data were grouped and analyzed based on NPC-RSS. The expression levels of the top 20 genes, ranked by their Relevance scores, were correlated. The results, presented in Figure 2\u2014figure supplement 1, showed significant differences in the expression of several radiosensitivity-related genes between the radiotherapy-resistant and sensitive groups (Figure 5\u2014figure supplement 1).\n\nSpearman correlation analysis indicated that the expression of SMARCA2 was positively correlated with high expression levels of TP53, EGFR, BRCA2, and ATM. Similarly, DMC1 expression was positively correlated with high expression levels of BRCA1, APTX, ATM, and CCR6, while CD9 expression was positively correlated with high expression levels of EGFR, TP53, ERBB2, and RAD51. The expression of KNG1 was correlated with high expression levels of HULC and significantly negatively correlated with high expression levels of BADA (Figure 5E).\n\n## Discussion\n\nNPC, a malignant tumor, is prevalent in East and Southeast Asia, particularly in South China. Radiotherapy is the primary treatment modality for NPC; however, treatment failure occurs in approximately 20\u201330% of patients (Chua et al., 2016). Radiotherapy sensitivity is a crucial factor influencing treatment outcomes in NPC patients. Thus, it is imperative to comprehensively investigate the mechanisms underlying radiotherapy sensitivity in NPC and identify effective therapeutic targets. Such investigations will facilitate the elucidation of therapeutic resistance mechanisms and provide a foundation for personalized treatment strategies. In the present study, we developed an integrative approach to establish a consistent nasopharyngeal carcinoma radiotherapy sensitivity signature (NPC-RSS) using NPC samples obtained from Zhujiang Hospital of Southern Medical University (Figure 1). In summary, we fitted 113 models to the training dataset using the leave-one-out cross-validation (LOOCV) framework. Further validation using the independent dataset GSE32389 from the Gene Expression Omnibus (GEO) database demonstrated that the glmBoost + NaiveBayes model exhibited the best performance.\n\nThe integrated procedure\u2019s advantage lies in its utilization of various machine learning algorithms and their combinations to fit models for NPC radiotherapy sensitivity, achieving a consensus performance. Furthermore, the combination of algorithms can reduce the dimensionality of the variables, resulting in a more simplified and easily translatable model. The predictive validity of NPC-RSS has been further validated using NPC cell lines generated at our local center. Moreover, we performed a related validation on local single-cell data, which revealed that the radiotherapy-sensitive group exhibited a significant predominance of immune cells, whereas the radiotherapy-resistant group primarily comprised malignant epithelial and stromal cells.\n\nPrevious studies have demonstrated that the core genes of NPC-RSS, including SMARCA2, DMC1, CD9, PSG4, and KNG1, are associated with tumor radiosensitization to varying degrees (Zernickel et al., 2019; Xu et al., 2018b; Erovic et al., 2005; Jennrich et al., 2022; Xu et al., 2018a). The protein encoded by the SMARCA2 gene plays a crucial role in various cellular processes, including cytokine response, DNA repair, regulation of cell proliferation, lineage specification and development, and cell adhesion (Helming et al., 2014; Wang et al., 2014; Zhu et al., 2015; Tian et al., 2013; Dykhuizen et al., 2013). These processes are intimately linked to the radiosensitivity of tumor cells. Cell proliferation and DNA repair are critical determinants of tumor cell response to radiotherapy, and the involvement of SMARCA2 may influence this response (Lee et al., 2013; Su et al., 2019; Wang et al., 2019; Toulany et al., 2006; Hadjipanayis and DeLuca, 2005). Furthermore, SMARCA2 is implicated in processes such as cell adhesion and cytokine response, which are tightly coupled to the interactions of tumor cells within the microenvironment. Cell adhesion influences the low-dose hyper-radiosensitivity of a broad spectrum of tumor cells, potentially further modulating their sensitivity to radiotherapy (Mathur et al., 2023).\n\nRadiation is capable of inducing DNA double-strand breaks, and cells must repair this damage through DNA repair mechanisms to maintain genomic stability. DMC1, a key factor in homologous recombination, is involved in the repair process of DNA double-strand breaks (Dunne et al., 2003; Zhang et al., 2017; Xie et al., 2019). Consequently, abnormal function or altered expression levels of DMC1 may influence cellular sensitivity to radiation and, consequently, the efficacy of radiation therapy. CD9 is believed to play a role in various stages of cancer development (Murayama et al., 2015). As a cell surface protein, CD9 is involved in regulating cell-cell adhesion and interactions, which may affect the response of tumor cells to radiation therapy. Moreover, CD9 may impact tumor sensitivity to radiation therapy by modulating the metastatic and invasive properties of tumor cells (Hori et al., 2004; Herr et al., 2013; Yin et al., 2014; Rappa et al., 2015). It has been shown that all human PSGs initiate TGF-\u03b21. In vivo, PSGs may increase the availability of active TGF-\u03b21 in both soluble and matrix-bound forms of this potential cytokine (Warren et al., 2018). Furthermore, TGF-\u03b21 levels accurately predict radiosensitization in elderly patients with unresectable NSCLC undergoing 3D-CRT (Fu et al., 2014).\n\nPregnancy-specific glycoproteins (PSGs) may influence radiosensitivity by regulating transforming growth factor-beta 1 (TGF-\u03b21) activity. In radiation therapy, radiation can induce an inflammatory response in tissues and affect angiogenesis. Kininogen-1 (KNG1), a factor associated with coagulation and inflammatory response (Abdullah-Soheimi et al., 2010), may play a regulatory role in radiosensitivity and the effects of radiation therapy. Furthermore, we found that the core genes of the nasopharyngeal carcinoma radiosensitivity signature (NPC-RSS), namely SMARCA2, DMC1, CD9, PSG4, and KNG1, had significant correlations with previously published genes related to radiosensitization (Figure 5E). The roles of these genes in regulating radiosensitization further support the importance and reliability of the NPC-RSS developed in this study for predicting radiosensitization in NPC.\n\nPrevious studies have shown that SMARCA2 has a significant effect on the responsiveness to radiotherapy in non-small cell lung cancer, and its depletion can increase the sensitivity to radiotherapy, suggesting that SMARCA2 may be a potential therapeutic target for sensitization to radiotherapy (Zernickel et al., 2019). In addition, the DMC1 gene was used in the construction of the radiosensitivity index (RSI) to assess the sensitivity and prognosis of radiotherapy, especially in endometrial cancer providing an important perspective on the DNA damage repair process (Yang et al., 2024). For CD9, its study in glioblastoma multiforme (GBM) revealed that the increase of CD9 and CD81 in extracellular vesicles (EVs) after radiotherapy was closely related to the cytotoxic response after treatment, which provided a new biomarker for radiotherapy monitoring (Jennrich et al., 2022). In contrast, the relationship between PSG4 and KNG1 and radiotherapy resistance has not been reported. In the future, the expression pattern of SMARCA2 in NPC patients and its relationship with the effect of radiotherapy can be analyzed by clinical samples to determine its potential as a therapeutic target for sensitization to radiotherapy. For DMC1, studying the correlation between its expression level and radiotherapy sensitivity in NPC may be helpful in predicting the efficacy and adjusting the treatment regimen. Meanwhile, by analyzing EVs, especially CD9-containing vesicles, in NPC patients after radiotherapy, we assessed its feasibility as a biomarker to monitor radiotherapy response. These studies not only contribute to an in-depth understanding of the mechanism of these genes in NPC radiotherapy, but may also open up new strategies to improve the efficacy of radiotherapy.\n\nRadiotherapy plays a pivotal role in cancer treatment, and there is growing evidence of the potential for synergistic effects between radiation therapy and components of the immune response (Ngwa, 2018; Binder et al., 2015). However, there are limited data depicting the tumor immune microenvironment (TIME) associated with radiotherapy sensitivity. Indeed, recent preclinical studies have demonstrated that irradiated tumors can act as adjuvants to the immune system, promoting local tumor control and inducing regression of distant tumor deposits through abscopal effects (Ngwa et al., 2018). In addition to potential systemic effects, radiation significantly alters the distribution of tumor antigens, recruits anti-tumor T cells, and induces a distinct inflammatory microenvironment (Demaria et al., 2021). Some studies have shown that tumors with high immune cell infiltration are more sensitive to radiation (Grass et al., 2022); however, the relationship between radiation and immune response remains complex and context-dependent, and the optimal approach to integrating radiation and immunotherapy remains uncertain.\n\nStudies have demonstrated that over one-third of tumor types in the radiotherapy-sensitive group of solid tumors exhibit an enrichment of CD8 + T cells, M1 macrophages, and NK + cells (Grass et al., 2022). To further investigate this phenomenon, we analyzed the immune infiltration between different subgroups of NPC-RSS and annotated the key NPC-RSS genes with immune-related features. The results demonstrated that the NPC radiosensitized group exhibited a higher level of immune infiltration and immune initiation, characterized by a greater abundance of activated NK cells, regulatory T cells (Tregs), and follicular helper T cells. The NPC-RSS key genes also exhibited a significant correlation and synergism with immune-related features. Notably, this synergistic correlation was most prominent in chemokines and chemokine receptor families, the major histocompatibility complex (MHC), immune cell interactions, and signaling pathways. These findings suggest that the radiosensitivity estimated by the NPC-RSS may be associated with a distinct tumor immune microenvironment, which could potentially be exploited through a combinatorial immunotherapy approach.\n\nNotably, the results obtained from the collected single-cell data were consistent with the predicted trends of our constructed model. The radiotherapy-sensitive group exhibited a significant predominance of immune cells, while the radiotherapy-resistant group primarily comprised malignant epithelial and stromal cells. Furthermore, utilizing NPC-RSS to calculate the radiotherapy sensitivity score for each cell revealed that the predicted scores of cells in the sensitized group were significantly higher than those in the resistant group, particularly in epithelial cells, myeloid cells, fibroblasts, and mast cells. This finding suggests that the presence of immune cells might have influenced the tumor\u2019s responsiveness to treatment to some extent prior to radiation therapy. Tumors with a predominance of immune cells may be more likely to exhibit a positive response to radiation therapy, either due to the involvement of immune cells in tumor surveillance and clearance or because the responsiveness of tumors to radiation therapy is modulated by immune cells.\n\nFurthermore, pathway enrichment analysis suggested that the Wnt/\u03b2-catenin signaling pathway may be associated with the radiosensitivity of NPC. Gene Set Variation Analysis (GSVA) and Gene Set Enrichment Analysis (GSEA) indicated that the differential expression levels of SMARCA2, DMC1, CD9, PSG4, and KNG1 in the core of the NPC radiosensitivity signature (NPC-RSS) might influence various signaling pathways associated with disease progression, involving multiple biological processes such as DNA damage repair, cell death, immune regulation, cell proliferation, metabolism, tumor microenvironment regulation, and cell survival. For instance, the SMARCA2 high-expression group, which was the most significant, was enriched in the UV response, Wnt/\u03b2-catenin signaling pathway, NOTCH signaling pathway, TGF\u03b2 signaling pathway, PI3K-AKT-mTOR signaling pathway, Interferon Alpha response, Interferon Gamma response, and other signaling pathways. Previous studies have demonstrated that proteins related to the Wnt/\u03b2-catenin signaling pathway (DKK-3, \u03b2-catenin, and c-MYC) are involved in the development of NPC, and that knockdown of FOXO3a promotes radioresistance in NPC through the Wnt/\u03b2-catenin signaling pathway (Pang et al., 2019; Luo et al., 2019). Therefore, we hypothesized that SMARCA2 may regulate the radiosensitivity of NPC via the Wnt/\u03b2-catenin signaling pathway.\n\nIncorporating the NPC-RSS scoring system into clinical decision-making and patient management involves several key steps: first, making genetic testing a standard part of nasopharyngeal cancer diagnosis and ensuring that physicians have timely access to scoring results to guide treatment planning. Second, physicians need to use the scoring results to customize individualized treatment plans and discuss them in a multidisciplinary team to optimize decision-making. At the same time, physicians should explain the clinical significance of the scores in detail and communicate effectively with patients to achieve shared decision-making. In addition, continuously monitoring the relationship between scoring and treatment outcomes, optimizing the scoring model based on actual data, and ensuring the integration of technology platforms and regulatory compliance are essential to safeguard the effective operation of the scoring system and the security of patient information.\n\nThe novelty of this study lies in the utilization of NPC expression data collected from Zhujiang Hospital of Southern Medical University, combined with multiple machine learning models, to develop NPC-RSS, a tool capable of effectively identifying the patient population more sensitive to radiotherapy. The tool was validated using single-cell data and cell lines from the in-house cohort, with the validation results aligning with the predictions of our constructed model. However, this study has several limitations. First, this study focuses on specific types of NPC, and thus may not be directly generalizable to other subtypes or related head and neck cancers. Second, the sample size of the dataset is small, which may affect the generalization and extrapolation ability of the model. To minimize the impact of the small sample size, we used advanced statistical techniques, such as cross-validation, to enhance the stability and credibility of the results. Nonetheless, we realize that larger datasets are necessary, so we are collaborating with other research centers to expand our sample size to make our findings more robust and widely applicable. Further, while our study relies on bioinformatics methods to identify and analyze key genes, the lack of direct experimental validation of function is a glaring deficiency. We are currently seeking additional funding support and plan to collaborate with laboratories to conduct the necessary functional validation experiments, which will help to further confirm the specific role of these genes in radiotherapy. In addition, we recognize that there may be a risk of overfitting when using machine learning algorithms to process biomedical data. For this reason, we not only implemented regularization techniques during the model development stage, but also adopted a rigorous cross-validation strategy during model validation. These measures help ensure that our models maintain good predictive performance on unseen data.\n\nDespite these limitations, our study provides new insights into understanding the molecular mechanisms of radiotherapy sensitivity and points to possible directions for future research. Future work will focus on expanding the dataset, performing experimental validation, and further optimizing our predictive model.\n\n## Materials and methods\n\n### NPC patient data sources and data processing\n\nWe downloaded chemotherapy-related gene expression data from the GEO database for 20 NPC patients (GSE32389). Additionally, we collected samples from 34 NPC patients treated at Zhujiang Hospital of Southern Medical University between March 2017 and July 2021 (in-house cohort). The clinical characteristics of the NPC patients in the in-house cohort are detailed in Supplementary file 1. Written informed consent was obtained from the NPC patients whose NPC tissues were collected, and the study was approved by the Ethics Committee of Zhujiang Hospital of Southern Medical University. In this study, the in-house cohort was used as the training set, and GSE32389 was used as the validation set. The raw transcriptome sequencing data from the in-house cohort underwent quality control and preprocessing, which included data quality assessment, removal of low-quality reads, and removal of adapter or primer sequences using tools such as Trimmomatic and FastQC. Subsequently, the pre-processed reads were aligned to a reference genome or transcriptome using the alignment software HISAT2 to identify and localize RNA sequences. The aligned reads were then quantified using featureCounts to obtain the number of reads per gene or transcript. Gene expression levels were then quantified by normalizing the read counts to the length of each gene and the total number of reads, calculating the Fragments Per Kilobase Million (FPKM) values. The data for the GEO database were obtained from the Affymetrix GPL570 platform. Microarray data from the Affymetrix platform were background corrected, quantile normalized, and log2 transformed using the R package \u2018affy\u2019 with the RMA algorithm (Irizarry et al., 2003).\n\n### Construction of NPC-RSS\n\nIn the training set, we performed differential analysis of the gene expression data between nasopharyngeal carcinoma patients who were sensitive or resistant to radiotherapy using the limma R package. This analysis identified 71 DEGs (p<0.05 and |LogFC|>0.585, Supplementary file 2; Liu et al., 2015). Next, we used these DEGs to develop a binary classification model using machine learning algorithms to predict radiotherapy sensitivity in nasopharyngeal carcinoma patients. In the data preprocessing stage, we performed robust multi-array average (RMA) normalization on the gene expression data to ensure that it met the input requirements of the machine learning algorithms, which assume a normal distribution.\n\nFirst, we integrated a combination of 12 machine learning algorithms, including Least Absolute Shrinkage and Selection Operator (LASSO), Ridge, Elastic Net (Enet), stepwise generalized linear models (Stepglm), support vector machines (SVM), gradient boosting with component-wise linear models (glmBoost), linear discriminant analysis (LDA), partial least squares generalized linear models (plsRglm), random forest (RF), gradient boosting machine (GBM), extreme gradient boosting (XGBoost), and naive Bayes. Among these, RF, LASSO, glmBoost, Stepglm with both forward and backward selection (Stepglm[both]), and Stepglm with backward selection (Stepglm[backward]) can perform feature selection and dimensionality reduction. We combined these algorithms with the others to form 113 combinations of machine learning algorithms. In each of these 113 combinations, one algorithm was used for feature selection, while the other was used to construct a binary classification model. The performance of these models was evaluated using cross-validation to ensure robustness. (2) Next, in the training set, we used these 113 combinations to construct predictive models using the expression data of the 71 DEGs. A total of 48 models were successfully constructed. (3) In the validation set, we used these predictive models to calculate a radiotherapy sensitivity score for each NPC patient. (4) We evaluated the predictive performance of these models in the training and validation sets using ROC curves and the average AUC. The final model was named the Nasopharyngeal Carcinoma Radiosensitivity Score (NPC-RSS).\n\n### Validating key genes of NPC-RSS at the cellular level\n\n#### Cell culture\n\nThe CNE2 nasopharyngeal carcinoma cell line, previously preserved by the Pearl River Hospital Center for Translational Medicine, was cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin. The cells were maintained in a humidified incubator at 37 \u00b0C with 5% CO2. Cell passaging and division ratios were carefully monitored and maintained within optimal ranges to ensure cell health and experimental consistency. Regular cell line authentication was performed to ensure the use of the correct cell line. Stringent quality control measures were implemented for the culture medium and fetal bovine serum to minimize experimental variability. Precise addition of penicillin/streptomycin was ensured to maintain bacterial resistance while minimizing potential adverse effects on cell growth and viability. Appropriate cryopreservation and thawing protocols were followed to ensure optimal cell preservation and recovery. Strict adherence to aseptic techniques was maintained throughout the cell culture process to prevent bacterial and fungal contamination. Continuous monitoring of the incubator\u2019s internal environment was performed to maintain stable CO2 concentration and temperature. Meticulous execution of these steps is crucial for maintaining the stability and reliability of the cell culture system.\n\n#### Cell irradiation and construction of CNE2-RS radiation-resistant cells\n\nA 6 MV photon beam was generated at room temperature using a linear accelerator (Elekta, SYNERGY PL, Switzerland) and delivered to the cells at a 180\u00b0 gantry angle with a dose rate of approximately 600 cGy/min. The bottom of the cell culture vessel was covered with a 1.5-cm-thick tissue-equivalent bolus. The source-to-surface distance (SSD) was 100 cm.\n\nEach T25 culture flask was seeded with approximately 2x105 cells in the exponential growth phase and sequentially irradiated with increasing doses (2, 4, 6, 8, and 10 Gy) twice, followed by a single 10 Gy dose, for a total of nine irradiations and a cumulative dose of 50 Gy. Following the initial 2 Gy irradiation, the cells were cultured and passaged twice before being irradiated with another 2 Gy. The surviving cells were then subjected to the aforementioned irradiation schedule, and the resulting population was designated as the radiation-resistant cell line CNE-2-RS (Figure 2E). Parental cells were used as controls and underwent the same treatment regimen without irradiation.\n\nTo maintain radioresistance, the CNE-2-RS cells used in the experiments were exposed to a low dose of approximately 1\u20132 Gy per month. Cells within 15 passages following the low-dose irradiation were used for subsequent experiments, and all experiments were conducted using cells in the exponential growth phase. The radioresistance of CNE-2-RS cells was subsequently validated using clonogenic assays, with results consistently confirming the maintained radioresistant phenotype.\n\n#### RT-qPCR\n\nTotal RNA was extracted from CNE2 cells using TRIzol reagent (Invitrogen). Following the measurement of RNA concentration with a Nanodrop 2000 instrument (Thermo Scientific), cDNA synthesis was performed using the Color Reverse Transcription Kit (EZBioscience, USA). The relative mRNA expression levels of each gene were calculated using the 2^(-\u0394\u0394CT) method. The primer sequences of the genes are presented in Supplementary file 3.\n\n### Annotation of immune-related features of NPC-RSS key genes\n\nThe CIBERSORT algorithm was applied to analyze the expression data of nasopharyngeal cancer patients to infer the relative proportions of 22 immune-infiltrating cells. Additionally, a correlation analysis was performed between gene expression and immune cell content using Spearman\u2019s method. Results with a p-value <0.05 were considered statistically significant. After grouping the nasopharyngeal cancer data based on the previously extracted NPC-RSS, the CIBERSORT method was applied to quantify the immune cell infiltration. The objective was to thoroughly investigate whether there was a significant difference in immune infiltration between the sensitive and resistant groups after stratifying nasopharyngeal cancer patients according to their NPC-RSS. To further elucidate the potential association of immune features in nasopharyngeal cancer, we also investigated the correlation of NPC-RSS key genes with immune-related feature genes obtained from the TISIDB database, including chemokine-related genes, immunosuppressant-related genes, MHC-related genes, immune stimulation-related genes, and receptor-related genes (Ru et al., 2019).\n\n### Further validation of NPC-RSS at the single-cell level\n\nThe single-cell RNA sequencing (scRNA-seq) data were processed and quantified using the Cell Ranger (version 2.0.1) pipeline. Initially, reads obtained from 10 x Genomics were aligned to the human reference genome hg19. The FASTQ sequence files of four samples were aligned to the human reference genome hg19 using STAR software and the Cell Ranger \u2018count\u2019 module, generating files containing barcode tables and gene tables. The raw gene expression matrices for each sample, generated by the CellRanger software, were merged in R and converted to Seurat objects for downstream analysis using the Seurat R package. Subsequently, cells with the following characteristics were removed: (1) number of unique molecular identifiers (UMIs) less than 201, (2) fewer than 100 or more than 6000 expressed genes (potential cellular duplicates), and (3) percentage of mitochondrial genes greater than 20%. Additionally, genes expressed in fewer than three cells were removed from the dataset. After quality control, 28,957 high-quality NPC cells were retained for further analysis. Subsequently, the gene expression matrix was normalized to the total cell reads and mitochondrial reads using linear regression with Seurat\u2019s RegressOut function. Following data normalization, highly variable genes were identified across all individual cells while controlling for the relationship between mean expression and dispersion. Prior to the joint analysis of the four-sample scRNA-seq dataset, we employed the R package Harmony to mitigate batch effects and minimize their impact on downstream analyses (Korsunsky et al., 2019). Furthermore, we utilized Seurat\u2019s \u2018CellCycleScoring\u2019 function to identify the expression of cell cycle-related genes across various cell subpopulations. We employed a previously defined core set of 43 G1/S and 54 G2/M cell cycle genes (Tirosh et al., 2016). Cells were categorized based on the maximum average expression (\u2018cycle score\u2019) across both gene sets. Following cell cycle analysis, no bias attributable to cell cycle genes was observed.\n\n### Cell clustering analysis and identification of marker genes for cellular subpopulations\n\nNormalization, clustering, differential gene expression analysis, and visualization were performed using the Seurat 3.1 R package. To reduce the dimensionality of the dataset, principal component analysis (PCA) was performed on the 2000 variably expressed genes. The top 20 principal components were then used as input for the t-distributed stochastic neighbor embedding (t-SNE) algorithm, which was run using the default settings of the RunTSNE function in Seurat. Cell clustering was performed using the 'FindClusters' function in Seurat with a resolution of 0.3, resulting in the identification of 17 distinct cell clusters (clusters 0\u201316). Subsequently, the FindMarkers function was employed to identify specific marker genes for each cell subpopulation. The process was conducted as follows: (1) DEGs for each cell subpopulation were identified by comparing the cells of that subpopulation to all other cells using the Wilcoxon rank-sum test; (2) Bonferroni-corrected p-values less than 0.05 were used as the cut-off for determining statistically significant DEGs; (3) Genes with an average expression level more than twofold higher in a specific cell subpopulation compared to other subpopulations were selected as marker genes. Cell type annotation for each subpopulation was performed based on marker genes reported in previous studies (Chen et al., 2020), the CellMarker database, and the R package 'SingleR' (Aran et al., 2019).\n\n### GSVA and GSEA analysis of NPC-RSS key genes\n\nGSVA and GSEA analysis of key NPC-RSS genes Based on the expression levels of key NPC-RSS genes, we stratified the patients into high and low expression groups and thoroughly investigated the signaling pathway differences between these groups using Gene Set Enrichment Analysis (GSEA). We utilized the Molecular Signatures Database (MSigDB) gene sets as the annotated gene sets for the subtype pathways to conduct differential expression analysis between subtypes. Gene consistency was assessed using a concordance score calculated by sorting the genes according to their LogFC (adjusted p<0.05). Furthermore, to investigate the association of NPC-RSS with known radiosensitivity-related genes, we searched for \u2018Radiosensitivity\u2019 in the GeneCards database (https://www.genecards.org/) to obtain radiosensitization-related genes and examined the expression levels of the top 20 genes based on their Relevance scores and their correlation with the top-5 genes in NPC-RSS.\n\n### Statistical analysis\n\nThe differentially expressed genes between NPCs of the sensitive and resistant groups in the dataset were identified using the R package \u2018limma\u2019. For normally distributed variables, statistical differences between two groups were determined by two-tailed t-test, while one-way ANOVA was used for multiple group comparisons. For non-normally distributed variables, statistical differences between two groups were determined by the Wilcoxon rank-sum test, while the Kruskal-Wallis test was used for multiple group comparisons. All statistical analyses were conducted using R software (version 4.1.2). Each experiment was performed independently in triplicate unless otherwise specified. Spearman\u2019s rank correlation analysis was employed to assess the correlation between two variables.\n\nIn the single-cell sequencing data processing section, comparisons between two groups were performed using the unpaired two-tailed t-test (implemented in the R package limma) or the Mann-Whitney U test. All statistical analyses and graph visualizations were conducted using the R programming language.\n\nFor all experiments, samples from the same patient were processed in parallel. Cells from each patient sample were subjected to single-cell RNA sequencing (10 x Genomics) simultaneously but in different passages and vials. Boxplots were generated using the R base software package with default parameters. The boxes span the interquartile range (IQR; from the 25th to the 75th percentile), with the center line representing the median. The lower whiskers extend to the smallest value no further than 1.5\u00d7IQR from the 25th percentile. The upper whiskers extend to the largest value no further than 1.5\u00d7IQR from the 75th percentile. Due to the large number of data points represented in the box-and-whisker plots, individual data points were not shown to maintain clarity in the overall distribution.\n\n### Conclusion\n\nIn this study, we developed a robust NPC-RSS using multiple bioinformatics and machine learning algorithms. The expression of key genes SMARCA2, DMC1, CD9, and KNG1 was validated to be consistent with the NPC-RSS in our in-house cell lines. Compared to the resistant group, the sensitive group classified by NPC-RSS exhibited a more abundant and active state of immune infiltration. Furthermore, in single-cell samples, NPC-RSS was elevated in the radiotherapy-sensitive group, where immune cells played a predominant role. Additional analysis uncovered substantial correlations between key NPC-RSS genes and genes previously demonstrated to be involved in the regulation of radiosensitization. Single-gene pathway enrichment analysis revealed that the top 2 NPC-RSS genes were associated with several signaling pathways, including the Wnt/\u03b2-catenin signaling pathway, JAK-STAT signaling pathway, NF-kappa B signaling pathway, and T cell receptor signaling pathway. These pathways may influence the immune microenvironment of NPC, thereby affecting its susceptibility to radiotherapy. Our findings provide a novel perspective for understanding NPC radiosensitivity.\n",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rachel Evans, https://ror.org/0220mzb33 King's College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99849.3.sa0](https://doi.org/10.7554/eLife.99849.3.sa0)\n\nThe authors have developed a robust machine learning approach to predict radio sensitivity in patients with NPC based on a defined gene signature. Some key aspects of this signature have been validated in vitro using relevant cell lines which strengthens the conclusions of this important and convincing study. The publication will be of interest to clinicians working on this indication as well as a more broader readership made up of scientists working on radiation biology and those with a bioinformatics/machine learning background.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99849.3.sa1](https://doi.org/10.7554/eLife.99849.3.sa1)\n\nSummary:\n\nIn this study, the authors developed a novel radiotherapy sensitivity score (NPC-RSS) for nasopharyngeal carcinoma patients using machine learning algorithms. They identified 18 key genes associated with radiosensitivity and demonstrated that NPC-RSS could effectively predict radiotherapy response in both public and in-house datasets. Furthermore, they found that the key genes of NPC-RSS were closely related to immune characteristics, the expression of radiosensitivity-related genes, and signaling pathways involved in disease progression. The authors validated the consistency of expression of two key genes, SMARCA2 and CD9, with NPC-RSS in their own cell lines. They also showed that the radiosensitive group, classified by NPC-RSS, exhibited a more enriched and activated state of immune infiltration compared to the radioresistant group.\n\nStrengths:\n\n(1) The study employed a comprehensive approach by integrating multiple machine learning algorithms to develop a robust predictive model for radiotherapy sensitivity in nasopharyngeal carcinoma patients.\n\n(2) The predictive performance of NPC-RSS was validated using both public and in-house datasets, demonstrating its potential clinical applicability.\n\n(3) The authors conducted extensive analyses to investigate the biological mechanisms underlying the association between NPC-RSS and radiotherapy response, including immune characteristics, radiosensitivity-related gene expression, and relevant signaling pathways.\n\n(4) The consistency of key gene expression with NPC-RSS was validated in the authors' own cell lines, providing additional experimental evidence.\n\nWeaknesses:\n\n(1) The sample size of the in-house dataset used for training the model was relatively small (34 patients), which might limit the generalizability of the findings.\n\n(2) The authors did not perform functional experiments to directly validate the roles of the identified key genes in radiotherapy sensitivity, relying instead on associations with immune features and signaling pathways.\n\n(3) The study did not discuss the potential limitations of using machine learning algorithms, such as the risk of overfitting and the need for larger, diverse datasets for more robust model development and validation.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99849.3.sa2](https://doi.org/10.7554/eLife.99849.3.sa2)\n\nSummary:\n\nThis article utilizes machine learning methods and transcriptomic data from nasopharyngeal carcinoma (NPC) patients to construct a biomarker called NPC-RSS that can predict the radiosensitivity of NPC patients. The authors further explore the biological mechanisms underlying the relationship between NPC-RSS and radiotherapy response in NPC patients. The main objective of this study is to guide the selection of radiotherapy strategies for NPC patients, thereby improving their clinical outcomes and prognosis.\n\nStrengths:\n\n(1) The combination of multiple machine learning algorithms and cross-validation was used to select the best predictive model for radiotherapy sensitivity from 71 differentially expressed genes, enhancing the robustness and reliability of the predictions.\n\n(2) Functional enrichment analysis revealed close associations between NPC-RSS key genes and immune characteristics, expression of radiotherapy sensitivity-related genes, and signaling pathways related to disease progression, providing a biological basis for NPC-RSS in predicting radiotherapy sensitivity.\n\n(3) Grouping NPC samples according to NPC-RSS showed that the radiotherapy-sensitive group exhibited a more enriched and activated state of immune infiltration compared to the radioresistant group. In single-cell samples, NPC-RSS was higher in the radiotherapy-sensitive group, with immune cells playing a dominant role. These results clarify the mechanism of NPC-RSS in predicting radiotherapy sensitivity from an immunological perspective.\n\n(4) The study used public datasets and in-house cohort data for validation, confirming the good predictive performance of NPC-RSS and increasing the credibility of the results.\n\nLimitation:\n\n(1) The study focuses on a specific type of nasopharyngeal carcinoma (NPC) and may not be generalizable to other subtypes or related head and neck cancers. The applicability of NPC-RSS to a broader range of patients and tumor types remains to be determined.\n\n(2) The study does not account for potential differences in radiotherapy protocols, doses, and techniques between the training and validation cohorts, which could influence the performance of the predictive model. Standardization of treatment parameters would be important for future validation studies.\n\n(3) The binary classification of patients into radiotherapy-sensitive and resistant groups may oversimplify the complex spectrum of treatment responses. A more granular stratification system that captures intermediate responses could provide more nuanced predictions and better guide personalized treatment decisions.\n\n(4) The study does not address the potential impact of other relevant factors, such as tumor stage, histological subtype, and concurrent chemotherapy, on the predictive performance of NPC-RSS. Incorporating these clinical variables into the model could enhance its accuracy and clinical utility.\n",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "14548be3-6820-42b5-b75b-00a61187ed95",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C1",
+      "claim": "Radiotherapy resistance in nasopharyngeal carcinoma (NPC) is a major cause of recurrence and metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Radiotherapy resistance in nasopharyngeal carcinoma (NPC) is a major cause of recurrence and metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by established scientific knowledge about NPC treatment outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "8098e4f0-555e-48ee-943d-26ec78480362",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C2",
+      "claim": "The glmBoost+NaiveBayes model was selected to construct the NPC-RSS based on 18 key genes.",
+      "claim_type": "EXPLICIT",
+      "source": "By evaluating 113 machine learning algorithm combinations, the glmBoost+NaiveBayes model was selected to construct the NPC-RSS based on 18 key genes, which demonstrated good predictive performance in both public and in-house datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology and results of model selection based on evaluation of multiple algorithm combinations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "57c7f983-a2cc-4b97-8c47-83688ab2b3bd",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C3",
+      "claim": "NPC-RSS demonstrated good predictive performance in both public and in-house datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "By evaluating 113 machine learning algorithm combinations, the glmBoost+NaiveBayes model was selected to construct the NPC-RSS based on 18 key genes, which demonstrated good predictive performance in both public and in-house datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental validation on multiple datasets as described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "1b368ed4-924a-4644-8281-695662173f08",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C4",
+      "claim": "NPC-RSS is closely associated with immune features, including chemokine factors and their receptor families and the major histocompatibility complex (MHC).",
+      "claim_type": "EXPLICIT",
+      "source": "The study found that NPC-RSS is closely associated with immune features, including chemokine factors and their receptor families and the major histocompatibility complex (MHC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on analysis of immune-related features in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "5e8530c3-c141-4f55-bdeb-bde04b42bc6a",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C5",
+      "claim": "NPC-RSS influences key signaling pathways such as Wnt/\u03b2-catenin, JAK-STAT, NF-\u03baB, and T cell receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene functional analysis revealed that NPC-RSS influences key signaling pathways such as Wnt/\u03b2-catenin, JAK-STAT, NF-\u03baB, and T cell receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene functional analysis performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "0e0aa024-a599-48e6-adff-815b389a6dcc",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C6",
+      "claim": "SMARCA2 and CD9 gene expression is consistent with NPC-RSS in cell line validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell line validation confirmed that SMARCA2 and CD9 gene expression is consistent with NPC-RSS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental validation using cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d65bcd99-8e2f-4650-96ee-1d299a0d6cad",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C7",
+      "claim": "The radiotherapy-sensitive group exhibited richer immune infiltration and activation states.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell analysis revealed that the radiotherapy-sensitive group exhibited richer immune infiltration and activation states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on single-cell analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d9158d82-ecf6-47cd-8c89-d5156e62f270",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C8",
+      "claim": "About 70% of new nasopharyngeal cancer cases occur in Eastern and Southeastern Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "About 70% of new nasopharyngeal cancer cases occur in Eastern and Southeastern Asia, while the rest are mainly in South-Central Asia, North Africa, and East Africa (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "e58d3bac-b031-4fe1-ba48-f6677df15a51",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C9",
+      "claim": "A total of 133,354 new cases of nasopharyngeal cancer were reported, accounting for only 0.7% of all new cancer cases.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the most recent global cancer statistics, a total of 133,354 new cases of nasopharyngeal cancer were reported, accounting for only 0.7% of all new cancer cases that year (Sung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sung et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "2b04caaa-e2c3-4064-9808-939a00f431f8",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C10",
+      "claim": "Hyperfractionated intensity-modulated radiotherapy increases the 3-year overall survival rate in NPC patients from 55.0% to 74.6% compared to conventional fractionated intensity-modulated radiotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "With the continuous advancement of radiotherapy technology, recent studies have shown that hyperfractionated intensity-modulated radiotherapy increases the 3-year overall survival rate in these patients from 55.0% to 74.6% compared to conventional fractionated intensity-modulated radiotherapy (You et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to You et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "05a6fac0-16ab-4db9-898d-e50cb7c4d6ff",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C11",
+      "claim": "Approximately 20\u201330% of NPC patients experience locoregional recurrence of the tumor due to radiation resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, approximately 20\u201330% of patients experience locoregional recurrence of the tumor due to radiation resistance (Lee et al., 2015; Ma and Chan, 2005; Agulnik and Epstein, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lee et al., 2015; Ma and Chan, 2005; Agulnik and Epstein, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "4bf4bc39-e5d0-4761-b2f1-06d5afef057c",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C12",
+      "claim": "Radiotherapy resistance is the main reason for treatment failure in nasopharyngeal cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have shown that radiotherapy resistance is the main reason for treatment failure in nasopharyngeal cancer patients (Linkous and Yazlovitskaya, 2012; Ribassin-Majed et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Linkous and Yazlovitskaya, 2012; Ribassin-Majed et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d5862d17-0863-443a-afa1-981db8a966cb",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C13",
+      "claim": "48 models were successfully constructed from 113 machine learning algorithm combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1, 48 models were successfully constructed, and the area under the curve (AUC) of each model was calculated in both the training and validation sets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis described and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "64e07a7d-f120-445e-a9a4-727cc9e12142",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C14",
+      "claim": "The best model combination was found to be glmBoost + NaiveBayes after sample weighting.",
+      "claim_type": "EXPLICIT",
+      "source": "The best model combination was found to be glmBoost + NaiveBayes after sample weighting: the glmBoost algorithm was used to screen out the most valuable gene features, and then the NaiveBayes algorithm was employed to identify the most reliable model (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the evaluation of model performance as shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d843229b-5bb5-4995-a0b9-efef28756a04",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C15",
+      "claim": "The model identified 18 genes as candidate genes for subsequent studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The model identified 18 genes, which were used as candidate genes for subsequent studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result of the model construction process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "4f9c7fa8-36bf-48c9-b85e-7139dde9f1ac",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C16",
+      "claim": "The top 5 genes characterized in the NPC-RSS, in order of their contribution to radiotherapy sensitivity and weighting coefficients, are SMARCA2, DMC1, CD9, PSG4, and KNG1.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 5 genes characterized in the NPC-RSS, in order of their contribution to radiotherapy sensitivity and weighting coefficients, are SMARCA2, DMC1, CD9, PSG4, and KNG1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of gene contributions in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "70f33466-e806-486a-b632-7a4e5f427ea8",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C17",
+      "claim": "The genes with absolute values of weight coefficients greater than 10 were SMARCA2, DMC1, KNG1, NTRK3, CLDN1, and CDK5RAP3.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes with absolute values of weight coefficients greater than 10 were SMARCA2, DMC1, KNG1, NTRK3, CLDN1, and CDK5RAP3 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the weight coefficients shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "79fe917c-451d-48e2-9d3d-86d742d05dc6",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C18",
+      "claim": "The prediction model demonstrated an AUC of 0.996 for the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "The prediction model constructed using these 18 genes demonstrated good diagnostic efficacy, with an area under the receiver operating characteristic (ROC) curve (AUC) of 0.996 for the training set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ROC curve analysis of the training set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "a2c1adb1-e312-440c-826c-528b1d524333",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C19",
+      "claim": "The GSE32389 dataset yielded an AUC of 0.823 as an external validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "The GSE32389 dataset was employed as an external validation set, yielding an AUC of 0.823, which demonstrated the model's robustness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on validation using an independent dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "0cda1cff-c4b4-47a0-b3a2-a3bef9a983e6",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C20",
+      "claim": "The overall sample-weighted AUC for the combined training and validation sets was 0.932.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall sample-weighted AUC for the combined training and validation sets was 0.932 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on combined analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "ddf171d5-781d-405d-84d6-f20b35d856d0",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C21",
+      "claim": "Differential expression analysis resulted in 2932 differentially expressed genes (DEGs).",
+      "claim_type": "EXPLICIT",
+      "source": "The genes used to construct the model were derived from our center's NPC transcriptome expression data and underwent differential expression analysis, resulting in 2932 differentially expressed genes (DEGs; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential expression analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "b26409bb-da29-44b4-b147-e885b24b5658",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C22",
+      "claim": "SMARCA2 and CD9 were significantly highly expressed in the sensitive group (p<0.001, t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis results showed that SMARCA2 and CD9, among the key genes of NPC-RSS, were significantly highly expressed in the sensitive group (p<0.001, t-test), which was consistent with the expression trend of the key genes in the previously constructed NPC-RSS (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of gene expression in cell lines as shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "176a8a5a-883f-4a43-a830-a86ae0c5c2ca",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C23",
+      "claim": "The sensitivity scores of the sensitive group were significantly higher than those of the resistant group in CNE2 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the sensitivity scores of the sensitive group were significantly higher than those of the resistant group, further confirming the reliability of NPC-RSS (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NPC-RSS scoring of cell line samples as shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "c87ac24c-a86e-456d-8839-d335672ad963",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C24",
+      "claim": "The radiosensitive group exhibited a significant elevation in the levels of T follicular helper cells, regulatory T cells (Tregs), and activated NK cells compared to the radioresistant group.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated a significant elevation in the levels of T follicular helper cells, regulatory T cells (Tregs), and activated NK cells in the samples from the radiosensitive group compared to those from the radioresistant group (Figure 3A), suggesting that the radiosensitive group exhibited a more immunologically active infiltration profile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immune cell infiltration analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "5332bee0-5c97-402a-9d7a-504aa58958fd",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C25",
+      "claim": "SMARCA2 was significantly positively correlated with resting CD4 + memory T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that several key genes were highly correlated with immune cells: SMARCA2 was significantly positively correlated with resting CD4 + memory T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on correlation analysis between genes and immune cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "a34d0cb1-86c0-444b-945f-1a81a7cca3d0",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C26",
+      "claim": "DMC1 was significantly positively correlated with resting NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DMC1 was significantly positively correlated with resting NK cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on correlation analysis between genes and immune cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d51722ba-261c-4a82-a282-1353abc6c32d",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C27",
+      "claim": "CD9 was significantly positively correlated with resting CD4 + memory T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD9 was significantly positively correlated with resting CD4 + memory T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on correlation analysis between genes and immune cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "2911f1e0-4bc8-4961-8ea8-9e99be961e0c",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C28",
+      "claim": "KNG1 was significantly negatively correlated with M1 macrophages, \u03b3\u03b4 T cells, monocytes, eosinophils, neutrophils, and other immune cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "KNG1 was significantly negatively correlated with M1 macrophages, \u03b3\u03b4 T cells, monocytes, eosinophils, neutrophils, and other immune cell types (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "70cbe99f-2c89-4ffd-b3bf-c74d234c6764",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C29",
+      "claim": "A total of 28,957 cells were acquired from single-cell transcriptome data, with 22,796 cells from the radiotherapy-sensitive group and 6161 cells from the radiotherapy-resistant group.",
+      "claim_type": "EXPLICIT",
+      "source": "Following single-cell suspension preparation, library construction, sequencing analysis, and quality control of the obtained data, we acquired transcriptome data for a total of 28,957 cells. Among these, 22,796 cells were derived from the radiotherapy-sensitive group, and 6161 cells were from the radiotherapy-resistant group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single-cell sequencing data processing and quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "8fba3b0b-7198-4252-ae95-0030d1939d27",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C30",
+      "claim": "17 cell subpopulations were identified through clustering, belonging to seven distinct cell types: T cells, myeloid cells, B cells, epithelial cells, neutrophils, fibroblasts, and mast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 4, 17 cell subpopulations were identified through clustering. By examining the expression profiles of cell-type-specific marker genes, we determined that these 17 cell subpopulations belonged to seven distinct cell types: T cells, myeloid cells, B cells, epithelial cells, neutrophils, fibroblasts, and mast cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single-cell clustering analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "444bf176-79ef-4234-85a6-e3d4ada0c1ff",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C31",
+      "claim": "Myeloid cells, epithelial cells, fibroblasts, and mast cells were significantly more abundant in samples from the radiotherapy-sensitive group compared to the radiotherapy-resistant group.",
+      "claim_type": "EXPLICIT",
+      "source": "Myeloid cells, epithelial cells, fibroblasts, and mast cells were significantly more abundant in samples from the radiotherapy-sensitive group compared to the radiotherapy-resistant group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single-cell analysis comparing cell type abundances between groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "27bb6aa9-d8b8-4702-96d6-e3d52963b230",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C32",
+      "claim": "The predicted scores of cells in the sensitive group were significantly higher than those in the resistant group, especially in epithelial cells, myeloid cells, fibroblasts, and mast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We used NPC-RSS to calculate the radiotherapy sensitivity scores of each cell. The predicted scores of cells in the sensitive group were significantly higher than those in the resistant group, especially in epithelial cells, myeloid cells, fibroblasts, and mast cells (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NPC-RSS scoring at the single-cell level shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "fd60f8b4-a5eb-405c-a976-b608b7608b0f",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C33",
+      "claim": "The radiotherapy-sensitive group showed significant dominance in terms of immune cells, whereas the radiotherapy-resistant group was mainly composed of malignant epithelial and stromal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the radiotherapy-sensitive group showed significant dominance in terms of immune cells, whereas the radiotherapy-resistant group was mainly composed of malignant epithelial and stromal cells (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cell type composition analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "3d5d6a6b-dfb3-468b-9cc6-161d04a6d53c",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C34",
+      "claim": "High expression of SMARCA2 enriched signaling pathways such as WNT_BETA_CATENIN_SIGNALING, PI3K_AKT_MTOR_SIGNALING, TGF_BETA_SIGNALING, and NOTCH_SIGNALING.",
+      "claim_type": "EXPLICIT",
+      "source": "GSVA results demonstrated that high expression of SMARCA2 enriched signaling pathways such as WNT_BETA_CATENIN_SIGNALING, PI3K_AKT_MTOR_SIGNALING, TGF_BETA_SIGNALING, and NOTCH_SIGNALING (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GSVA analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "0f9dd5be-5c67-46ac-9710-2c7be92ba643",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C35",
+      "claim": "High expression of DMC1 enriched INTERFERON_GAMMA_RESPONSE and IL2_STAT5_SIGNALING pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, high expression of DMC1 enriched INTERFERON_GAMMA_RESPONSE and IL2_STAT5_SIGNALING pathways (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GSVA analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "1aea1b0d-336e-44f7-9f3f-660609a9e440",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C36",
+      "claim": "SMARCA2 was enriched in pathways such as the JAK-STAT signaling pathway, NF-kappa B signaling pathway, and T cell receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GSEA results showed that SMARCA2 was enriched in pathways such as the JAK-STAT signaling pathway, NF-kappa B signaling pathway, and T cell receptor signaling (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GSEA analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d1121ea2-9cfb-4b66-b876-60ea298098cb",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C37",
+      "claim": "DMC1 was enriched in pathways such as cell adhesion molecules, Hedgehog signaling pathway, and phosphatidylinositol signaling system.",
+      "claim_type": "EXPLICIT",
+      "source": "DMC1 was enriched in pathways such as cell adhesion molecules, Hedgehog signaling pathway, and phosphatidylinositol signaling system (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GSEA analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "790702bc-5b21-40d6-926a-a613abb931a8",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C38",
+      "claim": "The expression of SMARCA2 was positively correlated with high expression levels of TP53, EGFR, BRCA2, and ATM.",
+      "claim_type": "EXPLICIT",
+      "source": "Spearman correlation analysis indicated that the expression of SMARCA2 was positively correlated with high expression levels of TP53, EGFR, BRCA2, and ATM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Spearman correlation analysis of gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "e3b41822-bd5f-4ea5-a788-b8da0a255fe1",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C39",
+      "claim": "DMC1 expression was positively correlated with high expression levels of BRCA1, APTX, ATM, and CCR6.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DMC1 expression was positively correlated with high expression levels of BRCA1, APTX, ATM, and CCR6",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Spearman correlation analysis of gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "e026827e-acb9-483f-830a-b40da22b2a4d",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C40",
+      "claim": "CD9 expression was positively correlated with high expression levels of EGFR, TP53, ERBB2, and RAD51.",
+      "claim_type": "EXPLICIT",
+      "source": "while CD9 expression was positively correlated with high expression levels of EGFR, TP53, ERBB2, and RAD51.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Spearman correlation analysis of gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "4dc3cba0-2fa5-42dc-93d8-5b731c3ab355",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C41",
+      "claim": "The expression of KNG1 was correlated with high expression levels of HULC and significantly negatively correlated with high expression levels of BADA.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of KNG1 was correlated with high expression levels of HULC and significantly negatively correlated with high expression levels of BADA (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "7a315f7e-94ff-4c1a-a32a-9d65de1a050d",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C42",
+      "claim": "SMARCA2 plays a crucial role in various cellular processes, including cytokine response, DNA repair, regulation of cell proliferation, lineage specification and development, and cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein encoded by the SMARCA2 gene plays a crucial role in various cellular processes, including cytokine response, DNA repair, regulation of cell proliferation, lineage specification and development, and cell adhesion (Helming et al., 2014; Wang et al., 2014; Zhu et al., 2015; Tian et al., 2013; Dykhuizen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "40f31494-1ca1-4210-ab92-a80521f7d232",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C43",
+      "claim": "SMARCA2 depletion can increase the sensitivity to radiotherapy in non-small cell lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that SMARCA2 has a significant effect on the responsiveness to radiotherapy in non-small cell lung cancer, and its depletion can increase the sensitivity to radiotherapy, suggesting that SMARCA2 may be a potential therapeutic target for sensitization to radiotherapy (Zernickel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zernickel et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "481f4e5e-082b-4998-ac34-880ac30d08e3",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C44",
+      "claim": "DMC1 is a key factor in homologous recombination involved in the repair process of DNA double-strand breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "DMC1, a key factor in homologous recombination, is involved in the repair process of DNA double-strand breaks (Dunne et al., 2003; Zhang et al., 2017; Xie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dunne et al., 2003; Zhang et al., 2017; Xie et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "fea9eb60-4d8b-45fd-809f-d564238a66fd",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C45",
+      "claim": "CD9 is believed to play a role in various stages of cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "CD9 is believed to play a role in various stages of cancer development (Murayama et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Murayama et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "1cd114fc-9359-4f76-8482-bfb46ef32b43",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C46",
+      "claim": "All human PSGs initiate TGF-\u03b21.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that all human PSGs initiate TGF-\u03b21. In vivo, PSGs may increase the availability of active TGF-\u03b21 in both soluble and matrix-bound forms of this potential cytokine (Warren et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Warren et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "699ed6ef-722d-4acf-851c-dea0133b2a7f",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C47",
+      "claim": "TGF-\u03b21 levels accurately predict radiosensitization in elderly patients with unresectable NSCLC undergoing 3D-CRT.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, TGF-\u03b21 levels accurately predict radiosensitization in elderly patients with unresectable NSCLC undergoing 3D-CRT (Fu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "c8b1760c-baf3-4adc-b169-6826309763d2",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C48",
+      "claim": "Proteins related to the Wnt/\u03b2-catenin signaling pathway (DKK-3, \u03b2-catenin, and c-MYC) are involved in the development of NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that proteins related to the Wnt/\u03b2-catenin signaling pathway (DKK-3, \u03b2-catenin, and c-MYC) are involved in the development of NPC, and that knockdown of FOXO3a promotes radioresistance in NPC through the Wnt/\u03b2-catenin signaling pathway (Pang et al., 2019; Luo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pang et al., 2019; Luo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "b5a3d94a-7b76-441a-85d2-bd6b0611c2e0",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C49",
+      "claim": "Knockdown of FOXO3a promotes radioresistance in NPC through the Wnt/\u03b2-catenin signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that proteins related to the Wnt/\u03b2-catenin signaling pathway (DKK-3, \u03b2-catenin, and c-MYC) are involved in the development of NPC, and that knockdown of FOXO3a promotes radioresistance in NPC through the Wnt/\u03b2-catenin signaling pathway (Pang et al., 2019; Luo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pang et al., 2019; Luo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "fba32346-960b-4261-82ee-ea09930417aa",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C50",
+      "claim": "SMARCA2 may regulate the radiosensitivity of NPC via the Wnt/\u03b2-catenin signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we hypothesized that SMARCA2 may regulate the radiosensitivity of NPC via the Wnt/\u03b2-catenin signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from pathway analysis and previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "36310445-c9c5-43d3-9b6b-06627d70191f",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C51",
+      "claim": "Irradiated tumors can act as adjuvants to the immune system, promoting local tumor control and inducing regression of distant tumor deposits through abscopal effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent preclinical studies have demonstrated that irradiated tumors can act as adjuvants to the immune system, promoting local tumor control and inducing regression of distant tumor deposits through abscopal effects (Ngwa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ngwa et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "b1a10914-1161-40e3-9898-7c26e914cef7",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C52",
+      "claim": "Radiation significantly alters the distribution of tumor antigens, recruits anti-tumor T cells, and induces a distinct inflammatory microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to potential systemic effects, radiation significantly alters the distribution of tumor antigens, recruits anti-tumor T cells, and induces a distinct inflammatory microenvironment (Demaria et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Demaria et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d346cca1-547c-4285-97de-b29945436147",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C53",
+      "claim": "Tumors with high immune cell infiltration are more sensitive to radiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have shown that tumors with high immune cell infiltration are more sensitive to radiation (Grass et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Grass et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "383e4278-d4b8-49ff-bdf6-e064c6f7ed00",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C54",
+      "claim": "Over one-third of tumor types in the radiotherapy-sensitive group of solid tumors exhibit an enrichment of CD8 + T cells, M1 macrophages, and NK + cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have demonstrated that over one-third of tumor types in the radiotherapy-sensitive group of solid tumors exhibit an enrichment of CD8 + T cells, M1 macrophages, and NK + cells (Grass et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Grass et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "06c8f759-e373-40df-b5c5-bde10d68fd32",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C55",
+      "claim": "Samples were collected from 34 NPC patients treated at Zhujiang Hospital of Southern Medical University between March 2017 and July 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we collected samples from 34 NPC patients treated at Zhujiang Hospital of Southern Medical University between March 2017 and July 2021 (in-house cohort).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "e2ce4cec-bed9-4ad3-9c94-4310e3c33bf5",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C56",
+      "claim": "Written informed consent was obtained from the NPC patients whose NPC tissues were collected, and the study was approved by the Ethics Committee of Zhujiang Hospital of Southern Medical University.",
+      "claim_type": "EXPLICIT",
+      "source": "Written informed consent was obtained from the NPC patients whose NPC tissues were collected, and the study was approved by the Ethics Committee of Zhujiang Hospital of Southern Medical University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval and consent process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "254d051d-d4e3-4a3d-b9c0-663afd7dac2d",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C57",
+      "claim": "Differential analysis identified 71 DEGs (p<0.05 and |LogFC|>0.585).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified 71 DEGs (p<0.05 and |LogFC|>0.585, Supplementary file 2; Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on differential expression analysis with specified statistical criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "4414c53d-a93f-44a3-b7b7-91d3bc12586c",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C58",
+      "claim": "113 combinations of machine learning algorithms were integrated for model construction.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined these algorithms with the others to form 113 combinations of machine learning algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for model construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "ab3a6409-74e6-46e3-9f37-f48467a1aae0",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C59",
+      "claim": "The CNE2 nasopharyngeal carcinoma cell line was cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNE2 nasopharyngeal carcinoma cell line, previously preserved by the Pearl River Hospital Center for Translational Medicine, was cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell culture methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "f1c3263a-1601-4043-8c02-74960c127a49",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C60",
+      "claim": "Each T25 culture flask was seeded with approximately 2x10^5 cells in the exponential growth phase and sequentially irradiated with increasing doses (2, 4, 6, 8, and 10 Gy) twice, followed by a single 10 Gy dose, for a total of nine irradiations and a cumulative dose of 50 Gy.",
+      "claim_type": "EXPLICIT",
+      "source": "Each T25 culture flask was seeded with approximately 2x105 cells in the exponential growth phase and sequentially irradiated with increasing doses (2, 4, 6, 8, and 10 Gy) twice, followed by a single 10 Gy dose, for a total of nine irradiations and a cumulative dose of 50 Gy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for creating radiation-resistant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "25b65d92-5c10-4a75-b135-d3d2b1a8cc87",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C61",
+      "claim": "The CIBERSORT algorithm was applied to analyze the expression data of nasopharyngeal cancer patients to infer the relative proportions of 22 immune-infiltrating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The CIBERSORT algorithm was applied to analyze the expression data of nasopharyngeal cancer patients to infer the relative proportions of 22 immune-infiltrating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for immune infiltration analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "9e821b11-6761-4e60-af16-434bcc68233e",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C62",
+      "claim": "After quality control, 28,957 high-quality NPC cells were retained for further analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control, 28,957 high-quality NPC cells were retained for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the result of quality control in single-cell analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "c4e586ec-7654-426f-a011-a2f657ee2db4",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C63",
+      "claim": "The NPC-RSS key genes are closely associated with the level of immune cell infiltration and play a crucial role in the immune microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses suggest that the NPC-RSS key genes are closely associated with the level of immune cell infiltration and play a crucial role in the immune microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation analyses performed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "6d2064a5-7f62-4277-b844-bcaa65d68085",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C64",
+      "claim": "The radiosensitive group exhibited a more immunologically active infiltration profile.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated a significant elevation in the levels of T follicular helper cells, regulatory T cells (Tregs), and activated NK cells in the samples from the radiosensitive group compared to those from the radioresistant group (Figure 3A), suggesting that the radiosensitive group exhibited a more immunologically active infiltration profile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the immune cell infiltration data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "47b00b0a-9e92-46e7-87f5-21e07026b4e0",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C65",
+      "claim": "The presence of immune cells might have influenced the tumor's responsiveness to treatment to some extent prior to radiation therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that the presence of immune cells might have influenced the tumor's responsiveness to treatment to some extent prior to radiation therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the single-cell analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "7076c41c-b44a-4e4e-8e0e-e6a31ffe2972",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C66",
+      "claim": "Tumors with a predominance of immune cells may be more likely to exhibit a positive response to radiation therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors with a predominance of immune cells may be more likely to exhibit a positive response to radiation therapy, either due to the involvement of immune cells in tumor surveillance and clearance or because the responsiveness of tumors to radiation therapy is modulated by immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "2c1cb74f-1d46-46b4-9ef3-a5f51df8ab7f",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C67",
+      "claim": "NPC-RSS key genes may influence radiotherapy sensitivity in NPC patients through pathways such as WNT_BETA_CATENIN_SIGNALING, JAK-STAT signaling, NF-kappa B signaling, and T cell receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that NPC-RSS key genes may influence radiotherapy sensitivity in NPC patients through these pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on pathway enrichment analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "4edb183b-a013-4b10-8866-d924f9301007",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C68",
+      "claim": "The radiosensitivity estimated by the NPC-RSS may be associated with a distinct tumor immune microenvironment, which could potentially be exploited through a combinatorial immunotherapy approach.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the radiosensitivity estimated by the NPC-RSS may be associated with a distinct tumor immune microenvironment, which could potentially be exploited through a combinatorial immunotherapy approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the immune microenvironment analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "a6957673-33fd-4c19-b79b-e3e814281ffb",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C69",
+      "claim": "T cells expressed CD3D, CD8A, and CD4 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells expressed CD3D, CD8A, and CD4 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the marker genes used for cell type identification in single-cell analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "13a3ed9c-243c-401e-a665-73c42fe00f11",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C70",
+      "claim": "Myeloid cells expressed C1QB, LYZ, and AIF1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Myeloid cells expressed C1QB, LYZ, and AIF1 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the marker genes used for cell type identification in single-cell analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "4eb8333a-ebf1-43b5-a12a-f51c4274e4ce",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C71",
+      "claim": "B cells expressed MS4A1 and CD79A genes.",
+      "claim_type": "EXPLICIT",
+      "source": "B cells expressed MS4A1 and CD79A genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the marker genes used for cell type identification in single-cell analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "72ec31e4-35c8-4aba-9f49-f1c1ee3f3e28",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C72",
+      "claim": "Epithelial cells specifically expressed KRT5 and EPCAM genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Epithelial cells specifically expressed KRT5 and EPCAM genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the marker genes used for cell type identification in single-cell analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "1e4a2f61-27cb-4b70-b3e1-eb44a22bd132",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C73",
+      "claim": "Fibroblasts expressed DCN and COL1A1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblasts expressed DCN and COL1A1 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the marker genes used for cell type identification in single-cell analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "2d320efd-8f39-488a-a391-ec012fb03543",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C74",
+      "claim": "Mast cells expressed CPA3, TPSAB1, and MS4A2 as marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mast cells expressed CPA3, TPSAB1, and MS4A2 as marker genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the marker genes used for cell type identification in single-cell analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "bc0cccc1-b628-4cc1-8f4f-393161cb1862",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C75",
+      "claim": "Most of the 18 genes in the NPC-RSS were related to immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, most of the 18 genes in the NPC-RSS were related to immune cells (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression patterns shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "6b56fd35-c3ab-4b1b-8e20-54ca1b67b186",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C76",
+      "claim": "T cells, myeloid cells, epithelial cells, mast cells, and fibroblasts consisted of multiple cell subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that T cells, myeloid cells, epithelial cells, mast cells, and fibroblasts consisted of multiple cell subpopulations (Figure 4F), suggesting that these cell types may be heterogeneous.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single-cell analysis shown in Figure 4F, with inference about heterogeneity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "82d039a5-34a0-4207-8b00-5b9beb8d0927",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C77",
+      "claim": "The expression of SMARCA2 and CD9 in CNE2-RS radiation-resistant cells was consistent with the expression trend of the key genes in the previously constructed NPC-RSS.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis results showed that SMARCA2 and CD9, among the key genes of NPC-RSS, were significantly highly expressed in the sensitive group (p<0.001, t-test), which was consistent with the expression trend of the key genes in the previously constructed NPC-RSS (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental validation in cell lines shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d3d06303-e642-437e-b0e7-298a19df975f",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C78",
+      "claim": "The 18 gene features exhibited significant differential expression between the sensitive and resistant groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these 18 gene features exhibited significant differential expression between the sensitive and resistant groups (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential expression analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "7a65f914-eb1a-4430-a4ab-f8c997ca104d",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "claim_id": "C79",
+      "claim": "NPC-RSS can serve as a predictive tool for radiotherapy sensitivity in NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "NPC-RSS can serve as a predictive tool for radiotherapy sensitivity in NPC, offering new insights for precise screening of patients who may benefit from radiotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the overall study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3690b6bd-e202-481b-a7b1-004c2206830a",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed NPC-RSS, a radiotherapy sensitivity prediction model for nasopharyngeal carcinoma, by evaluating 113 machine learning algorithm combinations. The glmBoost+NaiveBayes model was selected based on 18 key genes, achieving an AUC of 0.996 in the training set (n=34) and 0.823 in the external validation set GSE32389 (n=20), with an overall sample-weighted AUC of 0.932.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the model shows high performance metrics (C18-C20), the very small training sample size (n=34) and extremely high training AUC (0.996) raise concerns about overfitting despite cross-validation (C13-C14). The substantial drop in validation AUC (0.823) suggests limited generalizability. The study lacks independent prospective validation, functional validation of the gene signature, and details on handling class imbalance. The statistical thresholds for DEG selection (C57: p<0.05, |LogFC|>0.585) appear lenient and may capture noise.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cell line validation using CNE2 parental and radiation-resistant (CNE2-RS) cells confirmed that SMARCA2 and CD9 expression patterns were consistent with NPC-RSS predictions. SMARCA2 and CD9 were significantly highly expressed in the sensitive group (p<0.001, t-test), and NPC-RSS scores were significantly higher in the sensitive versus resistant cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cell line validation provides experimental support for the model (C22-C23, C77). The radiation-resistant cell line was generated using a systematic protocol with cumulative 50 Gy dose (C60), and expression patterns matched predictions. However, validation is limited to only 2 of 18 genes and uses n=3 biological replicates. The study would benefit from functional knockdown/overexpression experiments to establish causality rather than just correlation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The radiosensitive group exhibited significantly elevated levels of T follicular helper cells, regulatory T cells (Tregs), and activated NK cells compared to the radioresistant group. Key NPC-RSS genes showed significant correlations with specific immune cell types: SMARCA2 and CD9 with resting CD4+ memory T cells, DMC1 with resting NK cells, and KNG1 negatively with M1 macrophages and other immune cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The immune infiltration analysis using CIBERSORT (C61) demonstrates consistent associations between NPC-RSS and immune features (C24-C28). The correlations are statistically significant and biologically plausible given the known roles of these immune cells in radiotherapy response. However, the analysis is correlative and does not establish causality. The inference that radiosensitive groups have \"more immunologically active infiltration\" (C64) is reasonable but requires functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "707f1b56-490e-4016-88a2-89a66cbe40c1",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing analysis of 28,957 cells from 3 radiotherapy-sensitive and 1 radiotherapy-resistant NPC patient identified 17 cell subpopulations across 7 cell types. NPC-RSS scores were significantly higher in cells from the sensitive group, particularly in epithelial cells, myeloid cells, fibroblasts, and mast cells. The radiotherapy-sensitive group showed predominance of immune cells while the resistant group was mainly composed of malignant epithelial and stromal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The single-cell analysis provides valuable cellular-level validation (C29-C33), but the study design has critical limitations: only 1 resistant patient versus 3 sensitive patients creates severe class imbalance that could bias all comparisons. The marker genes used for cell type identification (C69-C74) are standard, but the claim that \"most of the 18 genes in NPC-RSS were related to immune cells\" (C75) requires more rigorous statistical support. The inference about immune cell influence on treatment response (C33) is speculative without temporal data showing pre-treatment status.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "305093ba-1dd8-40f6-8a17-6ed69256fc3f",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pathway enrichment analysis revealed that high expression of SMARCA2 enriched WNT_BETA_CATENIN_SIGNALING, PI3K_AKT_MTOR_SIGNALING, TGF_BETA_SIGNALING, NOTCH_SIGNALING, JAK-STAT signaling, NF-kappa B signaling, and T cell receptor signaling pathways. High DMC1 expression enriched INTERFERON_GAMMA_RESPONSE, IL2_STAT5_SIGNALING, cell adhesion molecules, Hedgehog signaling, and phosphatidylinositol signaling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The GSVA and GSEA analyses (C34-C37) identify biologically relevant pathways associated with key NPC-RSS genes. The pathways identified are consistent with known mechanisms of radiotherapy response and immune regulation. However, pathway enrichment analysis is correlative and does not demonstrate that these genes functionally regulate these pathways in the context of NPC radiotherapy response. The inference that \"NPC-RSS key genes may influence radiotherapy sensitivity through these pathways\" (C67) is reasonable but speculative without functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "83ee63c0-9de5-4575-a583-16c9b2c63c2b",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Spearman correlation analysis showed that key NPC-RSS genes correlated with known radiosensitivity-related genes: SMARCA2 with TP53, EGFR, BRCA2, and ATM; DMC1 with BRCA1, APTX, ATM, and CCR6; CD9 with EGFR, TP53, ERBB2, and RAD51; and KNG1 positively with HULC and negatively with BADA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation analysis (C38-C41) provides supporting evidence that NPC-RSS genes associate with established radiosensitivity genes. The correlations with DNA repair genes (BRCA1/2, ATM, RAD51) are biologically plausible. However, correlation does not imply functional relationship, and some correlations (e.g., KNG1 with HULC/BADA) lack clear mechanistic interpretation. Statistical significance values are not provided for all correlations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "8fd58c50-181d-4234-b44a-75656bc367e7",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NPC-RSS is closely associated with immune features including chemokine factors, their receptor families, and the major histocompatibility complex (MHC), with key genes playing a crucial role in the immune microenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The association between NPC-RSS and immune features (C4) is supported by multiple lines of evidence including immune infiltration analysis (C24-C28), correlation with immune-related genes from TISIDB database, and single-cell analysis (C75). The claim that key genes \"play a crucial role\" (C63) is an inference from correlations rather than functional demonstration, but the overall pattern of associations is consistent and biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Literature review establishes that the key NPC-RSS genes have established roles in cancer biology and radiotherapy response: SMARCA2 in DNA repair and cell proliferation with demonstrated effects on radiotherapy sensitivity in NSCLC; DMC1 in homologous recombination and DNA double-strand break repair; CD9 in cancer development; PSG4 in TGF-\u03b21 regulation; and Wnt/\u03b2-catenin pathway involvement in NPC radioresistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cited literature (C42-C49) provides strong support for the biological relevance of the selected genes. The citations are appropriate and from peer-reviewed sources. However, most evidence comes from other cancer types (e.g., SMARCA2 in NSCLC, C43), and direct functional validation in NPC is lacking in this study. The authors appropriately cite prior work but do not experimentally validate these mechanisms in their NPC model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "ab591529-e656-4cf8-b955-181459a1bbbb",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors hypothesize that SMARCA2 may regulate NPC radiosensitivity via the Wnt/\u03b2-catenin signaling pathway, that immune cell presence may influence tumor responsiveness to radiotherapy, and that NPC-RSS-associated radiosensitivity may be exploited through combinatorial immunotherapy approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly speculative claims (C50, C65, C66, C68) based on pathway analysis and observed correlations. While the hypotheses are biologically plausible and grounded in the data, they remain untested. The authors appropriately frame these as hypotheses and suggestions rather than established findings. These represent reasonable directions for future research but should not be considered validated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "75951174-8449-4faf-853e-0df5a235ded6",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 18 gene features in the NPC-RSS signature exhibited significant differential expression between radiotherapy-sensitive and resistant groups in the training cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The differential expression of the 18 genes (C78) is supported by Figure 2\u2014figure supplement 1 and is a direct result of the model construction process. This is expected given that these genes were selected based on differential expression analysis (C57: 71 DEGs identified, then reduced to 18 through machine learning). However, this represents circular reasoning to some extent\u2014genes selected for differential expression naturally show differential expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "35e55db3-7d1e-466f-959f-e692bc99f2b1",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establish that NPC is geographically concentrated in Eastern/Southeastern Asia (70% of cases), radiotherapy is the primary treatment with improving outcomes (3-year survival 55.0% to 74.6% with advanced techniques), but 20-30% of patients experience locoregional recurrence due to radiotherapy resistance, which is the main cause of treatment failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1, C8-C12) are well-supported by appropriate citations to epidemiological and clinical studies. The statistics are specific and sourced from recent literature (Sung et al. 2021, You et al. 2023, etc.). These establish the clinical context and rationale for the study but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "1ce90725-c3c3-4e6a-bd91-20967d40765d",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior literature establishes that irradiated tumors can act as immune adjuvants with abscopal effects, radiation alters tumor antigen distribution and recruits anti-tumor T cells, tumors with high immune infiltration are more radiation-sensitive, and over one-third of radiotherapy-sensitive solid tumors show enrichment of CD8+ T cells, M1 macrophages, and NK cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C51-C54) appropriately cite relevant literature (Ngwa et al. 2018, Demaria et al. 2021, Grass et al. 2022) establishing the relationship between immune infiltration and radiotherapy response. The citations appear accurate and provide context for interpreting the immune infiltration findings in this study. These are not novel findings but appropriate background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "3066606c-2e02-4eae-a0db-a43c96dfb13c",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study collected samples from 34 NPC patients at Zhujiang Hospital between March 2017 and July 2021 with written informed consent and ethics committee approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The data collection and ethical procedures (C55-C56) are clearly described and appear appropriate. Ethics approval and informed consent are documented. However, no details are provided about patient characteristics, treatment protocols, or criteria for classifying patients as sensitive versus resistant, which are critical for evaluating the validity of the training labels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "3148830e-0622-4c0c-b83c-048f21843b99",
+      "content_id": "ba857720-ac03-4a64-a763-80e419fe49d5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors conclude that NPC-RSS can serve as a predictive tool for radiotherapy sensitivity in NPC, offering new insights for precise screening of patients who may benefit from radiotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This overarching conclusion (C79) is premature given the study limitations: very small sample size (n=34 training), lack of prospective validation, no demonstration of clinical utility, and no comparison to existing clinical predictors. While the model shows promise, claiming it \"can serve as a predictive tool\" overstates the current evidence. The model requires validation in larger, independent, prospectively collected cohorts before clinical application can be recommended.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "2068ddd5-72e6-48e1-a86d-451f547b16f9",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed NPC-RSS using a comprehensive machine learning approach, evaluating 113 algorithm combinations to select the glmBoost+NaiveBayes model, which identified 18 key genes for predicting radiotherapy sensitivity in NPC patients.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly praised the comprehensive machine learning approach. Reviewer 1 stated the authors 'developed a robust machine learning approach,' Reviewer 2 noted 'the study employed a comprehensive approach by integrating multiple machine learning algorithms,' and Reviewer 3 highlighted 'the combination of multiple machine learning algorithms and cross-validation was used to select the best predictive model.' No concerns were raised about the methodology or model selection process.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "b8deac2c-2ee8-48fa-8516-3948c787dfd3",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "NPC-RSS demonstrated strong predictive performance with AUC values of 0.996 in the training set, 0.823 in the external validation set (GSE32389), and an overall sample-weighted AUC of 0.932 across combined datasets.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently affirmed the predictive performance. Reviewer 2 stated 'the predictive performance of NPC-RSS was validated using both public and in-house datasets, demonstrating its potential clinical applicability,' and Reviewer 3 noted 'the study used public datasets and in-house cohort data for validation, confirming the good predictive performance of NPC-RSS.' However, Reviewer 2 noted the small sample size (34 patients) as a weakness that 'might limit the generalizability of the findings.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "a0eb3e3c-0035-4102-a2ee-b56d78387d69",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Cell line validation confirmed that SMARCA2 and CD9 gene expression patterns in radiation-sensitive versus resistant CNE2 cells were consistent with NPC-RSS predictions, with significantly higher expression in the sensitive group (p<0.001) and correspondingly higher sensitivity scores.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly validated this experimental evidence. Reviewer 1 stated 'some key aspects of this signature have been validated in vitro using relevant cell lines which strengthens the conclusions,' and Reviewer 2 noted 'the consistency of key gene expression with NPC-RSS was validated in the authors' own cell lines, providing additional experimental evidence.' No concerns were raised about these validation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "56c0550f-2056-40d9-b7f2-67097d8a095d",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "NPC-RSS key genes showed close associations with immune features, including significant correlations between specific genes (SMARCA2, DMC1, CD9, KNG1) and various immune cell types, with the radiosensitive group exhibiting elevated levels of T follicular helper cells, Tregs, and activated NK cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirmed the immune associations. Reviewer 2 stated 'the authors conducted extensive analyses to investigate the biological mechanisms underlying the association between NPC-RSS and radiotherapy response, including immune characteristics,' and Reviewer 3 noted 'functional enrichment analysis revealed close associations between NPC-RSS key genes and immune characteristics.' The immune infiltration findings were specifically praised by Reviewer 3 as clarifying 'the mechanism of NPC-RSS in predicting radiotherapy sensitivity from an immunological perspective.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "bae42fbb-89a0-43f9-a3de-2c64b2b85f25",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Gene functional analysis revealed that NPC-RSS key genes influence critical signaling pathways including Wnt/\u03b2-catenin, JAK-STAT, NF-\u03baB, and T cell receptors, with SMARCA2 enriching WNT_BETA_CATENIN_SIGNALING, PI3K_AKT_MTOR_SIGNALING, and other pathways, while DMC1 enriched INTERFERON_GAMMA_RESPONSE and IL2_STAT5_SIGNALING pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged the pathway analysis findings. Reviewer 2 noted the authors investigated 'relevant signaling pathways' as part of their biological mechanism analysis, and Reviewer 3 stated 'functional enrichment analysis revealed close associations between NPC-RSS key genes and...signaling pathways related to disease progression, providing a biological basis for NPC-RSS in predicting radiotherapy sensitivity.' No concerns were raised about these pathway enrichment results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "654f7193-9ce3-4581-8521-e99e3f49829a",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Single-cell analysis of 28,957 cells identified 17 cell subpopulations across seven cell types, revealing that the radiotherapy-sensitive group exhibited richer immune infiltration with immune cell dominance, while the resistant group was mainly composed of malignant epithelial and stromal cells, with NPC-RSS scores significantly higher in sensitive group cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly endorsed the single-cell findings. Reviewer 3 specifically highlighted that 'grouping NPC samples according to NPC-RSS showed that the radiotherapy-sensitive group exhibited a more enriched and activated state of immune infiltration compared to the radioresistant group. In single-cell samples, NPC-RSS was higher in the radiotherapy-sensitive group, with immune cells playing a dominant role.' No methodological concerns were raised about the single-cell analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "90027ba4-f2c5-49a6-bb67-7e19e7652a1d",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Spearman correlation analysis showed that key NPC-RSS genes (SMARCA2, DMC1, CD9, KNG1) were positively correlated with high expression levels of various radiotherapy sensitivity-related genes including TP53, EGFR, BRCA1, BRCA2, ATM, and others.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged these correlation findings as part of the broader biological mechanism investigation. Reviewer 2 noted the authors investigated 'radiosensitivity-related gene expression' and Reviewer 3 stated the analysis revealed 'close associations between NPC-RSS key genes and...expression of radiotherapy sensitivity-related genes.' No specific concerns were raised about these correlation analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "b89157c1-d78f-4d5b-b647-7985da444fe3",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors hypothesize that SMARCA2 may regulate NPC radiosensitivity via the Wnt/\u03b2-catenin pathway, that immune cells might influence tumor responsiveness to treatment prior to radiotherapy, and that NPC-RSS-associated radiosensitivity may be exploitable through combinatorial immunotherapy approaches.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers did not explicitly critique these speculative claims, Reviewer 2 identified a key weakness: 'the authors did not perform functional experiments to directly validate the roles of the identified key genes in radiotherapy sensitivity, relying instead on associations with immune features and signaling pathways.' This indicates the mechanistic hypotheses lack direct experimental validation and remain inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "2784c82e-ef1b-4a45-bf25-d60e43aaa073",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The model construction process identified specific gene contributions, with the top 5 genes being SMARCA2, DMC1, CD9, PSG4, and KNG1, and six genes (SMARCA2, DMC1, KNG1, NTRK3, CLDN1, CDK5RAP3) having weight coefficients with absolute values greater than 10. The 18 gene features exhibited significant differential expression between sensitive and resistant groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not raise concerns about these specific gene identification and ranking results, which are integral to the validated machine learning model. The differential expression findings support the model's biological basis, which reviewers acknowledged when praising the comprehensive approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "51b0375e-8f75-4a64-8488-6f2418be1a20",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The study collected samples from 34 NPC patients with appropriate ethical approval, established radiation-resistant cell lines through sequential irradiation protocols, and performed immune infiltration analysis using CIBERSORT algorithm, with quality control yielding 28,957 high-quality cells for single-cell analysis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged the methodological rigor but identified the sample size as a limitation. Reviewer 2 noted 'the sample size of the in-house dataset used for training the model was relatively small (34 patients), which might limit the generalizability of the findings.' However, no concerns were raised about ethical procedures, cell line establishment, or analytical methods.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Background claims about NPC epidemiology, radiotherapy resistance rates, and the biological roles of key genes (SMARCA2, DMC1, CD9, PSG4) and pathways (Wnt/\u03b2-catenin, TGF-\u03b21) in cancer and radiotherapy response, supported by citations to previous literature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not question these background claims, which are standard contextual information supported by citations. Reviewer 1 noted the publication 'will be of interest to clinicians working on this indication,' implicitly accepting the clinical context. These claims provide established scientific context rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "851ec27a-682b-40ec-ac7a-c706b7d89f02",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Single-cell analysis identified cell types using standard marker genes (CD3D/CD8A/CD4 for T cells, C1QB/LYZ/AIF1 for myeloid cells, etc.), with most of the 18 NPC-RSS genes related to immune cells, and several cell types consisting of multiple heterogeneous subpopulations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not raise concerns about cell type identification methods or the observation of immune-related gene expression patterns. These are standard single-cell analysis procedures using well-established marker genes, and the findings support the broader immune-related conclusions that reviewers explicitly endorsed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "fccab7f6-16da-4583-991c-f081a3127b45",
+      "content_id": "07ec51d8-caab-433b-84a0-d8800efcbf71",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The authors conclude that NPC-RSS can serve as a predictive tool for radiotherapy sensitivity in NPC, offering new insights for precise screening of patients who may benefit from radiotherapy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers praised the study as 'important and convincing' (Reviewer 1) with 'potential clinical applicability' (Reviewer 2), they also identified significant limitations. Reviewer 3 noted concerns about generalizability to other NPC subtypes, lack of accounting for radiotherapy protocol differences, oversimplification through binary classification, and failure to incorporate clinical variables like tumor stage and concurrent chemotherapy. These limitations temper the certainty of the clinical utility claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8098e4f0-555e-48ee-943d-26ec78480362",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "d5862d17-0863-443a-afa1-981db8a966cb",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "64e07a7d-f120-445e-a9a4-727cc9e12142",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "d843229b-5bb5-4995-a0b9-efef28756a04",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "4f9c7fa8-36bf-48c9-b85e-7139dde9f1ac",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "70f33466-e806-486a-b632-7a4e5f427ea8",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "79fe917c-451d-48e2-9d3d-86d742d05dc6",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "a2c1adb1-e312-440c-826c-528b1d524333",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "0cda1cff-c4b4-47a0-b3a2-a3bef9a983e6",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "254d051d-d4e3-4a3d-b9c0-663afd7dac2d",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "4414c53d-a93f-44a3-b7b7-91d3bc12586c",
+      "result_id": "3690b6bd-e202-481b-a7b1-004c2206830a"
+    },
+    {
+      "claim_id": "0e0aa024-a599-48e6-adff-815b389a6dcc",
+      "result_id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a"
+    },
+    {
+      "claim_id": "b26409bb-da29-44b4-b147-e885b24b5658",
+      "result_id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a"
+    },
+    {
+      "claim_id": "176a8a5a-883f-4a43-a830-a86ae0c5c2ca",
+      "result_id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a"
+    },
+    {
+      "claim_id": "82d039a5-34a0-4207-8b00-5b9beb8d0927",
+      "result_id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a"
+    },
+    {
+      "claim_id": "ab3a6409-74e6-46e3-9f37-f48467a1aae0",
+      "result_id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a"
+    },
+    {
+      "claim_id": "f1c3263a-1601-4043-8c02-74960c127a49",
+      "result_id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a"
+    },
+    {
+      "claim_id": "c87ac24c-a86e-456d-8839-d335672ad963",
+      "result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180"
+    },
+    {
+      "claim_id": "5332bee0-5c97-402a-9d7a-504aa58958fd",
+      "result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180"
+    },
+    {
+      "claim_id": "a34d0cb1-86c0-444b-945f-1a81a7cca3d0",
+      "result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180"
+    },
+    {
+      "claim_id": "d51722ba-261c-4a82-a282-1353abc6c32d",
+      "result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180"
+    },
+    {
+      "claim_id": "2911f1e0-4bc8-4961-8ea8-9e99be961e0c",
+      "result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180"
+    },
+    {
+      "claim_id": "25b65d92-5c10-4a75-b135-d3d2b1a8cc87",
+      "result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180"
+    },
+    {
+      "claim_id": "c4e586ec-7654-426f-a011-a2f657ee2db4",
+      "result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180"
+    },
+    {
+      "claim_id": "6d2064a5-7f62-4277-b844-bcaa65d68085",
+      "result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180"
+    },
+    {
+      "claim_id": "70cbe99f-2c89-4ffd-b3bf-c74d234c6764",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "8fba3b0b-7198-4252-ae95-0030d1939d27",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "444bf176-79ef-4234-85a6-e3d4ada0c1ff",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "27bb6aa9-d8b8-4702-96d6-e3d52963b230",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "fd60f8b4-a5eb-405c-a976-b608b7608b0f",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "9e821b11-6761-4e60-af16-434bcc68233e",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "a6957673-33fd-4c19-b79b-e3e814281ffb",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "13a3ed9c-243c-401e-a665-73c42fe00f11",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "4eb8333a-ebf1-43b5-a12a-f51c4274e4ce",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "72ec31e4-35c8-4aba-9f49-f1c1ee3f3e28",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "1e4a2f61-27cb-4b70-b3e1-eb44a22bd132",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "2d320efd-8f39-488a-a391-ec012fb03543",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "bc0cccc1-b628-4cc1-8f4f-393161cb1862",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "6b56fd35-c3ab-4b1b-8e20-54ca1b67b186",
+      "result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1"
+    },
+    {
+      "claim_id": "3d5d6a6b-dfb3-468b-9cc6-161d04a6d53c",
+      "result_id": "305093ba-1dd8-40f6-8a17-6ed69256fc3f"
+    },
+    {
+      "claim_id": "0f9dd5be-5c67-46ac-9710-2c7be92ba643",
+      "result_id": "305093ba-1dd8-40f6-8a17-6ed69256fc3f"
+    },
+    {
+      "claim_id": "1aea1b0d-336e-44f7-9f3f-660609a9e440",
+      "result_id": "305093ba-1dd8-40f6-8a17-6ed69256fc3f"
+    },
+    {
+      "claim_id": "d1121ea2-9cfb-4b66-b876-60ea298098cb",
+      "result_id": "305093ba-1dd8-40f6-8a17-6ed69256fc3f"
+    },
+    {
+      "claim_id": "5e8530c3-c141-4f55-bdeb-bde04b42bc6a",
+      "result_id": "305093ba-1dd8-40f6-8a17-6ed69256fc3f"
+    },
+    {
+      "claim_id": "2c1cb74f-1d46-46b4-9ef3-a5f51df8ab7f",
+      "result_id": "305093ba-1dd8-40f6-8a17-6ed69256fc3f"
+    },
+    {
+      "claim_id": "790702bc-5b21-40d6-926a-a613abb931a8",
+      "result_id": "83ee63c0-9de5-4575-a583-16c9b2c63c2b"
+    },
+    {
+      "claim_id": "e3b41822-bd5f-4ea5-a788-b8da0a255fe1",
+      "result_id": "83ee63c0-9de5-4575-a583-16c9b2c63c2b"
+    },
+    {
+      "claim_id": "e026827e-acb9-483f-830a-b40da22b2a4d",
+      "result_id": "83ee63c0-9de5-4575-a583-16c9b2c63c2b"
+    },
+    {
+      "claim_id": "4dc3cba0-2fa5-42dc-93d8-5b731c3ab355",
+      "result_id": "83ee63c0-9de5-4575-a583-16c9b2c63c2b"
+    },
+    {
+      "claim_id": "1b368ed4-924a-4644-8281-695662173f08",
+      "result_id": "8fd58c50-181d-4234-b44a-75656bc367e7"
+    },
+    {
+      "claim_id": "c4e586ec-7654-426f-a011-a2f657ee2db4",
+      "result_id": "8fd58c50-181d-4234-b44a-75656bc367e7"
+    },
+    {
+      "claim_id": "7a315f7e-94ff-4c1a-a32a-9d65de1a050d",
+      "result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912"
+    },
+    {
+      "claim_id": "40f31494-1ca1-4210-ab92-a80521f7d232",
+      "result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912"
+    },
+    {
+      "claim_id": "481f4e5e-082b-4998-ac34-880ac30d08e3",
+      "result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912"
+    },
+    {
+      "claim_id": "fea9eb60-4d8b-45fd-809f-d564238a66fd",
+      "result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912"
+    },
+    {
+      "claim_id": "1cd114fc-9359-4f76-8482-bfb46ef32b43",
+      "result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912"
+    },
+    {
+      "claim_id": "699ed6ef-722d-4acf-851c-dea0133b2a7f",
+      "result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912"
+    },
+    {
+      "claim_id": "c8b1760c-baf3-4adc-b169-6826309763d2",
+      "result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912"
+    },
+    {
+      "claim_id": "b5a3d94a-7b76-441a-85d2-bd6b0611c2e0",
+      "result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912"
+    },
+    {
+      "claim_id": "fba32346-960b-4261-82ee-ea09930417aa",
+      "result_id": "ab591529-e656-4cf8-b955-181459a1bbbb"
+    },
+    {
+      "claim_id": "47b00b0a-9e92-46e7-87f5-21e07026b4e0",
+      "result_id": "ab591529-e656-4cf8-b955-181459a1bbbb"
+    },
+    {
+      "claim_id": "7076c41c-b44a-4e4e-8e0e-e6a31ffe2972",
+      "result_id": "ab591529-e656-4cf8-b955-181459a1bbbb"
+    },
+    {
+      "claim_id": "4edb183b-a013-4b10-8866-d924f9301007",
+      "result_id": "ab591529-e656-4cf8-b955-181459a1bbbb"
+    },
+    {
+      "claim_id": "d3d06303-e642-437e-b0e7-298a19df975f",
+      "result_id": "75951174-8449-4faf-853e-0df5a235ded6"
+    },
+    {
+      "claim_id": "14548be3-6820-42b5-b75b-00a61187ed95",
+      "result_id": "35e55db3-7d1e-466f-959f-e692bc99f2b1"
+    },
+    {
+      "claim_id": "d9158d82-ecf6-47cd-8c89-d5156e62f270",
+      "result_id": "35e55db3-7d1e-466f-959f-e692bc99f2b1"
+    },
+    {
+      "claim_id": "e58d3bac-b031-4fe1-ba48-f6677df15a51",
+      "result_id": "35e55db3-7d1e-466f-959f-e692bc99f2b1"
+    },
+    {
+      "claim_id": "2b04caaa-e2c3-4064-9808-939a00f431f8",
+      "result_id": "35e55db3-7d1e-466f-959f-e692bc99f2b1"
+    },
+    {
+      "claim_id": "05a6fac0-16ab-4db9-898d-e50cb7c4d6ff",
+      "result_id": "35e55db3-7d1e-466f-959f-e692bc99f2b1"
+    },
+    {
+      "claim_id": "4bf4bc39-e5d0-4761-b2f1-06d5afef057c",
+      "result_id": "35e55db3-7d1e-466f-959f-e692bc99f2b1"
+    },
+    {
+      "claim_id": "36310445-c9c5-43d3-9b6b-06627d70191f",
+      "result_id": "1ce90725-c3c3-4e6a-bd91-20967d40765d"
+    },
+    {
+      "claim_id": "b1a10914-1161-40e3-9898-7c26e914cef7",
+      "result_id": "1ce90725-c3c3-4e6a-bd91-20967d40765d"
+    },
+    {
+      "claim_id": "d346cca1-547c-4285-97de-b29945436147",
+      "result_id": "1ce90725-c3c3-4e6a-bd91-20967d40765d"
+    },
+    {
+      "claim_id": "383e4278-d4b8-49ff-bdf6-e064c6f7ed00",
+      "result_id": "1ce90725-c3c3-4e6a-bd91-20967d40765d"
+    },
+    {
+      "claim_id": "06c8f759-e373-40df-b5c5-bde10d68fd32",
+      "result_id": "3066606c-2e02-4eae-a0db-a43c96dfb13c"
+    },
+    {
+      "claim_id": "e2ce4cec-bed9-4ad3-9c94-4310e3c33bf5",
+      "result_id": "3066606c-2e02-4eae-a0db-a43c96dfb13c"
+    },
+    {
+      "claim_id": "7a65f914-eb1a-4430-a4ab-f8c997ca104d",
+      "result_id": "3148830e-0622-4c0c-b83c-048f21843b99"
+    },
+    {
+      "claim_id": "8098e4f0-555e-48ee-943d-26ec78480362",
+      "result_id": "2068ddd5-72e6-48e1-a86d-451f547b16f9"
+    },
+    {
+      "claim_id": "d5862d17-0863-443a-afa1-981db8a966cb",
+      "result_id": "2068ddd5-72e6-48e1-a86d-451f547b16f9"
+    },
+    {
+      "claim_id": "64e07a7d-f120-445e-a9a4-727cc9e12142",
+      "result_id": "2068ddd5-72e6-48e1-a86d-451f547b16f9"
+    },
+    {
+      "claim_id": "d843229b-5bb5-4995-a0b9-efef28756a04",
+      "result_id": "2068ddd5-72e6-48e1-a86d-451f547b16f9"
+    },
+    {
+      "claim_id": "4414c53d-a93f-44a3-b7b7-91d3bc12586c",
+      "result_id": "2068ddd5-72e6-48e1-a86d-451f547b16f9"
+    },
+    {
+      "claim_id": "57c7f983-a2cc-4b97-8c47-83688ab2b3bd",
+      "result_id": "b8deac2c-2ee8-48fa-8516-3948c787dfd3"
+    },
+    {
+      "claim_id": "79fe917c-451d-48e2-9d3d-86d742d05dc6",
+      "result_id": "b8deac2c-2ee8-48fa-8516-3948c787dfd3"
+    },
+    {
+      "claim_id": "a2c1adb1-e312-440c-826c-528b1d524333",
+      "result_id": "b8deac2c-2ee8-48fa-8516-3948c787dfd3"
+    },
+    {
+      "claim_id": "0cda1cff-c4b4-47a0-b3a2-a3bef9a983e6",
+      "result_id": "b8deac2c-2ee8-48fa-8516-3948c787dfd3"
+    },
+    {
+      "claim_id": "0e0aa024-a599-48e6-adff-815b389a6dcc",
+      "result_id": "a0eb3e3c-0035-4102-a2ee-b56d78387d69"
+    },
+    {
+      "claim_id": "b26409bb-da29-44b4-b147-e885b24b5658",
+      "result_id": "a0eb3e3c-0035-4102-a2ee-b56d78387d69"
+    },
+    {
+      "claim_id": "176a8a5a-883f-4a43-a830-a86ae0c5c2ca",
+      "result_id": "a0eb3e3c-0035-4102-a2ee-b56d78387d69"
+    },
+    {
+      "claim_id": "82d039a5-34a0-4207-8b00-5b9beb8d0927",
+      "result_id": "a0eb3e3c-0035-4102-a2ee-b56d78387d69"
+    },
+    {
+      "claim_id": "1b368ed4-924a-4644-8281-695662173f08",
+      "result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d"
+    },
+    {
+      "claim_id": "c87ac24c-a86e-456d-8839-d335672ad963",
+      "result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d"
+    },
+    {
+      "claim_id": "5332bee0-5c97-402a-9d7a-504aa58958fd",
+      "result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d"
+    },
+    {
+      "claim_id": "a34d0cb1-86c0-444b-945f-1a81a7cca3d0",
+      "result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d"
+    },
+    {
+      "claim_id": "d51722ba-261c-4a82-a282-1353abc6c32d",
+      "result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d"
+    },
+    {
+      "claim_id": "2911f1e0-4bc8-4961-8ea8-9e99be961e0c",
+      "result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d"
+    },
+    {
+      "claim_id": "c4e586ec-7654-426f-a011-a2f657ee2db4",
+      "result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d"
+    },
+    {
+      "claim_id": "5e8530c3-c141-4f55-bdeb-bde04b42bc6a",
+      "result_id": "bae42fbb-89a0-43f9-a3de-2c64b2b85f25"
+    },
+    {
+      "claim_id": "3d5d6a6b-dfb3-468b-9cc6-161d04a6d53c",
+      "result_id": "bae42fbb-89a0-43f9-a3de-2c64b2b85f25"
+    },
+    {
+      "claim_id": "0f9dd5be-5c67-46ac-9710-2c7be92ba643",
+      "result_id": "bae42fbb-89a0-43f9-a3de-2c64b2b85f25"
+    },
+    {
+      "claim_id": "1aea1b0d-336e-44f7-9f3f-660609a9e440",
+      "result_id": "bae42fbb-89a0-43f9-a3de-2c64b2b85f25"
+    },
+    {
+      "claim_id": "d1121ea2-9cfb-4b66-b876-60ea298098cb",
+      "result_id": "bae42fbb-89a0-43f9-a3de-2c64b2b85f25"
+    },
+    {
+      "claim_id": "2c1cb74f-1d46-46b4-9ef3-a5f51df8ab7f",
+      "result_id": "bae42fbb-89a0-43f9-a3de-2c64b2b85f25"
+    },
+    {
+      "claim_id": "d65bcd99-8e2f-4650-96ee-1d299a0d6cad",
+      "result_id": "654f7193-9ce3-4581-8521-e99e3f49829a"
+    },
+    {
+      "claim_id": "70cbe99f-2c89-4ffd-b3bf-c74d234c6764",
+      "result_id": "654f7193-9ce3-4581-8521-e99e3f49829a"
+    },
+    {
+      "claim_id": "8fba3b0b-7198-4252-ae95-0030d1939d27",
+      "result_id": "654f7193-9ce3-4581-8521-e99e3f49829a"
+    },
+    {
+      "claim_id": "444bf176-79ef-4234-85a6-e3d4ada0c1ff",
+      "result_id": "654f7193-9ce3-4581-8521-e99e3f49829a"
+    },
+    {
+      "claim_id": "27bb6aa9-d8b8-4702-96d6-e3d52963b230",
+      "result_id": "654f7193-9ce3-4581-8521-e99e3f49829a"
+    },
+    {
+      "claim_id": "fd60f8b4-a5eb-405c-a976-b608b7608b0f",
+      "result_id": "654f7193-9ce3-4581-8521-e99e3f49829a"
+    },
+    {
+      "claim_id": "6d2064a5-7f62-4277-b844-bcaa65d68085",
+      "result_id": "654f7193-9ce3-4581-8521-e99e3f49829a"
+    },
+    {
+      "claim_id": "790702bc-5b21-40d6-926a-a613abb931a8",
+      "result_id": "90027ba4-f2c5-49a6-bb67-7e19e7652a1d"
+    },
+    {
+      "claim_id": "e3b41822-bd5f-4ea5-a788-b8da0a255fe1",
+      "result_id": "90027ba4-f2c5-49a6-bb67-7e19e7652a1d"
+    },
+    {
+      "claim_id": "e026827e-acb9-483f-830a-b40da22b2a4d",
+      "result_id": "90027ba4-f2c5-49a6-bb67-7e19e7652a1d"
+    },
+    {
+      "claim_id": "4dc3cba0-2fa5-42dc-93d8-5b731c3ab355",
+      "result_id": "90027ba4-f2c5-49a6-bb67-7e19e7652a1d"
+    },
+    {
+      "claim_id": "fba32346-960b-4261-82ee-ea09930417aa",
+      "result_id": "b89157c1-d78f-4d5b-b647-7985da444fe3"
+    },
+    {
+      "claim_id": "47b00b0a-9e92-46e7-87f5-21e07026b4e0",
+      "result_id": "b89157c1-d78f-4d5b-b647-7985da444fe3"
+    },
+    {
+      "claim_id": "7076c41c-b44a-4e4e-8e0e-e6a31ffe2972",
+      "result_id": "b89157c1-d78f-4d5b-b647-7985da444fe3"
+    },
+    {
+      "claim_id": "4edb183b-a013-4b10-8866-d924f9301007",
+      "result_id": "b89157c1-d78f-4d5b-b647-7985da444fe3"
+    },
+    {
+      "claim_id": "4f9c7fa8-36bf-48c9-b85e-7139dde9f1ac",
+      "result_id": "2784c82e-ef1b-4a45-bf25-d60e43aaa073"
+    },
+    {
+      "claim_id": "70f33466-e806-486a-b632-7a4e5f427ea8",
+      "result_id": "2784c82e-ef1b-4a45-bf25-d60e43aaa073"
+    },
+    {
+      "claim_id": "ddf171d5-781d-405d-84d6-f20b35d856d0",
+      "result_id": "2784c82e-ef1b-4a45-bf25-d60e43aaa073"
+    },
+    {
+      "claim_id": "254d051d-d4e3-4a3d-b9c0-663afd7dac2d",
+      "result_id": "2784c82e-ef1b-4a45-bf25-d60e43aaa073"
+    },
+    {
+      "claim_id": "d3d06303-e642-437e-b0e7-298a19df975f",
+      "result_id": "2784c82e-ef1b-4a45-bf25-d60e43aaa073"
+    },
+    {
+      "claim_id": "06c8f759-e373-40df-b5c5-bde10d68fd32",
+      "result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20"
+    },
+    {
+      "claim_id": "e2ce4cec-bed9-4ad3-9c94-4310e3c33bf5",
+      "result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20"
+    },
+    {
+      "claim_id": "ab3a6409-74e6-46e3-9f37-f48467a1aae0",
+      "result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20"
+    },
+    {
+      "claim_id": "f1c3263a-1601-4043-8c02-74960c127a49",
+      "result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20"
+    },
+    {
+      "claim_id": "25b65d92-5c10-4a75-b135-d3d2b1a8cc87",
+      "result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20"
+    },
+    {
+      "claim_id": "9e821b11-6761-4e60-af16-434bcc68233e",
+      "result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20"
+    },
+    {
+      "claim_id": "14548be3-6820-42b5-b75b-00a61187ed95",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "d9158d82-ecf6-47cd-8c89-d5156e62f270",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "e58d3bac-b031-4fe1-ba48-f6677df15a51",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "2b04caaa-e2c3-4064-9808-939a00f431f8",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "05a6fac0-16ab-4db9-898d-e50cb7c4d6ff",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "4bf4bc39-e5d0-4761-b2f1-06d5afef057c",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "7a315f7e-94ff-4c1a-a32a-9d65de1a050d",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "40f31494-1ca1-4210-ab92-a80521f7d232",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "481f4e5e-082b-4998-ac34-880ac30d08e3",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "fea9eb60-4d8b-45fd-809f-d564238a66fd",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "1cd114fc-9359-4f76-8482-bfb46ef32b43",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "699ed6ef-722d-4acf-851c-dea0133b2a7f",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "c8b1760c-baf3-4adc-b169-6826309763d2",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "b5a3d94a-7b76-441a-85d2-bd6b0611c2e0",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "36310445-c9c5-43d3-9b6b-06627d70191f",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "b1a10914-1161-40e3-9898-7c26e914cef7",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "d346cca1-547c-4285-97de-b29945436147",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "383e4278-d4b8-49ff-bdf6-e064c6f7ed00",
+      "result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb"
+    },
+    {
+      "claim_id": "a6957673-33fd-4c19-b79b-e3e814281ffb",
+      "result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02"
+    },
+    {
+      "claim_id": "13a3ed9c-243c-401e-a665-73c42fe00f11",
+      "result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02"
+    },
+    {
+      "claim_id": "4eb8333a-ebf1-43b5-a12a-f51c4274e4ce",
+      "result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02"
+    },
+    {
+      "claim_id": "72ec31e4-35c8-4aba-9f49-f1c1ee3f3e28",
+      "result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02"
+    },
+    {
+      "claim_id": "1e4a2f61-27cb-4b70-b3e1-eb44a22bd132",
+      "result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02"
+    },
+    {
+      "claim_id": "2d320efd-8f39-488a-a391-ec012fb03543",
+      "result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02"
+    },
+    {
+      "claim_id": "bc0cccc1-b628-4cc1-8f4f-393161cb1862",
+      "result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02"
+    },
+    {
+      "claim_id": "6b56fd35-c3ab-4b1b-8e20-54ca1b67b186",
+      "result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02"
+    },
+    {
+      "claim_id": "7a65f914-eb1a-4430-a4ab-f8c997ca104d",
+      "result_id": "fccab7f6-16da-4583-991c-f081a3127b45"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "dd088712-8692-4551-a36e-574b164fee1f",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "3690b6bd-e202-481b-a7b1-004c2206830a",
+      "peer_result_id": "2068ddd5-72e6-48e1-a86d-451f547b16f9",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the machine learning methodology (C2, C13-C15, C58). OpenEval rates UNCERTAIN due to concerns about overfitting (very small n=34, training AUC 0.996 vs validation AUC 0.823), lenient statistical thresholds, and lack of independent validation. Peer reviewers rate SUPPORTED, praising the comprehensive approach but acknowledging the small sample size as a limitation to generalizability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "65a3231d-ea46-4aa0-b765-502082efd5be",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3690b6bd-e202-481b-a7b1-004c2206830a",
+      "peer_result_id": "b8deac2c-2ee8-48fa-8516-3948c787dfd3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on model performance metrics (C18-C20). OpenEval expresses concern about the performance drop from training to validation suggesting overfitting. Peer reviewers affirm the predictive performance while noting the small sample size limitation, but remain more positive overall.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "8fa3cb61-09d9-4be0-ac23-249368c97943",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a",
+      "peer_result_id": "a0eb3e3c-0035-4102-a2ee-b56d78387d69",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address cell line validation (C6, C22-C23, C77). Both rate SUPPORTED. OpenEval notes the validation is limited to 2 of 18 genes with n=3 replicates and calls for functional experiments. Peer reviewers explicitly praise this experimental validation as strengthening conclusions without raising concerns about scope.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "b13645cc-84e8-4c84-9318-9fac9359ddc2",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180",
+      "peer_result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address immune infiltration analysis (C24-C28, C63). OpenEval rates SUPPORTED but emphasizes the correlative nature and need for functional validation. Peer reviewers rate SUPPORTED and specifically praise the immune infiltration findings as clarifying mechanisms from an immunological perspective.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "e4bd79ee-9ff2-40fd-a681-4cc92e43c96c",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "305093ba-1dd8-40f6-8a17-6ed69256fc3f",
+      "peer_result_id": "bae42fbb-89a0-43f9-a3de-2c64b2b85f25",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect overlap on pathway analysis (C5, C34-C37, C67). Both rate SUPPORTED. OpenEval emphasizes the correlative nature and notes the inference about gene influence is speculative without functional validation. Peer reviewers acknowledge pathway findings as providing biological basis without raising concerns about the inferential nature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "4b1bce40-99c9-459f-9c55-21eb18eda736",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "83ee63c0-9de5-4575-a583-16c9b2c63c2b",
+      "peer_result_id": "90027ba4-f2c5-49a6-bb67-7e19e7652a1d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect overlap on correlation analysis with radiosensitivity genes (C38-C41). Both rate SUPPORTED. OpenEval notes correlation does not imply functional relationship and some correlations lack mechanistic interpretation. Peer reviewers acknowledge these findings as part of biological mechanism investigation without specific concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "86a4b656-9ae0-40af-9902-0967ef3a8e0c",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "8fd58c50-181d-4234-b44a-75656bc367e7",
+      "peer_result_id": "56c0550f-2056-40d9-b7f2-67097d8a095d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address association between NPC-RSS and immune features (C4, C63). OpenEval rates SUPPORTED, noting the claim of 'crucial role' is inferential but the pattern is consistent. Peer reviewers rate SUPPORTED and explicitly endorse the immune associations as mechanistically informative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "8ccf4e3e-d123-4889-964c-38d2735f7378",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1",
+      "peer_result_id": "654f7193-9ce3-4581-8521-e99e3f49829a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address single-cell analysis (C29-C33). OpenEval rates UNCERTAIN due to severe class imbalance (1 resistant vs 3 sensitive patients), lack of statistical rigor for gene-cell type associations (C75), and speculative inference about temporal relationships. Peer reviewers rate SUPPORTED and strongly endorse the single-cell findings without raising methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "1160cee2-124c-4ef6-9c25-c4bbd1908ab6",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1",
+      "peer_result_id": "851ec27a-682b-40ec-ac7a-c706b7d89f02",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Overlap on cell type marker genes and immune cell associations (C69-C76). OpenEval rates UNCERTAIN, questioning statistical support for claims about gene-immune cell relationships. Peer reviewers rate SUPPORTED, accepting these as standard single-cell procedures with established markers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "8e548982-ac77-4c87-9221-6c71d198ab4c",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "a9ecbb6f-2a58-4dc8-b523-1cb9e64f4912",
+      "peer_result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address literature citations supporting gene functions (C42-C49 for OpenEval; broader background C1, C8-C12, C42-C54 for peer). Both rate SUPPORTED. OpenEval notes evidence comes from other cancer types lacking NPC-specific validation. Peer reviewers accept these as appropriate contextual background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "79eb21c6-a165-4958-84f2-f87c3137a0ba",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ab591529-e656-4cf8-b955-181459a1bbbb",
+      "peer_result_id": "b89157c1-d78f-4d5b-b647-7985da444fe3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect overlap on speculative mechanistic claims (C50, C65-C66, C68). Both rate UNCERTAIN. OpenEval notes these are appropriately framed as hypotheses but untested. Peer reviewers identify the lack of functional experiments to validate gene roles as a key weakness, indicating mechanistic hypotheses remain inferential.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d87b8819-4439-4352-b7fc-36af19ec19af",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "75951174-8449-4faf-853e-0df5a235ded6",
+      "peer_result_id": "2784c82e-ef1b-4a45-bf25-d60e43aaa073",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on differential expression of 18 genes (C78). OpenEval rates SUPPORTED but notes circular reasoning since genes were selected for differential expression. Peer reviewers rate SUPPORTED without concerns, accepting these results as integral to the validated model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "3a173320-56b4-4ee3-a4a7-48dfd8acf493",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "35e55db3-7d1e-466f-959f-e692bc99f2b1",
+      "peer_result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on background/contextual claims (C1, C8-C12). Both rate SUPPORTED. OpenEval notes these are well-cited but not novel findings. Peer reviewers implicitly accept these as established context without questioning.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "cd00a5f9-1455-4020-9564-b8f9417a1a56",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "1ce90725-c3c3-4e6a-bd91-20967d40765d",
+      "peer_result_id": "8f46d533-7f71-4ff2-9352-4d12ae0de7bb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on background literature about immune-radiotherapy relationships (C51-C54). Both rate SUPPORTED. OpenEval notes these are appropriate background citations. Peer reviewers accept these as established scientific context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "fe83255e-1c86-4152-9216-ae926379deff",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "3066606c-2e02-4eae-a0db-a43c96dfb13c",
+      "peer_result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on data collection and methods (C55-C56). OpenEval rates SUPPORTED for ethics but notes missing details on patient characteristics and treatment protocols. Peer reviewers rate SUPPORTED, acknowledging methodological rigor while identifying small sample size as limiting generalizability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "248a816d-3c49-4c55-a8da-46f4148e5cb7",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "3148830e-0622-4c0c-b83c-048f21843b99",
+      "peer_result_id": "fccab7f6-16da-4583-991c-f081a3127b45",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect overlap on overall clinical utility conclusion (C79). Both rate UNCERTAIN. OpenEval states the claim is premature given small sample size, lack of prospective validation, and no comparison to existing predictors. Peer reviewers praise potential applicability but identify significant limitations including generalizability concerns, lack of clinical variable incorporation, and oversimplified binary classification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "5f3bfce2-7399-40bb-9101-1fc8a506cc57",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "3690b6bd-e202-481b-a7b1-004c2206830a",
+      "peer_result_id": "2784c82e-ef1b-4a45-bf25-d60e43aaa073",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Overlap on gene identification methods (C16-C17, C57). OpenEval questions lenient statistical thresholds (p<0.05, |LogFC|>0.585) as potentially capturing noise. Peer reviewers do not raise concerns about these specific methodological choices.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "75cbf7cc-4f12-4d05-88bf-f0b8aa41642a",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "fc8cc610-0bc8-42d0-a614-b5cd22746c5a",
+      "peer_result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on radiation-resistant cell line generation (C59-C60). OpenEval rates cell validation SUPPORTED but notes limited scope. Peer reviewers rate methods SUPPORTED without specific concerns about cell line establishment protocol.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "9ac842b5-c6de-4e4c-817c-e39029bb5bd0",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180",
+      "peer_result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on CIBERSORT method (C61). OpenEval rates immune analysis SUPPORTED. Peer reviewers acknowledge analytical methods without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "d6a2708d-c284-4ba9-a50f-016de5859699",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "237cae69-99b2-47d8-b8b2-f1c9b1e74180",
+      "peer_result_id": "654f7193-9ce3-4581-8521-e99e3f49829a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on inference about immune infiltration differences (C64). OpenEval notes the inference is reasonable but requires functional validation. Peer reviewers explicitly endorse this finding as showing radiotherapy-sensitive groups have more enriched immune infiltration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    },
+    {
+      "id": "2c6ce680-6b5d-40d3-a767-01ab5770be5d",
+      "submission_id": "1163d4ed-ca5e-409c-98af-9464e77df779",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "707f1b56-490e-4016-88a2-89a66cbe40c1",
+      "peer_result_id": "51b0375e-8f75-4a64-8488-6f2418be1a20",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Overlap on single-cell analysis methods (C62). OpenEval expresses concern about class imbalance in single-cell samples. Peer reviewers do not raise methodological concerns about the single-cell approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-17T00:00:40.812892Z"
+    }
+  ]
+}

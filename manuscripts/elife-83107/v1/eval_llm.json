@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C30",
+      "C66",
+      "C90"
+    ],
+    "result": "FK688 is a clinical isolate of K. quasipneumoniae subsp. similipneumoniae, and this study presents the first complete genome assembly of this subspecies using hybrid sequencing approaches. The genome consists of a circular chromosome (5,211,811 bp) and a novel megaplasmid pNAR1 (1,257,585 bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25, C30, C66, and C90 are well-supported by phylogenetic analysis (Figure 1B), complete genome sequencing using long- and short-read data, and genome assembly results. The novelty claim (C66) is supported by the presentation of the first complete physical map for this subspecies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "FK688 does not encode a carbapenemase. Machine learning analysis using DeepBL identified eight candidate \u03b2-lactamases, but functional testing in E. coli showed that none conferred carbapenem resistance, though OKP-B-21 and DHA-1 conferred resistance to cephalosporins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C37, and C95-C98 are supported by comprehensive genome annotation, DeepBL machine learning predictions, and systematic MIC testing of all eight candidates expressed in E. coli (Figure 1C). The negative result for carbapenemase activity is well-documented through multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C48",
+      "C74"
+    ],
+    "result": "Carbapenem resistance in FK688 requires two genetic loci: the megaplasmid pNAR1 carrying blaDHA-1 and an inactivating 48 bp deletion in the chromosomal ompK36 gene. The deletion removes 16 amino acids encompassing \u03b214 and \u03b215 strands, preventing OmpK36 assembly in the outer membrane. Genetic restoration of OmpK36 restored carbapenem sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C39-C43, C48, and C74 are strongly supported by genome sequencing data, structural analysis using the known OmpK36 structure (PDB 5O79), genetic reconstruction experiments, immunoblotting (Figure 2D), and MIC testing (Table 2). The epistatic requirement of both loci is demonstrated through systematic testing of all genotype combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C51"
+    ],
+    "result": "Two distinct genetic loci are necessary for FK688 to acquire clinically relevant carbapenem resistance: the presence of DHA-1 \u03b2-lactamase and the absence of functional OmpK36 porin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C51 are supported by genetic reconstruction experiments showing that both blaDHA-1 and \u0394ompK36 are required for resistance at clinically relevant carbapenem concentrations (Figure 4C, Table 2). The claim is well-validated through systematic MIC testing and fitness assays across antibiotic concentration gradients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C67",
+      "C75",
+      "C76"
+    ],
+    "result": "Both genetic loci conferring carbapenem resistance impose significant fitness costs in the absence of antibiotics. Experimental evolution without antibiotic selection led to rapid loss of resistance through deletion of blaDHA-1 from pNAR1 or loss of the entire plasmid, restoring carbapenem sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28, C44-C47, C49, C67, C75, and C76 are well-supported by mutation accumulation experiments (Figure 3), competitive fitness assays (Figure 4B), experimental evolution over 200 generations (Figure 5), and whole genome sequencing of evolved strains. The fitness costs and evolutionary reversibility are quantified and reproducible across multiple independent lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C88"
+    ],
+    "result": "Selection with ceftazidime can select for blaDHA-1 even at concentrations ~100\u00d7 below the clinical breakpoint, potentiating the evolution of carbapenem resistance by a single subsequent mutation in ompK36. The most likely evolutionary path is A\u2192B\u2192D, where prior ceftazidime exposure selects for pNAR1 (carrying blaDHA-1), enabling rapid evolution of carbapenem resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29, C61-C65, C68, and C88 are supported by fitness assays across ceftazidime concentration gradients (Figure 6A), evolutionary potential experiments showing that only strains carrying blaDHA-1 can evolve imipenem resistance (Figure 6B), and the demonstration that \u0394ompK36 reduces fitness in ceftazidime. The sequential selection model is well-reasoned from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C87",
+      "C89"
+    ],
+    "result": "A patient's treatment history shapes the evolution of antibiotic resistance. The evolutionary history of a pathogenic strain predisposes it to evolve AMR via specific genetic routes, which should be considered when explaining the evolution of non-carbapenemase CRE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C87, and C89 are supported by the experimental demonstration that prior selection for blaDHA-1 (e.g., through ceftazidime treatment) facilitates subsequent carbapenem resistance evolution. The inference is well-grounded in the fitness data and evolutionary experiments showing sequential selection for resistance alleles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60"
+    ],
+    "result": "During experimental evolution without antibiotics, both \u0394ompK36 pNAR1 and ompK36+ pNAR1 populations independently evolved deletions in pNAR1 that removed blaDHA-1, recovering fitness costs and evolving increased carbapenem sensitivity (64-fold for \u0394ompK36 strains).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C59, and C60 are supported by fitness assays of evolved populations (Figure 5C), whole genome sequencing showing independent deletions of blaDHA-1, and MIC measurements (Table 3). The convergent evolution across independent lineages and the genetic reconstruction experiments (Table 2) strongly support the causal role of blaDHA-1 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C106",
+      "C107"
+    ],
+    "result": "The fitness defects of blaDHA-1 and \u0394ompK36 are gradually reversed in the presence of increasing imipenem concentrations. At the clinical breakpoint (0.125 \u00b5g/mL), three genotypes are at a selective disadvantage, and above 0.25 \u00b5g/mL, all four genotypes are disadvantaged relative to parental FK688.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C106, and C107 are supported by systematic fitness assays across imipenem concentration gradients (Figure 4C). The data clearly show the concentration-dependent reversal of fitness costs and identify specific breakpoints where different genotypes become selectively disadvantaged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C71",
+      "C72",
+      "C91",
+      "C103",
+      "C104"
+    ],
+    "result": "FK688 carries multiple antibiotic resistance determinants: chromosomal blaOKP-B-21 (conferring resistance to penicillins and cephalosporins), oqxA/oqxB (quinolone resistance), fosA5 (fosfomycin resistance), and plasmid-encoded blaDHA-1, AmpR, and genes for resistance to tetracycline, rifamycin, trimethoprim, streptomycin, macrolides, sulfonamides, and quinolones/fluoroquinolones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C71, C72, C91, C103, and C104 are supported by genome annotation, functional testing (Figure 1C for \u03b2-lactamases), and citations to relevant literature. The resistance profile is consistent with the known phenotype and is well-documented through multiple lines of evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "After 200 generations of evolution, populations displayed a mixture of opaque and translucent colony morphotypes. This variation depends on type 1 fimbriae expression, with opaque colonies being non-fimbriated and mucoid (higher capsular polysaccharide), while translucent colonies are fimbriated and non-mucoid. In B3(o), a transposase insertion disrupted fimE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C108-C110 are supported by colony morphology observations (Figure 5B, 5D), genome sequencing showing the fimE disruption (Figure 5\u2014figure supplement 1), glucuronic acid measurements (Figure 5E), and citations to previous studies on Klebsiella colony morphology. The phenotypic and genetic data are consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "FK688 is resistant to carbapenems with MICs of 64 \u00b5g/mL for ertapenem, 8 \u00b5g/mL for imipenem, and 4 \u00b5g/mL for meropenem, all exceeding clinical breakpoints for resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are directly supported by MIC data presented in Table 1, performed according to CLSI guidelines with appropriate quality controls (E. coli ATCC 25922). The measurements are clear and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "K. pneumoniae has four major porin genes (ompK35, ompK36, ompK37, ompK38) with conserved position and synteny in FK688. The structure of OmpK36 (PDB 5O79) is known, and the ompK36 gene from K. quasipneumoniae ATCC 700603 was used to repair the deletion in FK688, with restoration confirmed by immunoblotting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C99-C102 are supported by comparative genomics (Figure 2\u2014figure supplements), citation to the known OmpK36 structure, description of the genetic engineering approach (Figure 2C), and immunoblotting data (Figure 2D). The methods and results are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "In FK688, efflux pumps did not contribute to carbapenem resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the genetic reconstruction experiments showing that only blaDHA-1 and \u0394ompK36 are required for carbapenem resistance (Table 2). While efflux pump genes are present on pNAR1, the systematic testing of genotypes demonstrates they are not necessary for the resistance phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Whole genome sequencing confirmed that pNAR1\u203e and pNAR1\u0394blaDHA-1 strains had not sustained any other mutations beyond the plasmid changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by whole genome sequencing of the evolved strains, which is essential for confirming that the observed phenotypic changes are due solely to the plasmid modifications and not to additional compensatory mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Protein analysis of evolved strains A2(o) and A2(t) by SDS-PAGE and mass spectrometry showed no consistent changes in both populations to explain the increased imipenem sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by protein analysis (Figure 5F) and mass spectrometry. The negative result is important for ruling out protein-level changes as the primary mechanism and supporting the conclusion that blaDHA-1 loss is the main determinant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Only strains with intact pNAR1 (including blaDHA-1) can survive high ceftazidime concentrations. The most logical evolutionary starting point is the genotype without blaDHA-1 or \u0394ompK36, as it has the highest fitness without antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C113 are supported by fitness data across ceftazidime concentrations (Figure 6A) and fitness measurements without antibiotics (Figure 4B). The reasoning about the evolutionary starting point is well-grounded in the fitness data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "A patient died from septicaemia caused by FK688, which did not respond to carbapenem treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is supported by citation to Bi et al., 2017, which provides the clinical case information. This establishes the clinical significance of the isolate studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on antibiotic resistance mechanisms: Antibiotic resistance is driven by selection, carbapenems are reserved for high-risk infections, CRE are widespread globally, and there are two general mechanisms of carbapenem resistance (carbapenemase-mediated and non-carbapenemase). Most K. pneumoniae CRE are caused by carbapenemases, but non-carbapenemase CRE are increasingly recognized, though their mechanisms and evolutionary forces are poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C24 provide established background knowledge supported by multiple citations to surveillance studies, reviews, and primary literature. These claims accurately represent the state of knowledge in the field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Discussion of the prevalence and clinical context of non-carbapenemase CRE: KPC-2 carbapenemases are widespread in Klebsiella spp., chromosomal \u03b2-lactamases are common, plasmids encoding DHA-1 are geographically widespread, ompK35/ompK36 mutations are prevalent, and in some settings up to 55% of CRE may be non-carbapenemase type. Current diagnostic tests target carbapenemases and may miss non-carbapenemase CRE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, C77-C82 are supported by citations to surveillance studies, epidemiological data, and diagnostic test literature. These claims accurately represent the clinical and epidemiological context and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Treatment implications: Combination therapy with ESBL inhibitors (avibactam or tazobactam) could be effective for non-carbapenemase CRE. Phage therapy for CRE should avoid phages using OmpK35 or OmpK36 as receptors, as this would select for porin defects and inadvertently select for carbapenem resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by citations to clinical studies and are logical inferences from the mechanism of resistance identified in this study. The recommendation about phage therapy is well-reasoned based on the role of porins in both phage entry and carbapenem resistance, supported by citations to phage resistance mechanisms.",
+    "result_type": "MINOR"
+  }
+]

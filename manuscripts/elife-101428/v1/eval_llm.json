@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C65",
+      "C98"
+    ],
+    "result": "SGCs represent approximately one-third of dentate projection neurons labeled during contextual memory encoding tasks (Barnes maze and enriched environment), which is a substantial overrepresentation relative to their ~3% population density. Enriched environment exposure labeled significantly more neurons than Barnes maze training and showed task-specific reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 provide behavioral validation with appropriate statistics (nested t-tests, p-values reported). The morphological classification of SGCs (C35-C37, C65, C98) is based on validated criteria from prior work. Sample sizes (n=40 slices from 4 animals) are adequate. The finding that ~30% of labeled neurons are SGCs versus ~3% population density is statistically robust and represents a major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C60",
+      "C66",
+      "C67",
+      "C70",
+      "C71"
+    ],
+    "result": "Labeled SGCs show significantly less spike frequency adaptation than unlabeled SGCs, while labeled and unlabeled GCs do not differ in adaptation. SGCs exhibit greater sustained firing than GCs at high current injections (>400 pA), with less amplitude attenuation. Resting membrane potential and input resistance do not differ between labeled and unlabeled neurons within each cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 present electrophysiological data with appropriate statistics (two-way ANOVA, p=0.006 for adaptation difference in C45). Sample sizes (n=8-22 cells/group) are adequate. The key finding that labeled SGCs have lower adaptation than unlabeled SGCs (C45) is statistically significant and mechanistically links intrinsic properties to preferential recruitment. Claims C66-C67, C71 are speculative interpretations but are reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C63"
+    ],
+    "result": "None of the 32 labeled neuronal pairs tested showed functional glutamatergic synaptic connections, including SGC-to-GC and SGC-to-SGC pairs. This lack of local feedforward or recurrent excitation is inconsistent with glutamatergic interconnectivity driving ensemble recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 reports a clear negative result from dual patch-clamp recordings (0/32 pairs showed connections). The experimental approach is rigorous with appropriate controls (sEPSCs present, ChR2 validation). While negative results have inherent limitations (cannot prove absence), the sample size is reasonable and the conclusion (C63) is appropriately cautious. The finding challenges a major hypothesis in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C64",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "Activation of behaviorally labeled neurons rarely drove inhibitory synaptic currents in unlabeled neurons (1/49 SGC-to-GC pairs, 1/63 GC-to-SGC pairs). Control experiments confirmed that focal optogenetic activation of densely labeled GCs can drive lateral inhibition, but sparse behaviorally tagged ensembles are insufficient to support robust lateral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 report extensive paired recordings (n=63 total) with clear negative results. The control experiments (C85-C86) validate that the circuit machinery for lateral inhibition is intact, strengthening the conclusion that sparse ensemble activation is insufficient. The finding (C87, C89) is well-supported and challenges a leading hypothesis about ensemble refinement through lateral inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C80"
+    ],
+    "result": "Labeled GCs and SGCs received more frequent (shorter inter-event intervals) and larger amplitude spontaneous excitatory synaptic inputs than their unlabeled counterparts. TTX experiments confirmed that approximately half of sEPSCs represent action potential-dependent events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 present sEPSC analysis with appropriate statistics (Kolmogorov-Smirnov tests, p<0.0001, Cohen's d effect sizes reported). The TTX control (C51) validates that sEPSCs include AP-dependent events. Sample sizes are modest (n=5-6 cells/group) but statistical significance is strong. The finding that labeled neurons receive enhanced excitatory drive is well-supported and mechanistically important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C81",
+      "C82"
+    ],
+    "result": "Labeled-labeled (L-L) neuronal pairs showed significantly higher temporal correlation of spontaneous excitatory inputs compared to labeled-unlabeled (L-U) pairs, with both peri-occurrence and co-occurrence measures distinguishing the two groups. Input correlation predicted L-L versus L-U pairs better than chance (AUROC 67-71%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present correlation analysis with appropriate statistics (t-tests, two-way ANOVA, p-values reported). The methods include proper controls (jittered data, matched event counts). Sample sizes are small (n=7 L-L, n=8 L-U pairs) but the statistical significance is clear. The ROC analysis (C59) provides additional validation. This is a novel finding supporting input-dependent ensemble recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C100"
+    ],
+    "result": "Behaviorally relevant activation of SGCs and GCs in dentate gyrus neuronal ensembles is determined by a combination of sustained firing characteristics of SGCs, enhanced glutamatergic inputs, and shared afferent drive rather than by selective circuit-level refinement through recurrent excitation or lateral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the major findings from the study. The conclusion is well-supported by the convergent evidence from multiple experimental approaches: intrinsic physiology (C4-C5, C45), lack of glutamatergic connectivity (C47), limited lateral inhibition (C48-C50), enhanced inputs (C53-C56), and correlated inputs (C57-C59). The conclusion appropriately integrates the data and addresses the study's central hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The dentate gyrus is critical for spatial memory formation and pattern separation, receiving dense cortical information through entorhinal cortex projections while activating only a sparse subset of granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established background knowledge supported by multiple citations (C10, C11, C13). They provide appropriate context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior research has established that SGCs are overrepresented in behaviorally activated neurons, have distinct morphological features, show sustained firing, and that various mechanisms including intrinsic excitability, glutamatergic connectivity, and lateral inhibition have been proposed for ensemble recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior research with appropriate citations. They establish the rationale and competing hypotheses tested in the current study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99"
+    ],
+    "result": "The study's findings are consistent with prior research on GC intrinsic properties, DG ensemble stability, and novelty-driven activation. The authors acknowledge methodological limitations including the temporal delay in c-Fos labeling, potential sampling bias in physiological recordings, and limitations of the TRAP2 system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide appropriate context, comparisons to prior work, and acknowledge limitations. The discussion of methodological caveats (C72, C95, C96) is important for interpretation. The comparisons to prior studies (C69, C74, C92) are accurate based on the citations provided.",
+    "result_type": "MINOR"
+  }
+]

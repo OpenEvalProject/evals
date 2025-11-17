@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript describes technical limitations of SPT in mammalian cells, including short trajectory length due to photobleaching and shallow depth of field, high localization error from low photon budgets, and motion blur. Localization error depends on photon count, emitter mobility, and distance from focus, with motion blur being substantial (~180 nm for fast-diffusing particles).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these technical challenges as foundational context for the study. Reviewer #2 requested additional details about localization precision simulations and PSF data to support claims about motion blur, which the authors addressed in revision. The technical framework was not contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "High NA objectives create shallow focal depths (<1 \u03bcm), causing defocalization in mammalian cells (5-10 \u03bcm depth). This results in short trajectory lengths (3-4 frames on average), limiting inference of dynamic parameters from individual trajectories.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged defocalization as a key challenge. Reviewer #2 suggested alternative approaches like astigmatic lenses for z-position estimation, which authors discussed. The phenomenon itself was not disputed and forms the motivation for the methods developed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "MSD histograms are commonly used to recover subpopulations from sptPALM data, but are highly variable for short trajectories and assume equal sampling from slow and fast states, leading to severe state biases with defocalization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these limitations of MSD analysis as established problems in the field. Reviewer #3 requested comparison of the new methods to MSD and Spot-On analysis to demonstrate improvement, which authors provided in revision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Existing methods (CDF fitting, vbSPT) have limitations: CDF methods extend poorly to complex models and lack model selection; vbSPT doesn't consider defocalization or localization error and is inappropriate for non-discrete dynamic profiles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers requested more thorough comparison with existing methods. Reviewer #1 specifically asked about comparison with vbSPT and other recent methods. Authors added extensive comparisons in revision, which satisfied reviewers' concerns about positioning relative to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "State arrays (SAs) far outperformed DPMMs on real sptPALM data and revealed previously unappreciated features: RARA-HaloTag exhibited a broad spectrum of diffusive states (0.3-10.0 \u03bcm\u00b2/s) contrasting with the more discretized profile of H2B-HaloTag.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the comparative performance results. Reviewer #3 requested direct comparison of SA and DPMM on biological datasets and clarification of what new biological insights were revealed. Authors provided these comparisons, and reviewers found the results convincing in the second round.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C63"
+    ],
+    "result": "Experimental characterization of protein dynamics: NLS addition reduces HaloTag diffusion 2-3-fold; RARA-HT has ~40% immobile fraction spanning 0.3-10.0 \u03bcm\u00b2/s; H2B-HT has ~70% immobile fraction with a fast population at 8-10 \u03bcm\u00b2/s; HT and HT-NLS show single highly mobile states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these experimental findings. Reviewer #3 requested clarification about experimental setup (CRISPR knock-in vs. exogenous expression) and number of replicates, which authors provided. The quantitative results were not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Domain deletion experiments show that both DBD and LBD are required for the immobile fraction of RARA-HT, suggesting it represents chromatin-bound molecules. The C88G mutation abolishing DNA-binding eliminated the immobile fraction, while NTD/CTD deletions had milder effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these biological interpretations. Reviewer #3 asked for justification of biological insights beyond methodological advances. Authors provided additional context about RARA function and chromatin binding requirements, which satisfied reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "NPM1-HT exhibits partial nucleolar localization with distinct dynamics inside and outside nucleoli. SA analysis identified three modes including an immobile population, with a slow population (0.23 \u03bcm\u00b2/s) enriched in nucleoli and a fast population (4 \u03bcm\u00b2/s) depleted.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these spatial analysis results as demonstrating the utility of the SA method for subcellular localization studies. This was presented as an application example and was not contested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "High localization densities led to deflation in occupation of slower-moving states, probably due to tracking errors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this observation about tracking artifacts. Reviewer #2 and others noted that tracking errors are a general limitation of SPT methods, which authors acknowledged in discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C66",
+      "C73",
+      "C74"
+    ],
+    "result": "Both DPMMs and SAs share limitations: they don't deal with transitions between states, have no built-in mechanism to distinguish true jumps from tracking errors, and rely on trajectories from another algorithm.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly noted these limitations. Reviewer #3 stated that not handling transitions is 'a relevant aspect of single-particle tracking that should be considered.' Authors acknowledged these as 'major shortcomings' and discussed them extensively, which reviewers accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SAs can be applied to any motion model with a likelihood function, including fractional Brownian motion (FBM). The SA accurately recovered diffusion coefficients and Hurst parameters for multistate FBM models, but showed systematic error in estimating low (subdiffusive) Hurst parameters due to motion blur.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer #1 specifically requested evaluation of methods on anomalous diffusion data, noting this is common in real experiments. Authors added FBM analysis showing the method works but with limitations for subdiffusive motion. Reviewer #3 asked how serious this limitation is given that confined motion is relevant for nuclear proteins. The systematic error for subdiffusive Hurst parameters indicates incomplete handling of anomalous diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The primary origins of variability for both DPMMs and SAs were cell-to-cell rather than clone-to-clone variability or intrinsic variability due to finite sample sizes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this bootstrap analysis result. This addressed concerns about reproducibility and sources of experimental variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "DPMMs require prior measurement of localization error, while SAs require selection of a parameter grid with spacing fine enough to avoid discretization artifacts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these as practical requirements. Reviewer #2 asked 'How does a user know from the output if they obtain discretization artifacts from SAs?' Authors addressed this in documentation and discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The experiments used a fixed diffusion coefficient range of 10\u207b\u00b2 to 10\u00b2 \u03bcm\u00b2/s. When true values were outside this range, SAs accurately estimated occupations using the nearest available value. Experimental results suggest this is common for targets with very slow or immobile populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this practical approach to handling states outside the support range. The method's robustness to this issue was demonstrated in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The SA's computational cost scales with the number of motion parameters. Both Hurst parameter in FBM and localization error manifest as negative off-diagonal covariance components, making them difficult to distinguish. Recent evaluations show even top methods have mean absolute error >0.3 for anomaly parameters in short trajectories.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these technical limitations and computational considerations. Reviewer #4 noted the paper is 'rather technical' but found the explanations adequate after revision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The SA method is publicly available as the pip-installable Python package saspt.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praised code availability. Reviewer #3 initially noted the code was not available during review but stated 'it is to praise that the authors plan to publish all their code.' In the second round, reviewers confirmed the software is accessible and well-documented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The study employed a computational approach integrating Gaussian Network Model (GNM), Transfer Entropy (TE), and Anisotropic Normal Mode-Langevin Dynamics (ANM-LD) to investigate CFTR allosteric communications. GNM-TE provides a direct measure of causality relations between residues, while ANM-LD computes conformational trajectories between known protein states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42-C55 describe the computational methods used in the study. The methods are well-established in the literature (supported by multiple citations) and their advantages and limitations are clearly stated. The integration of these approaches is appropriate for studying allosteric communications in CFTR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "GNM-TE analysis of ATP-free CFTR identified allosteric hotspots predominantly in the NBDs, with the 10 slowest modes encompassing the complete dynamic spectrum. Removal of the slowest modes revealed latent entropy hotspots in the TMDs, including gating residues and a cluster near the regulatory domain docking site. The dynamic infrastructure for ATP binding pre-exists in the ATP-free state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C71 present GNM-TE analysis results for ATP-free CFTR. The results are supported by eigenvalue analysis (C57, Figure 1\u2014figure supplement 1), parameter sensitivity testing (C58), statistical validation (C59), and structural visualization (Figures 1-2). The inference that dynamic infrastructure pre-exists (C68-C69) is reasonable based on the computational data showing allosteric peaks near ATP-binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The computational predictions showed remarkable agreement with experimental observations and mutational analysis, identifying residues that serve as pivotal allosteric sources and transducers, many corresponding to disease-causing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are validated by statistical analyses shown in Figure 1\u2014figure supplements 4-6, demonstrating significant co-localization between GNM-TE predictions and functionally essential residues, ATP-binding sites, and disease-causing mutations (p-values ranging from 9\u00d710^-13 to 5\u00d710^-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C129",
+      "C130"
+    ],
+    "result": "In the ATP-free form, dynamic fluctuations of residues near ATP-binding sites facilitate initial nucleotide binding. Entropy peaks are slightly shifted from ATP-binding residues in the ATP-free state but align precisely upon ATP binding, demonstrating pre-existing dynamic infrastructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C61-C62, C68-C69, C129-C130 are supported by GNM-TE analysis comparing ATP-free and ATP-bound states (Figures 1 and 3A). The observation of shifted entropy peaks that realign upon ATP binding provides computational evidence for the proposed mechanism, though experimental validation would strengthen this inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ATP binding and phosphorylation rewire and focus CFTR's allosteric connectivity. Entropy sources become distributed across all domains with sharper peaks, and gating/pore-lining residues assume more dominant allosteric roles. These effects are conserved between human and zebrafish CFTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C72-C82 are supported by comparative GNM-TE analysis of ATP-free and ATP-bound states (Figures 1, 3A-B, Figure 3\u2014figure supplements 1-2). The observation that dynamics pre-exist in latent form (C80-C81) is validated by comparing Figures 2B and 3B. Conservation across species (C82) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study uncovered a previously undiscovered allosteric hotspot in TMD1 proximal to the regulatory domain docking site. This cluster appears upon removal of the slowest mode in the phosphorylated ATP-bound state and may explain the R domain's phosphorylation-dependent excitatory role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C83-C87 identify a novel allosteric hotspot shown in Figures 3C-D. The location is validated by citations to prior work on R domain interactions (Bozoky et al., 2013; Chappe et al., 2005). The proposed functional significance (C87) is supported by citations to experimental observations (Winter and Welsh, 1997; Ma et al., 1997), though direct experimental validation of this specific hotspot would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "ANM-LD cross-correlation analysis reveals that global rigid body motions with relatively few hinges underlie CFTR conformational changes, similar to canonical ABC exporters. The two NBDs display asymmetric allosteric connectivity, with NBD1 correlating with permeation pathway residues and NBD2 with ECL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 are supported by cross-correlation analysis shown in Figure 4. The similarity to PglK (C89) is validated by citation to Acar et al., 2020. The asymmetric NBD connectivity (C92-C94) is clearly demonstrated in Figures 4B-C, and the functional significance of ECL1 (C95) is supported by citation to Infield et al., 2016.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Time-delayed cross-correlation analysis reveals the sequence of allosteric transduction in CFTR: NBD2 initiates movement, propagating signals to ICL2/3, TMD2/TM8, and ECL1; ECL1 then signals to NBD1; NBD1 signals to gating residues and permeation pathway helices; and finally these helices signal back to NBD2, completing the allosteric cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C105 describe the allosteric pathway determined by time-delayed cross-correlation analysis (Figure 5, Figure 5\u2014figure supplement 1). The methodology is sound, and key findings are corroborated by experimental studies (citations to Sorum et al., 2015; Levring et al., 2023). The cyclic nature of the pathway is a novel computational prediction that warrants experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "GNM-TE analysis reveals that ivacaftor potentiates CFTR conductance not by directly affecting gating residues, but by mimicking the allosteric signal from ATP-binding sites. The ivacaftor binding site and ATP-binding site send information to remarkably similar sets of residues (Pearson's r=0.83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C110-C120 present a mechanistic explanation for ivacaftor's action based on GNM-TE analysis (Figure 6). The high correlation coefficient (C118, r=0.83) provides quantitative support. The mechanism is consistent with known properties of ivacaftor (C113-C116, supported by multiple citations). However, this is a computational prediction that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Type I correctors (lumacaftor/tezacaftor) bind at allosteric 'valleys' and stabilize CFTR by lowering \u0394G(folding), while potentiators (ivacaftor) and type III correctors (elexacaftor) bind at allosteric sources and modulate activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 distinguish drug mechanisms based on GNM-TE analysis (Figure 6A). The findings are consistent with established mechanisms from the literature (supported by citations to Van Goor et al., 2011; Fiedorczuk and Chen, 2022b; Liu et al., 2019; Shaughnessy et al., 2021; Veit et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors propose that CFTR allostery involves multiple mechanisms: phosphorylation-induced R domain movement occurs by induced fit; ATP binding involves ensemble selection followed by induced fit; and the final conducting state transition occurs by a dynamic mechanism without major conformational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35, C121-C128, C131-C132 present a mechanistic model integrating multiple allosteric mechanisms. While the model is supported by computational results and literature citations (Levring et al., 2023; Zeng et al., 2023; Szollosi et al., 2010), key aspects remain speculative (C124, C131-C132 explicitly noted as proposals/speculation). The authors acknowledge the lack of definitive experimental/computational evidence for some steps (C124).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The phosphorylated ATP-bound structure is non-conducting, and transition to the conducting state occurs by a dynamic allosteric mechanism involving rapid conformational sampling without major structural changes, as evidenced by MD simulations and single-molecule studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 synthesize findings from multiple experimental studies (citations to Zeng et al., 2023; Levring et al., 2023; Liu et al., 2019) showing that channel opening does not require major conformational changes. The proposed dynamic mechanism (C139) is consistent with both the computational results and cited experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background information on cystic fibrosis and CFTR structure/function is provided, including disease prevalence, CFTR's role as a chloride channel, its domain organization, and the mechanistic model of channel gating controlled by phosphorylation and ATP binding/hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C30 provide established background knowledge about CF and CFTR, supported by numerous citations to the literature. These are well-established facts that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The manuscript reviews classical allosteric models (KNF induced fit, MWC conformational selection) and the more recent dynamic mechanism, noting that multiple mechanisms may combine in proteins like CFTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 accurately describe established allosteric models from the literature, supported by appropriate citations (Koshland et al., 1966; Monod et al., 1965; Motlagh et al., 2014; Nussinov and Tsai, 2015; Popovych et al., 2006; Tsai et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Long-range allosteric communications are essential to CFTR function, with ATP-binding sites and gating residues separated by 60-70 \u00c5. Experimental evidence shows that allosteric drugs and mutations affect channel function without directly contacting gating residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 summarize established experimental findings about CFTR allostery, supported by citations to Liu et al., 2017b; Zhang et al., 2018; Levring et al., 2023; Sorum et al., 2015; Wang et al., 2010; Liu et al., 2019; Fiedorczuk and Chen, 2022a; Eckford et al., 2012; Shaughnessy et al., 2021.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Small-molecule CFTR modulators have revolutionized CF treatment, leading to dramatic reductions in patient morbidity and increased life expectancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by citation to Clancy, 2018 and represents established clinical knowledge about CFTR modulator therapies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study performed single-cell RNA sequencing on 24 gastric samples (9 HpGC, 3 ex-HpGC, 6 non-HpGC, 6 HC), yielding 83,637 high-quality cells with an average of 1358 genes and 3465 transcripts per cell. Nine main cell types were identified using canonical markers and CNV distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C22 describe the experimental design and quality control metrics. The sample sizes, cell counts, and quality metrics are clearly stated with specific numbers. The cell type identification methodology using canonical markers and CNV is standard for scRNA-seq studies and appropriately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "GC samples showed significant increases in T cell proportions and malignant epithelium compared to HC, with significant decreases in non-malignant epithelium. However, no significant differences in epithelial proportions were observed among non-HpGC, ex-HpGC, and HpGC groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 report cellular composition changes with appropriate statistical comparisons. The findings are internally consistent: GC differs from HC, but the three GC subtypes do not differ significantly in epithelial proportions. This is supported by Figure 1G showing the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Malignant epithelium in HpGC exhibited high inflammatory and EMT signatures. Subclustering identified six subpopulations (M1-M6), with M5/M6 predominantly from H. pylori-associated GC showing high expression of inflammatory genes (CXCL1/2/3/8, S100A9, S100P) and EMT markers (SPARC, VIM), while M1-M4 from non-HpGC showed differentiation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C37 describe malignant epithelium heterogeneity with consistent molecular characterization. The subclustering analysis, differential gene expression, and pathway enrichment (GSEA) provide converging evidence. Figure 2 supports the cluster origins and gene expression patterns. The biological interpretation aligns with known H. pylori effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Malignant epithelium from ex-HpGC and HpGC displayed progressively lower differentiation scores (p<0.05), with high differentiation scores associated with better prognosis in GC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 report differentiation score analysis with statistical significance and prognostic correlation. The Wilcoxon test (p<0.05) and survival analysis using TCGA data provide appropriate validation. Figure 2H-I support these findings with clear visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Non-malignant epithelium was partitioned into nine cell types. HpGC showed dramatic decreases in neck cells (p=0.034), chief cells (p=0.014), and parietal cells (p=0.0087), with significant increases in metaplasia lineages SPEM (p=0.017), IM (p=0.036), and enterocytes (p=0.036) compared to HC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 describe non-malignant epithelium composition changes with appropriate statistical tests (Student's t-test) and significant p-values. The findings are validated using an independent dataset (GSE2669) as shown in Figure 3D-E. The biological interpretation aligns with known gastric metaplasia progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Trajectory analysis revealed that chief cells differentiate into neck cells, which then branch into two paths: one developing into SPEM, and another where SPEM further develops into IM and enterocytes under persistent inflammatory stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe developmental trajectories using pseudotime analysis (monocle). Figure 3F-I shows the trajectory, pseudotime distribution, and dynamic gene/TF expression supporting this differentiation path. The methodology is appropriate for inferring cell state transitions, though causality cannot be definitively established from scRNA-seq alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "T/NK cell subclustering identified 11 clusters. Exhausted CD8_CXCL13, CD8_MKI67, and Tregs were enriched in ex-HpGC and HpGC (p<0.05), while cytotoxic CD8_GZMB decreased (p<0.05). NK cells showed highest cytotoxic scores and Tregs highest inhibitory scores. High Treg and CD8_CXCL13 abundance correlated with worse prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 describe T/NK cell heterogeneity with appropriate statistical tests and functional scoring. TCGA deconvolution analysis validates the findings (C53), and survival analysis (C56) shows prognostic relevance. Figure 4 provides comprehensive support including functional scores and survival curves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Suppressive T cells (Treg, CD8_CXCL13) interacted with malignant epithelium through TIGIT-PVR/NECTIN2 ligand-receptor pairs. NECTIN2 and PVR were more enriched in ex-HpGC and HpGC. Immunostaining confirmed spatial proximity of TIGIT+ T cells to pan-CK+ NECTIN2+ malignant epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe intercellular interactions using CellChat analysis with immunostaining validation. The computational prediction (C57) is supported by differential expression (C58) and spatial validation (C59, Figure 4K). The multi-modal evidence strengthens the conclusion, though functional validation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Myeloid cell subclustering revealed multiple TAM subsets. TREM2_TAMs and Angio-TAMs were significantly increased in HpGC (p<0.05). TREM2_TAMs expressed complement genes (C1QA/B/C) and showed M2 signature, while Angio-TAMs expressed chemokines (CXCL3/5/8, IL1RN) and showed angiogenesis signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 describe myeloid heterogeneity with molecular characterization. Statistical significance is reported for abundance changes, and signature enrichment analysis (GSVA) supports functional differences. Figure 5 provides comprehensive visualization of clusters, markers, and signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Immunostaining revealed spatial localization differences: Angio-TAMs were mainly in tumor vasculature while TREM2_TAMs were in tumor stroma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 report spatial localization from immunostaining (Figure 5G). The distinct localization patterns support functional differences between TAM subtypes. However, quantification of spatial patterns is not provided, and only one sample is shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "TREM2_TAMs were enriched for PD1 signaling and GC chemosensitivity, while Angio-TAMs were enriched for angiogenesis, VEGF, and HIF pathways. Both TAM subtypes correlated with Treg abundance. Angio-TAM enrichment was higher in HpGC (p=0.047) and associated with poor prognosis (p=0.0035).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 describe pathway enrichment (GSVA), correlations, and prognostic associations. TCGA validation (C72-C73) strengthens the findings. Statistical tests are appropriate with significant p-values. Figure 5H-L supports these results with clear visualizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CAFs were divided into six subpopulations including iCAF, which was significantly higher in HpGC (p=0.023). iCAF enriched for chemokines, TGF\u03b2, ECM, inflammatory response, hypoxia, and VEGF pathways, and significantly correlated with Angio-TAM and Treg abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe CAF heterogeneity with molecular and functional characterization. Statistical significance for abundance differences (C75) and correlation analysis (C77) are reported. Pathway enrichment (C76) is comprehensive. Figure 6 provides supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "iCAF showed strongest interactions with suppressive T cells and TAMs through THBS, NECTIN, TIGIT, ANGPTL, and VEGF pathways. Specifically, iCAF interacted with CD8_CXCL13/Tregs via NECTIN2-TIGIT and with Angio-TAMs via VEGFA/B-VEGFR1 and ANGPTL4-SDC2 pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 describe intercellular crosstalk using CellChat analysis. The pathway-level (C79) and ligand-receptor level (C80-C81) analyses are consistent. Figure 6H-I provides visualization. However, these are computational predictions without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "iCAF from HpGC showed higher expression of NECTIN2, VEGFA, PVR, IL11, and IL24. Elevated expression of IL11, VEGFA, IL24, and TWIST1 correlated with poor prognosis. iCAF abundance was elevated in HpGC (p=0.035) and associated with poor prognosis in two independent datasets (p=0.12 and p=0.007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 report differential expression and prognostic associations with validation in two independent datasets (TCGA and ACRG). Statistical tests are appropriate. However, C83 reports p=0.14 for IL11, which is not statistically significant, contradicting the claim of correlation. C85 also reports p=0.12 for one dataset, which is not significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In immunotherapy-treated patients, iCAF and Angio-TAM were abundant in non-responders, while CD8_CXCL13, CD8_GZMB, CD8_IFNG, and CD8_MKI67 were abundant in responders. CD8_CXCL13 and CD8_MKI67 abundance correlated with improved OS and PFS, while iCAF and Angio-TAM abundance correlated with poor survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 analyze immunotherapy response using deconvolution of bulk RNA-seq data. The associations between cell types and response/survival are clearly demonstrated in Figure 7A-C. However, the analysis relies on deconvolution estimates rather than direct measurement, and the immunotherapy cohort size is not specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Immune and angiogenic signatures were developed from scRNA-seq data. The immune signature correlated with CD8_GZMK/CD8_GZMB and was higher in responders (p<0.05), effectively distinguishing responders (AUC=0.755) and predicting better OS/PFS (p<0.05). The angiogenic signature correlated with iCAF/Angio-TAM, was lower in responders (p<0.05), showed poor discrimination (AUC=0.367), and predicted poor immunotherapy response (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C90-C97 describe signature development and validation. The signatures show appropriate correlations with cell types, differential expression between responders/non-responders, and prognostic value. ROC analysis (C94-C95) and survival analysis (C96-C97) provide quantitative validation. Figure 7D-G supports these findings. However, the angiogenic signature's poor AUC (0.367) suggests limited predictive utility despite statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The study concludes that synergistic combination of immunotherapy and anti-angiogenic targeted therapy may be an effective therapeutic modality for HpGC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is a therapeutic recommendation based on the study's findings. While the data show associations between angiogenic signatures/cells and poor immunotherapy response, this is correlative evidence from retrospective analysis. No prospective clinical trial or functional validation of combination therapy is provided. The recommendation is speculative and requires clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Blockade of TIGIT-NECTIN or TIGIT-PVR axes may be a promising immunotherapy modality for H. pylori infection-associated GC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is a therapeutic implication based on observed TIGIT-NECTIN2/PVR interactions. While the expression patterns and spatial proximity are demonstrated, this is correlative evidence without functional validation. No blocking experiments or clinical data are provided to support therapeutic efficacy. The recommendation is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "iCAFs promoted tumor angiogenesis and immune suppression in H. pylori infection-associated GC through upregulation of VEGFA/B-VEGFR1 and NECTIN2-TIGIT pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 makes a mechanistic conclusion about iCAF function. While the study demonstrates correlations, ligand-receptor interactions (computational), and associations with outcomes, it does not provide functional validation (e.g., perturbation experiments, causality testing). The claim of 'promotion' implies causality that is not established by the correlative scRNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background epidemiological claims about gastric cancer and H. pylori infection prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12 are established epidemiological facts cited from published literature. These are appropriate background statements for the study context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims about H. pylori's effects on immunotherapy and clinical trial results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13-C19 summarize prior literature on H. pylori's role in TME regulation, immunotherapy response, and clinical trial outcomes. These are appropriately cited background statements that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Differential gene expression between non-malignant and malignant epithelium showed functional genes and pathway enrichment for tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe basic differential expression analysis between epithelial cell types. The findings are standard for cancer scRNA-seq studies and supported by Figure 1H-I. These provide context for the main findings but are not novel.",
+    "result_type": "MINOR"
+  }
+]

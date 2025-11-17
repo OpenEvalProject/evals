@@ -1,0 +1,88 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C25",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors demonstrate that grid cells within the same module exhibit small but robust variability in grid orientation and spacing. This variability is significantly greater between cells than within individual cells across recording halves, and persists across multiple control analyses including field width, recording duration, arena boundaries, and conjunctive cell presence. The variability is present whether analyzing single values or three independent axes per cell.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this finding. Reviewer 1 states 'the results are convincing' and notes 'the statistical analysis of the grid cell variability to be very systematic and convincing.' Reviewer 2 describes the analyses as 'solid' and notes 'the authors have addressed all of our concerns, providing control analyses that strengthen their claim.' The editor describes the evidence as 'convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C39",
+      "C40",
+      "C66",
+      "C67"
+    ],
+    "result": "RNN models trained to perform path integration develop grid responses with comparable variability in spacing and orientation to experimental data. The variability in these models is modulated by weight decay regularization, with denser connectivity leading to greater variability and sparser connectivity reducing it.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about the RNN analysis. Reviewer 1 notes the work is 'convincing and important, supporting their conclusions.' Reviewer 2 states 'the authors have addressed all of our concerns' after revision. The finding that RNN models show similar variability patterns is treated as supporting evidence for the biological relevance of the observed variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "Grid property variability at levels similar to experimental data leads to lower decoding error of local space when using activity from a single module. This benefit increases with larger population sizes, is observed over a range of variability values, and is most pronounced in modules with small grid spacing. Individual grid modules may encode considerably more local spatial information than previously believed.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this finding. Reviewer 1 states 'I found the evidence for enhanced decoding of location based on between cell variability within a module to be convincing and important, supporting their conclusions.' Reviewer 2 notes the work shows 'such variability is useful for decoding spatial position' and describes the analyses as 'solid.' The editor describes the evidence as 'convincing' that 'such variability helps disambiguate locations within an environment.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors demonstrate theoretically that when grid cells have identical properties, population activity exhibits translational invariance, but when variability exists in grid orientation and spacing, this invariance is broken and distinct patterns emerge at different spatial locations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this theoretical framework. Reviewer 1 notes 'their hypothesis is well stated' and Reviewer 2 describes the work as having 'clarity.' The theoretical motivation for why variability matters is accepted as part of the overall convincing argument about the functional significance of grid property variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The decoding analysis made simplifying assumptions including independent Poisson noise, linear decoding, and normal distribution of grid properties, though comparison to real data showed these assumptions are reasonable.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about these methodological assumptions. Reviewer 1 found the analysis 'systematic and convincing' and Reviewer 2 noted 'the analyses are solid.' The authors' acknowledgment of assumptions and validation against real data appears to satisfy reviewer concerns about the modeling approach.",
+    "result_type": "MINOR"
+  }
+]

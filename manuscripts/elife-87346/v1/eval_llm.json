@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study recruited 33 OCD patients and 34 healthy volunteers matched for age, gender, IQ, and years of education. After excluding two participants who did not meet minimum training requirements, the final sample consisted of 32 OCD patients (19 females) and 33 healthy volunteers (19 females), with most participants being right-handed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide clear descriptive statistics about participant recruitment, exclusions, and final sample composition. These are straightforward methodological details that are internally consistent and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Healthy volunteers practiced the motor sequencing app preferentially at approximately 15:00, while OCD patients practiced at approximately 18:00, though there were no significant differences in daily training patterns between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are supported by appropriate circular statistics (Rayleigh test for within-group patterns, Watson's U2 test for between-group comparison). The statistical tests are appropriate for circular data, and the non-significant between-group difference (p = 0.19) is properly reported despite the different peak times.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C14"
+    ],
+    "result": "OCD patients do not exhibit learning deficits in motor sequence acquisition, achieving similar asymptotic performance as healthy volunteers despite initially slower performance. However, OCD patients took significantly longer to achieve automaticity and exhibited more variability in their progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C14 are supported by exponential decay modeling showing similar learning rates and asymptotic performance between groups, but significant differences in automaticity parameters (nC and CL). The statistical analyses appropriately distinguish between learning (MT parameters) and automaticity (C parameters), with Bayesian analyses supporting null effects where appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Both OCD patients and healthy volunteers speeded up sequence performance more following reward decrements than increments, with this sensitivity attenuating from the first to second practice bin. Both groups showed comparable overall changes in movement time during training, though the relative improvement depended on whether reward increased or decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are supported by appropriate three-way ANOVA analyses with significant main effects and interactions properly reported. Post-hoc tests with FDR correction are appropriately applied. Bayesian analysis (BF = 6.08) provides moderate evidence for the absence of group effects on overall MT changes, which is properly interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The variability of trial-to-trial movement time changes was greater in OCD patients than healthy volunteers. Over training, both groups exhibited less variable changes in response to reward, with reward decrements associated with more variable behavioral changes than increments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by three-way ANOVA on standard deviation measures showing significant main effects of group (p = 9.93 \u00d7 10\u207b\u2076), bin (p = 2 \u00d7 10\u207b\u00b9\u2076), and reward (p = 4.13 \u00d7 10\u207b\u2075). The statistical approach of analyzing distribution spread is appropriate for assessing behavioral variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Both groups exhibited increased IKI consistency over training, but OCD patients had less consistent timing patterns trial-to-trial compared to healthy volunteers. IKI consistency improved more following reward increments than decrements, with the variability of consistency values decreasing across practice bins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by three-way ANOVA analyses showing significant main effects of bin (p = 0.00607), group (p = 0.00454), and reward (p = 1.86 \u00d7 10\u207b\u2076) on IKI consistency measures. The analyses appropriately examine both central tendency and spread of distributions, with Bayesian analyses supporting null interaction effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "When given the option to play an easier-but-shorter sequence, both groups significantly preferred it over the trained app sequence. However, participants with greater habitual tendencies showed greater propensity to prefer the trained app sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by Kruskal-Wallis test showing significant condition effect (H = 23.2, p < 0.001) and Pearson correlation (r = 0.36, p = 0.005) between COHS scores and app sequence preference. Post-hoc tests with FDR correction appropriately identify which conditions differ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "OCD patients with improved symptomatology after app training showed significantly greater preference for the trained app sequence compared to patients with unchanged or worsened symptoms. Greater symptom improvement correlated with greater preference for the familiar sequence, particularly when choosing between the trained sequence and a 3-move alternative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31 are based on exploratory post-hoc subgroup analyses not pre-specified in the study design. While the statistical tests show significant effects (pFDR = 0.015, 0.011; rs = 0.35, p = 0.04), the subgroup analysis involves multiple comparisons and small sample sizes (14 improved vs 18 stable/worse), raising concerns about statistical power and potential Type I error inflation despite FDR correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Both groups were highly sensitive to re-evaluation based on monetary feedback, choosing the non-app sequence more often. However, when re-evaluation required motor effort, OCD patients significantly favored the trained app sequence over healthy volunteers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by appropriate statistical tests showing no group effect for monetary conditions (p = 0.210, BF = 0.742) but significant group \u00d7 condition 4 interaction (p = 0.04) for the effort condition. The Bayesian analysis appropriately supports the null effect for monetary re-evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Symptom improvement in OCD patients was positively correlated with habitual tendencies (particularly routine subscale), with patients showing greater improvement having more pronounced habit routines. Patients who considered the app beneficial had higher compulsivity scores and habitual tendencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C38 are based on exploratory analyses with strong correlations (r = 0.45, 0.80, 0.77) but involve post-hoc subgrouping and multiple comparisons. The three-way ANOVA (F = 13.7, p < 0.001) comparing symptom change subgroups is not clearly described in terms of the other factors. These exploratory findings require replication in a pre-registered study with adequate power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In healthy volunteers, greater tendency for automatic behaviors correlated with finding the app more relaxing, but this correlation was not observed in OCD patients. Patients' symptom improvement did not correlate with how relaxing they found the app or the number of practices performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by appropriate Pearson correlation analyses showing significant correlation in HV (r = 0.44, p < 0.01) but not in OCD (p = 0.1), and non-significant correlations between symptom improvement and relaxation (p = 0.1) or practice number (p = 0.2). The differential pattern between groups is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "OCD patients reported significantly higher intolerance of uncertainty, elevated motivation to avoid aversive outcomes, higher perfectionism, higher worries, and higher perceived stress compared to healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by independent t-tests showing significant group differences on multiple self-report questionnaires (IUS, BIS, FMPS, PSWQ, PSS), with reference to Table 1 and Figure 10. These are standard clinical characterization measures appropriately analyzed with parametric tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The goal/habit imbalance theory of compulsion in OCD postulates enhanced habit formation and impaired goal/habit arbitration. While dysfunctional goal-directed control has been strongly supported, enhanced habit formation has largely been inferred from the absence of goal-directed control, with recent findings linking stimulus-response strength and goal devaluation exclusively to dysfunctional goal systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 accurately represent the theoretical framework and prior literature, supported by appropriate citations (Gillan et al., 2011, 2015a, 2015b; Vaghi et al., 2019; Zwosta et al., 2018; Robbins and Costa, 2017; Ferreira et al., 2017). These claims establish the theoretical context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Extensive training of sequential actions can rapidly engage the habit system by integrating separate motor actions into coordinated chunks. Automaticity is associated with neural shifts from anterior/associative to posterior/sensorimotor striatal regions, and chunked action sequences provide an opportunity to study goal-habit transitions relevant to OCD compulsions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 accurately represent established neuroscience literature on motor sequence learning, habit formation, and neural correlates of automaticity, supported by appropriate citations (Robbins et al., 2019; Graybiel, 1998; Sakai et al., 2003; Kornysheva et al., 2019; Ashby et al., 2010; Graybiel and Grafton, 2015; Bassett et al., 2015; Hellriegel et al., 2017). These claims establish the scientific rationale for the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The Motor Sequencing App was designed to satisfy central criteria for habits (swift execution, invariant topography, action chunking) and incorporated features known to enhance habit strength (training frequency, context stability, reward contingencies, extended training period, reinforcer predictability). The approach avoids reliance on controversial outcome devaluation tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 accurately describe the methodological design rationale, supported by appropriate citations to habit formation literature (Watson et al., 2022; Balleine and Dezfouli, 2019; Robbins and Costa, 2017; Wood and R\u00fcnger, 2016; Nusbaum et al., 2018; Walker et al., 2003; Bouton, 2021). The design choices are well-justified based on prior research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Based on prior literature reporting implicit learning issues, fine-motor difficulties, and heightened sensitivity to negative feedback in OCD, the authors expected poorer procedural learning in patients compared to healthy volunteers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 accurately represent prior literature establishing the study hypotheses, supported by appropriate citations (Deckersbach et al., 2002; Kathmann et al., 2005; Rauch et al., 1997; Bloch et al., 2011; Apergis-Schoute et al., 2024; Becker et al., 2014; Kanen et al., 2019). These claims establish the a priori expectations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study successfully achieved automaticity, fulfilling three of four criteria for habits (rapid execution, invariant topography, chunked sequences) but was unable to test resistance to devaluation. The app-trained sequences likely encompass both habitual and goal-directed qualities, aligning with contemporary perspectives on skilled/habitual sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 provide an honest assessment of what the study achieved and its limitations. The acknowledgment of the inability to test devaluation (C73) is appropriate, and the interpretation that sequences have mixed properties (C75) is supported by citation to contemporary theory (Du and Haith, 2023). This represents appropriate scientific caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The tendency to attribute higher intrinsic value to familiar actions may be a potential mechanism leading to compulsions and represents an important addition to the goal/habit imbalance hypothesis. Smartphone app training has potential as a habit reversal therapeutic tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C69 represent speculative interpretations and conclusions that extend beyond the data. While the preference findings (C28-C33) and exploratory symptom improvement analyses (C30-C31, C36-C38) provide some support, these are exploratory findings requiring replication. The therapeutic potential (C68) is particularly speculative given the lack of a controlled clinical trial design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors propose that behavior may be generally goal-directed but vary in the balance of control by external versus internal goals, and that the dual process framework might be better understood in terms of extrinsic versus intrinsic outcomes. Habits may acquire alternative sources of value rather than losing current value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 represent theoretical speculation and reinterpretation of the dual process framework based on the study findings. While supported by citations to theoretical work (Hommel and Wiers, 2017; Kruglanski and Szumowska, 2020; O'Doherty, 2014), these are speculative proposals that require further empirical testing and are not directly demonstrated by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The finding of no procedural learning deficits in OCD is inconsistent with prior SRT paradigm studies but aligns with recent studies showing successful learning with explicit instructions. The current task may tap less into memory processes than SRT tasks because sequences were explicitly demonstrated before training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 appropriately contextualize the current findings relative to prior literature, with appropriate citations (Deckersbach et al., 2002; Joel et al., 2005; Kathmann et al., 2005; Rauch et al., 2001, 1997; Soref et al., 2018; Barzilay et al., 2022). The inference about task differences (C81) is reasonable and helps explain the discrepancy with prior findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "While heightened sensitivity to negative feedback in motor learning has been documented in the general population, the current findings do not support differences between OCD and healthy individuals in sensitivity to negative score changes, unlike previous work highlighting increased response switching after negative feedback in OCD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 appropriately contextualize the current null findings relative to prior literature, with appropriate citations (Abe et al., 2011; Galea et al., 2015; Pekny et al., 2015; van Mastrigt et al., 2020; Hauser et al., 2017; Marzuki et al., 2021). The discussion of potential reasons for the discrepancy (implicit vs explicit feedback, training duration) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Previous studies have reported that subjective habitual tendencies are associated with compulsive traits and act as predictors of subclinical OCD symptomatology in healthy populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 accurately represents prior literature, supported by appropriate citations (Ersche et al., 2019; Wuensch et al., 2022; Ramakrishnan et al., 2022). This provides context for interpreting the self-report findings in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85",
+      "C71"
+    ],
+    "result": "The habit replacement hypothesis suggests that trained action sequences may disrupt OCD compulsions by engaging the same neural habit circuitry, in line with successful interventions in Tourette syndrome, tic disorders, and trichotillomania.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85 and C71 represent speculative hypotheses about therapeutic mechanisms, supported by citations to related disorders (Hwang et al., 2012; Bate et al., 2011; Morris et al., 2013). However, the current study does not directly test this mechanism, and the exploratory symptom improvement findings are insufficient to support this specific mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study was unable to employ resistance to devaluation as a criterion because it would have invalidated subsequent tests. The utility of the devaluation criterion has been questioned in human habit learning studies, and recent analyses have not employed devaluation as a criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 provide appropriate acknowledgment of methodological limitations and contextualize these within ongoing debates in the field, supported by citation to recent work (Du and Haith, 2023). This represents appropriate scientific transparency about study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The monetary discounting condition involved deterministic choice with non-overlapping reward ranges, while the effort discounting condition had equivalent reward ranges creating uncertainty. The probabilistic constraint in the effort condition may account for greater task sensitivity in OCD given patients' susceptibility to uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide reasonable post-hoc interpretation of why the effort condition showed group differences while monetary conditions did not, supported by citation to literature on uncertainty in OCD (Pushkarskaya et al., 2015). This is appropriate scientific reasoning about task design effects.",
+    "result_type": "MINOR"
+  }
+]

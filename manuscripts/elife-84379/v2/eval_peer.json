@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors present a mathematical analysis showing that co-substrate cycling imposes an additional flux limit on reactions, distinct from enzyme kinetics. This limit is a function of the co-substrate pool size and turnover rate, creating a threshold effect where metabolite accumulation occurs as influx approaches this limit.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this work as 'an important mathematical analysis' showing 'the impact of co-substrate cycling on constraining metabolic fluxes.' The mathematical modeling is accepted without critique, and reviewers only request clarification of terminology and assumptions, not validation of the core theoretical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C63"
+    ],
+    "result": "The authors demonstrate through numerical simulations and analytical solutions that in linear pathways with co-substrate cycling, metabolites upstream of the cycling reaction accumulate when influx exceeds a threshold, while downstream metabolites reach steady states independent of influx. The co-substrate pool shifts toward one form as influx increases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the mathematical modeling and simulations without questioning these specific dynamics. The request to 'explicitly include the relevant model assumptions and details' indicates acceptance of the results contingent on clearer presentation, not doubt about the findings themselves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Analysis of existing E. coli central carbon metabolism data shows that about 80% of reactions involving co-substrates carry flux lower than predicted by enzyme kinetics alone. Several reactions (MDH, PGK, G6PDH) show significant correlation between flux and co-substrate pool size, suggesting co-substrate dynamics may limit flux.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers find the 'combination of mathematical modeling and comparisons with existing data' offers 'convincing support,' Reviewer #2 questions how one can establish that 'kin < Vmax' given measurement difficulties and requests 'essential details' about the dataset. Reviewer #3 requests 'more detail on the experimental/FBA data' and organism specifics, indicating the data analysis needs clarification before full acceptance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C81",
+      "C82"
+    ],
+    "result": "Simulations of branched pathways show that regulation of co-substrate pool size and turnover rate can regulate flux dynamics. The change in flux ratio between branches is of the same order as the change in pool size ratio, while metabolite level changes are generally smaller.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the simulation results for branched pathways without specific critique. The general endorsement that the work 'shows the impact of co-substrate cycling on constraining metabolic fluxes' through 'mathematical analysis of simple network motifs' encompasses these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "For coupled pathways sharing a co-substrate, simulations show the flux limit depends on the difference in pathway influxes rather than individual influxes. At low pool sizes, pathway outputs are highly correlated despite influx fluctuations, with correlation transitioning from anti-correlation to positive correlation as pool size decreases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these simulation results for coupled pathways. Reviewer #1's question about 'a simpler configuration' without direct A0-A1 reaction and 'the impact of the rate of this reaction on the correlation' suggests interest in exploring the model further rather than doubt about the presented results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Analysis shows that while thermodynamic barriers greatly reduce normalized flux in a few cases like malate dehydrogenase (MDH), there is generally little correlation between reaction flux and thermodynamics across the dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this finding. The acceptance of the overall data analysis approach implicitly includes this thermodynamic analysis, which serves as a control to rule out alternative explanations for observed flux limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors propose that substrate-induced death and metabolite excretions could relate to substrate influx approaching co-substrate cycling limits, and that cells could dynamically alter pool sizes to regulate flux through different pathways. Co-substrate pool sizes could serve as 'tuning points' for metabolic control at timescales shorter than gene regulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative hypotheses and predictions acknowledged as such in the claims. Reviewers request that the authors 'further address the limitations of the study in the Discussion section,' which likely includes these speculative extensions. While reviewers find the work will be 'of interest to researchers who study microbial metabolism and metabolic engineering,' they do not explicitly endorse these specific physiological predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The authors acknowledge data limitations, noting that only half of 14 co-substrate reactions with measured fluxes could be used due to lack of enzyme concentration measurements, and that expansion to eukaryotic cells will be challenging due to organelle-specific pools.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer #3 explicitly requests that 'the discussion could include a paragraph that addresses current limitations to further evaluate the developed mathematical framework,' indicating these acknowledged limitations are appropriate and should be emphasized. The reviewers' requests for more experimental detail align with recognizing these data constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C65",
+      "C66",
+      "C95"
+    ],
+    "result": "The manuscript provides extensive background on co-substrate cycling in metabolism, citing established knowledge about ATP, NAD(P)H, and other co-substrates, previous theoretical work on metabolic control, and experimental observations of pool size changes and metabolic shifts in various organisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these background claims, which are primarily citations to established literature. However, Reviewer #2 notes the paper 'assumes that readers are familiar with a lot of different terminology/examples' and requests 'a more detailed introduction of terms' and better embedding of background paragraphs, indicating the presentation needs improvement but not that the background information itself is incorrect.",
+    "result_type": "MINOR"
+  }
+]

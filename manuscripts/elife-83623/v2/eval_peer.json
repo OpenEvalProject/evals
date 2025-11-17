@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors assessed curtaining propensity across four plasma gases (argon, xenon, nitrogen, oxygen) at different currents and voltages. They found that argon and xenon produce the smoothest surfaces with curtaining propensity under 10% at low currents, while nitrogen and oxygen exhibit greater curtaining. Argon showed lower curtaining than xenon at higher currents.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested additional data on curtaining behavior over time during serial imaging sessions (Essential revision 2), noting that the current assessment was done on individual milled windows. The manuscript does not show temporal accumulation of curtains during automated runs, which is critical for evaluating the technique's performance in actual imaging workflows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors characterized beam profiles of four plasma gases by measuring full width half maximum at different currents and voltages. Plasma sources showed considerably larger probe sizes than Ga-based sources, with argon having the smallest probe size at 30 kV.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly requested additional data on milling resolution and beam cross-sections (Essential revision 3), stating 'No detail about the milling resolution has been reported' and noting that different beam cross-sections are expected to affect z-resolution. The provided beam profile data does not fully address how this impacts actual milling performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors explored imaging at 90\u00b0 to the milled surface versus the default 52\u00b0 angle. They found that 90\u00b0 imaging provided improved contrast and resolution (47\u00b17 nm vs 76\u00b119 nm), with features like bacterial outer membranes being more prominently visible.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised multiple concerns about this result: they requested comments on collection efficiency effects (Essential revision 4), explanation of resolution loss upon tilting (Essential revision 5), and noted potential suboptimal astigmatism correction affecting the comparison (Essential revision 6). Reviewer 1 specifically questioned the contrast improvement mechanism, noting that secondary electron generation should increase with tilt for both features and background, making the observed contrast difference unexpected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors identified charging artifacts as a limitation of cryo-serial pFIB/SEM and developed a computational approach using U-Net neural networks to remove these artifacts. The automated segmentation achieved a 0.93 Dice coefficient score compared to manual cleanup.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly stated that 'the paper does not show or discuss how plasma beams can mitigate charging artifacts (or not)' and requested comparison of charging artifacts with different sources including Gallium before computational correction (Essential revision 1). The manuscript only addresses computational correction, not whether plasma beams inherently reduce charging compared to other sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors imaged 500 slices of plunge-frozen HeLa cells and visualized various organelles including nucleus, ER, mitochondria, and two centrosomes. They measured centrosome spacing (1.2 \u00b5m center-to-center) and centriole spacing (543 nm and 1561 nm), consistent with prophase.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise specific concerns about these cellular observations. The public review notes the work 'should be very useful for addressing many biological questions,' implicitly accepting the demonstrated capability to visualize subcellular structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors imaged mouse brain cortical tissue (844.4 \u00b5m\u00b3 volume) and observed various cell types, myelinated neurons, mitochondria, and synapses. They quantified synaptic vesicles (~184 in Synapse I, ~98 in Synapse II) and observed diverse synapse morphologies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these specific observations from brain tissue. The public review acknowledges the work demonstrates 'subcellular architecture at sufficient contrast for ultrastructural analyses,' supporting the validity of these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors imaged plunge-frozen R. rubrum bacteria and observed both developing and mature chromatophores. They identified nascent chromatophores budding from the inner membrane and quantified 2772 mature and 84 nascent chromatophores in eight segmented cells, noting uneven distribution across the population.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about these bacterial observations. The demonstration of rare events like chromatophore budding aligns with the reviewers' recognition that the approach 'should be very useful for addressing many biological questions.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors characterized Vero cells imaged with nitrogen plasma, identifying 138 nuclear pore complexes and quantifying the mitochondrial network, ER, and lipid droplets. They identified 26 LD-to-ER contacts and 48 mitochondria-to-ER membrane contact sites with similar volume distributions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these specific quantitative observations. However, the context is that this dataset was acquired with nitrogen (the worst-performing gas) after seven failed attempts, demonstrating technical challenges rather than optimal performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors imaged fixed heart tissue and visualized sarcomeres with Z-disc, I-band, A-bands, and putative M-line. They measured average sarcomere length (1.68 \u00b5m) and quantified 997 mitochondria in the volume, yielding a concentration of 0.36 mitochondria/\u00b5m\u00b3 consistent with previous studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about these heart tissue observations. The agreement with previous literature on mitochondrial content supports the validity of the quantitative measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors used FRC to assess resolution across datasets, finding typical resolution of 20-50 nm. They observed differences between samples reflecting the importance of focusing, astigmatism, and sample variability, but found no evidence of resolution degradation during data collection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers stated that 'the resolution measurements presented in the last supplementary figures do not relate to the use of plasma FIB/SEM in comparison with other beams' (Essential revision 1). The resolution assessment does not demonstrate advantages of plasma FIB over other ion sources, which is a key claim of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors generated lamellae of R. rubrum and RPE-1 cells and demonstrated correlation between SEM images during fabrication and TEM images after fabrication. They showed it was possible to correlate subcellular structures and fluorescence from chlorophyll with both pFIB/SEM and TEM images.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested demonstration that 'features detected in the SEM can be used to target areas of interest for cryo-ET' and whether 'structural preservation in the cryo-ET reconstructions' can be shown (Essential revision 7). Reviewer 2 specifically noted disappointment that downstream cryo-ET targeting effectiveness is not demonstrated, suggesting authors either provide proof-of-concept data or explicitly state this is future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors demonstrated automated segmentation of mitochondria in heart tissue using SuRVos2, achieving a Dice score of 0.87 compared to manual segmentation. However, component counts differed (15 automated vs 23 manual), indicating some discrepancies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly suggested applying 'an automated segmentation algorithm to their volumetric data as a more unbiased and practical metric to evaluate the degree to which cryo-FIB/SEM imaging increases resolution, contrast, and interpretability of subcellular features at scale.' The reviewers also asked whether 'automated segmentation approaches be applied to the FIB/SEM volumes in similar ways to cryo-ET reconstructions' (Essential revision 7). While the authors provide some segmentation results, the discrepancy in counts and limited scope suggest this needs further development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C164"
+    ],
+    "result": "The authors concluded that all four gases can produce smooth surfaces under some conditions, with argon selected as optimal for automated procedures on vitrified samples. They speculate that monatomic gases are less reactive and less prone to curtaining.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the comparative evaluation of gases and the selection of argon, as evidenced by the public review stating the work 'concluding that one of the four plasma sources tested produces the highest quality images.' The speculation about monatomic gases is appropriately identified as such in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The authors discussed potential damage from plasma FIB milling, noting that prior work showed argon plasma affected ribosome resolution within ~45 nm of the surface. They compared their higher wattage conditions to lamella polishing and discussed SEM dose being lower than cryo-ET, with damage expected to be confined to <50 nm depth.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this discussion of potential damage mechanisms. The authors appropriately cite prior work and acknowledge uncertainties, noting that 'further investigation is required' regarding the relationship between plasma type, current, and damage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The authors claim that cryo-serial pFIB/SEM enables mesoscale imaging (10 nm to 10 \u00b5m) of vitrified samples, is a useful addition to the structural biology toolbox, and can generate 3D maps suitable for targeting while maintaining hydration shells for downstream structural biology. They achieved 20-50 nm resolution across bacteria, cells, and tissue.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the work is 'important' and 'timely,' they raised fundamental questions about whether the approach is effective for downstream targeting (Essential revision 7). Reviewer 2 noted readers will 'come up somewhat disappointed that this is not demonstrated' and suggested the manuscript should 'more explicitly state upfront' whether this is solely focused on volumetric imaging or includes targeting validation. The claim about suitability for targeting remains unproven.",
+    "result_type": "MAJOR"
+  }
+]

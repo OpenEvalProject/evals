@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C52",
+      "C53",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "Single-cell RNA sequencing of adult mouse DRG identified 8 cell clusters including SGCs, neurons, endothelial cells, Schwann cells, fibroblasts, mural cells, and macrophages. Ednrb (encoding ETBR) is enriched in SGCs, while Edn1 (encoding ET-1) is enriched in endothelial cells. This expression pattern is conserved in humans and was validated by RNA in situ hybridization showing Ednrb co-localization with the SGC marker Fabp7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C52, C53, C68-C77 are well-supported by scRNA-seq data (Figure 1), immunofluorescence imaging showing blood vessel proximity to SGCs, and RNA in situ hybridization validation. The cell type identification is based on established marker genes, and the spatial relationship between vascular-derived ET-1 and SGC-expressed ETBR is clearly demonstrated. The conservation in humans strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C54",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "ETBR inhibition with the selective antagonist BQ788 significantly increased axonal radial length in both DRG mixed cultures and explant cultures from adult mice. In contrast, ETBR agonist IRL1620 and ETAR antagonist BQ123 had no significant effects. DRG explants preserved the in vivo SGC-neuron morphology, demonstrating that ETBR signaling limits axon growth capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C54, C80-C87 are supported by quantitative data from DRG mixed cultures (Figure 2C-D) and explant cultures (Figure 2F-G) showing significant increases in axon growth with BQ788 treatment. The lack of effect with ETAR antagonism and ETBR agonism provides important controls. Immunofluorescence confirms preserved SGC morphology in explants (Figure 2H), validating the model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C56",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C151"
+    ],
+    "result": "In vivo treatment with Bosentan (dual ETBR/ETAR antagonist) significantly improved axon regeneration after sciatic nerve crush at both 1 and 3 days post-injury in adult mice, while Ambrisentan (selective ETAR antagonist) had no effect. Bosentan enhanced axon radial length in cultured DRG neurons from both uninjured and injured mice, partially mimicking conditioning injury effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C56, C88-C95, C98, C102-C105, C151 are strongly supported by in vivo data showing increased axon length and regeneration index with Bosentan but not Ambrisentan (Figure 3B-E, Figure 3\u2014supplement 1A-E). The lack of effect with selective ETAR antagonism indicates ETBR is the relevant target. RT-qPCR and western blot data (Figure 3\u2014supplement 1F-H) show ETBR levels don't change after injury, supporting a tonic inhibitory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C152"
+    ],
+    "result": "Long-term Bosentan treatment (24 days) showed a trend toward increased intraepidermal nerve fiber density (IENFD) in the hind paw after sciatic nerve crush, suggesting potential improvement in target reinnervation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101, C152 show only a trend (not statistically significant) in IENFD measurements (Figure 3G-H). While the direction of effect is consistent with earlier time points, the lack of statistical significance and limited sample size (n=5) make this result uncertain. Additional experiments with larger sample sizes and longer time points would be needed to confirm functional reinnervation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C146",
+      "C147"
+    ],
+    "result": "Bosentan treatment significantly improved axon regeneration after dorsal root crush (DRC) injury at 3 days post-injury. While Cx43 expression in SGCs after DRC showed no increase compared to uninjured mice, Bosentan-treated mice showed increased Cx43 levels compared to vehicle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C146-C147 are supported by experimental data showing increased axon regeneration after DRC with Bosentan treatment (Figure 3\u2014supplement 2B-E) and increased Cx43 expression with Bosentan after DRC (Figure 6\u2014supplement 1A-C). This demonstrates ETBR inhibition improves regeneration in both peripheral and central axon injury models, though the response differs between injury types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C55",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "ETBR inhibition with BQ788 or Bosentan rescued age-dependent decline in axon regeneration. Aged DRG explants treated with BQ788 showed significantly increased radial axon length, exceeding even adult vehicle controls. In vivo, aged mice treated with Bosentan showed axon regeneration comparable to adult vehicle-treated mice at 3 days post-SNC. ET-1 levels were significantly elevated in aged DRG tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C55, C111, C113-C119 are strongly supported by data from aged DRG explants (Figure 4B-C) and in vivo aged mice (Figure 4D-G) showing rescue of age-dependent regeneration deficits with ETBR inhibition. Western blot confirms elevated ET-1 in aged DRG (Figure 4\u2014supplement 1A). The restoration to adult levels represents a major finding for therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C58",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Single-nucleus RNA sequencing of adult and aged DRG identified 16 cell types and revealed decreased SGC abundance in aged mice with extensive transcriptional reprogramming. Aged SGCs showed upregulation of genes involved in cell junction assembly, adherens/tight junctions, focal adhesion, cell projection organization, synapse organization, axon guidance, Wnt signaling, and cellular senescence pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C58, C120-C128 are supported by comprehensive snRNA-seq analysis (Figure 5A-E) with appropriate quality control, integration methods (RPCA), and statistical testing. GO and KEGG pathway enrichment analyses (Figure 5\u2014supplement 1D) provide mechanistic insights into age-related SGC changes. The decreased SGC representation is quantified and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Transmission electron microscopy revealed that SGCs in aged mice appeared thinner than in adult mice, with significantly decreased average width per neuron. Aged mice (21 months) had fewer SGC nuclei per neuronal soma compared to young mice (2 months), indicating decreased SGC number and potential atrophy during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 are supported by quantitative TEM analysis (Figure 5F-H) showing significant decreases in both SGC width and number of SGC nuclei per neuron with age. The morphological data complement the snRNA-seq findings and provide direct structural evidence for SGC atrophy. Sample sizes appear adequate for the quantification performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C60",
+      "C143",
+      "C144",
+      "C145",
+      "C148"
+    ],
+    "result": "Cx43 expression in SGCs was significantly lower in aged mice compared to adult mice. Nerve injury increased Cx43 levels in both adult and aged vehicle-treated mice. Bosentan treatment led to increased Cx43 expression in SGCs after injury in both adult and aged mice, revealing a correlation between Cx43 levels and axon regenerative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C60, C143-C145, C148 are supported by quantitative immunofluorescence data (Figure 6C-E) measuring both Cx43 expression area and puncta number in Fabp7+ SGCs. The correlation between Cx43 levels and regenerative capacity across multiple conditions (age, injury, treatment) is consistent. However, the mechanism is correlative rather than causative\u2014Cx43 manipulation experiments would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C150",
+      "C162",
+      "C163",
+      "C185",
+      "C186"
+    ],
+    "result": "ETBR signaling limits axon regeneration after nerve injury and plays a role in age-related decline in regenerative capacity. Inhibiting ETBR function enhances axon regeneration and rescues age-dependent decline, suggesting ETBR antagonism as a potential therapeutic avenue for enhancing axon growth after nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C61-C64, C150, C162-C163, C185-C186 represent the main conclusions drawn from the collective experimental evidence. These are well-supported by convergent data from multiple experimental systems (in vitro cultures, ex vivo explants, in vivo injury models) across different ages and injury types. The use of selective antagonists and the consistency of results strengthen these conclusions. However, claims about therapeutic potential (C63-C64, C186) are appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Edn1, Ednra, and Ednrb mRNA levels and ETBR protein levels showed no significant differences at 3 days post-SNC compared to control in non-treated mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by RT-qPCR and western blot data (Figure 3\u2014supplement 1F-H) showing no change in endothelin system components after injury. This finding is important as it indicates ETBR acts as a tonic inhibitor rather than being upregulated by injury. The negative result is appropriately controlled and strengthens the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C149",
+      "C178"
+    ],
+    "result": "ETBR inhibition with Bosentan may promote axon regeneration through a mechanism involving increased Cx43 levels, gap junction coupling, or hemichannels, facilitating SGC-neuron communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149, C178 propose a mechanistic hypothesis linking ETBR inhibition to Cx43 upregulation and improved regeneration. While the correlation between Cx43 levels and regeneration is demonstrated, the causal relationship is not established. The manuscript lacks experiments directly manipulating Cx43 (e.g., Cx43 knockdown/knockout) to test if Cx43 is necessary for Bosentan's effects. Alternative mechanisms downstream of ETBR are also possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The major ligand acting on ETBR in the DRG is hypothesized to be ET-1 from endothelial cells, though ET-1 from neurons and ET-3 from fibroblasts may also contribute. Ednra enrichment in mural cells suggests endothelin's impact on vascular permeability through ETAR may also contribute to axon regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C161 are speculative hypotheses about ligand identity and additional mechanisms. While scRNA-seq data show Edn1 in endothelial cells and Edn3 in fibroblasts (C71-C72), the functional contribution of each ligand is not tested. The manuscript appropriately qualifies these as hypotheses, but experiments using ligand-specific manipulations or conditional knockouts would be needed to resolve ligand identity and relative contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background and context claims establishing that peripheral nerve regeneration declines with age through multiple mechanisms, that ET-1 production increases with age and is linked to age-associated diseases, that ETBR is expressed in SGCs, and that the role of endothelin signaling in axon regeneration was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C51 represent background knowledge and literature review supported by appropriate citations. These establish the rationale and knowledge gap for the study. The claims about established facts (C1-C2, C6, C16-C27, C37-C49) are well-supported by citations. Claims about knowledge gaps (C3, C5, C36, C50-C51) appropriately frame the study's novelty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The DRG cell body area is densely vascularized with highly permeable capillaries in rodents and humans, suggesting neurons and SGCs may be influenced by vascular-derived signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by citations and confirmed by whole-mount imaging showing dense vascularization (Figure 1A, Figure 1\u2014video 1) and immunofluorescence showing blood vessel proximity to SGCs (Figure 1B, C68). This anatomical context is important for understanding the ET-1/ETBR signaling axis and is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C84"
+    ],
+    "result": "In DRG mixed cultures, SGCs lose adhesive contacts with neuronal soma and adhere to coverslips over time. Within 24 hours, most SGCs are found close to neurons with flat morphology. Inhibition of ETBR may alter trophic factors produced by SGCs, leading to axon growth-promoting conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by citations and confirmed by imaging (Figure 2B). Claim C84 is a reasonable hypothesis about the mechanism in mixed cultures where SGC-neuron contact is disrupted. However, this remains speculative as secreted factors were not directly measured. The explant experiments (where SGC morphology is preserved) provide stronger evidence for direct SGC-mediated effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C106",
+      "C107",
+      "C110",
+      "C129",
+      "C130",
+      "C131",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Additional background claims about nerve regeneration timelines, DRC injury characteristics, age-related changes in SGCs and neurons, Cx43 function, mechanisms limiting regeneration, and potential alternative mechanisms downstream of ETBR including glutamate transport and GPCR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C106-C107, C110, C129-C131, C137-C142, C164-C177, C179-C184 represent additional background knowledge, literature context, and speculative mechanisms. These are appropriately supported by citations where factual, and appropriately qualified as speculative where hypothetical. They provide important context for interpreting the main findings but are not primary results of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Ednrb enrichment in SGCs is consistent with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by citations to Mapps et al., 2022; Pomonis et al., 2001; Tasdemir-Yilmaz et al., 2021. This validates the scRNA-seq findings against existing literature and strengthens confidence in the cell type identification and gene expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Bosentan is an FDA-approved ETBR/ETAR antagonist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is a factual statement supported by citation to Clozel et al., 1994 and general knowledge. This is important for establishing the translational potential of the findings, as Bosentan is already approved for clinical use in pulmonary arterial hypertension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "ETBR levels were elevated in aged mice when normalized to GAPDH control but not when normalized to total protein (Ponceau staining).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 shows inconsistent results depending on normalization method (Figure 4\u2014supplement 1B). The authors note GAPDH levels are lower in aged mice, which could affect normalization. This inconsistency makes it unclear whether ETBR protein truly increases with age. The more important finding is that ET-1 levels consistently increase with age (C111), which is sufficient to explain enhanced ETBR signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C153"
+    ],
+    "result": "Blocking ETBR signaling in SGCs contributes to increasing axon outgrowth, at least in the initial axon growth phase, as demonstrated by DRG explants that maintain SGC-sensory neuron morphology without relying on repair Schwann cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C153 is a well-reasoned conclusion based on the explant data (Figure 2F-H) where SGC morphology is preserved and Schwann cell involvement is minimal. This provides strong evidence that ETBR effects are mediated through SGCs rather than other cell types. However, the qualification 'at least in the initial axon growth phase' is appropriate as longer-term effects may involve additional cell types.",
+    "result_type": "MAJOR"
+  }
+]

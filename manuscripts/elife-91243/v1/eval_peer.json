@@ -1,0 +1,122 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28"
+    ],
+    "result": "The terrain reconstruction method achieved median errors of 4.5 cm overall and 4.0 cm at foothold locations, with 95% quantiles of 20.0 cm and 16.8 cm respectively. These errors are below 20% of average foot length, indicating reasonably reliable 3D environment reconstructions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praised the technical achievement and methodological innovation. One reviewer stated the work is 'methodologically very impressive' and represents 'a further step forward towards understanding real-world locomotion.' Another noted the team 'managed to collect and analyze an unprecedented, one-of-a-kind dataset' and appreciated 'the numerous technical challenges.' The reconstruction reliability data were not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C30",
+      "C31"
+    ],
+    "result": "A CNN trained on retinocentric depth images predicted foothold locations above chance (median AUC > 0.5 for all subjects), demonstrating that depth information available to walkers is predictive of upcoming footholds and contributes to foothold finding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly endorsed this finding. One stated 'There is also good evidence for the third question, showing that retinocentric depth is predictive of chosen footholds' and described the analysis as having 'strong' results. Another reviewer noted 'they show using a neural network model that participants could choose the footholds based on their sensory (visual) information about depth.' The methodology and conclusions were accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Walkers prefer flatter paths: chosen path slopes (median 7.7-11.8\u00b0, mean 9.5\u00b0) were significantly lower than simulated random path slopes (median 9.1-19.2\u00b0, mean 14.9\u00b0), with simulated slopes being 5.56\u00b0 larger on average (t(8)=7.64, p<<0.001).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed significant concerns about this conclusion. One reviewer stated they were 'not entirely convinced by the evidence' and questioned whether the comparison between 'human tortuous paths taken and simulated straight-ahead paths never experienced by human' was valid. They noted 'it is not an apples-to-apples comparison' and preferred 'hard data than by unequal simulations.' Another reviewer was 'confused by aspects of the analysis' and found the simulations difficult to understand, particularly why flat steps 'were completely avoided' in Figure 8. The reviewer suggested the conclusion should be more cautiously stated as 'walkers changed direction more when straight-ahead paths seemed to have steeper height changes' rather than claiming intent to avoid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C54",
+      "C55",
+      "C71"
+    ],
+    "result": "Walkers choose indirect routes to avoid height changes: tortuosity (mean 1.09, median per subject 1.04-1.07) increased with straight path slope, suggesting walkers trade off path directness for flatness by changing direction to avoid steeper terrain.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly supported this finding. One stated 'I consider the evidence strongest for the first of the main questions' and noted 'The measure of straight-ahead steepness...is shown to be well correlated with tortuosity, effectively predicting when subjects will not walk straight ahead.' The editor noted this as a 'considerable strength,' specifically 'the ability to quantitatively predict when humans will walk more circuitously.' While one reviewer noted the finding 'is hardly surprising,' they acknowledged the systematic parametric investigation as the main contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Subjects with shorter legs showed stronger correlations between straight path slope and tortuosity (r=-0.83, p=0.005), suggesting biomechanical scale effects where shorter individuals are more likely to choose longer, flatter paths when straight paths become steeper.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "A reviewer expressed substantial doubts about this finding, stating 'I had some misgivings about the fourth question' and 'I still have doubts' even after additional data were provided. They noted that 'Figure 18 provides more detail of the underlying data, with considerably lower correlations' and suspected 'Figure 10 benefits from some statistical artifacts due to binning and other operations.' The reviewer was 'rather suspicious of correlations of correlations' and questioned whether the dimensionless measures (tortuosity and slope) could truly demonstrate scale effects. They suggested 'simpler tests would better evidence' and concluded 'I feel that the evidence from this study is not that strong.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C72",
+      "C73",
+      "C80"
+    ],
+    "result": "Walkers plan ahead to select paths: they take terrain structure into account, plan individual foothold locations and flatter paths, demonstrating that locomotor behavior reflects sensorimotor decision mechanisms involving costs, sensory/motor information, and path planning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the overall framework, one noted that 'some of the specific conclusions remain more suggestive at this point.' Another reviewer stated that 'from the data it is still not clear what actual visual features are used to choose among alternative routes or what the nature of the decision process is' and noted 'there is no way to express these ideas rigorously in such complex natural settings.' The evidence for planning was accepted as logical inference from the tortuosity findings, but the specific mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C81",
+      "C99"
+    ],
+    "result": "The terrain reconstruction and integration procedures using photogrammetry allowed greater precision than previous studies by eliminating errors from flat ground plane assumptions and IMU drift, enabling quantitative examination of how visual environment structure influences foothold selection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers unanimously praised the methodological contribution. One stated 'The technical achievement is impressive' and 'I was impressed by the overarching outlook and ambitiousness of the team.' Another noted the authors 'have developed an impressive workflow to study gait and gaze in natural terrain' and the work is 'methodologically very impressive.' The editor emphasized this 'opens up new approaches to studying (visually guided) behavior in natural settings outside the lab.' The methodological innovation was consistently highlighted as a major strength.",
+    "result_type": "MAJOR"
+  }
+]

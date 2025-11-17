@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C68",
+      "C71",
+      "C72",
+      "C79",
+      "C80"
+    ],
+    "result": "BEHAV3D-TP is a computational framework designed to enable unbiased single-cell classification of tumor cells based on morphological, environmental, and dynamic features. The tool integrates with widely used 2D and 3D image processing pipelines (Imaris, TrackMate, MTrackJ, ManualTracking) and is accessible via Google Colab, allowing researchers without advanced computational expertise to analyze IVM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C22-C24, C68, C71-C72, C79-C80 collectively describe the design, capabilities, and accessibility features of BEHAV3D-TP. The tool's functionality is demonstrated through application to multiple datasets (breast cancer, TEB, GBM, DMG), and its implementation in Google Colab with compatibility for multiple data formats is documented in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "BEHAV3D-TP successfully identified distinct behavioral clusters in breast tumor cells (6 clusters from 935 cells) and healthy breast epithelial cells from TEBs (4 clusters from 291 cells). The analysis revealed that HR+ TEBs exhibit greater migratory capacity than HR- TEBs, primarily driven by Cluster 2 cells characterized by rounder shape and increased motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 describe the application of BEHAV3D-TP to breast cancer and TEB datasets with specific quantitative results (number of clusters, cells tracked). The findings are supported by Figure 1\u2014figure supplements 1 and 2, showing UMAP plots, heatmaps, and statistical comparisons. The TEB result is consistent with previous findings (C30) and provides mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "BEHAV3D-TP identified four morphodynamic clusters in GBM cells (460 cells tracked). Cluster 1 (large, slow-moving cells) were more isolated and located farther from neighboring cells compared to Clusters 4 and 6, suggesting that compact spatial arrangement may contribute to reduced cell size in small cell clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe the application of BEHAV3D-TP to 3D GBM IVM data with specific quantitative results. The findings are supported by Figure 1\u2014figure supplement 3, showing UMAP plots, heatmaps, and spatial analysis. The interpretation regarding cell size (C35) is appropriately presented as a suggestion based on the spatial data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "BEHAV3D-TP identified 7 distinct behavioral clusters in DMG cells: retreating, slow retreating, erratic, static, slow, slow invading, and invading. Approximately 10% of DMG cells displayed invasive behavior and another 10% displayed retreating behavior. These distinct behavioral patterns were detected in all intravitally imaged mice, ruling out sample bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe the primary DMG behavioral clustering results with specific quantitative findings. The results are supported by Figure 2 and Figure 2\u2014figure supplement 1, showing UMAP plots, heatmaps, representative images, and per-mouse quantification. The consistency across all mice (C39) strengthens the robustness of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Large-scale TME phenotyping using CytoMAP identified three environmental niches (Void, TAMM/oligo, TAMM/vascularized) with distinct DMG behavioral cluster distributions. Invading cells were more abundant in TAMM/vascularized regions, static cells in Void regions, and slow retreating cells in TAMM/Oligo regions. Single-parameter analysis showed restricted ability to identify these differences compared to multiparametric analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe the large-scale TME phenotyping results linking behavioral clusters to specific microenvironmental niches. The findings are supported by Figure 3 and Figure 3\u2014figure supplements, showing CytoMAP analysis, region identification, and statistical comparisons. The superiority of multiparametric analysis (C44) is demonstrated by comparing single-parameter results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Small-scale TME phenotyping revealed that invading DMG cells were more sparsely distributed relative to neighboring DMG cells and resided in regions enriched with TAMMs. A higher proportion of invading cells were in close proximity to TAMMs and frequently migrated directionally toward them, suggesting chemotaxis-mediated migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe the small-scale TME phenotyping results linking invading cell behavior to TAMM proximity. The findings are supported by Figure 4b-d and Figure 4\u2014figure supplement 1c, showing spatial analysis, proximity quantification, and directional migration. The chemotaxis interpretation (C49) is appropriately presented as a suggestion based on directional migration data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "All fast-migrating DMG behavioral clusters (invading, erratic, retreating) were found to be generally closer to blood vessels, suggesting that perivascular invasion is a more efficient movement route for these cells, consistent with prior observations in adult glioblastoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe the association between fast-migrating cells and blood vessel proximity. The findings are supported by Figure 4b, e, and f, showing spatial analysis and representative images. The interpretation is consistent with prior literature on glioblastoma (multiple citations provided), strengthening the biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Slow-retreating DMG cells were found in regions enriched for SR101+ cells, possibly reflecting oligodendrocyte-like (OC-like) tumor DMG cells that have been found near oligodendrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 describe an association between slow-retreating cells and SR101+ cells with a speculative interpretation. While the spatial association is supported by Figure 4b and Figure 4\u2014figure supplement 1d, the interpretation as OC-like cells (C53) is explicitly presented as speculative ('perhaps reflecting') and lacks direct functional validation. The citation to Xin et al., 2024 provides some support but does not validate this specific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "BEHAV3D-TP uncovered novel behavioral phenotypes not identifiable by single-parameter analysis, including invading and retreating clusters with similar speed but opposite migration direction. This bidirectional migration is likely mediated by different chemotactic cues and local TME composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe the novelty and utility of the multiparametric approach. The identification of invading and retreating clusters with similar speed but opposite direction (C55) is supported by Figure 2 data. The interpretation regarding chemotactic cues (C56) is appropriately presented as likely and supported by citation to Kluiver et al., 2020.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The small-scale TME analysis has higher predictive value than large-scale analysis, suggesting that a cell's direct microenvironment is a more important regulator of behavior than its macroenvironment. TAMMs and blood vessels were associated with specific behavioral phenotypes, including the novel observation that slow-retreating cells are found in SR101+-enriched environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 present interpretations and conclusions from comparing the two TME phenotyping approaches. The comparison between small-scale and large-scale analysis (C58-C59) is supported by the data presented in Figures 3 and 4. The associations with TAMMs and blood vessels (C60) are well-documented. The novelty claim for SR101+ association (C61) is appropriate given the lack of prior reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "While the study does not provide direct functional validation of the identified motility clusters, existing literature strongly supports that cell dynamics can serve as a proxy for functional states and phenotypic heterogeneity, including correlations with cell type identity, T-cell engagement, metastatic potential, and drug resistance states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 acknowledge a limitation of the current study (lack of direct functional validation) while providing literature-based justification for the approach. The statements are appropriately supported by multiple citations to prior work (Dekkers et al., 2023; Aragones et al., 2024; Crainiciuc et al., 2022; Freckmann et al., 2022). The speculative statement about BEHAV3D-TP's potential utility (C65) is appropriately presented as a suggestion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "BEHAV3D-TP allows selection of diverse feature types (dynamic, morphological, spatial, environmental), but expanding the feature set may introduce biologically irrelevant noise, particularly in 3D microscopy data where limited z-axis resolution can lead to morphological artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe a capability and limitation of BEHAV3D-TP. The capability to select diverse features (C66) is demonstrated throughout the manuscript with different datasets. The recognition of potential noise from expanded feature sets (C67) is an appropriate acknowledgment of a technical limitation in 3D microscopy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The BEHAV3D-TP Heterogeneity module uses linear interpolation for missing time points, crops tracks to minimal common length, performs PCA selecting components explaining \u226590% variance (3 PCs for DMG), computes cross-distance matrices using dynamic time warping, performs UMAP dimensionality reduction, and clusters using k-means.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 describe the computational methods used in the Heterogeneity module. These methods are clearly documented in the Methods section and are standard approaches for time-series analysis and clustering. The specific parameters (90% variance threshold, 3 PCs, 2.6 hr duration for DMG) are explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "In the Small-scale phenotyping module, DMG cells within 15 \u00b5m of TAMM surfaces were classified as 'close' to TAMMs, and cells within 3 \u00b5m of blood vessel spots were classified as 'close' to blood vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 describe specific distance thresholds used in the Small-scale phenotyping module. These thresholds are clearly documented in the Methods section with justification for the difference (TAMMs defined by surfaces vs. blood vessels by spots). The thresholds are reasonable for defining proximity in microscopy data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Statistical analyses included two-tailed unpaired t-tests for two-group comparisons, one-way ANOVA with Tukey's post hoc test for multiple group comparisons without random effects, linear mixed-effects models with mouse and/or TME class as random effects to account for variability, and Chi-square tests for comparing cluster distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe the statistical methods used throughout the study. These methods are appropriate for the experimental design and data structure. The use of mixed-effects models (C91) to account for inter-mouse and TME region variability is particularly appropriate given the hierarchical nature of the data. The methods are clearly documented with specific figure references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "IVM enables live imaging of animals at single-cell level within natural 3D tissue environments, providing insights into tumor heterogeneity and therapy resistance. However, traditional IVM analyses have considered cancer cells or TME as homogeneous populations, and spatial transcriptomic/proteomic techniques are limited to static, thin tissue sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C16 provide background on IVM capabilities and limitations of existing approaches. These statements are supported by multiple citations to prior work and represent established knowledge in the field. The limitations of traditional IVM analysis (C16) and spatial omics (C11) provide appropriate motivation for the development of BEHAV3D-TP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "DMG007 cells were established from primary DMG material, authenticated by STR profiling, tested negative for mycoplasma, and used in experiments conducted with appropriate ethical approval. SR101 labels oligodendrocytes and astrocytes, while CD20r labels microglial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 describe cell line authentication, ethical approvals, and reagent characterization. These are standard quality control measures that are appropriately documented. The characterization of SR101 and CD20r (C77-C78) is supported by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21"
+    ],
+    "result": "Traditional uni-parametric approaches often neglect single-cell heterogeneous in vivo behavior. While significant efforts have been made to develop segmentation and tracking tools for IVM, fewer tools exist for unbiased analysis of tumor dynamics, and implementing such methods often requires substantial computational expertise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C21 describe limitations of existing analytical approaches and barriers to adoption. These statements are supported by citations to prior work on segmentation/tracking tools (C20) and represent reasonable assessments of the field. The barrier of computational expertise (C21) provides motivation for the accessible design of BEHAV3D-TP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "Google Colab provides necessary computational resources to run BEHAV3D-TP without demanding a powerful local machine, though the free version has RAM and runtime limitations. BEHAV3D-TP provides a comprehensive approach for understanding TME drivers behind intratumoral heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C73 describe the implementation platform and overall utility of BEHAV3D-TP. The benefits and limitations of Google Colab (C69-C70) are accurately described and represent general knowledge about the platform. The claim about comprehensive understanding (C73) is supported by the demonstrated capabilities across multiple modules and datasets.",
+    "result_type": "MINOR"
+  }
+]

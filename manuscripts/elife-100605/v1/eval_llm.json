@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A literature analysis of 279 M/EEG studies investigating aperiodic activity revealed that only 17.1% of EEG studies explicitly mention cardiac activity removal and only 16.5% measure ECG, while 45.9% of MEG studies removed cardiac activity and 31.1% measured ECG. Additionally, investigations vary strongly in the frequency ranges analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are based on a systematic literature analysis of 279 articles with explicit methodology described. The findings are presented with specific percentages and visualized in Figure 1E-I, providing transparent documentation of the analysis approach and results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Analysis of ECG data from four age-diverse populations (N=2286) showed that spectral slopes flattened with age across most frequency ranges (0.25-145 Hz), with one exception showing steepening in the CamCAN dataset at 0.25-12 Hz. Lower frequency spectral slopes (0.25-20 Hz) were more consistently related to heart rate variability indices (39.4-74.6%) than higher frequency slopes (16-30.01%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by analyses across four independent ECG datasets with large sample sizes, with results visualized in Figure 2. The relationship to 90 different HRV indices provides convergent validity, though the steepening in one dataset (C29) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Temporal response function analysis of concurrent MEG/EEG and ECG recordings (N=20) demonstrated that ECG signals are captured at zero-time lags in both modalities. After ICA-based ECG component removal, residual ECG activity remained in both MEG and EEG, but was significantly more pronounced in EEG (\u03b2=0.97, HDI=[0.42, 1.52]), indicating that neural and cardiac activity are more difficult to separate in EEG than MEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by TRF analysis and decoding models shown in Figure 3A-D with appropriate statistical testing. The small sample size (N=20) is a limitation, but the convergent evidence from multiple analytical approaches (TRF peaks, decoding accuracy, component correlations) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Analysis of MEG data (N=627) across 102 sensors and multiple frequency ranges revealed predominantly age-related steepening of spectral slopes (60% in ECG components, 25% in ECG not rejected, 0.5% in ECG rejected conditions). Age-related flattening was observed in only 0.3% of all processing settings, occurring mainly at central/parietal electrodes in 0.5-45 Hz range, overlapping with some prior literature findings but representing a minority of effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 are supported by comprehensive analysis across multiple processing options shown in Figure 4, with extensive control analyses (Figure 4 supplements 1-8). The unexpected predominance of steepening effects contradicts prior EEG literature, which the authors acknowledge and address through multiple control analyses and discussion of MEG vs EEG differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Multiple regression analysis revealed that age-related changes in aperiodic activity show both independent and shared contributions from cardiac and neural sources depending on frequency range and recording site. When both MEG ECG component and MEG ECG rejected were used as predictors, flattening effects were eliminated, but steepening effects for ECG components remained significant in 98.75% of tested frequency ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by multiple regression analyses shown in Figure 4H-I. The statistical approach appropriately tests for unique variance contributions, though the interpretation is complicated by the unexpected direction of effects (steepening vs. flattening) requiring careful consideration of MEG-specific factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Multiple control analyses confirmed the robustness of age-related steepening effects in MEG across different processing pipelines (with/without SSS), spectral parameterization methods (IRASA vs FOOOF), and in an independent dataset (N=655). The effects were not explained by head movements (\u03b2=0.23 for age-movement relationship) or EOG activity, with topography prominent at frontal/temporal sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by extensive control analyses shown in Figure 4 supplements 1-8, including replication in an independent dataset. The convergence across multiple analytical approaches and datasets strengthens confidence in the robustness of the steepening effects, though their interpretation remains complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In a working memory paradigm (N=48), the aperiodic slope of ECG recordings showed consistent flattening during the delay period (\u03b2=0.23, HDI=[0.16, 0.32]), with the effect modulated by cognitive load. The slope flattened most in the highest load condition (13 items: \u03b2=0.42), followed by high load (9 items: \u03b2=0.39) and low load (5 items: \u03b2=0.25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by analysis of ECG data during a working memory task shown in Figure 5, with appropriate statistical testing. This demonstrates that cardiac aperiodic activity is modulated by cognitive state, extending beyond the age-related effects that are the main focus. However, this is presented as preliminary/outlook analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C88",
+      "C107"
+    ],
+    "result": "The study demonstrates that the aperiodic signal recorded via surface electrodes/sensors originates from multiple physiological sources, with cardiac and neural contributions varying by frequency range and recording site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C88, and C107 represent the primary conclusion of the manuscript, supported by convergent evidence from multiple analyses including ECG-MEG relationships, ICA separation limitations, frequency-dependent effects, and multiple regression models. This is the central finding integrating all other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C105"
+    ],
+    "result": "Common artifact rejection approaches using ICA may not be sufficient to separate cardiac from neural activity, with ICA working worse in EEG compared to MEG recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C82, and C105 are supported by the TRF analysis showing residual ECG activity after ICA (Figure 3), with convergent evidence from decoding models. The conclusion is appropriately cautious given the methodological limitations of ICA discussed in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C108"
+    ],
+    "result": "Significant parts of age-related changes in aperiodic activity normally interpreted as neural can be explained by cardiac activity, with the extent depending on recording site and frequency range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C108 are supported by the multiple regression analyses (Figure 4H-I) and the comprehensive frequency/sensor-specific analyses. This represents a major finding with important implications for interpretation of prior literature, though the unexpected steepening effects complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establishing that aperiodic activity with 1/f characteristics is present across multiple recording modalities (ECoG, MEG/EEG, fMRI, ECG, EMG) and is modulated by age, cognitive states, and disorders in both neural and cardiac recordings, with cardiac activity captured in neural recordings via volume conduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 represent established knowledge from prior literature, appropriately cited throughout. These provide the scientific foundation and motivation for the current study. The literature analysis (C22-C26) provides novel quantification of how these established practices are actually implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The direction of association between age and aperiodic ECG activity is largely identical to that reported for age and aperiodic EEG activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 is complicated by the finding that most ECG datasets showed flattening with age (consistent with prior EEG literature), but one dataset (CamCAN) showed steepening at low frequencies (C29), and the MEG analysis predominantly showed steepening. This inconsistency requires further investigation to determine whether the similarity holds across modalities and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Simulation results demonstrate that even when the PQRST-Complex is barely visible in combined time domain signals, the resulting power spectrum can be heavily affected by simulated changes in aperiodic cardiac activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by simulation results in Figure 3F-G. While simulations have limitations in representing real physiological complexity, they effectively illustrate the principle that cardiac aperiodic activity can influence combined spectra even when not visually apparent in time domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Discussion of potential explanations for discrepancies between current MEG findings (predominantly steepening) and prior EEG findings (predominantly flattening), including differences in how magnetic vs electric fields are affected by tissue properties, age-related changes in tissue conductivity and connectivity, potential non-linear age effects, and sensitivity to preprocessing decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C81 represent speculative discussion of potential mechanisms, appropriately cited where relevant. While these provide plausible explanations for the unexpected findings, they remain hypotheses requiring direct testing. The authors appropriately acknowledge uncertainty and call for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Discussion of factors affecting ICA effectiveness in separating cardiac from neural activity, including sensor number, non-Gaussianity assumptions, component quality, and referencing choices, with linked mastoid referencing shown to be effective but potentially problematic for temporal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by appropriate citations and represent methodological considerations relevant to the field. These provide important context for interpreting the ICA results and recommendations for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion of implications for interpreting drug effects on aperiodic activity, noting that neural and vascular processes interact, that propofol/ketamine affect both neural activity and heart rate variability, and that residual cardiac activity after ICA may confound interpretation of drug-induced changes in 'neural' aperiodic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C99 are appropriately cited and represent important implications of the current findings for interpreting prior pharmacological studies. The speculation about potential confounding (C99) is appropriately cautious and calls for future research rather than making definitive claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Discussion of additional confounding factors including muscle activity (EMG) potentially influencing spectral slopes, cardiac activity captured in ECoG recordings, and debates about whether periodic activity should be detrended using FOOOF or IRASA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are appropriately cited and acknowledge important limitations and considerations. These represent honest discussion of factors beyond the scope of the current study that may affect interpretation of aperiodic activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C106",
+      "C109"
+    ],
+    "result": "Recommendations that changes in aperiodic activity of peripheral and neural signals are co-modulated by similar factors, that ICA-based methods may not provide complete separation, and that conflating cardiac and neural contributions should be avoided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C106, and C109 represent appropriate conclusions and recommendations based on the study findings. These are supported by the empirical results and provide actionable guidance for future research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Methodological details about sample characteristics (1282 MEG recordings, age 18-88 years) and ethical approvals from Cambridge and Salzburg ethics committees with informed consent obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C110-C112 represent standard methodological reporting that is verifiable and appropriately documented. These provide necessary transparency about sample and ethical procedures.",
+    "result_type": "MINOR"
+  }
+]

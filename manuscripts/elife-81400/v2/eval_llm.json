@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C43"
+    ],
+    "result": "The authors determined a 3.1-\u00c5 resolution cryo-EM structure of the NuA4 central hub containing Tra1, Eaf1, Epl1, Swc4, Arp4, and Act1. The structure was validated by crosslinking mass spectrometry data, with all 82 identified crosslinks falling within the 30-\u00c5 cutoff for DSS crosslinks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35-C38, and C43 collectively demonstrate a well-resolved structure with appropriate validation. The 3.1-\u00c5 resolution is supported by standard cryo-EM processing (C37), subunit identification is confirmed by multiple methods including SDS-PAGE, mass spectrometry, and mass photometry (C35), and the structure is validated by compatibility with independent CX-MS data (C43). The methods are rigorous and the resolution is sufficient for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C38",
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "The rigid central hub of NuA4 contains Tra1, Eaf1, Swc4, Arp4, Act1, and the C-terminus of Epl1, while the HAT module, TINTIN module, and Yaf9 are flexibly attached and appear as diffuse density in the cryo-EM map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C38-C39, C41-C42 are well-supported by the cryo-EM data showing resolved density for the hub subunits and diffuse density for flexible modules. The distinction between rigid and flexible regions is consistent with the resolution differences observed in the maps and the known nucleosome-interacting functions of the missing modules (C39-C40). This represents a key architectural finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C48",
+      "C57"
+    ],
+    "result": "Eaf1 functions as the primary scaffolding factor in NuA4, contributing 5500 \u00c5\u00b2 of the 7700 \u00c5\u00b2 buried surface area with Tra1 and providing the conserved HSA helix to the Arp module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C48, and C57 are supported by structural data showing extensive Eaf1 interactions and buried surface area calculations (C48). The scaffolding role is consistent with previous genetic studies showing that Eaf1 deletion results in loss of complex assembly (C57-C58), providing independent validation of the structural findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C10",
+      "C59",
+      "C61",
+      "C68",
+      "C72"
+    ],
+    "result": "The HAT and TINTIN modules are flexibly tethered to the core through unstructured linker regions in Epl1 (~90 amino acids) and Eaf1 (~130 amino acids), respectively, while Yaf9 is connected via Swc4 (~20 amino acids).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C10, C59, C61, C68, and C72 are supported by sequence analysis showing poorly conserved, predicted unstructured regions connecting the modules to the core, consistent with the observed flexibility in cryo-EM maps. The linker lengths are sufficient to explain the observed diffuse density and crosslinking patterns. However, the unstructured nature is predicted rather than directly observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C31",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The HAT module preferentially binds nucleosomes containing both H3K4me3 and hyperacetylated H3 tails (K9, K14, K18), showing ~3\u00d7 higher affinity compared to H3K4me3 alone, while acetylation alone is not recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C31, C80-C82 are supported by dCypher binding assay data (Figure 3D) showing clear binding preferences. The ~3\u00d7 preference is quantified and the lack of binding to acetylation-only nucleosomes provides important specificity information. The assays were performed in duplicate, though additional replicates would strengthen the conclusions. The interpretation that acetylation increases H3K4me3 accessibility (C83) is reasonable but inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C33",
+      "C86",
+      "C87"
+    ],
+    "result": "The TINTIN module shows weak overall affinity for nucleosomes with no specificity for H3K36me3, but slight preference for H2A and H4 acetylated nucleosomes, though this was observed under high background conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C33, C86-C87 are based on dCypher assays (Figure 3E), but the authors explicitly note high binding background as a caveat (C87). The weak affinity and lack of H3K36me3 specificity contradicts expectations from the Eaf3 chromodomain's role in RPD3S (C85), raising questions about whether the TINTIN module is properly folded or whether additional factors are required for nucleosome recognition. The uncertainty about assay conditions limits confidence in these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C29"
+    ],
+    "result": "The current NuA4 structure is compatible with crosslinking mass spectrometry data, unlike the previously reported structure by Wang et al. (2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C29 are supported by direct comparison of CX-MS data mapped onto both structures (Figure 1\u2014figure supplement 7). All 82 crosslinks fall within the 30-\u00c5 DSS cutoff in the current structure, while many violated this constraint in the previous model. This provides strong validation of the current structure and identifies specific errors in the prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The NuA4 core contains four structural elements: a beta-cluster (Eaf1/Epl1 \u03b2-strands), a helical bundle (Eaf1/Epl1/Swc4 helices), an Arp module (Act1/Arp4 dimer with Eaf1 HSA helix and Swc4 ring), and two Eaf1 extensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 describe the detailed architecture of the core based on the 3.1-\u00c5 resolution structure. The structural elements are clearly resolved in the cryo-EM density (Figure 2A) and the Act1/Arp4 dimer with HSA helix binding is consistent with known HSA-Arp-actin interactions (C56). The level of detail is appropriate for the resolution achieved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "AlphaFold2 prediction of the TINTIN module shows three ordered segments (Eaf3 chromodomain, Eaf3 MRG/Eaf5 C-term/Eaf7, and Eaf5 N-term/Eaf1) interconnected by flexible linkers, consistent with CX-MS data showing crosslinks within but not between segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by AlphaFold2 modeling and validation with CX-MS data (Figure 3\u2014figure supplement 1). The lack of crosslinks between segments (C65) supports the predicted flexibility. The similarity to human homolog structures (C66) provides additional validation. However, AlphaFold2 predictions should be interpreted cautiously without experimental validation, though the CX-MS consistency is reassuring.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "NuA4 preferentially binds H3K4me3-containing nucleosomes hyperacetylated on H3, suggesting that NuA4 activity follows SAGA (which acetylates H3) and precedes recruitment of factors like TFIID or SWR1 that recognize H4 acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 present a sequential model of HAT complex action based on the binding data (C89) and established knowledge about SAGA function (C90). The inference that NuA4 follows SAGA (C91) is logical given the binding preference for H3-acetylated nucleosomes. The prediction that NuA4 precedes TFIID/SWR1 recruitment (C92) is reasonable but remains a model requiring in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In NuA4, the Arp module HSA helix is buried in the core serving a structural role, contrasting with SWR1 and INO80 where the HSA helix is solvent-exposed and flexible, potentially binding extranucleosomal DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C100-C102 compare the Arp module organization across complexes. The buried nature of the HSA helix in NuA4 is directly observed in the structure (C104, Figure 4B), while the flexible, solvent-exposed nature in SWR1/INO80 is established from prior studies (C102-C103). This functional distinction is well-supported and highlights how shared modules are adapted for different roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The NuA4 core contacts Tra1 through an extensive interface involving Eaf1, Swc4, and Epl1 (7700 \u00c5\u00b2 total), resulting in a more rigid connection compared to yeast SAGA, which has a smaller Tra1 interface involving Spt20 and Taf12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by structural comparison (Figure 4C-D) and buried surface area calculations. The larger interface in NuA4 (C109) compared to SAGA (C110) logically explains the observed rigidity difference (C111). The comparison is based on published SAGA structures, providing appropriate context for the NuA4 findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose a sequential model of NuA4 recruitment: (1) Tra1 binds site-specific transcription factors, (2) flexible HAT and reader modules select neighboring nucleosomes with preferred modifications, and (3) the HAT module acetylates H2A and H4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 present a mechanistic model based on the structural data showing flexible module attachment and the nucleosome binding preferences. The model is logical and consistent with known Tra1 function (C11, C22) and HAT module specificity (C7, C25). However, this remains a proposed model requiring in vivo validation through functional studies. The model is clearly presented as speculative (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors propose that NuA4's recruitment mechanism, involving flexible separation of activator-binding and HAT components, is likely shared by other HAT complexes including SAGA, CBP/p300, and human TIP60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76, C118-C121 extend the NuA4 model to other HAT complexes based on architectural similarities (C75, C120). While the flexible architecture is established for SAGA and CBP/p300 (C120), the functional implications remain speculative. The proposal that this arrangement allows targeting of specifically modified nucleosomes rather than the most adjacent one (C121) is logical but lacks direct experimental support. This represents an interesting hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "A putative organization of the human TIP60 complex is proposed based on EP400 domain organization and the structures of yeast NuA4 and SWR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 presents a speculative model for TIP60 organization (Figure 4\u2014figure supplement 1C) based on domain analysis and structural homology. While the approach is reasonable given that TIP60 combines NuA4 and SWR1 functionalities (C112-C113), this remains a computational prediction without experimental validation. The model provides a useful framework for future studies but should be clearly distinguished from experimentally determined structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims establishing the known functions and composition of NuA4 and related HAT complexes, including that NuA4 acetylates H4 and H2A, contains 13 subunits (~1 MDa), and is organized into four modules (Tra1, core, HAT, TINTIN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C27 represent established knowledge from prior literature, appropriately cited throughout. These background claims are confirmed by the current study's mass spectrometry (C18-C19) and structural data (C20). The authors accurately represent prior work and provide appropriate context for their findings.",
+    "result_type": "MINOR"
+  }
+]

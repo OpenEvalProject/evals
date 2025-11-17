@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C21",
+      "C55",
+      "C112",
+      "C113"
+    ],
+    "result": "Granule cells and mossy cells in the dentate gyrus exhibit infraslow oscillations (ISO, 0.01-0.03 Hz or 1-2 cycles/min) during NREM sleep, representing a novel finding not previously reported for glutamatergic neurons in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, C9 are supported by fiber photometry recordings showing oscillatory calcium activity with spectral analysis confirming the frequency range (1-2 cycles/min). C21 and C55 establish novelty. C112-C113 summarize the main findings. The data from multiple recording modalities (photometry and two-photon imaging) converge on this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C67",
+      "C68"
+    ],
+    "result": "Approximately 50% of granule cells and 28% of mossy cells show increased activity during NREM sleep compared to wakefulness, as measured by two-photon calcium imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C22-C23 are directly supported by two-photon imaging data showing cell-by-cell analysis of activity changes during NREM. C67-C68 confirm these proportions. The consistency across claims and the use of single-cell resolution imaging provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Calcium signal troughs during ISO partially coincide with microarousals, with 29% of ISO events followed by microarousals and 62% maintaining NREM sleep. The reduction in granule cell activity precedes microarousal onset by approximately 6 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by quantitative temporal analysis showing alignment between calcium troughs and microarousals detected by EMG. The latency measurement (6.06\u00b10.31 s) is precisely quantified from peri-stimulus time histograms. State transition analysis provides clear proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Mossy cells display similar calcium activity during wake and NREM sleep but significantly increased activity during REM sleep. They exhibit ISO during NREM with slightly lower peak frequency than granule cells, with similar microarousal relationships (30% leading to microarousals, 60% maintaining NREM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are supported by fiber photometry recordings from Drd2Cre mice. Statistical comparisons show no significant difference between wake and NREM but significant increase during REM (C15-C16). Spectral analysis confirms ISO with lower frequency (C17). State transition analysis parallels granule cell findings (C18-C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C69"
+    ],
+    "result": "Upregulated granule cells and mossy cells (those more active during NREM) display decreased activity during microarousals, while downregulated cells do not show this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by peri-stimulus time histogram analysis from two-photon imaging showing activity decreases specifically in upregulated cells aligned to microarousal onset. C69 confirms the abrupt termination. The differential response between upregulated and downregulated cells strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C82",
+      "C83"
+    ],
+    "result": "Serotonin (5-HT) exhibits rhythmic phasic release during NREM sleep that oscillates at the same frequency as the DG ISO (approximately 1.14 cycles/min) but in opposite phase. 5-HT levels are highest during wake, intermediate during NREM, and lowest during REM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C39-C42 are supported by GRAB5-HT sensor recordings from both raphe and DG showing oscillatory patterns with matching frequencies. C32-C34 confirm the canonical state-dependent 5-HT dynamics. C35-C38 show correlation with microarousals. C82-C83 summarize the oscillatory findings. Multiple recording sites and consistent frequency measurements provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C56",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Dual-site photometry recordings reveal strong negative correlation between DG and raphe activity during NREM sleep, positive correlation during wake, and variable correlation during REM. This suggests that phasic 5-HT release drives the descending phase of the ISO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by dual-site photometry recordings showing anticorrelated activity during NREM and positive correlation during wake. C44 provides statistical confirmation via Pearson correlation. C46 and C65 note REM variability. C47 and C56 interpret the causal relationship, which is reasonable given the temporal and phase relationships, though direct causality requires additional manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C57",
+      "C70",
+      "C71",
+      "C102",
+      "C103",
+      "C115"
+    ],
+    "result": "Genetic knockdown of Htr1a receptors in the DG significantly reduces the ISO during NREM sleep, demonstrating that 5-HT modulation of the ISO is mediated through Htr1a receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48, C57, C70 are supported by photometry recordings from Htr1a knockout mice showing reduced oscillation power and amplitude. C71, C102-C103, C115 interpret the mechanistic role. The genetic manipulation provides strong causal evidence for Htr1a involvement in the ISO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C53",
+      "C54",
+      "C58"
+    ],
+    "result": "Genetic knockout of Htr1a receptors in the DG results in impaired contextual fear memory, with reduced freezing behavior (30.0\u00b14.63% vs 49.2\u00b17.10%) one week after conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C53, C58 are supported by behavioral testing showing significantly reduced freezing in Htr1a knockout mice during contextual fear memory recall. C54 frames this as testing the hypothesis that Htr1a-dependent ISO is required for memory consolidation. The behavioral deficit is clearly quantified and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Htr1a knockdown does not affect overall sleep architecture but impairs the inhibitory response of DG activity during microarousals, with lower calcium drops and longer latency compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by quantification showing no significant differences in sleep state durations or microarousal frequency. C50-C51 show altered microarousal-related calcium dynamics in knockout mice. C52 interprets these findings as evidence for Htr1a's role in the inhibitory response. The dissociation between sleep architecture and microarousal dynamics is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors propose that Htr1a receptors expressed by granule cells mediate the inhibitory effect of 5-HT, and that mossy cell activity is driven by granule cells via detonator synapses during NREM, with the timing difference (GCs: 5.89\u00b10.28 s vs MCs: 4.89\u00b10.40 s) supporting sequential inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 are based on established anatomical knowledge (supported by citations). C75-C76 are explicitly speculative hypotheses about the mechanism. C77 provides temporal data supporting the hypothesis but does not definitively prove the mechanism. While the hypothesis is reasonable and supported by timing data, direct experimental validation (e.g., simultaneous GC/MC recording in Htr1a knockout) is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C147"
+    ],
+    "result": "DG calcium activity shows positive correlation with EEG sigma power during NREM sleep, similar to findings with locus coeruleus-norepinephrine signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C147 are supported by cross-correlation analysis between photometry and EEG signals showing positive correlation with the sigma band. This finding parallels published work on LC-NE and provides additional context for the ISO's relationship to sleep spindles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The ISO was not observed at the single-cell level in two-photon imaging experiments. The authors hypothesize this may be due to differences in sleep depth under head-fixed conditions or that the ISO has primarily dendritic origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is a direct observation from two-photon experiments. C109-C111 are speculative explanations for this discrepancy. The observation is clearly stated and the hypotheses are appropriately framed as speculative. This represents an important limitation and suggests future experimental directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "ISO amplitude and power remain largely unchanged across early and late stages of NREM epochs, except for the first NREM epoch following prolonged wakefulness, which shows significantly different oscillatory parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are supported by analysis of oscillation parameters across different NREM stages. The finding that the first NREM epoch after prolonged wake differs suggests potential homeostatic regulation of the ISO, though this is not extensively explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Dentate spikes and sharp-wave ripples, while prominent during NREM sleep, are too short-lived (30-120 ms) to account for the long-lasting active periods during ISO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by citations to previous literature establishing the existence and timescale of these events. The reasoning that their timescale is incompatible with the observed ISO (which operates on a ~30-60 second timescale) is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors contextualize their findings within a broader literature showing infraslow oscillations in multiple neuromodulatory systems (serotonin, norepinephrine, histamine, acetylcholine, oxytocin) and brain regions during NREM sleep, with similar frequencies and relationships to microarousals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C78-C81, C86-C96 are all supported by citations to recent literature. This contextualizes the current findings within an emerging understanding of infraslow neuromodulatory dynamics during sleep. The comparison between 5-HT and NE systems (C94-C96) highlights potential functional differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C114",
+      "C116"
+    ],
+    "result": "The serotonin system plays a pivotal role in modulating DG activity during NREM sleep, though the direct relationship between these neuromodulatory effects and sleep-dependent memory consolidation remains to be explicitly demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C114 summarize the main conclusions, which are well-supported by the collective evidence. C116 appropriately acknowledges a key limitation: while the study shows that Htr1a knockout impairs both ISO and memory, it does not directly demonstrate that the ISO disruption causes the memory impairment (correlation vs. causation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The introduction establishes background knowledge about sleep architecture, dentate gyrus anatomy and function, serotonin system properties, and the role of sleep in memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C144 are all supported by citations to established literature or represent widely accepted knowledge in the field. These claims provide necessary context for understanding the significance of the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "This is the first report showing that population activity in the DG is dynamically organized into ISO patterns during NREM sleep by the serotonin system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 asserts novelty based on the authors' knowledge of the literature. Given the comprehensive literature review and the specificity of the finding (ISO in DG glutamatergic neurons organized by 5-HT), this claim of novelty appears justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors speculate about potential mechanisms and related phenomena, including that 5-HT peaks may act as gating signals for arousal, that excitatory inputs may drive elevated NREM activity, and that similar ISOs have been observed in entorhinal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84 and C104 are explicitly speculative hypotheses about mechanisms. C106-C107 cite related findings from other studies. These represent reasonable interpretations and connections to other work, but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors cite previous work showing that manipulation of norepinephrine dynamics during NREM leads to fragmented sleep and memory impairments, and note functional overlap between serotonin and norepinephrine systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 are supported by citations to previous literature. This provides important context for comparing the effects of different neuromodulatory systems on sleep and memory.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C36"
+    ],
+    "result": "The model demonstrates that neurons develop category selectivity after learning in a robust manner. Before learning, category selectivity is zero on average, but after learning, within-category responses become more similar than across-category responses, and the category selectivity index increases for most neurons. This increase is a universal property observed in all circuit models that successfully learned the task, independent of parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this as a valuable finding, stating the paper 'provides compelling evidence that neural networks trained on two-way classification tasks will develop responses whose category and context selectivity profiles depend on key network details.' The robustness of selectivity increase across parameters is not questioned and is treated as a core contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The model shows that category correlations after learning can be either positive or negative depending on circuit and task details. Before learning, correlations are near zero, but after learning they develop structure. In some circuits, correlations become negative (neurons responding strongly to category A respond weakly to B), while in others they become positive (neurons responding strongly to A also respond strongly to B), with the latter also showing asymmetric population responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state the paper demonstrates 'responses whose category and context selectivity profiles depend on key network details' and that 'these results can explain apparently contradictory results in the experimental literature.' The parameter-dependent nature of correlations is accepted as a key finding that reconciles different experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "Category correlation depends on multiple biophysical circuit parameters including the threshold and gain of both readout neurons and intermediate layer neurons. These dependencies suggest that correlation can vary across brain areas, consistent with observations that positive correlations in LIP are robust but inconsistent with correlations in PFC.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as part of the core contribution, noting the paper explains 'apparently contradictory results in the experimental literature' through parameter dependencies. The connection to area-specific differences is treated as a valuable insight rather than questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Category correlation depends on the total number of stimuli in the task, with increasing stimulus numbers causing systematic decreases in correlation. The model predicts that increasing the number of stimuli should push category correlation from positive to negative values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this as part of the paper's contribution to 'make new experimental predictions for testing in the future.' The stimulus-number dependency is not challenged and is treated as a testable prediction arising from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "The magnitude of category selectivity for a given neuron depends on the magnitude of its initial connectivity with the readout neuron. The model predicts that changes in selectivity are determined by the strength of synaptic connections a neuron makes to downstream readout areas before learning, which is consistent with experiments in rodent PFC showing neurons highly selective to abstract variables have similar downstream projections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question this prediction and it is presented as part of the model's explanatory power. The consistency with existing experimental data (C52) strengthens the claim, and reviewers accept this as part of the paper's contribution to understanding selectivity patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In the context-dependent task, both average category selectivity and average context selectivity increase over learning in a highly robust manner that does not depend on model details. This behavior is consistent with experimental findings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly note the paper demonstrates 'category and context selectivity profiles' as a key finding. The robustness across parameters and consistency with experiments is not challenged. This extends the core selectivity finding to the more complex task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C73"
+    ],
+    "result": "In the context-dependent task, the behavior of correlations is variable across circuits, with context correlation able to either decrease or increase depending on parameters. The region of parameter space leading to increased correlation shrinks substantially compared to the simple task.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the parameter-dependent nature of correlations as a core finding. The observation that correlation behavior changes with task complexity is treated as part of the model's explanatory framework for experimental variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C34",
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Over learning, activity vectors acquire components aligned with common stimulus-independent directions and get re-arranged into statistically distinguishable clouds. In the context-dependent task, four clouds form (one per category-context combination). The emergence of category-related structure is inherited from the readout neuron, but context-related structure is surprising since the readout doesn't depend on context\u2014this emerges as a signature of gradient-descent learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 specifically requests 'more intuitive explanations' for the emergence of context selectivity, stating 'it is important because the emergence of context selectivity is the most unexpected of the results presented here.' Reviewer 1 also asks 'how much of the results presented here depend on doing gradient descent, as opposed to more generally minimising the loss?' This indicates the mechanism is not fully clear to reviewers and they want better justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In the context-dependent task, neurons that strongly increase selectivity to category or context are strongly connected to the readout before learning. The model predicts an asymmetry: among strongly connected neurons, pure category-selective and mixed-selective neurons should be observed, but not pure context-selective neurons (unless a second readout for context is included). Pure- and mixed-selective neurons are characterized by different initial response gain patterns, indicating initial activity plays a key role in determining functional specialization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these predictions as part of the paper's contribution to 'make new experimental predictions for testing in the future.' The mechanistic explanation linking initial connectivity and activity patterns to selectivity outcomes is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The model hypothesizes that synaptic connectivity evolves by implementing gradient descent on an error function. Gradient-descent plasticity enables high performance on tasks and can be implemented in a biologically plausible way.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly asks 'how much of the results presented here depend on doing gradient descent, as opposed to more generally minimising the loss?' and notes 'this question was apparently already asked as Comment 2 in the first round of reviews but we found that the rebuttal did not really answer it.' This indicates reviewers are uncertain about the necessity and specificity of the gradient descent assumption. Reviewers request this be discussed as an 'essential revision.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Activity measures are modulated by both circuit details (activation function, learning rates, initial connectivity) and task features (number of stimuli, context-dependence of associations).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this as a core finding, stating the paper provides 'compelling evidence that neural networks trained on two-way classification tasks will develop responses whose category and context selectivity profiles depend on key network details.' The systematic parameter analysis is accepted as valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establishing the importance of sensory-abstract associations, the existence of fixed and flexible categorization tasks, the development of selectivity in associative cortex, mixed selectivity patterns, and contrasting findings of negative correlations in PFC versus positive correlations in LIP.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background claims from the literature that reviewers do not question. They provide the experimental context that the model aims to explain. Reviewers explicitly note the paper 'can explain apparently contradictory results in the experimental literature,' implicitly accepting these experimental observations as valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C55"
+    ],
+    "result": "In the context-dependent task, each trial includes both a stimulus and context cue. Before learning, initial category selectivity is weakly negative due to the composite nature of inputs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 asks for clarification about context implementation ('I am a bit confused how you implemented the context'), but this is a request for better explanation rather than a challenge to the validity of the approach. The task design itself is not questioned as problematic.",
+    "result_type": "MINOR"
+  }
+]

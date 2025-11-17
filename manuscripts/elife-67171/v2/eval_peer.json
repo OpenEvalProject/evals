@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C19",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The study's central finding is that phase precession dramatically facilitates temporal-order learning when STDP learning windows are narrow (shorter than a theta cycle), increasing synaptic weight changes and signal-to-noise ratio by up to an order of magnitude. This confirms the long-held hypothesis that phase precession bridges the timescale gap between slow behavioral sequences and fast synaptic plasticity, with the asymmetric component of STDP being essential for this effect.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledged this as the main contribution. Reviewer #2 stated the study provides 'elegant analytical formulation' showing 'phase precession increases the slope of the 2-cell cross-correlation around the origin, which is the key driver of plasticity under asymmetric STDP.' Reviewer #4 noted 'the idea that phase precession \"compresses\" sequences into theta cycles has been around for a bit, but this is the first study that I've seen that does analysis at this level' and found it 'interesting.' The acceptance summary confirms this as a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C40",
+      "C59"
+    ],
+    "result": "For narrow, asymmetric learning windows (\u03c4 << 1/\u03c9 << \u03c3), phase precession provides tremendous benefit to temporal-order learning, with the effect being strongest for clearly distinct but overlapping firing fields. The analysis shows this benefit applies across all experimentally found STDP time constants when windows are sufficiently narrow.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the analytical framework and its conclusions about narrow windows. Reviewer #1 noted 'If the STDP kernels are short, sequence learning is more difficult (and requires huge place field overlap), and phase precession is beneficial for that,' acknowledging this finding. Reviewer #4 stated the conclusion 'seems in line with published STDP rules from slice studies,' indicating acceptance of the narrow-window benefit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C39",
+      "C44",
+      "C45",
+      "C60"
+    ],
+    "result": "For wide learning windows (\u03c4 >> 1/\u03c9), phase precession provides no benefit to temporal-order learning, as wide windows ignore the theta fine-structure of cross-correlations. In this regime, phase precession, phase locking, and non-modulated firing fields yield equivalent weight changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this finding but raised questions about its physiological interpretation. Reviewer #1 asked 'Are longer STDP kernels invariantly better for sequence learning in the hippocampus?' suggesting acceptance of the mathematical result while questioning broader implications. Reviewer #4 noted confusion about Figure 4's implications for Bittner's data with wide windows, indicating the result itself was understood but its biological relevance was unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Theta oscillations without phase precession (phase locking) actually degrade temporal-order learning compared to non-modulated firing, producing lower signal-to-noise ratios than the 'no theta' condition for narrow learning windows.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This counterintuitive finding was not explicitly challenged by reviewers. Reviewer #1's questions about the interaction between phase precession benefit and place field overlap implicitly acknowledge this result. The analytical framework supporting this claim was described as 'crystal clear' by Reviewer #2, suggesting acceptance of its mathematical validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Only the asymmetric component of STDP windows supports temporal-order learning, while symmetric components strengthen connections bidirectionally regardless of temporal order. The analysis shows that wide learning windows from studies like Bittner et al. 2017, which show mild asymmetry, are unfavorable for storing temporal order.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this analytical result. Reviewer #4's question about whether 'phase precession is not an asset for the learning in that study' regarding Bittner's data suggests acceptance of the claim that mild asymmetry is unfavorable, though seeking clarification on implications. The mathematical derivation was accepted as part of the 'elegant analytical formulation' praised by Reviewer #2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C54",
+      "C56",
+      "C58"
+    ],
+    "result": "The study predicts that approximately 14 synapses are sufficient to reliably encode temporal order in a single traversal for typical hippocampal parameters, as a single synapse produces weight change fluctuations too large for reliable encoding. This enables reliable sequence encoding with a low number of synapses in hippocampal networks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these quantitative predictions. The stochastic analysis underlying these claims was part of the overall analytical framework that Reviewer #2 found 'crystal clear.' However, reviewers raised broader concerns about physiological relevance (Reviewer #3's point about 'more physiological scenarios') that may affect confidence in specific numerical predictions, though the mathematical derivation itself was accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "For narrow STDP windows, the slope of the cross-correlation function at zero offset controls synaptic weight changes, and phase precession substantially increases this slope. This predicts that cross-correlation features at offsets larger than the learning window width are irrelevant for temporal-order learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic insight was central to the analytical approach praised by reviewers. Reviewer #2 explicitly stated 'phase precession increases the slope of the 2-cell cross-correlation around the origin, which is the key driver of plasticity under asymmetric STDP,' directly affirming this claim. The prediction about irrelevance of distant features was not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C46",
+      "C61",
+      "C62"
+    ],
+    "result": "The study predicts that temporal-order learning would benefit from wide, asymmetric windows, which could enable association of non-overlapping firing fields. However, all experimentally observed asymmetric windows are narrow. Alternatively, 'time cells' filling temporal gaps might enable narrow windows to bridge large temporal differences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed uncertainty about the physiological relevance of these predictions. Reviewer #4 asked 'Are there predictions to be made about how place fields must be spaced for optimal sequence learning?' indicating the predictions were unclear. Reviewer #3 noted 'movement speed varies considerably' and questioned whether results would hold under 'physiologically relevant conditions,' suggesting skepticism about the practical applicability of these predictions despite their mathematical validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Testing with triplet STDP models using parameters fit to hippocampal data showed only mild differences from pairwise STDP results, suggesting the main findings are robust to more complex plasticity rules.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This addresses Reviewer #1's explicit concern: 'How robust are these results when we consider perhaps more realistic STDP rules like triplet STDP?' The manuscript reports testing this and finding 'only mild differences,' which directly responds to the reviewer's question. Reviewer #1 stated this was 'not a priori obvious,' indicating the result provides valuable reassurance about robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C78",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model assumes temporal order is encoded in asymmetric synaptic efficacies, with recurrent synapses being plastic but weak during encoding (not affecting dynamics). The authors hypothesize phase precession is not generated by local recurrent networks but inherited from feedforward inputs or generated by cellular mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised significant concerns about model assumptions and their physiological validity. Reviewer #3 stated 'the extent to which the conclusions would hold in more physiological scenarios is not considered' and questioned whether 'the training rule would function under physiologically relevant conditions.' Reviewer #3 also noted 'the relevance here may be more to CA3 were such connectivity is more common, rather than CA1,' questioning the anatomical applicability of the recurrent connectivity assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study relates its approach to previous work by Drew and Abbott (2006) on persistent activity and by Sato and Yamaguchi (2003) and Shen et al. (2007) on network models with phase precession and STDP, noting consistency with those findings that phase precession facilitates sequence learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer #3 raised concerns about positioning relative to prior work: 'Phase precession, STDP and sequence learning have been considered in previous work... It's not clear what the advantages are of the framework proposed here.' This indicates reviewers found the relationship to prior work inadequately explained, though they did not dispute the consistency of findings. The novel contribution was acknowledged by Reviewer #2 as 'elegant analytical formulation' but Reviewer #3 wanted clearer differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study suggests that sequences imprinted in synaptic weights could be replayed during rest or sleep, serving as a possible readout of the temporal-order learning mechanism, though thorough investigation of replay is beyond the manuscript's scope.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer #4 explicitly asked 'I'd be curious to know how the authors analysis fits in with replay \u2013 is the assumption that neuromodulation is changing the time window or other learning dynamics?' This indicates the connection to replay was unclear or inadequately developed. Reviewer #3 noted 'the study does not investigate sequences but rather the strength of synaptic connections between sequentially activated neurons,' suggesting the readout mechanism (replay) was not convincingly addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The model predicts that phase precession enables efficient and robust temporal-order learning, and the authors suggest experiments modulating STDP window shape or selectively manipulating phase precession to test this hypothesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the theoretical contribution, they expressed concerns about physiological relevance that affect confidence in predictions. Reviewer #3 stated 'the extent to which the conclusions would hold in more physiological scenarios is not considered' and asked about storage of 'multiple sequences' and interference. The editors' decision noted 'the physiological relevance of the findings is far from clear,' indicating substantial uncertainty about whether the predictions would hold in biological systems despite mathematical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "STDP window shape is subject to neuromodulation (cholinergic, adrenergic, dopaminergic), suggesting sequence learning could be modulated by behavioral state (attention, reward, etc.).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is based on cited literature and was not challenged by reviewers. Reviewer #4's question about 'neuromodulation changing the time window' in the context of replay suggests acceptance of neuromodulatory effects on STDP, though seeking clarification on specific mechanisms. The claim is well-supported by citations and consistent with established knowledge.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C50",
+      "C58",
+      "C60",
+      "C63",
+      "C64",
+      "C91"
+    ],
+    "result": "Vaccine-elicited spike-specific T cells respond identically to ancestral and variant (B.1.1.7 and B.1.351) SARS-CoV-2 strains in terms of both cell numbers and phenotypic features. This was demonstrated through CyTOF analysis showing similar frequencies of responding cells across variants, complete mixing in tSNE visualization, and no differential expression of any measured antigens or enrichment in FlowSOM clusters between variant-responding cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C50, C58, C60, C63, and C64 collectively provide strong, converging evidence from multiple analytical approaches (quantification, MDS, tSNE, FlowSOM clustering, and antigen expression analysis) that T cells respond equivalently to ancestral and variant spike proteins. The consistency across CD4+ (C2-C64) and CD8+ (C91) T cells strengthens this conclusion. The data are internally consistent and supported by appropriate statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C49",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In infection-na\u00efve individuals, the second vaccine dose both increases the quantity of spike-specific CD4+ T cells and alters their phenotypic composition, specifically decreasing Tcm and Tn cells while increasing Ttm cells. FlowSOM clustering identified distinct clusters enriched after each dose, with phenotypic shifts in memory T cell subsets between doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C49, and C65-C69 provide consistent evidence from both quantitative measurements (C4, C49) and detailed phenotypic analysis (C5, C65-C69) showing dose-dependent changes in infection-na\u00efve individuals. The FlowSOM clustering (C65-C66) and manual gating of canonical subsets (C67-C69) provide complementary evidence for phenotypic alterations. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C55",
+      "C75",
+      "C76"
+    ],
+    "result": "In convalescent individuals, the second vaccine dose does not significantly boost spike-specific CD4+ T cell numbers or alter their phenotypes, though vaccination does dramatically change the phenotypes of pre-existing infection-induced T cells. One outlier (PID4112) showed an unusually large response, and when excluded, convalescents showed lower CD4+ T cell responses than infection-na\u00efve vaccinees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C53, C55, C75, and C76 are supported by longitudinal data showing minimal changes between first and second doses in convalescents (C6, C75), but substantial changes from pre- to post-vaccination (C76). The identification and appropriate handling of outlier PID4112 (C53, C55) strengthens the analysis. However, the small sample size (n=6 convalescents, n=5 after excluding outlier) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Spike-specific CD4+ T cells from vaccinated convalescent individuals exhibit phenotypic features suggesting superior long-term persistence and enhanced ability to home to respiratory tissues compared to infection-na\u00efve vaccinees. These features include enrichment of Tcm and Tn cells, higher expression of CD127 (longevity marker), CCR7 and CD62L (lymph node homing), and CXCR4+CD69+ cells (respiratory tract homing). Correlative data suggest these cells preferentially exit blood to enter tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8 and C80-C90 present phenotypic data (C80-C87) and correlative evidence (C88-C90) suggesting functional differences. However, the conclusions about 'superior long-term persistence' (C7) and 'ability to home to respiratory tract' (C8) are largely inferential based on marker expression rather than direct functional assays. The single-donor nasal swab data (C90) provides some support but is insufficient for broad conclusions. Longitudinal persistence studies and functional migration assays would be needed to definitively support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C37",
+      "C99"
+    ],
+    "result": "Convalescent individuals may not require a second vaccine dose, as supported by prior serological studies showing equivalent antibody responses after one dose in convalescents compared to two doses in infection-na\u00efve individuals, and the current study's T cell data showing minimal boosting effect of the second dose in convalescents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by the study's T cell data (C6, C75) showing no significant changes after the second dose in convalescents, and is consistent with prior serological literature (C37, C99). However, this recommendation is based on immunological surrogates rather than clinical efficacy data. The small sample size and the observation that some convalescents had lower overall responses than infection-na\u00efve vaccinees (C55, C57) add complexity to this recommendation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "The study successfully identified spike-specific T cells using IFN\u03b3 intracellular cytokine staining after 6-hour peptide stimulation, with CD4+ T cells showing more robust responses than CD8+ T cells. No IL4 or IL17 production was detected, and activation-induced markers showed higher background than cytokine staining. As expected, vaccination did not elicit nucleocapsid-specific responses in infection-na\u00efve individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 describe methodological validation and expected negative controls. The IFN\u03b3-based identification method (C45) is validated by prior work and appropriate controls. The CD4+ dominance (C46) is consistent with mRNA vaccine literature. Negative results for IL4/IL17 (C47) and nucleocapsid responses (C52) serve as appropriate controls. The observation about AIM markers (C48) justifies the methodological choice to use IFN\u03b3 staining.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study analyzed 165 CyTOF specimens from 11 participants (5 infection-na\u00efve, 6 convalescent) who received either Moderna (n=4) or Pfizer/BioNTech (n=7) vaccines, with samples collected at three timepoints: pre-vaccination, ~2 weeks post-dose 1, and ~2 weeks post-dose 2. All convalescent participants had recovered from mild COVID-19 between March-July 2020 in the San Francisco Bay Area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 accurately describe the study design and cohort characteristics as presented in Table 1 and the Methods section. The sample sizes, timepoints, and participant characteristics are clearly documented. However, the small sample size (n=11 total, n=5-6 per group) is a significant limitation for generalizability, particularly given the heterogeneity observed within groups (e.g., outlier PID4112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Spike-specific CD8+ T cells from vaccinated convalescent individuals differ phenotypically from those of infection-na\u00efve vaccinees, but unlike CD4+ T cells, these differences are not explained by changes in canonical memory subset distribution. Instead, differences involve elevated frequencies of activated cells co-expressing CD27+CD38+ and CTLA4+4-1BB+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 demonstrate that while CD8+ T cells show phenotypic differences between groups (C92), the underlying mechanisms differ from CD4+ T cells. The negative result regarding canonical subsets (C93) is important for understanding the biology, and the identification of specific activation marker combinations (C94-C95) provides mechanistic insight. The data are supported by appropriate statistical analyses shown in Figure 6\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "T-cell-mediated immunity appears less prone to viral variant evasion than antibody responses, with high conservation of T cell epitopes across variants (91.5% for CD4+, 98.1% for CD8+ epitopes; 89.7% and 96.4% respectively for spike epitopes), and no marked reduction in T cell response magnitude against variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 accurately cite prior literature establishing epitope conservation and maintained T cell responses against variants. These claims provide important context for the current study's findings. However, these are primarily literature-based claims (C22-C27 all cite external sources) rather than novel findings from this manuscript, though they are validated by the current study's data (C2-C3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The authors speculate that low spike-specific CD4+ T cell responses in some convalescent donors after the second dose may result from preferential migration of these cells out of the blood compartment, and that spike-specific CD4+ T cells in convalescent individuals may persist longer than those from infection-na\u00efve individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110 and C111 are explicitly speculative (both marked as SPECULATION in evidence_type). While supported by correlative data (C88-C89) and the nasal swab enrichment observation (C90), these remain hypotheses requiring direct testing through longitudinal persistence studies and tissue sampling. The authors appropriately acknowledge this limitation, stating 'additional long-term follow-up studies will be required to directly test whether this indeed is the case.'",
+    "result_type": "MINOR"
+  }
+]

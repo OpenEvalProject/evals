@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "RNA sequencing of synchronized cultured mouse cortical astrocytes identified 412 circadian rhythmic transcripts (2.3% of all expressed transcripts) using combined BioCycle and MetaCycle analyses, with validated astrocyte culture purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C40-C44, and C46 collectively demonstrate a rigorous transcriptome analysis with appropriate methodology (Gaussian mixture model for expression threshold, dual algorithm approach) and quality control (astrocyte marker validation in C42). The use of two complementary algorithms (BioCycle and MetaCycle) with 53.4% overlap strengthens confidence in the identified rhythmic transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Gene Ontology analysis of the 412 rhythmic transcripts (excluding 17 core clock genes) revealed that Ca2+ homeostasis genes are under circadian control, with Herp showing the most robust oscillation among Ca2+ homeostasis-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C56-C58 describe a standard GO enrichment analysis with appropriate methodological choices (exclusion of core clock genes to focus on output processes). The identification of Ca2+ homeostasis as a rhythmic process is data-driven and directly supported by the RNA-seq results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Herp exhibits robust circadian rhythmicity at both mRNA and protein levels in cultured astrocytes, with peaks at 18-20 hr post-synchronization, validated across multiple synchronization methods (serum shock, dexamethasone, forskolin) and confirmed by qRT-PCR and Western blot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C59-C65, C67-C69 provide comprehensive validation of Herp rhythmicity using multiple independent methods (RNA-seq, qRT-PCR, Western blot) and synchronization protocols. The consistency across methods and the validation of antibody specificity (C64-C65) strengthen confidence in the findings. BMAL1 phosphorylation patterns (C67) serve as an appropriate internal control for circadian phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71",
+      "C72",
+      "C116",
+      "C117"
+    ],
+    "result": "The circadian rhythm of Herp is abolished in Bmal1-/- astrocytes, with expression maintained at trough levels, indicating that Herp is under direct BMAL1/CLOCK transcriptional control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C70-C72, C116-C117 demonstrate loss of Herp rhythmicity in Bmal1-/- astrocytes using both mRNA and protein measurements. The flattening of expression at nadir levels (rather than peak levels) is consistent with loss of CLOCK/BMAL1-mediated transcriptional activation. This genetic evidence strongly supports circadian clock control of Herp.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "ChIP-Atlas analysis shows CLOCK binding to the Herp genomic region, and several non-canonical E-boxes (including a highly conserved 'CACGTT' sequence near the transcription start site) were identified in the Herp promoter, potentially driving CLOCK/BMAL1-dependent expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C121 provide bioinformatic evidence for direct transcriptional regulation, but C121 explicitly states this is speculative ('we propose that these non-canonical E boxes might drive'). While ChIP-Atlas data (C118) and sequence conservation (C120) are supportive, direct experimental validation of these E-boxes (e.g., promoter-reporter assays, ChIP in astrocytes, mutagenesis) is absent. The mechanism remains plausible but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "HERP regulates ER Ca2+ release by modulating IP3R degradation: Herp knockdown increases both ITPR1 and ITPR2 protein levels and enhances ATP-stimulated ER Ca2+ release, cytosolic Ca2+ increases, and mitochondrial Ca2+ uptake, effects that are abolished by the IP3R inhibitor Xestospongin C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C80-C82, C85-C88 provide strong mechanistic evidence through siRNA knockdown, Ca2+ imaging in multiple compartments, Western blot quantification of IP3Rs, and pharmacological validation with XesC. The data are internally consistent and align with prior literature (C86 cites supporting studies). The use of compartment-specific Ca2+ indicators with validated localization strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "ATP-stimulated ER Ca2+ release varies with circadian phase, being more pronounced at 30 hr (subjective night) than 42 hr (subjective day) post-synchronization, driven primarily by rhythmic ITPR2 protein levels (not ITPR1), with this time-dependent variation abolished in Herp-KD astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C89-C90, C92-C95 demonstrate circadian phase-dependent Ca2+ responses through time-course Ca2+ imaging and Western blot analysis. The inference that rhythmic ITPR2 (not ITPR1) drives the effect is well-supported by: (1) ITPR2 shows rhythmic protein levels opposite to HERP (C93), (2) Itpr2 mRNA is not rhythmic (C94), suggesting post-translational regulation, and (3) loss of time-dependence in Herp-KD cells (C92). The logic is sound and data are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C83",
+      "C84",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The rhythmic ER Ca2+ response is attributed to rhythmic ITPR2 expression: while both ITPR1 and ITPR2 are expressed and regulated by HERP, only ITPR2 shows circadian phase-dependent variation in protein levels, likely because the amplitude of HERP oscillations (min/max ratio 0.38) preferentially affects ITPR2 degradation over ITPR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C83-C84, C125-C129 provide a mechanistic explanation for differential regulation of ITPR subtypes. The reasoning that HERP oscillation amplitude differentially affects ITPR2 vs ITPR1 is logical and supported by quantitative data (C127: min/max ratios). However, the molecular basis for this differential sensitivity is not explored. The conclusion is well-supported by the data presented but leaves mechanistic questions for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Mitochondrial Ca2+ responses to ATP showed similar trends to cytosolic Ca2+ but without statistically significant circadian variation, potentially due to technical limitations of the matrix-localized Mito-R-GECO1 reporter, compensatory mechanisms, or complex mitochondrial Ca2+ regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C130-C136 acknowledge a negative result (no significant mitochondrial Ca2+ variation) and provide thoughtful speculation about potential explanations. The authors appropriately distinguish between cytosolic and mitochondrial Ca2+ dynamics and acknowledge technical limitations (C132) and biological complexity (C135). The conclusion (C136) is appropriately cautious. This represents good scientific practice in addressing unexpected findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Circadian phase-dependent differences in ER Ca2+ release are abolished in Bmal1-/- astrocytes, which also show faster ER Ca2+ release overall due to constitutively low HERP levels, confirming that ER Ca2+ release is regulated by HERP under circadian clock control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 provide genetic validation using Bmal1-/- astrocytes, showing both loss of rhythmicity and a baseline shift in Ca2+ dynamics. The correlation between constant low HERP levels (C97) and faster Ca2+ release (C98) is mechanistically consistent with HERP's role as a negative regulator of IP3Rs. This genetic evidence strongly supports the circadian clock control model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C103",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "ATP-stimulated cytosolic Ca2+ increases and Connexin 43 Ser368 phosphorylation are heightened at subjective night (30 hr post-sync), with rhythmic CX43 phosphorylation requiring rhythmic HERP levels (abolished in Herp-KD despite normal BMAL1 rhythms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C103-C104, C106-C107 link circadian Ca2+ dynamics to downstream signaling through CX43 phosphorylation. The Western blot data show time-dependent CX43(S368) phosphorylation (C104), and the Herp-KD experiment (C106) demonstrates that HERP rhythmicity is required for this phosphorylation rhythm, even when the core clock (BMAL1) remains functional. This establishes HERP as a critical intermediate in the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "In vivo validation in mouse prefrontal cortex shows higher pCX43(S368) levels at CT70 (subjective night) than CT58 (subjective day) under constant darkness conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 provides important in vivo validation of the in vitro findings. The use of constant darkness conditions ensures the observed rhythm is driven by the endogenous circadian clock rather than light-dark cycles. However, the result is based on only two time points, limiting the ability to assess the full circadian profile. Additional time points would strengthen this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C141"
+    ],
+    "result": "Gap junctional communication shows circadian phase-dependent variation, with faster and more pronounced fluorescence recovery at 42 hr (subjective day) compared to 30 hr (subjective night) post-synchronization in WT astrocytes, a variation absent in Bmal1-/- astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C108-C111, C141 demonstrate circadian regulation of gap junction function using gap-FRAP methodology. The CBX control (C108) validates that the measured signal reflects gap junction-mediated communication. The loss of variation in Bmal1-/- astrocytes (C110-C111) provides genetic evidence for circadian clock control. The direction of the effect (higher conductance at 42 hr when pCX43 is lower) is consistent with the known inhibitory effect of CX43(S368) phosphorylation on gap junction conductance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C139",
+      "C140",
+      "C145",
+      "C146"
+    ],
+    "result": "The circadian regulation of ER Ca2+ responses could affect astrocytic modulation of synaptic activity according to time of day, with astrocytes potentially better equipped for localized responses during the active phase (higher pCX43, lower gap junction conductance) and broader network control during rest (lower pCX43, higher gap junction conductance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C139-C140, C145-C146 present a functional model linking circadian Ca2+ regulation to astrocyte network dynamics and synaptic modulation. While the model is logical and consistent with the data, it remains speculative (C12 explicitly states 'we suggest'). The manuscript does not directly measure synaptic activity, neuronal function, or astrocyte-neuron interactions. The proposed functional consequences require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55"
+    ],
+    "result": "The majority of rhythmic transcripts in astrocytes (65.3%) show tissue-specific rhythmicity, with phase analysis indicating 8 hr post-serum shock corresponds to ZT0 and revealing a quiescent zone during subjective daytime (opposite to diurnal animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51, C54-C55 provide comparative analysis with CircaDB database, demonstrating tissue specificity of circadian transcriptomes. The phase correlation analysis (C51: r=0.69, p<0.001) validates the timing calibration. The observation of a daytime quiescent zone (C55) is interesting and appropriately compared to diurnal animals. The analysis is sound and adds context to the astrocyte-specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The findings align with studies showing heightened astrocytic Ca2+ activity during wakefulness and provide a mechanistic explanation for differential Ca2+ levels between wake and sleep states, though the relationship between astrocyte synchrony and wake/sleep states shows regional variation and some conflicting reports in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138, C147-C151 appropriately contextualize the findings within the sleep/wake literature. The authors acknowledge both supporting evidence (C137-C138, C147-C148) and conflicting findings (C149), demonstrating balanced interpretation. The conclusion (C151) is appropriately cautious, suggesting baseline astrocyte synchrony varies with circadian phase while acknowledging that stimulus-evoked responses may differ by region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Herp shows circadian rhythmicity in multiple mouse tissues and exclusively in astrocytes and oligodendrocytes in the SCN, where astrocytic Ca2+ rhythms are crucial for circadian timing, suggesting HERP may be integral to circadian timing mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115, C122-C124 place the findings in broader context using literature citations. While C115 and C122-C123 are well-supported by citations, C124 is explicitly speculative ('may be integral'). The connection between HERP rhythmicity in SCN astrocytes and circadian timing mechanisms is plausible but requires direct experimental testing in the SCN.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The study enhances understanding of circadian regulation of astrocytic functions through HERP's rhythmic expression and its impact on ER Ca2+ signaling and CX43 phosphorylation, highlighting HERP's role in modulating astrocytic processes and opening avenues for exploring astrocytic circadian rhythms in brain function and health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 are summary statements of the study's contributions. These are appropriately supported by the collective findings presented in the manuscript. C154 appropriately frames future directions while acknowledging that broader implications remain to be explored. These represent fair characterizations of the work's significance.",
+    "result_type": "MINOR"
+  }
+]

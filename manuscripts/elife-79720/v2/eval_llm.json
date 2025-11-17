@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C93",
+      "C81"
+    ],
+    "result": "Genetically predicted IGF-1 levels show nominally significant protective associations with COVID-19 susceptibility (OR=0.77, p=0.027) and hospitalization (OR=0.62, p=0.018), but not severity (OR=0.85, p=0.513). These associations did not survive Bonferroni correction for multiple testing. Sensitivity analyses (MR-Egger, weighted median, MR-PRESSO) showed consistent direction of effects, with no evidence of directional pleiotropy (MR-Egger intercept p=0.614 and 0.595) or outlying SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the primary IVW analysis shows nominally significant associations (C3, C4), the authors explicitly acknowledge these do not survive Bonferroni correction (C93, C81). The confidence interval for hospitalization (C4: 0.25-0.51) appears suspiciously narrow and may contain a typographical error. Without correction for multiple testing across multiple exposures and outcomes, these nominal p-values do not provide sufficient evidence for a causal relationship. The result requires validation studies as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Sensitivity analyses using SNPs restricted to the IGF-1 gene region and after removing BMI-associated SNPs showed directionally consistent but non-significant associations for susceptibility and hospitalization. When using only IGF-1 gene region SNPs, associations became non-significant (susceptibility OR=0.99, p=0.777; hospitalization OR=0.90, p=0.645). After BMI adjustment, associations remained nominally significant (susceptibility OR=0.76, p=0.021; hospitalization OR=0.61, p=0.014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The sensitivity analyses show inconsistent results. The IGF-1 gene region analysis (C25) yields null results, suggesting potential pleiotropy in the main analysis. The BMI-adjusted analysis (C39-C41) maintains nominal significance but still fails multiple testing correction. The inconsistency between these sensitivity analyses raises questions about the robustness of the main findings. The narrow confidence interval in C40 (0.41-0.90) compared to C4 (0.25-0.51) suggests possible data inconsistencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "No causal associations were found between genetically predicted testosterone or SHBG levels and COVID-19 outcomes (susceptibility, hospitalization, or severity) in overall analyses. All confidence intervals crossed the null and p-values were non-significant (all p>0.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The null findings for testosterone and SHBG are consistently reported across all three COVID-19 outcomes (C26-C31) with appropriate statistical evidence. The confidence intervals all include 1.0 and p-values are clearly non-significant. These negative results are appropriately interpreted as absence of evidence for association, consistent with the summary claim (C6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Sex-stratified analyses for testosterone and estradiol showed no significant associations with COVID-19 outcomes in either males or females. Analysis using the CYP19A1 SNP rs7173595 as a proxy for estradiol also showed non-significant associations in both sexes, though confidence intervals were very wide (e.g., females hospitalization: OR=0.28, 95% CI: 0.01-6.46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sex-stratified analyses consistently show null results (C32-C38) with appropriate acknowledgment of non-significance. However, the extremely wide confidence intervals for the single-SNP estradiol analysis (C33-C38) indicate very low precision, limiting the informativeness of these estimates. The authors appropriately interpret these as null findings but acknowledge the limitation of weak instruments for estradiol (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The MR findings are consistent with observational studies showing associations between IGF-1 and COVID-19 outcomes. Prior studies found inverse associations between IGF-1 levels and COVID-19 mortality in UK Biobank, lower IGF-1 in critically ill COVID-19 patients in Greece, and associations between IGF-1 and CD8+ T cell exhaustion in severe SARS-CoV-2 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately contextualize their findings within existing observational literature (C43-C45), all supported by proper citations. The claim of consistency (C42) is reasonable given the directional agreement, though the authors' MR findings are weaker (nominal significance only) than implied. This represents appropriate discussion of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "IGF-1 has multiple biological properties that could explain protective effects against COVID-19, including anti-inflammatory and antioxidant effects, roles in lung tissue repair through regulation of alveolar epithelial cells, promotion of phagocytosis of apoptotic cells, inhibition of IL-6 production, and regulation of inflammatory responses through AEC-AM communication. These mechanisms suggest IGF-1 might be an important anti-inflammatory factor in the alveolar microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biological mechanisms are well-supported by appropriate citations (C47-C54) and represent established knowledge about IGF-1 function. The synthesis into a plausible mechanism for COVID-19 protection (C55) is appropriately presented as speculative ('might be'). This provides reasonable biological plausibility for the observed associations, though it does not validate the causal claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "IGF-1 and estrogen signaling systems interact through multiple mechanisms: IGF-1 can enhance estrogen receptor \u03b1 expression and activity, while estradiol can upregulate IGF-1, IGF-1R, and IGF-1-binding proteins. Estrogen has immune-enhancing effects and may affect ACE2 and FURIN expression relevant to SARS-CoV-2 infection. However, the study found no evidence for associations between estradiol and COVID-19, possibly due to weak genetic instruments explaining little variance in estradiol levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biological interactions between IGF-1 and estrogen are well-documented with appropriate citations (C57-C62). The authors appropriately acknowledge their null findings for estradiol (C63) and provide a plausible explanation (weak instruments). This represents honest reporting of negative results with appropriate biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The null findings for testosterone are consistent with prior MR studies (Liu et al., 2022) but contrast with epidemiological observations of worse COVID-19 outcomes in males. The literature on testosterone and COVID-19 is complex and contradictory, with evidence that both high and low testosterone levels may be associated with poor outcomes. Studies on androgen deprivation therapy show conflicting results, and testosterone has both pro-viral effects (via TMPRSS2) and potentially beneficial immunosuppressive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide a thorough and balanced discussion of the complex and contradictory literature on testosterone and COVID-19 (C64-C73), all appropriately cited. They acknowledge the apparent paradox between their null MR findings and epidemiological sex differences (C65), and present multiple perspectives on testosterone's potential roles. This represents appropriate contextualization of null findings within a complex literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study used a two-sample Mendelian randomization design with genetic instruments from large GWAS (up to 425,097 participants) for sex hormones and IGF-1, and COVID-19 outcome data from the HGI consortium meta-analysis of 60 studies across 25 countries (>1 million participants for each outcome). A total of 320, 316, 7, and 18 SNPs were used as instruments for SHBG, testosterone, estradiol, and IGF-1 respectively. IVW was the primary method with multiple sensitivity analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design and data sources are clearly described with appropriate sample sizes and citations (C13-C21, C83-C85). The use of large, well-powered GWAS for both exposures and outcomes is a strength. The number of instruments varies considerably by exposure, with very few for estradiol (7 SNPs), which the authors acknowledge as a limitation. The methodological approach is standard for MR studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study has several acknowledged limitations: potential weak instrument bias especially in sensitivity analyses with fewer SNPs (which would bias toward the null in TSMR), inability to account for recovery as a competing risk due to data unavailability, inability to perform sex-stratified analyses for IGF-1 due to lack of sex-specific data in HGI, restriction to European ancestry limiting generalizability, and reliance on genetic data requiring validation in prospective cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide an honest and comprehensive discussion of limitations (C75-C80). They appropriately acknowledge the direction of bias from weak instruments (C76), data limitations preventing certain analyses (C77-C78), and generalizability concerns (C79). The call for validation studies (C80) is appropriate given the nominal significance of main findings. This represents good scientific practice in acknowledging study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Multiple methodological approaches were employed including: use of CYP19A1 SNP rs7173595 (previously associated with E2 in men and postmenopausal women) for estradiol analysis using Wald ratio method; sensitivity analysis with 10 correlated SNPs in the IGF-1 gene region with LD matrix; BMI adjustment by excluding SNPs associated with BMI at p<5\u00d710\u207b\u2078; SNP selection using genome-wide significance (p<5\u00d710\u207b\u2078), LD clumping (r\u00b2<0.01), and F-statistic >10 for instrument strength; and sex-specific SNP selection for testosterone and estradiol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details are comprehensively described (C86-C110) with appropriate thresholds and procedures standard in MR studies. The use of multiple sensitivity analyses and adjustment strategies (BMI, gene-region restriction, sex-stratification) is appropriate. The F-statistic threshold of >10 is standard for assessing instrument strength. The methods are reproducible and follow established MR guidelines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Statistical analyses followed established MR methods: weighted median for robustness when \u226550% instruments are valid, MR-Egger for detecting and correcting directional pleiotropy via intercept test, MR-PRESSO for outlier detection and correction with distortion test, Cochran's Q for heterogeneity assessment, and MR-Egger intercept for horizontal pleiotropy. All analyses were two-sided and performed in R 4.0.4 using TwoSampleMR and MR-PRESSO packages. The study followed STROBE reporting guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical methods are appropriate and well-described (C94-C100) with proper citations for each method. The use of multiple sensitivity analyses to assess pleiotropy and heterogeneity is a strength. Software and package versions are specified, supporting reproducibility. Following STROBE guidelines (C94) demonstrates adherence to reporting standards. The methods are standard and appropriate for MR studies.",
+    "result_type": "MINOR"
+  }
+]

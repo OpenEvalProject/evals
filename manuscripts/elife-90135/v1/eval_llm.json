@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Both P. leucopus and M. musculus displayed sickness behavior within 2 hours of LPS treatment, but by 4 hours, significantly more M. musculus (8/10) developed tachypnea compared to P. leucopus (1/10, p=0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 are based on direct experimental observations with appropriate statistical analysis. The significant difference in tachypnea development (p=0.005) between species is clearly documented and represents a robust finding with adequate sample sizes (n=10 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Hematological analysis revealed species-specific differences: P. leucopus had significantly lower hematocrit (42% vs 56%, p<0.01) and higher eosinophil percentages (3.4% vs 1.2%, p=0.004) than M. musculus. Both species showed decreased white blood cell counts after LPS treatment, but P. leucopus exhibited a significantly higher neutrophil-to-lymphocyte ratio under LPS conditions (0.64 vs 0.18, p=0.0006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 present hematological data with appropriate statistical analysis and clear p-values. The findings are internally consistent and supported by data presented in Table 1 and Figure 1. Sample sizes are adequate (n=10 per group) for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Genome-wide RNA-seq analysis revealed similar overall fold-changes in gene expression between species (1.32 vs 1.30, p=0.31), but distinct Gene Ontology profiles. P. leucopus showed enrichment for neutrophil degranulation and bacterial response terms, while M. musculus was enriched for viral response and interferon signaling terms. Among top 100 DEGs, mice had 20 genes associated with virus/interferon-beta responses versus only 2 in deermice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are well-supported by comprehensive RNA-seq data with appropriate bioinformatic analysis including GO term enrichment. The contrasting patterns between species are clearly documented in Figure 3 and supplementary data. The statistical approach using FDR correction is appropriate for multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "P. leucopus displayed minimal interferon-gamma transcription and lower magnitude fold-changes in type 1 interferon-stimulated genes compared to mice and rats. In mice, Ifng was a top-ranked DEG, while in P. leucopus it was far down the list with Il1b being the comparably ranked DEG instead. Little to no Ifng transcription was detected in deermice even at 12 hours post-LPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C31-C34 are strongly supported by multiple lines of RNA-seq evidence across different time points and experimental conditions. The inverse relationship between Ifng and Il1b expression between species is well-documented in Figures 8 and 10, with appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30"
+    ],
+    "result": "P. leucopus exhibited transcriptional profiles consistent with alternatively-activated (M2) macrophages and non-classical monocytes, characterized by low Nos2 and high Arg1 expression, Akt1/Akt2 ratio >1.0, and decreased Cd14/Fcgr3 ratio after LPS. This contrasted with M. musculus, which showed profiles consistent with classically-activated (M1) macrophages and classical monocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C29-C30 are supported by convergent evidence from RNA-seq, RT-qPCR validation (Table 2), and multiple gene expression ratios (Figure 7). The interpretation of M1 vs M2 polarization is based on established markers in the literature, though direct protein-level confirmation and flow cytometry validation are acknowledged as limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Interferon-gamma is a determinant of Nos2 expression, with tight correlation observed between Ifng and Nos2 transcription levels across both species (R\u00b2=0.87). A significant correlation was also observed between Nos2/Arg1 and Ifng/Il1b ratios, indicating co-variation between Ifng expression and macrophage polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by correlation analysis of RNA-seq data (Figure 10) and established literature (citations provided). The high R\u00b2 value (0.87) indicates strong correlation, though causation cannot be definitively established from correlation alone. The relationship is biologically plausible based on known signaling pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CD69-positive cells (T-cells, NK cells, and Type 1 ILCs) appear to be sources of Ifng in mice. In M. musculus, Cd69 transcription was low at baseline but increased many-fold with LPS treatment and correlated tightly with Ifng (R\u00b2=0.88). In P. leucopus, Cd69 was expressed at baseline but showed minimal change with LPS, with little correlation to Ifng expression (R\u00b2=0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by RNA-seq data (Figure 10) and established knowledge about CD69-expressing cell types. The correlation analysis clearly distinguishes the species-specific responses. However, C71 is an inference that would benefit from flow cytometry validation to definitively identify CD69+ cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Five ISGs (Gbp4, Ifit1, Irf7, Isg15, Oas1a) and four cytoplasmic PRRs (Rigi, Ifih1, Dhx58, Cgas) were upregulated in both species after LPS treatment, but with 50-90% lower magnitude fold-changes in P. leucopus compared to M. musculus. Most ISG-PRR pairs showed evidence of covariation across all animals, indicating that PRR signaling and ISG expression pathways function similarly in both species but differ in magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are well-supported by comprehensive RNA-seq data (Figure 11, Supplementary file 1) with appropriate correlation analysis. The covariation patterns are clearly documented in the correlation matrix. The interpretation that pathways function similarly but with different magnitudes is reasonable given the data, though mechanistic validation would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "LPS stimulated expression of endogenous retrovirus (ERV) sequences in mice and rats, with ERV gag-pol and env transcripts ranking among the top DEGs in rats. In contrast, P. leucopus showed no annotated ERV Env transcripts among DEGs and actually exhibited decreased transcription of homologous ERV env sequences after LPS treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by genome-wide RNA-seq data from all three species (Table 4, Figure 12) and confirmed by prior literature. The contrasting ERV responses between species are clearly documented. However, the P. leucopus genome annotation challenges (acknowledged by authors) introduce some uncertainty about whether all ERV sequences were captured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "LPS-treated and B. hermsii-infected P. leucopus showed similar transcriptional profiles: low Nos2/Ifng with high Arg1/Il1b expression, maintained Akt1/Akt2 ratio >1.0, reduced Cd14/Fcgr3 ratio, decreased Cd69 transcription, and stable low ERV transcription with marginal ISG increases. This demonstrates that the distinctive deermouse response is not confined to LPS as the elicitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by targeted RNA-seq comparison between two different experimental conditions (Table 5). The parallel responses to different stimuli (LPS via TLR4 vs B. hermsii via TLR2) strengthen the conclusion that this represents a general characteristic of P. leucopus immune responses rather than a stimulus-specific phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C88",
+      "C89"
+    ],
+    "result": "The feature that best distinguishes P. leucopus from mice and rats is its predominantly anti-inflammatory quality, characterized by reduced interferon responses, lower ERV and cytoplasmic PRR transcription, and M2-type macrophage polarization. This characteristic likely has a complex, polygenic basis with environmental and epigenetic influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C88-C89 represent the overarching interpretation of the study's findings. The anti-inflammatory characterization is well-supported by multiple converging lines of evidence throughout the manuscript. However, C89's speculation about polygenic/epigenetic basis, while reasonable, lacks direct experimental support and represents a hypothesis for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "LPS-treated rats showed lowered white blood cells and neutrophil-to-lymphocyte ratios, with elevations of interferon-gamma, IL-6, and IL-10 proteins in blood. Targeted RNA-seq revealed 24-fold changes for Ifng and Nos2 but only ~3-fold change for Il1b, similar to the mouse response pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by hematological data, cytokine protein assays, and targeted RNA-seq from the rat experiment (Table 4). The inclusion of rats provides important comparative context showing that the mouse response is not unique among murids. Sample sizes are adequate (n=5-11) and statistical analysis is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Tlr4 expression increased ~3-fold more in P. leucopus than M. musculus after LPS, but Cd14 expression declined more dramatically in deermice. Since CD14 is required for LPS-stimulated TLR4 signaling, its decreased availability may explain the moderated LPS response in P. leucopus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 are supported by RNA-seq data and established literature about CD14's role in TLR4 signaling. However, C75 is speculative inference that requires functional validation. The paradox of increased Tlr4 but decreased Cd14 expression is interesting but the mechanistic explanation remains hypothetical without protein-level measurements or functional assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The suppression of ERV transcription in P. leucopus may be attributable to defensive adaptations including KRAB domain zinc finger proteins (Zfp809, Zfp997) that silence ERV expression, and higher baseline expression of some ISGs compared to M. musculus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 are supported by genome annotation data and RNA-seq showing baseline ISG expression. However, C84 is speculative, relying on analogy to P. maniculatus studies. The presence of ERV-silencing genes (C86) does not demonstrate their functional role in the observed phenotype. Direct functional studies would be needed to confirm this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "P. leucopus showed heightened expression of genes for neutrophil-associated proteins (Mmp8, Nox1, Padi4) but also expressed potential mitigators of neutrophil-mediated damage including secretory leukocyte peptidase inhibitor and superoxide dismutase 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by RNA-seq data from both current and prior studies. The pattern suggests a balanced response with both pro-inflammatory neutrophil activation and protective mechanisms. However, the functional significance of these expression patterns would benefit from protein-level validation and functional assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "P. leucopus is a key reservoir for multiple zoonotic agents in North America and remains persistently infected without apparent disability, diminished fitness, or significant inflammation in affected tissues. P. leucopus also has a 2-3 fold longer lifespan than M. musculus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C10 represent established knowledge supported by multiple citations to prior literature. These provide important context for the study but are not novel findings. The claims are well-documented in the field and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Literature evidence indicates that while Nos2 knockout mice have lower LPS mortality, they are more susceptible to certain pathogens. However, Peromyscus species show tolerance to various pathogens including Leishmania, Powassan virus, SARS-CoV-2, hantavirus, and monkeypox virus, suggesting that low Nos2 expression does not confer general vulnerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are entirely based on citations to published literature and represent a synthesis of prior work rather than new findings. The citations appear appropriate and the synthesis is logical, though the authors acknowledge that direct studies in P. leucopus are limited for some pathogens.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Naked mole-rats share several immunological features with P. leucopus including low Nos2 transcription/nitric oxide production in response to LPS, increased neutrophil proportions after LPS (unlike M. musculus), and lower type 1 interferon responses to TLR agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are based on citations to published studies on naked mole-rats. The parallel with P. leucopus is interesting and appropriately noted, though these are observations from different studies rather than direct comparisons. The connection to longevity is implied but not explicitly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Natural P. leucopus populations show >80% B. burgdorferi infection prevalence, while most infected humans develop definable illness. Lyme disease symptoms are primarily attributable to inflammation rather than direct virulence, and humans are transmission dead-ends for B. burgdorferi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are based on citations to prior field studies and clinical research. These provide important context for understanding the translational relevance of the findings but represent established knowledge rather than new discoveries from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Endogenous retroviruses are recognized as drivers of innate immune responses to microbes in multiple contexts, including human septic shock, experimental LPS exposure, and bacterial infections expressing TLR agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are entirely based on citations to published literature establishing the role of ERVs in immune responses. These provide important conceptual framework for interpreting the ERV findings in the current study but do not represent new experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Peromyscus species are 'immunocompetent' with respect to their natural pathogens, have successfully adapted to diverse environments including urban areas and toxic waste sites, and are phylogenetically more closely related to hamsters and voles (Cricetidae) than to mice and rats (Muridae).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are based on citations to published ecological and phylogenetic studies. These provide important biological context for the study but represent established knowledge rather than new findings. The phylogenetic relationship is particularly relevant for interpreting the immunological differences observed.",
+    "result_type": "MINOR"
+  }
+]

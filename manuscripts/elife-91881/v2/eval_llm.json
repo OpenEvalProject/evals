@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "For the wild-type (WT) A6 TCR-pMHC complex, physiological-level load (10-20 pN) stabilizes the interface with pMHC and suppresses subdomain motion within TCR\u03b1\u03b2. Under high load, the complex forms more high-occupancy contacts with pMHC, these contacts are more spatially compact, and the buried surface area increases compared to no-load or low-load conditions. Low load destabilizes the interface, allowing greater transverse motion that generates shear stress. The asymmetric motion of TCR \u03b1 and \u03b2 chains under load impacts the interface, particularly affecting the peptide-sensing CDR3 loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C24, C27-C32, C36-C38, C40-C43 collectively demonstrate load-dependent stabilization of the WT TCR-pMHC interface through multiple converging lines of evidence: contact counts (C30-C31, Figure 3A), contact persistence (Figure 3B-E), spatial compactness (C36, Figure 3F), buried surface area (C37, Figure 3G), and peptide RMSF (C38, Figure 3H). The mechanistic explanation involving transverse motion and shear stress (C40-C42) is supported by quantitative RMSF measurements. The results are internally consistent and agree with previous JM22 TCR simulations (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "The V\u03b1-V\u03b2 interface is difficult to organize when pMHC is bound and the C-module is present, with the number of V\u03b1-V\u03b2 contacts decreasing in full TCR\u03b1\u03b2-pMHC complexes compared to unliganded systems. The CDR3 loop distance varies with triad arm angles (particularly the scissoring motion), and this distance is smallest for WThigh and V\u03b1\u03b2-pMHC, larger for WT0, and most variable for WTlow. The CDR3 motion is coupled to the V\u03b1-V\u03b2 scissoring motion, though individual principal component modes do not show clear correlation with CDR3 distance, suggesting the distance depends on combinations of PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C59 provide comprehensive analysis of V\u03b1-V\u03b2 motion and its coupling to CDR3 loop positioning. The contact count data (C44-C47, Figure 4A), principal component analysis (C48-C49, Figure 4\u2014figure supplement 1), CDR3 distance measurements (C50-C53, Figure 4\u2014figure supplement 2), and triad angle analysis (C57, Figure 4C-D) all converge on a consistent picture. The conclusion that CDR3 motion couples to V\u03b1-V\u03b2 scissoring (C59) is well-supported by the correlation between triad angles and CDR3 distance. The observation that individual PCs don't correlate with CDR3 distance (C55-C56) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The V-module motion relative to the C-module is asymmetric, with V\u03b1 bending more than V\u03b2. This asymmetry is consistent with fewer V\u03b1-C\u03b1 contacts compared to V\u03b2-C\u03b2 contacts. The hinge angle distributions show that \u2220TCR\u03b1 varies more than \u2220TCR\u03b2, and for WTlow and WThigh, CDR3 distance decreases with increasing hinge angles (especially \u2220TCR\u03b1), suggesting that unbending of the V-module under load brings the CDR3 loops closer together. The C\u03b2 FG-loop plays a critical role in this asymmetric V-C motion mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 establish the asymmetric V-C motion mechanism through multiple lines of evidence: contact counts (C60, C65, Figure 5\u2014figure supplement 1), principal component analysis (C62-C64, Figure 5A-C), hinge angle distributions (C66, Figure 5D), and correlation between hinge angles and CDR3 distance (C67-C68, Figure 5E). The mechanistic conclusion (C69) logically follows from the data. The role of the C\u03b2 FG-loop (C70) is supported by simulations in Appendix 1. The asymmetry is quantitatively demonstrated and the functional consequence (CDR3 loop positioning) is clearly linked.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C95",
+      "C96"
+    ],
+    "result": "Point mutations in the Tax peptide profoundly affect the dynamics of the TCR-pMHC complex despite nearly identical crystal structures. Modified agonists (Y5F, V7R) maintain similar contact numbers to WT at low loads but show fewer contacts at high loads, indicating potential slip bond behavior. Antagonists (P6A, Y8A) have overall fewer contacts with pMHC without consistent load dependence. Single-residue mutations disrupt not only direct contacts but also affect surrounding interfacial contacts and alter the conformational motion of the whole TCR\u03b1\u03b2, including the V-C bead-on-chain (BOC) configuration and V\u03b1-V\u03b2 motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C26, C75-C88, C95-C96 demonstrate that peptide mutations alter complex dynamics through extensive simulation data. Contact counts (C76-C77, Figure 6A), contact heat maps (C80, C83-C84, Figure 6C-F and supplements), and experimental validation (C82, C85) support the findings. The mechanistic explanation for Y5F (C80-C81) is reasonable based on the loss of the Y5-\u03b1S31 hydrogen bond. The observation that mutations affect the entire TCR\u03b1\u03b2 structure (C88, C95) is supported by BOC and PC analyses (Figures 7C-D, 7\u2014figure supplements 3-4). In silico mutation results (C96, Appendix 2) provide additional support. The caveat about Y5Fhigh experiencing higher force (C76) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C70",
+      "C102",
+      "C103",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The C\u03b2 FG-loop plays a critical role in the asymmetric V-C motion mechanism by stabilizing the V\u03b2-C\u03b2 interface and controlling the relative orientation between V\u03b2 and C\u03b2. Simulations of the C\u03b2 FG-loop deletion (dFG) show reduced catch bond response: dFGlow has low intermolecular contact occupancy with relatively constant intramolecular occupancy, while dFGhigh shows increased contact occupancy with pMHC but decreased intramolecular contact occupancy, suggesting the complex is not as tightly coupled as WT. These behaviors are consistent with experimentally observed reduced catch bond response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C70, C102-C103, C119-C121 establish the role of the C\u03b2 FG-loop through deletion mutant simulations. The time-dependent occupancy data (C102-C103, Figure 8A-B) show clear differences between dFG and WT systems. The mechanistic interpretation (C119-C120) is supported by structural analysis in Appendix 1. The agreement with experimental data (C121, Das et al. 2015) validates the simulation findings. However, the dFG simulations appear to be single runs without replicates, which limits statistical confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Time-dependent analysis of contact occupancy and peptide orientation reveals distinct behaviors for WT, modified agonists, and antagonists under different loads. For WThigh, both intermolecular and intramolecular contact occupancy remain high and steady, indicating tight coupling of subdomains. Modified agonists show higher occupancy at no/low load but decreased intermolecular occupancy over time at high load. Antagonists have lower occupancy than WT with further reduction over time in some cases. The peptide angle relative to the V-module fluctuates more for WTlow than WThigh, and mutants show altered peptide orientations under load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 provide detailed time-dependent analysis of interfacial dynamics. The total occupancy trajectories (Figure 8A-B) clearly show the different behaviors of WT, modified agonists, and antagonists. The peptide angle analysis (C107-C110, Figure 8C) provides an independent measure of interfacial stability. The interpretation that WThigh maintains tight coupling (C101) is well-supported by the high, steady occupancy values. The observation that modified agonists destabilize under high load (C104-C105) and antagonists have lower overall stability (C106) is consistent with the contact count data in Figures 6-7. The 40-ns overlapping windows provide good temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C122",
+      "C124",
+      "C125",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The proposed mechanism for TCR catch bond formation and peptide discrimination involves asymmetric framework motion rather than defined conformational changes. The smaller number of V\u03b1-C\u03b1 contacts compared to V\u03b2-C\u03b2 causes asymmetric V-C bending where V\u03b1 moves more than V\u03b2, generating relative V\u03b1-V\u03b2 motion that can destabilize pMHC contacts by affecting CDR3 loop distance. Physiological-level force (10-20 pN) stabilizes the interface by straining the complex into a tightly coupled state, bringing CDR3 loops closer together (10.3\u00b10.3 \u00c5 in WThigh vs. 10.9 \u00c5 in crystal structure). This mechanism is broadly applicable to different TCR\u03b1\u03b2 systems, as evidenced by consistency with JM22 TCR simulations and experimental support from V\u03b3\u03b4-C\u03b1\u03b2 chimera studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C111-C118, C122, C124-C125, C140-C142 present the overarching mechanistic model, which is well-supported by the collective simulation data. The asymmetric framework motion (C112-C114) is established by contact analysis (Figures 5\u2014figure supplement 1) and PC analysis (Figure 5). The stabilization mechanism (C115-C118) is supported by contact occupancy (Figure 8), CDR3 distance measurements (C116), and BSA data (Figure 3G). The generalizability claim (C122) is supported by consistency with JM22 simulations and experimental data from V\u03b3\u03b4-C\u03b1\u03b2 chimera (C123). The interpretation of catch bond as stabilization of contacts in microsecond simulations (C124) is reasonable given the timescale limitations. The proposed criteria for identifying cognate interactions (C141-C142) follow logically from the results but would require validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C39"
+    ],
+    "result": "Background and system characterization: Mechanical force is critical for TCR-pMHC interaction and T-cell activation. The A6 TCR recognizes the Tax peptide bound to HLA-A*02:01, and crystal structures of WT and mutant peptide complexes are very similar despite differing immunogenicity. P6A and Y8A are weak antagonists requiring 1000-fold higher concentration than WT for T-cell inhibition, Y5F is similar to WT in binding affinity and activation, and V7R induces comparable effector functions at 10-100 times higher concentrations. The WT complex has relatively strong affinity (~1 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11, C14, C16-C19, C39 provide established background knowledge and system characterization, all supported by appropriate citations to the literature. The structural similarity of mutants (C16) is confirmed by Figure 2C. The experimental characterization of peptide variants (C17-C19) comes from cited studies (Ding et al. 1999, Hausmann et al. 1999, Scott et al. 2011). These claims establish the context and rationale for the simulation study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Previous MD study on JM22 TCR: In prior work by the authors, applying 16-pN force to the JM22 TCR-pMHC complex suppressed domain motion and enhanced the fit among domains, leading to a proposed model where the TCR\u03b1\u03b2-pMHC catch bond arises from stabilization of the interface by altering conformational motion of TCR\u03b1\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 accurately describe previous work by the authors (Hwang et al. 2020), which is appropriately cited. This prior work provides the foundation and motivation for the current study on the A6 TCR system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Simulation methodology: All-atom MD simulations were performed with the Tax peptide (WT) and four mutant peptides (Y5F, V7R, P6A, Y8A). To simulate load, the distance between terminal C\u03b1 atoms was held at set extensions using harmonic positional restraints, allowing fluctuation in position and resulting in instantaneous force fluctuation. Simulations were classified as low or high load based on average force in the physiological 10-20 pN range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C20-C22 describe the simulation methodology, which is detailed in the Materials and methods section and Table 1. The approach of using harmonic restraints to apply fluctuating force is reasonable and mimics the membrane-anchored state. The classification scheme (C22) is clearly defined in Table 1. The methodology is appropriate for studying load-dependent dynamics, though the choice of restraint strength and the relationship between extension and force could be better justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Structural characterization of peptide residues: In the WT crystal structure, Y5 is located between CDR3\u03b1 and CDR3\u03b2 loops, V7 mainly contacts CDR3\u03b2, P6 makes one contact with CDR3\u03b2, and Y8 is located between CDR3\u03b2 and the \u03b11 helix of MHC. Crystal structures of point mutants are very similar in interfacial contacts, docking angle, and CDR loop conformations, with the only observable difference at CDR3\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 provide structural characterization from crystal structures, supported by Figure 2C and citations (Ding et al. 1999, Scott et al. 2011). This structural information establishes the baseline for understanding how mutations affect dynamics despite structural similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Methodological note on contact analysis: For intramolecular contacts, C\u03b1-C\u03b2 interface contacts were excluded from total occupancy calculations because they are larger in number and did not differ significantly across systems, indicating the C-module moves mostly as a single unit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 explain a methodological choice in the analysis, which is reasonable given that C\u03b1-C\u03b2 contacts are numerous (31-34 range, C60) and stable. This is consistent with previous work (Hwang et al. 2020) and simplifies the analysis by focusing on the more variable interfaces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Discussion of extended state and broader context: After engagement with cognate pMHC under load, reversible transition to an extended state is possible (observed experimentally). Since V\u03b1\u03b2-pMHC forms more stable binding, the C-module likely undergoes partial unfolding in the extended state. The folded C-module serves as base for asymmetric V-C motion screening for matching pMHC, and once a match is found, reversible transitioning may agitate the membrane to activate CD3 signaling. Catch bond formation indicates pMHC recognition requires energy input. MHC may also respond to load based on other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C127-C133 discuss the extended state and broader implications. The experimental observation of reversible extension (C127, Das et al. 2015, Banik et al. 2021) is well-supported. The inference about C-module unfolding (C128) is reasonable based on the V\u03b1\u03b2-pMHC stability data but remains speculative. The proposed signaling mechanism (C129) is highly speculative and not directly tested. The circumstantial evidence from unresolved crystal structure regions (C130) is weak. The energy requirement (C131) is a reasonable inference but not quantified. The discussion of MHC response to load (C132-C133) appropriately cites other work but is tangential to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C134",
+      "C136",
+      "C137",
+      "C139",
+      "C143",
+      "C144"
+    ],
+    "result": "Future applications and critique of other work: Atomistic simulations can be used to design mutant TCRs with altered load dependence. For T-cell-based cancer immunotherapy, mechanistic knowledge of TCR mechanosensing has practical significance. The authors critique a recent study (Pettmann et al. 2023) for using forces up to 100 pN where catch bonds switch to slip bonds, and for fitting catch bond data with Bell's equation (an exponential function inappropriate for non-monotonic force-lifetime profiles). The authors propose that peptide residues act as 'teeth of a key' for screening TCR-pMHC fitness. An efficient in silico method is needed to predict dynamic properties from sequence and structural data, and insights from this study will help develop such methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126, C134, C136-C137, C139, C143-C144 discuss future applications and critique other work. The potential for designing mutant TCRs (C126) is reasonable but speculative. The practical significance for immunotherapy (C134) is a general statement. The critique of Pettmann et al. 2023 (C136-C137) raises valid concerns about force range and data fitting, though the tone is somewhat dismissive. The 'teeth of a key' model (C139) is a useful conceptual framework supported by the mutant data. The call for efficient in silico methods (C143-C144) is reasonable but speculative about future developments.",
+    "result_type": "MINOR"
+  }
+]

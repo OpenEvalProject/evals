@@ -2,246 +2,361 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C77",
-      "C78",
-      "C79",
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85"
+      "C2",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
     ],
-    "result": "Knockdown of CAII in MCF-7 breast cancer cells significantly reduced MCT-mediated lactate transport under both normoxic and hypoxic conditions, with a more pronounced effect in hypoxia (47-57% reduction) compared to normoxia (25-33% reduction). This reduction is independent of CAII's catalytic activity, as EZA treatment had no effect on lactate transport. CAII knockdown also decreased basal pHi by ~0.1 pH units, though this acidification appears to play only a minor role in the observed transport reduction.",
+    "result": "CAII knockdown reduces lactate transport in MCF-7 cells independent of catalytic activity. Knockdown of CAII in MCF-7 cells significantly reduced MCT-mediated lactate transport under both normoxic (25-33% reduction) and hypoxic (47-57% reduction) conditions. This reduction was independent of CAII catalytic activity, as EZA (a CA inhibitor) had no effect on lactate transport. CAII knockdown also decreased basal pHi by ~0.1 pH units, though this acidification played only a minor role in the observed transport reduction.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77-C85 are well-supported by experimental data shown in Figure 1, including pH imaging measurements, qRT-PCR, and western blot analysis confirming knockdown efficiency. The independence from catalytic activity is supported by prior EZA experiments (C80). The analysis of pHi effects (C84-C85) appropriately addresses a potential confounding variable. The differential effect between normoxia and hypoxia is clearly documented.",
+    "evaluation": "Claims C66-C73 provide converging evidence from siRNA knockdown experiments (Figure 1) showing reduced lactate transport that is independent of catalytic activity (C69-C70). The pH measurements (C71-C73) appropriately control for potential confounding effects of intracellular acidification. The data are internally consistent and supported by appropriate controls including negative control siRNA and EZA treatment.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90"
+      "C3",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
     ],
-    "result": "MCT1 and CAII are colocalized in MCF-7 cells, as demonstrated by proximity ligation assay showing close proximity (<40 nm) between the two proteins under both normoxic and hypoxic conditions. Knockdown of CAII significantly reduced PLA signals, supporting direct physical interaction between MCT1 and CAII.",
+    "result": "CAII is colocalized with MCT1 in MCF-7 cells. Proximity ligation assay (PLA) demonstrated that CAII is in close proximity (<40 nm) to MCT1 in both normoxic and hypoxic MCF-7 cells. The amount of PLA signals did not differ significantly between normoxic and hypoxic conditions, but knockdown of CAII significantly reduced PLA signals, supporting direct interaction between CAII and MCT1.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C86-C90 are supported by PLA data in Figure 2, which provides spatial resolution evidence for protein-protein interaction. The negative control (no primary antibodies) and CAII knockdown control strengthen the specificity of the findings. The conclusion that lactate transport is exclusively mediated by MCT1 (C86) relies on prior work appropriately cited.",
+    "evaluation": "Claims C75-C78 are well-supported by PLA data (Figure 2) with appropriate negative controls (no primary antibodies, CAII knockdown). The <40 nm proximity threshold is appropriate for PLA methodology. The finding that CAII knockdown reduces PLA signals provides strong evidence for specificity of the interaction.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C91",
-      "C92",
-      "C93",
-      "C94"
+      "C79",
+      "C80",
+      "C81",
+      "C82"
     ],
-    "result": "Knockdown of CAII significantly decreased MCF-7 cell proliferation under both normoxia and hypoxia to the same extent as complete inhibition of MCT1 with AR-C155858, while inhibition of CAII catalytic activity with EZA had no effect. This suggests CAII may have additional roles in cell proliferation beyond lactate transport facilitation.",
+    "result": "CAII knockdown reduces MCF-7 cell proliferation to the same extent as MCT1 inhibition. Knockdown of CAII significantly decreased cell proliferation under both normoxia and hypoxia to the same extent as complete inhibition of lactate transport with AR-C155858. However, inhibition of CAII catalytic activity with EZA had no effect on proliferation, suggesting CAII may have additional roles in cell proliferation beyond lactate transport facilitation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C91-C93 are well-supported by cell proliferation data in Figure 3, with appropriate controls (siNeg, EZA, AR-C155858). The speculation about additional CAII functions (C94) is reasonable given the data but remains speculative. The equivalence between CAII knockdown and MCT1 inhibition effects is clearly demonstrated, though the mechanism for this equivalence beyond lactate transport remains uncertain.",
+    "evaluation": "Claims C79-C81 are supported by cell proliferation data (Figure 3) with appropriate controls. The equivalence between CAII knockdown and MCT1 inhibition effects is striking and well-documented. C82 appropriately notes this as speculation requiring further investigation, as the mechanism for additional CAII functions remains unexplored.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C95",
-      "C96",
-      "C97",
-      "C98",
-      "C120",
-      "C121"
+      "C4",
+      "C5",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
     ],
-    "result": "CAII-WT increased MCT1 transport activity by 80-100%, but mutations of Glu69 (E69Q) or Asp72 (D72N) abolished this facilitation, while mutation of nearby Asp71 (D71N) had no effect. Similar results were observed with MCT4. These mutations did not alter CAII catalytic activity, indicating Glu69 and Asp72 are essential for MCT facilitation but not for enzymatic function.",
+    "result": "CAII-Glu69 and CAII-Asp72 function as surface proton antennae essential for MCT transport facilitation. Mutagenesis experiments in Xenopus oocytes showed that CAII-WT increased MCT1 transport by 80-100%, but mutations E69Q and D72N abolished this facilitation while D71N had no effect. Similar results were obtained with MCT4. Importantly, these mutations did not alter CAII catalytic activity, indicating Glu69 and Asp72 mediate a separate function\u2014proton transfer between enzyme and transporter\u2014rendering CAII a bona fide proton antenna.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C95-C98, C120-C121 are strongly supported by mutagenesis data in Figures 4 and 7, showing clear functional separation between catalytic activity and MCT facilitation. The specificity of E69Q and D72N effects versus D71N provides strong evidence for the specific role of these residues. Mass spectrometry and oocyte-based catalytic activity measurements confirm the mutations don't affect enzymatic function.",
+    "evaluation": "Claims C83-C87 and C111-C114 are strongly supported by systematic mutagenesis data (Figures 4, 7) showing loss of MCT facilitation without loss of catalytic activity. The specificity is demonstrated by the D71N control mutation having no effect. Western blots confirm equal protein expression (C87). The conclusion that Glu69/Asp72 function as proton antennae separate from catalytic activity is well-justified by the combined data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C99",
-      "C100",
-      "C101"
+      "C88",
+      "C89",
+      "C90",
+      "C91"
     ],
-    "result": "Injection of the exogenous H+ donor/acceptor 4-methylimidazole (4-MI) rescued the facilitation of MCT1/4 transport activity by CAII-E69Q and CAII-D72N mutants, restoring transport to levels comparable to CAII-WT. This chemical rescue demonstrates that the loss of function in these mutants is due to impaired proton transfer rather than structural disruption.",
+    "result": "4-methylimidazole rescues MCT transport facilitation by CAII-E69Q and CAII-D72N mutants. Injection of 4-MI (which binds near Glu69/Asp72) into oocytes restored MCT1 transport activity when co-expressing CAII-E69Q or CAII-D72N to levels similar to CAII-WT. This chemical rescue demonstrates that an exogenous H+ donor/acceptor can substitute for the mutated residues, supporting their role as proton shuttles.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C99-C101 are well-supported by data in Figure 5, showing that 4-MI specifically rescues the E69Q and D72N mutants but not WT or D71N. The calculation of proton flux (JH) accounting for buffer capacity strengthens the interpretation. The rescue experiment provides strong mechanistic evidence that Glu69 and Asp72 function in proton transfer.",
+    "evaluation": "Claims C88-C91 provide elegant chemical rescue experiments (Figure 5) that strongly support the proton antenna hypothesis. The specificity is demonstrated by 4-MI having no effect on CAII-WT or CAII-D71N (which already function normally). The structural data (C88) showing 4-MI binding near Glu69/Asp72 provides mechanistic context. The proton flux calculations appropriately account for buffer capacity changes.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C102",
-      "C103"
+      "C92",
+      "C93"
     ],
-    "result": "Pull-down assays demonstrated that CAII mutants E69Q, D71N, and D72N all retained binding to the C-terminal tails of MCT1 and MCT4, with no significant changes in binding affinity compared to CAII-WT. This indicates that the loss of transport facilitation by E69Q and D72N is not due to loss of physical binding.",
+    "result": "CAII-E69Q and CAII-D72N retain binding to MCT C-terminal tails. Pull-down assays showed that CAII mutants E69Q, D71N, and D72N all bound to GST-MCT1-CT and GST-MCT4-CT with no significant changes in signal intensity compared to CAII-WT. This indicates the failure of E69Q and D72N to enhance transport is not due to loss of binding.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C102-C103 are supported by pull-down assay data in Figure 6, with appropriate negative controls (GST alone). The quantification shows no significant differences in binding between mutants and WT, clearly separating binding from functional facilitation. This is critical evidence distinguishing binding from proton transfer functions.",
+    "evaluation": "Claims C92-C93 are supported by pull-down assay data (Figure 6) with appropriate negative controls (GST alone). This is a critical control experiment that separates binding from functional facilitation, strengthening the conclusion that Glu69/Asp72 mediate proton transfer rather than binding.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108"
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C112",
+      "C117"
     ],
-    "result": "Mutations of CAII-Glu69, Asp71, or Asp72 (including the double mutant E69Q/D72N) did not alter CAII catalytic activity, while mutation of His64 reduced activity by 78% in vitro. Interestingly, His64A showed only 50% reduction in intact oocytes versus 75% in vitro, suggesting endogenous buffer compounds can partially compensate for the mutation.",
+    "result": "Glu69 and Asp72 are not required for CAII catalytic activity. Mutations E69Q, D71N, D72N, and the double mutant E69Q/D72N did not alter CAII catalytic activity as measured by gas analysis mass spectrometry and in intact oocytes. In contrast, H64A mutation reduced activity by 78%. This demonstrates that Glu69/Asp72 are dispensable for catalysis but essential for MCT facilitation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C104-C108 are well-supported by mass spectrometry data (Figure 7A-B) and oocyte measurements (Figure 7C-D). The differential effect of H64A mutation between in vitro and in vivo conditions (C108) is an interesting observation, though the inference about endogenous buffers is speculative. The data clearly demonstrate that E69 and D72 are not required for catalytic activity.",
+    "evaluation": "Claims C94-C97 are well-supported by catalytic activity measurements using two independent methods (Figure 7). The H64A control demonstrates the assay can detect loss of catalytic activity. The dissociation between catalytic activity (intact) and MCT facilitation (lost) for E69Q/D72N mutants is compelling evidence for separate functional domains.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C109",
-      "C110",
-      "C111",
-      "C112",
-      "C113",
-      "C114",
+      "C6",
+      "C7",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
       "C115",
-      "C116"
+      "C118"
     ],
-    "result": "CAII-H64A failed to enhance MCT1/4 transport activity and could not bind to MCT C-terminal tails, while CAII-H64K retained both binding and transport facilitation despite reduced catalytic activity. This indicates His64 mediates binding to MCT rather than proton transfer between the proteins, though a role in proton transfer cannot be fully ruled out given H64K's residual shuttling activity.",
+    "result": "CAII-His64 mediates binding to MCT rather than proton shuttling between proteins. The H64A mutant failed to enhance MCT transport and showed minimal binding to MCT C-terminals in pull-down assays. However, H64K (which retains some catalytic activity but has altered pKa) enhanced MCT transport to the same extent as WT and retained binding. This indicates His64 functions primarily as a binding site rather than for intermolecular proton transfer, though a role in proton transfer cannot be fully excluded.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C109-C116 are supported by functional data (Figure 8B-D) and pull-down assays (Figure 8E-F), with catalytic activity measurements (Figure 8\u2014supplement 2). The differential behavior of H64A versus H64K provides strong evidence for His64's role in binding. The caveat about H64K's residual activity (C116) is appropriately noted, preventing overinterpretation.",
+    "evaluation": "Claims C100-C107 and C115 are supported by combined functional and binding data (Figure 8). The H64K rescue is particularly informative\u2014despite reduced catalytic activity, it retains MCT facilitation and binding, suggesting binding is the critical function. The caveat in C107 is appropriate given H64K retains some shuttling activity. The conclusion is well-reasoned but acknowledges uncertainty.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C117",
-      "C118",
-      "C119"
+      "C108",
+      "C109"
     ],
-    "result": "Mutations of N-terminal histidines (His3, His4, His10, His15) and Lys9 in CAII did not result in loss of functional interaction with MCT1, indicating these residues are not directly involved in MCT transport facilitation. The inability of the CAII-HEX mutant to facilitate transport may be due to steric hindrance preventing MCT access to the His64 binding site.",
+    "result": "N-terminal histidines and lysine in CAII are not directly involved in MCT transport facilitation. Mutations of His3, His4, Lys9, His10, and His15 (individually or in combination) did not result in loss of functional interaction between MCT1 and CAII, indicating these residues are not directly involved in facilitating MCT transport activity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C117-C118 are supported by functional data in Figure 9 showing all N-terminal mutants retain MCT1 facilitation. The speculation about CAII-HEX steric hindrance (C119) is reasonable but remains speculative. This result effectively rules out the N-terminal histidines as functional sites for MCT interaction.",
+    "evaluation": "Claims C108-C109 are supported by systematic mutagenesis data (Figure 9) showing all N-terminal mutants retain MCT facilitation. This negative result is important for defining the specific residues involved and ruling out alternative binding sites proposed in prior literature.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "CAII-H64A shows differential catalytic activity in vitro versus in vivo. H64A mutation reduced CAII catalytic activity to 25% by mass spectrometry but only to 50% in intact oocytes, suggesting the oocyte cytosol contains unidentified buffer compounds that can partially support the mutant's catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by data from two different assay systems (Figure 7). The inference in C99 is reasonable given the consistent difference between in vitro and in vivo measurements. This observation has implications for interpreting the H64A results but does not undermine the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C74"
+    ],
+    "result": "Background on tumor metabolism and lactate transport. Tumor cells rely on glycolysis and produce large amounts of lactate and acid that must be removed via MCT1/MCT4 to prevent intracellular lactacidosis. In MCF-7 cells specifically, lactate flux is exclusively mediated by MCT1 under both normoxic and hypoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C17 are well-established knowledge supported by appropriate citations. C16 and C74 regarding MCF-7 cells are supported by prior work from the same group (Jamali et al., 2015). This provides essential context for the study but represents background rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CAII expression in various cancers. CAII has been found in brain tumors with strongest expression in malignant species and linked to poor prognosis. CAII shows differential roles in different tumor types\u2014upregulated in some (MDA-MB-231 with doxorubicin, pulmonary neuroendocrine tumors, pancreatic cancer) but reduced in others (non-small cell lung cancer, gastric carcinoma).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 are supported by appropriate citations to published literature. This literature review establishes the clinical relevance of CAII in cancer but represents prior work rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Mechanism of CAII catalytic activity. CA catalysis involves CO2/HCO3- interconversion followed by rate-limiting H+ transfer to bulk solution. In CAII (the fastest \u03b1-CA), His64 shuttles protons between the active site and bulk solvent via a water network, with efficiency fine-tuned by Tyr7, Asn62, and Asn67. Computational modeling suggests the proton wire exits to Glu69/Asp72 on the protein surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 are well-established knowledge supported by appropriate citations. C33 regarding Glu69/Asp72 as a docking site for buffer molecules is from computational modeling (Shinobu and Agmon, 2009) and represents a hypothesis that this study tests experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Prior work on CAII interactions with acid/base transporters. CAII facilitates transport of various acid/base transporters (AE1, AE2, NBCe1, NBCn1, NHE1) through direct binding to C-terminal acidic clusters and requires catalytic activity\u2014termed 'transport metabolon'. However, some studies have challenged this concept, showing no binding or suggesting CAII works best when equally distributed in cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C51 comprehensively review prior literature with appropriate citations. This establishes the controversial nature of CAII-transporter interactions and provides context for why the MCT-CAII interaction (which is catalytic activity-independent) is mechanistically distinct and important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C129"
+    ],
+    "result": "Prior work on CAII/CAIX facilitation of MCT transport. Previous studies by the authors showed CAII enhances MCT1/4 transport independent of catalytic activity, requires C-terminal binding sites (E489EE in MCT1, E431EE in MCT4), and involves His64. Similar catalytic activity-independent facilitation occurs with extracellular CAIX. CAII also facilitates lactate transport in astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C65 and C129 are supported by citations to multiple prior studies by the authors. This establishes the foundation for the current mechanistic investigation. The prior work is appropriately cited and provides essential context, though it represents background rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
       "C122",
       "C123",
       "C124",
       "C125",
       "C126"
     ],
-    "result": "CAII features functionally distinct molecular mechanisms: catalytic activity is mediated by His64-dependent proton shuttling, while MCT transport facilitation involves Glu69/Asp72-mediated proton transfer with His64 serving as a binding site. This represents a complete separation of catalytic and transport-facilitating functions within the same enzyme.",
+    "result": "Theoretical basis for proton antenna function. Mathematical modeling shows that while lactate diffusion exceeds MCT1 turnover rate, proton supply rate is ~15-fold lower than MCT1 turnover, creating local depletion. This implies MCT1 extracts protons from an intermediate 'harvesting' compartment rather than bulk cytosol. CAII could serve as this harvester, capturing protons from membrane protonatable residues and funneling them to the transporter.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C122-C126 represent the major mechanistic conclusion integrating multiple experimental results. The separation of functions is well-supported by the combined mutagenesis, catalytic activity, binding, and rescue experiments. This is a key conceptual advance demonstrating CAII has evolved a specialized proton antenna function distinct from its catalytic mechanism.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C127",
-      "C128",
-      "C129",
-      "C130",
-      "C131",
-      "C132",
-      "C133"
-    ],
-    "result": "The physiological necessity for CAII as a proton antenna derives from the slow diffusion of H+ in the buffered cytosol. Mathematical modeling shows MCT1 extracts H+ at rates ~15-fold faster than diffusion can replenish, requiring an intermediate 'harvesting' compartment. CAII serves this role by capturing protons from membrane-associated protonatable residues and funneling them to the transporter.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C127-C133 integrate theoretical considerations from Mart\u00ednez et al. (2010) with the experimental findings. The mathematical modeling is appropriately cited and the proposed mechanism is consistent with the experimental data. However, this remains a model requiring direct experimental validation of the proton harvesting mechanism.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C136",
-      "C137",
-      "C138",
-      "C139"
-    ],
-    "result": "CAII facilitates lactate flux in MCF-7 cancer cells and mouse astrocytes through non-catalytic, direct interaction, functioning as a proton antenna. This mechanism appears to be a general phenomenon in glycolytic cells that must extrude large amounts of lactate.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C136-C139 are supported by the MCF-7 data presented and prior work in astrocytes (Stridh et al., 2012). The generalization to glycolytic cells (C139) is reasonable but somewhat speculative, requiring validation in additional cell types. The non-catalytic mechanism is well-established by the EZA experiments.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C140",
-      "C141",
-      "C142",
-      "C143",
-      "C144",
-      "C145",
-      "C146"
-    ],
-    "result": "Under hypoxic conditions, extracellular CAIX and intracellular CAII could cooperate via a 'push and pull principle' to enhance lactate transport. While CAII uses Glu69/Asp72 for proton shuttling, CAIX lacks analogous residues but possesses a proteoglycan-like (PG) domain rich in glutamate and aspartate that may function as an extracellular proton antenna.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C140-C146 integrate current findings with prior work on CAIX (Jamali et al., 2015; Ames et al., 2018). The 'push and pull' model is well-reasoned and consistent with the data showing more pronounced CAII knockdown effects in hypoxia. The proposed role of the CAIX PG domain is supported by cited work, though the parallel to CAII's Glu69/Asp72 mechanism remains to be directly demonstrated.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C147",
-      "C148",
-      "C149"
-    ],
-    "result": "While CAII knockdown decreased but did not abolish lactate transport, it reduced cell proliferation to the same extent as complete MCT1 inhibition. This suggests CAII has multiple cellular functions including acid/base regulation, lactate transport facilitation, and potentially apoptosis regulation.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C147-C148 are supported by the experimental data, but the interpretation (C149) regarding multiple CAII functions is speculative. The discrepancy between partial transport inhibition and complete proliferation effect suggests additional CAII roles, but these are not directly demonstrated. The cited work on apoptosis (Zhou et al., 2015) supports the speculation but doesn't establish the mechanism in MCF-7 cells.",
+    "evaluation": "Claims C119-C126 are supported by citations to mathematical modeling (Mart\u00ednez et al., 2010) and prior experimental work. The theoretical framework provides strong mechanistic rationale for why a proton antenna would be physiologically necessary. The inference that CAII serves this function (C123) is reasonable given the experimental data, though the modeling itself is from prior work.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R15",
+    "result_id": "R17",
     "claim_ids": [
-      "C2",
-      "C3",
-      "C4",
-      "C5",
-      "C6",
-      "C7",
-      "C8",
-      "C150",
-      "C151"
+      "C127",
+      "C128",
+      "C130",
+      "C131"
     ],
-    "result": "CAII enhances proton-driven lactate flux in MCF-7 cells through colocalization with MCT1 and functions as a proton antenna using surface residues Glu69 and Asp72 for proton transfer, while His64 mediates binding. This non-catalytic mechanism drives basic lactate flux and is prerequisite for further CAIX-mediated facilitation under hypoxia.",
+    "result": "CAII facilitates lactate flux in cancer cells through non-catalytic direct interaction as a proton antenna. Based on knockdown experiments showing reduced transport without catalytic inhibition, and PLA showing close colocalization, CAII likely forms a complex with MCT1 to facilitate lactate flux by functioning as a proton antenna. This may be a general phenomenon in glycolytic cells, with CAII and CAIX potentially cooperating via a 'push and pull principle' under hypoxia.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims represent the core findings of the manuscript, integrating results from cancer cell experiments (Figures 1-3) with mechanistic studies in oocytes (Figures 4-9). The evidence is comprehensive, including knockdown studies, colocalization, mutagenesis, binding assays, and rescue experiments. The conclusion about CAIX cooperation is well-supported by the differential hypoxic effects.",
+    "evaluation": "Claims C127-C128 are well-supported by the combined data from this study. C130-C131 are reasonable speculations based on the findings in cancer cells and prior work in astrocytes, though they appropriately acknowledge these as inferences requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Comparison of CAII and CAIX proton antenna mechanisms. In CAII, Glu69/Asp72 mediate proton shuttling between enzyme and transporter. CAIX lacks analogous residues in its catalytic domain but has a PG domain with 18 glutamate and 8 aspartate residues that could function as an extracellular proton antenna. Knockdown of either CAIX or CAII reduces proliferation, suggesting removal of the antenna on one side is sufficient to impair transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 integrate findings from this study with prior work on CAIX (Jamali et al., 2015; Ames et al., 2018). The comparison is well-reasoned and supported by structural analysis (C133) and functional data (C136). The conclusion about cooperativity (C137) is a reasonable inference from the proliferation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "CAII has multiple cellular functions including apoptosis regulation. Prior work (Zhou et al., 2015) showed CAII knockdown reduced clonogenicity and tumor growth and found associations with mitochondrial apoptosis proteins, suggesting CAII has multiple functions including acid/base regulation, lactate transport facilitation, and apoptosis regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by appropriate citations to published work. This provides context for the observation that CAII knockdown has effects on proliferation equivalent to complete MCT inhibition (C82), suggesting additional functions beyond lactate transport. However, this represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C116",
+      "C141",
+      "C142"
+    ],
+    "result": "Summary conclusions about CAII as a proton antenna with distinct functional domains. CAII features a moiety (Glu69/Asp72) that exclusively mediates proton exchange with MCT to facilitate transport activity, operating by a mechanism completely different from catalytic activity. This enhancement of proton movement drives basic lactate flux and is a prerequisite for further facilitation by CAIX under hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C116, C141-C142 represent the main conclusions of the study, well-supported by the combined experimental evidence. The conclusion that CAII has functionally distinct domains for catalysis (His64-mediated) versus MCT facilitation (Glu69/Asp72-mediated) is strongly supported by the mutagenesis, rescue, and binding experiments.",
     "result_type": "MAJOR"
   }
 ]

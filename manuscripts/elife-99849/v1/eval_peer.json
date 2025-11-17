@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C58"
+    ],
+    "result": "The authors developed NPC-RSS using a comprehensive machine learning approach, evaluating 113 algorithm combinations to select the glmBoost+NaiveBayes model, which identified 18 key genes for predicting radiotherapy sensitivity in NPC patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly praised the comprehensive machine learning approach. Reviewer 1 stated the authors 'developed a robust machine learning approach,' Reviewer 2 noted 'the study employed a comprehensive approach by integrating multiple machine learning algorithms,' and Reviewer 3 highlighted 'the combination of multiple machine learning algorithms and cross-validation was used to select the best predictive model.' No concerns were raised about the methodology or model selection process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "NPC-RSS demonstrated strong predictive performance with AUC values of 0.996 in the training set, 0.823 in the external validation set (GSE32389), and an overall sample-weighted AUC of 0.932 across combined datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirmed the predictive performance. Reviewer 2 stated 'the predictive performance of NPC-RSS was validated using both public and in-house datasets, demonstrating its potential clinical applicability,' and Reviewer 3 noted 'the study used public datasets and in-house cohort data for validation, confirming the good predictive performance of NPC-RSS.' However, Reviewer 2 noted the small sample size (34 patients) as a weakness that 'might limit the generalizability of the findings.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C77"
+    ],
+    "result": "Cell line validation confirmed that SMARCA2 and CD9 gene expression patterns in radiation-sensitive versus resistant CNE2 cells were consistent with NPC-RSS predictions, with significantly higher expression in the sensitive group (p<0.001) and correspondingly higher sensitivity scores.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly validated this experimental evidence. Reviewer 1 stated 'some key aspects of this signature have been validated in vitro using relevant cell lines which strengthens the conclusions,' and Reviewer 2 noted 'the consistency of key gene expression with NPC-RSS was validated in the authors' own cell lines, providing additional experimental evidence.' No concerns were raised about these validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C63"
+    ],
+    "result": "NPC-RSS key genes showed close associations with immune features, including significant correlations between specific genes (SMARCA2, DMC1, CD9, KNG1) and various immune cell types, with the radiosensitive group exhibiting elevated levels of T follicular helper cells, Tregs, and activated NK cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed the immune associations. Reviewer 2 stated 'the authors conducted extensive analyses to investigate the biological mechanisms underlying the association between NPC-RSS and radiotherapy response, including immune characteristics,' and Reviewer 3 noted 'functional enrichment analysis revealed close associations between NPC-RSS key genes and immune characteristics.' The immune infiltration findings were specifically praised by Reviewer 3 as clarifying 'the mechanism of NPC-RSS in predicting radiotherapy sensitivity from an immunological perspective.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C67"
+    ],
+    "result": "Gene functional analysis revealed that NPC-RSS key genes influence critical signaling pathways including Wnt/\u03b2-catenin, JAK-STAT, NF-\u03baB, and T cell receptors, with SMARCA2 enriching WNT_BETA_CATENIN_SIGNALING, PI3K_AKT_MTOR_SIGNALING, and other pathways, while DMC1 enriched INTERFERON_GAMMA_RESPONSE and IL2_STAT5_SIGNALING pathways.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the pathway analysis findings. Reviewer 2 noted the authors investigated 'relevant signaling pathways' as part of their biological mechanism analysis, and Reviewer 3 stated 'functional enrichment analysis revealed close associations between NPC-RSS key genes and...signaling pathways related to disease progression, providing a biological basis for NPC-RSS in predicting radiotherapy sensitivity.' No concerns were raised about these pathway enrichment results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C64"
+    ],
+    "result": "Single-cell analysis of 28,957 cells identified 17 cell subpopulations across seven cell types, revealing that the radiotherapy-sensitive group exhibited richer immune infiltration with immune cell dominance, while the resistant group was mainly composed of malignant epithelial and stromal cells, with NPC-RSS scores significantly higher in sensitive group cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly endorsed the single-cell findings. Reviewer 3 specifically highlighted that 'grouping NPC samples according to NPC-RSS showed that the radiotherapy-sensitive group exhibited a more enriched and activated state of immune infiltration compared to the radioresistant group. In single-cell samples, NPC-RSS was higher in the radiotherapy-sensitive group, with immune cells playing a dominant role.' No methodological concerns were raised about the single-cell analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Spearman correlation analysis showed that key NPC-RSS genes (SMARCA2, DMC1, CD9, KNG1) were positively correlated with high expression levels of various radiotherapy sensitivity-related genes including TP53, EGFR, BRCA1, BRCA2, ATM, and others.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged these correlation findings as part of the broader biological mechanism investigation. Reviewer 2 noted the authors investigated 'radiosensitivity-related gene expression' and Reviewer 3 stated the analysis revealed 'close associations between NPC-RSS key genes and...expression of radiotherapy sensitivity-related genes.' No specific concerns were raised about these correlation analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "The authors hypothesize that SMARCA2 may regulate NPC radiosensitivity via the Wnt/\u03b2-catenin pathway, that immune cells might influence tumor responsiveness to treatment prior to radiotherapy, and that NPC-RSS-associated radiosensitivity may be exploitable through combinatorial immunotherapy approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers did not explicitly critique these speculative claims, Reviewer 2 identified a key weakness: 'the authors did not perform functional experiments to directly validate the roles of the identified key genes in radiotherapy sensitivity, relying instead on associations with immune features and signaling pathways.' This indicates the mechanistic hypotheses lack direct experimental validation and remain inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C21",
+      "C57",
+      "C78"
+    ],
+    "result": "The model construction process identified specific gene contributions, with the top 5 genes being SMARCA2, DMC1, CD9, PSG4, and KNG1, and six genes (SMARCA2, DMC1, KNG1, NTRK3, CLDN1, CDK5RAP3) having weight coefficients with absolute values greater than 10. The 18 gene features exhibited significant differential expression between sensitive and resistant groups.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about these specific gene identification and ranking results, which are integral to the validated machine learning model. The differential expression findings support the model's biological basis, which reviewers acknowledged when praising the comprehensive approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study collected samples from 34 NPC patients with appropriate ethical approval, established radiation-resistant cell lines through sequential irradiation protocols, and performed immune infiltration analysis using CIBERSORT algorithm, with quality control yielding 28,957 high-quality cells for single-cell analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the methodological rigor but identified the sample size as a limitation. Reviewer 2 noted 'the sample size of the in-house dataset used for training the model was relatively small (34 patients), which might limit the generalizability of the findings.' However, no concerns were raised about ethical procedures, cell line establishment, or analytical methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Background claims about NPC epidemiology, radiotherapy resistance rates, and the biological roles of key genes (SMARCA2, DMC1, CD9, PSG4) and pathways (Wnt/\u03b2-catenin, TGF-\u03b21) in cancer and radiotherapy response, supported by citations to previous literature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not question these background claims, which are standard contextual information supported by citations. Reviewer 1 noted the publication 'will be of interest to clinicians working on this indication,' implicitly accepting the clinical context. These claims provide established scientific context rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Single-cell analysis identified cell types using standard marker genes (CD3D/CD8A/CD4 for T cells, C1QB/LYZ/AIF1 for myeloid cells, etc.), with most of the 18 NPC-RSS genes related to immune cells, and several cell types consisting of multiple heterogeneous subpopulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about cell type identification methods or the observation of immune-related gene expression patterns. These are standard single-cell analysis procedures using well-established marker genes, and the findings support the broader immune-related conclusions that reviewers explicitly endorsed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The authors conclude that NPC-RSS can serve as a predictive tool for radiotherapy sensitivity in NPC, offering new insights for precise screening of patients who may benefit from radiotherapy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers praised the study as 'important and convincing' (Reviewer 1) with 'potential clinical applicability' (Reviewer 2), they also identified significant limitations. Reviewer 3 noted concerns about generalizability to other NPC subtypes, lack of accounting for radiotherapy protocol differences, oversimplification through binary classification, and failure to incorporate clinical variables like tumor stage and concurrent chemotherapy. These limitations temper the certainty of the clinical utility claim.",
+    "result_type": "MAJOR"
+  }
+]

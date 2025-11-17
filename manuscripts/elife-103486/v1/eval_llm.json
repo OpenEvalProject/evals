@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "MagIC-cryo-EM reduces sample concentration requirements from typical cryo-EM levels (0.05-5.0 mg/mL) to <0.0005 mg/mL, addressing a major limitation of conventional cryo-EM methods that restricts applicability to abundant targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 establish the problem (high concentration requirements of conventional cryo-EM) and the solution (MagIC-cryo-EM's dramatic reduction in concentration requirements). The concentration reduction is supported by experimental data throughout the manuscript (C2, C22, C30, C59), with quantitative measurements showing ~100-1000 fold improvement over conventional methods. The comparison to existing methods (jet vitrification, affinity grids) is well-documented with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "MagIC-cryo-EM employs a spacer module (11 nm 3HB + 60 nm SAH proteins) with exchangeable target-capturing modules that successfully places particles outside bead-associated scattering, and magnetic concentration significantly increases bead retention on grids while ensuring >100 particles per micrograph.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C33, C60-C63 describe the technical implementation and advantages of MagIC-cryo-EM. The spacer module design is supported by optimization experiments (Figure 2, Figure 2\u2014figure supplement 1) and citations for component proteins. Quantitative data demonstrates magnetic concentration effectiveness (C33, Figure 2F-I) and particle accumulation (C30, C63). The four stated advantages (C60-C63) are each supported by experimental evidence and figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MagIC-cryo-EM adapted to ChIP successfully determined 3.6-4.3 \u00c5 resolution structures of H1.8-GFP-bound nucleosomes from interphase and metaphase chromosomes using only 5 ng per grid, revealing that H1.8 binding modes are similar between cell cycle stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C30-C37 demonstrate successful application of MagIC-cryo-EM to native chromatin. The resolution (C32: 3.6 \u00c5), sample requirements (C22: 5 ng/grid), particle collection efficiency (C30: ~100 particles/bead at 0.00047 mg/mL), and structural findings (C34-C37: similar distributions and indistinguishable structures between interphase/metaphase) are all supported by experimental data with appropriate figure references. The 55.7% classification rate (C31) demonstrates enrichment efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DuSTER, a particle curation method based on reproducibility of particle recentering during 2D classification, dramatically improves structural reconstruction of small particles with low signal-to-noise ratios without requiring human supervision or machine learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C40, C64-C66 describe DuSTER methodology and its effectiveness. The principle (C39: low S/N particles not reproducibly recentered) is demonstrated in Figure 4\u2014figure supplement 2. The dramatic improvement (C40) is shown in Figure 4B with DTH=20 \u00c5. The method's utility for small particles (C64-C65) is demonstrated by successful NPM2 structure determination. The claim about minimal supervision (C66) is accurate as only the distance threshold requires determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C75",
+      "C76"
+    ],
+    "result": "Combining MagIC-cryo-EM and DuSTER resolved sub-nanometer structures of NPM2 co-isolated with H1.8 from interphase chromosomes, revealing distinct open and closed structural variants with differential H1.8 binding, where NPM2 forms a pentamer and the open form shows stronger H1.8 association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C38, C41-C45, C52-C57, C75-C76 describe the NPM2 structural findings. The identification of NPM2 is supported by MS (C42, Figure 4D), western blotting (C43), and structural comparison (C45). The pentameric structure (C41, C75) and open/closed variants (C52, C76) are supported by cryo-EM analysis (Figure 5, Figure 4\u2014figure supplement 6-7). Structural details (C53-C57) describing \u03b28 conformations and H1.8 density differences are supported by density maps and atomic models. The interphase-specific enrichment (C38, C43) is demonstrated by fractionation and western blotting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "The majority of chromatin-bound H1.8 in interphase exists as a complex with NPM2 rather than nucleosomes, suggesting an interphase-specific mechanism where NPM2 sequesters H1.8 from nucleosomes to support rapid DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C70-C71, C73 present the biological interpretation of the structural findings. C68 is supported by combined MS, MagIC-cryo-EM, and DuSTER data (Figure 5C-D). C70 is supported by experimental data (Figure 3\u2014figure supplement 1). C71 is a reasonable inference from C70 and the observed interphase-specific NPM2-H1.8 association. C73 is presented as a speculative model with appropriate citation (Choppakatla et al., 2021) for supporting context, making it a supported interpretation rather than an unsupported claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Substrate binding likely induces NPM2 structural transition to the open form, which provides a stable association platform by exposing acidic surfaces, with each subunit independently adapting open/closed conformations within a pentamer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C77-C79 present mechanistic interpretations of NPM2 structural variants. C77 is supported by comparison to crystal structure and AF2 predictions (Figure 5\u2014figure supplement 1B-D), both determined without substrates. C78 is supported by structural observations of acidic tract positions and H1.8 density (C55-C57). C79 is supported by C1 symmetry analysis (Figure 5\u2014figure supplement 2) showing different degrees of openness within pentamers. These are reasonable inferences from the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "Previous work established that nucleosome core particle structures are essentially identical between interphase and metaphase, with major variation attributable to H1.8 binding status, where H1.8 in metaphase is stably bound at the on-dyad position but reduced to ~30% in interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C23-C24 summarize prior work by the authors and others. All claims are supported by appropriate citations (Arimura et al., 2021; Luger et al., 1997; Chua et al., 2012; Bednar et al., 2017; Zhou et al., 2015, 2021; Dombrowski et al., 2022; Choppakatla et al., 2021; Maresca et al., 2005; Willcockson et al., 2021; Yusufova et al., 2021). The quantitative claim about 30% reduction (C23) is specifically cited to Arimura et al., 2021. These establish the biological context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Recent cryo-EM advances enable structural characterization of biomolecules from native conditions, but chromatin-associated complexes are particularly challenging due to heterogeneity and scarcity, with ChIP yielding insufficient material for conventional structural analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 establish the scientific context and problem statement. All claims are supported by appropriate citations: C7 (Azinas and Carroni, 2023), C13 (Skrajna et al., 2020), C15 (Hebbes et al., 1988; Solomon et al., 1988; Gilmour and Lis, 1986; Zou et al., 2022; Wang et al., 2013). C14 and C16 are reasonable inferences from cited work and general knowledge about chromatin biology and ChIP limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C69",
+      "C74"
+    ],
+    "result": "NPM2 is a known H1.8 chaperone that replaces sperm protamines with histones and can extract linker histones from chromatin, with previous studies suggesting pentameric or decameric substrate binding and acidic tracts mediating histone interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C46-C51, C69, C74 provide background on NPM2 biology and previous structural studies. All claims are supported by appropriate citations: C25 (Miller and Heald, 2015), C46 (Laskey et al., 1978; Philpott et al., 1991; Ohsumi and Katagiri, 1991), C47 (Dimitrov and Wolffe, 1996; Ramos et al., 2005; Ba\u00f1uelos et al., 2007), C48 (Dutta et al., 2001), C49-C50 (Platonova et al., 2011; Ramos et al., 2010; Taneva et al., 2009; Lorton et al., 2023), C51 (Ba\u00f1uelos et al., 2007; Gadad et al., 2011), C69 (Dimitrov and Wolffe, 1996), C74 (Dutta et al., 2001; Platonova et al., 2011; Ramos et al., 2010; Taneva et al., 2009). C26 is supported by experimental data (Figure 3\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C67"
+    ],
+    "result": "MagIC-cryo-EM requires only 5 ng per grid, comparable to ChIP-seq requirements, representing a 100-1000 fold reduction in concentration requirements compared to conventional cryo-EM methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C67 quantitatively summarize the method's sample requirements. Both claims are supported by experimental data (C22, C30) and appropriate citations for comparison (Kelly et al., 2008; Llaguno et al., 2014; Yu et al., 2016; Zou et al., 2022). The 100-1000 fold improvement is consistent with the concentration reduction from 0.05-5.0 mg/mL to <0.0005 mg/mL.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "MagIC-cryo-EM has been tested only with H1.8-bound nucleosome and NPM2 using anti-GFP nanobodies, and application to other targets requires consideration of pre-fractionation, bead aggregation, complex stability, and optimal particle loading (500-2000 particles/bead for nucleosomes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 acknowledge limitations and provide guidance for future applications. C80 accurately describes the current scope of validation. C81-C84 are reasonable considerations based on the experimental experience described. C85 provides specific optimization data from the nucleosome experiments. These are appropriately presented as limitations and considerations rather than unsupported claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Current MagIC-cryo-EM workflow requires manual bead selection on MMM maps, limiting throughput to 500-1000 micrographs/day, and the Vitrobot vitrification step occurs without magnetic force, potentially causing bead loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 describe current technical limitations of the method. C86-C87 accurately describe the workflow and quantify the throughput limitation. C88 identifies a technical constraint of the Vitrobot equipment. These are honest assessments of current limitations supported by the authors' experimental experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The NPM2 structure has modest map quality with potentially overestimated resolution, and only partial H1.8 density is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 acknowledge limitations in the NPM2 structural analysis. These are honest assessments of data quality. C90 is directly observable from the density maps (Figure 5B). C89 is a reasonable caveat given the small size (60 kDa ordered region) and low S/N of the particles. The authors appropriately acknowledge these limitations rather than overstating the quality of their results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Two basic patches at the C-terminal tail of NPM2 may contribute to cell-cycle-dependent DNA binding as they are flanked by potential Cdk1 phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is presented as speculation based on sequence analysis. While the observation of basic patches flanked by potential Cdk1 sites is likely accurate from sequence inspection, no experimental validation is provided. This is appropriately presented as speculation ('may contribute') but lacks supporting data or citations. The claim is reasonable but unvalidated.",
+    "result_type": "MINOR"
+  }
+]

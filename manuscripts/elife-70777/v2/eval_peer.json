@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C37",
+      "C38"
+    ],
+    "result": "The model predicts that bottleneck width is a crucial factor determining resource allocation in sensory systems. For narrow bottlenecks (<10% of input neurons), high-density regions are exclusively or disproportionately represented (expansion). For intermediate bottlenecks, low-density regions expand beyond proportional allocation (contraction of high-density regions). For wide bottlenecks, allocation converges to a constant ratio closer to proportional representation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested major clarifications about model assumptions (prompt 1), including constraints on variance, output activity equalization, and the cost function. They also requested more mathematical detail in the main text (prompt 2) and additional simulation examples with more complex scenarios (prompt 3). While reviewers found the work 'interesting and engaging' and noted the analytical results as a 'clear strength,' they indicated the formal arguments were 'more fuzzy than need be' without explicit mathematical presentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C40"
+    ],
+    "result": "The model predicts that increased receptor activation leads to greater allocation to the stimulated region, with this effect being dependent on bottleneck width. The largest effects occur for smaller bottlenecks, suggesting that plasticity should be relatively stronger under extreme resource constraints than when information limits are generous.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenged the interpretation of plasticity results in Figure 4, stating 'What are the dashed lines? Is it correct that 4B is a simple restatement of the fact that the lines in 3A left are more spread for smaller bottlenecks? Interpreting this as a sign of more plasticity is an overstatement' (prompt L). This directly questions the claim that the model demonstrates stronger plasticity under resource constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model shows that receptor activation plays a bigger role than receptor density in determining allocation regimes. At narrow bottlenecks, the spread of possible allocations is much wider when varying activation ratio compared to density ratio. When regions with higher receptor densities also show greater activation, both effects reinforce each other and drive allocation further from proportional representation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested clarification about the model's treatment of density and activation, noting 'The model makes no distinction between the density of sensors in different regions and the exponential decay of the covariance functions... perhaps it could be explained better (maybe with additional illustrations?)' (prompt C). They also found Figure 3 confusing: 'A/B-labels seem to be too large; the meaning of the boxes of different colors and the lines was unclear to me' (prompt K), and in Round 2 stated 'The brackets in Figure 3 were found to be very confusing, please revise' (prompt 9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The model's predictions are qualitatively robust across different covariance functions (Mat\u00e9rn with varying smoothness parameters). Allocation curves show similar patterns where regions with higher density, activation, or both are systematically over-represented, though smoother covariances yield less extreme differences in allocation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers requested numerical experiments with different covariance functions to demonstrate robustness (prompt 3), specifically asking for Mat\u00e9rn covariance with nu=3/2. However, in Round 2, reviewers noted 'The covariance functions in Figure 5 are not very different, it is not surprising that these result in very similar outcomes. Comment on this or consider revising' (prompt 10), suggesting the robustness test was not sufficiently stringent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C41"
+    ],
+    "result": "The model shows a close match between predicted and empirical cortical allocations in the star-nosed mole. Models including receptor activation ('receptor usage only' and 'full models') most accurately predict empirical cortical representation sizes, suggesting the star-nosed mole employs an efficient coding strategy based on decorrelation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised multiple concerns about the star-nosed mole analysis. They requested more detail on how predictions were generated and suggested plotting predictions for different bottleneck sizes (prompt 4). They challenged the claim that the full model is better: 'The claim that full model has better MSE is not very convincing... the full model has an additional degree of freedom, so naturally it should be better... it's hard to make a strong claim about the tiny change in MSE. Please weaken the claim' (prompt B). They also requested code for converting contact statistics to receptor activation statistics, noting 'the text in the manuscript is missing much of the necessary detail for the reproduction of this work' (prompt 4). Additionally, they asked about RMSE normalization and whether 'the RMSE is mainly driven by ray 11, the outlier. How stable is the inferred conclusion if ray 11 is left out?' (prompt M).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C27",
+      "C55"
+    ],
+    "result": "The model is based on efficient coding via decorrelation/redundancy reduction, which has been found to be a strong driver in early sensory processing including vision, audition, and touch, particularly in low-noise regimes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised fundamental concerns about the theoretical framework. They stated the manuscript 'equate[s] efficient coding with decorrelation' and that 'Efficient coding is a broad conceptual framework, and not a single algorithm such as decorrelation or even redundancy reduction. Currently, the manuscript makes the impression that the two are the same' (prompt 1). In Round 2, they emphasized 'It is not stated clearly that decorrelation is an information maximizing transform only in absence of noise, which is a key assumption of the model' (prompt 2) and requested the authors not claim the analysis 'maximizes information' without qualification since 'this work only deals with variances' (prompt 3). They also noted concerns about lines 87-88 stating decorrelation and MSE minimization are equivalent, saying 'in a general case these two goals are not equivalent' (prompt 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The model assumes zero covariance between regions (e.g., between different fingers or rays), though in touch, contact might often be made with multiple appendages simultaneously, which would induce far-ranging non-monotonic correlations. However, receptive fields in early somatosensory cortex are strongly localized to single appendages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly challenged this assumption in Round 2: 'The assumption that the covariance between regions is zero is quite a strong one and seems central to the paper. This should be justified or at least discussed how realistic it is. In the finger tip example, one of course typically touches objects not with one finger but with multiple ones' (prompt 8). This directly questions a central modeling assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background claims about cortical magnification in sensory systems: topographic representations don't scale proportionally to input regions; foveal representation and fingertips are magnified cortically; cones and mechanoreceptors show higher densities in fovea and fingertips respectively; fingertips are more likely to contact objects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background facts cited from the literature. Reviewers did not question these claims and they serve as motivation for the study. The reviewers' positive assessment that 'This problem is largely unexplored, the results are novel' implicitly accepts the background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Background claims about factors driving cortical allocation: receptor density alone is a poor predictor of magnification; cortical regions can expand/contract dynamically with usage; both receptor density and stimulus statistics drive allocation; cortical magnification depends on experience.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims from the literature were not challenged by reviewers. They provide context for why the model considers both density and activation. Reviewers' request to clarify how both factors contribute (prompt 1) implicitly accepts that both are relevant factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Discussion claims about implications for vision and touch: magnification should be more extreme with tighter bottlenecks; the optic nerve serves as a narrow bottleneck; developmental and aging changes affect bottleneck width; magnification occurs throughout sensory hierarchy; cortical magnification correlates with perceptual acuity; spatial discrimination improves with training up to limits related to receptor density.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are discussion points and predictions based on the model, supported by literature citations. Reviewers did not challenge these specific claims, though they requested clarification of model assumptions that underlie the predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Discussion claims about model generality and limitations: PCA is widely used for decorrelation; the results generalize to methods using PCA like ICA; response nonlinearities and noise structure can affect efficient coding strategies and might influence allocations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are acknowledged limitations and extensions discussed by the authors. Reviewers requested more explicit treatment of noise and nonlinearities (prompt 1) but did not challenge the basic claims about model limitations.",
+    "result_type": "MINOR"
+  }
+]

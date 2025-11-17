@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides background on E. faecalis as a hospital pathogen, its conjugative plasmid pCF10, and the cell wall-anchored proteins PrgA, PrgB, and PrgC encoded by the pCF10 operon. PrgB is characterized as a major adhesin and virulence factor that mediates aggregation, biofilm formation, and conjugation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 are primarily background claims supported by citations to published literature and established knowledge. These claims provide context for the study and are well-documented in prior work. The claims accurately represent the current understanding of E. faecalis, pCF10, and PrgB function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Previous work by the authors characterized the polymer adhesin domain (PrgB246-558), showing it has a lectin-like fold, binds both LTA and eDNA competitively, and compacts eDNA by wrapping it around a positively charged surface. The domain contains a conserved cation-binding site whose function remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 summarize the authors' previous structural and functional characterization of the polymer adhesin domain. These are supported by citations to their prior work and published literature. The claims accurately represent established findings that provide foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C35",
+      "C36",
+      "C42",
+      "C73"
+    ],
+    "result": "The current study reveals that PrgB contains four immunoglobulin-like domains (two CSA and two CSC domains arranged in tandem pairs) in addition to the previously characterized polymer adhesin domain. The full domain architecture includes an N-terminal disordered region, a coiled-coil domain, the polymer adhesin domain, a linker, four Ig-like domains, and a C-terminal LPXTG anchor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C35, C36, C42, and C73 describe the major structural finding of the manuscript based on X-ray crystallography (1.85 \u00c5 resolution) and bioinformatics analysis. The crystal structure (PDB: 8BEG) provides direct experimental evidence for the four Ig-like domains. The domain architecture is well-supported by structural data shown in Figures 1A and 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The crystal structure of PrgB584-1233 was solved at 1.85 \u00c5 resolution, revealing four Ig-like domains with internal isopeptide bonds, a conserved Mg2+ binding site in CSA2, and absence of the BAR domain found in homologous proteins. The polymer adhesin domain was cleaved during crystallization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 describe detailed structural features from the X-ray crystal structure. The crystallographic data (Table 1) shows good refinement statistics (Rwork=20.9%, Rfree=24.5%, 1.85 \u00c5 resolution). The structural features (isopeptide bonds, metal binding, absence of BAR domain) are directly observed in the electron density and supported by comparison to homologous structures via DALI analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cryo-EM analysis of full-length PrgB (with and without DNA) yielded low-resolution structures (8 and 11 \u00c5) that weakly suggested the polymer adhesin domain might interact with the stalk domain in the absence of DNA. However, in vitro binding assays (SEC and native PAGE) showed no interaction between the isolated domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C52 describe cryo-EM experiments with conflicting results. The low resolution (8-11 \u00c5) limits interpretation of the cryo-EM data (C50), and the weak indication of domain interaction (C51) is contradicted by negative in vitro binding results (C52). The authors appropriately acknowledge the uncertainty, but the low resolution and contradictory data make this result inconclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Deletion analysis of PrgB domains shows that the COI domain and multiple Ig-like domains are required for aggregation, biofilm formation, and conjugation. Single Ig-like domain deletions (\u0394CSA1 or \u0394CSC2) rescue aggregation but not biofilm formation or conjugation. Protein stability is reduced for variants lacking COI or multiple Ig-like domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C67 describe systematic deletion analysis with three independent biological replicates and appropriate statistical analysis (one-way ANOVA). The data in Figure 3 clearly show differential effects of domain deletions on aggregation, biofilm formation, and conjugation. Western blot analysis (Figure 3-supplement 1) supports the protein stability interpretations. The decoupling of aggregation from biofilm/conjugation phenotypes is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Point mutations in the conserved Ser-Asn-Glu binding cleft of the polymer adhesin domain fully restore aggregation but fail to rescue biofilm formation or conjugation efficiency. These mutations do not affect eDNA binding affinity in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe a critical finding showing functional decoupling. The phenotypic data (Figure 4A-C) with three biological replicates and statistical analysis clearly demonstrate that binding cleft mutations restore aggregation but not biofilm/conjugation. The EMSA data (Figure 4-supplement 1) confirms that eDNA binding is unaffected, ruling out loss of DNA binding as the mechanism. This is strong evidence for an additional function of the conserved site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C102"
+    ],
+    "result": "For the first time, the study demonstrates decoupling of cellular aggregation from biofilm formation and conjugation in PrgB mutants. The conserved Ser-Asn-Glu site in the polymer adhesin domain likely mediates an additional, currently unknown function required for biofilm formation and conjugation but not aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C89, C90, C91, C92, and C102 represent the major conceptual advance of the manuscript. The decoupling is demonstrated by two independent lines of evidence: (1) single Ig-domain deletions that rescue aggregation but not biofilm/conjugation (C61, C63, C67), and (2) binding cleft mutations that rescue aggregation but not biofilm/conjugation (C68-C69, C89). The conclusion that PrgB has additional functions beyond LTA/eDNA binding is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The crystal structure reveals that the two RGD motifs in PrgB are located in CSA1 and CSA2 but are not surface-exposed. Instead, they play structural roles at the interfaces between CSA1-CSC1 and CSA2-CSC2. This argues against the previously proposed direct interaction between RGD sequences and host integrins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 reinterpret previous findings based on the new structural data. The crystal structure (Figure 5) clearly shows the RGD motifs are buried at domain interfaces, not surface-exposed. This structural evidence directly contradicts the previous integrin-binding hypothesis. The inference that RGD mutations likely destabilize domain folding (C95) is reasonable and supported by citations to previous phenotypic data showing decreased biofilm formation in RGD mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C87",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors hypothesize that the Ig-like domains function as a rigid stalk to present the polymer adhesin domain at the correct distance from the cell wall and to position it for PrgA-mediated cleavage. The exact distance may be critical for biofilm formation and conjugation but not for LTA-mediated aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34, C87, C97-C101 are hypotheses proposed by the authors to explain their findings. While the hypotheses are reasonable and consistent with the data (domain deletions affect biofilm/conjugation more than aggregation), they lack direct experimental validation. The 'rigid stalk' model is plausible given the structural features (isopeptide bonds stabilizing domains), but no measurements of stalk rigidity or distance requirements are provided. These remain speculative interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The Ig-like domains of PrgB show structural homology to Streptococcal surface proteins from the oral cavity. Unlike homologous proteins that bind various substrates (fimbria, collagen, SAG), no specific substrate binding has been identified for PrgB's Ig-like domains. PrgB lacks the BAR domain crucial for interactions in homologous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 describe structural comparisons and negative results. The structural homology (C74) is supported by DALI analysis and citations. The absence of evidence for Ig-domain substrate binding (C76) and lack of BAR domain (C77) are clearly documented. The claim that only eDNA and LTA bind PrgB (C78) is supported by previous work. These are well-supported comparative observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The COI domain is important for PrgB stability. PrgB\u0394COI shows substantially decreased protein levels after overnight incubation. AlphaFold predicts the COI domain interacts with the linker region containing the PrgA cleavage site, suggesting it may protect PrgB from proteolytic cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe the role of the COI domain. The instability of PrgB\u0394COI is clearly shown by western blot (Figure 3-supplement 1B). The AlphaFold prediction (C82, Figure 2-supplement 5) supports the proposed protective mechanism (C83). While the protective mechanism is somewhat speculative, the experimental data on protein instability is solid, and the AlphaFold prediction provides structural support for the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Deletion of all Ig-like domains abolishes PrgB function. Based on sensitive biofilm and conjugation assays, even removing a single Ig-like domain strongly decreases PrgB function, though aggregation assays suggest three Ig-like domains may be sufficient for some activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 summarize the domain deletion results. The complete loss of function with all Ig-domains deleted (C84) is clearly shown in Figure 3. The conclusion that single domain deletions strongly decrease function (C86) is based on the more sensitive biofilm and conjugation assays, which is appropriate. The caveat about aggregation assay sensitivity (C85) is reasonable given the binary nature of that assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "PrgB188-1233 elutes from size exclusion chromatography in two peaks corresponding to dimeric and monomeric forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 describes a straightforward biochemical observation supported by chromatography data (Figure 1-supplement 1). This is consistent with previous reports that PrgB functions as a dimer in vivo (C14). The data clearly show two peaks with appropriate molecular weights.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "CHA generates high-fidelity predictions of individualized category-selective topographies within datasets that are equivalent to RHA and superior to anatomical alignment. CHA-based predictions recover individual-specific idiosyncratic features, while anatomical alignment produces blurred, generic maps. Prediction accuracy approaches or exceeds the reliability of participants' own localizer data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C16-C20 collectively demonstrate that CHA performs equivalently to RHA (C13, C20) and significantly outperforms anatomical alignment (C17, C18) across all four datasets and categories. The visual evidence in Figure 1 and statistical analyses (p<0.001, Bonferroni corrected) provide strong support. Predictions approaching Cronbach's alpha reliability (C19) indicate the method captures true individual variation rather than noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cross-movie predictions using CHA are as accurate as within-movie predictions when the same localizer type is used. Predictions using different movies for normative and index participants outperform anatomical alignment and approach the reliability of participants' own localizer data. However, cross-localizer-type predictions (static to dynamic or vice versa) show reduced accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C21-C23 demonstrate that cross-movie CHA predictions perform nearly as well as within-movie predictions (Figure 2A, 2B) with consistent results across datasets, categories, and individual participants (p<0.001). The caveat regarding different localizer types (C24) is appropriately noted and supported by prior literature. The comprehensive testing across multiple datasets with different movies, scanners, and parameters strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Searchlight analysis reveals that high-level visual areas with strong category selectivity show the highest prediction correlations (often exceeding r=0.8), while lower correlations in other cortices reflect low localizer reliability rather than prediction failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by searchlight analyses shown in Figure 4 and supplements. The interpretation that lower correlations reflect localizer reliability rather than method failure (C26) is reasonable given the comparison to Cronbach's alpha values, though this is somewhat inferential. The spatial specificity of high correlations to category-selective regions provides face validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C44",
+      "C45"
+    ],
+    "result": "Fine-grained connectomes calculated from different movies are highly similar (r>0.8 in most brain regions), with across-movie similarities (r>0.74) approaching within-movie similarities (r>0.85). This stability suggests shared cognitive processes across different movie-viewing tasks, possibly because movies sample broad real-life statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are directly supported by data in Figure 4\u2014figure supplement 9. The interpretation of shared cognitive processes (C44) and the explanation involving real-life statistics (C45) are reasonable inferences from the data, though C45 is explicitly speculative. The high correlations provide empirical support for why cross-movie predictions work, addressing a key mechanistic question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Dynamic localizers using video clips elicit stronger and broader category-selective activations with higher reliability than static localizers using still images. Cross-localizer-type predictions show reduced accuracy compared to same-type predictions, reflecting genuine differences in activated topographies rather than method failure, particularly in regions outside ventral temporal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C50-C53 are supported by experimental data showing systematic differences between localizer types. The interpretation that lower cross-type correlations reflect true topographic differences rather than method failure (C53) is supported by prior literature (Fox et al., 2009; Pitcher et al., 2011) and the observation that same-type predictions consistently outperform cross-type predictions (C52). The regional specificity (C51) adds nuance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C76",
+      "C77"
+    ],
+    "result": "An enhanced iterative CHA algorithm with six steps progressively improves prediction performance by gradually increasing the density of connectivity targets. At the final step using all vertices as targets, enhanced CHA achieves performance comparable to RHA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C76-C77 describe the methodological enhancement and are supported by Figure 4\u2014figure supplement 4 showing stepwise improvements. The rationale for the iterative approach is grounded in prior work (C74-C75) showing that dense targets with anatomical alignment perform poorly. Each iteration demonstrably improves performance, validating the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "CHA predictions are robust to variations in data quantity and processing approaches. Predictions remain accurate with as few as one movie run or five training participants (r=0.6-0.7). The 1-step hyperalignment method consistently outperforms the 2-step method. Applying transformations to time series versus contrast maps yields similar results, and using all versus selected participants produces comparable outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 demonstrate the robustness of the method through systematic parameter variations shown in Figure 4 supplements 5-8. The finding that even minimal data (one run, five participants) yields reasonable performance (C34) is practically important. Statistical testing of participant selection strategies (C38) shows no benefit from selecting only similar participants, supporting the use of all available data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The stability of fine-scale functional connectomes underlying CHA may be grounded in individual anatomical connectivity patterns. Prior work shows links between anatomical connectivity and category selectivity, and between structural and functional connectivity. Fine-scale connectivity profiles are stable across task and rest states and predict individual differences in intelligence, suggesting CHA might extend to resting-state data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C40 and C47-C48 appropriately cite prior work linking anatomy to function. However, the connection to the current findings is inferential (C40). The speculation about resting-state applications (C49) is plausible given cited evidence but remains untested in this study. This represents reasonable discussion of mechanisms and future directions but lacks direct empirical support from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CHA differs fundamentally from the connectivity-based shared response model (cSRM) in that cSRM uses inter-subject rather than within-subject connectivity, requires time-locked data, and does not support cross-content applications or resting-state data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 accurately describe methodological differences between CHA and cSRM based on knowledge of both methods. The distinctions are logically sound and important for positioning the current work. The limitations of cSRM for cross-content applications follow directly from its reliance on inter-subject connectivity requiring time-locked responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CHA predictions are robust across diverse conditions including different movies, languages, scanning parameters, and scanner models. However, all datasets included only neurotypical participants with intact brains, leaving open whether the method extends to neuropsychological populations with atypical cortical function or brain lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 summarize the demonstrated robustness across the four diverse datasets. The limitation regarding participant populations (C56-C57) is appropriately acknowledged. This represents an honest assessment of the scope and limitations of the current findings, with C57 identifying an important direction for future research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Category-selective functional topographies are prominent features of visual cortex that are generally similar across individuals but show idiosyncratic details in precise location and conformation. These topographies are typically mapped using functional localizers with simple category contrasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish well-documented background knowledge supported by multiple citations to foundational studies in the field. These claims accurately represent the current state of knowledge and provide appropriate context for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Movie-based approaches using hyperalignment offer advantages over traditional localizers: movies engage multiple brain systems, better simulate real-world cognition, maintain attention, and are more suitable for special populations. RHA requires the same movie for all participants, while CHA allows different stimuli for normative and index participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 establish the rationale and prior work motivating the current study. The advantages of naturalistic stimuli (C7-C9) are supported by citations and logical reasoning. The key distinction between RHA and CHA (C10-C11) is accurately stated and represents the central motivation for testing cross-movie predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study analyzed four datasets (Budapest, Sraiders, Forrest, Raiders) with different movies, scanners, and localizer types. Datasets included 9-20 participants each, were acquired on different 3T scanners, and were preprocessed using fMRIPrep with standard surface-based analysis pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C58-C68 provide detailed methodological descriptions of the datasets and preprocessing. The information is internally consistent and appropriately detailed. The use of multiple diverse datasets strengthens the generalizability of findings. Standard preprocessing approaches (fMRIPrep, fsaverage surface) are appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The analysis pipeline involved calculating connectivity profiles between seeds and targets, normalizing profiles, applying Procrustes transformations in searchlights, and aggregating transformation matrices. Category-selective maps were estimated using GLM contrasts, and reliability was assessed using Cronbach's alpha rather than split-half correlations for more accurate estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C82 provide comprehensive methodological details that are internally consistent and follow established practices. The choice of Cronbach's alpha over split-half correlations (C81-C82) is well-justified. The searchlight-based approach with Procrustes transformations is clearly described and appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Movie-viewing and resting-state paradigms yield overlapping macroscale cortical organizations, though naturalistic viewing introduces unique modality-specific hierarchical gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 accurately cites prior work (Samara et al., 2023) comparing movie and resting-state connectivity. This provides relevant context for discussing potential extensions of the method to resting-state data, though it represents background rather than a finding of the current study.",
+    "result_type": "MINOR"
+  }
+]

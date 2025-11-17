@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C79",
+      "C80"
+    ],
+    "result": "BEHAV3D-TP is a computational framework designed for unbiased single-cell classification of IVM data based on morphological, environmental, and dynamic features. The tool integrates with widely used 2D and 3D image processing pipelines (both commercial Imaris and open-source Fiji plugins), is accessible via Google Colab without requiring advanced computational expertise, and includes modules for heterogeneity analysis and TME phenotyping.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm the tool's utility and accessibility. Reviewer 1 states it is 'a useful and comparatively user-friendly tool' with 'solid evidence' of applicability to multiple tracking software formats. Reviewer 2 notes it 'appears relatively user-friendly and is open source' with 'a nice addition' of TME integration. Reviewer 3 calls it 'a useful tool' that is 'accessible to all interested users' due to its open-source nature. No concerns are raised about these core capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "BEHAV3D-TP successfully identified distinct behavioral clusters in breast cancer IVM data (6 clusters from 935 cells) and healthy breast epithelial cells from TEBs (4 clusters from 291 cells). The analysis revealed that HR+ TEBs exhibit greater migratory capacity than HR- TEBs, primarily driven by Cluster 2 characteristics (rounder shape and increased motility).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states that testing on breast cancer and TEB datasets 'generated data is consistent with that produced during the original studies, as well as providing some additional (albeit preliminary) insights above that previously reported,' providing 'some confidence in BEHAV3D TP's ability to uncover complex, multi-parametric cellular behaviours.' No reviewer challenges these validation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "BEHAV3D-TP identified four morphodynamic clusters of GBM cells from 460 tracked cells. Cluster 1 (large, slow-moving cells) were more isolated and located farther from neighboring cells compared to Clusters 6 and 4, suggesting that compact spatial arrangement may contribute to reduced cell size in densely packed clusters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes that the tool was evaluated on 'available IVM datasets' including GBM, and that this 'generated data is consistent with that produced during the original studies,' providing confidence in the tool's ability to identify behavioral patterns. No reviewer questions these specific GBM findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C54",
+      "C55"
+    ],
+    "result": "BEHAV3D-TP heterogeneity module identified 7 distinct DMG behavioral clusters (retreating, slow retreating, erratic, static, slow, slow invading, and invading) that could not be identified using single parameter analysis. Approximately 10% of DMG cells displayed invasive behavior and another 10% showed retreating behavior. These patterns were detected consistently across all imaged mice, including invading and retreating clusters with similar speeds but opposite migration directions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states that the tool 'was able to identify distinct single-cell behavioural patterns' and that it 'helped reveal links' that 'would have been challenging to identify when analysing single kinetic parameters in isolation.' Reviewer 2 notes 'the identification of associations between cell track phenotype and spatial features is exciting' and the DMG data 'nicely demonstrates how this could be used.' Reviewer 3 acknowledges the tool can 'identify distinctive tumor cell migratory phenotypes.' All reviewers accept these core findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Large-scale TME phenotyping using CytoMAP identified three environmental niches (Void regions, TAMM/oligo regions, and TAMM/vascularized regions) with distinct distributions of DMG behavioral clusters. Invading cells were more abundant in TAMM/vascularized regions, static cells predominated in Void regions, and slow retreating cells were enriched in TAMM/Oligo microenvironments. Single parameters showed restricted ability to identify these differences compared to multiparametric analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the tool 'helped reveal links between TME composition (e.g. degree of vascularisation, presence of tumour-associated macrophages) and the invasiveness and directionality of tumour cells, which would have been challenging to identify when analysing single kinetic parameters in isolation.' Reviewer 2 specifically notes 'the combination with CytoMAP represents a nice option for researchers' and 'the identification of associations between cell track phenotype and spatial features is exciting.' No concerns are raised about these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C60",
+      "C61"
+    ],
+    "result": "Small-scale TME phenotyping revealed that invading DMG cells were more sparsely distributed, resided in TAMM-enriched regions, were in close proximity to TAMMs, and frequently migrated directionally toward TAMMs (suggesting chemotaxis-mediated migration). All fast-migrating clusters (invading, erratic, retreating) were closer to blood vessels, suggesting perivascular invasion as an efficient movement route. Slow-retreating cells were found in SR101+ cell-enriched regions, possibly reflecting oligodendrocyte-like tumor cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the analysis 'helped reveal links between TME composition' and tumor cell behavior, and that 'conclusions are appropriately tempered in the absence of additional experiments and controls,' indicating acceptance of the findings as presented. Reviewer 2 notes 'the identification of associations between cell track phenotype and spatial features is exciting.' No reviewer challenges these specific small-scale TME associations, though Reviewer 1 notes they are 'preliminary evidence.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The small-scale TME analysis has higher predictive value compared to large-scale TME analysis, suggesting that a cell's direct microenvironment is a more important regulator of its behavior than its macroenvironment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges the tool can 'assess whether these behaviours might be influenced by neighbouring cells and structures in their microenvironment,' implicitly accepting the comparison between scales. No reviewer challenges this interpretation, though Reviewer 1 notes the evidence is 'preliminary.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Distinct migratory behaviors of DMG cells are associated with specific TME components (TAMMs and vasculature), with bidirectional migration likely mediated by different chemotactic cues and TME composition. While direct functional validation is not provided, existing literature supports that cell dynamics can serve as a proxy for functional states, with morpho-dynamic features correlating with cell type identity, metastatic potential, and drug resistance states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly states 'the analysis provides only preliminary evidence in support of the authors conclusions on DMG cell migratory behaviours and their relationship with components of the tumour microenvironment' but notes 'conclusions are appropriately tempered in the absence of additional experiments and controls.' This indicates acceptance of the claims as stated but recognition that they require further validation. Reviewer 3 notes a weakness that the tool 'cannot be applied to analyze important cell-cell interaction dynamics in 3D,' suggesting limitations in fully characterizing TME influences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "BEHAV3D-TP allows selection of diverse feature types (dynamic, morphological, spatial, environmental), though expanding the feature set may introduce biologically irrelevant noise, particularly in 3D microscopy data with limited z-axis resolution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 identifies as a weakness that 'these features are insufficient to characterize and identify the heterogeneity of the tumor cell population' and that the tool 'focuses on analysis of tumor-alone features, and cannot be applied to analyze important cell-cell interaction dynamics in 3D.' This aligns with the authors' acknowledgment of potential limitations in feature expansion, and reviewers accept the tool's current scope while noting areas for improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21"
+    ],
+    "result": "IVM enables live imaging at single-cell level in natural 3D tissue environments, providing insights into tumor heterogeneity that traditional uni-parametric approaches and static spatial techniques (transcriptomics/proteomics) cannot capture. However, implementing analytical methods for IVM data often requires substantial computational expertise, limiting accessibility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accept the motivation for the tool. Reviewer 1 states 'there is a clear need for these tools to make quantitative analysis, comparison and interpretation of complex cell tracking data more accessible.' Reviewer 2 notes 'the lack of requirement for coding' as a strength. These are background claims establishing context, and no reviewer challenges them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "BEHAV3D-TP provides a comprehensive approach that offers deeper understanding of TME drivers behind intratumoral heterogeneity, making it a robust tool for investigating complex tumor cell behaviors in natural environments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 concludes the tool 'has the potential to be a valuable addition to a researcher's IVM analysis tool-box.' Reviewer 2 states 'the tool appears relatively user-friendly' and the TME integration 'represents a nice option for researchers.' Reviewer 3 calls it 'a useful tool' that is 'accessible to all interested users.' All reviewers affirm the overall utility and value of the tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C9",
+      "C10",
+      "C18",
+      "C19",
+      "C25",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Methodological details including DMG tumor characteristics, cell line authentication, ethical approvals, TME labeling approaches (SR101 for oligodendrocytes/astrocytes, CD20r for microglia), data processing steps (interpolation, track cropping, PCA, dynamic time warping, UMAP, k-means clustering), proximity thresholds (15 \u00b5m for TAMMs, 3 \u00b5m for blood vessels), and statistical methods (t-tests, ANOVA, mixed-effects models, Chi-square tests).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer raises concerns about the methodological details, cell line authentication, ethical approvals, or statistical approaches. Reviewer 1 notes 'solid evidence is provided of its applicability to tracks generated by both proprietary and open tracking software,' indicating acceptance of the technical implementation.",
+    "result_type": "MINOR"
+  }
+]

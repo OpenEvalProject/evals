@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C70",
+      "C71",
+      "C79",
+      "C82",
+      "C83",
+      "C96",
+      "C97"
+    ],
+    "result": "Short-term monocular deprivation (2 hours) produces plasticity in the ventral pulvinar (vPulv), characterized by enhanced BOLD responses to the deprived eye. This plasticity effect is similar to that previously observed in visual cortex and correlates with behavioral shifts in ocular dominance measured by binocular rivalry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C70, C79, and C96 provide converging statistical evidence (F(1,17)=14.75, p=0.001; r(18)=0.47, p=0.048) for plasticity in vPulv. The effect was replicated using three independent analysis methods (C84-C89) and two independent ROI definitions (C90), with multiple control analyses ruling out artifacts (C97). The correlation with behavioral measures (C6, C79, C83) provides functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C98"
+    ],
+    "result": "Monocular deprivation did not produce detectable plasticity effects in the lateral geniculate nucleus (LGN) or dorsal pulvinar (dPulv). Statistical analyses confirmed these regions responded systematically differently from vPulv, with the lack of effect in LGN not attributable to insufficient statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75, and C76 provide statistical evidence for the absence of effects in LGN and dPulv (LGN: F(1,17)=0.18, p=0.675; dPulv: F(1,17)=0.70, p=0.415), with significant three-way interaction (F(2,17)=3.45, p=0.039) and post-hoc comparison (p=0.035) confirming systematic regional differences. This was replicated across multiple analysis methods (C84-C93) and alternative ROI definitions (C91-C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C131",
+      "C132"
+    ],
+    "result": "The visual thalamus retains potential for short-term plasticity in adulthood, with plasticity effects differing across thalamic subregions. Within the thalamus, plasticity mainly affects the ventral portion of the pulvinar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is directly supported by the experimental findings showing selective plasticity in vPulv (C4, C70) but not in LGN or dPulv (C72, C74), with statistical confirmation of regional differences (C75-C77). Claims C9, C10, C131, and C132 represent valid inferences from the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "The differential plasticity across thalamic subregions may reflect differences in corticofugal connectivity. The authors suggest that vPulv plasticity is more likely inherited from visual cortex input rather than arising locally, potentially masked in LGN by strong retinal input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C115-C123 are speculative interpretations not directly tested by the experimental data. While the anatomical knowledge cited (C117, C121) is established, the mechanistic explanations for why plasticity differs across regions (C118-C120, C123) remain hypothetical. The fMRI data cannot distinguish between cortical feedback and local mechanisms (C134).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study used 7T fMRI with independently defined ROIs from the Natural Scenes Dataset to measure BOLD responses to monocular stimulation before and after 2-hour monocular deprivation in 18 adult participants. Visual responses clustered in LGN and vPulv ROIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 accurately describe the experimental design and methodology. The use of 7T fMRI (C58), independently defined ROIs (C59), and the observation that responses clustered in predicted regions (C61) are well-documented in the methods and results sections with appropriate citations and figure references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Reliable BOLD responses were observed in LGN and vPulv with faster dynamics than V1. Response dynamics were slightly faster in LGN than vPulv. Pre-deprivation responses to the two eyes were correlated across participants, indicating good test-retest reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by statistical analyses (t(17)>4.30, p<0.01) and comparison with prior work. Claims C68-C69 regarding test-retest reliability are supported by correlation analyses (vPulv: r(18)=0.58, p=0.011; LGN: r(18)=0.66, p=0.003; dPulv: r(18)=0.74, p<0.001), providing validation of measurement quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The vPulv plasticity effect was confirmed using three independent analysis methods (Fourier analysis, GLM with canonical HRF, event-related averaging) and two independent ROI definitions, consistently showing significant effects in vPulv but not LGN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 demonstrate methodological rigor through convergent evidence across multiple analysis approaches. All three methods yielded significant time\u00d7eye interactions in vPulv (Fourier: F(1,17)=14.75, p=0.001; GLM: F(1,17)=11.07, p=0.004; event-related: F(1,17)=16.07, p=0.001) and correlations with behavior, while consistently showing no effect in LGN.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C99"
+    ],
+    "result": "Separate analysis of parvocellular and magnocellular LGN subdivisions showed no reliable effects of monocular deprivation in either subdivision (parvo: F(1,17)=1.02, p=0.327; magno: F(1,17)=2.97, p=0.103).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by statistical analyses of LGN subdivisions defined using quantitative MRI atlases. The lack of effects in both subdivisions (C94, C99) strengthens the conclusion that LGN does not show plasticity under these experimental conditions, addressing the possibility that effects might be selective to one pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The lack of detectable effects in LGN does not necessarily imply absence of plasticity potential, which may emerge in other contexts such as pathology, repeated deprivation, or tasks requiring attention. Under passive viewing conditions, any plasticity in LGN/dPulv was small and/or inconsistent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 appropriately acknowledge limitations and alternative interpretations. The inference that effects were small/inconsistent (C103) is justified by the data, while speculation about other contexts (C100-C101) is appropriately hedged and supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The results are coherent with prior neurophysiological measurements in nonhuman primates showing vPulv tracks perceptual oscillations during passive viewing while dPulv requires active task engagement. The current findings extend this association beyond bistable perception to passive monocular stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 appropriately contextualize the findings within prior literature (Wilke et al., 2009). The comparison is valid (C104, C108) and the extension beyond binocular rivalry (C109-C110) represents a meaningful contribution, though the inference about the relationship between perception and vPulv activity (C108) is somewhat interpretive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The lack of monocular deprivation effects in LGN suggests that adaptation at the level of monocular cells (in LGN or retina) does not mediate the boost of the deprived eye, and that cortical plasticity does not result from modulations in feedforward input to V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 represent reasonable inferences from the negative findings in LGN. However, the inference is limited by the inability to definitively rule out small effects below detection threshold (acknowledged in C103) and by the indirect nature of BOLD measurements. The conclusion is appropriately stated as a suggestion rather than definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C129",
+      "C135"
+    ],
+    "result": "The observations open the possibility that vPulv plays a role in setting ocular dominance and maintaining plasticity in adulthood, though the origin of the plasticity effect cannot be definitively determined from fMRI data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114, C129, and C135 are appropriately speculative and acknowledge the limitation that fMRI cannot determine causality or mechanism (C134). While the correlation with behavior (C79) is suggestive of functional relevance, the specific role of vPulv in setting ocular dominance (C135) remains hypothetical and would require additional experimental approaches to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C47",
+      "C95"
+    ],
+    "result": "This is the first study to demonstrate short-term plasticity in the adult human thalamus in response to monocular deprivation, extending prior work showing cortical plasticity and addressing a gap in knowledge about subcortical plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12, C14-C17, C47, and C95 accurately characterize the state of prior knowledge and the novelty of the current work. The claim of being the first study (C95) is supported by the literature review (C47) and represents a valid contribution given the experimental evidence for thalamic plasticity (C4, C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C53",
+      "C117",
+      "C121",
+      "C125",
+      "C126",
+      "C127",
+      "C133"
+    ],
+    "result": "The introduction provides accurate background on thalamic anatomy, connectivity, and prior evidence for plasticity in LGN and pulvinar, establishing the anatomical and functional context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C46, C53, C117, C121, C125-C127, and C133 accurately summarize established anatomical and functional knowledge about thalamic nuclei, supported by appropriate citations. These claims provide necessary context but do not represent novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C111",
+      "C124",
+      "C128",
+      "C130"
+    ],
+    "result": "The discussion contextualizes findings within theoretical frameworks about mechanisms of plasticity (adaptation vs. interocular interactions, cortical feedback, gain control) and relates them to broader concepts about thalamic function in active vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C52, C54, C111, C124, C128, and C130 present theoretical frameworks and speculative mechanisms that are not directly tested by the experimental data. While these provide useful context and generate testable hypotheses, they represent interpretations rather than established findings. The speculation is appropriately hedged in most cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C62",
+      "C63",
+      "C73"
+    ],
+    "result": "Methodological observations include the difficulty of mapping thalamic nuclei with MRI due to low SNR and small size, the expected lack of response in mid-Pulv during passive viewing, and the absence of phase variations across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C62-C63, and C73 represent accurate methodological observations. The difficulty of thalamic imaging (C57) is well-established, the lack of mid-Pulv response (C62-C63) is consistent with prior work (Wilke et al., 2009), and the phase analysis (C73) provides additional validation that effects were specific to amplitude.",
+    "result_type": "MINOR"
+  }
+]

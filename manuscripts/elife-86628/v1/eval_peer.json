@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed GLPLight1, a genetically encoded fluorescent sensor based on insertion of circularly permuted GFP into human GLP1R, which shows high fluorescence response (max \u0394F/F0=528%) to GLP-1 with temporal resolution of \u03c4ON = 4.7 s. The sensor was optimized through iterative mutagenesis and shows good membrane expression in both HEK293T cells and primary neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers acknowledge that the sensor works as described. The editor states 'the evidence for these tools working as advertised is solid' and the anonymous reviewer confirms 'The GLPLight1 sensor has a strong fluorescent response to GLP-1 with an EC50 of ~10 nM.' The technical characterization data are not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The authors created GLPLight-ctr, a control variant with mutations (L141A, N300A, E387A) that abolished fluorescent response to GLP-1 while maintaining good membrane expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control variant is not specifically discussed by reviewers, suggesting implicit acceptance of this methodological control as part of the sensor characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "GLPLight1 shows significantly reduced coupling to intracellular signaling pathways compared to WT GLP1R, with no detectable cAMP increase even at 100 nM GLP-1, while WT GLP1R has an EC50 of 8.0 pM for cAMP production. The sensor is unlikely to couple with endogenous intracellular signaling pathways.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly acknowledges this finding, stating 'the native GLP1R enables biological responses to concentrations that are ~1000-fold lower than this (as shown, for instance, in a supplemental figure of this paper).' This characterization is accepted as accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "GLPLight1 shows pharmacological specificity, responding to GLP-1 (EC50=28 nM in HEK cells, 9.3 nM in neurons), liraglutide, and semaglutide with near-maximal activation, and to glucagon with 61% of maximal response (EC50=2.6 \u03bcM), but not to GLP-2 or other class B1 GPCR ligands. The antagonist Ex-9 partially reverses the sensor signal.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly confirms the specificity: 'its specificity is high, as shown by lack of response to ligands of related class B GPCRs.' The pharmacological characterization is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "GLPLight1 was used to characterize GLP-1 alanine mutants, showing that H1A and G4A mutations significantly reduced Emax and EC50, while E3A and T5A showed higher Emax values, consistent with literature reports.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This application of the sensor is not specifically critiqued by reviewers, suggesting acceptance of this validation experiment demonstrating the sensor's utility for structure-activity studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "In co-culture experiments with GLUTag cells (GLP-1 secreting cells), sensor-expressing cells showed significantly lower response to exogenous GLP-1, indicating that GLPLight1 was partially pre-activated by endogenous GLP-1 secreted by the enterocrine cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anonymous reviewer expresses concern about this claim: 'Data using a GLP-1 secreting cell line suggest that the sensor has bound some of the released GLP-1, but it is difficult to have confidence without seeing an actual fluorescence response to stimulated release.' The reviewer questions whether binding alone is demonstrated versus functional detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C67"
+    ],
+    "result": "The EC50 of GLPLight1 (~10 nM) is similar to miniGs recruitment but ~1000-fold less sensitive than the cAMP response downstream of native GLP1R (8.0 pM). The authors conclude the sensor is not suitable for detecting picomolar peripheral GLP-1 levels but might detect higher local concentrations in brain or near enteroendocrine cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anonymous reviewer raises significant concerns about utility: 'This makes it difficult to see how the sensor will be useful for in vivo detection of GLP-1 release, as claimed; although there may be biological situations where the concentration is adequate to stimulate the sensor, this is not established.' The reviewer questions the practical applicability despite accepting the sensitivity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C69"
+    ],
+    "result": "The authors developed photo-GLP1, a photocaged GLP-1 derivative that releases native GLP-1 upon UV light exposure. Photo-GLP1 showed no activity in the dark but triggered GLPLight1 responses upon UV uncaging, with responses increasing with longer UV exposure durations (up to 30% maximal response at 100 s). The response was blocked by the antagonist Ex-9.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor confirms 'the evidence for these tools working as advertised is solid' and the anonymous reviewer acknowledges 'The light-uncaged agonist peptide, photo-GLP1, has no detectable agonist activity (as judged by the GLPLight1 sensor) until it is activated by light.' The basic functionality is accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Pre-incubation with photo-GLP1 slowed the kinetics of GLP1R activation by ~14-fold (\u03c4ON = 68.1 s vs 4.7 s without photo-GLP1), suggesting that caged photo-GLP1 can bind to the receptor extracellular domain and compete with active GLP-1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anonymous reviewer raises concern: 'The data demonstrate a substantial antagonism of GLP-1 binding by the still-caged compound, and it is therefore unclear whether the kinetics of the response to PhotoGLP1 itself would mimic the normal activation by GLP-1 in the absence of the caged compound.' This questions whether the tool accurately mimics native signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C71"
+    ],
+    "result": "Using GLPLight1 and photo-GLP1 together in an all-optical assay, the authors demonstrated that GLP1R activation can be spatially localized to single cells or sub-cellular domains, with fluorescence responses limited to uncaged areas without spreading to neighboring cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While not explicitly discussed in detail, this spatial control demonstration is part of the 'working as advertised' assessment by the editor and is not challenged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Photo-GLP1 uncaging triggered cAMP increases (measured with G-Flamp1 sensor) specifically in cells directly underneath the uncaged area, while the same uncaging protocol without photo-GLP1 failed to trigger any cAMP response.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anonymous reviewer expresses concern: 'the light-dependence of the agonist effect of PhotoGLP1 was evaluated only with the GLPLight1 sensor and not with GLP1R signaling itself, which is 1000x more sensitive and which would be the presumed target of the tool.' While cAMP data are shown, the reviewer questions whether this adequately validates the tool for native receptor signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors found that ligand-induced conformational activation of GLP1R occurs on slower timescales (\u03c4ON = 4.7 s) compared to class A GPCR sensors (sub-second kinetics), which they attribute to the distinct two-step binding mechanism of class B1 GPCRs involving initial ligand capture by the extracellular domain.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic interpretation is not challenged by reviewers and represents an accepted insight from the sensor characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The authors acknowledge that photo-GLP1 might be susceptible to DPPIV-mediated degradation in vivo but suggest it could still be useful for neurobiological studies since DPPIV levels are significantly lower in brain than peripheral organs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anonymous reviewer explicitly raises this limitation: 'PhotoGLP1 is based upon native GLP-1, which is rapidly truncated and inactivated by the peptidase DPPIV, expressed in most cell types, and expressed at very high levels in the plasma. The utility of PhotoGLP1 is therefore limited to acute (minutes) in vitro experiments.' The reviewer is more pessimistic about utility than the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The authors speculate that under physiological conditions, GLP-1 might elicit different functional responses based on location and spatial concentration gradients on target cells/tissues, given the large difference between sensor EC50 and cAMP response EC50.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This speculation is not challenged by reviewers and follows logically from the accepted sensitivity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C68",
+      "C70"
+    ],
+    "result": "Background claims about GLP1R expression, GLP-1 function, clinical applications of GLP1R agonists, and general properties of photocaging strategies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background facts cited from literature and are not disputed by reviewers.",
+    "result_type": "MINOR"
+  }
+]

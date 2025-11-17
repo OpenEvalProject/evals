@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed GLPLight1, a genetically encoded fluorescent sensor for GLP1R activation, through iterative engineering that improved dynamic range from 39% to 528% and demonstrated functionality in both HEK293T cells and primary neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 document a systematic optimization process with measured fluorescence responses at each step, showing clear improvement. The final sensor (C25) achieves 528% response in HEK cells and 456% in neurons (C27). Spectral characterization (C28-C29) and control variant development (C26) provide additional validation. The engineering strategy is well-documented with quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "GLPLight1 reports GLP1R conformational activation with high sensitivity (528% \u0394F/F0) and temporal resolution (\u03c4ON=4.7 s) but shows significantly reduced coupling to downstream signaling pathways compared to wild-type GLP1R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 provide measured kinetic parameters. Claims C30-C33 demonstrate through multiple assays (miniG recruitment, cAMP production) that GLPLight1 has impaired signaling compared to WT receptor. The EC50 values are quantified (8.0 pM for WT vs no response for GLPLight1 at 100 nM in cAMP assay). This is important for establishing that the sensor reports conformational changes without triggering endogenous signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "GLPLight1 demonstrates pharmacologically relevant ligand selectivity and sensitivity, responding to GLP1RAs (liraglutide, semaglutide), showing 94-fold selectivity for GLP-1 over glucagon, no response to GLP-2 or other class B1 ligands, and recapitulating known structure-activity relationships from alanine scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 establish ligand specificity with quantitative EC50 measurements (28 nM for GLP-1, 2.6 \u03bcM for glucagon). Claims C42-C45 validate the sensor against known SAR data from literature, showing agreement with expected effects of alanine mutations. The antagonist reversibility (C35) and clinical drug responses (C36) further support pharmacological validity. Multiple independent measurements across different assays strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "GLPLight1 can detect endogenous GLP-1 secretion from GLUTag enterocrine cells in co-culture experiments, as evidenced by reduced sensor response to exogenous GLP-1 in the presence of GLUTag cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 provides quantitative data showing significantly lower response in co-culture conditions. Claim C47 provides a reasonable mechanistic interpretation. However, the study lacks direct measurement of GLP-1 concentrations or dose-response characterization in this system. While the observation is clear, additional controls (e.g., blocking endogenous GLP-1 with antagonist) would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors developed photo-GLP1, a photocaged GLP-1 derivative that is inactive in the dark but releases native GLP-1 upon UV irradiation (370-405 nm), enabling dose-dependent optical control of GLP1R activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 document synthesis and analytical validation of complete uncaging. Claims C50-C53 demonstrate functional validation using GLPLight1, showing no response without UV light, dose-dependent activation with UV exposure (up to 30% maximal response at 100s), and antagonist-sensitive responses. The chemical characterization appears thorough with LCMS/UHPLC confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Photo-GLP1 in its caged form binds to the GLP1R extracellular domain and slows receptor activation kinetics by ~14-fold (\u03c4ON increases from 4.7s to 68.1s), suggesting competitive binding at the ECD without triggering full activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 provides quantitative kinetic measurements showing dramatic slowing of activation. Claim C55 offers a mechanistic interpretation based on known class B1 GPCR binding mechanisms. The interpretation is reasonable given the two-step binding model for class B1 GPCRs, though direct binding studies would provide stronger evidence. The kinetic data itself is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C56",
+      "C57",
+      "C71"
+    ],
+    "result": "The combination of GLPLight1 and photo-GLP1 enables spatially precise optical control of GLP1R activation at subcellular resolution, with responses localized to uncaging areas without spreading to neighboring cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide imaging data demonstrating spatial localization at both multi-cell and subcellular scales. Claim C71 summarizes the spatial precision capability. The experiments include appropriate controls (no photo-GLP1, GLPLight-ctr). The spatial resolution appears limited by the optical uncaging area rather than diffusion, supporting the conclusion of high spatial control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Photo-GLP1 uncaging can trigger functional downstream signaling, as demonstrated by spatially localized cAMP increases detected with G-Flamp1 sensor in cells expressing wild-type GLP1R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 shows cAMP sensor response specifically in cells under the uncaging area. Claim C59 provides the critical negative control showing no response without photo-GLP1. This demonstrates that the optical control extends beyond conformational activation to functional signaling. The single-cell specificity is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "GLP1R activation kinetics (\u03c4ON=4.7s) are slower than class A GPCR sensors, consistent with the distinct two-step binding mechanism characteristic of class B1 GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 provides the measured kinetic parameter and comparison to literature. Claims C61-C62 provide mechanistic context from established GPCR biology. The interpretation linking slower kinetics to the class B1 binding mechanism is reasonable and well-supported by citations. This represents an important insight into GPCR sensor behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "GLPLight1 fluorescence EC50 (28 nM) matches miniGs recruitment EC50 (3.8 nM) but is ~1000-fold less sensitive than the cAMP response EC50 (8.0 pM), suggesting GLP-1 may elicit different functional responses depending on local concentration gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 present measured EC50 values from different assays showing a large discrepancy. However, the comparison may be confounded by different assay formats, amplification mechanisms (enzymatic for cAMP), and cell contexts. Claim C65 is speculative. While the observation is interesting, alternative explanations (assay artifacts, different receptor conformations) are not adequately ruled out. The physiological interpretation requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "GLPLight1 sensitivity (EC50=28 nM) is insufficient for detecting picomolar GLP-1 concentrations in peripheral endocrine signaling but may detect higher local concentrations in brain or near enteroendocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 makes a reasonable inference based on the measured EC50 being ~1000-fold higher than physiological peripheral GLP-1 levels. Claim C67 appropriately qualifies potential applications. The limitation is honestly acknowledged and the speculation about potential use cases is appropriately cautious. This represents good scientific practice in discussing sensor limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about GLP1R expression, GLP-1 function, and clinical relevance of GLP1R agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C9-C20) represent established knowledge from the literature, appropriately cited. They provide context for the study but are not novel findings. All statements are consistent with current understanding of GLP-1 biology and therapeutics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "GLPLight1 shows comparable responses to GLP-1 derivatives as the native receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the alanine scanning data (C42-C45) showing agreement with literature SAR, and by responses to clinical GLP1RAs (C36). The sensor recapitulates known pharmacological properties of the native receptor, validating its utility as a screening tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "Discussion of photo-GLP1 in context of other optogenetic tools and potential limitations/applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide appropriate context comparing photocaging to photoswitching approaches. Claims C72-C73 discuss potential DPPIV degradation as a limitation and suggest brain applications where DPPIV is lower. These represent reasonable speculation and appropriate discussion of limitations, though C72-C73 lack experimental validation.",
+    "result_type": "MINOR"
+  }
+]

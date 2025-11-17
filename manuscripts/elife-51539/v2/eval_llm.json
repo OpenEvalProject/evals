@@ -17,11 +17,11 @@
       "C66",
       "C68"
     ],
-    "result": "The ssDNA drop-in method successfully generated GFP-tagged proteins marking organelles in S2R+ cells with 1\u20134% integration efficiency. For 19 of 20 genes targeted, GFP signal was observed by FACS, and for 12 of 19 genes, correct integration was verified by PCR with precise insertions and expected subcellular localization (except Ref2P).",
+    "result": "The ssDNA drop-in method successfully generated GFP-tagged proteins marking organelles in S2R+ cells. Using PCR-generated ssDNA donors with 100 nt homology arms and Lambda Exonuclease treatment, 19 of 20 targeted genes showed GFP signal by FACS (1-4% frequency), with 12 genes yielding verified clones showing correct subcellular localization and precise insertions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11\u2013C17 provide converging experimental evidence (FACS, PCR verification, sequencing, Western blot, immunostaining, live imaging) demonstrating successful integration and functionality of ssDNA donors in S2R+ cells. The 60% success rate (C68) and technical details (C2, C10, C62) are well-documented with appropriate controls and validation methods.",
+    "evaluation": "Claims C2-C17, C54, C62, C66, and C68 collectively demonstrate successful implementation of the ssDNA method in S2R+ cells. The data show appropriate controls (PCR verification, sequencing, Western blots, immunostaining), consistent results across multiple genes, and validation against known protein localizations. The ~60% success rate (12/20 genes) is well-documented with supporting figures and tables.",
     "result_type": "MAJOR"
   },
   {
@@ -33,14 +33,13 @@
       "C21",
       "C22",
       "C23",
-      "C71",
-      "C72"
+      "C71"
     ],
-    "result": "The ssDNA drop-in method with attP-3XP3-EGFP-attP cassette (1442 nt) was tested for in vivo fly transgenesis but was less efficient than the standard CRIMIC method with ~1 kb homology arms, successfully targeting only 4 of 10 genes compared to CRIMIC's 4 of 10.",
+    "result": "The ssDNA drop-in method with attP-3XP3-EGFP-attP cassette (1442 nt) was tested for in vivo fly transgenesis but proved less efficient than standard CRIMIC constructs. Only 4 genes were successfully targeted with ssDNA versus 4 with CRIMIC, with CRIMIC producing more independent lines per gene.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C21\u2013C23 provide direct experimental comparison showing CRIMIC constructs were more efficient than ssDNA drop-in for germline transformation (Figure 3B). The size limitation (~2 kb, C18) and construct design (C19) are clearly stated. The conclusion (C71) appropriately acknowledges the method's limitations for fly transgenesis while noting potential utility (C72).",
+    "evaluation": "Claims C18-C23 and C71 provide direct experimental comparison between ssDNA and CRIMIC methods for the same 10 genes using identical gRNAs. The data clearly show lower efficiency of ssDNA for germline transformation despite success in cell culture. The size limitation (~2 kb) is empirically determined and the comparative results are presented in Figure 3B.",
     "result_type": "MAJOR"
   },
   {
@@ -52,18 +51,17 @@
       "C27",
       "C28",
       "C29",
-      "C30",
       "C31",
       "C32",
       "C33",
       "C34",
       "C35"
     ],
-    "result": "Two shortened dsDNA drop-in constructs with 100 nt homology arms and in vivo linearization were developed: attP-SA-3XSTOP-minipolyA-U6gRNA1-attP (715 nt) and attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP (1968 nt). These generated 65 and 119 independent transgenic lines respectively, with 7/10 genes verified by PCR, suggesting >70% precise homologous recombination rate.",
+    "result": "Two shortened dsDNA drop-in constructs were developed and tested: attP-SA-3XSTOP-minipolyA-U6gRNA1-attP (715 nt) and attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP (1968 nt). These yielded 65 and 119 independent transgenic lines respectively across 10 genes, with 7/10 genes verified by PCR for both constructs, suggesting >70% precise recombination rate.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C31\u2013C33 provide quantitative data on transgenesis efficiency. The construct designs (C25\u2013C28) are well-described with size specifications and cost estimates (C29). The explanation for failed verification in 3/10 genes due to gRNA target site variations (C34) is reasonable and supported by citations. The >70% recombination rate inference (C35) is appropriately qualified.",
+    "evaluation": "Claims C24-C35 describe the design rationale and experimental results for shortened constructs. The use of miniGAL4, U6:gRNA1 marker, and minipolyA is well-justified by size constraints and prior literature (C24, C25, C30). The high number of transgenic lines obtained and PCR verification rate support the claimed efficiency, though 3 genes failed due to gRNA target site variations in the injection stock.",
     "result_type": "MAJOR"
   },
   {
@@ -77,11 +75,11 @@
       "C75",
       "C76"
     ],
-    "result": "The attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct caused ~40% protein reduction while attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP caused ~80\u201390% reduction (similar to CRIMIC). MiniGAL4 showed ~60% reduced reporter expression compared to full-length GAL4.",
+    "result": "The mutagenic efficacy of shortened constructs was assessed by Western blot. The attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct caused ~40% protein reduction, while attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP caused ~80-90% reduction (similar to CRIMIC). MiniGAL4 drove ~60% lower reporter expression than full-length GAL4.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36\u2013C38 are supported by Western blot data (Figure 5A, 5B) with quantification. The mechanistic speculation about the differences (C73\u2013C75) is appropriately presented as hypotheses. The limitation regarding miniGAL4 for low-expression genes (C76) is a reasonable inference from the data.",
+    "evaluation": "Claims C36-C38 present quantitative Western blot data comparing protein levels across constructs, supported by Figure 5A-B. The mechanistic speculation in C73-C75 is appropriately labeled as inference/speculation. The functional limitation of miniGAL4 (C76, C38) is empirically demonstrated, though the statistical analysis details (sample size, replicates) could be more explicit for C36-C37.",
     "result_type": "MAJOR"
   },
   {
@@ -92,75 +90,80 @@
       "C41",
       "C42",
       "C43",
+      "C51",
       "C82"
     ],
-    "result": "A drop-in int100-CRIMIC strategy was developed using synthesized vectors ($80) with 100 nt homology arms followed by single-step cloning of full-length CRIMIC cassettes. This successfully targeted 5 of 7 genes tested, demonstrating that 100 nt homology arms are sufficient for large SIC integration with functional expression patterns.",
+    "result": "A drop-in int100-CRIMIC strategy was developed using synthesized vectors ($80) with 100 nt homology arms flanking restriction sites, followed by single-step cloning of full CRIMIC cassettes. This successfully targeted 5/7 genes tested, demonstrating that 100 nt homology arms suffice for large (~5 kb) insertions, with functional validation showing similar expression patterns to conventional CRIMIC.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41\u2013C43 provide experimental validation with PCR verification (Figure 6B) and functional expression pattern comparison (Figure 6C, Figure 6\u2014figure supplement 1). The cost reduction (C40) and simplified cloning strategy (C82) are clearly described. The 5/7 success rate provides reasonable evidence for the approach's viability.",
+    "evaluation": "Claims C39-C43, C51, and C82 describe a practical solution to cost and cloning challenges. The experimental data (5/7 genes successfully targeted, PCR verification, expression pattern comparison in Figure 6C and supplement) support the approach. Cost estimates are explicit and the single-step cloning advantage is clearly demonstrated compared to the multi-step CRIMIC protocol.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C48",
-      "C49",
-      "C50",
-      "C51",
+      "C4",
+      "C5",
+      "C6",
+      "C30",
       "C52",
-      "C53",
       "C83"
     ],
-    "result": "The drop-in methods improved overall efficiency from ~50% (CRIMIC) to 70\u201380% success rate through two key features: shortening homology arms to 100 nt (reducing cost from ~$300 to ~$100) and in vivo linearization via gRNA1 target sites flanking the SIC.",
+    "result": "In vivo linearization of donor plasmids by Cas9 cutting at flanking gRNA1 sites improves homologous recombination efficiency. This approach, combined with 100 nt homology arms, enables efficient and precise integration of 1-5 kb cassettes in Drosophila germline.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C48\u2013C50 provide comparative efficiency data. The key improvements (C51\u2013C52) are well-documented throughout the manuscript with supporting experimental evidence. The conclusion (C53, C83) appropriately summarizes the methodological advances. However, the 70\u201380% success rate should be interpreted cautiously as it's based on a limited gene set (10 genes).",
+    "evaluation": "Claims C4-C6, C30, C52, and C83 describe the in vivo linearization strategy. The approach is supported by prior literature in other organisms (C30) and the experimental results across multiple constructs and genes demonstrate improved efficiency. The precision of integration is verified by sequencing (C15, C33) and PCR validation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C77",
-      "C78",
-      "C79"
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C53"
     ],
-    "result": "The U6-gRNA1 dominant marker has limitations: it requires additional transgenes for detection and segregates independently from the targeted gene, making stock establishment and maintenance more challenging.",
+    "result": "The drop-in methods are faster, cheaper, and more efficient than conventional CRIMIC. The cloning success rate is nearly 100% versus ~50% for CRIMIC, and overall success rate is 70-80% versus ~50%, with reduced cost (~$100 vs ~$300 per construct) and bench time.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77\u2013C79 clearly describe practical limitations of the U6-gRNA1 marker system with reference to Figure 4\u2014figure supplement 1. These are legitimate concerns for practical implementation, though they don't invalidate the overall approach.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C7, C48-C50, and C53 summarize the comparative advantages. These are supported by the accumulated data across all experiments, cost breakdowns (C8, C29, C39, C40, C51), and workflow comparisons (C54, Figure 1B). The success rates are empirically derived from the experimental results presented throughout the manuscript.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C1",
-      "C8",
-      "C9"
+      "C77",
+      "C78",
+      "C79"
     ],
-    "result": "The previous CRIMIC method used dsDNA homology donors with ~1 kb homology arms, costing $1,000\u20132,000 per line with ~50% overall success rate.",
+    "result": "The U6-gRNA1 dominant marker has significant limitations: it requires additional transgenes for detection and segregates independently from the targeted gene, making stock establishment and maintenance more challenging.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C8, and C9 provide baseline context for the improvements described in the manuscript. These are stated as established facts from prior work (Lee et al., 2018a) and accumulated experience.",
+    "evaluation": "Claims C77-C79 identify practical limitations of the U6-gRNA1 marker system. These are clearly stated and supported by Figure 4\u2014figure supplement 1 showing the detection scheme. The limitations are acknowledged as trade-offs for the size reduction benefit, providing balanced assessment of the method.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C4",
-      "C5",
-      "C6",
-      "C7"
+      "C1",
+      "C8",
+      "C9",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
     ],
-    "result": "The dsDNA drop-in methods use synthesized donors with 100 nt homology arms and gRNA target sites; upon injection, Cas9 releases the donor DNA (1\u20135 kb) from the plasmid, which integrates efficiently and precisely in vivo. The approach is fast, cheap, and scalable.",
+    "result": "Background on CRIMIC methodology: The conventional CRIMIC method uses dsDNA donors with ~1 kb homology arms to insert ~5 kb cassettes, costs $1,000-2,000 per line, and has ~50% overall success rate. This contrasts with ssDNA methods that typically use 50-100 nt homology arms for small (~200 nt) insertions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims summarize the overall methodology and conclusions. Claims C4\u2013C6 are supported by the detailed experimental results throughout the manuscript. Claim C7 is appropriately supported by the cost reductions, simplified protocols, and efficiency improvements documented in the results.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C1, C8-C9, and C57-C60 provide context from prior work and established methods. These are appropriately cited (C1, C57-C60) or based on the authors' accumulated experience (C8-C9). The claims establish the baseline against which the new methods are compared.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
@@ -172,11 +175,11 @@
       "C80",
       "C81"
     ],
-    "result": "Prior work in other systems showed that in vivo linearization enables homology-independent knock-in, though with error-prone and non-directional insertions. In Drosophila, in vitro linearized DNA is a poor substrate for germline transformation, while in vivo linearization with homology arms (as used here) improves efficiency.",
+    "result": "Comparison with homology-independent methods: In vivo linearization without homology arms has been shown in other organisms but is error-prone and non-directional. In Drosophila, Bosch et al. (2019) achieved 4/11 success rate with error-prone insertions, while in vitro linearized DNA is a poor substrate for Drosophila germline transformation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C44\u2013C47 and C80\u2013C81 accurately cite prior literature to contextualize the current work. The distinction between homology-independent (error-prone) and homology-dependent (precise) approaches is clearly made, justifying the design choices in this study.",
+    "evaluation": "Claims C44-C47 and C80-C81 appropriately cite and summarize prior work on alternative approaches. The citations support the stated limitations of homology-independent methods and provide context for why the authors chose homology-dependent approaches with short arms as a middle ground.",
     "result_type": "MINOR"
   },
   {
@@ -184,68 +187,21 @@
     "claim_ids": [
       "C55",
       "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60"
-    ],
-    "result": "Background information on CRIMIC and related methods: the SIC can be replaced with SA-GFP-SD tags (functional in 75% of cases), dsDNA donors typically require 500 nt\u20131 kb homology arms, ssDNA donors use 50\u2013100 nt arms for short insertions, and CRIMIC creates severe loss-of-function alleles with GAL4 expression.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims provide essential background context from prior literature (multiple citations provided). They accurately represent established knowledge in the field and set up the rationale for the current work.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
+      "C61",
       "C63",
-      "C64"
-    ],
-    "result": "Genes with low expression in S2R+ cells (based on modEncode profiling) showed GFP signal by FACS but GFP+ clones could not be successfully isolated, possibly due to insufficient signal-to-noise ratio.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63\u2013C64 provide a reasonable explanation for the 7 genes where clones could not be established despite FACS detection. The correlation with expression levels (Table 1) and the mechanistic hypothesis are appropriate, though this remains somewhat speculative.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
+      "C64",
       "C65",
       "C67",
       "C69",
-      "C70"
-    ],
-    "result": "Prior work used PCR-generated dsDNA constructs for S2 cell knock-in (~2% efficiency with drug selection), asymmetric homology arms improved efficiency, short ssDNA donors were used for small insertions in Drosophila, and longer ssDNAs (~1000 nt) were developed for mice.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims accurately cite relevant prior literature to contextualize the current work's contributions. The comparisons help establish the novelty and improvements of the current methods.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C61"
-    ],
-    "result": "The S2R+-MT::Cas9 cell line used is a derivative of S2R+ NPT005 containing an mCherry tag in the Clic locus.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C61 provides important methodological detail about the cell line used, properly cited. This is relevant for reproducibility and interpretation of results.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
+      "C70",
+      "C72",
       "C85"
     ],
-    "result": "The generated cell lines with marked organelles will be useful resources for studies of organelle biogenesis, function, subcellular distribution, and genetic/pharmacological screens.",
+    "result": "Additional methodological context and applications: The SA-GFP-SD tag preserves function in 75% of cases; S2R+ cells used are derivatives with mCherry::Clic; genes with low expression may have insufficient signal-to-noise for clone isolation; prior PCR-based methods achieved ~2% efficiency with drug selection; asymmetric homology arms may improve efficiency; the generated cell lines are useful resources for organelle studies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C85 is a reasonable statement about the utility of the generated resource. The cell lines are deposited in public repositories (DRSC, DGRC) and represent a valuable community resource, though the specific applications mentioned are prospective.",
+    "evaluation": "Claims C55-C56, C61, C63-C65, C67, C69-C70, C72, and C85 provide supporting context, methodological details, and discussion of applications. These are appropriately cited where drawing on prior work (C55-C56, C61, C65, C67, C69-C70) or clearly stated as speculation/inference where appropriate (C64, C72, C85).",
     "result_type": "MINOR"
   }
 ]

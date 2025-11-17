@@ -427,7 +427,20 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This finding is supported by experimental data shown in Figure 2C.",
+    "evidence": "This finding is supported by experimental data shown in Figure 2C with Ca2+ event-triggered averages.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "SWA modulation around Ca2+ events was significantly higher during sleep compared to stationary wake.",
+    "claim_type": "EXPLICIT",
+    "source": "This modulation was significantly higher during sleep compared to stationary wake (Figure 2D).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is supported by experimental data shown in Figure 2D with statistical analysis (rank sum test).",
     "evidence_type": [
       "DATA"
     ]
@@ -447,7 +460,7 @@
   },
   {
     "claim_id": "C36",
-    "claim": "Gi-DREADD activation in astrocytes increased Ca2+ event frequency across the entire 2 hr recording period after CNO administration.",
+    "claim": "Gi-DREADD activation increased astrocyte Ca2+ event frequency across the entire 2 hr recording period after CNO administration.",
     "claim_type": "EXPLICIT",
     "source": "Here, we confirmed that Gi-DREADD activation indeed altered astrocyte Ca2+, causing an increase in event frequency across the entire 2 hr recording period after CNO administration (Figure 3C\u2013D, Video 2).",
     "source_type": [
@@ -499,7 +512,7 @@
   },
   {
     "claim_id": "C40",
-    "claim": "CNO administration did not significantly increase astrocyte Ca2+ in IP3R2 KO mice expressing Gi-DREADDs.",
+    "claim": "CNO administration did not significantly increase astrocyte Ca2+ in IP3R2 KO mice.",
     "claim_type": "EXPLICIT",
     "source": "Unlike control mice (Figure 3C\u2013D), CNO administration did not significantly increase astrocyte Ca2+ in IP3R2 KO mice (Figure 3I), demonstrating that Gi-DREADD-induced Ca2+ events rely, at least in part, on IP3R2.",
     "source_type": [
@@ -512,7 +525,7 @@
   },
   {
     "claim_id": "C41",
-    "claim": "In IP3R2 KO mice, there was no significant change in SWA with CNO administration in Gi-DREADD experiments.",
+    "claim": "In IP3R2 KO animals, there was no significant change in SWA with CNO administration.",
     "claim_type": "EXPLICIT",
     "source": "In accordance with the lack of change in Ca2+ in the IP3R2 KO animals, we also observed no significant change in SWA with CNO administration (Figure 3J), indicating that the change in sleep depth we observe (Figure 3E) is dependent on IP3R2.",
     "source_type": [
@@ -538,7 +551,7 @@
   },
   {
     "claim_id": "C43",
-    "claim": "Gi-DREADD activation did not change the rate of delta waves or slow oscillations during sleep.",
+    "claim": "Delta wave and slow oscillation rates do not change between saline and CNO conditions.",
     "claim_type": "EXPLICIT",
     "source": "We first looked at the effect of astrocytic Gi-DREADD activation on the number of identified delta waves and slow oscillations, and found no effect on the rate of delta waves or slow oscillations during sleep (Figure 4E).",
     "source_type": [
@@ -551,20 +564,20 @@
   },
   {
     "claim_id": "C44",
-    "claim": "CNO administration resulted in higher peak and lower trough amplitudes for delta waves.",
+    "claim": "Delta waves show higher peak and trough amplitude with CNO compared with saline.",
     "claim_type": "EXPLICIT",
-    "source": "Indeed, by plotting peak vs. trough amplitude, we observed a clear change in delta waves after CNO, resulting in higher peak and lower trough amplitudes (Figure 4G).",
+    "source": "However, when quantifying the amplitude of these waveforms, we noted increases in the mean amplitude, particularly for delta waves (Figure 4F,I).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This finding is supported by experimental data shown in Figure 4G.",
+    "evidence": "This finding is supported by experimental data shown in Figure 4F.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C45",
-    "claim": "There was a significant increase in peak-trough amplitude for delta waves after CNO administration.",
+    "claim": "Peak minus trough delta wave amplitude is higher with CNO.",
     "claim_type": "EXPLICIT",
     "source": "Similarly, we quantified the change in total peak \u2013 trough amplitude after CNO administration. While we saw a significant increase in size for delta waves (Figure 4H) and slow oscillations (Figure 4K) compared to saline controls in the same animal, the change in delta waves was significantly higher than that for slow oscillations (Figure 4L, Figure 4\u2014figure supplement 1).",
     "source_type": [
@@ -577,7 +590,7 @@
   },
   {
     "claim_id": "C46",
-    "claim": "The change in delta wave amplitude was significantly higher than that for slow oscillations after Gi-DREADD activation.",
+    "claim": "The change in delta waves was significantly higher than that for slow oscillations.",
     "claim_type": "EXPLICIT",
     "source": "While we saw a significant increase in size for delta waves (Figure 4H) and slow oscillations (Figure 4K) compared to saline controls in the same animal, the change in delta waves was significantly higher than that for slow oscillations (Figure 4L, Figure 4\u2014figure supplement 1).",
     "source_type": [
@@ -643,7 +656,7 @@
   },
   {
     "claim_id": "C51",
-    "claim": "IP3R2 KO mice did not exhibit the same increase in event rate in the last third of sleep as control mice.",
+    "claim": "IP3R2 KO mice did not exhibit the same increase in event rate in the last third of sleep.",
     "claim_type": "EXPLICIT",
     "source": "When quantifying the change in event rate in the last third of sleep and wake for IP3R2 KO mice, we found that IP3R2 KO mice did not exhibit the same increase in event rate in the last third of sleep (Figure 5D, left).",
     "source_type": [
@@ -656,20 +669,46 @@
   },
   {
     "claim_id": "C52",
-    "claim": "Ca2+ dynamics only increased in the first 5\u201310 min after I.P. injection of CNO in Gq-DREADD experiments, after which Ca2+ dynamics were almost completely abolished.",
+    "claim": "Ca2+ dynamics only increased in the first 5\u201310 min after I.P. injection of CNO in Gq-DREADD expressing astrocytes.",
     "claim_type": "EXPLICIT",
-    "source": "However, we were surprised to find that Ca2+ dynamics only increased in the first 5\u201310 min after I.P. injection of CNO (150.9% \u00b1 135.9, Video 3). After this initial period of increased Ca2+ events, Ca2+ dynamics were almost completely abolished (\u221297.3% \u00b1 0.79%, Figure 6C\u2013D, Figure 6\u2014figure supplement 1H, Video 3).",
+    "source": "However, we were surprised to find that Ca2+ dynamics only increased in the first 5\u201310 min after I.P. injection of CNO (150.9% \u00b1 135.9, Video 3).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This finding is supported by experimental data shown in Figure 6C-D and Video 3.",
+    "evidence": "This finding is supported by experimental data shown in Figure 6C-D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C53",
-    "claim": "Mice spent significantly more time in sleep after CNO administration during the Ca2+ suppression period in Gq-DREADD experiments.",
+    "claim": "After the initial period of increased Ca2+ events following Gq-DREADD activation, Ca2+ dynamics were almost completely abolished.",
+    "claim_type": "EXPLICIT",
+    "source": "After this initial period of increased Ca2+ events, Ca2+ dynamics were almost completely abolished (\u221297.3% \u00b1 0.79%, Figure 6C\u2013D, Figure 6\u2014figure supplement 1H, Video 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is supported by experimental data shown in Figure 6C-D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "This 'silent' state of Ca2+ dynamics lasted for the rest of the entire recording (2\u20133 hr).",
+    "claim_type": "EXPLICIT",
+    "source": "This 'silent' state of Ca2+ dynamics lasted for the rest of the entire recording (2\u20133 hr).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This observation is based on experimental data from Gq-DREADD experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Mice spent significantly more time in sleep after CNO administration during the Ca2+ suppression period.",
     "claim_type": "EXPLICIT",
     "source": "We found that mice spent significantly more time in sleep after CNO administration (Figure 6E, left).",
     "source_type": [
@@ -681,7 +720,7 @@
     ]
   },
   {
-    "claim_id": "C54",
+    "claim_id": "C56",
     "claim": "In the absence of Gq-GPCR-mediated Ca2+ events, mice made fewer sleep-to-wake transitions.",
     "claim_type": "EXPLICIT",
     "source": "Further, in the absence of Gq-GPCR-mediated Ca2+ events, mice made fewer sleep-to-wake transitions (Figure 6F, left) and accordingly, we observed fewer sleep bouts of longer duration (Figure 6\u2014figure supplement 2A).",
@@ -694,21 +733,21 @@
     ]
   },
   {
-    "claim_id": "C55",
-    "claim": "Astrocyte Ca2+ is important for both wake-to-sleep transitions and sleep-to-wake transitions.",
+    "claim_id": "C57",
+    "claim": "Mice made fewer wake-to-sleep transitions during Ca2+ suppression.",
     "claim_type": "EXPLICIT",
     "source": "However, we also observed less frequent transitions out of wake, demonstrating that astrocyte Ca2+ is important for both wake-to-sleep transitions (Figure 6F, right), and sleep-to-wake transitions (Figure 6F, left).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This finding is supported by experimental data shown in Figure 6F with statistical analysis (paired t-test).",
+    "evidence": "This finding is supported by experimental data shown in Figure 6F (right) with statistical analysis (paired t-test).",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C56",
-    "claim": "During the initial period with elevated Ca2+ activity in Gq-DREADD experiments, there was a significant decrease in the percent time sleeping.",
+    "claim_id": "C58",
+    "claim": "During the initial high Ca2+ period after CNO administration in Gq-DREADD mice, there was a significant decrease in the percent time sleeping.",
     "claim_type": "EXPLICIT",
     "source": "However, of the animals that exhibited some sleep in either the CNO or saline condition (n = 4), we observed a significant decrease in the percent time sleeping (Figure 6G).",
     "source_type": [
@@ -720,7 +759,7 @@
     ]
   },
   {
-    "claim_id": "C57",
+    "claim_id": "C59",
     "claim": "Ca2+ suppression via Gq-GPCR manipulation had no significant effect on SWA during sleep.",
     "claim_type": "EXPLICIT",
     "source": "In contrast to manipulation of the Gi-GPCRs, we found that Ca2+ suppression via Gq-GPCR manipulation had no significant effect on SWA during sleep (Figure 6H).",
@@ -728,33 +767,6 @@
       "TEXT"
     ],
     "evidence": "This finding is supported by experimental data shown in Figure 6H with statistical analysis (paired t-test).",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C58",
-    "claim": "Astrocytic regulation of SWA is specifically dependent on the Gi-GPCR pathway.",
-    "claim_type": "EXPLICIT",
-    "source": "This suggests that astrocytic regulation of SWA is specifically dependent on the Gi-GPCR pathway and provides further evidence that astrocytic Gi- and Gq-GPCR signaling regulate separable sleep/wake features.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This conclusion is based on the differential effects of Gi- and Gq-DREADD manipulations on SWA.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C59",
-    "claim": "SWA in FC decreased before and increased after V1 Ca2+ event onsets, although the magnitude of this modulation was smaller than that observed locally.",
-    "claim_type": "EXPLICIT",
-    "source": "Using Ca2+ event-triggered averages, we found a similar relationship with V1 Ca2+ events and FC as previously described (Figure 2C): SWA in FC decreased before and increased after V1 Ca2+ event onsets, although the magnitude of this modulation was smaller than that observed locally (Figure 7C).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This finding is supported by experimental data shown in Figure 7C.",
     "evidence_type": [
       "DATA"
     ]
@@ -800,7 +812,7 @@
   },
   {
     "claim_id": "C63",
-    "claim": "The SWA change in FC was accounted for by a significant increase in slow oscillation amplitude, but not delta wave amplitude.",
+    "claim": "The SWA change in FC was accounted for by a significant increase in slow oscillation amplitude, but not delta wave.",
     "claim_type": "EXPLICIT",
     "source": "We also found that the SWA change was accounted for by a significant increase in slow oscillation amplitude, but not delta wave (Figure 7I; Figure 7J).",
     "source_type": [
@@ -813,13 +825,13 @@
   },
   {
     "claim_id": "C64",
-    "claim": "The change in slow oscillation amplitude in FC was similar to the change of the slow oscillation amplitude in V1.",
+    "claim": "The change in slow oscillation amplitude in FC (6.8 \u00b1 2.2%) was similar to the change of the slow oscillation amplitude in V1 (8.8 \u00b1 3.2%).",
     "claim_type": "EXPLICIT",
     "source": "Moreover, the change in slow oscillation amplitude in FC (Figure 7J, 6.8 \u00b1 2.2%) was similar to the change of the slow oscillation amplitude in V1 (Figure 4L, 8.8 \u00b1 3.2%), suggesting that slow oscillations generated in V1 travelled to FC.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This conclusion is based on comparison of data from Figure 7J and Figure 4L.",
+    "evidence": "This comparison is based on experimental data shown in Figure 7J and Figure 4L.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -849,7 +861,8 @@
     ],
     "evidence": "This is a summary statement of the main findings supported by the experimental data throughout the manuscript.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
@@ -860,9 +873,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This conclusion is based on the experimental data from Gi- and Gq-DREADD manipulations.",
+    "evidence": "This conclusion is based on the experimental data from Gi-DREADD and Gq-DREADD experiments.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
@@ -873,9 +887,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This conclusion is based on the experimental data from Gi- and Gq-DREADD manipulations.",
+    "evidence": "This conclusion is based on the experimental data from Gi-DREADD and Gq-DREADD experiments.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
@@ -888,37 +903,66 @@
     ],
     "evidence": "This conclusion is based on the experimental data shown in Figure 7.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C70",
-    "claim": "Following sleep deprivation, recovery sleep has higher sleep depth but the duration is not significantly changed.",
+    "claim": "Astrocytic Gi-DREADD activation increases SWA, but not sleep duration.",
     "claim_type": "EXPLICIT",
-    "source": "Previous work has also shown separation in sleep depth and duration by demonstrating that following sleep deprivation, recovery sleep has higher sleep depth but the duration is not significantly changed (Dijk and Beersma, 1989; Patrick and Gilbert, 1896).",
+    "source": "We found that astrocytic Gi-DREADD activation increases SWA, but not sleep duration, while Gq-DREADD activation altered sleep duration but not SWA.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence": "This finding is supported by experimental data shown in Figures 3E, 3F, and 6.",
     "evidence_type": [
-      "CITATION"
+      "DATA"
     ]
   },
   {
     "claim_id": "C71",
-    "claim": "Ca2+ has been suggested to mechanistically link the regulation of sleep duration and depth.",
+    "claim": "Gq-DREADD activation altered sleep duration but not SWA.",
     "claim_type": "EXPLICIT",
-    "source": "On the other hand, Ca2+ has been suggested to mechanistically link the regulation of sleep duration and depth (Ode et al., 2017; Tatsuki et al., 2016).",
+    "source": "We found that astrocytic Gi-DREADD activation increases SWA, but not sleep duration, while Gq-DREADD activation altered sleep duration but not SWA.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence": "This finding is supported by experimental data shown in Figures 6E, 6F, and 6H.",
     "evidence_type": [
-      "CITATION"
+      "DATA"
     ]
   },
   {
     "claim_id": "C72",
+    "claim": "Endogenous astrocyte Ca2+ is modulated in relation to both sleep duration and sleep depth.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, our data supports both these ideas. We found that endogenous astrocyte Ca2+ is modulated in relation to both sleep duration (Figure 5) and sleep depth (Figure 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is based on the experimental data shown in Figures 1 and 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Gi-DREADD activation increased SWA without affecting sleep duration, suggesting that SWA does not directly influence sleep duration.",
+    "claim_type": "EXPLICIT",
+    "source": "Our findings that Gi-DREADD activation increased SWA without affecting sleep duration (Figure 3E,F) suggests that SWA does not directly influence sleep duration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is based on the experimental data shown in Figure 3E and 3F.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
     "claim": "Astrocyte Ca2+ changes with circadian rhythm in the suprachiasmatic nucleus.",
     "claim_type": "EXPLICIT",
     "source": "In fact, astrocyte Ca2+ changes with circadian rhythm in the suprachiasmatic nucleus (Brancaccio et al., 2017) and increases with sleep need after sleep deprivation (Ingiosi et al., 2020).",
@@ -931,7 +975,7 @@
     ]
   },
   {
-    "claim_id": "C73",
+    "claim_id": "C75",
     "claim": "Astrocyte Ca2+ increases with sleep need after sleep deprivation.",
     "claim_type": "EXPLICIT",
     "source": "In fact, astrocyte Ca2+ changes with circadian rhythm in the suprachiasmatic nucleus (Brancaccio et al., 2017) and increases with sleep need after sleep deprivation (Ingiosi et al., 2020).",
@@ -944,60 +988,223 @@
     ]
   },
   {
-    "claim_id": "C74",
-    "claim": "Delta waves are thought to promote the weakening of memories, while slow oscillations support memory consolidation.",
-    "claim_type": "EXPLICIT",
-    "source": "Delta waves are thought to promote the weakening of memories, while slow oscillations support memory consolidation (Genzel et al., 2014; Kim et al., 2019).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by citations to previous studies.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C75",
-    "claim": "Delta waves are more local than slow oscillations and are thought to be generated within the cortex.",
-    "claim_type": "EXPLICIT",
-    "source": "Delta waves are more local than slow oscillations and are thought to be generated within the cortex (Genzel et al., 2014; Siclari and Tononi, 2017; Siclari et al., 2014; Bernardi et al., 2018; Spoormaker et al., 2010; Nir et al., 2011).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by citations to previous studies.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
     "claim_id": "C76",
-    "claim": "DOWN states are thought to be generated through GABAergic inhibition.",
+    "claim": "The inhibitory neurotransmitter GABA has been implicated in cortical synchrony during sleep through the mediation of synchronous DOWN states.",
     "claim_type": "EXPLICIT",
-    "source": "Since our Gi-DREADD manipulation was restricted within the cortex (Figure 3\u2014figure supplement 1) and DOWN states are thought to be generated through GABAergic inhibition (Chen et al., 2012; Lemieux et al., 2015; Sheroziya and Timofeev, 2014; Zucca et al., 2017), we hypothesize that Gi-GPCR signaling in astrocytes mediates the local synchronization of delta waves via control of inhibition.",
+    "source": "The inhibitory neurotransmitter GABA has been implicated in cortical synchrony during sleep through the mediation of synchronous DOWN states (Lemieux et al., 2015; Sheroziya and Timofeev, 2014; Zucca et al., 2017) and the excitatory neurotransmitter glutamate has been implicated in cortical UP states (Sanchez-Vives and McCormick, 2000; Poskanzer and Yuste, 2011).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence": "This claim is supported by citations to multiple studies.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
     "claim_id": "C77",
+    "claim": "The excitatory neurotransmitter glutamate has been implicated in cortical UP states.",
+    "claim_type": "EXPLICIT",
+    "source": "The inhibitory neurotransmitter GABA has been implicated in cortical synchrony during sleep through the mediation of synchronous DOWN states (Lemieux et al., 2015; Sheroziya and Timofeev, 2014; Zucca et al., 2017) and the excitatory neurotransmitter glutamate has been implicated in cortical UP states (Sanchez-Vives and McCormick, 2000; Poskanzer and Yuste, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Astrocytes respond to both GABA and glutamate via Gi-GPCRs (via GABAB and mGluR3 receptors in adults).",
+    "claim_type": "EXPLICIT",
+    "source": "Astrocytes respond to both GABA and glutamate via Gi-GPCRs (via GABAB and mGluR3 receptors in adults) (Durkee et al., 2019; Mariotti et al., 2016; Nagai et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to multiple studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Many astrocytic functions associated with sleep may be important, such as extracellular glutamate regulation, extracellular ion dynamics, and adenosine release.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, many astrocytic functions associated with sleep may be important, such as extracellular glutamate regulation (Poskanzer and Yuste, 2016), extracellular ion dynamics (Ding et al., 2016), and adenosine release (Halassa et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The activation of both astrocytic Gi- and Gq-GPCRs increases intracellular Ca2+.",
+    "claim_type": "EXPLICIT",
+    "source": "The activation of both astrocytic Gi- and Gq-GPCRs increases intracellular Ca2+ (Durkee et al., 2019; Mariotti et al., 2016; Nagai et al., 2019), and yet we observed a functional dissociation between manipulation of the Gi- and Gq-GPCR pathways.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "There is a functional dissociation between manipulation of the Gi- and Gq-GPCR pathways in astrocytes.",
+    "claim_type": "EXPLICIT",
+    "source": "The activation of both astrocytic Gi- and Gq-GPCRs increases intracellular Ca2+ (Durkee et al., 2019; Mariotti et al., 2016; Nagai et al., 2019), and yet we observed a functional dissociation between manipulation of the Gi- and Gq-GPCR pathways.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is based on the experimental data from Gi-DREADD and Gq-DREADD experiments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Astrocytes have the capacity to perform several functions in parallel through GPCR signaling.",
+    "claim_type": "EXPLICIT",
+    "source": "Many different roles have been attributed to astrocytes, suggesting astrocytes have the capacity to perform several functions in parallel. Our findings suggest that, through GPCR signaling, astrocytes interpret Ca2+ dynamics within the cell differently, resulting in different functional outputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative conclusion based on the experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Through GPCR signaling, astrocytes interpret Ca2+ dynamics within the cell differently, resulting in different functional outputs.",
+    "claim_type": "EXPLICIT",
+    "source": "Our findings suggest that, through GPCR signaling, astrocytes interpret Ca2+ dynamics within the cell differently, resulting in different functional outputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative conclusion based on the experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Astrocytic Gq-DREADD activation can increase Ca2+ under anesthesia.",
+    "claim_type": "EXPLICIT",
+    "source": "While astrocytic Gq-DREADD activation can increase Ca2+ under anesthesia (Durkee et al., 2019; Bonder and McCarthy, 2014), we report for the first time the effect of Gq-DREADD activation on astrocyte Ca2+ in awake mice, both for long time periods (2\u20133 hr) and with several CNO concentrations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Gq-DREADD activation increased Ca2+ only for a short time after CNO injection in awake mice, after which there was a complete suppression of Ca2+ activity for several hours, for all CNO concentrations.",
+    "claim_type": "EXPLICIT",
+    "source": "Gq-DREADD activation increased Ca2+ only for a short time after CNO injection, after which we observe a complete suppression of Ca2+ activity for several hours, for all CNO concentrations (Figure 6C\u2013D, Figure 6\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is supported by experimental data shown in Figure 6C-D and Figure 6\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Delta waves and slow oscillations have been characterized in NREM sleep.",
+    "claim_type": "EXPLICIT",
+    "source": "Two unique slow-waves have been characterized in NREM sleep: delta waves and slow oscillations (Genzel et al., 2014; Kim et al., 2019; Steriade et al., 1993; Steriade and Timofeev, 2003; Siclari et al., 2014; Dang-Vu et al., 2008; Bernardi et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to multiple studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Astrocytic Gi-DREADD activation increases SWA by preferentially increasing the amplitude of delta waves in V1.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we found that astrocytic Gi-DREADD activation increases SWA by preferentially increasing the amplitude of delta waves in V1 (Figure 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is supported by experimental data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Delta waves are generated locally within the cortex by the spreading of DOWN states.",
+    "claim_type": "EXPLICIT",
+    "source": "This data supports existing literature suggesting delta waves are generated locally within the cortex by the spreading of DOWN states (Genzel et al., 2014; Siclari and Tononi, 2017; Siclari et al., 2014; Bernardi et al., 2018; Spoormaker et al., 2010; Nir et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to multiple studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
     "claim": "Slow oscillations are more global than delta waves.",
     "claim_type": "EXPLICIT",
     "source": "Slow oscillations are more global than delta waves.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated as established knowledge in the discussion.",
+    "evidence": "This is stated in the discussion and supported by the experimental findings and citations.",
     "evidence_type": [
+      "DATA",
+      "CITATION",
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C78",
-    "claim": "1 mg/kg CNO did not alter Ca2+ dynamics or sleep features in the absence of DREADD expression.",
+    "claim_id": "C90",
+    "claim": "The change in slow oscillation amplitude with CNO administration was similar in V1 and FC.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, the change in slow oscillation amplitude with CNO administration was similar in V1 and FC (Figure 7J).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is supported by experimental data shown in Figure 7J.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Slow oscillations and delta waves have distinct functions in memory during NREM sleep.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent work indicates that slow oscillations and delta waves have distinct functions in memory during NREM sleep (Genzel et al., 2014; Kim et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "CNO itself (1 mg/kg, I.P) did not alter Ca2+ dynamics or sleep features in the absence of DREADD expression.",
     "claim_type": "EXPLICIT",
     "source": "Because of the known sedative effects of CNO, we first verified that CNO itself (1 mg/kg, I.P) did not alter Ca2+ dynamics or sleep features in the absence of DREADD expression. We found no change in Ca2+ dynamics or sleep features between administration of 1 mg/kg CNO and the saline control (Figure 3\u2014figure supplement 2).",
     "source_type": [
@@ -1009,7 +1216,7 @@
     ]
   },
   {
-    "claim_id": "C79",
+    "claim_id": "C93",
     "claim": "Gi-DREADD activation in astrocytes is consistent with studies of astrocytic Ca2+ activity in ex vivo slices and in anesthetized mice.",
     "claim_type": "EXPLICIT",
     "source": "This finding is consistent with studies of astrocytic Ca2+ activity in ex vivo slices and in anesthetized mice (Durkee et al., 2019; Nagai et al., 2019; Chai et al., 2017).",
@@ -1022,161 +1229,82 @@
     ]
   },
   {
-    "claim_id": "C80",
-    "claim": "Astrocytic Gq-DREADD activation in vivo has been performed previously.",
+    "claim_id": "C94",
+    "claim": "IP3R2 KO mice carry null alleles for Itpr2.",
     "claim_type": "EXPLICIT",
-    "source": "Although astrocytic Gq-DREADD activation in vivo has been performed previously (Durkee et al., 2019; MacDonald et al., 2020; Bonder and McCarthy, 2014; Adamsky et al., 2018), validation of Gq-DREADD-mediated astrocytic Ca2+ increases has only been performed under anesthesia or ex vivo, in part because several in vivo astrocyte DREADD experiments have been carried out in brain regions that are less accessible than cortex (MacDonald et al., 2020; Adamsky et al., 2018).",
+    "source": "IP3R2 KO mice (Dr. Katsuhiko Mikoshiba, RIKEN) carry null alleles for Itpr2.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence": "This is a description of the mouse model used in the study.",
     "evidence_type": [
-      "CITATION"
+      "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C81",
-    "claim": "Validation of Gq-DREADD-mediated astrocytic Ca2+ increases has only been performed under anesthesia or ex vivo.",
-    "claim_type": "EXPLICIT",
-    "source": "Although astrocytic Gq-DREADD activation in vivo has been performed previously (Durkee et al., 2019; MacDonald et al., 2020; Bonder and McCarthy, 2014; Adamsky et al., 2018), validation of Gq-DREADD-mediated astrocytic Ca2+ increases has only been performed under anesthesia or ex vivo, in part because several in vivo astrocyte DREADD experiments have been carried out in brain regions that are less accessible than cortex (MacDonald et al., 2020; Adamsky et al., 2018).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by citations to previous studies.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C82",
-    "claim": "Gq-GPCR signaling canonically results in an increase in Ca2+ activity via IP3-dependent release of intracellular Ca2+.",
-    "claim_type": "EXPLICIT",
-    "source": "Canonically, Gq-GPCR signaling results in an increase in Ca2+ activity via IP3-dependent release of intracellular Ca2+ (Petravicz et al., 2008).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by a citation to Petravicz et al., 2008.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C83",
-    "claim": "The observed inhibition of astrocyte Ca2+ after Gq-DREADD activation could be due to depletion of intracellular Ca2+ stores and/or interference with store-operated Ca2+ channels.",
-    "claim_type": "EXPLICIT",
-    "source": "The observed inhibition of astrocyte Ca2+ could be due to depletion of intracellular Ca2+ stores and/or interference with store-operated Ca2+ channels (Sakuragi et al., 2017).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculative explanation supported by a citation to Sakuragi et al., 2017.",
-    "evidence_type": [
-      "SPECULATION",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C84",
-    "claim": "Fluorescence in both somas and processes remained elevated above baseline after 1 mg/kg CNO in Gq-DREADD experiments.",
-    "claim_type": "EXPLICIT",
-    "source": "We found that fluorescence in both somas and processes remained elevated above baseline after 1 mg/kg CNO (Figure 6\u2014figure supplement 1I), which suggests that Ca2+ levels may be clamped at saturating levels.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This finding is supported by experimental data shown in Figure 6\u2014figure supplement 1I.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C85",
-    "claim": "A dramatic increase in Ca2+ activity was observed in response to the wake cocktail in ex vivo slices.",
-    "claim_type": "EXPLICIT",
-    "source": "As predicted from previous studies reporting astrocytic Ca2+ increases to various neuromodulators (Ding et al., 2013; Khan et al., 2001; Takata et al., 2011; Shelton and McCarthy, 2000; Pankratov and Lalo, 2015), we observed a dramatic increase in Ca2+ activity in response to the cocktail (Figure 6\u2014figure supplement 1J).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This finding is supported by experimental data shown in Figure 6\u2014figure supplement 1J and citations to previous studies.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C86",
-    "claim": "After the initial increase in Ca2+ in response to the wake cocktail, GCaMP fluorescence did not return to baseline levels, but remained high and further Ca2+ events were almost completely absent.",
-    "claim_type": "EXPLICIT",
-    "source": "However, after this initial increase in Ca2+, GCaMP fluorescence did not return to baseline levels, but remained high and further Ca2+ events were almost completely absent (Figure 6\u2014figure supplement 1J), similar to in vivo dynamics observed 5\u201310 min after CNO administration.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This finding is supported by experimental data shown in Figure 6\u2014figure supplement 1J.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C87",
-    "claim": "No further increase in astrocyte Ca2+ was observed in response to a second dose of wake cocktail in ex vivo slices.",
-    "claim_type": "EXPLICIT",
-    "source": "In contrast to the initial Ca2+ increase, we observed no further increase in astrocyte Ca2+ (Figure 6\u2014figure supplement 1J).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This finding is supported by experimental data shown in Figure 6\u2014figure supplement 1J.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C88",
-    "claim": "All procedures were carried out using adult mice (C57Bl/6, P50\u2013100).",
-    "claim_type": "EXPLICIT",
-    "source": "All procedures were carried out using adult mice (C57Bl/6, P50\u2013100) in accordance with protocols approved by the University of California, San Francisco Institutional Animal Care and Use Committee (IACUC).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a methodological detail stated in the Materials and methods section.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C89",
-    "claim": "All animals were housed in a 12:12 light-dark cycle with food and water provided ad libitum.",
-    "claim_type": "EXPLICIT",
-    "source": "All animals were housed in a 12:12 light-dark cycle with food and water provided ad libitum.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a methodological detail stated in the Materials and methods section.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C90",
+    "claim_id": "C95",
     "claim": "All recording sessions took place between ZT 2\u20135.",
     "claim_type": "EXPLICIT",
     "source": "To control for the effect of circadian rhythm and sleep pressure, all recording sessions took place between ZT 2\u20135.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a methodological detail stated in the Results section.",
+    "evidence": "This is a methodological detail from the study.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C91",
+    "claim_id": "C96",
     "claim": "AQuA is an event-based approach to detect spatiotemporally distinct Ca2+ events without predetermined regions-of-interest (ROIs).",
     "claim_type": "EXPLICIT",
     "source": "To analyze astrocyte Ca2+ activity, we used our recent tool, AQuA (Wang et al., 2019), an event-based approach to detect spatiotemporally distinct Ca2+ events without predetermined regions-of-interest (ROIs).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a methodological detail with a citation to Wang et al., 2019.",
+    "evidence": "This is a description of the analysis method used in the study.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "A bin was identified as NREM sleep if (1) the slow-wave ratio (0.5\u20134 Hz/8\u201320 Hz) was > 0.5 SD from the mean, (2) the animal was stationary, and (3) the EMG was < 5 SD from the mean.",
+    "claim_type": "EXPLICIT",
+    "source": "A bin was identified as NREM sleep if (1) the slow-wave ratio (0.5\u20134 Hz/8\u201320 Hz) was > 0.5 SD from the mean, (2) the animal was stationary, and (3) the EMG was < 5 SD from the mean.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail describing sleep scoring criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Slow oscillations were identified as zero crossings with (1) preceding peaks >85th percentile, (2) following troughs <40th percentile, and (3) peak-to-trough duration of 150\u2013500 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Slow oscillations were identified as zero crossings with (1) preceding peaks >85th percentile, (2) following troughs <40th percentile, and (3) peak-to-trough duration of 150\u2013500 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail describing slow oscillation detection criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Delta waves were identified as zero crossings with (1) preceding peaks <85th percentile, (2) following troughs <40th percentile, and (3) peak-to-trough duration > 100 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Delta waves were identified as zero crossings with (1) preceding peaks <85th percentile, (2) following troughs <40th percentile, and (3) peak-to-trough duration > 100 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail describing delta wave detection criteria.",
+    "evidence_type": [
+      "DATA"
     ]
   }
 ]
