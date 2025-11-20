@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C20",
+      "C23",
+      "C25"
+    ],
+    "result": "OpenSpliceAI is a trainable, open-source reimplementation of SpliceAI in PyTorch that supports training from scratch, transfer learning, and provides six modular subcommands for data preprocessing, training, calibration, prediction, and variant analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C20, C23, and C25 collectively describe the core functionality and implementation of OpenSpliceAI. The manuscript provides detailed methods, architectural diagrams (Figure 1), and demonstrates the tool's capabilities through experimental validation, supporting these descriptive claims about the software's features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C17",
+      "C18",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "OpenSpliceAI demonstrates superior computational performance compared to the original SpliceAI, with faster processing speeds, lower memory usage, and improved GPU efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C17, C18, C35, C36, and C37 are supported by comprehensive benchmarking data presented in Figure 2E and Figure 2\u2014figure supplement 6. The manuscript provides quantitative comparisons across multiple metrics (elapsed time, memory usage, GPU efficiency) showing consistent performance advantages for OpenSpliceAI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "OSAIMANE, trained on human MANE v1.3 annotations with flanking sequences of 80-10,000 nt, achieves slight but consistent performance improvements over SpliceAI-Keras, with the best performance at 10,000 nt flanking sequences showing 1.25-1.56% accuracy gains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 describe the training procedure and performance of OSAIMANE. The manuscript provides detailed experimental design (Figure 2A), quantitative performance metrics with error bars across five model replicates, and demonstrates improvements that are statistically meaningful given the reported standard errors. The performance gains are modest but consistent across multiple evaluation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "OpenSpliceAI's predictions are highly concordant with SpliceAI, with ISM analyses showing median correlation of 0.857, position weight matrix similarities of 0.996-0.997, and identical predictions on test cases including cryptic splicing events and the CFTR gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C57-C62 are supported by extensive comparative analyses including ISM experiments (Figure 6), correlation analyses on 200 randomly sampled splice sites, DNA logo comparisons, and validation on known cryptic splicing mutations. The quantitative concordance metrics and visual comparisons provide strong evidence for functional equivalence between the two models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Species-specific OpenSpliceAI models trained on mouse, honeybee, zebrafish, and Arabidopsis demonstrate substantial performance improvements over human-trained SpliceAI-Keras, with gains of 2% in mouse, 54% in honeybee, 19% in zebrafish, and 57% in Arabidopsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 describe the cross-species training experiments. The manuscript provides detailed methodology for paralog removal (C40-C43), training procedures (C39), and comprehensive performance comparisons (C44-C47) shown in Figure 3 and supplements. The large performance gains in phylogenetically distant species (honeybee, Arabidopsis) are particularly well-supported, though the modest 2% improvement in mouse raises questions about biological significance versus statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C70"
+    ],
+    "result": "Transfer learning from human-trained models to other species consistently outperforms training from scratch, with transfer-trained models achieving near-optimal performance after one epoch compared to 10 epochs required for scratch-trained models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C70 are supported by extensive transfer learning experiments shown in Figure 4 and supplements. The manuscript provides training curves across multiple species, flanking sizes, and metrics, demonstrating both faster convergence and higher stability (lower standard errors) for transfer-learned models. The dramatic reduction in training time (1 vs 10 epochs) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "OpenSpliceAI models demonstrate good calibration, with class-wise temperature scaling producing slight improvements in NLL loss and ECE across all tested species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C53-C56 describe the calibration experiments. The manuscript provides detailed methodology for temperature scaling, quantitative metrics (NLL, ECE) averaged over five models per species (Figure 5), and reliability diagrams. However, the improvements are described as 'slight,' and the already-good calibration of uncalibrated models suggests limited practical impact of this contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "OpenSpliceAI and SpliceAI models are not identical due to inherent sources of randomness including weight initialization, data shuffling, batch normalization statistics, and optimizer stochasticity (AdamW).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C65-C67 explain the sources of variability between models. These are well-established principles of neural network training supported by the manuscript's discussion and citations. The use of ensemble averaging (five models) to reduce this variability is appropriately documented. This is primarily methodological context rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C68",
+      "C69"
+    ],
+    "result": "Retraining OpenSpliceAI on species-specific data provides more accurate performance, with comparable results for closely related species (mouse) and substantial improvements for distant species (Arabidopsis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C68, C69 summarize the cross-species performance patterns. These are supported by the experimental data in Figure 3 and supplements, showing the relationship between phylogenetic distance and performance improvement. The interpretation that evolutionary distance explains performance differences is reasonable given the data, though alternative explanations (genome complexity, annotation quality) are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Reverse transfer learning (pre-training on non-human species, fine-tuning on human) accelerates convergence but achieves final accuracy comparable to training from scratch on human data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 describe reverse transfer learning experiments shown in Figure 4\u2014figure supplement 5. The data support both the acceleration of convergence and the comparable final performance. This negative result (no accuracy improvement) is valuable for understanding the limits of transfer learning in this domain and suggests the human training data is sufficient to capture relevant splicing features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "OpenSpliceAI's computational advantages are driven by PyTorch's dynamic computation graphs and on-demand GPU memory allocation, in contrast to SpliceAI's static TensorFlow/Keras approach that causes memory overhead and out-of-memory errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 explain the technical basis for performance improvements. While the benchmarking data clearly demonstrates superior performance (Figure 2E, supplements), the specific attribution to dynamic vs. static graphs and memory allocation strategies is a reasonable inference based on known differences between PyTorch and TensorFlow/Keras, though not directly experimentally validated through ablation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Both SpliceAI and OSAIMANE use ensemble averaging of five models to improve performance and reduce sensitivity to local variations, though SpliceAI exhibits bias near transcript boundaries when padded with N's.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe ensemble methodology and an observed artifact. The ensemble approach is well-documented in methods. The N-padding bias (C73) is an interesting observation from ISM experiments, though its practical impact is unclear since the authors avoid N-padding in their benchmarks. The benefit of ensemble averaging (C75) is supported by citations to deep ensemble literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C14"
+    ],
+    "result": "SpliceAI is one of the most accurate methods for splice site prediction, using a deep residual CNN architecture to identify splicing patterns directly from DNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C14 provide background context about SpliceAI supported by citations to the original work. These are established facts in the field rather than novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C16"
+    ],
+    "result": "SpliceAI's utility is limited by reliance on outdated TensorFlow/Keras frameworks and human-centric training data that limits performance on non-human species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C15, C16 describe the motivation for developing OpenSpliceAI. The framework compatibility issues (C2, C15) are verifiable facts about software versions. The limitation from human-centric training (C3, C16) is validated by the cross-species experiments showing substantial performance improvements with species-specific training, particularly for distant species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Splicing enables production of multiple protein isoforms and aberrant splicing contributes to various diseases including cancer and neurodegenerative disorders, with 15-50% of disease-causing mutations affecting splice site selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 provide biological background supported by multiple citations. These are well-established facts in the field serving as motivation for the work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Human and mouse genomes share a majority of protein-coding genes, and transfer learning can improve model performance by leveraging knowledge from related domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 provide background knowledge supported by citations. These establish the rationale for transfer learning experiments but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

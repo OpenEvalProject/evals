@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C65",
+      "C66"
+    ],
+    "result": "Rubella virus (RV) predominantly infects microglia in human mid-gestation brain slices, with >90% of RV-positive cells co-labeled with the microglia marker Iba1. This tropism is striking given that microglia represent only 1-5% of cells in the developing brain. A GFP-expressing RV construct (RV-GFP) was generated and validated, confirming viral protein production in microglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 provide strong immunostaining evidence with quantification (764/819 = 93.3% of RV+ cells are microglia) from primary tissue. The RV-GFP construct (C65-C66) provides independent validation of viral transcription/translation in microglia. C3 contextualizes the specificity. The data are internally consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "RV infection of purified microglia monocultures is negligible (<2% infected), but co-culture with neurons, glial cells, or mixed brain cells restores infection to up to 60% of microglia. Transwell experiments demonstrate that both direct co-culture and media exchange restore infection, suggesting diffusible factors from other cell types are necessary for microglia infection rather than phagocytosis of infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 establish the paradox and resolution through co-culture experiments with quantitative data. C9-C11 provide mechanistic insight through transwell experiments with statistical support (p=0.0479 for co-culture, p=0.0159 for transwell, C69-C70). C67 shows dose-response maintains microglia specificity. C68 confirms non-microglial cells show no difference in infection with/without microglia. The experimental design appropriately controls for phagocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Despite RV capsid detection and GFP expression in microglia, viral titering experiments failed to detect significant production of newly released virions in microglia co-cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is supported by viral titer measurements showing titers fall below detection after several days. However, this represents a limitation of the culture system rather than a biological conclusion about RV replication in vivo. The claim is accurately stated as a negative finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In brain organoids with engrafted primary microglia exposed to RV, viral capsid was detected in microglia but not other cell types at both 72 hours and 2 weeks post-exposure. Organoids were generated following established protocols with microglia introduced at 5 weeks of differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C73 describe the experimental design and results with immunofluorescence validation at two timepoints. C71-C72 cite established protocols for organoid generation and microglia engraftment. The consistency with primary tissue results (C1-C2) strengthens the finding. However, the lack of quantification at the 2-week timepoint is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C62",
+      "C63",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Single-cell RNA sequencing of neuroimmune organoids at 72 hours post-RV exposure captured approximately 11,000 cells representing expected brain cell populations (radial glia, neurons, astrocytes). A separate microglia cluster was not identified, attributed to small starting population and loss during dissociation. Rare AIF1+ cells lacked the canonical microglia marker P2RY12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 describe the scRNAseq dataset with appropriate QC metrics and cell type identification (C74). C15-C16 acknowledge the technical limitation of missing microglia with reasonable explanation. C62-C63 address spontaneous AIF1+ cells and confirm they are not true microglia (lack P2RY12). C75-C76 confirm cells from all conditions are present and viral transcripts are absent. The technical limitation is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C77",
+      "C78"
+    ],
+    "result": "RV exposure resulted in significant upregulation of interferon signaling genes (IFI27, IFI6, IFITM3, HLA-A, BST2) in organoids, with the majority of cells in the interferon-responsive cluster coming from RV-exposed samples. The magnitude of interferon gene upregulation was lower in microglia-containing organoids. IFITM3 protein expression was significantly higher in RV-exposed organoids with microglia (p=0.04) without changes in overall cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 establish the interferon response with differential gene expression data and cluster analysis. C19-C20 show attenuated response with microglia presence, validated by immunofluorescence (p=0.04). C21 confirms no cytotoxicity. C77-C78 cite literature support for gene functions. The finding is internally consistent across transcriptomic and protein levels, though the mechanism of attenuation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C79",
+      "C80"
+    ],
+    "result": "Radial glia and dividing cells showed greater transcriptomic response to RV than neurons. Microglia-containing organoids showed significantly fewer differentially expressed genes in response to RV in radial glia (p<0.001) and neurons (p<0.05), with neural progenitor cells showing a non-significant trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 describe cell-type-specific responses with statistical analysis using Kolmogorov-Smirnov test. C79 provides specific p-values for significant findings. C80 appropriately notes the non-significant trend in NPCs. The statistical approach is appropriate for comparing distributions of DEG numbers. The finding supports the protective role of microglia suggested in C59.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Nuclear factor I genes NFIB and NFIA were specifically downregulated by RV in organoids without microglia. These genes form heterodimers associated with gliogenesis induction, and their disruption is linked to neurodevelopmental deficits and perinatal mortality in mice, and intellectual disability in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 presents differential expression data for NFIB/NFIA. C25-C27 provide literature context for the biological significance of these genes. The finding is supported by the data, though functional validation of the consequences of this downregulation in the organoid system would strengthen the conclusion. The citation-based claims about gene function are appropriately attributed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C81"
+    ],
+    "result": "NOVA1 expression was affected by both microglia presence and RV exposure. At 2 weeks post-RV exposure in neuroimmune organoids, there was a significant decrease in NOVA1+ intermediate progenitor cells (p=0.0042) and a trend toward reduction in NOVA1+ neurons (p=0.088). Total neuron numbers were significantly reduced (p=0.0004) while IPC numbers were unchanged (p=0.86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 establish NOVA1 as a gene of interest with literature support for its function. C30-C33 provide immunostaining quantification at 2 weeks with appropriate statistical tests. The significant reduction in neurons (C32) concurrent with NOVA1+ IPC reduction (C30) suggests a developmental impact. The non-significant trend in NOVA1+ neurons (C31) is appropriately reported. C81 provides transcriptomic support. The temporal progression from IPC to neuron deficits is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Background on rubella virus biology, clinical presentation, epidemiology, and historical understanding of congenital rubella syndrome pathology. RV is an enveloped ssRNA virus causing mild childhood illness but severe congenital defects. Despite vaccines since 1969, ~105,000 CRS cases occurred annually as of 2010, with ongoing outbreaks. Historical pathology showed RV in fetal brain tissue but cell tropism remained unclear. MOG was proposed as a receptor but cannot explain infection of non-oligodendrocyte cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C50 provide established background information supported by appropriate citations. C50 makes a logical inference that MOG expression pattern is inconsistent with observed infection patterns. These claims establish the knowledge gap that motivates the current study. All citation-based claims are appropriately attributed to source literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C64"
+    ],
+    "result": "Discussion of findings in context of prior work. RV tropism for microglia is consistent with peripheral monocyte tropism and raises questions about viral persistence. Comparison to other neurotropic viruses (HIV-1, Zika, HSV, CMV) contextualizes the findings. RV elicits interferon response in non-microglial cells, which can cause neurodevelopmental changes. Microglia presence attenuates the interferon response, suggesting a protective role. Transcriptomic consequences depend on microglia presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C64 synthesize the findings with prior literature. C51 appropriately compares to peripheral tropism. C52 is speculative but clearly marked as such. C53-C55 provide comparative context with appropriate citations. C56 is an inference from the data. C57-C58 cite relevant literature on interferon effects. C59 and C64 summarize key findings with appropriate caveats about mechanisms. C60-C61 discuss technical aspects. The discussion appropriately distinguishes data-supported conclusions from speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Methods for cell culture, viral preparation, tissue processing, microglia purification, organoid generation, infection protocols, imaging, quantification, and bioinformatic analysis. Vero cells and iPSC lines are described with sources. Viral titers of 10^5-10^6 ffu/ml were achieved. Quality control included mycoplasma testing. Statistical tests included unpaired t-tests and Kolmogorov-Smirnov tests. ScRNAseq analysis used standard pipelines (CellRanger, Solo, MAST, UMAP, Leiden clustering, SCTransform).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C108 describe methods with appropriate detail and citations to established protocols and software. Cell line sources are documented (C82, C90-C92). Quality control measures are stated (C83, C85). Quantitative parameters are specified (C84, C89, C93-C96, C104). Analysis software and statistical tests are cited (C97-C108). The methods are sufficiently detailed for reproducibility, though some parameters (e.g., random seeds for stochastic algorithms) are not explicitly mentioned.",
+    "result_type": "MINOR"
+  }
+]

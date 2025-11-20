@@ -1,0 +1,2496 @@
+{
+  "submission": {
+    "id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T21:37:28.900360Z",
+    "updated_at": "2025-11-19T21:37:28.900360Z"
+  },
+  "content": [
+    {
+      "id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "content_type": "manuscript",
+      "content_text": "# Structural insight into guanylyl cyclase receptor hijacking of the kinase\u2013Hsp90 regulatory mechanism\n\n## Authors\n\n- Nathanael A Caveney<sup>1</sup> ([ORCID: 0000-0003-4828-3479](https://orcid.org/0000-0003-4828-3479)) \u2020\n- Naotaka Tsutsumi<sup>1</sup> ([ORCID: 0000-0002-3617-7145](https://orcid.org/0000-0002-3617-7145))\n- K Christopher Garcia<sup>1</sup> ([ORCID: 0000-0001-9273-0278](https://orcid.org/0000-0001-9273-0278)) \u2020\n\n### Affiliations\n\n1. Departments of Molecular and Cellular Physiology, and Structural Biology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMembrane receptor guanylyl cyclases play a role in many important facets of human physiology, from regulating blood pressure to intestinal fluid secretion. The structural mechanisms which influence these important physiological processes have yet to be explored. We present the 3.9 \u00c5 resolution cryo-EM structure of the human membrane receptor guanylyl cyclase GC-C in complex with Hsp90 and its co-chaperone Cdc37, providing insight into the mechanism of Cdc37 mediated binding of GC-C to the Hsp90 regulatory complex. As a membrane protein and non-kinase client of Hsp90\u2013Cdc37, this work shows the remarkable plasticity of Cdc37 to interact with a broad array of clients with significant sequence variation. Furthermore, this work shows how membrane receptor guanylyl cyclases hijack the regulatory mechanisms used for active kinases to facilitate their regulation. Given the known druggability of Hsp90, these insights can guide the further development of membrane receptor guanylyl cyclase-targeted therapeutics and lead to new avenues to treat hypertension, inflammatory bowel disease, and other membrane receptor guanylyl cyclase-related conditions.\n\n## Introduction\n\nCyclic guanosine monophosphate (cGMP) is an important second messenger for signaling in mammalian physiology, with roles in platelet aggregation, neurotransmission, sexual arousal, gut peristalsis, bone growth, intestinal fluid secretion, lipolysis, phototransduction, cardiac hypertrophy, oocyte maturation, and blood pressure regulation (Potter, 2011). Largely, cGMP is produced in response to the activation of guanylyl cyclases (GC), a class of receptors that contains both heteromeric soluble receptors (\u03b11, \u03b12, \u03b21, and \u03b22 in humans) and five homomeric membrane receptors (GC-A, GC-B, GC-C, GC-E, and GC-F in humans). Of note are the membrane receptor guanylyl cyclases (mGC) GC-A and GC-B, also known as natriuretic peptide receptors A and B (NPR-A and NPR-B), respectively, and GC-C, all of which have been a focus of therapeutic development. In the case of NPR-A and B, their role in regulating blood pressure in response to natriuretic peptide hormones (ANP, BNP, and CNP) has led to the exploration of agonists for use in the treatment of cardiac failure (Kobayashi et al., 2012). Meanwhile, GC-C is the target of clinically approved laxative agonists, linaclotide, and plecanatide (Miner, 2020; Yu and Rao, 2014), which increase intestinal fluid secretion.\n\nThese membrane receptor GCs consist of an extracellular ligand binding domain (ECD), which acts as a conformational switch to drive intracellular rearrangements to activate the receptor (He et al., 2001) a transmembrane region (TM); a kinase homology domain or pseudokinase domain (PK); a dimerization domain; and a GC domain, which acts to produce cGMP. The PK domain is largely thought to be involved in scaffolding and physical transduction of the extracellular rearrangements to the GC domain, in some respects similar to the role of the PK domain in the Janus kinases of the cytokine signaling system (Glassman et al., 2022). In addition, the PK domains of mGCs are regulated through phosphorylation (Potter and Garbers, 1992; Potter and Hunter, 1998; Vaandrager et al., 1993) and via association with heat shock proteins (Hsp) (Kumar et al., 2001).\n\nWhile the role of the phosphorylation state on mGC activity has been explored in relative detail, how the heat shock protein 90 (Hsp90) is able to regulate mGC activity is largely unknown. It has been shown that GC-A activity can be regulated through the association of Hsp90 and the co-chaperone Cdc37 (Kumar et al., 2001). The chaperone Cdc37 is known to assist in the Hsp90 regulation of around 60% of active kinases, both in soluble and membrane receptor form (Taipale et al., 2012). Given the sequence and structural similarities between the PK domains of mGCs and the active kinase domains which Hsp90\u2013Cdc37 regulates, it is possible that mGCs have evolved to hijack the regulatory mechanisms that are more broadly deployed for active kinases.\n\nHere, we report the 3.9 \u00c5 resolution structure of the GC-C\u2013Hsp90\u2013Cdc37 regulatory complex. In this structure, the core dimer of Hsp90 forms its canonical closed conformation, while Cdc37 and the C-lobe of the GC-C PK domain asymmetrically decorate the complex. The client (GC-C) is unfolded into the channel formed at the interface between the Hsp90 dimers. To our knowledge, this is the first structure of a membrane protein client of Hsp90 and the first structure of a non-kinase client of the Hsp90\u2013Cdc37 regulatory system. This work provides a pivotal understanding of the mechanism and structural basis of kinase fold recruitment to the Hsp90\u2013Cdc37 regulatory complex. This increased understanding can guide the further development of mGC-targeted therapeutics and lead to new avenues to treat hypertension, inflammatory bowel disease (IBD), and other mGC-related conditions. In addition, the general insights into the recruitment of Hsp90\u2013Cdc37 clients can guide the further development of Hsp90 targeting therapeutics in cancer treatment.\n\n## Results\n\n### Structure of the GC-C\u2013Hsp90\u2013Cdc37 regulatory complex\n\nMembrane receptor guanylyl cyclases have been largely recalcitrant to structural analysis by x-ray crystallography and electron microscopy, apart from various crystal structures of both liganded and unliganded ECDs (He et al., 2001; He et al., 2006; Ogawa et al., 2004; Ogawa et al., 2010; van den Akker et al., 2000). Given the relative disparity of our structural understanding, we sought to develop a stable construct to image and gain a crucial understanding of the regulatory and functional aspects of mGCs which occur intracellularly. By replacing the ligand-responsive ECD with a homodimeric leucine zipper, we mimic the ligand-activated geometry of the ECD (He et al., 2001), while reducing complexity of the imaged complex and increasing stability (Figure 1A). This complex was recombinantly expressed in mammalian cells, purified with anti-FLAG affinity chromatography, and vitrified on grids for cryo-EM analysis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cartoon representation of the components of guanylyl cyclase C (GC-C) signaling and Hsp90\u2013Cdc37 regulation and the zippered and activated GC-C. GC-C is colored in red, guanylin/uroguanylin (Gn/Uro) in yellow, Hsp90 in blue and teal, and Cdc37 in purple. Extracellular domains (ECD), transmembrane domain (TM), pseudokinase domain (PK), dimerization domain (DD), and guanylyl cyclase domain (GC) are labeled. In the rightmost cartoon, the regions unobserved in the cryo-EM density are in a lighter shade with a dashed outline. (B) The refined and sharpened cryo-EM density map of GC-C\u2013Hsp90\u2013Cdc37, colored as in A, with a transparent overlay of an unsharpened map with additional DD density resolved. Cdc37 coil-coiled and middle domain (MD) are labeled. (C) Reference-free 2D averages for the GC-C\u2013Hsp90\u2013Cdc37 complex. (D) The refined and sharpened cryo-EM density map of GC-C\u2013Hsp90\u2013Cdc37, colored as in A and B, labeled with all domains as in A and B, with the addition of Hsp90 N-terminal domain (NTD), middle domain (MD), and C-terminal domain (CTD). (E) Ribbon representation of a model of GC-C\u2013Hsp90\u2013Cdc37 complex, colored and labeled as in A, B, and C.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Workflow for cryo-EM data processing. SDS-PAGE gel, representative micrograph, reference-free 2D averages, and cryo-EM maps at the various stages of processing. (B) Local resolution estimation of the finalized cryo-EM map. (C) FSC curve of the reconstruction using gold-standard refinement calculated from unmasked and masked half maps. Map-model FSC curve. (D) Orientational distribution of the reconstruction. (E) Directional FSC curves from 3DFSC (Aiyer et al., 2021).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative density of heat shock protein 90 (Hsp90). (B) Representative density of Cdc37. (C) Representative density of guanylyl cyclase C (GC-C).\n\nThe purified sample had a substantial portion of imaged particles for which the native regulatory heat shock protein, Hsp90, and its co-chaperone, Cdc37, are bound. The Cricetulus griseus HSP90\u03b2 and Cdc37 show remarkable sequence conservation in comparison to the human equivalents, at 99.7 and 94.2% identity, respectively. This native pulldown strategy contrasts with the structures of Hsp90\u2013Cdc37 in complex with soluble kinases (Garc\u00eda-Alonso et al., 2022; Oberoi et al., 2022; Verba et al., 2016), for which Hsp90 and Cdc37 had to be overexpressed to obtain complex suitable for imaging. Three-dimensional reconstruction of our GC-C\u2013Hsp90\u2013Cdc37 particles generated a 3.9 \u00c5 resolution map of the regulatory complex (Figure 1, Figure 1\u2014figure supplements 1 and 2). A second, unsharpened map from subsequent heterogeneous refinement resolves additional density for the dimerization domain, extending outward from the PK domain (Figure 1B, Figure 1\u2014figure supplement 1).\n\nThe resultant GC-C\u2013Hsp90\u2013Cdc37 complex is a hetero-tetramer formed by one resolved monomer of the GC-C receptor bound to a dimer of Hsp90 and one Cdc37 co-chaperone (Figure 1D). As observed with most Hsp90\u2013client structures, the bulk of the complex is composed of the C2 pseudosymmetric, ATP bound, closed state Hsp90 dimer. Building on this dimeric core, the Cdc37 protrudes outward from one side with its characteristic long, coiled-coil, \u03b1-hairpin. On one face of the Hsp90 dimer core, Cdc37 interacts with the PK domain of GC-C, while an extended \u03b2-sheet wraps around to the other face, lying across and extending a \u03b2-sheet in the middle domain (MDHsp90) of one Hsp90 monomer. At the opposite face, the globular and \u03b1-helical Cdc37 middle domain (MDCdc37) is formed. The C-lobe of the GC-C PK domain packs against the N-terminal region of Cdc37 on one face of the dimeric Hsp90 core, with the N-lobe unfolding through the dimer core to interface with the MDCdc37 on the opposite face. N-terminal to the PK N-lobe is the TM region, the density for which was unobserved in our reconstructions. C-terminal to the PK C-lobe, we observe some poorly resolved density for the likely mobile dimerization domain in our unsharpened map. This would precede the GC domain, which is not observed in the density of our reconstructions (Figure 1B). Together, we can use our understanding of mGC topology and our reconstruction to orient the complex as it would sit on a membrane (Figure 1B), providing insight into how Hsp90 is able to access and regulate membrane protein clients. No density is observed for the second GC-C of the dimer, though it is sterically unlikely that an additional regulatory complex is forming on the second GC-C in a concurrent fashion, given the large size of the first Hsp90\u2013Cdc37 and the requisite proximity of the second GC-C. In addition, this disruption of the native state of GC-C, as observed in our structure, would likely leave GC domains out of each other\u2019s proximity, precluding their catalytic activity while Hsp90 is bound.\n\n### Cdc37 mediated GC-C recruitment and Hsp90 loading\n\nDespite the recognized plasticity of Cdc37 co-chaperone binding to approximately 60% of kinases (Taipale et al., 2012), the importance of the Hsp90\u2013Cdc37 complex for pseudokinase domain-containing proteins in the human proteome is not well studied. Thus, the structural basis for how Cdc37 can recruit GC-C to the Hsp90 regulatory complex is of particular interest. In our structures, we see that Cdc37 is displacing the N-lobe of the pseudokinase domain of GC-C, binding to the C-lobe at the N\u2013C interface, and guiding the unfolded N-lobe into the Hsp90 dimer (Figure 2). The Cdc37\u2013GC-C interface is relatively modest in size, with a calculated mean surface area of 689 \u00c52 (as calculated by PISA Krissinel and Henrick, 2007). This interface is partly driven to form via charge complementarity, with positive contributions from a cluster of arginine residues on Cdc37 (R30, R32, R39) at the periphery of the interaction interface interacting with D609 and the polar residues Y580 and T586 (Figure 2B). Beyond this, the interface is likely largely driven via shape-complementarity, due to a minimal contribution from hydrogen bonding, salt-bridge formation, and aromatic packing contributions \u2013 in line with the ability of Cdc37 to chaperone such a diverse array of clients and client sequences.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig2-v1.jpg)\n\n**Figure 2.:** (A) Ribbon representation of a model of GC-C\u2013Hsp90\u2013Cdc37 complex. GC-C is colored in red, Hsp90 in blue and teal, and Cdc37 in purple. Pseudokinase (PK), coil-coiled, middle (MD), C-terminal (CTD), and N-terminal (NTD) domains are labeled. (B) The Cdc37\u2013GC-C interface in ribbon representation, with interacting residues drawn in sticks, colored as in A. (C) The unfolded N-lobe of GC-C PK domain as it passes between the Hsp90 dimer, in ribbon representation, with interacting residues drawn in sticks, colored as in A and B. This region\u2019s sequence is: VKLDTMIFGVIEYCERG.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Ribbon representation of a model of client\u2013Hsp90\u03b2\u2013Cdc37 complexes. Guanylyl cyclase C (GC-C) is colored in red, Cdk4 in yellow (5FWK), RAF1 in green (7Z37), B-raf in orange (7ZR0), Hsp90\u03b2 in light blue and teal, and Cdc37 in light purple. (B) A structural overlay of the structures in A. (C) A sequence alignment of the pseudokinase domain of GC-C and the kinase domains of Cdk4, RAF1, and B-raf. Sequence numbering per GC-C, with a blue line depicting regions resolved in the cryo-EM density.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86784/elife-86784-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** A schematic of mGC ligand-induced activity, phosphorylation, and destabilization, leading to the formation of the mGC\u2013Hsp90\u2013Cdc37 complex structurally characterized in this work. This core regulatory complex would then lead to refolding of the pseudokinase domain (PK) and reactivation of the receptor (i), recruitment of PP5 and dephosphorylation of the receptor (ii), or recruitment of E3 ligases and removal of the receptor (iii). An mGC is depicted in red, ligand in yellow, heat shock protein 90 (Hsp90) in blue and teal, Cdc37 in purple, a phosphatase in green, and an E3 ligase in orange.\n\nAs the unfolded PK N-lobe extends away from Cdc37, it enters the channel formed at the interface between the dimer of Hsp90 (Figure 2C). Here, GC-C residues 528\u2013544 (VKLDTMIFGVIEYCERG) lie across the upper region of the Hsp90 CTDs, which form the floor of the channel. These CTDs form the bulk of the interaction interface as the unfolded N-lobe passes through this channel, yet there are minor contributions from the loop regions of the \u03b2-sheet from the MDHsp90 which extend downward into this channel region. The unfolded region is relatively poorly resolved in the density, with some reconstructions from earlier refinement having no resolvable density in this channel region \u2013 indicative of the low stability and high mobility of the unfolded N-lobe as it passes through this region.\n\n### Conservation of Cdc37 mediated Hsp90 regulation\n\nThe core structural principles of Cdc37 mediated client recruitment to Hsp90 appear to remain constant across its large range of client diversity. Across other clients\u2013Hsp90\u2013Cdc37 complexes with canonical soluble kinase clients (Cdk4, RAF1, B-raf) (Garc\u00eda-Alonso et al., 2022; Oberoi et al., 2022; Verba et al., 2016), we see a conserved role for Cdc37 in client recruitment by associating with the C-lobe at the N-, C-lobe interface (Figure 2\u2014figure supplement 1A, B). In these complexes, we see high levels of structural conservation for the Hsp90\u2013Cdc37 (C\u03b1 RMSDs of 1.4\u20133.3 \u00c5 for Hsp90 and 1.5\u20132.5 \u00c5 for Cdc37), while the client is structurally most homogenous at the interface with Cdc37, though less structurally conserved overall (C\u03b1 RMSDs of 3.5\u201311.6 \u00c5). Perhaps unsurprisingly, GC-C is one of the most divergent of these clients from a sequence perspective (Figure 2\u2014figure supplement 1C), with sequence homology between the GC-C PK domain and the other client kinase domains ranging from 19 to 25% identity and 31 to 41% homology. This highlights the plasticity required of this system which can service such a vast array of clients across a broad range of sequence variations, yet more restricted fold architecture.\n\n## Discussion\n\nThe present cryo-EM structure of GC-C\u2013Hsp90\u2013Cdc37 resolves the loading of GC-C, via its PK domain and interaction with Cdc37, to the Hsp90 core dimer (Figures 1 and 2). This complex shows significant structural similarity to the mechanism that regulates soluble active kinases (Garc\u00eda-Alonso et al., 2022; Oberoi et al., 2022; Verba et al., 2016) and presumably membrane receptor kinases in the human proteome. This structural and mechanistic conservation is largely driven by the co-chaperone Cdc37, which serves as the central binding platform for these clients by associating to the fold of the kinase (or pseudokinase in the case of mGC) domain, relatively independent of sequence identity. A model whereby recruitment is largely driven by both the fold complementarity and the specific stability properties of the kinase fold has been proposed previously (Taipale et al., 2012). In this model, instability of a fully folded kinase domain results in partial unfolding of the C-lobe, leading Cdc37 to bind the partially unfolded state. Given the lack of functional and sequence conservation for GC-C as a client of Cdc37, our data largely fits with this model for client recruitment. It is likely that the pseudokinase domains of mGC have largely evolved to facilitate regulatory mechanisms for these receptors, both via their phosphorylation and by hijacking the regulatory mechanisms used by active soluble and membrane receptor kinases.\n\nIn the case of GC-A, previous work has shown that it associates with the Hsp90\u2013Cdc37 complex to regulate GC activity (Kumar et al., 2001). The authors showed that adding geldanamycin, an Hsp90 inhibitor, reduces the overall cGMP output of cells in response to ANP stimulation while also reducing the association of the Hsp90 to GC-A. While this initially may seem counterintuitive, this data fits with a model of ligand-induced activity potentiating the instability of the PK domain, which then facilitates binding of the regulatory complex to \u2018re-fold\u2019 GC-A for further catalysis and cGMP production \u2013 in a core regulatory complex structurally similar to that which we observe for GC-C in this work (Figure 2\u2014figure supplement 2). In the case of the Hsp90 inhibitor, this would release the Hsp90 and only allow full catalytic activity for the receptor until the receptor falls into the partially unfolded state, as the Hsp90 would no longer be able to re-engage at the C-lobe when inhibited (Figure 2\u2014figure supplement 2).\n\nInterestingly there may be an additional layer of regulation involved, with crosstalk between the phosphorylation and Hsp90 regulatory mechanisms of mGC. The phosphatase PP5 is known to interact with the Hsp90\u2013Cdc37 system and dephosphorylate Hsp90, Cdc37, and the system\u2019s kinase clients (Oberoi et al., 2022). PP5 has been implicated in this role for mGC (Chinkers, 1994), though this interaction was unable to be detected by a pull-down in a second study (Kumar et al., 2001). In this way, mGC association with the Hsp90\u2013Cdc37 complex could result in multiple fates and resultant activity profiles for the receptor. When the PK of an activated mGC falls into a destabilized state, this would result in the recruitment of the Hsp90\u2013Cdc37. First, the regulatory complex could refold the receptor to maintain the activity of the receptor (Figure 2\u2014figure supplement 2i). In another scenario, the Hsp90\u2013Cdc37 complex could additionally recruit PP5 to dephosphorylate the mGC (Figure 2\u2014figure supplement 2ii). Particularly in the case of GC-A and GC-B, and to some extent GC-C (Potter and Garbers, 1992; Potter and Hunter, 1998; Vaandrager et al., 1993), this would impair the signaling activity of the mGC, though this could be rescued through the kinase re-association and phosphorylation. In a final scenario, the binding of the Hsp90\u2013Cdc37 complex could result in the association of ubiquitin E3 ligases (Schopf et al., 2017; Figure 2\u2014figure supplement 2iii), which would ubiquitinate the mGC client, leading to the removal of the receptor.\n\nThe regulation of mGC is influenced by a network of factors working in harmony to ensure proper signaling and physiological response for these important receptors. The structure of the core regulatory complex shown in this work is key to many facets of mGC regulation. We hope that the structural basis for the Hsp90 regulatory platform for mGC will drive renewed investigation into these diverse mechanisms and lead to the therapeutic manipulation of these mechanisms to improve mGC targeting therapies.\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Cricetulus griseus)</td>\n      <td>Chinese hamster ovary kidney cells</td>\n      <td>GIBCO</td>\n      <td>ExpiCHO</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pD649-GCN4-TM-GC-C_ICD (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See: Methods - Cloning and protein expression</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Data collection software</td>\n      <td>SerialEM</td>\n      <td>SerialEM</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Data processing software</td>\n      <td>Structura Biotechnology Inc.</td>\n      <td>cryoSPARC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Data sharpening software</td>\n      <td>Sanchez-Garcia et al., 2021</td>\n      <td>DeepEMhancer</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Initial modeling software</td>\n      <td>Jumper et al., 2021</td>\n      <td>AlphaFold</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphics software</td>\n      <td>Pettersen et al., 2021</td>\n      <td>UCSF ChimeraX</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Modeling and refinement software</td>\n      <td>Adams et al., 2010</td>\n      <td>Phenix</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Modeling and refinement software</td>\n      <td>Emsley and Cowtan, 2004</td>\n      <td>Coot</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Model validation software</td>\n      <td>Chen et al., 2010</td>\n      <td>MolProbity</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning and protein expression\n\nFor cryo-EM studies, a construct containing an HA secretion signal (MKTIIALSYIFCLVFA), a FLAG peptide (DYKDDDD), linker and 3 C cleavage site (KGSLEVLFQGPG), GCN4 homodimeric zipper (RMKQLEDKVEELLSKNYHLENEVARLKKLVGER), human GC-C regions corresponding to the small extracellular linker region, TM, and intracellular domains (residues 399\u20131,053), a second linker and 3 C cleavage site (AAALEVLFQGPGAA), a Protein C epitope tag (EDQVDPRLIDGK), and an 8 x His tag were cloned into a pD649 mammalian expression vector. This construct contains all domains of the native GC-C, with the exception of the ECD (Supplementary file 1). Protein was expressed using ExpiCHO Expression System Kit (Thermo Fisher). Briefly, ExpiCHO cells were maintained in ExpiCHO Expression Media at 37 \u00b0C with 5% CO2 and gentle agitation, and transiently transfected by the expression construct and cultured according to the manufacturer\u2019s protocol. Cells were pelleted and stored at \u201380 \u00b0C.\n\n### Protein purification\n\nCells were resuspended in 20 mM HEPES-Na pH 8.0, 300 mM NaCl, 1 mM TCEP, protease inhibitor cocktail (Sigma), and benzonase (Sigma). Cells were lysed by Dounce homogenizer and cellular debris was pelleted by low-speed centrifugation at 500 \u00d7 g. Membranes were collected by centrifugation at 46,000 \u00d7 g and stored at \u201380 \u00b0C until use. Membranes were thawed and solubilized with the addition of 1% n-dodecyl \u03b2-D-maltoside (DDM) and 0.1% cholesteryl hemisuccinate (CHS) (10:1) (Anatrace). Debris and unsolubilized membranes were pelleted by centrifugation at 46,000 \u00d7 g. The supernatant was subsequently used in FLAG affinity chromatography. The supernatant was applied to M1 anti-FLAG resin. The resin was washed with 20 bed volumes of 20 mM HEPES-Na pH 8.0, 300 mM NaCl, 1 mM TCEP, 0.005% lauryl maltose neopentyl glycol (LMNG), 0.0005% CHS (10:1) (Anatrace), and 5 mM ATP. The protein complex was eluted with the addition of 200 \u03bcg/mL of FLAG peptide (DYKDDDD) (GenScript). Protein was subsequently concentrated to >2 mg/mL and used for cryo-EM imaging.\n\n### Cryo-electron microscopy\n\nAliquots of 3 \u03bcL of complex were applied to glow-discharged 300 mesh UltrAuFoil (1.2/1.3) grids. The grids were blotted for 3 s at 100% humidity with an offset of 3 and plunged frozen into liquid ethane using a Vitrobot Mark IV (Thermo Fisher). Grid screening and dataset collection occurred at Stanford cEMc on a 200 kV Glacios microscope (Thermo Fisher) equipped with a K3 camera (Gatan). Movies were collected at a magnification corresponding to a 0.9273 \u00c5 per physical pixel. The dose was set to a total of 58.8 electrons per \u00c52. Automated data collection was carried out using SerialEM with a nominal defocus range set from \u20130.8 to \u20132.0 \u03bcM.\n\n### Image processing\n\nAll processing was performed in cryoSPARC (Punjani et al., 2017) unless otherwise noted (Figure 1\u2014figure supplement 1). 8788 movies were motion-corrected using patch motion correction. The contrast transfer functions (CTFs) of the flattened micrographs were determined using patch CTF and an initial stack of particles was picked using Topaz picker (Bepler et al., 2019). Successive rounds of reference-free 2D classification were performed to generate a particle stack of 165,635 particles. These particles were then used in ab-initio reconstruction, followed by non-uniform refinement (Punjani et al., 2020) and finally local refinement with a loose mask around the entire complex. This resulted in a 3.9 \u00c5 reconstruction of the GC-C\u2013Hsp90\u2013Cdc37 complex which was sharpened with deepEMhancer (Sanchez-Garcia et al., 2021). These particles were also used in a 4-class heterogeneous refinement to pull out a volume containing some resolved density for the dimerization domain of GC-C.\n\n### Model building and refinement\n\nThe Cdk4\u2013Hsp90\u03b2\u2013Cdc37 (PDB 5FWK), PP5\u2013B-Raf\u2013Hsp90\u03b2\u2013Cdc37 (PDB 7ZR5), and AlphaFold models for GC-C (Jumper et al., 2021; Mirdita et al., 2022) were docked into the map using UCSF Chimera X (Pettersen et al., 2021). A resultant hybrid model was then manually curated to contain the correct Cricetulus griseus sequences for Hsp90\u03b2\u2013Cdc37 and run through Namdinator (Kidmose et al., 2019). This was followed by automated refinement using Phenix real space refine (Adams et al., 2010) and manual building in Coot (Emsley and Cowtan, 2004). The final model produced a favorable MolProbity score of 2.14 (Chen et al., 2010) with 0.4% Ramachandran outliers (Table 1). Model building and refinement software was installed and configured by SBGrid (Morin et al., 2013).\n\n**Table 1.**\n Cryo-EM data collection, refinement, and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>GC-C\u2013Hsp90\u2013Cdc37 complexPDB 8FX4EMD-29523</th>\n      <th>GC-C\u2013Hsp90\u2013Cdc37 complex with DD density</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Nominal magnification</td>\n      <td colspan=\"2\">45,000</td>\n    </tr>\n    <tr>\n      <td>Acceleration voltage (kV)</td>\n      <td colspan=\"2\">200</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e-/\u00c52)</td>\n      <td colspan=\"2\">58.8</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u00b5m)</td>\n      <td colspan=\"2\">0.8\u20132.0</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td colspan=\"2\">0.9273</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td colspan=\"2\">C1</td>\n    </tr>\n    <tr>\n      <td>Final particle images</td>\n      <td>165,635</td>\n      <td>48,283</td>\n    </tr>\n    <tr>\n      <td>Map resolution FSC threshold</td>\n      <td colspan=\"2\">0.143</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5)</td>\n      <td>3.9</td>\n      <td>6.3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Initial model used (PDB)</td>\n      <td>5FWK, 7ZR5, AlphaFold</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Model resolution FSC threshold (\u00c5)</td>\n      <td>0.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Model resolution (\u00c5)</td>\n      <td>4.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Model Composition</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Non-hydrogen atoms</td>\n      <td>13,478</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>1,654</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>B-factors (\u00c52)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>119.49</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>102.85</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.914</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>2.14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>13.88</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>0.67</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>92.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>7.6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.4</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mohamed Trebak, University of Pittsburgh United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86784.3.sa0](https://doi.org/10.7554/eLife.86784.3.sa0)\n\nIn this important study, the human membrane receptor guanyl cyclase GC-C was expressed in hamster cells, co-purified in complex with endogenous HSP90 and CDC37 proteins, and the structure of the complex was determined by cryo-EM. The study shows that the pseudo-kinase domain of GC-C associates with CDC37 and HSP90, similarly to how the bona fide protein kinases CDK4, CRAF and BRAF have been shown to interact. The methodology used is state of the art and the evidence presented is compelling.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.86784.3.sa1](https://doi.org/10.7554/eLife.86784.3.sa1)\n\nMembrane receptor guanylyl cyclases are important for many physiological processes but their structures in full-length and their mechanism are poorly understood. Caveney et al. determined the cryo-EM structure of a highly engineered GC-C in a complex with endogenous HSP90 and CDC37. The structural work is solid and the structural information will be useful for the membrane receptor guanylyl cyclases field and the HSP90 field.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.86784.3.sa2](https://doi.org/10.7554/eLife.86784.3.sa2)\n\nCaveney et al have overexpressed an engineered construct of the human membrane receptor guanyl cyclase GC-C in hamster cells and co-purified it with the endogenous HSP90 and CDC37. They have then determined the structure of the resultant complex by single particle cryoEM reconstruction at sufficient resolution to dock existing structures of HSP90 and CDC37, plus an AlphaFold model of the pseudo-kinase domain of the guanylyl cyclase. The novelty of the work stems from the observation that the pseudo-kinase domain of GC-C associates with CDC37 and HSP90 similarly to how the bona fide protein kinases CDK4, CRAF and BRAF have been previously shown to interact.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.86784.3.sa3](https://doi.org/10.7554/eLife.86784.3.sa3)\n\nA detailed understanding of how membrane receptor guanylyl cyclases (mGC) are regulated has been hampered by the absence of structural information on the cytoplasmic regions of these signaling proteins. The study by Caveney et al. reports the 3.9\u00c5 cryo-EM structure of the human mGC cyclase, GC-C, bound to the Hsp90-Cdc37 chaperone complex. This structure represents a first view of the intracellular functional domains of any mGC and answers without doubt that Hsp90-Cdc37 recognizes mGCs via their pseudokinase (PK) domain. This is the primary breakthrough of this study. Additionally, the new structural data reveals that the manner in which Hsp90-Cdc37 recognizes the GC-C PK domain C-lobe is akin to how kinase domains of soluble kinases docks to the chaperone complex. This is the second major finding of this study, which provides a concrete framework to understand, more broadly, how Hsp90-Cdc37 recruits a large number of other diverse client proteins containing kinase or pseudokinase domains. Finally, the Hsp90-Cdc37-GC-C structure offer clues as to how GC-C may be regulated by phosphorylation and/or ubiquitinylation by serving as a platform for recruitment of PP5 and/or E3 ligases.\n",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "37c7ede7-d43a-4c8a-bb03-f19964b17d5b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C1",
+      "claim": "Membrane receptor guanylyl cyclases play a role in regulating blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane receptor guanylyl cyclases play a role in many important facets of human physiology, from regulating blood pressure to intestinal fluid secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established role of membrane receptor guanylyl cyclases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "6f532b95-534e-40ed-af2d-3b74b0961c17",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C2",
+      "claim": "Membrane receptor guanylyl cyclases play a role in intestinal fluid secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane receptor guanylyl cyclases play a role in many important facets of human physiology, from regulating blood pressure to intestinal fluid secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established role of membrane receptor guanylyl cyclases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "a3e4f350-ae5d-48dc-84ea-33c5e453f763",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C3",
+      "claim": "The cryo-EM structure of human GC-C in complex with Hsp90 and Cdc37 was determined at 3.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We present the 3.9 \u00c5 resolution cryo-EM structure of the human membrane receptor guanylyl cyclase GC-C in complex with Hsp90 and its co-chaperone Cdc37, providing insight into the mechanism of Cdc37 mediated binding of GC-C to the Hsp90 regulatory complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution and structure determination are directly stated in the abstract and supported by the cryo-EM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "9711cd2b-493c-416b-b82f-17383abf3b61",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C4",
+      "claim": "GC-C is a membrane protein client of Hsp90-Cdc37.",
+      "claim_type": "EXPLICIT",
+      "source": "As a membrane protein and non-kinase client of Hsp90\u2013Cdc37, this work shows the remarkable plasticity of Cdc37 to interact with a broad array of clients with significant sequence variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated by the structural data showing the complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "9c9ed4e9-bc42-4e25-8c14-e4579dd3f625",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C5",
+      "claim": "GC-C is a non-kinase client of Hsp90-Cdc37.",
+      "claim_type": "EXPLICIT",
+      "source": "As a membrane protein and non-kinase client of Hsp90\u2013Cdc37, this work shows the remarkable plasticity of Cdc37 to interact with a broad array of clients with significant sequence variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the structural characterization showing GC-C has a pseudokinase domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "f1486fef-3817-4a7d-b044-fd64563b1a1b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C6",
+      "claim": "Membrane receptor guanylyl cyclases hijack regulatory mechanisms used for active kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this work shows how membrane receptor guanylyl cyclases hijack the regulatory mechanisms used for active kinases to facilitate their regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural comparisons with kinase-Hsp90-Cdc37 complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "925423f2-61fe-479e-b7ed-3dca97398a5b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C7",
+      "claim": "cGMP is an important second messenger for signaling in mammalian physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic guanosine monophosphate (cGMP) is an important second messenger for signaling in mammalian physiology, with roles in platelet aggregation, neurotransmission, sexual arousal, gut peristalsis, bone growth, intestinal fluid secretion, lipolysis, phototransduction, cardiac hypertrophy, oocyte maturation, and blood pressure regulation (Potter, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "db2b5231-6a85-4ca7-97f0-e987f278973d",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C8",
+      "claim": "cGMP has roles in platelet aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic guanosine monophosphate (cGMP) is an important second messenger for signaling in mammalian physiology, with roles in platelet aggregation, neurotransmission, sexual arousal, gut peristalsis, bone growth, intestinal fluid secretion, lipolysis, phototransduction, cardiac hypertrophy, oocyte maturation, and blood pressure regulation (Potter, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "1ccc4c23-346c-4d7e-b895-fc1841868c87",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C9",
+      "claim": "cGMP has roles in neurotransmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic guanosine monophosphate (cGMP) is an important second messenger for signaling in mammalian physiology, with roles in platelet aggregation, neurotransmission, sexual arousal, gut peristalsis, bone growth, intestinal fluid secretion, lipolysis, phototransduction, cardiac hypertrophy, oocyte maturation, and blood pressure regulation (Potter, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "1ac7c7c6-424b-4f3b-b474-175a1e6ed692",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C10",
+      "claim": "cGMP has roles in blood pressure regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic guanosine monophosphate (cGMP) is an important second messenger for signaling in mammalian physiology, with roles in platelet aggregation, neurotransmission, sexual arousal, gut peristalsis, bone growth, intestinal fluid secretion, lipolysis, phototransduction, cardiac hypertrophy, oocyte maturation, and blood pressure regulation (Potter, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "f869569e-2104-4db8-aafa-dd6ca2c0ce61",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C11",
+      "claim": "cGMP is produced in response to the activation of guanylyl cyclases.",
+      "claim_type": "EXPLICIT",
+      "source": "Largely, cGMP is produced in response to the activation of guanylyl cyclases (GC), a class of receptors that contains both heteromeric soluble receptors (\u03b11, \u03b12, \u03b21, and \u03b22 in humans) and five homomeric membrane receptors (GC-A, GC-B, GC-C, GC-E, and GC-F in humans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about cGMP production.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "27e704f0-f04e-412e-930f-24e65a068b85",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C12",
+      "claim": "Humans have heteromeric soluble guanylyl cyclase receptors \u03b11, \u03b12, \u03b21, and \u03b22.",
+      "claim_type": "EXPLICIT",
+      "source": "Largely, cGMP is produced in response to the activation of guanylyl cyclases (GC), a class of receptors that contains both heteromeric soluble receptors (\u03b11, \u03b12, \u03b21, and \u03b22 in humans) and five homomeric membrane receptors (GC-A, GC-B, GC-C, GC-E, and GC-F in humans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about human guanylyl cyclases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "fec515e1-162e-4b23-b086-2492eb1b27b0",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C13",
+      "claim": "Humans have five homomeric membrane receptor guanylyl cyclases: GC-A, GC-B, GC-C, GC-E, and GC-F.",
+      "claim_type": "EXPLICIT",
+      "source": "Largely, cGMP is produced in response to the activation of guanylyl cyclases (GC), a class of receptors that contains both heteromeric soluble receptors (\u03b11, \u03b12, \u03b21, and \u03b22 in humans) and five homomeric membrane receptors (GC-A, GC-B, GC-C, GC-E, and GC-F in humans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about human guanylyl cyclases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "da2b4304-af69-44a6-8cd5-52a76392764e",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C14",
+      "claim": "GC-A is also known as natriuretic peptide receptor A (NPR-A).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note are the membrane receptor guanylyl cyclases (mGC) GC-A and GC-B, also known as natriuretic peptide receptors A and B (NPR-A and NPR-B), respectively, and GC-C, all of which have been a focus of therapeutic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established nomenclature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "b53d225e-62cf-47e0-b3a1-c6828a6aa15f",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C15",
+      "claim": "GC-B is also known as natriuretic peptide receptor B (NPR-B).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note are the membrane receptor guanylyl cyclases (mGC) GC-A and GC-B, also known as natriuretic peptide receptors A and B (NPR-A and NPR-B), respectively, and GC-C, all of which have been a focus of therapeutic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established nomenclature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "982ff76c-9c10-4009-adbd-ac69d37aa1dc",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C16",
+      "claim": "NPR-A and NPR-B regulate blood pressure in response to natriuretic peptide hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of NPR-A and B, their role in regulating blood pressure in response to natriuretic peptide hormones (ANP, BNP, and CNP) has led to the exploration of agonists for use in the treatment of cardiac failure (Kobayashi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "0964e691-4714-4d68-9c02-5fff16c8f54b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C17",
+      "claim": "Natriuretic peptide hormones include ANP, BNP, and CNP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of NPR-A and B, their role in regulating blood pressure in response to natriuretic peptide hormones (ANP, BNP, and CNP) has led to the exploration of agonists for use in the treatment of cardiac failure (Kobayashi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "7ab06f44-e1e5-483f-a295-09aee1cb2eb1",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C18",
+      "claim": "Linaclotide is a clinically approved laxative agonist that targets GC-C.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, GC-C is the target of clinically approved laxative agonists, linaclotide, and plecanatide (Miner, 2020; Yu and Rao, 2014), which increase intestinal fluid secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "0394d29d-3a96-471a-b4d3-0d4593fb7353",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C19",
+      "claim": "Plecanatide is a clinically approved laxative agonist that targets GC-C.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, GC-C is the target of clinically approved laxative agonists, linaclotide, and plecanatide (Miner, 2020; Yu and Rao, 2014), which increase intestinal fluid secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "0a95fa6a-1c06-43f4-87c6-f64d7401eb9c",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C20",
+      "claim": "Linaclotide and plecanatide increase intestinal fluid secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, GC-C is the target of clinically approved laxative agonists, linaclotide, and plecanatide (Miner, 2020; Yu and Rao, 2014), which increase intestinal fluid secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "51bf2b22-49dd-4528-b332-2f866073ee80",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C21",
+      "claim": "Membrane receptor guanylyl cyclases consist of an extracellular ligand binding domain (ECD).",
+      "claim_type": "EXPLICIT",
+      "source": "These membrane receptor GCs consist of an extracellular ligand binding domain (ECD), which acts as a conformational switch to drive intracellular rearrangements to activate the receptor (He et al., 2001) a transmembrane region (TM); a kinase homology domain or pseudokinase domain (PK); a dimerization domain; and a GC domain, which acts to produce cGMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the structural organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "ddbf4535-3aa9-4ddb-bd8d-356170e10890",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C22",
+      "claim": "The ECD of membrane receptor guanylyl cyclases acts as a conformational switch to drive intracellular rearrangements to activate the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "These membrane receptor GCs consist of an extracellular ligand binding domain (ECD), which acts as a conformational switch to drive intracellular rearrangements to activate the receptor (He et al., 2001) a transmembrane region (TM); a kinase homology domain or pseudokinase domain (PK); a dimerization domain; and a GC domain, which acts to produce cGMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "8d263307-d142-44f0-89c8-e535bfdcd288",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C23",
+      "claim": "Membrane receptor guanylyl cyclases consist of a transmembrane region (TM).",
+      "claim_type": "EXPLICIT",
+      "source": "These membrane receptor GCs consist of an extracellular ligand binding domain (ECD), which acts as a conformational switch to drive intracellular rearrangements to activate the receptor (He et al., 2001) a transmembrane region (TM); a kinase homology domain or pseudokinase domain (PK); a dimerization domain; and a GC domain, which acts to produce cGMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about the domain structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "04af51a0-1e1e-4776-89a1-22572b4f9387",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C24",
+      "claim": "Membrane receptor guanylyl cyclases consist of a kinase homology domain or pseudokinase domain (PK).",
+      "claim_type": "EXPLICIT",
+      "source": "These membrane receptor GCs consist of an extracellular ligand binding domain (ECD), which acts as a conformational switch to drive intracellular rearrangements to activate the receptor (He et al., 2001) a transmembrane region (TM); a kinase homology domain or pseudokinase domain (PK); a dimerization domain; and a GC domain, which acts to produce cGMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about the domain structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "dea17976-14c6-4b67-a535-e50f62a1ef12",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C25",
+      "claim": "Membrane receptor guanylyl cyclases consist of a dimerization domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These membrane receptor GCs consist of an extracellular ligand binding domain (ECD), which acts as a conformational switch to drive intracellular rearrangements to activate the receptor (He et al., 2001) a transmembrane region (TM); a kinase homology domain or pseudokinase domain (PK); a dimerization domain; and a GC domain, which acts to produce cGMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about the domain structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "53726928-dc29-44b9-b363-64267c5cd689",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C26",
+      "claim": "Membrane receptor guanylyl cyclases consist of a GC domain which acts to produce cGMP.",
+      "claim_type": "EXPLICIT",
+      "source": "These membrane receptor GCs consist of an extracellular ligand binding domain (ECD), which acts as a conformational switch to drive intracellular rearrangements to activate the receptor (He et al., 2001) a transmembrane region (TM); a kinase homology domain or pseudokinase domain (PK); a dimerization domain; and a GC domain, which acts to produce cGMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about the domain structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "1e27212c-c014-41cf-bbdf-2299c876817c",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C27",
+      "claim": "The PK domain of membrane receptor guanylyl cyclases is involved in scaffolding and physical transduction of extracellular rearrangements to the GC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The PK domain is largely thought to be involved in scaffolding and physical transduction of the extracellular rearrangements to the GC domain, in some respects similar to the role of the PK domain in the Janus kinases of the cytokine signaling system (Glassman et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the proposed function.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "d13e4bc0-7235-4035-9b51-f34eb2618e2e",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C28",
+      "claim": "The PK domains of membrane receptor guanylyl cyclases are regulated through phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the PK domains of mGCs are regulated through phosphorylation (Potter and Garbers, 1992; Potter and Hunter, 1998; Vaandrager et al., 1993) and via association with heat shock proteins (Hsp) (Kumar et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "f2c299b0-95d9-4363-a01f-25aedda1b75b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C29",
+      "claim": "The PK domains of membrane receptor guanylyl cyclases are regulated via association with heat shock proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the PK domains of mGCs are regulated through phosphorylation (Potter and Garbers, 1992; Potter and Hunter, 1998; Vaandrager et al., 1993) and via association with heat shock proteins (Hsp) (Kumar et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "99dc7522-c4b7-4f17-835c-40f12b7ae4e4",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C30",
+      "claim": "GC-A activity can be regulated through the association of Hsp90 and the co-chaperone Cdc37.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that GC-A activity can be regulated through the association of Hsp90 and the co-chaperone Cdc37 (Kumar et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "6ba96018-7025-4618-8771-ec6daf73bc2d",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C31",
+      "claim": "Cdc37 assists in the Hsp90 regulation of around 60% of active kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "The chaperone Cdc37 is known to assist in the Hsp90 regulation of around 60% of active kinases, both in soluble and membrane receptor form (Taipale et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "d443505c-58de-43ca-8fe7-d7120354f2b0",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C32",
+      "claim": "The GC-C\u2013Hsp90\u2013Cdc37 complex is a hetero-tetramer formed by one monomer of GC-C bound to a dimer of Hsp90 and one Cdc37 co-chaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "The resultant GC-C\u2013Hsp90\u2013Cdc37 complex is a hetero-tetramer formed by one resolved monomer of the GC-C receptor bound to a dimer of Hsp90 and one Cdc37 co-chaperone (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the structural data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "c3885856-1c04-489f-b0ba-6fcb83004e7d",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C33",
+      "claim": "Hsp90 forms a canonical closed conformation in the GC-C\u2013Hsp90\u2013Cdc37 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In this structure, the core dimer of Hsp90 forms its canonical closed conformation, while Cdc37 and the C-lobe of the GC-C PK domain asymmetrically decorate the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "e7f5cb07-e6a1-4af6-a2ef-34a47bebb662",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C34",
+      "claim": "The GC-C client is unfolded into the channel formed at the interface between the Hsp90 dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The client (GC-C) is unfolded into the channel formed at the interface between the Hsp90 dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "8e9a8296-b877-447f-86c6-e2e9b62be866",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C35",
+      "claim": "This is the first structure of a membrane protein client of Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first structure of a membrane protein client of Hsp90 and the first structure of a non-kinase client of the Hsp90\u2013Cdc37 regulatory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a novel finding of this work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "52c2b10d-e545-40fa-8b89-7b19d252c080",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C36",
+      "claim": "This is the first structure of a non-kinase client of the Hsp90\u2013Cdc37 regulatory system.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first structure of a membrane protein client of Hsp90 and the first structure of a non-kinase client of the Hsp90\u2013Cdc37 regulatory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a novel finding of this work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "72ed55b9-238e-4825-89e4-33ad190d9cae",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C37",
+      "claim": "The extracellular ligand binding domain was replaced with a homodimeric leucine zipper to mimic the ligand-activated geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "By replacing the ligand-responsive ECD with a homodimeric leucine zipper, we mimic the ligand-activated geometry of the ECD (He et al., 2001), while reducing complexity of the imaged complex and increasing stability (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section as a methodological approach with a citation and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "a1e60169-e99a-4781-acab-4f8dcf1dabe6",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C38",
+      "claim": "The purified sample had a substantial portion of imaged particles with native regulatory Hsp90 and Cdc37 bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified sample had a substantial portion of imaged particles for which the native regulatory heat shock protein, Hsp90, and its co-chaperone, Cdc37, are bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "f8c6991f-8205-46af-9f80-5c8c5426a308",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C39",
+      "claim": "Cricetulus griseus HSP90\u03b2 shows 99.7% identity to the human equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cricetulus griseus HSP90\u03b2 and Cdc37 show remarkable sequence conservation in comparison to the human equivalents, at 99.7 and 94.2% identity, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "d70a6d21-e369-4404-9925-dce12299acaa",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C40",
+      "claim": "Cricetulus griseus Cdc37 shows 94.2% identity to the human equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cricetulus griseus HSP90\u03b2 and Cdc37 show remarkable sequence conservation in comparison to the human equivalents, at 99.7 and 94.2% identity, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "fef27a2d-5b16-4bfa-8937-accd917992b4",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C41",
+      "claim": "No density is observed for the second GC-C of the dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "No density is observed for the second GC-C of the dimer, though it is sterically unlikely that an additional regulatory complex is forming on the second GC-C in a concurrent fashion, given the large size of the first Hsp90\u2013Cdc37 and the requisite proximity of the second GC-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an observation from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "2f10ba44-00b6-4f40-93ad-047e97edfa9e",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C42",
+      "claim": "It is sterically unlikely that an additional regulatory complex is forming on the second GC-C concurrently.",
+      "claim_type": "EXPLICIT",
+      "source": "No density is observed for the second GC-C of the dimer, though it is sterically unlikely that an additional regulatory complex is forming on the second GC-C in a concurrent fashion, given the large size of the first Hsp90\u2013Cdc37 and the requisite proximity of the second GC-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference based on structural constraints.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "4900d3f8-3ce5-42e5-a9ad-319b0c88cbac",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C43",
+      "claim": "The disruption of the native state of GC-C would likely leave GC domains out of each other's proximity, precluding their catalytic activity while Hsp90 is bound.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this disruption of the native state of GC-C, as observed in our structure, would likely leave GC domains out of each other's proximity, precluding their catalytic activity while Hsp90 is bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference based on the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "a79daaf1-1734-4ce0-b151-4045b593328c",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C44",
+      "claim": "Cdc37 displaces the N-lobe of the pseudokinase domain of GC-C.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structures, we see that Cdc37 is displacing the N-lobe of the pseudokinase domain of GC-C, binding to the C-lobe at the N\u2013C interface, and guiding the unfolded N-lobe into the Hsp90 dimer (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the structural data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "853917df-abc9-4aa0-b17f-9e11df02425f",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C45",
+      "claim": "Cdc37 binds to the C-lobe of GC-C at the N\u2013C interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structures, we see that Cdc37 is displacing the N-lobe of the pseudokinase domain of GC-C, binding to the C-lobe at the N\u2013C interface, and guiding the unfolded N-lobe into the Hsp90 dimer (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the structural data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "11aa01c4-88d3-4ffa-a136-b129f357ddc6",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C46",
+      "claim": "Cdc37 guides the unfolded N-lobe into the Hsp90 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structures, we see that Cdc37 is displacing the N-lobe of the pseudokinase domain of GC-C, binding to the C-lobe at the N\u2013C interface, and guiding the unfolded N-lobe into the Hsp90 dimer (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the structural data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "ae8ca3a0-73a5-4bc6-8338-d4cbf96e788a",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C47",
+      "claim": "The Cdc37\u2013GC-C interface has a calculated mean surface area of 689 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cdc37\u2013GC-C interface is relatively modest in size, with a calculated mean surface area of 689 \u00c52 (as calculated by PISA Krissinel and Henrick, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to the calculation method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "6e50a8fe-ff88-49a4-85a8-2fc2e24db349",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C48",
+      "claim": "The Cdc37\u2013GC-C interface is partly driven by charge complementarity.",
+      "claim_type": "EXPLICIT",
+      "source": "This interface is partly driven to form via charge complementarity, with positive contributions from a cluster of arginine residues on Cdc37 (R30, R32, R39) at the periphery of the interaction interface interacting with D609 and the polar residues Y580 and T586 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the structural data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "f48070cc-9157-4d9a-8ca8-7cf3baa76adc",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C49",
+      "claim": "Arginine residues R30, R32, and R39 on Cdc37 interact with D609, Y580, and T586 on GC-C.",
+      "claim_type": "EXPLICIT",
+      "source": "This interface is partly driven to form via charge complementarity, with positive contributions from a cluster of arginine residues on Cdc37 (R30, R32, R39) at the periphery of the interaction interface interacting with D609 and the polar residues Y580 and T586 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the structural data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "28fb315b-60e8-4d1d-b692-c00abbebc26c",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C50",
+      "claim": "The Cdc37\u2013GC-C interface is largely driven by shape-complementarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond this, the interface is likely largely driven via shape-complementarity, due to a minimal contribution from hydrogen bonding, salt-bridge formation, and aromatic packing contributions \u2013 in line with the ability of Cdc37 to chaperone such a diverse array of clients and client sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference based on the structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "50de6668-f7f1-4a50-a506-b80dd745fc5a",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C51",
+      "claim": "GC-C residues 528\u2013544 (VKLDTMIFGVIEYCERG) lie across the upper region of the Hsp90 CTDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, GC-C residues 528\u2013544 (VKLDTMIFGVIEYCERG) lie across the upper region of the Hsp90 CTDs, which form the floor of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "08b687c1-35f7-4cf6-880d-2814fe567577",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C52",
+      "claim": "The unfolded N-lobe region is relatively poorly resolved in the density.",
+      "claim_type": "EXPLICIT",
+      "source": "The unfolded region is relatively poorly resolved in the density, with some reconstructions from earlier refinement having no resolvable density in this channel region \u2013 indicative of the low stability and high mobility of the unfolded N-lobe as it passes through this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an observation from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "9b1af978-ecf6-4d2b-ad9d-284d0956a63f",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C53",
+      "claim": "The low stability and high mobility of the unfolded N-lobe is indicated by the poorly resolved density.",
+      "claim_type": "EXPLICIT",
+      "source": "The unfolded region is relatively poorly resolved in the density, with some reconstructions from earlier refinement having no resolvable density in this channel region \u2013 indicative of the low stability and high mobility of the unfolded N-lobe as it passes through this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference based on the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "7ce526ad-908d-434e-831c-0e529120aeaa",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C54",
+      "claim": "Cdc37 associates with the C-lobe at the N-, C-lobe interface across different client\u2013Hsp90\u2013Cdc37 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Across other clients\u2013Hsp90\u2013Cdc37 complexes with canonical soluble kinase clients (Cdk4, RAF1, B-raf) (Garc\u00eda-Alonso et al., 2022; Oberoi et al., 2022; Verba et al., 2016), we see a conserved role for Cdc37 in client recruitment by associating with the C-lobe at the N-, C-lobe interface (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with citations and supported by structural comparisons shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "21a84e18-b998-4f6c-941e-91989a906f9b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C55",
+      "claim": "High levels of structural conservation are observed for Hsp90\u2013Cdc37 across different client complexes (C\u03b1 RMSDs of 1.4\u20133.3 \u00c5 for Hsp90 and 1.5\u20132.5 \u00c5 for Cdc37).",
+      "claim_type": "EXPLICIT",
+      "source": "In these complexes, we see high levels of structural conservation for the Hsp90\u2013Cdc37 (C\u03b1 RMSDs of 1.4\u20133.3 \u00c5 for Hsp90 and 1.5\u20132.5 \u00c5 for Cdc37), while the client is structurally most homogenous at the interface with Cdc37, though less structurally conserved overall (C\u03b1 RMSDs of 3.5\u201311.6 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on structural comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "089ecc92-7446-48a8-8615-908c63e6fefa",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C56",
+      "claim": "Clients are less structurally conserved overall (C\u03b1 RMSDs of 3.5\u201311.6 \u00c5) compared to Hsp90\u2013Cdc37.",
+      "claim_type": "EXPLICIT",
+      "source": "In these complexes, we see high levels of structural conservation for the Hsp90\u2013Cdc37 (C\u03b1 RMSDs of 1.4\u20133.3 \u00c5 for Hsp90 and 1.5\u20132.5 \u00c5 for Cdc37), while the client is structurally most homogenous at the interface with Cdc37, though less structurally conserved overall (C\u03b1 RMSDs of 3.5\u201311.6 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on structural comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "debfe35a-58d8-4f70-bac4-6df88aa439d9",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C57",
+      "claim": "GC-C is one of the most divergent clients from a sequence perspective.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps unsurprisingly, GC-C is one of the most divergent of these clients from a sequence perspective (Figure 2\u2014figure supplement 1C), with sequence homology between the GC-C PK domain and the other client kinase domains ranging from 19 to 25% identity and 31 to 41% homology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by sequence alignment data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "45fb726f-296f-4bf8-b929-35097f438b1b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C58",
+      "claim": "Sequence homology between the GC-C PK domain and other client kinase domains ranges from 19 to 25% identity and 31 to 41% homology.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps unsurprisingly, GC-C is one of the most divergent of these clients from a sequence perspective (Figure 2\u2014figure supplement 1C), with sequence homology between the GC-C PK domain and the other client kinase domains ranging from 19 to 25% identity and 31 to 41% homology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by sequence alignment data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "6eb016f9-17da-47f6-9231-dcf1ac29f4c2",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C59",
+      "claim": "The GC-C\u2013Hsp90\u2013Cdc37 complex shows significant structural similarity to the mechanism that regulates soluble active kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "The present cryo-EM structure of GC-C\u2013Hsp90\u2013Cdc37 resolves the loading of GC-C, via its PK domain and interaction with Cdc37, to the Hsp90 core dimer (Figures 1 and 2). This complex shows significant structural similarity to the mechanism that regulates soluble active kinases (Garc\u00eda-Alonso et al., 2022; Oberoi et al., 2022; Verba et al., 2016) and presumably membrane receptor kinases in the human proteome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion section with citations and supported by structural comparisons.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "21aa1152-30cd-447e-94cb-0114d6f0ec56",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C60",
+      "claim": "Structural and mechanistic conservation is largely driven by the co-chaperone Cdc37.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural and mechanistic conservation is largely driven by the co-chaperone Cdc37, which serves as the central binding platform for these clients by associating to the fold of the kinase (or pseudokinase in the case of mGC) domain, relatively independent of sequence identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as an inference based on the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "adc756c2-7be1-4051-a971-611371e3cf8d",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C61",
+      "claim": "Cdc37 serves as the central binding platform for clients by associating to the fold of the kinase domain, relatively independent of sequence identity.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural and mechanistic conservation is largely driven by the co-chaperone Cdc37, which serves as the central binding platform for these clients by associating to the fold of the kinase (or pseudokinase in the case of mGC) domain, relatively independent of sequence identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as an inference based on the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "cac9ee30-ffc8-4834-88a2-054a8d437174",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C62",
+      "claim": "A model has been proposed where recruitment is largely driven by both fold complementarity and specific stability properties of the kinase fold.",
+      "claim_type": "EXPLICIT",
+      "source": "A model whereby recruitment is largely driven by both the fold complementarity and the specific stability properties of the kinase fold has been proposed previously (Taipale et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with a citation to support the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "e119ae3e-3e11-4639-a654-746431d7b20e",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C63",
+      "claim": "In the proposed model, instability of a fully folded kinase domain results in partial unfolding of the C-lobe, leading Cdc37 to bind the partially unfolded state.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, instability of a fully folded kinase domain results in partial unfolding of the C-lobe, leading Cdc37 to bind the partially unfolded state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section describing a previously proposed model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "4a65162f-bc74-4011-a2f6-874cdb4b203e",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C64",
+      "claim": "The pseudokinase domains of membrane receptor guanylyl cyclases have largely evolved to facilitate regulatory mechanisms for these receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the pseudokinase domains of mGC have largely evolved to facilitate regulatory mechanisms for these receptors, both via their phosphorylation and by hijacking the regulatory mechanisms used by active soluble and membrane receptor kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as an inference based on the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "e773b074-27ed-4bd9-ab99-97e70dc9d783",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C65",
+      "claim": "Adding geldanamycin reduces the overall cGMP output of cells in response to ANP stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors showed that adding geldanamycin, an Hsp90 inhibitor, reduces the overall cGMP output of cells in response to ANP stimulation while also reducing the association of the Hsp90 to GC-A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with reference to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "19cacec1-08c8-4c20-aedf-75913e0ab55b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C66",
+      "claim": "Geldanamycin reduces the association of Hsp90 to GC-A.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors showed that adding geldanamycin, an Hsp90 inhibitor, reduces the overall cGMP output of cells in response to ANP stimulation while also reducing the association of the Hsp90 to GC-A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with reference to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "2e783f23-4b71-45c4-ac01-017bc6202afb",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C67",
+      "claim": "Ligand-induced activity potentiates the instability of the PK domain, which facilitates binding of the regulatory complex to 're-fold' GC-A for further catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "While this initially may seem counterintuitive, this data fits with a model of ligand-induced activity potentiating the instability of the PK domain, which then facilitates binding of the regulatory complex to 're-fold' GC-A for further catalysis and cGMP production \u2013 in a core regulatory complex structurally similar to that which we observe for GC-C in this work (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion section as an inference based on previous data and the current structural findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "627b6d77-4af7-43b0-950c-f8acbcfb8b38",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C68",
+      "claim": "PP5 is known to interact with the Hsp90\u2013Cdc37 system and dephosphorylate Hsp90, Cdc37, and the system's kinase clients.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphatase PP5 is known to interact with the Hsp90\u2013Cdc37 system and dephosphorylate Hsp90, Cdc37, and the system's kinase clients (Oberoi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "65745f26-e2b5-40ef-bc39-ccd6f21e5460",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C69",
+      "claim": "PP5 has been implicated in dephosphorylation of membrane receptor guanylyl cyclases.",
+      "claim_type": "EXPLICIT",
+      "source": "PP5 has been implicated in this role for mGC (Chinkers, 1994), though this interaction was unable to be detected by a pull-down in a second study (Kumar et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "73f176bf-738b-435c-b6bd-6ac8ccac7848",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C70",
+      "claim": "The Hsp90\u2013Cdc37 complex could refold the receptor to maintain the activity of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the regulatory complex could refold the receptor to maintain the activity of the receptor (Figure 2\u2014figure supplement 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion section as a possible outcome and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "d62cdab5-34d6-4096-88b9-c6484cceb0a2",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C71",
+      "claim": "The Hsp90\u2013Cdc37 complex could recruit PP5 to dephosphorylate the membrane receptor guanylyl cyclase.",
+      "claim_type": "EXPLICIT",
+      "source": "In another scenario, the Hsp90\u2013Cdc37 complex could additionally recruit PP5 to dephosphorylate the mGC (Figure 2\u2014figure supplement 2ii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion section as a possible outcome and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "6e692507-4a63-4bc7-b590-13a5703bf3f1",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C72",
+      "claim": "Dephosphorylation would impair the signaling activity of GC-A, GC-B, and to some extent GC-C.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly in the case of GC-A and GC-B, and to some extent GC-C (Potter and Garbers, 1992; Potter and Hunter, 1998; Vaandrager et al., 1993), this would impair the signaling activity of the mGC, though this could be rescued through the kinase re-association and phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "54c95c88-c41d-4c0d-9bdc-1c609e71b883",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C73",
+      "claim": "The binding of the Hsp90\u2013Cdc37 complex could result in the association of ubiquitin E3 ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "In a final scenario, the binding of the Hsp90\u2013Cdc37 complex could result in the association of ubiquitin E3 ligases (Schopf et al., 2017; Figure 2\u2014figure supplement 2iii), which would ubiquitinate the mGC client, leading to the removal of the receptor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion section with a citation and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "c4f19d43-43f0-4dd6-94ab-845b1d58b6ff",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C74",
+      "claim": "Ubiquitination of the membrane receptor guanylyl cyclase client would lead to the removal of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In a final scenario, the binding of the Hsp90\u2013Cdc37 complex could result in the association of ubiquitin E3 ligases (Schopf et al., 2017; Figure 2\u2014figure supplement 2iii), which would ubiquitinate the mGC client, leading to the removal of the receptor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion section with a citation and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "d97f7f2c-aa6b-458e-978f-dbe54b70952d",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C75",
+      "claim": "The construct contains an HA secretion signal, FLAG peptide, linker and 3C cleavage site, GCN4 homodimeric zipper, human GC-C regions 399\u20131,053, a second linker and 3C cleavage site, a Protein C epitope tag, and an 8x His tag.",
+      "claim_type": "EXPLICIT",
+      "source": "For cryo-EM studies, a construct containing an HA secretion signal (MKTIIALSYIFCLVFA), a FLAG peptide (DYKDDDD), linker and 3 C cleavage site (KGSLEVLFQGPG), GCN4 homodimeric zipper (RMKQLEDKVEELLSKNYHLENEVARLKKLVGER), human GC-C regions corresponding to the small extracellular linker region, TM, and intracellular domains (residues 399\u20131,053), a second linker and 3 C cleavage site (AAALEVLFQGPGAA), a Protein C epitope tag (EDQVDPRLIDGK), and an 8 x His tag were cloned into a pD649 mammalian expression vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the construct design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "91986fed-caeb-44a5-8b21-0243fe11baf4",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C76",
+      "claim": "The construct contains all domains of the native GC-C, with the exception of the ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct contains all domains of the native GC-C, with the exception of the ECD (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the construct design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "cc58d875-73f4-4e4d-82ee-d9099c1f029f",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C77",
+      "claim": "Protein was expressed using ExpiCHO Expression System Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein was expressed using ExpiCHO Expression System Kit (Thermo Fisher).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the expression system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "c82e24b5-e305-4282-97f1-09f9752209bd",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C78",
+      "claim": "Membranes were solubilized with 1% n-dodecyl \u03b2-D-maltoside (DDM) and 0.1% cholesteryl hemisuccinate (CHS) (10:1).",
+      "claim_type": "EXPLICIT",
+      "source": "Membranes were thawed and solubilized with the addition of 1% n-dodecyl \u03b2-D-maltoside (DDM) and 0.1% cholesteryl hemisuccinate (CHS) (10:1) (Anatrace).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the purification protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "e9f58802-0551-4943-9878-bd795068bf9f",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C79",
+      "claim": "The protein complex was eluted with the addition of 200 \u03bcg/mL of FLAG peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein complex was eluted with the addition of 200 \u03bcg/mL of FLAG peptide (DYKDDDD) (GenScript).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the purification protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "1010eb0b-e7f2-4df5-82cd-d6162b4e3e5f",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C80",
+      "claim": "Protein was concentrated to >2 mg/mL for cryo-EM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein was subsequently concentrated to >2 mg/mL and used for cryo-EM imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the sample preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "db283609-16d8-4927-b810-c4b065a58825",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C81",
+      "claim": "Grids were blotted for 3 s at 100% humidity with an offset of 3.",
+      "claim_type": "EXPLICIT",
+      "source": "The grids were blotted for 3 s at 100% humidity with an offset of 3 and plunged frozen into liquid ethane using a Vitrobot Mark IV (Thermo Fisher).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the grid preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "098862ce-b0e4-4b12-b83c-87f68904937b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C82",
+      "claim": "Grid screening and dataset collection occurred on a 200 kV Glacios microscope equipped with a K3 camera.",
+      "claim_type": "EXPLICIT",
+      "source": "Grid screening and dataset collection occurred at Stanford cEMc on a 200 kV Glacios microscope (Thermo Fisher) equipped with a K3 camera (Gatan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "b448545c-5574-4160-a5ad-81adff3e492e",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C83",
+      "claim": "Movies were collected at a magnification corresponding to a 0.9273 \u00c5 per physical pixel.",
+      "claim_type": "EXPLICIT",
+      "source": "Movies were collected at a magnification corresponding to a 0.9273 \u00c5 per physical pixel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "9706542d-33f2-4665-8177-620407a7f28b",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C84",
+      "claim": "The dose was set to a total of 58.8 electrons per \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The dose was set to a total of 58.8 electrons per \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "92d4e243-1703-429f-af02-ea4ca9bbc0bd",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C85",
+      "claim": "8788 movies were motion-corrected using patch motion correction.",
+      "claim_type": "EXPLICIT",
+      "source": "8788 movies were motion-corrected using patch motion correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the image processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "8fde2d73-0ece-4e45-8688-cd7b75759407",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C86",
+      "claim": "An initial stack of particles was picked using Topaz picker.",
+      "claim_type": "EXPLICIT",
+      "source": "The contrast transfer functions (CTFs) of the flattened micrographs were determined using patch CTF and an initial stack of particles was picked using Topaz picker (Bepler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section with a citation describing the image processing.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "6895442f-7a6c-458c-88b4-3b3577bd3023",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C87",
+      "claim": "Successive rounds of reference-free 2D classification generated a particle stack of 165,635 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Successive rounds of reference-free 2D classification were performed to generate a particle stack of 165,635 particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the image processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "466b408b-4180-45f0-bb50-710f0c28de38",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "claim_id": "C88",
+      "claim": "The final model produced a MolProbity score of 2.14 with 0.4% Ramachandran outliers.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model produced a favorable MolProbity score of 2.14 (Chen et al., 2010) with 0.4% Ramachandran outliers (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section with a citation describing the model validation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02ef0348-1136-4a8d-9884-9abb65d27eaf",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a 3.9 \u00c5 resolution cryo-EM structure of the GC-C\u2013Hsp90\u2013Cdc37 complex, representing the first structure of a membrane protein and non-kinase client of the Hsp90\u2013Cdc37 system. The complex is a hetero-tetramer with one GC-C monomer bound to an Hsp90 dimer and one Cdc37, with the GC-C client unfolded into the Hsp90 channel and Hsp90 in a canonical closed conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C32-C34 are directly supported by the cryo-EM data (3.9 \u00c5 resolution, structural composition, Hsp90 conformation). Claims C35-C36 regarding novelty are supported by comparison with existing literature. Claims C37-C40 describe validated methodological approaches. Claims C41-C43 are reasonable inferences from the structural data about the absence of density for the second GC-C monomer and functional implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "c0869938-36b3-4fb7-8cb1-f221057389cc",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The structure reveals that Cdc37 mediates GC-C recruitment by displacing the N-lobe of the pseudokinase domain, binding to the C-lobe at the N-C interface (689 \u00c5\u00b2 interface), and guiding the unfolded N-lobe (residues 528-544) into the Hsp90 dimer channel. The interface is driven by charge complementarity (arginine cluster R30, R32, R39 on Cdc37 interacting with D609, Y580, T586 on GC-C) and shape complementarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are directly supported by the structural data shown in Figure 2. Claims C47-C49 provide quantitative measurements from the structure with appropriate citation of the calculation method (PISA). Claims C50-C53 are reasonable inferences from the structural analysis regarding interface properties and density quality, consistent with the reported resolution and mobility of unfolded regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "5c86a01d-b6b6-48bb-8684-711e9baaf384",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Structural comparison with other client\u2013Hsp90\u2013Cdc37 complexes (Cdk4, RAF1, B-raf) reveals conserved Cdc37-mediated recruitment mechanisms despite significant sequence divergence. GC-C shows 19-25% identity and 31-41% homology with other kinase clients, yet Hsp90\u2013Cdc37 shows high structural conservation (C\u03b1 RMSDs 1.4-3.3 \u00c5 for Hsp90, 1.5-2.5 \u00c5 for Cdc37), demonstrating that Cdc37 serves as a central binding platform relatively independent of sequence identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by structural comparisons with cited structures and quantitative RMSD measurements. Claims C57-C58 are supported by sequence alignment data shown in Figure 2\u2014figure supplement 1C. Claims C59-C61 are well-supported inferences from the structural conservation data and comparisons with kinase clients, demonstrating the mechanistic conservation despite sequence divergence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "e09181b8-144c-46a5-b045-7fdc207a32d6",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose that pseudokinase domains of membrane receptor guanylyl cyclases have evolved to hijack kinase regulatory mechanisms, fitting a model where ligand-induced activity destabilizes the PK domain, facilitating Hsp90\u2013Cdc37 binding for refolding and continued catalysis. This is supported by previous work showing geldanamycin (Hsp90 inhibitor) reduces cGMP output and Hsp90-GC-A association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63 cite a previously proposed model (Taipale et al., 2012) which is appropriate context. Claim C64 is speculative inference about evolutionary function. Claims C65-C67 reference prior work (Kumar et al., 2001) but the mechanistic model proposed is largely speculative and not directly tested in this study. The model is plausible but requires additional experimental validation beyond the structural data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "a2686b0a-df4c-427b-b188-f1a0dee68eec",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose three potential regulatory outcomes following Hsp90\u2013Cdc37 complex formation: (i) refolding to maintain receptor activity, (ii) recruitment of PP5 phosphatase for dephosphorylation and activity modulation, or (iii) recruitment of E3 ubiquitin ligases leading to receptor removal. PP5 is known to interact with Hsp90\u2013Cdc37 and dephosphorylate kinase clients, though its role with mGCs remains uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 cite established knowledge about PP5 with appropriate references, though C69 notes conflicting evidence about PP5-mGC interaction. Claims C70-C74 are explicitly speculative scenarios (\"could\") shown in Figure 2\u2014figure supplement 2, representing hypotheses rather than demonstrated results. These are reasonable mechanistic proposals based on known Hsp90 biology, but lack direct experimental support in this study and require future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on membrane receptor guanylyl cyclases, cGMP signaling, domain architecture, and regulation through phosphorylation and Hsp90\u2013Cdc37 association, establishing the physiological and structural context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C20 establish the physiological roles of mGCs and cGMP with appropriate citations. Claims C21-C27 describe the established domain architecture of mGCs with citations. Claims C28-C31 describe known regulatory mechanisms with appropriate citations. These are well-established background claims from the literature that provide context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors describe detailed methods for construct design (leucine zipper replacing ECD, residues 399-1053 of GC-C), protein expression in ExpiCHO cells, purification using FLAG affinity chromatography with DDM/CHS detergents, cryo-EM grid preparation and data collection on a 200 kV Glacios microscope, and image processing yielding 165,635 particles with a final model having favorable validation statistics (MolProbity score 2.14, 0.4% Ramachandran outliers).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C88 provide comprehensive methodological details that are internally consistent and follow standard practices for cryo-EM structure determination. The construct design (C75-C76) is well-justified with citation. Expression and purification methods (C77-C80) are standard and appropriately detailed. Cryo-EM data collection parameters (C81-C84) and processing workflow (C85-C87) are clearly described. Model validation statistics (C88) indicate good quality structure. All methods claims are supported by the data and appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "f751a465-4b27-4ec7-9f2c-d8ab0fc468db",
+      "content_id": "ae6d0111-252d-4ea8-b6a0-b138baf0b6ff",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The work demonstrates that GC-C is a membrane protein and non-kinase client of Hsp90\u2013Cdc37, showing how membrane receptor guanylyl cyclases hijack regulatory mechanisms used for active kinases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are directly demonstrated by the structural data showing GC-C (a membrane protein with a pseudokinase domain) in complex with Hsp90\u2013Cdc37. Claim C6 is supported by structural comparisons with kinase\u2013Hsp90\u2013Cdc37 complexes showing conserved mechanisms despite GC-C being a non-kinase. The term \"hijack\" is interpretive but reasonable given the structural and mechanistic conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "060e65b6-f71a-43ff-bc6b-d58fab1ac96f",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors determined a 3.9 \u00c5 resolution cryo-EM structure of the GC-C\u2013Hsp90\u2013Cdc37 complex, revealing a hetero-tetramer with Hsp90 in a canonical closed conformation and the GC-C client unfolded into the Hsp90 channel. This represents the first structure of a membrane protein client and non-kinase client of the Hsp90\u2013Cdc37 system.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm the structural work, with one stating 'the structural work is solid,' another noting 'the methodology used is state of the art and the evidence presented is compelling,' and a third calling this 'the primary breakthrough of this study' that 'answers without doubt' the recognition mechanism. No concerns were raised about the structure determination or resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "d16d995b-1ba8-4fe2-aff1-0e42f0f4bf20",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "GC-C is identified as a membrane protein and non-kinase client of the Hsp90-Cdc37 regulatory system, with the PK domains of membrane receptor guanylyl cyclases regulated via association with heat shock proteins including Hsp90 and Cdc37.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple reviewers explicitly affirm this finding, with one stating 'the novelty of the work stems from the observation that the pseudo-kinase domain of GC-C associates with CDC37 and HSP90 similarly to how the bona fide protein kinases...have been shown to interact.' Another reviewer confirms this 'answers without doubt that Hsp90-Cdc37 recognizes mGCs via their pseudokinase (PK) domain.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "084a7f56-4666-405c-82c6-a8cc65995bb7",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The structure reveals that Cdc37 displaces the N-lobe of the GC-C pseudokinase domain, binds to the C-lobe at the N\u2013C interface through charge complementarity and shape complementarity, and guides the unfolded N-lobe into the Hsp90 dimer.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the mechanistic details without raising concerns. One reviewer notes 'the manner in which Hsp90-Cdc37 recognizes the GC-C PK domain C-lobe is akin to how kinase domains of soluble kinases docks to the chaperone complex,' indicating acceptance of the binding mechanism described.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Structural comparisons reveal that Cdc37 associates with the C-lobe at the N-C lobe interface across different client\u2013Hsp90\u2013Cdc37 complexes with high structural conservation for Hsp90\u2013Cdc37, while GC-C is one of the most divergent clients from a sequence perspective (19-25% identity with other kinase clients), demonstrating Cdc37's plasticity to interact with diverse clients relatively independent of sequence identity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "One reviewer explicitly states this provides 'a concrete framework to understand, more broadly, how Hsp90-Cdc37 recruits a large number of other diverse client proteins containing kinase or pseudokinase domains.' Another reviewer notes the work 'shows the remarkable plasticity of Cdc37 to interact with a broad array of clients with significant sequence variation,' directly affirming these comparative findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "74919e73-e4e3-401f-9cce-dd7820a656ca",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The work demonstrates that membrane receptor guanylyl cyclases hijack regulatory mechanisms used for active kinases, with the GC-C\u2013Hsp90\u2013Cdc37 complex showing significant structural similarity to mechanisms regulating soluble active kinases, suggesting the pseudokinase domains evolved to facilitate regulatory mechanisms for these receptors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this interpretive claim, with one stating 'the pseudo-kinase domain of GC-C associates with CDC37 and HSP90 similarly to how the bona fide protein kinases...have been shown to interact,' and another noting this is 'the second major finding of this study' that provides understanding of how Hsp90-Cdc37 recruits diverse client proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "b62f642d-9b8e-48ac-9b54-3261990f4c00",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors used a highly engineered GC-C construct with the extracellular ligand binding domain replaced by a homodimeric leucine zipper, expressed in hamster cells, and co-purified with endogenous Hsp90 and Cdc37 for cryo-EM structure determination with detailed methodological parameters.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple reviewers explicitly acknowledge the engineered construct approach, with one stating 'Caveney et al. determined the cryo-EM structure of a highly engineered GC-C in a complex with endogenous HSP90 and CDC37,' and another noting they 'overexpressed an engineered construct.' One reviewer affirms 'the methodology used is state of the art,' indicating acceptance of the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "13d77336-7df1-45a7-aeb0-db9405cfccbd",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The hamster (Cricetulus griseus) HSP90\u03b2 and Cdc37 show high sequence conservation compared to human equivalents at 99.7% and 94.2% identity, respectively.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question this sequence conservation data, and one reviewer explicitly notes the complex was 'co-purified...with the endogenous HSP90 and CDC37' from hamster cells, implicitly accepting the relevance of the hamster proteins to the human system.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "cae80003-89df-476d-9bfc-0dc35f3b8809",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "No density is observed for the second GC-C monomer of the dimer, and it is sterically unlikely that an additional regulatory complex forms concurrently, with the disruption of the native state likely precluding catalytic activity while Hsp90 is bound.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these structural observations or inferences about the asymmetric binding and its functional implications. The acceptance of the overall structural findings implicitly supports these specific observations about the missing density and functional consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "2383a30d-1fb5-4d02-ae77-0433a24d210d",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "GC-C residues 528\u2013544 lie across the upper region of the Hsp90 CTDs, with the unfolded N-lobe region relatively poorly resolved in the density, indicating low stability and high mobility of the unfolded N-lobe.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these structural details or the interpretation of poorly resolved density. One reviewer notes the structure was determined 'at sufficient resolution to dock existing structures of HSP90 and CDC37, plus an AlphaFold model of the pseudo-kinase domain,' implicitly accepting the resolution limitations and modeling approaches used.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors propose multiple regulatory scenarios for how the Hsp90\u2013Cdc37 complex could regulate mGC activity: refolding the receptor to maintain activity, recruiting PP5 for dephosphorylation (which would impair signaling), or recruiting E3 ligases for ubiquitination and receptor removal.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "One reviewer explicitly affirms these speculative models, stating 'the Hsp90-Cdc37-GC-C structure offer clues as to how GC-C may be regulated by phosphorylation and/or ubiquitinylation by serving as a platform for recruitment of PP5 and/or E3 ligases.' The reviewer treats these as reasonable inferences from the structural data rather than unsupported speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Background claims about the physiological roles of membrane receptor guanylyl cyclases, cGMP signaling, the domain structure of mGCs, and their regulation through phosphorylation and heat shock proteins.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question any of these background claims, which are presented as established knowledge with appropriate citations. One reviewer notes 'Membrane receptor guanylyl cyclases are important for many physiological processes,' affirming the general importance of the system being studied.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Discussion of previously proposed models and prior work on Hsp90-Cdc37 regulation, including the role of fold complementarity and stability properties in recruitment, and effects of geldanamycin on GC-A activity and Hsp90 association.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the authors' presentation of prior work or previously proposed models. These claims are appropriately cited and serve as context for interpreting the current structural findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "fab24d2c-4a35-47b9-b2e6-2435a259ac45",
+      "content_id": "c930c3a2-2a19-4f99-b8ad-5c1663d3446d",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The Cdc37\u2013GC-C interface has a calculated mean surface area of 689 \u0172.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question this quantitative measurement of the interface, which is calculated using standard methods (PISA) and is consistent with the overall acceptance of the structural analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a3e4f350-ae5d-48dc-84ea-33c5e453f763",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "d443505c-58de-43ca-8fe7-d7120354f2b0",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "c3885856-1c04-489f-b0ba-6fcb83004e7d",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "e7f5cb07-e6a1-4af6-a2ef-34a47bebb662",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "8e9a8296-b877-447f-86c6-e2e9b62be866",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "52c2b10d-e545-40fa-8b89-7b19d252c080",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "72ed55b9-238e-4825-89e4-33ad190d9cae",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "a1e60169-e99a-4781-acab-4f8dcf1dabe6",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "f8c6991f-8205-46af-9f80-5c8c5426a308",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "d70a6d21-e369-4404-9925-dce12299acaa",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "fef27a2d-5b16-4bfa-8937-accd917992b4",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "2f10ba44-00b6-4f40-93ad-047e97edfa9e",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "4900d3f8-3ce5-42e5-a9ad-319b0c88cbac",
+      "result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf"
+    },
+    {
+      "claim_id": "a79daaf1-1734-4ce0-b151-4045b593328c",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "853917df-abc9-4aa0-b17f-9e11df02425f",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "11aa01c4-88d3-4ffa-a136-b129f357ddc6",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "ae8ca3a0-73a5-4bc6-8338-d4cbf96e788a",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "6e50a8fe-ff88-49a4-85a8-2fc2e24db349",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "f48070cc-9157-4d9a-8ca8-7cf3baa76adc",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "28fb315b-60e8-4d1d-b692-c00abbebc26c",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "50de6668-f7f1-4a50-a506-b80dd745fc5a",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "08b687c1-35f7-4cf6-880d-2814fe567577",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "9b1af978-ecf6-4d2b-ad9d-284d0956a63f",
+      "result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc"
+    },
+    {
+      "claim_id": "7ce526ad-908d-434e-831c-0e529120aeaa",
+      "result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384"
+    },
+    {
+      "claim_id": "21a84e18-b998-4f6c-941e-91989a906f9b",
+      "result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384"
+    },
+    {
+      "claim_id": "089ecc92-7446-48a8-8615-908c63e6fefa",
+      "result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384"
+    },
+    {
+      "claim_id": "debfe35a-58d8-4f70-bac4-6df88aa439d9",
+      "result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384"
+    },
+    {
+      "claim_id": "45fb726f-296f-4bf8-b929-35097f438b1b",
+      "result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384"
+    },
+    {
+      "claim_id": "6eb016f9-17da-47f6-9231-dcf1ac29f4c2",
+      "result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384"
+    },
+    {
+      "claim_id": "21aa1152-30cd-447e-94cb-0114d6f0ec56",
+      "result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384"
+    },
+    {
+      "claim_id": "adc756c2-7be1-4051-a971-611371e3cf8d",
+      "result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384"
+    },
+    {
+      "claim_id": "cac9ee30-ffc8-4834-88a2-054a8d437174",
+      "result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6"
+    },
+    {
+      "claim_id": "e119ae3e-3e11-4639-a654-746431d7b20e",
+      "result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6"
+    },
+    {
+      "claim_id": "4a65162f-bc74-4011-a2f6-874cdb4b203e",
+      "result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6"
+    },
+    {
+      "claim_id": "e773b074-27ed-4bd9-ab99-97e70dc9d783",
+      "result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6"
+    },
+    {
+      "claim_id": "19cacec1-08c8-4c20-aedf-75913e0ab55b",
+      "result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6"
+    },
+    {
+      "claim_id": "2e783f23-4b71-45c4-ac01-017bc6202afb",
+      "result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6"
+    },
+    {
+      "claim_id": "627b6d77-4af7-43b0-950c-f8acbcfb8b38",
+      "result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec"
+    },
+    {
+      "claim_id": "65745f26-e2b5-40ef-bc39-ccd6f21e5460",
+      "result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec"
+    },
+    {
+      "claim_id": "73f176bf-738b-435c-b6bd-6ac8ccac7848",
+      "result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec"
+    },
+    {
+      "claim_id": "d62cdab5-34d6-4096-88b9-c6484cceb0a2",
+      "result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec"
+    },
+    {
+      "claim_id": "6e692507-4a63-4bc7-b590-13a5703bf3f1",
+      "result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec"
+    },
+    {
+      "claim_id": "54c95c88-c41d-4c0d-9bdc-1c609e71b883",
+      "result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec"
+    },
+    {
+      "claim_id": "c4f19d43-43f0-4dd6-94ab-845b1d58b6ff",
+      "result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec"
+    },
+    {
+      "claim_id": "37c7ede7-d43a-4c8a-bb03-f19964b17d5b",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "6f532b95-534e-40ed-af2d-3b74b0961c17",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "925423f2-61fe-479e-b7ed-3dca97398a5b",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "db2b5231-6a85-4ca7-97f0-e987f278973d",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "1ccc4c23-346c-4d7e-b895-fc1841868c87",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "1ac7c7c6-424b-4f3b-b474-175a1e6ed692",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "f869569e-2104-4db8-aafa-dd6ca2c0ce61",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "27e704f0-f04e-412e-930f-24e65a068b85",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "fec515e1-162e-4b23-b086-2492eb1b27b0",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "da2b4304-af69-44a6-8cd5-52a76392764e",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "b53d225e-62cf-47e0-b3a1-c6828a6aa15f",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "982ff76c-9c10-4009-adbd-ac69d37aa1dc",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "0964e691-4714-4d68-9c02-5fff16c8f54b",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "7ab06f44-e1e5-483f-a295-09aee1cb2eb1",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "0394d29d-3a96-471a-b4d3-0d4593fb7353",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "0a95fa6a-1c06-43f4-87c6-f64d7401eb9c",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "51bf2b22-49dd-4528-b332-2f866073ee80",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "ddbf4535-3aa9-4ddb-bd8d-356170e10890",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "8d263307-d142-44f0-89c8-e535bfdcd288",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "04af51a0-1e1e-4776-89a1-22572b4f9387",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "dea17976-14c6-4b67-a535-e50f62a1ef12",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "53726928-dc29-44b9-b363-64267c5cd689",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "1e27212c-c014-41cf-bbdf-2299c876817c",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "d13e4bc0-7235-4035-9b51-f34eb2618e2e",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "f2c299b0-95d9-4363-a01f-25aedda1b75b",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "99dc7522-c4b7-4f17-835c-40f12b7ae4e4",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "6ba96018-7025-4618-8771-ec6daf73bc2d",
+      "result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c"
+    },
+    {
+      "claim_id": "d97f7f2c-aa6b-458e-978f-dbe54b70952d",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "91986fed-caeb-44a5-8b21-0243fe11baf4",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "cc58d875-73f4-4e4d-82ee-d9099c1f029f",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "c82e24b5-e305-4282-97f1-09f9752209bd",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "e9f58802-0551-4943-9878-bd795068bf9f",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "1010eb0b-e7f2-4df5-82cd-d6162b4e3e5f",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "db283609-16d8-4927-b810-c4b065a58825",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "098862ce-b0e4-4b12-b83c-87f68904937b",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "b448545c-5574-4160-a5ad-81adff3e492e",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "9706542d-33f2-4665-8177-620407a7f28b",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "92d4e243-1703-429f-af02-ea4ca9bbc0bd",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "8fde2d73-0ece-4e45-8688-cd7b75759407",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "6895442f-7a6c-458c-88b4-3b3577bd3023",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "466b408b-4180-45f0-bb50-710f0c28de38",
+      "result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91"
+    },
+    {
+      "claim_id": "9711cd2b-493c-416b-b82f-17383abf3b61",
+      "result_id": "f751a465-4b27-4ec7-9f2c-d8ab0fc468db"
+    },
+    {
+      "claim_id": "9c9ed4e9-bc42-4e25-8c14-e4579dd3f625",
+      "result_id": "f751a465-4b27-4ec7-9f2c-d8ab0fc468db"
+    },
+    {
+      "claim_id": "f1486fef-3817-4a7d-b044-fd64563b1a1b",
+      "result_id": "f751a465-4b27-4ec7-9f2c-d8ab0fc468db"
+    },
+    {
+      "claim_id": "a3e4f350-ae5d-48dc-84ea-33c5e453f763",
+      "result_id": "060e65b6-f71a-43ff-bc6b-d58fab1ac96f"
+    },
+    {
+      "claim_id": "d443505c-58de-43ca-8fe7-d7120354f2b0",
+      "result_id": "060e65b6-f71a-43ff-bc6b-d58fab1ac96f"
+    },
+    {
+      "claim_id": "c3885856-1c04-489f-b0ba-6fcb83004e7d",
+      "result_id": "060e65b6-f71a-43ff-bc6b-d58fab1ac96f"
+    },
+    {
+      "claim_id": "e7f5cb07-e6a1-4af6-a2ef-34a47bebb662",
+      "result_id": "060e65b6-f71a-43ff-bc6b-d58fab1ac96f"
+    },
+    {
+      "claim_id": "8e9a8296-b877-447f-86c6-e2e9b62be866",
+      "result_id": "060e65b6-f71a-43ff-bc6b-d58fab1ac96f"
+    },
+    {
+      "claim_id": "52c2b10d-e545-40fa-8b89-7b19d252c080",
+      "result_id": "060e65b6-f71a-43ff-bc6b-d58fab1ac96f"
+    },
+    {
+      "claim_id": "9711cd2b-493c-416b-b82f-17383abf3b61",
+      "result_id": "d16d995b-1ba8-4fe2-aff1-0e42f0f4bf20"
+    },
+    {
+      "claim_id": "9c9ed4e9-bc42-4e25-8c14-e4579dd3f625",
+      "result_id": "d16d995b-1ba8-4fe2-aff1-0e42f0f4bf20"
+    },
+    {
+      "claim_id": "f2c299b0-95d9-4363-a01f-25aedda1b75b",
+      "result_id": "d16d995b-1ba8-4fe2-aff1-0e42f0f4bf20"
+    },
+    {
+      "claim_id": "99dc7522-c4b7-4f17-835c-40f12b7ae4e4",
+      "result_id": "d16d995b-1ba8-4fe2-aff1-0e42f0f4bf20"
+    },
+    {
+      "claim_id": "6ba96018-7025-4618-8771-ec6daf73bc2d",
+      "result_id": "d16d995b-1ba8-4fe2-aff1-0e42f0f4bf20"
+    },
+    {
+      "claim_id": "a79daaf1-1734-4ce0-b151-4045b593328c",
+      "result_id": "084a7f56-4666-405c-82c6-a8cc65995bb7"
+    },
+    {
+      "claim_id": "853917df-abc9-4aa0-b17f-9e11df02425f",
+      "result_id": "084a7f56-4666-405c-82c6-a8cc65995bb7"
+    },
+    {
+      "claim_id": "11aa01c4-88d3-4ffa-a136-b129f357ddc6",
+      "result_id": "084a7f56-4666-405c-82c6-a8cc65995bb7"
+    },
+    {
+      "claim_id": "6e50a8fe-ff88-49a4-85a8-2fc2e24db349",
+      "result_id": "084a7f56-4666-405c-82c6-a8cc65995bb7"
+    },
+    {
+      "claim_id": "f48070cc-9157-4d9a-8ca8-7cf3baa76adc",
+      "result_id": "084a7f56-4666-405c-82c6-a8cc65995bb7"
+    },
+    {
+      "claim_id": "28fb315b-60e8-4d1d-b692-c00abbebc26c",
+      "result_id": "084a7f56-4666-405c-82c6-a8cc65995bb7"
+    },
+    {
+      "claim_id": "7ce526ad-908d-434e-831c-0e529120aeaa",
+      "result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7"
+    },
+    {
+      "claim_id": "21a84e18-b998-4f6c-941e-91989a906f9b",
+      "result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7"
+    },
+    {
+      "claim_id": "089ecc92-7446-48a8-8615-908c63e6fefa",
+      "result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7"
+    },
+    {
+      "claim_id": "debfe35a-58d8-4f70-bac4-6df88aa439d9",
+      "result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7"
+    },
+    {
+      "claim_id": "45fb726f-296f-4bf8-b929-35097f438b1b",
+      "result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7"
+    },
+    {
+      "claim_id": "6eb016f9-17da-47f6-9231-dcf1ac29f4c2",
+      "result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7"
+    },
+    {
+      "claim_id": "21aa1152-30cd-447e-94cb-0114d6f0ec56",
+      "result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7"
+    },
+    {
+      "claim_id": "adc756c2-7be1-4051-a971-611371e3cf8d",
+      "result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7"
+    },
+    {
+      "claim_id": "f1486fef-3817-4a7d-b044-fd64563b1a1b",
+      "result_id": "74919e73-e4e3-401f-9cce-dd7820a656ca"
+    },
+    {
+      "claim_id": "6eb016f9-17da-47f6-9231-dcf1ac29f4c2",
+      "result_id": "74919e73-e4e3-401f-9cce-dd7820a656ca"
+    },
+    {
+      "claim_id": "4a65162f-bc74-4011-a2f6-874cdb4b203e",
+      "result_id": "74919e73-e4e3-401f-9cce-dd7820a656ca"
+    },
+    {
+      "claim_id": "72ed55b9-238e-4825-89e4-33ad190d9cae",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "a1e60169-e99a-4781-acab-4f8dcf1dabe6",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "d97f7f2c-aa6b-458e-978f-dbe54b70952d",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "91986fed-caeb-44a5-8b21-0243fe11baf4",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "cc58d875-73f4-4e4d-82ee-d9099c1f029f",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "c82e24b5-e305-4282-97f1-09f9752209bd",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "e9f58802-0551-4943-9878-bd795068bf9f",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "1010eb0b-e7f2-4df5-82cd-d6162b4e3e5f",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "db283609-16d8-4927-b810-c4b065a58825",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "098862ce-b0e4-4b12-b83c-87f68904937b",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "b448545c-5574-4160-a5ad-81adff3e492e",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "9706542d-33f2-4665-8177-620407a7f28b",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "92d4e243-1703-429f-af02-ea4ca9bbc0bd",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "8fde2d73-0ece-4e45-8688-cd7b75759407",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "6895442f-7a6c-458c-88b4-3b3577bd3023",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "466b408b-4180-45f0-bb50-710f0c28de38",
+      "result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00"
+    },
+    {
+      "claim_id": "f8c6991f-8205-46af-9f80-5c8c5426a308",
+      "result_id": "13d77336-7df1-45a7-aeb0-db9405cfccbd"
+    },
+    {
+      "claim_id": "d70a6d21-e369-4404-9925-dce12299acaa",
+      "result_id": "13d77336-7df1-45a7-aeb0-db9405cfccbd"
+    },
+    {
+      "claim_id": "fef27a2d-5b16-4bfa-8937-accd917992b4",
+      "result_id": "cae80003-89df-476d-9bfc-0dc35f3b8809"
+    },
+    {
+      "claim_id": "2f10ba44-00b6-4f40-93ad-047e97edfa9e",
+      "result_id": "cae80003-89df-476d-9bfc-0dc35f3b8809"
+    },
+    {
+      "claim_id": "4900d3f8-3ce5-42e5-a9ad-319b0c88cbac",
+      "result_id": "cae80003-89df-476d-9bfc-0dc35f3b8809"
+    },
+    {
+      "claim_id": "50de6668-f7f1-4a50-a506-b80dd745fc5a",
+      "result_id": "2383a30d-1fb5-4d02-ae77-0433a24d210d"
+    },
+    {
+      "claim_id": "08b687c1-35f7-4cf6-880d-2814fe567577",
+      "result_id": "2383a30d-1fb5-4d02-ae77-0433a24d210d"
+    },
+    {
+      "claim_id": "9b1af978-ecf6-4d2b-ad9d-284d0956a63f",
+      "result_id": "2383a30d-1fb5-4d02-ae77-0433a24d210d"
+    },
+    {
+      "claim_id": "2e783f23-4b71-45c4-ac01-017bc6202afb",
+      "result_id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91"
+    },
+    {
+      "claim_id": "73f176bf-738b-435c-b6bd-6ac8ccac7848",
+      "result_id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91"
+    },
+    {
+      "claim_id": "d62cdab5-34d6-4096-88b9-c6484cceb0a2",
+      "result_id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91"
+    },
+    {
+      "claim_id": "6e692507-4a63-4bc7-b590-13a5703bf3f1",
+      "result_id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91"
+    },
+    {
+      "claim_id": "54c95c88-c41d-4c0d-9bdc-1c609e71b883",
+      "result_id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91"
+    },
+    {
+      "claim_id": "c4f19d43-43f0-4dd6-94ab-845b1d58b6ff",
+      "result_id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91"
+    },
+    {
+      "claim_id": "37c7ede7-d43a-4c8a-bb03-f19964b17d5b",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "6f532b95-534e-40ed-af2d-3b74b0961c17",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "925423f2-61fe-479e-b7ed-3dca97398a5b",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "db2b5231-6a85-4ca7-97f0-e987f278973d",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "1ccc4c23-346c-4d7e-b895-fc1841868c87",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "1ac7c7c6-424b-4f3b-b474-175a1e6ed692",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "f869569e-2104-4db8-aafa-dd6ca2c0ce61",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "27e704f0-f04e-412e-930f-24e65a068b85",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "fec515e1-162e-4b23-b086-2492eb1b27b0",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "da2b4304-af69-44a6-8cd5-52a76392764e",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "b53d225e-62cf-47e0-b3a1-c6828a6aa15f",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "982ff76c-9c10-4009-adbd-ac69d37aa1dc",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "0964e691-4714-4d68-9c02-5fff16c8f54b",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "7ab06f44-e1e5-483f-a295-09aee1cb2eb1",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "0394d29d-3a96-471a-b4d3-0d4593fb7353",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "0a95fa6a-1c06-43f4-87c6-f64d7401eb9c",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "51bf2b22-49dd-4528-b332-2f866073ee80",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "ddbf4535-3aa9-4ddb-bd8d-356170e10890",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "8d263307-d142-44f0-89c8-e535bfdcd288",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "04af51a0-1e1e-4776-89a1-22572b4f9387",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "dea17976-14c6-4b67-a535-e50f62a1ef12",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "53726928-dc29-44b9-b363-64267c5cd689",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "1e27212c-c014-41cf-bbdf-2299c876817c",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "d13e4bc0-7235-4035-9b51-f34eb2618e2e",
+      "result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c"
+    },
+    {
+      "claim_id": "cac9ee30-ffc8-4834-88a2-054a8d437174",
+      "result_id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6"
+    },
+    {
+      "claim_id": "e119ae3e-3e11-4639-a654-746431d7b20e",
+      "result_id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6"
+    },
+    {
+      "claim_id": "e773b074-27ed-4bd9-ab99-97e70dc9d783",
+      "result_id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6"
+    },
+    {
+      "claim_id": "19cacec1-08c8-4c20-aedf-75913e0ab55b",
+      "result_id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6"
+    },
+    {
+      "claim_id": "627b6d77-4af7-43b0-950c-f8acbcfb8b38",
+      "result_id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6"
+    },
+    {
+      "claim_id": "65745f26-e2b5-40ef-bc39-ccd6f21e5460",
+      "result_id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6"
+    },
+    {
+      "claim_id": "ae8ca3a0-73a5-4bc6-8338-d4cbf96e788a",
+      "result_id": "fab24d2c-4a35-47b9-b2e6-2435a259ac45"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "fce1fc7f-68a9-4769-bdf6-f08deaba712a",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf",
+      "peer_result_id": "060e65b6-f71a-43ff-bc6b-d58fab1ac96f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the core structural work (C3, C32-C36) as SUPPORTED. OpenEval provides more comprehensive coverage including methodological claims (C37-C40) and structural inferences (C41-C43), while peer review focuses specifically on the quality and validity of the cryo-EM structure determination. Both affirm the structural work is solid and compelling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "86d7956c-fa31-4e8c-8065-184cf1116250",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384",
+      "peer_result_id": "a7d477ee-3baa-4f00-8472-c4ef9e3cc1f7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claims C54-C61 regarding structural conservation and mechanistic insights. Both evaluate as SUPPORTED. OpenEval emphasizes quantitative RMSD measurements and sequence alignment data, while peer review highlights the broader implications for understanding Hsp90-Cdc37 client diversity and plasticity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "74f086eb-665a-426d-8bc8-444bb867af50",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "8b3f1325-ec70-4bc0-b261-65ee3bb79c91",
+      "peer_result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on methodological claims (C75-C88). Both evaluate as SUPPORTED. OpenEval provides detailed technical validation of each methodological step, while peer review acknowledges the engineered construct approach and affirms the methodology as 'state of the art.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "9023b096-b26e-4d40-8558-1fddc3b538b8",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c",
+      "peer_result_id": "2f91d4ed-bf1d-4486-80cc-521df627ab3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "High concordance on background claims (C1-C2, C7-C28). Both evaluate as SUPPORTED. OpenEval characterizes these as well-established literature context, while peer review notes no concerns were raised about these foundational claims regarding mGC physiology and domain architecture.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "061fbee0-854b-4b7f-9da6-4134ca838c28",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc",
+      "peer_result_id": "084a7f56-4666-405c-82c6-a8cc65995bb7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address binding mechanism details (C44-C50) and evaluate as SUPPORTED. OpenEval emphasizes structural data from Figure 2 and quantitative PISA measurements, while peer review affirms the mechanistic similarity to kinase-chaperone interactions without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "d2e8829e-a261-4962-b6e6-60d7a8d0f169",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec",
+      "peer_result_id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on speculative regulatory models (C70-C74). OpenEval evaluates as UNCERTAIN, noting these are hypotheses lacking direct experimental support. Peer review evaluates as SUPPORTED, treating them as reasonable inferences that 'offer clues' about regulation. This represents a key difference in how speculative claims are assessed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "854f78fe-4700-4216-8e78-9396c971486c",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "f751a465-4b27-4ec7-9f2c-d8ab0fc468db",
+      "peer_result_id": "d16d995b-1ba8-4fe2-aff1-0e42f0f4bf20",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the key finding that GC-C pseudokinase hijacks the kinase chaperone machinery (C4-C6). Both evaluate as SUPPORTED. OpenEval emphasizes structural comparisons demonstrating conserved mechanisms, while peer review highlights this as the 'novelty of the work' and 'primary breakthrough.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "6e34bc51-a791-4d1e-80de-db6421ef9698",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6",
+      "peer_result_id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address previously proposed models and prior work (C62-C63, C65-C66). OpenEval evaluates as UNCERTAIN, noting the mechanistic model is speculative and requires validation. Peer review evaluates as SUPPORTED, accepting these as appropriate context without challenge. Difference reflects OpenEval's stricter assessment of speculative mechanistic claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "5cd26895-13ea-4faf-afd8-b238d6db2956",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf",
+      "peer_result_id": "cae80003-89df-476d-9bfc-0dc35f3b8809",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address structural observations about asymmetric binding and missing density (C41-C43). Both evaluate as SUPPORTED. OpenEval characterizes these as reasonable inferences from structural data, while peer review implicitly accepts them through overall acceptance of structural findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "336dcc92-ea1d-4a83-a4cb-1bd25001815a",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc",
+      "peer_result_id": "2383a30d-1fb5-4d02-ae77-0433a24d210d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address poorly resolved density and interface properties (C51-C53). Both evaluate as SUPPORTED. OpenEval notes these are consistent with resolution limitations and mobility of unfolded regions, while peer review implicitly accepts resolution limitations and modeling approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "b95d6b03-99f4-42e5-998a-9f4528620129",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf",
+      "peer_result_id": "13d77336-7df1-45a7-aeb0-db9405cfccbd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address sequence conservation between hamster and human proteins (C39-C40). Both evaluate as SUPPORTED. OpenEval validates this as part of methodological justification, while peer review implicitly accepts relevance of hamster proteins to human system.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "9f27e053-8e15-4a12-847f-d950aa6d93b7",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "02ef0348-1136-4a8d-9884-9abb65d27eaf",
+      "peer_result_id": "b62f642d-9b8e-48ac-9b54-3261990f4c00",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the engineered construct approach (C37-C38). Both evaluate as SUPPORTED. OpenEval validates these as appropriate methodological approaches, while peer review explicitly acknowledges the engineered construct and accepts the experimental design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "8d450d8c-de4a-414c-8bba-b2db7c186fac",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "c0869938-36b3-4fb7-8cb1-f221057389cc",
+      "peer_result_id": "fab24d2c-4a35-47b9-b2e6-2435a259ac45",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address quantitative interface measurement (C47). Both evaluate as SUPPORTED. OpenEval notes appropriate citation of PISA calculation method, while peer review accepts this as consistent with overall structural analysis without specific concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "56ee1bc4-ac06-4135-a1cc-6e4ad0a81287",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "5c86a01d-b6b6-48bb-8684-711e9baaf384",
+      "peer_result_id": "74919e73-e4e3-401f-9cce-dd7820a656ca",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on C59 regarding mechanistic conservation. Both evaluate as SUPPORTED. OpenEval emphasizes this as inference from structural conservation data, while peer review treats it as part of the broader finding about Hsp90-Cdc37 client diversity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "7195d137-ba93-491b-b346-9c89f4ed4fa3",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "f751a465-4b27-4ec7-9f2c-d8ab0fc468db",
+      "peer_result_id": "74919e73-e4e3-401f-9cce-dd7820a656ca",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on C6 regarding the 'hijacking' interpretation. Both evaluate as SUPPORTED. OpenEval notes the term is interpretive but reasonable given structural conservation, while peer review affirms this as a major finding about pseudokinase-chaperone association.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "3c1f2e23-d41b-4637-9bcd-1ac382413527",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6",
+      "peer_result_id": "f19b04ba-cf47-46f4-8893-9a3d1f34cf91",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Overlap on C67 regarding speculative regulatory mechanisms. OpenEval evaluates as UNCERTAIN, noting the model requires validation beyond structural data. Peer review evaluates as SUPPORTED, treating it as reasonable inference. Reflects different thresholds for speculative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "a1b4f128-7fea-4bfc-85d0-222a6ff285d5",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "a2686b0a-df4c-427b-b188-f1a0dee68eec",
+      "peer_result_id": "c4b413a6-cb4c-4f52-ad87-b0f18f6e8bf6",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Overlap on C68-C69 regarding PP5 background and conflicting evidence. OpenEval evaluates as UNCERTAIN due to speculative nature of associated regulatory scenarios. Peer review evaluates as SUPPORTED, accepting these as appropriate context from prior work without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "0e9916ca-b6e2-4ad5-8c26-a33e6db664b7",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "e09181b8-144c-46a5-b045-7fdc207a32d6",
+      "peer_result_id": "74919e73-e4e3-401f-9cce-dd7820a656ca",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Overlap on C64 regarding evolutionary function speculation. OpenEval evaluates as UNCERTAIN, characterizing this as speculative inference. Peer review evaluates as SUPPORTED, treating it as part of the interpretive framework for understanding client diversity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    },
+    {
+      "id": "fb1961c5-ad97-4fd3-97b3-f9c0d7ef329e",
+      "submission_id": "b13e0850-0183-42e3-8a8d-31888fa06dea",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "da7b1d8d-7da2-415e-b7a2-6999496acc4c",
+      "peer_result_id": "d16d995b-1ba8-4fe2-aff1-0e42f0f4bf20",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on C29-C31 regarding regulatory mechanisms background. Both evaluate as SUPPORTED. OpenEval treats these as established background with appropriate citations, while peer review affirms the pseudokinase-chaperone association finding that builds on this background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:37:28.900360Z"
+    }
+  ]
+}

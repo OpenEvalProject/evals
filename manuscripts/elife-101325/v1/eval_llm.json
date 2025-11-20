@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Most MIo and SIo neurons exhibit significant directional modulation during feeding and drinking, with diverse firing patterns including oscillatory activity and direction-specific peaks. The tuning curves fit cosine functions similar to arm motor cortex, with peaks most frequently observed toward anterior and superior directions, consistent with the distribution of tongue movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C22-C29 provide converging evidence from multiple analyses (bootstrap tests, F-tests, tuning curve fitting, Fano factor analysis) demonstrating directional modulation in both cortical regions. The statistical tests are appropriate (p<0.05), and the findings are supported by both example neurons and population-level analyses with proper controls for firing variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Directional tuning differs significantly between feeding and drinking tasks, and between MIo and SIo regions. During feeding, 72% of neurons showed directional tuning versus 66% during drinking (p<0.05), with MIo showing higher proportions (80%) than SIo (52%) during feeding (p<0.001). MIo also exhibited significantly lower firing variability (Fano factor) than SIo (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 present systematic comparisons across tasks and regions using appropriate statistical tests (chi-square, Wilcoxon rank-sum). The findings are internally consistent and supported by multiple metrics. However, the study uses only one session per condition per subject, which limits generalizability despite the statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "More neurons respond to pitch (vertical) than yaw (lateral) tongue movements, with MIo showing higher proportions tuned to both components compared to SIo (pitch: p<0.001; yaw: p<0.08). MIo neurons exhibited sharper and narrower tuning curves than SIo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by statistical comparisons and visual evidence from tuning maps (Figure 4). The marginal significance for yaw (p<0.08) is appropriately noted, and the findings are consistent with the broader pattern of MIo showing more robust directional information than SIo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Preferred direction (PD) distributions during feeding showed nonuniform patterns (Rayleigh test, p<0.001) with peaks toward leftward tongue movements in most populations, consistent with the hypothesis about contralateral genioglossus activation. PD distributions were comparable between MIo and SIo during feeding (p>0.1) but showed subject-specific differences during drinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by appropriate circular statistics and are consistent with anatomical predictions about tongue muscle control. The subject-specific differences are acknowledged and appropriately analyzed. The findings align with the unilateral innervation pattern of the genioglossus muscle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Factor analysis revealed that feeding data showed higher variance explained (81% with 3 factors, 91% with 5 factors) compared to drinking (71% and 82% respectively). Neural population trajectories exhibited robust directional information with significant inter-trajectory distances (p<0.001) and rotational dynamics consistent with directional components. MIo trajectory length was longer in feeding despite longer tongue displacement in drinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 present comprehensive population-level analyses using factor analysis with appropriate validation (cross-validation, subsampling controls). The findings are internally consistent and supported by multiple metrics. The rotational dynamics are consistent with previous literature in arm motor cortex, providing external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SIo trajectories showed stark differences from MIo, being more tangled with less direct paths, spanning smaller neural space, and showing variable distances between trajectories. Quantitative analysis revealed greater separation in MIo (0.44\u00b10.21) compared to SIo (0.37\u00b10.19, p<0.01), with MIo trajectories traveling significantly longer normalized distances (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide converging evidence from multiple trajectory metrics with appropriate statistical tests. The findings are consistent with previous literature (Russo et al., 2018) and align with the functional differences between motor and sensory cortex. The normalization procedures appropriately control for population size differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Bilateral nerve block significantly altered tongue kinematics during both feeding and drinking. Sham controls showed no significant changes, confirming effects were due to sensory loss. During feeding, the mean and spread of directions changed significantly (p<0.01, p<0.001), with subject-specific patterns. During drinking, endpoints showed greater overlap and variance, with increased distance from mean position and altered movement speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are well-supported by appropriate controls (sham experiments) and statistical tests (t-tests, F-tests). The subject-specific differences are acknowledged and analyzed. The findings demonstrate clear behavioral effects of sensory loss, though the mechanisms underlying individual differences remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Following nerve block, both MIo and SIo showed significant decreases in directionally modulated neurons (MIo: p<0.001, SIo: p<0.05). During feeding, MIo neurons showed clockwise shifts in PD toward center (p<0.01), while SIo showed subject-specific responses. During drinking, both regions showed subject-dependent directional shifts with SIo consistently shifting rightward in both animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 demonstrate neural effects of sensory loss with appropriate statistical tests and controls for kinematic changes (Figure 10 supplement 2). The subject-specific differences are substantial and appropriately noted, though they complicate interpretation. The persistent effects after controlling for kinematics support a genuine neural reorganization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Neural population trajectories showed opposite effects of nerve block in MIo versus SIo during feeding: MIo showed reduced inter-trajectory distances (p<0.05 in >89% of pairs) while SIo showed increased distances (p<0.05 in >75% of pairs). During drinking, both regions showed reduced distances across all pairs (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 reveal differential regional responses to sensory loss with extensive statistical testing across trajectory pairs. The opposite effects in feeding suggest distinct functional roles, though the mechanisms remain unclear. The consistent reduction during drinking suggests task-specific reorganization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "3D tongue direction could be decoded from MIo and SIo populations using both KNN and LSTM approaches. KNN decoding showed behavior type (p<0.001, drinking 11% better), cortical region (p<0.001, MIo 13% better), and subject effects, but nerve block did not significantly impair performance (p>0.1). LSTM showed substantially higher MIo performance (R\u00b2: 0.46-0.81) versus SIo (R\u00b2: 0.12-0.43, p<0.001), with greater impairment during nerve block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 present comprehensive decoding analyses with appropriate controls (subsampling, cross-validation). The contrasting results between KNN and LSTM are interesting but not fully explained. The lack of nerve block effect on KNN despite clear neural changes (C73-C81) suggests the classifier may exploit residual directional information or non-directional features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study extends previous findings on directional encoding to naturalistic behaviors, showing higher directional information in feeding than drinking across multiple metrics. Fewer latent factors explained feeding variance despite apparent complexity, suggesting simpler underlying network activity. Task differences may reflect distinct biomechanical constraints and sensorimotor requirements compared to previous wrist studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 appropriately contextualize findings within existing literature and provide reasonable interpretations. The comparison to arm/wrist studies is informative, though direct comparisons are limited by methodological differences. The interpretation of simpler network activity in feeding is supported by factor analysis but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Greater inter-trajectory distances in neural state space indicate more distinct and separable directional representations, facilitating discrimination by downstream regions. Low tangling in MIo may confer noise robustness while higher tangling in SIo may reflect variability in tactile signals. Neural populations reflect anatomical constraints of the tongue, with nonuniform PD distributions matching movement frequency distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C107 present reasonable interpretations of the data, but many are speculative (C104-C106 explicitly marked as speculation/inference). While the interpretations are plausible and consistent with the data, they lack direct experimental validation. The functional implications of trajectory geometry require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Subject differences in PD distributions may relate to recording location differences rather than chewing side preference, as both monkeys preferred the right side. Neurons strongly tuned to direction may have direct connections to ipsilateral extrinsic muscles, consistent with findings in pigs showing unilateral nerve transection alters ipsilateral tongue coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 attempt to explain subject differences but remain largely speculative (C110, C112 explicitly marked as speculation). The anatomical explanation is plausible but not directly tested. The comparison to pig studies (C111) provides some support but cross-species differences limit interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study extends previous findings on nerve block effects to show that reduced tongue motion likely stems from sensory loss rather than motor impairment, consistent with mouse studies showing somatosensory cortex is necessary for targeting but not core motor capabilities. Individual variability suggests additional subjects would provide valuable insights into OSMCx adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 appropriately integrate current findings with previous work. The interpretation of sensory versus motor impairment (C117) is reasonable given the nerve block targets sensory branches, though direct motor testing would strengthen this conclusion. The acknowledgment of individual variability and study limitations (C118) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C14",
+      "C18",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "This study addresses a knowledge gap in understanding how 3D tongue direction is encoded in OSMCx during natural behaviors, demonstrating high directional information especially in motor areas. The findings have important implications for rehabilitating orolingual dysfunctions and developing neuroprosthetic control, as significant directional information can be extracted even without tactile feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C14, C18, C121-C123 establish the study's motivation and significance. The knowledge gap is well-documented, and the study successfully addresses it with novel methods. The clinical implications (C4, C123) are reasonable but somewhat speculative, as translation to rehabilitation requires additional development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study used two adult male rhesus macaques with chronically implanted microelectrode arrays in four OSMCx areas, recording neural activity simultaneously with 3D tongue kinematics via biplanar video-radiography (200 Hz, <0.1 mm resolution). Nerve block was administered bilaterally to trigeminal nerve branches, with all data collected within 90 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C132 describe the experimental methods in detail. The approach is technically sophisticated and appropriate for the research questions. The sample size (n=2) is typical for nonhuman primate neurophysiology but limits generalizability. Ethical approval and technical specifications are properly documented.",
+    "result_type": "MINOR"
+  }
+]

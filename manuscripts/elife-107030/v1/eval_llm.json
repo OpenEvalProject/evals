@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C30"
+    ],
+    "result": "The authors successfully generated \u0394ITPM flies (quadruple mutants lacking all four immune modules: Imd, Toll, Phagocytosis, and Melanization) that are viable with poor viability, homozygous fertile, and display no overt morphological defects, suggesting these immune mechanisms are not strictly required for organismal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C22, and C30 provide converging evidence from direct experimental observations (C2, C22) and functional validation (C30) that quadruple mutant flies can survive and reproduce despite lacking all four major immune modules. The viability data and functional assays in Figure 1E-H confirm complete immune deficiency while maintaining organismal viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C96",
+      "C97"
+    ],
+    "result": "Each of the four immune modules (Imd, Toll, Phagocytosis, Melanization) can be selectively blocked in the isogenic DrosDel background without major interference with the competence of the others, though modest cross-talk exists (higher Toll activity in \u0394Mel flies, reduced Imd activation in \u0394Phag flies at 6hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 and C96-C97 are supported by functional assays in Figure 1A-D showing pathway-specific deficiencies. The qPCR data (C24-C26), phagocytosis assays (C27-C28), and melanization imaging (C29) demonstrate selective module disruption. The observed cross-talk (C96, C97) is modest and does not invalidate the overall independence of the modules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C68"
+    ],
+    "result": "The four immune modules largely function independently and additively in host defense, with most modules contributing cumulatively rather than synergistically to pathogen resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C68 are supported by systematic assessment across 24 pathogens (Figure 3) showing that double mutants typically display additive rather than synergistic susceptibilities. While some synergy exists between Imd and Toll for specific pathogens, the predominant pattern is independent, additive contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Individual immune module deficiencies have minimal impact on unchallenged lifespan at 25\u00b0C, but compound mutants show progressively reduced survival, with \u0394ITPM flies having the lowest survival rate, demonstrating that these modules are collectively crucial for lifespan maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by survival data in Figure 2A-B showing no significant mortality in single mutants within 10 days, but 25%+ cumulative mortality in compound mutants, with \u0394ITPM showing the worst survival. This demonstrates collective rather than individual importance for lifespan maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Melanization plays a major role in wound healing and survival after clean injury, with all compound mutants affected in melanization showing high susceptibility to injury. Toll and melanization synergistically contribute to wound healing, though Imd and phagocytosis also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C102-C104 are supported by clean injury survival data (Figure 2C-D) showing ~50% mortality in \u0394Mel flies and similar mortality in all melanization-deficient compound mutants. The synergistic contribution of Toll and melanization is consistent with cited prior studies and the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C53",
+      "C55",
+      "C56",
+      "C60"
+    ],
+    "result": "The Imd pathway plays a major role against all tested Gram-negative bacteria and contributes to defense against DAP-type peptidoglycan-containing Gram-positive bacteria and certain viruses (DCV, FHV, DXV, IIV6). AMPs are critical effectors downstream of Imd, with \u0394AMP14 susceptibilities paralleling \u0394IMD flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C53, C55-C56, and C60 are supported by comprehensive survival data across 24 pathogens (Figure 3). The parallel susceptibilities of \u0394AMP14 and \u0394IMD flies to Gram-negative bacteria and viruses demonstrate that AMPs are the primary effectors of Imd-mediated defense.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C57",
+      "C58",
+      "C59",
+      "C61"
+    ],
+    "result": "The Toll pathway plays a prominent role in survival against all virulent Gram-positive bacteria and fungi upon septic injury, and also contributes to defense against certain viruses (FHV, DXV, IIV6). Bomanins are primary effectors downstream of Toll for defense against fungi and Gram-positive bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 and C57-C59, C61 are supported by survival data (Figure 3) showing \u0394TOLL susceptibility to Gram-positive bacteria, fungi, and specific viruses. The \u0394Bom susceptibility pattern paralleling \u0394TOLL for most Gram-positive bacteria and fungi confirms Bomanins as key Toll effectors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Melanization plays a highly important and relatively consistent role against all tested viruses (particularly DXV, IIV-6, SINV), and is critical for defense against S. aureus and Pr. rettgeri, rivaling the importance of other major immune pathways for these pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C49-C52 are supported by survival data (Figure 3) showing consistent \u0394Mel susceptibility to all five tested viruses and severe susceptibility to S. aureus and Pr. rettgeri. This represents a novel finding regarding melanization's antiviral role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Phagocytosis contributes to survival against the fungus B. bassiana and shows minor contributions to defense against S. aureus and a subset of Gram-negative bacteria (Pr. rettgeri, Ecc15, E. coli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by survival data (Figure 3) showing \u0394Phag susceptibility to these pathogens. However, the authors acknowledge that reduced Imd activation in \u0394Phag flies (C25, C97) may contribute to some susceptibilities, suggesting the cellular response contribution may be partially indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "AMPs and Bomanins can contribute to survival after certain viral infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by survival data (Figure 3) showing \u0394AMP14 susceptibility to DCV, FHV, DXV, IIV6 and \u0394Bom susceptibility to DCV, FHV, DXV. This extends the known functions of these antimicrobial peptides beyond bacterial and fungal defense.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "\u0394ITPM flies are always as or more susceptible than single- or double-module-deficient flies. Double mutants reveal synergistic effects for some pathogen-pathway combinations (e.g., \u0394IMD,\u0394TOLL for B. subtilis, M. luteus, E. coli) and uncover roles masked in single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by comprehensive survival comparisons (Figure 3) showing \u0394ITPM as maximally susceptible and double mutants revealing additive or synergistic effects. The differences between \u0394TOLL,\u0394MelPPS and \u0394TOLL,\u0394MelHP (C66) highlight how the degree of pathway disruption affects outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C88"
+    ],
+    "result": "For Pr. rettgeri infection, flies deficient in Imd, Phagocytosis, or Melanization show higher bacterial loads than wild-type after 12hr. \u0394IMD, \u0394Mel, and \u0394ITPM flies show uniformly high loads at 24hr (sepsis), while wild-type, \u0394TOLL, and \u0394Phag show stochastic loads consistent with some individuals controlling infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 and C88 are supported by microbial load kinetics data (Figure 4A) showing module-specific contributions to pathogen control. The stochasticity in bacterial loads correlates with survival outcomes and indicates resistance mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "For S. aureus infection, the Imd pathway suppresses early bacterial growth (2-6hr), while melanization's killing activity acts with slower kinetics (after 12hr despite being a rapid response). \u0394ITPM flies succumb more quickly due to loss of multiple resistance mechanisms with different activation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by S. aureus load kinetics (Figure 4B) showing early elevation in \u0394IMD and \u0394Phag flies, delayed elevation in \u0394Mel flies, and rapid consistent growth in \u0394ITPM flies. This demonstrates temporally distinct contributions of different immune modules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "For C. albicans infection, \u0394TOLL flies show high fungal loads at 24hr, while a few \u0394IMD flies show elevated early growth, suggesting Imd-regulated effectors suppress initial growth while Toll-regulated genes (Bomanins, Drs) contribute more at later timepoints. \u0394Phag and \u0394Mel flies control fungal growth within 24hr despite later mortality. \u0394ITPM flies show more rapid and consistent C. albicans growth than single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by C. albicans load kinetics (Figure 4C) showing pathway-specific temporal contributions. The data demonstrate independent contributions of Toll and Imd to resistance, while suggesting \u0394Phag and \u0394Mel may have tolerance rather than resistance defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "For Pr. rettgeri, S. aureus, and C. albicans, the rank order of susceptibility is broadly similar between males and females, with higher mortality in females overall. There is no marked sex-by-genotype interaction, suggesting sexual dimorphism in defense is due to factors independent of the four immune modules studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 are supported by survival data (Figure 4\u2014figure supplement 1) showing similar rank orders between sexes. However, C87 is speculative, as the authors acknowledge limited data (particularly for \u0394ITPM females against C. albicans) and the mechanism of sexual dimorphism remains unexplored. The conclusion about independence from these modules requires additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PLUD analysis reveals that phagocytosis and melanization contribute to tolerance of C. albicans infection (lower PLUD in \u0394Phag and \u0394Mel flies despite controlling fungal growth), while Toll contributes to resistance. When both resistance and tolerance mechanisms are deficient (\u0394ITPM), loss of resistance masks tolerance defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are supported by PLUD data (Figure 5) showing similar PLUD for Pr. rettgeri and S. aureus across genotypes, but significantly lower PLUD for C. albicans in \u0394Phag and \u0394Mel flies. This distinguishes resistance (pathogen control) from tolerance (surviving pathogen burden) mechanisms and represents an important conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Certain double mutant combinations were not viable: RelE20,spzrm7 flies in the DrosDel isogenic background and NimC11;eater1,spzrm7 flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are direct experimental observations reported by the authors. These lethality results constrained the experimental design, forcing use of non-isogenic \u0394IMD,\u0394TOLL flies and preventing generation of \u0394TOLL,\u0394Phag double mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "A small level of Drs expression is retained in \u0394TOLL mutant flies but is fully abolished in \u0394IMD,\u0394TOLL flies, confirming the Drs gene receives minor input from the Imd pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by qPCR data (Figure 1A, E) and consistent with prior literature (Leulier et al., 2000). This demonstrates cross-regulation between pathways at the effector gene level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Hemocytes may play a role in stimulating the Imd systemic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is speculative based on reduced Imd activation in \u0394Phag flies at 6hr (C97). While the observation is supported by data (Figure 1A), the mechanistic interpretation requires additional investigation. The reduced DptA could reflect multiple factors including altered hemocyte numbers or indirect effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Bomanin effectors explain most of the Toll contribution upon septic injury but not natural infection for B. bassiana, consistent with different importance of effectors or modules according to infection route.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by survival data (Figure 3) comparing \u0394Bom and \u0394TOLL susceptibilities across infection routes. This is consistent with prior literature (Martins et al., 2013) on route-dependent immune responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Many immune-inducible genes receive input from both Imd and Toll pathways, including Metchnikowin, Drosomycin, and Transferrin1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is supported by citation to prior work (De Gregorio et al., 2002) and provides mechanistic explanation for observed synergies between Imd and Toll pathways. This is established knowledge appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors hypothesize that phagocytes and melanization are critical for handling bacteria that resist or hide from HDPs, that melanization-derived ROS is potent against ROS-sensitive pathogens like S. aureus, and that pathogens with intermediate virulence may better reveal roles of multiple modules due to stochastic outcomes in the host-pathogen arms race.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 are speculative hypotheses and interpretations supported by citations but not directly tested in this study. While plausible and consistent with the data patterns observed, these represent proposed mechanisms requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Prior studies have shown a major role of Diptericin A against Pr. rettgeri, that survival patterns bifurcate based on time to activate defenses, and that a Toll-PO SP cascade regulating serine proteases contributes to defense against this bacterium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 accurately cite prior literature (Hanson et al., 2019, 2023; Unckless et al., 2016; Duneau et al., 2017a,b) to contextualize current findings. These are established results from previous work appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Prior work has shown susceptibility to A. fumigatus independent of fungal proliferation relies on Bomanin protection from toxins. The authors speculate that loss of tolerance to C. albicans may relate to wound repair or accumulating damage similar to renal failure in beetles or tracheal degradation in flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is supported by appropriate citation (Xu et al., 2023). Claim C117 is speculation based on the modules involved and analogies to other systems (Khan et al., 2017; Li et al., 2020; Rommelaere et al., 2024), but the mechanism remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The NimC11;eater1 mutant used to assess cellular response has defects in phagocytosis, adhesion, and sessility, with increased larval hemocyte numbers but rapid loss of Hml-positive cells in adults. \u0394ITPM flies retain wound clotting, JNK and JAK-STAT pathway activation, and constitutive immune molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by citations to prior characterization (Melcarne et al., 2019b; Melcarne, 2020). Claim C101 is inferred from known pathway functions not disrupted in \u0394ITPM flies. These represent appropriate caveats about the mutant tools used.",
+    "result_type": "MINOR"
+  }
+]

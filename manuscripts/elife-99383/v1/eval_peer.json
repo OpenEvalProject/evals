@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C56",
+      "C66"
+    ],
+    "result": "The study identified four significant modulation clusters in the power modulation spectrum (PMS) from EEG recordings during no-tone trials. Clusters 2, 3, and 4 were grouped together as 'Cluster 234' based on coupling relationships and overlapping power frequency ranges in the alpha-beta band (12-30 Hz). This combined cluster showed temporal dynamics that marked the three anticipated temporal locations at 0.5s, 1s, and 1.5s.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledged the neural signatures as clear and striking. The editor stated 'solid evidence is provided that the power fluctuations of alpha- and beta-band oscillations can reflect the predicted occurrence time of the target.' Reviewer 2 noted 'It is striking how clear the neural signatures are (of sequential expectation in the absence of sensory input).' The identification and characterization of these clusters was not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C42",
+      "C67"
+    ],
+    "result": "The neural modulation markers (Corrected Cluster 234) showed a significant positive correlation (r=0.24, p<0.001) with tone detection performance (d-prime values), suggesting that anticipation of temporal locations enhances tone detection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This correlation finding was not directly challenged by reviewers. The editor noted 'solid evidence is provided' for the neural signatures. However, Reviewer 3 raised a broader concern that 'better detection of a target may reflect a change either in sensory processing or in decision-making, while the second possibility seems to be ignored,' suggesting the interpretation may be incomplete rather than the correlation itself being questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C35",
+      "C44"
+    ],
+    "result": "The neural modulation components could not be fully explained by expectation violation or false alarms, as evidenced by the pattern of peak magnitudes decreasing with temporal location and negative correlation with false alarm rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 strongly challenged this interpretation, stating 'the observed electrophysiological results could be more simply explained by a mechanism akin to a go/no-go (a tone/no-tone) or omission response happening after each temporal location.' Reviewer 2 noted 'the positive lag that is observed seems more consistent with expectation violation than temporal anticipation/gain control,' directly contradicting the authors' conclusion. The alternative explanations were not adequately ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The peak latencies of Cluster 234 showed a precession pattern, decreasing across temporal locations (0.24s, 0.16s, 0.13s relative to tone onset), which was interpreted as sequential anticipation where earlier temporal locations facilitated anticipation of subsequent ones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raised a fundamental concern: 'the consistent lag that is observed between tone location and neural/model responses...would seem to be inconsistent with an anticipation account, which would instead predict zero or a negative lag.' Reviewer 1 suggested 'the delay of the response with regards to temporal location would change due to error accumulation in time perception, rather than \"the anticipation of the first temporal location facilitating the anticipation of the second\".' The interpretation of precession as facilitation is questioned, though the data pattern itself is not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RNN hidden dynamics mirrored the neural modulations observed in humans, with 2 Hz modulation strength increasing with external noise level during training, and the CRNN trained at 0.15 SD noise showing dynamics closely matching Corrected Cluster 234.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 stated 'not only is the analogy with actual neurophysiological activity limited, both in principle (simple E/I dynamics) and in implementation (inference is only done at the end of each trial), but the authors do not address the activity before the first temporal location, which is a major difference with human data.' The editor noted 'some conclusions, especially ones related to the neural-network model...need further consideration.' While the RNN showed similar patterns, the functional interpretation and direct mapping to human neural mechanisms was questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C68",
+      "C71"
+    ],
+    "result": "RNN modeling results, particularly the uniform distribution experiment, suggested that neural power modulations in the alpha-beta band resulted from selective suppression of irrelevant noise periods and heightened sensitivity to anticipated temporal locations, implementing a gain control mechanism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 directly challenged this conclusion: 'Comparing the RNN performance in two different noise conditions cannot directly \"suggest that the 2 Hz neural modulation observed in Corrected Cluster 234 served to enhance sensory sensitivity...\" The model does not have alpha or beta oscillations at all...directly concluding the function of alpha/beta oscillations based on the behavior of a model that does not have these oscillations is not appropriate.' Reviewer 1 noted 'Their assumption that both RNN and cluster 234 are functionally related to gain control is thus further flawed.' The inference from RNN to neural mechanism function was deemed inappropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C58",
+      "C69",
+      "C70"
+    ],
+    "result": "The combined behavioral, neural, and modeling findings indicate that sequential temporal anticipation involves a process of dynamic gain control, where anticipating significant moments requires actively disregarding irrelevant events.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor stated this conclusion 'need[s] further consideration.' Reviewer 2 noted 'An account based on gain control and temporal anticipation seems highly plausible. But are there other plausible accounts that the current data argue against?' suggesting the evidence doesn't uniquely support this interpretation. Reviewer 1 stated 'the authors seem to have a strong confirmation bias towards temporal anticipation and gain control, thus leading to flawed interpretations.' The gain control interpretation is plausible but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "E/I perturbation experiments on CRNNs showed that when the E/I ratio was 95/105 (more inhibition), peak latencies decreased with temporal location, mirroring neural findings and suggesting the precession may be linked to enhanced inhibitory circuit activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While no reviewer directly challenged the E/I perturbation data, Reviewer 1's broader criticism applies: 'the analogy with actual neurophysiological activity limited' and 'the authors do not address the activity before the first temporal location.' The mechanistic interpretation linking RNN E/I dynamics to human neural inhibitory circuits is speculative given the acknowledged limitations of the model's biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C22"
+    ],
+    "result": "Event-related potentials (ERPs) to the target tone showed significantly larger absolute magnitudes at later temporal locations, with the third location showing larger responses than the first and second.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 requested 'reporting more extensively the ERP results' and suggested additional analyses, but did not challenge the reported ERP findings themselves. The data showing increasing ERP magnitude with temporal location was accepted, though reviewers wanted more extensive analysis of these responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C39",
+      "C40"
+    ],
+    "result": "Behavioral performance showed a main effect of block number with decreased tone detection performance across blocks (attributed to fatigue), but no interaction between block number and neural coding of temporal locations, suggesting participants quickly learned the temporal structure in the initial block.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These behavioral findings were not challenged by reviewers. The lack of learning effect across blocks and the fatigue interpretation were accepted as reported. No reviewer questioned these statistical results or their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Cluster 1 (delta band, 1-4 Hz) showed temporal dynamics mirroring the duration of noise pieces, suggesting the brain actively monitors elapsed time, aligning with previous research on delta band activity and interval estimation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding about Cluster 1 was not challenged by any reviewer. The interpretation aligns with established literature on delta band function in timing, and reviewers focused their critiques on Cluster 234 and the gain control interpretation rather than the delta band timing component.",
+    "result_type": "MINOR"
+  }
+]

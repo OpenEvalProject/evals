@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C71",
+      "C72"
+    ],
+    "result": "The study used [11C]DCZ PET imaging to quantify DREADD expression in 15-20 macaque monkeys following AAV vector injection, with expression levels calculated as change in binding potential (\u0394BPND) from baseline using a multilinear reference tissue model with the cerebellum as reference region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C31, C71-C72 describe the experimental design, sample size, imaging methodology, and quantification approach. These are well-documented methodological claims supported by the data presented in Tables 1-2 and described in the Materials and Methods section. The approach is standard for PET imaging studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "DREADD expression (both hM4Di and hM3Dq) peaked at approximately 60 days post-AAV injection, with no clear differences between the two DREADD types. This timeline is consistent with prior studies of AAV-mediated gene expression and reflects rate-limiting steps in viral transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C33 present the primary finding on peak expression timing, supported by PET data in Figure 1 from 7 monkeys. Claims C73-C76 provide mechanistic context and comparison to prior literature. The 60-day timeline is well-supported by the sigmoid curve fitting (BIC=61.1) and consistent with cited prior work. Claim C77's recommendation is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C56",
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "hM4Di expression remained stable for approximately 1.5 years after peaking, while hM3Dq showed greater post-peak fluctuations but remained at ~70% of peak after 1 year. Both DREADDs showed gradual decline after 2 years. The temporal dynamics were modeled using a sigmoid function, though post-peak patterns showed variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C34-C39, C56 describe longitudinal expression patterns supported by PET data in Figure 2 from 16 injection sites across 11 monkeys. The stability periods and decline patterns are documented. Claims C88-C91 acknowledge modeling limitations and the need for additional data between 60-120 days. The variability in post-peak trajectories (C36, C39) is honestly reported, and statistical analysis (C38) shows agonist administration did not significantly affect fluctuations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C57",
+      "C101"
+    ],
+    "result": "Significant chemogenetic effects on neural activity and behavior persisted for approximately 2 years following AAV injection, as demonstrated through behavioral testing, electrophysiology, and FDG-PET across 17 monkeys. Effects remained consistent with repeated agonist administration (tens of times) throughout this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40-C46, C57, C101 describe functional efficacy data from 17 monkeys using multiple assessment methods (behavioral tasks, electrophysiology, FDG-PET). The 2-year efficacy window is supported by specific examples (C42-C43) with citations to prior publications. The consistency across repeated activations (C45) and verification by immunohistochemistry (C46) strengthen the conclusion. Figure 3 provides visual documentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C58",
+      "C102",
+      "C103"
+    ],
+    "result": "In one monkey (#234), hM4Di expression disappeared after more than 3 years, coinciding with loss of chemogenetic behavioral effects. PET imaging showed diminished expression, behavioral tests showed no deficits, and postmortem analysis confirmed absence of hM4Di without neuronal loss. This indicates experiments beyond 2 years are at risk for declining effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C58 describe a specific case study (monkey #234) documented in Figure 4 with PET imaging, behavioral data, and histology. The correlation between loss of PET signal, loss of behavioral effects, and absence of immunohistochemical signal is well-documented. The absence of neuronal loss (C50) rules out cell death as the cause. Claims C102-C103 are reasonable inferences about experimental planning based on this observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The presence and type of co-expressed protein tags significantly influenced peak DREADD expression levels (P<0.008), with 5'-HA tags and IRES-GFP constructs showing lower expression than untagged constructs. Despite this reduction, tagged constructs remained effective in producing long-term chemogenetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C51-C54 describe statistical analysis (Table 3, Figure 5) showing significant effects of protein tags on expression. The linear model approach (C51) is appropriate, and the P<0.008 significance (C52) is clearly stated. Claims C97-C100 provide context about tag usage and practical implications. The finding is consistent with prior work (C81). The acknowledgment that tagged constructs still work effectively (C83, C99) provides important nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "A potential interaction between DREADD type and promoter was observed in the statistical analysis, but the limited sample size (n=1 for hM3Dq with CMV) prevents definitive conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 reports an observed interaction in Table 3 but explicitly acknowledges insufficient sample size for definitive conclusions. This is appropriately cautious given the n=1 limitation. The finding is presented as preliminary and requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study provides guidelines that researchers should anticipate consistent chemogenetic effects for a maximum of 2 years following AAV injection. Potential mechanisms for eventual expression decline include episomal DNA loss, epigenetic modifications, and promoter silencing, though neuronal loss was ruled out. Identifying factors causing decline remains important for extending expression duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is a reasonable recommendation based on the 2-year efficacy data. Claims C60-C64 discuss potential mechanisms with appropriate citations. Claims C65-C66 rule out neuronal loss based on histological data (Figure 4C). Claim C67 rules out effects of repeated activation based on prior work. Claims C104-C106 appropriately frame future research needs while acknowledging current achievements. The mechanistic discussion is appropriately speculative (C62) given the observational nature of the decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C95",
+      "C96"
+    ],
+    "result": "The study used AAV titers ranging from 1-5\u00d710^13 gc/ml to balance effective expression with minimal immune activation. Virus titer did not emerge as a significant factor affecting expression levels in the statistical analysis, possibly because the range used was already optimized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe the titer range used and the rationale (balancing expression and immune response). Claims C95-C96 explain why titer was not significant in the analysis - the restricted range may have minimized variability. This is a reasonable interpretation of the statistical results (Table 3) and represents sound experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PET imaging, particularly [11C]DCZ PET, provides a direct, noninvasive, volumetric measure of DREADD expression suitable for longitudinal studies in large animals. The technique has certain limitations (individual variability, partial volume effects, anesthesia effects) that were addressed through appropriate methodological controls. The study used a retrospective design pooling data from multiple studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C27 establish the background and utility of PET imaging for DREADD studies, supported by numerous citations. Claims C84-C86 discuss advantages and limitations of the technique with appropriate acknowledgment of methodological considerations. Claim C87 transparently describes the retrospective design and inherent variability. The methodological discussion is balanced and appropriately critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C107",
+      "C108",
+      "C109",
+      "C113"
+    ],
+    "result": "The study has translational implications for DREADD-based therapies, with successful applications in monkey models of epileptiform seizures and Parkinson's disease. PET imaging is positioned as a tool for confirming target protein expression in gene therapy applications. The correlation between loss of PET signal and loss of chemogenetic effects supports this utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C107-C108 cite prior work on therapeutic applications in disease models. Claims C69-C70 discuss PET imaging utility in human gene therapy with appropriate citations and demonstrate correlation in the current study. Claims C109, C113 make reasonable inferences about translational potential based on the findings. The translational discussion is appropriately forward-looking while grounded in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The introduction establishes that DREADDs are a chemogenetic tool based on mutated muscarinic receptors, widely used in rodents and showing promise in nonhuman primates. Efficacy depends on expression levels, but temporal dynamics of DREADD expression in monkeys remain poorly characterized. The 60-day peak timeline may apply to other genetic tools, though DREADDs have unique requirements for sustained expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C17 provide background knowledge about DREADDs and identify the knowledge gap addressed by the study. These are appropriately supported by citations and accurately characterize the state of the field. Claims C92-C94 speculate about broader applicability while appropriately distinguishing DREADDs from other tools (optogenetics, calcium imaging). The background is well-established and the knowledge gap is clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The findings on reduced expression with protein tags are consistent with prior PET studies using [11C]clozapine. IRES-GFP constructs may also show reduced expression due to vector size and composition, though these constructs have been effective in both rodent and monkey studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 appropriately contextualize the protein tag findings within prior literature. The consistency with prior work (C81) strengthens the conclusion. The discussion of IRES-GFP constructs (C82-C83) is appropriately nuanced, acknowledging potential mechanisms while noting practical effectiveness. The citations support the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study describes short- and long-term dynamics of DREADD expression in nonhuman primates using [11C]DCZ PET imaging complemented by functional assessments, providing critical insights for designing multi-year chemogenetic studies and offering guidance for future long-term nonhuman primate research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 summarize the study's contributions. These are accurate characterizations of what was accomplished, supported by the data presented throughout the manuscript. The claims appropriately frame the significance of the work for the field.",
+    "result_type": "MINOR"
+  }
+]

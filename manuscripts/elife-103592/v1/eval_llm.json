@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C36",
+      "C37",
+      "C42",
+      "C49"
+    ],
+    "result": "The authors identified 60,626 putative enhancers and 12,295 high-confidence promoters in dunnart craniofacial tissue using ChIP-seq for H3K27ac and H3K4me3 marks. This represents the first genome-wide characterization of face regulatory elements in a marsupial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36, C37, C42, and C49 provide consistent quantitative data from ChIP-seq analysis showing identification of regulatory elements. The methodology is clearly described, quality controls were performed (immunofluorescence validation, qPCR), and filtering criteria are documented. Claim C6 regarding novelty is supported by the absence of prior similar studies in marsupials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The distribution of histone marks in dunnart craniofacial tissue shows that 62% of H3K4me3 peaks co-occur with H3K27ac, while 50% of H3K27ac peaks are unique. H3K4me3 levels at enhancers are approximately seven times lower than at promoters, consistent with established patterns in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 describe the chromatin mark distribution patterns supported by ChIP-seq data (Figure 1A) and are consistent with cited literature (Villar et al., 2015; Cain et al., 2011; Santos-Rosa et al., 2002). The quantitative measurements and comparisons are clearly presented and align with expected biological patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Enhancers were located on average 77 kb from TSS while promoters were on average 106 kb from TSS, with a large fraction (0.41) of promoters located >3 kb from annotated TSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C45 present unexpected findings regarding promoter distances from TSS. While the data are presented (Figure 1B), the authors acknowledge this as unexpected and note that 41% of promoters are >3 kb from TSS, which is unusual. The authors address this through additional filtering to generate high-confidence promoters, but the biological interpretation remains unclear and may reflect annotation limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C58",
+      "C59"
+    ],
+    "result": "GO enrichment analysis reveals that genes near enhancers are enriched for developmental processes including facial skeleton development, muscle development, and circulatory system development, while genes near promoters are enriched for mRNA processing and transcription. Motif analysis identified 170 enriched transcription factors in enhancers and 13 in promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 describe GO enrichment and motif analysis results supported by data in Figure 2A-B. The analyses use appropriate methods (clusterProfiler, HOMER) with proper statistical corrections (FDR < 0.01). The biological interpretations are consistent with known craniofacial development processes and are supported by citations to relevant literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "RNA-seq analysis identified 12,153 genes reproducibly expressed in dunnart face tissue, with 67% associated with active regulatory elements. The majority of enhancers (78%) and promoters (87%) are linked to expressed genes, and highly expressed genes (>10 TPM) with both enhancer and promoter activity are enriched for developmental processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 integrate ChIP-seq and RNA-seq data showing correspondence between regulatory elements and gene expression (Figure 3A-C). The quantitative measurements are clearly presented, biological replicates are used (n=3), and the GO enrichment analysis is appropriately conducted. The high concordance between regulatory marks and expression supports the functional relevance of identified elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The dunnart neonate at birth corresponds developmentally to approximately E12.5 in mouse, with ossification beginning post-birth. High expression of key myogenesis, chondrogenesis, and osteoblast differentiation genes supports reliance on cranial muscles and chondrocranium for structural support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by RNA-seq data showing high expression (>20 TPM) of relevant developmental genes and citations to previous morphological studies (Cook et al., 2021; Clark and Smith, 1993). The developmental staging comparison to mouse is based on prior morphological work and is consistent with the gene expression patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Comparative analysis with mouse ENCODE data reveals that only ~0.5% of enhancers and ~8% of promoters show sequence conservation and matching activity between dunnart and mouse. Promoters are more stable over evolutionary distances than enhancers, suggesting that developmental timing shifts may be driven by species-specific enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 present comparative genomic analysis using whole-genome alignments and consistent peak-calling methods. The low conservation rates are expected given the ~170 million year divergence and are supported by citations to literature on sequence turnover (Villar et al., 2015; Genereux et al., 2020). The inference about enhancer-driven heterochrony (C77) is reasonable but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Conserved regulatory elements between mouse and dunnart (461 enhancers) are predominantly near genes expressed in both species and enriched for core craniofacial developmental processes including BMP signaling, cartilage development, and skeletal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe analysis of conserved regulatory elements with matching activity. The integration of sequence conservation, ChIP-seq peaks, and gene expression data is methodologically sound. The GO enrichment for core developmental processes is well-supported and biologically meaningful, indicating conservation of fundamental craniofacial regulatory networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C9"
+    ],
+    "result": "A subset of 179 dunnart-specific enhancers (114 unique genes) are near genes highly expressed only in dunnart, including genes involved in cranial neural crest proliferation, embryonic myogenesis, keratinocyte proliferation, and sensory system development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 and C9 identify dunnart-specific regulatory elements through comparative analysis of ChIP-seq and RNA-seq data. The filtering criteria (>10 TPM in dunnart, low/no expression in mouse E10.5-E15.5) are clearly defined. The biological interpretation is supported by the specific genes identified and their known functions in relevant developmental processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C10"
+    ],
+    "result": "Gene-level comparison reveals that 56% of genes near enhancers are unique to dunnart. Genes highly expressed in dunnart but not mouse (537 genes) are enriched for three main processes: epidermis/skin development, sensory system development, and muscle development, with 'sensory system development' being uniquely enriched in dunnart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 and C10 present gene-level comparative analysis supported by data in Figure 5A-D. The identification of dunnart-specific expression patterns uses appropriate thresholds and GO enrichment analysis. The finding of sensory system enrichment is particularly well-supported and biologically relevant to marsupial life history.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Genes critical for keratinocyte development and mechanosensory system development, including KRT17, KRT8, and ATOH1, are highly expressed in dunnart facial tissue compared to mouse. These genes are essential for establishing innervation patterns and Merkel cell specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by RNA-seq data (Figure 5D-E) showing differential expression of keratin genes and mechanosensory genes. The biological interpretation is strengthened by citations to functional studies (Doucet et al., 2013; Xiao et al., 2014) demonstrating the roles of these genes in sensory development. The comparative expression patterns are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "High expression of olfactory system genes (CCK, OTX1, ISLR, YBX3) and muscle contraction genes (TNNI2, TNNT3, CAR3, ATP2A2, IGFBP6, TRIM72) was observed in dunnart craniofacial tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by RNA-seq data and citations to literature establishing the functions of these genes. The expression patterns are consistent with the accelerated development of sensory and muscular systems in marsupials. The data presentation in Figure 5D and supplementary files provides clear evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C7",
+      "C108",
+      "C109"
+    ],
+    "result": "The majority of conserved toolkit genes involved in embryonic development show consistent expression between mouse and dunnart, with significant overlap in genes near regulatory elements and high concordance in enriched biological processes, supporting the importance of conserved genes and pathways in mammalian facial development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C7, C108, and C109 describe conservation of core developmental genes and pathways. This is supported by comparative gene expression analysis (Figure 5\u2014figure supplement 2) and gene-level comparisons showing substantial overlap despite low sequence conservation. The conclusion is strengthened by citation to Roosenboom et al., 2016 and is biologically reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Temporal clustering analysis reveals that dunnart-expressed genes associate with two mouse gene clusters: one upregulated at E15.5 (cluster 2, OR=1.30) enriched for sensory perception and skin development, and one upregulated at E14.5 (cluster 3, OR=1.99) enriched for muscle development, suggesting shifts in developmental timing of these systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 present temporal clustering analysis using appropriate methods (TCseq, fuzzy c-means clustering). The statistical analysis includes odds ratios with confidence intervals, and the cluster validation uses the Calinski criterion. The biological interpretation linking temporal shifts to marsupial life history is well-reasoned and supported by the enrichment patterns (Figure 6A-D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Dunnarts exhibit high expression of periderm-related genes including KRT17 and retain the periderm post-birth, unlike placental mammals. This retention may relate to neonatal transcutaneous gas exchange, with lung respiration beginning around 5 days postpartum coinciding with periderm disappearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 are supported by gene expression data and multiple citations to literature on marsupial periderm biology (Smith and Keyte, 2020; Simpson et al., 2011; Hammond et al., 2019). The connection between periderm retention and gas exchange is well-established in the cited literature, and the gene expression patterns are consistent with this biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C11"
+    ],
+    "result": "Newborn marsupials require highly developed mechanosensory and olfactory systems for the journey to the pouch. The snout epidermis shows mature Merkel cells at birth, while in mouse Merkel cell development begins at E16.5. Upregulation of Merkel cell genes in dunnart likely reflects prioritization of sensory development for ex utero survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 and C11 integrate gene expression data with established marsupial biology from multiple cited studies (Veitch et al., 2000; Jones and Munger, 1985; Jenkins et al., 2019). The inference about prioritization of sensory development (C121, C11) is well-reasoned given the biological context and gene expression patterns, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In marsupials, pharyngeal muscles are well differentiated before birth and undergo considerable differentiation in the first 2 days after birth, preceding development of the central nervous system and skeletal system. This pattern differs from rodents where skeletal and muscular development occur simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by citations to Smith, 1994, which provides comparative developmental data. These claims establish important biological context for interpreting the gene expression results but represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C12",
+      "C77",
+      "C122"
+    ],
+    "result": "The regulatory landscape varies significantly between mouse and dunnart, and accelerated face development in the dunnart may be driven by dunnart-specific enhancer activity. Craniofacial developmental constraints may be driven by dunnart-specific gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C12, C77, and C122 represent the main conclusions integrating all results. The variation in regulatory landscape (C8) is well-documented through comparative ChIP-seq analysis. The inferences about enhancer-driven heterochrony (C12, C77, C122) are reasonable given the data showing species-specific enhancers near developmentally relevant genes, though causality is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "A de novo dunnart genome assembly was generated with total size 2.84 Gb, N50 of 23 Mb, BUSCO completeness of 89.9%, and GC content of ~36.25%, comparable to other marsupial genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 describe the genome assembly with standard quality metrics. The BUSCO score of 89.9% and N50 of 23 Mb indicate reasonable quality for downstream analyses. Comparison to other marsupial genomes (C125, C126) is supported by citations and shows the assembly is of comparable quality, though not exceptional by current standards.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Marsupials and placentals exhibit fundamental differences in reproductive strategies and craniofacial development. Marsupials show accelerated orofacial development including nasal cavity, tongue, bones, musculature, and peripheral nervous system, with less interspecies variation than placentals. The molecular mechanisms underlying these differences remain poorly understood, and the dunnart provides an ideal model for comparative studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C35 and C101-C105 establish biological background and rationale for the study. These are well-supported by extensive citations to established literature on marsupial and placental development. The claims about the dunnart as a model system (C32-C35) are supported by citations to recent work. These provide essential context but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "After converting dunnart gene IDs to mouse orthologs, 35,677 putative enhancers and 8589 promoters were near genes with one-to-one orthologs in mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 describes a necessary data processing step for comparative analysis. The conversion through Tasmanian devil to mouse orthologs is clearly described and appropriate given the lack of direct dunnart GO annotations. The reduction in dataset size is expected and documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Regulatory elements in the dunnart were largely not sequence conserved in the mouse (~8% for promoters and ~0.5% of enhancers) given the large evolutionary distance (~170 million years) and high turnover of non-coding DNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 summarizes the low sequence conservation finding, which is well-supported by the whole-genome alignment analysis and consistent with cited literature on non-coding sequence evolution (Genereux et al., 2020; Andrews et al., 2023). The evolutionary distance context is appropriate.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors compiled a genome-wide list of human membrane glycoproteins using UniProt database and two prediction software packages (NetNGlyc/NetOGlyc and GlycoEP), finding that 81.5% of membrane proteins are predicted to be glycosylated. The predictions from both software packages showed reasonable agreement (Pearson correlation 0.656), and experimental validation using lectin binding (PNA/mol) correlated linearly with predicted glycosylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence for a validated glycoprotein prediction pipeline. The computational predictions (C1-C4) are independently validated by experimental lectin binding assays (C5), demonstrating that the bioinformatic approach produces biologically meaningful results. The correlation between predicted sites and measured glycosylation strengthens confidence in the genome-wide list.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Highly glycosylated membrane proteins inhibit SARS-CoV-2 pseudoparticle infection at surface densities (~100 \u03bcm\u207b\u00b2) an order of magnitude lower than synthetic PEGs. IC50 values inversely correlate with glycosylation amount (r=-0.29) and molecular weight including glycans (r=-0.39) but not amino acid length (r=0.11). Glycoproteins are estimated to be glycosylated at ~50% of predicted sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 collectively demonstrate that glycosylation, rather than protein size alone, drives infection inhibition. The hierarchical Bayesian modeling approach (C8-C9) appropriately handles the multi-protein comparison, and the correlations with glycosylation metrics but not amino acid length provide strong evidence for glycan-specific effects. The biochemical characterization (C10) supports the quantitative estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C39",
+      "C40"
+    ],
+    "result": "In Calu-3 epithelial cell monolayers, total glycan content (particularly Neu5AC) inversely correlates with SARS-CoV-2 infection at the single-cell level, while individual glycoproteins like CD44 show weak or no correlation. The infection-inhibitory effect is molecularly nonspecific but additively enhanced by total glycan amount on the cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15, C39-C40 demonstrate that total glycan content, not individual protein expression, predicts infection resistance. The spatial exclusion analysis (C11), lectin-specific measurements (C12), and lack of correlation with individual proteins (C13-C15) converge on the conclusion of additive, nonspecific effects (C40). The use of both Pearson correlation and TOS analysis strengthens the statistical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Glycoproteins do not inhibit virus binding to cells but rather inhibit subsequent virus internalization steps. SARS-CoV-2 pseudoparticles bind to cells even when glycoprotein density is sufficient to inhibit infection, and no negative correlation exists between virus binding and glycan content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide clear experimental evidence distinguishing binding from internalization. The virus binding assays (C16-C17) directly demonstrate that glycoproteins do not prevent initial virus-cell contact, supporting the mechanistic inference (C18) that glycoproteins act at a post-binding step. This is a critical mechanistic insight for the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FLIM-FRET measurements reveal that glycoprotein Flory radius (RF) correlates strongly with molecular weight including glycans (r=0.87) but weakly with amino acid number (r=0.58). The scaling exponent \u03bd is 0.144 for highly glycosylated proteins versus 0.108 for low glycosylated proteins. Some glycoproteins (e.g., CD43, RF < 7.5 nm) are smaller than the ACE2-Spike binding length (~27 nm) yet still inhibit infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C48-C52 present a rigorous biophysical characterization using FLIM-FRET with appropriate calibration (C48-C49) and technical limitations acknowledged (C50-C51). The Flory model analysis (C21) provides quantitative insight into how glycosylation affects protein size. The key observation (C52) that small glycoproteins inhibit infection supports the interface formation model rather than simple steric blocking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Glycosylation increases protein equilibrium size slightly (e.g., 1.3-fold for N=4000 amino acids). Measured Flory radii are generally consistent with or smaller than AlphaFold2 predictions, except for low-glycosylated proteins like VCAM1 and EPHB1 which have extended multi-domain structures. This suggests glycosylation may reduce conformational diversity by interfering with domain folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C57 present solid experimental-computational comparisons, but the mechanistic interpretation (C58-C59) is explicitly speculative. While the data showing differences between measured RF and predicted structures for low-glycosylated proteins is clear (C55-C57), the inference that glycosylation restricts conformational space (C58-C59) requires additional validation beyond current AlphaFold2 predictions, which represent single conformations rather than ensemble dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In vitro reconstitution experiments show that glycosylation dramatically reduces protein saturation density on lipid bilayers (glycosylated proteins: ~20-40% coverage; non-glycosylated: >100% coverage) without affecting binding affinity or single-molecule diffusion. This effect is independent of membrane fluidity, indicating that glycosylation creates intermolecular repulsion that limits protein packing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 provide compelling in vitro evidence for glycan-mediated intermolecular repulsion. The experimental design appropriately controls for binding affinity (C25), diffusion (C26), and membrane fluidity (C30-C31), isolating the effect to protein-protein interactions. The coverage calculations (C27-C28) using hemispherical geometry assumptions are reasonable for this analysis. The conclusion (C29) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "STORM super-resolution imaging reveals that membrane proteins above a threshold size (~50 kDa) are excluded from virus-cell interfaces (~80% reduction) regardless of glycosylation status. The transition from low to high exclusion occurs nonlinearly with protein size. Control proteins (VAMP2, LCK10) show minimal exclusion. Overall correlation between Flory radius and density_(in/out) is -0.36.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 present sophisticated super-resolution imaging analysis with appropriate simulations to calibrate the cross-correlation function. The finding that size-dependent exclusion occurs regardless of glycosylation (C32) is important for the overall model. The nonlinear transition (C33) and quantitative correlation (C34) are well-documented. The control experiments (C36) validate the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "MUC1 with higher tandem repeats reduces fluid-phase dextran endocytosis in a molecular weight-dependent manner, while other glycoproteins with infection-inhibitory effects show no effect on endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 demonstrates that infection inhibition by most glycoproteins is independent of general endocytosis effects, supporting the specific interface formation mechanism. The molecular weight dependence for very large MUC1 variants suggests a distinct mechanism for extremely large glycoproteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The saturated protein density in reconstitution experiments is likely below the brush transition density. Crowded proteins are restricted from free motion but not significantly extended. At very high densities in cells, glycoproteins can form brush structures and membrane tubules, but these tubular structures are too large (~\u03bcm scale) to affect viral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 appropriately contextualize the in vitro findings within polymer brush theory and cite relevant literature (C62-C65). The inference that proteins are not in condensed brush state (C60-C61) is reasonable given the comparison with reported brush transition densities. The discussion of membrane tubules (C63-C65) appropriately addresses a potential confounding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose a kinetic barrier model where glycan-mediated intermolecular repulsion inhibits virus-cell interface formation. During molecular exclusion from the interface, proteins become locally crowded, and glycosylated proteins experience strong repulsion preventing packing with the virus. Membrane viscosity (~1 \u03bcm\u00b2/s) creates viscous stress during exclusion, contributing to the energy barrier. This mechanism increases the energy barrier U* for interface formation, thereby suppressing infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42, C69 represent the central mechanistic hypothesis, which integrates multiple experimental observations. While the model is well-reasoned and consistent with the data, several key elements are explicitly speculative (C66-C68, C70). The membrane viscosity measurement (C72) and viscous stress inference (C73-C74) provide some support, but direct experimental validation of the proposed local crowding and energy barrier would strengthen the model. The hypothesis is plausible but requires additional testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Background context establishes that various glycoproteins have been suggested to inhibit viral infection via steric repulsion, with mucin-related glycoproteins identified in COVID-19 CRISPR screens and GWAS. These glycoproteins lack common sequences/domains and include both N- and O-glycans. Synthetic membrane-bound polymers similarly modulate infection in a size- and density-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C43-C47 appropriately cite prior literature establishing the context for the study. The experimental claim C38 is supported by the infection assay data presented. These claims provide essential background and motivation for the mechanistic investigation.",
+    "result_type": "MINOR"
+  }
+]

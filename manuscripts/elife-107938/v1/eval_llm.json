@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study used single-cell RNA sequencing to analyze 98,338 cells from rat frontal cortex tissue following electroacupuncture (EA) intervention. Male Sprague-Dawley rats (8-10 weeks, 180-220g) were randomly assigned to EA (n=5) or control (n=5) groups, with EA delivered at specific acupoints (GV20 and GV26) using defined parameters (3 mA, 2/100 Hz, 40 min). After quality control, 80,713 cells were included in downstream analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design and methodology are clearly described with appropriate detail (C15-C21). Sample sizes (n=5 per group) are stated but may be limited for biological replicates in scRNA-seq studies. Quality control criteria are specified (C21), though the 25% mitochondrial threshold is relatively permissive. The technical execution appears sound, though no information on batch effects or technical replicates is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Cell type annotation identified 23 clusters representing 8 major cell types in the rat frontal cortex: endothelial cells (2 subpopulations), astrocytes (6 subpopulations), microglia (10 subpopulations), oligodendrocytes, T cells, border-associated macrophages, fibroblasts, and granulocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell type identification is supported by marker gene expression (C23, Figure 2) and uses the SingleR annotation method with appropriate reference datasets. The distribution of subpopulations across major cell types is clearly stated (C24-C26). However, the authors acknowledge that pericytes and neurons were not enriched (C120), which is a significant limitation given their importance in BBB function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Differential gene expression analysis in endothelial cells revealed 147 upregulated and 160 downregulated genes following EA intervention. Functional enrichment identified 42 BBB-related GO terms and 9 KEGG pathways associated with BBB function, including tight junctions, endocytosis, PI3K/Akt, MAPK, HIF-1, and JAK/STAT signaling pathways. GSEA revealed 8 additional significantly enriched pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DEG analysis uses appropriate statistical thresholds (logFC=0.26, p<0.01) and is supported by volcano plots and enrichment analyses (C27-C30, Figures 3-4). The identification of BBB-relevant pathways is biologically plausible. However, the study lacks validation of key DEGs by orthogonal methods (qPCR, immunostaining), and the functional significance of these changes for BBB permeability is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In astrocytes, EA intervention resulted in 24 downregulated and 3 upregulated genes, enriched in calcium-related terms, ATP/ADP metabolism, and pathways connected to BBB function including vascular permeability regulation, VEGF response, and endothelial cell chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The astrocyte DEG analysis identifies a small number of differentially expressed genes with relevant functional enrichment (C31-C33, Figure 5). The connection to BBB function is reasonable given astrocytes' role in the neurovascular unit. However, the very small number of upregulated genes (n=3) raises questions about statistical power and biological significance. The claim that these are \"connected to BBB function\" (C33) is interpretive rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Microglial response to EA included upregulation of damage-associated molecular pattern genes (Dnaja1, Dnajb1) and enrichment in pathways related to calcium signaling, MAPK, chemokines, extracellular function, angiogenesis, and BBB-relevant pathways including tight junctions and multiple signaling cascades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The microglial DEG analysis is supported by appropriate enrichment analyses (C34-C36, Figure 6) with citations supporting the functional roles of identified genes. The diversity of enriched pathways suggests complex microglial responses to EA. However, the interpretation that these changes relate to BBB opening is speculative, and the study lacks mechanistic validation of the proposed microglial role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Four dominant endothelial cell clusters (0, 2, 4, 5) showed distinct transcriptional profiles. Clusters 0 and 2 shared enrichment in immune system, MAPK signaling, and fluid shear stress pathways, with cluster-specific differences in platelet activation (cluster 0) and TNF signaling (cluster 2). Clusters 4 and 5 were enriched in immune-related terms, with cluster 5 additionally enriched in IL-17 signaling and atherosclerosis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The endothelial subset analysis identifies functional heterogeneity with appropriate pathway enrichment (C37-C42, Figure 7). The overlap and distinctions between clusters are clearly presented. However, the biological significance of these subpopulations for BBB function is not established, and it's unclear whether these represent distinct endothelial cell types or states induced by EA intervention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "EC_Cluster0 represents the basic endothelial response to EA, with 34 upregulated and 11 downregulated genes. Downregulated pathways included inflammatory responses and leukotriene biosynthesis, while upregulated genes included interferon signaling components and heat shock proteins (Hsp90b1, Hsp90ab1, Stip1) enriched in fluid shear stress pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation that EC_Cluster0 represents a \"basic response\" is supported by the overlap analysis showing no unique DEGs (C43). The pathway enrichment is appropriately analyzed (C44-C50, Figure 8), and citations support the functional relevance of interferon signaling and heat shock proteins to BBB function (C47-C49). However, the causal relationship between these molecular changes and BBB opening remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "EC_Cluster2 showed high correlation with EC_Cluster0 but with additional upregulation of Psap, Mt-co3, Pdia4, and Atrx.1. Only 20 genes were downregulated, with Nfkbia, Cxcl10, and Cxcl2 enriched in NF-\u03baB, IL-17, TNF, and chemokine signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis between clusters is clearly presented (C51-C53, Figures 8, 10). The identification of cluster-specific genes and their pathway enrichment is appropriate. The enrichment of inflammatory signaling pathways in downregulated genes is notable and potentially relevant to BBB modulation, though the functional consequences are not validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "EC_Cluster4 showed 15 unique upregulated and 13 downregulated genes. Downregulated genes were enriched in BBB transport/barrier function and immune response pathways. Upregulated genes related to inflammatory response, cytokine signaling, ERK/MAPK/PI3K pathways, and processes including vasculogenesis, astrocyte migration, pinocytosis, and calcium signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EC_Cluster4 analysis identifies genes and pathways directly relevant to BBB function (C54-C59, Figure 9). The downregulation of BBB barrier-related genes (C55) is particularly relevant to the study's hypothesis about BBB opening. However, the simultaneous upregulation of inflammatory pathways creates interpretive complexity, and the net effect on BBB permeability cannot be determined from transcriptional data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "EC_Cluster5 had 104 uniquely downregulated genes (primarily ribosome-related) and 44 uniquely upregulated genes enriched in BBB establishment regulation, sodium-dependent transporter activity, sprouting, and chemokine activity\u2014all important for BBB formation and material transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EC_Cluster5 analysis identifies cluster-specific transcriptional changes with clear functional implications (C60-C63, Figures 9-10). The enrichment in BBB establishment and transporter activity is directly relevant to the study's focus. The interpretation that ribosome-related downregulation suggests \"active changes in protein synthesis\" (C61) is reasonable but speculative without proteomic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Microglial subset analysis identified 15 distinct clusters, with 6 clusters (0, 1, 2, 3, 5, 6) selected for detailed analysis based on large EA-induced changes. MG_Cluster3 had the most upregulated genes (52), followed by MG_Cluster6 (38). MG_Cluster5 had the most independent GO entries (53), while MG_Cluster1 had the most unique KEGG pathways (13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The microglial subset analysis is comprehensive and well-documented (C64-C69, Figures 11-14). The quantitative comparison of DEGs and enriched pathways across clusters is clearly presented. The large number of microglial clusters and their differential responses to EA is notable and supports the authors' speculation about microglia as \"crucial priming cells\" for BBB opening (C108), though this remains to be mechanistically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Upregulated genes in microglial clusters showed distinct functional profiles: MG_Cluster0 (vascular function, focal adhesion, synapse), MG_Cluster1 (protein post-translational modifications, PI3K/Akt pathway with Hsp90aa1/Hsp90ab1), MG_Cluster2 (basement membrane, extracellular region), MG_Cluster3 (axon/myelin, ribosomes), MG_Cluster5 (cytosol/plasma membrane, Ccl3/Ccl4 in calcium/chemokine/TLR signaling), and MG_Cluster6 (mitochondria-related pathways).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional characterization of upregulated genes across microglial clusters is well-supported by enrichment analyses (C70-C78, Figure 14). The diversity of functions suggests complex, multifaceted microglial responses. The identification of specific genes like Ccl3/Ccl4 (C77) and heat shock proteins (C72) with known roles in inflammation and BBB regulation is notable. However, the functional significance of these cluster-specific responses for BBB opening remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Downregulated genes in microglial clusters showed MG_Cluster3 (82 genes) and MG_Cluster6 (68 genes) with the most changes. MG_Cluster6 had the highest pathway enrichment including fluid shear stress/atherosclerosis. Other clusters showed enrichment in focal adhesion/synapses (MG_Cluster0), purine receptors/platelet activation (MG_Cluster1), T/B cell migration and phosphatidylinositol signaling (MG_Cluster3), and immune function (MG_Cluster5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The downregulated gene analysis across microglial clusters is comprehensive (C79-C86, Figure 15). The enrichment of fluid shear stress pathways in MG_Cluster6 (C81) is particularly relevant given that this directly affects brain endothelial cells. The diversity of downregulated pathways suggests broad microglial state changes. However, the biological interpretation of downregulation (e.g., reduced immune activation vs. functional impairment) requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Cell-cell communication analysis revealed that BAMs, microglia, T cells, granulocytes, and endothelial cells showed obvious differences in endothelial cell interactions between EA and control groups. Astrocytes, fibroblasts, and endothelial cells had the most active relationships with endothelial cells, while granulocytes showed the largest changes. Four ligand-receptor pairs differed between groups (CD74_APP, PLXNB2_PTN, LAMP1_FAM3C, CD74_COPA), with EA specifically activating CD74_APP and CSF1R_CSF1 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-cell communication analysis using CellPhoneDB is appropriately conducted (C87-C92, Figures 16-17). The identification of differential ligand-receptor pairs provides mechanistic insights into how EA may affect BBB function through intercellular signaling. However, CellPhoneDB predictions are computational and require experimental validation. The conversion of rat genes to human homologs for analysis may introduce inaccuracies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Specific ligand-receptor changes in astrocyte-endothelial and fibroblast-endothelial communication included EA activation of TNFSF12_TNFRSF25 and blocking of GDF11_TGFR_AVR2B (astrocyte-EC), decreased interactions of TYRO3_GAS6, TNFSF13_TNFRSF1A, NOTCH1_JAG2, FGFR2_EPHA4, FGFR2_PTPRR (astrocyte-EC), and activation of TGFB3 signaling (fibroblast-EC), with most other fibroblast-EC pairs higher in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detailed ligand-receptor pair analysis for specific cell type interactions is well-documented (C93-C96, Figure 17). The identification of NOTCH, FGFR, and TGF-\u03b2 signaling changes is biologically relevant to vascular function and BBB regulation. However, the directionality of effects (activation vs. blocking) is inferred from expression patterns rather than functional assays, and the net impact on BBB permeability is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Additional cell-cell communication changes included 9 microglia-EC ligand-receptor pairs promoted by EA, many granulocyte-EC pairs present only in EA or control groups, decreased p-values for most oligodendrocyte-EC pairs in EA (suggesting more pronounced interactions), T cell-EC pairs appearing exclusively in EA (TGFB1 receptors) or control (AR, COL11A2, IFNG, SEMA4A) groups, and BAM-EC activation of JAG1_NOTCH4 and TNFSF12_TNFRSF25 with blocking of IGFBP3_TMEM219 and MERTK_GAS6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comprehensive analysis of multiple cell type interactions with endothelial cells provides a systems-level view of EA effects (C97-C102, Figure 17). The identification of group-specific ligand-receptor pairs is interesting and suggests EA induces substantial rewiring of cellular communication networks. However, the biological significance of many identified pairs is unclear, and the analysis would benefit from prioritization based on known BBB-relevant pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C107"
+    ],
+    "result": "The study builds on prior work demonstrating that specific EA parameters (2/100 Hz, 3 mA, 6s-6s, 40 min at GV20/GV26 acupoints) effectively open the BBB in rats, promoting entry of Evans blue and FITC-Dextran with effects more prominent in the frontal lobe. EA-induced BBB opening exhibits stimulus dependency and time window effects. Previous work also showed EA pretreatment reduces BBB permeability and upregulates Irf7 in healthy rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claims about prior EA effects on BBB are supported by multiple citations to the authors' previous work (C2, C9-C12). However, there is an apparent contradiction: the current study investigates EA-induced BBB opening, while C107 states EA pretreatment reduces BBB permeability. This suggests context-dependent effects (timing, disease state) that are not fully explained. The current study does not directly measure BBB permeability, relying instead on transcriptional surrogates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The discussion interprets microglial changes as potentially representing \"crucial priming cells\" for EA-induced BBB opening, noting that Hmox1 expression relates to oxidative stress and M2 polarization, downregulated genes include immune markers (Mx1, Mx2, Ifi27, Ly6e) and the microglial marker Iba1, and that Pycard/Ltc4s mediate apoptosis/inflammation while FKBP proteins associate with neurological diseases. Synaptic phagocytosis by activated microglia may affect cognitive function, and enriched pathways relate to cocaine addiction and microglial synaptic adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The discussion synthesizes findings with literature context (C108-C117), but many interpretations are speculative. The claim that microglia \"may serve as crucial priming cells\" (C108) is explicitly speculative and unsupported by mechanistic data. The connections drawn between observed gene expression changes and BBB function are largely inferential. The discussion appropriately cites supporting literature but does not distinguish between established facts and hypotheses requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C118",
+      "C119"
+    ],
+    "result": "The discussion references prior knowledge that increased CCL-3/CCL-4 and TMEM119 expression increases BBB permeability while decreased cellular communication network proteins also increase permeability, that AAV-PHP.eB delivery is facilitated by LY6E, and that TREM2 is a microglial/macrophage receptor regulated by thyroid hormones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited (C103-C106, C118-C119). The authors use this context to interpret their findings. However, the relevance of some cited facts (e.g., AAV-PHP.eB delivery, C106) to the current study's findings is not clearly established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "The study acknowledges that pericytes and neurons, which play significant roles in the brain and BBB, were not enriched in the analysis, possibly due to loss during tissue dissociation and cell enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an important limitation appropriately acknowledged by the authors (C120). Pericytes are critical components of the BBB, and their absence represents a significant gap in the analysis. Neurons also play important roles in neurovascular coupling. The authors correctly note this may result from technical limitations of the dissociation protocol, which is a common issue in scRNA-seq studies of brain tissue.",
+    "result_type": "MINOR"
+  }
+]

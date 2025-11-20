@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study compiled a dataset of 1494 species (694 eukaryotes, 400 archaea, 400 bacteria) using NCBI RefSeq annotations filtered for high-quality assemblies at chromosome or complete genome level. Different annotation pipelines were used: EGAP for eukaryotes (except fungi and unicellular eukaryotes which use submitted annotations), and PGAP for prokaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 describe the data collection methodology comprehensively. The filtering criteria are clearly stated, the dataset composition is documented with specific numbers, and the different annotation pipelines are acknowledged. This represents sound methodological documentation for a comparative genomics study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors identified annotation bias related to experimental support levels, with better-supported annotations (more CDSs) showing higher ASR values. They implemented a polynomial regression normalization procedure to correct for this bias, producing a normalized metric ASR*.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 identify a specific bias, and C62-C63 describe the correction method. The normalization approach is reasonable for addressing systematic annotation differences across species. However, the authors appropriately note that normalized values should be interpreted as standardized estimates rather than absolute measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C22"
+    ],
+    "result": "The authors developed a novel genome-wide metric (ASR) that quantifies alternative splicing by measuring how many times coding DNA sequences are reused to generate multiple mRNA isoforms. This represents the first large-scale comparative analysis across >1000 species spanning the tree of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C22 describe the novelty of the metric and study scope. The ASR metric is mathematically defined in the methods and provides a standardized approach for cross-species comparison. The scale of the analysis (1494 species) is unprecedented and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Alternative splicing activity varies systematically across major taxonomic groups, with mammals showing the highest ASR (3.1) and ASR* (2.8) values, followed by birds (2.7/2.5), fish and arthropods (2.2/2.3), plants (1.6/2.1), and unicellular organisms (1.0/1.0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 present quantitative ASR and ASR* values from Table 1 and are supported by statistical analyses (Welch's ANOVA, Monte Carlo permutation tests). The hierarchical pattern across taxa is consistent and statistically validated. The data clearly show increasing alternative splicing complexity from unicellular to multicellular organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "PGLS analyses revealed no significant correlation between alternative splicing (ASR or ASR*) and genome size across any taxonomic group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by PGLS regression analyses shown in Figure 3 and supplements, which account for phylogenetic non-independence. The lack of correlation between genome size and alternative splicing is an important negative result that challenges simple models of genome evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "In mammals and birds specifically, alternative splicing shows strong positive associations with both gene content and coding content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by PGLS analyses in Figure 3 supplements 2-5. This lineage-specific pattern distinguishes mammals and birds from other taxa and suggests unique evolutionary trajectories in these groups. The statistical support is clear from the regression analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Alternative splicing (ASR and ASR*) is strongly associated with genomic proportions, particularly the fraction of genome occupied by genes and the proportion of coding sequence within genes. A strong negative correlation exists between alternative splicing and coding-to-gene ratio, supporting the hypothesis that intron-rich genes promote isoform diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by PGLS analyses in Figures 4 and 5. The negative correlation with coding proportion is particularly robust and biologically interpretable: genes with more intronic content show higher alternative splicing. This is a key mechanistic insight supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "A phase-like transition in alternative splicing activity occurs at approximately 20 Mb of coding DNA, separating unicellular and multicellular organisms, with species below this threshold exhibiting negligible alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by data in Figure 3 supplements 4-5. The identification of a threshold is visually apparent in the figures and represents an important evolutionary transition point. However, the precise value (20 Mb) may be approximate given the discrete sampling of species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Both ASR and ASR* reach maximum values in genomes with approximately 50% intergenic content, suggesting an optimal genomic configuration for alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by the analysis of intergenic content relationships. The identification of an optimal proportion (~50%) is an important finding suggesting regulatory saturation effects. However, the mechanistic basis for this optimum requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Genomic composition varies systematically across taxa: bacteria and archaea have the highest gene content (~86% of genome), while plants have the lowest (~25%). The coding-to-gene proportion shows a progressive increase from mammals (3%) through birds, fish, arthropods, plants, fungi, to bacteria and archaea (~99%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 present compositional data from Table 1. These values are directly measured from genome annotations and show clear taxonomic patterns. The inverse relationship between alternative splicing and coding density is evident in these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Only birds and mammals display variability ratios (CV_ASR/CV_Coding/Gene) exceeding 1 for both ASR and ASR*, indicating greater interspecific heterogeneity in splicing relative to coding proportion within genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is based on coefficient of variation analyses. The finding that only mammals and birds exceed a ratio of 1 indicates these lineages show disproportionate variation in splicing relative to their genomic architecture, suggesting fine-tuned regulatory control. The statistical approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Mammals and birds exhibit highly conserved, intron-rich gene structures with low and stable coding proportions across species, yet display substantial interspecific variability in alternative splicing levels that is strongly negatively correlated with coding proportion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 synthesize multiple lines of evidence from the genomic analyses. The combination of structural conservation with splicing variability is well-supported by the data in Table 1 and Figures 4-5. This represents a key evolutionary insight about regulatory strategies in these lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Statistical validation used Monte Carlo permutation tests with 10,000 permutations comparing both means and medians, complementing Welch's ANOVA. PGLS analyses used a phylogenetic tree of 1078 species across all major taxonomic groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe the statistical methodology. The use of both parametric (Welch's ANOVA) and non-parametric (permutation) tests is appropriate given non-normal distributions. The phylogenetic tree composition is clearly documented. The methods are rigorous and appropriate for the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Alternative splicing is a post-transcriptional mechanism generating protein isoforms through selective exon/intron combination, enabling functional diversification without increasing gene number. It is involved in essential functions (tissue differentiation, neural development, immune response) and serves as a driver of biological innovation through 'evolutionary tinkering.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 present established background knowledge supported by multiple citations to prior literature. These are well-accepted concepts in the field and provide appropriate context for the study. The evidence type is primarily citation-based.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Alternative splicing rates have increased over 1400 million years, particularly in metazoans. Prokaryotes and unicellular eukaryotes show significantly lower rates than multicellular organisms. Vertebrates exceed invertebrates, with mammals, birds, and arthropods displaying the highest levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 summarize evolutionary patterns from prior literature (supported by citations) and are consistent with the current study's findings. The temporal and taxonomic patterns are well-established in the field and confirmed by the present data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Chen et al., 2014 found no significant difference in alternative splicing levels between birds and mammals, contradicting earlier reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 cites a specific prior finding. This is relevant context as the current study finds mammals have slightly higher ASR than birds (3.1 vs 2.7), though both are high relative to other taxa. The citation provides appropriate historical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Plants exhibit lower alternative splicing rates but compensate through gene duplication and transposable element expansion. Large plant genomes (e.g., maize) show higher splicing than small genomes (e.g., Arabidopsis). Approximately 70% of flowering plants underwent whole-genome duplications leading to subfunctionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 present established knowledge about plant genome evolution supported by citations. These provide important context for understanding the distinct evolutionary strategy in plants compared to animals. The current study's findings (plants show intermediate ASR with high genomic variability) are consistent with this background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Essential genes (transcription, translation, metabolism) evolve more slowly than immune/adaptation genes. Highly expressed genes evolve slowly due to structural constraints. Prokaryotes show higher sequence conservation due to compact genomes, while multicellular eukaryotes exhibit higher plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 present established evolutionary principles supported by citations. These provide theoretical context for understanding the relationship between genome architecture and evolutionary rates. The evidence is citation-based and represents accepted knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Non-coding elements exhibit greater evolutionary plasticity than coding sequences, expanding through genome duplications and transposable elements. Non-coding sequences introduce regulatory elements influencing alternative splicing. Increased intron length correlates with greater transcriptomic complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 present established knowledge about non-coding evolution supported by multiple citations. These provide crucial context for the study's focus on the relationship between genomic architecture (particularly intron content) and alternative splicing. The current findings support and extend these principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Intron retention is the predominant alternative splicing mechanism in plants, while exon skipping dominates in animals. Plant splice sites are generally weaker and lack compensatory regulatory sequences like exonic splicing enhancers common in metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 present established mechanistic differences between plant and animal splicing. This knowledge-based context helps explain why plants show different patterns in the current study despite having intermediate ASR values. The mechanistic differences are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Alternative splicing is not randomly accumulated but highly conserved in some genes, making it functionally relevant across taxa. Long-read RNA-seq reveals that while many events may be non-functional, a significant subset produces functionally relevant, tissue-specific isoforms. Conservation of splicing patterns exists across diverse animal genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 present evidence from prior studies (supported by citations) that alternative splicing is functionally important rather than merely noise. This provides important context for interpreting the systematic patterns observed in the current study. The evidence supports an adaptive rather than neutral model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Alternative splicing is increasingly recognized as key for rapid environmental adaptation, with stress conditions regulating splicing patterns. It modulates immune responses and plays major roles in biological differentiation at multiple levels: transcript diversification, cell differentiation, and speciation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 present established functional roles of alternative splicing supported by multiple citations. This provides important biological context for understanding why alternative splicing has evolved to high levels in certain lineages. The evidence is well-supported by prior literature.",
+    "result_type": "MINOR"
+  }
+]

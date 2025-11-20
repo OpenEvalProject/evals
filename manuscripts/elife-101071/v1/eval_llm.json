@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Fifty-seven older adults (aged 55-78 years) performed a dual-modality n-back task (visuospatial and verbal, 0-back and 2-back conditions) while EEG was recorded. The data were transformed into the time-frequency domain using superlets and decomposed into periodic and aperiodic components using the FOOOF algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20, C21, and C126-C137 describe the experimental design, participant characteristics, task structure, and analytical methods. These are methodological claims that are well-documented and internally consistent, providing a clear foundation for the study's results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Baseline-corrected time-frequency analysis showed decreased alpha/beta power and increased low-frequency power post-stimulus. However, FOOOF decomposition revealed that low-frequency increases were absent in periodic activity and instead correlated strongly with aperiodic parameters (exponent and offset), while periodic power correlated with alpha/beta activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by Figures 3 and 4, which show consistent patterns across baseline correction methods and strong correlations between aperiodic parameters and low-frequency baseline-corrected power. The data demonstrate that baseline correction may misrepresent aperiodic activity as low-frequency oscillatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C56",
+      "C57"
+    ],
+    "result": "Phase autocorrelation function (pACF) analysis confirmed that rhythmicity patterns were consistent with periodic power in the alpha range, while correlations between aperiodic parameters and pACF were weak, supporting the independence of aperiodic features from oscillatory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C56, and C57 are supported by Figure 5 and pACF analyses. The pACF metric provides independent validation that low-frequency activity is not strongly oscillatory, addressing concerns about FOOOF missing edge peaks (C54, C55). This strengthens the conclusion that aperiodic activity is distinct from periodic oscillations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Periodic alpha and beta activity decreased in the 2-back compared to 0-back condition, with greater decreases for target versus non-target stimuli. Beta power in central channels correlated with reaction times (positive early, negative late). Working memory load primarily affected alpha/beta power in parietal-occipital electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C59-C61 are supported by Figures 6 and 7, showing load-dependent and stimulus-type-dependent modulations of periodic activity. These findings replicate prior work (Gevins et al., 1997; Pesonen et al., 2007) and are consistent with established interpretations of alpha/beta suppression during working memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C46",
+      "C47"
+    ],
+    "result": "Aperiodic activity (exponent) exhibited two distinct temporal and spatial components: an early frontal component peaking at ~0.3s post-stimulus and a later parietal component peaking at ~0.7s. The exponent was larger for targets at ~0.3s and for non-targets at ~0.7s. Similar frontal and parietal components were observed in both n-back and item-recognition tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C46, C47 are supported by Figures 8 and 9, showing clear temporal and spatial dissociation of aperiodic components. The replication across tasks (Figure 8\u2014figure supplements 7 and 9) strengthens the robustness of these findings. The distinct modulation by stimulus type suggests functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C96",
+      "C97"
+    ],
+    "result": "Replication analyses in two independent datasets (a verbal n-back task and an item-recognition task) confirmed the main findings: task-related modulation of periodic alpha/beta activity, absence of low-frequency increases in periodic activity, and task-related changes in aperiodic activity. Correlation patterns between baseline-corrected data, FOOOF parameters, and pACF were consistent across all three datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45, C96, C97 are supported by replication data shown in Figures 3\u2014figure supplement 3, Figure 10, and correlation analyses. The consistency across three independent datasets with different task structures strengthens the generalizability of the findings. However, individual-level analyses (C42, C43, C50, C51) show variability in theta peaks, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C6",
+      "C98"
+    ],
+    "result": "Baseline correction can remove continuous oscillatory activity present during both baseline and post-stimulus periods, potentially leading to misinterpretation of aperiodic activity as increased post-stimulus theta power. This is particularly problematic in continuous paradigms like the n-back task where no neutral pre-stimulus interval exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C6, C98 are supported by the comparison between baseline-corrected and FOOOF-decomposed data (Figures 3, 4). The finding that low-frequency power correlates with aperiodic parameters rather than periodic activity provides strong evidence for this interpretation. The consistency across different baseline correction methods (C23, Figure 3\u2014figure supplement 2) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Individual-level analysis revealed that only two participants exhibited evident theta peaks, while the majority exhibited alpha peaks. Low-frequency activity appears highly variable across individuals, potentially depending on task requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by Figure 6\u2014figure supplement 1 showing individual spectra. Claim C53 cites a recent study (van Engen et al., 2024) reporting similar findings. The individual variability is appropriately acknowledged and suggests that group-level low-frequency power may not reflect consistent oscillatory activity across participants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Simulations showed that FOOOF may fail to identify low-frequency periodic components near the edges of the spectrum, leading to inflated estimates of aperiodic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C55 are supported by simulations described in Appendix 1. This is an important methodological limitation that the authors appropriately acknowledge. However, the pACF analysis (C56, C57) provides independent validation that low-frequency oscillatory activity is not strongly present in the data, mitigating this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ERPs and aperiodic activity capture distinct aspects of neural processing. ERPs may reflect changes in periodic activity (phase resets) or aperiodic activity (evoked transients or induced changes), but the low correlations between ERPs and aperiodic activity (after ERP subtraction) suggest they reflect different phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by Figure 8\u2014figure supplement 4 showing low correlations between ERPs and aperiodic activity beyond stimulus onset. The conceptual distinction between evoked transients and induced aperiodic changes (C74) is well-articulated and supported by citations. The analysis with and without ERP subtraction (C48, Figures 6\u2014figure supplement 3, 8\u2014figure supplement 5) provides additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Following stimulus presentation, there is an immediate aperiodic slope increase in fronto-central channels, followed by alpha/beta attenuation in posterior channels. Both effects are more pronounced for target versus non-target stimuli, potentially indicating greater cognitive engagement during decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by Figures 6, 8, and 9. The temporal sequence and spatial dissociation are clearly demonstrated. The interpretation linking these patterns to inhibitory processes (C77, C78) is supported by citations to prior work. The differential modulation by stimulus type (C79) provides functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The periodic component showed sustained alpha/beta suppression in the 2-back versus 0-back condition, while the aperiodic component did not show such load-related differences. The second aperiodic component after non-target stimuli had no obvious co-occurring periodic processes, suggesting that periodic and aperiodic components reflect distinct cognitive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by Figures 7, 8, and 9. The dissociation between periodic and aperiodic load effects is clearly demonstrated. The interpretation that these components reflect distinct cognitive processes (C83, C84) is reasonable given the data, though the specific cognitive functions remain speculative (C67-C69, C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Periodic beta activity in central channels correlated with reaction times, supporting its association with motor planning. In contrast, the aperiodic slope showed relatively weak correlations with reaction times, differing from some prior reports but consistent with others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by Figures 7 and 9. The correlation between central beta and reaction times (C87) replicates prior work. The weak correlation between aperiodic slope and reaction times (C88) is appropriately acknowledged as differing from some prior studies (C89), with citations to both consistent and inconsistent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C92",
+      "C93",
+      "C122",
+      "C123"
+    ],
+    "result": "Both periodic and aperiodic activities exhibit distinct task-related spatiotemporal dynamics closely related to cognitive demands. A substantial portion of changes often attributed to theta oscillations may be influenced by shifts in aperiodic slope, which could provide a more sensitive index of cognitive state changes than previously recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C92, C93, C122, C123 represent the main conclusions of the study. These are well-supported by the comprehensive analyses of periodic and aperiodic components (Figures 3-10), replication across datasets (C40-C45), and validation using pACF (C28-C29). The interpretation that aperiodic activity reflects cognitive control processes is supported by citations to the E:I balance framework (C13, C100, C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Prior studies have consistently reported sustained theta power increases during n-back tasks, linked to cognitive functions such as attention and cognitive control. However, the current results suggest that scalp-recorded low-frequency fluctuations may be predominantly influenced by aperiodic shifts rather than true oscillations, raising concerns about assuming an inherently oscillatory theta band in cross-frequency coupling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C91, C109-C111 are supported by the data showing that low-frequency power correlates with aperiodic parameters (C26, C45) and the absence of strong low-frequency periodic activity in pACF analyses (C56). The recommendation for future cross-frequency coupling studies (C111) is a reasonable implication of the findings, though it represents a suggestion for future work rather than a direct result of this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "In the comparative n-back dataset (Nakuci et al., 2023), the aperiodic slope was related to task load (steeper for 2-back) but not stimulus type, and showed stronger associations with reaction times in parietal channels compared to the original dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 are supported by Figure 9\u2014figure supplement 2 and the text describing differences between datasets. These differences highlight that while the main patterns replicate, there is some variability in the specific relationships between aperiodic activity and task variables across datasets, which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The aperiodic slope dynamics align with the excitation-inhibition (E:I) balance framework, with stimulus-induced shifts likely reflecting proportional modulation of excitatory activities to meet processing demands. Lifespan studies show that the aperiodic exponent becomes flatter with age, relating to lower cognitive performance. Aperiodic slope modulations should be considered a potential biomarker of cognitive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C104 are interpretive and speculative. While the alignment with the E:I framework (C100, C101) is supported by citations, the specific mechanistic interpretation is not directly tested in this study. The age-related claims (C102, C103) are based on prior literature, and the authors appropriately note that their study was not designed to test age effects. The biomarker suggestion (C104) is a reasonable implication but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The findings highlight a potential issue for EEG-based cross-frequency coupling analyses, particularly phase-amplitude coupling. If scalp-recorded low-frequency fluctuations are predominantly aperiodic rather than oscillatory, it may be unwarranted to assume an inherently oscillatory theta band when investigating theta-gamma coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are logical implications of the main findings (C3, C92, C109). The concern about cross-frequency coupling is well-founded given the evidence that low-frequency power may reflect aperiodic activity. However, this represents a theoretical implication rather than a direct empirical result, and the recommendation (C111) is for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The main strengths of the study include replication of key findings in two independent samples (younger individuals performing a verbal n-back task and an item-recognition task) and use of pACF as an alternative measure to verify that low-frequency oscillatory activity was not missed by FOOOF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 accurately describe the strengths of the study. The replication across datasets (C40-C45, C96-C97) and the use of pACF (C28-C29, C56-C57) are indeed major strengths that enhance the robustness and generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Limitations include potentially excessive task difficulty in the 2-back condition (leading to participant exclusions and reduced cognitive ability range), which may have influenced observed differences between conditions. The dual-modality task imposed time constraints limiting trial numbers and potentially causing fatigue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 appropriately acknowledge limitations of the study design. The exclusion of participants due to poor performance (C117, C130) and the potential impact on the sample (C118) are valid concerns. The discussion of task difficulty (C119) and time constraints (C120) provides important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The second aperiodic component, which emerges more prominently following non-target stimuli, may indicate an elevated state of vigilance or alertness for potential targets. The frontal component may be involved in decision-making, while the parietal component may relate to anticipatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C69 are speculative interpretations of the two aperiodic components. While the data clearly show two distinct components (C34-C36) with differential modulation by stimulus type (C37), the specific cognitive functions attributed to these components are not directly tested. These interpretations are reasonable hypotheses but require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C105",
+      "C106"
+    ],
+    "result": "Further investigation is warranted to explore how aperiodic slope changes might underlie commonly observed frontal low-frequency power increases, the relationship between aperiodic slope dynamics and theta oscillations in cognitive control tasks, and individual variations in theta dynamics and their relationship with aperiodic slope modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C105, C106 are appropriate suggestions for future research based on the current findings. These represent logical extensions of the work rather than unsupported claims. They acknowledge the need for additional validation and exploration of the phenomena identified in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "The study highlights the critical importance of distinguishing between periodic and aperiodic components of the EEG spectrum to ensure accurate interpretation of changes traditionally attributed to oscillatory activity. It is crucial to independently verify whether observed low-frequency signals are genuinely periodic or primarily aperiodic, particularly for understanding the neural underpinnings of working memory and cognitive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121, C124, C125 represent the main conclusions and implications of the study. These are well-supported by the comprehensive analyses demonstrating that low-frequency power in baseline-corrected data reflects aperiodic rather than periodic activity (C22-C27, C44-C45), validated by pACF (C28-C29, C56-C57) and replicated across datasets (C40-C45).",
+    "result_type": "MAJOR"
+  }
+]

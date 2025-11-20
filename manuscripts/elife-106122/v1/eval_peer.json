@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors identify a fundamental limitation in current multisensory integration models: they are not stimulus-computable and rely on experimenter-defined abstractions rather than processing raw audiovisual input directly. This gap prevents understanding of how biological systems extract and combine task-relevant information from natural multisensory stimuli.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this limitation. Reviewer 3 states the model 'does not rely on abstracted parameters...but rather works directly on the stimulus itself' and that this 'resolves a key gap.' Reviewer 2 emphasizes this as a major strength, noting the model 'removes researcher involvement in the characterization/labeling of features.' The editor describes the work as 'important' with 'compelling' evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C57",
+      "C58"
+    ],
+    "result": "The MCD model replicates behavior across 69 experiments spanning multiple species (534 humans, 110 rats, 2 monkeys) and seven behavioral tasks with average correlations exceeding 0.97, using only 0-4 free parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers unanimously praise this achievement. Reviewer 2 calls it 'unsurprising (but impressive!)' and notes it 'represents a kind of validation of those experiments.' Reviewer 3 states the authors 'robustly predicts perception and behavior across species' and calls this a key strength. The editor confirms 'the evidence is compelling.' No reviewer questions these quantitative claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C61"
+    ],
+    "result": "The model captures stimulus-specific effects, with matching stimuli providing significantly better fits than mismatching stimuli (p<0.001), demonstrating sensitivity to subtle low-level stimulus properties.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly highlights this as a strength, stating the model can 'account for such a wide range of empirical data' and 'using only the stimulus and a few free parameters.' Reviewer 3 notes the model 'generates precise, stimulus-specific predictions across tasks.' No concerns are raised about this permutation test result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C62"
+    ],
+    "result": "The model predicts shifts in subjective audiovisual synchrony with distance without explicit physics modeling or spatial representations, instead using auditory envelope cues (direct-to-reverberant energy ratio) that naturally vary with source proximity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding without critique. Reviewer 3 emphasizes the model's ability to handle 'continuously changing audio-visual streams' and notes it 'captures a remarkable range of multisensory phenomena.' The mechanistic explanation through envelope cues is consistent with the reviewers' praise for the model's ability to extract information from raw stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Cross-species differences in temporal sensitivity are captured by adjusting temporal constants: rats show 4\u00d7 faster tuning than humans, mirroring physiological differences in heart rate (~4.7\u00d7) and breathing rate (~6.3\u00d7).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly lists as a strength that 'by tuning model parameters to different temporal rhythms (e.g., faster in rodents, slower in humans), the MCD explains cross-species perceptual data without reconfiguring the underlying architecture.' Reviewer 2 notes the model's 'biological inspiration and generalizability across domains' and ability to 'predict rat, primate, and human data.' No concerns are raised about these parameter estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C71"
+    ],
+    "result": "Pharmacological effects on audiovisual perception in rats and individual differences (musicians vs. non-musicians, age effects) can be accounted for by adjustments at the decision-making level without altering low-level perceptual processing parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding as part of the model's comprehensive scope. Reviewer 2 notes the model fits 'data from dozens of previous experiments including multiple species, tasks, behavioral modality, and pharmacological interventions.' No reviewer questions the interpretation that decision-level changes suffice, though the authors themselves acknowledge this doesn't prove low-level changes didn't occur.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C51"
+    ],
+    "result": "During audiovisual speech, model responses cluster around the mouth and eyes\u2014regions where luminance changes synchronize with audio. The model dynamically tracks active speakers, as demonstrated with a ventriloquist video.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 specifically highlights this, stating 'the lead modality distribution apparent in figure 3b and c are provocative' and imagining 'the model revealing interesting characteristics of the facial distribution of correlation during continuous audiovisual speech.' The ventriloquist demonstration is accepted without critique as part of the model's ability to handle natural stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C47"
+    ],
+    "result": "The time-averaged MCD population response is mathematically equivalent to Maximum Likelihood Estimation (MLE), accounting for both bias and precision in spatial integration with zero free parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'the authors frame their model as a plausible algorithmic account of the Bayesian multisensory-integration models in Marr's levels of hierarchy' as a strength. Reviewer 2 notes the model's 'modularity' and ability to 'chain MCD units.' The mathematical equivalence is accepted as demonstrating how the MCD implements normative models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The MCD model implements Bayesian Causal Inference (BCI), replicating the breakdown of integration with spatial disparity (\u03c1=0.99) and predicting gaze behavior in humans and monkeys with zero additional parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 lists as a strength that the model 'captures a remarkable range of multisensory phenomena, from classical illusions (McGurk, ventriloquism) and synchrony judgments, to attentional/gaze behavior driven by audio-visual salience.' Reviewer 2 emphasizes the model's ability to account for 'numerous tasks (synchrony/temporal order judgement, localization, detection, etc.).' The BCI implementation is accepted as part of this comprehensive account.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C54",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "The model generates audiovisual saliency maps that predict spontaneous gaze direction without free parameters, operating purely at the pixel level. Salient points are defined as regions with high audiovisual correlation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly notes the model captures 'attentional/gaze behavior driven by audio-visual salience' as a strength. Reviewer 2 highlights the model's ability to 'extract complex spatiotemporal co-relationships from multisensory stimuli' and notes this has 'up to this point been largely described as \"present\"' without such detail. The parameter-free saliency detection is accepted as a key advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "Elementary joint analyses of luminance and sound level are sufficient to account for multisensory integration across all 69 experiments. Differences in psychometric curves across stimulus classes (speech vs. non-speech) arise from low-level stimulus features rather than specialized processing mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states this 'strongly supports the idea that a single low-level computation (correlation detection) can underlie many distinct multisensory effects.' Reviewer 2 notes the model's 'biological inspiration' suggests 'a very basic neural computation that has been conserved across phylogeny.' The claim that stimulus differences drive behavioral differences is accepted as a key insight, though reviewers note limitations regarding top-down processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C91"
+    ],
+    "result": "As a stimulus-computable model, the MCD operates at Marr's algorithmic level, providing a mechanistic substrate that could implement Bayesian ideal observer models while making explicit all intermediate processing steps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly lists as a strength that 'the authors frame their model as a plausible algorithmic account of the Bayesian multisensory-integration models in Marr's levels of hierarchy.' However, Reviewer 3 also notes as a weakness that 'what remains unclear is how the parameters themselves relate to stimulus quantities (like stimulus uncertainty)' and calls for 'the explicit relationship between the parameters of the MCD models and those of a cue combination model, thereby bridging Marr's levels of hierarchy.' This suggests the theoretical bridge is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C50"
+    ],
+    "result": "Previous neurophysiological work showed that MCD dynamics align with stimulus-evoked cortical activity in posterior superior temporal sulcus, superior temporal gyrus, and left superior parietal gyrus during audiovisual tasks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is based on citations to prior work and is accepted by reviewers as supporting evidence for the model's biological plausibility. Reviewer 2 emphasizes the 'biological inspiration' of the model. No reviewer questions these neurophysiological findings, which are presented as established prior results rather than new findings in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model has limitations: it does not explain phoneme categorization in the McGurk illusion, nor does it incorporate linguistic mechanisms, top-down predictive processes, or cognitive/affective factors that modulate multisensory responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states as a weakness: 'We still need to exercise care when interpreting its parameters, especially considering the broader context of top-down control of perception and that some multisensory mappings may not be derivable purely from stimulus statistics (e.g., the complementary nature of some phonemes/visemes).' The authors acknowledge these limitations themselves, and reviewers accept them as appropriate scope boundaries for a bottom-up model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C90"
+    ],
+    "result": "The framework has potential applications in machine learning (self-supervised audiovisual learning), robotics, AR/VR systems, and could be extended to other sensory modalities (visuo-tactile, audio-tactile) and animal classes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims about future applications and extensions. Reviewer 3 notes the work 'should interest computational neuroscientists, systems neuroscientists, and machine learning scientists,' suggesting potential impact. However, no reviewer explicitly evaluates these specific application claims, and they remain untested possibilities rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The MCD approach holds the same potential for multisensory perception as the Hassenstein-Reichardt detector did for insect motion vision, enabling links between computation, behavior, and physiology at the cellular level.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative claim about future impact. While Reviewer 2 notes the model 'was developed to describe a separate process - motion perception - and in a much simpler organism - drosophila' and emphasizes its biological inspiration, no reviewer explicitly evaluates whether the MCD will achieve the same transformative impact as the Hassenstein-Reichardt detector. This remains an aspirational claim.",
+    "result_type": "MINOR"
+  }
+]

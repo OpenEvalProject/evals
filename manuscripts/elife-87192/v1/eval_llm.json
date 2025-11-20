@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "FISH imaging reveals that bacteria are predominantly localized to hair follicles and cutaneous structures rather than the skin surface in human facial tissue. Quantitative enrichment scores show follicles have ~60-fold higher bacterial signal than stratum corneum (11.24 vs 0.188), with similar patterns for C. acnes-specific staining (3.14 vs 0.67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from FISH imaging (Figures 1A-C) with quantitative enrichment scores (Figure 1D) demonstrating spatial segregation of bacteria. The methodology is appropriate, controls are included (C3), and statistical significance is reported. The enrichment score calculation is clearly defined and consistently applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C43",
+      "C72",
+      "C74"
+    ],
+    "result": "PMA-ddPCR demonstrates that skin microbiome sites have uniquely low viability scores (0.02-0.12) compared to non-skin body sites (0.4-0.87), indicating most bacterial DNA on skin surface is not from viable cells. This distinguishes skin from other human microbiomes where viability scores exceed 0.4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12, C43, C72, C74 are well-supported by PMA-ddPCR validation controls (Figure 2\u2014figure supplement 1A) and systematic measurements across multiple body sites (Figure 2C). The method is properly validated with known live/dead ratios, and statistical significance is demonstrated (p\u22640.0001). Sample sizes are adequate (N=1-8 per site from 4 volunteers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Hair follicle contents show >10-fold higher bacterial viability compared to skin surface swabs (0.15 vs 0.013), confirming that viable bacteria are preferentially located in subsurface structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by direct PMA-ddPCR comparison of matched follicle and surface samples (Figure 2D) from 5 individuals. This orthogonally validates the FISH findings using a molecular approach on living, unsterilized skin. The magnitude of difference is substantial and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C68",
+      "C80"
+    ],
+    "result": "PMA-ddPCR accurately reflects culturable bacteria from skin, with PMA-treated samples predicting CFU within 1.3-fold while untreated samples overestimate by 82-fold. EUB338 FISH probe works effectively on stationary-phase skin microbiome species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C68, C80 are supported by validation experiments comparing PMA-ddPCR to CFU plating (Figure 2\u2014figure supplement 1B-F) and FISH on cultured bacteria (Figure 1\u2014figure supplement 1). The standard curve approach is appropriate and demonstrates PMA treatment brings DNA quantification in line with culturable bacteria. This validates the core methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C44",
+      "C45",
+      "C82"
+    ],
+    "result": "Traditional 16S sequencing overestimates skin microbiome richness and diversity compared to PMA-seq. Sites appearing to have 1-30 taxa by traditional sequencing actually contain 1-10 viable taxa, with samples showing higher traditional richness exhibiting proportionally larger decreases with PMA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C44-C45, C82 are supported by systematic comparison of paired samples (Figure 3B-C) showing consistent trends across multiple body sites and volunteers. The correlation between traditional richness and magnitude of PMA-induced reduction is statistically demonstrated. Independent validation with contamination controls (Figure 6\u2014figure supplement 3) confirms findings are robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "PMA index analysis reveals that most bacterial taxa are overrepresented by traditional sequencing (PMA index ~0), with site-specific patterns for dominant families. Propionibacteriaceae accurately represented in sebaceous sites but overrepresented elsewhere; Corynebacteriaceae overestimated except in nares; Micrococcaceae show unique underrepresentation in hair shaft by traditional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 are supported by comprehensive PMA index analysis (Figure 4A-B) across multiple sites and volunteers. The four dominant families comprise 93% of reads, and family-specific patterns are consistent and biologically interpretable. The PMA index metric is clearly defined and appropriately applied. Supporting evidence from culture studies (C59) validates Corynebacteriaceae findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C84"
+    ],
+    "result": "Mouse skin shows similar bacterial spatial distribution and viability patterns as human skin. Both hairy and nude mice show high follicular enrichment (15.26 and 10.79) with low surface colonization (0.21 and 1.13), and viability scores (0.066) comparable to human skin (0.045), much lower than fecal samples (0.98 and 0.66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35, C84 demonstrate cross-species validation using both FISH (Figure 5A-B, D) and PMA-ddPCR (Figure 5E) on untreated mouse tissue. The inclusion of nude mice controls for fur effects, and laboratory housing conditions don't explain low surface colonization given abundant follicular bacteria. This strengthens the generalizability of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "FISH methodology is validated by positive control (E. coli applied to mouse skin shows abundant surface signal) and negative control (NONEUB338 probe shows no significant hybridization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by appropriate positive and negative controls (Figure 5C) demonstrating that FISH can detect surface bacteria when present and that signal is specific. These controls address potential concerns about FISH efficacy on skin surface.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C70"
+    ],
+    "result": "Perturbation-recovery experiments show that while surface sterilization removes bacterial DNA (4/5 volunteers show significant reduction), the viable bacterial composition remains stable and communities converge back to PMA-treated baseline over 48 hours. The same ASVs present before sterilization repopulate the surface, indicating subsurface viable populations drive surface repopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42, C46-C47, C70 are supported by longitudinal sampling with paired PMA/non-PMA analysis (Figure 6A-C). Bray-Curtis dissimilarity analysis shows convergence to PMA-treated baseline but not untreated baseline, and ASV-level tracking (Figure 6\u2014figure supplement 2B) demonstrates specific taxa reappearing. This provides mechanistic insight into skin microbiome stability paradox. Sample size (N=5 volunteers) is adequate for this proof-of-concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C67",
+      "C69",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The skin surface is sparsely colonized by viable bacteria, with viable bacteria primarily restricted to hair follicles and pilosebaceous units. Most bacterial DNA on skin surface is not associated with viable cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C67, C69, C77-C79 represent the central conclusion synthesized from FISH (Figures 1, 5), PMA-ddPCR (Figures 2, 5E), and perturbation-recovery data (Figure 6). Multiple independent lines of evidence converge on this conclusion across human and mouse samples using orthogonal methods. This is well-supported as the primary finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C66",
+      "C73",
+      "C81",
+      "C83"
+    ],
+    "result": "Background claims about skin microbiome functions, skin biology, prior knowledge gaps, and methodological limitations are cited from literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C59, C62-C63, C66, C73, C81, C83 are appropriately cited background information from published literature. These establish context and motivation but are not novel findings of this study. Citations appear appropriate for establishing the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C71",
+      "C75",
+      "C76"
+    ],
+    "result": "Speculative interpretations suggest immune education occurs in follicles, cell-free DNA may impact immunity, abrasion may work by accessing subsurface bacteria, targeting follicles may be better for manipulation, and bacterial lifecycle may resemble epithelial turnover. Mechanisms for low surface viability could be passive (DNA adhesion) or active (antimicrobial killing, environmental stress).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61, C64-C65, C71, C75-C76 are explicitly speculative (using 'may', 'could') and represent reasonable interpretations of the data but lack direct experimental support. These are appropriately presented as hypotheses for future work rather than established findings. The speculation is grounded in the data but requires additional experiments for validation.",
+    "result_type": "MINOR"
+  }
+]

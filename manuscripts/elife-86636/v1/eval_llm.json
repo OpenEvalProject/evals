@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed a two-step enrichment method combining immunomagnetic separation using \u03b1Bb antibody and DASH to enable robust transcriptomic profiling of Bb from feeding ticks. The method captured >95% of Bb transcripts, reduced rRNA from 94% to 9%, yielded 0.6-3.4% Bb reads (average 4.3 million per sample), covered 92% of Bb genes with \u226510 reads, and did not significantly alter gene expression profiles based on in vitro controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26-C36 collectively demonstrate successful method development with strong supporting data. The RT-qPCR validation (C30), sequencing metrics (C31-C34), and control experiments (C35-C36) provide converging evidence that the enrichment approach is effective and does not introduce major artifacts. The method addresses the technical challenge identified in C26.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C97",
+      "C98"
+    ],
+    "result": "Global transcriptomic profiling revealed 192 Bb genes with substantial expression changes during tick feeding from day 1 to day 4. PCA showed that 64% of variance correlated with feeding day, with expression changes trending consistently in the same direction and the most dramatic differences between day 1 and day 4 (186 DE genes: 153 upregulated, 33 downregulated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C40, C97-C98 are well-supported by the RNA-seq differential expression analysis with appropriate statistical methods (DESeq2, adjusted p<0.05, twofold cutoff). The PCA analysis (C37) and consistency of expression changes across timepoints (C97) strengthen the findings. This represents the first comprehensive longitudinal study of this type (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C99",
+      "C100"
+    ],
+    "result": "Expression changes during feeding were consistent with activation of known regulatory programs: rpoS expression increased and 79/89 RpoS-activated genes were upregulated; 111/148 Rrp1-activated and 37/57 Rrp1-repressed genes changed in expected directions; about half of RelBbu-regulated genes changed as expected, with enrichment among downregulated genes suggesting a role during this timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C99-C100 validate the dataset by showing concordance with known regulatory programs. The statistical support (p<0.05, Wald tests) and comparison to prior studies (Grassmann et al. 2023, Caimano et al. 2015, Drecktrah et al. 2015) provide strong evidence. The partial concordance with RelBbu targets (C99-C100) is appropriately interpreted as suggestive rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Comparison to prior in vitro studies showed that 31% of upregulated genes matched 'fed tick' conditions, with higher concordance (70%) for day 2 genes. Comparison to fed nymph vs. DMC studies showed 63% of upregulated genes were differentially expressed, with day 2 genes enriched for nymph-specific expression and day 3-4 genes enriched for DMC-specific expression, suggesting timing of expression changes may indicate whether genes peak in tick or continue rising in host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C101-C103 demonstrate appropriate validation against prior studies (Revel et al. 2002, Ojaimi et al. 2003, Iyer et al. 2015, Grassmann et al. 2023). The partial concordance is expected given differences between in vitro and ex vivo conditions. The interpretation about timing and peak expression (C103) is a reasonable inference from the comparative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C76",
+      "C119",
+      "C120"
+    ],
+    "result": "The study identified 26 genes (14% of twofold DE genes) with expression changes not previously observed in other tick-feeding contexts or identified as dependent on RpoS, Rrp1, or RelBbu. These novel changes were concentrated in genes of unknown function and those encoding outer surface proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C76, C119-C120 are supported by systematic comparison to multiple prior studies. The identification of novel genes highlights the value of the ex vivo approach. The functional categorization (C120) is based on the study's classification system described in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C61",
+      "C62"
+    ],
+    "result": "Most upregulated genes were located on plasmids (143/158; 90%) rather than the chromosome (15/158; 10%), while most downregulated genes were chromosomal (27/34; 79%). Linear plasmid 54 (lp54) contained the largest number of upregulated genes. This is consistent with prior knowledge that Bb plasmids contain genes crucial for transmission and survival that alter expression in different host environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C61-C62 are well-supported by genomic location analysis of DE genes and are consistent with established knowledge about Bb genome organization and plasmid function (citations to Barbour 1988, Schwartz et al. 2021, Iyer et al. 2015, Ojaimi et al. 2005, Revel et al. 2002, Tokarz et al. 2004).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C104",
+      "C105"
+    ],
+    "result": "Among upregulated plasmid genes were known transmission-relevant genes on lp54 (DbpA, DbpB, BBA64-BBA73 family) and cp32 prophage genes (RevA, Erp, Mlp families, phage terminases). The upregulation of prophage genes raises the possibility that cp32 prophages are induced toward the end of feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C63-C67, C104-C105 are supported by the RNA-seq data and citations to prior functional studies. The identification of known transmission genes validates the dataset. The speculation about prophage induction (C67) is appropriately qualified as a possibility based on the observation of upregulated prophage genes, though it requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C77",
+      "C78",
+      "C106",
+      "C107",
+      "C120"
+    ],
+    "result": "The majority of upregulated genes encode cell envelope proteins (55/158) or proteins of unknown function (69/158), including 46 of 83 annotated outer surface lipoproteins. Nine additional cell envelope genes were upregulated that were not found in previous studies. The data suggest Bb undergoes complex outer surface transformation during feeding, though expression magnitudes varied greatly (ospA, ospB, ospC, bba59 most highly expressed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C53-C54, C68-C71, C77-C78, C106-C107, C120 are well-supported by functional categorization and expression analysis. The identification of outer surface protein changes is a major finding. The inference about outer surface transformation (C71, C78) is reasonable given the extensive changes observed, though the authors appropriately note that bulk RNA-seq cannot distinguish single-cell heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C74",
+      "C83"
+    ],
+    "result": "Mass spectrometry of Bb-enriched samples identified 256 proteins (251 tick, 5 Bb) at day 1 and 226 proteins (220 tick, 6 Bb) at day 4, with only 27 proteins detected at both timepoints. OspC was identified at day 4 but not day 1, confirming RNA-seq results. The vast majority of detected proteins were from ticks (98%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C74, C83 are supported by the mass spectrometry data with appropriate controls (uninfected ticks mixed with cultured Bb). The detection of OspC only at day 4 (C58) validates the RNA-seq findings. The dramatic change in tick proteins between timepoints is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C112",
+      "C113",
+      "C111",
+      "C114"
+    ],
+    "result": "At day 1, 10 proteins were categorized as extracellular matrix proteins (statistically enriched, FDR=0.000093) and 30 as plasma membrane proteins. At day 4, 31 membrane proteins were identified including two putative low-density lipoprotein receptors. These proteins may be candidates for direct Bb interaction and key determinants of pathogen transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C112-C114 are supported by functional enrichment analysis with appropriate statistics (Fisher's exact test). The speculation about which proteins are most likely to interact with Bb (C113-C114) is reasonable based on localization but appropriately qualified as requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C124",
+      "C125"
+    ],
+    "result": "The method has limitations: the \u03b1Bb antibody captured >95% but not all Bb transcripts (potentially introducing bias), may enrich other bacterial species (P. fulva reads on day 4), and could not produce consistent data from unfed ticks. While in vitro controls showed no significant expression changes from enrichment, this may still influence ex vivo samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88, C124-C125 appropriately acknowledge methodological limitations with supporting data (RT-qPCR showing >95% capture, P. fulva contamination detected). The speculation about causes of unfed tick difficulties (C88) is supported by citations. These honest assessments of limitations strengthen rather than weaken the overall study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C82",
+      "C121",
+      "C122",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study provides a transcriptomic resource and foundational methodology for understanding Bb transmission determinants. The dataset could facilitate vaccine development by providing new Bb surface protein candidates, and the flexible antibody-based enrichment approach could be adapted to other Borrelia species or tick-borne pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C82, C121-C122, C127-C130 represent appropriate statements about the study's contributions and potential applications. These are reasonable inferences from the data presented, though future applications (C121-C122, C128) are appropriately speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction establishes background knowledge about Bb as the Lyme disease pathogen, its lifecycle in Ixodes scapularis ticks, known transcriptional regulatory circuits (RpoN/RpoS, Hk1/Rrp1), prior in vitro and limited in vivo studies, technical challenges in capturing longitudinal expression data, and known tick-Bb protein interactions (OspA-TROSPA, BBE31-TRE31) that are insufficient to block transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 provide well-established background supported by appropriate citations. These claims set up the rationale for the study by identifying the knowledge gap (limited temporal resolution of in vivo expression changes) and technical challenges that the new method addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C108",
+      "C109",
+      "C110",
+      "C115",
+      "C116",
+      "C117",
+      "C123"
+    ],
+    "result": "The discussion contextualizes findings within established knowledge about tick-Bb interactions, expression changes enabling survival and transmission, the importance of vector-pathogen midgut interactions, and potential applications to vaccine development and therapeutic strategies targeting transmission-critical interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C79-C81, C84, C108-C110, C115-C117, C123 appropriately synthesize the study's findings with prior knowledge (supported by citations). Speculative statements about potential applications (C79, C84, C108) are appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C126"
+    ],
+    "result": "The authors note that few Bb cells are ultimately transmitted, suggesting potential heterogeneity in the Bb population that bulk RNA-seq cannot capture. Genes with low bulk expression could play important roles in transmission if highly expressed in crucial cells, highlighting the need for future single-cell analyses and potentially alternative enrichment strategies like TBDCapSeq for unfed ticks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C126 appropriately acknowledge limitations of bulk RNA-seq and suggest future directions. The speculation about heterogeneity (C90-C91) is supported by citation (Ohnishi et al. 2001) and represents a reasonable interpretation of the study's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Sequencing read mapping showed expected patterns for days 1-3 (72-83% tick, 1-3% mouse) but day 4 samples had fewer tick reads (24-44%) and substantial P. fulva contamination (41-64%), likely from mouse cages. Despite this, adequate coverage was achieved (median 338-1167 reads per gene).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 describe technical details of the sequencing results with appropriate data. The identification of P. fulva contamination (C95) demonstrates good quality control. The authors appropriately note that despite contamination, sufficient Bb coverage was obtained.",
+    "result_type": "MINOR"
+  }
+]

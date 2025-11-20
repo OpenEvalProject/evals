@@ -1,0 +1,1779 @@
+{
+  "submission": {
+    "id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T19:07:33.666482Z",
+    "updated_at": "2025-11-19T19:07:33.666482Z"
+  },
+  "content": [
+    {
+      "id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "content_type": "manuscript",
+      "content_text": "# Characterization of binding kinetics and intracellular signaling of new psychoactive substances targeting cannabinoid receptor using transition-based reweighting method\n\n## Authors\n\n- Soumajit Dutta<sup>1</sup> ([ORCID: 0000-0003-3951-8088](https://orcid.org/0000-0003-3951-8088))\n- Diwakar Shukla<sup>1</sup> ([ORCID: 0000-0003-4079-5381](https://orcid.org/0000-0003-4079-5381)) \u2020\n\n### Affiliations\n\n1. Department of Chemical and Biomolecular Engineering, University of Illinois at Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n2. Department of Chemistry, University of Illinois at Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n3. Center for Biophysics and Quantitative Biology, University of Illinois at Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n4. Department of Bioengineering, University of Illinois at Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n5. Cancer Center at Illinois, University of Illinois at Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNew psychoactive substances (NPS) targeting human cannabinoid receptor 1 pose a significant threat to society as recreational abusive drugs that have pronounced physiological side effects. These greater adverse effects compared to classical cannabinoids have been linked to the higher downstream \u03b2-arrestin signaling. Thus, understanding the mechanism of differential signaling will reveal an important structure-activity relationship essential for identifying and potentially regulating NPS molecules. In this study, we simulate the slow (un)binding process of NPS MDMB-Fubinaca and classical cannabinoid HU-210 from CB1 using multi-ensemble simulation to decipher the effects of ligand binding dynamics on downstream signaling. The transition-based reweighing method is used for the estimation of transition rates and underlying thermodynamics of (un)binding processes of ligands with nanomolar affinities. Our analyses reveal major interaction differences with transmembrane TM7 between NPS and classical cannabinoids. A variational autoencoder-based approach, neural relational inference (NRI), is applied to assess the allosteric effects on intracellular regions attributable to variations in binding pocket interactions. NRI analysis indicates a heightened level of allosteric control of NPxxY motif for NPS-bound receptors, which contributes to the higher probability of formation of a crucial triad interaction (Y7.53-Y5.58-T3.46) necessary for stronger \u03b2-arrestin signaling. Hence, in this work, MD simulation, data-driven statistical methods, and deep learning point out the structural basis for the heightened physiological side effects associated with NPS, contributing to efforts aimed at mitigating their public health impact.\n\n## Introduction\n\nCannabinoid receptor 1 (CB1), which is majorly expressed in the central nervous system (CNS) belongs to the class A G-protein coupled receptor (GPCR) family proteins (Hua et al., 2016; Mackie, 2008; Zou and Kumar, 2018; Dutta and Shukla, 2023). GPCRs are expressed in the cellular membrane and help transduce chemical signals from the extracellular to the intracellular direction with the help of the downstream signaling proteins (G-proteins and \u03b2-arrestin) (Rosenbaum et al., 2009; Latorraca et al., 2017; Weis and Kobilka, 2018). In addition, GPCRs are the largest family of drug targets due to their substantial involvement in human pathophysiology and druggability (Hauser et al., 2017; Yang et al., 2021). Significant research efforts have been invested in the discovery of drugs targeting CB1, which helps to maintain homeostasis in neuron signaling and physiological processes (Smith et al., 2010; An et al., 2020).\n\nInitial drug discovery efforts, especially the design of synthetic agonists, were based on modifying the scaffolds of phytocannabinoids (e.g. $\u0394^{9}$-Tetrahydrocannabinol, cannabinol) and endocannabinoids (e.g. Anandamide, 2-arachidonoylglycerol) (Figure 1; Pertwee, 2006; Pertwee and Ross, 2002; Pertwee et al., 2010). The synthetic molecules, which maintain the aromatic, pyran, and cyclohexenyl ring of the most common psychoactive phytocannabinoid $\u0394^{9}$-THC, are known as classical cannabinoids (Figure 1\u2014figure supplement 1; Razdan, 2009 Madras, 2018; Dutta et al., 2022a). However, the pharmacological potential of these molecules was diminished due to their psychological and physiological side effects (\u2018tetrad\u2019 side effect) (Moore and Weerts, 2022; Wang et al., 2020; Tummino et al., 2023). One such example of a synthetic cannabinoid is 1,1-Dimethylheptyl-11-hydroxy-tetrahydrocannabinol (commonly known as HU-210), which is a Schedule I controlled substance in the United States (Farinha-Ferreira et al., 2022).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig1-v1.jpg)\n\n**Figure 1.:** (A) Molecules derived from cannabis plants (phytocannabinoids) (B) endogenous agonists (Endocannabinoids) (C) synthetically designed molecules (Synthetic cannabinoids). Synthetic cannabinoids can be further classified based on scaffolds (phytocannabinoid analogues and endocannabinoid analogues or new psychoactive substances). Common pharmacophore groups of the ligands are shown in different colors. For phytocannabinoids and phytocannabinoid synthetic analogues, tricyclic benzopyran group and alkyl chains are colored in red and blue, respectively. Polar head group, propyl linker, polyene linker, and tail group of endocannabinoid and endocannabinoid analogues are colored with green, yellow, red, and orange, respectively. Linked, linker, core, and tail group of new psychoactive substances are colored with green, yellow, red, and orange, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (\u03949-Tetrahydrocannabinol).\n\n![Figure 1\u2014figure supplement 2](https://cdn.elifesciences.org/articles/98798/elife-98798-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2:** Four pharmacophore components (Linked: Green, Linker: Orange, Core: Red, Tail: Cyan) of NPS synthetic cannabinoid MDMB-FUBINACA are shown in different colors (A). Existing common scaffolds of other NPS in four pharmacophore components (B).\n\nApart from the canonical structures of synthetic cannabinoids, molecules with diverse scaffolds were also synthesized through structure-activity studies (Wiley et al., 2016; Schoeder et al., 2018; Walsh and Andersen, 2020). However, these molecules also lacked any pharmacological importance due to psychological side effects (Akram et al., 2019; Worob and Wenthur, 2020). Due to the diverse structures and psychological effects, these molecules became unregulated substitutes for traditional illicit substances (Peacock et al., 2019). These synthetic cannabinoids belong to a class of molecules known as NPS as these molecules are not scheduled under the Single Convention on Narcotic Drugs (1961) or the Convention on Psychotropic Substances (1971) (Peacock et al., 2019; Madras, 2016). Synthetic cannabinoids make up the largest category of NPS molecules (Shafi et al., 2020; Alam and Keating, 2020). NPS creates a significant challenge for drug enforcement agencies, as they appeal to drug users seeking \u2018legal highs\u2019 to avoid the legal consequences of using traditional drugs and to be undetectable in drug screenings (Worob and Wenthur, 2020).\n\nThe molecular structures of NPS synthetic cannabinoids consist of four pharmacophore components: linked, linker, core, and tail groups (Worob and Wenthur, 2020; Potts et al., 2020). The core usually consists of aromatic scaffolds (e.g. indole, indazole, carbazole, benzimidazole) (Figure 1\u2014figure supplement 2; Schoeder et al., 2018). The tail and linker groups are connected to the core. In the tail group, long alkyl chain-like scaffolds are ubiquitous in most NPSs; however, molecules with bulkier cyclic chains (e.g. AB-CHMINACA) are also present (Potts et al., 2020). Frequently encountered scaffolds in linker groups are methanone, ethanone, carboxamide, and carboxylate ester groups (Hill et al., 2018). The linker acts as a bridge between the core and the linked group. In the initial NPS synthetic cannabinoids, the linked group included polyaromatic rings; however, non-cyclic linked groups have also been identified in NPS recently (Schoeder et al., 2018; Potts et al., 2020). Structural diversity in every component, while maintaining high binding affinity and potency for CB1 make these molecules easier for drug manufacturers and harder to ban by drug enforcement agencies (Banister et al., 2015a; Ametovski et al., 2020; Cannaert et al., 2020; Banister et al., 2015b).\n\nThe use of NPS synthetic cannabinoids has been found to cause more physiological side effects than traditional cannabinergic \u2018tetrad\u2019 side effects (Tai and Fantegrossi, 2014). These side effects include tachycardia, drowsiness, dizziness, hypertension, seizures, convulsions, nausea, high blood pressure, and chest pain (Tai and Fantegrossi, 2014; Finlay et al., 2019). For instance, Gatch and Forster have shown that the high concentrations of AMB-FUBINACA, the molecule which caused \u2018zombie outbreak\u2019 in New York, induced tremors (Gatch and Forster, 2019; Adams et al., 2017). A recent biochemical study has linked these discriminatory effects with the differential signaling of \u03b2-arrestin (Finlay et al., 2019). According to Finlay et al., NPS shows higher \u03b2-arrestin signaling compared to the classical cannabinoids, which has also been confirmed by other \u03b2-arrestin signaling studies (Finlay et al., 2019; Grafinger et al., 2021). However, a mechanistic understanding of these differential downstream signaling effects between NPS and classical cannabinoids is still missing.\n\nMutagenesis studies have shown that the conserved NPxxY motif of CB1 have a larger role in downstream \u03b2-arrestin signaling than G-protein signaling (Leo et al., 2023; Liao et al., 2023). Recently published MDMB-FUBINACA bound CB1-\u03b2-arrestin-1 complex structure also points out the importance of the unique triad interaction (Y3977.53-Y2945.58-T2103.46) involving NPxxY motif in \u03b2-arrestin-1 signaling (Liao et al., 2023). However, structural comparison of the classical cannabinoid (AM841) and NPS (MDMB-FUBINACA) bound active CB1-Gi complex shows a conformationally similar NPxxY motif (Figure 2; Krishna Kumar et al., 2019; Hua et al., 2020). In light of these experimental observations, it can be inferred that higher \u03b2-arrestin signaling stems from higher dynamic propensity of triad interaction formation for NPS-bound CB1. We hypothesized that distinct orthosteric pocket interactions for NPS and classical cannabinoids cause differential allosteric modulation of intracellular dynamics that facilitate triad interaction.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig2-v1.jpg)\n\n**Figure 2.:** NPS bound CB1 (PDB ID: 6N4B, Krishna Kumar et al., 2019 color: Blue) structure is superposed with the classical cannabinoid bound CB1 (PDB ID: 6 KPG, Hua et al., 2020 color: Purple). Both structures are in Gi bound active state. Proteins are shown in transparent cartoon representation. Structural comparison of conversed activation matrices (Toggle switch, DRY motif, and NPxxY motif) and ligand poses are shown as separate boxes. Quantitative values of the activation metrics for both active structures are compared as scatter points on 1-D line with the CB1 inactive structure (PDB ID: 5TGZ, Hua et al., 2016 color: orange). These quantitative measurements were discussed in Dutta and Shukla, 2023.\n\nTo study these distinct dynamic effects, we compared the (un)binding of the classical cannabinoid (HU-210) and NPS (MDMB-FUBINACA) from the receptor binding site. These molecules have nanomolar affinities. Obtaining the initial pathway of ligand unbinding from unbiased sampling will be computationally expensive. Therefore, a well-tempered metadynamics approach was used to sample the unbinding event, where a time-dependent biased potential is deposited for the faster sampling of the metastable minima along the pathway (Barducci et al., 2008). However, a detailed characterization of the unbinding processes is only possible through the thermodynamics and kinetics estimation of intermediate states. Thus, a transition operator-based approach is needed, which helps to estimate the transition timescale between the states and the stationary density of each state. Estimation from these approaches usually depends on the equilibrium between the local states, which can only be maintained by reversible sampling. For high-affinity ligands like MDMB-FUBINACA and HU-210, reversible sampling is expensive as ligands move from high energy unbound states to lower energy bound states irreversibly. Hence, we implemented a transition operator approach named the transition-based reweighting analysis (TRAM) method, which can tackle this lack of local equilibrium between states by combining unbiased and biased approaches (Wu et al., 2016). TRAM has been used in in different simulation studies for estimating thermodynamics and kinetics of processes that have high free energy barriers. For example, TRAM have been utilized for characterization of small molecule and peptide (un)binding processes (Wu et al., 2016; Paul et al., 2017; Ge et al., 2021; Spiriti et al., 2022; Ge and Voelz, 2022), protein dimerization (Meral et al., 2018), ion transportation (Hu et al., 2019). To implement TRAM for our study, extensive sampling of the (un)binding process of both ligands was performed using a combination of umbrella sampling and unbiased simulations from the pathway obtained using metadynamics (see Methods section) (K\u00e4stner, 2011). We showed that TRAM can produce consistent kinetic estimation with less unbiased simulation data compared to traditional methods like the Markov state model (Prinz et al., 2011).\n\nBased on estimates of thermodynamics and kinetics, it was observed that both NPS and classical cannabinoids have similar unbinding pathways. However, their unbinding mechanisms differ due to the aromatic tail of the MDMB-FUBINACA compared to the alkyl side chain of HU-210. Furthermore, dynamic interaction calculations reveal a major difference with TM7 between NPS and classical cannabinoid. Specifically, the hydroxyl group in the benzopyran moiety of HU-210 forms much stronger polar interactions with S3837.39 compared to the carbonyl oxygen of the linker group in MDMB-FUBINACA. MD simulations of other classical cannabinoids and NPS molecules bound to CB1 also support these significant interaction differences. The ligand binding effect in intracellular signaling was estimated by measuring the probability of triad formation in the intracellular region. NPS-bound CB1 shows higher probability of forming triad interaction compared to the classical cannabinoids, which supports the experimental observations of high $\\beta$-arrestin signaling of NPS-bound receptors. To validate that the triad formation is indeed caused by the binding pocket interaction differences between the two ligands, allosteric strength binding pocket residues and NPxxY motif was estimated with the deep learning technique, Neural relational inference (NRI) (Zhu et al., 2022a). NRI network revealed that binding pocket residues of NPS-bound ensemble have higher allosteric weights for the NPxxY motif compared to classical cannabinoids. These analyses validate our hypothesis that the differential dynamic allosteric control of the NPxxY motif might lead to the $\\beta$-arrestin signaling for different ligands. This study provides a foundation for additional computational and experimental research to enhance our understanding of the connection between ligand scaffolds and downstream signaling. This knowledge will assist drug enforcement agencies in proactively banning these molecules and inform policies that can protect individuals from the effects of abuse.\n\n## Results and discussion\n\n### Metadynamics simulations capture the unbinding paths of NPS and classical cannabinoids\n\nThe representative classical cannabinoid and NPS selected for this study are HU-210 and MDMB-FUBINACA (Farinha-Ferreira et al., 2022). Compared to $\u0394^{9}$-THC, HU-210 has an extra hydroxyl group in the C-11 position and a 1\u2019,1\u2019-Dimethylheptyl group instead of a pentyl side chain (Figure 1A and C). MDMB-FUBINACA is a derivative of AB-FUBINACA, which was originally developed by Pfizer (Figure 1C; Krishna Kumar et al., 2019). These ligands binds to CB1 receptor with nanomolar affinities (MDMB-FUBINACA Ki: 1.14 nM; Gamage et al., 2018; HU-210 Ki: 0.61 nM Pertwee et al., 2010; Stern and Lambert, 2007).\n\nMetadynamics simulation is a biased sampling method and has been widely used in protein-ligand binding and unbinding studies, as preexisting knowledge of the pathway is not necessary for performing these simulations (Ibrahim and Clark, 2019; Saleh et al., 2017; Mahinthichaichan et al., 2021; Saleh et al., 2018). In metadynamics, a time-dependent biased potential is deposited into the sampling process for the ligand to get out of stable minima at a faster pace (Barducci et al., 2011). Here, two replicas of well-tempered metadynamics were performed to capture the unbinding pathways of MDMB-FUBINACA and HU-210 from the ligand-bound receptors, whose starting structures were obtained from a cryo-EM complex (PDB ID: 6N4B Krishna Kumar et al., 2019) and docking, respectively (Figure 3\u2014figure supplement 1). The commonly used collective variables were selected for metadynamics simulations: (1) z component distance between the center of mass of ligand and residue in the ligand binding pocket (W3566.48), and (2) Contact number with the ligand heavy atom and $\\alpha$ carbon of all binding pocket residues (Equation 4).\n\nThe z-component distance was plotted against the RMSD of the ligands from the bound pose, which indicates that ligands follow a similar pathway for each replica (Figure 3\u2014figure supplement 2A and C). It is observed that the dissociation happens via the opening formed by TM2, TM3, ECL2, and N-terminus for both ligands (Figure 3). We also performed unbinding simulations using well-tempered metadynamics parameters (bias height, bias deposition rate and bias factor) to confirm the existence of alternative pathways (Figure 3\u2014figure supplement 3). However, the simulations show that ligands follow the similar pathway for all metadynamics runs. These observations indicate that the pathway may be the minimum free energy pathway for the ligand unbinding in CB1. Previous metadynamics binding simulation of another cannabinoid ligand also points to a similar pathway (Saleh et al., 2018). Reweighted probability density obtained from metadynamics calculation shows one highly dense region in the pocket, depicting the stability of the bound pose of the ligands (Figure 3\u2014figure supplement 2B and D). However, time-dependent external force applied during the metadynamics makes the sampling in the orthogonal direction of the CVs less extensive. Thus, the biased simulation might not sample some protein-ligand interactions that helps to characterize intermediate states. To properly characterize intermediate transition states during the unbinding process, discrete kinetic models based on extensive unbiased simulations have been used. These unbiased simulations are often initiated from the pathways derived from the initial, limited sampling obtained through biased simulations (Paul et al., 2017; Sun et al., 2018; Abella et al., 2020) (discussed below).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig3-v1.jpg)\n\n**Figure 3.:** The ligands MDMB-FUBINACA (A) and HU-210 (C) are depicted in three distinct stages along their unbinding pathways, as determined by well-tempered metadynamics simulations. The ligands are illustrated using stick representations, with each stage represented by a different color to indicate the progression from the bound (color: red) to the unbound state (color: green). Representative ligand positions from an intermediate state are shown in yellow. Additionally, the superposition of representative frames of an intermediate stage of the unbinding process is shown, where MDMB-FUBINACA (B) and HU-210 (D) are dissociating from the receptor. The frames are obtained from two different well-tempered metadynamics simulation replicas and are shown with different colors (green and orange). Both transmembrane (left panel) and extracellular (right panel) views are displayed. Proteins are represented as cartoons.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Structural superposition of HU-210 (color: Orange) docked CB1 with active CB1 cryo-EM structure (PDB ID: 6 KPG, ligand: AM841). Protein is shown as a cartoon (color: purple). Ligands are shown as sticks.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Unbinding ensemble of the MDMB-FUBINACA (A) and HU-210 (C) are projected as 2-D scatter plots where Z-component distance of ligand center of mass from W3566.48 is plotted against the ligand RMSD. These ensembles were obtained by running well-tempered metadynamics. Reweighted probability densities are plotted with respect to the Z-component distance of ligand center of mass from W3566.48 for MDMB-FUBINACA (B) and HU-210 (D). Measured qualities from two simulation replicas for each system are shown in different colors on the same plot.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The well-tempered metadynamics runs with different parameters were projected as a scatter plot on top of transition-based reweighting analysis (TRAM) weighted two-dimensional projection of unbinding free energy landscape for MDMB-FUBINACA (A, C, E) and HU-210 (B, D, F). For MDMB-FUBINACA, distance between TM5 (W2795.43-C\u03b1) and tail part of the ligand is plotted against the distance between TM7 (S3837.39-C\u03b1) and ligand-linked part. For HU-210, distance between the TM5 (W2795.43-C\u03b1) and tail is plotted against the TM7 (S3837.39-C\u03b1) and cyclohexenyl ring of the ligand.\n\n### Comparison of thermodynamics and kinetics estimates from Markov state model and transition-based reweighting analysis method\n\nMSM and TRAM are both postprocessing techniques for estimating the kinetics and thermodynamics of underlying physical processes observed in MD simulation. MSM is applied to reversible equilibrium simulations, whereas TRAM estimations can be obtained from multi-ensemble simulations (combination of biased and unbiased simulations). The MSM depends on the local equilibrium between the Markovian states, which is also known as detailed balance. However, reversible local sampling becomes challenging with short parallel trajectories when the free energy difference between two local Markovian states is high. In those cases, reversibility is still assumed by forcing the detailed balance when estimating the transition probability matrix (Prinz et al., 2011). This leads to the incorrect estimation of the unbinding kinetics due to limited sampling from the stable bound state to the high energy unbound states (Wu et al., 2016). Refining the state discretization (i.e. increasing the number of states) may resolve the issue. However, refined state discretization sometimes decreases the statistically significant transition count between all states, decreasing the model certainty. TRAM was shown to solve this problem by combining biased and unbiased simulations (see Methods section). Biased simulations (e.g. replica exchange, umbrella sampling) help to enhance the local sampling, either by increasing the temperature for faster sampling or by fixing collective variables with biased potential to have better sampling in orthogonal directions. It has been shown that compared to MSM, kinetics predicted using TRAM from the combination of biased and unbiased simulations are more aligned with the experiment results (Wu et al., 2016).\n\nAs unbinding of ligands with high binding affinity (nanomolar) are being studied here, asymmetric transitions might be observed along the pathway. Therefore, we compared the use of MSM and TRAM in estimating the kinetics and thermodynamics of the (un)binding process. For TRAM, unbiased simulation and umbrella sampling were run from the clusters in conformational ensemble obtained from metadynamics (Figure 4\u2014figure supplement 1) (see Methods section for more details). For MSM estimation, only unbiased simulations starting from the metadynamics pathway were considered. MSM and TRAM featurization, building, and optimization process are discussed in detail in Methods section (Figure 4\u2014figure supplements 2\u20136).\n\nFor thermodynamics comparison, standard free energy was estimated for the ligands considering volume correction (Buch et al., 2011). TRAM and MSM predictions of standard binding free energy are within 0.6 kcal/mol of each other for each ligand (Figure 4A). Although the absolute binding free energy differs from the experimentally predicted value by approximately 3 kcal/mol, the relative estimated free energy (\u0394\u0394G) values are also within 0.6 kcal/mol of the experimentally determined values (Figure 4\u2014figure supplement 7). Therefore, it indicates that with sufficient sampling, both MSM and TRAM converge to the same predictions of relative free energy.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig4-v1.jpg)\n\n**Figure 4.:** (A) The bar plot represents standard binding free energy for HU-210, MDMB-FUBINACA, and difference of standard binding free energy between the ligands. MSM and TRAM estimations are shown as blue and orange bars, respectively. Experimentally predicted values are shown as dotted line. (B, C) Binding (B) and dissociation (C) time for HU-210 and MDMB-FUBINACA are shown as box plots. (D) Difference in dissociation time of the two ligands is plotted as box plot against fraction of unbiased trajectories used for the estimation. These timescales were obtained from the mean free passage time calculation using transition path theory (TPT) with transition probabilities estimated from MSM (color: blue) and TRAM (color: orange). Errors were calculated using bootstrapping method with three bootstrapped samples.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Modeled CB1 holo structures are shown as cartoon representations with the ligands (MDMB-FUBINACA (A) and HU-210 (B)) in the orthosteric bound pose. TM5 distances from the ligands are presented as red dotted lines. Ligands and residues in TM5 are represented as sticks. Atoms of interest are shown as vdw representation.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Binding pocket residues are shown as sticks. Residues wereselected from TM2, TM3, TM5, and TM7 and were used for feature calculation inbuilding the MSM and TRAM models. The same residues were also used tocompute the coordination number in the metadynamics simulations.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Top three implied timescales were plotted against different lag times for unbinding simulations of MDMB-FUBINACA (A) and HU-210 (B). MSM lag times were selected to be 35 ns for both ligands. For MDMB-FUBINACA, these calculations were performed with 700 clusters and 7 tIC dimensions. For HU-210, these calculations were performed with 800 clusters and 6 tIC dimensions. Errors in the implied timescale were calculated using three bootstrapped samples, where each sample containing 95% of the original unbiased data.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** VAMP-2 scores of MSMs built with different cluster numbers are shown for MDMB-FUBINACA (A) and HU-210 (B) unbinding simulations. Different number of tICs used for MSM building were shown with different colors. The optimal VAMP-2 score in each case is marked with a star symbol.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Absolute differences between $P(\\tau)^{k}$ and $P(k\u03c4)$ are shown as bar plots for MDMB-FUBINACA (A) and HU-210 (B) unbinding simulations. Different values of k are considered where $\\tau$ is 35 ns.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Raw probability and MSM weighted probabilities of the clustered states are plotted against each other for MDMB-FUBINACA (A) and HU-210 (B) unbinding simulations. Raw probability and TRAM weighted probabilities of the clustered states are plotted against each other for MDMB-FUBINACA (A) and HU-210 (B) unbinding simulations.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig4-figsupp7-v1.jpg)\n\n**Figure 4\u2014figure supplement 7.:** Convergence of $\u0394\u0394G$ calculation.Difference in the $\u0394\u0394G$ of the two ligands is plotted as box plot against fraction of unbiased trajectories used for the estimations. MSM and transition-based reweighting analysis (TRAM) estimations are shown using blue and orange colors, respectively.\n\nWe also compared the kinetics obtained from the MSM and TRAM. Kinetic measurements were performed with transition path theory (TPT), which uses transition probability matrix from MSM or TRAM to estimate mean free passage time between different states (see Methods section). Estimated binding times using TRAM and MSM match perfectly for both ligands (Figure 4B). The estimated dissociation times are within one order of magnitude with each other (Figure 4C). These observations agree with the previously reported computational research, where experimentally comparable estimation of $k_{off}$ rates were shown to be more challenging compared to $k_{on}$ (Wang et al., 2023).\n\nFurther analyses were performed to compare these methods in the low-unbiased data regime. The difference between the dissociation time of ligands was measured with different amounts of unbiased data. It is observed that even with only 25% of original, unbiased data, TRAM can predict the kinetics within an order magnitude of the kinetics estimated with full dataset (Figure 4D). On the other hand, error in MSM predicted kinetics more rapidly compared to TRAM with lesser amount of unbiased data. A similar trend can be observed for \u0394\u0394G prediction (Figure 4\u2014figure supplement 7). Therefore, TRAM provides better predictions of thermodynamics and kinetics when less amount of unbiased data.\n\n### Unbinding mechanism for new psychoactive substance\n\nAlthough the binding position of the ligand and the overall binding pathway are similar for both the ligands, extensive biased and unbiased simulation analyzed by TRAM shows a significant difference in the unbinding mechanism of the ligands. To capture the unbinding pathway for MDMB-FUBINACA, we projected the TRAM weighted free energy landscape of the distance between the linked part of the ligand (Leucinate group) and TM5 with respect to the distance between the ligand tail group and TM7 (Figure 5A). The free energy landscape was divided into the non-overlapping intermediate macrostates to obtain better description of the unbinding process. In each macrostate, the contact frequency of ligand with binding pocket residues were calculated along with corresponding contact energies. A metastable minimum is observed for macrostate representing the bound pose of the ligand depicting the stability of the ligand (Figure 5A). In the bound pose, the major interactions form between the aromatic (F1702.57, W2795.43, F268ECL2) and hydrophobic (L1933.29) residues of the binding pocket (Figure 6A and B, Figure 6\u2014figure supplement 1B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig5-v1.jpg)\n\n**Figure 5.:** For MDMB-FUBINACA, distance between TM5 (W2795.43-C\u03b1) and tail part of the ligand is plotted against the distance between TM7 (S3837.39-C\u03b1) and ligand-linked part. For HU-210, distance between the TM5 (W2795.43-C\u03b1) and tail is plotted against the TM7 (S3837.39-C\u03b1) and cyclohexenyl ring of the ligand. Measured distances are shown as red dotted lines in the inset figures. Macrostate positions are shown on the landscapes. Different mechanisms of (un)binding are shown with arrow on top of the free energy landscape.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig6-v1.jpg)\n\n**Figure 6.:** (A) The contact probabilities with binding pocket residues of MDMB-FUBINACA are shown as a heatmap for different macrostates, where ligand maintains contact with the receptor. Residues in different structural elements (loops and helices) are distinguished by distinct color bars. (B) Representative structures are shown where ligand (color: orange) and four residues (color: green) with highest interaction energies are shown as sticks. Proteins are shown as purple cartoon. Timescales between interstate transitions are shown as arrows. Arrow thickness is inversely proportional to the order of magnitude of the timescale. (C) Per residue K-L divergences between different states are shown with color (blue to red) and thickness (lower to higher) gradient. K-L divergences calculated on the inverse distance feature distributions were converted by residue basis by summing all the pair contributions corresponding to the residue. Thickness gradients are shown as rolling average to highlight a region of high K-L divergence. Errors in MFPT calculations were estimated based on three bootstrapped transition-based reweighting analysis (TRAM) calculations with randomly selected 95% of unbiased trajectories.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The contact probabilities with binding pocket residues and corresponding interaction energies of MDMB-FUBINACA are shown for different macrostates, where ligand maintains contact with the receptor. The macrostates presented here are in the order of I2 (A), Bound (B), I1 (C), and I3 (D) to clearly distinguish the two unbinding mechanisms. For each macrostate, ligand and binding pocket residue interaction probabilities (color: blue) and energies (color: orange) are plotted as bar plots.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** RMSD was shown as a density plot for Bound and I2 macrostates. Errors are calculated from five bootstrapped samples, where each sample contains 1000 conformations representing the macrostate. These 1000 conformations are selected based on the probability density of the microstates belonging to the macrostate.\n\nThe free energy landscape shows two probable mechanisms for MDMB-FUBINACA unbinding from the bound pose. The two pathways are differentiated by whether the linked or tail part of MDMB-FUBINACA dissociates first. One of the pathways, aromatic tail part of MDMB-FUBINACA moves away from TM5 and forms interactions with aromatic residues in TM2 (F1702.57 and F1742.61) (Figures 5A and 6A, B, Figure 6\u2014figure supplement 1). This leads to the formation of intermediate metastable states, which we characterize as macrostate Intermediate state 1 (I1). This metastable minimum observed from I1 macrostate might be unique to the FUBINACA family of NPS synthetic cannabinoids as this family has the aromatic ring in tail group, unlike the long alkyl chain in other common synthetic cannabinoids. Along with the aromatic residues of TM2, major interaction with F268ECL2 is maintained in macrostate I1 (Figure 6A and B). KL divergence analysis of the inverse distance distributions between two macrostates was conducted to highlight significant conformational changes. The bound and I1 macrostates show that only minor changes in the binding pocket residues, especially in TM2 are needed to accommodate MDMB-FUBINACA in this conformational state (Figure 6C). The interconversion timescale (MFPT) between the macrostates were obtained from the transition path theory. MFPT calculations show that both the timescales are similar with slightly higher timescales for the bound pose compared to I1 transition (20.6\u00b12.3 \u03bcs) (Figure 6B). In this pathway, the ligand moves from I1 metastable state to space between N-terminus, TM2, TM3, and ECL2 before dissociating from the receptor (Figure 6B). This region between the unbinding ensemble has been characterized as macrostate I3 (Figure 5A). Contact analysis shows significant drop in ligand residue contacts with only aromatic residues in TM2, TM3, and ECL2 forming dominant interactions (Figure 6A, Figure 6\u2014figure supplement 1). We further performed Kullback-Leibler divergence (K-L divergence) analysis between inverse distance of residue pairs of two macrostates to highlight the protein region that undergoes high conformational change with ligand movement (detailed discussion in Methods section). K-L divergence shows that ligand positioning in these particular regions causes relatively higher divergence on TM2 compared to I1 (Figure 6C). Kinetically, the transition from I1 to I3 (33.7\u00b13.1 \u03bcs) is much slower compared to reverse transition (0.8\u00b10.0 \u03bcs), validating the higher stability of the I1 compared to I3 macrostate (Figure 6B). According to the TPT analysis, breaking the aromatic interactions for complete dissociation of MDMB-FUBINACA requires \u223c371.9\u00b140.2 \u03bcs, making it the slowest step in this pathway (Figure 6B).\n\nIn the other possible unbinding pathway, orientation of MDMB-FUBINACA in the pocket does not change compared to the bound pose. The linked part of the ligand moves to space between N-terminus, TM2, TM3, and ECL2 (Figure 6B). We label this macrostate as I2. In this state, we observe stable polar interaction with K3767.32 and hydrophobic interactions with aromatic and other hydrophobic residues (F1772.64, F268ECL2, P269ECL2) (Figure 6A and Figure 6\u2014figure supplement 1A). However, free energy of this macrostate is higher than the bound pose, depicting higher entropic cost associated with this state. This can be shown by the higher intrastate RMSD of I3 compared to the bound pose (Figure 6\u2014figure supplement 2). Transition timescale from the bound pose to the I2 (136.7\u00b113.9 \u03bcs) is one order of magnitude higher compared to the reverse transition (9.8\u00b113.9 \u03bcs) (Figure 6B). K-L divergence analysis also shows higher divergence in the extracellular region of TM2 and N-terminus compared to bound pose (Figure 6C). Dissociation of MDMB-FUBINACA from I2 to the bulk is faster compared to dissociation from I3 (246.6\u00b126.0 \u03bcs) (Figure 6B). However, the overall kinetic barrier for dissociation from the binding pose for both unbinding mechanisms are relatively similar.\n\n### Unbinding mechanism for classical cannabinoid\n\nFor capturing the classical cannabinoid (un)binding mechanism, distances from the two terminal scaffolds (cyclohexenyl and alkyl chain) to TM5 and TM7 were measured similar to the NPS (Figure 5B). The free energy landscape of the unbinding of the HU-210 shows the differences in the mechanism from MDMB-FUBINACA. Similar to MDMB-FUBINACA, the HU-210 unbinding landscapes were also divided into non-overlapping macrostates. Macrostate representing HU-210 bound pose shows a metastable energy minimum. Comparing the bound macrostate interactions of MDMB-FUBINACA, classical cannabinoid HU-210 shows higher interactions with TM7 residues (S3837.39, F3797.35) (Figures 6A and 7A, Figure 6\u2014figure supplement 1B and Figure 7\u2014figure supplement 1B). Previous experimentally determined structures of classical cannabinoid bound CB1 have pointed out these conserved polar interactions of the hydroxyl group at C-1 position with S3837.39 (Hua et al., 2020; Hua et al., 2017). Although MDMB-FUBINACA also maintain this polar interaction with carboxylic oxygen, the interaction energy for the HU-210 is much higher, depicting the importance of this conserved residue in stabilizing classical cannabinoids (Figure 6B). Mutagenesis studies also support this difference in interaction with S3837.39 between the classical cannabinoids with hydroxyl group (HU-210) and CB1 ligands, which have carboxylic oxygen in the equivalent position (WIN-55,212\u20132) (Kapur et al., 2007; Sitkoff et al., 2011). Alanine mutation of S3837.39 have shown to decrease the ligand affinity and downstream efficacy of classical cannabinoids by orders of magnitude, while having minimal effect on WIN-55,212\u20132, which have carboxylic oxygen in the linked part as MDMB-FUBINACA (Kapur et al., 2007; Sitkoff et al., 2011). Other major interactions (F1702.57 and F268ECL2) in the bound pose are common between the two ligands (Figures 6B and 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig7-v1.jpg)\n\n**Figure 7.:** (A) The contact probabilities with binding pocket residues of HU-210 are shown as a heatmap for different macrostates, where ligand maintains contact with the receptor. Residues in different structural elements (loops and helices) are distinguished by distinct color bars. (B) Representative structures are shown where ligand (color: orange) and four residues (color: green) with highest interaction energies are shown as sticks. Proteins are shown as purple cartoons. Timescales between interstate transitions are shown as arrows. Arrow thickness is inversely proportional to the order of magnitude of the timescale. Errors in MFPT calculations were estimated based on three bootstrapped transition-based reweighting analysis (TRAM) calculations with randomly selected 95% of unbiased trajectories. (C) Per residue K-L divergences between different states are shown with color (blue to red) and thickness (lower to higher) gradient. K-L divergences calculated on the inverse distance feature distributions were converted by residue basis by summing all the pair contributions corresponding to the residue. Thickness gradient are shown as rolling average to highlight a region of high K-L divergence.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The contact probabilities with binding pocket residues and corresponding interaction energies of HU-210 are shown for different macrostates, where ligand maintains contact with the receptor. The macrostates presented here are in the order of I1 (A), Bound (B), I2 (C), and I3 (D) to clearly distinguish the two unbinding mechanisms. For each macrostate, ligand and binding pocket residue interaction probabilities (color: blue) and energies (color: orange) are plotted as bar plots.\n\nA relatively weaker metastable state is observed when the ligand moves relatively deeper (closer to TM5) inside the binding pocket. The flexible alkyl chain of HU-210 allows the ligand to have this deeper position (Figure 7A and B). Protein-ligand interaction analysis in the macrostate representing this region (I1) shows that hydroxyl group at C-11 forms a major polar interaction with H1782.65 (Figure 7\u2014figure supplement 1A). The bound and I1 macrostates are kinetically close, as indicated by the rapid interconversion between these states (Figure 7B). K-L divergence between the two states shows the highest divergence in extracellular TM2 and TM7, where major interaction switches have happened (Figure 7C).\n\nContrasting to MDMB-FUBINACA, only one pathway was discovered with classical cannabinoid cyclic scaffold departing from the receptor first. Major interactions that break when the ligand moves out of the binding pose to macrostate I2 is the polar interaction with S3837.39 and hydrophobic interaction with aromatic F1702.57 (Figure 7A and B, Figure 7\u2014figure supplement 1C). Breaking of these bonds leads to larger kinetic barrier of approximately 39.5\u00b11.4 \u03bcs (Figure 7B). In this macrostate, the HU-210 forms major interactions with aromatic residues F268ECL2 and F1772.64 and polar interactions with S1732.60 and D1762.63 (Figure 7B). From this pose, HU-210 either dissociates from the receptor or obtain another relatively weak stabilized state (I3) in the receptor. In I3, the alkyl chain of the ligand is flipped in the pocket and stabilized by aromatic residues in TM2, TM3, and ECL2 (Figure 7B). This transition from I2 to I3 (5.28\u00b132.8 \u03bcs) kinetically much slower compared to the reverse transition (6.9\u00b10.0 \u03bcs) (Figure 7B). From both I2 and I3 macrostates, the ligand can dissociate from the pocket and mean free passage time for these transitions appear to be in the millisecond timescale, which is one order of magnitude higher compared to the MDMB-FUBINACA unbinding (Figure 6B). This phenomenon supports the relatively high affinity of the classic cannabinoid HU-210 compared to the NPS MDMB-FUBINACA.\n\n### Allosterically controlled distinct downstream signaling between new psychoactive substances and classical cannabinoids\n\nAs discussed in the previous section, major interaction differences between NPS MDMB-FUBINACA and classical cannabinoid HU-210 are observed in TM7. To support the universality of this observation, we performed unbiased MD simulation (1 \u03bcs each) of other NPS (AMB-FUBINACA, 5F-AMP, CUMYL-FUBINACA) and classical cannabinoids (AMG-41, JWH-133, O-1317) bound CB1 (Figure 8\u2014figure supplement 1A). Average distance of carbonyl oxygen of NPS molecules\u2019 linker group from S3837.39 is compared to equivalent distance of hydroxyl group of classical cannabinoids\u2019 benzopyran ring. Larger mean distance in case of all NPS-bound CB1 supports the universality of the weaker interaction between TM7 and NPS molecules (Figure 8\u2014figure supplement 1B). This variation in binding pocket interactions might lead to differential allosteric control of the intracellular dynamics that facilitate triad interaction (Y3977.35-Y2945.58-T2103.46) important for \u03b2-arrestin binding.\n\nWe adopted a data-driven deep learning network known as Neural relational inference (NRI) to validate our hypothesis of allosteric control. NRI network has an architecture of variational autoencoder. The encoder part of the network predicts the interactions between the residues from the trajectory dynamics, and the decoder predicts the trajectories from the interaction. With this network, we try to produce alpha carbon coordinates at $t+\\tau$ from the coordinates at time t. In the process of regenerating the future coordinates, the latent space of the network learns the dynamic interactions between different residues in the protein. These interactions are calculated from the estimated posterior probability $q(z_{ij}|x)$. In this work, we trained the network with the NPS (MDMB-FUBINACA), and classical cannabinoid (HU-210) bound unbiased trajectories (Method Section) (Figure 8\u2014figure supplement 2). Here, we compared the allosteric interaction weights between the binding pocket and the NPxxY motif which involves in triad interaction formation. Results show that each binding pocket residue in MDMB-FUBINACA bound ensemble shows higher allosteric weights with the NPxxY motif, indicating larger dynamic interactions between the NPxxY motif and binding pocket residues (Figure 8\u2014figure supplement 3). To further validate our observations, we estimated allosteric weights between the binding pocket and the NPxxY motif by calculating mutual information between residue movements. Mutual information analysis reaffirms that allosteric weights between these residues are indeed higher for the MDMB-FUBINACA bound ensemble (Figure 8\u2014figure supplement 4).\n\nThe probability of triad formation was estimated to observe the effect of the difference in allosteric control. TRAM weighted probability calculation showed that MDMB-FUBINACA bound CB1 has the higher probability of triad formation (Figure 8A). Comparison of the pairwise interaction of the triad residues shows that interaction between Y3977.53-T2103.46 is relatively more stable in case of MDMB-FUBINACA bound CB1, while other two interactions have similar behavior for both systems (Figure 8\u2014figure supplement 5A, B, and C). Therefore, higher interaction between Y3977.53 and T2103.46 in MDMB-FUBINACA bound receptor causes the triad interaction to be more probable.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig8-v1.jpg)\n\n**Figure 8.:** (A) Transition-based reweighting analysis (TRAM) weighted probabilities of triad interaction (Y3977.53-Y2945.58-T2103.46) formation are plotted for HU-210 (color: purple) and MDMB-FUBINACA (color: blue) unbinding ensemble. If side-chain oxygen atoms of all three residues are within 5 \u00c5 of each other, triad interaction is considered to be formed. (B) TRAM weighted probability densities of TM3 (R2143.50) and TM6 (K3436.35) distance distribution are plotted for HU-210 (color: purple) and MDMB-FUBINACA (color: blue) unbinding ensemble. Error in the probability densities is estimated using a bootstrapping approach, where TRAM was built for three bootstrapped samples with 95% of total data.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Classical cannabinoids and NPS molecules that have been used to perform unbiased ligand-bound simulations. (B) Equivalent polar interaction distances for NPS and classical cannabinoids are shown as bar plot. For each NPS, the distance from S3837.39(O\u03b3) is calculated from the linker oxygen atom. For each classical cannabinoid the distance from S3837.39(O\u03b3) is calculated from hydroxyl oxygen (or equivalent hydrogen) bound to C1 carbon. The error bar is calculated using a bootstrapping approach with 80% of all trajectories. Three bootstrapped samples are used for the error calculations.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** The reconstruction errors in the training (solid line) and validation (dotted line) data after per epoch training of NRI network for MDMB-FUBINACA (A) and HU-210 (B) bound trajectories.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig8-figsupp3-v1.jpg)\n\n**Figure 8\u2014figure supplement 3.:** Allosteric weights between the binding pocket residues and the NPxxY motif are plotted as bar plots for HU-210 (color: purple) and MDMB-FUBINACA (color: blue) bound trajectories. Allosteric weights are estimated from the posterior probability of the NRI network. Error in the allosteric weights is calculated by training the network on three different training data.\n\n![Figure 8\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig8-figsupp4-v1.jpg)\n\n**Figure 8\u2014figure supplement 4.:** Allosteric weights between the binding pocket residues and the NPxxY motif are plotted as bar plots for HU-210 (color: purple) and MDMB-FUBINACA (color: blue) bound trajectories. Error in the allosteric weights is calculated by training the network with three different training data.\n\n![Figure 8\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/98798/elife-98798-fig8-figsupp5-v1.jpg)\n\n**Figure 8\u2014figure supplement 5.:** Transition-based reweighting analysis ransition-based reweighting analysis (TRAM) weighted probability densities of pairwise distances between the residues involved in the triad interaction (Y3977.53, Y2945.58, T2103.46) are plotted for HU-210 (color: purple) and MDMB-FUBINACA (color: blue) unbinding ensemble.\n\nFurthermore, we also compared TM6 movement for both ligand-bound ensemble which is another activation metric involved in both G-protein and $\\beta$-arrestin binding. Comparison of TM6 distance from the DRY motif of TM3 shows similar distribution for HU-210 and MDMB-FUBINACA (Figure 8B). These observations support that NPS binding causes higher $\\beta$-arrestin signaling by allosterically controlling triad interaction formation.\n\n### Conclusions\n\nSynthetic cannabinoids were designed as a potential therapeutics to target cannabinoid receptors. However, major side effects of these ligands diminish their therapeutic potential. Although both classical cannabinoids and NPS synthetic cannabinoids have been abused as recreational drugs, later poses larger threats for the society due the chemical diversity of the NPS structures makes them harder to control from being abused. Furthermore, physiological studies have shown NPS targeting cannabinoid receptors lead to the dangerous physiological effects compared to \u2018tetrad\u2019 side effects associated with classical cannabinoids. Previous studies have related these side effects with the higher downstream $\\beta$-arrestin signaling of NPS. Mutagenesis studies have shown NPxxY motif have larger role to play in $\\beta$-arrestin signaling. In this work, we proposed that NPS and classical cannabinoid have distinct allosteric control on NPxxY motif when bound to orthosteric pocket of CB1. In this hypothesis-driven study, we compared ligand-protein interactions of NPS MDMB-FUBINACA and classical cannabinoid HU-210 for CB1 by studying their unbinding mechanism, and downstream signaling.\n\nAs both ligands are stable binders with nanomolar affinity, well-tempered metadynamics simulations were performed to obtain the initial unbinding pathway. These simulations were able to find similar pathways via the opening formed by TM2, TM3, N-terminus, and ECL2 which matches with previous metadynamics binding simulations for cannabinoid receptors. For the proper characterization of intermediate states, the unbinding processes were further extensively sampled using unbiased simulation and umbrella sampling.\n\nEffectiveness of the post-processing techniques TRAM and MSM were compared in predicting the ligands with binding affinity and kinetics. MSM predicts the kinetics and thermodynamics from the eigendecomposition of the transition probability matrix. MSM assumes that the local equilibrium is maintained between the Markovian states. However, with limited sampling, this criterion may not valid between local high and low energy states. TRAM tries to solve this issue by combining biased and unbiased simulation, where biased simulations enhances the local sampling to maintain the equilibrium. We observed that with sufficient data, both methods performed in a similar way in estimating the standard binding free energy. The relative free energy estimated by both methods matches the experimental result within 0.6 kcal/mol. With a lesser amount of unbiased data, TRAM predictions of kinetics and thermodynamics remain more consistent than the MSM as the biased simulations help to maintain local equilibrium.\n\nTRAM estimated thermodynamics helped to decipher the differences between the unbinding of NPS MDMB-FUBINACA and classical cannabinoid HU-210. First, for MDMB-FUBINACA, a larger conformational change is observed within the pocket. A metastable intermediate state is observed when the aromatic tail of FUBINACA flip inside the pocket and reorient itself close to the aromatic residues of TM2. It was observed that both linked part and tail part of the ligands can lead the dissociation of the ligand from the receptor. Second, for HU-210, conserved cyclic group leads to the dissociation from the receptor. It supports previous simulation where the alkyl side chain of the ligand binds to the receptor first (Dutta et al., 2022a). Third, aromatic residues in the pocket (F2688ECL2, F1702.57) form major interactions with both HU-210 and MDMB-FUBINACA. Major differences in protein-ligand interactions were observed in TM7. Stronger interactions were observed for the classical cannabinoid HU-210 with TM7, especially polar interaction with S3837.39 and hydrophobic interaction with F3797.35 compared to MDMB-FUBINACA. This interaction pattern was consistent across other NPS and classical cannabinoids, indicating a universal difference in how these two groups of compounds interact with TM7.\n\nFinally, we demonstrated that the variation in binding pocket interaction leads to the distinct dynamic allosteric communications in the intracellular region. Allosteric communication strength was measured by the variational autoencoder (NRI). NRI network learns the dynamic interactions between residues in the latent space by learning to reconstruct the dynamics. Dynamic allostery measured by the posterior probability of VAE shows that higher allosteric weights from the binding pocket residues to the NPxxY motif region for MDMB-FUBINACA bound CB1 increases the probability of triad interaction formation. Since the triad interaction is crucial for $\\beta$-arrestin signaling, these findings align with experimental observations of enhanced $\\beta$-arrestin signaling in NPS-bound receptors. Overall, this data-driven computational study helps us to distinguish between the receptor-protein interaction, unbinding mechanism and downstream signaling NPS compared to other classical cannabinoids.\n\n## Methods\n\n### System preparation\n\nFor NPS unbinding simulation, G-protein bound active structure (PDB: 6N4B Krishna Kumar et al., 2019) was selected as the initial structure. G-protein subunits and non-protein residues other than orthosteric ligand MDMB-Fubinaca were removed from the PDB structure file. Missing residues in ICL3 (21 residues, 314\u2013334) and ECL2 (6 residues, 258\u2013263) were modeled sequentially using Remodel protocol of Rosetta loop modeling (Stein and Kortemme, 2013; Alford et al., 2017). In each step, the remodeled structure with least energy was further refined using kinematic closure protocol (Mandell et al., 2009).\n\nStarting 108 residues from CB1 N-terminus were also missing from the cryo-EM structure. However, it is not feasible to model the entire N-terminus because of the following two reasons (Stein and Kortemme, 2013). First, a proper template is not available for modeling N-terminus regions as most of the class A GPCRs do not contain large N-terminus (P\u00e1ndy-Szekeres et al., 2018). Second, it is challenging to model these large numbers of residues accurately with template-free ab initio modeling because of the combinatorial expansions of conformational space. Therefore, the closest 20 residues were modeled as membrane proximal regions of the N-terminus were shown to be important for CB1 signaling by allosterically modulating ligand affinity (Fay and Farrens, 2013). Furthermore, $\u039489CB_{1}$ (CB1 with first 88 residues truncated in N-terminus) have similar ligand binding affinity compared to CB1 with full sequence (Andersson et al., 2003). Modeling of this membrane proximal region was also performed using the Remodel protocol of Rosetta loop modeling. A distance constraint is added during this modeling step between C98N-term and C107N-term to create the disulfide bond between the residues (Fay and Farrens, 2013; Richter et al., 2011).\n\nAs the cryo-EM structure of bound MDMB-FUBINACA was known, ligand coordinate of MDMB-FUBINACA was added to the modeled PDB structure. The \u2018Ligand Reader & Modeler\u2019 module of CHARMM-GUI was used for ligand (e.g. MDMB-Fubinaca) parameterization using CHARMM General Force Field (CGenFF; Vanommeslaeghe et al., 2010). The ligand-bound receptor was embedded in the bilayer membrane and salt solution (extracellular and intracellular region) using CHARMM-GUI (Jo et al., 2008). As CB1 is majorly expressed in central nervous system, an average brain membrane composition of asymmetric complex membrane was selected. The membrane composition was obtained from Ing\u00f3lfsson et al. and proportionally downsized according to our system (Table 1; Ing\u00f3lfsson et al., 2017). 150 mM NaCl salt solution with TIP3P water model was used in the extracellular and intracellular regions (Mark and Nilsson, 2001). CHARMM36m force field was used to parameterize the protein, lipid, water, and ions (Huang et al., 2017).\n\n**Table 1.**\n Asymmetric average brain membrane composition used in MD simulation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Head</th>\n      <th>Lipid</th>\n      <th>Upper</th>\n      <th>Lower</th>\n      <th>Total</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Group</td>\n      <td>Group</td>\n      <td>Leaflet</td>\n      <td>Leaflet</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>phosphatidylcholine</td>\n      <td>DPPC</td>\n      <td>8</td>\n      <td>5</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>POPC</td>\n      <td>14</td>\n      <td>7</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>DOPC</td>\n      <td>4</td>\n      <td>2</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PAPC</td>\n      <td>7</td>\n      <td>4</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PDoPC</td>\n      <td>1</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>phosphatidylethanolamine</td>\n      <td>POPE</td>\n      <td>2</td>\n      <td>4</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PAPE</td>\n      <td>5</td>\n      <td>9</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PDoPE</td>\n      <td>8</td>\n      <td>15</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sphingolipid</td>\n      <td>SSM</td>\n      <td>9</td>\n      <td>3</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>OSM</td>\n      <td>1</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>NSM</td>\n      <td>2</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>phosphatidylserine</td>\n      <td>DPPS</td>\n      <td>0</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>POPS</td>\n      <td>0</td>\n      <td>6</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PAPS</td>\n      <td>0</td>\n      <td>6</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Glycolipid</td>\n      <td>GM1</td>\n      <td>2</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>GM3</td>\n      <td>2</td>\n      <td>0</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>phosphatidylinositol</td>\n      <td>POPI</td>\n      <td>0</td>\n      <td>5</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>PIPI</td>\n      <td>0</td>\n      <td>2</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ceramide</td>\n      <td>CER180</td>\n      <td>1</td>\n      <td>1</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sterol</td>\n      <td>Cholesterol</td>\n      <td>62</td>\n      <td>58</td>\n      <td>120</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Total</td>\n      <td>128</td>\n      <td>128</td>\n      <td>256</td>\n    </tr>\n  </tbody>\n</table>\n\nFor building the classical cannabinoid system, the modeled PDB structure was used. In this case, a classical cannabinoid HU-210 was docked into the orthosteric pocket using Autodock Vina (Trott and Olson, 2010). The docked bound pose was selected based on best overall structure of HU-210 to the experimentally determined crystal structure of another bound classical cannabinoid (Ligand: AM841, PDB:6KPG Hua et al., 2020; Figure 3\u2014figure supplement 3). The classical cannabinoid-bound system was built with identical complex membrane composition, salt concentration, and force field with NPS bound system.\n\nOther classical cannabinoids (AMG-41, JWH-133, and O-1317) and NPS (AMB-FUBINACA, CUMYL-FUBINACA, 5F-AMP) bound systems were also set up. These ligands are docked into the orthosteric pocket. Best docking poses were selected based on optimizing the distance between the hydroxyl group of classical cannabinoid (linker oxygen for NPS) to S3837.39 and the furthest tail atom distance to W2795.43. These systems also have identical complex membrane composition, salt concentration, and force field with previously described systems.\n\n### System minimization and equilibration\n\nAll ligand-bound systems are minimized and equilibrated before the production run. Ten thousand minimization steps were performed with the conjugate gradient method. Six sequential equilibration steps were carried out to stabilize the systems at 300 K temperature and 1 atm pressure for the production simulations. The systems were heated to 300 K in the NVT ensemble in the initial two stages. Each of these steps was performed for 250 ps. Langevin dynamics was used to control the temperature with additional damping and random force. The damping coefficient for the damping force was set as 1/picosecond. The Langevin dynamics was turned off for the hydrogen atoms. All the bonded hydrogen atoms were constrained with the SHAKE algorithm with default parameters of NAMD (Ryckaert et al., 1977). The integration time step for these two NVT ensemble equilibration was one femtosecond (fs). Harmonic constraints were used for fixing the temperature coupling of the protein residues with constraint scaling term set to 10 in the first NVT ensemble equilibration, followed by 5. Temperature coupling of lipid molecules was also restrained with harmonic force with a force constant equal to 5. CHARMM-GUI Selected Dihedral and Improper bonds were also restrained with an extra bonded term with a force constant of 500 in the first NVT ensemble equilibration, followed by 200. The non-bonded cutoff distance for the van der Waals interactions was set to be 12 \u00c5 with a switch distance of 10 \u00c5, at which a switching function is turned on to truncate van der Waals interactions at the cutoff distance. Non-bonded interactions for three consecutively bonded atoms were excluded. The particle mesh Ewald method was implemented for electrostatics calculation with grid size 1 \u00c5 (Darden et al., 1993).\n\nThe next four equilibrations were performed in the NPT ensemble, where pressure was fixed to 1 atm with Langevin piston pressure control. The barostat oscillation period was set to 100 fs with a damping time 50 fs. These four NPT ensemble equilibrations were performed for 250, 500, 500, and 500 ps, respectively. The integration timestep for these equilibration steps was increased to two fs. The constraint for temperature coupling on the protein residues was decreased gradually with the constraint scaling term for the four NPT ensemble simulations set to 2.5, 1.0, 0.5, and 0.1, respectively. Similarly, the restraints on temperature coupling on the lipid molecules were also decreased gradually with force constant for the four NPT ensemble simulations set to 2, 1, 0.2, and 0.0, respectively. Furthermore, the restraints on the CHARMM-GUI Selected dihedral and improper bonds were decreased gradually with force constant for the four steps set to 100, 100, 50, and 0.0, respectively.\n\n### Well-tempered metadynamics\n\nWell-tempered metadynamics was implemented for finding unbinding pathways (Barducci et al., 2008; Laio and Parrinello, 2002). Simulations were performed with the Collective variables module (Colvars) of NAMD v2.14 (Fiorin et al., 2013; Phillips et al., 2005). In metadynamics, a history-dependent biasing potential ($V_{meta}(S,t)$) is added to the Hamiltonian of the MD simulation, which discourages the system from revisiting configurations that have already been sampled (Barducci et al., 2011; Valsson et al., 2016). The $V_{meta}(S,t)$ is a sum of Gaussians deposited along the system trajectory in the CVs space $S=(S_{1}(r),S_{2}(r)\u2026S_{d}(r))$ as shown in Equation 1, where W, $\\sigma$, $\\tau$ are Gaussian height, width, and deposition time step, respectively. With a sufficiently long simulation, the bias potential estimates the underlying free energy along the CVs (Barducci et al., 2011; Laio and Parrinello, 2002). The well-tempered metadynamics was introduced to increase the convergence of bias potential by decreasing the Gaussian height with time (Equation 2; Barducci et al., 2011). In the Equation 2, $\\omega$ is the bias deposition rate and $\\omega$$\\tau$ is equivalent to constant Gaussian height for well-tempered metadynamics. The free energy is estimated from the bias potential using Equation 3, where the \u0394T is an user-defined parameter.\n\n$$\nV_{meta}(S,t)=\\sumt^{\u2032}=\\tautW\\prodi=1N_{cv}exp\u2061(\\frac{(S(r(t))\u2212S(r(t^{\u2032})))^{2}}{2\\sigma_{i}^{2}})\n$$\n\n\n\n$$\nW=\\omega\\tauexp\u2061(\\frac{\u2212V_{meta}(S,t)}{k_{B}\u0394T})\n$$\n\n\n\n$$\n\u0394G(S)=\u2212\\frac{T+\u0394T}{\u0394T}V_{meta}(S,t)\n$$\n\nIn this work, we selected two collective variables (CVs) for NPS (MDMB-FUBINACA) and classical cannabinoid (HU-210) unbinding according to Mahinthichaichan et al., 2021. The first collective variable is the z-direction distance from the converged toggle switch to the center of mass of all heavy carbon atoms of ligands. The second collective variable is the coordination number (CN) as defined in Equation 4 where $d_{ij}$ represents the distance from ith atom of the ligand and the alpha carbon of jth residue in the binding pocket. Selected binding pocket residues for CN calculation are shown in the Figure 4\u2014figure supplement 2. The \u0394T, gaussian height ($\\omega$$\\tau$), deposition time step ($\\tau$) are selected as 4200K, 0.4 kcal/mol and 100 ps, respectively. The Gaussian width for the two CVs are set to be 0.5 and 0.1, respectively.\n\n$$\nCN=\\sumi\\sumj\\frac{1\u2212(d_{ij}/4.5)^{8}}{1\u2212(d_{ij}/4.5)^{16}}\n$$\n\n### Umbrella sampling and unbiased sampling\n\nUmbrella sampling was performed along ligand distance from TM5 to capture the unbinding process (Figure 4\u2014figure supplement 1; K\u00e4stner, 2011). The unbinding pathway obtained from the metadynamics was clustered into 300 bins by dividing the selected distances from 5 to 35 \u00c5. The center of each bin was used as the center of each window for umbrella sampling. Five independent structures were selected from each cluster to simulate five independent umbrella runs in each umbrella window. If a cluster does not contain any structure, starting structures for that window were selected from the closest clusters. A constant harmonic biased potential of 10 kcal/mol is used for each window. OpenMM v7.8 MD engine was used to run the umbrella sampling runs (Eastman et al., 2017). The temperature and pressure of the systems are controlled at 300K and 1 atm by the Langevin thermostats and Monte Carlo barostats. The integration timestep was chosen to be two fs. Movements of the containing hydrogen atom were constrained using HBonds commands with SHAKE (or SETTLE for water) algorithm. The cutoff distance for non-bonded interaction other than electrostatic interaction was set to 12 \u00c5, with a switching potential at 10 \u00c5 to make the potential to zero smoothly at the cutoff. The particle weld method was used to calculate the long-range electrostatics. Each simulation was run for 20 ns.\n\nIdentical starting structures and simulation conditions (Thermostat, barostat, cutoff, electrostatic calculation method, integration timestep, and constraints on Hydrogen bond) were selected for unbiased simulations. OpenMM v7.8 simulation software was used to run simulations. Each trajectory was run for 100 ns. All the simulations were performed on the distributive computing facility folding@home (Beberg et al., 2009).\n\n### Markov state model\n\nMarkov state model (MSM) is used to estimate the thermodynamics and kinetics from the unbiased simulation (Prinz et al., 2011; No\u00e9 and Fischer, 2008). MSM characterizes a dynamic process using the transition probability matrix and estimates its relevant thermodynamics and kinetic properties from the eigendecomposition of this matrix. This matrix is usually calculated using either maximum likelihood or Bayesian approach (Prinz et al., 2011; Trendelkamp-Schroer et al., 2015). The prevalence of MSM as a post-processing technique for MD simulations was due to its reliance on only local equilibration of MD trajectories to predict the global equilibrium properties (Husic and Pande, 2018; No\u00e9 and Rosta, 2019). Hence, MSM can combine information from distinct short trajectories, which can only attain the local equilibrium (Bowman et al., 2014; Wang et al., 2018; Shukla et al., 2015).\n\nThe following steps are taken for the practical implementation of the MSM from the MD data (Dutta and Shukla, 2023; Dutta et al., 2022a; Dutta et al., 2022b; Bansal et al., 2023; Mi et al., 2023).\n\nDimensionality reduction, clustering Markov state model building, and VAMP-2 calculations are performed with the pyEMMA v2.5.6 library (Scherer et al., 2015). The optimized MSM for MDMB-FUBINACA unbinding simulations were built with 700 clusters, 7 tiCs, and 35 ns of lag time. For HU-210, optimized MSM were built with 800 clusters, 6 tiCs, and 35 ns of lag time.\n\n### Transition-based reweighting analysis method\n\nMarkov State Models have been extensively used to investigate the protein-ligand binding process (Dutta et al., 2022a; Buch et al., 2011; Lawrenz et al., 2015; Aldukhi et al., 2020; Shukla et al., 2019; Zhao and Shukla, 2022; Chen et al., 2021; Zhao et al., 2023). However, these studies were mainly performed for ligands with high off-rates which could be sampled using the unbiased trajectories. For ligands with low off rates, the use of reversible transition matrix would yield incorrect estimates of unbinding kinetics. Therefore, we use the TRAM (Wu et al., 2016; Galama et al., 2023) method to accurately estimate the unbinding kinetics of new psychoactive substances. TRAM is a thermodynamics and kinetics estimator method, which, unlike MSM, can combine unbiased and biased simulation data to estimate thermodynamics and kinetics. TRAM utilizes the advantages of the local equilibrium approximation of MSM and the benefits of biased simulations to enforce local equilibrium in interstate transitions where it is difficult to attain.\n\nAs the simulations are obtained from multiple ensembles (biased and unbiased), it is paramount to classify the MD frames (or the conformations) based on which ensemble it belongs to. Each ensemble represents simulations that are performed with identical Hamiltonian energy functions. Therefore, unbiased simulations are considered as one ensemble, whereas, in umbrella sampling, each biasing window is considered a single ensemble.\n\nLike MSM, in TRAM, the conformational space is also discretized into non-overlapping states. The interstate transitions should follow the following relationship shown in the Equation 5, where $f_{i}^{k}$ is the local free energy of the ith state and kth ensemble. The term $e^{\u2212f_{i}^{k}}$ is proportional to the stationary density ($\\mu(x)$) of state $S_{i}$ in ensemble $k$ . The $\\mu(x)$ of each conformation ($x$) of $S_{i}$ is weighted with negative exponential of bias energy ($b^{k}(x)$) on x in ensemble $k$ ($e^{\u2212b^{k}(x)}$) (Equation 6).\n\n$$\ne^{\u2212f_{i}^{k}}p_{ij}^{k}=e^{\u2212f_{j}^{k}}p_{ji}^{k}\n$$\n\n\n\n$$\ne^{\u2212f_{i}^{k}}=\\int_{S_{i}}e^{\u2212b^{k}(x)}\\mu(x)\n$$\n\nTo obtain kinetics and thermodynamics information from TRAM, we have to derive interstate transitions ($p_{ij}^{k}$) and the stationary density of the entire ensemble ($\\mu(x)$), where both the terms follow normalization constraint (Equations 7 and 8). Therefore, there are $m^{2}K+X$ unknown variables. Therefore, to solve these unknown variables, the maximum likelihood approach has been considered, where the likelihood function is defined as Equation 9, which is the combination of the likelihood function of MSM and local equilibrium. This maximum likelihood problem was subjected to the constraints of Equations 5, 7, and 8.\n\n$$\n\\sumjp_{ij}^{k}=1\n$$\n\n\n\n$$\n\\sumx\\inX\\mu(x)=1\n$$\n\n\n\n$$\nL_{TRAM}=\u03a0_{k=1}^{K}(\u03a0_{i,j}(p_{ij}^{k})^{c_{ij}^{k}}\u23dfL_{MSM})(\u03a0_{i=1}^{m}\u03a0_{x\\inX_{i}^{k}}e^{f_{i}^{k}\u2212b^{k}(x)}\\mu(x))\u23dfL_{LEQ}\n$$\n\nWu et al. showed that the solution of this maximum-likelihood problem can be turned into system of non-linear algebraic equations (Equations 10\u201312), where $c_{ij}^{k}$ is count of the interstate transitions between state $S_{i}$ and $S_{j}$ in ensemble $k$. This system of equations are solved iteratively to estimate $v_{i}^{k}$ and $f_{i}^{k}$, which provides the prediction of $p_{ji}^{k}$ and $\\mu(x)$ (Equations 13 and 14).\n\n$$\n\\sumj\\frac{c_{ij}^{k}+c_{ji}^{k}}{exp[f_{j}^{k}\u2212f_{i}^{k}]v_{j}^{k}+v_{i}^{k}}=1\n$$\n\n\n\n$$\n\\sumx\\inX_{i}\\frac{exp(f_{i}^{k}\u2212b^{k}(x))}{\\sumlR_{i}^{l}exp[f_{i}^{l}\u2212b^{l}(x)]}=1\n$$\n\n\n\n$$\nR_{i}^{k}=\\sumj\\frac{(c_{ij}^{k}+c_{ji}^{k})v_{j}^{k}}{v_{j}^{k}+exp[f_{i}^{k}\u2212f_{j}^{k}]v_{i}^{k}}+N_{i}^{k}\u2212\\sumjc_{ji}^{k}\n$$\n\n\n\n$$\np_{ij}^{k}=\\frac{c_{ij}^{k}+c_{ji}^{k}}{exp[f_{j}^{k}\u2212f_{i}^{k}]v_{j}^{k}+v_{i}^{k}}\n$$\n\n\n\n$$\n\\mu(x)=\\frac{1}{\\sumkR_{i(x)}^{k}exp[f_{i(x)}^{k}\u2212b^{k}(x)]}\n$$\n\nWe used the Python package pyEMMA v2.5.6 for the practical implementation of TRAM (Scherer et al., 2015). For calculating transition counts in ensemble $k$ ($c_{ij}^{k}$), the lag time of 15 ns was chosen. In the implementation, we need to preprocess each trajectory into three arrays.\n\n$$\nb_{k}(x)=\\frac{c_{k}}{2kT}(x\u2212y_{k})^{2}\n$$\n\n### Transition path theory\n\nTransition path theory (TPT) analysis is applied to calculate the transition pathway and timescale between different macrostates, representing different configurational spaces in the unbinding process (No\u00e9 et al., 2009; Metzner et al., 2009) In this work, we define macrostates as a collection of Markovian states present in the area of interest in the unbinding free energy landscape. An essential concept of transition path theory is the committer probability ($q_{i}^{+}$), which is defined as the probability of any Markovian state reaching the final metastable state before it returns to the initial state. Therefore, the Markovian states present in metastable state B has a committer probability of 1. It has been shown that committer probability follows the following system of linear equation as shown in Equation 16, where $P_{ik}$ is the transition probability between state $S_{i}$ and $S_{j}$ as discussed in the previous section.\n\n$$\n\u2212q_{i}^{+}+\\sumk\u2209Bp_{ik}q_{k}^{+}=\u2212\\sumk\\inBp_{ik}q_{k}^{+}\n$$\n\nIn this work, the quantity of interest from TPT is the timescale (or rate) between the metastable state transitions as shown in Equation 17, where $\\pi_{i}$ is the stationary probability of state $S_{i}$. TPT calculations were performed by PyEMMA v2.5.6 (Scherer et al., 2015).\n\n$$\nk_{AB}=\\frac{\\sumk\\inA\\sumk\u2209A\\pi_{i}p_{ik}q_{k}^{+}}{\\tau\\sumi=1m\\pi_{i}(1\u2212q_{i}^{+})}\n$$\n\n### K-L divergence analysis\n\nKullback\u2013Leibler divergence (K-L divergence) analysis was performed to show the structural differences in protein conformations in different macrostates (Dutta and Shukla, 2023; Fleetwood et al., 2021). In this study, this technique was used to calculate the difference in the pairwise inverse distance distributions between macrostates. Each macrostate was represented by 1000 frames that were selected proportional to their TRAM weighted probabilities. Although K-L divergence is an asymmetric measurement, for this study, we used a symmetric version of the K-L divergence by taking the average between two macrostates. Per residue contribution of K-L divergence was calculated by taking the sum of all the pairwise distances corresponding to that residue. This analysis was performed by in-house Python code.\n\n### Trajectory analysis\n\nPython package GetContacts is used to perform the contact calculation (Venkatakrishnan, 2019). Linear interaction energy analysis was performed to calculate the interaction energy between ligand and receptor using AMBERTools CPPTraj v18.01 (Roe and Cheatham, 2013; de Amorim et al., 2008). Trajectory visualization and figure generation are performed with VMD v1.9.3 (Humphrey et al., 1996).\n\n### Deep learning network for allosteric prediction\n\nNeural relational inference (NRI) network was implemented to predict allosteric dependence between the residues in the different parts of the receptors (Zhu et al., 2022a; Kipf et al., 2018). This network is a Variational autoencoder (VAE) comprising encoding and decoding parts (Kingma and Welling, 2013). The encoder ($q_{\u03d5}(z|x)$) takes the input C\u03b1 coordinates of protein conformations at time t ($x_{t}$) and tries to learn the interactions between two residues ($z_{ij}$) in the protein as a latent space. The decoder ($p_{\ud835\udf03}(x|z)$) network try to regenerate the protein conformation at time $t+\\tau$ ($x_{t+\\tau}$). Similar to other VAE, the learning process maximizes the evidence lower bound (ELBO) as shown in Equation 18, where $p_{\ud835\udf03}(z)$ represents the prior distribution for $z$. Here, the prior distribution is selected as default presented in the original paper, where it is represented as a categorical distribution with $K=4$ ($P_{1}=0.91$, $P_{2}=0.03$, $P_{3}=0.03$, $P_{4}=0.03$).\n\nAs shown in Equation, the ELBO consists of two terms. In the first term, further mathematical derivations can show that the first term can be represented as the reconstruction error (Equation 19), where $\\sigma^{2}$ is variance of the distribution, a user-defined parameter.\n\n$$\nL(\u03d5,\\theta)=E_{q_{\u03d5}(z|x)}[log\u2061p_{\\theta}(x|z)]\u2212KL[q_{\u03d5}(x|z)||p_{\\theta}(z)]\n$$\n\n\n\n$$\nE_{q_{\u03d5}(z|x)}[log\u2061p_{\\theta}(x|z)]=\\sumj\\sumt=2T\\frac{\u2225x_{j}^{t}\u2212\\mu_{j}^{t}\u2225^{2}}{2\\sigma^{2}}+const\n$$\n\nThe second term is also called regularization term which is the K-L divergence between estimated posterior ($q_{\u03d5}(z|x)$) and prior distribution ($p_{\ud835\udf03}(z)$) (Equation 20). As the prior distribution is a categorical distribution, the K-L divergence becomes entropy of the posterior distribution. We obtained the code for the NRI network from the GitHub implementation and kept most of hyperparameters as default for our training, except for decreasing the hidden layer size to 64 (Zhu et al., 2022b). From each unbinding simulations, 10 unbiased trajectories were selected where the ligand remain in the bound pose. Each trajectory has a length of 100 ns. In both cases, the $\\tau$ was selected to be 5 ns. The allosteric weights (posterior probability) were obtained from the validation data (2 trajectories), where training was performed with remaining eight trajectories (Figure 8\u2014figure supplement 2). This procedure was repeated three times, where training and validation data were selected randomly.\n\n$$\nKL[q_{\u03d5}(z|x)||p_{\\theta}(z)]=\\sumi\\neqjH(q_{\u03d5}(z_{ij}|x))+const\n$$\n\n### Mutual information estimation\n\nMutual information between dynamics of residue pairs was computed based on the backbone dihedral angles, as this provides a metric that is independent of the relative distances between residues. The calculations were done on same trajectory data as NRI analysis. Python package MDEntropy was used for estimating mutual information between backbone dihedral angles of two residues (Hern\u00e1ndez and Pande, 2017).\n\n### Standard binding free energy calculations\n\nTo calculate the standard binding free energy from simulation, we adopted a procedure described in Buch et al., 2011. In this procedure, a volumetric correction term is added to the PMF to calculate the final binding free energy (Equation 21). The volumetric correction term is used to predict the free energy at the standard condition (1M) as shown in Equation 22, where $V_{o}$ corresponds to the volume of a molecule should occupy at the standard condition  and $V_{u}$ is the volume of the unbounded state in the simulation box. The expression for the PMF contribution of the free energy is shown is in Equation 23, where the denominator of the equation can be represented as $\\intuexp(\u2212\\betaW(r))dr=exp(\u2212\\beta\u0394W)V_{u}$. Therefore, the final derivation of $\u0394G$ is shown in Equation 24.\n\n$$\n\u0394G=\u0394G_{pmf}+\u0394G_{V}\n$$\n\n\n\n$$\n\u0394G_{V}=\u2212k_{B}Tlog\u2061(\\frac{V_{u}}{V_{o}})\n$$\n\n\n\n$$\n\u0394G_{pmf}=\u2212k_{B}Tlog\u2061\\frac{\\intbexp(\u2212\\betaW(r))dr}{\\intuexp(\u2212\\betaW(r))dr}\n$$\n\n\n\n$$\n\u0394G=\u2212k_{B}Tlog\u2061\\frac{\\intbexp(\u2212\\betaW(r))dr}{V_{o}}\u2212\u0394W\n$$\n\nIn this work, to estimate the free energy ($\u0394G$) x, y, z component of the ligand center of mass is calculated compared to the center of mass of the alpha carbons of binding pocket residues. The three-dimensional space was discretized into $25\\times25\\times50$ bins and each bin is weighted using TRAM-calculated probability density. Depth of the pmf (\u0394W) was calculated by averaging the pmf of the 100 bins with highest pmf in the bulk. To evaluate the weighted binding volume ($\\intbexp(\u2212\\betaW(r))dr$), we selected the bins with pmf less than 1 kcal/mol.\n",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "b36c159b-9959-4739-879e-36e236c37561",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bin Zhang, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98798.3.sa0](https://doi.org/10.7554/eLife.98798.3.sa0)\n\nA combination of molecular dynamics simulation and state-of-the-art statistical post-processing techniques provided valuable insight into GPCR-ligand dynamics. This manuscript provides solid evidence for differences in the binding/unbinding of classical cannabinoid drugs from new psychoactive substances. The results could aid in mitigating the public health threat these drugs pose.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98798.3.sa1](https://doi.org/10.7554/eLife.98798.3.sa1)\n\nThis manuscript presents insights into biased signaling in GPCRs, namely cannabinoid receptors. Biased signaling is of broad interest in general, and cannabinoid signaling is particular relevant for understanding the impact of new drugs that target this receptor. Mechanistic insight from work like this could enable new approaches to mitigate the public health impact of new psychoactive drugs. Towards that end, this manuscript seeks to understand how new psychoactive substances (NPS, e.g. MDMB-FUBINACA) elicit more signaling through \u03b2-arrestin than classical cannabinoids (e.g. HU-210). The authors use an interesting combination of simulations and machine learning.\n\nThe caption for Figure 3 doesn't explain the color scheme, so its not obvious what the start and end states of the ligand are.\n\nFor the metadynamics simulations were multiple Gaussian heights/widths tried to see what, if any, impact that has on the unbinding pathway? That would be useful to help ensure all the relevant pathways were explored.\n\nIt would be nice to acknowledge previous applications of metadynamics+MSMs and (separately) TRAM, such as Simulation of spontaneous G protein activation... (Sun et al. eLife 2018) and Estimation of binding rates and affinities... (Ge and Voelz JCP 2022).\n\nWhat is KL divergence analysis between macrostates? I know KL divergence compares probability distributions, but its not clear what distributions are being compared.\n\nI suggest being more careful with the language of universality. It can be \"supported\" but \"showing\" or \"proving\" its universal would require looking at all possible chemicals in the class.\n\nComments on revisions:\n\nThe authors provided appropriate responses to the comments above.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98798.3.sa2](https://doi.org/10.7554/eLife.98798.3.sa2)\n\nSummary:\n\nThe investigation provides a computational as well as biochemical insights into the (un)binding mechanisms of a pair of psychoactive substances into cannabinoid receptors. A combination of molecular dynamics simulation and a set of state-of-the art statistical post-processing techniques were employed to exploit GPCR-ligand dynamics.\n\nStrengths:\n\nThe strength of the manuscript lies in usage and comparison of TRAM as well as Markov state modelling (MSM) for investigating ligand binding kinetics and thermodynamics. Usually MSMs have been more commonly used for this purpose. But as the authors have pointed out, implicit in the usage of MSMs lie the assumption of detailed balance, which would not hold true for many cases especially those with skewed binding affinities. In this regard, the author's usage of TRAM which harnesses both biased and unbiased simulations for extracting the same, provides a more appropriate way-out.\n\nWeaknesses:\n\n(1) While the authors have used TRAM (by citing MSM to be inadequate in these cases), the thermodynamic comparisons of both techniques provide similar values. In this case, one would wonder what advantage TRAM would hold in this particular case.\n\n(2) The initiation of unbiased simulations from previously run biased metadynamics simulations would almost surely introduce hysteresis in the analysis. The authors need to address these issues.\n\n(3) The choice of ligands in the current work seems very forced and none of the results compare directly with any experimental data. An ideal case would have been to use the seminal D.E. Shaw research paper on GPCR/ligand binding as a benchmark and then show how TRAM, using much lesser biased simulation times, would fare against the experimental kinetics or even unbiased simulated kinetics of the previous report\n\n(4) The method section of the manuscript seems to suggest all the simulations were started from a docked structure. This casts doubt on the reliability of the kinetics derived from these simulations that were spawned from docked structure, instead of any crystallographic pose. Ideally, the authors should have been more careful in choosing the ligands in this work based on the availability of the crystallographic structures.\n\n(5) The last part of using a machine learning-based approach to analyse allosteric interaction seems to be very much forced, as there are numerous distance-based more traditional precedent analyses that do a fair job of identifying an allosteric job.\n\n(6) While getting busy with the methodological details of TRAM vs MSM, the manuscript fails to share with sufficient clairty what the distinctive features of two ligand binding mechanisms are.\n\nComments on revisions:\n\nThe authors have addressed most of the queries of the reviewer in an adequate manner. However, The current code availability section just provides the link to Python files to generate the plots. It is not very useful in its current form. The code availability section should provide a proper GitHub page that shows the usage of TRAM for the readers to execute. While Pyemma has been cited for TRAM, a python note book to reproduce the TRAM would be very instructive.\n",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7db1f1df-378c-428a-ab0d-a85c34c5e0d6",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C1",
+      "claim": "New psychoactive substances (NPS) targeting human cannabinoid receptor 1 pose a significant threat to society as recreational abusive drugs that have pronounced physiological side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "New psychoactive substances (NPS) targeting human cannabinoid receptor 1 pose a significant threat to society as recreational abusive drugs that have pronounced physiological side effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that characterizes NPS as a societal threat based on their physiological effects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "8a92b8e3-6cd8-4252-8747-353444e384c1",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C2",
+      "claim": "Greater adverse effects of NPS compared to classical cannabinoids have been linked to higher downstream \u03b2-arrestin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These greater adverse effects compared to classical cannabinoids have been linked to the higher downstream \u03b2-arrestin signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior research linking adverse effects to \u03b2-arrestin signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "cffdf5d3-188d-4c93-8e2c-5bb172a46f5a",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C3",
+      "claim": "Cannabinoid receptor 1 (CB1) is majorly expressed in the central nervous system (CNS) and belongs to the class A G-protein coupled receptor (GPCR) family proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cannabinoid receptor 1 (CB1), which is majorly expressed in the central nervous system (CNS) belongs to the class A G-protein coupled receptor (GPCR) family proteins (Hua et al., 2016; Mackie, 2008; Zou and Kumar, 2018; Dutta and Shukla, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "4657a350-1e90-4aab-bd11-e20017bd3b25",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C4",
+      "claim": "GPCRs are expressed in the cellular membrane and help transduce chemical signals from the extracellular to the intracellular direction with the help of downstream signaling proteins (G-proteins and \u03b2-arrestin).",
+      "claim_type": "EXPLICIT",
+      "source": "GPCRs are expressed in the cellular membrane and help transduce chemical signals from the extracellular to the intracellular direction with the help of the downstream signaling proteins (G-proteins and \u03b2-arrestin) (Rosenbaum et al., 2009; Latorraca et al., 2017; Weis and Kobilka, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes GPCR function and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "d2b1ab43-397d-47b1-8431-cf3347c162bd",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C5",
+      "claim": "GPCRs are the largest family of drug targets due to their substantial involvement in human pathophysiology and druggability.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, GPCRs are the largest family of drug targets due to their substantial involvement in human pathophysiology and druggability (Hauser et al., 2017; Yang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "87a8b59f-a79b-4983-aff9-50fdb663e596",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C7",
+      "claim": "HU-210 is a Schedule I controlled substance in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "One such example of a synthetic cannabinoid is 1,1-Dimethylheptyl-11-hydroxy-tetrahydrocannabinol (commonly known as HU-210), which is a Schedule I controlled substance in the United States (Farinha-Ferreira et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "6927c4b7-de2d-4bd1-b38d-fededdc5dfda",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C8",
+      "claim": "NPS synthetic cannabinoids consist of four pharmacophore components: linked, linker, core, and tail groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular structures of NPS synthetic cannabinoids consist of four pharmacophore components: linked, linker, core, and tail groups (Worob and Wenthur, 2020; Potts et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural description is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "c02c4a2e-9693-4bc6-8461-9fb2b5156234",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C9",
+      "claim": "The core of NPS synthetic cannabinoids usually consists of aromatic scaffolds such as indole, indazole, carbazole, and benzimidazole.",
+      "claim_type": "EXPLICIT",
+      "source": "The core usually consists of aromatic scaffolds (e.g. indole, indazole, carbazole, benzimidazole) (Figure 1\u2014figure supplement 2; Schoeder et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "fcc8d600-9682-4eee-a498-d8e2938afd69",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C10",
+      "claim": "Use of NPS synthetic cannabinoids has been found to cause more physiological side effects than traditional cannabinergic 'tetrad' side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of NPS synthetic cannabinoids has been found to cause more physiological side effects than traditional cannabinergic 'tetrad' side effects (Tai and Fantegrossi, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "79a81700-1297-420f-b1e9-53c8e052cd47",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C11",
+      "claim": "NPS side effects include tachycardia, drowsiness, dizziness, hypertension, seizures, convulsions, nausea, high blood pressure, and chest pain.",
+      "claim_type": "EXPLICIT",
+      "source": "These side effects include tachycardia, drowsiness, dizziness, hypertension, seizures, convulsions, nausea, high blood pressure, and chest pain (Tai and Fantegrossi, 2014; Finlay et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This list of side effects is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "70be6d28-576d-4559-b5bf-e2376a3bc5c6",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C12",
+      "claim": "High concentrations of AMB-FUBINACA induced tremors.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Gatch and Forster have shown that the high concentrations of AMB-FUBINACA, the molecule which caused 'zombie outbreak' in New York, induced tremors (Gatch and Forster, 2019; Adams et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specific finding is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "faab99db-68b4-4339-8a7b-60fe51a38f09",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C13",
+      "claim": "A recent biochemical study has linked discriminatory effects of NPS with differential signaling of \u03b2-arrestin.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent biochemical study has linked these discriminatory effects with the differential signaling of \u03b2-arrestin (Finlay et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references a specific study linking effects to \u03b2-arrestin signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "776e80ff-5289-4109-b939-297a11ff71f2",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C14",
+      "claim": "NPS shows higher \u03b2-arrestin signaling compared to classical cannabinoids.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Finlay et al., NPS shows higher \u03b2-arrestin signaling compared to the classical cannabinoids, which has also been confirmed by other \u03b2-arrestin signaling studies (Finlay et al., 2019; Grafinger et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "deaf6a9b-c3ed-42f0-bff4-c344510860cb",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C15",
+      "claim": "Mutagenesis studies have shown that the conserved NPxxY motif of CB1 has a larger role in downstream \u03b2-arrestin signaling than G-protein signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis studies have shown that the conserved NPxxY motif of CB1 have a larger role in downstream \u03b2-arrestin signaling than G-protein signaling (Leo et al., 2023; Liao et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "457bdad2-338d-4f57-9e08-d9aa8cccfa4e",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C16",
+      "claim": "Recently published MDMB-FUBINACA bound CB1-\u03b2-arrestin-1 complex structure points out the importance of the unique triad interaction (Y3977.53-Y2945.58-T2103.46) involving NPxxY motif in \u03b2-arrestin-1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently published MDMB-FUBINACA bound CB1-\u03b2-arrestin-1 complex structure also points out the importance of the unique triad interaction (Y3977.53-Y2945.58-T2103.46) involving NPxxY motif in \u03b2-arrestin-1 signaling (Liao et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references a recently published structure and is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "703961b5-c718-4292-b9af-3b4f44276f3b",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C17",
+      "claim": "Structural comparison of classical cannabinoid (AM841) and NPS (MDMB-FUBINACA) bound active CB1-Gi complex shows a conformationally similar NPxxY motif.",
+      "claim_type": "EXPLICIT",
+      "source": "However, structural comparison of the classical cannabinoid (AM841) and NPS (MDMB-FUBINACA) bound active CB1-Gi complex shows a conformationally similar NPxxY motif (Figure 2; Krishna Kumar et al., 2019; Hua et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by citations and reference to Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "8745bc5f-93f4-4b58-8ab2-a23be684450d",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C18",
+      "claim": "Higher \u03b2-arrestin signaling stems from higher dynamic propensity of triad interaction formation for NPS-bound CB1.",
+      "claim_type": "IMPLICIT",
+      "source": "In light of these experimental observations, it can be inferred that higher \u03b2-arrestin signaling stems from higher dynamic propensity of triad interaction formation for NPS-bound CB1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "019cf345-bde1-4420-97e0-3cca193a9e72",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C19",
+      "claim": "Distinct orthosteric pocket interactions for NPS and classical cannabinoids cause differential allosteric modulation of intracellular dynamics that facilitate triad interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that distinct orthosteric pocket interactions for NPS and classical cannabinoids cause differential allosteric modulation of intracellular dynamics that facilitate triad interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the stated hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "d6ccb87e-9c2e-45ad-80e6-0044b5d2bc1d",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C20",
+      "claim": "MDMB-FUBINACA has a Ki of 1.14 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "These ligands binds to CB1 receptor with nanomolar affinities (MDMB-FUBINACA Ki: 1.14 nM; Gamage et al., 2018; HU-210 Ki: 0.61 nM Pertwee et al., 2010; Stern and Lambert, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This binding affinity value is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "2e2ff68a-d1a6-4c9d-b55e-a08a481041d8",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C21",
+      "claim": "HU-210 has a Ki of 0.61 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "These ligands binds to CB1 receptor with nanomolar affinities (MDMB-FUBINACA Ki: 1.14 nM; Gamage et al., 2018; HU-210 Ki: 0.61 nM Pertwee et al., 2010; Stern and Lambert, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This binding affinity value is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "e033720c-afe3-4258-a74e-4f8b1d818ce7",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C22",
+      "claim": "Two replicas of well-tempered metadynamics were performed to capture the unbinding pathways of MDMB-FUBINACA and HU-210.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, two replicas of well-tempered metadynamics were performed to capture the unbinding pathways of MDMB-FUBINACA and HU-210 from the ligand-bound receptors, whose starting structures were obtained from a cryo-EM complex (PDB ID: 6N4B Krishna Kumar et al., 2019) and docking, respectively (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "a95be076-2421-456f-b1cd-84c4340ce26d",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C23",
+      "claim": "Ligands follow a similar pathway for each replica in metadynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The z-component distance was plotted against the RMSD of the ligands from the bound pose, which indicates that ligands follow a similar pathway for each replica (Figure 3\u2014figure supplement 2A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "1ae48d95-02d0-4623-bc5b-2d4d9c96e9e7",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C24",
+      "claim": "Dissociation happens via the opening formed by TM2, TM3, ECL2, and N-terminus for both ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "It is observed that the dissociation happens via the opening formed by TM2, TM3, ECL2, and N-terminus for both ligands (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "c890ae90-052b-453e-bac9-7cf28e3f82be",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C25",
+      "claim": "MSM and TRAM predictions of standard binding free energy are within 0.6 kcal/mol of each other for each ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAM and MSM predictions of standard binding free energy are within 0.6 kcal/mol of each other for each ligand (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "b8f8a7c6-ae51-4d73-be69-92054fdea36c",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C26",
+      "claim": "The relative estimated free energy (\u0394\u0394G) values are within 0.6 kcal/mol of the experimentally determined values.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the absolute binding free energy differs from the experimentally predicted value by approximately 3 kcal/mol, the relative estimated free energy (\u0394\u0394G) values are also within 0.6 kcal/mol of the experimentally determined values (Figure 4\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison to experimental values is supported by data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "de9819b5-9747-4358-a488-82d362cf7606",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C27",
+      "claim": "Estimated binding times using TRAM and MSM match perfectly for both ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated binding times using TRAM and MSM match perfectly for both ligands (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "526e5257-a3a8-4b6a-9b77-c94ea740eb7a",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C28",
+      "claim": "The estimated dissociation times are within one order of magnitude with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated dissociation times are within one order of magnitude with each other (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "288689f8-40e1-417a-a47b-7880e3f71b62",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C29",
+      "claim": "With only 25% of original unbiased data, TRAM can predict the kinetics within an order magnitude of the kinetics estimated with full dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "It is observed that even with only 25% of original, unbiased data, TRAM can predict the kinetics within an order magnitude of the kinetics estimated with full dataset (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "2751f2fc-5290-40b3-b181-eebb04f38045",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C30",
+      "claim": "Error in MSM predicted kinetics increases more rapidly compared to TRAM with lesser amount of unbiased data.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, error in MSM predicted kinetics more rapidly compared to TRAM with lesser amount of unbiased data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is based on the data analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "3442918d-6d73-4fc0-9685-8f44e44be70f",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C31",
+      "claim": "TRAM provides better predictions of thermodynamics and kinetics when less amount of unbiased data.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, TRAM provides better predictions of thermodynamics and kinetics when less amount of unbiased data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the comparative analysis of TRAM and MSM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "8c782c0f-9a7e-4688-9905-a4a7c174d93f",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C32",
+      "claim": "In the bound pose of MDMB-FUBINACA, major interactions form between aromatic (F1702.57, W2795.43, F268ECL2) and hydrophobic (L1933.29) residues of the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bound pose, the major interactions form between the aromatic (F1702.57, W2795.43, F268ECL2) and hydrophobic (L1933.29) residues of the binding pocket (Figure 6A and B, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "5bb53b6c-abbc-4cba-b570-d0a8a016d1fe",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C33",
+      "claim": "For MDMB-FUBINACA, the aromatic tail part moves away from TM5 and forms interactions with aromatic residues in TM2 (F1702.57 and F1742.61) in one unbinding pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the pathways, aromatic tail part of MDMB-FUBINACA moves away from TM5 and forms interactions with aromatic residues in TM2 (F1702.57 and F1742.61) (Figures 5A and 6A, B, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "3bfe6d3b-6c28-4dbc-8f54-924a85c199b1",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C34",
+      "claim": "The transition from bound pose to I1 has a timescale of 20.6\u00b12.3 \u03bcs for MDMB-FUBINACA.",
+      "claim_type": "EXPLICIT",
+      "source": "MFPT calculations show that both the timescales are similar with slightly higher timescales for the bound pose compared to I1 transition (20.6\u00b12.3 \u03bcs) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This timescale is calculated from MFPT analysis and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "e0fc611d-7d09-408e-b092-be327ab396c2",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C35",
+      "claim": "The transition from I1 to I3 (33.7\u00b13.1 \u03bcs) is much slower compared to reverse transition (0.8\u00b10.0 \u03bcs) for MDMB-FUBINACA.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetically, the transition from I1 to I3 (33.7\u00b13.1 \u03bcs) is much slower compared to reverse transition (0.8\u00b10.0 \u03bcs), validating the higher stability of the I1 compared to I3 macrostate (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These timescales are calculated from MFPT analysis and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "d3408539-bb7b-40e1-98cf-e482c9484a8f",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C36",
+      "claim": "Breaking the aromatic interactions for complete dissociation of MDMB-FUBINACA requires \u223c371.9\u00b140.2 \u03bcs, making it the slowest step in this pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the TPT analysis, breaking the aromatic interactions for complete dissociation of MDMB-FUBINACA requires \u223c371.9\u00b140.2 \u03bcs, making it the slowest step in this pathway (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This timescale is calculated from TPT analysis and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "4187f991-640b-419b-b944-2f3ab94b0c68",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C37",
+      "claim": "Classical cannabinoid HU-210 shows higher interactions with TM7 residues (S3837.39, F3797.35) compared to MDMB-FUBINACA.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the bound macrostate interactions of MDMB-FUBINACA, classical cannabinoid HU-210 shows higher interactions with TM7 residues (S3837.39, F3797.35) (Figures 6A and 7A, Figure 6\u2014figure supplement 1B and Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "eec68a8a-4f6b-463e-b23b-e459ae165e6d",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C38",
+      "claim": "Experimentally determined structures of classical cannabinoid bound CB1 have pointed out conserved polar interactions of the hydroxyl group at C-1 position with S3837.39.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experimentally determined structures of classical cannabinoid bound CB1 have pointed out these conserved polar interactions of the hydroxyl group at C-1 position with S3837.39 (Hua et al., 2020; Hua et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to experimental structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "b397d947-332f-413d-99cd-a8d970c51fc5",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C39",
+      "claim": "Although MDMB-FUBINACA also maintains polar interaction with carboxylic oxygen, the interaction energy for HU-210 is much higher.",
+      "claim_type": "EXPLICIT",
+      "source": "Although MDMB-FUBINACA also maintain this polar interaction with carboxylic oxygen, the interaction energy for the HU-210 is much higher, depicting the importance of this conserved residue in stabilizing classical cannabinoids (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "bc30078e-3f74-47ab-9019-2cca3e5c0fa9",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C40",
+      "claim": "Alanine mutation of S3837.39 has been shown to decrease the ligand affinity and downstream efficacy of classical cannabinoids by orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine mutation of S3837.39 have shown to decrease the ligand affinity and downstream efficacy of classical cannabinoids by orders of magnitude, while having minimal effect on WIN-55,212\u20132, which have carboxylic oxygen in the linked part as MDMB-FUBINACA (Kapur et al., 2007; Sitkoff et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "c2215461-cd29-4fc1-b46a-6ebab224ff02",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C41",
+      "claim": "In the I1 macrostate of HU-210, the hydroxyl group at C-11 forms a major polar interaction with H1782.65.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-ligand interaction analysis in the macrostate representing this region (I1) shows that hydroxyl group at C-11 forms a major polar interaction with H1782.65 (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "a4697bdf-608c-4158-a2f7-3eda22c22d5d",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C42",
+      "claim": "For HU-210, breaking of polar interaction with S3837.39 and hydrophobic interaction with F1702.57 leads to larger kinetic barrier of approximately 39.5\u00b11.4 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "Major interactions that break when the ligand moves out of the binding pose to macrostate I2 is the polar interaction with S3837.39 and hydrophobic interaction with aromatic F1702.57 (Figure 7A and B, Figure 7\u2014figure supplement 1C). Breaking of these bonds leads to larger kinetic barrier of approximately 39.5\u00b11.4 \u03bcs (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This timescale is calculated from analysis and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "bdd6709a-155c-41b6-9768-aa0bd0daf191",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C43",
+      "claim": "From both I2 and I3 macrostates, HU-210 can dissociate from the pocket with mean free passage time in the millisecond timescale, which is one order of magnitude higher compared to MDMB-FUBINACA unbinding.",
+      "claim_type": "EXPLICIT",
+      "source": "From both I2 and I3 macrostates, the ligand can dissociate from the pocket and mean free passage time for these transitions appear to be in the millisecond timescale, which is one order of magnitude higher compared to the MDMB-FUBINACA unbinding (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "30f90af1-d75b-4e9b-9922-bf33d5fa5d5a",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C44",
+      "claim": "Larger mean distance between carbonyl oxygen of NPS molecules' linker group and S3837.39 compared to equivalent distance of hydroxyl group of classical cannabinoids' benzopyran ring supports the universality of weaker interaction between TM7 and NPS molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Average distance of carbonyl oxygen of NPS molecules' linker group from S3837.39 is compared to equivalent distance of hydroxyl group of classical cannabinoids' benzopyran ring. Larger mean distance in case of all NPS-bound CB1 supports the universality of the weaker interaction between TM7 and NPS molecules (Figure 8\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "18f55901-baf5-4fbe-99d3-c56ca2dbf35b",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C45",
+      "claim": "Each binding pocket residue in MDMB-FUBINACA bound ensemble shows higher allosteric weights with the NPxxY motif compared to HU-210, indicating larger dynamic interactions between the NPxxY motif and binding pocket residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Results show that each binding pocket residue in MDMB-FUBINACA bound ensemble shows higher allosteric weights with the NPxxY motif, indicating larger dynamic interactions between the NPxxY motif and binding pocket residues (Figure 8\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data from NRI analysis shown in Figure 8\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "99d4f716-fbef-45cb-a8ba-faa815f2bdb0",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C46",
+      "claim": "Mutual information analysis reaffirms that allosteric weights between binding pocket and NPxxY motif residues are higher for the MDMB-FUBINACA bound ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "To further validate our observations, we estimated allosteric weights between the binding pocket and the NPxxY motif by calculating mutual information between residue movements. Mutual information analysis reaffirms that allosteric weights between these residues are indeed higher for the MDMB-FUBINACA bound ensemble (Figure 8\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validation is supported by mutual information analysis shown in Figure 8\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "398438a9-e6cc-4265-bf8e-c80b4a6b5246",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C47",
+      "claim": "TRAM weighted probability calculation showed that MDMB-FUBINACA bound CB1 has the higher probability of triad formation compared to HU-210.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAM weighted probability calculation showed that MDMB-FUBINACA bound CB1 has the higher probability of triad formation (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "dbf30e18-141d-4d46-9d08-f008a347cdab",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C48",
+      "claim": "Interaction between Y3977.53-T2103.46 is relatively more stable in case of MDMB-FUBINACA bound CB1, while other two interactions have similar behavior for both systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the pairwise interaction of the triad residues shows that interaction between Y3977.53-T2103.46 is relatively more stable in case of MDMB-FUBINACA bound CB1, while other two interactions have similar behavior for both systems (Figure 8\u2014figure supplement 5A, B, and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is supported by data shown in Figure 8\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "589543eb-564c-4ab4-9e3a-1adc119e1727",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C49",
+      "claim": "Higher interaction between Y3977.53 and T2103.46 in MDMB-FUBINACA bound receptor causes the triad interaction to be more probable.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, higher interaction between Y3977.53 and T2103.46 in MDMB-FUBINACA bound receptor causes the triad interaction to be more probable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the pairwise interaction analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "1a643562-9db0-4e15-a7be-e9c75e430f15",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C52",
+      "claim": "Well-tempered metadynamics simulations were able to find similar pathways via the opening formed by TM2, TM3, N-terminus, and ECL2 which matches with previous metadynamics binding simulations for cannabinoid receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations were able to find similar pathways via the opening formed by TM2, TM3, N-terminus, and ECL2 which matches with previous metadynamics binding simulations for cannabinoid receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is compared to previous simulation studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "808ee7a2-52ee-4380-8996-09892be466c1",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C53",
+      "claim": "The pathway may be the minimum free energy pathway for the ligand unbinding in CB1.",
+      "claim_type": "IMPLICIT",
+      "source": "These observations indicate that the pathway may be the minimum free energy pathway for the ligand unbinding in CB1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that ligands follow similar pathways in multiple simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "43293300-2942-43e1-9a96-6e520e943aac",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C54",
+      "claim": "Aromatic residues in the pocket (F2688ECL2, F1702.57) form major interactions with both HU-210 and MDMB-FUBINACA.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, aromatic residues in the pocket (F2688ECL2, F1702.57) form major interactions with both HU-210 and MDMB-FUBINACA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on the interaction analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "d452688b-2147-4319-92e9-8f1837c4c303",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C55",
+      "claim": "Major differences in protein-ligand interactions were observed in TM7, with stronger interactions for classical cannabinoid HU-210 with TM7, especially polar interaction with S3837.39 and hydrophobic interaction with F3797.35 compared to MDMB-FUBINACA.",
+      "claim_type": "EXPLICIT",
+      "source": "Major differences in protein-ligand interactions were observed in TM7. Stronger interactions were observed for the classical cannabinoid HU-210 with TM7, especially polar interaction with S3837.39 and hydrophobic interaction with F3797.35 compared to MDMB-FUBINACA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on the interaction analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "26d7620c-00db-4a1b-9e27-1b1b7ff2baab",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C56",
+      "claim": "This interaction pattern was consistent across other NPS and classical cannabinoids, indicating a universal difference in how these two groups of compounds interact with TM7.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction pattern was consistent across other NPS and classical cannabinoids, indicating a universal difference in how these two groups of compounds interact with TM7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the analysis of multiple NPS and classical cannabinoid simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "bedc7a5f-c7c6-4048-88bb-ceb7578be6bb",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C57",
+      "claim": "Higher allosteric weights from the binding pocket residues to the NPxxY motif region for MDMB-FUBINACA bound CB1 increases the probability of triad interaction formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic allostery measured by the posterior probability of VAE shows that higher allosteric weights from the binding pocket residues to the NPxxY motif region for MDMB-FUBINACA bound CB1 increases the probability of triad interaction formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the NRI analysis and triad formation probability data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "10f8a696-6f50-4a3c-a2f3-70129a7599c3",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C59",
+      "claim": "Missing residues in ICL3 (21 residues, 314\u2013334) and ECL2 (6 residues, 258\u2013263) were modeled sequentially using Remodel protocol of Rosetta loop modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Missing residues in ICL3 (21 residues, 314\u2013334) and ECL2 (6 residues, 258\u2013263) were modeled sequentially using Remodel protocol of Rosetta loop modeling (Stein and Kortemme, 2013; Alford et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "26c79f75-56ca-493b-bcde-b5212005abc2",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C60",
+      "claim": "The closest 20 residues of N-terminus were modeled as membrane proximal regions of the N-terminus were shown to be important for CB1 signaling by allosterically modulating ligand affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the closest 20 residues were modeled as membrane proximal regions of the N-terminus were shown to be important for CB1 signaling by allosterically modulating ligand affinity (Fay and Farrens, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This modeling decision is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "7da42a5b-6309-427a-b56b-22520d365bd6",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C62",
+      "claim": "An average brain membrane composition of asymmetric complex membrane was selected for the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As CB1 is majorly expressed in central nervous system, an average brain membrane composition of asymmetric complex membrane was selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "e057f7e4-f33b-4c54-b8b5-7c6592b43db3",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C63",
+      "claim": "The membrane composition was obtained from Ing\u00f3lfsson et al. and proportionally downsized according to the system.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane composition was obtained from Ing\u00f3lfsson et al. and proportionally downsized according to our system (Table 1; Ing\u00f3lfsson et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the membrane composition used and is supported by a citation and table.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "afe06c81-2b8f-4ef2-a0b8-2d9c0f8afe2f",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C64",
+      "claim": "CHARMM36m force field was used to parameterize the protein, lipid, water, and ions.",
+      "claim_type": "EXPLICIT",
+      "source": "CHARMM36m force field was used to parameterize the protein, lipid, water, and ions (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the force field used and is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "b19e01b8-c2b1-4b6d-8000-7c2444359c66",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "claim_id": "C65",
+      "claim": "The docked bound pose of HU-210 was selected based on best overall structure to the experimentally determined crystal structure of another bound classical cannabinoid (Ligand: AM841, PDB:6KPG).",
+      "claim_type": "EXPLICIT",
+      "source": "The docked bound pose was selected based on best overall structure of HU-210 to the experimentally determined crystal structure of another bound classical cannabinoid (Ligand: AM841, PDB:6KPG Hua et al., 2020; Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the docking procedure and is supported by a citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NPS targeting CB1 cause more severe physiological side effects than classical cannabinoids, which have been linked to higher \u03b2-arrestin signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C10-C14 collectively establish that NPS cause more severe side effects than classical cannabinoids and that these effects are associated with higher \u03b2-arrestin signaling. These claims are supported by multiple citations to prior experimental work (Finlay et al., 2019; Grafinger et al., 2021; Tai and Fantegrossi, 2014), providing a well-established foundation from the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "5df0438e-ce58-4e15-992b-9c6021827e1f",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors hypothesize that differential \u03b2-arrestin signaling between NPS and classical cannabinoids stems from distinct orthosteric pocket interactions causing differential allosteric modulation of the NPxxY motif, particularly affecting triad interaction formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 establish the study's central hypothesis. C15-C16 cite mutagenesis and structural studies showing the NPxxY motif's importance in \u03b2-arrestin signaling. C17 shows similar NPxxY conformations in active states for both ligand types, leading to the inference (C18) and hypothesis (C19) that dynamic propensity differences drive signaling differences. The hypothesis is well-grounded in prior experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "4f752d32-70c7-4022-9392-f875d07d770a",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Well-tempered metadynamics simulations identified similar unbinding pathways for both MDMB-FUBINACA and HU-210 via an opening formed by TM2, TM3, ECL2, and N-terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C52-C53 describe metadynamics results showing consistent unbinding pathways across replicas and ligands. The pathway matches previous cannabinoid receptor simulations (C52), and multiple metadynamics runs with different parameters confirmed the same pathway (referenced in Figure 3\u2014figure supplement 3), supporting that this may be the minimum free energy pathway (C53).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TRAM and MSM provide comparable thermodynamic predictions, but TRAM provides more robust kinetic predictions with limited unbiased data compared to MSM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 demonstrate that TRAM and MSM converge to similar thermodynamic predictions (within 0.6 kcal/mol for binding free energy and \u0394\u0394G), and similar binding time estimates. However, TRAM maintains accuracy with only 25% of unbiased data (C29), while MSM error increases more rapidly with less data (C30). This is supported by data in Figures 4A-D and demonstrates TRAM's advantage for high-affinity ligands.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "5d5d97dc-25b9-4820-a139-63c9072ed3de",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MDMB-FUBINACA exhibits a unique unbinding mechanism involving aromatic tail reorientation to form a metastable intermediate state (I1) with interactions with TM2 aromatic residues, with the slowest step being complete dissociation (~372 \u03bcs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 describe the MDMB-FUBINACA unbinding mechanism with specific interaction details and timescales from MFPT and TPT analyses. The observations are supported by data in Figures 5A, 6A-B, and supplementary figures. The timescales are reported with error estimates from bootstrapping, and the metastable I1 state is unique to the aromatic tail of FUBINACA-family NPS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HU-210 shows stronger interactions with TM7 residues (particularly S383^7.39) compared to MDMB-FUBINACA, with dissociation timescales in the millisecond range, one order of magnitude slower than MDMB-FUBINACA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 establish key differences in HU-210 binding and unbinding. The stronger TM7 interactions are supported by interaction analysis (Figures 6A, 7A-B) and validated by prior experimental structures (C38) and mutagenesis studies (C40). The millisecond dissociation timescale (C43) is consistent with HU-210's higher binding affinity (Ki = 0.61 nM vs 1.14 nM for MDMB-FUBINACA).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "4b4e004a-0aaf-4abd-94a2-64aac05f43ce",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The differential TM7 interactions between NPS and classical cannabinoids are universal across multiple ligands, with classical cannabinoids showing consistently stronger polar interactions with S383^7.39.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C54-C56 extend the findings to multiple NPS (AMB-FUBINACA, 5F-AMP, CUMYL-FUBINACA) and classical cannabinoids (AMG-41, JWH-133, O-1317). The larger mean distance between NPS linker oxygen and S383^7.39 compared to classical cannabinoid hydroxyl groups (Figure 8\u2014figure supplement 1B) supports the universality of weaker TM7 interactions for NPS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "399c5205-030c-4730-af6a-730db2fba770",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NRI analysis reveals that MDMB-FUBINACA-bound CB1 exhibits higher allosteric weights between binding pocket residues and the NPxxY motif compared to HU-210, validated by mutual information analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 present NRI network results showing higher allosteric weights for MDMB-FUBINACA (Figure 8\u2014figure supplement 3), which is independently validated by mutual information analysis (Figure 8\u2014figure supplement 4). C57 connects this to increased triad formation probability. The use of two independent methods (NRI and mutual information) strengthens the conclusion about differential allosteric communication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "000f99a0-4047-487f-a94b-7f0b2e1863cf",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MDMB-FUBINACA-bound CB1 shows higher probability of triad interaction formation compared to HU-210, driven primarily by more stable Y397^7.53-T210^3.46 interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 demonstrate the key functional outcome: higher triad formation probability for MDMB-FUBINACA (Figure 8A). The pairwise interaction analysis (C48, Figure 8\u2014figure supplement 5) identifies the specific Y397^7.53-T210^3.46 interaction as the driver. This directly connects the differential binding pocket interactions to the proposed mechanism for enhanced \u03b2-arrestin signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "b5aad6a5-e7ad-465e-9464-951f7be63fd9",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background information on CB1 receptor, GPCRs, and NPS molecular structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C7-C9 provide well-established background information about CB1, GPCRs, and NPS structure, all supported by appropriate citations to the literature. These are factual statements establishing context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "2eafc36d-2717-464d-babc-d7b638e03c34",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MDMB-FUBINACA and HU-210 bind CB1 with nanomolar affinities (Ki = 1.14 nM and 0.61 nM, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 report experimentally determined binding affinities from the literature (Gamage et al., 2018; Pertwee et al., 2010; Stern and Lambert, 2007). These values establish that both ligands are high-affinity binders, justifying the computational approach used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "3ace6835-6039-4dfd-a37d-3ec18f2545ca",
+      "content_id": "1e511eb8-7d60-42c1-9057-5b7befb064ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "System preparation methods including loop modeling, membrane composition selection, force field parameterization, and ligand docking procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 and C62-C65 describe computational methods for system preparation. The approaches are standard and appropriately cited (Rosetta loop modeling, CHARMM-GUI, CHARMM36m force field, brain membrane composition). The modeling decisions are justified by prior experimental work (C60) and structural comparisons (C65).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "8c5917f8-1d25-4f73-9d98-6b1cb6f41fe9",
+      "content_id": "b36c159b-9959-4739-879e-36e236c37561",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors used well-tempered metadynamics simulations with two replicas to capture unbinding pathways of MDMB-FUBINACA and HU-210. They found that ligands follow similar pathways in each replica, with dissociation occurring via an opening formed by TM2, TM3, ECL2, and N-terminus for both ligands, matching previous metadynamics studies on cannabinoid receptors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raised concerns about metadynamics parameters, asking 'were multiple Gaussian heights/widths tried to see what, if any, impact that has on the unbinding pathway? That would be useful to help ensure all the relevant pathways were explored.' This suggests uncertainty about whether the simulations adequately sampled all relevant pathways. The authors' response indicated they addressed this, but the initial concern reflects methodological uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204",
+      "content_id": "b36c159b-9959-4739-879e-36e236c37561",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors compared TRAM and MSM predictions for binding thermodynamics and kinetics. They found that TRAM and MSM predictions of standard binding free energy are within 0.6 kcal/mol of each other, relative free energies match experimental values within 0.6 kcal/mol, and TRAM provides better predictions with less unbiased data compared to MSM.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 initially questioned 'what advantage TRAM would hold' given similar thermodynamic values between methods, but after revision noted 'the authors have addressed most of the queries of the reviewer in an adequate manner.' Reviewer 2 also 'provided appropriate responses' after revision. The methodological comparison is accepted as valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "5ae25ad4-48e0-4b83-9371-08ee61db1434",
+      "content_id": "b36c159b-9959-4739-879e-36e236c37561",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors characterized distinct binding pocket interactions for MDMB-FUBINACA versus HU-210. They found that HU-210 shows stronger interactions with TM7 residues (especially S383^7.39 and F379^7.35) compared to MDMB-FUBINACA, with this pattern consistent across other NPS and classical cannabinoids. The unbinding kinetics differ by an order of magnitude, with HU-210 dissociation occurring in millisecond timescale versus microsecond for MDMB-FUBINACA.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accepted these findings. Reviewer 1 stated the manuscript 'provides solid evidence for differences in the binding/unbinding of classical cannabinoid drugs from new psychoactive substances.' Reviewer 2 noted the authors 'provided appropriate responses' and Reviewer 3 confirmed 'the authors have addressed most of the queries.' The interaction patterns and kinetic differences are treated as established results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "1b90c531-548f-44db-9f07-38843e48663f",
+      "content_id": "b36c159b-9959-4739-879e-36e236c37561",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors demonstrated that MDMB-FUBINACA bound CB1 shows higher allosteric coupling between the binding pocket and NPxxY motif compared to HU-210, leading to higher probability of triad interaction formation (Y397^7.53-Y294^5.58-T210^3.46). This was validated using both NRI analysis and mutual information calculations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 initially criticized that 'the last part of using a machine learning-based approach to analyse allosteric interaction seems to be very much forced, as there are numerous distance-based more traditional precedent analyses that do a fair job.' While the authors addressed this concern and Reviewer 3 acknowledged adequate responses, the initial skepticism about the necessity and appropriateness of the ML approach suggests some uncertainty about this analytical choice.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "5c668df0-3f8d-4929-9fa5-8fc511b5b382",
+      "content_id": "b36c159b-9959-4739-879e-36e236c37561",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors described their system preparation methods, including modeling of missing residues using Rosetta, selection of brain membrane composition, use of CHARMM36m force field, and docking of HU-210 based on comparison to experimentally determined structures.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 raised significant concerns about starting simulations from docked structures: 'The method section of the manuscript seems to suggest all the simulations were started from a docked structure. This casts doubt on the reliability of the kinetics derived from these simulations that were spawned from docked structure, instead of any crystallographic pose.' While the authors addressed this and Reviewer 3 accepted the response, the initial concern about reliability of kinetics from docked poses indicates methodological uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "6765f1e0-bf63-4dee-9906-195821c902e9",
+      "content_id": "b36c159b-9959-4739-879e-36e236c37561",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors provide background context on NPS as societal threats with greater adverse effects linked to higher \u03b2-arrestin signaling compared to classical cannabinoids, and present their hypothesis that distinct orthosteric pocket interactions cause differential allosteric modulation of intracellular dynamics facilitating triad interaction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted this background and hypothesis framework. Reviewer 1 noted the work 'could aid in mitigating the public health threat these drugs pose' and Reviewer 2 stated the manuscript 'seeks to understand how new psychoactive substances...elicit more signaling through \u03b2-arrestin than classical cannabinoids' without challenging the premise. The hypothesis is treated as reasonable motivation for the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468",
+      "content_id": "b36c159b-9959-4739-879e-36e236c37561",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors provide standard background information on CB1 receptor biology, GPCR function, cannabinoid structures, and binding affinities from the literature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are citation-based and were not questioned by any reviewer. They serve as accepted context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7db1f1df-378c-428a-ab0d-a85c34c5e0d6",
+      "result_id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031"
+    },
+    {
+      "claim_id": "8a92b8e3-6cd8-4252-8747-353444e384c1",
+      "result_id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031"
+    },
+    {
+      "claim_id": "fcc8d600-9682-4eee-a498-d8e2938afd69",
+      "result_id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031"
+    },
+    {
+      "claim_id": "79a81700-1297-420f-b1e9-53c8e052cd47",
+      "result_id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031"
+    },
+    {
+      "claim_id": "70be6d28-576d-4559-b5bf-e2376a3bc5c6",
+      "result_id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031"
+    },
+    {
+      "claim_id": "faab99db-68b4-4339-8a7b-60fe51a38f09",
+      "result_id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031"
+    },
+    {
+      "claim_id": "776e80ff-5289-4109-b939-297a11ff71f2",
+      "result_id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031"
+    },
+    {
+      "claim_id": "deaf6a9b-c3ed-42f0-bff4-c344510860cb",
+      "result_id": "5df0438e-ce58-4e15-992b-9c6021827e1f"
+    },
+    {
+      "claim_id": "457bdad2-338d-4f57-9e08-d9aa8cccfa4e",
+      "result_id": "5df0438e-ce58-4e15-992b-9c6021827e1f"
+    },
+    {
+      "claim_id": "703961b5-c718-4292-b9af-3b4f44276f3b",
+      "result_id": "5df0438e-ce58-4e15-992b-9c6021827e1f"
+    },
+    {
+      "claim_id": "8745bc5f-93f4-4b58-8ab2-a23be684450d",
+      "result_id": "5df0438e-ce58-4e15-992b-9c6021827e1f"
+    },
+    {
+      "claim_id": "019cf345-bde1-4420-97e0-3cca193a9e72",
+      "result_id": "5df0438e-ce58-4e15-992b-9c6021827e1f"
+    },
+    {
+      "claim_id": "e033720c-afe3-4258-a74e-4f8b1d818ce7",
+      "result_id": "4f752d32-70c7-4022-9392-f875d07d770a"
+    },
+    {
+      "claim_id": "a95be076-2421-456f-b1cd-84c4340ce26d",
+      "result_id": "4f752d32-70c7-4022-9392-f875d07d770a"
+    },
+    {
+      "claim_id": "1ae48d95-02d0-4623-bc5b-2d4d9c96e9e7",
+      "result_id": "4f752d32-70c7-4022-9392-f875d07d770a"
+    },
+    {
+      "claim_id": "1a643562-9db0-4e15-a7be-e9c75e430f15",
+      "result_id": "4f752d32-70c7-4022-9392-f875d07d770a"
+    },
+    {
+      "claim_id": "808ee7a2-52ee-4380-8996-09892be466c1",
+      "result_id": "4f752d32-70c7-4022-9392-f875d07d770a"
+    },
+    {
+      "claim_id": "c890ae90-052b-453e-bac9-7cf28e3f82be",
+      "result_id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8"
+    },
+    {
+      "claim_id": "b8f8a7c6-ae51-4d73-be69-92054fdea36c",
+      "result_id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8"
+    },
+    {
+      "claim_id": "de9819b5-9747-4358-a488-82d362cf7606",
+      "result_id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8"
+    },
+    {
+      "claim_id": "526e5257-a3a8-4b6a-9b77-c94ea740eb7a",
+      "result_id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8"
+    },
+    {
+      "claim_id": "288689f8-40e1-417a-a47b-7880e3f71b62",
+      "result_id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8"
+    },
+    {
+      "claim_id": "2751f2fc-5290-40b3-b181-eebb04f38045",
+      "result_id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8"
+    },
+    {
+      "claim_id": "3442918d-6d73-4fc0-9685-8f44e44be70f",
+      "result_id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8"
+    },
+    {
+      "claim_id": "8c782c0f-9a7e-4688-9905-a4a7c174d93f",
+      "result_id": "5d5d97dc-25b9-4820-a139-63c9072ed3de"
+    },
+    {
+      "claim_id": "5bb53b6c-abbc-4cba-b570-d0a8a016d1fe",
+      "result_id": "5d5d97dc-25b9-4820-a139-63c9072ed3de"
+    },
+    {
+      "claim_id": "3bfe6d3b-6c28-4dbc-8f54-924a85c199b1",
+      "result_id": "5d5d97dc-25b9-4820-a139-63c9072ed3de"
+    },
+    {
+      "claim_id": "e0fc611d-7d09-408e-b092-be327ab396c2",
+      "result_id": "5d5d97dc-25b9-4820-a139-63c9072ed3de"
+    },
+    {
+      "claim_id": "d3408539-bb7b-40e1-98cf-e482c9484a8f",
+      "result_id": "5d5d97dc-25b9-4820-a139-63c9072ed3de"
+    },
+    {
+      "claim_id": "4187f991-640b-419b-b944-2f3ab94b0c68",
+      "result_id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87"
+    },
+    {
+      "claim_id": "eec68a8a-4f6b-463e-b23b-e459ae165e6d",
+      "result_id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87"
+    },
+    {
+      "claim_id": "b397d947-332f-413d-99cd-a8d970c51fc5",
+      "result_id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87"
+    },
+    {
+      "claim_id": "bc30078e-3f74-47ab-9019-2cca3e5c0fa9",
+      "result_id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87"
+    },
+    {
+      "claim_id": "c2215461-cd29-4fc1-b46a-6ebab224ff02",
+      "result_id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87"
+    },
+    {
+      "claim_id": "a4697bdf-608c-4158-a2f7-3eda22c22d5d",
+      "result_id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87"
+    },
+    {
+      "claim_id": "bdd6709a-155c-41b6-9768-aa0bd0daf191",
+      "result_id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87"
+    },
+    {
+      "claim_id": "30f90af1-d75b-4e9b-9922-bf33d5fa5d5a",
+      "result_id": "4b4e004a-0aaf-4abd-94a2-64aac05f43ce"
+    },
+    {
+      "claim_id": "43293300-2942-43e1-9a96-6e520e943aac",
+      "result_id": "4b4e004a-0aaf-4abd-94a2-64aac05f43ce"
+    },
+    {
+      "claim_id": "d452688b-2147-4319-92e9-8f1837c4c303",
+      "result_id": "4b4e004a-0aaf-4abd-94a2-64aac05f43ce"
+    },
+    {
+      "claim_id": "26d7620c-00db-4a1b-9e27-1b1b7ff2baab",
+      "result_id": "4b4e004a-0aaf-4abd-94a2-64aac05f43ce"
+    },
+    {
+      "claim_id": "18f55901-baf5-4fbe-99d3-c56ca2dbf35b",
+      "result_id": "399c5205-030c-4730-af6a-730db2fba770"
+    },
+    {
+      "claim_id": "99d4f716-fbef-45cb-a8ba-faa815f2bdb0",
+      "result_id": "399c5205-030c-4730-af6a-730db2fba770"
+    },
+    {
+      "claim_id": "bedc7a5f-c7c6-4048-88bb-ceb7578be6bb",
+      "result_id": "399c5205-030c-4730-af6a-730db2fba770"
+    },
+    {
+      "claim_id": "398438a9-e6cc-4265-bf8e-c80b4a6b5246",
+      "result_id": "000f99a0-4047-487f-a94b-7f0b2e1863cf"
+    },
+    {
+      "claim_id": "dbf30e18-141d-4d46-9d08-f008a347cdab",
+      "result_id": "000f99a0-4047-487f-a94b-7f0b2e1863cf"
+    },
+    {
+      "claim_id": "589543eb-564c-4ab4-9e3a-1adc119e1727",
+      "result_id": "000f99a0-4047-487f-a94b-7f0b2e1863cf"
+    },
+    {
+      "claim_id": "cffdf5d3-188d-4c93-8e2c-5bb172a46f5a",
+      "result_id": "b5aad6a5-e7ad-465e-9464-951f7be63fd9"
+    },
+    {
+      "claim_id": "4657a350-1e90-4aab-bd11-e20017bd3b25",
+      "result_id": "b5aad6a5-e7ad-465e-9464-951f7be63fd9"
+    },
+    {
+      "claim_id": "d2b1ab43-397d-47b1-8431-cf3347c162bd",
+      "result_id": "b5aad6a5-e7ad-465e-9464-951f7be63fd9"
+    },
+    {
+      "claim_id": "87a8b59f-a79b-4983-aff9-50fdb663e596",
+      "result_id": "b5aad6a5-e7ad-465e-9464-951f7be63fd9"
+    },
+    {
+      "claim_id": "6927c4b7-de2d-4bd1-b38d-fededdc5dfda",
+      "result_id": "b5aad6a5-e7ad-465e-9464-951f7be63fd9"
+    },
+    {
+      "claim_id": "c02c4a2e-9693-4bc6-8461-9fb2b5156234",
+      "result_id": "b5aad6a5-e7ad-465e-9464-951f7be63fd9"
+    },
+    {
+      "claim_id": "d6ccb87e-9c2e-45ad-80e6-0044b5d2bc1d",
+      "result_id": "2eafc36d-2717-464d-babc-d7b638e03c34"
+    },
+    {
+      "claim_id": "2e2ff68a-d1a6-4c9d-b55e-a08a481041d8",
+      "result_id": "2eafc36d-2717-464d-babc-d7b638e03c34"
+    },
+    {
+      "claim_id": "10f8a696-6f50-4a3c-a2f3-70129a7599c3",
+      "result_id": "3ace6835-6039-4dfd-a37d-3ec18f2545ca"
+    },
+    {
+      "claim_id": "26c79f75-56ca-493b-bcde-b5212005abc2",
+      "result_id": "3ace6835-6039-4dfd-a37d-3ec18f2545ca"
+    },
+    {
+      "claim_id": "7da42a5b-6309-427a-b56b-22520d365bd6",
+      "result_id": "3ace6835-6039-4dfd-a37d-3ec18f2545ca"
+    },
+    {
+      "claim_id": "e057f7e4-f33b-4c54-b8b5-7c6592b43db3",
+      "result_id": "3ace6835-6039-4dfd-a37d-3ec18f2545ca"
+    },
+    {
+      "claim_id": "afe06c81-2b8f-4ef2-a0b8-2d9c0f8afe2f",
+      "result_id": "3ace6835-6039-4dfd-a37d-3ec18f2545ca"
+    },
+    {
+      "claim_id": "b19e01b8-c2b1-4b6d-8000-7c2444359c66",
+      "result_id": "3ace6835-6039-4dfd-a37d-3ec18f2545ca"
+    },
+    {
+      "claim_id": "e033720c-afe3-4258-a74e-4f8b1d818ce7",
+      "result_id": "8c5917f8-1d25-4f73-9d98-6b1cb6f41fe9"
+    },
+    {
+      "claim_id": "a95be076-2421-456f-b1cd-84c4340ce26d",
+      "result_id": "8c5917f8-1d25-4f73-9d98-6b1cb6f41fe9"
+    },
+    {
+      "claim_id": "1ae48d95-02d0-4623-bc5b-2d4d9c96e9e7",
+      "result_id": "8c5917f8-1d25-4f73-9d98-6b1cb6f41fe9"
+    },
+    {
+      "claim_id": "1a643562-9db0-4e15-a7be-e9c75e430f15",
+      "result_id": "8c5917f8-1d25-4f73-9d98-6b1cb6f41fe9"
+    },
+    {
+      "claim_id": "808ee7a2-52ee-4380-8996-09892be466c1",
+      "result_id": "8c5917f8-1d25-4f73-9d98-6b1cb6f41fe9"
+    },
+    {
+      "claim_id": "c890ae90-052b-453e-bac9-7cf28e3f82be",
+      "result_id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204"
+    },
+    {
+      "claim_id": "b8f8a7c6-ae51-4d73-be69-92054fdea36c",
+      "result_id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204"
+    },
+    {
+      "claim_id": "de9819b5-9747-4358-a488-82d362cf7606",
+      "result_id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204"
+    },
+    {
+      "claim_id": "526e5257-a3a8-4b6a-9b77-c94ea740eb7a",
+      "result_id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204"
+    },
+    {
+      "claim_id": "288689f8-40e1-417a-a47b-7880e3f71b62",
+      "result_id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204"
+    },
+    {
+      "claim_id": "2751f2fc-5290-40b3-b181-eebb04f38045",
+      "result_id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204"
+    },
+    {
+      "claim_id": "3442918d-6d73-4fc0-9685-8f44e44be70f",
+      "result_id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204"
+    },
+    {
+      "claim_id": "8c782c0f-9a7e-4688-9905-a4a7c174d93f",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "5bb53b6c-abbc-4cba-b570-d0a8a016d1fe",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "3bfe6d3b-6c28-4dbc-8f54-924a85c199b1",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "e0fc611d-7d09-408e-b092-be327ab396c2",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "d3408539-bb7b-40e1-98cf-e482c9484a8f",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "4187f991-640b-419b-b944-2f3ab94b0c68",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "eec68a8a-4f6b-463e-b23b-e459ae165e6d",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "b397d947-332f-413d-99cd-a8d970c51fc5",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "bc30078e-3f74-47ab-9019-2cca3e5c0fa9",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "c2215461-cd29-4fc1-b46a-6ebab224ff02",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "a4697bdf-608c-4158-a2f7-3eda22c22d5d",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "bdd6709a-155c-41b6-9768-aa0bd0daf191",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "43293300-2942-43e1-9a96-6e520e943aac",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "d452688b-2147-4319-92e9-8f1837c4c303",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "26d7620c-00db-4a1b-9e27-1b1b7ff2baab",
+      "result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434"
+    },
+    {
+      "claim_id": "30f90af1-d75b-4e9b-9922-bf33d5fa5d5a",
+      "result_id": "1b90c531-548f-44db-9f07-38843e48663f"
+    },
+    {
+      "claim_id": "18f55901-baf5-4fbe-99d3-c56ca2dbf35b",
+      "result_id": "1b90c531-548f-44db-9f07-38843e48663f"
+    },
+    {
+      "claim_id": "99d4f716-fbef-45cb-a8ba-faa815f2bdb0",
+      "result_id": "1b90c531-548f-44db-9f07-38843e48663f"
+    },
+    {
+      "claim_id": "398438a9-e6cc-4265-bf8e-c80b4a6b5246",
+      "result_id": "1b90c531-548f-44db-9f07-38843e48663f"
+    },
+    {
+      "claim_id": "dbf30e18-141d-4d46-9d08-f008a347cdab",
+      "result_id": "1b90c531-548f-44db-9f07-38843e48663f"
+    },
+    {
+      "claim_id": "589543eb-564c-4ab4-9e3a-1adc119e1727",
+      "result_id": "1b90c531-548f-44db-9f07-38843e48663f"
+    },
+    {
+      "claim_id": "bedc7a5f-c7c6-4048-88bb-ceb7578be6bb",
+      "result_id": "1b90c531-548f-44db-9f07-38843e48663f"
+    },
+    {
+      "claim_id": "10f8a696-6f50-4a3c-a2f3-70129a7599c3",
+      "result_id": "5c668df0-3f8d-4929-9fa5-8fc511b5b382"
+    },
+    {
+      "claim_id": "26c79f75-56ca-493b-bcde-b5212005abc2",
+      "result_id": "5c668df0-3f8d-4929-9fa5-8fc511b5b382"
+    },
+    {
+      "claim_id": "7da42a5b-6309-427a-b56b-22520d365bd6",
+      "result_id": "5c668df0-3f8d-4929-9fa5-8fc511b5b382"
+    },
+    {
+      "claim_id": "e057f7e4-f33b-4c54-b8b5-7c6592b43db3",
+      "result_id": "5c668df0-3f8d-4929-9fa5-8fc511b5b382"
+    },
+    {
+      "claim_id": "afe06c81-2b8f-4ef2-a0b8-2d9c0f8afe2f",
+      "result_id": "5c668df0-3f8d-4929-9fa5-8fc511b5b382"
+    },
+    {
+      "claim_id": "b19e01b8-c2b1-4b6d-8000-7c2444359c66",
+      "result_id": "5c668df0-3f8d-4929-9fa5-8fc511b5b382"
+    },
+    {
+      "claim_id": "7db1f1df-378c-428a-ab0d-a85c34c5e0d6",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "8a92b8e3-6cd8-4252-8747-353444e384c1",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "fcc8d600-9682-4eee-a498-d8e2938afd69",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "79a81700-1297-420f-b1e9-53c8e052cd47",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "70be6d28-576d-4559-b5bf-e2376a3bc5c6",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "faab99db-68b4-4339-8a7b-60fe51a38f09",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "776e80ff-5289-4109-b939-297a11ff71f2",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "deaf6a9b-c3ed-42f0-bff4-c344510860cb",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "457bdad2-338d-4f57-9e08-d9aa8cccfa4e",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "703961b5-c718-4292-b9af-3b4f44276f3b",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "8745bc5f-93f4-4b58-8ab2-a23be684450d",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "019cf345-bde1-4420-97e0-3cca193a9e72",
+      "result_id": "6765f1e0-bf63-4dee-9906-195821c902e9"
+    },
+    {
+      "claim_id": "cffdf5d3-188d-4c93-8e2c-5bb172a46f5a",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "4657a350-1e90-4aab-bd11-e20017bd3b25",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "d2b1ab43-397d-47b1-8431-cf3347c162bd",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "87a8b59f-a79b-4983-aff9-50fdb663e596",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "6927c4b7-de2d-4bd1-b38d-fededdc5dfda",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "c02c4a2e-9693-4bc6-8461-9fb2b5156234",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "d6ccb87e-9c2e-45ad-80e6-0044b5d2bc1d",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "2e2ff68a-d1a6-4c9d-b55e-a08a481041d8",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "eec68a8a-4f6b-463e-b23b-e459ae165e6d",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    },
+    {
+      "claim_id": "bc30078e-3f74-47ab-9019-2cca3e5c0fa9",
+      "result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c86a8764-db0a-46d4-91a0-afaecd098907",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "4f752d32-70c7-4022-9392-f875d07d770a",
+      "peer_result_id": "8c5917f8-1d25-4f73-9d98-6b1cb6f41fe9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the same metadynamics claims (C22-C24, C52-C53). OpenEval finds the unbinding pathway results SUPPORTED with evidence from multiple replicas and parameter sets. Peer reviewers express UNCERTAINTY, with Reviewer 2 questioning whether multiple Gaussian heights/widths were tested to ensure all relevant pathways were explored, suggesting methodological concerns about pathway sampling completeness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "5a5e7c80-ff2e-4346-a65f-4ef5bca77eb1",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3aaccef8-34cd-45df-a0de-85ea6810b8f8",
+      "peer_result_id": "eb1ae5a1-6498-4840-97ba-d6150b6b1204",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate TRAM vs MSM comparison claims (C25-C31). Both ultimately find these SUPPORTED. OpenEval emphasizes TRAM's advantage with reduced data requirements. Peer reviewers initially questioned TRAM's advantage given similar thermodynamic values, but after revision accepted the methodological comparison as valid, with Reviewer 3 noting adequate responses to queries.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "e566da28-2bf8-477f-b1e1-9c256ec95598",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "3ace6835-6039-4dfd-a37d-3ec18f2545ca",
+      "peer_result_id": "5c668df0-3f8d-4929-9fa5-8fc511b5b382",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate computational methods for system preparation (C59-C60, C62-C65). OpenEval finds these SUPPORTED as standard, appropriately cited approaches. Peer reviewers express UNCERTAINTY, with Reviewer 3 raising significant concerns about starting simulations from docked structures rather than crystallographic poses, questioning reliability of derived kinetics despite ultimately accepting the authors' response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "5b247d57-b39e-4087-a787-f3e653bcece2",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "ac38b4ba-2b9d-42a6-ab37-9015dcfd1031",
+      "peer_result_id": "6765f1e0-bf63-4dee-9906-195821c902e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate background on NPS side effects and \u03b2-arrestin signaling (C1-C2, C10-C14) and hypothesis framework (C15-C19). OpenEval finds both SUPPORTED by literature citations. Peer reviewers also find these SUPPORTED, treating the hypothesis as reasonable motivation without challenging the premise, with reviewers noting the work could aid public health efforts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "667689c0-468c-461a-b895-f65cc9a286b9",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "5df0438e-ce58-4e15-992b-9c6021827e1f",
+      "peer_result_id": "6765f1e0-bf63-4dee-9906-195821c902e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R2 evaluates the central hypothesis (C15-C19) finding it SUPPORTED by mutagenesis and structural studies. Peer R6 covers this hypothesis along with broader background claims, also finding it SUPPORTED. Both agree the NPxxY motif hypothesis is well-grounded, though peer review groups it with additional context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "e645d138-a809-40d0-9929-c6508d3f89d6",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "b5aad6a5-e7ad-465e-9464-951f7be63fd9",
+      "peer_result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate background claims about CB1, GPCRs, and NPS structure (C3-C5, C7-C9). OpenEval finds these SUPPORTED as well-established context. Peer R7 covers these plus binding affinity claims (C20-C21, C38, C40), also finding them SUPPORTED as accepted, citation-based background that was not questioned by reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "d1a1fb52-9574-4271-b583-a4c48b0b3b71",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "2eafc36d-2717-464d-babc-d7b638e03c34",
+      "peer_result_id": "65f0380b-c5d6-47e2-8406-c71ed2ce2468",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R11 evaluates binding affinity claims (C20-C21) as SUPPORTED literature values. Peer R7 includes these among broader background claims, also finding them SUPPORTED as accepted context. Both treat these experimental values as established facts justifying the computational approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "a0ce6d23-75fc-4105-90a4-0504af6556c0",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "5d5d97dc-25b9-4820-a139-63c9072ed3de",
+      "peer_result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R5 evaluates MDMB-FUBINACA unbinding mechanism (C32-C36) as SUPPORTED with specific interaction details and timescales. Peer R3 covers these claims plus HU-210 binding differences (C37-C43) and additional NPS (C54-C56), finding all SUPPORTED. Both agree on the binding/unbinding differences, with all reviewers accepting these as solid evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "f077010a-4e56-437b-a5c9-0cb224a07aad",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "72ef6e25-c792-437a-8f7e-ed92d5efdd87",
+      "peer_result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R6 evaluates HU-210 binding differences (C37-C43) as SUPPORTED by interaction analysis and experimental validation. Peer R3 includes these claims within a broader evaluation covering both ligands' mechanisms, also finding them SUPPORTED. Both agree on the key differences in TM7 interactions and dissociation timescales.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "b03d1338-586d-45ea-ab33-aafa6a8a5363",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "4b4e004a-0aaf-4abd-94a2-64aac05f43ce",
+      "peer_result_id": "5ae25ad4-48e0-4b83-9371-08ee61db1434",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R7 evaluates extension to multiple NPS and classical cannabinoids (C44, C54-C56) as SUPPORTED by distance analysis. Peer R3 includes these claims in broader evaluation of binding mechanisms, also finding them SUPPORTED. Both agree on the universality of weaker TM7 interactions for NPS across multiple compounds.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "e6533df8-d8aa-4385-bc36-eb723fe56ac7",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "399c5205-030c-4730-af6a-730db2fba770",
+      "peer_result_id": "1b90c531-548f-44db-9f07-38843e48663f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R8 evaluates NRI network and allosteric communication results (C45-C46, C57) as SUPPORTED by convergent evidence from two independent methods. Peer R4 covers these plus triad formation claims (C44, C47-C49), expressing UNCERTAINTY. Reviewer 3 initially criticized the ML approach as 'forced' and questioned its necessity versus traditional distance-based analyses, though ultimately accepted the authors' response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    },
+    {
+      "id": "2853de51-0372-4786-8df1-5ca5618c68eb",
+      "submission_id": "26bb0608-6f6f-4341-92d8-40d4d8063468",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "000f99a0-4047-487f-a94b-7f0b2e1863cf",
+      "peer_result_id": "1b90c531-548f-44db-9f07-38843e48663f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R9 evaluates triad formation probability and key functional outcomes (C47-C49) as SUPPORTED, connecting binding interactions to \u03b2-arrestin signaling mechanism. Peer R4 includes these with allosteric analysis claims (C44-C46, C57), expressing UNCERTAINTY primarily about the ML approach rather than the triad formation findings themselves.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:07:33.666482Z"
+    }
+  ]
+}

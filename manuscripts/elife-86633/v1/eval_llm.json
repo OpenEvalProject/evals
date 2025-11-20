@@ -1,0 +1,454 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Intraspinal AAV injection in adult Npy-Cre mice specifically targets NPY-expressing inhibitory interneurons that persistently express NPY, avoiding cells that only transiently express NPY during development. This approach achieves ~78-91% specificity for NPY-positive cells and captures ~62-75% of NPY-expressing neurons in laminae I-III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary approaches including RNAscope FISH (C28-C29), immunohistochemistry with AAV-mediated labeling (C30-C31), and genetic lineage tracing with Ai9 reporter mice (C32-C38). The data consistently demonstrate that AAV injection in adult mice targets a more restricted population than genetic lineage tracing, with high specificity for NPY-expressing cells. The characterization includes appropriate controls and quantification across multiple markers (C43-C59), and the absence of DRG labeling (C60) confirms spinal specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Chemogenetic activation using AAV.flex.hM3Dq-mCherry successfully activates approximately two-thirds of NPY-INs in the dorsal horn, as demonstrated by CNO-induced Fos expression increasing from 8.8% in vehicle-treated to 82.9% in CNO-treated mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic Fos immunohistochemistry showing dramatic CNO-induced activation of mCherry+ cells (C64-C65) with appropriate vehicle controls. The data include quantification of NPY co-expression (C66-C67) and analysis of off-target effects on mCherry-negative cells (C68-C69). The conclusion that ~66% of NPY-INs are activated (C71-C73) is well-justified by the data, though the small increase in Fos in mCherry-negative inhibitory neurons (C68-C69) suggests minor off-target effects that are appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Chemogenetic activation of NPY-INs reduces neuronal activation in response to noxious heat and pruritic stimuli, as evidenced by decreased Fos expression in mCherry-negative cells, particularly excitatory neurons, in the somatotopically relevant areas of the dorsal horn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by well-controlled Fos immunohistochemistry experiments comparing vehicle and CNO treatment following noxious heat or chloroquine injection (C75-C82). The data show appropriate somatotopic organization (C76-C77) and demonstrate that NPY-IN activation reduces Fos expression predominantly in excitatory (Pax2-negative) neurons (C80), with statistical significance reported. The conclusion that NPY-INs inhibit neurons recruited by noxious/pruritic stimuli (C83) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "NPY-INs provide powerful GABAergic inhibitory input to surrounding dorsal horn neurons. Optogenetic activation of NPY-INs reliably evokes action potentials in ChR2+ cells and elicits IPSCs in 70.7% of ChR2-negative cells, with these IPSCs being predominantly mediated by GABA rather than glycine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by systematic electrophysiology experiments. The optogenetic validation in ChR2+ cells (C84) establishes the approach, and the demonstration of oIPSCs in 70.7% of ChR2-negative cells (C85) with appropriate pharmacological characterization (C86-C87) provides strong evidence. The conclusion that inhibition is predominantly GABAergic (C88) is supported by gabazine sensitivity and is consistent with prior literature (C89). The inferences about NPY-IN function (C90-C92) are reasonable based on the combined electrophysiology and Fos data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Chemogenetic activation of NPY-INs produces broad anti-nociceptive effects across mechanical, heat, and cold modalities, and reduces pruritogen-evoked itch. CNO treatment significantly increases withdrawal thresholds/latencies in the ipsilateral paw and reduces chloroquine-induced biting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by comprehensive behavioral testing with appropriate controls. The baseline comparisons (C93-C95) establish no laterality effects in vehicle-treated mice, while CNO treatment produces significant increases across all modalities (C96-C99). The control experiments in wild-type mice (C100-C101) effectively rule out off-target CNO effects, strengthening the conclusion that effects are DREADD-mediated (C102). Statistical tests are appropriate (repeated-measures two-way ANOVA with post-tests), and sample sizes appear adequate (n=7-16 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C129"
+    ],
+    "result": "Chemogenetic activation of NPY-INs completely blocks mechanical and heat hypersensitivity induced by intraplantar CFA injection, with heat latencies significantly increased above pre-CFA baseline values in CNO-treated mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by behavioral testing in the CFA inflammatory pain model showing that vehicle-treated mice develop expected hypersensitivity (C104-C105) that is completely blocked by CNO treatment (C106-C107). The observation that heat latencies exceed baseline (C108) suggests a strong anti-nociceptive effect. The experimental design includes appropriate pre-CFA baseline measurements and the conclusion (C129) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C130"
+    ],
+    "result": "Chemogenetic activation of NPY-INs blocks mechanical and heat hypersensitivity in the SNI neuropathic pain model, with this effect mediated predominantly by GABAergic transmission rather than NPY acting on Y1 receptors. The small number of hM3Dq-expressing cells in DRG following SNI is unlikely to contribute to the observed effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by behavioral testing showing CNO blocks SNI-induced hypersensitivity (C109-C111), combined with careful analysis of potential confounds. The DRG analysis (C113) identifies only 12.5-17.5 labeled cells per ganglion, which the authors reasonably argue is insufficient to account for the behavioral effects (C114-C115). The Y1R antagonist experiments (C117-C118) provide strong evidence that the effect is not Y1R-dependent (C119), supporting the conclusion that GABAergic transmission is the primary mechanism (C130). The lack of DRG labeling in CFA mice (C116) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C128",
+      "C131"
+    ],
+    "result": "Chemogenetic activation of NPY-INs does not produce conditioned place preference in the SNI model, suggesting that NPY-IN activation may not alleviate ongoing neuropathic pain, despite the CPP method being sufficiently sensitive to detect ongoing pain (as demonstrated by gabapentin-induced CPP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by well-controlled CPP experiments with appropriate positive controls. The lack of CPP with CNO in both Npy-Cre and wild-type mice (C120-C121) contrasts with the positive result with gabapentin (C122), demonstrating the method's sensitivity (C123). The conclusion that NPY-IN activation may not affect ongoing pain (C124, C131) is appropriately cautious. The demonstration that CNO effectively blocks cold allodynia in the same mice (C128) confirms that the lack of CPP was not due to failed NPY-IN activation, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Chemogenetic activation of NPY-INs completely blocks SNI-induced cold hypersensitivity, as measured by the acetone evaporation test, demonstrating reversal of cold allodynia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by behavioral testing showing vehicle-treated mice develop marked cold hypersensitivity following SNI (C125) that is completely blocked by CNO administration (C126). The conclusion of cold allodynia reversal (C127) is well-justified. This result also serves as an important control demonstrating that NPY-INs were successfully activated in the CPP experiments, addressing a potential confound in interpreting the negative CPP results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Silencing NPY-INs using AAV.flex.TeLC.eGFP causes significant enhancement of chloroquine-evoked itch and development of spontaneous itch (evidenced by skin lesions and increased pre-CQ biting), without affecting acute nociceptive thresholds or motor coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by comprehensive behavioral testing following TeLC-mediated silencing. The viral targeting is validated by immunohistochemistry (C132-C133), and the behavioral effects are striking: enhanced CQ-evoked itch (C134), skin lesions in ~2/3 of mice (C135-C136), and increased spontaneous biting (C138). The lack of effects on nociceptive thresholds (C139-C140) and motor function (C141-C142) demonstrates specificity. The conclusions about tonic NPY-IN activity suppressing itch (C143) but not affecting nociceptive thresholds (C144) are well-justified by the loss-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Both spontaneous and pruritogen-evoked itch caused by NPY-IN silencing are at least partly transmitted via GRPR-expressing interneurons. Simultaneous silencing of NPY-INs and GRPR-INs in Npy-Cre;GrprCreERT2 mice significantly reduces CQ-evoked itch, eliminates spontaneous itch, and prevents skin lesion development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by elegant genetic experiments using double transgenic mice. The key finding is that simultaneous silencing of NPY-INs and GRPR-INs eliminates the exaggerated itch phenotype seen with NPY-IN silencing alone (C147-C148), prevents spontaneous itch (C149), and prevents skin lesions (C150). This provides strong evidence that GRPR-INs are downstream of NPY-INs in itch circuits (C151). The experimental design effectively tests the circuit hypothesis, though the conclusion is appropriately cautious ('at least partly') given that some residual itch remains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "NPY-INs directly inhibit GRPR-INs through monosynaptic connections, generating large amplitude IPSCs (mean ~250 pA) that are predominantly GABAergic. NPY acting on Y1 receptors is unlikely to contribute significantly to this inhibition, as GRPR cells do not respond to Y1R agonist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by systematic electrophysiology in Npy-Cre;GrprFLPo mice. All 11 GRPR cells tested showed oIPSCs (C152) with substantial amplitude (C153), and the TTX/4-AP experiments (C154) definitively establish monosynaptic connectivity (C155-C156). The pharmacological characterization (C157-C158) demonstrates predominantly GABAergic transmission. The Y1R agonist experiments (C159) provide strong negative evidence that Y1R signaling does not contribute (C160). The convergent evidence from multiple approaches makes this a robust result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "NPY-INs selectively target GRPR-INs, with NPY-immunoreactive boutons accounting for 45.0% \u00b1 1.9% of all inhibitory synapses on GRPR-INs, significantly higher than the 36.2% \u00b1 2.6% of inhibitory boutons in the surrounding neuropil that contain NPY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by rigorous anatomical analysis using Brainbow labeling of GRPR-INs combined with NPY immunohistochemistry. The quantification shows significant enrichment of NPY-IR boutons on GRPR-INs compared to the surrounding neuropil (C161-C162), providing strong evidence for selective targeting (C163). The conclusion of powerful GABAergic inhibition (C164) is well-justified by combining the anatomical data with the electrophysiology results. The methodology is appropriate and the statistical comparison strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Silencing dynorphin-expressing interneurons (Dyn-INs) in PdynCre mice causes significant but modest enhancement of chloroquine-evoked itch that is markedly less pronounced than that observed following NPY-IN silencing. Dyn-IN silencing does not cause spontaneous itch or skin lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by comparative behavioral experiments in PdynCre mice showing that TeLC-mediated silencing of Dyn-INs increases CQ-evoked itch (C168) but to a lesser extent than NPY-IN silencing (C169). The lack of skin lesions (C170) and spontaneous biting (C171) supports the conclusion that Dyn-IN silencing does not cause spontaneous itch (C172). The appropriate wild-type controls (C173) rule out non-specific effects. The conclusion that both populations suppress itch but NPY-INs have a more substantial role (C174) is well-justified by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Unlike NPY-INs, Dyn-INs do not preferentially target GRPR-INs. Dynorphin B-immunoreactive boutons account for only 20.9% \u00b1 2.2% of inhibitory synapses on GRPR-INs, which does not differ significantly from the proportion in the surrounding neuropil (22.6% \u00b1 1.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by anatomical analysis parallel to that performed for NPY-INs, using dynorphin B immunohistochemistry. The key finding is the lack of enrichment of DynB-IR boutons on GRPR-INs compared to the surrounding neuropil (C176-C177), contrasting with the selective targeting by NPY-INs (C178). The conclusions about lower synaptic input from Dyn-INs (C179) and less dramatic effects on itch (C180) are well-justified by combining the anatomical data with the behavioral results. This provides a mechanistic explanation for the differential behavioral effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "NPY-INs have a broader role in suppressing pain and itch than previously suggested. The discrepancy with prior studies likely results from methodological differences: this study's AAV injection approach in adult mice targets cells that persistently express NPY (~85% NPY-IR), while previous intersectional genetic approaches targeted a broader population including cells that only transiently express NPY during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by the comprehensive functional data showing effects on pain and itch (C187-C188) that contrast with prior literature (C181). The methodological comparison (C182-C184) provides a plausible explanation for the discrepancies, and the validation that ~85% of virally transfected cells contain NPY (C185) supports the specificity of the approach. The agreement with prior work on acute nociceptive thresholds (C186) while showing new effects with gain-of-function approaches demonstrates consistency where expected while revealing new functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C191",
+      "C199",
+      "C200"
+    ],
+    "result": "The most likely explanation for discrepancies between loss-of-function and gain-of-function studies is that although NPY cells have antinociceptive action, other interneurons provide sufficient inhibition to maintain nocifensive reflexes when NPY cells are silenced. Discrepancies with Acton et al. 2019 regarding itch suppression likely result from higher DREADD expression with viral transfection, though regional differences in itch tests may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative explanations (C191, C199, C200) for observed discrepancies with prior literature. While the explanations are plausible and consistent with the data, they are not directly tested. The redundancy hypothesis (C191) could be tested by examining effects of combined silencing of multiple inhibitory populations. The DREADD expression hypothesis (C199) is reasonable given the different targeting methods, but direct comparison of expression levels was not performed. These remain reasonable interpretations but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C202",
+      "C203"
+    ],
+    "result": "The antipruritic action of NPY-INs may be more powerful than that of dynorphin/galanin cells. Both NPY-INs and Dyn-INs contribute to suppression of pruritogen-evoked itch, revealing functional overlap between these neurochemically distinct inhibitory interneuron populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by the comparative behavioral data showing more pronounced effects of NPY-IN silencing compared to Dyn-IN silencing (supporting C202), combined with the demonstration that both populations can suppress itch when activated (from prior literature) and show increased itch when silenced (supporting C203). The anatomical data showing differential targeting of GRPR-INs provides a mechanistic basis for the differential effects. The conclusion of functional overlap (C203) is well-justified by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "GRPR cells are downstream of NPY cells in itch circuits, receiving more powerful inhibitory input from NPY-INs than from dynorphin/galanin cells. NPY-IR boutons account for 45% of inhibitory synapses on GRPR cells compared to 21% from dynorphin-IR boutons, and optogenetically-evoked IPSCs from NPY-INs (~250 pA) are larger than those from galanin cells (~80 pA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by convergent evidence from multiple approaches. The genetic experiments showing that silencing both NPY-INs and GRPR-INs reduces itch supports the downstream relationship (C204). The anatomical comparison (C206) and electrophysiological comparison (C207-C209) provide quantitative evidence for more powerful NPY-IN input. The comparison with Liu et al. 2019 data (C209) strengthens the conclusion, though it should be noted this involves cross-study comparison. The overall conclusion (C205) is well-justified by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "GRPR-expressing excitatory interneurons correspond to vertical cells, respond to both noxious and pruritic stimuli, and are thought to form an integral part of circuits underlying both normal and pathological pain. These cells provide input to lamina I projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by citations to recent work by the authors (C211-C213) and prior literature (C214-C215). The claim about Y1R expression (C210) is supported by citations to prior studies. While these claims largely summarize prior work rather than presenting new data, they provide important context for interpreting the current findings. The integration of this prior knowledge with the current results is appropriate and strengthens the overall conclusions about NPY-IN function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "NPY cells directly innervate both lamina I projection cells and nociceptive projection neurons in laminae III-V. The powerful inhibitory GABAergic NPY-GRPR circuit may contribute not only to itch alleviation but also to suppression of nocifensive reflexes and reduction of hypersensitivity in persistent pain states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claims about direct innervation of projection neurons (C216-C217) are supported by citations to prior work. However, the speculation that the NPY-GRPR circuit contributes to pain suppression (C219) is not directly tested in this study. While the behavioral data show that NPY-IN activation suppresses pain, and the anatomical/electrophysiological data demonstrate NPY-IN inhibition of GRPR cells, the specific contribution of the NPY-GRPR circuit to pain suppression (as opposed to other NPY-IN targets) remains to be determined. The inference (C218) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "Chemogenetic activation of NPY cells generates GABAergic inhibition sufficiently powerful to reverse hypersensitivity in inflammatory and neuropathic pain independently of Y1 receptor signaling, despite prior evidence that NPY acting on Y1 receptors can reduce neuropathic pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by the behavioral data showing CNO blocks hypersensitivity (C220), the Y1R antagonist experiments showing no effect on CNO-mediated suppression (C221), and appropriate citation to prior literature on Y1R-mediated effects (C222). The conclusion that GABAergic inhibition is sufficiently powerful to act independently of Y1R signaling (C223) is a reasonable inference from the data, though it should be noted that the Y1R antagonist experiments were only performed in the SNI model, not the CFA model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C224",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "This study apparently provides the first evidence that activating dorsal horn inhibitory interneurons can suppress heat hypersensitivity, in addition to cold and mechanical allodynia, in persistent pain states, contrasting with prior studies showing that activation of other inhibitory populations affects only mechanical allodynia or cold allodynia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by appropriate citations to prior literature (C224-C226) and comparison with the current results. The claim of novelty (C227) appears justified based on the cited literature, though the qualifier 'apparently' appropriately acknowledges that the literature review may not be exhaustive. The demonstration that NPY-IN activation suppresses heat hypersensitivity in both CFA and SNI models is a significant finding that distinguishes NPY-INs from other characterized inhibitory populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C228",
+      "C229"
+    ],
+    "result": "A population of NPY-expressing inhibitory interneurons with similar laminar location has been identified in human spinal cord, suggesting these cells provide an attractive target for treating neuropathic pain, particularly for patients experiencing thermal hyperalgesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim about human NPY-expressing interneurons (C228) is supported by citation to prior work. However, the translational speculation (C229) is not directly supported by data in this study. While the mouse data are compelling, the functional similarity between mouse and human NPY-INs has not been established, and no data are presented on whether these cells can be therapeutically targeted. This represents reasonable speculation about translational potential but lacks direct experimental support.",
+    "result_type": "MINOR"
+  }
+]

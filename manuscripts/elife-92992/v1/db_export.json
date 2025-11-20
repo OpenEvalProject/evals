@@ -1,0 +1,1896 @@
+{
+  "submission": {
+    "id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T18:46:44.073949Z",
+    "updated_at": "2025-11-19T18:46:44.073949Z"
+  },
+  "content": [
+    {
+      "id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "content_type": "manuscript",
+      "content_text": "# Asymmetric cortical projections to striatal direct and indirect pathways distinctly control actions\n\n## Authors\n\n- Jason R Klug<sup>1</sup>\n- Xunyi Yan<sup>1</sup> ([ORCID: 0009-0008-7669-077X](https://orcid.org/0009-0008-7669-077X))\n- Hilary Hoffman<sup>1</sup>\n- Max D Engelhardt<sup>1</sup>\n- Fumitaka Osakada<sup>3</sup>\n- Edward M Callaway<sup>3</sup> ([ORCID: 0000-0002-6366-5267](https://orcid.org/0000-0002-6366-5267))\n- Xin Jin<sup>1</sup> ([ORCID: 0000-0002-1106-4013](https://orcid.org/0000-0002-1106-4013)) \u2020\n\n### Affiliations\n\n1. Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n2. New Cornerstone Science Laboratory, Center for Motor Control and Disease, Key Laboratory of Brain Functional Genomics, East China Normal University Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))\n3. Systems Neurobiology Laboratories, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n4. NYU\u2013ECNU Institute of Brain and Cognitive Science, New York University Shanghai Shanghai China ([ROR:02vpsdb40](https://ror.org/02vpsdb40))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe striatal direct and indirect pathways constitute the core for basal ganglia function in action control. Although both striatal D1- and D2-spiny projection neurons (SPNs) receive excitatory inputs from the cerebral cortex, whether or not they share inputs from the same cortical neurons, and how pathway-specific corticostriatal projections control behavior remain largely unknown. Here using a G-deleted rabies system in mice, we found that more than two-thirds of excitatory inputs to D2-SPNs also target D1-SPNs, while only one-third do so vice versa. Optogenetic stimulation of striatal D1- vs. D2-SPN-projecting cortical neurons differently regulate locomotion, reinforcement learning, and sequence behavior, implying the functional dichotomy of pathway-specific corticostriatal subcircuits. These results reveal the partially segregated yet asymmetrically overlapping cortical projections on striatal D1- vs. D2-SPNs, and that the pathway-specific corticostriatal subcircuits distinctly control behavior. It has important implications in a wide range of neurological and psychiatric diseases affecting cortico-basal ganglia circuitry.\n\n## Introduction\n\nThe corticostriatal circuits are critically involved in sensory, cognition, and the learning and control of actions (Aoki et al., 2019; Graybiel, 1998; Haber, 2016; Hikosaka et al., 1998; Jin and Costa, 2010; Jin and Costa, 2015; Kupferschmidt et al., 2017; Stephenson-Jones et al., 2011; Tanji, 2001; Yin and Knowlton, 2006). Dysfunctional corticostriatal circuitry has been implicated in numerous neurological and psychiatric diseases (Shepherd, 2013), including Parkinson\u2019s (Redgrave et al., 2010), autism (Monteiro and Feng, 2017), and obsessive-compulsive disorder (Dalley and Robbins, 2017). The striatal direct and indirect pathways, made up of D1- vs. D2-expressing spiny projection neurons (SPNs) respectively, constitute the core components for basal ganglia functions in relation to action learning and movement control (Albin et al., 1989; DeLong, 1990; Gerfen et al., 1990). Numerous studies have suggested that the two pathways play distinct yet complementary roles in controlling actions (Cui et al., 2013; Geddes et al., 2018; Hikosaka et al., 2019; Hikosaka et al., 2000; Jin et al., 2014; Kravitz et al., 2010; Markowitz et al., 2018; Mink, 2003; Tecuapetla et al., 2016). It is well known that D1- and D2-SPNs are spatially intermixed in the striatum, and they both receive major excitatory inputs from the cerebral cortex (Bolam et al., 2000; Pan et al., 2010). A previous monosynaptic rabies tracing study has revealed that sensory and limbic cortical regions preferably send projections to D1-SPNs, compared to the motor cortical inputs biased toward D2-SPNs (Wall et al., 2013). However, this anatomical analysis was based on relative percentage of various inputs to a certain population, D1 or D2, and does not reflect the absolute number of cortical projections or the crosstalk of projections to both pathways. Furthermore, how the functional distinction between these two pathways is generated in the corticostriatal circuitry, and whether the striatal D1- and D2-SPNs receive the inputs from the same or different group of cortical neurons remains largely unknown. This is mainly due to the lack of appropriate tools to label and manipulate the specific cortical subpopulations projecting to D1- vs. D2-SPNs for functional investigations.\n\nHere, using a G-deleted rabies system in mice (Klug et al., 2018; Osakada et al., 2011; Wall et al., 2013), we are able to selectively target and express channelrhodopsin-2 (ChR2) in presynaptic neurons projecting to D1- vs. D2-expressing SPNs. Whole-cell recordings from brain slice reveal that only one-third of the excitatory inputs to D1-SPNs target D2-SPNs, suggesting that many excitatory inputs to D1-SPNs selectively drive the direct pathway. In contrast, a large proportion of excitatory inputs to D2-SPNs send collateral projections to D1-SPNs, implying that excitatory inputs to D2-SPNs control both the indirect and direct pathways. Optogenetic stimulation of D1- vs. D2-SPN-projecting cortical neurons in vivo differently regulates locomotion, reinforcement learning, and sequence behavior, in a cell-type and brain-region-dependent manner. These results reveal the functional organization of cell-type- and pathway-specific corticostriatal subcircuits, providing essential insights into how they might control behavior in health and disease.\n\n## Results\n\nA modified rabies virus system (Klug et al., 2018; Osakada et al., 2011; Wall et al., 2013) was employed to label and functionally target the specific cortical neurons projecting to striatal D1- versus D2-SPNs. Specifically, D1- or A2a-Cre mice (Gong et al., 2007) were injected with Cre-dependent helper viruses (AAV5/EF1\u03b1-Flex-TVA-mCherry, AAV8/CA-Flex-RG) in the dorsal striatum (Klug et al., 2018; Wall et al., 2013; Figure 1A\u2013B; see Materials and Methods). Three weeks later, either (EnvA) SAD-\u2206G Rabies-GFP or (EnvA) SAD-\u2206G Rabies-ChR2-mCherry was injected into the same striatal location to retrogradely infect the presynaptic cortical neurons projecting to D1- or D2-SPNs (Figure 1B). We first injected (EnvA) SAD-\u2206G Rabies-GFP in a subgroup of mice to validate the corticostriatal anatomy. In both D1- and A2a-Cre tracing experiments, intensive labeling was found in different cortical regions as expected, including the midcingulate cortex (MCC; van Heukelum et al., 2020; Vogt and Paxinos, 2014) and the primary motor cortex (M1), which targets mainly the dorsal medial and dorsal lateral striatum, respectively (Aoki et al., 2019; Bolam et al., 2000; Pan et al., 2010; Shepherd, 2013; Figure 1C and D). For functional studies, (EnvA) SAD-\u2206G Rabies-ChR2-mCherry was utilized to express ChR2 in the presynaptic cortical neurons projecting to D1- or D2-SPNs. To validate the functional expression of ChR2 in the cortex, whole-cell patch clamp recordings were performed from the mCherry-positive layer V pyramidal neurons in M1 around day 7 post rabies injection (Figure 1E\u2013G; see Materials and methods). Both the current-voltage relationship revealed by somatic current injections (Figure 1H) and the spiking activity elicited by blue laser frequency stimulation (Figure 1I; Figure 1\u2014figure supplement 1) confirmed the overall health and the functional expression of ChR2 in the rabies-infected cortical neurons. These results thus demonstrate that we were able to successfully target and functionally express ChR2 in presynaptic cortical neurons projecting to either striatal D1- or D2-SPNs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of SAD-\u0394G-Rabies-ChR2-mCherry construct with the glycoprotein deleted and replaced with ChR2-mCherry. (B) Timeline of viral injections of Cre-dependent helper viruses and the modified rabies virus for slice and behavioral experiments. (C) Example of coronal brain section with rabies-eGFP injection in the dorsal medial striatum of D1-Cre (top) or A2a-Cre (bottom) mouse shows enriched eGFP expression in the MCC. Scale bar, 1 mm. Inset (right): Higher magnification of retrogradely labeled striatal D1- or D2-SPN projecting neurons in the MCC expressing eGFP. Dotted lines demarcate cortical lamina. Scale bar, 200 \u00b5m. (D) Similar experiments of labeling striatal D1- vs. D2-SPN projecting neurons in M1 with rabies-eGFP. (E) Cartoon brain schematic of ChR2-mCherry expressing M1 neurons projecting to SPNs (red) during whole-cell patch clamp recordings. (F) Example of coronal brain section with rabies-ChR2-mCherry injection in the dorsal lateral striatum of A2a-Cre mouse. Scale bar, 1 mm. Inset (right): Higher magnification of retrogradely labeled striatal D2-SPN projecting neurons in the M1 showed clear membrane expression of ChR2-mCherry. Scale bar, 200 \u00b5m. (G) (left) 10\u00d7 epifluorescent (red channel) of ChR2-mCherry-positive neurons in M1. Scale bar, 250 \u00b5m. (middle) 40\u00d7 image of a patched layer 5 pyramidal neuron under DIC optics. Scale bar, 50 \u00b5m. (right) Epifluorescent image (red channel) showing patched layer 5 pyramidal neuron somas expressing ChR2-mCherry signal. Red dotted line denotes patched neuron. Scale bar, 50 \u00b5m. (H) Current-voltage traces of a ChR2-mCherry positive layer 5 M1 neuron under current clamp responding to hyperpolarizing and depolarizing current injection steps. Scale bars, 200 ms, 25 mV. (I) Optogenetic stimulation (20 Hz) elicits robust action potentials with high fidelity in a ChR2-mCherry positive D1-SPN projecting M1 neuron in layer 5. Scale bars, 100 ms, 20 mV.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** 5 Hz optogenetic stimulation elicits action potentials with high fidelity in a ChR2-mCherry positive M1 pyramidal neuron in layer 5 projecting to striatal D1-SPNs. Scale bars, 200 ms, 25 mV.\n\nTaking advantage of this rabies-ChR2 system, we first sought to determine how many functional excitatory inputs that the striatal D1- and D2-SPNs might share. The possible functional organization of excitatory inputs to D1- and D2-SPNs at the single cell level, like the corticostriatal projections, could be completely segregated, totally overlapping, or partially mixed (Figure 2A). In order to differentiate these possibilities, we made whole-cell recordings from D1- or D2-SPNs in brain slice by optogenetic stimulation of rabies-ChR2-infected excitatory terminals in striatum. We asked what the probability is that a D1- or D2-SPN is targeted by the same presynaptic excitatory inputs projecting to the nearby D1- or D2-SPN population. D1- or A2a-Cre mice were crossed to the D1- or D2-eGFP reporter line for visualizing striatal D1- vs. D2-SPNs in slice recordings (see Materials and methods). Following the helper viruses and rabies-ChR2-mCherry injection in the D1-/A2a-Cre x D1-/D2-eGFP mice, the mCherry negative striatal SPNs were selected to be recorded in the whole-cell mode and D1- vs. D2-SPNs can be further separated based on the eGFP expression. Picrotoxin, a GABAA antagonist, was added throughout the recordings to isolate the excitatory postsynaptic currents (EPSCs). Following the blue laser stimulation of ChR2-positive presynaptic terminals in striatum, the short-latency (<10 ms) EPSCs recorded were considered as the direct excitatory inputs on D1- or D2-SPNs (Klug et al., 2018; Kress et al., 2013), which can be blocked by glutamate antagonists NBQX/APV (see Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic for the possible organization of the excitatory inputs to striatal D1- vs. D2-SPNs from completely segregated (left), totally overlapping (middle), to partially mixed (right). The red and black filled circles indicate the individual neurons projecting to D1- vs. D2-SPNs, respectively. The half red and half black circles imply the neurons projecting to both. (B) (left) Schematic of rabies-ChR2 labeling of the inputs to D1-SPNs and whole-cell recordings of rabies-negative striatal D1-SPNs with local optogenetic stimulation. (right) Example of the average EPSC trace showing short latency response to paired pulses (50 ms ISI) stimulation (black), that is blocked by AMPAR and NMDAR antagonists (gray). All recordings were conducted in the presence of picrotoxin (PTX) to isolate excitatory transmission. Scale bar, 25 ms, 100 pA. Same conditions applied to all following recordings. (C) Whole-cell recording of rabies-negative striatal D2-SPNs with local optogenetic stimulation with rabies-ChR2 labeling of the inputs to D2-SPNs. (D) The likelihood of the inputs to D1-SPNs forming a functional connection with nearby non-starter D1-SPNs, and the likelihood of the D2-SPN situation. Numbers above the bars denote the number of cells that show functional connectivity within total recorded. Fisher\u2019s exact test, p=0.3137. Number of animals in each group: D1-projecting to D1 EGFP(+), N=7; D1-projecting to D2 EGFP(\u2212), N=8; D2-projecting to D2 EGFP(+), N=10; D2-projecting to D1 EGFP(\u2212), N=8. (E\u2013F) Whole-cell recording of rabies-negative striatal D2-SPNs with local optogenetic stimulation with rabies-ChR2 labeling of the inputs to D1-SPNs (E), and recording of rabies-negative D1-SPNs with stimulation of inputs to D2-SPNs (F). (G) The likelihood of the inputs to D1-SPNs forming a functional connection with nearby non-starter D2-SPNs, and the likelihood of the inputs to D2-SPNs forming a functional connection with nearby non-starter D1-SPNs. Fisher\u2019s exact test, p=0.0079. **, p<0.01. Number of animals in each group: D1-projecting to D2 EGFP(+), N=8; D1-projecting to D1 EGFP(\u2212), N=7; D2-projecting to D1 EGFP(+), N=8; D2-projecting to D2 EGFP(\u2212), N=10.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) The EPSC latency (A), amplitudes (B), paired pulse ratio (C), and variation (D) of whole-cell recordings of rabies-negative striatal D1- or D2-SPNs, with optogenetic stimulation of the terminals of D1- or D2-SPN retrogradely labeled cortical neurons. n.s., p>0.05, not statistically significant. Data are expressed as mean \u00b1 SEM.\n\nRecordings from the mCherry-negative, non-starter striatal D1-SPNs in striatal D1-rabies-ChR2-infected mice revealed that with high probability (~63%) a D1-SPN receives the inputs from the presynaptic excitatory neurons projecting to surrounding D1-SPNs (Figure 2B and D; Figure 2\u2014figure supplement 1). This is true from recordings in non-starter D1-SPNs identified both as mCherry (\u2212) / eGFP (+) in D1-Cre x D1-eGFP mice and mCherry (\u2212) / eGFP (\u2212) in D1-Cre x D2-eGFP mice (Figure 2B and D). Similarly, recordings from mCherry-negative non-starter striatal D2-SPNs in striatal D2-rabies-ChR2-tracing mice revealed that with a very high probability (~79%) a D2-SPN receives the inputs from the presynaptic excitatory neurons that project to surrounding D2-SPNs (Figure 2C and D; Figure 2\u2014figure supplement 1). Again, it is similar to recordings in non-starter D2-SPNs identified both as mCherry (\u2212) / eGFP (+) in A2a-Cre x D2-eGFP mice and mCherry (\u2212) / eGFP (\u2212) in A2a-Cre x D1-eGFP mice (Figure 2C and D). However, recordings from striatal D2-SPNs in the striatal D1-rabies-ChR2-tracing mice revealed that the chance for a D2-SPN to receive excitatory inputs from the presynaptic neurons projecting to surrounding D1-SPNs is rather low (~40%, Figure 2E and G; Figure 2\u2014figure supplement 1). In contrast, recordings from striatal D1-SPNs in the striatal D2-rabies-ChR2-tracing mice revealed that the chance for a D1-SPN to receive the excitatory inputs from the presynaptic neurons projecting to surrounding D2-SPNs is remarkably high (~73%, Figure 2F and G; Figure 2\u2014figure supplement 1). These data unveil a complex picture including both parallel and crosstalk between the excitatory inputs to D1- and D2-SPNs. Notably, the likelihood that the input connectivity was significantly higher from the presynaptic excitatory inputs of D2-SPNs to D1-SPNs than from the presynaptic excitatory inputs of D1-SPNs to D2-SPNs (Figure 2D and G). Together, these results suggest largely segregated yet asymmetrically overlapping excitatory projections to striatum where the majority of excitatory inputs to D1-SPNs only target the D1-SPNs, while most excitatory inputs to D2-SPNs target both D2- and D1-SPNs.\n\nBased on this asymmetrically overlapping functional organization, one would predict that the excitatory inputs to D1-SPNs mostly control the striatal direct pathway, while the inputs to D2-SPNs would drive both the indirect and direct pathways (Figure 3A). To test whether this is the case, we injected rabies-ChR2-mCherry into the dorsal striatum of D1- or A2a-Cre mice as before, and implanted optic fibers bilaterally in either MCC or M1 (see Materials and methods). This allows us to selectively activate D1- or D2-SPN projecting neurons in MCC or M1 and determine the optogenetic effects on behavior. For comparison, we performed behavioral experiments by optogenetic stimulation of striatal D1- or D2-SPNs in dorsal medial (DMS) and dorsal lateral striatum (DLS), two areas that receive dense excitatory projections from MCC and M1, respectively (Aoki et al., 2019; Shepherd, 2013; see Materials and methods). Consistent with the previous observations (Kravitz et al., 2010), optogenetic stimulation (20 Hz) of D1-SPNs in the DMS or DLS facilitated locomotion (Figure 3B, C, E and F). Conversely, optogenetic stimulation (20 Hz) of D2-SPNs in DMS significantly suppressed locomotion (Figure 3B and D), which is less obvious in DLS (Figure 3E and G).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of largely segregated yet partially overlapping excitatory inputs to striatal D1- vs. D2-SPNs. (B) Schematic of dorsal medial striatum (DMS) injection of Cre-dependent AAV-ChR2 and optogenetic stimulation in D1- or A2a-Cre mice. (C) (top) Example of locomotion path under control (black) and following 20 Hz optogenetic stimulation (gray) of DMS D1-SPNs in open field. Scale bar, 5 cm, same for below. (bottom) Stimulation of D1-SPNs in DMS facilitates locomotion (n=5, unpaired two-tailed t-test, t=3.386, p=0.0046). **, p<0.01. Data are expressed as mean \u00b1 SEM. (D) 20 Hz stimulation of D2-SPNs in DMS suppresses locomotion (n=5, unpaired two-tailed t-test, t=2.559, p=0.0227). *, p<0.05. Data are expressed as mean \u00b1 SEM. (E) Schematic for dorsal lateral striatum (DLS) optogenetics. (F\u2013G) 20 Hz stimulation of D1-SPNs in DLS facilitates locomotion (F, n=5, unpaired two-tailed t-test, t=4.736, p=0.0003), while stimulation of D2-SPNs in DLS does not significantly suppress locomotion in open field (G, n=5, unpaired two-tailed t-test, t=1.026, p=0.3224). ***, p<0.001. Data are expressed as mean \u00b1 SEM. (H) Schematic of rabies-ChR2 labeling of the inputs to D1 or D2-SPNs and optogenetic stimulation in MCC. (I\u2013J) 20 Hz stimulation of MCC neurons projecting to D1-SPNs facilitates locomotion (I, n=9, unpaired two-tailed t-test, t=2.344, p=0.0344), while stimulation of MCC neurons projecting to D2-SPNs does not alter locomotion (J, n=10, unpaired two-tailed t-test, t=1.214, p=0.2447). *, p<0.05. Data are expressed as mean \u00b1 SEM. (K) Schematic of rabies-ChR2 labeling of the inputs to D1 or D2-SPNs and optogenetic stimulation in M1. (L\u2013M) 20 Hz stimulation of the M1 neurons projecting to D1-SPNs facilitates locomotion (L, n=7, unpaired two-tailed t-test, t=3.276, p=0.0055), while stimulation of the M1 neurons projecting to D2-SPNs does not significantly alter locomotion (M, n=8, Unpaired two-tailed t-test, t=0.5796, p=0.5714). **, p<0.01. Data are expressed as mean \u00b1 SEM. (N) Schematic of a mouse performing intracranial self-stimulation (ICSS) behavior. (O\u2013P) D1-SPN (red) but not D2-SPN stimulation (black) drives ICSS behavior in both the DMS (O: D1, n=6, permutation test, slope = 1.5060, p=0.0378; D2, n=5, permutation test, slope = \u20130.2214, p=0.1021; one-tailed Mann Whitney test, Day 7 D1 vs. D2, p=0.0130) and the DLS (P: D1, n=6, permutation test, slope = 28.1429, p=0.0082; D2, n=5, permutation test, slope = \u20130.3429, p=0.0463; one-tailed Mann Whitney test, Day 7 D1 vs. D2, p=0.0390). *, p<0.05. Data are expressed as mean \u00b1 SEM. (Q) Timeline of helper virus injections, rabies-ChR2 injections and optogenetic stimulation for ICSS behavior. (R\u2013S) Optogenetic stimulation of the cortical neurons projecting to either D1- or D2-SPNs induces ICSS behavior in both the MCC (R: MCC-D1, n=5, permutation test, Day1-Day7, slope = 2.5857, p=0.0034; MCC-D2, n=5, Day2-Day7, permutation test, slope = 1.4229, p=0.0344; no significant effect on Day7, MCC-D1 vs. MCC-D2, two-tailed Mann Whitney test, p=0.9999) and the M1 (S: M1-D1, n=5, permutation test, Day1-Day7, slope = 1.8214, p=0.0259; M1-D2, n=5, Day1-Day7, permutation test, slope = 1.8214, p=0.0025; no significant effect on Day7, M1-D1 vs. M1-D2, two-tailed Mann-Whitney test, p=0.3810). n.s., not statistically significant. Data are expressed as mean \u00b1 SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) 5 Hz optogenetic stimulation on MCC neurons projecting to either D1- or D2-SPNs didn\u2019t change the locomotion activity. MCC \u2013 D1, n=9, unpaired two-tailed t-test, t=0.1906, p=0.8516. MCC \u2013 D2, n=10, unpaired two-tailed t-test, t=1.015, p=0.3275. Data are expressed as mean \u00b1 SEM. (C) 5 Hz optogenetic stimulation of M1 neurons projecting to D1-SPNs didn\u2019t change the locomotion activity. n=7, unpaired two-tailed t-test, t=0.276, p=0.7866. Data are expressed as mean \u00b1 SEM. (D) 5 Hz optogenetic stimulation of M1 neurons projecting to D2-SPNs slightly increased locomotion activity. n=8, unpaired two-tailed t-test, t=2.48, p=0.0265. *, p<0.05. Data are expressed as mean \u00b1 SEM.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic of dorsal medial striatum (DMS) injection of Cre-dependent AAV-ChR2 in D1- and A2a-Cre mice with optogenetic stimulation in M1. (B) 20 Hz optogenetic stimulation of M1 in mice expressing ChR2 in striatal D1-SPNs didn\u2019t change the locomotion activity. n=5, unpaired two-tailed t-test, t=0.1016, p=0.9194. Data are expressed as mean \u00b1 SEM. (C) 20 Hz optogenetic stimulation of M1 in mice expressing ChR2 in striatal D2-SPNs didn\u2019t alter the locomotion activity. n=5, unpaired two-tailed t-test, t=1.155, p=0.2525. Data are expressed as mean \u00b1 SEM.\n\nNotably, high-frequency (20 Hz) but not low-frequency (5 Hz) optogenetic stimulation of MCC neurons that project to D1-SPNs significantly facilitated locomotion in the open field (Figure 3H, I; Figure 3\u2014figure supplement 1), similar to D1-SPN activation in DMS. However, optogenetic stimulation (20 Hz) of D2-SPN projecting MCC neurons in the same location did not alter locomotion in the open field (Figure 3H and J), in contrast with the effects of stimulation of D2-SPNs in DMS (Figure 3D). Similarly, high-frequency optogenetic stimulation (20 Hz) of M1 neurons that project to D1-SPNs facilitated locomotion in the open field (Figure 3K and L; Figure 3\u2014figure supplement 1), while 20 Hz stimulation of the M1 neurons projecting to D2-SPNs did not significantly alter locomotion (Figure 3K and M). Further control experiments employing the same optogenetic stimulation in the exact cortical locations but with ChR2 expression only in the striatum do not generate any behavioral phenotypes (Figure 3\u2014figure supplement 2). It thus rules out the possibility that the behavioral effects observed by cortical stimulation in the rabies-ChR2 mice were triggered through direct striatal activation due to the light penetration into the striatum. These results are consistent with the functional connectivity in which the excitatory inputs to D1-SPNs mostly drive the direct pathway, and the inputs to D2-SPNs target both the indirect and direct pathways (Figure 3A). It also suggests that the cortical neurons in the same cortical layer and spatial location could differently control actions depending on their striatal projection targets, in a pathway- and cell type-specific manner.\n\nWe next ask whether the cortical subpopulations projecting to striatal D1- vs. D2-SPNs could differently control action learning. We first performed experiments in the D1-Cre mice with viral expression of ChR2 in the striatum and found that optogenetic stimulation of D1-SPNs robustly supported intracranial self-stimulation (ICSS; Figure 3N) in either DMS (Figure 3O) or DLS (Figure 3P). Conversely, optogenetic stimulation of D2-SPNs, either in DMS (Figure 3O) or DLS (Figure 3P), did not promote ICSS behavior. These data confirmed that the D1-SPN activation in both DMS and DLS drives action learning and ICSS, while D2-SPN stimulation does not strongly support ICSS behavior (Kravitz et al., 2012; Vicente et al., 2016).\n\nWe then test how the striatum-projecting cortical neurons in MCC or M1 would support ICSS behavior, and whether there is any difference between activation of the D1- vs. D2-SPN projecting cortical neurons. Similar to the effects of direct striatal D1-SPN stimulation (Figure 3O and P), optogenetic stimulation of striatal D1-SPN projecting neurons was sufficient to support ICSS behavior both in MCC (Figure 3Q and R) and in M1 (Figure 3Q and S). Notably, optogenetic stimulation of the cortical neurons projecting to D2-SPNs also significantly drove ICSS behavior, irrespective of whether it is in MCC (Figure 3R) or M1 (Figure 3S). These data suggested that optogenetic activation of either D1- or D2-SPN projecting neurons in MCC or M1 could drive reinforcement learning and support ICSS behavior.\n\nCorticostriatal circuitry is critical for action sequence learning and execution (Geddes et al., 2018; Hikosaka et al., 1998; Jin and Costa, 2010; Jin and Costa, 2015; Jin et al., 2014; Tanji, 2001; Tecuapetla et al., 2016). In particular, striatal direct and indirect pathways have been suggested to play distinct roles in controlling learned action sequences, as D1-SPNs facilitate ongoing actions while D2-SPNs inhibit actions and mediate switching (Geddes et al., 2018; Jin and Costa, 2010; Jin and Costa, 2015; Jin et al., 2014; Tecuapetla et al., 2016). We thus ask how the D1- vs. D2-SPN projecting neurons in MCC and M1 regulate the learned action sequences. D1- or A2a-Cre mice injected with helper viruses were trained under fixed-ratio schedule, in which a fixed amount of eight (FR8) leads to reward (Geddes et al., 2018; Jin and Costa, 2010; Jin et al., 2014; Tecuapetla et al., 2016; Figure 4A; see Materials and methods). Three weeks later, the trained animals were injected with (EnvA) SAD-\u2206G Rabies-ChR2-mCherry virus in the dorsal striatum and optic fibers were bilaterally implanted in either MCC or M1 as before. Mice were continuously trained for around 4 days after 4 days of recovery from the surgeries to allow the rabies-mediated ChR2 expression before the optogenetic experiments start (Figure 4E). High-frequency stimulation (20 Hz) of the cortical neurons projecting to D1-SPNs or D2-SPNs was delivered upon the first lever press of the FR8 sequence in randomly chosen 50% trials (Geddes et al., 2018; Tecuapetla et al., 2016; Figure 4A and E, see Materials and methods). Stimulation of MCC inputs to D1-SPNs facilitated lever pressing over the duration of the FR8 sequence (Figure 4B and D). Conversely, stimulation of MCC inputs to D2-SPNs slightly reduced the lever press rate over the stimulation period (Figure 4C and D). The modulation effects on lever pressing rate were significantly different between optogenetic stimulation of D1- and D2-SPN projecting MCC neurons (Figure 4D). On the other hand, optogenetic activation of the M1 neurons that project to D1-SPNs facilitated lever pressing during sequence execution (Figure 4F and H), similar to the effects of MCC stimulation. However, optogenetic stimulation of the M1 neurons projecting to D2-SPNs delivered an overall facilitation effect on lever pressing (Figure 4G and H). Overall, stimulation of either D1- or D2-SPN projecting M1 neurons facilitated lever pressing to a similar degree (Figure 4H). These results thus revealed the highly heterogeneous functions of corticostriatal subcircuits in controlling learned action sequences, depending on both the cortical region and their cell-type-specific targets in striatum.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of a mouse performing FR8 sequence. (B) Optogenetic stimulation (20 Hz) of the D1-SPN projecting MCC neurons during FR8 sequence. Example lever pressing (black bar) in control (top) vs. stimulation (middle) trials aligned to the first press, where the blue transparent rectangle corresponds to the window of optogenetic stimulation (20 Hz, 8 s). The black and blue lines in the PETH (bottom) indicate the lever press rate for control and stimulation conditions, respectively, same for below. (C) Optogenetic stimulation (20 Hz) of the D2-SPN projecting MCC neurons during FR8 sequence. (D) Average percent lever press rate change during optogenetic stimulation of D1- vs. D2-SPN projecting MCC neurons compared to control (MCC \u2013 D1, n=8; MCC \u2013 D2, n=7; Unpaired two-tailed t-test, t=2.774, p=0.0097). **, p<0.01. Effects compared to a theoretical percentage change of 0 of each individual manipulation (MCC-D1, n=8, one-sample two-tailed t-test, t=2.814, p=0.0131, 95% CI, 15.49\u2013112.2; MCC-D2, n=7, one-sample two-tailed t-test, t=0.8481, p=0.4117, 95% CI, \u201321.78\u20139.502). Data are expressed as mean \u00b1 SEM. (E) Timeline of helper virus injections, rabies-ChR2 injections and optogenetic stimulation during action sequence performance. (F\u2013G) Optogenetic stimulation (20 Hz) of the D1- (F) or D2-SPN (G) projecting M1 neurons during FR8 sequence. (H) Average percent lever press rate change during optogenetic stimulation of D1- vs. D2-SPN projecting M1 neurons compared to control (M1 \u2013 D1, n=6; M1 \u2013 D2, n=7; Unpaired two-tailed t-test, t=0.7651, p=0.4511). Effects compared to a theoretical percentage change of 0 of each individual manipulation (M1-D1, n=6, one-sample two-tailed Wilcoxon signed-rank test, p=0.0046, 97.75% CI, \u20130.7866\u2013151.0; M1-D2, n=7, one-sample two-tailed Wilcoxon signed-rank test, p=0.0479, 96.48% CI, 2.350\u201362.86). Data are expressed as mean \u00b1 SEM.\n\n## Discussion\n\nBy taking advantage of a monosynaptic rabies tracing with optogenetics system, we have discovered a significant degree of segregation between the excitatory inputs to striatal D1- vs. D2-SPNs. Notably, the results unveiled an overall asymmetric crosstalk from the excitatory inputs of D2-SPNs onto D1-SPNs, but not vice versa. Striatal D1- and D2-SPNs receive excitatory inputs from both the cortex and thalamus (Klug et al., 2018; Wall et al., 2013). Since the current techniques do not allow us to isolate the inputs from a specific region to D1- vs. D2-SPNs in slice recording, these results do not exclude the possibility that there might be certain cortical or thalamic regions targeting D1- and D2-SPNs equally or even with a reverse bias. However, the overall functional organization does imply that while the excitatory inputs to D1-SPNs in general drive the striatal direct pathway, the excitatory inputs to D2-SPNs control both the striatal direct and indirect pathways. Indeed, it has been recently reported that corticospinal neurons, which project to both spinal cord and DLS, form uneven synapses onto direct and indirect pathway neurons in the DLS and preferentially target D1- other than D2-SPNs (Nelson et al., 2021). Furthermore, a series of in vivo optogenetic experiments in both MCC and M1 have further supported this notion and demonstrated that the functionally heterogeneous corticostriatal neuronal subpopulations differently control actions, in both a cortical-region- and striatal-targeting-cell-type-specific manner. These in vivo functional findings in corticostriatal pathways are consistent with the observations of in vitro synapse connection probability. Future studies should aim to further dissect the organization and function of pathway-specific thalamostriatal subcircuits and determine whether they share the same principles of corticostriatal projections.\n\nOur findings show that stimulation of D1-projecting cortical neurons produced behavioral effects closely resembling those of selective D1 activation in both open field and ICSS tests. This is consistent with our slice recording data, which revealed that D1-projecting cortical neurons exhibit a higher connection probability with D1-SPNs than with D2-SPNs. In contrast, interpreting the effects of D2-projecting cortical neuron stimulation is inherently more nuanced. In the open field test, activation of these neurons did not significantly modulate local motion. This could reflect a balanced influence of D1 activation, which facilitates movement, and D2 activation, which suppresses it - resulting in a net neutral behavioral outcome. In the ICSS test, the absence of a strong reinforcement effect typically associated with D2 activation, combined with partial reinforcement likely due to concurrent D1 activation, suggests that stimulation of D2-projecting neurons produces a mixed behavioral signal. This outcome supports the interpretation that these neurons synapse onto both D1- and D2-SPNs, leading to a blended behavioral response that differs from selective D1 or D2 activation alone. Together, these two behavioral assays offer complementary perspectives, providing a more complete view of how projection-specific cortical inputs influence striatal output and behavior.\n\nIn Figure 4 of the current manuscript, we show that optogenetic activation of MCC neurons projecting to D1-SPNs facilitates sequence lever pressing, whereas activation of MCC neurons projecting to D2-SPNs does not induce significant behavioral changes. Conversely, activation of M1 neurons projecting to either D1- or D2-SPNs enhances lever pressing sequences. These observations align with our prior findings (Geddes et al., 2018; Jin et al., 2014), where we demonstrated that in the striatum, D1-SPN activation facilitates ongoing lever pressing, whereas D2-SPN activation is more involved in suppressing ongoing actions and promoting transitions between sub-sequences. Taken together, the facilitation of lever pressing by D1-projecting MCC and M1 neurons is consistent with their preferential connectivity to D1-SPNs and their established behavioral role.\n\nWhat is particularly intriguing, though admittedly more complex, is the behavioral divergence observed upon activation of D2-SPN-projecting cortical neurons. Activation of D2-projecting MCC neurons does not alter lever pressing, possibly reflecting a counterbalancing effect from concurrent D1- and D2-SPN activation. In contrast, stimulation of D2-projecting M1 neurons facilitates lever pressing, albeit less robustly than their D1-projecting counterparts. This discrepancy may reflect regional differences in striatal targets, DMS for MCC versus DLS for M1, as also supported by our open field test results. Furthermore, our recent findings (Zhang et al., 2025) show that synaptic strength from Cg to D2-SPNs is stronger than to D1-SPNs, whereas the M1 pathway exhibits the opposite pattern. These data suggest that beyond projection ratios, synaptic strength also shapes cortico-striatal functional output. Thus, stronger D2-SPN synapses in the DMS may offset D1-SPN activation during MCC-D2 stimulation, dampening lever pressing increase. Conversely, weaker D2 synapses in the DLS may permit M1-D2 projections to facilitate behavior more readily.\n\nTo identify non-starter D1- or D2-SPNs, we used mCherry to label both TVA helper virus and ChR2-expressing rabies constructs, allowing us to record mCherry-negative non-starter SPNs labeled by GFP to calculate connection probability. However, this approach introduces a limitation: it is not possible to accurately assess rabies infection efficiency, because both TVA-only SPNs and monosynaptically traced SPNs exhibit mCherry signal in addition to true starter SPNs. Existing data indicate that the connection probabilities from D1-projecting cortical neurons to both D1- and D2-SPNs are lower than those from D2-projecting cortical neurons to both SPN subtypes. One possible explanation is that rabies virus replicates more efficiently in D1-SPNs than in D2-SPNs, or vice versa, causing the calculated connection ratios to reflect a combination of true connectivity and differences in viral replication efficiency. On the other hand, we recorded from non-starter SPNs within the injection area that were surrounded by mCherry-positive starter cells, which should share similar topographic cortical projections. Under these conditions, the number of labeled starter SPNs is unlikely to substantially influence the connection probability measured in brain slices. Furthermore, our recent study (Li and Jin, 2023) proposes a \u2018triple-control\u2019 model of striatal function, consisting of a direct pathway operating linearly and two indirect pathway layers serving modulatory roles. This framework suggests a functional requirement for D2-SPNs in the indirect pathway to receive more coordinated cortical excitatory input than D1-SPNs, which is consistent with the connection data obtained in the present study.\n\nAlthough monosynaptic rabies tracing has been widely applied in anatomical studies, its use in functional and in vivo experiments remains limited by toxicity. In our in vivo optogenetic behavioral experiments, we confined all stimulations to within 12 days post-infection, a period during which rabies-infected cells are reported to remain relatively healthy (Osakada et al., 2011). Nevertheless, toxicity may still compromise neuronal excitability, disrupt synaptic transmission, or even cause the loss of starter SPNs. As a result, the observed optogenetic effects could partly arise from biased circuit function due to such cellular alterations. Addressing this issue will require improved monosynaptic retrograde tracing tools with reduced toxicity and more reliable labeling efficiency.\n\nThe cortical neurons projecting to striatum mainly consist of layer 2/3 and layer 5 pyramidal cells (Klug et al., 2018; Wall et al., 2013), including both the intratelencephalic (IT) and pyramidal tract (PT) types of neurons (Shepherd, 2013). While some anatomical preference might exist (Lei et al., 2004), it has been found that both the striatal direct and indirect pathways receive functional inputs from both the IT and PT neurons (Ballion et al., 2008; Kress et al., 2013). Our rabies-ChR2 tracing system allows us to further separate the cortical inputs to striatal D1- vs. D2-SPNs and selectively stimulate these specific cortical subpopulations during behavior and learning. These results have further revealed the diversity of corticostriatal cell subtypes and underscored their heterogeneous functions in behavior. Although the behavioral phenotypes of optogenetic stimulation of different cortical neuronal subpopulations are largely consistent with their functional connectivity with the striatal D1- vs. D2-SPNs do not necessarily suggest the observed effects were mediated completely by striatum but not through their collaterals targeting other brain regions or spinal cord (Nelson et al., 2021; Shepherd, 2013). In addition, it has been known that both striatal direct and indirect pathways receive inhibitory inputs from certain GABAergic interneurons in motor cortices (Melzer et al., 2017). In our behavioral experiments with optogenetic stimulation in the motor cortex, there might be a possible contribution from these striatum-projecting cortical inhibitory neurons. However, given the nature of sparse distribution of the GABAergic interneurons in the cortex, it is unlikely that they dominate the observed behavioral phenotype (Melzer et al., 2017). Due to the limitations of current viral approaches, one might question whether our in vivo optogenetic experiments could inadvertently activate terminals from rabies-infected neurons in cortical or thalamic regions beyond the targeted area. However, a previous optogenetic study on thalamo-cortical synapses (Cruikshank et al., 2010) demonstrated that sustained optogenetic stimulation (500 ms) of ChR2-expressing presynaptic terminals induces transient, rather than sustained, action potential firing on the postsynaptic neurons. Considering the much longer stimulation durations used in our optogenetic experiments (15 s for open-field, 1 s for ICSS, and 8 s for the FR8/FR4), it provides compelling evidence that the behavioral effects of optogenetic stimulation are most likely driven by the excitation of ChR2-expressing D1- or D2-SPN projecting neurons in the targeted cortical area, rather than by efferent terminals from neurons located outside this region. Nevertheless, from the striatum point of view, the distinct behavior effect does strongly suggest that the specific information the direct vs. indirect pathway received from the cortex is somehow channeled, but at the same time, effectively coordinated by the cortex.\n\nThese results have important implications for how the corticostriatal circuitry controls actions in health and disease. The traditional model of the basal ganglia suggests that the direct and indirect pathways play opposing roles in facilitating and inhibiting action, respectively (Albin et al., 1989; DeLong, 1990; Kravitz et al., 2010), although one study (Cui et al., 2021) reported an alternative pattern, which may stem from differences in stimulation coordinates and fiber-optic diameter. More recent models of basal ganglia, however, propose that the direct pathway co-activates and cooperates with the indirect pathway, with the former activating the selected action and the latter inhibiting the competing actions (Cui et al., 2013; Hikosaka et al., 2000; Jin et al., 2014; Mink, 1996; Tecuapetla et al., 2016). Under more complicated behavior context, it has been previously reported that the striatal D1- and D2-SPNs are co-activated during the initiation of an action sequence but become largely segregated during the sequence performance (Geddes et al., 2018; Jin et al., 2014). More specifically, the various subpopulations of striatal D1- and D2-SPNs differently change their firing activity to support the start/stop of the sequence, the execution of the elemental actions, and the switch between subsequences (Geddes et al., 2018). These previous findings thus suggested that the striatal direct and indirect pathways have to dynamically coordinate their activity throughout the performance of sequential actions (Geddes et al., 2018; Hikosaka et al., 2019; Jin and Costa, 2015; Markowitz et al., 2018; Tecuapetla et al., 2016).\n\nBut how are the dynamically different activities in the striatal direct and indirect pathways generated in the circuitry? Both the striatal direct and indirect pathways are driven by the excitatory inputs from the cerebral cortex and thalamus (Bolam et al., 2000Gerfen et al., 2016; Pan et al., 2010; Wall et al., 2013). However, whether or not they receive the projections from the same presynaptic neurons, and how the input information is channeled into the two pathways for proper action control, remains mostly unknown. The current study has revealed the largely segregated but asymmetrically overlapping organization of the cortical projections to striatal direct vs. indirect pathway. This specific corticostriatal organization provides a structural foundation for the striatal direct and indirect pathways to implement such a dynamic coordination of activity during sequence behavior (Geddes et al., 2018; Hikosaka et al., 2019; Hikosaka et al., 1998; Jin and Costa, 2010; Jin and Costa, 2015; Jin et al., 2014; Markowitz et al., 2018; Tanji, 2001; Tecuapetla et al., 2016). For instance, the dedicated cortical projections to striatal direct vs. indirect pathway are well suited for controlling sequence initiation and termination, where the activation of D1- and D2-SPNs is critical (DeLong, 1990; Geddes et al., 2018). On the other hand, the overlapping cortical projections to both striatal direct and indirect pathways could be crucial for action switching, which requires proper coordination of the two pathways to inhibit current action and activate the upcoming one (DeLong, 1990; Geddes et al., 2018). Our findings also predict that the striatal D1- vs. D2-SPN projecting neurons in the cerebral cortex would fire differently but activate in relation with each other during behavior. Future work should aim to understand how these cortical subpopulations behave and coordinate to control the striatal direct and indirect pathways for action learning and selection in health and disease (Dalley and Robbins, 2017; Geddes et al., 2018; Hikosaka et al., 2000; Jin et al., 2014; Mink, 2003; Monteiro and Feng, 2017; Redgrave et al., 2010; Shepherd, 2013).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Drd1-Cre</td>\n      <td>The JacksonLaboratory</td>\n      <td>stock # 030329; RRID:IMSR_JAX:030329</td>\n      <td>maintained on a C57BL/6 J background</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Adora2a-Cre</td>\n      <td>The JacksonLaboratory</td>\n      <td>stock # 036158; RRID:MMRRC_036158-UCD</td>\n      <td>maintained on a C57BL/6 J background</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>C57BL/6 J</td>\n      <td>The JacksonLaboratory</td>\n      <td>stock # 000664; RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>D1-eGFP</td>\n      <td>MMRRC</td>\n      <td>MMRRC_000297-MU; RRID:MMRRC_000297-MU</td>\n      <td>GENSAT: X60</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>D2-eGFP</td>\n      <td>MMRRC</td>\n      <td>MMRRC_00230-UNC; RRID:MMRRC_000230-UNC</td>\n      <td>GENSAT: S118</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Adeno-associated virus)</td>\n      <td>AAV5/EF1\u03b1-Flex-TVA-mCherry</td>\n      <td>UNC Viral Vector Core</td>\n      <td>RRID:SCR-002448</td>\n      <td>3\u20134.3\u00d71012 particles/mL</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Adeno-associated virus)</td>\n      <td>AAV8/CA-Flex-RG</td>\n      <td>UNC Viral Vector Core</td>\n      <td>RRID:SCR-002448</td>\n      <td>1.2\u20134.3\u00d71012 particles/mL</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudotyped rabies virus)</td>\n      <td>(EnvA) SAD-\u2206G Rabies-eGFP</td>\n      <td>Salk Vector Core</td>\n      <td>RRID:SCR_014847</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudotyped rabies virus)</td>\n      <td>(EnvA) SAD-\u2206G Rabies-ChR2-mCherry</td>\n      <td>Salk Vector Core</td>\n      <td>RRID:SCR_014847</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Adeno-associated virus)</td>\n      <td>AAV5-EF1\u03b1-DIO-ChR2(H134R)-mCherry</td>\n      <td>Salk Vector Core</td>\n      <td>RRID:SCR_014847</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NBQX disodium salt hydrate</td>\n      <td>MilliporeSigma</td>\n      <td>Cat.#. N183</td>\n      <td>10 \u00b5M (final)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DL-APV</td>\n      <td>MilliporeSigma</td>\n      <td>Cat.#. A5282</td>\n      <td>50 \u00b5M (final)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Picrotoxin</td>\n      <td>MilliporeSigma</td>\n      <td>Cat.#. P1675</td>\n      <td>50\u2013100 \u00b5M (final)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>QX-314</td>\n      <td>MilliporeSigma</td>\n      <td>Cat.#. L5783</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji / ImageJ</td>\n      <td>NIH</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp 9.2</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Illustrator</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_010279</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MED PC</td>\n      <td>MED Associates</td>\n      <td>RRID:SCR_012156</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Allen Reference Atlas</td>\n      <td></td>\n      <td>RRID:SCR_013286</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nAll procedures were approved by the Salk Institute Institutional Animal Care and Use Committee (IACUC; protocol 12\u201300032) and followed NIH guidelines for the care and use of laboratory animals. Group-housed male and female mice (2\u20136 months old) were used in this study. Animals were housed on a 12 hr dark/12 hr light cycle (dark from 6 pm to 6 am). Heterozygous Drd1-Cre (The Jackson Laboratory, stock # 030329, GENSAT: EY217) and Adora2a-Cre (The Jackson Laboratory, stock # 036158, GENSAT: KG139) mice were obtained from MMRRC and were backcrossed to C57BL/6 J mice, stock # 000664 (>9 generations; Cui et al., 2013; Jin et al., 2014; Madisen et al., 2012; Tecuapetla et al., 2016). BAC reporter lines D1-eGFP (MMRRC: MMRRC_000297-MU; GENSAT: X60) and D2-eGFP (MMRRC: MMRRC_00230-UNC; GENSAT: S118; Gong et al., 2007) were crossed to Drd1-Cre (D1-Cre) and Adora2a-Cre (A2a-Cre) mice to identify D1- and D2-SPNs for electrophysiological recordings.\n\n### Surgery and viral injection\n\nFor G-deleted rabies-mediated retrograde tracing and functional determination (slice recordings; Smith et al., 2016), all surgeries were performed under aseptic conditions with animals anesthetized with ketamine (100 mg/kg) / xylazine (10 mg/kg) while mounted on a stereotaxic device (Kopf Instruments; Tujunga, CA). The skull was leveled at bregma and lambda, and a small hole was drilled at the coordinate (from bregma and midline) of AP +0.5 mm, ML \u00b11.8 mm. A Hamilton syringe (33-gauge needle) containing 1 \u00b5l freshly mixed AAV5/EF1\u03b1-Flex-TVA-mCherry (UNC Vector Core; Chapel Hill, NC) and AAV8/CA-Flex-RG (UNC Vector Core; Chapel Hill, NC) was slowly lowered to DV - 2.2 mm from the dura to target dorsal central striatum. The virus cocktail was injected slowly over ~10 min, and the needle was left in place for ~5 additional minutes afterwards. Then, the needle was slowly retracted over 5 min to reduce the virus from moving into the needle track. After injection, mice were sutured and returned to their home cage with ibuprofen (50 mg/kg/day) in their drinking water for the following four days. They were given 3 weeks to allow for maximal expression of helper viruses before they were injected with 1.5 \u00b5l of (EnvA) SAD-\u2206G Rabies-eGFP or 1.5 \u00b5l of (EnvA) SAD-\u2206G Rabies-ChR2-mCherry (Salk Vector Core, La Jolla, CA) on an angle (18\u00b0) to avoid labeling any neurons in the initial injection tract in the same target region. Injecting locations were identical in D1-Cre and A2a-Cre animals. All the injections were done unilaterally for anatomical and slice physiology experiments and bilaterally for behavioral experiments.\n\nTo prepare animals for optogenetic behavior experiments testing D1- or D2-SPN projecting cortical neurons, animals were anesthetized with isoflurane (4% induction, 1\u20132% maintenance) and locally injected with bupivacaine to numb the incision site. The animals received bilateral injections of helper virus (TVA, RG) as before in dorsal striatum. After ~21 days of pre-training and full body weight recovered (see Operant Conditioning), the skull was exposed again and cleaned with 4% H2O2 and UV-light etched with Opti-Bond All-in-One (Kerr, Orange, CA). Then 1.5 \u00b5l (EnvA) SAD-\u2206G Rabies-ChR2-mCherry was bilaterally injected in each hemisphere using the same coordinates as before. Then, custom-made, polished optical fibers (200 \u00b5m diameter, 0.37 NA; Thor Labs, Newton, NJ) were implanted in input regions: MCC (AP +0.2 mm, ML \u00b10.8 mm for skull holes, fibers penetrate into brain at 17\u00b0 angle off midline with traveling distance of 1.3 mm, actual fiber tips target brain at AP +0.2 mm, ML \u00b10.4 mm, DV \u20131.2 mm) or M1 (AP +0.5 mm, ML \u00b11.2 mm, DV \u20130.5 mm). The fibers were secured with a light-curing composite (Tetric EvoFlow, Ivoclar Vivadent; Mississauga, ON). Finally, a layer of black dental cement (Lang Dental, Wheeling, IL) was added on the top of the previous cement to support and block laser light diffusion during stimulation. Animals were given ibuprofen in their drinking water for pain management during post-surgery recovery (4 days).\n\nFor striatal opto-ICSS and open field experiments, D1- or A2a-Cre mice were injected bilaterally with AAV5-EF1\u03b1-DIO-ChR2(H134R)-mCherry (Salk Vector Core, La Jolla, CA) in DMS (AP 0.5 mm, ML \u00b11.5 mm, DV \u20132.2 mm) or DLS (AP 0.5 mm, ML \u00b12.5 mm, DV \u20132.2 mm), and fiber optics were implanted ~0.2 mm above the injection site. In control experiments for testing striatal activation by light penetration from cortical optic fibers (Figure 3\u2014figure supplement 2), D1- or A2a-Cre mice were injected with AAV5-EF1\u03b1-DIO-ChR2(H134R)-mCherry bilaterally in DMS, and fiber optics were bilaterally implanted into M1 of the same coordinates as previously described.\n\n### Ex vivo brain slice electrophysiology\n\n4\u20138 days were allowed for expression and optimal cell health post unilateral (EnvA) SAD-\u2206G Rabies-ChR2-mCherry injection before electrophysiology recordings on acute slice were carried out (Klug et al., 2018; Smith et al., 2016). Mice were anesthetized with ketamine/xylazine and transcardially perfused with ~20 mL ice-cold, bubbling (95% O2/5% CO2) NMDG cutting solution [consisting of (in mM): NMDG 105, HCl 105, KCl 2.5, NaH2PO4 1.2, NaHCO3 26, Glucose 25, Sodium L-Ascorbate 5, Sodium Pyruvate 3, Thiourea 2, MgSO4 10, CaCl2 0.5, 300 mOsm, pH = 7.4]. The extracted brain was blocked coronally with a brain matrix (Zivic Instruments; Pittsburg, PA) and acute coronal slices (300 \u00b5m) were cut on a vibratome (VT1000S, Leica Microsystems; Buffalo Grove, IL) through the striatum in ice-cold, bubbling NMDG-based cutting solution. Slices recovered for 15 min at 32 \u00b0C in bubbling NMDG cutting solution, then transferred to a holding chamber containing normal aCSF [consisting of (in mM): NaCl 125, KCl 2.5, NaH2PO4 1.25, NaHCO3 25, D-Glucose 12.5, MgCl2 1, CaCl2 2, pH = 7.4, 295 mOsm] bubbling (95% O2/5% CO2) at 28 \u00b0C. At least 1 hr after recovery, the slices were placed in the recording chamber, in which normal aCSF (33~34 \u00b0C, bubbling with 95% O2/5% CO2) was perfused over the slices at ~2 mL/min throughout recordings. Dorsal striatal SPNs were visualized under IR-DIC optics (Zeiss Axioskop2; Oberkocken, Germany) at 40 x and D1- or D2-SPNs were confirmed by eGFP expression with brief observation in the epifluorescent channel. D1-SPNs (eGFP-positive in D1-eGFP mice, or eGFP-negative in D2-eGFP mice) or D2-SPNs (eGFP-positive in D2-eGFP mice, or eGFP-negative in D1-eGFP mice) that were ChR2-mCherry-negative, but in the injection site and surrounded by cells expressing ChR2-mCherry were targeted for recording. This configuration ensured that the distance between recorded and starter cells did not exceed 100 \u00b5m, maintaining close anatomical proximity and thereby preserving the likelihood of shared cortical innervation within the examined circuitry. Only animals with high-efficiency labeling throughout the cortex were used for recordings to determine collateralization.\n\nVoltage clamp recordings were performed using 3\u20134 M\u2126 patch pipettes (WPI; Sarasota, FL), which were pulled from borosilicate glass on a P-97 pipette puller (Sutter Instruments; Novato, CA) and filled with a Cs+ methanesulfonate based internal solution [consisting of (in mM): CsMeSO3 120, NaCl 5, TEA-Cl 10, HEPES 10, QX-314 5 EGTA 1.1, Mg-ATP 4, Na-GTP 0.3, pH = 7.2\u20137.3, 305 mOsm]. All cells were voltage clamped at \u201370 mV during recording. Five minutes post break-in, paired light pulses (473 nm, 5\u201325 mW/mm2, 2.5 ms, 50 ms ISI) were delivered through a glass fiber optic (200 \u00b5m in diameter, Thor Labs; Newton, NJ), positioned close to the recorded cell (50\u2013150 \u00b5m), at 0.05 Hz using a 473 nm blue DPSS laser system (Laserglow Technologies, Toronto, ON). Light-evoked currents were collected after at least 8\u201310 min of bath application of 50\u2013100 \u00b5M picrotoxin (MilliporeSigma, St. Louis, MO) to block any ChR2-mediated fast GABAAR transmission. Twenty sweeps were collected to determine latency and CV. At the end of experiments, both 10 \u00b5M NBQX (AMPAR antagonist) and 50 \u00b5M DL-APV (NMDAR antagonist; MilliporeSigma, St. Louis, MO) were applied to block AMPAR and NMDAR-mediated transmission, respectively, to confirm the EPSCs. Series resistance was initially compensated and monitored continuously throughout the experiment, and the data were rejected if the series resistance changed by more than 20% over the duration of the recording. A cell is considered connected if it has a detectable, reliable current (20 sweeps, 0.05 Hz) with onset latency less than 10 ms post laser-on (Klug et al., 2018; Smith et al., 2016). Voltage clamp recordings were digitized at 10 kHz and filtered at 2 kHz.\n\nFor current clamp recordings of rabies-positive pyramidal neurons in the cortex, a potassium methanesulfonate-based internal solution [(in mM): KMeSO4 135, KCl 5, CaCl2 0.5, HEPES 5, EGTA 5, Mg-ATP 2, Na-GTP 0.3, (pH = 7.3, 305 mOsm)] was used. 750ms current injections (\u2212250\u2013200 pA) were given to test the membrane potential response of rabies-ChR2 positive pyramidal neurons, in primary motor cortex layer 5, and followed by 20 Hz or 5 Hz optogenetic stimulation to test the response of these neurons to light. Current clamp recordings were filtered and digitized at 10 kHz. All recordings were performed using a Multiclamp 700 A amplifier (Molecular Devices; Sunnyvale, CA), digitized with Digidata 1440 (Molecular Devices; Sunnyvale, CA) and collected with pClamp 9 software (Molecular Devices; Sunnyvale, CA). Data were analyzed with Clampfit 9.\n\n### Open field\n\nAfter helper viruses\u2019 injections in the striatum, animals were put back on food and allowed to recover and viral expression. They were then injected with (EnvA) SAD\u0394G-ChR2-mCherry virus in the striatum and implanted with fiber optics in the MCC or M1 as described above (see Surgery and Viral Injection). Then animals were allowed to recover over 3 days. On the fourth day post-injection and implantation, animals went through an open field test. They were connected to fiber-optic leads (Doric) that connected to a laser through a commutator for free movement. An additional light shield was attached at the fiber optic connection to the mouse to mask the laser light output. Following habituation to the fiber optic connections in a home cage, the mice were placed in the middle of a 41 cm x 41 cm square, white and evenly illuminated open field chamber. Custom MEDPC code delivered 20 Hz or 5 Hz stimulation (473 nm blue laser, 5 mW power at connection to mouse, 10 ms pulse width) for 15 s after every 3 min and 45 s, and each animal received three to four replicates. Mice with AAV5-EF1\u03b1-DIO-ChR2(H134R)-mCherry injected bilaterally in DMS or DLS went through similar open field tests after 4 days of recovery from surgery, with optic stimulation in DMS, DLS, or M1. Video was collected for each run and analyzed in Ethovision 8.5. To analyze the open field data, the behavior was binned in 10 s bins and distance traveled during laser on period was normalized to the averaged distances during preceding 45 s just prior to stimulation onset.\n\n### Optogenetic intracranial self-stimulation (opto-ICSS)\n\nIn opto-ICSS experiments, two different subsets of animals were used: to stimulate D1- and D2-SPNs in DMS and DLS, or to stimulate D1- or D2-SPN-projecting cortical neurons in MCC and M1, respectively. Mice that had never experienced the operant chamber were injected with virus and implanted with fiber optics using the procedure described above. From the fourth day following surgery, the mice received ICSS training for 7 consecutive days. They were attached to fiber-optic patch cords and placed in an operant chamber. Each session began with the illumination of a house light and the extension of two levers: one active (left) and one inactive (right). Every time the mouse pressed the active lever, a 20 Hz stimulation was triggered (473 nm blue laser, 5 mW power at connection to mouse, 10 ms pulse width, 1 s duration) targeting the cell bodies in MCC or M1 that project to D1- or D2-SPNs. Each session concludes after 90 min with the retraction of the levers and the house light turning off. Continuous pressing of the lever during stimulation will not lengthen the stimulation period. Pressing of the inactive lever had no consequence and was used as a control of general activity measure of non-contingent lever pressing. All protocols were custom written in MEDPC (Med Associates).\n\n### Sequence training and optogenetic stimulation\n\nPrior to the injection of the rabies virus, animals were pre-trained for three weeks in fixed ratio 8 (FR8) or fixed ratio 4 (FR4) task (Jin and Costa, 2010; Jin et al., 2014). Briefly, animals were food-restricted (30 hr) to start training and weighed daily to monitor their bodyweight. They were fed approximately 2\u20132.5 g regular chow/mouse/day after each behavioral training session concluded to maintain around 85% of their initial weight. Animals were trained in operant chambers (21.6 cm (L) x 17.8 cm (W) x 12.7 cm (H)) housed in a sound-attenuating box (Med-Associates, St. Albans, VT) with two retractable levers to the left and right of a central food magazine and a house light (3 W, 24 V) opposite to the levers and magazine. Sucrose solution (15 \u00b5l, 10%) was delivered by a syringe pump into a metal bowl as a reinforcer. Magazine entries were recorded using an infrared beam break detector. Behavioral chambers were controlled by MED-PC IV software (MED Associates, VT) that recorded all timestamps of lever presses and magazine entries with a resolution of 10 ms.\n\nOperant training began with continuous reinforcement (CRF) also known as fixed ratio 1 (FR1) in which animals received a reinforcer following each lever press. The animals were trained on CRF for both levers (separate flanking sessions) over 3 days, and the order of lever presentation was counterbalanced. Each session began with the illumination of the house light and the extension of one lever. The session ended with the offset of the house light and retraction of the lever after 90 min of training or after a reinforcer cap was reached. On days 1, 2, and 3, the mice could earn up to 10, 15, or 30 sucrose reinforcers, respectively. After the animals acquired CRF over 3 days, they were transitioned to FR4 and FR8 schedules on independent levers, and the order was counterbalanced. The session began with the illumination of the house light and the extension of either the left or right lever. Following four consecutive lever presses (FR4), mice received a reinforcer in a central magazine port. There was no time requirement for completion of the action sequence. The session concluded with the retraction of the lever and the offset of the house light after the mouse received either 80 reinforcers or 90 min expired. Another session was given just following the conclusion of the FR4 session, where eight consecutive lever presses (FR8) on the opposite lever resulted in the delivery of a sucrose reinforcer. The order of training FR4 or FR8 was randomly shuffled over 21 days pre-training. Left and right levers were randomly assigned FR4 or FR8 schedules, and that setup was maintained for each animal over pre-training.\n\nOn the fourth day after rabies injection and fiber optic implant, and after open field test, the mice were food deprived for 24 hr to start optogenetic test in sequence tasks. On the fifth day, the animals were tethered to two fiber-optic patch cables attached to a commutator (Doric, Canada) to allow for free rotation and placed back in the original pre-training operant box. They were given 3 days of re-training in a session of FR4 on one lever and a subsequent session of FR8 on the opposite lever with fiber attached (90 min session, 80 reinforcers max). The order of the sessions was randomly shuffled. If the animals successfully completed 80 reinforcers, they were transitioned to optogenetic stimulation test session. On day 8 post-rabies injection, optogenetic stimulations (20 Hz, 473 nm blue laser, 5 mW power at connection to mouse, 10 ms pulse width) were randomly delivered for 8 s (a time period covering roughly the entire lever press sequence) on the first press (defined by the first lever press after either head entry or 2 s break after the reward delivery) with a 50% likelihood of control non-stimulated trials randomly interleaved (Geddes et al., 2018). Stimulus conditions were repeated on multiple days if needed to collect enough trials for statistics. On day 12 post-rabies injection, the animals were perfused for histology analysis.\n\nAll sequence data were analyzed in MATLAB using custom scripts. To construct the peri-event time histograms (PETH), all lever presses before the reward (control or stimulation trials) were aligned to the first press of the FR4 or FR8 sequence, averaged in 100 ms bins, and filtered with a Gaussian low-pass filter (window size = 5, standard deviation = 5). All the PETHs were plotted with the first press omitted for illustration and comparison clarity. The effects of optogenetic modulation on press rate were qualitatively similar for FR4 and FR8 sequences and thus combined for statistics.\n\n### Histology and microscopy\n\nApproximately twelve days following rabies injection or after behavior tests, mice were anesthetized with an overdose of ketamine/xylazine and transcardially perfused with 0.01 M PBS (30\u201340 mL) followed by 4% paraformaldehyde (PFA)/0.1 M PB, pH 7.4 (30\u201340 mL), with a peristaltic perfusion pump (Cole Parmer, Vernon Hills, IL; Klug et al., 2018; Smith et al., 2016). The brain was carefully extracted and post-fixed in 4% PFA/0.1 M PB overnight (16\u201324 hr), then transferred to 30% sucrose/0.1 M PB for 1\u20132 days until the brain equilibrated and sunk. On the day of cutting, it was coronally blocked with a brain matrix (Zivic Instruments; Pittsburg, PA) and mounted on a freezing microtome. Coronal slices were collected from the most rostral to the most caudal sites at 50 \u00b5m resolution in 96 well plates containing cryoprotectant (0.1 M phosphate buffer, ethylene glycol, glycerol) to maintain AP position. Brain slices surrounding the injection site and fiber implant site were mounted on super frost plus slides (Thermo Fisher Scientific, Waltham, MA), counterstained for DAPI and cover slipped with Aqua-Poly/Mount mounting media (Polysciences, Inc; Warrington, PA). Slides were scanned on an automated slide scanner (Olympus VS120) at 10 x in the blue and red channels. Images were batch converted to composite TIFFs and saved for image analysis.\n\n### Statistics\n\nStatistics were conducted in Graph Pad Prism 6.01 (La Jolla, CA). Fisher\u2019s exact test was used in comparing the likelihood of connections in slice recordings. Student unpaired two-tailed t-test was used in open field test and sequence operant task to analyze optogenetic stimulation effects. Non-parametric Mann-Whitney U Test was conducted when distributions significantly deviated from normal distributions. The reinforcing effect of each group in the ICSS task was assessed using a permutation test (10,000 permutations per group). A one-sample two-tailed t-test or Wilcoxon signed-rank test was used to assess the effectiveness of optogenetic activation in each individual group during the sequence operant task.\n",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "8e2563c0-0348-4507-bc1e-56c48efc9633",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jun Ding, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92992.4.sa0](https://doi.org/10.7554/eLife.92992.4.sa0)\n\nThis manuscript presents an important finding that D1- and D2-striatal neurons receive distinct cortical inputs, offering key insights into corticostriatal function. For instance, in the context of striatal-dependent learning, this distinction is highly informative for interpreting synaptic physiology data, particularly when inputs to one neuron subtype may change independently of the other. The strength of the evidence is solid, with anatomical and electrophysiological findings aligning well with results from optogenetic and behavioral studies. The study would be of interest to neuroscientists studying basal ganglia circuits in health and disease.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92992.4.sa1](https://doi.org/10.7554/eLife.92992.4.sa1)\n\nSummary:\n\nKlug et al. use monosynaptic rabies tracing of inputs to D1- vs D2-SPNs in the striatum to study how separate populations of cortical neurons project to D1- and D2-SPNs. They use rabies to express ChR2, then patch D1-or D2-SPNs to measure synaptic input. They report that cortical neurons labeled as D1-SPN-projecting preferentially project to D1-SPNs over D2-SPNs. In contrast, cortical neurons labeled as D2-SPN-projecting project equally to D1- and D2-SPNs. They go on to conduct pathway-specific behavioral stimulation experiments. They compare direct optogenetic stimulation of D1- or D2-SPNs to stimulation of MCC inputs to DMS and M1 inputs to DLS. In three different behavioral assays (open field, intra-cranial self-stimulation, and a fixed ratio 8 task), they show that stimulating MCC or M1 cortical inputs to D1-SPNs is similar to D1-SPN stimulation, but that stimulating MCC or M1 cortical inputs to D2-SPNs does not recapitulate the effects of D2-SPN stimulation (presumably because both D1- and D2-SPNs are being activated by these cortical inputs).\n\nStrengths:\n\nShowing these same effects in three distinct behaviors is strong. Overall, the functional verification of the consequences of the anatomy is very nice to see. It is a good choice to patch only from mCherry-negative non-starter cells in the striatum. This study adds to our understanding of the logic of corticostriatal connections, suggesting a previously unappreciated structure.\n\nEditors' note:\n\nThe concerns raised by Reviewers #1, and #2, have been addressed during the first round of revision. The specific concern raised by Reviewer #3 is about the Rabis virus-based circuit tracing itself. This version of the work has been assessed by the editors without going back to the reviewers.\n",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "21434be4-40ce-4ece-af4e-2d8ae2f89f07",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C1",
+      "claim": "More than two-thirds of excitatory inputs to D2-SPNs also target D1-SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here using a G-deleted rabies system in mice, we found that more than two-thirds of excitatory inputs to D2-SPNs also target D1-SPNs, while only one-third do so vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from whole-cell recordings using the rabies-ChR2 system in brain slices, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4d9cab26-66cf-4d99-b972-48ad85b582ea",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C2",
+      "claim": "Only one-third of excitatory inputs to D1-SPNs target D2-SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here using a G-deleted rabies system in mice, we found that more than two-thirds of excitatory inputs to D2-SPNs also target D1-SPNs, while only one-third do so vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from whole-cell recordings using the rabies-ChR2 system in brain slices, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "be246dde-4c76-45b5-9696-36c4cdd45796",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C3",
+      "claim": "Optogenetic stimulation of striatal D1- vs. D2-SPN-projecting cortical neurons differently regulate locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation of striatal D1- vs. D2-SPN-projecting cortical neurons differently regulate locomotion, reinforcement learning, and sequence behavior, implying the functional dichotomy of pathway-specific corticostriatal subcircuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo optogenetic experiments in open field tests, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "168cd158-0830-404e-84b5-97f6e76a58cb",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C4",
+      "claim": "Optogenetic stimulation of striatal D1- vs. D2-SPN-projecting cortical neurons differently regulate reinforcement learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation of striatal D1- vs. D2-SPN-projecting cortical neurons differently regulate locomotion, reinforcement learning, and sequence behavior, implying the functional dichotomy of pathway-specific corticostriatal subcircuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo optogenetic experiments in intracranial self-stimulation (ICSS) tests, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "36791c9a-355a-415f-bbf9-eb6aab250f24",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C5",
+      "claim": "Optogenetic stimulation of striatal D1- vs. D2-SPN-projecting cortical neurons differently regulate sequence behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation of striatal D1- vs. D2-SPN-projecting cortical neurons differently regulate locomotion, reinforcement learning, and sequence behavior, implying the functional dichotomy of pathway-specific corticostriatal subcircuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo optogenetic experiments during FR8 sequence tasks, as shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "3e0ac8d9-6d06-4a3a-9cdb-18e68c3465aa",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C6",
+      "claim": "Corticostriatal circuits are critically involved in sensory, cognition, and the learning and control of actions.",
+      "claim_type": "EXPLICIT",
+      "source": "The corticostriatal circuits are critically involved in sensory, cognition, and the learning and control of actions (Aoki et al., 2019; Graybiel, 1998; Haber, 2016; Hikosaka et al., 1998; Jin and Costa, 2010; Jin and Costa, 2015; Kupferschmidt et al., 2017; Stephenson-Jones et al., 2011; Tanji, 2001; Yin and Knowlton, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "de3784da-b7df-4d66-9c79-7c843d1336fc",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C7",
+      "claim": "Dysfunctional corticostriatal circuitry has been implicated in numerous neurological and psychiatric diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysfunctional corticostriatal circuitry has been implicated in numerous neurological and psychiatric diseases (Shepherd, 2013), including Parkinson's (Redgrave et al., 2010), autism (Monteiro and Feng, 2017), and obsessive-compulsive disorder (Dalley and Robbins, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "b0f8deb2-12bd-483f-a6e1-8cc13eedeff7",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C8",
+      "claim": "The striatal direct and indirect pathways constitute the core components for basal ganglia functions in relation to action learning and movement control.",
+      "claim_type": "EXPLICIT",
+      "source": "The striatal direct and indirect pathways, made up of D1- vs. D2-expressing spiny projection neurons (SPNs) respectively, constitute the core components for basal ganglia functions in relation to action learning and movement control (Albin et al., 1989; DeLong, 1990; Gerfen et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "3ad25654-08a3-4ebc-84b1-8c81e76e31bf",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C9",
+      "claim": "The two pathways play distinct yet complementary roles in controlling actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have suggested that the two pathways play distinct yet complementary roles in controlling actions (Cui et al., 2013; Geddes et al., 2018; Hikosaka et al., 2019; Hikosaka et al., 2000; Jin et al., 2014; Kravitz et al., 2010; Markowitz et al., 2018; Mink, 2003; Tecuapetla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4c637dd2-b6f1-443b-b677-1db621a50935",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C10",
+      "claim": "D1- and D2-SPNs are spatially intermixed in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that D1- and D2-SPNs are spatially intermixed in the striatum, and they both receive major excitatory inputs from the cerebral cortex (Bolam et al., 2000; Pan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research and is considered established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "37111ebb-e100-4340-9b0b-d2e5c706fe45",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C11",
+      "claim": "D1- and D2-SPNs both receive major excitatory inputs from the cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that D1- and D2-SPNs are spatially intermixed in the striatum, and they both receive major excitatory inputs from the cerebral cortex (Bolam et al., 2000; Pan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research and is considered established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "04567229-a85f-4c01-83a3-1c943c32539d",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C12",
+      "claim": "Sensory and limbic cortical regions preferably send projections to D1-SPNs, compared to the motor cortical inputs biased toward D2-SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous monosynaptic rabies tracing study has revealed that sensory and limbic cortical regions preferably send projections to D1-SPNs, compared to the motor cortical inputs biased toward D2-SPNs (Wall et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "c4c85bfd-f715-4a6c-a181-c963094b62eb",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C13",
+      "claim": "Recordings from mCherry-negative, non-starter striatal D1-SPNs in striatal D1-rabies-ChR2-infected mice revealed that with high probability (~63%) a D1-SPN receives the inputs from the presynaptic excitatory neurons projecting to surrounding D1-SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings from the mCherry-negative, non-starter striatal D1-SPNs in striatal D1-rabies-ChR2-infected mice revealed that with high probability (~63%) a D1-SPN receives the inputs from the presynaptic excitatory neurons projecting to surrounding D1-SPNs (Figure 2B and D; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from whole-cell recordings shown in Figure 2B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4ca5057a-14d9-4e5a-a3de-0998addde42c",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C14",
+      "claim": "Recordings from mCherry-negative non-starter striatal D2-SPNs in striatal D2-rabies-ChR2-tracing mice revealed that with a very high probability (~79%) a D2-SPN receives the inputs from the presynaptic excitatory neurons that project to surrounding D2-SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, recordings from mCherry-negative non-starter striatal D2-SPNs in striatal D2-rabies-ChR2-tracing mice revealed that with a very high probability (~79%) a D2-SPN receives the inputs from the presynaptic excitatory neurons that project to surrounding D2-SPNs (Figure 2C and D; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from whole-cell recordings shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "776f054f-d7e3-46a3-b6a0-fbdfbd6a727e",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C15",
+      "claim": "Recordings from striatal D2-SPNs in the striatal D1-rabies-ChR2-tracing mice revealed that the chance for a D2-SPN to receive excitatory inputs from the presynaptic neurons projecting to surrounding D1-SPNs is rather low (~40%).",
+      "claim_type": "EXPLICIT",
+      "source": "However, recordings from striatal D2-SPNs in the striatal D1-rabies-ChR2-tracing mice revealed that the chance for a D2-SPN to receive excitatory inputs from the presynaptic neurons projecting to surrounding D1-SPNs is rather low (~40%, Figure 2E and G; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from whole-cell recordings shown in Figure 2E and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "bcc3e6cd-b11a-410c-b8e5-53d4d369ab68",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C16",
+      "claim": "Recordings from striatal D1-SPNs in the striatal D2-rabies-ChR2-tracing mice revealed that the chance for a D1-SPN to receive the excitatory inputs from the presynaptic neurons projecting to surrounding D2-SPNs is remarkably high (~73%).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, recordings from striatal D1-SPNs in the striatal D2-rabies-ChR2-tracing mice revealed that the chance for a D1-SPN to receive the excitatory inputs from the presynaptic neurons projecting to surrounding D2-SPNs is remarkably high (~73%, Figure 2F and G; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from whole-cell recordings shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "17c0574f-683f-4d95-a6ea-293cb1714bc3",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C17",
+      "claim": "The likelihood that the input connectivity was significantly higher from the presynaptic excitatory inputs of D2-SPNs to D1-SPNs than from the presynaptic excitatory inputs of D1-SPNs to D2-SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the likelihood that the input connectivity was significantly higher from the presynaptic excitatory inputs of D2-SPNs to D1-SPNs than from the presynaptic excitatory inputs of D1-SPNs to D2-SPNs (Figure 2D and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from whole-cell recordings shown in Figure 2D and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "a58187ec-d049-47d1-9c65-d0eab7e9a26a",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C18",
+      "claim": "Optogenetic stimulation (20 Hz) of D1-SPNs in the DMS or DLS facilitated locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous observations (Kravitz et al., 2010), optogenetic stimulation (20 Hz) of D1-SPNs in the DMS or DLS facilitated locomotion (Figure 3B, C, E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from open field tests shown in Figure 3B, C, E and F, and is consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "77f15122-f15b-4d89-9530-b3ff37ba2259",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C19",
+      "claim": "Optogenetic stimulation (20 Hz) of D2-SPNs in DMS significantly suppressed locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, optogenetic stimulation (20 Hz) of D2-SPNs in DMS significantly suppressed locomotion (Figure 3B and D), which is less obvious in DLS (Figure 3E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from open field tests shown in Figure 3B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "d399f7a6-099e-4dc4-96b5-95928de22d28",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C20",
+      "claim": "Optogenetic stimulation (20 Hz) of D2-SPNs in DLS does not significantly suppress locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, optogenetic stimulation (20 Hz) of D2-SPNs in DMS significantly suppressed locomotion (Figure 3B and D), which is less obvious in DLS (Figure 3E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from open field tests shown in Figure 3E and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "702abedf-3760-43f5-9875-b4ce9bded984",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C21",
+      "claim": "High-frequency (20 Hz) but not low-frequency (5 Hz) optogenetic stimulation of MCC neurons that project to D1-SPNs significantly facilitated locomotion in the open field.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, high-frequency (20 Hz) but not low-frequency (5 Hz) optogenetic stimulation of MCC neurons that project to D1-SPNs significantly facilitated locomotion in the open field (Figure 3H, I; Figure 3\u2014figure supplement 1), similar to D1-SPN activation in DMS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from open field tests shown in Figure 3H, I and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "f447605a-a767-487e-a5d8-ba14faa665f8",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C22",
+      "claim": "Optogenetic stimulation (20 Hz) of D2-SPN projecting MCC neurons in the same location did not alter locomotion in the open field.",
+      "claim_type": "EXPLICIT",
+      "source": "However, optogenetic stimulation (20 Hz) of D2-SPN projecting MCC neurons in the same location did not alter locomotion in the open field (Figure 3H and J), in contrast with the effects of stimulation of D2-SPNs in DMS (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from open field tests shown in Figure 3H and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "48b0a428-658d-4f0d-99a6-b7d019244f07",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C23",
+      "claim": "High-frequency optogenetic stimulation (20 Hz) of M1 neurons that project to D1-SPNs facilitated locomotion in the open field.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, high-frequency optogenetic stimulation (20 Hz) of M1 neurons that project to D1-SPNs facilitated locomotion in the open field (Figure 3K and L; Figure 3\u2014figure supplement 1), while 20 Hz stimulation of the M1 neurons projecting to D2-SPNs did not significantly alter locomotion (Figure 3K and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from open field tests shown in Figure 3K and L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "3d87c4e7-fdd5-4059-93ff-00af2d60c9e3",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C24",
+      "claim": "20 Hz stimulation of the M1 neurons projecting to D2-SPNs did not significantly alter locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, high-frequency optogenetic stimulation (20 Hz) of M1 neurons that project to D1-SPNs facilitated locomotion in the open field (Figure 3K and L; Figure 3\u2014figure supplement 1), while 20 Hz stimulation of the M1 neurons projecting to D2-SPNs did not significantly alter locomotion (Figure 3K and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from open field tests shown in Figure 3K and M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "1b44e91f-446d-4713-910b-28ec42da3aec",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C25",
+      "claim": "Optogenetic stimulation of D1-SPNs robustly supported intracranial self-stimulation (ICSS) in either DMS or DLS.",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed experiments in the D1-Cre mice with viral expression of ChR2 in the striatum and found that optogenetic stimulation of D1-SPNs robustly supported intracranial self-stimulation (ICSS; Figure 3N) in either DMS (Figure 3O) or DLS (Figure 3P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from ICSS tests shown in Figure 3O and P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4a0c7269-ea02-461e-b00b-087de6cf0f27",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C26",
+      "claim": "Optogenetic stimulation of D2-SPNs, either in DMS or DLS, did not promote ICSS behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, optogenetic stimulation of D2-SPNs, either in DMS (Figure 3O) or DLS (Figure 3P), did not promote ICSS behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from ICSS tests shown in Figure 3O and P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "ff80ee1a-59aa-4ca3-9a15-4c288eba0fe0",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C27",
+      "claim": "Optogenetic stimulation of striatal D1-SPN projecting neurons was sufficient to support ICSS behavior both in MCC and in M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the effects of direct striatal D1-SPN stimulation (Figure 3O and P), optogenetic stimulation of striatal D1-SPN projecting neurons was sufficient to support ICSS behavior both in MCC (Figure 3Q and R) and in M1 (Figure 3Q and S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from ICSS tests shown in Figure 3Q, R and S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "52452253-cc3b-45cf-b13e-9bf72772899e",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C28",
+      "claim": "Optogenetic stimulation of the cortical neurons projecting to D2-SPNs also significantly drove ICSS behavior, irrespective of whether it is in MCC or M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, optogenetic stimulation of the cortical neurons projecting to D2-SPNs also significantly drove ICSS behavior, irrespective of whether it is in MCC (Figure 3R) or M1 (Figure 3S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from ICSS tests shown in Figure 3R and S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "6679d23d-c874-44ed-b1cb-4dab8f4ac1f2",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C29",
+      "claim": "Corticostriatal circuitry is critical for action sequence learning and execution.",
+      "claim_type": "EXPLICIT",
+      "source": "Corticostriatal circuitry is critical for action sequence learning and execution (Geddes et al., 2018; Hikosaka et al., 1998; Jin and Costa, 2010; Jin and Costa, 2015; Jin et al., 2014; Tanji, 2001; Tecuapetla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "e70c2c81-c199-4763-bb68-5cc745db32cd",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C30",
+      "claim": "Striatal direct and indirect pathways have been suggested to play distinct roles in controlling learned action sequences, as D1-SPNs facilitate ongoing actions while D2-SPNs inhibit actions and mediate switching.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, striatal direct and indirect pathways have been suggested to play distinct roles in controlling learned action sequences, as D1-SPNs facilitate ongoing actions while D2-SPNs inhibit actions and mediate switching (Geddes et al., 2018; Jin and Costa, 2010; Jin and Costa, 2015; Jin et al., 2014; Tecuapetla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "53a1decc-a002-45e4-8149-69bde4b33c98",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C31",
+      "claim": "Stimulation of MCC inputs to D1-SPNs facilitated lever pressing over the duration of the FR8 sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of MCC inputs to D1-SPNs facilitated lever pressing over the duration of the FR8 sequence (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from FR8 sequence tasks shown in Figure 4B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "597fbca3-8c2b-4397-9525-a0d3eda09dbe",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C32",
+      "claim": "Stimulation of MCC inputs to D2-SPNs slightly reduced the lever press rate over the stimulation period.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, stimulation of MCC inputs to D2-SPNs slightly reduced the lever press rate over the stimulation period (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from FR8 sequence tasks shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "c2cb2b18-ee06-47b6-8832-73d97d790326",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C33",
+      "claim": "The modulation effects on lever pressing rate were significantly different between optogenetic stimulation of D1- and D2-SPN projecting MCC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The modulation effects on lever pressing rate were significantly different between optogenetic stimulation of D1- and D2-SPN projecting MCC neurons (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from FR8 sequence tasks shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "0988e6fe-d208-4d86-a5b1-883ed8a188a1",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C34",
+      "claim": "Optogenetic activation of the M1 neurons that project to D1-SPNs facilitated lever pressing during sequence execution.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, optogenetic activation of the M1 neurons that project to D1-SPNs facilitated lever pressing during sequence execution (Figure 4F and H), similar to the effects of MCC stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from FR8 sequence tasks shown in Figure 4F and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "d7ce6414-86ca-4172-82c0-f1629dd6b155",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C35",
+      "claim": "Optogenetic stimulation of the M1 neurons projecting to D2-SPNs delivered an overall facilitation effect on lever pressing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, optogenetic stimulation of the M1 neurons projecting to D2-SPNs delivered an overall facilitation effect on lever pressing (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from FR8 sequence tasks shown in Figure 4G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4dc59259-485a-437e-8687-17282569d54c",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C36",
+      "claim": "Stimulation of either D1- or D2-SPN projecting M1 neurons facilitated lever pressing to a similar degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, stimulation of either D1- or D2-SPN projecting M1 neurons facilitated lever pressing to a similar degree (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from FR8 sequence tasks shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "3d3f1aa4-8838-49a5-a5bb-cb34cc3a4f99",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C37",
+      "claim": "The excitatory inputs to D1-SPNs mostly control the striatal direct pathway.",
+      "claim_type": "IMPLICIT",
+      "source": "Based on this asymmetrically overlapping functional organization, one would predict that the excitatory inputs to D1-SPNs mostly control the striatal direct pathway, while the inputs to D2-SPNs would drive both the indirect and direct pathways (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the connectivity data and supported by the behavioral experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "0e6c64e8-073e-404b-ba88-1eac6172cb35",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C38",
+      "claim": "The inputs to D2-SPNs would drive both the indirect and direct pathways.",
+      "claim_type": "IMPLICIT",
+      "source": "Based on this asymmetrically overlapping functional organization, one would predict that the excitatory inputs to D1-SPNs mostly control the striatal direct pathway, while the inputs to D2-SPNs would drive both the indirect and direct pathways (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the connectivity data and supported by the behavioral experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "823d261b-27fc-4d3c-8d3a-e248ed85243b",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C39",
+      "claim": "The cortical neurons in the same cortical layer and spatial location could differently control actions depending on their striatal projection targets, in a pathway- and cell type-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "It thus rules out the possibility that the behavioral effects observed by cortical stimulation in the rabies-ChR2 mice were triggered through direct striatal activation due to the light penetration into the striatum. These results are consistent with the functional connectivity in which the excitatory inputs to D1-SPNs mostly drive the direct pathway, and the inputs to D2-SPNs target both the indirect and direct pathways (Figure 3A). It also suggests that the cortical neurons in the same cortical layer and spatial location could differently control actions depending on their striatal projection targets, in a pathway- and cell type-specific manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from optogenetic behavioral experiments and is inferred from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "352d7891-e0dd-4cfc-a011-38cd2557de30",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C40",
+      "claim": "Intensive labeling was found in different cortical regions including the midcingulate cortex (MCC) and the primary motor cortex (M1) in both D1- and A2a-Cre tracing experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In both D1- and A2a-Cre tracing experiments, intensive labeling was found in different cortical regions as expected, including the midcingulate cortex (MCC; van Heukelum et al., 2020; Vogt and Paxinos, 2014) and the primary motor cortex (M1), which targets mainly the dorsal medial and dorsal lateral striatum, respectively (Aoki et al., 2019; Bolam et al., 2000; Pan et al., 2010; Shepherd, 2013; Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from rabies tracing shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "d0c05ed3-c50d-4f65-97b0-7ca19066764c",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C41",
+      "claim": "MCC targets mainly the dorsal medial striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "In both D1- and A2a-Cre tracing experiments, intensive labeling was found in different cortical regions as expected, including the midcingulate cortex (MCC; van Heukelum et al., 2020; Vogt and Paxinos, 2014) and the primary motor cortex (M1), which targets mainly the dorsal medial and dorsal lateral striatum, respectively (Aoki et al., 2019; Bolam et al., 2000; Pan et al., 2010; Shepherd, 2013; Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from rabies tracing shown in Figure 1C and D, and is consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "272a6039-e3e6-42fc-a78e-7cd228b96810",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C42",
+      "claim": "M1 targets mainly the dorsal lateral striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "In both D1- and A2a-Cre tracing experiments, intensive labeling was found in different cortical regions as expected, including the midcingulate cortex (MCC; van Heukelum et al., 2020; Vogt and Paxinos, 2014) and the primary motor cortex (M1), which targets mainly the dorsal medial and dorsal lateral striatum, respectively (Aoki et al., 2019; Bolam et al., 2000; Pan et al., 2010; Shepherd, 2013; Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from rabies tracing shown in Figure 1C and D, and is consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "a878abfa-62e3-44d6-9bf4-d77a45036141",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C43",
+      "claim": "Both the current-voltage relationship and the spiking activity confirmed the overall health and the functional expression of ChR2 in the rabies-infected cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the current-voltage relationship revealed by somatic current injections (Figure 1H) and the spiking activity elicited by blue laser frequency stimulation (Figure 1I; Figure 1\u2014figure supplement 1) confirmed the overall health and the functional expression of ChR2 in the rabies-infected cortical neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from whole-cell recordings shown in Figure 1H, I and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "8b3a5586-a0a3-477b-94c8-beb2bc4eb0a8",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C44",
+      "claim": "The cortical neurons projecting to striatum mainly consist of layer 2/3 and layer 5 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortical neurons projecting to striatum mainly consist of layer 2/3 and layer 5 pyramidal cells (Klug et al., 2018; Wall et al., 2013), including both the intratelencephalic (IT) and pyramidal tract (PT) types of neurons (Shepherd, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "008dd09e-523a-4aef-8f7e-6fdf0696d3a1",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C45",
+      "claim": "Both the striatal direct and indirect pathways receive functional inputs from both the IT and PT neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While some anatomical preference might exist (Lei et al., 2004), it has been found that both the striatal direct and indirect pathways receive functional inputs from both the IT and PT neurons (Ballion et al., 2008; Kress et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "9cbf290e-2358-45b7-b114-ee36cf93d11d",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C46",
+      "claim": "Both striatal direct and indirect pathways receive inhibitory inputs from certain GABAergic interneurons in motor cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has been known that both striatal direct and indirect pathways receive inhibitory inputs from certain GABAergic interneurons in motor cortices (Melzer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "c8a82a5a-d1e0-493c-b672-1c25bc2fd1f5",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C47",
+      "claim": "The traditional model of the basal ganglia suggests that the direct and indirect pathways play opposing roles in facilitating and inhibiting action, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The traditional model of the basal ganglia suggests that the direct and indirect pathways play opposing roles in facilitating and inhibiting action, respectively (Albin et al., 1989; DeLong, 1990; Kravitz et al., 2010), although one study (Cui et al., 2021) reported an alternative pattern, which may stem from differences in stimulation coordinates and fiber-optic diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "41e996ab-967f-46cf-b275-00d14bdf6184",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C48",
+      "claim": "More recent models of basal ganglia propose that the direct pathway co-activates and cooperates with the indirect pathway, with the former activating the selected action and the latter inhibiting the competing actions.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent models of basal ganglia, however, propose that the direct pathway co-activates and cooperates with the indirect pathway, with the former activating the selected action and the latter inhibiting the competing actions (Cui et al., 2013; Hikosaka et al., 2000; Jin et al., 2014; Mink, 1996; Tecuapetla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "0bbd6d22-f68f-4a03-be05-ec6b41bb16e4",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C49",
+      "claim": "The striatal D1- and D2-SPNs are co-activated during the initiation of an action sequence but become largely segregated during the sequence performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Under more complicated behavior context, it has been previously reported that the striatal D1- and D2-SPNs are co-activated during the initiation of an action sequence but become largely segregated during the sequence performance (Geddes et al., 2018; Jin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "f43c35c8-2573-4860-bc2d-33960d4e95c0",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C50",
+      "claim": "The various subpopulations of striatal D1- and D2-SPNs differently change their firing activity to support the start/stop of the sequence, the execution of the elemental actions, and the switch between subsequences.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, the various subpopulations of striatal D1- and D2-SPNs differently change their firing activity to support the start/stop of the sequence, the execution of the elemental actions, and the switch between subsequences (Geddes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "08fc48a6-7aa6-4236-bf13-ed4a267ad15c",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C51",
+      "claim": "The striatal direct and indirect pathways have to dynamically coordinate their activity throughout the performance of sequential actions.",
+      "claim_type": "EXPLICIT",
+      "source": "These previous findings thus suggested that the striatal direct and indirect pathways have to dynamically coordinate their activity throughout the performance of sequential actions (Geddes et al., 2018; Hikosaka et al., 2019; Jin and Costa, 2015; Markowitz et al., 2018; Tecuapetla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research and is inferred from previous findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "cf016d04-5c96-43fe-ba77-a1f848c6278c",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C53",
+      "claim": "The largely segregated but asymmetrically overlapping organization of the cortical projections to striatal direct vs. indirect pathway provides a structural foundation for the striatal direct and indirect pathways to implement dynamic coordination of activity during sequence behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This specific corticostriatal organization provides a structural foundation for the striatal direct and indirect pathways to implement such a dynamic coordination of activity during sequence behavior (Geddes et al., 2018; Hikosaka et al., 2019; Hikosaka et al., 1998; Jin and Costa, 2010; Jin and Costa, 2015; Jin et al., 2014; Markowitz et al., 2018; Tanji, 2001; Tecuapetla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental findings and supported by citations to previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "22864aba-fdc3-4d90-85f6-8bbfadcd436e",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C54",
+      "claim": "The dedicated cortical projections to striatal direct vs. indirect pathway are well suited for controlling sequence initiation and termination, where the activation of D1- and D2-SPNs is critical.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the dedicated cortical projections to striatal direct vs. indirect pathway are well suited for controlling sequence initiation and termination, where the activation of D1- and D2-SPNs is critical (DeLong, 1990; Geddes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental findings and supported by citations to previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "9bcf4413-a02f-412b-bcee-6fba9d7663eb",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C55",
+      "claim": "The overlapping cortical projections to both striatal direct and indirect pathways could be crucial for action switching, which requires proper coordination of the two pathways to inhibit current action and activate the upcoming one.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the overlapping cortical projections to both striatal direct and indirect pathways could be crucial for action switching, which requires proper coordination of the two pathways to inhibit current action and activate the upcoming one (DeLong, 1990; Geddes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental findings and supported by citations to previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4c40f14c-7004-44e5-a235-f511c0ece51e",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C56",
+      "claim": "The striatal D1- vs. D2-SPN projecting neurons in the cerebral cortex would fire differently but activate in relation with each other during behavior.",
+      "claim_type": "IMPLICIT",
+      "source": "Our findings also predict that the striatal D1- vs. D2-SPN projecting neurons in the cerebral cortex would fire differently but activate in relation with each other during behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a prediction inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4c9ae640-826c-416d-93bb-cfb114a55697",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C57",
+      "claim": "Corticospinal neurons, which project to both spinal cord and DLS, form uneven synapses onto direct and indirect pathway neurons in the DLS and preferentially target D1- other than D2-SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the overall functional organization does imply that while the excitatory inputs to D1-SPNs in general drive the striatal direct pathway, the excitatory inputs to D2-SPNs control both the striatal direct and indirect pathways. Indeed, it has been recently reported that corticospinal neurons, which project to both spinal cord and DLS, form uneven synapses onto direct and indirect pathway neurons in the DLS and preferentially target D1- other than D2-SPNs (Nelson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "42287f87-71c5-414a-937b-f95cf937d018",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C58",
+      "claim": "Sustained optogenetic stimulation (500 ms) of ChR2-expressing presynaptic terminals induces transient, rather than sustained, action potential firing on the postsynaptic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a previous optogenetic study on thalamo-cortical synapses (Cruikshank et al., 2010) demonstrated that sustained optogenetic stimulation (500 ms) of ChR2-expressing presynaptic terminals induces transient, rather than sustained, action potential firing on the postsynaptic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "45984962-9856-481b-8401-a7d13accdf41",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C59",
+      "claim": "The behavioral effects of optogenetic stimulation are most likely driven by the excitation of ChR2-expressing D1- or D2-SPN projecting neurons in the targeted cortical area, rather than by efferent terminals from neurons located outside this region.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the much longer stimulation durations used in our optogenetic experiments (15 s for open-field, 1 s for ICSS, and 8 s for the FR8/FR4), it provides compelling evidence that the behavioral effects of optogenetic stimulation are most likely driven by the excitation of ChR2-expressing D1- or D2-SPN projecting neurons in the targeted cortical area, rather than by efferent terminals from neurons located outside this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental design and supported by a citation to a previous study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "487fdc18-9baf-468f-9e24-7d8ca5677327",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C60",
+      "claim": "All procedures were approved by the Salk Institute Institutional Animal Care and Use Committee (IACUC; protocol 12\u201300032) and followed NIH guidelines for the care and use of laboratory animals.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Salk Institute Institutional Animal Care and Use Committee (IACUC; protocol 12\u201300032) and followed NIH guidelines for the care and use of laboratory animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of ethical compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "5ba517bf-3281-40f2-a40c-86ff48551deb",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C61",
+      "claim": "Group-housed male and female mice (2\u20136 months old) were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Group-housed male and female mice (2\u20136 months old) were used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "c9f1afb3-c37c-4001-ab7b-690bcdf5059d",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C62",
+      "claim": "Animals were housed on a 12 hr dark/12 hr light cycle (dark from 6 pm to 6 am).",
+      "claim_type": "EXPLICIT",
+      "source": "Animals were housed on a 12 hr dark/12 hr light cycle (dark from 6 pm to 6 am).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "dd3a66db-0b83-4d04-a7d6-bf43f5d0426d",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C63",
+      "claim": "Heterozygous Drd1-Cre and Adora2a-Cre mice were obtained from MMRRC and were backcrossed to C57BL/6 J mice (>9 generations).",
+      "claim_type": "EXPLICIT",
+      "source": "Heterozygous Drd1-Cre (The Jackson Laboratory, stock # 030329, GENSAT: EY217) and Adora2a-Cre (The Jackson Laboratory, stock # 036158, GENSAT: KG139) mice were obtained from MMRRC and were backcrossed to C57BL/6 J mice, stock # 000664 (>9 generations; Cui et al., 2013; Jin et al., 2014; Madisen et al., 2012; Tecuapetla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mouse lines used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "6425353c-86d4-434b-bc49-35d888dbcf16",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C64",
+      "claim": "BAC reporter lines D1-eGFP and D2-eGFP were crossed to Drd1-Cre (D1-Cre) and Adora2a-Cre (A2a-Cre) mice to identify D1- and D2-SPNs for electrophysiological recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "BAC reporter lines D1-eGFP (MMRRC: MMRRC_000297-MU; GENSAT: X60) and D2-eGFP (MMRRC: MMRRC_00230-UNC; GENSAT: S118; Gong et al., 2007) were crossed to Drd1-Cre (D1-Cre) and Adora2a-Cre (A2a-Cre) mice to identify D1- and D2-SPNs for electrophysiological recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mouse lines used for recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "56778b97-2038-48b8-b1fc-0e0323f9a207",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C65",
+      "claim": "4\u20138 days were allowed for expression and optimal cell health post unilateral (EnvA) SAD-\u2206G Rabies-ChR2-mCherry injection before electrophysiology recordings on acute slice were carried out.",
+      "claim_type": "EXPLICIT",
+      "source": "4\u20138 days were allowed for expression and optimal cell health post unilateral (EnvA) SAD-\u2206G Rabies-ChR2-mCherry injection before electrophysiology recordings on acute slice were carried out (Klug et al., 2018; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental timeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "87cfec31-228c-496e-8caf-b511ed90615d",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C66",
+      "claim": "A cell is considered connected if it has a detectable, reliable current (20 sweeps, 0.05 Hz) with onset latency less than 10 ms post laser-on.",
+      "claim_type": "EXPLICIT",
+      "source": "A cell is considered connected if it has a detectable, reliable current (20 sweeps, 0.05 Hz) with onset latency less than 10 ms post laser-on (Klug et al., 2018; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the criteria for determining functional connectivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "aaef7817-acc2-4f7a-9cf2-c1d713b3fe3e",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C67",
+      "claim": "Fisher's exact test was used in comparing the likelihood of connections in slice recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Fisher's exact test was used in comparing the likelihood of connections in slice recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "5d2dbd4b-6cc4-41ef-bd7a-2a6fafec64aa",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C68",
+      "claim": "Student unpaired two-tailed t-test was used in open field test and sequence operant task to analyze optogenetic stimulation effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Student unpaired two-tailed t-test was used in open field test and sequence operant task to analyze optogenetic stimulation effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "619f64b4-70e0-41f3-be78-61adc17a3284",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "claim_id": "C69",
+      "claim": "The reinforcing effect of each group in the ICSS task was assessed using a permutation test (10,000 permutations per group).",
+      "claim_type": "EXPLICIT",
+      "source": "The reinforcing effect of each group in the ICSS task was assessed using a permutation test (10,000 permutations per group).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study reveals asymmetric connectivity between cortical inputs to striatal D1- and D2-SPNs. Approximately 73% of D1-SPNs receive inputs from neurons projecting to D2-SPNs, while only 40% of D2-SPNs receive inputs from neurons projecting to D1-SPNs. This demonstrates that excitatory inputs to D2-SPNs predominantly target both D1- and D2-SPNs, whereas inputs to D1-SPNs are more selective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C13-C17 are supported by whole-cell recordings using the rabies-ChR2 system (Figure 2). The data show statistically significant asymmetry (p=0.0079, Fisher's exact test) in connectivity patterns. Connection probabilities are clearly quantified (~63% D1\u2192D1, ~79% D2\u2192D2, ~40% D1\u2192D2, ~73% D2\u2192D1), and the experimental design appropriately controls for non-starter cells using mCherry-negative selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "b522a0d0-f6be-4848-9891-4b613dc3e0ee",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Based on the asymmetric connectivity data, the authors predict that excitatory inputs to D1-SPNs primarily control the direct pathway, while inputs to D2-SPNs drive both direct and indirect pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are logical inferences from the connectivity data (C1, C2, C13-C17) and are validated by subsequent behavioral experiments (Figure 3). The prediction is consistent with observed behavioral outcomes where D1-projecting cortical neurons produce effects similar to direct D1-SPN stimulation, while D2-projecting neurons show mixed effects consistent with dual pathway activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "842137b2-3de3-4833-99b6-7298d2e29d5c",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Direct optogenetic stimulation of D1-SPNs facilitates locomotion in both DMS and DLS, while D2-SPN stimulation suppresses locomotion in DMS but not significantly in DLS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by open field behavioral data (Figure 3B-G) with appropriate statistical testing (unpaired two-tailed t-tests). D1-SPN stimulation shows significant facilitation in both DMS (p=0.0046) and DLS (p=0.0003), while D2-SPN stimulation shows region-specific effects (DMS: p=0.0227; DLS: p=0.3224). Results are consistent with prior literature (Kravitz et al., 2010).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "eb5a2fbd-16f6-4d32-8dee-47693e227f4c",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of cortical neurons projecting to D1-SPNs facilitates locomotion in both MCC and M1, while stimulation of D2-SPN-projecting neurons does not significantly alter locomotion in either region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by behavioral data (Figure 3H-M) showing that 20 Hz stimulation of D1-projecting MCC neurons facilitates locomotion (p=0.0344), while D2-projecting MCC neurons do not (p=0.2447). Similar patterns are observed for M1 (D1: p=0.0055; D2: p=0.5714). Control experiments (Figure 3\u2014supplement 2) rule out direct striatal activation artifacts. The frequency-dependence (20 Hz vs 5 Hz) is appropriately tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "a7b47f7b-2a7f-4e9d-b90b-4f32fcb455e0",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In ICSS experiments, D1-SPN stimulation robustly supports self-stimulation behavior in both DMS and DLS, while D2-SPN stimulation does not. However, stimulation of cortical neurons projecting to either D1- or D2-SPNs supports ICSS behavior in both MCC and M1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are supported by ICSS data (Figure 3N-S) using permutation tests. Direct D1-SPN stimulation drives ICSS (DMS: p=0.0378; DLS: p=0.0082), while D2-SPN stimulation does not. Notably, both D1- and D2-projecting cortical neurons support ICSS (MCC-D1: p=0.0034; MCC-D2: p=0.0344; M1-D1: p=0.0259; M1-D2: p=0.0025), consistent with the hypothesis that D2-projecting neurons activate both pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "a67783d3-a464-47d0-8544-2ded536582ad",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "During FR8 sequence behavior, stimulation of MCC inputs to D1-SPNs facilitates lever pressing while D2-SPN inputs slightly reduce it, with significant differences between the two. In contrast, stimulation of M1 inputs to either D1- or D2-SPNs facilitates lever pressing to similar degrees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 are supported by FR8 sequence data (Figure 4). MCC stimulation shows differential effects between D1- and D2-projecting neurons (p=0.0097), with D1 facilitating (p=0.0131) and D2 showing no significant effect (p=0.4117). M1 stimulation shows facilitation for both D1 (p=0.0046) and D2 (p=0.0479) projecting neurons with no significant difference between them (p=0.4511). This demonstrates region-specific functional organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "8ef7117d-532b-4220-b4a9-60bac5292b37",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cortical neurons in the same layer and location can differentially control actions depending on their striatal projection targets in a pathway- and cell-type-specific manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by the combined behavioral data (Figure 3) showing that D1- vs D2-projecting neurons in the same cortical regions produce distinct behavioral effects. Control experiments (Figure 3\u2014supplement 2) rule out light penetration artifacts. The claim is a reasonable inference from the experimental results, though it would benefit from direct recording of cortical activity during behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "f2737a0a-6788-4e98-8ad8-2811ca5f3122",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Rabies tracing reveals intensive labeling in MCC and M1, which target DMS and DLS respectively. ChR2 expression in rabies-infected cortical neurons is functional, as confirmed by current-voltage relationships and optogenetically-evoked spiking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by anatomical tracing (Figure 1C-D) and electrophysiological validation (Figure 1H-I). The rabies-ChR2 system successfully labels cortical inputs and expresses functional ChR2, as demonstrated by reliable spike generation at 5 Hz and 20 Hz stimulation. This validates the technical approach for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "dcf8e832-3e98-42ba-be55-08798127bb9b",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The asymmetrically overlapping organization of cortical projections provides a structural foundation for dynamic coordination between direct and indirect pathways during sequence behavior, with dedicated projections suited for sequence initiation/termination and overlapping projections for action switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C55 are mechanistic interpretations inferred from the connectivity and behavioral data. While the structural organization is demonstrated (C1-C2, C13-C17) and behavioral effects are shown (C31-C36), the specific functional roles in sequence initiation, termination, and switching are speculative. The claims rely heavily on prior literature and would require targeted manipulations during specific sequence phases to be fully supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "cd1603ec-8d55-4a59-8772-7b942ff50c0e",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors predict that D1- vs D2-SPN projecting cortical neurons fire differently but in relation to each other during behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is a prediction/speculation based on the connectivity and behavioral data. No direct recordings of cortical neuronal activity during behavior are presented. While the prediction is reasonable given the demonstrated connectivity patterns and behavioral effects, it remains untested and speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "b0ecc47b-822c-479c-acfe-da808c782e89",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The behavioral effects of cortical optogenetic stimulation are driven by excitation of ChR2-expressing neurons in the targeted cortical area rather than by activation of efferent terminals, based on prior evidence that sustained optogenetic stimulation of terminals produces only transient postsynaptic firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by control experiments (Figure 3\u2014supplement 2) showing no behavioral effects when ChR2 is expressed only in striatum with cortical stimulation. The reasoning based on Cruikshank et al. (2010) regarding terminal vs soma stimulation is appropriate given the long stimulation durations used (1-15 s). However, the authors acknowledge in the Discussion that contributions from collaterals to other brain regions cannot be ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing the importance of corticostriatal circuits, the role of direct and indirect pathways, and prior anatomical findings about cortical inputs to D1- vs D2-SPNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 are background statements supported by appropriate citations to prior literature. These establish the context for the current study and accurately represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "2d5ecddb-028c-4bfd-883c-0649397a49ea",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about the role of corticostriatal circuits in sequence behavior, the composition of corticostriatal neurons, and models of basal ganglia function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 and C44-C51 are background statements accurately representing prior literature with appropriate citations. These provide context for interpreting the sequence behavior experiments and the functional significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "21365572-4ac9-4f49-ad83-578e607fc2e4",
+      "content_id": "39590321-a381-4ba4-bcb1-13004f4a718b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details including ethical approval, animal subjects, housing conditions, mouse lines, experimental timelines, connectivity criteria, and statistical methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C69 describe methodological details that are appropriately documented. The statistical methods (Fisher's exact test, unpaired t-tests, permutation tests) are appropriate for the data types. The connectivity criterion (<10 ms latency) is standard for monosynaptic connections. Ethical approval and animal care procedures are properly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "5562af6c-4150-416b-a45d-8fe4eeb257f6",
+      "content_id": "8e2563c0-0348-4507-bc1e-56c48efc9633",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Using rabies tracing and electrophysiology, the authors demonstrate asymmetric cortical connectivity: more than two-thirds of excitatory inputs to D2-SPNs also target D1-SPNs (~73% connectivity probability), while only one-third of inputs to D1-SPNs target D2-SPNs (~40% connectivity probability). This implies that cortical inputs to D1-SPNs primarily control the direct pathway, while inputs to D2-SPNs drive both pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, stating 'the strength of the evidence is solid, with anatomical and electrophysiological findings aligning well' and praising the study for revealing 'a previously unappreciated structure' in corticostriatal connectivity. The asymmetric organization is treated as a key contribution without methodological critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "3a2d5554-e6e5-4e20-9d73-8884524197b5",
+      "content_id": "8e2563c0-0348-4507-bc1e-56c48efc9633",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Optogenetic stimulation of D1-SPN-projecting cortical neurons (MCC and M1) facilitated locomotion similar to direct D1-SPN stimulation, while stimulation of D2-SPN-projecting cortical neurons did not suppress locomotion (unlike direct D2-SPN stimulation in DMS), consistent with these inputs activating both D1- and D2-SPNs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers state that 'showing these same effects in three distinct behaviors is strong' and that the behavioral data provide 'functional verification of the consequences of the anatomy.' The locomotion findings are accepted as part of the convergent evidence supporting the connectivity model.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "d07e817a-5712-4dfb-bd07-6ba5f8778b4d",
+      "content_id": "8e2563c0-0348-4507-bc1e-56c48efc9633",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "In intracranial self-stimulation (ICSS) tests, stimulation of both D1-SPN-projecting and D2-SPN-projecting cortical neurons (MCC and M1) supported ICSS behavior, whereas direct D2-SPN stimulation did not, further supporting that cortical inputs to D2-SPNs activate both striatal pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the replication across 'three distinct behaviors' as strong evidence and note that the behavioral experiments provide 'functional verification' of the anatomical findings. The ICSS results are treated as confirmatory without critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "34263266-a572-4d79-a984-0478d18a9f36",
+      "content_id": "8e2563c0-0348-4507-bc1e-56c48efc9633",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "During FR8 sequence behavior, stimulation of MCC inputs to D1-SPNs facilitated lever pressing while stimulation of MCC inputs to D2-SPNs slightly reduced it. However, stimulation of M1 inputs to either D1- or D2-SPNs facilitated lever pressing to similar degrees, suggesting regional differences in how cortical inputs control sequence execution.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm that demonstrating effects across 'three distinct behaviors is strong' and that the 'functional verification of the consequences of the anatomy is very nice to see.' The sequence behavior data are accepted as part of the convergent behavioral evidence without specific concerns raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "5571c878-f6b8-42aa-8f43-35ea8e9c4f96",
+      "content_id": "8e2563c0-0348-4507-bc1e-56c48efc9633",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The rabies-ChR2 system successfully labeled cortical inputs to striatal D1- and D2-SPNs in expected regions (MCC and M1), and rabies-infected cortical neurons showed healthy electrophysiological properties and functional ChR2 expression. Behavioral effects are attributed to cortical neuron activation rather than terminal stimulation based on stimulation duration considerations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note that 'it is a good choice to patch only from mCherry-negative non-starter cells in the striatum,' indicating methodological approval. The editors' note states that concerns about rabies virus-based tracing were assessed and deemed acceptable, implying the methodology is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "fe3736e1-0bf7-40cb-9e88-d61dda70b5cb",
+      "content_id": "8e2563c0-0348-4507-bc1e-56c48efc9633",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors conclude that the asymmetrically overlapping corticostriatal organization provides a structural foundation for dynamic coordination between direct and indirect pathways during behavior, with dedicated projections suited for sequence initiation/termination and overlapping projections crucial for action switching.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers state the study 'adds to our understanding of the logic of corticostriatal connections, suggesting a previously unappreciated structure' and that the findings offer 'key insights into corticostriatal function.' The interpretive framework is accepted as a valuable contribution without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21434be4-40ce-4ece-af4e-2d8ae2f89f07",
+      "result_id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a"
+    },
+    {
+      "claim_id": "4d9cab26-66cf-4d99-b972-48ad85b582ea",
+      "result_id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a"
+    },
+    {
+      "claim_id": "c4c85bfd-f715-4a6c-a181-c963094b62eb",
+      "result_id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a"
+    },
+    {
+      "claim_id": "4ca5057a-14d9-4e5a-a3de-0998addde42c",
+      "result_id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a"
+    },
+    {
+      "claim_id": "776f054f-d7e3-46a3-b6a0-fbdfbd6a727e",
+      "result_id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a"
+    },
+    {
+      "claim_id": "bcc3e6cd-b11a-410c-b8e5-53d4d369ab68",
+      "result_id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a"
+    },
+    {
+      "claim_id": "17c0574f-683f-4d95-a6ea-293cb1714bc3",
+      "result_id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a"
+    },
+    {
+      "claim_id": "3d3f1aa4-8838-49a5-a5bb-cb34cc3a4f99",
+      "result_id": "b522a0d0-f6be-4848-9891-4b613dc3e0ee"
+    },
+    {
+      "claim_id": "0e6c64e8-073e-404b-ba88-1eac6172cb35",
+      "result_id": "b522a0d0-f6be-4848-9891-4b613dc3e0ee"
+    },
+    {
+      "claim_id": "a58187ec-d049-47d1-9c65-d0eab7e9a26a",
+      "result_id": "842137b2-3de3-4833-99b6-7298d2e29d5c"
+    },
+    {
+      "claim_id": "77f15122-f15b-4d89-9530-b3ff37ba2259",
+      "result_id": "842137b2-3de3-4833-99b6-7298d2e29d5c"
+    },
+    {
+      "claim_id": "d399f7a6-099e-4dc4-96b5-95928de22d28",
+      "result_id": "842137b2-3de3-4833-99b6-7298d2e29d5c"
+    },
+    {
+      "claim_id": "702abedf-3760-43f5-9875-b4ce9bded984",
+      "result_id": "eb5a2fbd-16f6-4d32-8dee-47693e227f4c"
+    },
+    {
+      "claim_id": "f447605a-a767-487e-a5d8-ba14faa665f8",
+      "result_id": "eb5a2fbd-16f6-4d32-8dee-47693e227f4c"
+    },
+    {
+      "claim_id": "48b0a428-658d-4f0d-99a6-b7d019244f07",
+      "result_id": "eb5a2fbd-16f6-4d32-8dee-47693e227f4c"
+    },
+    {
+      "claim_id": "3d87c4e7-fdd5-4059-93ff-00af2d60c9e3",
+      "result_id": "eb5a2fbd-16f6-4d32-8dee-47693e227f4c"
+    },
+    {
+      "claim_id": "1b44e91f-446d-4713-910b-28ec42da3aec",
+      "result_id": "a7b47f7b-2a7f-4e9d-b90b-4f32fcb455e0"
+    },
+    {
+      "claim_id": "4a0c7269-ea02-461e-b00b-087de6cf0f27",
+      "result_id": "a7b47f7b-2a7f-4e9d-b90b-4f32fcb455e0"
+    },
+    {
+      "claim_id": "ff80ee1a-59aa-4ca3-9a15-4c288eba0fe0",
+      "result_id": "a7b47f7b-2a7f-4e9d-b90b-4f32fcb455e0"
+    },
+    {
+      "claim_id": "52452253-cc3b-45cf-b13e-9bf72772899e",
+      "result_id": "a7b47f7b-2a7f-4e9d-b90b-4f32fcb455e0"
+    },
+    {
+      "claim_id": "53a1decc-a002-45e4-8149-69bde4b33c98",
+      "result_id": "a67783d3-a464-47d0-8544-2ded536582ad"
+    },
+    {
+      "claim_id": "597fbca3-8c2b-4397-9525-a0d3eda09dbe",
+      "result_id": "a67783d3-a464-47d0-8544-2ded536582ad"
+    },
+    {
+      "claim_id": "c2cb2b18-ee06-47b6-8832-73d97d790326",
+      "result_id": "a67783d3-a464-47d0-8544-2ded536582ad"
+    },
+    {
+      "claim_id": "0988e6fe-d208-4d86-a5b1-883ed8a188a1",
+      "result_id": "a67783d3-a464-47d0-8544-2ded536582ad"
+    },
+    {
+      "claim_id": "d7ce6414-86ca-4172-82c0-f1629dd6b155",
+      "result_id": "a67783d3-a464-47d0-8544-2ded536582ad"
+    },
+    {
+      "claim_id": "4dc59259-485a-437e-8687-17282569d54c",
+      "result_id": "a67783d3-a464-47d0-8544-2ded536582ad"
+    },
+    {
+      "claim_id": "823d261b-27fc-4d3c-8d3a-e248ed85243b",
+      "result_id": "8ef7117d-532b-4220-b4a9-60bac5292b37"
+    },
+    {
+      "claim_id": "352d7891-e0dd-4cfc-a011-38cd2557de30",
+      "result_id": "f2737a0a-6788-4e98-8ad8-2811ca5f3122"
+    },
+    {
+      "claim_id": "d0c05ed3-c50d-4f65-97b0-7ca19066764c",
+      "result_id": "f2737a0a-6788-4e98-8ad8-2811ca5f3122"
+    },
+    {
+      "claim_id": "272a6039-e3e6-42fc-a78e-7cd228b96810",
+      "result_id": "f2737a0a-6788-4e98-8ad8-2811ca5f3122"
+    },
+    {
+      "claim_id": "a878abfa-62e3-44d6-9bf4-d77a45036141",
+      "result_id": "f2737a0a-6788-4e98-8ad8-2811ca5f3122"
+    },
+    {
+      "claim_id": "cf016d04-5c96-43fe-ba77-a1f848c6278c",
+      "result_id": "dcf8e832-3e98-42ba-be55-08798127bb9b"
+    },
+    {
+      "claim_id": "22864aba-fdc3-4d90-85f6-8bbfadcd436e",
+      "result_id": "dcf8e832-3e98-42ba-be55-08798127bb9b"
+    },
+    {
+      "claim_id": "9bcf4413-a02f-412b-bcee-6fba9d7663eb",
+      "result_id": "dcf8e832-3e98-42ba-be55-08798127bb9b"
+    },
+    {
+      "claim_id": "4c40f14c-7004-44e5-a235-f511c0ece51e",
+      "result_id": "cd1603ec-8d55-4a59-8772-7b942ff50c0e"
+    },
+    {
+      "claim_id": "4c9ae640-826c-416d-93bb-cfb114a55697",
+      "result_id": "b0ecc47b-822c-479c-acfe-da808c782e89"
+    },
+    {
+      "claim_id": "42287f87-71c5-414a-937b-f95cf937d018",
+      "result_id": "b0ecc47b-822c-479c-acfe-da808c782e89"
+    },
+    {
+      "claim_id": "45984962-9856-481b-8401-a7d13accdf41",
+      "result_id": "b0ecc47b-822c-479c-acfe-da808c782e89"
+    },
+    {
+      "claim_id": "3e0ac8d9-6d06-4a3a-9cdb-18e68c3465aa",
+      "result_id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0"
+    },
+    {
+      "claim_id": "de3784da-b7df-4d66-9c79-7c843d1336fc",
+      "result_id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0"
+    },
+    {
+      "claim_id": "b0f8deb2-12bd-483f-a6e1-8cc13eedeff7",
+      "result_id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0"
+    },
+    {
+      "claim_id": "3ad25654-08a3-4ebc-84b1-8c81e76e31bf",
+      "result_id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0"
+    },
+    {
+      "claim_id": "4c637dd2-b6f1-443b-b677-1db621a50935",
+      "result_id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0"
+    },
+    {
+      "claim_id": "37111ebb-e100-4340-9b0b-d2e5c706fe45",
+      "result_id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0"
+    },
+    {
+      "claim_id": "04567229-a85f-4c01-83a3-1c943c32539d",
+      "result_id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0"
+    },
+    {
+      "claim_id": "6679d23d-c874-44ed-b1cb-4dab8f4ac1f2",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "e70c2c81-c199-4763-bb68-5cc745db32cd",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "8b3a5586-a0a3-477b-94c8-beb2bc4eb0a8",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "008dd09e-523a-4aef-8f7e-6fdf0696d3a1",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "9cbf290e-2358-45b7-b114-ee36cf93d11d",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "c8a82a5a-d1e0-493c-b672-1c25bc2fd1f5",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "41e996ab-967f-46cf-b275-00d14bdf6184",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "0bbd6d22-f68f-4a03-be05-ec6b41bb16e4",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "f43c35c8-2573-4860-bc2d-33960d4e95c0",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "08fc48a6-7aa6-4236-bf13-ed4a267ad15c",
+      "result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea"
+    },
+    {
+      "claim_id": "487fdc18-9baf-468f-9e24-7d8ca5677327",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "5ba517bf-3281-40f2-a40c-86ff48551deb",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "c9f1afb3-c37c-4001-ab7b-690bcdf5059d",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "dd3a66db-0b83-4d04-a7d6-bf43f5d0426d",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "6425353c-86d4-434b-bc49-35d888dbcf16",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "56778b97-2038-48b8-b1fc-0e0323f9a207",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "87cfec31-228c-496e-8caf-b511ed90615d",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "aaef7817-acc2-4f7a-9cf2-c1d713b3fe3e",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "5d2dbd4b-6cc4-41ef-bd7a-2a6fafec64aa",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "619f64b4-70e0-41f3-be78-61adc17a3284",
+      "result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4"
+    },
+    {
+      "claim_id": "21434be4-40ce-4ece-af4e-2d8ae2f89f07",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "4d9cab26-66cf-4d99-b972-48ad85b582ea",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "c4c85bfd-f715-4a6c-a181-c963094b62eb",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "4ca5057a-14d9-4e5a-a3de-0998addde42c",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "776f054f-d7e3-46a3-b6a0-fbdfbd6a727e",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "bcc3e6cd-b11a-410c-b8e5-53d4d369ab68",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "17c0574f-683f-4d95-a6ea-293cb1714bc3",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "3d3f1aa4-8838-49a5-a5bb-cb34cc3a4f99",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "0e6c64e8-073e-404b-ba88-1eac6172cb35",
+      "result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6"
+    },
+    {
+      "claim_id": "be246dde-4c76-45b5-9696-36c4cdd45796",
+      "result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5"
+    },
+    {
+      "claim_id": "a58187ec-d049-47d1-9c65-d0eab7e9a26a",
+      "result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5"
+    },
+    {
+      "claim_id": "77f15122-f15b-4d89-9530-b3ff37ba2259",
+      "result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5"
+    },
+    {
+      "claim_id": "d399f7a6-099e-4dc4-96b5-95928de22d28",
+      "result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5"
+    },
+    {
+      "claim_id": "702abedf-3760-43f5-9875-b4ce9bded984",
+      "result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5"
+    },
+    {
+      "claim_id": "f447605a-a767-487e-a5d8-ba14faa665f8",
+      "result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5"
+    },
+    {
+      "claim_id": "48b0a428-658d-4f0d-99a6-b7d019244f07",
+      "result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5"
+    },
+    {
+      "claim_id": "3d87c4e7-fdd5-4059-93ff-00af2d60c9e3",
+      "result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5"
+    },
+    {
+      "claim_id": "168cd158-0830-404e-84b5-97f6e76a58cb",
+      "result_id": "d07e817a-5712-4dfb-bd07-6ba5f8778b4d"
+    },
+    {
+      "claim_id": "1b44e91f-446d-4713-910b-28ec42da3aec",
+      "result_id": "d07e817a-5712-4dfb-bd07-6ba5f8778b4d"
+    },
+    {
+      "claim_id": "4a0c7269-ea02-461e-b00b-087de6cf0f27",
+      "result_id": "d07e817a-5712-4dfb-bd07-6ba5f8778b4d"
+    },
+    {
+      "claim_id": "ff80ee1a-59aa-4ca3-9a15-4c288eba0fe0",
+      "result_id": "d07e817a-5712-4dfb-bd07-6ba5f8778b4d"
+    },
+    {
+      "claim_id": "52452253-cc3b-45cf-b13e-9bf72772899e",
+      "result_id": "d07e817a-5712-4dfb-bd07-6ba5f8778b4d"
+    },
+    {
+      "claim_id": "36791c9a-355a-415f-bbf9-eb6aab250f24",
+      "result_id": "34263266-a572-4d79-a984-0478d18a9f36"
+    },
+    {
+      "claim_id": "53a1decc-a002-45e4-8149-69bde4b33c98",
+      "result_id": "34263266-a572-4d79-a984-0478d18a9f36"
+    },
+    {
+      "claim_id": "597fbca3-8c2b-4397-9525-a0d3eda09dbe",
+      "result_id": "34263266-a572-4d79-a984-0478d18a9f36"
+    },
+    {
+      "claim_id": "c2cb2b18-ee06-47b6-8832-73d97d790326",
+      "result_id": "34263266-a572-4d79-a984-0478d18a9f36"
+    },
+    {
+      "claim_id": "0988e6fe-d208-4d86-a5b1-883ed8a188a1",
+      "result_id": "34263266-a572-4d79-a984-0478d18a9f36"
+    },
+    {
+      "claim_id": "d7ce6414-86ca-4172-82c0-f1629dd6b155",
+      "result_id": "34263266-a572-4d79-a984-0478d18a9f36"
+    },
+    {
+      "claim_id": "4dc59259-485a-437e-8687-17282569d54c",
+      "result_id": "34263266-a572-4d79-a984-0478d18a9f36"
+    },
+    {
+      "claim_id": "352d7891-e0dd-4cfc-a011-38cd2557de30",
+      "result_id": "5571c878-f6b8-42aa-8f43-35ea8e9c4f96"
+    },
+    {
+      "claim_id": "d0c05ed3-c50d-4f65-97b0-7ca19066764c",
+      "result_id": "5571c878-f6b8-42aa-8f43-35ea8e9c4f96"
+    },
+    {
+      "claim_id": "272a6039-e3e6-42fc-a78e-7cd228b96810",
+      "result_id": "5571c878-f6b8-42aa-8f43-35ea8e9c4f96"
+    },
+    {
+      "claim_id": "a878abfa-62e3-44d6-9bf4-d77a45036141",
+      "result_id": "5571c878-f6b8-42aa-8f43-35ea8e9c4f96"
+    },
+    {
+      "claim_id": "45984962-9856-481b-8401-a7d13accdf41",
+      "result_id": "5571c878-f6b8-42aa-8f43-35ea8e9c4f96"
+    },
+    {
+      "claim_id": "823d261b-27fc-4d3c-8d3a-e248ed85243b",
+      "result_id": "fe3736e1-0bf7-40cb-9e88-d61dda70b5cb"
+    },
+    {
+      "claim_id": "cf016d04-5c96-43fe-ba77-a1f848c6278c",
+      "result_id": "fe3736e1-0bf7-40cb-9e88-d61dda70b5cb"
+    },
+    {
+      "claim_id": "22864aba-fdc3-4d90-85f6-8bbfadcd436e",
+      "result_id": "fe3736e1-0bf7-40cb-9e88-d61dda70b5cb"
+    },
+    {
+      "claim_id": "9bcf4413-a02f-412b-bcee-6fba9d7663eb",
+      "result_id": "fe3736e1-0bf7-40cb-9e88-d61dda70b5cb"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "8ad85e56-dded-40f8-9a1a-4d45c287da1a",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "17627924-d1fd-4b59-a07f-663f1c9b5a7a",
+      "peer_result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the asymmetric connectivity findings (C1, C2, C13-C17). OpenEval provides detailed statistical validation (p=0.0079, Fisher's exact test) and connection probabilities. Peer review affirms 'strength of evidence is solid' and praises the 'previously unappreciated structure.' Peer review also includes C37-C38 (predictions from connectivity) which OpenEval evaluates separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "c1280f54-9bc9-4577-8d56-9c4d1f66c662",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b522a0d0-f6be-4848-9891-4b613dc3e0ee",
+      "peer_result_id": "5562af6c-4150-416b-a45d-8fe4eeb257f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval supports the predictions/inferences (C37-C38) as logical extensions of connectivity data validated by behavioral experiments. Peer review includes these claims in their overall affirmation of the connectivity findings, treating them as part of the key contribution without separate evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "899c1970-7f0b-4a22-9d8d-8f057abeba8e",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "842137b2-3de3-4833-99b6-7298d2e29d5c",
+      "peer_result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support locomotion findings (C18-C20). OpenEval provides specific statistical details (DMS p=0.0046, DLS p=0.0003 for D1-SPN). Peer review groups locomotion with other behavioral data (C3, C21-C24) and affirms effects across 'three distinct behaviors' as strong convergent evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "4a889ce5-49ea-4681-b26e-1c020118c23e",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "eb5a2fbd-16f6-4d32-8dee-47693e227f4c",
+      "peer_result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support cortical stimulation locomotion effects (C21-C24). OpenEval details frequency-dependence and control experiments. Peer review combines these with other locomotion claims (C3, C18-C20) in affirming the behavioral verification of anatomical findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "89518e38-5d48-4650-9e4e-af5855d4960d",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "a7b47f7b-2a7f-4e9d-b90b-4f32fcb455e0",
+      "peer_result_id": "d07e817a-5712-4dfb-bd07-6ba5f8778b4d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support ICSS findings (C25-C28). OpenEval provides detailed permutation test results showing D1-projecting cortical neurons drive ICSS while noting both D1- and D2-projecting neurons support ICSS. Peer review includes C4 and affirms ICSS as part of 'three distinct behaviors' providing functional verification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "d609ade8-e836-4ff2-8998-b93fd5a34378",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a67783d3-a464-47d0-8544-2ded536582ad",
+      "peer_result_id": "34263266-a572-4d79-a984-0478d18a9f36",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support sequence behavior findings (C31-C36). OpenEval details differential effects between MCC (D1 vs D2: p=0.0097) and M1 (no difference: p=0.4511). Peer review includes C5 and affirms sequence data as part of convergent behavioral evidence across three behaviors.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "d40fe4be-ffa4-4714-9917-9c3d39a347f1",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "f2737a0a-6788-4e98-8ad8-2811ca5f3122",
+      "peer_result_id": "5571c878-f6b8-42aa-8f43-35ea8e9c4f96",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the rabies-ChR2 methodology (C40-C43). OpenEval validates anatomical tracing and functional ChR2 expression with electrophysiological data. Peer review approves the methodological choice to patch mCherry-negative cells and notes editorial assessment deemed rabies tracing acceptable. Peer review also includes C59 (control experiments).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "cba36450-03c6-426e-9527-aab3b984540b",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "b0ecc47b-822c-479c-acfe-da808c782e89",
+      "peer_result_id": "5571c878-f6b8-42aa-8f43-35ea8e9c4f96",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support control experiments validating specificity. OpenEval evaluates C57-C59 regarding cortical vs striatal stimulation controls, acknowledging limitations about collaterals. Peer review includes C59 with methodology approval but focuses more on rabies tracing validation than stimulation controls.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "2e07a6b6-4bb7-46d3-9f2e-23a439044e4b",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "dcf8e832-3e98-42ba-be55-08798127bb9b",
+      "peer_result_id": "fe3736e1-0bf7-40cb-9e88-d61dda70b5cb",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval rates mechanistic interpretations (C53-C55) as UNCERTAIN, noting they are speculative inferences requiring targeted manipulations during specific sequence phases. Peer review rates these same claims as SUPPORTED, accepting the interpretive framework as valuable contribution to understanding corticostriatal function without expressing uncertainty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "463b7c31-3649-479b-bc5e-028e66b9c0f6",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "8ef7117d-532b-4220-b4a9-60bac5292b37",
+      "peer_result_id": "fe3736e1-0bf7-40cb-9e88-d61dda70b5cb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval supports C39 (differential behavioral effects) as reasonable inference from behavioral data, noting it would benefit from direct cortical recordings. Peer review includes C39 with broader interpretive claims (C53-C55) and accepts the framework as adding to understanding of corticostriatal logic.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "ed28317f-cfa2-4d43-aded-f7bc506ae964",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "cd1603ec-8d55-4a59-8772-7b942ff50c0e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates C56 (prediction about cortical activity during behavior) as UNCERTAIN, noting it is untested speculation despite being reasonable. No corresponding peer review evaluation found for this specific predictive claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "61255285-14a4-48c8-b0fd-095f95dcf19f",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "b2f0f1fa-9f7d-488a-96ae-698abd23efb0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports background claims C6-C12 as accurately representing established literature. No corresponding peer review evaluation found; peer reviewers did not separately evaluate background/context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "2700cdb7-19ef-4809-9c32-2035509b2113",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "2d5ecddb-028c-4bfd-883c-0649397a49ea",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports background claims C29-C30, C44-C51 as accurate literature representation providing context. No corresponding peer review evaluation found; peer reviewers did not separately evaluate these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "1cc63363-42af-4beb-992b-c8a9df861298",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "21365572-4ac9-4f49-ad83-578e607fc2e4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports methodological documentation claims C60-C69 regarding statistical methods, connectivity criteria, and ethical procedures. No corresponding peer review evaluation found; peer reviewers did not separately evaluate these methodological documentation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "6e7b4e09-19c2-4daf-b600-68ff672f1ccb",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP15",
+      "openeval_result_id": null,
+      "peer_result_id": "3a2d5554-e6e5-4e20-9d73-8884524197b5",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer review includes C3 (general locomotion claim) grouped with specific locomotion findings. OpenEval does not have a separate result for C3; this claim may be implicitly covered in OpenEval R3 and R4 evaluations of specific locomotion experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "7d11f7ab-2640-4212-a0a0-7d09181d9671",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP16",
+      "openeval_result_id": null,
+      "peer_result_id": "d07e817a-5712-4dfb-bd07-6ba5f8778b4d",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer review includes C4 (general ICSS claim) with specific ICSS findings. OpenEval does not have a separate result for C4; this claim may be implicitly covered in OpenEval R5 evaluation of specific ICSS experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    },
+    {
+      "id": "93464f91-7cf0-4675-944e-04172059ca22",
+      "submission_id": "fb4b661f-88d2-48a2-a409-7a74e986dc1d",
+      "comparison_id": "CMP17",
+      "openeval_result_id": null,
+      "peer_result_id": "34263266-a572-4d79-a984-0478d18a9f36",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer review includes C5 (general sequence behavior claim) with specific sequence findings. OpenEval does not have a separate result for C5; this claim may be implicitly covered in OpenEval R6 evaluation of specific sequence behavior experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:46:44.073949Z"
+    }
+  ]
+}

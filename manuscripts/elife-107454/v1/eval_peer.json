@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C20",
+      "C23",
+      "C25"
+    ],
+    "result": "OpenSpliceAI is a PyTorch reimplementation of SpliceAI that supports training from scratch, transfer learning, and provides six subcommands for various tasks including data preprocessing, model training, calibration, prediction, and variant analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor and Reviewer 1 explicitly affirm that the authors 'provide convincing evidence that their new implementation of SpliceAI matches the performance' and note the tool's 'clear and abundant documentation.' Reviewer 2 confirms 'the code runs fine and it is well documented.' No concerns are raised about these implementation claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C17",
+      "C18",
+      "C35",
+      "C36",
+      "C37",
+      "C63",
+      "C64"
+    ],
+    "result": "OpenSpliceAI achieves faster processing speeds, lower memory usage, and better GPU efficiency than the original SpliceAI implementation, driven by PyTorch's dynamic computation graphs and on-demand memory allocation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the authors provide 'convincing evidence' that OpenSpliceAI 'benefiting from improved computational efficiencies.' The editor notes the implementation 'improving usability.' No reviewer challenges the computational performance claims or benchmarking data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C21",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "OpenSpliceAI's output is highly concordant with the original SpliceAI, with similar sequence feature reliance demonstrated through in silico mutagenesis, high correlation in importance profiles (median 0.857), and nearly identical DNA logos (correlations 0.996-0.997), though the models are not identical due to training variations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states the authors provide 'convincing evidence' on 'how well the new models match the original's understanding of non-local mutation effects.' The editor confirms the authors 'provide convincing evidence that their OpenSpliceAI implementation matches the performance of the original.' Reviewer 2 notes 'the results are very similar' between implementations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C38",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C68",
+      "C69"
+    ],
+    "result": "Species-specific models trained with OpenSpliceAI on mouse, honeybee, zebrafish, and Arabidopsis demonstrate improved performance over human-trained SpliceAI, with larger improvements for more phylogenetically distant species (54% for honeybee, 57% for Arabidopsis) compared to closely related species (2% for mouse).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the authors 'produce models with strong performance on non-human model species' and provide 'a simple well well-documented pipeline for producing models tuned for any species of interest.' The editor affirms the work enables 'flexible retraining across species.' No concerns are raised about the cross-species performance data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Transfer learning from human to other species consistently outperformed training from scratch in both accuracy and stability, with transfer-trained models achieving near-optimal performance after just one epoch compared to ten epochs required for scratch-trained models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes that 'pre-training on other species helps improve performance.' No reviewer challenges the transfer learning results or methodology. The findings are presented as part of the overall demonstration of the tool's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "OpenSpliceAI models are well calibrated using class-wise temperature scaling, showing slight improvements in negative log-likelihood loss and expected calibration error across species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises a significant concern that 'their discussion of their package's calibration functionality does not adequately acknowledge the limitations of model calibration,' noting that calibration is dataset-specific and 'not guaranteed or expected to hold for any shift in the dataset distribution.' The reviewer states this 'could lead to serious errors and misunderstandings down the road' and requests clarification of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "OpenSpliceAI implements paralog removal using minimap2 alignment to ensure test set integrity, identifying and removing 0.71% of human MANE transcripts, 3.86% of mouse, 31.97% of zebrafish, 0.08% of honeybee, and 2.26% of Arabidopsis test sequences as paralogous to training sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges the paralog removal methodology or the reported percentages. This methodological detail is accepted as part of the overall experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "OSAIMANE was trained using protein-coding genes from the RefSeq MANE v1.3 database with flanking sequences of 80, 400, 2000, and 10,000 nucleotides, with five models trained for each sequence length.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer questions the training data source or experimental design. These methodological details are implicitly accepted as part of the overall approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Both SpliceAI and OpenSpliceAI use ensemble averaging of five models to improve performance and reduce sensitivity to local variations, though SpliceAI exhibits an inherent bias near transcript boundaries padded with Ns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges the ensemble approach or the observation about boundary bias. These technical details are accepted as part of the model characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "SpliceAI is a leading splice site prediction tool using deep residual CNN architecture, but its utility is limited by reliance on outdated TensorFlow/Keras frameworks and human-centric training data that limits performance on non-human species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims about SpliceAI's strengths and limitations are not challenged by any reviewer and form the accepted motivation for developing OpenSpliceAI. The editor acknowledges SpliceAI as 'widely used' and the need for modernization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Splicing enables production of multiple protein isoforms from single genes, and aberrant splicing contributes to diseases including cancer and neurodegenerative disorders, with 15-50% of disease-causing mutations in humans influencing splice site selection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background knowledge claims supported by citations. No reviewer questions these foundational statements about splicing biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Technical details about model training including shared genes between human and mouse genomes, principles of transfer learning, random weight initialization, data shuffling effects, and use of the AdamW optimizer.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are either established knowledge claims or technical implementation details that no reviewer challenges. They provide context for understanding the methods.",
+    "result_type": "MINOR"
+  }
+]

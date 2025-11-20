@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Sox9 deletion in adult mice leads to severe retinal degeneration characterized by loss of M\u00fcller glial cells and complete depletion of the photoreceptor layer. The severity of the phenotype correlates with the efficiency of Sox9 inactivation, with extreme phenotypes observed only when Sox9 is inactivated in at least 80% of expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C41-C43, C50-C55 collectively demonstrate retinal degeneration upon Sox9 deletion with histological, immunofluorescence, and quantitative evidence. The correlation between recombination efficiency and phenotype severity (C50-C51) is supported by SOX8/SOX9 co-staining data (C48-C49) and statistical analysis (C52). The mosaic nature of tamoxifen-induced recombination explains phenotypic variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Sox9 deletion results in loss of multiple retinal cell types including both cone and rod photoreceptors, ganglion cells, amacrine cells, and horizontal cells, indicating that Sox9 is required for maintenance of diverse retinal neuronal populations in the adult eye.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by immunofluorescence data for multiple cell-type-specific markers (opsins, RHO, BRN3A, PAX6, AP2\u03b1) with statistical significance (p<0.05 for all comparisons). The data demonstrate widespread retinal degeneration beyond the initially described photoreceptor and M\u00fcller glial loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Photoreceptor cells undergo apoptosis following Sox9 deletion, as evidenced by TUNEL staining predominantly in the outer nuclear layer. The apoptotic process may occur acutely within a narrow temporal window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by TUNEL assay data showing statistically significant increase in apoptotic cells (p=0.028, zero-inflated Poisson model). However, C64 is speculative regarding the temporal dynamics. The variability in TUNEL+ cell counts across samples suggests either acute apoptosis or sampling limitations, but the overall conclusion of photoreceptor apoptosis is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "M\u00fcller glial cells undergo progressive reactive gliosis in Sox9-deficient retinas, as demonstrated by increased GFAP expression that extends from the ganglion cell layer through the entire retinal thickness in severe phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by GFAP immunofluorescence showing progressive extension of GFAP+ processes correlated with phenotype severity, with statistically significant quantification (p=0.024, Mann-Whitney U-test, n=4 controls, 10 mutants). The interpretation of reactive gliosis is consistent with established markers and cited literature (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sox9 is expressed in basal limbal and corneal epithelial cells that function as progenitors for terminally differentiated corneal epithelial cells. Lineage tracing reveals that Sox9+ cells undergo transient amplification in the limbus and give rise to two types of long-lived clones: circumferential clones in the limbus and radial stripes extending into the cornea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C84 are supported by comprehensive lineage tracing experiments using Sox9-EYFP and Sox9-LacZ reporter mice with temporal analysis from 3 to 365 days after tamoxifen. The data demonstrate Sox9+ cell proliferation, migration patterns, and long-term clonal dynamics. The interpretation that Sox9+ cells are progenitors (C77) is well-supported by the observation of labeled cells throughout the epithelial layers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Single-cell RNA-seq analysis reveals that Sox9 is highly expressed in outer limbus basal cells and progressively decreases during differentiation toward corneal epithelial cells. High Sox9 expression correlates with stem cell markers (Gpha2, Ifitm3, Cd63, Krt14), while low Sox9 expression is associated with differentiation-related gene ontology terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C97 are supported by comprehensive scRNA-seq analysis including UMAP clustering, pseudotime trajectory analysis (PAGA), differential gene expression (2816 genes, adjusted p<0.05), and gene ontology enrichment. The analysis is validated by immunofluorescence (C90-C92) showing Sox9 expression patterns consistent with the scRNA-seq data. The interpretation that Sox9-negative cells are more differentiated (C97) is well-supported by GO terms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mosaic analysis reveals that Sox9 is essential for limbal stem cell clonogenic capacity. Sox9-null cells are outcompeted by wild-type cells during normal homeostasis, resulting in significantly reduced clonal contribution to the corneal epithelium (p=0.0159).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 are supported by mosaic analysis using Sox9\u0394/\u0394-LacZ mice showing dramatic reduction in X-gal+ clones compared to controls (6.74\u00b12.33% vs 0.85\u00b10.86%, p=0.0159, Mann-Whitney U-test). The lack of histological phenotype (C98-C100) combined with reduced clonal contribution (C107) supports the cell competition model (C101). The interpretation that Sox9 is required for clonogenic capacity (C108) is well-supported, though C106 is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors propose that Sox9 is necessary for M\u00fcller glial cell function and survival, and that loss of Sox9 leads to M\u00fcller glial dysfunction, reactive gliosis, and secondary degeneration of photoreceptors and other retinal neurons. This phenotype is more severe than DTA-induced ablation of either M\u00fcller glia or RPE alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C118 represent mechanistic interpretation and comparison with prior work. While the phenotypic observations are well-supported (C113, C117), the mechanistic model (C114-C115) is inferential. The authors acknowledge the challenge of distinguishing M\u00fcller glial vs RPE contributions (C109) and note that combined deletion may cause more severe phenotypes (C118), but this remains speculative. The comparison with DTA models (C111-C112, C117) is valid but the underlying mechanism is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors discuss potential clinical relevance, noting that retinal abnormalities have not been reported in SOX9 mutation patients (campomelic dysplasia), possibly due to early lethality. They speculate that mutations in SOX9 regulatory regions might underlie idiopathic retinal degeneration cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C125 are primarily speculative regarding clinical implications. C121 correctly states that retinal abnormalities have not been reported in CD patients, and C122 provides a reasonable explanation (early lethality). However, C125 is purely speculative without supporting data. The discussion of SOX9 regulatory complexity (C123-C124) is supported by citations but the clinical relevance remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Trajectory analysis and lineage tracing demonstrate that Sox9 expression decreases as limbal stem cells enter mitosis and differentiate into suprabasal corneal cells, with Sox9+ descendant cells contributing to corneal homeostasis through proliferation, migration, and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 integrate scRNA-seq trajectory analysis (C126-C127) with lineage tracing observations (C128-C129) to support the conclusion that Sox9 expression declines during differentiation (C130). The data are consistent and mutually reinforcing, though C130 involves some inference about the mechanism of homeostasis maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The persistence of small Sox9\u0394/\u0394 clones indicates that Sox9 is not absolutely required for limbal/corneal epithelial contribution, but significantly impairs competitive fitness of mutant cells relative to wild-type cells, explaining the lack of Sox9-null cells in tissue sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by the mosaic analysis data showing rare small clones in Sox9\u0394/\u0394-LacZ mice (C104-C105) versus abundant clones in controls (C102-C103). The cell competition model (C132-C133) provides a coherent explanation for the discrepancy between whole-mount and section analysis, though the mechanism of competition is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors compare their findings to a recent preprint (Rice et al., 2024) that reports squamous metaplasia upon Sox9 deletion, which was not observed in the current study. They attribute this discrepancy to the mosaic nature of their model allowing rescue by wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C136 discuss concordance and discordance with concurrent work. C134 is a straightforward citation, C135 reports a finding from the preprint, and C136 provides a speculative explanation for the discrepancy. The explanation is plausible but not directly tested, making this evaluation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Sox9 is highly expressed in outer limbus cells, which predominantly self-renew during homeostasis but proliferate in response to injury. Sox9 may control outer limbus stem cell proliferation, as evidenced by reduced circumferential clones in Sox9\u0394/\u0394-LacZ corneas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 integrate the current study's findings (C137, C140, C143) with prior literature on outer limbus cell behavior (C138-C139, C141-C142). The observation of reduced circumferential clones in Sox9\u0394/\u0394-LacZ mice (C143) supports a role for Sox9 in outer limbus cell proliferation, though the mechanism is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors propose that Sox9 fulfills multiple roles in the retina including regulation of structural protein expression (COL1, GFAP) and promotion of cell survival through anti-apoptotic activity, similar to its role in Sertoli cells. This suggests a general role for Sox9 in adult tissue maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C151 represent mechanistic interpretation integrating current findings with prior literature. While C145 is supported by the data, the specific molecular mechanisms (C146-C148) are cited from other studies and not directly demonstrated here. The parallel with Sertoli cells (C150) is cited, and the generalization to multiple tissues (C151) is inferential. The model is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "In the cornea, Sox9 appears to regulate proliferation and differentiation of limbal stem/progenitor cells through engagement with BMP, Notch, Shh, and Wnt signaling pathways, with high Sox9 expression associated with stem cell markers and declining expression during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 integrate the current study's scRNA-seq and lineage tracing data (C153) with prior in vitro studies on signaling pathways (C154). The association between Sox9 expression and stem cell markers is well-supported by the scRNA-seq data (C153), though the signaling pathway interactions (C154) are cited from prior work rather than directly demonstrated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "Through functional analyses in mice, the authors demonstrate that Sox9 acts as an essential maintenance factor preventing retinal degeneration and promotes differentiation of limbal cells in the cornea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 represent the main conclusions of the study, summarizing the retinal and corneal findings. Both are well-supported by the experimental data presented throughout the manuscript, including conditional deletion, lineage tracing, scRNA-seq analysis, and mosaic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C45"
+    ],
+    "result": "Sox9 expression in the adult eye is restricted to retinal pigmented epithelium cells, M\u00fcller glial cells, and limbal/corneal basal epithelia, following downregulation during neuronal differentiation from an earlier expression in retinal progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C24-C26, C45 describe Sox9 expression patterns based on established literature (Poch\u00e9 et al., 2008; Muto et al., 2009; Masuda et al., 2014) and confirmed by the current study's immunofluorescence data. The expression pattern is well-documented and serves as the foundation for the functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript provides background on retinal and corneal anatomy, including the structure and function of photoreceptors, M\u00fcller glial cells, and limbal epithelial stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 represent established anatomical and physiological knowledge about the eye, appropriately cited from the literature. These claims provide necessary context for the experimental work but do not constitute novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript reviews prior literature on SOX9 function in development and adult tissue homeostasis, including its role in campomelic dysplasia, stem cell maintenance in various tissues, and previous studies on Sox9 in retinal and corneal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C40 represent a comprehensive literature review establishing the knowledge gap that motivates the current study. All claims are appropriately cited and accurately represent prior work. C40 correctly identifies that the in vivo role of Sox9 in adult retinal and corneal maintenance was unknown prior to this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Retinal degeneration was never observed in control mice, making the presence of the Pde6brd1 allele unlikely, though the authors acknowledge that definitive exclusion would require PCR genotyping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C44 addresses an important control regarding the Pde6brd1 retinal degeneration allele. While the absence of degeneration in controls is reassuring, the authors acknowledge in the manuscript that definitive exclusion requires PCR genotyping, which was not performed. This represents a minor limitation in experimental rigor.",
+    "result_type": "MINOR"
+  }
+]

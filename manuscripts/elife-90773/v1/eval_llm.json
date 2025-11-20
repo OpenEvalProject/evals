@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The A1R activation pathway reveals inactive, intermediate, and pre-active states in dynamic equilibrium, with the fully-active state not significantly populated in the absence of G-proteins. Metadynamics simulations show the inactive state is most stable, followed by pre-active and intermediate states, with TM6 torsion evolving through characteristic conformations during activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C28 are directly supported by metadynamics data in Figure 1D-E showing three major states. Claims C23-C25 demonstrate limitations of conventional MD that motivated the enhanced sampling approach. Claims C29-C34 provide detailed structural characterization of each state from the FEL, with clear visual evidence in figures. The convergence assessment (Figure 1\u2014supplements 3-5) and error estimation support the reliability of the free energy landscape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C130"
+    ],
+    "result": "G-protein binding stabilizes the fully-active conformation of A1R by preventing sampling of intermediate and inactive states. The G\u03b1i2-\u03b15 helix induces a population shift toward fully-active conformations that overlap with the Cryo-EM structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by cMD simulation data in Figure 4A-C showing restricted conformational dynamics when G-proteins are bound. The projection onto the FEL (Figure 4B-C) demonstrates overlap with both pre-active and fully-active states. This is consistent with the combined activation mechanism described in other GPCRs (C130, C131), supported by multiple citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Protein energy network (PEN) analysis identifies extracellular (ECL2/ECL3) and intracellular (TM3) communication centers connected through multiple energy pathways. R1083.53 serves as a central hub in the intracellular region, forming hydrogen networks with D2296.30, D1043.49, and D326C-Ter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C36-C40 are supported by PEN analysis shown in Figure 2A-B. The methodology (gRINN + SPM) is established and appropriately applied. The identification of communication centers and pathways is visually demonstrated. Claim C41-C42 about adenosine's transient interactions is supported by simulation data (Figure 2\u2014supplement 1) and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C133",
+      "C134",
+      "C135",
+      "C150"
+    ],
+    "result": "Allosteric networks are dynamic and progressively enhanced during A1R activation. In the inactive state, tight TM3-TM6 coupling maintains the receptor in the inactive conformation. In the intermediate state, D2296.30 switches from R1083.53 to R1053.50, preventing TM6 opening. In the pre-active state, complete TM6 opening breaks the ionic-lock and establishes multiple communication pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C65 provide detailed state-specific PEN analysis supported by Figure 3A-B and supplement 2. The progression from limited pathways (inactive) to partial TM6 communication (intermediate) to multiple pathways (pre-active) is clearly demonstrated. The molecular mechanism involving ionic-lock dynamics (C44-C47, C52-C54, C63) is well-characterized. The summary claims (C68-C69, C133-C135, C150) accurately reflect the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The PEN successfully captures experimentally identified allosteric residues, with most identified in the pre-active ensemble due to enhanced allosteric communication upon activation. Seven of nine ECL2/ECL3 allosteric residues and three of four PAM cooperativity residues are directly captured in the PEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by comparison with experimental data (C156-C161). The capture of 7/9 ECL2/ECL3 residues (C157-C158) and 3/4 PAM residues (C160-C161) demonstrates good agreement between computational predictions and experimental findings. The correlation between activation state and PEN connectivity (C67) provides a mechanistic explanation for the state-dependent capture of allosteric residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C138",
+      "C140"
+    ],
+    "result": "G-protein binding fine-tunes the allosteric communication profile of A1R by refining pathways to pass through TM2, TM1, TM6, and TM7, with TM7 becoming the major pathway. The G\u03b1i2-\u03b15 helix replaces C-Ter communication, with D340 becoming a hub node connecting R1083.53, D422.37, and K2948.49.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C84 are supported by PEN analysis of the ADO-A1R-Gi2 complex shown in Figure 5. The comparison with pre-active PEN (C74-C75) shows both similarities and G-protein-specific refinements (C76-C79). The replacement of C-Ter by G\u03b1i2-\u03b15 helix (C80-C82) and new TM6-TM5 communication (C83) are clearly demonstrated. The conclusion about receptor-specific signaling profiles (C84, C138, C140) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C98",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C151"
+    ],
+    "result": "Multiple transient pockets are identified in A1R that change shape and frequency of formation along different conformational states. Pockets include the orthosteric site (PB), PAM site (PD), internal channel (PE), and various extrahelical pockets that are state-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by MDpocket analysis in Figure 6A showing state-dependent pocket formation. Specific pocket characterizations (C87, C89, C91-C93, C95, C98, C103-C110) are demonstrated by the frequency maps. The overlap analysis with PEN (C111, Figure 6B) provides mechanistic insight into allosteric coupling. The methodology (MDpocket with \u03a6i=0.2) is appropriate for transient pocket detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C142"
+    ],
+    "result": "The PEN captures key PAM pocket residues (L2426.43, L2456.46, S2466.47, G2797.44) along activation, with energy coupling between PB and PD pockets being particularly strong during receptor activation. G2797.44 becomes a key node in the fully-active ensemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 establish the experimental basis from prior work. Claims C115-C117 demonstrate that the PEN captures these experimentally validated residues in a state-dependent manner (Figure 7), with G2797.44 becoming prominent in the fully-active state (C116). The inference about enhanced PB-PD coupling during activation (C117, C142) is supported by the progressive appearance of these residues in the PEN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C152"
+    ],
+    "result": "Adenosine and MIPS521 PAM enhance and redistribute energy networks in A1R in a manner consistent with their biological activities. ADO restores allosteric coupling between PB and TM6, while PAM reinforces the TM7-ECL3-ECL2 pathway connecting PD with PB, potentially promoting PB contraction and ADO binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by comparative PEN analysis in Figure 8 showing reduced communication without ADO and enhanced pathways with PAM. The connection to vestibular lid contraction (C122-C124) is supported by citation to Li et al., 2022 and overlap with PEN residues (C123). However, claims C124-C125, C147-C148 about mechanisms are speculative interpretations rather than direct demonstrations. The overall conclusion (C126, C152) is supported but the mechanistic details remain hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The PEN methodology has a major limitation: it excludes non-protein molecules, preventing observation of the water-lock bridge between Y2005.58 and Y2887.53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is an explicit acknowledgment by the authors of a methodological limitation. This is important for interpreting the results, as the water-lock is a known mechanism in GPCR activation (C59). The limitation is clearly stated and affects the completeness of the allosteric network characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Several identified pockets overlap with allosteric modulator binding sites from other GPCR structures, though lower region pockets appear highly system-specific to A1R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C96, C99-C101 demonstrate overlap with known allosteric sites through structural comparisons with multiple PDB structures. The inference about system-specificity (C102) is supported by limited overlap of lower region pockets with other GPCRs (C101). These comparisons provide validation for the pocket detection approach and context for A1R-specific features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C65",
+      "C136",
+      "C137"
+    ],
+    "result": "The flexible C-Ter region plays an important role in energy communication by partially occupying the G-protein binding site and performing transient communications with R1083.53 and K1164.34, potentially compensating for TM3-TM6 break upon activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by PEN analysis showing C-Ter communication across states. Claims C65, C136-C137 propose a compensatory mechanism, which is a reasonable interpretation of the data but remains speculative (marked as SPECULATION in evidence_type). The observation that C-Ter and G-protein binding sites overlap (C137) supports the functional relevance of this interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "The A1R activation mechanism follows the combined activation model described in other GPCRs, where agonist and G-proteins together stabilize a less dynamic fully-active state. The conformational states identified are relevant for targeting A1R drug specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C129 summarize the FEL results from the Discussion. Claim C128 is a hypothesis about functional implications supported by citations to other GPCRs. Claim C131 places the findings in the context of the broader GPCR field with appropriate citations. Claim C132 about drug design relevance is an interpretation of the significance but is reasonable given the identification of hidden intermediate and pre-active states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C141",
+      "C143",
+      "C144",
+      "C149",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The findings have implications for drug discovery, including potential for biased agonism through PEN profile modulation, structure-based design of allosteric modulators, and transferability to other GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C141, C143-C144, C149, C153-C155 are primarily speculative statements about future applications and broader impact. While the underlying data is sound, these claims represent hypotheses about drug design strategies rather than demonstrated results. Claim C141 about biased agonism is particularly speculative. These would require experimental validation or additional computational studies to be considered SUPPORTED.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The computational methodology includes appropriate system preparation (internal waters from HomolWat, disulfide bonds) and metadynamics parameters (Gaussian height 0.5 kcal/mol, bias factor 10, 250 ns total simulation time).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 describe methodological details that are clearly stated in the Materials and Methods. The use of HomolWat for conserved internal waters (C162), creation of disulfide bonds (C163), restraints for weak-binding PAM (C164), and metadynamics parameters (C165-C167) are all appropriate choices. These details support reproducibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C59",
+      "C88",
+      "C94",
+      "C122"
+    ],
+    "result": "Background claims establish the context for A1R research, including general GPCR principles, A1R therapeutic potential and clinical failures, available structural data, and prior computational/mutagenesis studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C6-C22, C59, C88, C94, C122) provide background context and are supported by appropriate citations to the literature. They establish the rationale for the study and the current state of knowledge. The citations appear relevant and properly attributed. These are standard background claims that frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "A negligible number of drugs have been approved for the adenosine A1 receptor (A1R).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported by citations discussing A1R therapeutic potential and clinical trial failures (C17-C18). This establishes the translational gap that motivates the research. The statement is consistent with the literature on A1R drug development challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The inactive conformations of A1R are stabilized by tight energy coupling between TM3 and TM6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by subsequent PEN analysis (referenced as 'see below') that demonstrates the TM3-TM6 hydrogen network in the inactive state (C44-C47). This is a forward reference that is validated by later data. The inference is reasonable and supported by the structural analysis.",
+    "result_type": "MINOR"
+  }
+]

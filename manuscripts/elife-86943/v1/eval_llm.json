@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "RNN models trained on combined 1D navigation and binary latent state inference tasks produce aligned ring manifolds that qualitatively reproduce remapping dynamics observed in entorhinal cortex. The models achieve high performance (100% state estimation, ~8\u00b0 position error) and exhibit two distinct ring manifolds in PCA space where position along each ring corresponds to track position, with manifolds more aligned than chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C20, C24-C28 collectively demonstrate that RNN models successfully reproduce key features of biological remapping. The quantitative performance metrics (C18-C19), manifold structure (C24-C25), and alignment analysis (C26-C27) provide converging evidence. The comparison to Low et al. 2021 data strengthens the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Single RNN units exhibit heterogeneous remapping similar to biological neurons, with comparable spatial dissimilarity but more frequent firing rate changes. RNN units show median spatial dissimilarity of 0.025 and 1.9-fold peak firing rate changes, while biological neurons show 0.031 spatial dissimilarity and 1.28-fold rate changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C108-C114 provide detailed quantitative comparison between RNN units and biological neurons. The spatial dissimilarity metrics are remarkably similar (0.025 vs 0.031), supporting the model's validity. The difference in firing rate changes (1.9-fold vs 1.28-fold) is acknowledged and quantified, representing an honest assessment of model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "RNN models develop orthogonal subspaces for position and latent state information, with position information encoded in a 2D subspace containing ring attractors and state information in a separate remapping dimension. This orthogonalization allows navigation and state inference to occur without interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe the geometric organization of RNN representations. The orthogonality is empirically confirmed (C34) with data in Figure 1K. The theoretical motivation (C29, C31) citing prior work on ring attractors and orthogonal subspaces is sound. The inference that orthogonality prevents interference (C35) follows logically from the geometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "RNN models converge to a geometrically simple solution where remapping occurs via approximate translation in a low-dimensional subspace, despite the task not strictly requiring manifold alignment. The solution is simpler than the full space of possible high-dimensional solutions but more complex than a perfect 3D alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40, C44-C46 present a mathematical analysis of why manifolds align. The theoretical argument (C36-C38) correctly shows alignment is not required by the task. The empirical finding that models nonetheless converge to approximate alignment (C44-C46) with data in Figures 2C-E is well-supported. The acknowledgment that alignment is imperfect (C46) demonstrates appropriate nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Fixed point analysis reveals that RNN dynamics implement two ring attractors (60% of fixed points on rings with marginally stable dynamics) separated by unstable saddle points that funnel activity during remapping. Principal eigenvectors of stable fixed points align with the position subspace, while those of unstable fixed points align with the remapping dimension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 describe detailed dynamical systems analysis with data in Figure 3. The fixed point identification and classification (C47-C48) is methodologically sound. The interpretation as ring attractors (C49-C50) and funneling dynamics (C51) is supported by eigenvector analysis (C52-C55). The connection to prior work (Sussillo & Barak 2013) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "RNN models generalize to 2D navigation tasks, producing aligned toroidal manifolds where each torus represents a distinct map of 2D space. The 2D solution preserves the geometric principles of the 1D task, with 1D ring manifolds recoverable as 'slices' through the tori and maintained orthogonalization of position and state dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 demonstrate successful generalization to 2D with data in Figure 4. Performance metrics (C56), manifold structure (C57-C59), and the relationship to 1D geometry (C60-C61) are well-documented. The preservation of orthogonalization (C62) and the conclusion about similar mechanisms (C63-C64) are appropriately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNN models successfully handle three or more latent states, with ring manifolds organized as vertices of regular polygons (60\u00b0 separation for three states) in a low-dimensional remapping subspace. All pairs of manifolds remain highly aligned, and the solution generalizes to up to 10 latent states with each state having its own aligned ring attractor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C74 extend the model to multiple maps with data in Figure 5 and supplement. The performance (C65), geometric organization (C66-C69), dimensionality (C70), alignment (C71), and orthogonalization (C72) are all empirically demonstrated. The generalization to 10 states (C73-C74) with supplementary data provides strong evidence for scalability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C103"
+    ],
+    "result": "Re-analysis of biological data from Low et al. 2021 reveals that in multi-map sessions (3-4 maps), pairs of neural activity manifolds are largely aligned (13/18 pairs), though with more variability than RNN models. Five map pairs from one mouse were not aligned, and remapping dimensions showed a range of angles rather than maximal separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80, C103 present new analysis of existing biological data with results in Figure 6. The waveform stability analysis (C76) appropriately controls for probe movement. The finding of partial alignment (C78) with exceptions (C79) and greater asymmetry (C80) represents an honest assessment. The small sample size (N=4 sessions, 2 mice) is a limitation but the analysis is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study demonstrates that combined navigation and latent state inference tasks are sufficient to produce aligned ring manifolds in RNNs, with position and state represented in orthogonal subspaces. This solution generalizes across task complexity and represents aligned ring attractors as reusable dynamical building blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C100-C102 summarize the main findings. These summary claims are well-supported by the detailed results in earlier claim groups. The conceptualization of aligned rings as building blocks (C101-C102) is a reasonable inference from the generalization results across 1D, 2D, and multi-map tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims establish that navigational neurons encode position and orientation, remap in response to contextual changes, and that entorhinal cortex neurons specifically represent spatial features while remapping under various circumstances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C9 provide established background knowledge supported by extensive citations. These are well-accepted findings in the field and appropriately contextualize the study. The citations to prior work are appropriate and the claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior theoretical models propose remapping decorrelates experiences with distinct contextual relevance but don't address biological implementation. Low et al. 2021 found population-wide remapping in entorhinal cortex comprising transitions between aligned manifolds, correlated with running speed decreases that may reflect latent state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 accurately describe prior theoretical work and the Low et al. 2021 findings that motivate this study. The characterization of theoretical models (C10, C12) and the Low et al. results (C13-C16) are appropriately cited. The speculation about running speed (C17) is clearly marked as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Discussion contextualizes findings within prior work on hippocampal remapping, attention-based map switching, and multistable attractor models. The study differs from classical models by producing correlated rather than decorrelated maps and addresses 'why' remapping occurs through task constraints rather than 'how' through forward engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C97 appropriately situate the work in the broader literature. The citations to prior work (C84-C87, C91, C93, C96-C97) are accurate. The distinctions drawn between this work and prior approaches (C91-C92, C94-C95) are valid. The characterization of the study's contribution (C95) is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Prior RNN studies show that networks develop modular populations and reusable dynamical motifs across tasks, and that dedicated subpopulations can improve performance on specific task types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 accurately cite prior computational neuroscience work on RNN modularity and task performance. These claims appropriately contextualize the current findings within the broader RNN literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors conclude their model provides a foundation for future experiments, suggests latent state changes can drive remapping, and offers a testable model for remapping geometry across task conditions. They propose experiments requiring animals to report latent internal states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C107 are forward-looking statements about the model's utility and future directions. While the model does provide testable predictions (C107 is reasonable), claims about providing a 'strong foundation' (C104) and what future experiments 'would provide' (C106) are speculative. The suggestion that latent state changes 'can' drive remapping (C105) is supported by the modeling but requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

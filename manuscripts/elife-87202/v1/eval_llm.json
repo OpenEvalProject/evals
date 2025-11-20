@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C75",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In 2017, five artificial rice plots were established and monitored daily for 122 days. Rice growth peaked in late June to early July and ceased after mid-August when heading occurred. Daily mean air temperature showed consistent patterns across plots, and mechanical damage/herbivory had minimal impact on growth measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C75, C81-C83 provide consistent experimental setup and observational data supported by Figure 1. The monitoring protocol is clearly described with appropriate temporal resolution. The assessment that mechanical damage was unlikely to affect causal inferences (C83) is reasonable given the stated observation that such changes were smaller and less frequent than growth-related changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C84"
+    ],
+    "result": "Quantitative eDNA metabarcoding using four universal primer sets detected over 1000 species in rice plots. Total eDNA copy numbers increased late in the sampling period, while ASV diversity peaked in August then decreased in September, with prokaryotes largely accounting for this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C16-C18, C84 are directly supported by the eDNA metabarcoding data shown in Figures 1d-e. The methodology using four primer sets targeting different taxonomic groups is appropriate. The temporal patterns in total eDNA and diversity are clearly visualized and represent valid observations from the quantitative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C15",
+      "C85",
+      "C86"
+    ],
+    "result": "Unified Information-theoretic Causality (UIC) analysis identified 718 potentially causal ASVs (p<0.05), of which 52 had lower-level taxonomic information. The method successfully detected strong effects of air temperature on rice growth but virtually no reverse effects, validating the analytical approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C15, C85-C86 describe the UIC analysis results supported by Figure 2. The validation using air temperature (C85-C86) provides important positive and negative controls that are biologically sensible. However, the p<0.05 threshold without multiple testing correction for 1197 species raises concerns about false discovery rate, though the authors acknowledge using 'statistical clarity' terminology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C87"
+    ],
+    "result": "Among the 52 identified ASVs, Penicillium citrinum was detected as a known detrimental fungus that produces citrinin toxin. Except for this species, no information was available regarding effects of other detected ASVs on rice performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C87 are supported by citations and represent an honest assessment of the knowledge gap. The detection of P. citrinum provides partial validation of the method's ability to identify biologically relevant organisms, though the lack of information for other ASVs highlights the exploratory nature of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Two species were selected for manipulation experiments: Globisporangium nunn (an Oomycete with potential biocontrol properties and antagonistic activity against vegetable pathogens) and Chironomus kiiensis (a common midge species that may affect water quality through feeding behavior). Neither had been reported as pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C88-C90 provide rationale for species selection supported by appropriate citations. The selection criteria (ease of manipulation, non-pathogenic status, prior beneficial reports) are reasonable for a proof-of-concept field study. However, the relevance of G. nunn's effects on vegetables to rice systems is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C91",
+      "C95"
+    ],
+    "result": "In 2019, nine experimental plots were established with three treatments (CT, GN, CK) and three replicates each. Plots were smaller than 2017 to increase replication and were located 50-60 cm apart. Manipulations were performed three times in late June 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C91, C95 describe the 2019 experimental design clearly. The design is appropriate for testing the hypotheses generated from 2017 data. However, the close proximity of plots (50-60 cm) raises valid concerns about cross-contamination between treatments, which the authors acknowledge in C96.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "The GN treatment showed a statistically clear increase in putative Globisporangium spp. eDNA (p<2.0\u00d710\u207b\u00b9\u2076). A slight increase also occurred in CT (p=0.032) but not CK (p>0.05). Most Pythiaceae sequences could not be identified to species level due to conservative taxonomic assignment, and potential immigration between plots may have occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C92-C94, C96 are supported by Figure 3b and statistical analyses. The very strong effect in GN validates successful manipulation. The slight increase in CT (C30) and speculation about immigration (C96) demonstrate appropriate acknowledgment of experimental limitations. The taxonomic identification issue (C93) is honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "C. kiiensis eDNA decreased slightly in CT (p=0.045) and increased in GN (p=6.6\u00d710\u207b\u2076) but did not change in CK (p>0.05). The lack of decrease in CK suggests the removal treatment may have been unsuccessful or eDNA metabarcoding failed to capture the decrease. The unexpected increase in GN might reflect transmission through interaction networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C33, C97-C99 reveal a problematic result: the CK treatment failed to reduce C. kiiensis eDNA as intended. While C124-C125 confirm 283 larvae were removed and identified as C. kiiensis, the eDNA data don't support successful manipulation. The authors appropriately acknowledge this (C97, C99) but the failure undermines conclusions about C. kiiensis effects. The speculation about network effects (C98) is unsupported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "t-SNE analysis showed GN treatment communities were generally separated from CT, while CK communities overlapped with CT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by Figure 3d visualization. This multivariate analysis corroborates the univariate eDNA concentration results, showing that GN had a broader community-level effect while CK did not substantially alter community composition, consistent with the failed manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C80"
+    ],
+    "result": "Daily rice growth rates showed no statistically clear differences among treatments before or after manipulation (p>0.05). However, cumulative rice growth over 10 days post-manipulation increased significantly in both GN (p=0.016) and CK (p=0.021) treatments. No differences in final rice yields were detected. The effects of manipulations were relatively small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C38, C80 present mixed results. The significant cumulative growth effects (C37) are interesting but modest, and the lack of daily rate differences (C36) raises questions about biological significance. The absence of yield effects (C38) suggests limited practical impact. The CK result is particularly problematic given the failed manipulation (C33, C97). Statistical power may be insufficient to detect small effects, and alternative explanations for cumulative growth patterns are not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "RNA-seq analysis generated 875,534,703 reads. When pot locations were merged, DEGs were found in GN but not CK treatment. However, location-specific analysis revealed DEGs even in CK treatment, suggesting pot location effects. DEGs were only found 1 day after the third manipulation, indicating transient effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe RNA-seq results supported by Figures 5 and 5-supplement 1. The finding of location-specific effects (C43) is important and honestly reported. The transient nature of gene expression changes (C44-C45) is well-documented. However, the biological interpretation is limited, and the location effects suggest uncontrolled microenvironmental variation that complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C53"
+    ],
+    "result": "In the GN treatment, three genes were significantly upregulated (Os12g0504050, Os11g0184900, Os01g0678500; p<0.0001) and three downregulated (Os01g0642200, Os08g0162800, Os03g0285700; p<0.0001). DEGs were mostly related to photosynthetic systems and stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C53 are supported by Figure 6 and statistical analysis using negative binomial GLMM. The gene expression changes are statistically clear and functionally relevant. However, the manuscript lacks validation of these DEGs by independent methods (qPCR), and the connection between these specific gene expression changes and the observed growth effects remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C100"
+    ],
+    "result": "G. nunn addition increased cumulative rice growth and changed gene expression patterns. C. kiiensis removal also affected rice growth, with gene expression changes when pot locations were considered. Effects may be situation-dependent due to microclimate variation. Upregulation of photosynthesis genes might have contributed to increased growth, and stress response genes might have contributed to performance changes, though mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C52, C54-C55, C100 synthesize results but involve substantial speculation. While C49 is supported by data, the mechanistic explanations (C54-C55, C100) are speculative without direct evidence. The situation-dependency claim (C52) is reasonable but undermines generalizability. The CK effects (C50-C51) are questionable given the failed manipulation. The rapid, transient gene expression changes could reflect stress responses rather than beneficial effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The quantitative eDNA metabarcoding approach provides reasonable estimates of eDNA concentrations that usually correlate with organism abundance. However, species- and environment-specific eDNA dynamics may bias absolute abundance estimates. The causality detection might not be strongly influenced by this bias due to time series standardization, but accurate abundance estimates would improve analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C103-C106 provide balanced assessment of methodological limitations supported by citations. The acknowledgment of eDNA dynamics issues (C58, C104) is appropriate. The speculation that standardization mitigates bias (C105) is reasonable but unvalidated. This honest discussion of limitations strengthens the manuscript, though it also highlights uncertainties in the quantitative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C74"
+    ],
+    "result": "Very frequent monitoring of a single variable (rice growth rate) is sufficient to reconstruct whole system dynamics according to Takens' theorem. Growth rate was selected because it allows frequent, inexpensive monitoring and integrates various physiological states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59 and C74 invoke Takens' embedding theorem (C59) to justify monitoring only growth rate. While theoretically sound for deterministic dynamical systems, the application to this noisy biological system is questionable. The claim that growth rate 'integrates various physiological states' (C74) is reasonable but unvalidated. More comprehensive phenotyping might have revealed additional effects missed by growth measurements alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C79",
+      "C118"
+    ],
+    "result": "The study demonstrates that intensive monitoring of agricultural systems combined with nonlinear time series analysis is helpful for identifying potentially influential organisms under field conditions. Integration of eDNA-based monitoring and time series analysis is effective for detecting previously overlooked influential organisms in agricultural systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C79, C118 represent the main conclusions. While the framework shows promise, the evidence is mixed: only one of two tested species (G. nunn) showed clear effects, and these effects were small with no yield impact. The CK manipulation largely failed. The approach identified candidates for testing, but 'effectiveness' is overstated given the modest results and lack of validation for the other 50 identified ASVs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C101",
+      "C102",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Despite relatively small effects, the research framework has future potential to harness ecological complexity in agriculture and provides a basis for field-based system management. Future work should target ASVs with large transfer entropy values, validate non-causal species, acquire larger-scale omics data, apply advanced monitoring technologies, and improve time series analytical methods. The approach may be applicable to other agricultural and aquatic systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C101-C102, C109-C117 appropriately frame this as a proof-of-concept study and outline reasonable future directions. The acknowledgment of small effects (C61, C80) is honest. The suggestions for improvement (C109-C113) are sensible. The speculation about broader applicability (C114-C117) is reasonable but unvalidated. This represents appropriate scientific caution about the current limitations while maintaining optimism about the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Short-read sequencing is often insufficient for lower-level taxonomic identification. Using long-read sequencing techniques (e.g., Oxford Nanopore MinION) for eDNA studies is a promising approach to overcome this limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 identify a real limitation (only 52 of 718 ASVs had species-level identification) and propose a reasonable solution supported by citation. This limitation significantly impacts the interpretability of results, as most potentially causal organisms remain unidentified. The suggestion is appropriate but doesn't address the current study's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Water sampling, filtration, DNA extraction, and RNA-seq protocols were executed with appropriate quality controls. In 2017, 1220 water samples were collected with 30 field-level and 32 PCR-level negative controls. In 2019, 283 midge larvae were removed per plot and confirmed as C. kiiensis by Sanger sequencing. 108 leaf samples were collected for RNA-seq, and negligible sequences were detected in negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C127 describe methodological details with appropriate quality controls. The negative controls (C123, C127) demonstrate good experimental practice. The validation of removed larvae identity (C125) is important. However, the fact that 283 larvae were removed but eDNA didn't decrease (C33) suggests either rapid recolonization, persistent eDNA, or methodological issues in eDNA quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Rice is a major staple crop for 3.5 billion people. While genomics-based breeding is promising, rice performance is influenced by both abiotic factors (temperature, solar radiation) and biotic factors (herbivory, microbes). Understanding biotic influences has been underexplored despite importance for sustainable agriculture, partly because biotic variables show complex, nonlinear dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C63-C65 provide well-cited background establishing the importance and challenges of the research. These claims accurately represent the state of the field and justify the study's focus on biotic interactions. The citations are appropriate and support the statements made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C70",
+      "C71"
+    ],
+    "result": "eDNA metabarcoding is a cost- and time-effective means to detect many species and enables efficient detection of ecological community members under field conditions. Quantitative eDNA metabarcoding has enabled evaluation of intraspecific genetic diversity and comprehensive monitoring of community dynamics, with data being especially informative when obtained quantitatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C70-C71 accurately describe eDNA metabarcoding capabilities supported by appropriate citations. These claims establish the methodological foundation for the study and are well-supported by the literature. The emphasis on quantitative approaches is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C72",
+      "C73"
+    ],
+    "result": "Nonlinear time series analytical tools enable reconstruction of complex interaction networks and have detected causality among many variables. These methods have detected and quantified biological interactions in complex systems such as microbiomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C72-C73 accurately describe nonlinear time series methods supported by appropriate citations. These claims establish the analytical foundation for the study. The citations to recent work (Chang et al., 2021; Fujita et al., 2023) demonstrate the contemporary relevance of these approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Classical ecological studies have demonstrated keystone species effects and complex interactions through manipulation experiments. However, traditional approaches face limitations: identifying multitaxa species and quantifying their abundance under field conditions is challenging, and quantifying interactions is even more difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 accurately describe classical ecological approaches and their limitations, supported by appropriate citations (Paine 1966, Reynolds and Bruno 2013). These claims effectively motivate the need for new approaches like those presented in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In 2019, two species (G. nunn and C. kiiensis) identified in 2017 were manipulated in field experiments. Rice responses (growth rate and gene expression) were measured before and after manipulation. Especially in the G. nunn-added treatment, rice growth rate and gene expression patterns were changed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 accurately summarize the 2019 experimental approach and main findings. These claims are supported by the data presented in Figures 4-6. However, the emphasis on 'especially' for G. nunn (C78) appropriately acknowledges that CK effects were less clear.",
+    "result_type": "MAJOR"
+  }
+]

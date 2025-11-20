@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "1,25(OH)2D3 increases SIRT1 expression in CRC cells via VDR. Treatment with 1,25(OH)2D3 doubled SIRT1 protein and RNA levels in HCT 116 and HT-29 cells. This effect requires VDR, as VDR-depleted cells (ShVDR) showed reduced basal SIRT1 and no response to 1,25(OH)2D3. The effect is specific to SIRT1, as SIRT7 expression was unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are well-supported by multiple complementary experimental approaches including immunofluorescence (Figure 1A), Western blot (Figure 1B), RT-qPCR (Figure 1C, 1E), and confocal imaging (Figure 1F). The VDR-dependence is demonstrated through appropriate controls using ShVDR cells, and specificity is confirmed by examining SIRT7 as a negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "1,25(OH)2D3 increases SIRT1 deacetylase activity through multiple mechanisms. Treatment increased NAD+-dependent deacetylase activity 1.5-fold, doubled nuclear NAD+ levels, enhanced VDR-SIRT1 complex formation 4-fold, and promoted deacetylation of SIRT1 substrates (FOXO3a and H3K9). The effect on H3K9 deacetylation requires VDR, and SIRT1 activator SRT1720 mimics this effect independently of VDR. Importantly, SIRT1-specific activity increased 3-fold despite similar immunoprecipitated SIRT1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are strongly supported by multiple biochemical assays including SIRT-Glo activity assays (Figure 2A), NAD+ measurements (Figure 2B), co-immunoprecipitation (Figure 2C), acetylation status of substrates (Figures 2D-E), and in vitro deacetylase assays (Figure 2G). The VDR-dependence and SRT1720 effects are appropriately controlled using ShVDR cells (Figure 2F). The critical finding that activity increases despite similar protein levels (C41) distinguishes post-translational activation from transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SIRT1 protein levels and activity are discordant in CRC patient samples. While VDR and SIRT1 gene expression both decreased significantly in tumor tissue (p<0.001), and VDR and SIRT1 protein levels showed positive association (p=0.017), SIRT1 protein levels were highly variable in tumors. Critically, despite variable SIRT1 protein levels, acetylation of H3K9 (a SIRT1 substrate) consistently increased in tumor samples, indicating SIRT1 inactivation. In vitro deacetylase assays confirmed decreased SIRT1 activity in tumor tissue, establishing Ace H3K9 as a valid readout of SIRT1 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by multiple lines of evidence from patient samples including TCGA database analysis (Figure 3A-B), immunohistochemistry on tissue microarrays (Figure 3C-E), Western blots from patient samples (Figures 3F-G, 3I), and in vitro deacetylase assays (Figures 3H, 3J). The key finding of discordance between SIRT1 protein levels and activity is well-documented across multiple patient samples. However, the high variability in SIRT1 protein levels (C44) somewhat limits the strength of conclusions about protein expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "1,25(OH)2D3 activates SIRT1 through auto-deacetylation at K610. Treatment with 1,25(OH)2D3 or SRT1720 reduced acetylated SIRT1 in a VDR-dependent manner. Bioinformatic analysis identified K610 as a conserved potential EP300 acetylation target. The K610R mutant (non-acetylable) showed no acetylation, enhanced VDR interaction, and 10-fold higher deacetylase activity compared to wild-type SIRT1. In contrast, the catalytically inactive H363Y mutant was highly acetylated and showed low VDR interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 are well-supported by systematic mutagenesis experiments (Figure 4). The identification of K610 is supported by bioinformatic analysis (C53, Figure 4D), and its functional importance is demonstrated through multiple complementary assays: acetylation status (Figure 4E), VDR interaction (Figure 4F), substrate deacetylation (Figure 4G), and in vitro activity assays (Figure 4H). The use of both K610R and H363Y mutants as positive and negative controls strengthens the conclusions. The 10-fold activity increase for K610R is a particularly strong effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SIRT1 activation mediates the antiproliferative effects of 1,25(OH)2D3 in CRC cells. 1,25(OH)2D3 reduced the percentage of cells in S-G2M phases, and this effect was abolished by the sirtuin inhibitor nicotinamide. SIRT1 activator SRT1720 mimicked 1,25(OH)2D3 effects in both ShControl and VDR-depleted ShVDR cells, demonstrating that SIRT1 acts downstream of VDR. SRT1720 reduced proliferation of VD-unresponsive ShVDR cells, suggesting therapeutic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by cell cycle analysis (Figures 5A, 5C, 5D) and proliferation assays (Figures 5B, 5E). The use of nicotinamide to block VD effects (C64) and SRT1720 to bypass VDR requirement (C68-C69) provides strong mechanistic evidence. The experiments with ShVDR cells are particularly important for establishing the pathway hierarchy. However, the antiproliferative effects are measured over relatively short time periods (up to 6 days), and longer-term effects or in vivo validation would strengthen the therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "1,25(OH)2D3 activates SIRT1 through multiple mechanisms with K610 as a critical regulatory site. The study demonstrates that 1,25(OH)2D3 promotes SIRT1 activation through auto-deacetylation, with K610 identified as essential for controlling VDR-SIRT1 interaction and SIRT1 activity. Both SRT1720 and 1,25(OH)2D3 activate SIRT1 through auto-deacetylation. 1,25(OH)2D3 acts at multiple levels (gene expression, NAD+ availability, and post-translational modification), and SIRT1 activity mediates the antiproliferative action of 1,25(OH)2D3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C2-C5, C71-C75) represent the main conclusions of the manuscript and are well-supported by the comprehensive experimental evidence presented throughout. The multilevel regulation is demonstrated through transcriptional (Figures 1C, 1E), metabolic (Figure 2B), and post-translational mechanisms (Figures 4A-C). The identification of K610 as essential is supported by mutagenesis studies (Figure 4). The functional consequence for proliferation is demonstrated in Figure 5. These claims integrate findings from multiple experimental approaches and represent the core contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C92"
+    ],
+    "result": "SIRT1 activators may offer therapeutic possibilities for VD-deficient or VD-unresponsive CRC patients. The ability of SRT1720 to reduce proliferation in VDR-depleted cells suggests SIRT1 activators could be useful in situations of VD system dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C92 are speculative therapeutic proposals based on the finding that SRT1720 works in ShVDR cells (C69). While the in vitro data support the concept, these claims lack in vivo validation, pharmacokinetic data, or clinical evidence. The authors acknowledge that clinical trials with SIRT1-specific activators are lacking (C78-C79). Additional preclinical studies would be needed to support these therapeutic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background and context claims about vitamin D, SIRT1, and CRC. These claims establish the scientific context including: vitamin D metabolism and VDR function, SIRT1 as an NAD+-dependent deacetylase, CRC epidemiology, the controversial relationship between VD and cancer, and the complex relationship between SIRT1 levels and activity in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C28 are background knowledge claims supported by appropriate citations to the literature. These establish the rationale for the study but are not novel findings. The citations appear appropriate and the claims accurately represent established knowledge in the field. The acknowledgment of controversies (C14, C15, C23) appropriately frames the limitations of current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Discussion claims about broader implications and mechanisms. These include: SIRT1's role in opposing cancer hallmarks, VDR loss in advanced CRC, the rarity of SIRT1 activator clinical trials, discordance between SIRT1 levels and activity, potential mechanisms for this discordance, broader implications for VD action through SIRT1, and potential relevance to other diseases beyond CRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C91 are primarily interpretive and speculative claims from the Discussion section. While some are supported by citations (C76, C77, C82, C84-C87), many represent extrapolations beyond the experimental data (C83, C88, C89, C91). The claims about broader disease relevance (C88, C89) are reasonable hypotheses but lack direct experimental support in this manuscript. Claims C80-C81 about the discordance between SIRT1 levels and activity are supported by the data in Figure 3, but the proposed compensatory mechanism (C81) is speculative.",
+    "result_type": "MINOR"
+  }
+]

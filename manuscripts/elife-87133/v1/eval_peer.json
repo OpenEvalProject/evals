@@ -1,0 +1,151 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C85",
+      "C93",
+      "C94"
+    ],
+    "result": "GENIUS is a novel framework that transforms multi-omics data into spatially organized images using deep learning for cancer analysis. The framework consists of encoder, decoder, extractor, and predictor modules, and is made publicly available on GitHub.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states this is a 'valuable manuscript' that 'presents a new approach to transform multi-omics datasets into images and to exploit Deep Learning methods.' Reviewer 3 notes 'I appreciate that the code is made available as a github repository' and finds 'this study important for the field.' The core methodological contribution is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C82"
+    ],
+    "result": "Four different image layouts were tested, with the square image (198\u00d7198 pixels, ordered by chromosomes based on chromosome interaction networks) outperforming other transformations across multiple prediction tasks including metastatic disease (AUC 0.87), cancer type (F1 0.81), and TP53 mutation status (AUC 0.83).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'they find that the spatial representation of genes on chromosomes and the order of chromosomes based on 3D contacts leads to best performance. This supports that both 1D proximity and 3D proximity could be important for predicting different phenotypes.' The comparative performance results are accepted without methodological critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "GENIUS achieved validation AUC of 0.83 for predicting metastatic disease from primary tumors across six cancer types. Attribution analysis revealed methylation as the most informative data type overall, with gene expression also highly informative. Of 152 top genes identified, 141 were potentially novel cancer genes not in the COSMIC census.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor notes 'the evidence in this specific case is solid' for the cancer application. Reviewer 3 acknowledges the authors 'use their method to investigate different cancers and identify novel genes potentially involved in these cancers' and states validation approaches 'has now been addressed in the revised version.' The metastatic prediction results are accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C87"
+    ],
+    "result": "In late-stage bladder cancer validation (Mariathasan cohort), 7 of 10 GENIUS-identified genes showed significant association with outcome (p<0.001 vs. random genes). TOP3A showed increased expression in stage IV tumors and better immunotherapy response, while KRT17 and JUP were enriched in stages I-III.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes 'the authors have provided validation for their model' and this 'has now been addressed in the revised version of the manuscript.' The statistical validation using permutation testing (1000 runs with random genes showing no comparable results) is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In early-stage bladder cancer (UROMOL cohort), 5 of 10 GENIUS genes were significant for progression-free survival, but permutation testing showed 216/1000 random gene sets achieved similar results (p=0.216). However, GENIUS genes showed 50% significance rate vs. 20% for random genes, and 6/10 were associated with EORTC status and 7/10 with tumor grade.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors transparently report the mixed validation results in early-stage disease, stating the genes 'were not uniquely relevant for disease progression' in this setting. Reviewers do not challenge this interpretation or the statistical analysis. The honest reporting of both positive and negative validation results is implicitly accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C124"
+    ],
+    "result": "The authors acknowledge that while spatial organization improved prediction, more optimal representations may exist and should be explored in future work. They also suggest GENIUS may have utility beyond cancer in diverse genome-based multi-omics analyses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes the authors 'discussed this possibility but did not do any new additional analysis' regarding finer-grained spatial organization (TADs). The editor's statement that 'whether the method is working as advertised in other settings is not yet known' aligns with the authors' acknowledgment of future work needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The GENIUS framework and all code are made publicly available on GitHub (https://github.com/mxs3203/GENIUS) without restrictions for use with private or public data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises significant concerns about code usability, noting 'hard-coded file paths' in several files and stating 'the user will be left with cryptic error messages' due to lack of 'internal data format checks and helpful error or warning messages.' The availability is confirmed but practical usability for other researchers remains questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C13",
+      "C15",
+      "C17",
+      "C21"
+    ],
+    "result": "Current multi-omics statistical methods ignore spatial genome organization and apply stringent p-value corrections that likely eliminate true positive associations. Deep neural networks can capture nonlinear patterns without requiring multiple hypothesis testing correction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological motivations for GENIUS are implicitly accepted by all reviewers. Reviewer 3 explicitly acknowledges the value of incorporating 'spatial representation of genes on chromosomes' and notes this 'supports that both 1D proximity and 3D proximity could be important.' No reviewer challenges the critique of traditional methods.",
+    "result_type": "MINOR"
+  }
+]

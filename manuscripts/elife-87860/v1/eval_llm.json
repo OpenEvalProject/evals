@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C29",
+      "C30"
+    ],
+    "result": "The yeast MTC comprises three novel components: Kar4, Ygl036w (Vir1), and Dyn2, which interact with the known component Mum2 in an RNA-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "IP-MS experiments (C23-C25, C27) demonstrate that Kar4, Ygl036w, and Dyn2 co-purify with Mum2. RNase treatment experiments (C29-C30) confirm these interactions are RNA-independent, distinguishing them from indirect RNA-mediated interactions like Pab1. The data provide strong biochemical evidence for these proteins as MTC components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C42"
+    ],
+    "result": "All newly identified MTC subunits except Dyn2 are essential for m6A deposition, with Kar4, Vir1, and Slz1 showing complete loss of m6A when deleted, while Dyn2 deletion causes only partial reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal m6A quantification methods (LC-MS, m6A-ELISA, m6A-seq2) consistently demonstrate that deletion of Kar4, Vir1, or Slz1 abolishes m6A (C31-C37), while Dyn2 deletion reduces m6A by ~50% (C38). Time-course data (C35) confirms Slz1 is required throughout meiosis. The convergent evidence from multiple techniques strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Five yeast MTC subunits have orthologues in mammalian MTCs: Ime4/METTL3, Kar4/METTL14, Mum2/WTAP, Vir1/VIRMA, and Slz1/ZC3H13, as determined by sequence and structural alignment analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The orthology assignments are supported by multiple lines of computational evidence: pairwise sequence comparison (C43), proteome-wide structural alignment (C44), high TM-scores (C45), and functional similarities (C48). The convergence of sequence, structural, and functional data provides strong support for these evolutionary relationships, though the Slz1/ZC3H13 relationship is weaker due to size differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C109",
+      "C110"
+    ],
+    "result": "The yeast MTC is unipartite with interweaved MAC and MACOM components, unlike the bipartite mammalian MTC, with Ime4, Mum2, and Vir1 mutually stabilizing each other and Kar4, while Slz1 mediates Dyn2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C50-C54) demonstrate mutual stabilization between Ime4, Mum2, and Vir1, with asymmetric Kar4 stabilization. IP-MS in deletion backgrounds (C55-C60) confirms complex integrity and reveals Slz1's role in Dyn2 recruitment. In vitro reconstitution (C61-C62) validates the five-subunit complex. The data collectively support a unipartite architecture distinct from mammals, though the inference of 'interweaving' relies on comparison to mammalian data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C108"
+    ],
+    "result": "The yeast MTC has both m6A-dependent and m6A-independent functions critical for meiosis, with Ime4, Mum2, Vir1, and Kar4 exhibiting dual roles, while Slz1 functions only in m6A-dependent processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The catalytically dead Ime4 mutant shows milder phenotype than deletion (C65-C66), establishing m6A-independent function. Meiotic progression assays (C67-C69) and RNA-seq analysis (C70-C74) demonstrate that ime4\u0394, mum2\u0394, vir1\u0394, and kar4\u0394 cluster together with severe phenotypes, while slz1\u0394 shows milder defects. The convergence of phenotypic and transcriptomic data supports the dual-function model, though the mechanistic basis of m6A-independent function remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Kar4 has a mechanistically separate role from the MTC during mating, functioning as a transcription factor that binds chromatin at Ste12 sites, while other MTC components are not expressed or recruited during mating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blots (C83-C86) show Kar4 induction without other MTC components during mating. ChIP data (C87-C88, C92-C93) demonstrate Kar4 chromatin binding during mating but not meiosis, with enrichment at Ste12 sites (C94). Localization data (C90-C91) show distinct patterns between mating and meiosis. The convergent evidence strongly supports Kar4's dual roles, though the claim of 'mechanistically separate' is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Kar4 stabilizes MTC-mRNA interactions during meiosis, as Ime4 association with mRNA is reduced in kar4\u0394 but not slz1\u0394 cells, and both Ime4 and Kar4 can directly bind RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-protein interaction capture (C99, C102-C103) demonstrates reduced Ime4-mRNA association in kar4\u0394 but not slz1\u0394 cells. UV crosslinking (C100) confirms Kar4 can directly bind RNA. The data support Kar4's role in stabilizing MTC-mRNA interactions, though the mechanism remains unclear and the effect size in kar4\u0394 appears modest from the figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "MTC deletion mutants fail to properly regulate Pho92-bound m6A transcripts, which accumulate rather than decline after initial induction, consistent with defective m6A-dependent mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq analysis (C76-C78) shows that Pho92-bound transcripts decline after 2h in WT but remain elevated in all five m6A-essential mutants, while dyn2\u0394 shows minimal effect. This pattern is consistent with loss of m6A-dependent decay and provides functional validation of the m6A pathway. The use of a defined set of Pho92 targets from prior work strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Pab1 and Npl3 are not components of the yeast MTC, as their depletion does not affect m6A levels and their interaction with Mum2 is RNA-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "AID-mediated depletion experiments (C39-C40) show no effect on m6A levels for Pab1 and Npl3, contrasting with Slz1 depletion. Combined with RNA-dependent interaction data (C30), this provides strong evidence against MTC membership. The conclusion is well-supported by the negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C28"
+    ],
+    "result": "Slz1 does not significantly co-purify with Mum2 or Kar4 in standard IP-MS conditions, despite being essential for m6A deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "IP-MS data (C26, C28) show Slz1 is not significantly enriched in Mum2 or Kar4 IPs under standard conditions. However, Slz1 is detected in RNase-treated samples (C29) and in kar4\u0394 background (C57), suggesting the interaction may be substoichiometric or dynamic. This observation is important for understanding MTC architecture but doesn't contradict Slz1's functional role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Vir1 lacks the VIRMA domain present in mammalian VIRMA, which may explain the absence of a HAKAI orthologue in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural analysis (C112) identifies the absence of the VIRMA domain in Vir1. However, the connection to HAKAI absence (C113) is speculative and not directly tested. While the hypothesis is reasonable, it remains an inference without experimental validation. Additional experiments would be needed to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Kar4 may bind to promoters in a Ste12-independent manner during mating, based on identification of additional motifs in ChIP-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The identification of non-Ste12 motifs in Kar4 ChIP-seq (C94-C95) suggests potential Ste12-independent binding, but this is explicitly stated as speculative ('perhaps indicating'). No functional validation or direct testing of Ste12-independent binding is provided. The claim requires additional experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Background claims about m6A biology, MTC composition across species, and prior knowledge of yeast MTC components establish the context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior literature, appropriately cited throughout. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the background accurately represents the field's understanding.",
+    "result_type": "MINOR"
+  }
+]

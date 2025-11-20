@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "NPS targeting CB1 cause more severe physiological side effects than classical cannabinoids, which have been linked to higher \u03b2-arrestin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C14 collectively establish that NPS cause more severe side effects than classical cannabinoids and that these effects are associated with higher \u03b2-arrestin signaling. These claims are supported by multiple citations to prior experimental work (Finlay et al., 2019; Grafinger et al., 2021; Tai and Fantegrossi, 2014), providing a well-established foundation from the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors hypothesize that differential \u03b2-arrestin signaling between NPS and classical cannabinoids stems from distinct orthosteric pocket interactions causing differential allosteric modulation of the NPxxY motif, particularly affecting triad interaction formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 establish the study's central hypothesis. C15-C16 cite mutagenesis and structural studies showing the NPxxY motif's importance in \u03b2-arrestin signaling. C17 shows similar NPxxY conformations in active states for both ligand types, leading to the inference (C18) and hypothesis (C19) that dynamic propensity differences drive signaling differences. The hypothesis is well-grounded in prior experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C52",
+      "C53"
+    ],
+    "result": "Well-tempered metadynamics simulations identified similar unbinding pathways for both MDMB-FUBINACA and HU-210 via an opening formed by TM2, TM3, ECL2, and N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C52-C53 describe metadynamics results showing consistent unbinding pathways across replicas and ligands. The pathway matches previous cannabinoid receptor simulations (C52), and multiple metadynamics runs with different parameters confirmed the same pathway (referenced in Figure 3\u2014figure supplement 3), supporting that this may be the minimum free energy pathway (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "TRAM and MSM provide comparable thermodynamic predictions, but TRAM provides more robust kinetic predictions with limited unbiased data compared to MSM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 demonstrate that TRAM and MSM converge to similar thermodynamic predictions (within 0.6 kcal/mol for binding free energy and \u0394\u0394G), and similar binding time estimates. However, TRAM maintains accuracy with only 25% of unbiased data (C29), while MSM error increases more rapidly with less data (C30). This is supported by data in Figures 4A-D and demonstrates TRAM's advantage for high-affinity ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "MDMB-FUBINACA exhibits a unique unbinding mechanism involving aromatic tail reorientation to form a metastable intermediate state (I1) with interactions with TM2 aromatic residues, with the slowest step being complete dissociation (~372 \u03bcs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe the MDMB-FUBINACA unbinding mechanism with specific interaction details and timescales from MFPT and TPT analyses. The observations are supported by data in Figures 5A, 6A-B, and supplementary figures. The timescales are reported with error estimates from bootstrapping, and the metastable I1 state is unique to the aromatic tail of FUBINACA-family NPS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "HU-210 shows stronger interactions with TM7 residues (particularly S383^7.39) compared to MDMB-FUBINACA, with dissociation timescales in the millisecond range, one order of magnitude slower than MDMB-FUBINACA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 establish key differences in HU-210 binding and unbinding. The stronger TM7 interactions are supported by interaction analysis (Figures 6A, 7A-B) and validated by prior experimental structures (C38) and mutagenesis studies (C40). The millisecond dissociation timescale (C43) is consistent with HU-210's higher binding affinity (Ki = 0.61 nM vs 1.14 nM for MDMB-FUBINACA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The differential TM7 interactions between NPS and classical cannabinoids are universal across multiple ligands, with classical cannabinoids showing consistently stronger polar interactions with S383^7.39.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C54-C56 extend the findings to multiple NPS (AMB-FUBINACA, 5F-AMP, CUMYL-FUBINACA) and classical cannabinoids (AMG-41, JWH-133, O-1317). The larger mean distance between NPS linker oxygen and S383^7.39 compared to classical cannabinoid hydroxyl groups (Figure 8\u2014figure supplement 1B) supports the universality of weaker TM7 interactions for NPS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C57"
+    ],
+    "result": "NRI analysis reveals that MDMB-FUBINACA-bound CB1 exhibits higher allosteric weights between binding pocket residues and the NPxxY motif compared to HU-210, validated by mutual information analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 present NRI network results showing higher allosteric weights for MDMB-FUBINACA (Figure 8\u2014figure supplement 3), which is independently validated by mutual information analysis (Figure 8\u2014figure supplement 4). C57 connects this to increased triad formation probability. The use of two independent methods (NRI and mutual information) strengthens the conclusion about differential allosteric communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "MDMB-FUBINACA-bound CB1 shows higher probability of triad interaction formation compared to HU-210, driven primarily by more stable Y397^7.53-T210^3.46 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate the key functional outcome: higher triad formation probability for MDMB-FUBINACA (Figure 8A). The pairwise interaction analysis (C48, Figure 8\u2014figure supplement 5) identifies the specific Y397^7.53-T210^3.46 interaction as the driver. This directly connects the differential binding pocket interactions to the proposed mechanism for enhanced \u03b2-arrestin signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background information on CB1 receptor, GPCRs, and NPS molecular structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C7-C9 provide well-established background information about CB1, GPCRs, and NPS structure, all supported by appropriate citations to the literature. These are factual statements establishing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "MDMB-FUBINACA and HU-210 bind CB1 with nanomolar affinities (Ki = 1.14 nM and 0.61 nM, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 report experimentally determined binding affinities from the literature (Gamage et al., 2018; Pertwee et al., 2010; Stern and Lambert, 2007). These values establish that both ligands are high-affinity binders, justifying the computational approach used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "System preparation methods including loop modeling, membrane composition selection, force field parameterization, and ligand docking procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C62-C65 describe computational methods for system preparation. The approaches are standard and appropriately cited (Rosetta loop modeling, CHARMM-GUI, CHARMM36m force field, brain membrane composition). The modeling decisions are justified by prior experimental work (C60) and structural comparisons (C65).",
+    "result_type": "MINOR"
+  }
+]

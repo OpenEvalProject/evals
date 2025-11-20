@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Comparison of optogenetic and chemical heterodimerization systems showed that eMags had the fastest kinetics (t\u00bd ON 3.97s, t\u00bd OFF 18.6s) but lowest recruitment efficiency (1.5), iLID had intermediate kinetics (t\u00bd ON 5.14s, t\u00bd OFF 20.3s) with higher recruitment efficiency, and rapamycin had slowest kinetics (t\u00bd ON 43.1s) but highest recruitment efficiency (>3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C100-C104 provide quantitative kinetic and recruitment efficiency measurements from experimental data (Figure 1A and supplements). The measurements are internally consistent, with appropriate controls and curve fitting to determine half-times. The comparison across three systems provides a solid basis for tool selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "PIP3 biosensor recruitment assays showed that rapamycin induced the highest sensor localization (14% change), iLID showed moderate response (6.4% change), while eMags showed no detectable change in PIP3 biosensor intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by experimental data from Figure 1B and C showing differential biosensor responses. The lack of eMags response is consistent with its lower recruitment efficiency (C52), providing internal validation. Statistical presentation with medians and confidence intervals is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C6"
+    ],
+    "result": "Optimization of the iLID membrane tag showed that Lck-tagged iLID had higher recruitment efficiency (36.7% median change in cytosolic intensity) compared to CaaX-tagged iLID (25.5% mean change), leading to adoption of Lck-mTurquoise2-iLID and incorporation of HaloTag for imaging flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C6 are supported by experimental data in Figure 1D comparing membrane tags. The improvement is quantified and statistically meaningful. The HaloTag addition is a methodological enhancement supported by subsequent experimental use throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Rho GTPase biosensors validated the specificity of Opto-RhoGEFs, with HaloTag-3xrGBD Rho sensor showing clear plasma membrane relocation upon OptoP63 activation and dimericTomato-wGBD Cdc42 sensor showing relocation upon OptoITSN activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by biosensor data in Figure 1F and G showing cytosolic intensity decreases consistent with membrane translocation. Controls without sensors are included (Figure 1 supplement 1E-F). This provides important validation of GEF specificity, though Rac1 sensor data is notably absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Photo-activated OptoTIAM endothelial monolayers showed reduced permeability for 0.3 kDa, 10 kDa, and 70 kDa particles compared to dark controls or photo-activated control monolayers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by permeability assay data in Figure 2A. The experiment includes appropriate controls (dark and photo-activated control cells) and tests multiple particle sizes. Sample sizes appear adequate (n=6-9 per condition) though statistical testing is not explicitly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "OptoTIAM activation induced rapid, reversible increases in endothelial monolayer resistance that reached maximum at 10 min, showed no fatigue over repeated 15 min activations, and maintained maximum resistance for 2 hours of continuous activation, while control cells showed no response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by ECIS resistance measurements in Figure 2B and supplements. The temporal dynamics are well-characterized with multiple activation durations. Controls are appropriate. The rapid reversibility (within seconds) is a key strength of the optogenetic approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "OptoITSN showed similar but smaller amplitude resistance increases compared to OptoTIAM, reaching maximum at approximately 5 min, with slight decrease during prolonged activation beyond 10 min without returning to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by ECIS data in Figure 2B. The differential response between OptoITSN and OptoTIAM is clearly documented. The partial decrease during extended activation is an interesting observation suggesting possible adaptation or feedback mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "OptoP63 activation caused an initial dip in resistance at 1 min that recovered to baseline during continued activation beyond 10 min, and after 2 hours of activation, resistance recovered to above baseline levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by ECIS data in Figure 2B and supplements. The biphasic response (initial decrease followed by recovery) is consistently observed and suggests cellular adaptation mechanisms. This contrasts with the sustained effects of OptoTIAM/ITSN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Microscopy observations showed that OptoTIAM and OptoITSN cells exhibited increased cell-cell overlap during activation, while OptoP63 cells showed contraction with gap formation in the monolayer, explaining the resistance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by microscopy data in Figure 2C and animations. The morphological observations correlate well with resistance measurements. However, quantification of overlap is limited (acknowledged by authors), and the causal link between overlap and resistance is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Junction linearity index measurements showed slight increases for OptoTIAM and OptoP63 comparing pre-activation to maximum activation, while OptoITSN showed no change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 are supported by linearity index data in Figure 3A, but the authors acknowledge these changes do not explain the resistance increases for OptoTIAM/ITSN. The measurements are technically sound but the biological interpretation is unclear. Sample sizes appear adequate but statistical significance is not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C111"
+    ],
+    "result": "VE-cadherin blocking antibody reduced baseline resistance in all conditions, but OptoTIAM and OptoITSN activation still increased resistance to comparable amplitudes as without antibody, demonstrating VE-cadherin-independent barrier enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 and C111 are supported by ECIS data with VE-cadherin blocking antibody in Figure 3B and supplements. This is a critical finding challenging the VE-cadherin-centric view of barrier function. Controls include medium-only treatment and antibody washout showing reversibility. The comparable amplitude of resistance increase despite VE-cadherin blockade is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "OptoTIAM and OptoITSN cells spread in all directions upon activation and appeared rounder, while OptoP63 cells contracted and became less round.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by cell area change measurements and form factor analysis in Figure 4A, B and supplements. The morphological changes are quantified and consistent with known Rho GTPase functions. Form factor analysis provides objective quantification of cell shape changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Time-course analysis showed OptoTIAM cells increased 15% in size reaching maximum at 10 min, OptoITSN cells increased 10% reaching maximum at 3 min then slightly decreased, and OptoP63 cells decreased 40% reaching minimum at 7 min then recovered during continued activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by cell area measurements over time in Figure 4B. The temporal dynamics are well-characterized with appropriate sample sizes. The recovery of OptoP63 cells during continued activation parallels the resistance recovery, suggesting cellular adaptation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Cell area changes in subconfluent cells correlated with vascular barrier strength changes in monolayers, supporting the role of cell-cell overlap in barrier regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by correlation analysis in Figure 4 supplement 2A-B. The temporal correlation between cell size and resistance changes is compelling. However, correlation does not prove causation, and the authors appropriately present this as supporting evidence rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Within the first 2 min of OptoTIAM activation, cells showed increased overlap without clear changes in VE-cadherin staining, occurring on the timescale of barrier strength increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by microscopy observations in Figure 4 supplement 2D-F and Animation 4. The temporal relationship between overlap increase and resistance increase (both within 2 min) is important for establishing mechanism. However, quantification of overlap is limited by imaging constraints acknowledged by authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Local photo-activation showed OptoTIAM cells increased ROI coverage by 20% after 10 min, OptoITSN by 30%, and OptoP63 decreased coverage by 40%, with no fatigue observed in sequential activations at different positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by ROI coverage measurements in Figure 5B and supplement 1B. The local activation demonstrates spatial control of the optogenetic system. Sample sizes are adequate (n=53-85 activation areas). The lack of fatigue in sequential activations is important for experimental utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The amplitude of resistance increase induced by OptoTIAM and OptoITSN was comparable to S1P-induced resistance increase, a known strong activator of barrier function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by comparative ECIS measurements in Figure 2 supplement 4C. This provides important biological context for the magnitude of optogenetically-induced effects. However, only OptoTIAM is shown in the S1P comparison figure, not OptoITSN as stated in the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "LED light characterization showed blue LED emission peak at 450-500 nm with power density of 9.4\u00d710\u207b\u00b2 W/m\u00b2, compared to 8.58\u00d710\u2076 W/m\u00b2 for 442 nm laser and 1.7\u00d710\u2077 W/m\u00b2 for 488 nm laser, demonstrating LED activation capability despite lower intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by emission spectrum and power density measurements in Figure 2 supplement 1A and methods. The characterization is thorough and important for reproducibility. The demonstration that much lower LED intensity can activate the system is practically important, though direct comparison of power densities between scanning lasers and continuous LED illumination is complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Overlapping membranes at junction regions can promote endothelial barrier, potentially induced by increased cell size causing cells in monolayers to overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 represent the authors' mechanistic interpretation based on correlative evidence (C90, C92) and VE-cadherin independence (C83). While the evidence is suggestive, direct quantification of overlap in monolayers was not achieved due to technical limitations. The mechanism remains plausible but not definitively proven. Additional experiments directly measuring overlap would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background claims establishing the role of endothelial cells in vascular barrier function, junction structure and regulation, Rho GTPase function and localization, and their involvement in barrier regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C43 represent established knowledge about endothelial biology and Rho GTPase function, appropriately cited from the literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Background on optogenetic and chemical tools for Rho GTPase manipulation, including GEF specificity, rapamycin system properties, and prior applications of optogenetic tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44-C50 provide background on available tools and their properties, appropriately cited. These establish the rationale for tool selection and optimization in the current study. The knowledge claims are accurate based on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Summary claims stating that Opto-RhoGEFs enable reversible, spatiotemporally controlled Rho GTPase activation to regulate vascular barrier strength through a VE-cadherin-independent, cell-cell overlap-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7-C10 are high-level summary statements supported by the collective experimental evidence from the study. The reversibility and spatiotemporal control are well-demonstrated. The VE-cadherin independence is strongly supported. The cell-cell overlap mechanism is supported by correlative evidence but could benefit from more direct demonstration.",
+    "result_type": "MAJOR"
+  }
+]

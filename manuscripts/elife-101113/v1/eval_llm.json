@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Septins and the exocyst colocalize at the division site during cytokinesis, with the exocyst arriving approximately 10 minutes earlier than septins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 provide converging evidence from multiple imaging modalities (standard confocal and SoRa microscopy) and quantitative timing data showing colocalization of Spn1 with Sec3 and Exo70 at the division site. The temporal sequence is well-documented with specific timing measurements (Sec3 at 13.4\u00b12.2 min vs Spn1 at 23.6\u00b11.8 min after SPB separation) and confirmed by time-lapse imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Septins partially depend on the exocyst for proper localization, with some Spn1 mislocalizing to the center of the division plane in exocyst mutants while the majority remains at the rim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 demonstrate through imaging, quantification, and FRAP analyses that while Spn1 shows some mislocalization in exocyst mutants (particularly sec3-913 and sec8-1 at restrictive temperature), the majority of Spn1 still localizes correctly to the rim. The FRAP data showing no difference in dynamics between WT and mutants further supports that the exocyst affects localization but not septin dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Loss of septins results in exocyst mislocalization from the rim to the center of the division plane during septum formation, with significantly reduced levels at the rim, while exocyst dynamics remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 provide comprehensive evidence from multiple exocyst subunits (Sec3, Exo70, Sec8) showing that in spn1\u0394 cells, the exocyst spreads across the division plane during septation while remaining at the rim in WT. Quantitative intensity measurements and FRAP analyses support both the mislocalization and the unchanged dynamics. The temporal specificity (before vs. during septation) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Septins regulate exocyst localization independently of the Gef3-Rho4 pathway, as evidenced by different localization patterns in septin mutants versus rho4\u0394 gef3\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 demonstrate through comparative localization studies that while Sec3 shows partial mislocalization in rho4\u0394 gef3\u0394 cells (with majority still at rim), the pattern differs from spn1\u0394 cells (where exocyst spreads across division plane). This differential phenotype supports the conclusion of independent regulation pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "AlphaFold2 predictions identified six top septin-exocyst interactions, with 84% of exocyst and 96% of septin predicted interacting residues being sterically feasible within assembled complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe the computational prediction approach and structural feasibility analysis. While the initial Co-IP attempts (C55) were negative for some combinations, the AlphaFold2 predictions (C56-C57) identified specific interactions that were subsequently validated experimentally. The structural feasibility analysis using AlphaFold3 (C58) provides important context for the predicted interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Septins physically interact with the exocyst through multivalent interactions, with five pairs confirmed by Co-IP (Spn2-Sec15, Spn2-Sec5, Spn1-Sec15, Spn1-Sec6, Spn4-Sec15) and validated by yeast two-hybrid assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 provide strong experimental evidence from reciprocal Co-IP experiments and yeast two-hybrid assays confirming five of the six predicted interactions. The data show that Sec15 interacts with multiple septins (Spn1, Spn2, Spn4), and the yeast two-hybrid results suggest direct interactions. The multivalent nature of the interactions is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Deletion of spn1 or spn4 causes Sec15 mislocalization in ~75% of septating cells, while spn2\u0394 shows intermediate phenotype (~50% mislocalization), demonstrating differential importance of septin subunits for exocyst targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 provide quantitative data showing graded effects of different septin deletions on exocyst localization. The data are consistent with prior knowledge that Spn1 and Spn4 are more important than Spn2 for septin function. The quantification is clear and the conclusion about physical interactions mediating targeting is well-supported by the combined localization and interaction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Genetic interaction analysis shows that septins and the exocyst function in the same pathway for cytokinesis (no synthetic interactions), but work in different pathways for certain functions (different interactions with TRAPP-II mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 present genetic interaction data from Tables 1 and 2 showing lack of synthetic lethality between septin and exocyst mutants, but differential interactions with TRAPP-II mutants. The interpretation that septins and exocyst work in the same pathway for some functions but different pathways for others is reasonable given the data, though the mechanistic basis for this difference requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Secretory vesicles accumulate at the division site during septum formation in septin mutants (2-fold increase in spn1\u0394) but not after septum closure, with vesicle markers showing altered distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide electron microscopy quantification and fluorescence imaging of vesicle markers (Ypt3, Syb1) showing modest vesicle accumulation in spn1\u0394 cells during septation. The temporal specificity (accumulation during but not after septation) and the magnitude of accumulation (2-fold vs 7-fold in sec8-1) are well-documented and support the interpretation that septins regulate vesicle targeting rather than tethering per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Secretory vesicle cargos (Bgs1 and Eng1) are mistargeted in septin mutants, with increased Bgs1 at the center and loss of Eng1 at the rim, contributing to thicker septa and delayed cell separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 demonstrate through imaging and EM that cargo proteins show altered localization patterns consistent with the exocyst mislocalization. The thicker septum phenotype is quantified by EM, and the connection to delayed cell separation through loss of Eng1 at the rim is logical and supported by citations to earlier work. The causal chain from exocyst mislocalization to cargo mistargeting to phenotypic consequences is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Septins function primarily to spatially organize exocyst-directed vesicle targeting by stabilizing exocyst localization at the rim, playing a modulatory rather than essential role in vesicle tethering and fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C100 synthesize the experimental findings into a coherent model. The interpretation that septins play a modulatory/organizational role rather than an essential role in vesicle tethering is well-supported by: (1) modest vesicle accumulation in septin mutants vs exocyst mutants, (2) unchanged exocyst dynamics in septin mutants, (3) mislocalization but not complete loss of exocyst function, and (4) the ability of mislocalized exocyst to still tether vesicles. This represents a well-reasoned interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Septins regulate the exocyst in specific temporal and spatial manners, controlling localization during contractile ring constriction and septum formation but not initial recruitment, which likely depends on contractile ring components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 describe the temporal specificity of septin-exocyst regulation based on the timing data and localization patterns. The conclusion that initial recruitment is septin-independent while maintenance during constriction is septin-dependent is well-supported by the data. The inference about contractile ring dependence for initial recruitment is reasonable but speculative (C105), though supported by prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Septin regulation of exocyst localization is conserved across multiple organisms including fungal pathogens and mammalian neurons, representing a conserved function in ensuring spatiotemporal fidelity of vesicle tethering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C119 cite extensive literature showing septin-exocyst relationships in budding yeast, M. oryzae, V. dahliae, C. albicans, and mammalian neurons. The synthesis of these examples to argue for a conserved function is reasonable, though the claim relies entirely on prior work rather than new data from this study. The speculation about implications for fungal pathogenesis (C119) is appropriate for a discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Physical interactions between septins and the exocyst have been reported in multiple organisms (rat brain, C. albicans, M. oryzae) but not in budding yeast, suggesting budding yeast may be an outlier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C136 comprehensively review the literature on septin-exocyst interactions across organisms. The observation that budding yeast lacks reported interactions while other organisms show them is well-documented through citations. The interpretation that budding yeast may be an outlier (C136) is reasonable but speculative. This represents a thorough literature review supporting the novelty and significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The exocyst consists of two subcomplexes (Sec3/Sec5/Sec6/Sec8 and Sec10/Sec15/Exo70/Exo84), and septins interact with both subcomplexes through multivalent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 describe the exocyst architecture based on prior work (C137-C139) and integrate this with the current findings (C140). The observation that septins interact with both subcomplexes is supported by the Co-IP and yeast two-hybrid data showing interactions with subunits from both subcomplexes. This structural context is important for understanding the interaction network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Dysregulation of septins or the exocyst leads to severe disorders including neurological diseases and cancers, making it important to identify functional and physical links in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 cite literature on the medical relevance of septins and the exocyst and argue for the importance of understanding their interactions in human cells. This represents appropriate contextualization of the work's broader significance, though it is speculative regarding direct applicability to human disease. The claims are well-supported by citations but represent future directions rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Septins are conserved GTP-binding proteins that form higher-order structures and function as scaffolds, diffusion barriers, and membrane curvature sensors in diverse cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background on septin biology based on extensive literature citations. These are well-established facts in the field and provide appropriate context for the study. All claims are supported by multiple citations to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "In budding yeast, septins recruit cytokinesis proteins through direct interactions or septin-binding proteins, with debate about their function as diffusion barriers, and no reported physical interactions with the exocyst.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 summarize the state of knowledge about budding yeast septins, including their roles in protein recruitment and the controversy about diffusion barrier function. The observation that no septin-exocyst interactions have been reported in budding yeast (C12) is important context for the novelty of the current findings. All claims are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Fission yeast has seven septins (Spn1-Spn7) that are non-essential but cause delayed cell separation when deleted, with Spn1-Spn4 functioning at the division site and recruiting specific proteins including Mid2, Gef3, Rho4, and glucanases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 provide background on fission yeast septins based on extensive prior work. These establish the context for the current study and are well-supported by citations. The observation that fission yeast septins are non-essential (unlike budding yeast) is important for understanding the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Previous studies suggested septins function in exocytosis and may work with the exocyst to regulate glucanase secretion, but reported that septins and the exocyst are independent for localization, with no direct physical interactions reported except in rat brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 summarize prior work on septin-exocyst relationships, highlighting the gap in knowledge that the current study addresses. The apparent contradiction between functional relationships and lack of reported physical interactions (except rat brain) sets up the rationale for the current investigation. All claims are appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

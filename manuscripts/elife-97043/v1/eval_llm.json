@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12"
+    ],
+    "result": "The Drosophila ITP gene generates three distinct peptide isoforms through alternative splicing: ITPa (a C-terminally amidated 73 amino acid neuropeptide), ITPL1, and ITPL2 (both non-amidated with alternate, extended C-termini).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, and C12 are directly supported by the gene structure analysis shown in Figure 1A, which clearly depicts the transcript variants and their corresponding peptide products. The structural characterization is consistent with established molecular biology principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "ITPa is expressed in specific neuronal populations in the brain and VNC, including seven bilateral pairs of brain neurons (L-NSCITP, LNdITP, 5th-LNv, and L-NSCDH31) and abdominal ganglion efferent neurons (iag) in the VNC. These neurons co-express multiple neuropeptides including tachykinin, sNPF, LK, DH31, Ast-A, and CCAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are well-supported by comprehensive immunohistochemistry data shown in Figures 1 and 2, combined with citations to previous literature. The co-expression patterns are clearly demonstrated through multi-label immunofluorescence experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ITP isoforms show widespread expression in peripheral tissues beyond the nervous system. ITPL2 is broadly expressed in heart muscles, pericardial nephrocytes, midgut, ureter, and trachea, while ITPa and ITPL1 expression is more restricted to peripheral neurons innervating the heart and rectum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by both single-nucleus transcriptome analysis (Fly Cell Atlas data, Figures 3A-D) and anatomical mapping using GAL4 drivers and immunolabeling (Figures 3E-R). The convergence of transcriptomic and anatomical evidence provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C13"
+    ],
+    "result": "ITP/CHH/MIH peptides are evolutionarily conserved across protostomian invertebrates (arthropods, nematodes, tardigrades, priapulid worms, and mollusks) but absent from deuterostomes and vertebrates. The six cysteine residues and adjacent amino acids are highly conserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C13 are supported by comprehensive phylogenetic analysis using BLAST and HMM-based searches, with sequence alignments shown in Figure 4A. The phyletic distribution pattern is clearly demonstrated, though the absence from deuterostomes could benefit from more explicit negative search results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C4"
+    ],
+    "result": "Phylogenetic analysis of membrane guanylate cyclase receptors identified Gyc76C as a candidate ITPa receptor based on co-evolution with ITP peptides. Gyc76C belongs to a clade of receptors restricted to protostomian invertebrates, matching the phyletic distribution of ITP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by phylogenetic analysis shown in Figure 4B with appropriate bootstrap values (>200 from 500 replicates). The phylogenetic-driven approach is sound, though C4's designation of Gyc76C as a \"bona fide\" receptor requires additional functional validation beyond phylogenetics alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The Bombyx ITPa/ITPL receptor orthologs (PK2-R1, TkR99D, and CG30340) are not expressed in Drosophila rectal pad epithelial cells and recombinant ITPa failed to activate TkR99D and PK2-R1 in heterologous CHO-K1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by GAL4 driver expression analysis (Figure 4\u2014figure supplement 1) and functional assays in CHO-K1 cells with appropriate positive controls (tachykinin 1 and pyrokinin 2). This effectively rules out these GPCRs as ITPa receptors in the osmoregulatory context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Gyc76C is highly expressed in tissues associated with osmoregulation (renal tubules, rectum) and metabolic homeostasis (fat body), as well as in neurons throughout the brain and VNC, clock neurons, and corpora allata. Expression patterns show sex-specific differences in insulin-producing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 are comprehensively supported by multiple lines of evidence including single-nucleus sequencing data (Figure 4\u2014figure supplement 2), GAL4 driver expression patterns (Figure 5), and immunohistochemistry. The convergence of ITPa-immunolabeled axon terminations with Gyc76C expression (C37) provides strong anatomical support for a functional relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Recombinant ITPa does not affect basal secretion by unstimulated renal tubules but inhibits both leucokinin (LK)-stimulated and diuretic hormone 31 (DH31)-stimulated fluid secretion in ex vivo Ramsay assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by Ramsay assay data shown in Figures 6B-D with appropriate statistical analysis (unpaired t-tests, p<0.05 and p<0.0001). The differential effect on stimulated versus unstimulated tubules is clearly demonstrated, confirming ITPa's anti-diuretic role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Genetic knockdown of Gyc76C in either stellate cells (using c724-GAL4) or principal cells (using uro-GAL4) of renal tubules abolishes the anti-diuretic action of ITPa in LK-stimulated and DH31-stimulated tubules, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are strongly supported by Ramsay assay data with genetic manipulation (Figures 6E-F) using appropriate statistical analysis (two-way ANOVA with Tukey's test). The cell-type-specific knockdown experiments provide compelling evidence that Gyc76C mediates ITPa's anti-diuretic effects. However, the observation that ITPa alone promotes secretion in knockdown tubules (mentioned in text) suggests additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "HEK293T cells expressing Gyc76C and the cGMP biosensor Green cGull show dose-dependent increases in fluorescence (34%, 88.7%, and 111.4% at 50, 250, and 500 nM ITPa, respectively) following ITPa treatment, while control cells show no clear dose-dependent response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by live-cell imaging data (Figures 7B-G) with appropriate controls and statistical analysis (nonparametric one-way ANOVA with Dunn's test, p<0.05 and p<0.0001). Post-hoc immunostaining confirmed receptor expression. The dose-dependent response in Gyc76C-expressing cells versus controls provides strong evidence for ITPa-Gyc76C signaling via cGMP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "During desiccation, L-NSCITP neurons show increased activity (measured by CaLexA reporter) and reduced ITPa immunofluorescence (indicating peptide release) in both males and females. Both activity and peptide levels return to normal upon rehydration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by CaLexA reporter assays and ITPa immunofluorescence measurements (Figure 8) with appropriate statistical analysis (one-way ANOVA with Tukey's test, p<0.05 to p<0.0001). The reversibility upon rehydration strengthens the conclusion that ITPa release is dynamically regulated by hydration state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ITP knockdown in ITP-RC neurons results in reduced desiccation tolerance, water retention, and starvation survival, along with decreased circulating glucose and lipid stores (but unaltered glycogen), smaller ovaries, increased feeding, and disrupted preference for nutritive sugars during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 are supported by comprehensive phenotypic analysis (Figure 9) using adult-specific knockdown (ITP-RC-GAL4TS) with appropriate controls and statistical tests. The convergent phenotypes across multiple assays provide strong evidence for ITP's role in osmotic and metabolic homeostasis. However, the RNAi targets all ITP isoforms, so effects cannot be attributed specifically to ITPa (acknowledged by authors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ITPa overexpression in ITP-RC neurons produces phenotypes largely opposite to ITP knockdown: improved desiccation tolerance, increased water content, enhanced starvation survival, reduced glucose levels, increased lipid levels, altered sugar preference, and larger ovaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are supported by comprehensive phenotypic analysis (Figure 10) with appropriate controls and statistical tests (Log-rank test for survival, one-way ANOVA for other measures). The opposite phenotypes compared to knockdown provide strong complementary evidence for ITPa's functions. The specificity to ITPa (versus other ITP isoforms) is better established here than in knockdown experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Gyc76C knockdown in renal tubules reduces desiccation tolerance regardless of cell type (principal or stellate), but differentially affects salt stress tolerance (increased survival in principal cells, decreased in stellate cells) and increases chill-coma recovery time in both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by stress tolerance assays (Figure 11) with cell-type-specific knockdown using uro-GAL4 and c724-GAL4. The differential effects on salt stress (C72-C73) are intriguing but lack mechanistic explanation. The chill-coma results support a role in ionic homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Fat body-specific Gyc76C knockdown causes severe metabolic defects including drastically reduced starvation tolerance, lower glucose and lipid levels, increased feeding, altered food preferences, smaller ovaries, increased defecation, lower water content, reduced DILP2 peptide levels, and decreased daytime locomotor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C86 are supported by extensive phenotypic characterization (Figure 12) using yolk-GAL4 for fat body-specific knockdown, with validation using a second RNAi line (Figure 12\u2014figure supplement 1). The severe and pleiotropic phenotypes demonstrate the critical role of ITPa-Gyc76C signaling in the fat body. The reduced DILP2 levels (C84) suggest crosstalk with insulin signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Connectomic analysis reveals that LNdITP and 5th-LNv clock neurons have extensive synaptic connections with diverse neuron types and are upstream of DH31-expressing neurons, while L-NSCITP form few synaptic connections within the brain. LNdITP receive indirect inputs from thermo/hygrosensory neurons, and L-NSCITP output to osmoregulatory hormone-producing neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by comprehensive connectomic analysis using the FlyWire adult brain connectome (Figure 13) with a threshold of five synapses for significant connections. The differential connectivity patterns between neuron types are clearly demonstrated. However, the functional significance of these connections requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Single-cell transcriptome analysis reveals that ITP neurons express diverse neuromodulator receptors, with Dop2R (dopamine receptor) highly expressed in all ITP neuron subtypes, brain ITP neurons extensively modulated by neuropeptides regulating osmotic and metabolic homeostasis, and high neurotransmitter receptor expression in all ITP neurons except L-NSCITP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by single-cell transcriptome analysis from published datasets (Figure 13H-J, Figure 13\u2014figure supplement 2). The receptor expression patterns provide insights into potential regulatory mechanisms, though functional validation is needed. The lack of neurotransmitter receptors in L-NSCITP (C95) is consistent with their sparse synaptic connectivity (C91).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The multifunctional ITP signaling system in Drosophila shows functional parallels to mammalian atrial natriuretic peptide (ANP) signaling, including roles in regulating water/sodium excretion by kidney/renal tubules and lipid metabolism in adipocytes/fat body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 represent comparative analysis supported by citations to ANP literature and the experimental data from this study. The functional parallels are valid, though C97 is general knowledge rather than a novel finding. The comparison provides useful evolutionary context but is somewhat speculative regarding convergent evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "ITP and Gyc76C are absent in mammals, and no orthologs of ANP have been discovered in invertebrates, suggesting independent evolution of these functionally analogous signaling systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by the phylogenetic analysis presented in the study (Figure 4) and established knowledge. However, the absence of ANP orthologs in invertebrates could be more rigorously demonstrated with explicit negative search results rather than relying on lack of prior discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "ITPa-producing neurons are activated and release ITPa during dehydration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is directly supported by the experimental data in Figure 8, which shows increased neuronal activity (CaLexA reporter) and reduced ITPa immunofluorescence (indicating release) during desiccation. This claim is already covered in the result grouping C50-C53 but warrants separate mention as a key finding stated in the abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Recombinant Drosophila ITPa inhibits diuretic peptide-induced renal tubule secretion ex vivo, confirming its role as an anti-diuretic hormone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by Ramsay assay data (Figures 6C-D) showing inhibition of both LK- and DH31-stimulated secretion. This claim is already covered in the result grouping C43-C45 but is highlighted separately as a major conclusion stated in the abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Gyc76C is highly expressed in larval and adult tissues associated with osmoregulation (renal tubules and rectum) and metabolic homeostasis (fat body).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by extensive anatomical mapping shown in Figure 5 and Figure 5\u2014figure supplement 1. This claim is already covered in the result grouping C34-C42 but is highlighted separately as a major finding stated in the abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Knockdown of Gyc76C in renal tubules impacts tolerance to osmotic and ionic stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by stress tolerance assays shown in Figure 11. This claim is already covered in the result grouping C71-C74 but is highlighted separately as a major finding stated in the abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Knockdown of Gyc76C in the fat body impacts feeding, nutrient homeostasis, and associated behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by comprehensive phenotypic analysis shown in Figure 12. This claim is already covered in the result grouping C75-C86 but is highlighted separately as a major finding stated in the abstract.",
+    "result_type": "MAJOR"
+  }
+]

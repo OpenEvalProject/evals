@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "SP-SAP injection selectively ablated type-I nNOS neurons in the somatosensory cortex with minimal off-target effects. SP-SAP mice showed a significant reduction in nNOS-positive neurons (1.3 \u00b1 1.6 neurons/mm\u00b2) compared to Blank-SAP controls (10.3 \u00b1 2.4 neurons/mm\u00b2), with increased GFAP labeling but no significant changes in microglia, DAPI, or NeuN after multiple comparison correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 provide converging histological evidence for selective ablation. The significant reduction in nNOS neurons (C42, p=5.74\u00d710\u207b\u2076) with appropriate statistical controls (C44-C46, Bonferroni correction) and minimal astrocytic response (C43) supports the selectivity claim (C47). Sample sizes (N=5-8) are adequate for histological quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Ablation of type-I nNOS neurons did not affect gross behavioral measures or arousal state. No differences were observed in open field behavior, sleep architecture (REM/NREM percentages), whisking behavior, or pupillary metrics between SP-SAP and control groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 consistently report null findings across multiple behavioral domains with adequate sample sizes (N=9-23 mice/group). The absence of behavioral changes is important for interpreting subsequent neural and vascular findings, as it suggests the ablation does not cause gross functional impairment. However, the manuscript does not report effect sizes or confidence intervals for these null results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C5"
+    ],
+    "result": "Ablation of type-I nNOS neurons abolished the post-stimulus undershoot in cerebral blood volume following brief vibrissae stimulation. The Blank-SAP group showed a mean undershoot of -2.2 \u00b1 0.5 \u03bcM compared to 1.0 \u00b1 0.6 \u03bcM in SP-SAP mice (p=0.0005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 provide strong statistical evidence (p=0.0005, N=9/group) for elimination of the post-stimulus undershoot. This finding is mechanistically consistent with the known expression of vasoconstrictor NPY by type-I nNOS neurons (C53). The effect size is substantial and the statistical analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C4"
+    ],
+    "result": "Ablation of type-I nNOS neurons reduced sustained vascular and neural responses to prolonged sensory stimulation. Significant decreases were observed in \u0394HbT (18.7\u219213.1 \u03bcM, p=0.017), calcium signals (8.2\u21925.3%, p=0.047), \u0394HbO (24.6\u219217.4 \u03bcM, p=0.010), and arteriole diameter (11.6\u21927.8%, p=0.008) following 5-second vibrissae stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 demonstrate consistent reductions across multiple hemodynamic and neural measures with appropriate statistical significance (p<0.05) and adequate sample sizes (N=7-9 mice/group). The convergence of findings across different measurement modalities (widefield imaging, calcium imaging, two-photon microscopy) strengthens the conclusion. However, the initial brief stimulation response was not affected, suggesting specificity for sustained responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C3",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Ablation of type-I nNOS neurons significantly reduced delta-band (1-4 Hz) LFP power across all arousal states. Power decreased in alert (3.4\u00d710\u207b\u00b9\u2070\u21921.0\u00d710\u207b\u00b9\u2070 a.u., p=0.011), asleep (8.5\u00d710\u207b\u00b9\u2070\u21922.4\u00d710\u207b\u00b9\u2070 a.u., p=0.022), and all states combined (5.2\u00d710\u207b\u00b9\u2070\u21921.5\u00d710\u207b\u00b9\u2070 a.u., p=0.016). This is consistent with prior studies showing nNOS knockout reduces delta power and optogenetic stimulation produces low-frequency oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 provide statistically significant evidence (p<0.05) for reduced delta-band power with adequate sample sizes (N=7-9/group). The findings are consistent with cited prior work (C64-C65) and support the mechanistic interpretation involving NO release (C66). The effect is robust across different arousal states, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Ablation of type-I nNOS neurons altered neurovascular coupling in a stimulus-dependent manner. The slope of gamma-band power vs. \u0394HbT decreased for brief stimulation (0.02\u21920.005, p=0.0001) but not for prolonged stimulation with GCaMP7s (p=0.34), suggesting reduced overall excitability with potentially increased input drive from other areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 show differential effects on neurovascular coupling depending on stimulus duration and measurement method. The significant decrease in gamma-LFP coupling (C67) contrasts with preserved GCaMP coupling (C68), leading to the interpretation in C69. However, this interpretation involves speculation about homeostatic mechanisms that is not directly tested. The statistical evidence is solid but the mechanistic interpretation is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Ablation of type-I nNOS neurons produced modest, state-dependent changes in neurovascular coupling. Significant decreases in cross-correlation were observed during alert and asleep states for gamma-band power (C71-C72) and resting state for GCaMP7s (C77), but coherence changes were minimal and inconsistent across arousal states. The HRF predictive power was unchanged (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C83 present a complex pattern of modest changes in neurovascular coupling with appropriate statistical testing (N=6-9/group). The conclusion (C83) that differences are relatively small is supported by the data, though some individual comparisons show significance. The preservation of HRF predictive power (C76) supports the interpretation that effects are primarily mediated by neural activity changes rather than fundamental alterations in neurovascular coupling mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C6",
+      "C7"
+    ],
+    "result": "Ablation of type-I nNOS neurons reduced interhemispheric coherence of both vascular and neural signals. Bilateral \u0394HbT coherence decreased significantly across all arousal states (resting: 0.79\u21920.73, p=0.014; alert: 0.86\u21920.81, p=7.4\u00d710\u207b\u2076; asleep: 0.86\u21920.79, p=0.0008). Gamma-band coherence decreased during sleep (0.35\u21920.29, p=0.047) and GCaMP coherence decreased during alert periods (0.88\u21920.84, p=0.029).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 provide robust evidence for reduced interhemispheric coordination with strong statistical significance and consistent effects across multiple measurement modalities. The findings support the interpretation that type-I nNOS neurons integrate long-range coordination (C7), though the mechanism is not directly tested. Sample sizes are adequate (N=7-9/group) and the effect is consistent across arousal states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C8",
+      "C9"
+    ],
+    "result": "Ablation of type-I nNOS neurons significantly reduced vasomotion amplitude without affecting baseline vessel diameter. Resting-state \u0394HbT variance decreased from 40.9\u00b13.4 to 23.3\u00b12.3 \u03bcM\u00b2 (p=6.9\u00d710\u207b\u2075) and arteriole diameter variance decreased from 12.6\u00b11.4 to 8.0\u00b10.8 %\u00b2 (p<0.05), while baseline diameter was unchanged (24.4\u00b17.5 vs 23.0\u00b19.4 \u03bcm, p=0.61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 provide strong evidence for reduced vasomotion with highly significant statistics (p=6.9\u00d710\u207b\u2075) and large sample sizes (N=24/group for widefield, N=7-9 for two-photon). The preservation of baseline diameter (C96) is important for ruling out tonic vasoconstrictor effects. The convergence of findings at different spatial scales (widefield and single arterioles) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Ablation of type-I nNOS neurons did not alter basal vessel diameter across arousal states or maximal dilation capacity. No significant differences were observed in \u0394HbT during resting, NREM, or REM states, or following isoflurane administration. Arteriole diameter changes with isoflurane were also unchanged (61.2\u00b137.2% vs 63.6\u00b138.4%, p=0.85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 consistently show null results across multiple arousal states and maximal dilation tests with adequate sample sizes (N=7-9/group). The conclusion (C103) that type-I nNOS neurons drive spontaneous fluctuations but not basal tone is well-supported by the combination of reduced vasomotion (C94-C95) and preserved baseline diameter/state-dependent changes. However, confidence intervals for null results are not reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C10"
+    ],
+    "result": "Type-I nNOS neurons orchestrate neural and vascular dynamics across the brain. Loss of these neurons causes desynchronization between hemispheres, altered sensory responses, and reduced vasomotion. The early phase of neurovascular coupling appears not to be mediated by these cells, consistent with multiple parallel mechanisms for neurovascular coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 represent high-level interpretations of the experimental findings. The conclusion that type-I nNOS neurons orchestrate dynamics (C104) is supported by the interhemispheric coherence data. The interpretation about early-phase coupling (C106) is supported by preserved brief stimulation responses but reduced sustained responses. However, the claim that these neurons are \"indispensable\" (C10) may be overstated given that many functions remain intact after ablation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Compensatory rewiring may occur during the 4-week delay between ablation and imaging, potentially strengthening alternative vasodilatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 acknowledges an important limitation but is speculative. The 4-week delay could allow compensation, which might explain why some expected effects (e.g., NREM vasodilation) were not observed. However, this is not directly tested and remains a caveat rather than a demonstrated finding. The authors appropriately present this as a limitation rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C112",
+      "C113"
+    ],
+    "result": "Reduced vasomotion following type-I nNOS neuron ablation may impair CSF clearance and contribute to neurodegeneration. Vasomotion drives CSF movement, and reduced amplitude would decrease pumping efficacy. Loss of type-I nNOS neurons also reduces delta-band power associated with CSF clearance, and these neurons are vulnerable to stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109 link vasomotion to CSF clearance based on cited literature, but the manuscript does not directly measure CSF flow. The speculation about neurodegeneration (C113) is based on correlative evidence (vulnerability to stress C111, reduced delta power C112) but lacks direct experimental support. While the hypothesis is plausible and well-motivated, it requires future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C40",
+      "C41",
+      "C110",
+      "C111"
+    ],
+    "result": "Loss of type-I nNOS neurons could contribute to neurodegenerative diseases and sleep disturbances. These neurons are vulnerable to stress, their loss is implicated in neurodegeneration, and aged human brains show reduced interhemispheric synchrony similar to the effects observed here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C40-C41, C110-C111 present speculative connections to disease based on cited literature and analogies to aging. While the vulnerability to stress (C40, C111) and potential role in neurodegeneration (C41) are supported by citations, the direct causal link to disease (C11) is not tested in this study. The comparison to aged human brains (C110) is suggestive but not definitive evidence for a causal role in aging or disease.",
+    "result_type": "MINOR"
+  }
+]

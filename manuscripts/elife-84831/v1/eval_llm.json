@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C142",
+      "C165",
+      "C166"
+    ],
+    "result": "TARDIS is a novel two-step transgenesis method that separates library introduction from genomic integration. The method involves creating heritable TARDIS library arrays containing diverse sequences with a selectable marker, expanding the population, then inducing Cas9-mediated integration of individual sequences into engineered landing pads. This approach is claimed to increase throughput up to 1000-fold over traditional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conceptual framework and methodology of TARDIS are well-documented through experimental design (C34-C41, C142) and supported by the two-step process description (C7-C9). The system's components (heritable libraries, selectable markers, landing pads) are clearly defined and their functions demonstrated. The 1000-fold throughput increase claim (C12, C166) is supported by comparison of unique integrations obtained versus traditional methods, though the exact calculation basis could be more explicit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C84",
+      "C85"
+    ],
+    "result": "Large, diverse barcode libraries containing thousands of unique sequences can be created and maintained as extrachromosomal arrays in C. elegans. Using complexing PCR with randomized oligos, the authors generated libraries with ~800,000 unique barcodes in the injection mix, with individual arrays containing between 91 and 3,001 unique sequences across four isolated arrays, totaling 4,395 unique barcodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The barcode library generation and diversity are well-supported by direct sequencing data (C65, C75-C79). The complexing PCR method achieved high diversity with minimal jackpotting (C64, C66), and multiple independent arrays were successfully isolated and characterized (C67). The theoretical maximum of 4.2 million sequences (C63) is correctly calculated from 4^11 randomized positions. The data demonstrate both the technical feasibility and reproducibility of creating diverse heritable libraries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "During array formation, certain barcode sequences become overrepresented ('jackpotted') despite being identical in size, with high-frequency barcodes varying between arrays and being independent of jackpotted sequences in the injection mix. The distribution of barcode frequencies within arrays follows a Poisson distribution, with arrays showing variable diversity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The jackpotting phenomenon is well-documented through frequency analysis across multiple arrays (C70-C72, C87, C90). The observation that high-frequency barcodes are independent of injection mix jackpotting (C71) and vary between arrays (C72) is supported by comparative data. The Poisson distribution claim (C86) is consistent with the frequency data shown. However, the mechanistic explanation (C91) remains speculative, appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Barcode integration frequency from TARDIS arrays to F1 individuals is strongly correlated with barcode frequency in the array (R \u2248 0.96, p \u2248 5.7 \u00d7 10^-154), with rare exceptions. Two outlier barcodes showed integration frequencies inconsistent with their array frequencies, but overall no sequence motif bias was observed in integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The strong correlation between array and integration frequencies is robustly supported by statistical analysis across four biological replicates (C97). The identification of two outlier barcodes (C98-C100) demonstrates thorough data analysis and appropriate acknowledgment of exceptions. The lack of sequence motif bias (C101) is supported by sequence logo analysis. The high correlation coefficient and extremely low p-value provide strong statistical support for the proportional integration mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C123",
+      "C124",
+      "C170"
+    ],
+    "result": "TARDIS successfully integrates promoter libraries ranging from 330 bp to 5.5 kb into single or multiple genomic sites. From a library of 13 promoters, nine different promoters were recovered as integrants from a single heat shock, including both the smallest and largest promoters. The system can simultaneously integrate promoters into two landing pad sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The promoter integration capability is well-demonstrated through recovery of nine different promoters from a single array line (C114, C123), including size extremes (C124). The array composition analysis showing 2-13 promoters per array with mean 10.7 (C118) provides quantitative support. Dual-site integration is demonstrated experimentally (C51), though with limited examples. The size range compatibility (C116) addresses a key technical concern about insert size limitations in CRISPR-mediated integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C121",
+      "C129"
+    ],
+    "result": "TARDIS integration efficiency is high, with approximately 200-300 worms needing heat shock to obtain an integrated line using 150 bp homology arms. In the promoter library experiment, hygromycin-resistant individuals were recovered from 59 of 60 plates, indicating high integration frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Integration efficiency is supported by direct experimental observations across multiple replicates (C93-C95). The estimate of 200-300 worms needed (C96) is a reasonable inference from the data showing 104 and 71 positive plates from 255 and 125 plates respectively. The 59/60 success rate for promoter integration (C121) provides strong evidence for high efficiency. However, efficiency may vary with insert size and homology arm length, which should be noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "Novel split-selection landing pads were engineered requiring perfect integration on both 5' and 3' ends for functional selection. The barcode landing pad uses a split hygromycin resistance gene with coding sequence removed from both sides of a synthetic intron. Two promoter landing pads were created with split mScarlet-I/HygR and mNeonGreen/Cbr-unc-119(+), both targetable by the same guide RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The landing pad designs are thoroughly described with clear molecular details (C52-C57, C105-C112). The dual-selection requirement (C53, C57) addresses a known limitation of previous single-sided selection systems (C54). The engineering of two landing pads targetable by the same guide (C108) is a clever design feature enabling multiplex integration. The molecular constructs are well-documented with appropriate homology arm lengths (C112) for efficient HDR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Perfect barcode integration was confirmed by Sanger sequencing of three randomly chosen lineages, with sequenced barcodes matching those present in the array composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sanger sequencing validation (C102-C103) provides direct molecular confirmation of integration fidelity. The verification that sequenced barcodes were present in the array (C104) confirms the integration source. However, the sample size (n=3) is small for assessing overall integration accuracy, and the authors appropriately recommend sequencing confirmation for downstream applications (C136).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Integration fidelity analysis revealed that of 83 PCR products sequenced, 5 had incorrect sequences, 3 failed to prime, and several showed nonspecific banding patterns. For approximately half of the plates, multiple different promoters were identified from four worms sampled. Two promoters not recovered initially were found integrated in subsequent experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The error rate analysis (C127-C128) provides important quality control data, showing ~6-10% incorrect integrations. This honest reporting of integration errors is valuable for users. The observation of multiple promoters per plate (C126) demonstrates the high integration frequency. The recovery of initially missing promoters in subsequent experiments (C125) supports the inference that array composition, not promoter properties, determines recovery likelihood.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Co-conversion occurs with large plasmid-based repair templates, with approximately half of hygromycin-resistant individuals also showing rescue of the Unc phenotype when targeting two landing pads simultaneously. This demonstrates that multiplex integrations are possible by simultaneously utilizing multiple insertion sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-conversion phenomenon is supported by established knowledge (C130-C131) and demonstrated experimentally (C133), though the supporting data is not shown in the manuscript. The ~50% co-conversion rate provides a quantitative basis for the multiplex integration claim (C134). However, the lack of shown data (C133) and limited examples of dual integration reduce confidence in the generalizability of this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C204",
+      "C205"
+    ],
+    "result": "Fluorescent microscopy of transcriptional reporters showed expression in at least one previously reported tissue for all promoters tested, though expression was absent in some tissues for several promoters. Fluorophore expression was concentrated in but not exclusive to the nucleus, consistent with nuclear localization signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression pattern observations (C168-C169, C204) are direct microscopy data. The nuclear localization pattern (C204) is consistent with the NLS design feature. The differences from previously reported patterns (C205) are appropriately acknowledged as potentially due to promoter region differences or developmental stage examined. This represents functional validation of the integrated reporters, though comprehensive expression characterization was not the primary goal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Comparison of barcode sequences across three independent injections showed minimal overlap: 96.5% of sequences were unique to one injection, 3.0% were incorporated twice, and 0.5% were recovered from all three injections. In contrast, two profiles from a single injection showed 68% overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overlap analysis (C80-C83) provides important data on array formation reproducibility and independence. The high uniqueness between injections (96.5%) demonstrates that each injection samples the library independently. The high overlap within a single injection (68% for array 3 profiles) suggests these represent sampling of the same array formation event. This data supports the conclusion that array formation is stochastic but reproducible within an injection event.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "C. elegans was chosen for TARDIS validation because it naturally forms extrachromosomal arrays of several megabases from injected DNA, which can be maintained heritability via selection. These properties make arrays suitable as heritable TARDIS libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rationale for using C. elegans (C42-C43) is well-supported by established literature on extrachromosomal array biology (C144). The properties of arrays\u2014large size, no sequence requirements, heritable maintenance (C144)\u2014are well-documented in the cited literature. The inference that these properties make arrays suitable for TARDIS (C145) is logical and validated by the experimental success of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The authors recommend either heat-shocking small cohorts to yield mostly single edited individuals per cohort or screening multiple individuals per cohort to efficiently recover individual edits. They also recommend sequencing confirmation of integrations as errors can occur, including internal deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These recommendations (C135-C136) are reasonable inferences from the observed high integration efficiency and documented error rates. The suggestions are practical and based on the experimental data showing multiple integrations per plate and ~6-10% incorrect integrations. These represent appropriate guidance for future users rather than primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C181",
+      "C187",
+      "C188"
+    ],
+    "result": "TARDIS represents the first practical implementation of large-scale library transgenesis in an animal system, enabling thousands of specific genomic integrations from single microinjection events. The system provides an approximately 1000-fold increase in barcoding throughput in C. elegans, making it unique among multicellular models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claims (C171, C181) are supported by comparison to prior methods showing orders of magnitude difference in scale. The 1000-fold increase (C187) is supported by the recovery of thousands of unique barcodes versus single-digit integrations from traditional methods. The claim of being unique among multicellular models (C188) is reasonable given the demonstrated scale, though comprehensive comparison to all other systems is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Prior attempts to multiplex transgenesis in C. elegans (library mosSCI, RMCE, guide arrays with Cas9) have increased throughput over standard methods but remain limited to tens of unique sequences\u2014orders of magnitude below what is needed for exploratory transgenesis. TARDIS provides the first true library-based approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to prior methods (C174-C180) is well-documented with appropriate citations. The limitations of existing methods (C175, C178) are accurately described. The claim that prior methods achieve only tens of sequences (C180) versus TARDIS achieving thousands provides clear quantitative support for the advancement. However, the comparison would be strengthened by more direct side-by-side experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "The barcode system provides insights into array biology, revealing that array composition is not proportional to injection mix molarity or strictly size-weighted. The authors propose that array size affects maintenance, with selection favoring arrays that increased size through random amplification or DNA polymerase slippage during replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observations about non-proportional array formation (C192) are well-supported by data showing identical-sized barcodes with different frequencies. However, the mechanistic explanations (C193-C194) are explicitly speculative (C91, C193). While the hypothesis about array size and maintenance is plausible and consistent with observations (C196), it lacks direct experimental validation. The citation to DNA polymerase slippage in native chromosomes (C195) provides precedent but not proof for arrays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Not all arrays contained all 13 injected promoter plasmids, which was unexpected given the estimated 1-13 MB array size would be adequate to hold all plasmids. This differential presence may reflect preferential use of linear fragments in array assembly, and future use of linear fragments may increase incorporation and diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of incomplete promoter incorporation (C199, C201) is well-documented. However, the explanation invoking preferential use of linear fragments (C202) is speculative without direct experimental support. The recommendation for future use of linear fragments (C203) is reasonable but based on speculation rather than demonstrated evidence. The size calculation (C200) is sound but doesn't explain the mechanism of differential incorporation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C141",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "TARDIS is conceptually adaptable to any system where experimentally generated landing pads and diverse, heritable DNA elements can be generated. The intellectual underpinnings are agnostic to the research model. Potential strategies for other systems include using H11 locus in mice or PhiC31-mediated transgenesis with BACs in Drosophila for TLA inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The conceptual adaptability claim (C13, C141) is reasonable based on the modular design of TARDIS. However, these are speculative claims (C146, C149, C152) about future applications without experimental validation in other systems. The cited methods in mice and Drosophila (C147-C148) exist but their suitability for TARDIS has not been demonstrated. The claims represent logical extensions but require experimental validation to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "High-throughput transgenesis using synthetic DNA libraries has been powerful in single-cell models for various applications (protein engineering, protein-protein interactions, promoter characterization, lineage tracking, directed evolution, mutagenesis screens) but has been effectively restricted to single-cell models due to the Weismann barrier and technical limitations in multicellular organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C26) are well-supported by established knowledge and appropriate citations (C17-C21, C24). The categorization of transgenesis types (C15) and limitations in multicellular systems (C16, C24-C26) accurately reflect the field's understanding. These claims provide appropriate context for the significance of TARDIS but are not primary results of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Various attempts have been made to parallelize transgenic creation in multicellular organisms (Brainbow, ifgMosaic, P[acman] libraries, plant transformation methods, CRISPR landing pads in C. elegans), but throughput remains too low for effective exploratory transgenesis despite improvements over standard methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The survey of prior attempts (C27-C32) is well-documented with appropriate citations. The assessment that these methods improved throughput but remain insufficient for exploratory transgenesis (C33) provides important context for TARDIS. These claims accurately represent the state of the field and justify the need for the new approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "TARDIS could enable exploratory experiments in animal systems previously restricted to single-cell models (alanine scanning, protein-protein interactions, CRISPR screening, promoter libraries) and opens doors to animal-specific applications (developmental biology, neurobiology, endocrinology, cancer research). TARDIS offers advantages over existing animal barcoding methods (GESTALT, LINNAEUS, Tuba-seq) by not requiring viral vectors or randomized indel generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are primarily speculative claims (C137, C155) about potential future applications, appropriately supported by citations to relevant methods (C138-C140, C157-C158, C161). The comparisons to existing barcoding methods (C156-C163) are reasonable but represent potential advantages rather than demonstrated superiority. These claims represent the broader impact and future directions rather than validated results of the current work.",
+    "result_type": "MINOR"
+  }
+]

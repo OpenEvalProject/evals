@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C12"
+    ],
+    "result": "MS023 treatment increases MuSC proliferation in ex vivo culture. MS023-treated muscle fibers showed significantly increased Pax7+/ki67+ cells and cluster formation, with reduced ADMA-containing proteins, indicating enhanced proliferative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C7, and C12 provide converging evidence from multiple assays (immunofluorescence, western blot) showing increased proliferation markers and cluster formation with MS023 treatment. The data are internally consistent and supported by quantification with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "MS023 effects on MuSCs are likely mediated primarily through PRMT1 inhibition rather than CARM1. PRMT1 is the most highly expressed type I PRMT in MuSCs, and CARM1-specific inhibition did not increase cell number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 provide direct experimental evidence (negative result with CARM1 inhibitor, expression analysis), while C74-C76 provide supporting context from literature. The inference that MS023 acts primarily through PRMT1 is reasonable given the expression data and negative CARM1 result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "MS023 treatment maintains MuSC stemness by preventing precocious differentiation. MS023-treated cells showed reduced Pax7-/MyoD+ committed cells, increased Pax7+/MyoD- stem-like cells, and enhanced long-term culture capabilities up to passage 14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C13, and C14 provide quantitative data with specific percentages showing altered differentiation states. C15 demonstrates functional consequences (long-term culture). The data are internally consistent and support the stemness maintenance conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C28",
+      "C29"
+    ],
+    "result": "Single-cell RNA sequencing reveals MS023-specific MuSC subpopulations with elevated Pax7 expression and quiescence markers. MS023-treated cells (d4MS023) distributed uniquely to clusters M3 and M5, with higher Pax7 expression comparable to quiescent day 0 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 describe the scRNAseq methodology and cluster identification with appropriate quality control (C17: Pearson >0.98). Claims C28-C29 provide specific expression data showing elevated Pax7 in MS023-treated populations. The computational analysis appears sound with adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MS023-induced differentiation block is reversible. Cells treated with MS023 then washed out (d6MS023rd4) showed nearly twice as many differentiated cells (DM1: 20.8%) compared to continuous DMSO treatment (11.5%), with MS023-specific clusters showing distinct proliferation and ribosomal gene signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 provides quantitative evidence of reversibility with specific percentages. Claims C24-C25 characterize the molecular signatures of MS023-specific clusters. The data support reversibility, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "MS023-treated MuSCs show enrichment for oxidative phosphorylation and electron transport chain genes. Pathway analysis revealed MS023-specific enrichment for respiratory electron transport and ATP synthesis, confirmed by elevated expression of specific mitochondrial genes and validated by RT-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 show differential pathway enrichment between conditions. Claims C33-C36 provide specific gene lists and independent validation by RT-qPCR. The convergence of computational analysis and experimental validation supports this metabolic signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38"
+    ],
+    "result": "MS023-treated MuSCs exhibit increased oxidative phosphorylation. Seahorse analysis showed significantly elevated OCR measurements, basal respiration (p=0.006), and maximal respiration (p=0.04), with increased mitochondrial mass confirmed by MitoTracker staining (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 provide direct functional measurements with appropriate statistical analysis and multiple significant p-values. The Seahorse data are consistent with the transcriptomic findings (C26, C34-C36), providing orthogonal validation of increased OxPhos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MS023-treated MuSCs show increased glycolysis. MS023 cells exhibited elevated glycolytic gene expression, significantly increased ECAR measurements (glycolysis p=0.02, capacity p=0.004, reserve p=0.001), higher glucose uptake (p=0.004), and increased lactate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 provide converging evidence from transcriptomics, Seahorse ECAR analysis, and metabolite measurements. Multiple significant p-values and consistent directional changes across assays strongly support increased glycolysis. The simultaneous elevation of both OxPhos and glycolysis is unusual but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Trajectory analysis reveals MS023-treated cells emerge later in pseudotime and remain closer to the differentiation branchpoint. The analysis identified three cell states (Q, M, DM) with expected gene expression patterns along differentiation and proliferation branches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 describe trajectory analysis results with appropriate validation of expected gene expression patterns. The positioning of MS023 cells later in pseudotime but closer to the branchpoint is consistent with delayed differentiation. The computational approach is standard and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "MS023 reversibly blocks myotube differentiation. Cells differentiated in continuous MS023 presence showed impaired fusion (19% vs 77% for DMSO), but MS023 washout completely restored differentiation capacity (76% fusion index, comparable to 78% for DMSO washout).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide clear quantitative data showing both the differentiation block and its reversibility. The fusion index measurements are straightforward and the complete restoration of function after washout strongly supports reversibility. This is a critical functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46"
+    ],
+    "result": "MS023-treated MuSCs show enhanced engraftment and regeneration capacity. Transplanted MS023-treated cells generated more GFP+ muscle fibers (88\u00b132 vs 31\u00b114 fibers/section, p=0.02) and showed ~7-fold increased niche repopulation after regeneration (p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide in vivo functional data with appropriate statistics and biological replicates (n=3 mice per condition). The significant increases in both fiber formation and niche repopulation demonstrate therapeutic relevance. However, the mechanism linking in vitro treatment to in vivo benefit requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MS023 treatment improves muscle function in mdx mice. Intraperitoneal MS023 injection reduced ADMA and increased SDMA, resulting in 50% increased 2-paw grip strength (p=0.0113), 45% increased 4-paw grip strength (p=0.0089), ~30% increased tetanic force (p=0.00727), and reduced fiber size variation (p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide multiple functional measurements with significant p-values in a disease model. The biochemical validation (ADMA/SDMA) confirms target engagement. However, the manuscript acknowledges uncertainty about whether effects are MuSC-specific or involve other cell types, which is an important limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C63"
+    ],
+    "result": "Background: MuSCs are muscle stem cells that spontaneously differentiate ex vivo, limiting therapeutic applications. MuSC metabolism shifts from OxPhos in quiescence to glycolysis during proliferation, and this metabolic state is linked to cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 and C63 establish well-documented background knowledge with appropriate citations. These provide essential context for interpreting the experimental findings but are not novel results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Background: PRMTs regulate MuSC function through multiple mechanisms. PRMT1-null MuSCs are proliferative but cannot differentiate; CARM1, PRMT5, and PRMT7 also regulate MuSC proliferation, differentiation, and metabolism; and epigenetic inhibitors can enhance MuSC self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide relevant background on PRMT functions in MuSCs with appropriate citations. This contextualizes the rationale for using MS023 but represents prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background and speculation: Metabolic regulation in MuSCs involves NAD+/SIRT1 signaling, PDH activation, and AMPK. PRMTs interact with metabolic regulators including AMPK and PGC-1\u03b1. MS023 treatment increased autophagic marker expression, though AMPK involvement remains undetermined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 and C68-C73 provide background on metabolic regulation with appropriate citations. Claim C67 presents new data on autophagic markers but explicitly states that AMPK involvement is speculative and requires further investigation. The mechanistic connection between PRMT inhibition and metabolic changes remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background: MuSC heterogeneity and metabolic states have been characterized by scRNAseq. Freshly isolated MuSCs with high Pax7 expression show superior engraftment. Epigenetic modulation (e.g., Setd7 inhibition) can enhance MuSC proliferation while maintaining stemness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 provide relevant background on MuSC biology and previous therapeutic approaches with appropriate citations. This contextualizes the significance of the current findings but represents prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C83"
+    ],
+    "result": "Background: MuSCs spontaneously differentiate in vitro, and type I PRMT inhibition reduces ADMA while increasing SDMA through substrate scavenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C83 state established facts with appropriate citations. These provide necessary context but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

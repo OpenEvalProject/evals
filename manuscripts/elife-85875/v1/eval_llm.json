@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript provides background on COPD pathology, fibrocytes, and CD8+ T cells based on prior literature. These claims establish the scientific context for the study, describing COPD as a common chronic disease with rising prevalence, the role of fibrocytes in lung fibrosis and COPD, and the involvement of CD8+ T cells in COPD pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 are all supported by citations to prior published work. These background claims appropriately reference established literature and provide the scientific foundation for the current study. No original data is presented for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The density of CD8+ T cells and fibrocytes is increased in COPD distal bronchi compared to controls, and these cells are found in closer proximity in COPD tissues. The density of CD8+ T cells interacting with fibrocytes is higher in COPD, the mean minimal distance between these cell types is smaller in COPD, and mixed cell clusters containing both cell types are more abundant in COPD tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by quantitative immunohistochemistry data shown in Figure 1 with appropriate statistical analyses. The image analysis methods are described in detail, and the findings are consistent with prior studies (C21 cites previous work). The spatial analysis using multiple approaches (density, distance, clustering) provides converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The spatial interactions between fibrocytes and CD8+ T cells correlate with lung function decline in COPD. Specifically, the density of interacting cells and mixed cell clusters together explain 35% of FEV1/FVC variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by correlation analyses (Figure 1\u2014figure supplement 4) and multivariate regression modeling. The statistical approach using stepwise regression is appropriate, though the modest R\u00b2 (35%) indicates other factors also contribute to lung function decline. The correlations are moderate but statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "CD8+ T cells from COPD patients promote fibrocyte chemotaxis via the CXCL8-CXCR1/2 axis. Transcriptomic analysis reveals increased expression of chemokines including CXCL8 in COPD CD8+ T cells, and functional migration assays demonstrate that COPD CD8+ T cell secretions increase fibrocyte migration, which is blocked by CXCR1/2 inhibition or anti-CXCL8 antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are supported by transcriptomic data (Figure 2A), ELISA measurements (Figure 2D), and functional migration assays (Figure 2C, E, F). The use of both pharmacological (reparixin) and antibody-based blocking provides converging evidence for the CXCL8-CXCR1/2 mechanism. The experiments appropriately include controls and show specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Live imaging reveals that CD8+ T cells progressively accumulate in contact with fibrocytes over 12 hours, establishing both short-lived (<12 min) and longer (>32 min) interactions. CD8+ T cells decrease their speed upon contact with fibrocytes, with activated CD8+ T cells showing a greater reduction in contact speed compared to non-activated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by live imaging data (Figure 3A-H) with quantitative tracking of individual cells. The temporal dynamics are well-characterized with appropriate statistical analyses. The observation of both short and long contacts is consistent with dynamic immunological synapse formation. Sample sizes appear adequate (n=2 experiments, 10 videos, 10 cells tracked per video).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Direct cell-cell contact between fibrocytes and CD8+ T cells is required for robust CD8+ T cell proliferation. Indirect co-culture (transwell) has minimal effect on proliferation, while direct co-culture dramatically increases both total CD8+ T cell numbers and the percentage of dividing cells, regardless of activation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by CellTrace-based proliferation assays comparing indirect and direct co-culture conditions (Figure 3I-P). The experimental design appropriately distinguishes contact-dependent from soluble factor-mediated effects. The conclusion that direct contact is required is well-supported by the stark difference between conditions. Statistical analyses are appropriate (Wilcoxon matched pairs tests).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "CD86 and CD54 are required for fibrocyte-induced proliferation of non-activated CD8+ T cells but not for activated CD8+ T cells. Blocking antibodies against CD86 and CD54 significantly reduce proliferation in the non-activated condition but have no effect when CD8+ T cells are pre-activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by blocking antibody experiments (Figure 4) with appropriate isotype controls. The differential effect based on activation state is interesting and suggests activation-dependent changes in signaling requirements. However, the mechanism underlying this difference is not explored. The statistical analyses are appropriate (Wilcoxon matched pairs tests, n=6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Direct contact between fibrocytes and CD8+ T cells induces massive production of pro-inflammatory cytokines (TNF-\u03b1, IFN-\u03b3, granzyme B) and regulatory cytokines (IL-10, IL-17). Indirect co-culture produces only slight increases, while direct co-culture results in dramatic upregulation regardless of CD8+ T cell activation state. TNF-\u03b1 secretion into culture supernatants confirms active cytokine release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by flow cytometry data (Figure 5A-D) and ELISA measurements (Figure 5E). The distinction between indirect and direct co-culture effects is clear and consistent across multiple cytokines. The intracellular staining and secretion measurements provide complementary evidence. Statistical analyses are appropriate (Wilcoxon matched pairs tests, n=6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Fibrocyte-CD8+ T cell interactions enhance CD8+ T cell cytotoxic capacity. Direct co-culture increases CD107a expression (a degranulation marker) and CD8+ T cells pre-cultured with fibrocytes demonstrate increased killing of primary bronchial epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by CD107a expression data (Figure 6A-E) and cytotoxicity assays against primary epithelial cells (Figure 6F-H). The use of primary epithelial cells as targets is appropriate and physiologically relevant. The inference in C49 is reasonable given the CD107a data and cytotoxicity results, though the mechanism could be further characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CD8+ T cell interaction induces fibrocytes to adopt an immunological phenotype. Proteomic analysis reveals upregulation of pathways related to dendritic cell maturation, antigen presentation (MHC class I and II), co-stimulatory molecules (CD40, CD86), adhesion molecules (CD54), and IFN signaling, suggesting fibrocytes develop enhanced antigen-presenting and immunomodulatory capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by label-free quantitative proteomics (Figure 7) with appropriate pathway analysis using IPA. The proteomic changes are consistent across different CD8+ T cell activation states and show clear upregulation of immune-related pathways. The inference in C52 is reasonable based on the specific proteins upregulated. Sample size (n=4 per condition) is adequate for proteomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "An agent-based computational model incorporating experimentally-derived parameters for cell infiltration, proliferation, death, and chemotaxis accurately reproduces the spatial distribution of CD8+ T cells and fibrocytes observed in control and COPD tissues. The model predicts specific cell densities that match experimental measurements and demonstrates that the observed spatial organization requires chemotaxis rather than random distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by computational modeling results (Figure 8) that show good agreement with experimental tissue measurements. The model parameters are derived from literature and the authors' own experiments. The comparison with random distributions (Figure 8\u2014figure supplement 2) provides evidence that chemotaxis is required. However, the model is 2D while tissues are 3D, and some parameters have uncertainty. The 95% confidence intervals for predicted densities are narrow, suggesting the model is deterministic or has low stochasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The computational model reveals temporal dynamics of COPD development, predicting that fibrocyte-induced CD8+ T cell proliferation increases rapidly in COPD conditions and plateaus after approximately 4 years, while mixed cell cluster density increases gradually and reaches steady state after approximately 6 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by temporal analysis of simulation results (Figure 8H-J). These predictions cannot be directly validated experimentally due to the long time scales and difficulty of longitudinal human tissue sampling. The model provides testable predictions about disease progression kinetics, but these remain hypothetical until validated. The time scales are plausible but uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Computational modeling of therapeutic interventions predicts that ideal treatment restoring all cellular processes would require approximately 2.5 years to reach healthy steady state. Blocking CD54 has minimal effect, CXCR1/2 inhibition is moderately effective at reducing CD8+ T cells and mixed clusters, and combining both therapies does not substantially enhance efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by simulation results testing different therapeutic scenarios (Figure 9). The predictions are based on the validated model and provide quantitative estimates of treatment efficacy. However, these are computational predictions that have not been validated experimentally or clinically. The model suggests that targeting these specific interactions alone is insufficient, which is an important negative result. The 2.5-year recovery time is a model prediction that cannot be verified without clinical trials.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study collected 550 seawater samples twice monthly over 2 years (August 2017-August 2019) from 11 coastal sites at the Boso Peninsula, Japan. The sites are located on rocky shores around 35\u00b0N and are influenced by the warm Kuroshio Current, cold Oyashio Current, and inner-bay water from Tokyo Bay, creating latitudinal temperature gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C58-C60 provide comprehensive methodological details about sampling design, geographic location, and oceanographic context. The sampling scheme is clearly described with specific temporal frequency, duration, and spatial coverage. The oceanographic influences are appropriately cited and provide important environmental context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "eDNA metabarcoding generated 71,892,685 reads, with 98% assigned to fish species, detecting 856 MOTUs across 33 orders, 167 families, and 466 genera after phylogenetic refinement. This taxonomic diversity was similar to local fauna compiled from literature (948 species across 33 orders, 158 families, and 493 genera).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C61-C63 report sequencing output and taxonomic diversity with specific quantitative values. The comparison to known local fauna provides validation of the eDNA approach. The phylogenetic refinement process (reducing 1,130 initial MOTUs to 856) demonstrates quality control, though the specific criteria for refinement could be more explicit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57"
+    ],
+    "result": "Acanthopagrus schlegelii eDNA was detected in 504/550 samples (91.6%) and used as an internal standard to convert sequence reads to eDNA copy numbers. For samples without detectable standard DNA (16.7%), the minimum eDNA copy number (0.69 copies/2 \u00b5L extracted DNA) was assumed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C56, C57 describe the internal standardization approach. While the high detection frequency (91.6%) supports using A. schlegelii as a standard, the assumption of minimum copy numbers for non-detections (C57) introduces potential bias. The manuscript does not provide sensitivity analyses to assess how this assumption affects downstream results, particularly for the 16.7% of samples where the standard was not detected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Negative controls produced negligible contamination (177 \u00b1 665 reads, ~0.1% of positive samples), with all reads assigned to non-target taxa such as fish species never observed in the study region or freshwater species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 demonstrate appropriate quality control with quantitative contamination assessment. The very low contamination rate (0.1%) and assignment to non-target taxa support the reliability of the positive detections. The high standard deviation (665 reads) suggests variable contamination across controls, but the mean remains negligible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37"
+    ],
+    "result": "Fish eDNA concentrations and species richness showed clear seasonality, being higher in warmer months (July-October) than colder months (January-March) at all sites. Both metrics positively correlated with water temperature, consistent with seasonal migration patterns of tropical/subtropical fish transported by the Kuroshio Current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C37 describe seasonal patterns with visual support from Figure 1b-c and Figure 1\u2014figure supplement 2. The positive correlation with temperature is clearly stated and the biological interpretation linking to fish migration patterns is appropriately cited (Saito 2019; Senou et al. 2006). The consistency across all 11 sites strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The top 50 most frequently detected species had detection frequencies ranging from 148-532 (mean=296), representing 62.0% of total detection frequency (14,793 detections).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 provide clear quantitative data on species detection frequencies. The selection of top 50 species for analysis is justified by their high detection frequency and substantial representation of total detections (62%). This filtering approach is appropriate for time series analysis requiring sufficient data points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "At the regional scale, linear correlations among water temperature, total eDNA concentrations, interaction strengths, number of interactions, and species richness were statistically significant (p<0.05), except for temperature vs. mean interaction strengths. Interaction strengths decreased with increasing species richness, consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 report statistical relationships with appropriate p-value thresholds and cite supporting literature (Ratzke et al. 2020; Ushio 2022a). The exception for temperature vs. mean interaction strengths is appropriately noted. Figure 2\u2014figure supplement 1 provides visual support. The consistency with prior work strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The largest information flow was detected from Pseudoblennius marmoratus to Pseudolabrus eoethinus, with bidirectional flow between P. eoethinus and Gymnothorax kidako. These interactions are interpreted based on habitat overlap and feeding ecology (e.g., potential joint hunting by carnivorous species, facilitation between Chaenogobius annularis and Takifugu niphobles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C15, C64-C67 identify specific interactions but the ecological interpretations (C65, C67) are largely speculative ('may interact', 'may conduct joint hunting', 'may be prey'). While the statistical detection of information flow is data-driven, the biological mechanisms remain hypothetical without direct observational validation, which the authors acknowledge in C70.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "In-strengths and out-strengths of fish interactions were significantly associated with water temperature, species richness, and total eDNA concentration (GAMM, p<0.05), except for species richness effects on in-strengths. In-strengths increased with temperature while out-strengths showed the opposite pattern. Both interaction strength types decreased with increasing species richness and total eDNA concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 report GAMM results with appropriate statistical testing (p<0.05) and note exceptions. The opposite patterns for in-strengths vs. out-strengths with temperature (C17-C18) are interesting and appropriately discussed as potentially reflecting different temperature dependencies. Figure 3 and Supplementary file 1d provide supporting evidence. The large unexplained variation noted in the text is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "Temperature effects on interaction strengths were species-specific. In-strengths of five species (Halichoeres tenuispinis, Macrocanthus strigatus, Pempheris schwenkii, Stethojulis interrupta terina, Thalassoma cupido) increased with temperature, while in-strengths of three species (Ditrema temminckii temminckii, Engraulis japonicus, Girella punctata) and out-strengths of five species decreased with temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C45-C46, C48 demonstrate species-specific temperature responses with statistical support (p<0.0001 threshold for visualization in Figure 4). The identification of both positive and negative temperature effects across different species supports the second hypothesis (C34). However, the manuscript does not provide detailed species-level statistical results or effect sizes for all species, limiting full evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The study tested two hypotheses: (1) a positive relationship exists between temperature and interaction strengths at the community level, and (2) the relationship between temperature and interaction strengths varies among fish species due to species-specific ecologies and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 clearly state the study hypotheses. Hypothesis 1 is partially supported by C17 (in-strengths increase with temperature) but contradicted by C18 (out-strengths decrease). Hypothesis 2 is strongly supported by C20-C22 showing species-specific responses. The mixed support for hypothesis 1 is appropriately discussed in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C68"
+    ],
+    "result": "Previous studies established eDNA quantity as a proxy for fish abundance/biomass. Species-specific differences in genetic marker copy numbers and eDNA release rates do not cause serious biases in network reconstruction and interaction strength estimation because time series are standardized before analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C27 appropriately cites prior work establishing the eDNA-abundance relationship. However, C68's assertion that standardization eliminates species-specific biases is questionable. While standardization addresses relative scaling, it does not eliminate biases in detection probability or temporal dynamics that may differ among species. The manuscript acknowledges this limitation but does not provide empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study employed advanced time series methods: Transfer Entropy (TE) to quantify information flow between variables, Convergent Cross Mapping (CCM) for causality detection, and the multiview distance regularized (MDR) S-map to quantify interaction strengths even when network nodes exceed time series length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 accurately describe the analytical methods with appropriate citations to foundational papers. The MDR S-map's capability to handle high-dimensional networks (C32) is particularly important given 50 species were analyzed. The methods are well-established in the literature, though the manuscript could provide more detail on parameter selection and sensitivity analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The twice-monthly sampling frequency means detected interactions operate at the same temporal scale (weeks to months), focusing on behavior-level interactions (feeding, vigilance, schooling) rather than birth-death processes. The interactions could include various types such as competition and mutualism involved in population dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 appropriately interpret the temporal resolution of the study. The inference that twice-monthly sampling captures behavioral rather than demographic processes is reasonable, though the boundary between these processes is not always clear (e.g., predation affects both). The acknowledgment of multiple interaction types (C36) is appropriate given the analytical approach cannot distinguish interaction mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C73"
+    ],
+    "result": "Water temperature influences fish physiological activity in complex, species-specific ways. Temperature and oxygen concentration covary and both directly/indirectly affect fish physiology. The direction (positive or negative) of temperature effects on fish metabolic activities may be species-specific, potentially underlying species-specific effects on interaction strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C73 appropriately cite literature on temperature-physiology relationships (Claireaux et al. 2006; Kishi et al. 2005; Oyugi et al. 2012; Salvatteci et al. 2022). The inference connecting species-specific physiological responses to interaction strength patterns (C39) is logical but remains speculative without direct physiological measurements in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Temperature affects marine communities at multiple scales: global spatial and historical temporal scales (affecting community composition, diversity, and fish body size), and short temporal scales (weeks to months, affecting interactions via physiological activity). Understanding fish community assembly requires integrating results across different temporal and spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 synthesize prior work (appropriately cited) with current findings to argue for multi-scale temperature effects. The distinction between long-term effects (body size, C41-C42) and short-term effects (physiological activity, C43) is well-articulated. The call for multi-scale integration (C44) is a reasonable conclusion, though the manuscript does not demonstrate such integration empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C53"
+    ],
+    "result": "Increased water temperature may destabilize population dynamics of species with strengthened interactions (e.g., H. tenuispinis, M. strigatus) and stabilize dynamics of species with weakened interactions (e.g., E. japonicus, G. punctata). Changes in interaction strength correlation and distribution may influence community dynamics and stability in complex ways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47, C53 make inferences about stability consequences that are not directly tested in the study. While the logic connecting interaction strength changes to stability is supported by cited theory (Allesina et al. 2015; Tang et al. 2014; Ushio et al. 2018a), the actual stability effects are speculative without dynamic modeling or empirical validation. The use of 'may' appropriately indicates uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The study provides a practical framework to quantify response diversity using time series, where the S-map method calculates first derivatives as interaction strengths, analogous to additive model-based methods for quantifying species-specific responses to environmental changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 describes a methodological contribution with appropriate citation to Ross et al. 2023. The connection between S-map coefficients and response diversity is conceptually sound. However, the manuscript does not provide detailed comparison with other response diversity quantification methods or validate the approach against independent measures of response diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The study demonstrated that fish species interaction strengths changed with water temperature under field conditions, with interactions intensified in warmer water for several species and weakened for others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 summarize the main findings in the Conclusions. These are well-supported by the data presented in Figures 3-4 and statistical analyses (C16-C22). The demonstration of temperature effects on interactions under field conditions is a significant contribution, though limitations regarding validation and confounding variables are appropriately acknowledged elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Previous studies demonstrated that network reconstructions based on time series analysis work reasonably well and show meaningful patterns, but experiment/observation-based validations of reconstructed networks have not yet been performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 appropriately acknowledge both the support from prior work (with citations) and a key limitation: lack of direct validation. This is an honest assessment of the current state of the field. The manuscript appropriately interprets detected interactions cautiously (e.g., using 'may' in C64-C67) given this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C54",
+      "C55"
+    ],
+    "result": "eDNA methods offer advantages of low cost, minimal field sampling time/labor, and scalability, enabling frequent and large spatial-scale ecological monitoring. The framework integrating eDNA analysis and advanced statistical analyses can be applied to various organisms and paves the way to understand and forecast dynamics of ecological communities under field conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C54-C55 describe methodological advantages and broader implications. The advantages are appropriately cited (Ushio et al. 2022c) and the potential for large-scale monitoring is demonstrated by reference to ANEMONE DB. However, the claim that the framework 'paves the way' (C55) is somewhat aspirational\u2014while the approach is promising, significant methodological development is still needed (as acknowledged in the text).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In nature, multiple environmental variables continuously change and interaction strengths fluctuate through time and space. Interactions detected under controlled environments might not be observed under field conditions. The research framework enables detection and quantification of interactions in nature, providing a complementary view critical for understanding temperature effects on fish interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 discuss the value of field-based approaches versus controlled experiments. The point that lab-detected interactions may not occur in nature (C75) is valid and appropriately cautious. The characterization of the framework as 'complementary' (C76) rather than superior to experimental approaches is appropriately modest. Citations to prior work (Ushio 2022a; Ushio et al. 2018a) support the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior work established that: weak interactions stabilize fish community dynamics; interaction strengths decrease with diversity in microbial and field communities; plant-herbivore interactions are stronger in warmer regions; functional traits underlie temperature-interaction strength relationships; and eDNA metabarcoding enables efficient monitoring with embedded interaction information in quantitative time series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26, C28-C29 appropriately cite and summarize prior work that motivates and contextualizes the current study. The citations appear accurate and relevant. These claims establish the theoretical and methodological foundation for the study but do not constitute results of the current work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C35",
+      "C41",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The study identified strong early selection for HIV-1 envelope glycosylation mutations and escape from autologous strain-specific antibodies, followed by weaker selection for bnAb resistance. Beneficial mutations clustered in specific Env regions (V1, V3, V4, V5) and were predominantly nonsynonymous (97% in CH505, 92% in CH848). Mutations conferring resistance to intermediate-breadth antibodies (CH235) were less beneficial than those escaping strain-specific antibodies, and bnAb resistance mutations (CH103) were even less beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C28-C31, C35, C41, C46-C48 collectively demonstrate a clear temporal and magnitude hierarchy of selection pressures. The enrichment analysis with statistical significance (p-values provided), structural mapping to Env regions, and quantitative comparison of selection coefficients across antibody types provide converging evidence. The high proportion of nonsynonymous mutations among top beneficial mutations (with statistical validation) supports the functional importance of these changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C60",
+      "C73",
+      "C90",
+      "C95"
+    ],
+    "result": "The inferred fitness effects of mutations in HIV-1 (humans) and SHIV (rhesus macaques) with the same transmitted/founder Env sequences were remarkably similar, with strong correlations (Pearson's r=0.96 and 0.95 for CH505/SHIV.CH505 and CH848/SHIV.CH848). This similarity suggests highly similar evolutionary pressures on the envelope protein across species and indicates strong functional constraints on viral protein evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C60, C73, C90, C95 are strongly supported by quantitative correlation analysis (Figure 5) showing r>0.95 with p<10^-20. The correlation extends beyond observed sequences to shuffled sequences (Figure 5\u2014supplement 1), demonstrating that similarity is not an artifact. The lack of correlation between CH505 and CH848 landscapes (Figure 5\u2014supplement 2) serves as a negative control, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Rapid viral fitness gains preceded the development of broadly neutralizing antibodies in both SHIV-infected rhesus macaques and HIV-1-infected humans. RMs that developed broad antibody responses showed clearly higher rates of fitness gain than those with narrow-spectrum antibodies. These fitness differences were not attributable to bnAb resistance mutations, which were only moderately selected and appeared after bnAbs developed, suggesting that rapid viral population changes are a cause rather than consequence of antibody breadth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C61-C63, C69-C72 are supported by temporal analysis showing fitness gains precede bnAb detection (Figure 6, with specific example in RM5695 where fitness gains at ~2 weeks preceded bnAb detection at 16 weeks per C86). The clear separation between RMs with and without broad responses (Figure 6) and the exclusion of bnAb resistance mutations as drivers (C63, Figure 6\u2014supplement 1) provide strong evidence for the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C57",
+      "C58"
+    ],
+    "result": "In rhesus macaque studies, 2/10 RMs infected with SHIV.CH505 and 2/6 RMs infected with SHIV.CH848 developed antibodies with substantial breadth. The number of RMs in which a mutation was observed showed only weak association with the mutation's fitness effect. Five of the top six SHIV.CH505 mutations with largest selection coefficients were associated with increased viral load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C57-C58 are directly supported by data from Roark et al., 2021 and the study's own analysis. The weak association between mutation frequency across hosts and fitness (C57, Figure 4\u2014supplement 1) is explicitly shown. The identification of VL-enhancing mutations (C58, Supplementary file 8) validates the method's ability to detect functionally important mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "RM6072 developed tier 2 neutralizing antibodies (DH650 lineage) that lacked key mutations critical for breadth. Resistance to DH650 was conferred by the T234N mutation (selection coefficient 4.5%), which adds a glycan at site 234 that broadly neutralizing antibodies can accommodate but DH650 cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by citation to Roark et al., 2021 for antibody characterization and by the study's own inference of the selection coefficient for T234N. This provides a mechanistic explanation for why RM6072 followed a pathway toward but did not achieve bnAb development, serving as an informative outlier case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Epistatic interactions inferred in HIV-1 and SHIV data were modest, and effective selection coefficients from the epistatic model were highly correlated with selection coefficients from the additive model. This indicates that the additive fitness model adequately captures the main selective pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by explicit analysis (Figure 6\u2014supplements 2-4) showing modest epistatic interactions and high correlation (r~0.85-0.95) between additive and epistatic model parameters. This validates the simpler additive model used throughout the study and demonstrates robustness of the main conclusions to model choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "Specific antibody resistance mutations were identified with quantified selection coefficients: R166K and R169K (conferring resistance to V2 apex bnAb RHA1) had selection coefficients of 0.49% and 0.43% in RM5695; Y330H and N334S (conferring resistance to V3 autologous nAbs) had selection coefficients of 3.0% and 4.6% in RM6072. Overall, mutations conferring resistance to autologous strain-specific antibodies were more strongly selected than bnAb resistance mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80, C82 provide specific quantitative measurements of selection coefficients for known resistance mutations, with values stated explicitly in the text and supplementary files. The general pattern (C80) that strain-specific antibody resistance mutations are more strongly selected than bnAb resistance is supported by multiple examples and is consistent with the temporal analysis in Figure 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "There was modest overlap between sites under selection identified by LASSIE (a frequency-based method used by Roark et al.) and the mutations inferred to be most strongly selected in this study. For SHIV.CH505, the E640D mutation identified by LASSIE ranked second among 664 mutations in this analysis, and mutations at the remaining 5 LASSIE-identified sites were all in the top 20%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 provide a direct comparison with an alternative method, showing partial agreement. The specific ranking of E640D (2nd of 664) and the top 20% placement of other LASSIE-identified sites demonstrate that the MPL method captures known selected sites while providing additional quantitative resolution. This serves as external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The relationship between the number of individuals in which a mutation was observed and its inferred fitness effect was fairly weak, and high-frequency mutations were not necessarily highly beneficial. This suggests that mutational biases and/or sequence space accessibility may play significant roles in short-term viral evolution, even for highly mutable viruses, and that correlations between mutations persist despite high recombination rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by explicit analysis (Figure 4\u2014supplement 1) and discussion of the weak relationship between mutation frequency and fitness. The interpretation regarding mutational biases (C92) is a reasonable inference from this observation. Citation support for persistent correlations despite recombination (C94) strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study assumes a static viral fitness landscape over time, which is acknowledged as a limitation. While constant selection coefficients typically reflect average fitness effects when true contributions are time-varying, alternative explanations exist: rapid fitness gains could have been driven by undetected bnAb lineages. However, in RM5695, rapid fitness gains (~2 weeks) substantially preceded bnAb detection (16 weeks), and strong selection for known bnAb resistance mutations was not observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 transparently acknowledge methodological limitations (C83) with support from prior work (C84). The alternative explanation (C85) is presented fairly, but evidence from RM5695 (C86) argues against it. This represents appropriate scientific caution while still supporting the main interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C96"
+    ],
+    "result": "The study suggests that immunogens could be engineered to reproduce the dynamics of viral population change associated with rapid fitness gains that precede bnAb emergence, and that despite evolutionary constraints, a large number of neutral or nearly-neutral mutational paths may remain unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74 and C96 are speculative suggestions for future work based on the study's findings. While they are reasonable extrapolations from the observed patterns, they represent hypotheses rather than tested conclusions. No experimental validation of engineered immunogens or systematic exploration of neutral paths is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C75",
+      "C81",
+      "C84",
+      "C87",
+      "C94",
+      "C98"
+    ],
+    "result": "The manuscript establishes background knowledge about HIV-1 evolution, immune escape, genetic diversity, and bnAb development through citations to prior literature. This includes established facts about HIV-1 biology, the rarity and delayed development of bnAbs, associations between viral load/diversity and bnAb development, and specific information about CH505 and CH848 antibody development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C25, C75, C81, C84, C87, C94, C98 represent background knowledge and prior work that is appropriately cited. These claims establish the scientific context and are supported by references to peer-reviewed literature. They are not novel findings of this study but provide necessary foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The study's findings support the potential predictability of viral evolution, at least over short time scales, based on observed parallel evolution patterns across hosts and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is an inference supported by the strong correlation in fitness landscapes between humans and RMs (C7, r>0.95), the identification of parallel mutations, and consistency with prior observations of parallel evolution cited in C98. However, the predictability is explicitly limited to \"short time scales\" and the sample size is modest (2 founder sequences, 13 RMs), which appropriately tempers the conclusion.",
+    "result_type": "MINOR"
+  }
+]

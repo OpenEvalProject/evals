@@ -1,0 +1,2570 @@
+{
+  "submission": {
+    "id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T18:49:31.920735Z",
+    "updated_at": "2025-11-19T18:49:31.920735Z"
+  },
+  "content": [
+    {
+      "id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "content_type": "manuscript",
+      "content_text": "# Spatiotemporal brain complexity quantifies consciousness outside of perturbation paradigms\n\n## Authors\n\n- Martin Breyton<sup>1</sup> ([ORCID: 0000-0002-7979-3861](https://orcid.org/0000-0002-7979-3861)) \u2020\n- Jan Fousek<sup>2</sup> ([ORCID: 0000-0002-8371-2956](https://orcid.org/0000-0002-8371-2956))\n- Giovanni Rabuffo<sup>3</sup> ([ORCID: 0000-0003-3947-1662](https://orcid.org/0000-0003-3947-1662))\n- Pierpaolo Sorrentino<sup>3</sup> ([ORCID: 0000-0002-9556-9800](https://orcid.org/0000-0002-9556-9800))\n- Lionel Kusch<sup>3</sup>\n- Marcello Massimini<sup>4</sup>\n- Spase Petkoski<sup>3</sup> ([ORCID: 0000-0003-4540-6293](https://orcid.org/0000-0003-4540-6293))\n- Viktor Jirsa<sup>3</sup> ([ORCID: 0000-0002-8251-8860](https://orcid.org/0000-0002-8251-8860)) \u2020\n\n### Affiliations\n\n1. Aix-Marseille Universit\u00e9, APHM, Inserm, INS Institut de Neurosciences des Syst\u00e8mes, H\u00f4pital Sainte-Marguerite, Service de Pharmacologie Clinique et Pharmacosurveillance Marseille France ([ROR:0338wkj94](https://ror.org/0338wkj94))\n2. Central European Institute of Technology (CEITEC), Masaryk University Brno Czech Republic ([ROR:01p7k1986](https://ror.org/01p7k1986))\n3. Aix-Marseille Universit\u00e9, Inserm, Institut de Neurosciences des Syst\u00e8mes, UMR 1106 Marseille France ([ROR:019kqby73](https://ror.org/019kqby73))\n4. University of Milan Milan Italy ([ROR:00wjc7c48](https://ror.org/00wjc7c48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSignatures of consciousness are found in spectral and temporal properties of neuronal activity. Among these, spatiotemporal complexity after a perturbation has recently emerged as a robust metric to infer levels of consciousness. Perturbation paradigms remain, however, difficult to perform routinely. To discover alternative paradigms and metrics, we systematically explore brain stimulation and resting-state activity in a whole-brain model. We find that perturbational complexity only occurs when the brain model operates within a specific dynamical regime, in which spontaneous activity produces a large degree of functional network reorganizations referred to as being fluid. The regime of high brain fluidity is characterized by a small battery of metrics drawn from dynamical systems theory and predicts the impact of consciousness-altering drugs (Xenon, Propofol, and Ketamine). We validate the predictions in a cohort of 15 subjects at various stages of consciousness and demonstrate their agreement with previously reported perturbational complexity, but in a more accessible paradigm. Beyond the facilitation in clinical use, the metrics highlight complexity properties of brain dynamics in support of the emergence of consciousness.\n\n## Introduction\n\nWakefulness in healthy subjects is linked to motor behavior and consciousness. Under some pathological or physiological conditions, behavioral response might break down, but consciousness doesn\u2019t necessarily vanish. Anesthetic drugs (Figure 1a) are used to medically induce reversible states of unconsciousness of various depths, typically characterized by unresponsiveness. Common anesthetic drugs like Xenon or Propofol lead to an unresponsive and unconscious state resembling NREM sleep (Murphy et al., 2011). Others, such as Ketamine, can cause an unresponsive yet active state similar to REM sleep where conscious experience remains possible even without behavioral response (Hobson, 2009). These states of disconnected consciousness can arise following brain injury and pose challenges in clinical practice for consciousness assessment and prognosis evaluation (Edlow et al., 2021; Giacino et al., 2018). In an attempt to solve this problem, recent studies have developed a technique based on transcranial magnetic stimulation (TMS, Casali et al., 2013), in which the brain is stimulated by TMS pulses (Hallett, 2007) and evoked responses are recorded with simultaneous electroencephalography (EEG). It is shown that the evoked response can qualitatively differ depending on the patient\u2019s state (awake, REM, anesthesia, etc.), and is characterized by a simple scalar metric: the perturbational complexity index (PCI). PCI measures the complexity of the distributed spatiotemporal response in the brain, with values close to 1 when the complexity is high, and closer to 0 for simpler responses. Notably, increasing evidence suggests the PCI index as a reliable marker (Figure 1b) to differentiate between awake individuals and those in NREM sleep or an anesthetic-induced unconsciousness (Casarotto et al., 2016; Sarasso et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98920/elife-98920-fig1-v1.jpg)\n\n**Figure 1.:** (a) Consciousness is a continuum and can be explored with drug-induced coma of various depths (Xenon, Propofol >Ketamine > Wakefulness). We hypothesize a correspondence between the variations in complexity found with PCI and the dynamics of spontaneous activity across the spectrum of consciousness. (b) We sketch various patterns of spatio-temporal activity reflecting changes in perturbational complexity from left to right. In (c), we show the conceptual shapes of corresponding manifolds of brain activity responsible for different sizes of the functional repertoire (number of wells) and associated with consciousness. (d) The brain is modeled as a network of neural masses coupled by an empirical connectome. This whole-brain model serves as a platform to simulate resting state activity (bottom left) and cortical stimulation (top left, example of firing rate time series with applied stimulus). Dynamical properties of the simulations are studied and compared with data features of human empirical recordings of spontaneous activity (bottom right, EEG during wakefulness and under three anesthetics) and stimulation (top right, TMS-EEG protocol performed in the same conditions).\n\nDynamical systems theory is becoming increasingly popular in neuroscience (Breakspear, 2017; Breakspear, 2007) to study the evolution of spontaneous brain activity, that is resting state. Resting-state activity is highly organized and displays structured patterns of regional activations in large-scale recordings across imaging modalities. Some co-activation patterns are consistent across individuals and are known as functional brain networks (Damoiseaux et al., 2006). Over time, these activation patterns can emerge and reappear, suggesting a rich temporal structure with unique characteristics across tasks and individuals (Peng et al., 2023). Functional Connectivity (FC) measures capture the topographic organization of these patterns (van den Heuvel and Hulshoff Pol, 2010) and are static views of the functional coordination between brain regions. Their temporal organization is estimated by dynamic Functional Connectivity (dFC), generally measured by correlating FC patterns at distinct time windows (Hansen et al., 2015; Preti et al., 2017). In this context, data complexity relates to the range of activity patterns seen over time (Ghosh et al., 2008; Jirsa and Sheheitli, 2022), defining a functional repertoire (Figure 1c). A diverse functional repertoire, supporting complex dynamics, is characterized by the exploration of numerous brain states, found in specific dynamical regimes (Hansen et al., 2015; Golos et al., 2015; Sorrentino et al., 2021b). Further evidence suggests that the brain is self-regulating around the transition between ordered and disordered phases (Cocchi et al., 2017; O\u2019Byrne and Jerbi, 2022), where a high fluidity results in a rich temporal structure. In this study, we aim to examine the connection between perturbational complexity and fluid dynamics near this transition.\n\nFor that purpose, we use a large-scale brain network model \u2013 The Virtual Brain (TVB, Sanz Leon et al., 2013) \u2013 to simulate non-invasive brain stimulation and spontaneous activity (Figure 1d). Various dynamical regimes are explored by varying a global coupling parameter that scales the influence of the structural connections as compared to the local regional dynamics. Earlier studies indicated that a properly scaled global coupling parameter can produce phenomena of co-activations between brain regions, realistic FC patterns, and non-trivial dFC, as seen in fMRI experiments (Rabuffo et al., 2021; Lavanga et al., 2022). Here, we quantify the response to simulated TMS across dynamical regimes using the simulation PCI (sPCI) and connect it to dFC metrics. We hypothesize that simulations can only produce high sPCI and non-trivial dFC when the system is fine-tuned to a particular fluid regime. We then verify our findings by comparing empirical spontaneous and stimulation data of 15 subjects, each acquired during wakefulness and various states of consciousness (Propofol anesthesia ($N=5$), Xenon anesthesia ($N=5$), Ketamine anesthesia ($N=5$)).\n\n## Results\n\n### Large-scale brain model and dynamical regimes\n\nTo explore the relationship between resting state dynamics and brain responsiveness, we used a large-scale brain network model (Sanz-Leon et al., 2015). This model consists of 84 cortical and subcortical regions, each of them being conceptualized by a neural mass model (NMM). The NMM is composed of a set of stochastic nonlinear differential equations, which describes the evolution of both the average firing rate $r(t)$ and the average membrane potential $V(t)$ of an ensemble of quadratic integrate and fire (QIF) neurons (Montbri\u00f3 et al., 2015). The equations ascribe the dynamics of the node to two fixed points. One is an oscillatory, high-firing state, the upstate (inward spiral), and the other is a low-firing rate downstate (stable fixed point). Every node is influenced by a stochastic noise component, allowing it to transition between these two states. When embedded into a brain network, the state of each node is also influenced by the afferent input from its neighbors through the connectome (Sporns, 2011). The intensity of input any region receives is weighted by the size of the bundle of white fiber tracts, as estimated by diffusion-weighted imaging (DWI). For our study, due to the lack of subject-specific DWI data, we employed a generic connectome from a healthy subject obtained from the Human Connectome Project (HCP, Van Essen et al., 2013).\n\nExamining the system at the network level, spontaneous activity can present a variety of dynamics depending on two global parameters: the global coupling $G$ (which scales the connectome) and noise intensity (white noise with zero mean and standard deviation $\\sigma$). We highlight characteristic regimes (Figure 2), showing a carpet plot of firing rate activity and the profile of cascades over time. The profile of cascades was computed as the instantaneous deviation from baseline activity (see Methods). In the low coupling regime (Figure 2a), regions of the network are weakly connected and mostly behave independently, driven by noise. Hence, when the noise is low (Figure 2a, bottom), the activity is generally low and sparse, as most of the nodes are in the down state, with some rare and transient activations. As noise increases (Figure 2a, top), activations are more frequent, yet stochastic and non-coherent. In contrast, when global coupling is set to a high value (Figure 2c), brain regions are tightly connected, and the activity of each node is heavily entrained by the rest of the network. In this regime, most nodes tend to stay in the upstate due to high average input (proportional to $G$, since $I(t)=f(G,W)$). Only nodes that are weakly connected to the rest of the network will stay in the downstate despite high coupling. This behavior gives rise to a stable pattern of regional coactivations that involve characteristic subnetworks mirroring the structural connectivity (Rabuffo et al., 2021; Pope et al., 2021) and resulting in stereotyped activity on a slow timescale. However, in between these two regimes lies an intermediate regime, around a working point (Figure 2b), where cascades of coactivations of different sizes and durations occur in a complex and unpredictable fashion. Yet these coactivation patterns are not purely stochastic (Battaglia et al., 2020). They are often repetitive, revisiting the same neighborhood in state space (Fousek et al., 2024).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98920/elife-98920-fig2-v1.jpg)\n\n**Figure 2.:** Examples of firing rate time series of the model depending on the strength of interaction between nodes (global coupling, $G$) and noise intensity ($\\sigma$). On the left column (a), the interactions are weak ($G=0.27$, $\\sigma=0.022$ (bottom), $\\sigma=0.056$ (top)) and the activity is sparse. On the right column (c), connections are tighter (G=0.65, sigma-bottom=0.022, sigma-top=0.056) and a stable coactivation pattern appears in an ordered fashion. In the middle (b) (bottom), global coupling and noise are at optimal values (G=0.56, sigma = 0.036) and allow the emergence of structured patterns (coactivation cascades) of different sizes and durations. Below each time series, the blue line plot shows a quantification of cascades. It corresponds to the absolute value of the mean signal after z-scoring each node\u2019s activity. The AUC is the area under the blue line; it is a quantification of the presence of co-activation cascades.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98920/elife-98920-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Time series of firing rate activity showing the effect of stimulation in the regime corresponding to maximal fluidity ($G=0.56$). On the left, a coactivation cascade is disrupted by the stimulus (sPCI <1) and on the right, a cascade is created (sPCI >1). (b) In the regime of weak coupling ($G=0.27$) the stimulus has little to no effect (sPCI = 1). (c) In the regime of strong coupling ($G=0.65$), the effect of stimulus is also almost nonexistent (sPCI = 1). (d) The distribution of the minimum sPCI value (across trials) in parameter space reveals a peak around $G=0.55$. In the low noise regimes, the low values of sPCI are due to a stimulation artifact inducing strong change in the normalizing factor of the sPCI (see Methods).\n\n### Modeling stimulation and spontaneous activity\n\nBrain stimulation was modeled by adding a transient external current to the membrane potential, mimicking a single pulse stimulus to a cortical brain region. When perturbed, the entire system shifts from its current state as the stimulus propagates through the network, until it settles into a new stable state. In line with the PCI experimental protocol, we sampled from multiple initial conditions and stimulated regions, presenting the maximum sPCI for each regime (i.e. each ${G,\\sigma}$). For each simulation, we measured the complexity of the activity of the whole network over a 10 second period post-stimulus. We then compared this to the complexity of the baseline (i.e. the same simulation without a stimulus) using a ratio (see Methods). This helped us determine the relationship between the current dynamical regime and the system\u2019s ability to integrate a perturbation flexibly. We found that the maximum increase in complexity is reached when the global coupling is set around $G=0.55$, and complexity itself can be increased fivefold with respect to baseline (Figure 3, top-left). If the system operates far from this working point, the stimulus has minimal impact on global activity, meaning no notable change in complexity. The visual inspection of stimulation time series (1) across different regimes indicates that stimulation can trigger (or disrupt) coactivation cascades when the system is near maximum fluidity ($G=0.55$). This behavior is responsible for a symmetry between minimum and maximum sPCI, as one can see that they share the same distribution in the parameter space. If sPCI is greater than one (lower than one), the trajectory of the system moves towards (away from) an attractor, thus triggering (destroying) a coactivation cascade. When sPCI is close to one, either stable attractors are absent, or it\u2019s challenging to deviate from the attractor, but the resulting response won\u2019t exceed the baseline activity\u2019s complexity. To compare responsiveness to resting state activity, we examined the fluidity of the system, defined by the variance of the upper triangular part of the dFC. Fluidity captures the recurring patterns of co-activation across time and, more specifically, the switches between highly correlated and non-correlated patterns. Even though direct evidence is sparse due to challenges in probing human brain activity\u2019s manifold, fluidity is believed to reflect the complexity of the energy landscape and the number of attractors (Hansen et al., 2015; Fousek et al., 2024). The distribution of fluidity in the model\u2019s parameter space (Figure 3, bottom-left) shows a peak near the working point value, reflecting recurring cascades during simulation, and decreases monotonously as the regime is drawn away from it.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98920/elife-98920-fig3-v1.jpg)\n\n**Figure 3.:** Metrics of spontaneous activity and following a perturbation in the parameter space of the model (G, sigma). Change of complexity after a stimulation measured by the sPCI (top left). Fluidity of the dynamics (bottom left) of spontaneous firing rate activity measured by $Variance(dFC)$ with a sliding window of $3s$ and $1s$ step size. The optimal point or working point where fluidity is maximal (bottom left, red arrow). The number of cascades (top middle) measured by the AUC of the z-scored absolute mean signal. Global Activation Potential (GAP; top-right) is assessed by the fastest change in the residual sum of squares across sources\u2019 membrane potential. Complexity of spontaneous activity (bottom middle) measured by the Lempel-Ziv complexity of binarized firing rate activity (with a threshold at $r=0.7$). And the size of the functional repertoire (bottom right) defined by the number of unique patterns of binarized firing rate activity (with a threshold at $r=0.7$).\n\nTo highlight that fluidity is a property of the dynamics and is not just tied to a single metric, we investigate and present three additional metrics characterizing spontaneous activity. We first calculate the raw Lempel-Ziv (LZ) complexity of each regime after binarization of the time series. LZ complexity counts the number of unique patterns (sequences of bits) found in a binary string, allowing for patterns of different sizes. A simple fixed threshold was used to binarize each time series into a sequence of upstates and downstates. LZ complexity (Figure 3, bottom-middle) is found to increase abruptly as global coupling crosses the working point separating a low complexity-low coupling regime from a high complexity-high coupling regime. Second, we extracted the size of the functional repertoire of the model by counting the number of unique patterns that the network takes over time. As for LZ complexity, there is a separation of the space around the working point by a sharp increase of the functional repertoire (Figure 3, bottom-right), although this separation shifts towards lower coupling when noise increases and is lost for regimes with high noise. Lastly, we measured the Global Activation Potential (GAP) of the system. GAP aims at capturing the fastest change in global activity of the network, and it is computed as the maximum of the gradient of the residual sum of squares between sources (see Methods). Again, a similar pattern is seen with an increase around the working point (Figure 3, top-right). These tight relationships between simulation features (on spontaneous and stimulated activity) and the tuning of global coupling suggest that the same fluid dynamical regime underpins both optimal brain responsiveness and optimal spontaneous activity. Under the assumption that the global coupling models a free parameter in the brain, which is subject to change upon internal and/or external states, global dynamical changes should be found for different brain states. Based on this reasoning, we sought to retrace the signatures of these same dynamical regimes in real data in spontaneous EEG recordings during wakefulness and anesthesia.\n\n### Data analysis\n\nTo do so, we used previously published experimental data, provided by Sarasso et al., 2015. 15 healthy subjects underwent a TMS-EEG protocol and a spontaneous EEG during anesthesia (Xenon, Propofol, Ketamine) and wakefulness. These anesthetics were posited as empirical models of loss of consciousness. Reports upon awakening were used as a ground truth for conscious experience, and it was found that subjects under Xenon or Propofol had no recollection of conscious experience, whereas Ketamine-induced anesthesia was always associated with reports of consciousness (i.e. dreaming). During the TMS-EEG protocol, multiple sessions of stimulation were performed, each consisting of multiple trials per stimulation site. A PCI value (across trials average) was obtained for each session, and the maximum PCI across sessions was retained. Only the maximum value of PCI for each subject and condition was available to us. A PCI at 0.31 was benchmarked as a threshold for consciousness (Casarotto et al., 2016).\n\nAs published previously, PCI successfully distinguishes conscious from unconscious states. Complexity measured with PCI is systematically higher during wakefulness than under anesthesia for Xenon and Propofol drugs, but not for Ketamine induced anesthesia, which is grouped with wakefulness ($PCI>0.31$). Based on modeling results linking perturbational complexity and spontaneous activity metrics to the same underlying dynamical regimes modulated by global coupling, we hypothesized that variations of complexity should also be found at rest and associated with consciousness. We then studied the four resting-state metrics described previously to demonstrate that consciousness is associated with more complex activity at rest. For all subjects, at least one metric can perfectly distinguish wakefulness from anesthesia. We first extracted fluidity of the recordings on a broadband spectrum (high-pass filter at $0,5Hz$ and low-pass at $60Hz$). Dynamic functional connectivity was calculated using circular correlation between electrodes with a sliding window approach (1 s window, 100 ms step size; Perdikis et al., 2025). Then, for each subject and recording, we used a bootstrap procedure to sample uniformly with replacement 50 segments of 1 min. Complexity, the size of the functional repertoire, and GAP were also computed on each segment. When binarization was applied, we z-scored each electrode independently and thresholded at 3 standard deviations. This yielded a distribution of 50 points for each subject and condition (anesthesia or wakefulness). We present in Figure 4 the results, subject-wise, for the four resting state metrics we studied: fluidity, complexity, functional repertoire, and GAP between anesthesia and wakefulness conditions. In Figure 5, we show classification results when grouping participants either on anesthesia (vs wakefulness) or conscious report (vs. no report). We cross-plot each metric against the PCI on the top and show classification accuracies of all metrics after fitting an SVM classifier with a linear kernel. For these last results, we computed complexity and the size of the functional repertoire on the full recordings and adjusted them by the length of the signal. According to our hypothesis and modeling results, we expected higher values of fluidity during wakefulness than anesthesia (Figure 4a). The separation between conditions was perfect for Propofol and Xenon anesthesia. Ketamine results were inconsistent, with subject 2 showing a reversed pattern (higher fluidity during anesthesia). Based on the results obtained on perturbational complexity, we expected to find systematically more spontaneous complexity during wakefulness than anesthesia (Figure 4c). For Propofol anesthesia, all subjects had a good separation, and for Xenon, three subjects were well classified, but two had overlapping distributions of complexity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98920/elife-98920-fig4-v1.jpg)\n\n**Figure 4.:** Subject-specific distributions of (a) fluidity, (b) the size of the functional repertoire, (c) Lempel-Ziv complexity, and (d) GAP, between wakefulness (blue) and anesthesia (red). From left to right in each panel: Ketamine group, Propofol group, and Xenon group. Values and distributions (kernel density estimations) were obtained by randomly sampling with replacement a minute of signal within each subject\u2019s recording (50 samples drawn per subject per condition, 1 point per sample). Fluidity was calculated on the full recordings for each subject.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98920/elife-98920-fig5-v1.jpg)\n\n**Figure 5.:** (a) Cross-plots between the PCI obtained experimentally during a TMS-EEG protocol and each metric on spontaneous recordings (functional repertoire, complexity, fluidity, and GAP). Complexity and the size of the functional repertoire were normalized by the length of the recording in minutes. (b) Classification accuracy of a Support Vector Machine classifier with a linear kernel to distinguish either between anesthesia and wakefulness (downward orange triangles) or between conscious report and no report (upward blue triangles). Dashed lines represent the benchmark performances achieved by PCI classification (100% for consciousness and 87% for anesthesia).\n\nFor Ketamine, subject 4 had overlapping distributions when the other 4 showed good separation, though the relationship was inverted for subjects 3 and 5, with less complexity found in wakefulness. In line with Rabuffo et al., 2021, we hypothesized that GAP was associated with the flexibility of the brain to switch between distant functional states and expected this ability to be lost during anesthesia. The results for GAP were satisfying for the Xenon and Propofol conditions but poor for all subjects under Ketamine (Figure 4d). As expected, when the separation occurs between wakefulness and anesthesia, the GAP is consistently higher during wakefulness. It is likely hinting at different mechanisms of action of the drugs on neural dynamics, in which the GAP is not altered by Ketamine. Lastly, as the size of the functional repertoire reflects the extent of explored functional patterns, we were expecting to find it associated with wakefulness, when the brain is more solicited and needs to reconfigure more often. Indeed (Figure 4b), it is the metric that permits a perfect separation between wakefulness and anesthesia for all subjects and conditions. The number of states explored during the recordings was consistently larger during wakefulness than anesthesia for all drugs and subjects. Classification results using a linear SVM are reported in Figure 5. We report the crossplots of PCI and each of the resting-state metrics for all subjects and conditions in Figure 5a. Each point corresponds to the calculation of the given metric over the whole recording normalized by its duration. We find that for fluidity (Figure 5a, third panel), there is a perfect linear separation between Propofol and Xenon anesthesia on the left side and Wakefulness and Ketamine anesthesia on the right side. This corresponds to the classification accuracy result of 100% for the consciousness class in Figure 5b, which is the same for PCI. As expected, PCI and fluidity behave poorly at classifying the presence of an anesthetic agent due to the confusion induced by Ketamine. However, the size of the functional repertoire performs an almost perfect classification for this grouping. Only one subject under Ketamine has a high functional repertoire (Figure 5a, left panel), but all other subjects in the anesthesia condition have a size of functional repertoire roughly under 100. Classification accuracies for complexity and GAP at the group level are less performant but are shown for completeness.\n\n## Discussion\n\nUnderstanding the neural substrates of consciousness stands as one of the most significant scientific challenges encompassing both philosophical and theoretical dimensions. This challenge also stems from clinical practice, such as the need to characterize disorders of consciousness and their prognosis (Edlow et al., 2021; Giacino et al., 2018; Sanders et al., 2012). The detection of consciousness independently of sensory processing and motor behavior has recently improved with the development of the Perturbational Complexity Index that relies on the analysis of TMS-evoked potentials (Casarotto et al., 2016). Despite its remarkable performance, TMS-EEG can be challenging to implement in clinical practice as it requires complex equipment. In this work, we explored both the dynamics of spontaneous activity and responsiveness in a large-scale brain model and found strong evidence that common network-level factors govern the two. We demonstrate using a large-scale brain model that a similar dynamical regime of activity can cause perturbational complexity and complex (fluid) spontaneous activity. Using empirical data, we showed that spontaneous activity analyzed through appropriate metrics can be effective in assessing consciousness in wakefulness and anesthesia.\n\nA large body of evidence highlights a relationship between the complexity of brain signals and conscious experience, as recently reviewed (Sarasso et al., 2021). The first theoretical argument started from a phenomenological description of conscious experience that led to theorizing the expected properties of the underlying neural activity (Tononi and Edelman, 1998; Tononi et al., 1998). In this view, the two building blocks of consciousness are functional integration (each experience is unified as a whole) and functional differentiation (each experience is unique and separated from others). These theoretical findings lead to the development of metrics rooted in information theory to estimate these functional properties on neural data. Of all these metrics, the PCI (relying on Lempel-Ziv complexity and entropy) revealed an interpretable and practical link between the spatio-temporal complexity of the propagation of a perturbation in the brain and the level of consciousness. In parallel, a large literature is dedicated to understanding brain function from the perspective of dynamical systems theory. In this field, the brain is viewed as a complex open system far from equilibrium composed of a large number of coupled components (e.g. neurons at the microscale or neural masses at the mesoscale) whose interactions are responsible for the emergence of macroscopic patterns. In such systems, drastic changes such as phase transitions or bifurcations can occur spontaneously or under the influence of a global parameter, with major effects on the dynamics. Brain simulations like the one presented in this work support the idea that a rich dynamics is possible when the system\u2019s parameters are fine-tuned around specific values (Golos et al., 2015). In fact, although debated, one prominent theory in neuroscience posits that the brain self-regulates near a critical regime, in the vicinity of a phase transition (Cocchi et al., 2017; O\u2019Byrne and Jerbi, 2022). Simply put, this property allows the brain to be flexible enough to reconfigure and adapt dynamically to a changing environment, all while being stable enough to engage in complex sustained activities. Among other things, the critical regime is known to maximize information processing (Beggs, 2008) or to be related to cognitive processes (Xu et al., 2022), and criticality in the brain is also possibly linked to consciousness (Tagliazucchi et al., 2016; Tagliazucchi, 2017; Toker et al., 2022). Dynamical systems theory in neuroscience has also found a strong paradigm with the concept of manifolds. It\u2019s been shown that a high-dimensional nonlinear dynamical system displays low-dimensional but nevertheless complex behavior, which is equivalent to being constrained to an attractive low-dimensional hypersurface (aka manifold). Low-dimensional manifolds have been present in nonlinear dynamics for a long time, but as a concept for self-organization, it was first theorized in synergetics (Haken, 1983), but restricted to systems living close to a bifurcation; and later generalized to systems close to symmetries (Pillai and Jirsa, 2017; Jirsa and Sheheitli, 2022), notably symmetry breaking through large-scale connectivity in networks with time delays (Petkoski et al., 2016; Petkoski et al., 2018; Petkoski and Jirsa, 2019; Petkoski and Jirsa, 2022). Recent applications of this concept can be found in the domain of motor control (Brennan and Proekt, 2019) or in sleep/wake studies (Chaudhuri et al., 2019; Ru\u00e9-Queralt et al., 2021). The link between dynamics and complexity is still under theoretical exploration (Jirsa and Sheheitli, 2022), and here we bring an empirical argument in that direction. Indeed, by using a large-scale brain model, we were able to control the dynamical regimes of the network and show that fluidity and responsiveness are maximal within the same parameter range. Fluidity captures the complexity of the manifold of the brain activity (i.e., number of attractors) and responsiveness quantifies the complexity upon perturbation. It could be argued that the noise level is not similar in both settings, but noise is only present to ensure continuous exploration of the manifold without affecting its topology (Ghosh et al., 2008). Complexity had already been shown to vary across conscious states (Hudetz et al., 2016), and the 1 /f slope of the EEG spectrum was also correlated with PCI on the same data we used (Colombo et al., 2019). Our validation results are in line with previous work on spontaneous activity and consciousness. In addition, we demonstrate that it\u2019s possible to distinguish ketamine-induced unresponsiveness from wakefulness at the individual level with a single metric.\n\nSeveral studies have employed computational modeling approaches to investigate the differences in brain dynamics across states of consciousness. These studies present varying degrees of physiological detail and focus on complementary aspects of unconsciousness. They start from simple abstract models (Ising model) addressing, for example, the increased correlation between structural and functional connectivity in anesthesia (Stramaglia et al., 2017), or oscillator-based models (Hopf model) capturing a brain state-dependent response to simulated perturbation (Deco et al., 2018). More neurobiologically realistic models (Dynamic Mean Field) have also been used to combine multimodal imaging data together with receptor density maps to address the macroscopic effects of general anesthesia and their relationship to spatially heterogeneous properties of the neuronal populations (Luppi et al., 2022). Similarly, using anatomically constrained parameters for brain regions has already been shown to increase the predictive value of brain network models (Wang et al., 2019; Kong et al., 2021). Furthermore, employing biophysically grounded mean-field and spiking neuron models (AdEx) allows addressing phenomena propagating in effect across multiple scales of description such as the molecular effects of anesthetics targeting specific receptor types (Sacha et al., 2025). Related work has shown that adaptation successfully reproduces dynamical regimes coherent with NREM and wakefulness (Cattani et al., 2023) with corresponding realistic PCI values (Goldman et al., 2021). Here, we do not address these biological questions but rather give a proof of concept that large-scale brain models can help understand the dynamics related to brain function. We used a model derived from QIF neurons (Montbri\u00f3 et al., 2015) that lacks biological parameters such as ion concentration or synaptic adaptation. Nevertheless, we demonstrate that even the symmetry breaking caused by the connectome is sufficient for setting the global working point of the brain, which then links the brain\u2019s capacity for generating complex behavior in the different paradigms, that is, rest and stimulation.\n\nOne major limitation of our study lies in the algorithm we used to assess complexity in the model. The empirical PCI calculation is done on the average evoked response following stimulation that only lasts a few hundred milliseconds before returning to baseline activity. In the model, we spanned this calculation over ten seconds, thus capturing a slower dynamic than in real data. Nevertheless, we believe it doesn\u2019t affect our statement, and in theory, the neural mass model we used doesn\u2019t have a specific timescale. In future work, some caveats of our work could also be addressed and remedied. First, the imperfect separation of groups for some of the metrics could be improved by personalized brain modeling. The size of the functional repertoire, for instance, distinguishes wakefulness from anesthesia (including Ketamine) but lacks predictive power at the group level. This could be solved using a personalized model including structural information and parameter inference. Second and last, more realistic parameters could be included in the models, such as neuromodulatory pathways (Taylor et al., 2022; Kringelbach et al., 2020) to improve explanatory power.\n\n## Methods\n\n### Whole-brain model\n\nThe brain was modeled in the form of a network of interacting brain regions. The equation of each node of the network is given by the following differential equation (w.r.t. time):\n\n$$\n\u03a8\u02d9=F(\u03a8_{i},{k})+G\u2217\\sumjW_{ij}S(\u03a8_{j}(t\u2212\\tau_{ij}))+\u03be_{i}(t)\n$$\n\nThe state of each region $i$ evolves in time following its own dynamics $F$ and the inputs it receives from all other nodes of the network through the connectivity $W$. The global coupling parameter $G$ scales the connectivity of the network. The connectivity was derived from empirical data, here using a random healthy subject from the Human Connectome Project (HCP, Van Essen et al., 2013). The connectome was extracted through Diffusion Tensor Imaging (DTI) and captures the tracts\u2019 weights and lengths between regions of interest (ROI) according to the Desikan Kiliani Atlas (Desikan et al., 2006). In the end, 84 cortical and subcortical regions were connected through an undirected graph. The dynamics $F$ of each region of interest (ROI) of the brain was modeled by a neural mass model developed by Montbri\u00f3 et al., 2015. This model is a derivation of the mean firing rate $r$ and membrane potential $v$ of an all-to-all coupled network of quadratic integrate and fire (QIF) neurons. It is exact in the thermodynamic limit ($N\u2192\u221e$, with $N$ the number of neurons) and is described by a set of two differential equations:\n\n$$\nr\u02d9=\\frac{\u0394}{\\pi}+2rv\n$$\n\n\n\n$$\nv\u02d9=v^{2}+\u03b7\u00af+Jr+I(t)\u2212(\\pir)^{2}\n$$\n\n$\u03b7$ is a neuronal excitability parameter that follows a Lorentzian distribution for which the mode $\u03b7\u00af$ appears in the mean field equation and $\u0394$ is the scale (inter-quartile interval) of the same distribution. The parameter $J$ is the weight of synaptic integration of the QIF neurons. And $I(t)$ is an external current function. All neural masses were constructed using the same parameter values: $\u03b7\u00af=\u22125.0,\u0394=1.0,\u00a0and\u00a0J=15.0$. Regions models were connected through their membrane potential by setting:\n\n$$\nI(t)=G\u2217\\summ\\neqnW_{nm}r_{m}(t\u2212\\tau_{nm})\n$$\n\nwhere $W_{nm}$ is the weight (white fiber tract width) and $\\tau_{nm}$ is the delay along the tract connecting the two regions $n$ and $m$.\n\n### Data\n\nWe retrieved data from studies Sarasso et al., 2015; Colombo et al., 2019, where 15 healthy subjects between 18 and 28 years old (5 males) were randomly assigned to one of three groups (5 subjects per group) to undergo anesthesia induced by either Xenon, Propofol, or Ketamine. For each subject, a 60-channel EEG recorded spontaneous activity of the brain followed by a TMS-EEG session for PCI assessment, once before drug administration (wakefulness) and once under anesthesia. All subjects were unresponsive during anesthesia as measured by the Ramsay (Ramsay et al., 1974) scale score of 6. Participants were asked to report any previous conscious experience upon awakening. Xenon and Propofol anesthesia led to no report of consciousness, while Ketamine allowed for retrospective conscious reports (vivid ketamine-dreams). We retrieved the spontaneous EEG recordings for every subject during wakefulness and during anesthesia, as well as the maximum PCI value from the TMS-EEG session and the absence/presence of conscious experience. For more details on the experimental setup and preprocessing steps, see Sarasso et al., 2015.\n\n### Coactivation cascades\n\nThe profile of cascades over time was computed, first by z-scoring each source activity, and second by averaging the absolute value of the activity across all sources. The quantification of cascades was then obtained by calculating numerically the Area Under the Curve (AUC) of the profile of cascades.\n\n### Complexity\n\nFor complexity assessment in spontaneous activity, we calculated the Lempel-Ziv complexity (Lempel and Ziv, 1976) denoted as $LZ_{L}$ on binarized activity. This algorithm, often used for data compression, scans through the sequence of binary elements and counts the number of unique patterns. For synthetic data, the bistable nature of the Montbri\u00f3 (Montbri\u00f3 et al., 2015) model allowed us to binarize firing rate time series (both spontaneous activity and after stimulation) by simple thresholding. The threshold ($r=0.7$) was determined empirically by visual inspection with the intent to limit false positive and false negative rates of upstate activity. For empirical data, the binarization of spontaneous EEG is done after z-scoring each electrode and thresholding at 3 standard deviations.\n\n### Perturbational complexity\n\nTo capture the complexity of the activity after stimulation, we computed an index strongly inspired by Perturbational Complexity Index (PCI). PCI relies on a complex statistical procedure to threshold the deterministic evoked brain response following the perturbation (Casali et al., 2013). This procedure is applied after source reconstruction of the EEG signal and yields a binary matrix of source activities over time. This binary matrix is then flattened and fed to the following formula:\n\n$$\nPCI_{L}=\\frac{LZ_{L}}{C_{L}},\u00a0with\u00a0C_{L}=\\frac{L\u2217H(L,p)}{log_{2}L}\n$$\n\nwhere $LZ_{L}$ is the Lempel-Ziv complexity of a series of length $L$ and $C_{L}$ is the asymptotic Lempel-Ziv complexity for a random series of the same length $L$, which itself is proportional to the source entropy that would have generated the data with the same average activity $p$. A high value of PCI corresponds to a complex propagation of the evoked signal in time and space across the brain. This procedure is repeated at several scalp locations, and the maximum PCI value obtained is retained. In this work, the empirical (maximum) PCI for every participant was provided by Sarasso et al., 2015.\n\nIn synthetic data, we adapted the procedure to extract the maximum synthetic PCI (sPCI). For each ${G,\\sigma}$ couple, we stimulated a given node $node_{i}$ at a given time (or trial) $t$ to obtain a $sPCI_{stim}$ value over a window of 10 seconds of activity:\n\n$$\nsPCI_{stim}(node_{i},t,G,\\sigma)=\\frac{LZ_{stim}}{C_{stim}}\n$$\n\nTo distinguish the deterministic response of the system from the spontaneous activity, each of these $sPCI_{stim}$ value was matched with a baseline value:\n\n$$\nsPCI_{baseline}(t,G,\\sigma)=\\frac{LZ_{baseline}}{C_{baseline}}\n$$\n\nwhich corresponds to the complexity associated with the spontaneous activity of the realization of the exact same simulation (same parameters, same noise seed) but without the stimulus. The ratio of those two quantities was considered as the change in complexity due to the stimulus:\n\n$$\nsPCI(node_{i},t,G,\\sigma)=\\frac{sPCI_{stim}(node_{i},t,G,\\sigma)}{sPCI_{baseline}(t,G,\\sigma)}\n$$\n\nA value of $sPCI>1$ (respectively $sPCI<1$) indicates an increase (respectively a decrease) in complexity in response to the stimulus. 17 nodes were randomly selected (for computational limitations) among the 68 cortical nodes and 140 trials were done for each node near the working point $G\\in[0.52,0.57]$ and $\\sigma\\in[0.022,0.039]$, and 6 trials elsewhere. We then selected the maximum $sPCI$ across time and nodes as the final $sPCI$:\n\n$$\nsPCI(G,\\sigma)=maxnode,tsPCI(node_{i},t,G,\\sigma)\n$$\n\n### Fluidity\n\nThe extent of the repertoire of functional patterns explored spontaneously by a network is measured by fluidity defined as the variance of the upper triangle of the dynamic functional connectivity matrix (dFC). A sliding window (of length $\\tau_{win}$) of functional connectivity (FC) is applied:\n\n$$\nFC_{ij}(t)=FC[s_{i}(t^{\u2032}),s_{j}(t^{\u2032})],with\u00a0t^{\u2032}\\in[t\u2212\\frac{\\tau_{win}}{2};t+\\frac{\\tau_{win}}{2}]\n$$\n\nso that $FC(t)\\inR^{N\\timesN}$, for $N$ sources or electrodes in the network.\n\nThis yields a stream of FC matrices across the length of the signal $s(t)$. Dynamic functional connectivity is then computed as the correlation between the upper triangular part of those FC matrices to extract recurrences of functional patterns across time:\n\n$$\ndFC(t_{1},t_{2})=corr[UpperTri(FC(t_{1})),UpperTri(FC(t_{2}))]\n$$\n\nso that $dFC(t)\\inR^{M\\timesM}$, for $M$ windows.\n\nTo finish, fluidity corresponds to the variance of the upper triangle of the dFC matrix, after removal of overlapping windows:\n\n$$\nfluidity=Var[UpperTri(dFC\u2212B]\n$$\n\n\n\n$$\nB_{ij}={1\u00a0if\u00a0[t_{i}\u2212\\frac{\\tau_{win}}{2};t_{i}+\\frac{\\tau_{win}}{2}]\u2229[t_{j}\u2212\\frac{\\tau_{win}}{2};t_{j}+\\frac{\\tau_{win}}{2}]\\neq\u22050\u00a0otherwise\u00a0\n$$\n\nIn practice, the diagonal offset to compute fluidity is given by $offset=\\frac{n_{overlap}}{\\tau_{win}\u2212n_{overlap}}+1$, with $n_{overlap}$ the number of overlapping time points between two adjacent windows.\n\nIn synthetic data, functional connectivity was based on the zero-lag Pearson correlation between the firing rate activity of every pair of nodes of the network:\n\n$$\nFC_{ij}(t)=corr[r_{i}(t^{\u2032}),r_{j}(t^{\u2032})],with\u00a0t^{\u2032}\\in[t\u2212\\frac{\\tau_{win}}{2};t+\\frac{\\tau_{win}}{2}].\n$$\n\nIn empirical EEG recordings, functional connectivity was assessed by the circular correlation coefficient among all pairs of electrodes ($N_{con}=1770$ for 60 channels) over a sliding window of length $\\tau_{win}=0.55s$. We computed the Hilbert transform of each electrode to extract the instantaneous phase $\\phi(t)$ and mean phase within each window on a broadband spectrum ($0.5\u221260Hz$). Then, between for each pair of electrodes $i,j$ we computed functional connectivity:\n\n$$\nFC_{ij}=Ccor_{i,j}(t)=\\frac{\\sumt\\in\\tau_{win}sin\u2061(\\phi_{i}(t)\u2212\\phi\u00af_{i})sin\u2061(\\phi_{j}(t)\u2212\\phi\u00af_{j})}{\\sqrt{\\sumt\\in\\tau_{win}sin^{2}\u2061(\\phi_{i}(t)\u2212\\phi\u00af_{i})sin^{2}\u2061(\\phi_{j}(t)\u2212\\phi\u00af_{j})}}\n$$\n\nFluidity is related to previously defined metrics such as functional connectivity variability (M\u00fcller et al., 2020) that relied on a non-overlapping windowing procedure. We chose the term fluidity to convey a concept linked to dynamical systems in general and states exploration.\n\n### Functional repertoire\n\nTo measure the size of the functional repertoire in empirical data, we first extracted the avalanches. The procedure is to z-score and threshold the EEG recording to obtain a binarized time series of activations ($1\u00a0if\u00a0z(t)>3\u00a0s.d,\u00a00\u00a0otherwise$). An avalanche is a short-lived event that starts when an electrode is activated and ends when all electrodes return below the threshold. The method requires time to be binned and checking that the sequence of activation within an avalanche follows a branching process, by computing the branching ratio for each avalanche ($\\sigma_{i}$) and averaging it (geometrically) across avalanches ($\\sigma$):\n\n$$\n\\sigma_{i}=\\prodj=1N_{bin}\u22121(\\frac{n_{events}(j+1)}{n_{events}(j)})^{\\frac{1}{N_{bin}\u22121}}\n$$\n\n\n\n$$\n\\sigma=\\prodi=1N_{aval}(\\sigma_{i})^{\\frac{1}{N_{aval}}}\n$$\n\nwhere $N_{bin}$ is the number of discrete time bins for the $i^{th}$ avalanche, $n_{event}$ the number of sources activated during a given time bin and $N_{aval}$ is the total number of avalanches in a recording. A branching ratio $\\sigma=1$ indicates a critical process and $\\sigma<1$ or $>1$ a subcritical or supercritical process, respectively. We selected a bin size of 1 for which $\\sigma=1$ for all recordings. An avalanche pattern is defined as the set of regions that were recruited in a particular avalanche. The functional repertoire consists of all the distinct patterns (i.e., discarding repetitions) that occurred over time (Sorrentino et al., 2021a). In synthetic data, avalanche extraction was not always possible, depending on the dynamical regime. Hence, we simplified the procedure by counting the number of unique patterns across all time points after binarization.\n\n### Global activation potential\n\nVarious modalities have shown that structured brain patterns emerge in short-lived bursts of neuronal activations (Palva et al., 2013; Zamani Esfahlani et al., 2020; Beggs and Plenz, 2003; Tagliazucchi et al., 2012). To capture these events in our data, we first z-score the data along time, and then perform the root-sum-square (RSS) across electrode:\n\n$$\nRSS(t)=\\sqrt{\\sumiz_{i}(t)^{2}}\n$$\n\nwhere $z_{i}(t)$ is the z-scored activity. The RSS profile has values described by a fat-tail distribution and presents a bursting or activation profile characterized by rare sudden jumps. Similar to the PCI, which measures the potential for the system to express complex responses by selecting the maximum of perturbational complexity across an array of stimulations, here we define the potential of spontaneous activation for the system by selecting the maximum variation of the RSS, which we dub Global Activation Potential (GAP):\n\n$$\nGAP=maxt|\\frac{dRSS(t)}{dt}|\n$$\n\n### Classification\n\nTo test the classification accuracy of the resting state metrics we used a Support Vector machine algorithm with a linear kernel. Two different classifiers were evaluated. The first grouped all participants in the wakefulness condition (N=15) against the anesthesia condition (Ketamine N=5, Xenon N=5, and Propofol N=5). The second, grouping participants in conscious report (wakefulness N=15, and Ketamine anesthesia N=5) against no report (Xenon N=5, and Propofol N=5 anesthesia). Each classifier was trained using one feature at a time to find the optimal threshold for classification: PCI, fluidity, complexity, size of the functional repertoire, and GAP. All features were calculated on the full duration of each recording. Complexity and Functional repertoire features were normalized by the length in minutes.\n",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Huan Luo, Peking University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98920.3.sa0](https://doi.org/10.7554/eLife.98920.3.sa0)\n\nThis important study examined the complexity of emergent dynamics of large-scale neural network models after perturbation (perturbational complexity index, PCI) and used it as a measurement of consciousness to account for previous recordings of humans at various anesthetized levels. The evidence supporting the conclusion is convincing and constitutes a unified framework for different observations related to consciousness. There are many fields that would be interested in this study, including cognitive neuroscience, psychology, complex systems, neural networks, and neural dynamics.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98920.3.sa1](https://doi.org/10.7554/eLife.98920.3.sa1)\n\nSummary:\n\nThis paper attempts to measure the complex changes of consciousness in the human brain as a whole. Inspired by the perturbational complexity index (PCI) from classic research, authors introduce simulation PCI (\ud835\udc60\ud835\udc43\ud835\udc36\ud835\udc3c) of a time series of brain activity as a measure of consciousness. They first use large-scale brain network modeling to explore its relationship with the network coupling and input noise. Then the authors verify the measure with empirical data collected in previous research.\n\nStrengths:\n\nThe conceptual idea of the work is novel. The authors measure the complexity of brain activity from the perspective of dynamical systems. They provide a comparison of the proposed measure with four other indexes. The text of this paper is very concise, supported by experimental data and theoretical model analysis.\n\nComments on revisions:\n\nThe manuscript is in good shape after revision. I would suggest that the author open-source the code and data in this study.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98920.3.sa2](https://doi.org/10.7554/eLife.98920.3.sa2)\n\nSummary:\n\nBreyton and colleagues analysed the emergent dynamics from a neural mass model, characterised the resultant complexity of the dynamics, and then related these signatures of complexity to datasets in which individuals had been anaesthetised with different pharmacological agents. The results provide a coherent explanation for observations associated with different time series metrics, and further help to reinforce the importance of modelling when integrating across scientific studies.\n\nStrengths:\n\n* The modelling approach was clear, well-reasoned and explicit, allowing for direct comparison to other work and potential elaboration in future studies through the augmentation with richer neurobiological detail.\n\n* The results serve to provide a potential mechanistic basis for the observation that Perturbational Complexity Index changes as a function of consciousness state.\n\nWeaknesses:\n\n* Coactivation cascades were visually identified, rather than observed through an algorithmic lens. Given that there are numerous tools for quantifying the presence/absence of cascades from neuroimaging data, the authors may benefit from formalising this notion.\n\n* It was difficult to tell, graphically, where the model's operating regime lay. Visual clarity here will greatly benefit the reader.\n\nComments on revisions:\n\nThe authors have addressed my concerns.\n",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a2d7b0e1-ee0d-4f37-89a5-c772161b37d7",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C1",
+      "claim": "Spatiotemporal complexity after a perturbation has recently emerged as a robust metric to infer levels of consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, spatiotemporal complexity after a perturbation has recently emerged as a robust metric to infer levels of consciousness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established finding in the field, drawing on existing literature about perturbational complexity metrics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "040a7b73-3830-407c-bfe8-75861f793582",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C2",
+      "claim": "Perturbation paradigms remain difficult to perform routinely.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation paradigms remain, however, difficult to perform routinely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "3a653ce1-5040-4ecb-ab31-4cb0ba4836bc",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C3",
+      "claim": "Perturbational complexity only occurs when the brain model operates within a specific dynamical regime.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that perturbational complexity only occurs when the brain model operates within a specific dynamical regime, in which spontaneous activity produces a large degree of functional network reorganizations referred to as being fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the whole-brain model simulations presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "a4d915a9-ed59-44d4-bda0-34c0aac0cca7",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C4",
+      "claim": "Spontaneous activity in the high fluidity regime produces a large degree of functional network reorganizations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that perturbational complexity only occurs when the brain model operates within a specific dynamical regime, in which spontaneous activity produces a large degree of functional network reorganizations referred to as being fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the dynamical regime identified in the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "e3cfbb05-3841-4c4f-960b-82ec1d8a561b",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C5",
+      "claim": "The regime of high brain fluidity is characterized by a small battery of metrics drawn from dynamical systems theory.",
+      "claim_type": "EXPLICIT",
+      "source": "The regime of high brain fluidity is characterized by a small battery of metrics drawn from dynamical systems theory and predicts the impact of consciousness-altering drugs (Xenon, Propofol, and Ketamine).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach and findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "45b30d8a-dcc3-47d9-ab30-6b79ece597fc",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C6",
+      "claim": "The high fluidity regime predicts the impact of consciousness-altering drugs (Xenon, Propofol, and Ketamine).",
+      "claim_type": "EXPLICIT",
+      "source": "The regime of high brain fluidity is characterized by a small battery of metrics drawn from dynamical systems theory and predicts the impact of consciousness-altering drugs (Xenon, Propofol, and Ketamine).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a predictive finding from the model that is tested against empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "b33c8716-32cb-4256-af26-37a79ed39ce9",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C7",
+      "claim": "The predictions were validated in a cohort of 15 subjects at various stages of consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate the predictions in a cohort of 15 subjects at various stages of consciousness and demonstrate their agreement with previously reported perturbational complexity, but in a more accessible paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the empirical validation component of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "934d30bc-a7cb-4f44-8513-af65f2cb23b2",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C8",
+      "claim": "The validated metrics demonstrate agreement with previously reported perturbational complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate the predictions in a cohort of 15 subjects at various stages of consciousness and demonstrate their agreement with previously reported perturbational complexity, but in a more accessible paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the new findings to established PCI results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "2cd3a530-fd2b-4e4c-a3cc-1c0920c07dc3",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C9",
+      "claim": "The new paradigm is more accessible than perturbational complexity measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate the predictions in a cohort of 15 subjects at various stages of consciousness and demonstrate their agreement with previously reported perturbational complexity, but in a more accessible paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated advantage of the resting-state approach over TMS-EEG.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "3e5abfec-c528-4d54-9c87-fa2366ce2bbc",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C10",
+      "claim": "Common anesthetic drugs like Xenon or Propofol lead to an unresponsive and unconscious state resembling NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Common anesthetic drugs like Xenon or Propofol lead to an unresponsive and unconscious state resembling NREM sleep (Murphy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Murphy et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "a98e379b-dfbd-43ed-bb77-4ff0932d92ee",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C11",
+      "claim": "Ketamine can cause an unresponsive yet active state similar to REM sleep where conscious experience remains possible even without behavioral response.",
+      "claim_type": "EXPLICIT",
+      "source": "Others, such as Ketamine, can cause an unresponsive yet active state similar to REM sleep where conscious experience remains possible even without behavioral response (Hobson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hobson, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "077cdf36-9768-4a2a-b348-c5b1d33e43da",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C12",
+      "claim": "States of disconnected consciousness can arise following brain injury and pose challenges in clinical practice for consciousness assessment and prognosis evaluation.",
+      "claim_type": "EXPLICIT",
+      "source": "These states of disconnected consciousness can arise following brain injury and pose challenges in clinical practice for consciousness assessment and prognosis evaluation (Edlow et al., 2021; Giacino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Edlow et al., 2021 and Giacino et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "923b6fc1-8e66-4469-8e1b-6fe62b28d903",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C13",
+      "claim": "Recent studies have developed a technique based on transcranial magnetic stimulation (TMS) in which the brain is stimulated by TMS pulses and evoked responses are recorded with simultaneous electroencephalography (EEG).",
+      "claim_type": "EXPLICIT",
+      "source": "In an attempt to solve this problem, recent studies have developed a technique based on transcranial magnetic stimulation (TMS, Casali et al., 2013), in which the brain is stimulated by TMS pulses (Hallett, 2007) and evoked responses are recorded with simultaneous electroencephalography (EEG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Casali et al., 2013 and Hallett, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "d3bfc338-5609-40d5-ae0d-4cae70f4bbba",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C14",
+      "claim": "The evoked response can qualitatively differ depending on the patient's state (awake, REM, anesthesia, etc.).",
+      "claim_type": "EXPLICIT",
+      "source": "It is shown that the evoked response can qualitatively differ depending on the patient's state (awake, REM, anesthesia, etc.), and is characterized by a simple scalar metric: the perturbational complexity index (PCI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established findings about TMS-EEG responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "5f160def-b8b9-438c-a5f9-cf0fd16227cd",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C15",
+      "claim": "PCI measures the complexity of the distributed spatiotemporal response in the brain, with values close to 1 when the complexity is high, and closer to 0 for simpler responses.",
+      "claim_type": "EXPLICIT",
+      "source": "PCI measures the complexity of the distributed spatiotemporal response in the brain, with values close to 1 when the complexity is high, and closer to 0 for simpler responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the PCI metric and its interpretation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "15b22492-e120-4327-b30e-d7233da3cd5c",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C16",
+      "claim": "Increasing evidence suggests the PCI index as a reliable marker to differentiate between awake individuals and those in NREM sleep or an anesthetic-induced unconsciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, increasing evidence suggests the PCI index as a reliable marker (Figure 1b) to differentiate between awake individuals and those in NREM sleep or an anesthetic-induced unconsciousness (Casarotto et al., 2016; Sarasso et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Casarotto et al., 2016 and Sarasso et al., 2015, and referenced in Figure 1b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "91be6836-d538-4b08-bbda-2ad94d9b2dcc",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C17",
+      "claim": "Resting-state activity is highly organized and displays structured patterns of regional activations in large-scale recordings across imaging modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state activity is highly organized and displays structured patterns of regional activations in large-scale recordings across imaging modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established properties of resting-state brain activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "b8c487bd-ce79-4467-ab7c-2a8fc1975a36",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C18",
+      "claim": "Some co-activation patterns are consistent across individuals and are known as functional brain networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Some co-activation patterns are consistent across individuals and are known as functional brain networks (Damoiseaux et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Damoiseaux et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "de6832ed-d33c-42d8-8304-05e83346918f",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C19",
+      "claim": "Activation patterns can emerge and reappear over time, suggesting a rich temporal structure with unique characteristics across tasks and individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, these activation patterns can emerge and reappear, suggesting a rich temporal structure with unique characteristics across tasks and individuals (Peng et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Peng et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "fb3b0424-50f3-4e03-a6c6-ad21cab3cee1",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C20",
+      "claim": "Data complexity relates to the range of activity patterns seen over time, defining a functional repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, data complexity relates to the range of activity patterns seen over time (Ghosh et al., 2008; Jirsa and Sheheitli, 2022), defining a functional repertoire (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Ghosh et al., 2008 and Jirsa and Sheheitli, 2022, and illustrated in Figure 1c.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "e1fa0e62-9409-42d3-91b1-67d14bf7c2d0",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C21",
+      "claim": "A diverse functional repertoire, supporting complex dynamics, is characterized by the exploration of numerous brain states, found in specific dynamical regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "A diverse functional repertoire, supporting complex dynamics, is characterized by the exploration of numerous brain states, found in specific dynamical regimes (Hansen et al., 2015; Golos et al., 2015; Sorrentino et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hansen et al., 2015, Golos et al., 2015, and Sorrentino et al., 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "cf557555-5947-42a3-a49e-fb964f5bae36",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C22",
+      "claim": "Evidence suggests that the brain is self-regulating around the transition between ordered and disordered phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence suggests that the brain is self-regulating around the transition between ordered and disordered phases (Cocchi et al., 2017; O'Byrne and Jerbi, 2022), where a high fluidity results in a rich temporal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cocchi et al., 2017 and O'Byrne and Jerbi, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "a946f062-a85d-4cbd-8c0f-5426b1c77bd1",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C23",
+      "claim": "High fluidity results in a rich temporal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence suggests that the brain is self-regulating around the transition between ordered and disordered phases (Cocchi et al., 2017; O'Byrne and Jerbi, 2022), where a high fluidity results in a rich temporal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects fluidity to temporal complexity in brain dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "306b194f-68ad-478c-96a2-ecf9f2a9dc9a",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C24",
+      "claim": "The whole-brain model consists of 84 cortical and subcortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This model consists of 84 cortical and subcortical regions, each of them being conceptualized by a neural mass model (NMM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the computational model used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "fc9fd56c-722b-48ef-9f4e-1904009add97",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C26",
+      "claim": "The equations ascribe the dynamics of the node to two fixed points: an oscillatory, high-firing state (upstate) and a low-firing rate downstate.",
+      "claim_type": "EXPLICIT",
+      "source": "The equations ascribe the dynamics of the node to two fixed points. One is an oscillatory, high-firing state, the upstate (inward spiral), and the other is a low-firing rate downstate (stable fixed point).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dynamical properties of the neural mass model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "8e29d9f8-9418-4a8d-b2ba-a9cb1e66001b",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C27",
+      "claim": "Every node is influenced by a stochastic noise component, allowing it to transition between upstate and downstate.",
+      "claim_type": "EXPLICIT",
+      "source": "Every node is influenced by a stochastic noise component, allowing it to transition between these two states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the model dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "7e8e6c09-a4e1-4df7-b7da-d18ade5c5b0c",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C28",
+      "claim": "A generic connectome from a healthy subject obtained from the Human Connectome Project was employed due to the lack of subject-specific DWI data.",
+      "claim_type": "EXPLICIT",
+      "source": "For our study, due to the lack of subject-specific DWI data, we employed a generic connectome from a healthy subject obtained from the Human Connectome Project (HCP, Van Essen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural connectivity data used in the model, citing Van Essen et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "c3e068fa-b059-4a83-a166-81e1fbfbc4ad",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C29",
+      "claim": "In the low coupling regime, regions of the network are weakly connected and mostly behave independently, driven by noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In the low coupling regime (Figure 2a), regions of the network are weakly connected and mostly behave independently, driven by noise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes model behavior in the low coupling regime, shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "93053925-8856-4b35-ba43-99a73843988a",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C30",
+      "claim": "When noise is low in the low coupling regime, the activity is generally low and sparse, as most of the nodes are in the down state, with some rare and transient activations.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, when the noise is low (Figure 2a, bottom), the activity is generally low and sparse, as most of the nodes are in the down state, with some rare and transient activations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes specific model behavior shown in Figure 2a bottom.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "e129645d-2b06-45cd-839f-015b40638868",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C31",
+      "claim": "As noise increases in the low coupling regime, activations are more frequent, yet stochastic and non-coherent.",
+      "claim_type": "EXPLICIT",
+      "source": "As noise increases (Figure 2a, top), activations are more frequent, yet stochastic and non-coherent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes model behavior shown in Figure 2a top.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "073f15e9-0ce0-4494-af04-fa9197b96bc9",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C32",
+      "claim": "When global coupling is set to a high value, brain regions are tightly connected, and the activity of each node is heavily entrained by the rest of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when global coupling is set to a high value (Figure 2c), brain regions are tightly connected, and the activity of each node is heavily entrained by the rest of the network.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes model behavior in the high coupling regime, shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "22a6b08b-6d8a-472d-8027-5d8e47ffabf7",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C34",
+      "claim": "The high coupling regime gives rise to a stable pattern of regional coactivations that involve characteristic subnetworks mirroring the structural connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior gives rise to a stable pattern of regional coactivations that involve characteristic subnetworks mirroring the structural connectivity (Rabuffo et al., 2021; Pope et al., 2021) and resulting in stereotyped activity on a slow timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the emergent behavior in high coupling, citing Rabuffo et al., 2021 and Pope et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "988c1fc0-d9bb-4d69-8778-366f50c52500",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C35",
+      "claim": "In the intermediate regime around a working point, cascades of coactivations of different sizes and durations occur in a complex and unpredictable fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in between these two regimes lies an intermediate regime, around a working point (Figure 2b), where cascades of coactivations of different sizes and durations occur in a complex and unpredictable fashion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the key intermediate regime shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "4f199474-c108-4d11-b55b-ccc25be40e9f",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C36",
+      "claim": "Coactivation patterns in the intermediate regime are not purely stochastic but are often repetitive, revisiting the same neighborhood in state space.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet these coactivation patterns are not purely stochastic (Battaglia et al., 2020). They are often repetitive, revisiting the same neighborhood in state space (Fousek et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the nature of activity in the intermediate regime, citing Battaglia et al., 2020 and Fousek et al., 2024.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "72c52ef7-10c9-4b0a-85fa-368a5a258dd4",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C39",
+      "claim": "If the system operates far from the working point, the stimulus has minimal impact on global activity, meaning no notable change in complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "If the system operates far from this working point, the stimulus has minimal impact on global activity, meaning no notable change in complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes model behavior outside the optimal regime.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "94f86fd8-ec75-4645-9b2f-30d61a6add49",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C41",
+      "claim": "Fluidity captures the recurring patterns of co-activation across time and, more specifically, the switches between highly correlated and non-correlated patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluidity captures the recurring patterns of co-activation across time and, more specifically, the switches between highly correlated and non-correlated patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines what the fluidity metric measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "ff436316-40f1-4911-8da9-895f652b4c72",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C42",
+      "claim": "Fluidity is believed to reflect the complexity of the energy landscape and the number of attractors.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though direct evidence is sparse due to challenges in probing human brain activity's manifold, fluidity is believed to reflect the complexity of the energy landscape and the number of attractors (Hansen et al., 2015; Fousek et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation supported by citations to Hansen et al., 2015 and Fousek et al., 2024.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "5cb6de25-29c2-43a5-b476-9a3467b65056",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C43",
+      "claim": "The distribution of fluidity in the model's parameter space shows a peak near the working point value.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of fluidity in the model's parameter space (Figure 3, bottom-left) shows a peak near the working point value, reflecting recurring cascades during simulation, and decreases monotonously as the regime is drawn away from it.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the spatial distribution of fluidity shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "1e5d5870-aa93-4c5a-88ab-818332920d98",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C44",
+      "claim": "Lempel-Ziv complexity is found to increase abruptly as global coupling crosses the working point separating a low complexity-low coupling regime from a high complexity-high coupling regime.",
+      "claim_type": "EXPLICIT",
+      "source": "LZ complexity (Figure 3, bottom-middle) is found to increase abruptly as global coupling crosses the working point separating a low complexity-low coupling regime from a high complexity-high coupling regime.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the behavior of LZ complexity shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "ec927983-b77f-4713-9847-42252b0400c6",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C45",
+      "claim": "There is a separation of parameter space around the working point by a sharp increase of the functional repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "As for LZ complexity, there is a separation of the space around the working point by a sharp increase of the functional repertoire (Figure 3, bottom-right), although this separation shifts towards lower coupling when noise increases and is lost for regimes with high noise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the behavior of functional repertoire shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "6a9aa437-bd93-411e-912a-603177fade96",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C46",
+      "claim": "GAP captures the fastest change in global activity of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "GAP aims at capturing the fastest change in global activity of the network, and it is computed as the maximum of the gradient of the residual sum of squares between sources (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines what the GAP metric measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "8e218bea-c75f-4860-b400-a6717f98277d",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C47",
+      "claim": "GAP shows an increase around the working point similar to other metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, a similar pattern is seen with an increase around the working point (Figure 3, top-right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the behavior of GAP shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "b2158151-6049-45f5-9600-7a385068e319",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C48",
+      "claim": "The same fluid dynamical regime underpins both optimal brain responsiveness and optimal spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These tight relationships between simulation features (on spontaneous and stimulated activity) and the tuning of global coupling suggest that the same fluid dynamical regime underpins both optimal brain responsiveness and optimal spontaneous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key inference drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "f759a2cd-dc7e-4680-ad8b-729db25e5918",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C49",
+      "claim": "15 healthy subjects underwent a TMS-EEG protocol and a spontaneous EEG during anesthesia (Xenon, Propofol, Ketamine) and wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we used previously published experimental data, provided by Sarasso et al., 2015. 15 healthy subjects underwent a TMS-EEG protocol and a spontaneous EEG during anesthesia (Xenon, Propofol, Ketamine) and wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the empirical dataset used, citing Sarasso et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "690d2e07-0ca4-4213-a86d-698c15217606",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C50",
+      "claim": "Reports upon awakening were used as a ground truth for conscious experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports upon awakening were used as a ground truth for conscious experience, and it was found that subjects under Xenon or Propofol had no recollection of conscious experience, whereas Ketamine-induced anesthesia was always associated with reports of consciousness (i.e. dreaming).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for assessing consciousness in the empirical study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "7c2f8774-5771-4a1c-a589-73972b5d1b5a",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C51",
+      "claim": "Subjects under Xenon or Propofol had no recollection of conscious experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports upon awakening were used as a ground truth for conscious experience, and it was found that subjects under Xenon or Propofol had no recollection of conscious experience, whereas Ketamine-induced anesthesia was always associated with reports of consciousness (i.e. dreaming).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical finding from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "07b3558f-a549-4f61-846a-534c2009a0ec",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C52",
+      "claim": "Ketamine-induced anesthesia was always associated with reports of consciousness (i.e. dreaming).",
+      "claim_type": "EXPLICIT",
+      "source": "Reports upon awakening were used as a ground truth for conscious experience, and it was found that subjects under Xenon or Propofol had no recollection of conscious experience, whereas Ketamine-induced anesthesia was always associated with reports of consciousness (i.e. dreaming).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical finding from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "8c755b2f-0b92-473c-89ec-6eec9abff40d",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C53",
+      "claim": "A PCI at 0.31 was benchmarked as a threshold for consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "A PCI at 0.31 was benchmarked as a threshold for consciousness (Casarotto et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites an established threshold from Casarotto et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "5cfb6dea-0453-4394-ad93-8d7ad1f008d5",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C54",
+      "claim": "PCI successfully distinguishes conscious from unconscious states.",
+      "claim_type": "EXPLICIT",
+      "source": "As published previously, PCI successfully distinguishes conscious from unconscious states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to established findings about PCI performance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "5045a3a8-a404-4dc1-bc94-b61977c49cae",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C56",
+      "claim": "For all subjects, at least one metric can perfectly distinguish wakefulness from anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "For all subjects, at least one metric can perfectly distinguish wakefulness from anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the empirical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "83d276a1-764f-4532-9cab-e09b6013c1b7",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C57",
+      "claim": "The separation between wakefulness and anesthesia conditions was perfect for Propofol and Xenon anesthesia using fluidity.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our hypothesis and modeling results, we expected higher values of fluidity during wakefulness than anesthesia (Figure 4a). The separation between conditions was perfect for Propofol and Xenon anesthesia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the fluidity results shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "440e14b7-d2b5-4bba-b42d-88fdecf29b52",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C58",
+      "claim": "Ketamine fluidity results were inconsistent, with subject 2 showing a reversed pattern (higher fluidity during anesthesia).",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine results were inconsistent, with subject 2 showing a reversed pattern (higher fluidity during anesthesia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an exception in the fluidity results for Ketamine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "179003d2-a69d-4fad-8d3d-cfa7f839cedd",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C59",
+      "claim": "For Propofol anesthesia, all subjects had a good separation in complexity between wakefulness and anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "For Propofol anesthesia, all subjects had a good separation, and for Xenon, three subjects were well classified, but two had overlapping distributions of complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the complexity results for Propofol shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "794158c0-4fc0-4c91-bb25-c385328ba68b",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C60",
+      "claim": "For Xenon, three subjects were well classified by complexity, but two had overlapping distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "For Propofol anesthesia, all subjects had a good separation, and for Xenon, three subjects were well classified, but two had overlapping distributions of complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the complexity results for Xenon shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "a6be38ba-0411-4fa2-8471-b5acdec83e50",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C61",
+      "claim": "For Ketamine, subject 4 had overlapping distributions of complexity when the other 4 showed good separation, though the relationship was inverted for subjects 3 and 5, with less complexity found in wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "For Ketamine, subject 4 had overlapping distributions when the other 4 showed good separation, though the relationship was inverted for subjects 3 and 5, with less complexity found in wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the complexity results for Ketamine shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "57b8bfed-f261-4ce6-bf1f-89fa151fdf4b",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C62",
+      "claim": "GAP results were satisfying for the Xenon and Propofol conditions but poor for all subjects under Ketamine.",
+      "claim_type": "EXPLICIT",
+      "source": "The results for GAP were satisfying for the Xenon and Propofol conditions but poor for all subjects under Ketamine (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the GAP results shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "f2699673-81f0-4184-bb0e-8415453b6eee",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C63",
+      "claim": "When the separation occurs between wakefulness and anesthesia, the GAP is consistently higher during wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when the separation occurs between wakefulness and anesthesia, the GAP is consistently higher during wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the direction of GAP differences when present.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "bddc58a1-8069-4aa9-9b37-de40390b8e56",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C64",
+      "claim": "The size of the functional repertoire permits a perfect separation between wakefulness and anesthesia for all subjects and conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed (Figure 4b), it is the metric that permits a perfect separation between wakefulness and anesthesia for all subjects and conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the functional repertoire results shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "d9eaeba2-ddfe-41de-b380-c84bf02ca391",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C65",
+      "claim": "The number of states explored during the recordings was consistently larger during wakefulness than anesthesia for all drugs and subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of states explored during the recordings was consistently larger during wakefulness than anesthesia for all drugs and subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the consistent pattern in functional repertoire across all conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "86a4d513-447f-4463-8fd5-412ac7eb3d00",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C66",
+      "claim": "For fluidity, there is a perfect linear separation between Propofol and Xenon anesthesia on one side and Wakefulness and Ketamine anesthesia on the other side.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that for fluidity (Figure 5a, third panel), there is a perfect linear separation between Propofol and Xenon anesthesia on the left side and Wakefulness and Ketamine anesthesia on the right side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the classification pattern for fluidity shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "2a883e45-c667-486d-84da-d86f3bb62ac1",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C67",
+      "claim": "Fluidity achieves 100% classification accuracy for the consciousness class, which is the same as PCI.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to the classification accuracy result of 100% for the consciousness class in Figure 5b, which is the same for PCI.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the classification performance shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "215d83b1-f2c9-4554-b2b7-e249c0930b94",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C68",
+      "claim": "PCI and fluidity behave poorly at classifying the presence of an anesthetic agent due to the confusion induced by Ketamine.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, PCI and fluidity behave poorly at classifying the presence of an anesthetic agent due to the confusion induced by Ketamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of PCI and fluidity for anesthesia classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "7dd67ab3-340d-440d-a13c-e4fcc62dadce",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C69",
+      "claim": "The size of the functional repertoire performs an almost perfect classification for anesthesia grouping.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the size of the functional repertoire performs an almost perfect classification for this grouping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the superior performance of functional repertoire for anesthesia classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "3c51c29a-e6ef-43e7-9084-a7409fde0068",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C70",
+      "claim": "Only one subject under Ketamine has a high functional repertoire, but all other subjects in the anesthesia condition have a size of functional repertoire roughly under 100.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one subject under Ketamine has a high functional repertoire (Figure 5a, left panel), but all other subjects in the anesthesia condition have a size of functional repertoire roughly under 100.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distribution of functional repertoire values shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "141d6a17-95cb-46c5-b47d-eea2f2194fec",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C71",
+      "claim": "A large-scale brain model demonstrates that a similar dynamical regime of activity can cause perturbational complexity and complex (fluid) spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate using a large-scale brain model that a similar dynamical regime of activity can cause perturbational complexity and complex (fluid) spontaneous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion from the modeling work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "f6428dc3-f522-40b0-ab82-1616c2737d1a",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C72",
+      "claim": "Spontaneous activity analyzed through appropriate metrics can be effective in assessing consciousness in wakefulness and anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Using empirical data, we showed that spontaneous activity analyzed through appropriate metrics can be effective in assessing consciousness in wakefulness and anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion from the empirical validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "9677e8a6-4bcf-4089-a5b6-0f9fb3a11e45",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C73",
+      "claim": "A large body of evidence highlights a relationship between the complexity of brain signals and conscious experience.",
+      "claim_type": "EXPLICIT",
+      "source": "A large body of evidence highlights a relationship between the complexity of brain signals and conscious experience, as recently reviewed (Sarasso et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review by Sarasso et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "d2acb3d3-70fb-4622-b1a7-06389236e87c",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C74",
+      "claim": "The two building blocks of consciousness are functional integration (each experience is unified as a whole) and functional differentiation (each experience is unique and separated from others).",
+      "claim_type": "EXPLICIT",
+      "source": "In this view, the two building blocks of consciousness are functional integration (each experience is unified as a whole) and functional differentiation (each experience is unique and separated from others).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes theoretical principles from consciousness theories.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "e69bbc0b-9697-4e01-839e-9965fb1a16ac",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C75",
+      "claim": "The PCI revealed an interpretable and practical link between the spatio-temporal complexity of the propagation of a perturbation in the brain and the level of consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all these metrics, the PCI (relying on Lempel-Ziv complexity and entropy) revealed an interpretable and practical link between the spatio-temporal complexity of the propagation of a perturbation in the brain and the level of consciousness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the significance of PCI as a consciousness metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "eaee0bc1-34a0-41b6-9927-cb33e78c84aa",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C76",
+      "claim": "Brain simulations support the idea that a rich dynamics is possible when the system's parameters are fine-tuned around specific values.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain simulations like the one presented in this work support the idea that a rich dynamics is possible when the system's parameters are fine-tuned around specific values (Golos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Golos et al., 2015 and the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "a6abcfaf-de61-4815-ae3f-bbc6b1f98504",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C77",
+      "claim": "One prominent theory in neuroscience posits that the brain self-regulates near a critical regime, in the vicinity of a phase transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, although debated, one prominent theory in neuroscience posits that the brain self-regulates near a critical regime, in the vicinity of a phase transition (Cocchi et al., 2017; O'Byrne and Jerbi, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cocchi et al., 2017 and O'Byrne and Jerbi, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "61382509-c6b7-425a-a85d-059b97fe2cbd",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C78",
+      "claim": "The critical regime allows the brain to be flexible enough to reconfigure and adapt dynamically to a changing environment, all while being stable enough to engage in complex sustained activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Simply put, this property allows the brain to be flexible enough to reconfigure and adapt dynamically to a changing environment, all while being stable enough to engage in complex sustained activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the functional significance of criticality.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "5e0f4a87-6df0-49f2-a3ad-5af4a765b895",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C79",
+      "claim": "The critical regime is known to maximize information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other things, the critical regime is known to maximize information processing (Beggs, 2008) or to be related to cognitive processes (Xu et al., 2022), and criticality in the brain is also possibly linked to consciousness (Tagliazucchi et al., 2016; Tagliazucchi, 2017; Toker et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beggs, 2008, Xu et al., 2022, Tagliazucchi et al., 2016, Tagliazucchi, 2017, and Toker et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "4195be99-ca00-48a6-8380-0b26158dc476",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C80",
+      "claim": "Criticality in the brain is possibly linked to consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other things, the critical regime is known to maximize information processing (Beggs, 2008) or to be related to cognitive processes (Xu et al., 2022), and criticality in the brain is also possibly linked to consciousness (Tagliazucchi et al., 2016; Tagliazucchi, 2017; Toker et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tagliazucchi et al., 2016, Tagliazucchi, 2017, and Toker et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "2834396d-74a2-49a3-aef6-ae471f409fef",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C81",
+      "claim": "A high-dimensional nonlinear dynamical system displays low-dimensional but nevertheless complex behavior, which is equivalent to being constrained to an attractive low-dimensional hypersurface (aka manifold).",
+      "claim_type": "EXPLICIT",
+      "source": "It's been shown that a high-dimensional nonlinear dynamical system displays low-dimensional but nevertheless complex behavior, which is equivalent to being constrained to an attractive low-dimensional hypersurface (aka manifold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a principle from dynamical systems theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "b6334b3b-874f-4c3a-bcdc-b7c441e23eb9",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C82",
+      "claim": "Low-dimensional manifolds were first theorized in synergetics but restricted to systems living close to a bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-dimensional manifolds have been present in nonlinear dynamics for a long time, but as a concept for self-organization, it was first theorized in synergetics (Haken, 1983), but restricted to systems living close to a bifurcation; and later generalized to systems close to symmetries (Pillai and Jirsa, 2017; Jirsa and Sheheitli, 2022), notably symmetry breaking through large-scale connectivity in networks with time delays (Petkoski et al., 2016; Petkoski et al., 2018; Petkoski and Jirsa, 2019; Petkoski and Jirsa, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Haken, 1983, Pillai and Jirsa, 2017, Jirsa and Sheheitli, 2022, and multiple Petkoski papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "722eb268-8156-4c5a-baa7-5e96a2bb9b69",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C83",
+      "claim": "By using a large-scale brain model, we were able to control the dynamical regimes of the network and show that fluidity and responsiveness are maximal within the same parameter range.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by using a large-scale brain model, we were able to control the dynamical regimes of the network and show that fluidity and responsiveness are maximal within the same parameter range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding from the modeling work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "146a4932-9dc6-46bd-b88d-e7beba8f8b11",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C84",
+      "claim": "Fluidity captures the complexity of the manifold of the brain activity (i.e., number of attractors) and responsiveness quantifies the complexity upon perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluidity captures the complexity of the manifold of the brain activity (i.e., number of attractors) and responsiveness quantifies the complexity upon perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the relationship between the two types of metrics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "5e5d567d-77d1-446a-b1d2-0afd29457aeb",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C85",
+      "claim": "Noise is only present to ensure continuous exploration of the manifold without affecting its topology.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be argued that the noise level is not similar in both settings, but noise is only present to ensure continuous exploration of the manifold without affecting its topology (Ghosh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the role of noise in the model, citing Ghosh et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "043fcf41-a3c6-438c-8875-fc940ee03b72",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C86",
+      "claim": "Complexity had already been shown to vary across conscious states.",
+      "claim_type": "EXPLICIT",
+      "source": "Complexity had already been shown to vary across conscious states (Hudetz et al., 2016), and the 1 /f slope of the EEG spectrum was also correlated with PCI on the same data we used (Colombo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hudetz et al., 2016 and Colombo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "dd5b9dff-a58b-40f8-b60e-b4912aa8de18",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C87",
+      "claim": "The 1/f slope of the EEG spectrum was correlated with PCI on the same data used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Complexity had already been shown to vary across conscious states (Hudetz et al., 2016), and the 1 /f slope of the EEG spectrum was also correlated with PCI on the same data we used (Colombo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Colombo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "368f2dfd-7a38-4d7c-a838-86946fbe4816",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C88",
+      "claim": "It's possible to distinguish ketamine-induced unresponsiveness from wakefulness at the individual level with a single metric.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we demonstrate that it's possible to distinguish ketamine-induced unresponsiveness from wakefulness at the individual level with a single metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key practical finding from the empirical validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "7604950e-dfd1-4bce-83eb-1fc5ca91ffaf",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C89",
+      "claim": "The empirical PCI calculation is done on the average evoked response following stimulation that only lasts a few hundred milliseconds before returning to baseline activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical PCI calculation is done on the average evoked response following stimulation that only lasts a few hundred milliseconds before returning to baseline activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard PCI methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "672f4108-d5b7-45c6-8f92-b996bae1a77e",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C90",
+      "claim": "In the model, sPCI calculation was spanned over ten seconds, thus capturing a slower dynamic than in real data.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model, we spanned this calculation over ten seconds, thus capturing a slower dynamic than in real data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological difference between model and empirical PCI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "30b1f44f-0711-46bf-bfd6-d1954ce4199b",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C91",
+      "claim": "The neural mass model used doesn't have a specific timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we believe it doesn't affect our statement, and in theory, the neural mass model we used doesn't have a specific timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical property of the model used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "980e5e0f-83b5-4ec8-82ef-d7fc2e6e5e83",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C92",
+      "claim": "The imperfect separation of groups for some of the metrics could be improved by personalized brain modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the imperfect separation of groups for some of the metrics could be improved by personalized brain modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "5380415f-48cc-4843-ad21-e9d0a4c158ec",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C93",
+      "claim": "The size of the functional repertoire distinguishes wakefulness from anesthesia (including Ketamine) but lacks predictive power at the group level.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the functional repertoire, for instance, distinguishes wakefulness from anesthesia (including Ketamine) but lacks predictive power at the group level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the functional repertoire metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "fc402582-59ca-48cf-a7f9-f49662d7d814",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C94",
+      "claim": "More realistic parameters could be included in the models, such as neuromodulatory pathways to improve explanatory power.",
+      "claim_type": "EXPLICIT",
+      "source": "Second and last, more realistic parameters could be included in the models, such as neuromodulatory pathways (Taylor et al., 2022; Kringelbach et al., 2020) to improve explanatory power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future model improvements, citing Taylor et al., 2022 and Kringelbach et al., 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "4452a938-d797-42b0-ab98-0570b3568fb7",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C95",
+      "claim": "The connectome was extracted through Diffusion Tensor Imaging (DTI) and captures the tracts' weights and lengths between regions of interest (ROI) according to the Desikan Kiliani Atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "The connectome was extracted through Diffusion Tensor Imaging (DTI) and captures the tracts' weights and lengths between regions of interest (ROI) according to the Desikan Kiliani Atlas (Desikan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural connectivity data used, citing Desikan et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "0ae501b8-d6bf-4f1b-a2e8-f961cb5b8fde",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C96",
+      "claim": "84 cortical and subcortical regions were connected through an undirected graph.",
+      "claim_type": "EXPLICIT",
+      "source": "In the end, 84 cortical and subcortical regions were connected through an undirected graph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network structure of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "9db85972-acf2-4df4-9f93-29696729c5b9",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C98",
+      "claim": "All subjects were unresponsive during anesthesia as measured by the Ramsay scale score of 6.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects were unresponsive during anesthesia as measured by the Ramsay (Ramsay et al., 1974) scale score of 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the level of sedation in the empirical study, citing Ramsay et al., 1974.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "1090cc5e-e2a4-4cac-a0a7-97e630243185",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C99",
+      "claim": "Participants were asked to report any previous conscious experience upon awakening.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were asked to report any previous conscious experience upon awakening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for assessing consciousness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "c483ef12-effc-4191-a1b5-1717d4af8fce",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "claim_id": "C100",
+      "claim": "Xenon and Propofol anesthesia led to no report of consciousness, while Ketamine allowed for retrospective conscious reports (vivid ketamine-dreams).",
+      "claim_type": "EXPLICIT",
+      "source": "Xenon and Propofol anesthesia led to no report of consciousness, while Ketamine allowed for retrospective conscious reports (vivid ketamine-dreams).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the consciousness reports from the empirical study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2bb2934e-b6d9-4ed9-81f0-66b6ab592b24",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a whole-brain computational model consisting of 84 cortical and subcortical regions, each modeled as a neural mass with bistable dynamics (upstate/downstate) influenced by stochastic noise and connected via an empirical connectome from the Human Connectome Project.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28, C95-C96 collectively describe the model architecture and are internally consistent. The use of a generic HCP connectome (C28) is acknowledged as a limitation due to lack of subject-specific data, which is appropriate transparency. The model structure and parameters are clearly specified in the Methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "c734b2d5-c19e-4486-a811-90d01cbec7a1",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model exhibits three distinct dynamical regimes depending on global coupling and noise parameters: a low coupling regime with sparse, independent activity; a high coupling regime with stable, stereotyped coactivations; and an intermediate regime with complex, unpredictable cascades of coactivations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 describe model behavior across parameter space, supported by Figure 2 showing firing rate patterns and cascade profiles. The characterization of three regimes is qualitatively clear and visually demonstrated. However, quantitative thresholds defining regime boundaries are not explicitly provided, which would strengthen the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "7ccc001e-7712-4730-805e-731d2c14b6f5",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Perturbational complexity (sPCI) and multiple spontaneous activity metrics (fluidity, Lempel-Ziv complexity, functional repertoire, GAP) all peak at the same intermediate 'working point' in parameter space (G\u22480.55), suggesting a common underlying fluid dynamical regime supports both optimal responsiveness and complex spontaneous dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C41-C48 are supported by Figure 3 showing convergent peaks across metrics. The spatial correspondence of maxima across different measures provides strong evidence for a shared dynamical regime. However, C42 acknowledges that direct evidence linking fluidity to attractor complexity is sparse, appropriately noting theoretical interpretation. The 10-second sPCI window (C90) differs from empirical PCI methodology, which is acknowledged but may affect comparability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "c94c94e8-015b-4e0d-97e8-728525e6a056",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When the system operates far from the working point, stimulation has minimal impact on global activity with no notable change in complexity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by Figure 3 (top-left panel) showing low sPCI values away from the working point and by Figure 2 supplement 1 showing minimal stimulation effects in extreme coupling regimes. This is consistent with the bistable model dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Empirical validation used 15 subjects who underwent TMS-EEG and spontaneous EEG recordings during wakefulness and three anesthesia conditions (Xenon, Propofol, Ketamine), with consciousness assessed by post-awakening reports showing Xenon/Propofol eliminated conscious experience while Ketamine preserved it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52, C98-C100 describe the empirical dataset from Sarasso et al., 2015. The methodology is clearly cited and the consciousness ground truth (awakening reports) is appropriate. Sample size (N=5 per drug) is small but adequate for proof-of-concept. All subjects were deeply sedated (Ramsay=6), ensuring comparable unresponsiveness across conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "cc1e4b8f-0ab5-432e-afad-88b698e1514a",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PCI with a threshold of 0.31 successfully distinguishes conscious from unconscious states in the empirical data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 cite established benchmarks (Casarotto et al., 2016) and refer to previously published findings. Figure 5 shows PCI achieves 100% classification accuracy for consciousness, consistent with prior literature. This serves as the gold standard comparator for the new metrics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Individual-level analysis shows that fluidity perfectly separates wakefulness from Propofol/Xenon anesthesia but is inconsistent for Ketamine; complexity shows good separation for most subjects but with some exceptions; GAP works well for Propofol/Xenon but fails for Ketamine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 are supported by Figure 4 showing subject-specific distributions. The heterogeneity in results, particularly for Ketamine, is honestly reported. The reversed patterns in some subjects (C58, C61) and overlapping distributions (C60, C61) demonstrate appropriate transparency about limitations. However, the small sample size (N=5 per drug) limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "2605c826-5979-4047-b487-6b225e55ac6b",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The functional repertoire metric achieves perfect separation between wakefulness and anesthesia for all subjects and conditions, with consistently more states explored during wakefulness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are strongly supported by Figure 4b showing complete separation across all 15 subjects and three drugs. This is the most robust individual-level finding. However, C93 notes this metric lacks predictive power at the group level, which appears contradictory and requires clarification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "0adcce00-e3ed-4ee3-920e-9f4a52bf70ed",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Group-level classification shows fluidity achieves 100% accuracy for consciousness (matching PCI) by separating Ketamine/wakefulness from Propofol/Xenon, while functional repertoire achieves near-perfect classification for anesthesia presence by distinguishing all anesthetized states from wakefulness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 are supported by Figure 5 showing classification results. The complementary performance of fluidity (consciousness) vs. functional repertoire (anesthesia) is clearly demonstrated. However, the linear SVM classification approach is simple and no cross-validation or statistical testing of classification accuracy is reported, limiting confidence in generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "2f6d3369-f7dd-453f-b368-0a995c7eb010",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates that a similar dynamical regime causes both perturbational complexity and complex spontaneous activity in the model, and that spontaneous activity metrics can effectively assess consciousness in empirical data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 represent the main conclusions. C71 is supported by the modeling results (Figure 3) showing convergent peaks. C72 is supported by the empirical validation (Figures 4-5) showing metrics distinguish consciousness states. However, the link between model predictions and empirical validation is somewhat indirect\u2014the model uses a generic connectome and different timescales (C90), and individual-level performance is variable (C58, C60-C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "04860ab0-d2a2-4b6a-9843-4016561d1ada",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Perturbational complexity is a robust consciousness metric but difficult to perform routinely, motivating the search for more accessible alternatives using spontaneous activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9 establish the motivation for the study. C1 is supported by extensive citations. C2 states a practical limitation of TMS-EEG (equipment complexity). C9 claims the new paradigm is more accessible, which is reasonable since resting EEG is simpler than TMS-EEG, though no direct comparison of accessibility/feasibility is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "dc8948af-8288-4530-acdd-d47dcea5243c",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "It is possible to distinguish ketamine-induced unresponsiveness from wakefulness at the individual level with a single metric.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is stated as a key finding but is not clearly demonstrated. Figure 4 shows that different metrics work for different Ketamine subjects (e.g., functional repertoire works for 4/5, complexity for some but inverted for others). No single metric consistently distinguishes Ketamine from wakefulness across all subjects, contradicting the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "276b9d27-d101-4eb5-90ed-86367ac0afab",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model's sPCI calculation spans 10 seconds (vs. hundreds of milliseconds empirically), but this difference is not problematic because the neural mass model lacks a specific timescale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C91 acknowledge a methodological discrepancy. While C91 argues the model is scale-free, this doesn't fully address whether the 20-fold difference in temporal windows affects the validity of comparing sPCI to PCI. The claim that this 'doesn't affect our statement' (C90) is asserted but not rigorously demonstrated through sensitivity analysis or rescaling experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "c0d132cb-877e-4899-a66c-9199b0537c50",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Limitations include imperfect metric separation that could be improved with personalized modeling, and the functional repertoire's lack of group-level predictive power; future work could incorporate neuromodulatory pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 appropriately acknowledge limitations and suggest future directions. C93's statement about functional repertoire lacking group-level predictive power seems inconsistent with C69 showing near-perfect anesthesia classification, but may refer to different aspects (individual variability vs. group separation). These are reasonable speculations about improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "681465db-860f-4d5f-bb98-1a28cdc5f3be",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establish that anesthetics produce different consciousness states, TMS-EEG/PCI reliably measures consciousness, resting-state activity shows organized patterns and functional networks, and brain dynamics near critical transitions support complex, fluid activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C23 provide literature-based background, all supported by appropriate citations. These establish the scientific context and are consistent with established knowledge in consciousness neuroscience and dynamical systems theory. No novel claims are made here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "c7e19308-a185-405d-a34d-83ff52df06d0",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion claims review theoretical frameworks linking complexity to consciousness (integration/differentiation), PCI's significance, brain criticality theory, and dynamical systems concepts including manifolds and phase transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C82 synthesize theoretical background in the Discussion, all appropriately cited. C77 notes the criticality hypothesis is 'debated,' showing appropriate nuance. C80 states criticality is 'possibly linked' to consciousness, appropriately hedging. These provide theoretical context for interpreting results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "52871421-c8ed-4bdf-9d05-d6a26af3ee79",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The modeling approach allowed control of dynamical regimes to show fluidity and responsiveness peak together, with fluidity capturing manifold complexity and responsiveness measuring perturbational complexity, while noise ensures manifold exploration without changing topology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 interpret the modeling results. C83 summarizes the key finding. C84 provides theoretical interpretation linking metrics to dynamical concepts. C85 explains the role of noise, citing Ghosh et al., 2008. These interpretations are reasonable given the results, though C84's claim that fluidity captures 'number of attractors' is somewhat speculative (acknowledged in C42).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "ad9b080f-a860-4694-aa3d-d6cbdda01806",
+      "content_id": "33a0274e-8c1a-4739-9b09-47b9a3d0cf7e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior work showed complexity varies across conscious states and 1/f slope correlates with PCI in the same dataset used here.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 cite relevant prior work (Hudetz et al., 2016; Colombo et al., 2019) that used the same dataset. This appropriately contextualizes the current findings within existing literature and strengthens the validity of using this dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "85270ea3-330c-4349-9c62-fc8c3b7fb942",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The whole-brain model demonstrates that perturbational complexity and high fluidity occur only within a specific intermediate dynamical regime (the 'working point'), characterized by complex cascades of coactivations. Outside this regime, in low or high coupling conditions, the network exhibits either sparse stochastic activity or stereotyped synchronized activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this core modeling finding. One reviewer states the 'modelling approach was clear, well-reasoned and explicit' and that 'results serve to provide a potential mechanistic basis' for complexity changes. Another notes the 'evidence supporting the conclusion is convincing.' The identification of the intermediate regime as critical for complexity is treated as a central, well-supported contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "16640057-86fe-4a9d-be82-096830b3cb78",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Multiple dynamical metrics (fluidity, Lempel-Ziv complexity, functional repertoire, GAP) all peak near the same working point in parameter space, suggesting that the same fluid dynamical regime underpins both optimal brain responsiveness and optimal spontaneous activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding without challenge. One reviewer notes the work 'provide[s] a comparison of the proposed measure with four other indexes' and describes the evidence as 'convincing.' The convergence of multiple metrics around the working point is treated as a key theoretical contribution that unifies perturbational and spontaneous complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "71504ee1-6231-474d-b299-d35fab0414e8",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Empirical validation used 15 subjects under different anesthetics (Xenon, Propofol, Ketamine) and wakefulness, with consciousness assessed by post-awakening reports. Xenon/Propofol produced unconsciousness while Ketamine preserved conscious experience (dreaming), and PCI successfully distinguished these states.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the empirical dataset and validation approach without criticism. One reviewer states the work is 'supported by experimental data' and another notes the authors 'verify the measure with empirical data collected in previous research.' The use of established PCI benchmarks and consciousness reports is treated as methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Individual-level analysis shows that fluidity perfectly separated wakefulness from Propofol/Xenon anesthesia but was inconsistent for Ketamine. Complexity and GAP showed variable performance across drugs and subjects, with some overlapping distributions and reversed patterns.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these empirical findings. One reviewer describes the evidence as 'convincing' and notes the work provides 'a unified framework for different observations.' The variable performance across metrics and drugs is presented as data without reviewer objection, though the inconsistencies are acknowledged in the manuscript itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "53ac6332-221f-48f5-8b1e-f8ae0a1cacdd",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Functional repertoire size achieved perfect separation between wakefulness and all anesthesia conditions (including Ketamine) at the individual level, consistently showing larger repertoires during wakefulness. It also performed nearly perfectly for distinguishing anesthesia from wakefulness at the group level.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding without critique. One reviewer notes the 'evidence supporting the conclusion is convincing' and another states the manuscript is 'in good shape after revision.' The functional repertoire's superior and consistent performance across all conditions is treated as a key empirical result.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "2ce45790-6c3a-4f55-92b3-8583bd53e5fd",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Fluidity achieved 100% classification accuracy for consciousness (matching PCI performance), with perfect linear separation between Propofol/Xenon (unconscious) and Wakefulness/Ketamine (conscious). However, both PCI and fluidity performed poorly at classifying anesthesia presence due to Ketamine confusion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these classification results. One reviewer describes the work as providing 'a unified framework for different observations related to consciousness' and notes the evidence is 'convincing.' The distinction between consciousness classification (successful) and anesthesia classification (problematic) is accepted as presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "4217cf74-467f-4da7-b4a4-f3d7746cc4c2",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The study demonstrates that a similar dynamical regime causes both perturbational complexity and complex spontaneous activity, and that spontaneous activity metrics can effectively assess consciousness in wakefulness and anesthesia, providing a more accessible alternative to perturbational approaches.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorse this main conclusion. One states the results 'provide a potential mechanistic basis for the observation that Perturbational Complexity Index changes as a function of consciousness state' and another notes the work 'constitutes a unified framework.' The practical advantage of using spontaneous activity is implicitly accepted through reviewer approval.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "99f440c8-8681-4ead-92ac-55f4bef6b510",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The computational model consists of 84 cortical and subcortical regions using neural mass models with bistable dynamics (upstate/downstate), connected via a generic Human Connectome Project connectome, with stochastic noise enabling state transitions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the modeling approach. One states 'The modelling approach was clear, well-reasoned and explicit, allowing for direct comparison to other work and potential elaboration in future studies.' The model structure and parameters are accepted without methodological concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims establish that perturbational complexity (PCI) has emerged as a robust consciousness metric using TMS-EEG, reliably differentiating awake from unconscious states, though the technique remains difficult to perform routinely.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these background claims without challenge. One reviewer notes the work addresses 'classic research' on PCI and another describes the study as 'important.' The established literature on PCI is treated as foundational context rather than contested.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "565bb414-3e42-41a2-b66c-91883a8e3a7e",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The study demonstrates it's possible to distinguish ketamine-induced unresponsiveness from wakefulness at the individual level with a single metric, though some metrics show imperfect group-level separation that could potentially be improved with personalized brain modeling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings and limitations. One notes 'The manuscript is in good shape after revision' and another describes the evidence as 'convincing.' The acknowledgment of limitations and suggestions for improvement are treated as appropriate scientific discussion rather than fundamental flaws.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70",
+      "content_id": "5d89978a-3ea2-4229-80f1-96a5b1ec82fb",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Theoretical background establishes that complexity relates to consciousness through functional integration and differentiation, that brain dynamics may operate near criticality to balance flexibility and stability, and that this critical regime maximizes information processing and may be linked to consciousness.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this theoretical framework without objection. One notes the work would interest 'many fields that would be interested in this study, including cognitive neuroscience, psychology, complex systems, neural networks, and neural dynamics,' implicitly endorsing the theoretical grounding. The citations to established literature are not challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "306b194f-68ad-478c-96a2-ecf9f2a9dc9a",
+      "result_id": "2bb2934e-b6d9-4ed9-81f0-66b6ab592b24"
+    },
+    {
+      "claim_id": "fc9fd56c-722b-48ef-9f4e-1904009add97",
+      "result_id": "2bb2934e-b6d9-4ed9-81f0-66b6ab592b24"
+    },
+    {
+      "claim_id": "8e29d9f8-9418-4a8d-b2ba-a9cb1e66001b",
+      "result_id": "2bb2934e-b6d9-4ed9-81f0-66b6ab592b24"
+    },
+    {
+      "claim_id": "7e8e6c09-a4e1-4df7-b7da-d18ade5c5b0c",
+      "result_id": "2bb2934e-b6d9-4ed9-81f0-66b6ab592b24"
+    },
+    {
+      "claim_id": "4452a938-d797-42b0-ab98-0570b3568fb7",
+      "result_id": "2bb2934e-b6d9-4ed9-81f0-66b6ab592b24"
+    },
+    {
+      "claim_id": "0ae501b8-d6bf-4f1b-a2e8-f961cb5b8fde",
+      "result_id": "2bb2934e-b6d9-4ed9-81f0-66b6ab592b24"
+    },
+    {
+      "claim_id": "c3e068fa-b059-4a83-a166-81e1fbfbc4ad",
+      "result_id": "c734b2d5-c19e-4486-a811-90d01cbec7a1"
+    },
+    {
+      "claim_id": "93053925-8856-4b35-ba43-99a73843988a",
+      "result_id": "c734b2d5-c19e-4486-a811-90d01cbec7a1"
+    },
+    {
+      "claim_id": "e129645d-2b06-45cd-839f-015b40638868",
+      "result_id": "c734b2d5-c19e-4486-a811-90d01cbec7a1"
+    },
+    {
+      "claim_id": "073f15e9-0ce0-4494-af04-fa9197b96bc9",
+      "result_id": "c734b2d5-c19e-4486-a811-90d01cbec7a1"
+    },
+    {
+      "claim_id": "22a6b08b-6d8a-472d-8027-5d8e47ffabf7",
+      "result_id": "c734b2d5-c19e-4486-a811-90d01cbec7a1"
+    },
+    {
+      "claim_id": "988c1fc0-d9bb-4d69-8778-366f50c52500",
+      "result_id": "c734b2d5-c19e-4486-a811-90d01cbec7a1"
+    },
+    {
+      "claim_id": "4f199474-c108-4d11-b55b-ccc25be40e9f",
+      "result_id": "c734b2d5-c19e-4486-a811-90d01cbec7a1"
+    },
+    {
+      "claim_id": "3a653ce1-5040-4ecb-ab31-4cb0ba4836bc",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "a4d915a9-ed59-44d4-bda0-34c0aac0cca7",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "e3cfbb05-3841-4c4f-960b-82ec1d8a561b",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "94f86fd8-ec75-4645-9b2f-30d61a6add49",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "ff436316-40f1-4911-8da9-895f652b4c72",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "5cb6de25-29c2-43a5-b476-9a3467b65056",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "1e5d5870-aa93-4c5a-88ab-818332920d98",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "ec927983-b77f-4713-9847-42252b0400c6",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "6a9aa437-bd93-411e-912a-603177fade96",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "8e218bea-c75f-4860-b400-a6717f98277d",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "b2158151-6049-45f5-9600-7a385068e319",
+      "result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5"
+    },
+    {
+      "claim_id": "72c52ef7-10c9-4b0a-85fa-368a5a258dd4",
+      "result_id": "c94c94e8-015b-4e0d-97e8-728525e6a056"
+    },
+    {
+      "claim_id": "f759a2cd-dc7e-4680-ad8b-729db25e5918",
+      "result_id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65"
+    },
+    {
+      "claim_id": "690d2e07-0ca4-4213-a86d-698c15217606",
+      "result_id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65"
+    },
+    {
+      "claim_id": "7c2f8774-5771-4a1c-a589-73972b5d1b5a",
+      "result_id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65"
+    },
+    {
+      "claim_id": "07b3558f-a549-4f61-846a-534c2009a0ec",
+      "result_id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65"
+    },
+    {
+      "claim_id": "9db85972-acf2-4df4-9f93-29696729c5b9",
+      "result_id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65"
+    },
+    {
+      "claim_id": "1090cc5e-e2a4-4cac-a0a7-97e630243185",
+      "result_id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65"
+    },
+    {
+      "claim_id": "c483ef12-effc-4191-a1b5-1717d4af8fce",
+      "result_id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65"
+    },
+    {
+      "claim_id": "8c755b2f-0b92-473c-89ec-6eec9abff40d",
+      "result_id": "cc1e4b8f-0ab5-432e-afad-88b698e1514a"
+    },
+    {
+      "claim_id": "5cfb6dea-0453-4394-ad93-8d7ad1f008d5",
+      "result_id": "cc1e4b8f-0ab5-432e-afad-88b698e1514a"
+    },
+    {
+      "claim_id": "5045a3a8-a404-4dc1-bc94-b61977c49cae",
+      "result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e"
+    },
+    {
+      "claim_id": "83d276a1-764f-4532-9cab-e09b6013c1b7",
+      "result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e"
+    },
+    {
+      "claim_id": "440e14b7-d2b5-4bba-b42d-88fdecf29b52",
+      "result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e"
+    },
+    {
+      "claim_id": "179003d2-a69d-4fad-8d3d-cfa7f839cedd",
+      "result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e"
+    },
+    {
+      "claim_id": "794158c0-4fc0-4c91-bb25-c385328ba68b",
+      "result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e"
+    },
+    {
+      "claim_id": "a6be38ba-0411-4fa2-8471-b5acdec83e50",
+      "result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e"
+    },
+    {
+      "claim_id": "57b8bfed-f261-4ce6-bf1f-89fa151fdf4b",
+      "result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e"
+    },
+    {
+      "claim_id": "f2699673-81f0-4184-bb0e-8415453b6eee",
+      "result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e"
+    },
+    {
+      "claim_id": "bddc58a1-8069-4aa9-9b37-de40390b8e56",
+      "result_id": "2605c826-5979-4047-b487-6b225e55ac6b"
+    },
+    {
+      "claim_id": "d9eaeba2-ddfe-41de-b380-c84bf02ca391",
+      "result_id": "2605c826-5979-4047-b487-6b225e55ac6b"
+    },
+    {
+      "claim_id": "86a4d513-447f-4463-8fd5-412ac7eb3d00",
+      "result_id": "0adcce00-e3ed-4ee3-920e-9f4a52bf70ed"
+    },
+    {
+      "claim_id": "2a883e45-c667-486d-84da-d86f3bb62ac1",
+      "result_id": "0adcce00-e3ed-4ee3-920e-9f4a52bf70ed"
+    },
+    {
+      "claim_id": "215d83b1-f2c9-4554-b2b7-e249c0930b94",
+      "result_id": "0adcce00-e3ed-4ee3-920e-9f4a52bf70ed"
+    },
+    {
+      "claim_id": "7dd67ab3-340d-440d-a13c-e4fcc62dadce",
+      "result_id": "0adcce00-e3ed-4ee3-920e-9f4a52bf70ed"
+    },
+    {
+      "claim_id": "3c51c29a-e6ef-43e7-9084-a7409fde0068",
+      "result_id": "0adcce00-e3ed-4ee3-920e-9f4a52bf70ed"
+    },
+    {
+      "claim_id": "141d6a17-95cb-46c5-b47d-eea2f2194fec",
+      "result_id": "2f6d3369-f7dd-453f-b368-0a995c7eb010"
+    },
+    {
+      "claim_id": "f6428dc3-f522-40b0-ab82-1616c2737d1a",
+      "result_id": "2f6d3369-f7dd-453f-b368-0a995c7eb010"
+    },
+    {
+      "claim_id": "a2d7b0e1-ee0d-4f37-89a5-c772161b37d7",
+      "result_id": "04860ab0-d2a2-4b6a-9843-4016561d1ada"
+    },
+    {
+      "claim_id": "040a7b73-3830-407c-bfe8-75861f793582",
+      "result_id": "04860ab0-d2a2-4b6a-9843-4016561d1ada"
+    },
+    {
+      "claim_id": "2cd3a530-fd2b-4e4c-a3cc-1c0920c07dc3",
+      "result_id": "04860ab0-d2a2-4b6a-9843-4016561d1ada"
+    },
+    {
+      "claim_id": "368f2dfd-7a38-4d7c-a838-86946fbe4816",
+      "result_id": "dc8948af-8288-4530-acdd-d47dcea5243c"
+    },
+    {
+      "claim_id": "7604950e-dfd1-4bce-83eb-1fc5ca91ffaf",
+      "result_id": "276b9d27-d101-4eb5-90ed-86367ac0afab"
+    },
+    {
+      "claim_id": "672f4108-d5b7-45c6-8f92-b996bae1a77e",
+      "result_id": "276b9d27-d101-4eb5-90ed-86367ac0afab"
+    },
+    {
+      "claim_id": "30b1f44f-0711-46bf-bfd6-d1954ce4199b",
+      "result_id": "276b9d27-d101-4eb5-90ed-86367ac0afab"
+    },
+    {
+      "claim_id": "980e5e0f-83b5-4ec8-82ef-d7fc2e6e5e83",
+      "result_id": "c0d132cb-877e-4899-a66c-9199b0537c50"
+    },
+    {
+      "claim_id": "5380415f-48cc-4843-ad21-e9d0a4c158ec",
+      "result_id": "c0d132cb-877e-4899-a66c-9199b0537c50"
+    },
+    {
+      "claim_id": "fc402582-59ca-48cf-a7f9-f49662d7d814",
+      "result_id": "c0d132cb-877e-4899-a66c-9199b0537c50"
+    },
+    {
+      "claim_id": "3e5abfec-c528-4d54-9c87-fa2366ce2bbc",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "a98e379b-dfbd-43ed-bb77-4ff0932d92ee",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "077cdf36-9768-4a2a-b348-c5b1d33e43da",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "923b6fc1-8e66-4469-8e1b-6fe62b28d903",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "d3bfc338-5609-40d5-ae0d-4cae70f4bbba",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "5f160def-b8b9-438c-a5f9-cf0fd16227cd",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "15b22492-e120-4327-b30e-d7233da3cd5c",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "91be6836-d538-4b08-bbda-2ad94d9b2dcc",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "b8c487bd-ce79-4467-ab7c-2a8fc1975a36",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "de6832ed-d33c-42d8-8304-05e83346918f",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "fb3b0424-50f3-4e03-a6c6-ad21cab3cee1",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "e1fa0e62-9409-42d3-91b1-67d14bf7c2d0",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "cf557555-5947-42a3-a49e-fb964f5bae36",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "a946f062-a85d-4cbd-8c0f-5426b1c77bd1",
+      "result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be"
+    },
+    {
+      "claim_id": "9677e8a6-4bcf-4089-a5b6-0f9fb3a11e45",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "d2acb3d3-70fb-4622-b1a7-06389236e87c",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "e69bbc0b-9697-4e01-839e-9965fb1a16ac",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "eaee0bc1-34a0-41b6-9927-cb33e78c84aa",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "a6abcfaf-de61-4815-ae3f-bbc6b1f98504",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "61382509-c6b7-425a-a85d-059b97fe2cbd",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "5e0f4a87-6df0-49f2-a3ad-5af4a765b895",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "4195be99-ca00-48a6-8380-0b26158dc476",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "2834396d-74a2-49a3-aef6-ae471f409fef",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "b6334b3b-874f-4c3a-bcdc-b7c441e23eb9",
+      "result_id": "c7e19308-a185-405d-a34d-83ff52df06d0"
+    },
+    {
+      "claim_id": "722eb268-8156-4c5a-baa7-5e96a2bb9b69",
+      "result_id": "52871421-c8ed-4bdf-9d05-d6a26af3ee79"
+    },
+    {
+      "claim_id": "146a4932-9dc6-46bd-b88d-e7beba8f8b11",
+      "result_id": "52871421-c8ed-4bdf-9d05-d6a26af3ee79"
+    },
+    {
+      "claim_id": "5e5d567d-77d1-446a-b1d2-0afd29457aeb",
+      "result_id": "52871421-c8ed-4bdf-9d05-d6a26af3ee79"
+    },
+    {
+      "claim_id": "043fcf41-a3c6-438c-8875-fc940ee03b72",
+      "result_id": "ad9b080f-a860-4694-aa3d-d6cbdda01806"
+    },
+    {
+      "claim_id": "dd5b9dff-a58b-40f8-b60e-b4912aa8de18",
+      "result_id": "ad9b080f-a860-4694-aa3d-d6cbdda01806"
+    },
+    {
+      "claim_id": "3a653ce1-5040-4ecb-ab31-4cb0ba4836bc",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "a4d915a9-ed59-44d4-bda0-34c0aac0cca7",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "c3e068fa-b059-4a83-a166-81e1fbfbc4ad",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "93053925-8856-4b35-ba43-99a73843988a",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "e129645d-2b06-45cd-839f-015b40638868",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "073f15e9-0ce0-4494-af04-fa9197b96bc9",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "22a6b08b-6d8a-472d-8027-5d8e47ffabf7",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "988c1fc0-d9bb-4d69-8778-366f50c52500",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "4f199474-c108-4d11-b55b-ccc25be40e9f",
+      "result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942"
+    },
+    {
+      "claim_id": "94f86fd8-ec75-4645-9b2f-30d61a6add49",
+      "result_id": "16640057-86fe-4a9d-be82-096830b3cb78"
+    },
+    {
+      "claim_id": "ff436316-40f1-4911-8da9-895f652b4c72",
+      "result_id": "16640057-86fe-4a9d-be82-096830b3cb78"
+    },
+    {
+      "claim_id": "5cb6de25-29c2-43a5-b476-9a3467b65056",
+      "result_id": "16640057-86fe-4a9d-be82-096830b3cb78"
+    },
+    {
+      "claim_id": "1e5d5870-aa93-4c5a-88ab-818332920d98",
+      "result_id": "16640057-86fe-4a9d-be82-096830b3cb78"
+    },
+    {
+      "claim_id": "ec927983-b77f-4713-9847-42252b0400c6",
+      "result_id": "16640057-86fe-4a9d-be82-096830b3cb78"
+    },
+    {
+      "claim_id": "6a9aa437-bd93-411e-912a-603177fade96",
+      "result_id": "16640057-86fe-4a9d-be82-096830b3cb78"
+    },
+    {
+      "claim_id": "8e218bea-c75f-4860-b400-a6717f98277d",
+      "result_id": "16640057-86fe-4a9d-be82-096830b3cb78"
+    },
+    {
+      "claim_id": "b2158151-6049-45f5-9600-7a385068e319",
+      "result_id": "16640057-86fe-4a9d-be82-096830b3cb78"
+    },
+    {
+      "claim_id": "f759a2cd-dc7e-4680-ad8b-729db25e5918",
+      "result_id": "71504ee1-6231-474d-b299-d35fab0414e8"
+    },
+    {
+      "claim_id": "690d2e07-0ca4-4213-a86d-698c15217606",
+      "result_id": "71504ee1-6231-474d-b299-d35fab0414e8"
+    },
+    {
+      "claim_id": "7c2f8774-5771-4a1c-a589-73972b5d1b5a",
+      "result_id": "71504ee1-6231-474d-b299-d35fab0414e8"
+    },
+    {
+      "claim_id": "07b3558f-a549-4f61-846a-534c2009a0ec",
+      "result_id": "71504ee1-6231-474d-b299-d35fab0414e8"
+    },
+    {
+      "claim_id": "8c755b2f-0b92-473c-89ec-6eec9abff40d",
+      "result_id": "71504ee1-6231-474d-b299-d35fab0414e8"
+    },
+    {
+      "claim_id": "5cfb6dea-0453-4394-ad93-8d7ad1f008d5",
+      "result_id": "71504ee1-6231-474d-b299-d35fab0414e8"
+    },
+    {
+      "claim_id": "5045a3a8-a404-4dc1-bc94-b61977c49cae",
+      "result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7"
+    },
+    {
+      "claim_id": "83d276a1-764f-4532-9cab-e09b6013c1b7",
+      "result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7"
+    },
+    {
+      "claim_id": "440e14b7-d2b5-4bba-b42d-88fdecf29b52",
+      "result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7"
+    },
+    {
+      "claim_id": "179003d2-a69d-4fad-8d3d-cfa7f839cedd",
+      "result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7"
+    },
+    {
+      "claim_id": "794158c0-4fc0-4c91-bb25-c385328ba68b",
+      "result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7"
+    },
+    {
+      "claim_id": "a6be38ba-0411-4fa2-8471-b5acdec83e50",
+      "result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7"
+    },
+    {
+      "claim_id": "57b8bfed-f261-4ce6-bf1f-89fa151fdf4b",
+      "result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7"
+    },
+    {
+      "claim_id": "f2699673-81f0-4184-bb0e-8415453b6eee",
+      "result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7"
+    },
+    {
+      "claim_id": "bddc58a1-8069-4aa9-9b37-de40390b8e56",
+      "result_id": "53ac6332-221f-48f5-8b1e-f8ae0a1cacdd"
+    },
+    {
+      "claim_id": "d9eaeba2-ddfe-41de-b380-c84bf02ca391",
+      "result_id": "53ac6332-221f-48f5-8b1e-f8ae0a1cacdd"
+    },
+    {
+      "claim_id": "7dd67ab3-340d-440d-a13c-e4fcc62dadce",
+      "result_id": "53ac6332-221f-48f5-8b1e-f8ae0a1cacdd"
+    },
+    {
+      "claim_id": "3c51c29a-e6ef-43e7-9084-a7409fde0068",
+      "result_id": "53ac6332-221f-48f5-8b1e-f8ae0a1cacdd"
+    },
+    {
+      "claim_id": "86a4d513-447f-4463-8fd5-412ac7eb3d00",
+      "result_id": "2ce45790-6c3a-4f55-92b3-8583bd53e5fd"
+    },
+    {
+      "claim_id": "2a883e45-c667-486d-84da-d86f3bb62ac1",
+      "result_id": "2ce45790-6c3a-4f55-92b3-8583bd53e5fd"
+    },
+    {
+      "claim_id": "215d83b1-f2c9-4554-b2b7-e249c0930b94",
+      "result_id": "2ce45790-6c3a-4f55-92b3-8583bd53e5fd"
+    },
+    {
+      "claim_id": "141d6a17-95cb-46c5-b47d-eea2f2194fec",
+      "result_id": "4217cf74-467f-4da7-b4a4-f3d7746cc4c2"
+    },
+    {
+      "claim_id": "f6428dc3-f522-40b0-ab82-1616c2737d1a",
+      "result_id": "4217cf74-467f-4da7-b4a4-f3d7746cc4c2"
+    },
+    {
+      "claim_id": "722eb268-8156-4c5a-baa7-5e96a2bb9b69",
+      "result_id": "4217cf74-467f-4da7-b4a4-f3d7746cc4c2"
+    },
+    {
+      "claim_id": "146a4932-9dc6-46bd-b88d-e7beba8f8b11",
+      "result_id": "4217cf74-467f-4da7-b4a4-f3d7746cc4c2"
+    },
+    {
+      "claim_id": "306b194f-68ad-478c-96a2-ecf9f2a9dc9a",
+      "result_id": "99f440c8-8681-4ead-92ac-55f4bef6b510"
+    },
+    {
+      "claim_id": "fc9fd56c-722b-48ef-9f4e-1904009add97",
+      "result_id": "99f440c8-8681-4ead-92ac-55f4bef6b510"
+    },
+    {
+      "claim_id": "8e29d9f8-9418-4a8d-b2ba-a9cb1e66001b",
+      "result_id": "99f440c8-8681-4ead-92ac-55f4bef6b510"
+    },
+    {
+      "claim_id": "7e8e6c09-a4e1-4df7-b7da-d18ade5c5b0c",
+      "result_id": "99f440c8-8681-4ead-92ac-55f4bef6b510"
+    },
+    {
+      "claim_id": "4452a938-d797-42b0-ab98-0570b3568fb7",
+      "result_id": "99f440c8-8681-4ead-92ac-55f4bef6b510"
+    },
+    {
+      "claim_id": "0ae501b8-d6bf-4f1b-a2e8-f961cb5b8fde",
+      "result_id": "99f440c8-8681-4ead-92ac-55f4bef6b510"
+    },
+    {
+      "claim_id": "a2d7b0e1-ee0d-4f37-89a5-c772161b37d7",
+      "result_id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8"
+    },
+    {
+      "claim_id": "040a7b73-3830-407c-bfe8-75861f793582",
+      "result_id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8"
+    },
+    {
+      "claim_id": "923b6fc1-8e66-4469-8e1b-6fe62b28d903",
+      "result_id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8"
+    },
+    {
+      "claim_id": "d3bfc338-5609-40d5-ae0d-4cae70f4bbba",
+      "result_id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8"
+    },
+    {
+      "claim_id": "5f160def-b8b9-438c-a5f9-cf0fd16227cd",
+      "result_id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8"
+    },
+    {
+      "claim_id": "15b22492-e120-4327-b30e-d7233da3cd5c",
+      "result_id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8"
+    },
+    {
+      "claim_id": "368f2dfd-7a38-4d7c-a838-86946fbe4816",
+      "result_id": "565bb414-3e42-41a2-b66c-91883a8e3a7e"
+    },
+    {
+      "claim_id": "980e5e0f-83b5-4ec8-82ef-d7fc2e6e5e83",
+      "result_id": "565bb414-3e42-41a2-b66c-91883a8e3a7e"
+    },
+    {
+      "claim_id": "5380415f-48cc-4843-ad21-e9d0a4c158ec",
+      "result_id": "565bb414-3e42-41a2-b66c-91883a8e3a7e"
+    },
+    {
+      "claim_id": "9677e8a6-4bcf-4089-a5b6-0f9fb3a11e45",
+      "result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70"
+    },
+    {
+      "claim_id": "d2acb3d3-70fb-4622-b1a7-06389236e87c",
+      "result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70"
+    },
+    {
+      "claim_id": "e69bbc0b-9697-4e01-839e-9965fb1a16ac",
+      "result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70"
+    },
+    {
+      "claim_id": "eaee0bc1-34a0-41b6-9927-cb33e78c84aa",
+      "result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70"
+    },
+    {
+      "claim_id": "a6abcfaf-de61-4815-ae3f-bbc6b1f98504",
+      "result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70"
+    },
+    {
+      "claim_id": "61382509-c6b7-425a-a85d-059b97fe2cbd",
+      "result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70"
+    },
+    {
+      "claim_id": "5e0f4a87-6df0-49f2-a3ad-5af4a765b895",
+      "result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70"
+    },
+    {
+      "claim_id": "4195be99-ca00-48a6-8380-0b26158dc476",
+      "result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "9daecb15-1a5d-46ed-b680-602119ba66c1",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "2bb2934e-b6d9-4ed9-81f0-66b6ab592b24",
+      "peer_result_id": "99f440c8-8681-4ead-92ac-55f4bef6b510",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on model architecture claims (C24, C26-C28, C95-C96). Both evaluations find the modeling approach clear, well-reasoned, and appropriately transparent about limitations. OpenEval notes lack of quantitative regime boundaries as minor weakness; peer reviewers explicitly praise clarity and explicitness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "d189b157-f543-4aee-aed8-2e767b5d78f3",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "c734b2d5-c19e-4486-a811-90d01cbec7a1",
+      "peer_result_id": "85270ea3-330c-4349-9c62-fc8c3b7fb942",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on model behavior across parameter space (C29-C36). Both find the three-regime characterization well-supported by Figure 2. Peer reviewers also include C3-C4 in this evaluation, treating the intermediate regime identification as a central, mechanistically-grounded contribution. OpenEval notes missing quantitative thresholds; peer reviewers describe evidence as 'convincing.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "394d4927-e3f6-4633-9b85-eb67b54173a3",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "7ccc001e-7712-4730-805e-731d2c14b6f5",
+      "peer_result_id": "16640057-86fe-4a9d-be82-096830b3cb78",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on convergent peaks across metrics (C41-C48). Both evaluations treat this as a key theoretical contribution unifying perturbational and spontaneous complexity. OpenEval appropriately notes sparse direct evidence for fluidity-attractor link (C42) and temporal window discrepancy (C90); peer reviewers accept findings without challenging these acknowledged limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "676a5219-6761-4041-9186-cba261839bb3",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "c97a6cc1-315b-48cb-90ab-cfd9f1117b2e",
+      "peer_result_id": "e152a6fa-d4f3-4c7f-b530-89953bac9de7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on empirical heterogeneity findings (C56-C63). Both evaluations accept the variable performance across metrics and drugs, with OpenEval explicitly praising transparency about reversed patterns and overlapping distributions. Peer reviewers describe evidence as 'convincing' despite inconsistencies, treating variability as honest data reporting rather than methodological flaw.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "dd1e38be-4be3-4e32-b6aa-7451d5f7206e",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4890cbc6-3065-4115-a10b-2c8c3c65aa65",
+      "peer_result_id": "71504ee1-6231-474d-b299-d35fab0414e8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on empirical dataset validity (C49-C52). Both evaluations accept the Sarasso et al. dataset and methodology without criticism. Peer reviewers also include C53-C54 (PCI benchmarks) in their evaluation. OpenEval notes small sample size as limitation; peer reviewers treat dataset as methodologically sound for proof-of-concept.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "1bf15a69-2e51-4977-b472-fc8687a1223b",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "cc1e4b8f-0ab5-432e-afad-88b698e1514a",
+      "peer_result_id": "71504ee1-6231-474d-b299-d35fab0414e8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on PCI benchmark validity (C53-C54). Both evaluations accept established PCI benchmarks as appropriate gold standard. OpenEval cites Casarotto et al. 2016 and Figure 5; peer reviewers incorporate this into broader acceptance of validation approach without specific critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "eea5eea0-2b7a-425b-891a-1300428f566b",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "2605c826-5979-4047-b487-6b225e55ac6b",
+      "peer_result_id": "53ac6332-221f-48f5-8b1e-f8ae0a1cacdd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on functional repertoire's robust performance (C64-C65). Both evaluations find complete separation across all subjects strongly supported by Figure 4b. OpenEval notes apparent contradiction with C93 regarding group-level predictive power; peer reviewers accept findings without addressing this inconsistency.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "0c0391f9-dba1-487e-abba-0111ca98c55e",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "0adcce00-e3ed-4ee3-920e-9f4a52bf70ed",
+      "peer_result_id": "2ce45790-6c3a-4f55-92b3-8583bd53e5fd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on classification results (C66-C70). Both evaluations accept complementary performance of fluidity vs. functional repertoire. OpenEval notes lack of cross-validation and statistical testing as limitation; peer reviewers describe evidence as 'convincing' and accept the unified framework without methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "ad8aed59-edd8-44a7-a4de-2885e6704d72",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "2f6d3369-f7dd-453f-b368-0a995c7eb010",
+      "peer_result_id": "4217cf74-467f-4da7-b4a4-f3d7746cc4c2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on main conclusions (C71-C72). Both evaluations support the core findings linking model predictions to empirical validation. OpenEval notes indirect connection due to generic connectome and timescale differences; peer reviewers explicitly endorse mechanistic basis and practical advantages, treating conclusions as well-established.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "643bae1f-dbf4-45e9-9610-cef3b7fe5745",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c7e19308-a185-405d-a34d-83ff52df06d0",
+      "peer_result_id": "0aeebfea-b8df-4f3d-9c34-16fa4ac89d70",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on theoretical framework (C73-C80). Both evaluations accept the literature-based theoretical grounding without objection. OpenEval notes appropriate hedging on criticality debate (C77, C80); peer reviewers implicitly endorse framework by noting broad interdisciplinary relevance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "10a77c1a-fc9c-4c22-8f60-8888921873a6",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "04860ab0-d2a2-4b6a-9843-4016561d1ada",
+      "peer_result_id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on study motivation (C1-C2). Both evaluations accept background claims about PCI importance and TMS-EEG limitations. Peer reviewers also include C13-C16 in their evaluation. OpenEval notes C9's accessibility claim lacks direct comparison; peer reviewers treat motivation as addressing 'classic research' without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "c86b3f34-49cd-43ff-aa9e-3b4b41134034",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "dc8948af-8288-4530-acdd-d47dcea5243c",
+      "peer_result_id": "565bb414-3e42-41a2-b66c-91883a8e3a7e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on Ketamine classification claim (C88). OpenEval rates as UNCERTAIN, noting Figure 4 contradicts the claim that metrics consistently distinguish Ketamine. Peer reviewers rate as SUPPORTED, accepting the finding and treating acknowledged limitations as appropriate scientific discussion rather than fundamental flaw.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "199af6ad-c9c8-4518-8a09-600a1f742f85",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "c0d132cb-877e-4899-a66c-9199b0537c50",
+      "peer_result_id": "565bb414-3e42-41a2-b66c-91883a8e3a7e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on limitations and future directions (C92-C94). Both evaluations accept these as appropriate acknowledgments. OpenEval notes apparent inconsistency in C93 regarding functional repertoire's group-level power; peer reviewers accept limitations without addressing this specific inconsistency.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "27351874-4a72-4b0b-abc2-fd0792696d72",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "52871421-c8ed-4bdf-9d05-d6a26af3ee79",
+      "peer_result_id": "4217cf74-467f-4da7-b4a4-f3d7746cc4c2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on theoretical interpretation (C83-C85). Both evaluations accept the interpretation of modeling results. OpenEval notes C84's claim about fluidity capturing 'number of attractors' is speculative (acknowledged in C42); peer reviewers endorse the unified framework without challenging speculative elements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "bf84d1b0-558d-41f3-b9e6-a16faff01afb",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "c94c94e8-015b-4e0d-97e8-728525e6a056",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates C39 (low sPCI in extreme regimes) as SUPPORTED based on Figure 3 and Figure 2 supplement 1. No corresponding peer review evaluation specifically addresses this claim about bistable dynamics in extreme coupling regimes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "251ac403-4d4e-44ac-9ba1-4ba5893fe6de",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "276b9d27-d101-4eb5-90ed-86367ac0afab",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates C89-C91 (temporal window discrepancy) as UNCERTAIN, noting the 20-fold difference between sPCI and PCI windows is asserted but not rigorously demonstrated through sensitivity analysis. Peer reviewers do not specifically address this methodological concern.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "4bfb6f15-77c3-490a-a9a5-4dcb981086f7",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "681465db-860f-4d5f-bb98-1a28cdc5f3be",
+      "peer_result_id": "fb0cb0d2-137f-423f-bdea-95ecfd631ae8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on literature background (C10-C23). OpenEval finds all background claims appropriately cited and consistent with established knowledge. Peer reviewers address subset (C13-C16) as part of broader acceptance of study motivation and theoretical grounding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    },
+    {
+      "id": "daf3b2be-f8f3-4bd1-938f-621055a5cc5c",
+      "submission_id": "78356e42-5aa3-4e93-b737-9cb7ba3a50f0",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "ad9b080f-a860-4694-aa3d-d6cbdda01806",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates C86-C87 (prior work citations) as SUPPORTED, noting appropriate contextualization with Hudetz et al. 2016 and Colombo et al. 2019. Peer reviewers do not specifically address these citation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:49:31.920735Z"
+    }
+  ]
+}

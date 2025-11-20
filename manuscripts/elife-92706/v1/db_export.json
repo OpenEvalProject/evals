@@ -1,0 +1,2571 @@
+{
+  "submission": {
+    "id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T18:57:31.597812Z",
+    "updated_at": "2025-11-19T18:57:31.597812Z"
+  },
+  "content": [
+    {
+      "id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "content_type": "manuscript",
+      "content_text": "# Cohesin reconstitution and homologous recombination repair of DNA double-strand breaks in late mitosis\n\n## Authors\n\n- Jessel Ayra Plasencia<sup>1</sup> ([ORCID: 0000-0003-1052-4214](https://orcid.org/0000-0003-1052-4214)) \u2020\n- Sara Medina-Su\u00e1rez<sup>1</sup> ([ORCID: 0000-0002-3612-764X](https://orcid.org/0000-0002-3612-764X))\n- Esperanza Hern\u00e1ndez-Carralero<sup>1</sup> ([ORCID: 0000-0002-0653-3583](https://orcid.org/0000-0002-0653-3583))\n- Jonay Garc\u00eda-Luis<sup>2</sup> ([ORCID: 0000-0002-2799-7491](https://orcid.org/0000-0002-2799-7491))\n- Lorraine S Symington<sup>3</sup> ([ORCID: 0000-0002-1519-4800](https://orcid.org/0000-0002-1519-4800))\n- F\u00e9lix Mach\u00edn<sup>1</sup> ([ORCID: 0000-0003-4559-7798](https://orcid.org/0000-0003-4559-7798)) \u2020\n\n### Affiliations\n\n1. Hospital Universitario Nuestra Se\u00f1ora de Candelaria, Instituto de Investigaci\u00f3n Sanitaria de Canarias (IISC) Santa Cruz de Tenerife Spain ([ROR:005a3p084](https://ror.org/005a3p084))\n2. Instituto of Tecnolog\u00edas Biom\u00e9dicas, Universidad de La Laguna San Crist\u00f3bal de La Laguna Spain ([ROR:01r9z8p25](https://ror.org/01r9z8p25))\n3. Department of Microbiology and Immunology, Columbia University Medical Center New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n4. Facultad de Ciencias de la Salud, Universidad Fernando Pessoa Canarias Las Palmas de Gran Canaria Spain ([ROR:00bqe3914](https://ror.org/00bqe3914))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cohesin complex maintains sister chromatid cohesion from S phase to anaphase onset. Cohesin also plays roles in chromosome structure and DNA repair. In yeast, the cohesin subunit Scc1 is cleaved at anaphase onset to allow segregation in an orderly manner, although some residual cohesin subunits remain to maintain chromosome structure. Efficient DNA double-strand break (DSB) repair by homologous recombination (HR) with the sister chromatid also depends on cohesin. Here, we have examined the role of residual cohesin in DSB repair in telophase (late mitosis). We have found that Scc1 returns in telophase after DSBs and that it partially reconstitutes a chromatin-bound cohesin complex with Smc1 and an acetylated pool of Smc3 after a single HO-induced DSB at the MAT locus. However, this new cohesin is neither required for the HR-driven MAT switching nor binds to the MAT locus after the DSB.\n\n## Introduction\n\nCell survival and genome integrity depend on the faithful segregation of chromosomes in anaphase. From the S phase until the anaphase onset, the highly conserved cohesin complex plays an essential role in the structural maintenance of sister chromatids. Cohesin is a multiprotein complex composed in yeast of Smc1, Smc3, Scc1 (also known as Mcd1), Scc3, and Pds5 subunits (Hirano, 2000; Michaelis et al., 1997; Sj\u00f6gren and Nasmyth, 2001). At the core of the complex, Smc1, Smc3, and Scc1 form a heterotrimeric ring that embraces and holds the replicated sister chromatids together and well-aligned until reaching G2/M (Di\u0301az-Marti\u0301nez et al., 2008; Koshland and Guacci, 2000; Laloraya et al., 2000; Michaelis et al., 1997; Strunnikov et al., 1993). Cohesin subunits are loaded onto chromosomes in G1 by the Scc2\u2013Scc3 complex (Ciosk et al., 2000). When cells enter S phase, the acetyl-transferase Eco1 acetylates Smc3, which inhibits the ATPase activity of Smc1\u2013Smc3 heads and prevents the opening of the Smc3\u2013Scc1 interface (\u00c7amdere et al., 2015; Chan et al., 2012; Huber et al., 2016; Murayama and Uhlmann, 2015; Str\u00f6m et al., 2007; Unal et al., 2007). This embraces the nascent sister chromatids and establishes cohesion (Uhlmann and Nasmyth, 1998). Once sister chromatids are ready for segregation, the APCCdc20 (Anaphase Promoting Complex associated with its regulatory cofactor Cdc20) initiates anaphase by degrading securin/Pds1, so that the separase/Esp1 becomes active. Separase then cleaves the Scc1 subunit by proteolysis, releasing sister chromatids from cohesion (Cohen-Fix et al., 1996; Michaelis et al., 1997; Nasmyth and Haering, 2009; Uhlmann et al., 1999; Yamamoto et al., 1996). The fragmented Scc1 is then rapidly degraded (Rao et al., 2001), while a pool of Smc1\u2013Smc3 dimers appears to remain through anaphase (Renshaw et al., 2010; Tanaka et al., 1999). This pool, however, becomes loose as Smc3 is deacetylated by Hos1 in anaphase (Chan et al., 2012; Huber et al., 2016; Murayama and Uhlmann, 2015). Interestingly, some cohesin-dependent cohesion remains at chromosome arms during anaphase, suggesting that residual cohesin is present despite separase activation (Djeghloul et al., 2020; Garcia-Luis et al., 2022; Renshaw et al., 2010).\n\nIn addition to its role in sister chromatid cohesion, cohesin has also been involved in chromosome structure and DNA repair. On the one hand, cohesin can hold two DNA segments within the same chromatin forming an extruded loop (Lazar-Stefanita et al., 2017; Rao et al., 2017; Schalbetter et al., 2017). On the other hand, DNA double-strand breaks (DSBs) produce the so-called damage-induced cohesion (DI-cohesion) (Kim et al., 2010). Following DNA damage, cohesin is recruited and accumulated both along 50\u2013100 kb surrounding the DSB site and genome-wide (Str\u00f6m et al., 2004; Unal et al., 2004). The cohesin recruitment creates a firm anchoring of two well-aligned sister chromatids, which in turn facilitates DSB repair by homologous recombination (HR) (Covo et al., 2010; Hou et al., 2022; Phipps and Dubrana, 2022). In this regard, DNA damage kinases such as Mec1 and Chk1 phosphorylate Scc1 to initiate the cohesion establishment in post-replicative cells (Heidinger-Pauli et al., 2008).\n\nHR is a DSB repair mechanism that uses a homologous template for restoring the original broken DNA. HR is highly reliable when the correct template is used, which in mitotic cells is the sister chromatid. Hence, HR is the preferred repair mechanism from S to G2/M, when the sister chromatid is available in close proximity (Langerak and Russell, 2011; Mathiasen and Lisby, 2014; Symington et al., 2014). Before DNA replication, in G1, the alternative error-prone non-homologous end joining (NHEJ) is used instead. Cells coordinate the choice of either NHEJ or HR based on the activity of cyclin-dependent kinase (CDK). Low CDK keeps cells in G1 and favors NHEJ, whereas high CDK is present in S and G2/M and activates HR. Noticeably, there is a paradox in this link between high CDK and HR. In the cell cycle window that spans from anaphase to the telophase-to-G1 transition (we will refer to this window as late mitosis), high CDK is set to favor HR despite a sister chromatid not being in proximity (Mach\u00edn and Ayra-Plasencia, 2020). In a previous study, we showed that sister loci can indeed move closer and coalesce, and that HR still appears important for DSB survival in late mitosis (Ayra-Plasencia and Mach\u00edn, 2019). Considering all these observations, we wondered whether the residual cohesin is affected by DSBs in late mitosis (telophase) and whether this cohesin pool is important for HR repair.\n\n## Results and discussion\n\n### Scc1 becomes stable after DSBs in late mitosis\n\nAt the anaphase onset, Esp1 cleaves Scc1, opening the cohesin ring and releasing sister chromatids from cohesion. Thereafter, Scc1 needs to be translated de novo since cleaved fragments are unstable and degraded by the proteasome (Rao et al., 2001). However, it is known that activation of Esp1 can be blocked by DDC kinases (Yam et al., 2020). In addition, DDC kinases also phosphorylate Scc1 to facilitate DI-cohesion at a post-replicative stage (Heidinger-Pauli et al., 2008). Thus, it is feasible that DSB generation in late mitosis can stabilize de novo Scc1 as well as rendering it cohesive. Noteworthy, Smc1 and Smc3 subunits remain attached to chromatin after segregation (Garcia-Luis et al., 2022; Renshaw et al., 2010; Tanaka et al., 1999).\n\nTo assess how cohesin subunits behave after DSBs in late mitosis, cdc15-2 strains that bear Scc1 tagged with myc epitopes and Smc1/3 tagged with HA epitopes were first blocked in telophase at 34\u00b0C for 3 hr (Tel) (Figure 1A). The cdc15-2 allele encodes a conditionally thermosensitive Cdc15 kinase, which drives telophase-to-G1 transition (Mach\u00edn and Ayra-Plasencia, 2020). These strains also harbor an inducible HO endonuclease, which cuts the HO cutting site (HOcs) at the MAT locus in chromosome III. The HO gene is under the control of a promoter system that responds to \u03b2-estradiol (lexO4p:HO:plus LexA-ER-B112-T) (Gn\u00fcgge and Symington, 2020; Ottoz et al., 2014). In wild-type strains, the HO DSB is repaired by HR with the intramolecular ectopic loci HMR and HML. The locus selection depends on the MAT allele (the MATa HO DSB repairs with HML) and results in a gene conversion (e.g., from MATa to MAT\u03b1). In order to undoubtedly attribute the effects on cohesin to the DSB and not to downstream events of the repair process, we used a set of strains unable to repair the HO-mediated DSB (\u0394hml \u0394hmr double mutant). After the Tel arrest, the cultures were divided into three. The first subculture served as a mock control, the second was used to generate the single HO DSB (+HO), and the third was used to generate multiple random DSBs by means of the radiomimetic drug phleomycin (+phle). Noteworthy, these latter DSBs are repairable in principle. Incubation of the subcultures was prolonged at 34\u00b0C for 2 extra hours.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the experimental procedure. Cells in logarithmic growth phase were first arrested in telophase (Tel) by incubating them at 34\u00b0C for 3 hr (strains bear the cdc15-2 allele). Then, the culture was divided into three subcultures. One served as a mock control, and the other two were treated to generate DSBs, one with \u03b2-estradiol (to express the HO endonuclease) and the other with phleomycin. The strain is unable to repair the HO DSB break by HR-driven gene conversion (\u0394hmr \u0394hml). (B) Western blot against Scc1-3myc. This experiment compares Scc1-3myc levels in an asynchronous, G2- and telophase-blocked cultures. The leftmost lane (No tag) is a control strain for Scc1 without the 3myc epitope tag. Pgk1 protein served as a housekeeping. Ponceau S staining is also shown as a loading control. Asyn.: asynchronous. Tel: telophase. +Phle: 10 mg\u00b7ml\u20131 phleomycin. +HO: 2 \u03bcM \u03b2-estradiol. *: Unspecific band detected by the \u03b1-myc antibody just over the Scc1-3myc signal. (C) Like in (B) but against Smc1-6HA. (D) Like in (C) but against Smc3-6HA. (E) Quantification of Scc1-3myc and Smc1-6HA levels in all conditions (mean \u00b1 SEM, n = 3). Statistical comparisons are shown for selected pairs (**p < 0.01; one-way ANOVA, Tukey\u2019s post hoc).\n\nThe presence or absence of Scc1-3myc, Smc1-6HA, and Smc3-6HA was checked by Western blot. As controls, we included asynchronous samples from the same strains, before the telophase arrest, as well as a parallel arrest at G2/M by the drug nocodazole (Nz). As expected, Smc1, Smc3, and Scc1 bands were detected in both cycling (asyn) cells and cells blocked in G2/M (Figure 1B\u2013D). The Scc1 signal disappeared almost entirely when cells were arrested in telophase and remained low in the mock control 2 hr later. Strikingly, full-length Scc1 was restored after single and multiple DSBs generation (Figure 1B, E). Compared to the mock condition, phleomycin treatment increased Scc1 levels fivefold, reaching approximately half of the levels observed in G2/M. In the case of HO DSBs, Scc1 levels surpassed those of the mock by more than 15-fold and were even higher than in G2/M. In contrast, Smc1 and Smc3 levels remained more stable in both types of DSBs (Figure 1B\u2013D).\n\n### The cohesin complex is reconstituted and binds to chromatin after the HO DSBs in telophase\n\nThe above findings suggest that the cohesin complex could be newly formed and loaded onto the breaks, promoting DI-cohesion, which could in turn ease the recombinational events. To assess whether cohesin subunits are reassembled after DSB induction in telophase, we performed a co-immunoprecipitation (co-IP) experiment using Smc1-6HA as the bait protein in a strain that also expresses Scc1-3myc (Figure 2A, Figure 2\u2014figure supplement 1). In our experimental setup, in addition to the anti-HA and anti-myc antibodies, we included an antibody for the acetylated form of Smc3 at lysine residues K112 and K113 (acSmc3), which have been linked to the chromatin-bound pool of the Smc1\u2013Smc3 dimer (Beckou\u00ebt et al., 2010; Minamino et al., 2015; Rolef Ben-Shahar et al., 2008; Unal et al., 2008). In asynchronous cultures, both Scc1-3myc and acSmc3 co-immunoprecipitated with Smc1-6HA, indicating that we were able to pull down the chromatin-bound pool (acetylated Smc3) of the canonical Smc1\u2013Smc3\u2013Scc1 complex. A parallel co-IP using untagged Smc1 did not recover the other subunits, confirming the specificity of the interaction. As expected, Scc1 was not detected in the pull-down under the mock condition (no DSBs); however, it was recovered after generation of the HO DSB. Surprisingly, this was not the case when random DSBs were induced by phleomycin. Incidentally, acSmc3 appeared as two bands in the asynchronous culture but as a single upper band in all telophase conditions, suggesting a difference in posttranslational modifications at this cell cycle stage.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig2-v1.jpg)\n\n**Figure 2.:** Cells were treated as in Figure 1A. (A) Co-immunoprecipitation (co-IP) of the core cohesin complex. Smc1-6HA was used as the bait protein; the leftmost lane includes a control with an untagged Smc1. (B) Chromatin fractionation of the strain expressing Smc1-6HA and Scc1-3myc. Relative protein levels (to the mock sample) are indicated under the blots. Pgk1 and histone H3 (HH3) were included as reporters of the cytosolic and chromatin-bound fractions, respectively. The asterisk (*) indicates an unspecific band in the whole cell extract (WCE) that is absent from the chromatin-bound fraction. (C) Cohesin does not bind the HO DSB in telophase. Chromatin immunoprecipitation (ChIP) of Smc3-6HA with (+HO) and without (\u2212HO) HO induction (mean \u00b1 SEM, n = 3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This is a biological replicate of the experiment shown in Figure 2A.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Related to Figure 2B. (A) Optimization of the chromatin fractionation using the chromatin-bound pool of Smc3 (acetylated Smc3; acSmc3) and the histone H3 (HH3). The best results were obtained after three successive rounds of fractionation (pellet #3, P3; see Materials and methods). S, supernatant; P, pellet. (B) The strain expressing Smc3-6HA was subjected to the same experiment and chromatin fractionation performed in Figure 2B for Smc1-6HA and Scc1-3myc. Note that there are more chromatin-bound acSmc3 after DSBs, especially after the HO DSB.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Related to Figure 2C. The ChIP was performed upon cells arrested in G2/M with nocodazole and further subdivided into two subcultures, one in which the HO double-strand break (DSB) was generated (+HO) and one without the DSB (\u2212HO). The strain is unable to repair the break by gene conversion (\u0394hmr \u0394hml), and the HO induction lasted 2 hr. Note the increase in Smc3 binding in the vicinity of HOcs after the DSB. This experiment was performed in parallel to the second repetition for Tel arrested cells shown in Figure 2C.\n\nThe reconstitution of the complex and the detection of the acetylated form of Smc3 prompted us to confirm whether the newly formed Scc1 was bound to chromatin, since the coexistence of two pools could not be ruled out based on the co-IP experiments alone. For instance, a soluble Smc1\u2013Smc3\u2013Scc1 complex could coexist with a chromatin-bound Smc1\u2013acSmc3 dimer, which could represent up to 30% of the total Smc1\u2013Smc3 in anaphase (Beckou\u00ebt et al., 2010). To this end, we performed biochemical fractionation of the chromatin-bound proteins, observing an increase in all cohesin subunits in the chromatin fraction after the HO DSB (Figure 2B, Figure 2\u2014figure supplement 2). The increase was approximately twofold for Smc1\u2013acSmc3 and up to sevenfold for Scc1. These results confirmed that the new Scc1 binds to a reconstituted chromatin-bound cohesin complex following the HO DSB. In contrast, this chromatin recruitment was not observed after phleomycin treatment. The differences in co-IP and fractionation due to the source and nature of the DSBs are intriguing. In this experimental setup, the HO DSB is irreparable, whereas DSBs caused by phleomycin can eventually be repaired by anaphase regression and sister loci coalescence (Ayra-Plasencia and Mach\u00edn, 2019). In addition, the HO DSB leaves clean ends that can be easily resected, while the DSBs after phleomycin are chemically modified and require extended processing.\n\nNext, we used chromatin immunoprecipitation (ChIP) to investigate whether the HO DSB recruits more cohesin to the vicinity of the HOcs. This recruitment has been reported during DSBs that exert a G2/M arrest by the DDC (Scherzer et al., 2022; Str\u00f6m et al., 2004). Because the level of Scc1 changes so dramatically after the HO DSB, we selected one of the subunits that does not for the ChIP. An Smc3-HA strain unable to repair the HO DSB (\u0394hml \u0394hmr double mutant) was arrested in both G2/M and telophase. We confirmed an increase in the Smc3-bound pool around the HOcs in G2/M after the DSB (Figure 2\u2014figure supplement 3); however, such an increase was not observed in telophase (Figure 2C). We thus conclude that the core of the cohesin SMCs (Smc1\u2013Smc3) is not further recruited to the HO DSB in late mitosis. This lack of local recruitment could be due to several non-exclusive scenarios, including the inability to increase the acSmc3 pools by Eco1, whose levels drop after G2/M (Lyons and Morgan, 2011), as well as condensin binding to chromosome arms during anaphase (Leonard et al., 2015), which might act as an eviction barrier for cohesin loading. However, reassembly of the full cohesin complex at residual Smc1\u2013acSmc3 dimers may shift the organization of the surrounding chromosome regions and impinge on the HO DSB repair in telophase.\n\n### The HO-mediated DSB is efficiently repaired by HR in late mitosis\n\nIn a previous report, we showed from both genetic and cytological points of view that HR was still active in late mitosis (Ayra-Plasencia and Mach\u00edn, 2019). Having observed that cohesin is reconstituted and chromatin-bound after the HO DSB in telophase, we next wondered about the functional role of the complex in this context.\n\nWe first tested whether the HO-induced DSB is efficiently resected into 3\u2032 ssDNA tails in late mitosis. Resection is necessary to form the protruding 3\u2032 Rad51 nucleoprotein filaments that invade the donor homologous sequence to restore the break by HR (Peng et al., 2021; Symington, 2016). To confirm and quantitate the formation of ssDNA flanking the HOcs, we used a qPCR approach whereby primers can only amplify a target DNA cut with the restriction enzyme StyI if the target has been rendered single-stranded by resection (Figure 3\u2014figure supplement 1; Gn\u00fcgge et al., 2018; Zierhut and Diffley, 2008). We used the \u0394hml \u0394hmr double mutant to hamper the normal HR flow from resection to invasion and thus boost ssDNA detection. Two different locations downstream of the HOcs were monitored to determine both the initial resection (0.7 kb from HOcs) and the kinetics further away (5.7 kb). In addition, cells arrested in either G2/M or telophase were directly compared to each other. Cells were first arrested for 3 hr, the HO was induced afterwards, and samples were taken every hour during a 4 hr time course while sustaining the HO induction (Figure 3A). As expected, cells in G2/M efficiently resected the HOcs ends. The time to reach half of the maximum resection (t1/2) was ~1 hr at 0.7 kb and ~2.5 hr at 5.7 kb from the DSB, respectively. Resection in telophase was only slightly delayed at 0.7 kb (t1/2 ~ 1.5 hr), whereas the delay was more pronounced at 5.7 kb (t1/2 ~ 3.5 hr). The delay may be due to either the fact that CDK activity in late mitosis, though still high, is slightly inferior to that at G2/M or the different chromosome compaction degrees between the arrests. Together with the samples for the qPCR, samples for Western blot of Rad53 were taken. Rad53 is an effector kinase of the DDC that gets activated by hyperphosphorylation after being recruited to the 3\u2032 ssDNA overhangs (Branzei and Foiani, 2006). In agreement with the resection profile, Rad53 hyperphosphorylation occurred in late mitosis, although with ~1 h delay (Figure 3B). This delay is also consistent with previous studies on Rad53 activation upon an unrepairable HO DSB (Pellicioli et al., 2001).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Resection in late mitosis is almost as efficient as in G2/M. Cells were arrested in G2/M or telophase (Tel), and then the HO DSB was generated by adding \u03b2-estradiol. Samples were taken at the indicated times to monitor the kinetics of resection. This strain is unable to repair the HO DSB break by HR-driven gene conversion (\u0394hmr \u0394hml). (A) Charts depicting the resection kinetics for two different amplicons located at 726 bp and 5.7 kb downstream the Hocs break (mean \u00b1 SEM, n = 3; fresected is the proportion of resected DNA). (B) Representative Western blots against Rad53 to follow the sensing of DNA damage detection in G2/M versus late mitosis. (C\u2013F) Yeast cells use HR to repair the HO DSB in late mitosis. Cells were first blocked in telophase (Tel). Then, the HO DSB was generated by adding \u03b2-estradiol. After 1 hr, the \u03b2-estradiol was washed away, and samples were taken to monitor the repair for 3 hr. The strain can repair the HO DSB break by HR-driven gene conversion (\u0394hmr HML). (C) Schematic of the fragments obtained after a StyI digestion for both MATa and MAT\u03b1 sequences. The probe to detect the fragments by Southern blot is in blue. When the MATa locus is intact, the digestion gives rise to a 0.9 kb fragment. The HO cutting site (Hocs) is located within the StyI-digested MATa locus. Thus, the HO-driven DSB shortens the fragment to 0.7 kb. HR leads to a gene conversion to MAT\u03b1, which results in the loss of a StyI restriction site and a new fragment of 1.8 kb. (D) Representative Western blot analyses for HO induction and subsequent degradation (tagged with Flag epitope) and the DSB sensing through Rad53 hyperphosphorylation. A Pgk1 Western blot served as a housekeeping, and Ponceau S staining of the membrane as a loading control for all lanes. The leftmost lane in the Ponceau S corresponds to the protein weight marker. (E) Representative Southern blot for the MAT switching assay in late mitosis. Alongside the MAT probe, a second probe against the ACT1 gene (1.1 kb fragment) was included for normalization. The MAT probe also recognizes an allele-independent MAT distal fragment (2.2 kb). (F) Quantification of relative band intensities in the MAT switching Southern blots (mean \u00b1 SEM, n = 3). Individual values were normalized to the ACT1 signals. Then, every lane was normalized to MATa at the arrest. Tel: telophase. +\u03b2E: \u03b2-estradiol addition.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Related to Figure 3A, B. (A) Schematic representation of the HO resection assay. Primers (blue arrows) are designed to amplify a sequence that contains a StyI target site adjacent to the HO cutting site (HOcs). When this restriction enzyme is used on the extracted genomic DNA, amplification is inhibited. If resection extends beyond the StyI site, StyI does not cut and the primers can amplify. (B) Summary table of the amplification yield obtained after the StyI digestion during HOcs resection.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Related to Figure 3C\u2013F. Cells were first blocked in the cdc15-2 arrest at 34\u00b0C for 3 hr (Tel). Then, the HO DSB was generated by adding \u03b2-estradiol. After 1 hr, the \u03b2-estradiol was washed away, and samples were taken to monitor the repair for 3 hr. (A\u2013C) Kinetics of the HOcs DSB repair in yku70\u0394. Yku70 is part of a conserved complex that recognizes a DSB and drives its repair toward non-homologous end joining (NHEJ). (D\u2013F) Kinetics of the HOcs DSB repair in rad9\u0394. Rad9 is a mediator in the DDC that promotes activation of the effector kinase Rad53. (G\u2013I) Kinetics of the HOcs DSB repair in mre11\u0394. Mre1 is part of the MRX complex, which tethers the DSB ends and facilitates end resection. (A, D, G) Representative Western blot analyses for HO induction and subsequent degradation (tagged with Flag epitope) and the DSB sensing through Rad53 hyperphosphorylation (note that Rad53 does not get hyperphosphorylated in rad9\u0394). A PGK1 Western blot served as a housekeeping and Ponceau S staining of the membrane as a loading control for all lanes. The leftmost lane in the Ponceau S corresponds to the protein weight marker. (B, E, H) Representative Southern blots for the MAT switching assays in late mitosis. Alongside the MAT probe, a second probe against the ACT1 gene (1.1 kb fragment) was included for normalization. The MAT probe also recognizes an allele-independent MAT distal fragment (2.2 kb). (C, F, I) Quantification of relative band intensities in the MAT switching Southern blots (mean \u00b1 SEM, n = 3). Individual values were normalized to the ACT1 signals. Then, every lane was normalized to MATa at the arrest. Note that repair kinetics is similar to that of the wild type in Figure 3E, F. Tel: telophase. +\u03b2E: \u03b2-estradiol addition.\n\nOnce resection begins, cells are normally committed to recombine because long ssDNA fragments do not work as efficient substrates for NHEJ. In our haploid strain, HR at the MAT locus after the HO-driven DSB implies the gene conversion from the MATa to the MAT\u03b1 allele, whereas repair by NHEJ results in reconstitution of the MATa allele (Figure 3C; Yamaguchi and Haber, 2021). This gene conversion can be detected by Southern blot because of a restriction fragment length polymorphism for StyI. Cells that are in G1 can barely repair the HO DSB, whereas those in G2/M do so through HR (Ira et al., 2004). To check whether HR was efficient at the HO DSB in late mitosis, we performed an experimental setup similar to the one shown above, but with two important differences. On the one hand, the strain retains the HML locus, enabling HR if engaged, and on the other hand, the HO endonuclease was transiently induced by 1 h \u03b2-estradiol pulse, allowing time for the complete repair of the induced DSB. Samples were taken at the time of the arrest, after the pulse, and all through the repair window. We confirmed by Western blot that HO (HO tagged with the Flag epitope) is produced after the pulse and is rapidly degraded afterwards (Figure 3D, HO-Flag blot). Rad53 hyperphosphorylation followed the ~1 hr delay shown above and became prominent by the time the DSB inducer had been removed (Figure 3D, Rad53 blot), suggesting extensive resection even in this repairable setup. The Southern blot showed that (1) most MATa locus in the cell population has been efficiently cut after the HO pulse (Figure 3E, F; decrease of the MATa band intensity and rise of that of the cut HOcs); and (2) most DSBs are repaired afterwards exclusively through HR (Figure 3E, F; drop of the HO cut band intensity and rise of that of the MAT\u03b1). No signs of DSB repair by NHEJ were observed (the remaining MATa band stays constant throughout). This was further confirmed by measuring the repair kinetics of a derivative strain deficient in NHEJ (yku70\u0394; Figure 3\u2014figure supplement 2A\u2013C), and is consistent with our previous studies with a HR-deficient rad52\u0394 strain (Medina-Su\u00e1rez et al., 2024). Interestingly, HR kinetics were not altered in cells unable to activate the DDC (rad9\u0394; Figure 3\u2014figure supplement 2D\u2013F) or to tether the DSB ends (mre11\u0394; Figure 3\u2014figure supplement 2G\u2013I). These results are also consistent with previous studies in G2/M cells, in which HR-driven repair of the HO DSB appeared more robust than other types of DSBs (Lazzaro et al., 2008; Moreau et al., 2001).\n\nOverall, we concluded that HR is the chosen repair pathway in late mitosis. This is in agreement with predictions based on CDK activity and also fits well with the genetic and cytological data we have obtained before (Ayra-Plasencia and Mach\u00edn, 2019; Mach\u00edn and Ayra-Plasencia, 2020; Medina-Su\u00e1rez et al., 2024). By contrast, this emphasizes the paradoxes of having HR in the context of mostly segregated sister chromatids and without the cohesin complex holding them together as expected. We have now explored the second paradox further as we have just shown that cohesin is reconstituted after DSBs in telophase, and DI-cohesion appears important for efficient DSB repair by HR (Hou et al., 2022; Phipps and Dubrana, 2022).\n\n### The MAT switching in late mitosis does not depend on cohesin\n\nIn cells arrested in cdc15-2, the Smc1\u2013Smc3 pool mostly resides at centromeres where it brings together adjacent regions in both chromosome arms (Garcia-Luis et al., 2022). Of note, this configuration could favor the physical interaction in cis of the MAT and the HML loci (Piazza et al., 2021), which may in turn promote a rapid and efficient HR-driven MAT switching. Thus, we tested whether MAT switching was dependent on this residual centromeric cohesin. To this aim, we tagged the Smc3 subunit with the auxin-mediated degron system (aid*). To check that the system was working correctly, a serial dilution spot assay was carried out (Figure 4A). The strain expressing Smc3-aid* was plated on YPDA and YPDA plus 8 mM of the auxin indole-acetic acid (IAA). Alongside, we also plated a derivative strain where we had removed the preceptive F-box protein OsTIR1, which forms the functional ubiquitin ligase responsible for targeting the aid* for degradation upon IAA addition (Morawska and Ulrich, 2013). Since cohesin is an essential complex for vegetative growth, the lack of growth in the SMC3-AID* OsTIR1 strain strongly points out that Smc3-aid* is degraded efficiently.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig4-v1.jpg)\n\n**Figure 4.:** (A) Serial dilution spot assay for the smc3:aid* strains. The fitness effect of Smc3-aid* degradation was tested in the smc3:aid* OsTIR1 strain in the presence of 8 mM IAA. The same strain without the ubiquitin-ligase OsTIR1 was also used as the control. (B\u2013D) Cells of four strains with all possible combinations of the smc3:aid* and OsTIR1 pairs were treated as in Figure 1A but including a 1-hr IAA step between the cdc15-2 arrest and the induction of HO. Then, HO was induced for 1 hr with \u03b2-estradiol (1h+\u03b2E sample), after which it was washed off and the cells were allowed to recover from the double-strand break (DSB) for 2 hr (3h-\u03b2E sample). IAA and the Tel arrest were maintained throughout the experiment. (B) Representative Western blot of the four strains at the time of the arrest (Tel) and 1 hr after IAA addition (+IAA). Note the confirmation of the different genotypic combinations, as well as the Smc3-aid* decline after IAA addition. (C) Representative Southern blot for the MAT switching assay of the four strains in the presence of 8 mM IAA. Note that HO cutting is less efficient than without IAA (see Figure 3E, Figure 4\u2014figure supplement 1B, C) but gene conversion is still possible after degrading Smc3-aid* in late mitosis. (D) Quantification of relative MAT switching (mean \u00b1 SEM, n = 3). Gene conversion to MAT\u03b1 in the 3h-\u03b2E sample was normalized to the cut HOcs in the 1h+\u03b2E sample. Then, gene conversion yield was normalized to the wild-type (no tagged Smc3, no OsTir1) strain. Tel: telophase. +\u03b2E: \u03b2-estradiol addition. \u2212\u03b2E: \u03b2-estradiol removal. +IAA: indole-acetic acid. (E) Model of how DSBs reconstitute cohesin in late mitosis. The cohesin complex (Smc1\u2013Smc3\u2013Scc1) entraps sister chromatids before anaphase. (1) At anaphase onset, Esp1 (separase) is activated to cleave Scc1 and release sister chromatids for segregation. (2) If DSBs occur before cytokinesis, Scc1 returns and reconstitutes the cohesin complex. At least a fraction of the complex binds to chromatin. The reappearance of Scc1 likely occurs through the inhibition of Esp1 and/or post-translational protection of Scc1 by the DNA damage checkpoint.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92706/elife-92706-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cells were treated as in Figure 3D\u2013F but including a 1-hr IAA step between the cdc15-2 arrest and the induction of HO. IAA was then maintained throughout the experiment. (A) Representative Western blot as in Figure 3D but also including Smc3-aid* decline after IAA addition. Note that the chromatin-bound acSmc3 is degraded as well. (B) Representative Southern blot for the MAT switching assay as in Figure 3E. (C) Quantification of relative band intensities for MAT switching Southern blots (mean \u00b1 SEM, n = 3). Values were normalized as in Figure 3F. The MAT switching in the wild-type strain without IAA is represented alongside for comparison. Note that there is a decrease in the cutting efficiency of HO (MATa levels remained higher) as well as in the gene conversion into MAT\u03b1. However, these phenotypic changes are due to IAA rather than cohesin depletion (see Figure 4C). Tel: telophase. +\u03b2E: \u03b2-estradiol addition. +IAA: indole-acetic acid.\n\nNext, we used this strain to degrade Smc3 after cells have been arrested in late mitosis and before the HO DSB. After IAA addition, there was a clear decline in Smc3-aid* levels, including the chromatin-bound acSmc3-aid* pool (Figure 4\u2014figure supplement 1A). After Smc3 depletion, a 1-hr pulse of HO expression was applied, which allowed us to follow both DSB generation and its subsequent repair without residual cohesin. More than 90% of the Smc3-aid* had disappeared by the time the HO promoter was shut down (Figure 4\u2014figure supplement 1A). The addition of IAA drastically delayed gene conversion from MATa to MAT\u03b1 (Figure 4\u2014figure supplement 1B,C), although the cut efficiency was lower than in the wild type in the absence of auxin (~50% MATa remained uncut in the SMC3:aid* OsTIR1 strain). Also, the detection of DNA damage through Rad53 phosphorylation seems fainter and slightly delayed (Figure 4\u2014figure supplement 1). To unequivocally determine whether MAT switching kinetics were affected by Smc3 depletion, and not by an off-target effect of IAA, we compared strains that could either degrade or retain Smc3 in the presence of IAA. Four isogenic strains were analyzed, comprising all possible combinations of Smc3-aid* and OsTir1, as confirmed by Western blot (Figure 4B; Tel samples). The addition of IAA-induced Smc3-aid* degradation only in the strain co-expressing OsTIR1 (Figure 4B; +IAA samples). In the wild-type strain (no tagged Smc3 and no OsTIR1), the cutting efficiency of HOcs and the yield of gene conversion to MAT\u03b1 were both reduced in the presence of IAA, confirming that IAA itself negatively impacts MAT switching (Figure 4C, compared two leftmost lanes with Figure 3E). However, when the yield of the MAT conversion after the recovery time was normalized to the cut HOcs when HO was repressed, no significant differences were observed among the four strains (Figure 4C, D). We therefore conclude that the core of the cohesin complex is not required for the HR-driven repair of the HO DSB in telophase. Of note, it was previously reported that cohesin was not required for the MAT switching in G2/M-arrested cells, despite it being essential for efficient post-replicative DSB repair (Unal et al., 2004).\n\n### Conclusions and perspectives\n\nIn this work, we have addressed whether HR was molecularly efficient in yeast cells arrested in late mitosis. We have used the well-established MAT switching system and found that HR is indeed working in late mitosis, complementing previous results that pointed in this direction both genetically and cytologically (Ayra-Plasencia and Mach\u00edn, 2019). In addition, we have addressed the paradox of having HR in a cell mitotic stage with no sister chromatid cohesion. Our results suggest that residual cohesin, or at least residual chromatin-bound Smc1\u2013Smc3 dimers, are complemented by incorporating de novo Scc1 (Figure 4E). This fact suggests that chromosome structure may undergo significant changes after late DSBs. The nature of these changes remains unexplored, and we cannot currently rule out that some kind of DI-cohesion could be established, perhaps globally. Alternatively, telophase chromatin may acquire new intramolecular loops as it occurs in G2/M-arrested cells (Piazza et al., 2021). Either of these may favor repair by HR with the intact sister or intramolecularly, although it seems still dispensable for MAT switching at this late cell cycle stage. Further research will be needed to confirm these hypotheses, as well as the whereabouts of cohesin and the consequences for late segregation after DSB repair.\n\n## Materials and methods\n\n### Strains and experimental conditions\n\nTable 1 contains the S. cerevisiae strains used in this work. Genetic backgrounds are either W303 or YPH499. Strain construction was performed by lithium acetate-based transformation on pre-made frozen competent cells (Knop et al., 1999).\n\n**Table 1.**\n Strains used in this work.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Relevant genotype*</th>\n      <th>Origin</th>\n      <th>Figure</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>FM2344</td>\n      <td>(YPH499) MATa ura3-52 lys2-801 ade2-101 trp1-\u039463 his3-\u0394200 leu2-\u03941 bar1-\u0394; cdc15-2:9myc::Hph; HML\u03b1 \u2206hmr::HIS3MX</td>\n      <td>Mach\u00edn lab</td>\n      <td>(Parental)</td>\n    </tr>\n    <tr>\n      <td>LSY4319-1C</td>\n      <td>(W303) MAT\u03b1 leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15 RAD5 \u2206hml \u2206hmr; leu2-3::lexO4p:HO:FLAG:CYC1t::ACT1p:LexA-ER-B112-T:CYC1p::LEU2MX (pRG646)</td>\n      <td>Symington lab</td>\n      <td>(Parental)</td>\n    </tr>\n    <tr>\n      <td>FM2450</td>\n      <td>LSY4319-1C; cdc15-2:9myc::Hph</td>\n      <td>This work</td>\n      <td>3A, B</td>\n    </tr>\n    <tr>\n      <td>FM2520</td>\n      <td>FM2450; SCC1:3myc::HIS3MX</td>\n      <td>This work</td>\n      <td>1B, E</td>\n    </tr>\n    <tr>\n      <td>FM2531</td>\n      <td>FM2344; leu2-3::lexO4p:HO:FLAG:CYC1t::ACT1p:LexA-ER-B112-T:CYC1p::LEU2MX</td>\n      <td>This work</td>\n      <td>3D\u2013F; 4B\u2013D</td>\n    </tr>\n    <tr>\n      <td>FM2635</td>\n      <td>FM2450; SMC1:6HA:HIS3MX</td>\n      <td>This work</td>\n      <td>1C, E</td>\n    </tr>\n    <tr>\n      <td>FM2662</td>\n      <td>FM2531; \u0394rad9::KanMX4</td>\n      <td>This work</td>\n      <td>3-fs2</td>\n    </tr>\n    <tr>\n      <td>FM2663</td>\n      <td>FM2531; \u0394yku70::KanMX4</td>\n      <td>This work</td>\n      <td>3-fs2</td>\n    </tr>\n    <tr>\n      <td>FM2668</td>\n      <td>FM2531; \u0394mre11::KanMX4</td>\n      <td>This work</td>\n      <td>3-fs2</td>\n    </tr>\n    <tr>\n      <td>FM2672</td>\n      <td>FM2531; SMC3:AID*:9myc::KanMX</td>\n      <td>This work</td>\n      <td>4A\u2013D</td>\n    </tr>\n    <tr>\n      <td>FM2674</td>\n      <td>FM2450; SMC3:3HA::HIS3MX</td>\n      <td>This work</td>\n      <td>1D; 2C; 2-fs2; 2-fs3</td>\n    </tr>\n    <tr>\n      <td>FM2680</td>\n      <td>FM2672; ura3-52::ADH1p:OsTIR1:9myc::URA3</td>\n      <td>This work</td>\n      <td>4A\u2013D; 3-fs3</td>\n    </tr>\n    <tr>\n      <td>FM3235</td>\n      <td>FM2520; SMC1:6HA::NatNT2</td>\n      <td>This work</td>\n      <td>2A, B; 2-fs1</td>\n    </tr>\n    <tr>\n      <td>FM3294</td>\n      <td>FM2531; ura3-52::ADH1p:OsTIR1:9myc::URA3</td>\n      <td>This work</td>\n      <td>4B\u2013D</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Semicolons separate genetic modifications obtained through sequential transformation steps. Intermediate strains are omitted._\n\nStrains were cultured overnight in the YPD medium (10 g\u00b7l\u22121 yeast extract, 20 g\u00b7l\u22121 peptone, and 20 g\u00b7l\u22121 glucose) with moderate shaking (180 rpm). The day after, 10\u2013100 \u03bcl of grown cells were diluted into a flask containing an appropriate YPD volume and grown overnight at 25\u00b0C again. Finally, the exponentially growing culture was adjusted to OD600 = 0.5 to start the experiment.\n\nIn general, cells were first arrested in late mitosis by incubating the culture at 34\u00b0C for 3 hr (all strains carry the cdc15-2 thermosensitive allele). Then, the culture was split in two, one subculture remained untreated (mock), and DSBs were generated in the second one. When a G2/M arrest was required, 15 \u00b5g\u00b7ml\u22121 nocodazole (Nz; Sigma-Aldrich, M1404) was added to the asynchronous culture, which was then incubated at 25\u00b0C for 3 hr (with a 7.5 \u00b5g\u00b7ml\u22121 Nz shot at 2 hr). To conditionally degrade the Smc3-aid* variant, 8 mM of the auxin 3-indol-acetic acid (IAA; Sigma-Aldrich, I2886) was added to the arrested cells 1 hr prior to generating DSBs.\n\nDSB generation was accomplished by incubating the culture for 1\u20133 hr with either 10 \u00b5g\u00b7ml\u22121 phleomycin (random DSBs) or 2 \u03bcM of \u03b2-estradiol (HO-driven DSBs). For the HOcs DSB, the corresponding strain harbors an integrative system based on a \u03b2-estradiol inducible promoter (Ottoz et al., 2014). These strains were constructed by transforming with the pRG464 plasmid.\n\n### Western blot for protein levels and phosphorylation\n\nWestern blotting was performed as reported before (Ayra-Plasencia and Mach\u00edn, 2019). The trichloroacetic acid method was used for protein extraction. Total protein was quantified in a Qubit 4 Fluorometer (Thermo Fisher Scientific, Q33227). Proteins were resolved in 7.5% SDS\u2013PAGE gels and transferred to PVDF membranes (Pall Corporation, PVM020C099). The membrane was stained with Ponceau S solution (PanReac AppliChem, A2935) as a loading reference. The following primary antibodies were used for immunoblotting: mouse monoclonal \u03b1-HA (1:1000; Sigma-Aldrich, H9658), mouse monoclonal \u03b1-myc (1: 5000; Sigma-Aldrich, M4439), mouse monoclonal \u03b1-Pgk1 (1:5000; Thermo Fisher Scientific, 22C5D8), mouse monoclonal \u03b1-miniaid (1:500; MBL, M214-3), mouse monoclonal \u03b1-Flag (1:5000; Sigma-Aldrich, F3165), mouse monoclonal \u03b1-Rad53 (1:1000; Abcam, ab166859), and mouse monoclonal \u03b1-acSmc3 (1:5000; a gift from Katsuhiko Shirahige). The secondary antibody was a horseradish peroxidase polyclonal goat anti-mouse (from 1:5000 to 1:10,000, depending on the primary antibody; Promega, W4021). Proteins were detected with the ECL chemiluminescence reagent (GE Healthcare, RPN2232), and visualized in a Vilber-Lourmat Fusion Solo S chamber.\n\n### Co-IP for the reassembly of the cohesin complex\n\nFor co-IP assays, approximately 100 OD\u2086\u2080\u2080 units from the corresponding conditions were collected. Cell disruption was performed by resuspending the frozen pellets in 200 \u03bcl of Buffer A (50 mM HEPES-Na, 150 mM KCl, 1.5 mM MgCl\u2082, 0.5 mM DTT, 0.5% Triton X-100, 1\u00d7 EDTA-free protease inhibitor cocktail) together with glass beads. Samples were vortexed vigorously for 5 min, and additional lysis cycles were performed as needed, allowing 1 min incubation on ice between rounds. Lysates were transferred to a clean tube. 400 \u202f\u03bcl of Buffer A was used to wash the beads and pooled with the lysates. Samples were then centrifuged (12,000 rpm, 5 \u202fmin, 4\u00b0C), and the clarified lysates were transferred to new tubes. An aliquot of 70 \u03bcl was saved as whole cell extract for Western blot analysis. The remaining lysate was incubated with pre-equilibrated Pierce Anti-HA Magnetic Beads (Thermo Fisher Scientific; 88836) for 2 hr at 4\u00b0C on a rotating wheel. After incubation, beads were placed on a magnetic rack and washed five times with 200 \u03bcl of IPP150 buffer (10 mM Tris-Cl pH 7.5, 150 mM NaCl, 0.5% Triton X-100).\n\nFor elution, beads were resuspended in 25 \u03bcl of 1\u00d7 SR buffer (8% SDS, 0.5 M Tris-Cl pH 6.8) and incubated at 37\u00b0C for 4 \u202fmin. The supernatant was collected using a magnetic rack and transferred to a new tube containing 8.3 \u03bcl of 4\u00d7 SS buffer (20% sucrose, 0.05% bromophenol blue, 0.1% sodium azide) supplemented with \u03b2-mercaptoethanol. Samples were boiled for 2 min at 95\u00b0C, centrifuged (max speed, 30 s), and analyzed by SDS\u2013PAGE and Western blotting.\n\n### Chromatin fractionation for the chromatin-bound cohesin\n\nBiochemical fractionation of cells was performed as described before with little modifications (Cuevas-Berm\u00fadez et al., 2020). Briefly, cells were collected and resuspended in 400 \u00b5l of buffer 1 (20 mM HEPES pH 8, 60 mM KCl, 15 mM NaCl, 10 mM MgCl2, 1 mM CaCl2, 0.8% Triton X-100, 1.25 M sucrose, 0.5 mM spermine). Breakage of cell walls was done by adding ~200 mg of glass beads and vortexing for 4 min. After centrifuging at 500 \u00d7 g for 5 min, supernatant was transferred to a new tube and 40 \u00b5l were kept as Input. Samples were centrifuged at 18,000 \u00d7 g for 20 min, the supernatant was kept as S1, whereas the pellet was resuspended in 200 \u00b5l of Buffer 1 (50 \u00b5l were saved as P1). Samples were centrifuged again at 18,000 \u00d7 g for 20 min, the supernatant was kept as S2, and the pellet was resuspended in 200 \u00b5l of buffer 2 (20 mM HEPES pH 7.6, 45 mM NaCl, 7.5 mM MgCl2, 20 mM EDTA pH 8, 10% glycerol, 1% NP-40, 2 M urea, 0.5 M sucrose, protease inhibitors) and 50 \u00b5l were saved as P2. Finally, samples were centrifuged one last time at the same conditions, keeping the supernatant as S3, and the pellet was resuspended in 50 \u00b5l of Laemmli buffer, constituting the chromatin-enriched fraction (P3).\n\n### ChIP\u2013qPCR for the cohesin loading onto the HO DSB\n\nFor ChIP\u2013qPCR, a total of 100 OD600 units of the treated cultures were collected and crosslinked with 1.4% formaldehyde for 15 min. Crosslinking was quenched with glycine (final concentration 125 mM) for 7 min. Cells were harvested by centrifugation (4000 rpm, 1 min), washed with PBS, transferred to screw-cap tubes, and frozen at \u201380\u00b0C.\n\nFrozen pellets were resuspended in 300 \u03bcl of IP buffer (150 mM NaCl, 50 mM Tris-HCl pH 7.5, 5 mM EDTA, 1% Triton X-100, 0.05% NP-40) supplemented with 1 mM PMSF and protease inhibitor cocktail (EDTA-free, Roche). Disruption was performed by bead beating with 500 \u03bcl of glass beads using a Bertin Precellys homogenizer for nine 20 s cycles at hard setting. Lysates were transferred to new tubes and supplemented with an additional 100 \u03bcl of IP buffer containing PMSF and protease inhibitors. Samples were clarified by centrifugation (15,000 rpm, 10 min, 4\u00b0C). Pellets were resuspended in 1 ml IP buffer with PMSF and protease inhibitors and sonicated in a Diagenode Bioruptor Plus (30 cycles: 30 s ON 30 s OFF, high power, 4\u00b0C). After sonication, samples were centrifuged (15,000 rpm, 10 min), and the supernatant was collected. A 200-\u03bcl aliquot was reserved as input. Input DNA was precipitated with 0.3 M sodium acetate and 2.5 volumes of cold ethanol, centrifuged (15,000 rpm, 30 min), washed with 70% ethanol, and air-dried.\n\nFor immunoprecipitation, 400 \u03bcl of the sonicated chromatin was incubated with 40 \u03bcg of anti-HA antibody (Roche, 11666606001) in the Bioruptor at low power for 30 min (30 s ON/30 s OFF cycles). Antibody\u2013chromatin complexes were pelleted (13,000 rpm, 5 min), and the supernatant was incubated with 60 \u202f\u03bcl of Dynabeads Protein G (Invitrogen), pre-equilibrated in IP buffer, then incubated for 2 hr at 4\u00b0C on a rotating wheel, and finally washed five times with IP buffer using a magnetic rack.\n\nBoth input and IP samples were resuspended in de-crosslinking buffer (1\u00d7 TE, 1% SDS, 10 \u03bcg\u00b7ml\u20131 RNase A, 1 mg\u00b7ml\u20131 proteinase K) and incubated overnight at 65\u00b0C and purified using High Pure PCR product purification kit (Roche) for the qPCR.\n\n### qPCR for DSB resection\n\nIn the resection experiments, qPCR was performed on genomic DNA (gDNA) extracted by the glass beads/phenol method (Hoffman and Winston, 1987). Experimental details on the resection assay can be found in Gn\u00fcgge et al., 2018. Briefly, each gDNA sample was divided into two, and one aliquot was digested with StyI-HF (NEB, R3500S). Then, qPCR reactions were mounted using the PowerUp SYBR Green Master Mix (Thermo Scientific, A25741) and run in a Bio-Rad CFX384 Real-Time PCR instrument (10 \u00b5l final volume in 384-well block plates).\n\nResection was calculated as a normalized fraction (fresected) to that of the HOcs effectively cut by HO (f). These two parameters were calculated by their corresponding formulas (Gn\u00fcgge et al., 2018).\n\n### Southern blot for the MAT switching assay\n\nIn this case, gDNA was extracted by digesting with 50 U lyticase (Sigma-Aldrich, L4025) a cell pellet previously resuspended in 200 \u00b5l of digestion buffer (1% SDS, 100 mM NaCl, 50 mM Tris-HCl, and 10 mM EDTA). Then, the gDNA was phase separated by phenol:chloroform (PanReac AppliChem, A0944), precipitated with ethanol, resuspended in TE 1X with 10 \u03bcg\u00b7ml\u20131 RNase A, precipitated again, and resuspended in TE 1X. Then, the gDNA was digested with StyI, the restriction fragments separated on a 1.2% low EEOO LS Agarose gel, and finally Southern blotted. Southern blot was carried out by a saline downwards transference onto a positively charged nylon membrane (Hybond-N+, Amersham-GE; RPN303B) (Garc\u00eda-Luis and Mach\u00edn, 2014). DNA probes against ACT1 and MAT loci were made using Fluorescein-12-dUTP Solution (ThermoFisher; R0101) and the Expand High Fidelity PCR System (Roche; 11732641001). Hybridization with fluorescein-labeled probes was performed overnight at 68\u00b0C. The following day, the membrane was incubated with an anti-fluorescein antibody coupled to alkaline phosphatase (Roche; 11426338910), and the chemiluminescent signal detected using CDP-star (Amersham; RPN3682). Blots were visualized in a Vilber-Lourmat Fusion Solo S chamber.\n\nFor band quantification, each individual band was normalized to the ACT1 signal in the lane. Then, a second normalization to the MATa band at the arrest was performed. To determine the yield of gene conversion to MAT\u03b1 specifically, the MAT\u03b1 band after recovery from the DSB (2\u20133 hr after \u03b2-estradiol removal) was normalized to the amount of the cut HOcs band immediately before recovery (1 hr after \u03b2-estradiol addition).\n\n### Data representation and statistics\n\nThree types of graphs were used to represent the data: bar charts, marker line graphs, and box plots. In box plots, the center line represents the medians, box limits represent the 25th and 75th percentiles, the whiskers extend to the 5th and 95th percentiles, and the dots represent outliers. Error bars in all bar and line charts represent the SEM of three independent biological replicates. Individual values are also represented as dots in the bar charts. GraphPad Prism 9 was used for generating the charts and for statistical analysis. Differences between experimental data points were generally estimated using the Mann\u2013Whitney U test for box plots and one-way ANOVA with Tukey post hoc for bar charts.\n",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pablo S Aguilar, Instituto de Fisiolog\u00eda Biolog\u00eda Molecular y Neurociencias (IFIBYNE) Argentina\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92706.3.sa0](https://doi.org/10.7554/eLife.92706.3.sa0)\n\nThis study provides convincing evidence that homologous recombination can occur in telophase-arrested cells, independently of cohesin subunits Smc 1-3. These findings are valuable as they point to investigate the role of cohesins re-association with chromatin in the allelic inter-sister repair by homologous recombination.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92706.3.sa1](https://doi.org/10.7554/eLife.92706.3.sa1)\n\nSummary\n\nThe cohesin complex is essential for maintaining sister chromatid cohesion from S phase until anaphase. Beyond this canonical role, it is also recruited to double-strand breaks (DSBs), supporting both local and global post-replicative cohesion, a phenomenon first reported in 2004. In a previous study, Ayra-Plasencia et al. demonstrated that in telophase, DSBs can be repaired by homologous recombination (HR) through re-coalescence of sister chromatids (Ayra-Plasencia & Mach\u00edn, 2019). In the present work, the authors provide further insights into DSB repair in late mitosis, showing that:\n\nScc1 is reloaded and reconstituted on chromatin together with Smc1.\n\nHR occurs with high efficiency.\n\nHR-driven MAT switching can occur in an Smc3-independent manner.\n\nStrengths\n\nThe authors take full advantage of the yeast model system, employing the HO endonuclease to generate a single, site-specific DSB at the MAT locus on chromosome III. Combined with careful cell synchronization, this setup allows them to monitor HR-mediated repair events specifically in G2/M and late mitosis. Their demonstration that full-length Scc1 can be recovered upon DSB induction is compelling. Most importantly, the finding that efficient HR can take place during M phase is significant, as HR has long been thought to be largely inhibited at this stage of the cell cycle.\n\nWeaknesses\n\nWhile the authors provide evidence for Scc1 recovery and efficient HR in late mitosis, some critical points need to be clarified to improve the impact and interpretability of the study.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92706.3.sa2](https://doi.org/10.7554/eLife.92706.3.sa2)\n\nCohesin drive inter-sister repair of DNA breaks by homologous recombination (HR) in G2/M. Cohesion is lost at the metaphase to anaphase transition upon digestion of the Scc1 subunit of cohesin by Esp1, raising the question as to whether and how break repair by HR could occur in late mitosis (late-M).\n\nHere the author investigate the behavior of cohesin in cells arrested in telophase and experiencing a DNA break at the mating-type locus on chr. III (a specialized recombination process required for mating-type switching) or upon random DNA break formation with the drug phleomycin.\n\nThe revised version of the manuscript now convincingly establishes three facts:\n\n- The cohesin subunit Scc1 can re-associate with chromatin and the other Smc1-3 subunits upon formation of an unrepairable DSB at MAT in telophase.\n\n- HR can occur in telophase-arrested cells\n\n- Cohesin (an a fortiori cohesin that reassociated with chromatin) plays no role in non-allelic HR in telophase in the specific context of MAT switching.\n\nUnfortunately, the role of cohesin re-association with chromatin for the allelic inter-sister repair by HR is not addressed. In the absence of such evidence, the main claims of the paper making up the title (cohesin re-association and HR repair) appear disconnected. Even if the very last sentence of the abstract corrects the false sense from the title and the rest of the abstract that cohesin reconstitution has somehow something to do with efficient HR in late mitosis, I think a general rewriting of the abstract and a different title would better lift any ambiguity about the conclusions of the paper.\n",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "40198580-aa29-4ab0-8e2d-dfdd4f4442ed",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C1",
+      "claim": "The cohesin complex maintains sister chromatid cohesion from S phase to anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin complex maintains sister chromatid cohesion from S phase to anaphase onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, representing established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "38d2e183-6ff4-45e3-8826-e28d4a7695c0",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C2",
+      "claim": "Cohesin plays roles in chromosome structure and DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin also plays roles in chromosome structure and DNA repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about cohesin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "6c6f50f0-1fae-4b04-976f-65dc3e5d9fae",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C3",
+      "claim": "In yeast, the cohesin subunit Scc1 is cleaved at anaphase onset to allow segregation in an orderly manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the cohesin subunit Scc1 is cleaved at anaphase onset to allow segregation in an orderly manner, although some residual cohesin subunits remain to maintain chromosome structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about cohesin regulation in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1ca785f5-bf87-4587-8308-27f2b3e5ffca",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C4",
+      "claim": "Some residual cohesin subunits remain after anaphase onset to maintain chromosome structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the cohesin subunit Scc1 is cleaved at anaphase onset to allow segregation in an orderly manner, although some residual cohesin subunits remain to maintain chromosome structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about residual cohesin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1ff52a3e-ba40-4be7-9d03-9efca7b2d54d",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C5",
+      "claim": "Efficient DNA double-strand break repair by homologous recombination with the sister chromatid depends on cohesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficient DNA double-strand break (DSB) repair by homologous recombination (HR) with the sister chromatid also depends on cohesin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the role of cohesin in DSB repair.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "4de73227-2e59-4152-9eb9-e57794e6e457",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C6",
+      "claim": "Scc1 returns in telophase after DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that Scc1 returns in telophase after DSBs and that it partially reconstitutes a chromatin-bound cohesin complex with Smc1 and an acetylated pool of Smc3 after a single HO-induced DSB at the MAT locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by Western blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "03df4504-51d4-43ad-b882-e17254ff76cc",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C7",
+      "claim": "Scc1 partially reconstitutes a chromatin-bound cohesin complex with Smc1 and an acetylated pool of Smc3 after a single HO-induced DSB at the MAT locus in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that Scc1 returns in telophase after DSBs and that it partially reconstitutes a chromatin-bound cohesin complex with Smc1 and an acetylated pool of Smc3 after a single HO-induced DSB at the MAT locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by co-IP and chromatin fractionation data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "866dfbcc-935d-48e1-af95-28f0f4c69dae",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C8",
+      "claim": "The new cohesin in telophase is not required for HR-driven MAT switching.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this new cohesin is neither required for the HR-driven MAT switching nor binds to the MAT locus after the DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the Smc3 depletion experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "48fd848f-1ec6-4ec0-9654-6a89aca41431",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C9",
+      "claim": "The new cohesin does not bind to the MAT locus after the DSB in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this new cohesin is neither required for the HR-driven MAT switching nor binds to the MAT locus after the DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by ChIP data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "0fa28af4-42fe-4d0a-91ed-b4cd5cf54c3f",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C10",
+      "claim": "Cohesin is a multiprotein complex composed in yeast of Smc1, Smc3, Scc1 (also known as Mcd1), Scc3, and Pds5 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin is a multiprotein complex composed in yeast of Smc1, Smc3, Scc1 (also known as Mcd1), Scc3, and Pds5 subunits (Hirano, 2000; Michaelis et al., 1997; Sj\u00f6gren and Nasmyth, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e5e43920-f012-42ad-87e8-e3b3e8648c5a",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C11",
+      "claim": "Smc1, Smc3, and Scc1 form a heterotrimeric ring that embraces and holds the replicated sister chromatids together and well-aligned until reaching G2/M.",
+      "claim_type": "EXPLICIT",
+      "source": "At the core of the complex, Smc1, Smc3, and Scc1 form a heterotrimeric ring that embraces and holds the replicated sister chromatids together and well-aligned until reaching G2/M (D\u00edaz-Mart\u00ednez et al., 2008; Koshland and Guacci, 2000; Laloraya et al., 2000; Michaelis et al., 1997; Strunnikov et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "bf19e4a5-cef5-4053-872c-48c9c2ca8985",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C12",
+      "claim": "Cohesin subunits are loaded onto chromosomes in G1 by the Scc2\u2013Scc3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin subunits are loaded onto chromosomes in G1 by the Scc2\u2013Scc3 complex (Ciosk et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "b1d0f5e5-e428-4212-8f8a-2135db6d5408",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C13",
+      "claim": "When cells enter S phase, the acetyl-transferase Eco1 acetylates Smc3.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells enter S phase, the acetyl-transferase Eco1 acetylates Smc3, which inhibits the ATPase activity of Smc1\u2013Smc3 heads and prevents the opening of the Smc3\u2013Scc1 interface (\u00c7amdere et al., 2015; Chan et al., 2012; Huber et al., 2016; Murayama and Uhlmann, 2015; Str\u00f6m et al., 2007; Unal et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "d7ba5ab9-0ea8-4c17-9cae-53ab552f0221",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C14",
+      "claim": "Eco1 acetylation of Smc3 inhibits the ATPase activity of Smc1\u2013Smc3 heads and prevents the opening of the Smc3\u2013Scc1 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells enter S phase, the acetyl-transferase Eco1 acetylates Smc3, which inhibits the ATPase activity of Smc1\u2013Smc3 heads and prevents the opening of the Smc3\u2013Scc1 interface (\u00c7amdere et al., 2015; Chan et al., 2012; Huber et al., 2016; Murayama and Uhlmann, 2015; Str\u00f6m et al., 2007; Unal et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e34b4415-715a-41c1-916b-7cd195a59066",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C15",
+      "claim": "Smc3 acetylation embraces the nascent sister chromatids and establishes cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "This embraces the nascent sister chromatids and establishes cohesion (Uhlmann and Nasmyth, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "5f6a54ba-5c70-4f3c-bdbb-8bba53fe2053",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C16",
+      "claim": "The APCCdc20 initiates anaphase by degrading securin/Pds1, so that the separase/Esp1 becomes active.",
+      "claim_type": "EXPLICIT",
+      "source": "Once sister chromatids are ready for segregation, the APCCdc20 (Anaphase Promoting Complex associated with its regulatory cofactor Cdc20) initiates anaphase by degrading securin/Pds1, so that the separase/Esp1 becomes active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about anaphase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "14b85fd8-1f0a-44d2-8933-6383ad29d871",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C17",
+      "claim": "Separase cleaves the Scc1 subunit by proteolysis, releasing sister chromatids from cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Separase then cleaves the Scc1 subunit by proteolysis, releasing sister chromatids from cohesion (Cohen-Fix et al., 1996; Michaelis et al., 1997; Nasmyth and Haering, 2009; Uhlmann et al., 1999; Yamamoto et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "760d5620-e10d-4779-bd2e-ce0ae4dfe633",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C18",
+      "claim": "The fragmented Scc1 is rapidly degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "The fragmented Scc1 is then rapidly degraded (Rao et al., 2001), while a pool of Smc1\u2013Smc3 dimers appears to remain through anaphase (Renshaw et al., 2010; Tanaka et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "17a12b74-a4b3-4578-99fd-e7c1edc07df6",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C19",
+      "claim": "A pool of Smc1\u2013Smc3 dimers appears to remain through anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "The fragmented Scc1 is then rapidly degraded (Rao et al., 2001), while a pool of Smc1\u2013Smc3 dimers appears to remain through anaphase (Renshaw et al., 2010; Tanaka et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e0653e79-cf0f-414f-8489-6467a7aca96e",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C20",
+      "claim": "The Smc1-Smc3 pool becomes loose as Smc3 is deacetylated by Hos1 in anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "This pool, however, becomes loose as Smc3 is deacetylated by Hos1 in anaphase (Chan et al., 2012; Huber et al., 2016; Murayama and Uhlmann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1a8242b9-ea72-4f70-a71d-000fb76ee3fa",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C21",
+      "claim": "Some cohesin-dependent cohesion remains at chromosome arms during anaphase, suggesting that residual cohesin is present despite separase activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some cohesin-dependent cohesion remains at chromosome arms during anaphase, suggesting that residual cohesin is present despite separase activation (Djeghloul et al., 2020; Garcia-Luis et al., 2022; Renshaw et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "830f1bd2-211b-4f8d-8ffd-3e05d84073e6",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C22",
+      "claim": "Cohesin can hold two DNA segments within the same chromatin forming an extruded loop.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, cohesin can hold two DNA segments within the same chromatin forming an extruded loop (Lazar-Stefanita et al., 2017; Rao et al., 2017; Schalbetter et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "5b76d031-17fa-47e6-ad41-661a7c296ce1",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C23",
+      "claim": "DNA double-strand breaks produce damage-induced cohesion (DI-cohesion).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, DNA double-strand breaks (DSBs) produce the so-called damage-induced cohesion (DI-cohesion) (Kim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "351c8508-1d58-4216-8312-4c202474fbc3",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C24",
+      "claim": "Following DNA damage, cohesin is recruited and accumulated both along 50\u2013100 kb surrounding the DSB site and genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Following DNA damage, cohesin is recruited and accumulated both along 50\u2013100 kb surrounding the DSB site and genome-wide (Str\u00f6m et al., 2004; Unal et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "5a6cf765-c0e5-4bb5-92e5-e26a2d2c8d84",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C25",
+      "claim": "The cohesin recruitment creates a firm anchoring of two well-aligned sister chromatids, which in turn facilitates DSB repair by homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin recruitment creates a firm anchoring of two well-aligned sister chromatids, which in turn facilitates DSB repair by homologous recombination (HR) (Covo et al., 2010; Hou et al., 2022; Phipps and Dubrana, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "21c12dc2-59cf-4afc-ab2f-316418c81dda",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C26",
+      "claim": "DNA damage kinases such as Mec1 and Chk1 phosphorylate Scc1 to initiate the cohesion establishment in post-replicative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, DNA damage kinases such as Mec1 and Chk1 phosphorylate Scc1 to initiate the cohesion establishment in post-replicative cells (Heidinger-Pauli et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "7058ed3e-2742-48ac-9fa7-399788837b53",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C27",
+      "claim": "HR is a DSB repair mechanism that uses a homologous template for restoring the original broken DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "HR is a DSB repair mechanism that uses a homologous template for restoring the original broken DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about HR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "cd0efc0a-d2a0-4503-92c1-8832c8b5a132",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C28",
+      "claim": "HR is highly reliable when the correct template is used, which in mitotic cells is the sister chromatid.",
+      "claim_type": "EXPLICIT",
+      "source": "HR is highly reliable when the correct template is used, which in mitotic cells is the sister chromatid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about HR template choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "02f2322f-1828-4f94-b795-5a175fd9c03b",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C29",
+      "claim": "HR is the preferred repair mechanism from S to G2/M, when the sister chromatid is available in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, HR is the preferred repair mechanism from S to G2/M, when the sister chromatid is available in close proximity (Langerak and Russell, 2011; Mathiasen and Lisby, 2014; Symington et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "aaad8fae-182f-4c15-8ad0-58c86cccf490",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C30",
+      "claim": "Before DNA replication, in G1, the alternative error-prone non-homologous end joining (NHEJ) is used instead of HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Before DNA replication, in G1, the alternative error-prone non-homologous end joining (NHEJ) is used instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about DSB repair pathway choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "02b90c94-6541-4205-99e1-dcec97c6b352",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C31",
+      "claim": "Cells coordinate the choice of either NHEJ or HR based on the activity of cyclin-dependent kinase (CDK).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells coordinate the choice of either NHEJ or HR based on the activity of cyclin-dependent kinase (CDK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about DSB repair pathway choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "14209b79-6480-4da2-9963-302095911b8e",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C32",
+      "claim": "Low CDK keeps cells in G1 and favors NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Low CDK keeps cells in G1 and favors NHEJ, whereas high CDK is present in S and G2/M and activates HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about CDK regulation of DSB repair.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e7230000-4485-4e01-8cf5-ed95ba9379f9",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C33",
+      "claim": "High CDK is present in S and G2/M and activates HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Low CDK keeps cells in G1 and favors NHEJ, whereas high CDK is present in S and G2/M and activates HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about CDK regulation of DSB repair.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "3878a907-cdc4-4468-be80-52c69cdd3319",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C34",
+      "claim": "In the cell cycle window that spans from anaphase to the telophase-to-G1 transition (late mitosis), high CDK is set to favor HR despite a sister chromatid not being in proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Noticeably, there is a paradox in this link between high CDK and HR. In the cell cycle window that spans from anaphase to the telophase-to-G1 transition (we will refer to this window as late mitosis), high CDK is set to favor HR despite a sister chromatid not being in proximity (Mach\u00edn and Ayra-Plasencia, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "b138ee07-fa31-40c2-9a31-60feb08fd0eb",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C35",
+      "claim": "Sister loci can move closer and coalesce in late mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we showed that sister loci can indeed move closer and coalesce, and that HR still appears important for DSB survival in late mitosis (Ayra-Plasencia and Mach\u00edn, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "a5938cc2-9cdd-4ace-b676-a145b0461b8a",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C36",
+      "claim": "HR appears important for DSB survival in late mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we showed that sister loci can indeed move closer and coalesce, and that HR still appears important for DSB survival in late mitosis (Ayra-Plasencia and Mach\u00edn, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "219fb3e2-4077-4edc-b20f-fc7f8dc23b22",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C37",
+      "claim": "At the anaphase onset, Esp1 cleaves Scc1, opening the cohesin ring and releasing sister chromatids from cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "At the anaphase onset, Esp1 cleaves Scc1, opening the cohesin ring and releasing sister chromatids from cohesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about cohesin regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "2e6d0553-f5b2-4d8c-9899-e8b1726ceb8d",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C38",
+      "claim": "After Esp1 cleavage, Scc1 needs to be translated de novo since cleaved fragments are unstable and degraded by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, Scc1 needs to be translated de novo since cleaved fragments are unstable and degraded by the proteasome (Rao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e0ccdea3-257b-4d3f-9299-0d10027d6114",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C39",
+      "claim": "Activation of Esp1 can be blocked by DDC kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is known that activation of Esp1 can be blocked by DDC kinases (Yam et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "7526b127-d0a6-4d7f-befb-a9a10ee167f2",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C40",
+      "claim": "DDC kinases phosphorylate Scc1 to facilitate DI-cohesion at a post-replicative stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, DDC kinases also phosphorylate Scc1 to facilitate DI-cohesion at a post-replicative stage (Heidinger-Pauli et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "d1915143-f7ca-44ae-a54b-af6a8ad81574",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C41",
+      "claim": "DSB generation in late mitosis can stabilize de novo Scc1 as well as rendering it cohesive.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is feasible that DSB generation in late mitosis can stabilize de novo Scc1 as well as rendering it cohesive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from previous knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "04e9f618-c810-415a-85ad-6262f40696e7",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C42",
+      "claim": "Smc1 and Smc3 subunits remain attached to chromatin after segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, Smc1 and Smc3 subunits remain attached to chromatin after segregation (Garcia-Luis et al., 2022; Renshaw et al., 2010; Tanaka et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e06eaa99-9df6-409d-afed-401841a43edf",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C43",
+      "claim": "The cdc15-2 allele encodes a conditionally thermosensitive Cdc15 kinase, which drives telophase-to-G1 transition.",
+      "claim_type": "EXPLICIT",
+      "source": "The cdc15-2 allele encodes a conditionally thermosensitive Cdc15 kinase, which drives telophase-to-G1 transition (Mach\u00edn and Ayra-Plasencia, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "541b80a6-5b25-496e-84a8-f54a7c855e37",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C44",
+      "claim": "In wild-type strains, the HO DSB is repaired by HR with the intramolecular ectopic loci HMR and HML.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type strains, the HO DSB is repaired by HR with the intramolecular ectopic loci HMR and HML.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the MAT switching system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "6ab1e2eb-7a55-4f97-a01c-2d176f55a13b",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C45",
+      "claim": "The locus selection for MAT switching depends on the MAT allele (the MATa HO DSB repairs with HML) and results in a gene conversion (e.g., from MATa to MAT\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "The locus selection depends on the MAT allele (the MATa HO DSB repairs with HML) and results in a gene conversion (e.g., from MATa to MAT\u03b1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the MAT switching system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "8217f421-a913-480e-856f-c073f732b866",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C46",
+      "claim": "Scc1 signal disappeared almost entirely when cells were arrested in telophase and remained low in the mock control 2 hr later.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scc1 signal disappeared almost entirely when cells were arrested in telophase and remained low in the mock control 2 hr later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "65d3c652-40a1-405f-8951-35335525dfa2",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C47",
+      "claim": "Full-length Scc1 was restored after single and multiple DSBs generation in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, full-length Scc1 was restored after single and multiple DSBs generation (Figure 1B, E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1B and quantification in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "c870f112-a2e1-4572-9bf3-13cdadba42e2",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C48",
+      "claim": "Phleomycin treatment increased Scc1 levels fivefold compared to the mock condition, reaching approximately half of the levels observed in G2/M.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the mock condition, phleomycin treatment increased Scc1 levels fivefold, reaching approximately half of the levels observed in G2/M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "dd148136-a14e-46df-b0ef-dc157a70069c",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C49",
+      "claim": "In the case of HO DSBs, Scc1 levels surpassed those of the mock by more than 15-fold and were even higher than in G2/M.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of HO DSBs, Scc1 levels surpassed those of the mock by more than 15-fold and were even higher than in G2/M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "0c00b167-028d-4a9a-97ff-e6df86e5f055",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C50",
+      "claim": "Smc1 and Smc3 levels remained more stable in both types of DSBs compared to Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Smc1 and Smc3 levels remained more stable in both types of DSBs (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "f63b8475-a512-4357-a4c5-751b4ca540b5",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C51",
+      "claim": "In asynchronous cultures, both Scc1-3myc and acSmc3 co-immunoprecipitated with Smc1-6HA, indicating that the chromatin-bound pool (acetylated Smc3) of the canonical Smc1\u2013Smc3\u2013Scc1 complex was pulled down.",
+      "claim_type": "EXPLICIT",
+      "source": "In asynchronous cultures, both Scc1-3myc and acSmc3 co-immunoprecipitated with Smc1-6HA, indicating that we were able to pull down the chromatin-bound pool (acetylated Smc3) of the canonical Smc1\u2013Smc3\u2013Scc1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-IP data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "c4f3b4be-12f0-425d-9407-57b3adeb89d9",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C52",
+      "claim": "Scc1 was not detected in the pull-down under the mock condition (no DSBs) in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Scc1 was not detected in the pull-down under the mock condition (no DSBs); however, it was recovered after generation of the HO DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-IP data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1241619c-bbc2-43c4-b4a6-8d5dfb953091",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C53",
+      "claim": "Scc1 was recovered in the pull-down after generation of the HO DSB in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Scc1 was not detected in the pull-down under the mock condition (no DSBs); however, it was recovered after generation of the HO DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-IP data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "c1196739-e906-47db-b2e9-dbf9c19458c5",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C54",
+      "claim": "Scc1 was not recovered in the co-IP when random DSBs were induced by phleomycin in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this was not the case when random DSBs were induced by phleomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-IP data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "4ece02f2-630d-4fd1-a04f-3acb3318d12d",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C55",
+      "claim": "acSmc3 appeared as two bands in the asynchronous culture but as a single upper band in all telophase conditions, suggesting a difference in posttranslational modifications at this cell cycle stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidentally, acSmc3 appeared as two bands in the asynchronous culture but as a single upper band in all telophase conditions, suggesting a difference in posttranslational modifications at this cell cycle stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the co-IP data in Figure 2A, with an inference about PTMs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "3d494930-9b83-4ac6-9689-8150c3314da6",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C56",
+      "claim": "There was an increase in all cohesin subunits in the chromatin fraction after the HO DSB in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we performed biochemical fractionation of the chromatin-bound proteins, observing an increase in all cohesin subunits in the chromatin fraction after the HO DSB (Figure 2B, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chromatin fractionation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1205a95e-2acc-491f-9cce-ccee4268bedc",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C57",
+      "claim": "The increase in chromatin-bound cohesin after HO DSB was approximately twofold for Smc1\u2013acSmc3 and up to sevenfold for Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase was approximately twofold for Smc1\u2013acSmc3 and up to sevenfold for Scc1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification of chromatin fractionation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "4a1c2207-0f52-4d6b-a919-f2664c5c4fff",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C58",
+      "claim": "Chromatin recruitment of cohesin was not observed after phleomycin treatment in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, this chromatin recruitment was not observed after phleomycin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chromatin fractionation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "739a6065-77e4-4dff-85f6-80a179df1108",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C59",
+      "claim": "The HO DSB is irreparable in the experimental setup, whereas DSBs caused by phleomycin can eventually be repaired by anaphase regression and sister loci coalescence.",
+      "claim_type": "EXPLICIT",
+      "source": "In this experimental setup, the HO DSB is irreparable, whereas DSBs caused by phleomycin can eventually be repaired by anaphase regression and sister loci coalescence (Ayra-Plasencia and Mach\u00edn, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental design and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "f2711e64-6ce8-4c7a-b4ed-2c0c2d1270e5",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C60",
+      "claim": "The HO DSB leaves clean ends that can be easily resected, while the DSBs after phleomycin are chemically modified and require extended processing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the HO DSB leaves clean ends that can be easily resected, while the DSBs after phleomycin are chemically modified and require extended processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the nature of different types of DSBs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "b3a2dc87-dd73-443b-9f0b-75f103ac4d2c",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C61",
+      "claim": "There was an increase in the Smc3-bound pool around the HOcs in G2/M after the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed an increase in the Smc3-bound pool around the HOcs in G2/M after the DSB (Figure 2\u2014figure supplement 3); however, such an increase was not observed in telophase (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "216597eb-5363-4890-b2bb-ba1953e69e2a",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C62",
+      "claim": "An increase in the Smc3-bound pool around the HOcs was not observed in telophase after the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed an increase in the Smc3-bound pool around the HOcs in G2/M after the DSB (Figure 2\u2014figure supplement 3); however, such an increase was not observed in telophase (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "cae7bc98-7913-492a-91cb-35b59396a320",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C63",
+      "claim": "The core of the cohesin SMCs (Smc1\u2013Smc3) is not further recruited to the HO DSB in late mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that the core of the cohesin SMCs (Smc1\u2013Smc3) is not further recruited to the HO DSB in late mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the ChIP data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "9ab77168-e956-421b-8c27-f8807d6f05ed",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C64",
+      "claim": "The lack of local cohesin recruitment to the HO DSB in late mitosis could be due to the inability to increase the acSmc3 pools by Eco1, whose levels drop after G2/M.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of local recruitment could be due to several non-exclusive scenarios, including the inability to increase the acSmc3 pools by Eco1, whose levels drop after G2/M (Lyons and Morgan, 2011), as well as condensin binding to chromosome arms during anaphase (Leonard et al., 2015), which might act as an eviction barrier for cohesin loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "c7debef1-4679-46ff-a531-a2418a49f855",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C65",
+      "claim": "Condensin binding to chromosome arms during anaphase might act as an eviction barrier for cohesin loading.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of local recruitment could be due to several non-exclusive scenarios, including the inability to increase the acSmc3 pools by Eco1, whose levels drop after G2/M (Lyons and Morgan, 2011), as well as condensin binding to chromosome arms during anaphase (Leonard et al., 2015), which might act as an eviction barrier for cohesin loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "8e280187-79ed-4029-a5ec-3f3da19b2459",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C66",
+      "claim": "Reassembly of the full cohesin complex at residual Smc1\u2013acSmc3 dimers may shift the organization of the surrounding chromosome regions and impinge on the HO DSB repair in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reassembly of the full cohesin complex at residual Smc1\u2013acSmc3 dimers may shift the organization of the surrounding chromosome regions and impinge on the HO DSB repair in telophase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "6cdc412e-f316-44e6-8cb0-f1ec92cd9a06",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C67",
+      "claim": "Resection is necessary to form the protruding 3\u2032 Rad51 nucleoprotein filaments that invade the donor homologous sequence to restore the break by HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Resection is necessary to form the protruding 3\u2032 Rad51 nucleoprotein filaments that invade the donor homologous sequence to restore the break by HR (Peng et al., 2021; Symington, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "266f20dc-15f2-48a7-9d78-87c37878cc95",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C68",
+      "claim": "Cells in G2/M efficiently resected the HOcs ends.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, cells in G2/M efficiently resected the HOcs ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by resection data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e15e1f11-213f-462d-ad26-a9719c0068d5",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C69",
+      "claim": "The time to reach half of the maximum resection (t1/2) in G2/M was ~1 hr at 0.7 kb and ~2.5 hr at 5.7 kb from the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "The time to reach half of the maximum resection (t1/2) was ~1 hr at 0.7 kb and ~2.5 hr at 5.7 kb from the DSB, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by resection data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "9f1900e2-b1c0-4225-bdf1-8ffa310d1404",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C70",
+      "claim": "Resection in telophase was only slightly delayed at 0.7 kb (t1/2 ~ 1.5 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Resection in telophase was only slightly delayed at 0.7 kb (t1/2 ~ 1.5 hr), whereas the delay was more pronounced at 5.7 kb (t1/2 ~ 3.5 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by resection data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "fbd0dd14-7051-4354-b3a1-d2acb0e3a674",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C71",
+      "claim": "The delay in resection at 5.7 kb in telophase was more pronounced (t1/2 ~ 3.5 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Resection in telophase was only slightly delayed at 0.7 kb (t1/2 ~ 1.5 hr), whereas the delay was more pronounced at 5.7 kb (t1/2 ~ 3.5 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by resection data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "31c1e035-4cef-4e43-9fe4-7702b985b038",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C72",
+      "claim": "The delay in resection in telophase may be due to either the fact that CDK activity in late mitosis, though still high, is slightly inferior to that at G2/M or the different chromosome compaction degrees between the arrests.",
+      "claim_type": "EXPLICIT",
+      "source": "The delay may be due to either the fact that CDK activity in late mitosis, though still high, is slightly inferior to that at G2/M or the different chromosome compaction degrees between the arrests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "a107adf2-4c8f-4d46-a0b3-dab64bcbac13",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C73",
+      "claim": "Rad53 is an effector kinase of the DDC that gets activated by hyperphosphorylation after being recruited to the 3\u2032 ssDNA overhangs.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad53 is an effector kinase of the DDC that gets activated by hyperphosphorylation after being recruited to the 3\u2032 ssDNA overhangs (Branzei and Foiani, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "446744cd-a953-49af-a0d7-5f28ff217e5e",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C74",
+      "claim": "Rad53 hyperphosphorylation occurred in late mitosis, although with ~1 h delay compared to resection.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the resection profile, Rad53 hyperphosphorylation occurred in late mitosis, although with ~1 h delay (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "f96bf5c5-0f2f-4432-b47f-b47899517bb6",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C75",
+      "claim": "The delay in Rad53 activation is consistent with previous studies on Rad53 activation upon an unrepairable HO DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "This delay is also consistent with previous studies on Rad53 activation upon an unrepairable HO DSB (Pellicioli et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "04a28c95-bc26-470d-8105-2fb8fbf26cce",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C76",
+      "claim": "Gene conversion from MATa to MAT\u03b1 can be detected by Southern blot because of a restriction fragment length polymorphism for StyI.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene conversion can be detected by Southern blot because of a restriction fragment length polymorphism for StyI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the MAT switching assay.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "6cd57eae-2f9a-42de-98ef-6b16c2b00ad8",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C77",
+      "claim": "Cells that are in G1 can barely repair the HO DSB, whereas those in G2/M do so through HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells that are in G1 can barely repair the HO DSB, whereas those in G2/M do so through HR (Ira et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1a19f294-865f-4306-9033-a5eb74414fd6",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C78",
+      "claim": "HO (HO tagged with the Flag epitope) is produced after the \u03b2-estradiol pulse and is rapidly degraded afterwards.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed by Western blot that HO (HO tagged with the Flag epitope) is produced after the pulse and is rapidly degraded afterwards (Figure 3D, HO-Flag blot).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "01a72d65-e7c4-458d-9aaf-2b8ce03711a2",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C79",
+      "claim": "Rad53 hyperphosphorylation followed the ~1 hr delay shown in resection experiments and became prominent by the time the DSB inducer had been removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad53 hyperphosphorylation followed the ~1 hr delay shown above and became prominent by the time the DSB inducer had been removed (Figure 3D, Rad53 blot), suggesting extensive resection even in this repairable setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "fcd6dd51-7639-4067-9f5b-fece95c389d4",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C80",
+      "claim": "Most MATa locus in the cell population has been efficiently cut after the HO pulse in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "The Southern blot showed that (1) most MATa locus in the cell population has been efficiently cut after the HO pulse (Figure 3E, F; decrease of the MATa band intensity and rise of that of the cut HOcs); and (2) most DSBs are repaired afterwards exclusively through HR (Figure 3E, F; drop of the HO cut band intensity and rise of that of the MAT\u03b1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Southern blot data shown in Figure 3E and quantification in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "3500e3ce-c4e1-4a93-80a4-c655951c5b03",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C81",
+      "claim": "Most DSBs in telophase are repaired exclusively through HR after the HO pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "The Southern blot showed that (1) most MATa locus in the cell population has been efficiently cut after the HO pulse (Figure 3E, F; decrease of the MATa band intensity and rise of that of the cut HOcs); and (2) most DSBs are repaired afterwards exclusively through HR (Figure 3E, F; drop of the HO cut band intensity and rise of that of the MAT\u03b1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Southern blot data shown in Figure 3E and quantification in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "f2bdf3f5-45b4-413d-947f-27fa4014c2c1",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C82",
+      "claim": "No signs of DSB repair by NHEJ were observed in telophase (the remaining MATa band stays constant throughout).",
+      "claim_type": "EXPLICIT",
+      "source": "No signs of DSB repair by NHEJ were observed (the remaining MATa band stays constant throughout).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Southern blot data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "bfb12b31-4b29-4e1f-ad25-d957cb6f1d0b",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C83",
+      "claim": "The lack of NHEJ in telophase was confirmed by measuring the repair kinetics of a derivative strain deficient in NHEJ (yku70\u0394).",
+      "claim_type": "EXPLICIT",
+      "source": "This was further confirmed by measuring the repair kinetics of a derivative strain deficient in NHEJ (yku70\u0394; Figure 3\u2014figure supplement 2A\u2013C), and is consistent with our previous studies with a HR-deficient rad52\u0394 strain (Medina-Su\u00e1rez et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 2A\u2013C and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "5d0242c9-e562-4628-9c60-08a84e921526",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C84",
+      "claim": "HR kinetics were not altered in cells unable to activate the DDC (rad9\u0394).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HR kinetics were not altered in cells unable to activate the DDC (rad9\u0394; Figure 3\u2014figure supplement 2D\u2013F) or to tether the DSB ends (mre11\u0394; Figure 3\u2014figure supplement 2G\u2013I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "0f8b72ce-6565-40b6-9c06-15dd161d9f97",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C85",
+      "claim": "HR kinetics were not altered in cells unable to tether the DSB ends (mre11\u0394).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HR kinetics were not altered in cells unable to activate the DDC (rad9\u0394; Figure 3\u2014figure supplement 2D\u2013F) or to tether the DSB ends (mre11\u0394; Figure 3\u2014figure supplement 2G\u2013I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 2G\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "127ed686-b1a8-4f42-8f07-dcae8063e2fa",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C86",
+      "claim": "The results on rad9\u0394 and mre11\u0394 are consistent with previous studies in G2/M cells, in which HR-driven repair of the HO DSB appeared more robust than other types of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are also consistent with previous studies in G2/M cells, in which HR-driven repair of the HO DSB appeared more robust than other types of DSBs (Lazzaro et al., 2008; Moreau et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "c3b95abf-451c-4fde-b2db-5e22f3f85afd",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C87",
+      "claim": "HR is the chosen repair pathway in late mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we concluded that HR is the chosen repair pathway in late mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "33bb560e-1dac-4534-bea0-4fb91af102bd",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C88",
+      "claim": "The conclusion that HR is the chosen repair pathway in late mitosis is in agreement with predictions based on CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with predictions based on CDK activity and also fits well with the genetic and cytological data we have obtained before (Ayra-Plasencia and Mach\u00edn, 2019; Mach\u00edn and Ayra-Plasencia, 2020; Medina-Su\u00e1rez et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by inference from established knowledge and citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "4ccf5be4-7a62-471f-a269-14ad31fb4ed0",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C89",
+      "claim": "In cells arrested in cdc15-2, the Smc1\u2013Smc3 pool mostly resides at centromeres where it brings together adjacent regions in both chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells arrested in cdc15-2, the Smc1\u2013Smc3 pool mostly resides at centromeres where it brings together adjacent regions in both chromosome arms (Garcia-Luis et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e4bdd96c-2c4e-41c9-9f72-2af662cf1a52",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C90",
+      "claim": "The centromeric cohesin configuration could favor the physical interaction in cis of the MAT and the HML loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, this configuration could favor the physical interaction in cis of the MAT and the HML loci (Piazza et al., 2021), which may in turn promote a rapid and efficient HR-driven MAT switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "06a9da0b-040b-4bdc-9aa6-61f7e5bbeeb1",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C91",
+      "claim": "The centromeric cohesin configuration may promote a rapid and efficient HR-driven MAT switching.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, this configuration could favor the physical interaction in cis of the MAT and the HML loci (Piazza et al., 2021), which may in turn promote a rapid and efficient HR-driven MAT switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "5aefc654-2ae8-4152-8fbf-e471348be0e6",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C92",
+      "claim": "The lack of growth in the SMC3-AID* OsTIR1 strain strongly points out that Smc3-aid* is degraded efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Since cohesin is an essential complex for vegetative growth, the lack of growth in the SMC3-AID* OsTIR1 strain strongly points out that Smc3-aid* is degraded efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the spot assay data shown in Figure 4A and established knowledge about cohesin essentiality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "f9939407-fa7e-4a87-9944-6980bc37d46c",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C93",
+      "claim": "After IAA addition, there was a clear decline in Smc3-aid* levels, including the chromatin-bound acSmc3-aid* pool.",
+      "claim_type": "EXPLICIT",
+      "source": "After IAA addition, there was a clear decline in Smc3-aid* levels, including the chromatin-bound acSmc3-aid* pool (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "b87a4a81-b2e6-4721-b7ed-9e4f03ea01af",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C94",
+      "claim": "More than 90% of the Smc3-aid* had disappeared by the time the HO promoter was shut down.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 90% of the Smc3-aid* had disappeared by the time the HO promoter was shut down (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "295289ee-47fd-46db-b44c-6adbc6f9cb7c",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C95",
+      "claim": "The addition of IAA drastically delayed gene conversion from MATa to MAT\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of IAA drastically delayed gene conversion from MATa to MAT\u03b1 (Figure 4\u2014figure supplement 1B,C), although the cut efficiency was lower than in the wild type in the absence of auxin (~50% MATa remained uncut in the SMC3:aid* OsTIR1 strain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Southern blot data shown in Figure 4\u2014figure supplement 1B and quantification in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "682699cf-a724-4a56-9a72-55de0f5a8ab9",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C96",
+      "claim": "The cut efficiency was lower than in the wild type in the absence of auxin (~50% MATa remained uncut in the SMC3:aid* OsTIR1 strain).",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of IAA drastically delayed gene conversion from MATa to MAT\u03b1 (Figure 4\u2014figure supplement 1B,C), although the cut efficiency was lower than in the wild type in the absence of auxin (~50% MATa remained uncut in the SMC3:aid* OsTIR1 strain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Southern blot data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "7194cbc0-e603-42d3-a935-115769d5bbe1",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C97",
+      "claim": "The detection of DNA damage through Rad53 phosphorylation seems fainter and slightly delayed after IAA addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the detection of DNA damage through Rad53 phosphorylation seems fainter and slightly delayed (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from Western blot data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "418575be-4336-4d02-9988-554544875f31",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C98",
+      "claim": "In the wild-type strain (no tagged Smc3 and no OsTIR1), the cutting efficiency of HOcs and the yield of gene conversion to MAT\u03b1 were both reduced in the presence of IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild-type strain (no tagged Smc3 and no OsTIR1), the cutting efficiency of HOcs and the yield of gene conversion to MAT\u03b1 were both reduced in the presence of IAA, confirming that IAA itself negatively impacts MAT switching (Figure 4C, compared two leftmost lanes with Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Southern blot data shown in Figure 4C compared to Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "2e5c0a0d-41e9-463f-9fe2-82be76686675",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C99",
+      "claim": "IAA itself negatively impacts MAT switching.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild-type strain (no tagged Smc3 and no OsTIR1), the cutting efficiency of HOcs and the yield of gene conversion to MAT\u03b1 were both reduced in the presence of IAA, confirming that IAA itself negatively impacts MAT switching (Figure 4C, compared two leftmost lanes with Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "a8c1990a-4660-4498-849e-ee58f5f3c159",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C100",
+      "claim": "When the yield of the MAT conversion after the recovery time was normalized to the cut HOcs when HO was repressed, no significant differences were observed among the four strains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the yield of the MAT conversion after the recovery time was normalized to the cut HOcs when HO was repressed, no significant differences were observed among the four strains (Figure 4C, D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "8d351a51-6849-4c85-bab4-44a93dbe172f",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C101",
+      "claim": "The core of the cohesin complex is not required for the HR-driven repair of the HO DSB in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that the core of the cohesin complex is not required for the HR-driven repair of the HO DSB in telophase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the Smc3 depletion data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "4d2663cc-fea7-475f-8aed-58370b928139",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C102",
+      "claim": "It was previously reported that cohesin was not required for the MAT switching in G2/M-arrested cells, despite it being essential for efficient post-replicative DSB repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, it was previously reported that cohesin was not required for the MAT switching in G2/M-arrested cells, despite it being essential for efficient post-replicative DSB repair (Unal et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "f01f1be4-1dd1-454e-862d-50fdb09ad1cd",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C103",
+      "claim": "HR is molecularly efficient in yeast cells arrested in late mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we have addressed whether HR was molecularly efficient in yeast cells arrested in late mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the MAT switching data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "995e0165-5404-4733-b672-398eeb1b2753",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C104",
+      "claim": "HR is working in late mitosis, complementing previous results that pointed in this direction both genetically and cytologically.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used the well-established MAT switching system and found that HR is indeed working in late mitosis, complementing previous results that pointed in this direction both genetically and cytologically (Ayra-Plasencia and Mach\u00edn, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by the data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "2163cd36-b03c-4232-985b-803426f47dd7",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C105",
+      "claim": "Residual cohesin, or at least residual chromatin-bound Smc1\u2013Smc3 dimers, are complemented by incorporating de novo Scc1 after DSBs in late mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that residual cohesin, or at least residual chromatin-bound Smc1\u2013Smc3 dimers, are complemented by incorporating de novo Scc1 (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1f2f67c5-2601-4f29-b99b-b80573329fa0",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C106",
+      "claim": "Chromosome structure may undergo significant changes after late DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "This fact suggests that chromosome structure may undergo significant changes after late DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "2688cd0f-1279-4358-89c0-855e179cfc49",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C107",
+      "claim": "Some kind of DI-cohesion could be established after late DSBs, perhaps globally.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of these changes remains unexplored, and we cannot currently rule out that some kind of DI-cohesion could be established, perhaps globally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "58435be4-4f2d-4ff3-91ab-26f8fcf89809",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C108",
+      "claim": "Telophase chromatin may acquire new intramolecular loops as it occurs in G2/M-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, telophase chromatin may acquire new intramolecular loops as it occurs in G2/M-arrested cells (Piazza et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "156c9080-18c4-41f8-9487-64f4872b606d",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "claim_id": "C109",
+      "claim": "New intramolecular loops or DI-cohesion may favor repair by HR with the intact sister or intramolecularly, although it seems still dispensable for MAT switching at this late cell cycle stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Either of these may favor repair by HR with the intact sister or intramolecularly, although it seems still dispensable for MAT switching at this late cell cycle stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference and speculation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on cohesin biology, including its composition, loading, acetylation, role in sister chromatid cohesion, cleavage at anaphase, and involvement in DNA repair. These claims establish the scientific context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C42 represent well-established knowledge in the field, supported by appropriate citations to previous literature. These background claims provide necessary context and are not contested findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "c7776cd2-7e01-4669-be47-6dbd82affb72",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors establish a paradox: high CDK activity in late mitosis favors HR despite sister chromatids being separated, and previous work showed sister loci can coalesce and HR is important for DSB survival in late mitosis. They hypothesize that DSBs in late mitosis could stabilize and render cohesive de novo Scc1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by citations to previous work establishing the paradox and prior observations. Claim C41 is explicitly presented as a hypothesis ('feasible') based on inference from established knowledge (C39-C40), which is appropriate scientific reasoning. Claim C43 provides methodological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "92545542-c1d7-4034-803a-9dc5ada00392",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Scc1 protein levels are dramatically restored after DSB induction in telophase-arrested cells. After HO-induced DSBs, Scc1 levels increased >15-fold compared to mock and exceeded G2/M levels, while phleomycin treatment increased Scc1 ~5-fold. Smc1 and Smc3 levels remained relatively stable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are directly supported by Western blot data in Figure 1B-E with quantification. The dramatic restoration of Scc1 after DSBs in telophase is a key observation with clear experimental evidence. The differential response to HO versus phleomycin is noted and quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "da1107a4-9661-46ec-9878-21432de04196",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "After HO-induced DSBs in telophase, Scc1 reassembles with Smc1 and acetylated Smc3 to form a cohesin complex, as demonstrated by co-immunoprecipitation. This reconstitution occurred after HO DSBs but not after phleomycin-induced DSBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by co-IP data in Figure 2A showing Scc1 co-precipitates with Smc1-HA and acSmc3 after HO DSBs but not in mock or phleomycin conditions. The differential response between DSB types is intriguing and clearly documented. Claim C55 notes an observation about acSmc3 banding patterns with appropriate inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "6ed102be-a950-4eee-8686-8d77ea264a1b",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Chromatin fractionation experiments show that all cohesin subunits increase in the chromatin-bound fraction after HO DSBs in telophase (~2-fold for Smc1-acSmc3, ~7-fold for Scc1), but not after phleomycin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by chromatin fractionation data in Figure 2B with quantification. This confirms that the reconstituted cohesin complex is chromatin-bound, not just soluble. The differential response to HO versus phleomycin is consistent with the co-IP results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "997f2339-7224-4d9c-9c17-88ce44d5bb7d",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ChIP experiments show that while Smc3 is recruited to the vicinity of HO DSBs in G2/M-arrested cells, no such local recruitment occurs in telophase-arrested cells. The authors conclude that the cohesin SMC core is not further recruited to the HO DSB in late mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by ChIP-qPCR data in Figure 2C and Figure 2-supplement 3. The lack of local recruitment to the DSB site in telophase, despite global chromatin binding, is clearly demonstrated and represents an important distinction from G2/M behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "071821ed-d3e8-4864-975d-df3f60146894",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors discuss potential explanations for the differential cohesin responses to HO versus phleomycin DSBs and the lack of local recruitment in telophase, including differences in DSB repairability, end chemistry, Eco1 levels, and condensin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60 provide experimental context supported by citations. Claims C64-C66 are explicitly speculative hypotheses ('could be due to', 'might act', 'may shift') about mechanisms. While reasonable, these remain untested explanations for the observed phenomena and should be evaluated as speculation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "a7476446-feeb-4b63-96bf-176c54ef142b",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DSB resection occurs efficiently in telophase-arrested cells, with only slight delays compared to G2/M. At 0.7 kb from the DSB, t1/2 was ~1.5 hr in telophase versus ~1 hr in G2/M; at 5.7 kb, t1/2 was ~3.5 hr versus ~2.5 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by qPCR-based resection assay data in Figure 3A. The modest delays in telophase are clearly quantified. Claim C72 offers reasonable hypotheses for the delay (CDK activity differences or chromosome compaction), appropriately presented as speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "b4b4004d-8cf4-4b83-bcc0-253e69b72949",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rad53 becomes hyperphosphorylated in telophase after HO DSB induction, with ~1 hr delay relative to resection, consistent with previous studies. HO endonuclease is produced after \u03b2-estradiol pulse and rapidly degraded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C78-C79 are supported by Western blot data in Figures 3B and 3D. The Rad53 activation kinetics are consistent with the resection data and with prior literature (C75). This confirms DNA damage checkpoint activation in telophase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "b501b54f-9566-478f-82f7-7100f29df790",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Using the MAT switching assay, the authors demonstrate that HR efficiently repairs HO-induced DSBs in telophase-arrested cells. Most DSBs are repaired exclusively through HR with no detectable NHEJ, as confirmed in yku70\u0394 strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 are supported by Southern blot data in Figure 3E-F and supplement 2A-C showing efficient cutting, gene conversion to MAT\u03b1, and absence of NHEJ. This directly demonstrates that HR is the active repair pathway in late mitosis, addressing a central question of the manuscript. Claims C44-C45, C76-C77 provide necessary methodological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "b17262ba-ff00-45ae-b5e8-22ffbf44406e",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HR kinetics in telophase are not altered in rad9\u0394 (DDC-deficient) or mre11\u0394 (end-tethering deficient) mutants, consistent with previous findings that HO DSB repair is more robust than other DSB types. This is in agreement with predictions based on CDK activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 are supported by data in Figure 3-supplement 2D-I showing similar repair kinetics in mutants. Claim C86 appropriately contextualizes this with prior literature. Claim C88 connects findings to the CDK-based framework, supported by citations to previous work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "0f194ce9-e280-448a-a6a3-704679bc5e77",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Using auxin-inducible degradation of Smc3, the authors show that the reconstituted cohesin complex is not required for HR-driven MAT switching in telophase. When normalized for cutting efficiency, no significant differences in repair were observed among strains with or without functional cohesin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 confirm effective Smc3 depletion (Figure 4A, 4-supplement 1A). Claims C95-C99 document IAA effects on the system. Critically, claim C100 is supported by quantification in Figure 4D showing no significant differences when properly normalized. This is a key negative result demonstrating that despite cohesin reconstitution, it is dispensable for this specific HR repair event. Claim C102 provides important context from prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "6075c4c1-c303-42f0-89cd-198438a278f5",
+      "content_id": "6e5079c2-ef2f-4fb9-ac02-9e81177d6ffb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors conclude that residual Smc1-Smc3 dimers are complemented by de novo Scc1 after DSBs in late mitosis, suggesting chromosome structure may undergo significant changes. They speculate this could involve DI-cohesion or new intramolecular loops, which may favor HR repair though appearing dispensable for MAT switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C105 is a reasonable conclusion from the data in Figures 1-2. However, claims C106-C109 are explicitly speculative ('may undergo', 'cannot currently rule out', 'may favor') about the functional consequences and mechanisms. While the speculation is reasonable and appropriately qualified, these hypotheses require future experimental validation and should not be considered demonstrated results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "64a7ce4f-f8bf-4ccf-951e-4abcf6e4c022",
+      "content_id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Scc1 protein levels are restored in telophase-arrested cells after DSB induction. Western blot analysis shows that Scc1 signal disappears in telophase arrest but returns after HO-induced DSBs (>15-fold increase) or phleomycin treatment (5-fold increase), while Smc1 and Smc3 levels remain more stable.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly acknowledge this finding. Reviewer 1 states the demonstration that 'full-length Scc1 can be recovered upon DSB induction is compelling.' Reviewer 3 confirms 'The cohesin subunit Scc1 can re-associate with chromatin and the other Smc1-3 subunits upon formation of an unrepairable DSB at MAT in telophase.' The editor also notes this as convincing evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43",
+      "content_id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Scc1 reconstitutes a chromatin-bound cohesin complex with Smc1 and acetylated Smc3 after HO DSB in telophase. Co-immunoprecipitation and chromatin fractionation experiments show Scc1 associates with Smc1-6HA and acSmc3 after HO DSB but not after phleomycin treatment or in mock conditions, with approximately 2-fold increase in Smc1-acSmc3 and 7-fold increase in Scc1 in chromatin fractions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes 'Scc1 is reloaded and reconstituted on chromatin together with Smc1' as a key finding. Reviewer 3 explicitly states 'The cohesin subunit Scc1 can re-associate with chromatin and the other Smc1-3 subunits upon formation of an unrepairable DSB at MAT in telophase' as one of three facts the manuscript 'convincingly establishes.' No concerns are raised about this data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "2d78e6f2-c327-4c4e-8ebc-af1f2d50052b",
+      "content_id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The reconstituted cohesin does not localize to the MAT locus after DSB in telophase. ChIP experiments show no increase in Smc3 binding around the HO cut site in telophase, unlike in G2/M where local recruitment is observed, leading to the conclusion that Smc1-Smc3 is not further recruited to the HO DSB in late mitosis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is not explicitly challenged by any reviewer. Reviewer 3 acknowledges that 'Cohesin (an a fortiori cohesin that reassociated with chromatin) plays no role in non-allelic HR in telophase in the specific context of MAT switching,' which is consistent with the lack of local recruitment. The data supporting this claim is accepted as part of the overall findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4",
+      "content_id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "DSB resection and DNA damage checkpoint activation occur in telophase with slight delays compared to G2/M. Resection kinetics show t1/2 of ~1.5 hr at 0.7 kb and ~3.5 hr at 5.7 kb in telophase versus ~1 hr and ~2.5 hr in G2/M. Rad53 hyperphosphorylation follows with ~1 hr delay after resection in both conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges the careful cell synchronization and monitoring of repair events. No reviewer challenges the resection or checkpoint activation data. These findings support the broader conclusion that HR machinery is functional in telophase, which reviewers accept.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e766b773-611e-4b77-b694-b0a338a8e274",
+      "content_id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "HR is the predominant DSB repair pathway in telophase-arrested cells. Southern blot analysis of MAT switching shows efficient cutting and repair exclusively through HR (gene conversion from MATa to MAT\u03b1) with no evidence of NHEJ. This is confirmed in yku70\u0394 strains and is consistent with high CDK activity favoring HR.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly support this finding. Reviewer 1 states 'the finding that efficient HR can take place during M phase is significant' and notes 'HR occurs with high efficiency' as a strength. Reviewer 3 confirms 'HR can occur in telophase-arrested cells' as one of three facts the manuscript 'convincingly establishes.' The editor notes 'convincing evidence that homologous recombination can occur in telophase-arrested cells.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "1a443c8f-c590-4fbb-aa5a-afc0804d112f",
+      "content_id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The reconstituted cohesin complex is not required for HR-driven MAT switching in telophase. Smc3 depletion experiments using the AID system show that when MAT conversion yield is normalized to cut efficiency, no significant differences are observed between wild-type and Smc3-depleted strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges 'HR-driven MAT switching can occur in an Smc3-independent manner' as a demonstrated finding. Reviewer 3 explicitly states 'Cohesin (an a fortiori cohesin that reassociated with chromatin) plays no role in non-allelic HR in telophase in the specific context of MAT switching' as one of three facts the manuscript 'convincingly establishes.' This is accepted as a key result.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e66c9d30-b735-48bc-bc7b-0c011313ada0",
+      "content_id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "HR kinetics in telophase are not altered by loss of DNA damage checkpoint activation (rad9\u0394) or DSB end tethering (mre11\u0394). MAT switching repair kinetics in these mutants are similar to wild-type, consistent with previous studies showing HO DSB repair is more robust than other DSB types.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer challenges these findings. The data are presented as supporting evidence for the robustness of HR in telophase and are consistent with established knowledge about MAT switching, which reviewers accept.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "3d3cd3dc-7a0d-4f38-bffa-0b62e411138b",
+      "content_id": "ddf636f7-ee89-43bd-b844-460d72e9d0d3",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose that residual Smc1-Smc3 dimers are complemented by de novo Scc1 incorporation after DSBs in late mitosis, potentially causing chromosome structure changes. They speculate this could establish damage-induced cohesion or intramolecular loops that may favor HR, though this appears dispensable for MAT switching.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 explicitly identifies the disconnect between these claims, stating 'the role of cohesin re-association with chromatin for the allelic inter-sister repair by HR is not addressed. In the absence of such evidence, the main claims of the paper making up the title (cohesin re-association and HR repair) appear disconnected.' The reviewer notes that 'the very last sentence of the abstract corrects the false sense from the title' but requests rewriting to clarify that cohesin reconstitution's functional role remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "40198580-aa29-4ab0-8e2d-dfdd4f4442ed",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "38d2e183-6ff4-45e3-8826-e28d4a7695c0",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "6c6f50f0-1fae-4b04-976f-65dc3e5d9fae",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "1ca785f5-bf87-4587-8308-27f2b3e5ffca",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "1ff52a3e-ba40-4be7-9d03-9efca7b2d54d",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "0fa28af4-42fe-4d0a-91ed-b4cd5cf54c3f",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "e5e43920-f012-42ad-87e8-e3b3e8648c5a",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "bf19e4a5-cef5-4053-872c-48c9c2ca8985",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "b1d0f5e5-e428-4212-8f8a-2135db6d5408",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "d7ba5ab9-0ea8-4c17-9cae-53ab552f0221",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "e34b4415-715a-41c1-916b-7cd195a59066",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "5f6a54ba-5c70-4f3c-bdbb-8bba53fe2053",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "14b85fd8-1f0a-44d2-8933-6383ad29d871",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "760d5620-e10d-4779-bd2e-ce0ae4dfe633",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "17a12b74-a4b3-4578-99fd-e7c1edc07df6",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "e0653e79-cf0f-414f-8489-6467a7aca96e",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "1a8242b9-ea72-4f70-a71d-000fb76ee3fa",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "830f1bd2-211b-4f8d-8ffd-3e05d84073e6",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "5b76d031-17fa-47e6-ad41-661a7c296ce1",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "351c8508-1d58-4216-8312-4c202474fbc3",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "5a6cf765-c0e5-4bb5-92e5-e26a2d2c8d84",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "21c12dc2-59cf-4afc-ab2f-316418c81dda",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "7058ed3e-2742-48ac-9fa7-399788837b53",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "cd0efc0a-d2a0-4503-92c1-8832c8b5a132",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "02f2322f-1828-4f94-b795-5a175fd9c03b",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "aaad8fae-182f-4c15-8ad0-58c86cccf490",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "02b90c94-6541-4205-99e1-dcec97c6b352",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "14209b79-6480-4da2-9963-302095911b8e",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "e7230000-4485-4e01-8cf5-ed95ba9379f9",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "219fb3e2-4077-4edc-b20f-fc7f8dc23b22",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "2e6d0553-f5b2-4d8c-9899-e8b1726ceb8d",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "e0ccdea3-257b-4d3f-9299-0d10027d6114",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "7526b127-d0a6-4d7f-befb-a9a10ee167f2",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "04e9f618-c810-415a-85ad-6262f40696e7",
+      "result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707"
+    },
+    {
+      "claim_id": "3878a907-cdc4-4468-be80-52c69cdd3319",
+      "result_id": "c7776cd2-7e01-4669-be47-6dbd82affb72"
+    },
+    {
+      "claim_id": "b138ee07-fa31-40c2-9a31-60feb08fd0eb",
+      "result_id": "c7776cd2-7e01-4669-be47-6dbd82affb72"
+    },
+    {
+      "claim_id": "a5938cc2-9cdd-4ace-b676-a145b0461b8a",
+      "result_id": "c7776cd2-7e01-4669-be47-6dbd82affb72"
+    },
+    {
+      "claim_id": "d1915143-f7ca-44ae-a54b-af6a8ad81574",
+      "result_id": "c7776cd2-7e01-4669-be47-6dbd82affb72"
+    },
+    {
+      "claim_id": "e06eaa99-9df6-409d-afed-401841a43edf",
+      "result_id": "c7776cd2-7e01-4669-be47-6dbd82affb72"
+    },
+    {
+      "claim_id": "4de73227-2e59-4152-9eb9-e57794e6e457",
+      "result_id": "92545542-c1d7-4034-803a-9dc5ada00392"
+    },
+    {
+      "claim_id": "8217f421-a913-480e-856f-c073f732b866",
+      "result_id": "92545542-c1d7-4034-803a-9dc5ada00392"
+    },
+    {
+      "claim_id": "65d3c652-40a1-405f-8951-35335525dfa2",
+      "result_id": "92545542-c1d7-4034-803a-9dc5ada00392"
+    },
+    {
+      "claim_id": "c870f112-a2e1-4572-9bf3-13cdadba42e2",
+      "result_id": "92545542-c1d7-4034-803a-9dc5ada00392"
+    },
+    {
+      "claim_id": "dd148136-a14e-46df-b0ef-dc157a70069c",
+      "result_id": "92545542-c1d7-4034-803a-9dc5ada00392"
+    },
+    {
+      "claim_id": "0c00b167-028d-4a9a-97ff-e6df86e5f055",
+      "result_id": "92545542-c1d7-4034-803a-9dc5ada00392"
+    },
+    {
+      "claim_id": "03df4504-51d4-43ad-b882-e17254ff76cc",
+      "result_id": "da1107a4-9661-46ec-9878-21432de04196"
+    },
+    {
+      "claim_id": "f63b8475-a512-4357-a4c5-751b4ca540b5",
+      "result_id": "da1107a4-9661-46ec-9878-21432de04196"
+    },
+    {
+      "claim_id": "c4f3b4be-12f0-425d-9407-57b3adeb89d9",
+      "result_id": "da1107a4-9661-46ec-9878-21432de04196"
+    },
+    {
+      "claim_id": "1241619c-bbc2-43c4-b4a6-8d5dfb953091",
+      "result_id": "da1107a4-9661-46ec-9878-21432de04196"
+    },
+    {
+      "claim_id": "c1196739-e906-47db-b2e9-dbf9c19458c5",
+      "result_id": "da1107a4-9661-46ec-9878-21432de04196"
+    },
+    {
+      "claim_id": "4ece02f2-630d-4fd1-a04f-3acb3318d12d",
+      "result_id": "da1107a4-9661-46ec-9878-21432de04196"
+    },
+    {
+      "claim_id": "3d494930-9b83-4ac6-9689-8150c3314da6",
+      "result_id": "6ed102be-a950-4eee-8686-8d77ea264a1b"
+    },
+    {
+      "claim_id": "1205a95e-2acc-491f-9cce-ccee4268bedc",
+      "result_id": "6ed102be-a950-4eee-8686-8d77ea264a1b"
+    },
+    {
+      "claim_id": "4a1c2207-0f52-4d6b-a919-f2664c5c4fff",
+      "result_id": "6ed102be-a950-4eee-8686-8d77ea264a1b"
+    },
+    {
+      "claim_id": "48fd848f-1ec6-4ec0-9654-6a89aca41431",
+      "result_id": "997f2339-7224-4d9c-9c17-88ce44d5bb7d"
+    },
+    {
+      "claim_id": "b3a2dc87-dd73-443b-9f0b-75f103ac4d2c",
+      "result_id": "997f2339-7224-4d9c-9c17-88ce44d5bb7d"
+    },
+    {
+      "claim_id": "216597eb-5363-4890-b2bb-ba1953e69e2a",
+      "result_id": "997f2339-7224-4d9c-9c17-88ce44d5bb7d"
+    },
+    {
+      "claim_id": "cae7bc98-7913-492a-91cb-35b59396a320",
+      "result_id": "997f2339-7224-4d9c-9c17-88ce44d5bb7d"
+    },
+    {
+      "claim_id": "739a6065-77e4-4dff-85f6-80a179df1108",
+      "result_id": "071821ed-d3e8-4864-975d-df3f60146894"
+    },
+    {
+      "claim_id": "f2711e64-6ce8-4c7a-b4ed-2c0c2d1270e5",
+      "result_id": "071821ed-d3e8-4864-975d-df3f60146894"
+    },
+    {
+      "claim_id": "9ab77168-e956-421b-8c27-f8807d6f05ed",
+      "result_id": "071821ed-d3e8-4864-975d-df3f60146894"
+    },
+    {
+      "claim_id": "c7debef1-4679-46ff-a531-a2418a49f855",
+      "result_id": "071821ed-d3e8-4864-975d-df3f60146894"
+    },
+    {
+      "claim_id": "8e280187-79ed-4029-a5ec-3f3da19b2459",
+      "result_id": "071821ed-d3e8-4864-975d-df3f60146894"
+    },
+    {
+      "claim_id": "6cdc412e-f316-44e6-8cb0-f1ec92cd9a06",
+      "result_id": "a7476446-feeb-4b63-96bf-176c54ef142b"
+    },
+    {
+      "claim_id": "266f20dc-15f2-48a7-9d78-87c37878cc95",
+      "result_id": "a7476446-feeb-4b63-96bf-176c54ef142b"
+    },
+    {
+      "claim_id": "e15e1f11-213f-462d-ad26-a9719c0068d5",
+      "result_id": "a7476446-feeb-4b63-96bf-176c54ef142b"
+    },
+    {
+      "claim_id": "9f1900e2-b1c0-4225-bdf1-8ffa310d1404",
+      "result_id": "a7476446-feeb-4b63-96bf-176c54ef142b"
+    },
+    {
+      "claim_id": "fbd0dd14-7051-4354-b3a1-d2acb0e3a674",
+      "result_id": "a7476446-feeb-4b63-96bf-176c54ef142b"
+    },
+    {
+      "claim_id": "31c1e035-4cef-4e43-9fe4-7702b985b038",
+      "result_id": "a7476446-feeb-4b63-96bf-176c54ef142b"
+    },
+    {
+      "claim_id": "a107adf2-4c8f-4d46-a0b3-dab64bcbac13",
+      "result_id": "b4b4004d-8cf4-4b83-bcc0-253e69b72949"
+    },
+    {
+      "claim_id": "446744cd-a953-49af-a0d7-5f28ff217e5e",
+      "result_id": "b4b4004d-8cf4-4b83-bcc0-253e69b72949"
+    },
+    {
+      "claim_id": "f96bf5c5-0f2f-4432-b47f-b47899517bb6",
+      "result_id": "b4b4004d-8cf4-4b83-bcc0-253e69b72949"
+    },
+    {
+      "claim_id": "1a19f294-865f-4306-9033-a5eb74414fd6",
+      "result_id": "b4b4004d-8cf4-4b83-bcc0-253e69b72949"
+    },
+    {
+      "claim_id": "01a72d65-e7c4-458d-9aaf-2b8ce03711a2",
+      "result_id": "b4b4004d-8cf4-4b83-bcc0-253e69b72949"
+    },
+    {
+      "claim_id": "541b80a6-5b25-496e-84a8-f54a7c855e37",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "6ab1e2eb-7a55-4f97-a01c-2d176f55a13b",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "04a28c95-bc26-470d-8105-2fb8fbf26cce",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "6cd57eae-2f9a-42de-98ef-6b16c2b00ad8",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "fcd6dd51-7639-4067-9f5b-fece95c389d4",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "3500e3ce-c4e1-4a93-80a4-c655951c5b03",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "f2bdf3f5-45b4-413d-947f-27fa4014c2c1",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "bfb12b31-4b29-4e1f-ad25-d957cb6f1d0b",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "c3b95abf-451c-4fde-b2db-5e22f3f85afd",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "f01f1be4-1dd1-454e-862d-50fdb09ad1cd",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "995e0165-5404-4733-b672-398eeb1b2753",
+      "result_id": "b501b54f-9566-478f-82f7-7100f29df790"
+    },
+    {
+      "claim_id": "5d0242c9-e562-4628-9c60-08a84e921526",
+      "result_id": "b17262ba-ff00-45ae-b5e8-22ffbf44406e"
+    },
+    {
+      "claim_id": "0f8b72ce-6565-40b6-9c06-15dd161d9f97",
+      "result_id": "b17262ba-ff00-45ae-b5e8-22ffbf44406e"
+    },
+    {
+      "claim_id": "127ed686-b1a8-4f42-8f07-dcae8063e2fa",
+      "result_id": "b17262ba-ff00-45ae-b5e8-22ffbf44406e"
+    },
+    {
+      "claim_id": "33bb560e-1dac-4534-bea0-4fb91af102bd",
+      "result_id": "b17262ba-ff00-45ae-b5e8-22ffbf44406e"
+    },
+    {
+      "claim_id": "866dfbcc-935d-48e1-af95-28f0f4c69dae",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "4ccf5be4-7a62-471f-a269-14ad31fb4ed0",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "e4bdd96c-2c4e-41c9-9f72-2af662cf1a52",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "06a9da0b-040b-4bdc-9aa6-61f7e5bbeeb1",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "5aefc654-2ae8-4152-8fbf-e471348be0e6",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "f9939407-fa7e-4a87-9944-6980bc37d46c",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "b87a4a81-b2e6-4721-b7ed-9e4f03ea01af",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "295289ee-47fd-46db-b44c-6adbc6f9cb7c",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "682699cf-a724-4a56-9a72-55de0f5a8ab9",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "7194cbc0-e603-42d3-a935-115769d5bbe1",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "418575be-4336-4d02-9988-554544875f31",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "2e5c0a0d-41e9-463f-9fe2-82be76686675",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "a8c1990a-4660-4498-849e-ee58f5f3c159",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "8d351a51-6849-4c85-bab4-44a93dbe172f",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "4d2663cc-fea7-475f-8aed-58370b928139",
+      "result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77"
+    },
+    {
+      "claim_id": "2163cd36-b03c-4232-985b-803426f47dd7",
+      "result_id": "6075c4c1-c303-42f0-89cd-198438a278f5"
+    },
+    {
+      "claim_id": "1f2f67c5-2601-4f29-b99b-b80573329fa0",
+      "result_id": "6075c4c1-c303-42f0-89cd-198438a278f5"
+    },
+    {
+      "claim_id": "2688cd0f-1279-4358-89c0-855e179cfc49",
+      "result_id": "6075c4c1-c303-42f0-89cd-198438a278f5"
+    },
+    {
+      "claim_id": "58435be4-4f2d-4ff3-91ab-26f8fcf89809",
+      "result_id": "6075c4c1-c303-42f0-89cd-198438a278f5"
+    },
+    {
+      "claim_id": "156c9080-18c4-41f8-9487-64f4872b606d",
+      "result_id": "6075c4c1-c303-42f0-89cd-198438a278f5"
+    },
+    {
+      "claim_id": "4de73227-2e59-4152-9eb9-e57794e6e457",
+      "result_id": "64a7ce4f-f8bf-4ccf-951e-4abcf6e4c022"
+    },
+    {
+      "claim_id": "8217f421-a913-480e-856f-c073f732b866",
+      "result_id": "64a7ce4f-f8bf-4ccf-951e-4abcf6e4c022"
+    },
+    {
+      "claim_id": "65d3c652-40a1-405f-8951-35335525dfa2",
+      "result_id": "64a7ce4f-f8bf-4ccf-951e-4abcf6e4c022"
+    },
+    {
+      "claim_id": "c870f112-a2e1-4572-9bf3-13cdadba42e2",
+      "result_id": "64a7ce4f-f8bf-4ccf-951e-4abcf6e4c022"
+    },
+    {
+      "claim_id": "dd148136-a14e-46df-b0ef-dc157a70069c",
+      "result_id": "64a7ce4f-f8bf-4ccf-951e-4abcf6e4c022"
+    },
+    {
+      "claim_id": "0c00b167-028d-4a9a-97ff-e6df86e5f055",
+      "result_id": "64a7ce4f-f8bf-4ccf-951e-4abcf6e4c022"
+    },
+    {
+      "claim_id": "03df4504-51d4-43ad-b882-e17254ff76cc",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "f63b8475-a512-4357-a4c5-751b4ca540b5",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "c4f3b4be-12f0-425d-9407-57b3adeb89d9",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "1241619c-bbc2-43c4-b4a6-8d5dfb953091",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "c1196739-e906-47db-b2e9-dbf9c19458c5",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "4ece02f2-630d-4fd1-a04f-3acb3318d12d",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "3d494930-9b83-4ac6-9689-8150c3314da6",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "1205a95e-2acc-491f-9cce-ccee4268bedc",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "4a1c2207-0f52-4d6b-a919-f2664c5c4fff",
+      "result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43"
+    },
+    {
+      "claim_id": "48fd848f-1ec6-4ec0-9654-6a89aca41431",
+      "result_id": "2d78e6f2-c327-4c4e-8ebc-af1f2d50052b"
+    },
+    {
+      "claim_id": "216597eb-5363-4890-b2bb-ba1953e69e2a",
+      "result_id": "2d78e6f2-c327-4c4e-8ebc-af1f2d50052b"
+    },
+    {
+      "claim_id": "cae7bc98-7913-492a-91cb-35b59396a320",
+      "result_id": "2d78e6f2-c327-4c4e-8ebc-af1f2d50052b"
+    },
+    {
+      "claim_id": "266f20dc-15f2-48a7-9d78-87c37878cc95",
+      "result_id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4"
+    },
+    {
+      "claim_id": "e15e1f11-213f-462d-ad26-a9719c0068d5",
+      "result_id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4"
+    },
+    {
+      "claim_id": "9f1900e2-b1c0-4225-bdf1-8ffa310d1404",
+      "result_id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4"
+    },
+    {
+      "claim_id": "fbd0dd14-7051-4354-b3a1-d2acb0e3a674",
+      "result_id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4"
+    },
+    {
+      "claim_id": "446744cd-a953-49af-a0d7-5f28ff217e5e",
+      "result_id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4"
+    },
+    {
+      "claim_id": "01a72d65-e7c4-458d-9aaf-2b8ce03711a2",
+      "result_id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4"
+    },
+    {
+      "claim_id": "fcd6dd51-7639-4067-9f5b-fece95c389d4",
+      "result_id": "e766b773-611e-4b77-b694-b0a338a8e274"
+    },
+    {
+      "claim_id": "3500e3ce-c4e1-4a93-80a4-c655951c5b03",
+      "result_id": "e766b773-611e-4b77-b694-b0a338a8e274"
+    },
+    {
+      "claim_id": "f2bdf3f5-45b4-413d-947f-27fa4014c2c1",
+      "result_id": "e766b773-611e-4b77-b694-b0a338a8e274"
+    },
+    {
+      "claim_id": "bfb12b31-4b29-4e1f-ad25-d957cb6f1d0b",
+      "result_id": "e766b773-611e-4b77-b694-b0a338a8e274"
+    },
+    {
+      "claim_id": "c3b95abf-451c-4fde-b2db-5e22f3f85afd",
+      "result_id": "e766b773-611e-4b77-b694-b0a338a8e274"
+    },
+    {
+      "claim_id": "f01f1be4-1dd1-454e-862d-50fdb09ad1cd",
+      "result_id": "e766b773-611e-4b77-b694-b0a338a8e274"
+    },
+    {
+      "claim_id": "995e0165-5404-4733-b672-398eeb1b2753",
+      "result_id": "e766b773-611e-4b77-b694-b0a338a8e274"
+    },
+    {
+      "claim_id": "866dfbcc-935d-48e1-af95-28f0f4c69dae",
+      "result_id": "1a443c8f-c590-4fbb-aa5a-afc0804d112f"
+    },
+    {
+      "claim_id": "8d351a51-6849-4c85-bab4-44a93dbe172f",
+      "result_id": "1a443c8f-c590-4fbb-aa5a-afc0804d112f"
+    },
+    {
+      "claim_id": "a8c1990a-4660-4498-849e-ee58f5f3c159",
+      "result_id": "1a443c8f-c590-4fbb-aa5a-afc0804d112f"
+    },
+    {
+      "claim_id": "5d0242c9-e562-4628-9c60-08a84e921526",
+      "result_id": "e66c9d30-b735-48bc-bc7b-0c011313ada0"
+    },
+    {
+      "claim_id": "0f8b72ce-6565-40b6-9c06-15dd161d9f97",
+      "result_id": "e66c9d30-b735-48bc-bc7b-0c011313ada0"
+    },
+    {
+      "claim_id": "2163cd36-b03c-4232-985b-803426f47dd7",
+      "result_id": "3d3cd3dc-7a0d-4f38-bffa-0b62e411138b"
+    },
+    {
+      "claim_id": "1f2f67c5-2601-4f29-b99b-b80573329fa0",
+      "result_id": "3d3cd3dc-7a0d-4f38-bffa-0b62e411138b"
+    },
+    {
+      "claim_id": "2688cd0f-1279-4358-89c0-855e179cfc49",
+      "result_id": "3d3cd3dc-7a0d-4f38-bffa-0b62e411138b"
+    },
+    {
+      "claim_id": "58435be4-4f2d-4ff3-91ab-26f8fcf89809",
+      "result_id": "3d3cd3dc-7a0d-4f38-bffa-0b62e411138b"
+    },
+    {
+      "claim_id": "156c9080-18c4-41f8-9487-64f4872b606d",
+      "result_id": "3d3cd3dc-7a0d-4f38-bffa-0b62e411138b"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "528a0f60-889a-47be-bbae-d4952381a4fb",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "92545542-c1d7-4034-803a-9dc5ada00392",
+      "peer_result_id": "64a7ce4f-f8bf-4ccf-951e-4abcf6e4c022",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C6, C46-C50 regarding Scc1 restoration after DSBs in telophase. Both evaluations find this supported by Western blot data in Figure 1B-E. All three peer reviewers explicitly acknowledge this as compelling and convincing evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "79225dee-b35d-4c01-87da-1efdfeec34ed",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "6075c4c1-c303-42f0-89cd-198438a278f5",
+      "peer_result_id": "3d3cd3dc-7a0d-4f38-bffa-0b62e411138b",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C105-C109 being speculative. Both evaluations rate these as UNCERTAIN. OpenEval notes these are 'explicitly speculative' hypotheses requiring future validation. Peer Reviewer 3 identifies the disconnect between cohesin reconstitution and functional role in HR, requesting clarification that this remains speculative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "c3266856-1b28-4b83-98b6-73a3be290f76",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "da1107a4-9661-46ec-9878-21432de04196",
+      "peer_result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C7, C51-C55 regarding Scc1 co-precipitation with Smc1-HA and acSmc3. OpenEval finds this supported by co-IP data in Figure 2A. Peer reviewers explicitly acknowledge Scc1 reassociation with Smc1-3 subunits as convincingly established, with no concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "5c205079-64ab-4167-8572-94353eeff3ce",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "6ed102be-a950-4eee-8686-8d77ea264a1b",
+      "peer_result_id": "7fb4a107-dd71-4a67-9e91-c4da8a3ffa43",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C56-C58 regarding chromatin-bound cohesin complex. OpenEval finds this supported by chromatin fractionation data in Figure 2B. Peer reviewers accept this as part of the broader finding that Scc1 reassociates with chromatin and other cohesin subunits.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "311a82ce-e51c-4574-a583-3d4cac8fb73f",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "997f2339-7224-4d9c-9c17-88ce44d5bb7d",
+      "peer_result_id": "2d78e6f2-c327-4c4e-8ebc-af1f2d50052b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C9, C61-C63 regarding lack of local cohesin recruitment to DSB site in telophase. OpenEval finds this supported by ChIP-qPCR data in Figure 2C. Peer reviewers accept this finding, with Reviewer 3 noting it is consistent with cohesin playing no role in this specific HR context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "919b7697-5e1e-4c1e-b92b-efe9dd4705d0",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "b501b54f-9566-478f-82f7-7100f29df790",
+      "peer_result_id": "e766b773-611e-4b77-b694-b0a338a8e274",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C80-C83, C87, C103-C104 regarding efficient HR in telophase. Both evaluations find this SUPPORTED by Southern blot data in Figure 3E-F. All peer reviewers explicitly confirm HR occurs efficiently in telophase-arrested cells as convincingly established, with the editor noting this as a key finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "7992c8ec-a6e8-4140-a646-1aa2fd0ce295",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "0f194ce9-e280-448a-a6a3-704679bc5e77",
+      "peer_result_id": "1a443c8f-c590-4fbb-aa5a-afc0804d112f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C8, C100-C101 regarding cohesin dispensability for MAT switching HR. OpenEval finds claim C100 supported by quantification in Figure 4D showing no significant differences. Peer reviewers explicitly acknowledge this as one of three facts convincingly established, with Reviewer 3 stating cohesin plays no role in this specific HR context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "35e8fa8d-2727-4eec-8312-6e3e0b7b87d2",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a7476446-feeb-4b63-96bf-176c54ef142b",
+      "peer_result_id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C68-C71 regarding resection kinetics in telophase. OpenEval finds this supported by qPCR data in Figure 3A. Peer reviewers accept this data as part of evidence that HR machinery is functional in telophase, with Reviewer 1 acknowledging careful cell synchronization and repair monitoring.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "3166081e-cf77-47af-99ea-c464b09f7bc1",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "b4b4004d-8cf4-4b83-bcc0-253e69b72949",
+      "peer_result_id": "2736daca-deaf-4bb6-91ad-4b5c85087fd4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C74, C79 regarding Rad53 activation and checkpoint response. OpenEval finds this supported by Western blot data in Figures 3B and 3D. Peer reviewers accept checkpoint activation data as supporting HR functionality in telophase without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "465745e0-24c6-46eb-81d9-b9723ec34da0",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b17262ba-ff00-45ae-b5e8-22ffbf44406e",
+      "peer_result_id": "e66c9d30-b735-48bc-bc7b-0c011313ada0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C84-C85 regarding similar repair kinetics in mutants. OpenEval finds this supported by data in Figure 3-supplement 2D-I. Peer reviewers accept these findings as supporting evidence for robustness of HR in telophase, consistent with established MAT switching knowledge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "6736d280-9c9b-443c-a69e-15d29b0c7073",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ff08bb8a-ae3f-4621-87b7-e30bbce7e707",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates 33 background and context claims (C1-C5, C10-C33, C37-C40, C42) as SUPPORTED by appropriate literature citations. No corresponding peer review evaluation found, as peer reviewers typically focus on novel findings rather than background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "e960faa4-663b-4290-b775-55aa8436ea50",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "c7776cd2-7e01-4669-be47-6dbd82affb72",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C34-C36, C41, C43 as SUPPORTED, including the hypothesis that cohesin reconstitution is feasible (C41) based on established knowledge. No corresponding peer review evaluation found for these specific background and hypothesis claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    },
+    {
+      "id": "5ec30765-e3e6-4e48-93cd-99509c2ee7e6",
+      "submission_id": "05cbe981-3dec-427a-81cb-558edf0aa2c7",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "071821ed-d3e8-4864-975d-df3f60146894",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates claims C59-C60, C64-C66 as UNCERTAIN, noting these are explicitly speculative hypotheses about mechanisms ('could be due to', 'might act', 'may shift') that remain untested. No corresponding peer review evaluation found for these specific mechanistic speculations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:57:31.597812Z"
+    }
+  ]
+}

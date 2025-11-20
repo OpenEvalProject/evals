@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors developed a behavioral classification system for Drosophila feeding by recording flies in the FLIC system and manually annotating videos. They identified five main behavioral categories: 'other' (non-feeding), 'interaction' (leg contact only), 'fast' feeding (<4s proboscis contact), 'long' feeding (>4s sustained proboscis contact), and 'long/quick' feeding (>4s with rapid proboscis movement). These behaviors occurred at different frequencies across the fly population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C59 describe the development and validation of a novel behavioral classification system. The methodology is clearly described, behavioral categories are well-defined with specific temporal criteria, and frequency data from 30 flies and ~300 events are presented in Figure 1B-C. The classification system is internally consistent and provides a foundation for subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "Starved flies (24 hr) exhibited increased frequency of feeding behaviors overall and specifically increased relative frequency of long-duration (L-type) feeding events compared to fully fed flies. Sequence analysis revealed that starved flies followed F events with F events and L events with L events more often than expected by chance, while sated flies showed more grooming transitions, suggesting a less goal-oriented state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 and C70 are well-supported by data in Figure 1D-E. The increased L-type event frequency in starved flies is statistically significant and consistent with prior literature (C62). The sequence analysis provides additional behavioral structure information with appropriate statistical testing (transitional probabilities with p<0.001). However, C60 notes the overall frequency difference was marginally non-significant (p=0.061), which slightly weakens but does not invalidate the main finding about L-type events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Flies exhibited circadian meal patterns with peaks at lights-on and lights-off. During meal-times, flies showed significantly greater frequency of LQ (long/quick) feeding events, while F and L event frequencies were statistically indistinguishable between meal and non-meal times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by data in Figure 1F and Figure 1\u2014figure supplement 1. The circadian pattern is clearly demonstrated, and the specific increase in LQ events during meal-times is statistically significant. The finding that F and L events do not differ between times adds specificity to the behavioral signature of circadian feeding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Analysis of FLIC signal characteristics revealed that signal duration effectively distinguished long feeding events from both fast feeding events and interactions. Maximum signal intensity and signal variance could distinguish interactions from feeding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by systematic analysis in Figure 2D-I, where 332 visually scored events were matched to FLIC signals. The finding that duration is the key distinguishing feature for L-type events is important for enabling high-throughput analysis. The additional observation about intensity metrics distinguishing interactions provides practical utility for automated classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors established that yeast preference (total events with yeast vs. sucrose) can measure homeostatic hunger. Starved flies showed increased yeast preference compared to fed flies in the 2% sucrose environment. Female flies also showed increased yeast preference compared to males, potentially reflecting sex differences in protein requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by data in Figure 3B-C and citations to prior work (Liu et al., 2017; Ro et al., 2016). The starvation effect validates the metric as a measure of homeostatic hunger. The sex difference observation (C77-C78) is data-supported but the mechanistic interpretation about protein requirements is speculative, though reasonable given known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors established that increased event duration with sucrose (but not total event number) is a signature of hedonic feeding. In the 20% sucrose environment, flies showed increased event durations with sucrose and decreased durations with yeast compared to the 2% control environment, while total event numbers remained unchanged. Volumetric intake measurements confirmed flies consumed twice as much sucrose in the hedonic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are well-supported by data in Figure 3D-G and Figure 3\u2014figure supplement 1A. The dissociation between event duration (increased) and event number (unchanged) in hedonic environments is a key finding that distinguishes hedonic from homeostatic feeding. The Con-Ex volumetric data (C83) provides independent validation. The conclusions (C84-C85) are reasonable inferences from the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Sweet taste alone (arabinose) was sufficient to increase event durations comparable to 20% sucrose, while calories alone (sorbitol) were not. Event durations increased linearly with sucrose concentration (water to 20%), while yeast durations and total sucrose event numbers remained constant across concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are strongly supported by data in Figure 3H-M. The arabinose vs. sorbitol comparison (C86-C87) provides critical evidence that sweetness, not calories, drives the hedonic feeding signature. The dose-response relationship (C88-C89) further validates the metric. The conclusion (C90) is well-justified by the experimental design and results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors demonstrated that homeostatic and hedonic hunger are correlated and that homeostatic state potentiates hedonic feeding. Starvation increased yeast preference (homeostatic measure) in a dose-dependent manner (24 vs 48 hr) and marginally enhanced hedonic feeding. Regression analysis revealed a significant positive correlation between homeostatic and hedonic measures, with parallel slopes in control vs. hedonic environments indicating that sweetness increases event duration without modulating the hunger drive relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C101 are supported by data in Figure 4A-D. The dose-dependent starvation effect (C91-C92) validates the homeostatic measure. The correlation analysis (C95) is statistically significant (adjusted R\u00b2=0.1835, p<0.001 for interaction), though the effect size is modest. The parallel slopes observation (C98-C99) is an important finding about the independence of the sweetness effect. The conclusions about potentiation (C94, C96, C100) are reasonable inferences, though C93 notes the enhancement is 'marginal,' suggesting the effect may be subtle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Using CaMPARI to measure neuronal activity, the authors found that the mushroom body (MB), particularly the horizontal lobes, showed increased activity in hedonic food environments. This is consistent with the known role of the MB in reinforcement and motivational control and its innervation by dopaminergic neurons that encode food reward properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by CaMPARI data in Figure 5A-B. The unbiased screen (pan-neuronal) and targeted validation (MB-specific) provide converging evidence. The increased red:green ratio in hedonic environments is statistically significant (p=0.06 for pan-neuronal, p<0.001 for MB-specific). The consistency with prior literature (C104-C106) strengthens the interpretation, though the mechanism remains correlative at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C119"
+    ],
+    "result": "Optogenetic inhibition experiments revealed that signaling from the \u03b1'/\u03b2' MB lobes, but not \u03b3 or \u03b1/\u03b2 lobes, is specifically required for hedonic feeding but not homeostatic feeding. PAM dopaminergic neurons projecting to \u03b1'/\u03b2' lobes are also required for hedonic feeding. This identifies a distinct PAM\u2192\u03b1'/\u03b2' circuit regulating hedonic hunger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 and C119 are well-supported by optogenetic data in Figure 5C-F and Figure 5\u2014figure supplement 1. The lobe-specific requirement for hedonic but not homeostatic feeding (Figure 5E vs. supplement 1C) is a key dissociation. The PAM requirement (Figure 5F) completes the circuit identification. The conclusion (C109) is justified by the data and consistent with known MB anatomy and function (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Starvation restored hedonic feeding in flies with inhibited \u03b1'/\u03b2' lobes, suggesting that homeostatic state potentiates hedonic feeding through recruitment of additional, independent circuits rather than through the \u03b1'/\u03b2' circuit itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by data in Figure 5G showing that starvation rescues the hedonic feeding deficit caused by \u03b1'/\u03b2' inhibition. This is an important mechanistic finding about how the two hunger systems interact. The inference about independent circuits (C112) is reasonable given the rescue, though the identity of these additional circuits remains unknown and requires future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The authors established that Drosophila exhibit behavioral signatures of two distinct hunger states\u2014homeostatic and hedonic\u2014that are both independent and overlapping depending on environmental context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 represent the main conclusions of the study, synthesizing findings from behavioral classification (C43-C59), hedonic/homeostatic assay development (C74-C90), and interaction analysis (C91-C101). The independence is demonstrated by distinct behavioral signatures and neural circuits, while the overlap is shown by the correlation and potentiation effects. These conclusions are well-supported by the collective evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The introduction establishes the conceptual framework for hunger as having homeostatic and hedonic components, reviews prior work on hunger circuits in mammals and the utility of Drosophila as a model system, and identifies gaps in knowledge about hunger drives in flies and the mechanistic relationships between homeostatic and hedonic feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C42 provide background knowledge and literature review that appropriately contextualizes the study. These claims are supported by citations to relevant prior work and accurately represent the state of the field. They establish the rationale for the current study by identifying that while feeding circuits are known, the nature of hunger drives in flies and their interactions remain unclear (C27, C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Food intake alone may be a poor indicator of hunger states because animals eat for many reasons other than hunger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is a reasonable inference based on general knowledge about feeding behavior and is supported by the study's findings that different hunger states have distinct behavioral signatures beyond simple intake measures. This motivates the development of more nuanced behavioral metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The discussion contextualizes the MB findings within known anatomy and function, noting that the \u03b1'/\u03b2' lobe contains >350 Kenyon cells in distinct compartments and receives input from ~20 dopaminergic cell types. PAM\u2192MB connections have been implicated in appetitive learning, reward signaling, stress motivation, and wakefulness. The authors propose a model where the PAM\u2192\u03b1'/\u03b2' circuit acts as a permissive or motive force that sustains behavioral responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C125 accurately summarize prior literature about MB structure and function (supported by appropriate citations). However, the proposed model (C126-C127) is speculative and not directly tested in this study. While the model is reasonable and integrates the current findings with prior work, it remains a hypothesis requiring future experimental validation. The speculation is appropriately presented as 'one possibility' but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The abstract claims that increased feeding duration is a behavioral signature of hedonic feeding motivation, that MB lobes are activated by hedonic food environments, and that a PAM\u2192\u03b1'/\u03b2' MB circuit is implicated in hedonic feeding motivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 accurately summarize the main findings of the manuscript. C4 is supported by data in Figures 1 and 3 showing that event duration distinguishes hedonic from homeostatic feeding. C5 is supported by CaMPARI data in Figure 5A-B. C6 is supported by optogenetic inhibition data in Figure 5E-F. These abstract claims faithfully represent the experimental results.",
+    "result_type": "MAJOR"
+  }
+]

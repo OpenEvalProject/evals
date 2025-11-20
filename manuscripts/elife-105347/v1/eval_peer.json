@@ -1,0 +1,169 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "AppNL-G-F mice exhibited a lower extent of reinstatement of fear memory compared to control mice, with significantly lower discrimination indices (DI) between test 3 and test 1 in both 6-month-old and 12-month-old AppNL-G-F mice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the behavioral findings showing deficits in reinstatement. One reviewer stated 'the data support the authors' hypothesis that AD model mice struggle to retain competing memories, with the effect becoming more pronounced with age.' Another reviewer noted 'AD model mice exhibited a significantly higher fear response after acquisition compared to controls, as well as a greater drop in fear response during reinstatement.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C32",
+      "C33",
+      "C91",
+      "C92"
+    ],
+    "result": "Computational modeling revealed that 12-month-old AppNL-G-F mice had significantly lower concentration parameter \u03b1 and lower \u03c3x\u00b2 than control mice, indicating their internal states were biased toward overgeneralization or overdifferentiation of observations, leading to failure to retain competing memories.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised substantial concerns about the computational modeling interpretation. One reviewer stated 'These issues lead to potential overinterpretation of the model parameters. The differences in \u03b1 and \u03c3x are being used to make claims about cognitive processes (e.g., overgeneralization vs. over differentiation), but the model itself does not appear to capture these processes accurately.' Another reviewer noted 'certain concerns remain regarding the interpretation of the results of the modeling' and that 'the model struggles to fit the data and to support the key hypothesis about AD mice's inability to retain competing memories.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In 12-month-old mice, computational modeling showed that AppNL-G-F mice inferred fewer latent causes during acquisition, had higher posterior probabilities of acquisition latent causes in test 1, and inferred more new latent causes after extinction compared to controls, which impeded weight updates and reduced reinstatement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned the model's ability to capture the underlying mechanisms. One reviewer noted 'The model explains the higher fear response in controls during reinstatement largely through a stronger association to the context formed during the unsignaled shock phase, rather than to any memory of the conditioned stimulus from acquisition' and stated 'it's not clear why a latent cause model is necessary for this behavior.' Another reviewer pointed out that 'the model does not appear to return to the acquisition memory after reinstatement' contrary to what would be expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In 6-month-old mice, AppNL-G-F mice had significantly lower \u03b1 than control mice, and both \u03b1 and \u03c3x\u00b2 were significantly correlated with DI, though the hyperparameter \u03b8 was significantly higher in AppNL-G-F mice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the parameter differences, they expressed concerns about interpretation. One reviewer noted that 'certain deficits have antecedently emerged in internal states, even if behavioral deficits are not obvious as in 6-month-old AppNL-G-F mice,' suggesting the modeling may detect subtle changes. However, the overall concern about model validity and interpretation applies to these findings as well.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C104",
+      "C105"
+    ],
+    "result": "In the reversal Barnes maze task, 12-month-old control mice used a confirmatory strategy focusing on the two target holes and successfully modified spatial memories, while AppNL-G-F mice primarily used a perimeter search strategy and failed to modify spatial memory for the second target hole.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged these behavioral findings. One reviewer stated 'In the reversal Barnes maze task, the AD model mice displayed a tendency to explore the maze perimeter rather than the two potential target holes, indicating a failure to integrate multiple memory cues into their strategy. This contrasted with the control mice, which used the more confirmatory strategy of focusing on the two target holes.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Widespread A\u03b2 accumulation was confirmed in AppNL-G-F mice, with significantly higher A\u03b2 plaque area in 12-month-old compared to 6-month-old AppNL-G-F mice in both anterior and posterior coronal sections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the A\u03b2 pathology characterization. One reviewer noted 'The experimental design was robust, confirming age-dependent increases in A\u03b2 plaque accumulation in the AD model mice.' This finding was not questioned by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The latent cause model's simulated conditioned responses (CRs) replicated the observed discrimination indices (DIs) in most groups, with similar fit between control and AppNL-G-F mice except in test 3 for 12-month-old mice, where the model underestimated reinstatement in controls.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenged the model fit. One reviewer stated 'The model misses trends in the data, including the gradual learning of fear in all groups during acquisition, the absence of a fear response at the start of the experiment, and the faster return of fear during reinstatement compared to the gradual learning of fear during acquisition.' Another reviewer noted concerns about overfitting: 'it appears that there is a high chance for overfitting the data with the LCM' and recommended 'the authors should use a method that takes into account the number of parameters, such as the BIC.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C25"
+    ],
+    "result": "AppNL-G-F mice showed a higher freezing rate than control mice in test 1 phase and lower DI values between test 2 and test 1 compared to control mice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged these behavioral observations. One reviewer stated 'AD model mice exhibited a significantly higher fear response after acquisition compared to controls.' These findings were not disputed and form part of the accepted behavioral phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "No significant correlations were detected between DIs in the reinstatement and Barnes maze experiments, potentially due to differential effects of A\u03b2 accumulation on associative and instrumental learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding was not challenged by reviewers. One reviewer noted concerns about the Barnes maze data not being modeled with the latent cause model, stating 'if the authors do not model this data with the LCM, the Barnes maze data doesn't appear valuable to the main hypothesis,' but did not dispute the lack of correlation itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The deficits in reinstatement in AppNL-G-F mice were first reported in this study, suggesting that A\u03b2 accumulation induces defects in the memory modification process after extinction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the novelty of the behavioral findings. One reviewer stated 'Overall, the data support the authors' hypothesis that AD model mice struggle to retain competing memories, with the effect becoming more pronounced with age.' The behavioral deficit itself was accepted, though interpretation via the computational model was questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C146"
+    ],
+    "result": "Estimating internal states with the latent cause model parameters provided additional explanations for cognitive differences between control and AppNL-G-F mice, with deficits potentially emerging in internal states before obvious behavioral deficits, representing the first report of altered internal states biasing memory modification toward overgeneralization or overdifferentiation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed mixed views on this interpretive claim. While one reviewer acknowledged 'I applaud the authors' for providing a thorough response' after revisions, another maintained that 'the model itself does not appear to capture these processes accurately' and that there is 'potential overinterpretation of the model parameters.' The editor's summary noted 'certain concerns remain regarding the interpretation of the results of the modeling.'",
+    "result_type": "MAJOR"
+  }
+]

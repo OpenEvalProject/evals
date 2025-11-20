@@ -1,0 +1,167 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Mice were trained on an olfactory Pavlovian conditioning task with three cue types (CS+, CS50, CS-) predicting reward at different probabilities (100%, 50%, 0%). Mice learned two odor sets on separate days and developed anticipatory licking that correlated with reward probability, indicating successful learning of all six odors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly states that the authors use 'a nice task design' and describes the task as allowing 'a distinction between odor identity coding and value coding.' The reviewer notes that 'the authors' definition of value is dependent on the average amount of anticipatory behavior ahead of a reward' and describes the behavioral data showing mice 'licked around 70% as much to the CS50 and 10% as much to the CS-' compared to CS+, indicating acceptance of the behavioral learning results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study used Neuropixels probes to record from 5,332 neurons across 11 brain regions (including five PFC subregions, olfactory cortex, motor cortex, and striatum) in 5 mice, and separately performed longitudinal 2-photon calcium imaging in PL to track individual neurons across multiple days.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly praises the 'state-of-the-art electrophysiological techniques to record thousands of neurons from 11 frontal cortical regions' and notes 'the combination of state-of-the-art imaging and electrophysiology data offer solid support for the authors' conclusions.' The reviewer describes both the electrophysiology and calcium imaging experiments without raising concerns about the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Neurons across all regions exhibited varying degrees of modulation to the six cues, with strong modulation on CS+ and CS50 trials common to both odor sets. Using reduced-rank kernel regression, neurons were classified as encoding cues (24%), licks (11%), or both (16%), with reward-encoding neurons being rare (5%). Cue neurons showed sharp responses at odor onset while lick neurons' responses were delayed and peaked around reward delivery.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly describes and accepts the reduced-rank kernel regression approach, stating 'the authors use reduced-rank kernel regression to characterize the 5332 recorded neurons on a cell-by-cell basis' and notes that 'while at first this seemed overly lenient, the authors present analyses demonstrating low false-positives at this threshold and that the results are robust to different cutoffs.' The reviewer summarizes the findings about cue and lick neurons without raising concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C67"
+    ],
+    "result": "The spatial distributions of cue and lick cells were noticeably different and could be described as graded across regions, with the most lick neurons in ALM and the most cue neurons in olfactory cortex and ORB, though each type of neuron was observed in every region. This indicates a gradient of cue and response coding rather than segmentation of sensory and motor responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly states the authors 'conclude that (1) licking is represented more strongly in dorsal frontal regions, (2) odor cues are represented more strongly in ventral frontal regions' and describes the findings as showing 'more \"lick\" cells in motor regions and more \"cue\" cells in sensory regions.' The reviewer accepts these conclusions as 'interesting and well supported by the data.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Among cue neurons, 14% were best explained by the ranked value model (CS+>CS50>CS-), 14% by an untuned model with equivalent responses to all cues, and 35% by value-like models similar to ranked value. Value cells had better single-unit decoding performance for cue identity than value-like or untuned cells, but at the population level all groups performed similarly. Models trained on value cells had better predictions of held-out cue value.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer describes the value coding analysis in detail, stating 'the authors next select the 24% of \"cue-only\" neurons and look for cells that specifically encode cue value' and explains the modeling approach. The reviewer notes 'the claim that this is an encoding of value is strengthened by the fact that cells show similar scaling of responses to two odor sets tested,' indicating acceptance of the value coding findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C55"
+    ],
+    "result": "The frequency of value cells was similar across all recorded regions, with slightly more value cells across all of PFC than in motor and olfactory cortex. Olfactory cortex cue cells were less likely to encode value than cue cells in other regions. Value-like cells were widespread and equivalently distributed across regions as a fraction of cue neurons. Cue value could be decoded from value cells in each region with similar accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly states the authors 'find a consistent percentage of \"value\" cells...across all 11 recorded regions, leading to their claim of a distributed code of value' and concludes that '(3) cue values are evenly distributed across regions.' The reviewer describes these conclusions as 'interesting and well supported by the data,' indicating acceptance of the widespread distribution of value coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A history model incorporating trial-by-trial value estimates best fit 5% of cue cells (including 15% of value cells). History cells were present in low numbers across all regions but with higher prevalence overall in PFC than in motor and olfactory cortex.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer describes the history model analysis, stating 'the authors expand their model of anticipatory-licking-as-value by incorporating trial and stimulus history terms into the model, allowing them to predict the anticipatory lick rate on individual trials within a session.' The reviewer does not raise concerns about these findings, indicating implicit acceptance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C80"
+    ],
+    "result": "During the first session of training, there was a pronounced increase in neural modulation, with the number of cue-encoding neurons more than doubling from early to late trials. The unique variance explained by cues increased across this first session, in contrast to licks and reward. The presence of lick but not cue coding at the beginning suggests lick cells are not task-specific while cue cells are specific to learned cue-reward associations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer states the authors 'conclude that the representation of task features increments with learning' and describes these findings as 'interesting and well supported by the data.' The reviewer does not raise concerns about the emergence of cue coding during learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C56",
+      "C79"
+    ],
+    "result": "Neurons were much more correlated with their own activity on subsequent days than expected by chance. Session A3 model predictions outperformed shuffle controls at all time points, demonstrating preservation of a learned coding scheme. The preferred coding of cue, lick, and both cell groups was preserved across earlier days, indicating that cue and lick coding are stable properties of PFC neurons across multiple days of behavioral training.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly describes the stability analysis, stating 'they use 2-photon imaging in PFC to demonstrate that neural coding of cue and lick are stable across three days of imaging, supported by two lines of evidence.' The reviewer details both lines of evidence and notes that 'the correlation between cell responses on all periods except for the start of day 1 is more correlated with day 3 responses than expected by chance' and that 'response for a given neuron is substantially better correlated with its own activity across time than random neurons.' The reviewer concludes these findings are 'well supported.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Odor set A models performed similarly well at predicting both odor set A and B activity. Cue, lick, and both neurons maintained their unique variance preference across odor sets. Value and value-like models were the best models for 9% and 47% of cue neurons respectively when odor sets were imaged on separate days, demonstrating that value coding is conserved across stimulus sets on consecutive days.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly notes 'the claim that this is an encoding of value is strengthened by the fact that cells show similar scaling of responses to two odor sets tested,' indicating acceptance of the generalization of value coding across odor sets. The reviewer does not raise concerns about these findings.",
+    "result_type": "MAJOR"
+  }
+]

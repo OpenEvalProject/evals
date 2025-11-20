@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "V. cholerae is a Gram-negative bacterium causing cholera, with approximately 3 million annual infections and 100,000 deaths. The pathogen's success depends on its ability to colonize both aquatic ecosystems (forming biofilms on arthropod exoskeletons and metabolizing chitin-derived GlcNAc) and the human intestinal tract, with diverse transcription factors regulating transitions between these environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide well-established background information about V. cholerae biology, epidemiology, and environmental adaptation. All claims are supported by appropriate citations to prior work and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Quorum sensing in V. cholerae involves production of three autoinducers (CAI-1, AI-2, and DPO), with CAI-1 being Vibrio-specific. At low cell density, phosphorylated LuxO upregulates Qrr sRNAs, which activate AphA and repress HapR. At high cell density, this pathway is reversed, allowing HapR to control gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 describe the established quorum sensing pathway in V. cholerae. All claims are supported by appropriate citations to prior work and represent well-characterized molecular mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "HapR is a TetR-family transcription factor that binds DNA as a homodimer and regulates approximately 100 genes in V. cholerae, controlling group behaviors including natural competence, virulence repression, and host escape. Many clinical isolates have lost proper HapR expression, potentially indicating adaptation to pathogenicity. CRP upregulates HapR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 provide established background on HapR structure, function, and regulation. All claims are supported by appropriate citations to prior work, though C25 is appropriately marked as speculative regarding the adaptive significance of HapR loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ChIP-seq analysis identified 5 LuxO binding peaks (all 4 known Qrr targets plus a novel site between VC1142 and VC1143) and 32 HapR binding peaks across the V. cholerae genome. The LuxO binding motif matched the known consensus and was found at all targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C35-C41 describe the ChIP-seq methodology and results. The data are internally consistent, with appropriate controls and validation against known targets. The identification of a novel LuxO binding site is supported by experimental data, though its functional significance remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Of 32 HapR binding peaks, 4 corresponded to previously identified targets, though some known targets showed weak signals. The HapR binding motif matched prior descriptions and was most frequent in the 200 bp preceding gene start codons. Adjacent genes primarily encode metabolism, motility, and chemotaxis functions. LuxO primarily regulates via Qrr sRNAs, while HapR acts as a global regulator with many undefined roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 characterize the ChIP-seq results for HapR and LuxO. The findings are consistent with prior work and appropriately acknowledge limitations (weak signals for some known targets). The functional categorization and inferences about regulatory scope are supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "\u03b2-galactosidase assays identified 2 promoters activated and 7 promoters repressed by HapR in vivo. In vitro transcription assays confirmed HapR activation of the VC1375 promoter but not the VC1403 promoter, possibly due to unknown transcription start site location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe validation experiments for HapR targets. The in vivo and in vitro data are generally consistent, with appropriate acknowledgment of discrepancies (VC1403). The explanation for the VC1403 result is reasonable given the lack of TSS information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The murQP operon encodes peptidoglycan recycling functions, converting MurNAc to GlcNAc-6P. A CRP binding site was identified 41.5 bp upstream of the murQP TSS, consistent with CRP-dependent activation. EMSAs confirmed CRP binding, and point mutations in the CRP site prevented binding. Both in vitro and in vivo assays demonstrated CRP-dependent activation of the murQP promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63 establish CRP-dependent activation of murQP through multiple complementary approaches (sequence analysis, EMSAs, in vitro transcription, \u03b2-galactosidase assays). The data are internally consistent and well-controlled with appropriate mutational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "At the murQP promoter, the CRP binding site is embedded within the HapR binding sequence. DNAse I footprinting showed overlapping footprints for CRP and HapR, with evidence suggesting simultaneous binding. EMSA data demonstrated that HapR has higher affinity for CRP-bound DNA than for DNA alone, indicating cooperative binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 demonstrate overlapping and cooperative binding of CRP and HapR at murQP. The DNAse I footprinting and EMSA data are consistent and well-controlled. The inference of cooperative binding is supported by the increased HapR affinity for CRP-bound DNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "HapR blocks CRP-mediated activation of the murQP promoter both in vitro and in vivo, converting CRP from an activator to a co-repressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 demonstrate HapR repression of CRP-activated transcription using both in vitro transcription assays and in vivo \u03b2-galactosidase assays. The data are consistent across both experimental systems and support the proposed regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The DNA binding motifs for CRP and HapR overlap when offset by 1 base pair, allowing both factors to bind offset faces of the double helix. Bioinformatic analysis showed that overlapping CRP and HapR sites occur more frequently in native V. cholerae genome sequences than in randomized sequences, suggesting evolutionary selection. This mechanism allows integration of quorum sensing and cAMP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C72-C75 combine experimental data (sequence motifs from ChIP-seq) with bioinformatic analysis. The comparison to randomized sequences provides evidence for evolutionary selection. The proposed mechanism for signal integration is a reasonable inference from the data, though direct functional validation of all predicted sites is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CRP residue E55, located in Activating Region 3 (AR3), is required for stability of the DNA-CRP-HapR complex and for HapR-mediated repression. CRPE55A and CRPE55R mutants showed impaired transcription activation and reduced sensitivity to HapR repression (50-fold repression with wild-type CRP vs. 2-fold with CRPE55A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 use site-directed mutagenesis to identify E55 as critical for CRP-HapR interaction and repression. The EMSA and in vitro transcription data are consistent and well-controlled. The quantitative differences in repression (50-fold vs. 2-fold) provide strong evidence for the importance of this residue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Deletion of luxO causes constitutive HapR expression, locking V. cholerae in a high cell density state. \u0394luxO strains exhibited a growth defect specifically when MurNAc was the sole carbon source, with an extended lag phase that was relieved by additional deletion of hapR, consistent with HapR-dependent repression of murQP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 provide functional validation of the regulatory mechanism through growth phenotype analysis. The specificity of the growth defect for MurNAc and its suppression by hapR deletion provide strong support for the proposed model. The data are consistent with the molecular mechanism established in earlier claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Cooperative binding of HapR and CRP to shared targets is common, as demonstrated by EMSA analysis of multiple genomic loci (VC0102, VC1851, VCA0663, VCA0691).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 extends the findings from murQP to other genomic loci. The EMSA data for multiple targets show consistent cooperative binding patterns, supporting the generality of the mechanism. However, functional validation (transcription assays) was not performed for all these additional sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Comparison with prior studies in V. harveyi (105 LuxR targets, 77 repressed) and V. alginolyticus (76 LuxR targets, 22 repressed) shows that repression is the most common regulatory outcome and that the DNA binding consensus is highly conserved across Vibrio species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 appropriately contextualize the current findings within prior work on related Vibrio species. The comparisons are based on properly cited studies and support the conservation of the regulatory mechanism. The consistency across species strengthens the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The overlapping binding of HapR and CRP provides a mechanism for integrating quorum sensing and cAMP signaling. At murQP, CRP switches from activator to co-repressor with HapR. At low cell density, CRP activates murQP for peptidoglycan recycling; at high cell density (chitin biofilms), HapR represses murQP as GlcNAc-6P is available from chitin. This integration is likely widespread, as AphA and CRP also interact at shared sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C101 synthesize the experimental findings into a coherent model for signal integration. The model is well-supported by the experimental data and provides a logical explanation for the observed regulatory patterns. The speculation about broader coordination (C99) is appropriately marked and reasonable given the data. The comparison to AphA-CRP interactions (C100) is properly cited.",
+    "result_type": "MAJOR"
+  }
+]

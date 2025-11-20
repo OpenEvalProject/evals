@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study reports the proportions of dual TCR Treg cells across multiple mouse tissues: lymphoid tissues (spleen 21.4%, iLN 21.4%, mLN 21.0%) and non-lymphoid tissues (blood 11.8%, kidney 12.2%, liver 13.6%, LPL 11.0%, pancreas 13.3%, skin 18.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 present specific quantitative measurements of dual TCR Treg proportions across tissues, supported by scRNA+TCR-seq data analysis and referenced in Figures 1D, 2D, and 3D. The measurements appear internally consistent and are derived from the primary data analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Dual TCR Treg cells exhibit three pairing types (A+B1+B2, B+A1+A2, A1+A2+B1+B2) with tissue-specific distributions. B+A1+A2 is the most common pairing type overall, while A1+A2+B1+B2 is least common but enriched in skin and kidney, and B+A1+A2 is enriched in spleen and liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 describe TCR pairing patterns supported by data analysis shown in Figures 1D and 2D. The identification of three pairing types and their relative proportions across tissues is directly derived from the scTCR-seq analysis, providing clear evidence for tissue-specific TCR pairing preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Dual TCR Treg cells show tissue-specific V and J gene usage preferences compared to single TCR Treg, including Trbv10/Trbv13-1 in kidney/liver, Trbv5 in LPL, Trbv19 in skin, Trbj2-3 in liver, and Trbj2-1 in skin, with some genes (Trbv13-1, Trbj1-2) showing consistent usage across multiple tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 describe VJ usage patterns supported by comparative analysis shown in Figures 1E-F and 2E-F. The tissue-specific preferences are data-driven observations from the scTCR-seq analysis, though statistical significance testing for these differences is not explicitly reported for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Single TCR Treg cells have significantly higher CDR3 diversity (1/DS) than dual TCR Treg cells. Among dual TCR Treg, lymphoid tissues (spleen, iLN, mLN) show higher CDR3 diversity than non-lymphoid tissues, with skin, LPL, and pancreas showing very low diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 report diversity measurements shown in Figures 1G and 2G. The inverse Simpson's index (1/DS) is an appropriate diversity metric. However, the authors note that statistical comparison between single and dual TCR Treg diversity is not appropriate due to differences in cell numbers, which is a critical limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Single TCR Treg cells show higher clonal proliferation (clone count \u22652) than dual TCR Treg cells overall, but dual TCR Treg in liver and skin show significantly higher clonal proliferation than in other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 describe clonality patterns shown in Figures 1H and 2H. The definition of clonal expansion (clone count \u22652) is clearly stated, and the tissue-specific differences in dual TCR Treg clonality are evident from the data, though statistical significance is indicated by asterisks without detailed p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "CDR3 AA sequences show tissue overlap patterns, with single TCR Treg having higher overlap than dual TCR Treg. TRB CDR3 AA shows lower overlap than TRA CDR3 AA, suggesting TRA allelic inclusive recombination involves more CDR3 types. Both single and dual TCR Treg share common CDR3 AA sequences, suggesting both can respond to specific antigen epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C45 describe overlap patterns shown in Figures 3A-B and 4A-B using Jaccard index analysis. While the overlap data is presented, the inference that shared CDR3 AA sequences indicate response to specific antigen epitopes (C45) is speculative without functional validation. The interpretation about TRA allelic recombination (C43) is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Dual TCR Treg in liver, kidney, and pancreas show high CDR3 AA overlap with peripheral blood, suggesting origin from blood influx. Similarly, iLN, mLN, and skin show high overlap with spleen, suggesting splenic origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C49 describe tissue overlap patterns and infer tissue origins. While the overlap data (Figures 3A-B, 4A-B) supports high sequence similarity between tissue pairs, the causal inference about cellular origin and migration is speculative. The authors acknowledge this limitation, noting they cannot exclude local Treg migration within blood (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "High CDR3 AA overlap exists between liver-kidney, kidney-pancreas, and iLN-mLN tissue pairs, suggesting dual TCR Treg in these tissues may negatively regulate shared antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C53 describe inter-tissue overlap patterns and infer functional implications. While the overlap data is presented, the inference that high overlap indicates regulation of shared antigens (C53) is speculative without functional validation or antigen identification studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In skin tissue, dual TCR Treg proportion is higher than dual TCR non-Treg. Dual and single TCR Treg show identical expression of most signature molecules (Tnfrsf9, Stat3, Tnfrsf4, Cd27, Icos, Il2ra, Ikzf2, Lrrc32, Sh3rf1, Cd81, Baff, Smad2, Foxo3), with slightly higher Foxp3, Foxo1, and Ctla4 in dual TCR Treg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe phenotypic comparisons shown in Figures 3C-D and 4C-D. The gene expression data from scRNA-seq supports these observations. The term 'slightly higher' for Foxp3, Foxo1, and Ctla4 is qualitative; quantitative fold-changes and statistical significance would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Skin dual TCR Treg express more characteristic mRNA molecules compared to iLN, mLN, and spleen, including genes involved in immune responses (Rora, Dusp1, Junb), immune cell proliferation/migration (S100a6), and immune cell development (Hopx, Nr4a1), suggesting involvement in specific negative regulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe differential gene expression in skin dual TCR Treg shown in Figure 4E. The gene expression data supports higher expression of these molecules in skin. The functional annotations (C58-C60) are based on established knowledge. The inference about specific regulatory functions (C61) is reasonable but remains speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Dual TCR Treg in blood-liver-kidney-pancreas and in iLN-mLN-spleen show higher homogeneity in cytokine, cytokine receptor, and transcription factor expression, suggesting convergent negative immune response regulation in these tissue groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe gene expression homogeneity patterns shown in Figures 3E and 4E. The observation of higher homogeneity within these tissue groups is data-supported. The inference about convergent regulatory functions (C64) is reasonable but speculative without functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Dual TCR Treg show tissue-specific differential gene expression compared to single TCR Treg, including Trbv genes and various immune-related molecules across all tissues examined. These differences suggest dual and single TCR Treg may be involved in different negative immune response regulations at each tissue site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C87 describe extensive differential gene expression analysis shown in Figures 3F and 4F. The DESeq2 analysis with Wald test is appropriate for identifying differentially expressed genes. P-values are provided for some genes, indicating statistical rigor. The inference about different regulatory functions (C87) is reasonable but remains speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Mouse lymphoid and non-lymphoid tissues both have high proportions of dual TCR Treg cells, with lymphoid tissues showing higher proportions than non-lymphoid tissues. Among non-lymphoid tissues, liver and pancreas show relatively high proportions. These findings are consistent with Tuovinen et al., 2006.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 summarize the main quantitative findings and compare them to prior work. The data from C10-C18 supports these summary statements. The comparison to Tuovinen et al., 2006 (C92) is appropriate, though that study examined human cells and focused on TCR \u03b1 chains, limiting direct comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Lower CDR3 diversity, tissue-specific V/J usage, and high clonal proliferation in some tissues reflect limited breadth of dual TCR Treg response. However, dual TCR Treg CDR3 composition is diverse and comparable to single TCR Treg. These cells may play complementary roles in specific physiological or pathological negative regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 interpret the diversity, V/J usage, and clonality data. While the observations are data-supported, the interpretation about 'limited breadth' (C94-C96) appears contradictory to the statement about comparable diversity (C97). The authors acknowledge this tension but don't fully resolve it. The speculation about complementary roles (C98) lacks functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Tissue-specific V/J usage preferences suggest dual TCR Treg may have characteristic lineage similar to \u03b3\u03b4 T cells, which show tissue-specific VJ usage due to directed migration after specific VJ recombination. Dual TCR Treg may have lineage characteristics in V(D)J recombination and self-tolerance selection, migrating to settle in different tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 draw an analogy to \u03b3\u03b4 T cells based on tissue-specific V/J usage patterns. While the comparison to \u03b3\u03b4 T cells (C100, supported by Papadopoulou et al., 2020) is reasonable, the inference that dual TCR Treg have similar developmental characteristics (C99, C101) is highly speculative without lineage tracing or developmental studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Higher clonal proliferation of dual TCR Treg in liver may exert stronger inhibitory responses to specific antigenic epitopes. The relatively higher immune tolerance of liver transplantation may be related to high proportion and clonal proliferation of dual TCR Treg in liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 speculate about functional implications and clinical relevance. While the clonality data supports higher proliferation in liver, the functional inference (C102) and connection to transplant tolerance (C103) are highly speculative without experimental validation or clinical correlation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Single and dual TCR Treg exhibit consistent expression of most characteristic genes. High expression of Foxp3, Foxo1, and Ctla4 in dual TCR Treg indicates they can function similarly to or more potently than single TCR Treg. The homogeneity and heterogeneity of characteristic molecules suggest potential induction in response to different antigenic epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 interpret gene expression patterns. While the expression data (C104) is supported, the functional inference that dual TCR Treg function 'similarly to or more potently' (C105) is speculative without functional assays. The interpretation about antigen-specific induction (C106) is reasonable but lacks direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "This study reveals for the first time the phenomenon of large numbers of dual TCR Treg cells in mice, with tissue-specific characteristics in VJ usage, diversity, and clonality. Dual TCR Treg highly express immune-inhibitory molecules and show more differential expression in LPL and skin. The study provides a new Treg subset for research and offers technical solutions for studying dual TCR T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 summarize the study's contributions. The novelty claim (C107) appears valid given the comprehensive scRNA+TCR-seq analysis across multiple tissues. The characterization of dual TCR Treg (C108-C110) is well-supported by the data. The claims about providing new research directions (C111-C113) are reasonable assessments of the study's impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study analyzed scRNA+TCR-seq data from two published datasets: Burton et al., 2024 (blood, kidney, liver, LPL, pancreas Treg) and Nedwed et al., 2023 (spleen, iLN, mLN Treg and skin T cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 describe the data sources. The use of publicly available datasets is clearly documented with GEO accession numbers. This reanalysis approach is valid, though it means the authors did not generate the primary experimental data themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims about Treg cell discovery (1995), functions, dual TCR lymphocyte discovery (1988), and prior findings from Tuovinen et al., 2006 about dual TCR expression in human CD4+CD25+ Treg cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide historical and literature context. These are appropriately cited and represent established knowledge in the field. The critique of Tuovinen et al., 2006 focusing on TCR \u03b1 chain (C8) is a valid methodological observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C88",
+      "C89"
+    ],
+    "result": "Technical and methodological context: scRNA+TCR-seq can analyze >5000 T cells per sample with complete TCR pairing and mRNA data. Prior reports show variable dual TCR proportions (0.1-30%) due to methodological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C88-C89 provide technical context. The capability of scRNA+TCR-seq (C9) is accurate. The variability in prior reports (C88-C89) is well-documented in the cited literature and explains the need for standardized approaches.",
+    "result_type": "MINOR"
+  }
+]

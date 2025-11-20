@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Mice successfully learned an olfactory Pavlovian conditioning task with three cue types (CS+, CS50, CS\u2212) predicting reward at 100%, 50%, and 0% probability across two odor sets trained on separate days, as evidenced by anticipatory licking that correlated with reward probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively establish successful behavioral learning. The task design (C1, C2) is clearly described, and behavioral evidence (C3, C4) with statistical support demonstrates that mice learned the cue-reward associations (C5). The correlation between licking rate and reward probability provides strong evidence for learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C85",
+      "C86"
+    ],
+    "result": "The study employed two complementary recording techniques: Neuropixels electrophysiology recording 5332 neurons across 11 brain regions in 5 mice, and longitudinal 2-photon calcium imaging in prelimbic cortex to track individual neurons across multiple days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C85-C86 describe the methodological approach with specific numbers and technical details. The use of established recording technologies (Neuropixels, 2-photon imaging) with appropriate citations and clear sample sizes supports the validity of the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Neural activity across all recorded regions showed modulation in response to cues, with neurons encoding cues (24%), licks (11%), or both (16%) being most common, while reward-encoding neurons were rare (5%). Cue neurons showed sharp responses at odor onset while lick neurons' responses were delayed and peaked around reward delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 describe the basic neural response properties using reduced rank kernel regression (C12). The specific percentages (C13-C16) and temporal characteristics (C17-C18) are supported by figures and statistical analysis. The method appropriately separates cue and lick coding, addressing a key confound mentioned in the introduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C67"
+    ],
+    "result": "Cue and lick coding showed a graded spatial distribution across regions rather than discrete segmentation, with ALM having the most lick neurons, olfactory cortex and ORB having the most cue neurons, but both neuron types present in every region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C67 establish the graded nature of neural coding across regions. The spatial distribution data (C19) and regional differences (C20-C22) are supported by figures, while the presence of both types in all regions (C23) argues against strict functional segregation. The conclusion (C67) appropriately summarizes this gradient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Among cue-encoding neurons, 14% were best fit by a ranked value model (CS+>CS50>CS\u2212), 14% by an untuned model, and 35% by value-like models. Value cells showed better single-unit decoding of cue identity and superior prediction of held-out cue value compared to value-like and untuned cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 describe the identification and characterization of value-coding neurons using a comprehensive model comparison approach (153 models). The specific percentages (C24-C26) and decoding performance differences (C27-C29) are supported by statistical tests and figures. The approach of testing generalization to held-out cues (C29) is a strength that addresses concerns about misidentifying value coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C55"
+    ],
+    "result": "Value coding was widespread across all recorded regions with similar decoding accuracy, though there was slight enrichment in PFC compared to motor and olfactory cortex. Olfactory cortex cue cells were less likely to encode value than cue cells in other regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 and C55 establish the widespread distribution of value coding. The statistical analyses using mixed-effects models (C30-C31) and decoding approaches (C35) support the conclusion of similar value representation across regions. The slight PFC enrichment (C31) and olfactory cortex difference (C32) are appropriately qualified as modest effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A subset of cue cells (5% overall, 15% of value cells) incorporated trial-by-trial reward history into their value representations, with higher prevalence in PFC than motor and olfactory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe history-dependent value coding using a behavioral model to estimate trial-by-trial value. The specific percentages (C36-C37) and regional distribution (C38) are supported by statistical tests. The approach of comparing history models to lick-based predictions (mentioned in text) strengthens the interpretation that these neurons encode value history rather than just motor output.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C80"
+    ],
+    "result": "During the first training session, cue-encoding neurons more than doubled and unique variance explained by cues increased, while lick coding was present from the beginning, suggesting that lick cells in PL are not task-specific but cue cells are specific to learned cue-reward associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C80 describe the emergence of neural coding during learning using calcium imaging. The quantification of neuron numbers (C41) and variance explained (C42) with statistical tests supports the differential emergence of cue vs. lick coding. The interpretation (C43, C80) is reasonable given the data, though alternative explanations (e.g., lick cells being generally motor-related) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Individual neurons tracked across multiple days showed stable cue and lick coding, with neurons more correlated with their own activity on subsequent days than expected by chance, and models trained on day 3 successfully predicting activity on earlier days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 establish coding stability using neuron tracking across days. The correlation analysis (C44), model prediction approach (C45), and preservation of coding preferences (C46) provide converging evidence for stability. The statistical comparisons to shuffle controls strengthen the conclusions. This addresses a key question about PFC coding stability raised in the introduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Neural coding generalized across two odor sets trained on separate days, with models trained on odor set A predicting odor set B activity, neurons maintaining their coding preferences across sets, and value coding (9% value, 47% value-like) conserved across stimulus sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 demonstrate generalization of neural codes across stimulus sets. The model prediction approach (C49), preservation of coding preferences (C50), and identification of value coding in both sets (C51-C52) support the conclusion of stable, generalizable representations. This is important for establishing that the value coding is not stimulus-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study demonstrates that individual prefrontal neurons stably encode components of cue-reward learning within a larger spatial gradient of coding properties, with value coding widespread but slightly enriched in PFC, and cue/lick codes preserved across days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 represent the main conclusions of the study as stated in the abstract. These summary claims are well-supported by the detailed results described in other claim groups. The integration of spatial distribution, value coding, and temporal stability provides a comprehensive characterization of PFC function in this task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The manuscript appropriately contextualizes the work within existing literature on PFC function, value coding, and methodological considerations, and provides standard methodological details about animal subjects and experimental procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C84 represent background knowledge, literature context, and methodological details. These are appropriately cited and provide necessary context for interpreting the results. The methodological details (C82-C84) are standard and adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C79"
+    ],
+    "result": "The authors interpret their findings to suggest that widespread value coding may explain why single-region manipulations don't always disrupt behavior, that olfactory cortical regions may be important for processing task-related input, and that PL serves as a reliable source of information about cue associations and licking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71, C73, and C79 represent interpretations and speculations based on the data. While these interpretations are reasonable given the results, they extend beyond what is directly demonstrated. C71 is supported by citations to manipulation studies but is speculative about mechanism. C73 is explicitly speculative ('perhaps'). C79 draws conclusions about functional role that would require additional experiments to fully support.",
+    "result_type": "MINOR"
+  }
+]

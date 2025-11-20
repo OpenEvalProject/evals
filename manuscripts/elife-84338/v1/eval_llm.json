@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the background that C9orf72 G4C2 repeat expansions are the most common genetic cause of familial ALS/FTD, and describes three major pathomechanisms: C9orf72 haploinsufficiency, RNA foci formation with RBP sequestration, and RAN translation producing five distinct DPRs (poly(GR), poly(GA), poly(GP), poly(PR), poly(PA)) observed in patient brains and cerebrospinal fluid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13 are well-supported by extensive citations to established literature. These are foundational background claims that set the context for the study and are not novel findings from this work. The citations appropriately reference the discovery papers and subsequent characterization studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "DPRs have been demonstrated to be toxic in multiple C9-ALS/FTD models (cells, flies, mice), with DPR-only flies showing neurodegeneration while RNA-only flies do not, and DPR production correlating with toxicity. DPRs disrupt nucleocytoplasmic transport and membraneless organelle dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by appropriate citations to prior research establishing DPR toxicity. These background claims correctly summarize the field's understanding that DPRs play a central pathogenic role, which provides the rationale for investigating RAN translation regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior studies have shown that RAN translation can occur through both cap-dependent (from upstream near-cognate CUG codon) and cap-independent mechanisms (within the G4C2 repeat), exhibits repeat length dependency, and the repeat sequence itself is essential for RAN translation initiation or elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 accurately summarize prior mechanistic studies on RAN translation with appropriate citations. Claim C22 is a reasonable inference from the repeat length dependency data. These background claims establish the knowledge gap that motivates the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors established Drosophila models expressing pathogenic length G4C2 repeats (42 or 89 repeats) that recapitulate key disease features including eye degeneration, motor dysfunction, RNA foci formation, and production of three DPR types, while control flies with 9 repeats show no pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by data in Figure 1\u2014figure supplement 1 showing eye phenotypes, climbing ability, RNA FISH, and immunohistochemistry. The models are consistent with prior published C9-ALS/FTD fly models. These are essential validation experiments for the model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "An RBP screen identified that FUS, IGF2BP1, and hnRNPA2B1 strongly suppress G4C2 repeat-induced eye degeneration in flies, with five additional RBPs showing partial suppression. IGF2BP1 and hnRNPA2B1 decreased G4C2 RNA levels, while FUS suppressed toxicity without altering RNA levels, suggesting a distinct mechanism requiring further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34 are supported by Figure 1 data showing eye phenotypes and RNA quantification across multiple RBP coexpression experiments. The screen is appropriately controlled with EGFP and includes statistical analysis. The observation that FUS acts without changing RNA levels is a key finding that distinguishes it from other suppressors and motivates subsequent mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "FUS suppression of G4C2 repeat toxicity requires its RNA-binding activity, as demonstrated by loss of suppression with the FUS-RRMmut mutant across multiple phenotypes (eye degeneration, egg-to-adult viability, motor dysfunction). FUS suppresses neuronal phenotypes of G4C2 repeat RNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by Figure 2 data showing that FUS-RRMmut fails to rescue phenotypes that wild-type FUS rescues. The use of multiple independent phenotypic assays strengthens the conclusion. The inference that RNA-binding activity is essential (C76) is well-supported by the mutant data, though direct binding to G4C2 RNA in vivo is demonstrated separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "G4C2 repeat RNA reciprocally suppresses FUS toxicity, alleviating motor dysfunction caused by FUS overexpression alone. This bidirectional suppression is consistent with prior findings in SCA31 and with RNA buffering of TDP-43/FUS phase separation, suggesting that balanced crosstalk between repeat RNAs and RBPs neutralizes their mutual toxicities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by Figure 2E data and appropriate citations. The reciprocal suppression is an interesting observation, though the mechanistic interpretation (C84) is somewhat speculative. The connection to phase separation literature (C83) is appropriately cited but represents an inference about mechanism rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "FUS coexpression significantly decreased RNA foci formation in G4C2 repeat-expressing flies without altering G4C2 RNA levels, while FUS-RRMmut had no effect. This suggests FUS has RNA-chaperoning activity for G4C2 repeat RNA, similar to its previously demonstrated role with UGGAA repeat RNA in SCA31.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by Figure 3A-C showing FISH and qRT-PCR data with appropriate statistical analysis. The inference of RNA-chaperoning activity (C88) is reasonable based on the similarity to prior SCA31 findings, though direct demonstration of chaperone activity requires the in vitro structural studies presented later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "FUS coexpression significantly decreased DPR aggregates and poly(GP) levels in G4C2 repeat-expressing flies in an RNA-binding-dependent manner (FUS-RRMmut had no effect), indicating that FUS suppresses RAN translation to reduce DPR production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by Figure 3D-F showing immunohistochemistry and immunoassay data. The conclusion that FUS suppresses RAN translation (C92) is a reasonable inference from the decreased DPR levels, though direct measurement of translation is provided by subsequent experiments. Multiple DPR types were assessed, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C93",
+      "C94"
+    ],
+    "result": "Using a construct with the C9orf72 5' upstream sequence and GR-GFP fusion reporter, FUS coexpression significantly decreased GR-GFP expression while FUS-RRMmut had no effect, confirming FUS suppression of RAN translation in a context that includes native regulatory sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by Figure 3G-I western blot data. The use of the LDS construct with native 5' sequences (C93, C94) addresses a potential concern about context-dependence of RAN translation. The RNA-binding dependence is again confirmed with the RRMmut control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C118"
+    ],
+    "result": "FUS did not suppress eye degeneration in DPR-only flies expressing poly(GR) from non-G4C2 RNAs, but rather enhanced phenotypes, indicating that direct FUS-DPR interaction is unlikely to be the mechanism of toxicity suppression and that FUS acts through G4C2 repeat RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C98, and C118 are supported by Figure 3\u2014figure supplement 2 data. This is a critical control experiment that rules out an alternative mechanism (direct FUS-DPR interaction) and supports the conclusion that FUS acts on the RNA. The interpretation of enhancement as additive FUS toxicity (C98) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Collectively, the in vivo fly data demonstrate that FUS interacts with G4C2 repeat RNA and regulates RAN translation in Drosophila models of C9-ALS/FTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is a synthesis of multiple experimental findings (RNA foci reduction, DPR reduction, GR-GFP reduction, DPR-only fly control) that collectively support the conclusion. The evidence is strong and internally consistent across multiple assays and genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Endogenous caz (Drosophila FUS homolog) functions as a physiological regulator of RAN translation, as demonstrated by caz overexpression suppressing toxicity while caz knockdown or hemizygous deletion enhanced eye degeneration, increased RNA foci and DPR aggregates without altering G4C2 RNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 are supported by Figure 4 and Figure 4\u2014figure supplement 1 data showing both gain-of-function (overexpression) and loss-of-function (RNAi, deletion) experiments. The bidirectional genetic evidence strongly supports the conclusion that FUS/caz is an endogenous regulator. The effects are modest but statistically significant and consistent across phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "FUS directly binds to (G4C2)4 RNA in a dose-dependent manner but not to control (AAAAAA)4 RNA, and FUS-RRMmut has almost no binding affinity. FUS colocalizes with RNA foci in C9-ALS/FTD flies, confirming the interaction in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by Figure 5A filter binding assay data and Figure 5\u2014figure supplement 1 colocalization data. The binding specificity is demonstrated by the negative control RNA and the RRMmut. The in vivo colocalization provides important validation of the in vitro binding results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "FUS preferentially binds to G4C2 repeat RNA in its G-quadruplex form (KCl buffer, KD = 1.5 \u00d7 10\u207b\u2078 M) compared to hairpin form (NaCl buffer, KD = 1.3 \u00d7 10\u207b\u2077 M) or destabilized structure (LiCl buffer, KD = 1.4 \u00d7 10\u207b\u2075 M), consistent with FUS binding to other G-quadruplex RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by SPR data in Table 1 and appropriate citations. The ~10-fold preference for G-quadruplex over hairpin and ~1000-fold over destabilized structure is quantitatively demonstrated. The consistency with prior FUS binding to other G-quadruplex RNAs (C46) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CD spectroscopy shows that (G4C2)4 RNA in KCl buffer exhibits characteristic G-quadruplex peaks (positive ~260 nm, negative ~240 nm), and FUS addition causes notable peak shifts to longer wavelengths with substantial spectral changes, indicating significant structural alteration of the RNA. The CD signal of FUS alone is negligible, confirming the changes are due to RNA structural alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by Figure 5B and Figure 5\u2014figure supplement 2A CD spectroscopy data. The control showing negligible FUS CD signal (C51) is important for attributing spectral changes to RNA structure. The interpretation of spectral shifts as structural alteration (C50) is standard for CD analysis of nucleic acids.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CD spectroscopy shows FUS causes some structural changes in (G4C2)4 RNA in NaCl buffer (hairpin form) but not in LiCl buffer (destabilized form), confirming FUS interaction with hairpin-structured RNA as well, though to a lesser extent than G-quadruplex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by Figure 5C-D CD data. The differential effects in different salt conditions are consistent with the SPR binding data showing weaker binding to hairpin than G-quadruplex. The lack of effect in LiCl is consistent with poor binding when structure is destabilized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "NMR spectroscopy shows imino proton signals characteristic of G-quadruplex structure in (G4C2)4 RNA (10-12 ppm region), and FUS addition causes concentration-dependent decrease in NMR intensities, further supporting that FUS interacts with and modulates the G-quadruplex structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by Figure 5\u2014figure supplement 2D NMR data. The concentration-dependent effect strengthens the conclusion of direct interaction. The NMR data provide complementary evidence to the CD data for structural modulation, though the exact nature of the structural change is not fully characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "FUS directly binds to G4C2 repeat RNA, preferentially to its G-quadruplex form, and modulates its higher-order structures without requiring ATP or other proteins, indicating FUS functions as an RNA chaperone for G4C2 repeat RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 synthesize the binding, CD, and NMR data. The conclusion of RNA chaperone activity (C61) is well-supported by the ATP-independent structural modulation and is appropriately referenced to the definition of RNA chaperones. The preferential G-quadruplex binding is quantitatively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In vitro translation assays using rabbit reticulocyte lysate with a G4C2 repeat reporter producing GA-Myc demonstrate that FUS efficiently suppresses RAN translation (nearly eliminating it at 100 nM) while FUS-RRMmut does not, confirming FUS suppresses RAN translation through direct RNA interaction as an RNA chaperone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by Figure 5E-G in vitro translation data. The dose-response (C65) and RRMmut control (C64, C66) are appropriate. The weak suppression by high-concentration RRMmut (C66) is reasonably attributed to residual binding. This is a critical experiment directly linking RNA binding to RAN translation suppression in a defined system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A screen of G-quadruplex-targeting RBPs identified that EWSR1, DDX3X, DDX5, and DDX17 suppress eye degeneration and decrease poly(GA) aggregates without altering G4C2 RNA levels (similar to FUS), while DHX9 and DHX36 suppress by reducing RNA levels. The different effects may reflect diverse biological functions of G-quadruplex-targeting RBPs in RNA metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by Figure 6 data. The identification of multiple G-quadruplex-targeting RBPs with similar effects to FUS strengthens the model. The distinction between RBPs that do and don't alter RNA levels is important. The mechanistic speculation (C73) is reasonable but not directly tested. Citation to DDX3X prior work (C71) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study concludes that FUS regulates RAN translation and suppresses DPR toxicity through modulating the G-quadruplex structure of G4C2 repeat RNA, shedding light on regulatory mechanisms by G-quadruplex-targeting RBPs and proposing novel therapeutic strategies for repeat expansion diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are synthesis/conclusion statements supported by the collective evidence from in vivo fly genetics, in vitro binding, structural analyses, and translation assays. The therapeutic implications (C111) are appropriately framed as proposals for future work rather than demonstrated therapies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C39",
+      "C47",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Prior literature establishes that G4C2 repeat RNA forms both G-quadruplex and hairpin structures, these structures are involved in RAN translation, and small molecules targeting these structures can inhibit RAN translation. RNA helicases like DHX36 have shown conflicting effects on RAN translation depending on experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C47, C114-C116 are background claims appropriately supported by citations. These establish the context for investigating structure-function relationships in RAN translation. The acknowledgment of conflicting DHX36 results (C116) with speculation about experimental conditions is appropriate scholarly discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Prior studies have shown that arginine-rich DPRs (poly(GR), poly(PR)) interact with LC domain-containing RBPs including FUS and alter their liquid-liquid phase separation, disrupting membraneless organelle dynamics and functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is a background claim appropriately supported by citations. This establishes an alternative mechanism (DPR-FUS interaction) that the authors subsequently rule out with their DPR-only fly experiments, strengthening their conclusion that FUS acts on RNA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors conclude that their findings have broad implications beyond C9-ALS/FTD, as repeat expansions cause over 50 monogenic diseases and are associated with psychiatric diseases like autism, and the work will advance development of potential therapies for these diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120 about the prevalence of repeat expansion diseases are appropriately cited. However, claims C121-C122 about broader implications and therapeutic development are speculative extrapolations from the C9-ALS/FTD findings. While the mechanism may be generalizable, this requires experimental validation in other disease contexts.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The nanobody NB7 potently inhibits all three p110\u03b3 complexes (apo, p84-bound, p101-bound) with ~2 nM affinity, is selective for p110\u03b3 over class IA PI3Ks, does not block membrane recruitment or Ras/G\u03b2\u03b3 binding, but decreases ATP turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 provide strong experimental evidence from kinase assays (Figure 1A), BLI binding studies (Figure 1B-C), and TIRF microscopy (Figure 1D-F) demonstrating potent, selective inhibition without blocking membrane recruitment. The convergence of multiple orthogonal techniques (binding, activity, microscopy) strongly supports the allosteric inhibition mechanism. However, the different IC50 values across complexes are attributed to protein concentration differences in the assay rather than intrinsic binding differences, which could be better controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Cryo-EM structure of p110\u03b3-NB7 at 3.0 \u00c5 resolution reveals that NB7 binds at the interface of the helical domain, ABD-RBD linker, and regulatory motif (~1200 \u00c5\u00b2 buried surface area) without inducing large conformational changes, and this binding likely inhibits kinase activity by rigidifying the regulatory motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM structure (C49-C52) provides high-quality structural data with clear density for the nanobody-p110\u03b3 interface. The resolution is sufficient to build the CDR loops unambiguously (Figure 2). The mechanistic interpretation (C57) that rigidification of the regulatory motif explains inhibition is reasonable given prior work on oncogenic mutants, though direct evidence for reduced dynamics would strengthen this claim. The structural data quality and interface characterization are excellent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C8",
+      "C9"
+    ],
+    "result": "PKC\u03b2 phosphorylates p110\u03b3 at two sites (S582 and S594/S595) with similar dose-response kinetics for p110\u03b3 and p110\u03b3-p84, but p110\u03b3-p101 shows >100-fold reduced phosphorylation, indicating selectivity driven by differential helical domain dynamics between complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Mass spectrometry data (Figure 3B-E) clearly identifies both phosphorylation sites and quantifies the dramatic difference in phosphorylation between p84 and p101 complexes. The discovery of the second phosphorylation site (S594/S595) is novel and well-documented. The interpretation linking selectivity to helical domain dynamics (C9, C63) is supported by prior HDX-MS data showing p101 rigidifies the helical domain, though direct measurement of dynamics during phosphorylation would be ideal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C7"
+    ],
+    "result": "PKC\u03b2 phosphorylation of p110\u03b3 causes extensive increases in dynamics in the C2, helical, and kinase domains, with the largest changes in the N-terminal helical domain showing near-complete deuterium incorporation indicative of \u03b1-helical structure disruption and partial unfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "HDX-MS data (Figure 4A-D) provides strong evidence for phosphorylation-induced conformational changes. The observation of EX1 kinetics enriched in deuterated species (C71) and near-complete exchange in the N-terminal helical domain (C69) supports the unfolding interpretation. The extension of dynamics changes to the regulatory motif (C72-C73) connects phosphorylation effects to the active site region. The 90.8-92% phosphorylation stoichiometry is well-characterized, ensuring the observed dynamics changes reflect the phosphorylated state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C103",
+      "C104"
+    ],
+    "result": "PKC\u03b2 phosphorylation enhances p110\u03b3 ATPase activity ~2-fold in both the absence and presence of membranes, suggesting the effect is on intrinsic catalytic efficiency rather than membrane recruitment, though this activation is weak compared to full activation by Ras or G\u03b2\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Kinase activity assays (Figure 4E) demonstrate modest but consistent activation by phosphorylation. The observation that activation occurs both with and without membranes (C77, C104) supports the interpretation that phosphorylation affects catalytic efficiency rather than membrane binding. However, the ~2-fold activation is modest and the biological significance of this level of activation in the context of other regulatory mechanisms remains unclear. Statistical significance is shown but effect size is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C10"
+    ],
+    "result": "NB7 binding prevents PKC\u03b2-mediated phosphorylation of p110\u03b3, and reciprocally, phosphorylated p110\u03b3 cannot bind NB7, consistent with phosphorylation disrupting the N-terminal helical domain that forms part of the nanobody binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Mass spectrometry (Figure 5A-B) and BLI data (Figure 5C-D) provide clear evidence for mutual exclusivity of phosphorylation and nanobody binding. The kinase activity assays showing no nanobody effect on phosphorylated p110\u03b3 (C82, Figure 5E) further support the lack of binding. The mechanistic interpretation (C81) linking this to helical domain disruption is well-supported by the HDX-MS data showing unfolding of the nanobody binding region upon phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The N-terminal helical domain of p110\u03b3 undergoes EX1 H/D exchange kinetics indicative of cooperative unfolding, which exposes buried phosphorylation sites (S582, S594/S595) to PKC\u03b2; p101 binding dramatically decreases these dynamics, explaining the >100-fold reduction in phosphorylation of p110\u03b3-p101.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic model connecting helical domain dynamics to phosphorylation accessibility is well-supported by converging evidence: EX1 kinetics in the helical domain (C64, cited from prior work), the buried nature of phosphorylation sites (C99), differential dynamics between p84 and p101 complexes (C100-C101, cited), and the dramatic difference in phosphorylation levels (C62, C102). This represents a coherent mechanistic framework, though direct visualization of the unfolded state or kinetic measurements of unfolding would strengthen the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C83",
+      "C84",
+      "C105"
+    ],
+    "result": "The helical domain of p110\u03b3 plays a central allosteric regulatory role that is distinct between p110\u03b3-p84 and p110\u03b3-p101 complexes, with modulation of helical dynamics through phosphorylation or allosteric binding partners able to either increase or decrease lipid kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates multiple experimental findings: differential phosphorylation (C8, C62), dynamics changes upon phosphorylation (C68-C73), nanobody inhibition through rigidification (C4, C57), and differential complex behavior (C38, C63). The claim is well-supported as a synthesis of the presented data. However, the magnitude of activation by phosphorylation is modest (~2-fold), which somewhat limits the impact of this regulatory mechanism compared to other modes of PI3K\u03b3 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C106",
+      "C108"
+    ],
+    "result": "The helical-kinase domain interface represents a potential site for development of novel allosteric inhibitors that could modulate p110\u03b3 activity, providing new opportunities for targeting p110\u03b3 dysregulation in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural characterization of the NB7 binding site is excellent (C49-C52), the translation to small molecule drug development (C89, C106, C108) is speculative. The nanobody interface is large (~1200 \u00c5\u00b2) and primarily hydrophobic with few polar contacts, which may present challenges for small molecule targeting. No small molecule screening, computational docking, or fragment-based approaches are presented to validate druggability. This represents an interesting future direction but lacks experimental support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The NB7 inhibition mechanism is distinct from nSH2 inhibition of class IA PI3Ks: NB7 binds the opposite face of the helical domain, does not block membrane recruitment or Ras/G\u03b2\u03b3 binding, but prevents formation of a catalytically competent conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Structural comparisons (Figure 6A-B) clearly show the distinct binding sites and mechanisms. The TIRF microscopy data (C48, Figure 1D-F) directly demonstrates that membrane recruitment is unaffected, contrasting with nSH2 inhibition. The mechanistic interpretation (C93) that NB7 prevents catalytic competence while allowing membrane binding is well-supported by the combination of structural, binding, and functional data. This represents a novel inhibition mechanism for PI3Ks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C96",
+      "C97"
+    ],
+    "result": "The NB7 binding site overlaps with locations of oncogenic mutations (R1021C, E581K) and regulatory phosphorylation sites (S582, T1024), suggesting this interface is a critical regulatory hub that can be disrupted in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural mapping (Figure 6C) clearly shows spatial proximity of these regulatory sites to the nanobody interface. The interpretation that oncogenic mutations would disrupt helical domain or regulatory motif stability (C97) is reasonable given the structural context, though functional validation of these specific mutants in the context of the current model would strengthen the claim. The convergence of multiple regulatory mechanisms at this interface supports its functional importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C98"
+    ],
+    "result": "Prior work established that PKC\u03b2 is activated downstream of the IgE receptor and phosphorylates p110\u03b3 at S582, putatively only in p110\u03b3-p84 and not p110\u03b3-p101, but the full molecular mechanisms were poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the state of knowledge prior to this study, with appropriate citations (C28, C98: Walser et al., 2013). The characterization of this as a knowledge gap (C30) appropriately motivates the current work. The current study validates and extends this prior work by confirming the selectivity for p84 over p101 (C8, C62) and identifying the second phosphorylation site and mechanistic basis for selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C94",
+      "C95"
+    ],
+    "result": "Background claims establishing PI3K\u03b3 biology, structure, regulation, and therapeutic relevance, including the existence of two distinct complexes (p110\u03b3-p84 and p110\u03b3-p101), their differential activation, roles in immune signaling, and comparison to class IA PI3Ks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations throughout the introduction and discussion. They accurately represent established knowledge in the field and provide necessary context for the current work. The claims about current inhibitors targeting both complexes equally (C20-C21, C42) appropriately motivate the search for allosteric, complex-selective inhibitors. No issues with prior work attribution were identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Prior work from the authors identified that nanobody NB7 inhibited p110\u03b3-p84 activation by Ras and G\u03b2\u03b3, with HDX-MS mapping the binding interface to the RBD, helical, and kinase domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately cite prior work from the same group (Rathinaswamy et al., 2021b). The current study extends this by providing high-resolution structural characterization and demonstrating inhibition of all p110\u03b3 complexes, not just p110\u03b3-p84. The prior HDX-MS mapping is validated and refined by the cryo-EM structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C74"
+    ],
+    "result": "Prior work showed that oncogenic mutations in the regulatory motif increase dynamics and kinase activity, putatively by breaking an autoinhibitory tryptophan lock, with phosphorylation-induced dynamics changes being similar to those in the R1021C oncogenic mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite prior work (Rathinaswamy et al., 2021c) and use it to interpret the current findings. The comparison between phosphorylation effects and oncogenic mutant effects (C74) strengthens the mechanistic model by showing convergent regulatory mechanisms. The citation and interpretation of prior work appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Apo p110\u03b3 shows very weak activity toward PIP2 substrate (~2-fold increased ATP turnover vs. no membranes), consistent with weak membrane recruitment in the absence of activators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This baseline characterization is important for interpreting the phosphorylation effects. The weak basal activity is consistent with the known autoinhibited state of apo p110\u03b3 (C33-C34) and weak membrane recruitment (C76, citing Rathinaswamy et al., 2023). This provides appropriate context for the modest activation by phosphorylation.",
+    "result_type": "MINOR"
+  }
+]

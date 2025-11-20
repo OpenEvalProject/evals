@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on Parkinson's disease and LRRK2: PD is the second most common neurodegenerative disorder with ~10% familial cases. Mutations in LRRK2, a multi-domain kinase/GTPase protein, are a leading cause of familial PD and increase kinase activity. LRRK2 is a major therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C15-C21 establish well-documented background knowledge about PD epidemiology, LRRK2 structure, pathogenic mutations, and therapeutic relevance. All claims are supported by appropriate citations to established literature and represent consensus knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "LRRK2 structure and localization: LRRK2 is a 2527-residue, 286 kDa protein with N-terminal ARM/ANK/LRR domains and C-terminal ROC/COR/kinase/WD40 domains. It is primarily cytosolic but associates with membranes and microtubules under certain conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C22-C24 describe established structural and localization properties of LRRK2 based on prior knowledge and are well-supported by the literature. These provide essential context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior structural studies and inhibitor effects: Cryo-EM structures of LRRK2 show similar architecture for WT and PD mutants with COR:COR dimerization. Type-I inhibitor MLi-2 locks the kinase in closed/active conformation in LRRK2RCKW, while type-II inhibitor GZD-824 stabilizes open/inactive conformation. However, full-length LRRK2 in solution shows open kinase conformation regardless of inhibitor type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 accurately summarize prior structural work with appropriate citations. The observation that full-length LRRK2 maintains an open kinase conformation even with type-I inhibitors (C34) is a key finding from prior work (Sanz Murillo et al., 2023) that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Mechanism of LRRK2 autoinhibition: N-terminal repeats impose conformational restraints preventing kinase domain closure, combined with physical blocking of the active site by the LRR domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe a mechanistic hypothesis from prior work (Sanz Murillo et al., 2023; Schmidt et al., 2021) that is well-supported by structural evidence. This provides the conceptual framework for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Prior observations of LRRK2-microtubule interactions: PD-mutant LRRK2 co-localizes with microtubules when overexpressed. Type-I inhibitors (MLi-2, LRRK2-IN-1) augment this association, while type-II inhibitors decrease filament formation. Prior cryo-ET structures showed active-like LRRK2 forms filaments on microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 accurately summarize prior observations about LRRK2-microtubule interactions with appropriate citations. These establish the context and motivation for investigating whether autoinhibited LRRK2 can also bind microtubules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Prior structural features of active-like LRRK2 on microtubules: Active-like LRRK2 filaments share COR:COR and WD40:WD40 interfaces with similar geometry in situ and in vitro. N-terminal repeats were flexible/unresolved, and the kinase adopted closed conformation. The autoinhibited LRRK2 structure is incompatible with this assembly due to clashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 accurately describe prior structural findings and identify the key question: whether autoinhibited LRRK2 can bind microtubules given the apparent structural incompatibility. The inference about clashes (C49) is reasonable based on model docking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C50",
+      "C51",
+      "C83",
+      "C93"
+    ],
+    "result": "Main finding: Autoinhibited LRRK2 can oligomerize on microtubules. Both WT and I2020T LRRK2 formed oligomers on microtubules in the presence of type-I (MLi-2) or type-II (GZD-824) inhibitors, demonstrating that LRRK2 can bind microtubules in its autoinhibited state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C50-C51, C83, and C93 represent the central finding of the study. The cryo-ET data clearly shows LRRK2-decorated microtubules under all tested conditions (Figure 1\u2014figure supplement 1A, C), directly demonstrating that autoinhibited LRRK2 can bind microtubules. This resolves a key open question in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C91",
+      "C92"
+    ],
+    "result": "Structural characterization of autoinhibited LRRK2 on microtubules: All LRRK2 variants and inhibitor combinations yielded similar architectures. Subtomogram analysis produced 7.8-\u00c5 LRRK2 and 5.9-\u00c5 microtubule maps. The structure resembles autoinhibited in-solution LRRK2 with LRR blocking the kinase active site and the kinase in open/inactive conformation, even with type-I inhibitor MLi-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60, C62, C91-C92 describe the structural characterization with appropriate resolution estimates and comparisons to prior structures. The finding that MLi-2 does not induce kinase closure in microtubule-bound full-length LRRK2 (C53, C60) is well-supported by the maps (Figure 2) and consistent with prior in-solution structures. The ARM domain flexibility (C59) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C63",
+      "C73"
+    ],
+    "result": "Conserved interfaces: Autoinhibited-LRRK2 filaments share the same COR:COR and WD40:WD40 interfaces as active-like LRRK2 filaments, with two pseudo-twofold symmetry axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C63, and C73 identify conserved structural features between autoinhibited and active-like LRRK2 assemblies. The structural data (Figures 1G, 3, 4H) clearly shows these interfaces are maintained, providing important mechanistic insight into how both conformations can bind microtubules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C86",
+      "C87",
+      "C100",
+      "C101"
+    ],
+    "result": "Novel WD40:ARM/ANK interface: A new interface involving N-terminal ARM/ANK repeats and WD40 domains stabilizes autoinhibited-LRRK2 oligomers. These repeats are ordered in autoinhibited filaments (unlike in active-like filaments where they were disordered). The interface involves both hydrophobic and charged interactions but remains flexible. This showcases LRRK2's capability to form different oligomer types and highlights the WD40 domain's scaffolding function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C64-C72, C86-C87, C100-C101 describe a key novel finding. The structural evidence (Figures 4, Figure 1\u2014figure supplement 3) clearly shows density for N-terminal repeats that were disordered in active-like structures. The focused refinement and 3D classification (C67-C68) provide appropriate validation. The inference about flexibility (C70) is reasonable given the lower local resolution and need for focused classification. The proximity to Rab29-binding site (C69) is an important observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C74",
+      "C75",
+      "C76",
+      "C85"
+    ],
+    "result": "Different helical parameters: Autoinhibited-LRRK2 filaments have different helical geometry than active-like filaments, with helical angles peaking at ~90\u00b0 (forming ring-like structures) versus ~33\u00b0 (right-handed helices) for active-like LRRK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C74-C76, and C85 describe geometric differences supported by quantitative analysis of subtomogram distributions (Figure 5E). The ~90\u00b0 helical angle is clearly distinct from the ~33\u00b0 reported for active-like LRRK2, representing a significant structural difference between the two assembly states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C94"
+    ],
+    "result": "Short, sparse oligomers: Autoinhibited-LRRK2 forms shorter, less regular oligomers (mostly 1-6 dimers) rather than continuous filaments, suggesting lower stability. Results were consistent across all conditions, with GZD-824 showing slightly longer oligomers than MLi-2, but none exceeding half a turn around microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C78-C82, and C94 describe oligomer length distributions supported by quantitative analysis (Figure 5F, Figure 5\u2014figure supplement 1). The consistency across conditions (C80) strengthens the conclusion. The minor difference with GZD-824 (C81-C82) is appropriately characterized as not substantially affecting overall coverage. The inference about stability (C14) is reasonable but could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Comparison to active-like LRRK2: The autoinhibited assembly shares some features with active-like LRRK2 filaments but differs in helical parameters and N-terminal repeat ordering. Active-like structures showed flexible N-terminal repeats and closed kinase conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C88-C90 provide appropriate comparison to prior work, accurately summarizing the similarities and differences. This contextualizes the current findings within the broader understanding of LRRK2 structural states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Functional implications for roadblocking: Active-like LRRK2 with type-I inhibitors forms roadblocks impairing vesicular transport (prior work). Autoinhibited LRRK2's shorter, less stable oligomers are anticipated to exert reduced roadblocking effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 accurately cites prior work. However, C96 is speculative\u2014while the shorter oligomers logically suggest reduced roadblocking, this has not been experimentally validated in the current study. Direct functional assays would be needed to confirm this prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Therapeutic implications: Different inhibitors bind autoinhibited LRRK2 similarly in solution or on microtubules. Type-I inhibitors targeting autoinhibited LRRK2 may alleviate roadblock effects, or inhibitor design could focus on stabilizing N-terminal blocking of the kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is supported by the structural data showing similar conformations with different inhibitors (Figure 2). However, C98-C99 are speculative therapeutic strategies that have not been tested. While these are reasonable hypotheses based on the findings, they require experimental validation and are appropriately framed as possibilities rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "PD-associated mutations near WD40:ARM/ANK interface: Mutations K544E and N551K are located near the novel interface. N551K confers protection against PD and Crohn's disease and shows mild negative impact on MLi-2-induced LRRK2-microtubule association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 accurately cite genetic and functional studies (Xiromerisiou et al., 2007; Di Fonzo et al., 2006; Hui et al., 2018; Kalogeropulou et al., 2022). The structural localization of these mutations near the novel interface (Figure 4\u2014figure supplement 1I) provides important context, though the functional significance requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Conformational dynamics hypothesis: LRRK2 may alternate between oligomerization states on microtubules in cells, as it can interact with microtubules in multiple conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is supported by the current and prior studies showing LRRK2 can bind microtubules in both active-like and autoinhibited states. However, C105 is speculative\u2014whether LRRK2 actually alternates between these states in cells under physiological conditions has not been demonstrated and would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Broader functional context: LRRK2 functions in the endolysosomal system and can bind/reshape membrane structures in vitro. The ability to oligomerize on microtubules in both conformations may extend to membrane structures given geometric and electrostatic similarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C108 accurately cite prior work on LRRK2 function. Claim C109 is supported by the current findings. However, C110 is speculative\u2014while the analogy between microtubules and tubular membranes is reasonable, oligomerization on membranes in different conformational states has not been demonstrated and requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "DOz mice exhibit profound metabolic heterogeneity with 20- to 400-fold differences in insulin sensitivity, adiposity, and fasting insulin levels, markedly greater than variation in inbred strains. The population comprises 250 male mice from 46 breeding pairs outbred for 27-33 generations with controlled breeding strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25-C29, and C108-C112 collectively establish the DOz mouse population characteristics and metabolic diversity. The data are supported by Figure 1C-D showing the phenotypic variation, and the breeding strategy is clearly described with appropriate controls for genetic diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C113"
+    ],
+    "result": "Proteomic analysis of DOz quadriceps muscle identified 2073 proteins (444 mitochondrial, 1629 post-mitochondrial) with approximately 200-fold differences in coefficient of variation. Mitochondrial proteins showed ~2-fold enrichment in the mitochondrial fraction. Low-variance processes included electron transport chain and chromosome organization, while lipid metabolic pathways were highly variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 and C113 describe the proteomic characterization with appropriate methodology (log2 transformation, median normalization). The data are supported by Figures 1E-G showing enrichment and pathway analysis. The identification of GAPDH as highly variable (C35) provides an important control observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Linear modeling with adiposity as a covariate identified 553 proteins (120 mitochondrial, 433 PMF) associated with insulin sensitivity. This approach uncovered relationships with GLUT4 trafficking regulators (RAB10, SNAP23, IQGAP1) not seen without the covariate. The mitochondrial proteome was enriched for proteins positively associated with insulin sensitivity, while no relationship was found with insulin signaling substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 describe the linear modeling results with appropriate statistical methodology (q-value adjustment). The use of adiposity as a covariate is well-justified and increases biological relevance. The findings are supported by Figure 2A-F and include appropriate positive controls (GLUT4 trafficking proteins).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Gene set enrichment analysis revealed that response to topologically incorrect protein was positively associated with insulin sensitivity, while proteasome complex and clathrin-coated pit were negatively associated. Mitochondrial respiratory complex I showed positive association with Matsuda Index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe GSEA results with appropriate biological interpretation supported by citations (C51, C52). The findings are consistent with known biology of proteostasis and GLUT4 trafficking. Data are shown in Figure 2G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Genetic mapping identified 624 predominantly cis-acting pQTLs. Filtering negatively associated proteins by cis-pQTL presence generated a 76-protein insulin resistance fingerprint (69 PMF, 7 mitochondrial). Four genes (MTPN, LGALS1, PHKB, ADPRHL1) have human orthologues associated with insulin resistance. The fingerprint showed tissue-specific regulation in muscle compared to adipose and liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe the genetic mapping and filtering strategy with clear rationale for enriching causal relationships. The tissue specificity analysis (C58, Figure 3C) strengthens the muscle-specific findings. The human orthologue identification (C57) provides translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "KEGG pathway analysis identified endocytosis and insulin signaling pathway in the top 10 enriched pathways. CMAP query with the pQTL-filtered fingerprint produced significantly higher scores than non-filtered approach and identified GSK3 and EGFR inhibitors as top hits. Known insulin sensitizers (resveratrol, metformin, FGF21) and thiostrepton were identified among 856 small molecules and 91 ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 describe the CMAP analysis with appropriate validation through known positive controls (GSK3, EGFR inhibitors, metformin, resveratrol, FGF21). The comparison of pQTL-filtered vs non-filtered approaches (C60, Figure 3-supplement 1) demonstrates methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Prestwick library screen identified 22 basal agonists, 7 insulin sensitizers, and 16 insulin resistance reversers among 420 compounds overlapping with CMAP. CMAP-identified compounds performed better as basal activators and insulin resistance reversers. Thiostrepton ranked highest by combined scoring matrix and consistently reversed insulin resistance in GLUT4 translocation and 2-deoxyglucose uptake assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe the Prestwick screen with clear methodology and appropriate controls. The scoring matrix approach (C70, Figure 5A) integrates multiple assays rationally. Validation of thiostrepton in two independent assays (C71, Figures 5B-C) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Western diet feeding induced metabolic dysfunction in C57BL/6J and BXH9/TyJ mice with 40-75% reductions in insulin-stimulated glucose uptake in different muscles. One hour thiostrepton treatment reversed 80% of insulin resistance in C57BL/6J EDL and 50% in BXH9 EDL, but did not restore BXH9 soleus glucose uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 describe ex vivo validation with appropriate diet-induced insulin resistance model. The differential effects across muscle types and strains (C77-C79, Figure 5D) suggest specificity rather than non-specific effects. Supporting metabolic phenotyping data shown in Figure 5-supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Thiostrepton did not affect proximal insulin signaling (Akt-T308, Akt-S473, GSK3-S21/9, PRAS40-T246 phosphorylation) in palmitate-treated or control myotubes, suggesting it acts independently of canonical insulin signaling to reverse insulin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 describe insulin signaling analysis with appropriate markers and controls. The data (Figure 6A-E) clearly show no effect on canonical signaling. The interpretation (C82) is supported by citations and consistent with the observation that palmitate-induced insulin resistance occurs without signaling defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Palmitate suppressed maximal mitochondrial respiration and glycolytic capacity in myotubes. Thiostrepton alone partially blunted respiration but did not reverse palmitate-induced respiratory defects. However, thiostrepton potently reversed palmitate-induced suppression of maximal glycolytic capacity, suggesting this does not contribute to insulin resistance in this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 describe metabolic flux analysis with appropriate Seahorse methodology. The differential effects on respiration vs glycolysis (Figures 7A-B) are clearly demonstrated. The interpretation (C86) that respiratory suppression doesn't contribute to insulin resistance is logical given the lack of reversal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Thiostrepton did not affect AMPK or acetyl-CoA carboxylase phosphorylation in control or palmitate-treated cells, suggesting that if thiostrepton activates glycolysis via mitochondrial inhibition, it occurs independently of AMPK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe AMPK signaling analysis with appropriate positive control (A-769662). The data (Figure 7C-E) clearly show no effect on AMPK signaling. The interpretation (C90) is appropriately cautious about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Linear modeling identified 553 proteins associated with insulin sensitivity including regulators of endocytosis and muscle proteostasis. Refinement by focusing on negatively associated, genetically regulated proteins generated a 76-protein fingerprint of insulin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 summarize the main proteomic findings from the abstract. These are supported by the detailed results in claims C40-C56 and appropriate figures. The characterization of protein functions (C3) is supported by pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Thiostrepton was identified as an insulin resistance reversal agent through CMAP and in vitro screening. Validation demonstrated potent insulin action restoration in ex vivo insulin-resistant mouse muscle and palmitate-induced insulin-resistant myotubes, potentially via upregulation of glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 summarize the main thiostrepton findings from the abstract. These are supported by detailed results in claims C61-C90 with appropriate validation experiments. The mechanistic speculation (C8) is appropriately qualified as 'potentially' and supported by glycolysis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Known insulin sensitizers identified by the approach include disulfiram (reverses hepatic insulin resistance), resveratrol (reduces reactive oxygen species), and FGF21 (promotes glucose uptake and modulates mitophagy/proteostasis in muscle).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe validation through identification of known compounds with appropriate citations. These serve as positive controls for the CMAP approach and strengthen confidence in novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The insulin resistance fingerprint identified endocytosis (featuring clathrin coat components and EPS15) and phosphorylase kinase as key pathways. Endocytosis may play a role in stress signaling through internalization of insulin receptors and transporters. High phosphorylase kinase levels may promote glycogen breakdown and alter GSK3 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C99 describe pathway interpretation with appropriate citations (C97). However, the mechanistic speculation (C97, C99) requires experimental validation. The identification of these pathways is supported by data, but the proposed mechanisms remain hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Thiostrepton could promote glycolysis via attenuation of mitochondrial oxidative phosphorylation or by increasing mitochondrial ROS through peroxiredoxin-3 inhibition. Increased ROS may signal to promote glycolysis and relieve mitochondrial energetic demands, as seen in the Warburg effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 propose mechanistic hypotheses with appropriate citations. However, these remain speculative as direct evidence for these mechanisms is not provided. The glycolysis data support some effect on metabolism, but the specific mechanisms require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "ARHGDIA is a potent negative regulator of insulin sensitivity, and the fingerprint contained its homologue ARHGDIB. Both proteins inhibit RAC1 and may lower GLUT4 translocation and glucose uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe a specific protein finding with appropriate citations supporting the RAC1 mechanism. The identification of ARHGDIA as most negatively associated (C48) and presence of ARHGDIB in the fingerprint provides consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on insulin action, insulin resistance, GWAS studies, genetically diverse mouse panels (HMDP, BXD, CC, DO), systems genetics approaches, and the Connectivity Map platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C24 provide background information with appropriate citations. These establish the scientific context and rationale for the study. All claims are well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The Matsuda Index uses blood glucose and insulin values over a range of GTT timepoints to predict whole-body insulin sensitivity, providing an advantage over HOMA-IR by better incorporating glycaemic control dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 describe the methodological choice with appropriate justification. The Matsuda Index is an established method and the rationale for its use over HOMA-IR is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Mass spectrometry proteomics data have been deposited to ProteomeXchange Consortium via PRIDE with dataset identifier PXD042277.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 describes data availability with appropriate repository and accession number. This supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

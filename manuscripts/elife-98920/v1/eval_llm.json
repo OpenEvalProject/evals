@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors developed a whole-brain computational model consisting of 84 cortical and subcortical regions, each modeled as a neural mass with bistable dynamics (upstate/downstate) influenced by stochastic noise and connected via an empirical connectome from the Human Connectome Project.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C95-C96 collectively describe the model architecture and are internally consistent. The use of a generic HCP connectome (C28) is acknowledged as a limitation due to lack of subject-specific data, which is appropriate transparency. The model structure and parameters are clearly specified in the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The model exhibits three distinct dynamical regimes depending on global coupling and noise parameters: a low coupling regime with sparse, independent activity; a high coupling regime with stable, stereotyped coactivations; and an intermediate regime with complex, unpredictable cascades of coactivations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 describe model behavior across parameter space, supported by Figure 2 showing firing rate patterns and cascade profiles. The characterization of three regimes is qualitatively clear and visually demonstrated. However, quantitative thresholds defining regime boundaries are not explicitly provided, which would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Perturbational complexity (sPCI) and multiple spontaneous activity metrics (fluidity, Lempel-Ziv complexity, functional repertoire, GAP) all peak at the same intermediate 'working point' in parameter space (G\u22480.55), suggesting a common underlying fluid dynamical regime supports both optimal responsiveness and complex spontaneous dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C41-C48 are supported by Figure 3 showing convergent peaks across metrics. The spatial correspondence of maxima across different measures provides strong evidence for a shared dynamical regime. However, C42 acknowledges that direct evidence linking fluidity to attractor complexity is sparse, appropriately noting theoretical interpretation. The 10-second sPCI window (C90) differs from empirical PCI methodology, which is acknowledged but may affect comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "When the system operates far from the working point, stimulation has minimal impact on global activity with no notable change in complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by Figure 3 (top-left panel) showing low sPCI values away from the working point and by Figure 2 supplement 1 showing minimal stimulation effects in extreme coupling regimes. This is consistent with the bistable model dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Empirical validation used 15 subjects who underwent TMS-EEG and spontaneous EEG recordings during wakefulness and three anesthesia conditions (Xenon, Propofol, Ketamine), with consciousness assessed by post-awakening reports showing Xenon/Propofol eliminated conscious experience while Ketamine preserved it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C98-C100 describe the empirical dataset from Sarasso et al., 2015. The methodology is clearly cited and the consciousness ground truth (awakening reports) is appropriate. Sample size (N=5 per drug) is small but adequate for proof-of-concept. All subjects were deeply sedated (Ramsay=6), ensuring comparable unresponsiveness across conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "PCI with a threshold of 0.31 successfully distinguishes conscious from unconscious states in the empirical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 cite established benchmarks (Casarotto et al., 2016) and refer to previously published findings. Figure 5 shows PCI achieves 100% classification accuracy for consciousness, consistent with prior literature. This serves as the gold standard comparator for the new metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Individual-level analysis shows that fluidity perfectly separates wakefulness from Propofol/Xenon anesthesia but is inconsistent for Ketamine; complexity shows good separation for most subjects but with some exceptions; GAP works well for Propofol/Xenon but fails for Ketamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by Figure 4 showing subject-specific distributions. The heterogeneity in results, particularly for Ketamine, is honestly reported. The reversed patterns in some subjects (C58, C61) and overlapping distributions (C60, C61) demonstrate appropriate transparency about limitations. However, the small sample size (N=5 per drug) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The functional repertoire metric achieves perfect separation between wakefulness and anesthesia for all subjects and conditions, with consistently more states explored during wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are strongly supported by Figure 4b showing complete separation across all 15 subjects and three drugs. This is the most robust individual-level finding. However, C93 notes this metric lacks predictive power at the group level, which appears contradictory and requires clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Group-level classification shows fluidity achieves 100% accuracy for consciousness (matching PCI) by separating Ketamine/wakefulness from Propofol/Xenon, while functional repertoire achieves near-perfect classification for anesthesia presence by distinguishing all anesthetized states from wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by Figure 5 showing classification results. The complementary performance of fluidity (consciousness) vs. functional repertoire (anesthesia) is clearly demonstrated. However, the linear SVM classification approach is simple and no cross-validation or statistical testing of classification accuracy is reported, limiting confidence in generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The study demonstrates that a similar dynamical regime causes both perturbational complexity and complex spontaneous activity in the model, and that spontaneous activity metrics can effectively assess consciousness in empirical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 represent the main conclusions. C71 is supported by the modeling results (Figure 3) showing convergent peaks. C72 is supported by the empirical validation (Figures 4-5) showing metrics distinguish consciousness states. However, the link between model predictions and empirical validation is somewhat indirect\u2014the model uses a generic connectome and different timescales (C90), and individual-level performance is variable (C58, C60-C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9"
+    ],
+    "result": "Perturbational complexity is a robust consciousness metric but difficult to perform routinely, motivating the search for more accessible alternatives using spontaneous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9 establish the motivation for the study. C1 is supported by extensive citations. C2 states a practical limitation of TMS-EEG (equipment complexity). C9 claims the new paradigm is more accessible, which is reasonable since resting EEG is simpler than TMS-EEG, though no direct comparison of accessibility/feasibility is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "It is possible to distinguish ketamine-induced unresponsiveness from wakefulness at the individual level with a single metric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is stated as a key finding but is not clearly demonstrated. Figure 4 shows that different metrics work for different Ketamine subjects (e.g., functional repertoire works for 4/5, complexity for some but inverted for others). No single metric consistently distinguishes Ketamine from wakefulness across all subjects, contradicting the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The model's sPCI calculation spans 10 seconds (vs. hundreds of milliseconds empirically), but this difference is not problematic because the neural mass model lacks a specific timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 acknowledge a methodological discrepancy. While C91 argues the model is scale-free, this doesn't fully address whether the 20-fold difference in temporal windows affects the validity of comparing sPCI to PCI. The claim that this 'doesn't affect our statement' (C90) is asserted but not rigorously demonstrated through sensitivity analysis or rescaling experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Limitations include imperfect metric separation that could be improved with personalized modeling, and the functional repertoire's lack of group-level predictive power; future work could incorporate neuromodulatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 appropriately acknowledge limitations and suggest future directions. C93's statement about functional repertoire lacking group-level predictive power seems inconsistent with C69 showing near-perfect anesthesia classification, but may refer to different aspects (individual variability vs. group separation). These are reasonable speculations about improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establish that anesthetics produce different consciousness states, TMS-EEG/PCI reliably measures consciousness, resting-state activity shows organized patterns and functional networks, and brain dynamics near critical transitions support complex, fluid activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C23 provide literature-based background, all supported by appropriate citations. These establish the scientific context and are consistent with established knowledge in consciousness neuroscience and dynamical systems theory. No novel claims are made here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Discussion claims review theoretical frameworks linking complexity to consciousness (integration/differentiation), PCI's significance, brain criticality theory, and dynamical systems concepts including manifolds and phase transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 synthesize theoretical background in the Discussion, all appropriately cited. C77 notes the criticality hypothesis is 'debated,' showing appropriate nuance. C80 states criticality is 'possibly linked' to consciousness, appropriately hedging. These provide theoretical context for interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The modeling approach allowed control of dynamical regimes to show fluidity and responsiveness peak together, with fluidity capturing manifold complexity and responsiveness measuring perturbational complexity, while noise ensures manifold exploration without changing topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 interpret the modeling results. C83 summarizes the key finding. C84 provides theoretical interpretation linking metrics to dynamical concepts. C85 explains the role of noise, citing Ghosh et al., 2008. These interpretations are reasonable given the results, though C84's claim that fluidity captures 'number of attractors' is somewhat speculative (acknowledged in C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Prior work showed complexity varies across conscious states and 1/f slope correlates with PCI in the same dataset used here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 cite relevant prior work (Hudetz et al., 2016; Colombo et al., 2019) that used the same dataset. This appropriately contextualizes the current findings within existing literature and strengthens the validity of using this dataset.",
+    "result_type": "MINOR"
+  }
+]

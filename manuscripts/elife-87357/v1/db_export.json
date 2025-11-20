@@ -1,0 +1,2396 @@
+{
+  "submission": {
+    "id": "1d380555-fa16-4290-891c-92c502f181f2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T21:43:43.704407Z",
+    "updated_at": "2025-11-19T21:43:43.704407Z"
+  },
+  "content": [
+    {
+      "id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "content_type": "manuscript",
+      "content_text": "# A local ATR-dependent checkpoint pathway is activated by a site-specific replication fork block in human cells\n\n## Authors\n\n- Sana Ahmed-Seghir<sup>1</sup>\n- Manisha Jalan<sup>1</sup> ([ORCID: 0000-0002-4467-4934](https://orcid.org/0000-0002-4467-4934))\n- Helen E Grimsley<sup>1</sup> ([ORCID: 0000-0003-3485-0305](https://orcid.org/0000-0003-3485-0305))\n- Aman Sharma<sup>1</sup> ([ORCID: 0000-0003-1017-8307](https://orcid.org/0000-0003-1017-8307))\n- Shyam Twayana<sup>2</sup>\n- Settapong T Kosiyatrakul<sup>2</sup>\n- Christopher Thompson<sup>1</sup>\n- Carl L Schildkraut<sup>2</sup> \u2020\n- Simon N Powell<sup>1</sup> ([ORCID: 0000-0002-8183-4765](https://orcid.org/0000-0002-8183-4765)) \u2020\n\n### Affiliations\n\n1. Department of Radiation Oncology and the Molecular Biology Program, Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))\n2. Department of Cell Biology, Albert Einstein College of Medicine New York United States ([ROR:05cf8a891](https://ror.org/05cf8a891))\n3. Molecular Biology Program, Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhen replication forks encounter DNA lesions that cause polymerase stalling, a checkpoint pathway is activated. The ATR-dependent intra-S checkpoint pathway mediates detection and processing of sites of replication fork stalling to maintain genomic integrity. Several factors involved in the global checkpoint pathway have been identified, but the response to a single replication fork barrier (RFB) is poorly understood. We utilized the Escherichia coli-based Tus-Ter system in human MCF7 cells and showed that the Tus protein binding to TerB sequences creates an efficient site-specific RFB. The single fork RFB was sufficient to activate a local, but not global, ATR-dependent checkpoint response that leads to phosphorylation and accumulation of DNA damage sensor protein \u03b3H2AX, confined locally to within a kilobase of the site of stalling. These data support a model of local management of fork stalling, which allows global replication at sites other than the RFB to continue to progress without delay.\n\n## Introduction\n\nGenomic DNA is constantly exposed to exogenous and endogenous damaging agents, forming DNA lesions that challenge the progression of replication forks (RFs) during the S-phase of the cell cycle. The genome contains natural impediments, which cause replication stalling such as common fragile sites, repeated sequences, non-B structures, sites of collision between transcription and replication machinery, or DNA-protein complexes (Mirkin and Mirkin, 2007). These replication fork barriers (RFB) can impede the progression of the replication machinery and, if unresolved, lead to genomic instability, a common hallmark of aneuploidy, neurological and neuromuscular disorders, and cancer.\n\nReplication stress can impede the progression of the replication fork. During replication stress, the intra-S phase checkpoint pathway can be activated at a local and global level, which is a critical step to process the DNA lesions and maintaining genome integrity. The S-phase checkpoint involves the uncoupling of replicative polymerases from the replicative helicase and the generation of ssDNA, which rapidly gets coated with RPA. In turn, this activates ATR/ATRIP kinase signaling with its effector kinase CHK1, plus phosphorylation of H2AX at Ser139 in response to a variety of lesions that promote cell cycle arrest, fork stabilization, and restart (Iyer and Rhind, 2017; Iyer and Rhind, 2013; Willis and Rhind, 2009; Zeman and Cimprich, 2014).\n\nPrevious studies suggest that the local and global intra-S checkpoints are two distinct mechanisms that can be distinguished by the signaling intensity of detecting DNA damage (Saxena and Zou, 2022). It is thought that a threshold of DNA damage must be reached to activate the global checkpoint and impact cell cycle progression during replication (Bantele et al., 2019; Shimada et al., 2002). The local checkpoint reacts to a unique replication fork stalling site, which does not impact overall cell cycle progression. The proteins involved in the global replication stress response have been identified using DNA damaging agents that lead to multiple DNA lesion formation randomly throughout the genome. Nevertheless, the mechanism and timing of the checkpoint pathway at a local scale remain largely unknown and are critical to understanding the series of processes at a single RF stall.\n\nIn the Escherichia coli genome, the DNA pausing sequences called terminator (Ter) are recognized by a protein called Tus to cause a polar site-specific arrest of the RF at the end of the bacterial chromosome replication (Hiasa and Marians, 1994; Hidaka et al., 1988; Mulcair et al., 2006; Roecklein et al., 1991). The Tus-Ter complex leads to a temporarily locked complex on DNA that can be overcome by the fork arriving in the opposite direction, displacing Tus to terminate replication. The artificial E. coli-based Tus/Ter system has previously been employed in mouse embryonic stem cells to measure homologous recombination repair products and investigate the DNA repair pathway choice (Chandramouly et al., 2013; Willis et al., 2017; Willis et al., 2014).\n\nIn this study, we integrated a plasmid with five repeats of the TerB sequence in the non-permissive orientation, referred to as pWB15, at a unique site within chromosome 12 of the breast cancer cell line MCF7 (MCF7 5C-TerB clone). We utilized the integrated Tus-TerB system in human MCF7 cells to artificially generate individual RFBs and investigated the activation of the S-phase checkpoint signaling mechanism. We show that Tus/Ter creates an efficient site-specific RFB in human cells and observed local activation of ATR signaling, which was responsible for the phosphorylation of DNA damage marker \u03b3H2AX at the stall sites. When a replication fork pauses at the local Tus-TerB block, we do not detect any alteration in global replication profiles. Our system allows us to study the ATR-checkpoint activity as a local response to a single RFB.\n\n## Results\n\n### Tus is found enriched at TerB sites integrated in human cells\n\nThe 23 bp TerB sequence in interaction with the Tus protein have been successfully used in yeast and mice to create artificial RFBs (Larsen et al., 2014a; Willis et al., 2018; Willis et al., 2017; Willis et al., 2014; Willis and Scully, 2016). To study the effect of site-specific replication blocks at a genomic locus in human cells, we used a previously established MCF7 clone with a unique integrated copy of the pWB15 plasmid carrying two sets of five TerB repeat sequences in opposite, non-permissive orientations with respect to the incoming replication forks (Figure 1A and Figure 1\u2014figure supplement 1). Whole-genome sequencing of the clone was carried out to confirm the single-copy integration of the plasmid at hg38 chr12:95325001. Firstly, we checked whether Tus protein was able to bind TerB sequences in this artificial system in human cells. Chromatin immunoprecipitation (ChIP) followed by quantitative polymerase chain reaction (qPCR) was performed using an antibody against the His-tag 24 hr after MCF7 5C-TerB cells were transfected with a Tus-His expression plasmid. The Tus signal is specifically enriched over 20 times compared to the vector control (VC) condition in proximity to the TerB sequences (PP9, 2, and 47) (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of linearized plasmid (pWB15) integrated into MCF7 cells (MCF7 5C-TerB) with two cassettes containing five tandem TerB sequences in the non-permissive orientation (black arrows). Black half-arrowheads depict polymerase chain reaction (PCR) products expected from stated primer pairs used in (B). (B) Chromatin immunoprecipitation (ChIP) with His antibody on MCF7 5C-TerB cells transfected with either a vector control (VC) or HA-Tus-His expression plasmids. ChIP-qPCR was conducted using the indicated primer pairs. Data show the percentage of input (n = 3). (C) Schematic of proximity ligation assay (PLA) to visualize Tus bound to TerB sites using HA and His antibodies. (D) Representative images of the PLA foci across stated conditions. Scale Bars, 10 \u2009\u03bcm (E) Percentage of cells with 1\u20132 PLA foci per nucleus. (n = 3, \u2265150 cells per experiment). Bar graphs represents mean \u00b1 standard error of the mean (SEM), Student t-test (see methods).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Schematic of the integration of pWB15 in MCF7 cells to generate MCF7 5C-TerB. pWB15 contains two TerB cassettes (gray arrows). Each TerB cassette contains five tandem TerB sequences, which are in the non-permissive orientation in pWB15 (gray arrow facing away from each other). The plasmid was linearized by digesting with PvuI for integration into MCF7 cells. The single-copy integrant was confirmed using whole-genome sequencing and found to be integrated at chromosome 12.\n\nTo corroborate this observation, we performed the proximity ligation assay (PLA) (see \u2018Methods\u2019). Two tagged-Tus (HA-Tus and Tus-His) or a VC expression plasmid were simultaneously transfected and antibodies against the two tags, HA and His, were used to generate a PLA signal (Figure 1C and D). We observed 19% of the cells transfected with the two tagged Tus were harboring one or two PLA signal versus 9% of the cells transfected with the VC (Figure 1E), a significant enrichment of the PLA signal when Tus was bound to TerB. These results indicate a specific interaction of the Tus protein with the TerB sequences in human cells.\n\n### The Tus-TerB barrier is an efficient block to incoming replication forks\n\nIt has previously been demonstrated that the Tus-TerB interaction can induce an RFB in mouse embryonic cells using a chromosomally integrated system (Willis et al., 2014). We reasoned that our integrated system in MCF7 cells would be more prone to replication fork arrests near the TerB sequences. We used single-molecule analysis of replicated DNA (SMARD) to investigate evidence of replication fork stalling in the genomic DNA (Norio and Schildkraut, 2001). The self-labeling SNAP-tag was used to label Tus. After induction of Myc-NLS-TUS-SNAP by using Dox for 3 d, asynchronous MCF7 5C-TerB cells were sequentially pulse-labeled using two nucleoside analogs (iododeoxyuridine [IdU] and chlorodeoxyuridine [CldU]) for 4 hr each (Figure 2A). The isolated DNA was digested by restriction endonuclease Sfil, and the 200 kb fragment obtained was stretched on slides for staining. Two DNA FISH probes were used to detect the 200 kb segment of interest containing the TerB arrays: one probe of 40 kb within the chromosome 12 (hg38 chr12:95,199,827\u201395,239,226) and one probe of 7 kb made from pWB15 (Figure 2B). The direction of replication forks could be determined using the labeling patterns and its position within the locus of interest using our FISH probes. After inducing the expression of Myc-NLS-TUS-SNAP from an integrated plasmid in MCF7 5C-TerB cells (Figure 2\u2014figure supplement 1A and B), we analyzed its impact on the replication fork progression within the region containing TerB repeats (Figure 2C and D). The yellow arrows indicate the transition of labeling from IdU to CldU incorporation showing the replication fork direction. When Tus was expressed, these transition sites were found accumulated near the TerB regions (Figure 2D, arrows within the white oval) compared to the random signal spread on the 200 kb region when Tus is not expressed (Figure 2C). We quantified the percentage of molecules with replication forks at each 5 kb interval in the 200 kb SfiI segment containing TerB sequences (Figure 2E and F) and confirmed an accumulation of forks at the TerB sequences only when Tus was expressed (Figure 2F, black arrow), supporting that the binding of Tus on TerB arrays can impair the replisome progression at genomic loci. Interestingly, expression of the Tus protein alone does not alter the direction of replication fork progression along the 200 kb SfiI segment where forks predominantly progress from the 3\u2032 to 5\u2032 direction in cells both with and without Tus expression as analyzed by the percentage of molecules with IdU incorporation at each 5 kb interval (Figure 2\u2014figure supplement 1C and D). Furthermore, no significant difference was observed in the global replication fork speed in cells with or without Tus expression (Supplementary file 1a). Together, these data indicate that when Tus bound the TerB sequences integrated within chromosome 12, it creates a physical barrier and an obstacle to the replication fork progression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of pulse labeling of MCF7 5C-TerB cells with Tus protein expression for 3 d. (B) Locus map of a 200 kb SfiI segment from MCF7 5C-TerB Chromosome 12 with the integrated plasmid (pWB15) DNA (orange). A 40 kb FISH probe made from fosmid WI2-1478M20 and a 7.5 kb FISH probe made from plasmid pWB15 are shown in blue. (C, D) Top: locus map of the DNA segment containing Ter sequence with the location of the FISH probes. Bottom: photomicrographs of labeled DNA molecules from MCF7 5C-TerB, Tus not expressed (C) and MCF7 5C-TerB, Tus expressed (D). Yellow arrows indicate the position of replication forks at the transition of labeling from IdU to CldU incorporation showing replication fork direction. Molecules are arranged in the following order: forks progressing from 3\u2032 to 5\u2032, forks progressing from 5\u2032 to 3\u2032, termination events, and initiation events. Replication forks (yellow arrows) in the white oval are all at the same location (at the TerB sequence) on molecules from different cells indicating that replication forks are pausing at this TerB sequence. (E, F) Percentage of molecules with replication forks at each 5 kb interval in the 200 Kb SfiI segment containing TerB sequence, quantified from molecules in MCF7 5C-TerB (E) Tus not expressed and (F) Tus expressed. Percentage of molecules with replication forks progressing 3\u2032 to 5\u2032 (< blue) and 5\u2032 to 3\u2032 (> orange) are shown. In the cells expressing Tus, a high percentage of molecules contain replication forks pausing in both directions in the 5 kb interval that contains Ter sequences (black arrow [F], white oval [D]). (G) Schematic similar to Figure 1A with progression of the endogenous origins of replication within the chromosome 12 shown (green arrows). (H) Chromatin immunoprecipitation (ChIP) using MCM3 antibody on MCF7 5C-TerB cells transfected with vector control (VC) or HA-Tus-His plasmids. ChIP-qPCR was conducted using the indicated primer pairs. Data shows the fold enrichment relative to the IgG controls (n = 3). Bar graphs represents mean \u00b1 standard error of the mean (SEM), Student t-test (see methods).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic of doxycycline (Dox)-inducible expression of Myc-NLS-TUS-SNAP. (rtTA = reverse tetracycline trans activator; TRE = tetracycline response element). (B) Immunoblot of MCF7 5C-TerB cells stably expressing Dox-inducible Myc-NLS-TUS-SNAP. (C, D) Replication profiles shown as the percentage of molecules with IdU incorporation at each 5 kb interval in the 200 kb SfiI segment containing TerB sequence, quantified from molecules MCF7 5C-TerB in Figure 2C (Tus not expressed) and Figure 2D (Tus expressed).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Chromatin immunoprecipitation (ChIP) using FANCM antibody was performed MCF7 5C-TerB cells transfected with vector control (VC) or HA-Tus-His plasmids. ChIP-qPCR was conducted using the indicated primer pairs. Data shows the fold enrichment relative to the IgG controls (n = 3). Bar graphs represents mean \u00b1 standard error of the mean (SEM), Student t-test (see methods).\n\nThe eukaryotic replisome is a multiprotein apparatus consisting of DNA helicases, DNA polymerases and accessory proteins to duplicate the genome. We hypothesized that an RFB would induce an accumulation of these proteins on chromatin around TerB sequences. To test our hypothesis, we performed ChIP using an antibody against mini-chromosome maintenance protein 3 (MCM3), a CMG core-complex protein, in the absence or presence of Tus. When Tus was expressed, MCM3 was threefold more enriched upstream of the TerB arrays at the PP0-2 and PP10 sites compared to the surrounding primer pairs (Figure 2G and H). Additionally, we find that there is an enrichment of the DNA repair scaffold protein FANCM at the TerB sites mirroring the MCM3 enrichment (Figure 2\u2014figure supplement 2), indicative of the stalled replication forks as previously described (Collis et al., 2008; Nandi and Whitby, 2012; Panday et al., 2021; Xue et al., 2015). Together, these results show that Tus expression induces an RFB at the TerB arrays impairing the replisome progression during S-phase.\n\n### \u03b3H2AX is enriched at TerB sites after Tus expression before fork collapse\n\nOne of the earliest responses to replication stress is the phosphorylation of the histone variant H2AX on serine 139 (\u03b3H2AX) by members of the phosphoinositide 3-kinase (PI3K)-like family (PIKK) (Ward and Chen, 2001). As we demonstrated that TerB arrays can block incoming replication forks, we asked whether we could see a \u03b3H2AX signal enrichment due to fork arrest. Using a co-immunoprecipitation assay with the chromatin fraction of cross-linked cells expressing either GFP tag or GFP-Tus, we found that GFP-Tus and \u03b3H2AX were immunoprecipitated together using GFP or \u03b3H2AX antibodies (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig3-v1.jpg)\n\n**Figure 3.:** (A) MCF7 5C-TerB cells transfected with GFP or GFP-Tus, \u03b3H2AX and IgG antibodies were used to immuno-precipitate proteins and analyzed by immunoblotting with indicated antibodies. (B) Schematic of proximity ligation assay (PLA) to visualize HA-Tus bound to TerB in the proximity of \u03b3H2AX sites using HA and \u03b3H2AX antibodies. (C) Representative images of the PLA foci across stated conditions. Scale Bars, 10 \u2009\u03bcm. (D) Percentage of cells with 1\u20132 PLA foci per nucleus (n = 3, \u2265150 cells per experiment). (E) Schematic of MCF7 5C-TerB depicting the positions of the primer pairs with respect to the integrated TerB locus. (F) \u03b3H2AX levels along the integrated TerB plasmid were analyzed by ChIP-qPCR in MCF7 5C-TerB cells transfected with vector control (VC) or Tus expression plasmids using the indicated primer pairs. Data shows the fold enrichment relative to IgG controls (n = 3). Bar graphs represents mean \u00b1 standard error of the mean (SEM), Student t-test (see methods).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic of the linearized TerB plasmid (pWB15) integrated as a unique copy into MCF7 cells (MCF7 5C-TerB) with the Cas9-binding site (green protein). Blue triangles: Cas9 cut site. Black half-arrowheads depict PCR products expected from primer pair (PP10) used in quantitative PCR (qPCR) are shown. (B) Schematic depicting the Cas9 cut site (blue arrows), site-specific PCR primers (black half-arrowhead), and predicted size of cleavage products. (C) PCR analysis by T7 assay of MCF7 5C-TerB cells transfected with Cas9-sgRNA RNP complex. (D) \u03b3H2AX levels along the integrated TerB plasmid were analyzed by ChIP-qPCR in MCF7 5C-TerB cells transfected with vector control (VC), Tus, or Cas9 expression plasmids using the indicated primer pairs. Data shows the fold enrichment relative to IgG controls (n = 2). Bar graphs represents mean \u00b1 standard error of the mean (SEM), Student t-test (see methods).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative images of gH2AX foci across stated conditions. Scale Bars, 10 \u2009\u03bcm. (B) Average number of gH2AX foci per nucleus in conditions stated. Cells treated with or without 2 mM hydroxyurea (HU) for 4 hr (n = 3, \u2265300 cells per experiment) ns: non-significant. Bar graphs represents mean \u00b1 standard error of the mean (SEM), Student t-test (see methods).\n\nTo gain insight into the \u03b3H2AX signal at the RFB induced by the Tus-TerB interaction, cells were transfected with either VC or HA-Tus expression plasmids, and PLA was performed using antibodies against HA and \u03b3H2AX (Figure 3B). We found that 16% of the HA-Tus transfected cells were harboring at least one PLA signal versus 3% of the VC transfected cells (Figure 3C and D).\n\nTo better characterize the \u03b3H2AX enrichment around TerB sites, we performed ChIP-qPCR assays using a \u03b3H2AX antibody 24 hr after Tus or VC expression. We observed an enrichment of \u03b3H2AX, strictly co-localizing with the Tus-Ter interaction sites (PP9 and PP47), suggesting a local role of \u03b3H2AX in response to stalled RFs (Figure 3E and F). This is in stark contrast to the observed spreading of the \u03b3H2AX signal after a site-directed DSB (Berkovich et al., 2007; Chailleux et al., 2014; Clouaire et al., 2018; Savic et al., 2009). To corroborate this observation in our integrated cassette, we generated a site-specific DSB by expressing Cas9 targeted to the integrated cassette (Figure 3\u2014figure supplement 1A\u2013C). We assessed \u03b3H2AX using the ChIP-qPCR assay 24 hr after transfection and noticed enrichment at the distal primer pairs (PP0-2 and PP10), contrasting with the very tight local signal observed at the Tus-TerB RFB (Figure 3\u2014figure supplement 1D). However, we did not find any significant \u03b3H2AX signal between VC or Tus expression (Figure 3\u2014figure supplement 2A and B), supporting the lack of global response. This suggests that the RFB generated by the interaction between Tus and the TerB arrays activates a stress response that stimulates the phosphorylation of H2AX, concentrated around the fork block.\n\n### H2AX is phosphorylated in an ATR-dependent manner without a global activation of the intra-S checkpoint\n\nATR is known to phosphorylate H2AX in response to replication stress and plays a pivotal role in the surveillance of DNA replication (Ward and Chen, 2001). To understand whether the global ATR-dependent checkpoint was activated in response to the Tus-TerB RFB, we analyzed the levels of phospho-proteins involved in the intra-S checkpoint activation pathway (RPA, CHK1, and ATR) by immunoblotting fractionated cell extracts 24 hr after VC or Tus expression. Cells treated with 2 mM hydroxyurea (HU) for 4 hr demonstrated an increase in phospho-protein levels, acting as a control for checkpoint activation (Figure 4A, lanes 3 and 4). Tus expression alone did not activate the global ATR-dependent checkpoint as the level of phospho-protein remained the same as the VC control (Figure 4A, lanes 1 and 2). We did not find any observable difference in cell cycle progression between VC or Tus expression alone (Figure 4\u2014figure supplement 1A and B), supporting the lack of global response.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig4-v1.jpg)\n\n**Figure 4.:** (A) MCF7 5C-TerB cells transfected with vector control (VC) or HA-Tus were treated for 4 hr with 2 mM hydroxyurea (HU) before lysis and fractionation (whole-cell extract [WCE], soluble fraction, and chromatin fraction). Total and phosphorylated protein levels were examined by immunoblotting as indicated. Tus expression was confirmed in WCE. (B) Depletion of pATR Th1989 in MCF7 5C-TerB cells treated with 2 mM HU \u00b1 40 nM of ATR inhibitor was examined with immunoblotting. (C) Schematic of MCF7 5C-TerB depicting the positions of the primer pairs with respect to the integrated TerB locus. (D, E) \u03b3H2AX levels were analyzed by ChIP-qPCR in MCF7 5C-TerB cells transfected with (D) VC expression plasmid (E) Tus expression plasmid, \u00b14 hr treatment with ATRi with indicated primer pairs. Data shows the fold enrichment over the IgG controls (n = 3). Bar graphs represents mean \u00b1 standard error of the mean (SEM), Student t-test (see methods).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Cell cycle analysis and (B) quantification was performed using flow cytometry following staining with propidium iodide staining in MCF7 5C-TerB cells under the stated conditions. Cells treated with or without 2 mM hydroxyurea (HU) for 4 hr (n = 3, ns: non-significant). Bar graphs represents mean \u00b1 standard error of the mean (SEM), Student t-test (see methods).\n\nWe hypothesized that if the local \u03b3H2AX enrichment at TerB sites was ATR-dependent, a reduction in ATR activity would lead to a decreased \u03b3H2AX signal. To validate the ATR inhibitor activity (ATRi), VE-822 (Fokas et al., 2012), we performed immunoblotting using total protein extracts of cells treated with 2 mM HU and compared the level of phospho-ATR TH1989 with or without an ATR inhibitor. A 4 hr treatment with ATRi reduced the level of phospho-ATR TH1989, reflecting a decrease in ATR activity (Figure 4B). ChIP-qPCR assays were performed using a \u03b3H2AX antibody 24 hr after VC or Tus expression, and cells were harvested after a 4 hr ATRi treatment. Consistent with our hypothesis, the \u03b3H2AX enrichment in the vicinity of TerB sites after Tus expression was remarkably decreased upon ATRi treatment (Figure 4C\u2013E, PP9 and PP47), implying that the Tus-TerB RFB activates a localized stress response that stimulated the local phosphorylation of H2AX. Together, these data suggest a local activation of the intra-S checkpoint via the ATR kinase and rapid phosphorylation of H2AX, which could mediate the recruitment of repair factors near the damage site.\n\n## Discussion\n\nReplication stress occurs during the S-phase of the cell cycle, when the replication machinery encounters DNA lesions that cause stalling of replicative polymerases and can be a significant cause of genomic instability. If the stalled forks cannot be processed, they can result in DNA breakage, mutations, and chromosomal rearrangements, leading to the development of many different human cancers (Gaillard et al., 2015; Tubbs and Nussenzweig, 2017). In this study, we used the reconstituted E. coli-derived protein-DNA barrier, Tus-TerB, to study the replication stress response at a single RFB. We have shown that the Tus protein efficiently binds at the TerB sequences using ChIP-qPCR and PLA in MCF7 cells (Figure 1). We confirmed that this integrated system was able to cause site-specific RFB at TerB sequences when Tus was introduced with the use of the SMARD technique and observed the accumulation of replication fork protein MCM3 upstream of TerB sequences (Figure 2). Our results indicate that the integrated Tus-TerB system acts as an efficient site-specific RFB, providing valuable insights into the local processing of a stalled single fork in human cells and its difference from global replication stress (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87357/elife-87357-fig5-v1.jpg)\n\n**Figure 5.:** A model depicting the cellular response to a site-specific DSB using CRISPR-Cas9 and a global replication stress with hydroxyurea, both of which lead to a DNA damage response (DDR, yellow triangles), increased gH2AX (green) levels globally in the cell and, if left unresolved, can alter cell cycle progression. In contrast, the site-specific replication fork block, Tus/TerB, elicits a local ATR-dependent DDR, which is responsible for the phosphorylation and accumulation of \u03b3H2AX at the stalled site. This local signaling does not affect the progression of the cell cycle and is not altered during the local checkpoint response.\n\nWe show that the site-specific replication stress leads to the accumulation of \u03b3H2AX at the site of fork block when Tus was expressed by co-immunoprecipitation of Tus and \u03b3H2AX (Figure 3A). Additionally, we confirmed that \u03b3H2AX is localized at the site of Tus-TerB using PLA and ChIP-qPCR assays (Figure 3D and F). We suggest that the \u03b3H2AX signal is being constrained to a region of less than a kilobase from the TerB sites by tortional stress generated when the replication fork encounters the barrier and is not influenced by well-defined topological domains that are one measure of the functional units of the genome (Dixon et al., 2012; Rao et al., 2014). Furthermore, there was no observable difference in global replication profiles or the activation of global checkpoint markers such as pRPA, pCHK1, and pATR, with or without Tus protein expression, contrasting with the differences observed in the presence and absence of HU-induced replication stress (Figure 4A, Supplementary file 1a, Figure 3\u2014figure supplement 2, and Figure 4\u2014figure supplement 1). We conclude that Tus-TerB-induced replication fork stall does not activate global ATR-dependent S-phase checkpoint signaling, suggesting that a local response is occurring at the stalled replication fork. Interestingly, upon ATR inhibition, we observed that the enrichment of phosphorylated H2AX at TerB sites was significantly reduced when Tus was expressed, which indicates local ATR signaling is responsible for the phosphorylation of H2AX at the stalled site (Figure 4C and E). A similar localized response had previously been observed in yeast, with a site-specific DSB in G1 cells, where there was no activation of the global checkpoint signaling, but \u03b3H2AX signaling was observed (Janke et al., 2010). This localized ATR-dependent \u03b3H2AX differs from the well-observed ATM-dependent spreading of \u03b3H2AX signal after a site-directed double-strand break (Berkovich et al., 2007; Chailleux et al., 2014; Clouaire et al., 2018; Savic et al., 2009) and suggests a distinct local intra-S phase checkpoint is being activated in response to the single RFB.\n\nThere are additional mechanisms to be understood in this newly described local replication stress response, which includes whether the activation of ATR is dependent on ATRIP bound to ssDNA (Ball et al., 2005; Zou and Elledge, 2003). In the Tus-TerB system, there is no known dissociation of the replicative helicase from the polymerase, which is responsible for the ssDNA signal. Therefore, just like ATM can be activated independently of the MRE11 complex (Bakkenist and Kastan, 2003), we expect that ATR is activated independently of ATRIP, likely due to local changes in chromatin that will be investigated in future studies.\n\nDuring extensive DNA damage, the genome-wide checkpoint response activates ATR/CHK1 globally, which leads to the slowing of all replication forks in the cell, inhibition of cell cycle progression, and suppression of late origin firing; to provide sufficient time for DNA repair. It has been proposed that a local checkpoint response occurs when one or a few replication forks encounter a DNA lesion and activates ATR/CHK1 signaling at local sites of fork stalling. The local ATR response has been hypothesized to be transient, in which the fork moves slowly only at stalled sites to promote fork stabilization, restart the stalled fork, and suppress recombination without triggering the global checkpoint response (Iyer and Rhind, 2017; Iyer and Rhind, 2013; Kaufmann et al., 1980; Merrick et al., 2004; Saxena and Zou, 2022; Willis and Rhind, 2009; Zeman and Cimprich, 2014).\n\nWe predict that the local ATR-dependent checkpoint signaling can result in a rapid and controlled response to allow RFB resolution through the recruitment of repair factors to the damaged site. The factors might include those involved in fork stabilization, fork reversal, fork cleavage, and homology-dependent replication restart (Saxena and Zou, 2022). The Tus-TerB system has previously been employed in mouse embryonic stem cells to measure and investigate the DNA repair pathway choice (Chandramouly et al., 2013; Panday et al., 2021; Willis et al., 2017; Willis et al., 2014). This included both error-free and error-prone homologous recombination induced by a mammalian chromosomal RFB, as well as identifying the role of the structure-specific endonuclease complex SLX4-XPF and FANCM in the repair of microhomology-mediated tandem duplications that occur at replication arrest (Elango et al., 2022; Nandi and Whitby, 2012; Willis et al., 2017). The Tus-TerB block is robust and is not dissociated by the action of DNA helicases such as PIF1, corroborated in previous yeast studies that have demonstrated that the \u2018sweepase\u2019 RRM3 is unable to resolve this RFB (Larsen et al., 2014b). Therefore, it is likely that the RFB is resolved either by incoming replication forks leading to termination at the TerB site or by fork cleavage (Larsen et al., 2014b; Willis et al., 2017; Willis et al., 2014). Fork reversal at the Tus-TerB site has been observed in the yeast system (Larsen et al., 2014b; Marie and Symington, 2022), but not for the mammalian systems, and it is unlikely that shifting the position of the RFB would make it easier to resolve. Therefore, fork cleavage is the most likely mechanism for resolving the RFB.\n\nThe upstream pathway of activation of the DNA damage response, as a result of a single RFB, is not completely understood. Previous work has shown that FANCM acts as a scaffolding protein for recruitment of different repair protein complexes involved in the stalled replication fork rescue (Panday et al., 2021; Willis et al., 2017). We observed that the FANCM protein is enriched at the site of the RFB induced by Tus-TerB (Figure 2\u2014figure supplement 2), confirming a similar phenomenon observed in mouse cells. However, it is yet to be determined whether FANCM recruitment to the RFB precedes local H2AX phosphorylation by ATR or whether FANCM is recruited as a consequence of the \u03b3H2AX signal to help elicit the downstream DNA damage response (DDR). We also anticipate that the protein complex, 9-1-1 (RAD9A, HUS1, RAD1), and the subsequently recruited TOPBP1, may also play a role at this local ATR-dependent intra-S checkpoint (Helt et al., 2005; Parrilla-Castellar et al., 2004).\n\nWhile the Tus-TerB system is an important tool in deciphering signaling at individual replication forks, it will be important to test whether the local-S phase model remains supported when exploring endogenous lesions that occur when replication forks encounter secondary structures such as R-loops, G-quadruplexes, and common fragile sites characterized by trinucleotide repeat expansion [(CAG)n/(CTG)n] (Brickner et al., 2022; Bryan, 2019; Kim et al., 2017). Here the mechanisms surrounding the identification and resolution of the RFB may differ. Overall, our results indicate that Tus-TerB system acts as an efficient RFB and activates local ATR checkpoint signaling at the stall site, leading to phosphorylation and accumulation of the DNA damage sensor protein \u03b3H2AX, which is dependent on the ATR kinase. The local \u03b3H2AX accumulation at the stalled region would lead to the recruitment of DNA repair factors for resolution of the fork (Figure 5). Together, our findings reveal the signaling mechanism of the Tus/TerB-induced replication block and showed that the site-specific fork block is dependent on the local ATR S-phase checkpoint signaling.\n\n## Methods\n\n### Cell culture and transfection conditions\n\nMCF7 5C-TerB cells were grown at 37\u00b0C and 5% CO2 in complete DMEM high glucose supplemented with 10% FBS, 2 mM GlutaMAX, 20 mM HEPES, 100 I.U./ml penicillin, and 100 \u03bcg/ml streptomycin supplemented with 400 \u00b5g/ml zeocin. The cell line was characterized using the Cell Line Authentication by STR analysis at the Integrated Genomics Operation, MSKCC. Cells were routinely tested for mycoplasma contamination using the Universal Mycoplasma Detection Kit (ATCC 30-1012K).\n\nFor PLA, cells were seeded at 1 \u00d7 105 in a 12-well cell culture plate. For T7 assay, cells were seeded at 2.5 \u00d7 105 in a 6-well cell culture plate. For ChIP, IP, and cellular fractionation, cells were seeded at 2.5 \u00d7 105 in a 10 cm cell culture dish.\n\nMCF7 5C-TerB cells were seeded and transfected the day after with 10 \u03bcg of pCMV3xnls Tus or pCMV3xnls using the Mirus Bio TransIT-LT1 reagents for 24 hr more. For the generation of DSB, cells were transfected 6 hr prior to harvesting with 120 pmol of the sgRNA TerB1 and 120 pmol of the Cas9 protein (obtained from QB3 Macrolab, Berkeley) using the Lipofectamine CRISPRMAX Cas9 transfection reagents.\n\n### Generation of stable cell lines\n\nPvuI linearized pWB15 was transfected into MCF7 (ATCC HTB-22) cells to generate the stably integrated clone, MCF7 5C-TerB (Figure 1\u2014figure supplement 1). Then, 800 \u03bcg/ml of zeocin was used to select positively integrated cells and monoclonal colonies were isolated and subsequently maintained in 400 \u03bcg/ml zeocin. Single-integrant validation was performed by whole-genome sequencing of the clone.\n\nStable MCF7 5C-TerB cells-inducible-expressing Myc-NLS-TUS-SNAP were generated by lentiviral transduction. Cells were infected with lentiviral particles containing pInducer10L or pInd Tus-SNAP, and single-cell clonal colonies were selected in complete DMEM containing 1 \u00b5g/ml puromycin and 400 \u00b5g/ml zeocin. Myc-NLS-TUS-SNAP protein was expressed in stable lines by induction with 1 \u00b5g/ml doxycycline for 3 d.\n\n### Plasmid construction\n\nThe doxycycline-inducible lentiviral plasmid used to express N-terminally myc-tagged, C-terminally SNAP-tagged nuclear localized, human codon-optimized wild-type Tus (Myc-NLS-TUS-SNAP) was generated as follows. The N-terminally myc epitope-tagged, nuclear-localized, codon-optimized wild-type Tus cDNA sequence was PCR-amplified from pcDNA3-\u03b2-MYC-NLS-Tus using primers forward 5\u2032-AGTCGGTACCGAATTCGCCACCATGGAACAAAAGCTG-3\u2032 and reverse 5\u2032-AGTCGGCGGCCGCGCCGCTACCGTCAGCCACGTACAGGTGCA and the SNAP-tag cDNA sequence PCR amplified using primers forward 5\u2032-AGTCGCGGCCGCCGGCCACATGGACAAAGACTGCGAAATGAAGC-3\u2032 and reverse 5\u2032-ACTGCTCGAGTCAACCCAGCCCAGGCTTGC-3\u2032. The Tus and SNAP PCR-amplified fragments were digested with KpnI and NotI, and NotI and XhoI, respectively, and inserted into the inducible expression lentiviral vector pInducer10L (Drosopoulos et al., 2020) directly downstream of the doxycycline-inducible promoter, to generate pInd Tus-SNAP. This construct was sequenced to confirm that unintended mutations were not introduced during PCR and cloning.\n\n### Immunoblotting\n\nCells were harvested by trypsinization, suspended in complete DMEM, washed with PBS, then pelleted and flash frozen in liquid N2 and stored at \u201380\u00b0C. For SDS-PAGE, pellets were thawed on ice and lysed by resuspending in Laemmli buffer (60 mM Tris-HCl pH 6.8, 400 mM 2-mercaptoethanol, 2% SDS, 10% glycerol, 0.01% bromophenol blue) to a final concentration of 106 cells/ml. Lysates were denatured (5 min at 100\u00b0C) and passed through a 25-gauge needle (5\u00d7) then spun for 2 min at full speed in a microfuge. Aliquots of lysate corresponding to 105 cells were resolved on 4\u201315% gradient SDS-PAGE gels, proteins transferred to nitrocellulose membrane and blocked in PBS with 5% Blotting-grade Blocker and 0.1% Tween 20. Membranes were then incubated with primary antibodies diluted in PBS with 5% Blotting-grade Blocker. Primary antibodies used were anti-Myc tag and anti-actin. Following incubation with primary antibodies, membranes were washed with PBS + 0.1% Tween 20. Membranes were then incubated with fluorescently labeled goat anti-mouse IRDye 680LT and goat anti-rabbit IRDye800CW secondary antibodies and then washed in PBS + 0.1% Tween 20. Immunoblots were imaged on an Odyssey Lc Infrared scanner.\n\n### SMARD assay\n\nSMARD was performed essentially as previously described (Drosopoulos et al., 2012; Norio and Schildkraut, 2001; Twayana et al., 2021). Exponentially growing cells in complete DMEM with 1 \u00b5g/ml doxycycline were sequentially pulse-labeled with IdU (4 hr), followed by CldU (4 hr) each to a final concentration of 30 \u03bc\u039c. Following pulsing, cells were suspended in PBS at a concentration of 3 \u00d7 107 cells per ml. An equal volume of 1% molten TopVision low-melting point agarose in PBS was added. The resulting cell suspension in 0.5% TopVision agarose was poured into wells of a chilled plastic mold to make plugs of size 0.5 cm \u00d7 0.2 cm \u00d7 0.9 cm, each containing 106 cells. Cells in the plug were lysed at 50\u00b0C in a buffer containing 1% n-lauroylsarcosine, 0.5 M EDTA, and 0.2 mg/ml proteinase K. Plugs were rinsed in TE and washed with 200 \u03bcM phenylmethanesulfonyl fluoride (PMSF). Genomic DNA in the plugs was digested with SfiI overnight at 37\u00b0C. Digested genomic DNA was cast into 0.7% SeaPlaque GTG agarose gel, and DNA was separated by pulsed field gel electrophoresis (PFGE) using a CHEF-DRII system (Bio-Rad). The 200 kb DNA segment containing TerB sequences within the gel was located by performing Southern hybridization on a portion of the gel using a specific probe made from the pWB15 plasmid. This identified the pulse field gel slice containing TerB sequences, which was excised and melted (20 min at about 72\u00b0C). The DNA in the gel solution was stretched on microscope slides coated with 3-aminopropyltriethoxysilane, denatured with sodium hydroxide in ethanol, fixed with glutaraldehyde, and hybridized overnight with biotinylated DNA FISH probes at 37\u00b0C in a humidified chamber. Biotinylated DNA FISH probes were made from the fosmid WI2-1478M20 and from the plasmid pWB15. Following hybridization, slides were blocked with 3% BSA for at least 20 min and incubated with the avidin Alexa Fluor 350. This was followed by two rounds of incubation with the biotinylated anti-avidin D for 20 min, followed by the avidin Alexa Fluor 350 for 20 min. Slides were then incubated with an antibody specific for IdU; a mouse anti-BrdU antibody, an antibody specific for CldU; a rat monoclonal anti-BrdU antibody, and the biotinylated anti-avidin D for 1 hr. This was followed by incubation with secondary antibodies: Alexa Fluor 568 goat anti-mouse IgG (H+L), Alexa Fluor 488 goat anti-rat IgG (H+L), and the avidin Alexa Fluor 350 for 1 hr. Slides were rinsed in PBS with 0.03% IGEPAL CA-630 after each incubation. After the last rinse in PBS/CA-630, coverslips were mounted on the slides with ProLong Gold Antifade reagent. A Zeiss fluorescent microscope and IP Lab software (Scanalytics) were used to capture images of IdU/CldU incorporated DNA molecules. Images were processed using Adobe Photoshop and aligned (using Adobe Illustrator) based on the positions of FISH signals that identify the 200 kb segments that contain the ter sequences.\n\n### Proximity ligation assay (PLA)\n\nMCF7 5C-TerB cells were seeded on poly-L-lysine-coated coverslips and transfected the day after as described before. Then, 24 hr after transfection, cells were washed with PBS, and fixed and permeabilized with 4% paraformaldehyde containing 0.2% Triton X-100 for 20 min on ice and blocked with PBS-BSA 3% overnight at 4\u00b0C. Coverslips were incubated with primary antibodies for 1 hr at room temperature (RT). Proximity ligation was performed using the Duolink In Situ Red Starter Kit Mouse/Rabbit (Sigma-Aldrich) according to the manufacturer\u2019s protocol. The oligonucleotides and antibody-nucleic acid conjugates used were those provided in the Sigma-Aldrich PLA kit. Images were quantified by counting the number of foci per nucleus using Nikon software.\n\n### Immunoprecipitation\n\nFor immunoprecipitation, MCF7 5C-TerB cells were pre-extracted using CSK100 buffer (100 mM NaCl, 300 mM sucrose, 3 mM MgCl2, 10 mM PIPES pH 6.8, 1 mM EGTA, 0.2% Triton X-100, anti-protease and anti-phosphatase) for 5 min on ice, fixed in 1% formaldehyde for 10 min on ice, and a 1% glycine solution was used to stop the reaction. After scraping the cells in ice-cold PBS and centrifugation, pellets were lysed in SDS lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.1% SDS, anti-proteases, and anti-phosphatases) for 10 min on ice and sheared for 3 min. Samples were cleared by centrifugation for 5 min at 4\u00b0C. Immunoprecipitations were performed on 10-fold diluted lysates in dilution buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 5 mM EDTA, 0.2% Triton X-100, anti-proteases and anti-phosphatases) with antibodies against GFP, \u03b3H2AX, or IgG overnight at 4\u00b0C on a wheel. Beads were extensively washed in the dilution buffer and denatured in 2\u00d7 Laemmli buffer.\n\nProteins were separated on 4\u201312% acrylamide SDS-PAGE, transferred on nitrocellulose membrane, and detected with the indicated antibodies described in Supplementary file 1b and ECL reagents.\n\n### Cellular fractionation\n\nFor the cellular fractionation, MCF7 5C-TerB cells were scraped in PBS, divided into two different tubes (1/3 of the volume for the whole-cell extract [WCE] and the remaining 2/3 for the fractionation) and centrifuged to keep the pellets.\n\nFor the WCE, cells were lysed in 1 volume of lysis buffer (50 mM Tris pH 7.5, 20 mM NaCl, 1 mM MgCl2, 0.1% SDS, anti-protease and anti-phosphatase) for 10 min at RT on a wheel and denaturated in 2\u00d7 Laemmli buffer.\n\nFor the fractionation, MCF7 5C-TerB cells were pre-extracted in 2 volumes of CSK100 (100 mM NaCl, 300 mM sucrose, 3 mM MgCl2, 10 mM PIPES pH 6.8, 1 mM EGTA, 0.2% Triton X-100, anti-protease and anti-phosphatase) for 15 min on ice, and centrifuged. The supernatant (SN) representing the soluble fraction was kept in a new tube (soluble fraction). The pellet was washed with CSK50 (50 mM NaCl, 300 mM sucrose, 3 mM MgCl2, 10 mM PIPES pH 6.8, 1 mM EGTA, 0.2% Triton X-100, anti-protease and anti-phosphatase) and resuspended in 2 volumes of CSK50 containing benzonase for 10 min on a rotating wheel, and the SN was kept after centrifugation (chromatin fraction). All the fractions were denaturated in 2\u00d7 Laemmli buffer.\n\nProteins were separated on 4\u201312% acrylamide SDS-PAGE, transferred on nitrocellulose membrane, and detected with the indicated antibodies described in Supplementary file 1b and ECL reagents.\n\n### Chromatin immunoprecipitation assay\n\nChIPs were performed using the ChIP-IT express according to the manufacturer\u2019s instructions. Cells were crosslinked, washed, harvested by scraping, and lysed according to the kit\u2019s instructions. Chromatin was sonicated to 200\u20131500 bp fragments and DNA concentration determined. Equal amount up to 15 ug of DNA was then used for each immunoprecipitation. The antibodies used are listed in Supplementary file 1b. DNA fragments were eluted, purified, and analyzed by SYBR Green real-time PCR. The sequences of primers used for qPCR are given in Supplementary file 1b. Experiments were repeated at least three times, and each real-time qPCR reaction was performed in duplicate.\n\n### Detection of DSBs using the T7 endonuclease assay\n\nMCF7 5C-TerB cells were seeded and transfected the day after with 120 pmol of Cas9 protein and 120 pmol of the sgRNA TerB1 using the Lipofectamine CRISPRMAX Cas9 transfection reagents (previously described). Then, 24 hr post-transfection, cells were lysed using a lysis buffer (100 mM NaCl, 10 mM Tris-HCl pH 8, 25 mM EDTA pH 8, 0,5% SDS) and 50 ug of Proteinase K overnight at 50\u00b0C with shaking. After addition of NaCl and mix for 1 min, the supernatant was put in a new tube and an ethanol precipitation was performed. A PCR to amplify the 900 bp region surrounding the sgRNA TerB1 site was conducted using PP9F and R. Heteroduplex were formed by heating and cooling down the samples, and a T7 endonuclease assay digestion was performed prior to electrophoresis for detection.\n\n### Cell cycle progression\n\nMCF7 5C-TerB cells were transfected as described before. Control cells were treated with 2 mM HU for 4 hr before harvesting. Cells were washed with PBS and fixed in 1 ml cold 70% ethanol for 30 min. Cells were pelleted and washed with PBS. Then, 100 \u00b5g/ml RNase A was added and 50 \u00b5g/ml PI solution was added directly to the pellet, mixed well, and incubated for 30 min at RT in the dark. A total of 50,000 cells per condition were analyzed by flow cytometry.\n\n### Immunofluorescence (\u03b3H2AX)\n\nCells were fixed with 4% PFA/PBS for 20 \u2009min, permeabilized with 0.5% Triton-X 100 for 10 \u2009min, washed three times in 1\u00d7 PBS, and blocked in 10% goat serum overnight at 4\u00b0C. The primary antibody (1:500) was incubated for 2 hr at RT. Cells were then washed three times in 1\u00d7 PBS. The secondary antibody (1:1500) was incubated for 1 hr at RT in dark. Cells were then washed again three times in 1\u00d7 PBS. Stained cells were mounted with mounting medium containing DAPI. Slides were imaged at 60\u00d7 (immersion oil) using Nikon A1 spinning disk confocal microscope.\n\n### Image analysis\n\nFor PLA and gH2AX experiments, slides were imaged at 60\u00d7 (immersion oil) with Nikon spinning disk confocal microscope. PLA foci per nucleus and gH2AX foci per nucleus were calculated using Nikon Elements AR Analysis Explorer (version 5.21.03), where DAPI was used as a mask for the nucleus. The number of PLA foci per nucleus was quantified to get the percentage of cells with one or two foci indicating a positive signal at the site-specific replication block. The number of gH2AX foci was counted for each DAPI to obtain the average number of gH2AX foci in each condition.\n\n### NGS sequencing of the MCF7 5C-TerB clone\n\nGenomic DNA was extracted from the cells and submitted to Novogene for sequencing. The samples were processed and whole-genome sequencing was performed using their hWGS service pipeline.\n\n### Data analysis and Statistics\n\nStatistical analysis for the various experiments was performed using GraphPad Prism version 9.4.0. Results are presented as mean \u00b1 standard error of the mean (SEM). A p value of <0.05 by Student\u2019s t-test was considered statistically significant. ns, nonsignificant, *p<0.05, **p<0.005, ***p<0.001.\n",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87357.3.sa0](https://doi.org/10.7554/eLife.87357.3.sa0)\n\nThis manuscript reports important data on the cellular response to a single site-specific replication fork block in human MCF7 cells. Compelling evidence shows the efficacy of the bacterial Tus-Ter system to stall replication forks in human cells. Fork stalling led to lasting ATR-dependent phosphorylation of histone H2AX but not of ATR itself and its downstream targets RPA and CHK1.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87357.3.sa1](https://doi.org/10.7554/eLife.87357.3.sa1)\n\nThe authors report the first use of the bacterial Tus-Ter replication block system in human cells. A single plasmid containing two divergently oriented five-fold TerB repeats was integrated on chromosome 12 of MCF7 cells. ChIP and PLA experiments convincingly demonstrate the occupancy of Tus at the Ter sites in cells. Using an elegant Single Molecule Analysis of Replicated DNA (SMARD) assay, compelling data demonstrate the replication block at Ter sites dependent on the presence of the protein. As an orthogonal method to demonstrate fork stalling, ChIP data show the accumulation of the replicative helicase component MCM3 and the repair protein FANCM around the Ter sites. Previous published work from the Scully and Hickson laboratories showed that Ter sites do not perturb replication fork progression and consistently the data show that the observed effects are dependent on expression of the Tus protein. The SMARD data reveal that about one third of the forks are arrested at Tus/Ter but it is unclear for how long forks remain stalled. Fork stalling led to a highly localized gammaH2AX response, as monitored by ChIP using primer pairs spread along the integrated plasmid carrying the Ter sites. This response was shown to be dependent on ATR using the ATR inhibitor VE-822. This contrasts with a single Cas9-induced DSB between the two Ter sites, which causes a more spread gammaH2AX response measured at two sites flanking the DSB. The difference between the DSB and the Tus-induced stall is very significant. Interestingly, despite evidence for ATR activation through the gammaH2AX response, no evidence for phosphorylation of ATR-T1989, CHK1-S345, or RPA2-S33 could be found under fork stalling conditions. The global replication inhibitor hydroxyurea (HU) elicited phosphorylation of ATR-T1989, CHK1-S345, or RPA2-S33. In this context, it would have been of interest to examine if a single DSB in the Ter region leads to phosphorylation of ATR-T1989, CHK1-S345, or RPA2-S33 and cell cycle arrest. The replication inhibitor HU led to an increase in gamma H2AX foci consistent with a global replication stress response. Overall, this is a well written manuscript, and the data provide convincing evidence that the Tus-Ter system poses a site-specific replication fork block in MCF7 cells leading to a localized ATR-dependent DNA damage checkpoint response that is distinct from the more global response to HU or DSBs.\n",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "09dc1aa9-27cd-424d-8df3-bf55bb59495c",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C1",
+      "claim": "The 23 bp TerB sequence in interaction with the Tus protein have been successfully used in yeast and mice to create artificial RFBs.",
+      "claim_type": "EXPLICIT",
+      "source": "The 23 bp TerB sequence in interaction with the Tus protein have been successfully used in yeast and mice to create artificial RFBs (Larsen et al., 2014a; Willis et al., 2018; Willis et al., 2017; Willis et al., 2014; Willis and Scully, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior work in yeast and mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "99fd8b14-a881-412c-9b6c-c059ae7db57c",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C2",
+      "claim": "MCF7 5C-TerB clone has a unique integrated copy of the pWB15 plasmid carrying two sets of five TerB repeat sequences in opposite, non-permissive orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the effect of site-specific replication blocks at a genomic locus in human cells, we used a previously established MCF7 clone with a unique integrated copy of the pWB15 plasmid carrying two sets of five TerB repeat sequences in opposite, non-permissive orientations with respect to the incoming replication forks (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to the experimental system described and shown in figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c55001e3-2398-450a-9f0a-31f2bb868959",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C3",
+      "claim": "Whole-genome sequencing confirmed the single-copy integration of the plasmid at hg38 chr12:95325001.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-genome sequencing of the clone was carried out to confirm the single-copy integration of the plasmid at hg38 chr12:95325001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole-genome sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "13cb84f6-d02a-4b52-96fd-a78e8ea55119",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C4",
+      "claim": "Tus signal is specifically enriched over 20 times compared to the vector control condition in proximity to the TerB sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tus signal is specifically enriched over 20 times compared to the vector control (VC) condition in proximity to the TerB sequences (PP9, 2, and 47) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "3119450b-e2c7-44e4-ac6d-2e546939f1d9",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C5",
+      "claim": "19% of the cells transfected with the two tagged Tus were harboring one or two PLA signal versus 9% of the cells transfected with the VC.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed 19% of the cells transfected with the two tagged Tus were harboring one or two PLA signal versus 9% of the cells transfected with the VC (Figure 1E), a significant enrichment of the PLA signal when Tus was bound to TerB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PLA data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "3ecdafce-0c4d-4399-b678-40c1260a0f75",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C6",
+      "claim": "The binding of Tus protein with the TerB sequences indicates a specific interaction in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate a specific interaction of the Tus protein with the TerB sequences in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the ChIP and PLA data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "84f41808-5a08-418f-83c6-6c9e53b52cc2",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C7",
+      "claim": "The Tus-TerB interaction can induce an RFB in mouse embryonic cells using a chromosomally integrated system.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been demonstrated that the Tus-TerB interaction can induce an RFB in mouse embryonic cells using a chromosomally integrated system (Willis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "4fe57680-7e33-4620-96df-db2c3f6deba6",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C8",
+      "claim": "When Tus was expressed, transition sites were found accumulated near the TerB regions compared to the random signal spread on the 200 kb region when Tus is not expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "When Tus was expressed, these transition sites were found accumulated near the TerB regions (Figure 2D, arrows within the white oval) compared to the random signal spread on the 200 kb region when Tus is not expressed (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SMARD data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "62b31ac6-d69e-4400-810b-fe32eedc1110",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C9",
+      "claim": "The binding of Tus on TerB arrays can impair the replisome progression at genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the percentage of molecules with replication forks at each 5 kb interval in the 200 kb SfiI segment containing TerB sequences (Figure 2E and F) and confirmed an accumulation of forks at the TerB sequences only when Tus was expressed (Figure 2F, black arrow), supporting that the binding of Tus on TerB arrays can impair the replisome progression at genomic loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of SMARD data shown in Figures 2E and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "e43aa417-a2e3-4b39-9d45-a75ea605a1f0",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C10",
+      "claim": "Expression of the Tus protein alone does not alter the direction of replication fork progression along the 200 kb SfiI segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, expression of the Tus protein alone does not alter the direction of replication fork progression along the 200 kb SfiI segment where forks predominantly progress from the 3\u2032 to 5\u2032 direction in cells both with and without Tus expression as analyzed by the percentage of molecules with IdU incorporation at each 5 kb interval (Figure 2\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by replication profile data shown in Figure 2\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "05166291-b811-46c6-95a6-a0e401bb4e9f",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C11",
+      "claim": "No significant difference was observed in the global replication fork speed in cells with or without Tus expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no significant difference was observed in the global replication fork speed in cells with or without Tus expression (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data in Supplementary file 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c9d32336-d7ba-4a73-8087-e5289254e871",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C12",
+      "claim": "When Tus bound the TerB sequences integrated within chromosome 12, it creates a physical barrier and an obstacle to the replication fork progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that when Tus bound the TerB sequences integrated within chromosome 12, it creates a physical barrier and an obstacle to the replication fork progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the SMARD and ChIP data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "0cf41203-5162-41b0-9291-9795052ccc65",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C13",
+      "claim": "MCM3 was threefold more enriched upstream of the TerB arrays at the PP0-2 and PP10 sites compared to the surrounding primer pairs when Tus was expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "When Tus was expressed, MCM3 was threefold more enriched upstream of the TerB arrays at the PP0-2 and PP10 sites compared to the surrounding primer pairs (Figure 2G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "76d40762-e820-4182-9224-e5c809143f3a",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C14",
+      "claim": "There is an enrichment of the DNA repair scaffold protein FANCM at the TerB sites mirroring the MCM3 enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we find that there is an enrichment of the DNA repair scaffold protein FANCM at the TerB sites mirroring the MCM3 enrichment (Figure 2\u2014figure supplement 2), indicative of the stalled replication forks as previously described (Collis et al., 2008; Nandi and Whitby, 2012; Panday et al., 2021; Xue et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP data shown in Figure 2\u2014figure supplement 2 and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "1769dcb7-77a4-43dc-9d7d-2d3435a0078d",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C15",
+      "claim": "Tus expression induces an RFB at the TerB arrays impairing the replisome progression during S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that Tus expression induces an RFB at the TerB arrays impairing the replisome progression during S-phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the MCM3 and FANCM enrichment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "598e3f10-304a-4c6b-8c01-f58bb869e983",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C16",
+      "claim": "One of the earliest responses to replication stress is the phosphorylation of the histone variant H2AX on serine 139 (\u03b3H2AX) by members of the phosphoinositide 3-kinase (PI3K)-like family (PIKK).",
+      "claim_type": "EXPLICIT",
+      "source": "One of the earliest responses to replication stress is the phosphorylation of the histone variant H2AX on serine 139 (\u03b3H2AX) by members of the phosphoinositide 3-kinase (PI3K)-like family (PIKK) (Ward and Chen, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "f8fa346e-a2ff-47a1-8b2c-9367d0719423",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C17",
+      "claim": "GFP-Tus and \u03b3H2AX were immunoprecipitated together using GFP or \u03b3H2AX antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a co-immunoprecipitation assay with the chromatin fraction of cross-linked cells expressing either GFP tag or GFP-Tus, we found that GFP-Tus and \u03b3H2AX were immunoprecipitated together using GFP or \u03b3H2AX antibodies (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "48b3b7c7-0e50-4f40-8c48-e2f5bc2adff4",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C18",
+      "claim": "16% of the HA-Tus transfected cells were harboring at least one PLA signal versus 3% of the VC transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 16% of the HA-Tus transfected cells were harboring at least one PLA signal versus 3% of the VC transfected cells (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PLA data shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "5e269e37-251c-408f-a820-400743e63ccf",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C19",
+      "claim": "\u03b3H2AX is enriched strictly co-localizing with the Tus-Ter interaction sites (PP9 and PP47), suggesting a local role of \u03b3H2AX in response to stalled RFs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an enrichment of \u03b3H2AX, strictly co-localizing with the Tus-Ter interaction sites (PP9 and PP47), suggesting a local role of \u03b3H2AX in response to stalled RFs (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "09905800-a3d2-4219-bbfa-253542ed55c7",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C20",
+      "claim": "The \u03b3H2AX signal after a site-directed DSB spreads, in contrast to the very tight local signal observed at the Tus-TerB RFB.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to the observed spreading of the \u03b3H2AX signal after a site-directed DSB (Berkovich et al., 2007; Chailleux et al., 2014; Clouaire et al., 2018; Savic et al., 2009). To corroborate this observation in our integrated cassette, we generated a site-specific DSB by expressing Cas9 targeted to the integrated cassette (Figure 3\u2014figure supplement 1A\u2013C). We assessed \u03b3H2AX using the ChIP-qPCR assay 24 hr after transfection and noticed enrichment at the distal primer pairs (PP0-2 and PP10), contrasting with the very tight local signal observed at the Tus-TerB RFB (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of ChIP-qPCR data for Cas9-induced DSB versus Tus-TerB RFB, and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "8c20b2cf-91c7-469c-a21d-23169241a270",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C21",
+      "claim": "No significant \u03b3H2AX signal was found between VC or Tus expression, supporting the lack of global response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not find any significant \u03b3H2AX signal between VC or Tus expression (Figure 3\u2014figure supplement 2A and B), supporting the lack of global response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "e5fdbfa7-9bd2-48dd-aa7a-f93a22ca2fbe",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C22",
+      "claim": "The RFB generated by the interaction between Tus and the TerB arrays activates a stress response that stimulates the phosphorylation of H2AX, concentrated around the fork block.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the RFB generated by the interaction between Tus and the TerB arrays activates a stress response that stimulates the phosphorylation of H2AX, concentrated around the fork block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the \u03b3H2AX enrichment data at TerB sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "7b58569b-8db6-4ca2-a692-169ec5ea4718",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C23",
+      "claim": "ATR is known to phosphorylate H2AX in response to replication stress and plays a pivotal role in the surveillance of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "ATR is known to phosphorylate H2AX in response to replication stress and plays a pivotal role in the surveillance of DNA replication (Ward and Chen, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "264fe12a-026e-443b-b535-1de3f27531e0",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C24",
+      "claim": "Tus expression alone did not activate the global ATR-dependent checkpoint as the level of phospho-protein remained the same as the VC control.",
+      "claim_type": "EXPLICIT",
+      "source": "Tus expression alone did not activate the global ATR-dependent checkpoint as the level of phospho-protein remained the same as the VC control (Figure 4A, lanes 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "42847bcf-e243-4d1f-969b-10146ac838fa",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C25",
+      "claim": "No observable difference in cell cycle progression was found between VC or Tus expression alone, supporting the lack of global response.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find any observable difference in cell cycle progression between VC or Tus expression alone (Figure 4\u2014figure supplement 1A and B), supporting the lack of global response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell cycle analysis data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "8d1abb4c-5f77-42ba-bda8-b20331e96193",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C26",
+      "claim": "A 4 hr treatment with ATRi reduced the level of phospho-ATR TH1989, reflecting a decrease in ATR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A 4 hr treatment with ATRi reduced the level of phospho-ATR TH1989, reflecting a decrease in ATR activity (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "806e2af7-a495-4042-a2a4-82f97e22f104",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C27",
+      "claim": "The \u03b3H2AX enrichment in the vicinity of TerB sites after Tus expression was remarkably decreased upon ATRi treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, the \u03b3H2AX enrichment in the vicinity of TerB sites after Tus expression was remarkably decreased upon ATRi treatment (Figure 4C\u2013E, PP9 and PP47), implying that the Tus-TerB RFB activates a localized stress response that stimulated the local phosphorylation of H2AX.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data shown in Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "1a63b1bf-60b3-4f7e-bfa6-e907c0052281",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C28",
+      "claim": "The Tus-TerB RFB activates a localized stress response that stimulated the local phosphorylation of H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, the \u03b3H2AX enrichment in the vicinity of TerB sites after Tus expression was remarkably decreased upon ATRi treatment (Figure 4C\u2013E, PP9 and PP47), implying that the Tus-TerB RFB activates a localized stress response that stimulated the local phosphorylation of H2AX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the ATRi treatment effect on \u03b3H2AX enrichment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "6e8f24e9-b1de-4fdc-9dc7-fd3bc3b29e82",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C29",
+      "claim": "A local activation of the intra-S checkpoint via the ATR kinase and rapid phosphorylation of H2AX could mediate the recruitment of repair factors near the damage site.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest a local activation of the intra-S checkpoint via the ATR kinase and rapid phosphorylation of H2AX, which could mediate the recruitment of repair factors near the damage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the ATR-dependent \u03b3H2AX enrichment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "ca39dcbd-9753-4436-a85c-cf6b336b1a27",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C30",
+      "claim": "Replication stress occurs during the S-phase of the cell cycle, when the replication machinery encounters DNA lesions that cause stalling of replicative polymerases and can be a significant cause of genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication stress occurs during the S-phase of the cell cycle, when the replication machinery encounters DNA lesions that cause stalling of replicative polymerases and can be a significant cause of genomic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "8e9dd302-73c3-4146-8ff7-6064beb3f7fe",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C31",
+      "claim": "If the stalled forks cannot be processed, they can result in DNA breakage, mutations, and chromosomal rearrangements, leading to the development of many different human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "If the stalled forks cannot be processed, they can result in DNA breakage, mutations, and chromosomal rearrangements, leading to the development of many different human cancers (Gaillard et al., 2015; Tubbs and Nussenzweig, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c33ae7e3-1202-4273-8fd3-846e92eaac3f",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C32",
+      "claim": "The Tus protein efficiently binds at the TerB sequences using ChIP-qPCR and PLA in MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the Tus protein efficiently binds at the TerB sequences using ChIP-qPCR and PLA in MCF7 cells (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-qPCR and PLA data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c1e26363-ea9b-465c-b460-1c54106656ef",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C33",
+      "claim": "The integrated system was able to cause site-specific RFB at TerB sequences when Tus was introduced with the use of the SMARD technique.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that this integrated system was able to cause site-specific RFB at TerB sequences when Tus was introduced with the use of the SMARD technique and observed the accumulation of replication fork protein MCM3 upstream of TerB sequences (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SMARD and ChIP data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "28fc4a1f-892c-4651-9d4c-07b0ee093010",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C34",
+      "claim": "The integrated Tus-TerB system acts as an efficient site-specific RFB, providing valuable insights into the local processing of a stalled single fork in human cells and its difference from global replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the integrated Tus-TerB system acts as an efficient site-specific RFB, providing valuable insights into the local processing of a stalled single fork in human cells and its difference from global replication stress (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the collective data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "6f15df29-95ce-4ee0-aa13-06ebb0df37f1",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C35",
+      "claim": "The site-specific replication stress leads to the accumulation of \u03b3H2AX at the site of fork block when Tus was expressed by co-immunoprecipitation of Tus and \u03b3H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the site-specific replication stress leads to the accumulation of \u03b3H2AX at the site of fork block when Tus was expressed by co-immunoprecipitation of Tus and \u03b3H2AX (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "caeec7b9-56dd-40ff-b3b4-0ffed4ce14a3",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C36",
+      "claim": "\u03b3H2AX is localized at the site of Tus-TerB using PLA and ChIP-qPCR assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we confirmed that \u03b3H2AX is localized at the site of Tus-TerB using PLA and ChIP-qPCR assays (Figure 3D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PLA and ChIP-qPCR data shown in Figures 3D and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c17c0b19-1204-4e30-93ac-0a7af048ce18",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C37",
+      "claim": "The \u03b3H2AX signal is being constrained to a region of less than a kilobase from the TerB sites by torsional stress generated when the replication fork encounters the barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the \u03b3H2AX signal is being constrained to a region of less than a kilobase from the TerB sites by tortional stress generated when the replication fork encounters the barrier and is not influenced by well-defined topological domains that are one measure of the functional units of the genome (Dixon et al., 2012; Rao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the localized \u03b3H2AX enrichment data and citations to prior work on topological domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "cfc2c32f-c99e-459d-a6be-8d54e51d2f76",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C38",
+      "claim": "There was no observable difference in global replication profiles or the activation of global checkpoint markers such as pRPA, pCHK1, and pATR, with or without Tus protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there was no observable difference in global replication profiles or the activation of global checkpoint markers such as pRPA, pCHK1, and pATR, with or without Tus protein expression, contrasting with the differences observed in the presence and absence of HU-induced replication stress (Figure 4A, Supplementary file 1a, Figure 3\u2014figure supplement 2, and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblotting, replication profile, and cell cycle data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "54490b5c-a123-44f6-b9d8-5edb4d6c3319",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C39",
+      "claim": "Tus-TerB-induced replication fork stall does not activate global ATR-dependent S-phase checkpoint signaling, suggesting that a local response is occurring at the stalled replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Tus-TerB-induced replication fork stall does not activate global ATR-dependent S-phase checkpoint signaling, suggesting that a local response is occurring at the stalled replication fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the lack of global checkpoint activation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "1ffd4067-0271-4847-9aab-e0fd138e2a36",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C40",
+      "claim": "Upon ATR inhibition, the enrichment of phosphorylated H2AX at TerB sites was significantly reduced when Tus was expressed, which indicates local ATR signaling is responsible for the phosphorylation of H2AX at the stalled site.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, upon ATR inhibition, we observed that the enrichment of phosphorylated H2AX at TerB sites was significantly reduced when Tus was expressed, which indicates local ATR signaling is responsible for the phosphorylation of H2AX at the stalled site (Figure 4C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data with ATRi treatment shown in Figures 4C and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "abeb5d5b-cf70-4f38-ae00-92274468af85",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C41",
+      "claim": "A similar localized response had previously been observed in yeast, with a site-specific DSB in G1 cells, where there was no activation of the global checkpoint signaling, but \u03b3H2AX signaling was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar localized response had previously been observed in yeast, with a site-specific DSB in G1 cells, where there was no activation of the global checkpoint signaling, but \u03b3H2AX signaling was observed (Janke et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "aa01a104-c339-4634-a708-154ca9bbd146",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C42",
+      "claim": "This localized ATR-dependent \u03b3H2AX differs from the well-observed ATM-dependent spreading of \u03b3H2AX signal after a site-directed double-strand break.",
+      "claim_type": "EXPLICIT",
+      "source": "This localized ATR-dependent \u03b3H2AX differs from the well-observed ATM-dependent spreading of \u03b3H2AX signal after a site-directed double-strand break (Berkovich et al., 2007; Chailleux et al., 2014; Clouaire et al., 2018; Savic et al., 2009) and suggests a distinct local intra-S phase checkpoint is being activated in response to the single RFB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison to prior work on ATM-dependent \u03b3H2AX spreading.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "7eaedb2b-8ef4-4846-bd45-8b138c814c35",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C43",
+      "claim": "A distinct local intra-S phase checkpoint is being activated in response to the single RFB.",
+      "claim_type": "EXPLICIT",
+      "source": "This localized ATR-dependent \u03b3H2AX differs from the well-observed ATM-dependent spreading of \u03b3H2AX signal after a site-directed double-strand break (Berkovich et al., 2007; Chailleux et al., 2014; Clouaire et al., 2018; Savic et al., 2009) and suggests a distinct local intra-S phase checkpoint is being activated in response to the single RFB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the localized ATR-dependent \u03b3H2AX data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "bb0a7f30-1ade-4072-a958-80bf31187513",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C44",
+      "claim": "In the Tus-TerB system, there is no known dissociation of the replicative helicase from the polymerase, which is responsible for the ssDNA signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Tus-TerB system, there is no known dissociation of the replicative helicase from the polymerase, which is responsible for the ssDNA signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of the Tus-TerB system mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "9f934ae2-7459-4714-aef3-c0f83c5e4425",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C45",
+      "claim": "ATR is expected to be activated independently of ATRIP, likely due to local changes in chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, just like ATM can be activated independently of the MRE11 complex (Bakkenist and Kastan, 2003), we expect that ATR is activated independently of ATRIP, likely due to local changes in chromatin that will be investigated in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on analogy to ATM activation and citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "b7bdcf6e-f880-4985-9422-683caf950f91",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C46",
+      "claim": "During extensive DNA damage, the genome-wide checkpoint response activates ATR/CHK1 globally, which leads to the slowing of all replication forks in the cell, inhibition of cell cycle progression, and suppression of late origin firing.",
+      "claim_type": "EXPLICIT",
+      "source": "During extensive DNA damage, the genome-wide checkpoint response activates ATR/CHK1 globally, which leads to the slowing of all replication forks in the cell, inhibition of cell cycle progression, and suppression of late origin firing; to provide sufficient time for DNA repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "835ebf8d-2c0d-4841-88bd-e7aaba55d89d",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C47",
+      "claim": "A local checkpoint response occurs when one or a few replication forks encounter a DNA lesion and activates ATR/CHK1 signaling at local sites of fork stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that a local checkpoint response occurs when one or a few replication forks encounter a DNA lesion and activates ATR/CHK1 signaling at local sites of fork stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on prior hypotheses in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "15d080a9-62bb-44dc-8752-6a686182251b",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C48",
+      "claim": "The local ATR response has been hypothesized to be transient, in which the fork moves slowly only at stalled sites to promote fork stabilization, restart the stalled fork, and suppress recombination without triggering the global checkpoint response.",
+      "claim_type": "EXPLICIT",
+      "source": "The local ATR response has been hypothesized to be transient, in which the fork moves slowly only at stalled sites to promote fork stabilization, restart the stalled fork, and suppress recombination without triggering the global checkpoint response (Iyer and Rhind, 2017; Iyer and Rhind, 2013; Kaufmann et al., 1980; Merrick et al., 2004; Saxena and Zou, 2022; Willis and Rhind, 2009; Zeman and Cimprich, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "58143d08-77c2-41c2-9bf7-81747c2df24f",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C49",
+      "claim": "The local ATR-dependent checkpoint signaling can result in a rapid and controlled response to allow RFB resolution through the recruitment of repair factors to the damaged site.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that the local ATR-dependent checkpoint signaling can result in a rapid and controlled response to allow RFB resolution through the recruitment of repair factors to the damaged site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "4fb8700a-c1e5-4c52-abb1-32ea90acd6ab",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C50",
+      "claim": "The factors might include those involved in fork stabilization, fork reversal, fork cleavage, and homology-dependent replication restart.",
+      "claim_type": "EXPLICIT",
+      "source": "The factors might include those involved in fork stabilization, fork reversal, fork cleavage, and homology-dependent replication restart (Saxena and Zou, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "e502c577-3768-440a-b18f-79792e7f0860",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C51",
+      "claim": "The Tus-TerB system has previously been employed in mouse embryonic stem cells to measure and investigate the DNA repair pathway choice.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tus-TerB system has previously been employed in mouse embryonic stem cells to measure and investigate the DNA repair pathway choice (Chandramouly et al., 2013; Panday et al., 2021; Willis et al., 2017; Willis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "78476ab5-c0cc-472e-9772-c1b3256a8b6a",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C52",
+      "claim": "The Tus-TerB block is robust and is not dissociated by the action of DNA helicases such as PIF1.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tus-TerB block is robust and is not dissociated by the action of DNA helicases such as PIF1, corroborated in previous yeast studies that have demonstrated that the 'sweepase' RRM3 is unable to resolve this RFB (Larsen et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "6e2a8db3-a2db-45b8-b18b-ae6e9fb16074",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C53",
+      "claim": "It is likely that the RFB is resolved either by incoming replication forks leading to termination at the TerB site or by fork cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that the RFB is resolved either by incoming replication forks leading to termination at the TerB site or by fork cleavage (Larsen et al., 2014b; Willis et al., 2017; Willis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from prior work and the robustness of the Tus-TerB block.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "f37c87d9-fff4-4c00-9bd7-3c11c9e675fb",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C54",
+      "claim": "Fork reversal at the Tus-TerB site has been observed in the yeast system, but not for the mammalian systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Fork reversal at the Tus-TerB site has been observed in the yeast system (Larsen et al., 2014b; Marie and Symington, 2022), but not for the mammalian systems, and it is unlikely that shifting the position of the RFB would make it easier to resolve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work in yeast and inference about mammalian systems.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "21d920ed-10c9-42d7-9499-6e7d3a9c6ad9",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C55",
+      "claim": "Fork cleavage is the most likely mechanism for resolving the RFB.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, fork cleavage is the most likely mechanism for resolving the RFB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the robustness of the Tus-TerB block and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "3f617e65-ee32-414d-8503-e60fabf91017",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C56",
+      "claim": "Previous work has shown that FANCM acts as a scaffolding protein for recruitment of different repair protein complexes involved in the stalled replication fork rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that FANCM acts as a scaffolding protein for recruitment of different repair protein complexes involved in the stalled replication fork rescue (Panday et al., 2021; Willis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "4e8472e4-6682-4817-b6b1-e66c4cde717d",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C57",
+      "claim": "The FANCM protein is enriched at the site of the RFB induced by Tus-TerB, confirming a similar phenomenon observed in mouse cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the FANCM protein is enriched at the site of the RFB induced by Tus-TerB (Figure 2\u2014figure supplement 2), confirming a similar phenomenon observed in mouse cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP data shown in Figure 2\u2014figure supplement 2 and comparison to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "ffa83172-c5d9-4afc-a2cd-c4cb43db84be",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C58",
+      "claim": "It is yet to be determined whether FANCM recruitment to the RFB precedes local H2AX phosphorylation by ATR or whether FANCM is recruited as a consequence of the \u03b3H2AX signal to help elicit the downstream DNA damage response (DDR).",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is yet to be determined whether FANCM recruitment to the RFB precedes local H2AX phosphorylation by ATR or whether FANCM is recruited as a consequence of the \u03b3H2AX signal to help elicit the downstream DNA damage response (DDR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim acknowledges uncertainty about the temporal relationship between FANCM recruitment and \u03b3H2AX phosphorylation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "1bee8789-5955-47bd-acba-64aae5e9dd0c",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C59",
+      "claim": "The protein complex, 9-1-1 (RAD9A, HUS1, RAD1), and the subsequently recruited TOPBP1, may also play a role at this local ATR-dependent intra-S checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "We also anticipate that the protein complex, 9-1-1 (RAD9A, HUS1, RAD1), and the subsequently recruited TOPBP1, may also play a role at this local ATR-dependent intra-S checkpoint (Helt et al., 2005; Parrilla-Castellar et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "e5bcf434-8a4d-4534-b85e-f47b090143a5",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C60",
+      "claim": "It will be important to test whether the local-S phase model remains supported when exploring endogenous lesions that occur when replication forks encounter secondary structures such as R-loops, G-quadruplexes, and common fragile sites characterized by trinucleotide repeat expansion [(CAG)n/(CTG)n].",
+      "claim_type": "EXPLICIT",
+      "source": "While the Tus-TerB system is an important tool in deciphering signaling at individual replication forks, it will be important to test whether the local-S phase model remains supported when exploring endogenous lesions that occur when replication forks encounter secondary structures such as R-loops, G-quadruplexes, and common fragile sites characterized by trinucleotide repeat expansion [(CAG)n/(CTG)n] (Brickner et al., 2022; Bryan, 2019; Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting future directions based on citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "80d6f8da-ac41-4994-a285-b09b9da29cb9",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C61",
+      "claim": "The Tus-TerB system acts as an efficient RFB and activates local ATR checkpoint signaling at the stall site, leading to phosphorylation and accumulation of the DNA damage sensor protein \u03b3H2AX, which is dependent on the ATR kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results indicate that Tus-TerB system acts as an efficient RFB and activates local ATR checkpoint signaling at the stall site, leading to phosphorylation and accumulation of the DNA damage sensor protein \u03b3H2AX, which is dependent on the ATR kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "69a68d43-5fa3-4e3e-85f4-cadacd1b09a9",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C62",
+      "claim": "The local \u03b3H2AX accumulation at the stalled region would lead to the recruitment of DNA repair factors for resolution of the fork.",
+      "claim_type": "EXPLICIT",
+      "source": "The local \u03b3H2AX accumulation at the stalled region would lead to the recruitment of DNA repair factors for resolution of the fork (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the data and presented in the model in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "553e5a04-f853-4687-a258-447b0504e95b",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C63",
+      "claim": "The site-specific fork block is dependent on the local ATR S-phase checkpoint signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings reveal the signaling mechanism of the Tus/TerB-induced replication block and showed that the site-specific fork block is dependent on the local ATR S-phase checkpoint signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "4c979b21-c221-48f3-bc4c-cc5f70d43095",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C64",
+      "claim": "The genome contains natural impediments, which cause replication stalling such as common fragile sites, repeated sequences, non-B structures, sites of collision between transcription and replication machinery, or DNA-protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome contains natural impediments, which cause replication stalling such as common fragile sites, repeated sequences, non-B structures, sites of collision between transcription and replication machinery, or DNA-protein complexes (Mirkin and Mirkin, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "29ce89f6-ab6d-45b2-8e52-a71f3ad4d3c7",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C65",
+      "claim": "These replication fork barriers (RFB) can impede the progression of the replication machinery and, if unresolved, lead to genomic instability, a common hallmark of aneuploidy, neurological and neuromuscular disorders, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "These replication fork barriers (RFB) can impede the progression of the replication machinery and, if unresolved, lead to genomic instability, a common hallmark of aneuploidy, neurological and neuromuscular disorders, and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "7ec18786-f47f-46d4-9580-a86807836fe6",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C66",
+      "claim": "During replication stress, the intra-S phase checkpoint pathway can be activated at a local and global level, which is a critical step to process the DNA lesions and maintaining genome integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "During replication stress, the intra-S phase checkpoint pathway can be activated at a local and global level, which is a critical step to process the DNA lesions and maintaining genome integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "8269a6b7-c942-4f60-ad24-2ecbb9108706",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C67",
+      "claim": "The S-phase checkpoint involves the uncoupling of replicative polymerases from the replicative helicase and the generation of ssDNA, which rapidly gets coated with RPA.",
+      "claim_type": "EXPLICIT",
+      "source": "The S-phase checkpoint involves the uncoupling of replicative polymerases from the replicative helicase and the generation of ssDNA, which rapidly gets coated with RPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "ae5300c7-ea4e-453c-9ea7-2e48d38eeaec",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C68",
+      "claim": "This activates ATR/ATRIP kinase signaling with its effector kinase CHK1, plus phosphorylation of H2AX at Ser139 in response to a variety of lesions that promote cell cycle arrest, fork stabilization, and restart.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, this activates ATR/ATRIP kinase signaling with its effector kinase CHK1, plus phosphorylation of H2AX at Ser139 in response to a variety of lesions that promote cell cycle arrest, fork stabilization, and restart (Iyer and Rhind, 2017; Iyer and Rhind, 2013; Willis and Rhind, 2009; Zeman and Cimprich, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "d296b9bf-0632-4b91-8a66-67aaf3b1e4b8",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C69",
+      "claim": "Previous studies suggest that the local and global intra-S checkpoints are two distinct mechanisms that can be distinguished by the signaling intensity of detecting DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggest that the local and global intra-S checkpoints are two distinct mechanisms that can be distinguished by the signaling intensity of detecting DNA damage (Saxena and Zou, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "3637bdaa-63c5-4238-a7b1-e215d9261c62",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C70",
+      "claim": "It is thought that a threshold of DNA damage must be reached to activate the global checkpoint and impact cell cycle progression during replication.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that a threshold of DNA damage must be reached to activate the global checkpoint and impact cell cycle progression during replication (Bantele et al., 2019; Shimada et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "b166eb29-cd53-4e40-bc68-ca09111cdceb",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C71",
+      "claim": "The local checkpoint reacts to a unique replication fork stalling site, which does not impact overall cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "The local checkpoint reacts to a unique replication fork stalling site, which does not impact overall cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on prior hypotheses in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "a855b410-cde1-4865-98b1-8696ed284e02",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C72",
+      "claim": "The proteins involved in the global replication stress response have been identified using DNA damaging agents that lead to multiple DNA lesion formation randomly throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteins involved in the global replication stress response have been identified using DNA damaging agents that lead to multiple DNA lesion formation randomly throughout the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "a2560c29-247c-42f6-9b98-e5737a6b9f61",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C73",
+      "claim": "The mechanism and timing of the checkpoint pathway at a local scale remain largely unknown and are critical to understanding the series of processes at a single RF stall.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the mechanism and timing of the checkpoint pathway at a local scale remain largely unknown and are critical to understanding the series of processes at a single RF stall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim identifies a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "908adec7-3fdd-43d6-8e47-fe7f13e28e70",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C74",
+      "claim": "In the Escherichia coli genome, the DNA pausing sequences called terminator (Ter) are recognized by a protein called Tus to cause a polar site-specific arrest of the RF at the end of the bacterial chromosome replication.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Escherichia coli genome, the DNA pausing sequences called terminator (Ter) are recognized by a protein called Tus to cause a polar site-specific arrest of the RF at the end of the bacterial chromosome replication (Hiasa and Marians, 1994; Hidaka et al., 1988; Mulcair et al., 2006; Roecklein et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "04d6200b-3e53-4035-a6ee-99117e5e4a74",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C75",
+      "claim": "The Tus-Ter complex leads to a temporarily locked complex on DNA that can be overcome by the fork arriving in the opposite direction, displacing Tus to terminate replication.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tus-Ter complex leads to a temporarily locked complex on DNA that can be overcome by the fork arriving in the opposite direction, displacing Tus to terminate replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of the Tus-Ter system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "fbc433ba-0e72-4a0e-90d3-cc220a530139",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C76",
+      "claim": "The single fork RFB was sufficient to activate a local, but not global, ATR-dependent checkpoint response that leads to phosphorylation and accumulation of DNA damage sensor protein \u03b3H2AX, confined locally to within a kilobase of the site of stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The single fork RFB was sufficient to activate a local, but not global, ATR-dependent checkpoint response that leads to phosphorylation and accumulation of DNA damage sensor protein \u03b3H2AX, confined locally to within a kilobase of the site of stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a main finding from the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "b4abcb2f-8f23-4039-bd8c-fdd6a7f4f814",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C77",
+      "claim": "These data support a model of local management of fork stalling, which allows global replication at sites other than the RFB to continue to progress without delay.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support a model of local management of fork stalling, which allows global replication at sites other than the RFB to continue to progress without delay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "d1987ab7-8efa-420f-b5c2-bbd36c691789",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C78",
+      "claim": "The Tus protein binding to TerB sequences creates an efficient site-specific RFB.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilized the Escherichia coli-based Tus-Ter system in human MCF7 cells and showed that the Tus protein binding to TerB sequences creates an efficient site-specific RFB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a main finding from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "6d7a2cf0-cc9f-421b-823a-d5fd5a857b47",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "claim_id": "C79",
+      "claim": "ATM can be activated independently of the MRE11 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, just like ATM can be activated independently of the MRE11 complex (Bakkenist and Kastan, 2003), we expect that ATR is activated independently of ATRIP, likely due to local changes in chromatin that will be investigated in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "74baee3a-5fbd-4184-a700-1af17f4b476c",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Tus protein efficiently binds to TerB sequences in the MCF7 5C-TerB cell line, which contains a unique integrated copy of the pWB15 plasmid at chromosome 12. This binding was demonstrated using ChIP-qPCR showing >20-fold enrichment and PLA showing 19% of cells with positive signals versus 9% in controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6 and C32 collectively demonstrate specific Tus-TerB binding in human cells through multiple orthogonal methods (ChIP-qPCR, PLA, whole-genome sequencing). The quantitative data (C4, C5) show statistically significant enrichment, and the integration site is validated by sequencing (C3). The convergence of multiple techniques strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c9481497-2416-48c6-a8fe-2c682c7cc362",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Tus-TerB system creates an efficient site-specific replication fork barrier (RFB) in human cells. SMARD analysis showed accumulation of replication forks at TerB sites when Tus was expressed, with threefold enrichment of MCM3 and enrichment of FANCM at the barrier, without affecting global replication fork speed or direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C15, C33, and C78 provide converging evidence from SMARD (C8, C9), ChIP-qPCR for MCM3 (C13) and FANCM (C14), and global replication analysis (C10, C11). The data demonstrate local fork stalling without global effects, supported by quantitative measurements and appropriate controls. The SMARD technique provides direct visualization of fork accumulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03b3H2AX accumulates locally at the Tus-TerB RFB site. Co-immunoprecipitation showed GFP-Tus and \u03b3H2AX interact, PLA showed 16% of HA-Tus cells had signals versus 3% controls, and ChIP-qPCR demonstrated enrichment strictly co-localizing with TerB sites (PP9, PP47), contrasting with spreading observed after Cas9-induced DSBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22, C35-C36 demonstrate localized \u03b3H2AX accumulation through co-IP (C17), PLA (C18), and ChIP-qPCR (C19). The comparison to Cas9-induced DSBs (C20) provides important context showing the signal is localized rather than spreading. The lack of global \u03b3H2AX signal (C21) supports the local nature of the response. Multiple orthogonal methods converge on this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "7a94a330-ec3d-4bdc-9b42-bb4328263909",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Tus-TerB RFB activates a local, but not global, ATR-dependent checkpoint response. Tus expression did not activate global checkpoint markers (pRPA, pCHK1, pATR) or alter cell cycle progression, but ATR inhibitor treatment significantly reduced \u03b3H2AX enrichment at TerB sites, demonstrating local ATR-dependent H2AX phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 and C38-C40 provide strong evidence for local ATR activation through: (1) absence of global checkpoint activation by immunoblotting (C24, C38) and cell cycle analysis (C25), (2) validation of ATRi efficacy (C26), and (3) ATRi-dependent reduction of \u03b3H2AX at TerB sites (C27, C40). The experimental design with appropriate controls (HU treatment, ATRi) and multiple readouts supports the conclusion of local versus global checkpoint activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "55ea995b-f10e-4f48-ae50-900f2225321f",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The integrated Tus-TerB system acts as an efficient site-specific RFB that activates local ATR checkpoint signaling, leading to localized \u03b3H2AX phosphorylation within a kilobase of the stall site, without triggering global checkpoint responses or affecting cell cycle progression. This supports a model of local management of fork stalling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C61, C63, C76, and C77 represent the main conclusions synthesizing the experimental findings. These summary claims are well-supported by the collective data from SMARD, ChIP, PLA, immunoblotting, and cell cycle analyses presented in the other claim groups. The model of local versus global checkpoint activation is consistently supported across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "46c3c5a6-0d1a-457e-97df-87fcc9626f12",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The \u03b3H2AX signal is constrained to less than a kilobase from TerB sites by torsional stress generated when the replication fork encounters the barrier, and is not influenced by topological domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C37 proposes a mechanism (torsional stress) for the localized \u03b3H2AX signal based on the observed tight localization. While the localization is well-documented (C19, C20), the specific mechanism of torsional stress is inferred rather than directly demonstrated. The claim about topological domains not influencing the signal is speculative without direct experimental evidence testing this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "88dc4576-56d4-4fa5-97e3-8709d84f58d1",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Local ATR activation and \u03b3H2AX phosphorylation could mediate recruitment of repair factors to resolve the RFB, potentially including factors involved in fork stabilization, reversal, cleavage, and homology-dependent restart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29, C49, C50, and C62 are speculative about downstream consequences of the local checkpoint activation. While FANCM enrichment is observed (C14, C57), the broader recruitment of repair factors and the functional consequences for RFB resolution are not directly demonstrated in this study. These claims represent reasonable hypotheses for future work rather than supported conclusions from the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "1b3c685d-2a8c-4054-bc97-8390e3a96988",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The localized ATR-dependent \u03b3H2AX response differs from ATM-dependent spreading after DSBs and suggests activation of a distinct local intra-S phase checkpoint in response to the single RFB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C43 are supported by the comparison between Tus-TerB-induced \u03b3H2AX (localized, C19-C20) and Cas9-induced DSB \u03b3H2AX (spreading, C20), along with citations to prior work on ATM-dependent spreading. The ATR-dependence is demonstrated by ATRi experiments (C27, C40). The distinction between local and global responses is well-established by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "2a582b66-2439-42c2-8a76-9a75255f3c45",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In the Tus-TerB system, ATR is expected to be activated independently of ATRIP, likely due to local chromatin changes, by analogy to ATM activation independent of the MRE11 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44, C45, and C79 propose a mechanism for ATR activation based on the absence of known helicase-polymerase uncoupling and analogy to ATM activation. While the reasoning is logical, this mechanism is not directly tested. The claim acknowledges this is speculative and requires future investigation. Without direct experimental evidence for ATRIP-independent ATR activation or measurement of chromatin changes, this remains a hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "21dc2ab8-b272-49ca-b55d-16f677c40d6a",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Tus-TerB block is robust and not dissociated by helicases like PIF1. Fork cleavage is proposed as the most likely mechanism for RFB resolution, as fork reversal has been observed in yeast but not mammalian systems, and incoming forks could lead to termination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C55 discuss RFB resolution mechanisms based primarily on prior work in yeast (C52, C54) and inference (C53, C55). While the robustness of the Tus-TerB block is supported by citations, the specific resolution mechanism in this human cell system is not directly demonstrated. The claim that fork cleavage is \"most likely\" is speculative without direct experimental evidence in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "edc6706b-8025-4f31-83a7-3997347e82f5",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "FANCM is enriched at the Tus-TerB RFB site, but the temporal relationship between FANCM recruitment and \u03b3H2AX phosphorylation is undetermined. The 9-1-1 complex and TOPBP1 may also play roles at this checkpoint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 showing FANCM enrichment is supported by ChIP data (Figure 2\u2014figure supplement 2). However, C58 explicitly acknowledges uncertainty about the temporal relationship with \u03b3H2AX phosphorylation, and C59 about 9-1-1/TOPBP1 involvement is speculative. While FANCM enrichment is demonstrated, the mechanistic details and involvement of other factors require further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "5732865f-a2d8-4cb9-830c-60b73d8df176",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Tus-TerB system from E. coli has been successfully used in yeast and mice to create artificial RFBs, and the Tus-Ter interaction causes polar site-specific arrest of replication forks in bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7, C51, C74, and C75 describe prior work and established knowledge about the Tus-TerB system, supported by multiple citations. These claims provide important context for the current study but represent background rather than new findings. The citations appear appropriate and the claims accurately represent prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "fa9966c2-9ba8-484a-9cae-5804344176ef",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on replication stress, checkpoint pathways, and the distinction between local and global checkpoint responses based on established knowledge and prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C23, C30-C31, C46, C64-C73 represent established scientific knowledge and prior work, supported by appropriate citations. These provide necessary background and context for the study but do not represent new findings. The claims accurately represent current understanding in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "01cb19fd-a9e4-4407-966a-0b951c320d90",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A similar localized response without global checkpoint activation but with \u03b3H2AX signaling was previously observed in yeast with site-specific DSBs in G1 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 accurately cites prior work in yeast (Janke et al., 2010) showing a similar phenomenon of localized response without global checkpoint activation. This provides important comparative context for the current findings and is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "4faaf398-2dca-4e4d-9ab9-9dc47d11e231",
+      "content_id": "b5eaa60e-4d85-4215-af35-0217e372f541",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Future work should test whether the local S-phase checkpoint model applies to endogenous lesions such as R-loops, G-quadruplexes, and common fragile sites with trinucleotide repeats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 appropriately identifies important future directions for the research. This is a reasonable suggestion for extending the findings to physiologically relevant contexts, though it represents proposed future work rather than current results. The claim is appropriately framed as a future direction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "6d401e52-eb35-4463-897e-ecc99f97d1e9",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors established an MCF7 cell line with a single integrated copy of the pWB15 plasmid containing two sets of five TerB repeat sequences on chromosome 12. They demonstrated that Tus protein efficiently binds to the TerB sequences using ChIP-qPCR (showing >20-fold enrichment) and PLA assays (19% vs 9% in controls).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly state that 'ChIP and PLA experiments convincingly demonstrate the occupancy of Tus at the Ter sites in cells.' The editor notes 'compelling evidence shows the efficacy of the bacterial Tus-Ter system to stall replication forks in human cells,' affirming the binding data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Using SMARD analysis, the authors demonstrated that Tus binding to TerB sequences creates a site-specific replication fork barrier (RFB) in human cells, with accumulation of transition sites near TerB regions when Tus is expressed. The RFB does not alter global replication fork speed or direction of fork progression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers state 'Using an elegant Single Molecule Analysis of Replicated DNA (SMARD) assay, compelling data demonstrate the replication block at Ter sites dependent on the presence of the protein.' The reviewer notes 'about one third of the forks are arrested at Tus/Ter,' confirming the site-specific nature of the block.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "6dbfdc7b-4765-47b0-88e9-27ca87504bb7",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors showed that MCM3 (replicative helicase component) and FANCM (DNA repair scaffold protein) accumulate at the TerB sites when Tus is expressed, with MCM3 showing threefold enrichment upstream of TerB arrays and FANCM enrichment mirroring MCM3 patterns.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly state 'As an orthogonal method to demonstrate fork stalling, ChIP data show the accumulation of the replicative helicase component MCM3 and the repair protein FANCM around the Ter sites,' confirming these findings as valid evidence for fork stalling.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "9fbd0611-d859-4884-9458-aeea9eb46702",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors demonstrated that \u03b3H2AX accumulates locally at the Tus-TerB RFB site through co-immunoprecipitation of GFP-Tus and \u03b3H2AX, PLA showing 16% vs 3% signal in controls, and ChIP-qPCR showing enrichment strictly co-localizing with Tus-Ter interaction sites (PP9 and PP47).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers state 'Fork stalling led to a highly localized gammaH2AX response, as monitored by ChIP using primer pairs spread along the integrated plasmid carrying the Ter sites,' confirming the localized accumulation of \u03b3H2AX at the RFB site.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "1b5f7a5e-1f53-444e-bbdc-cf04f8948fbc",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors showed that the \u03b3H2AX signal at the Tus-TerB RFB is highly localized (within a kilobase), contrasting with the spreading \u03b3H2AX signal observed after a Cas9-induced double-strand break at the same locus, which showed enrichment at distal primer pairs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly note 'This contrasts with a single Cas9-induced DSB between the two Ter sites, which causes a more spread gammaH2AX response measured at two sites flanking the DSB. The difference between the DSB and the Tus-induced stall is very significant,' confirming this key distinction.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "164c83d7-46d0-4a98-8c53-001d97bbb9cb",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors found that Tus expression alone does not activate global ATR-dependent checkpoint signaling, as phosphorylation levels of ATR-T1989, CHK1-S345, and RPA2-S33 remained unchanged compared to vector control, and no differences in cell cycle progression were observed.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers state 'Interestingly, despite evidence for ATR activation through the gammaH2AX response, no evidence for phosphorylation of ATR-T1989, CHK1-S345, or RPA2-S33 could be found under fork stalling conditions,' and note this contrasts with HU treatment, confirming the lack of global checkpoint activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "9cbd6a05-9b2c-491e-9f86-9788a6ca2c8f",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors demonstrated that \u03b3H2AX enrichment at TerB sites is ATR-dependent, as treatment with ATR inhibitor VE-822 remarkably decreased \u03b3H2AX enrichment at PP9 and PP47 when Tus was expressed, indicating local ATR signaling is responsible for H2AX phosphorylation at the stalled site.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly state 'This response was shown to be dependent on ATR using the ATR inhibitor VE-822,' confirming the ATR-dependence of the localized \u03b3H2AX response. The editor notes 'lasting ATR-dependent phosphorylation of histone H2AX but not of ATR itself and its downstream targets.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c6687079-59ab-4b00-90fd-31b24a3f6acf",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors found no significant global \u03b3H2AX signal by immunofluorescence between vector control and Tus expression conditions, and no observable differences in global replication profiles or checkpoint marker activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note 'The global replication inhibitor hydroxyurea (HU) elicited phosphorylation of ATR-T1989, CHK1-S345, or RPA2-S33' and 'HU led to an increase in gamma H2AX foci consistent with a global replication stress response,' implicitly confirming the contrast with Tus-TerB which shows no global response.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "cc715a15-bdac-4dd8-980d-2e88735b100b",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors conclude that a distinct local intra-S phase checkpoint is activated in response to the single RFB, with the Tus-TerB system activating local ATR checkpoint signaling leading to phosphorylation and accumulation of \u03b3H2AX confined locally to within a kilobase of the stalling site, supporting a model of local management of fork stalling that allows global replication to continue without delay.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers state 'Overall, this is a well written manuscript, and the data provide convincing evidence that the Tus-Ter system poses a site-specific replication fork block in MCF7 cells leading to a localized ATR-dependent DNA damage checkpoint response that is distinct from the more global response to HU or DSBs.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "e3a6b302-8a67-4b66-a28a-de775362c2df",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors cite prior work showing that the bacterial Tus-Ter system has been successfully used in yeast and mice to create artificial RFBs, and that the Tus-TerB interaction can induce RFBs in mouse embryonic cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note 'Previous published work from the Scully and Hickson laboratories showed that Ter sites do not perturb replication fork progression and consistently the data show that the observed effects are dependent on expression of the Tus protein,' acknowledging the prior work and its consistency with current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c99a0066-2ab3-4035-803e-fb4b397b973f",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors speculate that local ATR-dependent checkpoint signaling could mediate recruitment of repair factors to the damage site, that ATR may be activated independently of ATRIP due to local chromatin changes, and that proteins like 9-1-1 complex and TOPBP1 may play roles. They acknowledge uncertainty about the temporal relationship between FANCM recruitment and \u03b3H2AX phosphorylation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are speculative interpretations and future directions acknowledged by the authors. Reviewers do not explicitly evaluate these speculations, though they note 'it is unclear for how long forks remain stalled,' indicating some mechanistic details remain to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "e27da496-9f1c-4b06-9108-232447ad90d6",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "The authors provide background on replication stress, checkpoint pathways, and the distinction between local and global checkpoint responses, citing established knowledge about ATR/CHK1 signaling, \u03b3H2AX phosphorylation, and the gap in understanding local checkpoint mechanisms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are background claims supported by citations to prior work. Reviewers do not challenge this background information and use similar terminology in their evaluation, implicitly accepting these established concepts.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e",
+      "content_id": "b742396b-61ec-4fa8-b34c-6dd2978a78eb",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The authors discuss the Tus-TerB system as an efficient site-specific RFB tool, compare their findings to prior work in yeast showing localized responses, and discuss potential mechanisms for RFB resolution including fork cleavage and termination, noting that the Tus-TerB block is robust and not dissociated by helicases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm 'the data provide convincing evidence that the Tus-Ter system poses a site-specific replication fork block in MCF7 cells' and note the system's utility. The discussion of mechanisms is consistent with the reviewers' acceptance of the overall findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "99fd8b14-a881-412c-9b6c-c059ae7db57c",
+      "result_id": "74baee3a-5fbd-4184-a700-1af17f4b476c"
+    },
+    {
+      "claim_id": "c55001e3-2398-450a-9f0a-31f2bb868959",
+      "result_id": "74baee3a-5fbd-4184-a700-1af17f4b476c"
+    },
+    {
+      "claim_id": "13cb84f6-d02a-4b52-96fd-a78e8ea55119",
+      "result_id": "74baee3a-5fbd-4184-a700-1af17f4b476c"
+    },
+    {
+      "claim_id": "3119450b-e2c7-44e4-ac6d-2e546939f1d9",
+      "result_id": "74baee3a-5fbd-4184-a700-1af17f4b476c"
+    },
+    {
+      "claim_id": "3ecdafce-0c4d-4399-b678-40c1260a0f75",
+      "result_id": "74baee3a-5fbd-4184-a700-1af17f4b476c"
+    },
+    {
+      "claim_id": "c33ae7e3-1202-4273-8fd3-846e92eaac3f",
+      "result_id": "74baee3a-5fbd-4184-a700-1af17f4b476c"
+    },
+    {
+      "claim_id": "4fe57680-7e33-4620-96df-db2c3f6deba6",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "62b31ac6-d69e-4400-810b-fe32eedc1110",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "e43aa417-a2e3-4b39-9d45-a75ea605a1f0",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "05166291-b811-46c6-95a6-a0e401bb4e9f",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "c9d32336-d7ba-4a73-8087-e5289254e871",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "0cf41203-5162-41b0-9291-9795052ccc65",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "76d40762-e820-4182-9224-e5c809143f3a",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "1769dcb7-77a4-43dc-9d7d-2d3435a0078d",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "c1e26363-ea9b-465c-b460-1c54106656ef",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "d1987ab7-8efa-420f-b5c2-bbd36c691789",
+      "result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362"
+    },
+    {
+      "claim_id": "f8fa346e-a2ff-47a1-8b2c-9367d0719423",
+      "result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e"
+    },
+    {
+      "claim_id": "48b3b7c7-0e50-4f40-8c48-e2f5bc2adff4",
+      "result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e"
+    },
+    {
+      "claim_id": "5e269e37-251c-408f-a820-400743e63ccf",
+      "result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e"
+    },
+    {
+      "claim_id": "09905800-a3d2-4219-bbfa-253542ed55c7",
+      "result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e"
+    },
+    {
+      "claim_id": "8c20b2cf-91c7-469c-a21d-23169241a270",
+      "result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e"
+    },
+    {
+      "claim_id": "e5fdbfa7-9bd2-48dd-aa7a-f93a22ca2fbe",
+      "result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e"
+    },
+    {
+      "claim_id": "6f15df29-95ce-4ee0-aa13-06ebb0df37f1",
+      "result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e"
+    },
+    {
+      "claim_id": "caeec7b9-56dd-40ff-b3b4-0ffed4ce14a3",
+      "result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e"
+    },
+    {
+      "claim_id": "264fe12a-026e-443b-b535-1de3f27531e0",
+      "result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909"
+    },
+    {
+      "claim_id": "42847bcf-e243-4d1f-969b-10146ac838fa",
+      "result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909"
+    },
+    {
+      "claim_id": "8d1abb4c-5f77-42ba-bda8-b20331e96193",
+      "result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909"
+    },
+    {
+      "claim_id": "806e2af7-a495-4042-a2a4-82f97e22f104",
+      "result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909"
+    },
+    {
+      "claim_id": "1a63b1bf-60b3-4f7e-bfa6-e907c0052281",
+      "result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909"
+    },
+    {
+      "claim_id": "cfc2c32f-c99e-459d-a6be-8d54e51d2f76",
+      "result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909"
+    },
+    {
+      "claim_id": "54490b5c-a123-44f6-b9d8-5edb4d6c3319",
+      "result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909"
+    },
+    {
+      "claim_id": "1ffd4067-0271-4847-9aab-e0fd138e2a36",
+      "result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909"
+    },
+    {
+      "claim_id": "28fc4a1f-892c-4651-9d4c-07b0ee093010",
+      "result_id": "55ea995b-f10e-4f48-ae50-900f2225321f"
+    },
+    {
+      "claim_id": "80d6f8da-ac41-4994-a285-b09b9da29cb9",
+      "result_id": "55ea995b-f10e-4f48-ae50-900f2225321f"
+    },
+    {
+      "claim_id": "553e5a04-f853-4687-a258-447b0504e95b",
+      "result_id": "55ea995b-f10e-4f48-ae50-900f2225321f"
+    },
+    {
+      "claim_id": "fbc433ba-0e72-4a0e-90d3-cc220a530139",
+      "result_id": "55ea995b-f10e-4f48-ae50-900f2225321f"
+    },
+    {
+      "claim_id": "b4abcb2f-8f23-4039-bd8c-fdd6a7f4f814",
+      "result_id": "55ea995b-f10e-4f48-ae50-900f2225321f"
+    },
+    {
+      "claim_id": "c17c0b19-1204-4e30-93ac-0a7af048ce18",
+      "result_id": "46c3c5a6-0d1a-457e-97df-87fcc9626f12"
+    },
+    {
+      "claim_id": "6e8f24e9-b1de-4fdc-9dc7-fd3bc3b29e82",
+      "result_id": "88dc4576-56d4-4fa5-97e3-8709d84f58d1"
+    },
+    {
+      "claim_id": "58143d08-77c2-41c2-9bf7-81747c2df24f",
+      "result_id": "88dc4576-56d4-4fa5-97e3-8709d84f58d1"
+    },
+    {
+      "claim_id": "4fb8700a-c1e5-4c52-abb1-32ea90acd6ab",
+      "result_id": "88dc4576-56d4-4fa5-97e3-8709d84f58d1"
+    },
+    {
+      "claim_id": "69a68d43-5fa3-4e3e-85f4-cadacd1b09a9",
+      "result_id": "88dc4576-56d4-4fa5-97e3-8709d84f58d1"
+    },
+    {
+      "claim_id": "aa01a104-c339-4634-a708-154ca9bbd146",
+      "result_id": "1b3c685d-2a8c-4054-bc97-8390e3a96988"
+    },
+    {
+      "claim_id": "7eaedb2b-8ef4-4846-bd45-8b138c814c35",
+      "result_id": "1b3c685d-2a8c-4054-bc97-8390e3a96988"
+    },
+    {
+      "claim_id": "bb0a7f30-1ade-4072-a958-80bf31187513",
+      "result_id": "2a582b66-2439-42c2-8a76-9a75255f3c45"
+    },
+    {
+      "claim_id": "9f934ae2-7459-4714-aef3-c0f83c5e4425",
+      "result_id": "2a582b66-2439-42c2-8a76-9a75255f3c45"
+    },
+    {
+      "claim_id": "6d7a2cf0-cc9f-421b-823a-d5fd5a857b47",
+      "result_id": "2a582b66-2439-42c2-8a76-9a75255f3c45"
+    },
+    {
+      "claim_id": "78476ab5-c0cc-472e-9772-c1b3256a8b6a",
+      "result_id": "21dc2ab8-b272-49ca-b55d-16f677c40d6a"
+    },
+    {
+      "claim_id": "6e2a8db3-a2db-45b8-b18b-ae6e9fb16074",
+      "result_id": "21dc2ab8-b272-49ca-b55d-16f677c40d6a"
+    },
+    {
+      "claim_id": "f37c87d9-fff4-4c00-9bd7-3c11c9e675fb",
+      "result_id": "21dc2ab8-b272-49ca-b55d-16f677c40d6a"
+    },
+    {
+      "claim_id": "21d920ed-10c9-42d7-9499-6e7d3a9c6ad9",
+      "result_id": "21dc2ab8-b272-49ca-b55d-16f677c40d6a"
+    },
+    {
+      "claim_id": "3f617e65-ee32-414d-8503-e60fabf91017",
+      "result_id": "edc6706b-8025-4f31-83a7-3997347e82f5"
+    },
+    {
+      "claim_id": "4e8472e4-6682-4817-b6b1-e66c4cde717d",
+      "result_id": "edc6706b-8025-4f31-83a7-3997347e82f5"
+    },
+    {
+      "claim_id": "ffa83172-c5d9-4afc-a2cd-c4cb43db84be",
+      "result_id": "edc6706b-8025-4f31-83a7-3997347e82f5"
+    },
+    {
+      "claim_id": "1bee8789-5955-47bd-acba-64aae5e9dd0c",
+      "result_id": "edc6706b-8025-4f31-83a7-3997347e82f5"
+    },
+    {
+      "claim_id": "09dc1aa9-27cd-424d-8df3-bf55bb59495c",
+      "result_id": "5732865f-a2d8-4cb9-830c-60b73d8df176"
+    },
+    {
+      "claim_id": "84f41808-5a08-418f-83c6-6c9e53b52cc2",
+      "result_id": "5732865f-a2d8-4cb9-830c-60b73d8df176"
+    },
+    {
+      "claim_id": "e502c577-3768-440a-b18f-79792e7f0860",
+      "result_id": "5732865f-a2d8-4cb9-830c-60b73d8df176"
+    },
+    {
+      "claim_id": "908adec7-3fdd-43d6-8e47-fe7f13e28e70",
+      "result_id": "5732865f-a2d8-4cb9-830c-60b73d8df176"
+    },
+    {
+      "claim_id": "04d6200b-3e53-4035-a6ee-99117e5e4a74",
+      "result_id": "5732865f-a2d8-4cb9-830c-60b73d8df176"
+    },
+    {
+      "claim_id": "598e3f10-304a-4c6b-8c01-f58bb869e983",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "7b58569b-8db6-4ca2-a692-169ec5ea4718",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "ca39dcbd-9753-4436-a85c-cf6b336b1a27",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "8e9dd302-73c3-4146-8ff7-6064beb3f7fe",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "b7bdcf6e-f880-4985-9422-683caf950f91",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "4c979b21-c221-48f3-bc4c-cc5f70d43095",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "29ce89f6-ab6d-45b2-8e52-a71f3ad4d3c7",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "7ec18786-f47f-46d4-9580-a86807836fe6",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "8269a6b7-c942-4f60-ad24-2ecbb9108706",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "ae5300c7-ea4e-453c-9ea7-2e48d38eeaec",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "d296b9bf-0632-4b91-8a66-67aaf3b1e4b8",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "3637bdaa-63c5-4238-a7b1-e215d9261c62",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "b166eb29-cd53-4e40-bc68-ca09111cdceb",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "a855b410-cde1-4865-98b1-8696ed284e02",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "a2560c29-247c-42f6-9b98-e5737a6b9f61",
+      "result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef"
+    },
+    {
+      "claim_id": "abeb5d5b-cf70-4f38-ae00-92274468af85",
+      "result_id": "01cb19fd-a9e4-4407-966a-0b951c320d90"
+    },
+    {
+      "claim_id": "e5bcf434-8a4d-4534-b85e-f47b090143a5",
+      "result_id": "4faaf398-2dca-4e4d-9ab9-9dc47d11e231"
+    },
+    {
+      "claim_id": "99fd8b14-a881-412c-9b6c-c059ae7db57c",
+      "result_id": "6d401e52-eb35-4463-897e-ecc99f97d1e9"
+    },
+    {
+      "claim_id": "c55001e3-2398-450a-9f0a-31f2bb868959",
+      "result_id": "6d401e52-eb35-4463-897e-ecc99f97d1e9"
+    },
+    {
+      "claim_id": "13cb84f6-d02a-4b52-96fd-a78e8ea55119",
+      "result_id": "6d401e52-eb35-4463-897e-ecc99f97d1e9"
+    },
+    {
+      "claim_id": "3119450b-e2c7-44e4-ac6d-2e546939f1d9",
+      "result_id": "6d401e52-eb35-4463-897e-ecc99f97d1e9"
+    },
+    {
+      "claim_id": "3ecdafce-0c4d-4399-b678-40c1260a0f75",
+      "result_id": "6d401e52-eb35-4463-897e-ecc99f97d1e9"
+    },
+    {
+      "claim_id": "c33ae7e3-1202-4273-8fd3-846e92eaac3f",
+      "result_id": "6d401e52-eb35-4463-897e-ecc99f97d1e9"
+    },
+    {
+      "claim_id": "4fe57680-7e33-4620-96df-db2c3f6deba6",
+      "result_id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4"
+    },
+    {
+      "claim_id": "62b31ac6-d69e-4400-810b-fe32eedc1110",
+      "result_id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4"
+    },
+    {
+      "claim_id": "e43aa417-a2e3-4b39-9d45-a75ea605a1f0",
+      "result_id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4"
+    },
+    {
+      "claim_id": "05166291-b811-46c6-95a6-a0e401bb4e9f",
+      "result_id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4"
+    },
+    {
+      "claim_id": "c9d32336-d7ba-4a73-8087-e5289254e871",
+      "result_id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4"
+    },
+    {
+      "claim_id": "c1e26363-ea9b-465c-b460-1c54106656ef",
+      "result_id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4"
+    },
+    {
+      "claim_id": "d1987ab7-8efa-420f-b5c2-bbd36c691789",
+      "result_id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4"
+    },
+    {
+      "claim_id": "0cf41203-5162-41b0-9291-9795052ccc65",
+      "result_id": "6dbfdc7b-4765-47b0-88e9-27ca87504bb7"
+    },
+    {
+      "claim_id": "76d40762-e820-4182-9224-e5c809143f3a",
+      "result_id": "6dbfdc7b-4765-47b0-88e9-27ca87504bb7"
+    },
+    {
+      "claim_id": "1769dcb7-77a4-43dc-9d7d-2d3435a0078d",
+      "result_id": "6dbfdc7b-4765-47b0-88e9-27ca87504bb7"
+    },
+    {
+      "claim_id": "4e8472e4-6682-4817-b6b1-e66c4cde717d",
+      "result_id": "6dbfdc7b-4765-47b0-88e9-27ca87504bb7"
+    },
+    {
+      "claim_id": "f8fa346e-a2ff-47a1-8b2c-9367d0719423",
+      "result_id": "9fbd0611-d859-4884-9458-aeea9eb46702"
+    },
+    {
+      "claim_id": "48b3b7c7-0e50-4f40-8c48-e2f5bc2adff4",
+      "result_id": "9fbd0611-d859-4884-9458-aeea9eb46702"
+    },
+    {
+      "claim_id": "5e269e37-251c-408f-a820-400743e63ccf",
+      "result_id": "9fbd0611-d859-4884-9458-aeea9eb46702"
+    },
+    {
+      "claim_id": "6f15df29-95ce-4ee0-aa13-06ebb0df37f1",
+      "result_id": "9fbd0611-d859-4884-9458-aeea9eb46702"
+    },
+    {
+      "claim_id": "caeec7b9-56dd-40ff-b3b4-0ffed4ce14a3",
+      "result_id": "9fbd0611-d859-4884-9458-aeea9eb46702"
+    },
+    {
+      "claim_id": "09905800-a3d2-4219-bbfa-253542ed55c7",
+      "result_id": "1b5f7a5e-1f53-444e-bbdc-cf04f8948fbc"
+    },
+    {
+      "claim_id": "aa01a104-c339-4634-a708-154ca9bbd146",
+      "result_id": "1b5f7a5e-1f53-444e-bbdc-cf04f8948fbc"
+    },
+    {
+      "claim_id": "264fe12a-026e-443b-b535-1de3f27531e0",
+      "result_id": "164c83d7-46d0-4a98-8c53-001d97bbb9cb"
+    },
+    {
+      "claim_id": "42847bcf-e243-4d1f-969b-10146ac838fa",
+      "result_id": "164c83d7-46d0-4a98-8c53-001d97bbb9cb"
+    },
+    {
+      "claim_id": "cfc2c32f-c99e-459d-a6be-8d54e51d2f76",
+      "result_id": "164c83d7-46d0-4a98-8c53-001d97bbb9cb"
+    },
+    {
+      "claim_id": "54490b5c-a123-44f6-b9d8-5edb4d6c3319",
+      "result_id": "164c83d7-46d0-4a98-8c53-001d97bbb9cb"
+    },
+    {
+      "claim_id": "806e2af7-a495-4042-a2a4-82f97e22f104",
+      "result_id": "9cbd6a05-9b2c-491e-9f86-9788a6ca2c8f"
+    },
+    {
+      "claim_id": "1a63b1bf-60b3-4f7e-bfa6-e907c0052281",
+      "result_id": "9cbd6a05-9b2c-491e-9f86-9788a6ca2c8f"
+    },
+    {
+      "claim_id": "1ffd4067-0271-4847-9aab-e0fd138e2a36",
+      "result_id": "9cbd6a05-9b2c-491e-9f86-9788a6ca2c8f"
+    },
+    {
+      "claim_id": "8c20b2cf-91c7-469c-a21d-23169241a270",
+      "result_id": "c6687079-59ab-4b00-90fd-31b24a3f6acf"
+    },
+    {
+      "claim_id": "cfc2c32f-c99e-459d-a6be-8d54e51d2f76",
+      "result_id": "c6687079-59ab-4b00-90fd-31b24a3f6acf"
+    },
+    {
+      "claim_id": "7eaedb2b-8ef4-4846-bd45-8b138c814c35",
+      "result_id": "cc715a15-bdac-4dd8-980d-2e88735b100b"
+    },
+    {
+      "claim_id": "80d6f8da-ac41-4994-a285-b09b9da29cb9",
+      "result_id": "cc715a15-bdac-4dd8-980d-2e88735b100b"
+    },
+    {
+      "claim_id": "553e5a04-f853-4687-a258-447b0504e95b",
+      "result_id": "cc715a15-bdac-4dd8-980d-2e88735b100b"
+    },
+    {
+      "claim_id": "fbc433ba-0e72-4a0e-90d3-cc220a530139",
+      "result_id": "cc715a15-bdac-4dd8-980d-2e88735b100b"
+    },
+    {
+      "claim_id": "b4abcb2f-8f23-4039-bd8c-fdd6a7f4f814",
+      "result_id": "cc715a15-bdac-4dd8-980d-2e88735b100b"
+    },
+    {
+      "claim_id": "09dc1aa9-27cd-424d-8df3-bf55bb59495c",
+      "result_id": "e3a6b302-8a67-4b66-a28a-de775362c2df"
+    },
+    {
+      "claim_id": "84f41808-5a08-418f-83c6-6c9e53b52cc2",
+      "result_id": "e3a6b302-8a67-4b66-a28a-de775362c2df"
+    },
+    {
+      "claim_id": "e502c577-3768-440a-b18f-79792e7f0860",
+      "result_id": "e3a6b302-8a67-4b66-a28a-de775362c2df"
+    },
+    {
+      "claim_id": "908adec7-3fdd-43d6-8e47-fe7f13e28e70",
+      "result_id": "e3a6b302-8a67-4b66-a28a-de775362c2df"
+    },
+    {
+      "claim_id": "04d6200b-3e53-4035-a6ee-99117e5e4a74",
+      "result_id": "e3a6b302-8a67-4b66-a28a-de775362c2df"
+    },
+    {
+      "claim_id": "6e8f24e9-b1de-4fdc-9dc7-fd3bc3b29e82",
+      "result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f"
+    },
+    {
+      "claim_id": "9f934ae2-7459-4714-aef3-c0f83c5e4425",
+      "result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f"
+    },
+    {
+      "claim_id": "58143d08-77c2-41c2-9bf7-81747c2df24f",
+      "result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f"
+    },
+    {
+      "claim_id": "4fb8700a-c1e5-4c52-abb1-32ea90acd6ab",
+      "result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f"
+    },
+    {
+      "claim_id": "ffa83172-c5d9-4afc-a2cd-c4cb43db84be",
+      "result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f"
+    },
+    {
+      "claim_id": "1bee8789-5955-47bd-acba-64aae5e9dd0c",
+      "result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f"
+    },
+    {
+      "claim_id": "e5bcf434-8a4d-4534-b85e-f47b090143a5",
+      "result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f"
+    },
+    {
+      "claim_id": "69a68d43-5fa3-4e3e-85f4-cadacd1b09a9",
+      "result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f"
+    },
+    {
+      "claim_id": "598e3f10-304a-4c6b-8c01-f58bb869e983",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "7b58569b-8db6-4ca2-a692-169ec5ea4718",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "ca39dcbd-9753-4436-a85c-cf6b336b1a27",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "8e9dd302-73c3-4146-8ff7-6064beb3f7fe",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "b7bdcf6e-f880-4985-9422-683caf950f91",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "4c979b21-c221-48f3-bc4c-cc5f70d43095",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "29ce89f6-ab6d-45b2-8e52-a71f3ad4d3c7",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "7ec18786-f47f-46d4-9580-a86807836fe6",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "8269a6b7-c942-4f60-ad24-2ecbb9108706",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "ae5300c7-ea4e-453c-9ea7-2e48d38eeaec",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "d296b9bf-0632-4b91-8a66-67aaf3b1e4b8",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "3637bdaa-63c5-4238-a7b1-e215d9261c62",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "b166eb29-cd53-4e40-bc68-ca09111cdceb",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "a855b410-cde1-4865-98b1-8696ed284e02",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "a2560c29-247c-42f6-9b98-e5737a6b9f61",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "6d7a2cf0-cc9f-421b-823a-d5fd5a857b47",
+      "result_id": "e27da496-9f1c-4b06-9108-232447ad90d6"
+    },
+    {
+      "claim_id": "28fc4a1f-892c-4651-9d4c-07b0ee093010",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    },
+    {
+      "claim_id": "abeb5d5b-cf70-4f38-ae00-92274468af85",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    },
+    {
+      "claim_id": "835ebf8d-2c0d-4841-88bd-e7aaba55d89d",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    },
+    {
+      "claim_id": "15d080a9-62bb-44dc-8752-6a686182251b",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    },
+    {
+      "claim_id": "78476ab5-c0cc-472e-9772-c1b3256a8b6a",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    },
+    {
+      "claim_id": "6e2a8db3-a2db-45b8-b18b-ae6e9fb16074",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    },
+    {
+      "claim_id": "f37c87d9-fff4-4c00-9bd7-3c11c9e675fb",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    },
+    {
+      "claim_id": "21d920ed-10c9-42d7-9499-6e7d3a9c6ad9",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    },
+    {
+      "claim_id": "3f617e65-ee32-414d-8503-e60fabf91017",
+      "result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "41083fa2-a90d-438b-9d00-ff4f1230d666",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "74baee3a-5fbd-4184-a700-1af17f4b476c",
+      "peer_result_id": "6d401e52-eb35-4463-897e-ecc99f97d1e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on Tus-TerB binding claims (C2-C6, C32). Both evaluations find the evidence from ChIP-qPCR, PLA, and sequencing convincing and sufficient to demonstrate specific binding in human cells.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "5f479790-d075-4586-9ebf-212c69b0f0cf",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "5732865f-a2d8-4cb9-830c-60b73d8df176",
+      "peer_result_id": "e3a6b302-8a67-4b66-a28a-de775362c2df",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on background claims (C1, C7, C51, C74, C75) about the Tus-TerB system from prior work. Both acknowledge these as established context supported by appropriate citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "74c785c7-0c5c-4be8-b739-7bdbed527a2a",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "fa9966c2-9ba8-484a-9cae-5804344176ef",
+      "peer_result_id": "e27da496-9f1c-4b06-9108-232447ad90d6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on background/established knowledge claims (C16, C23, C30-C31, C46, C64-C73). Both evaluations accept these as appropriately cited prior work providing necessary context. OpenEval includes C79 which peer review addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "4eddd8fc-ec0a-4844-bac5-164c15764f74",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362",
+      "peer_result_id": "6cab8a93-9f2a-4b82-abae-5784c241ffe4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on fork stalling evidence (C8-C12, C33, C78) from SMARD data. Both find the evidence compelling for site-specific replication block. OpenEval also includes MCM3/FANCM ChIP data (C13-C15) which peer review evaluates separately in R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "479468a9-7b1d-4905-a433-0b58038f813a",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "c9481497-2416-48c6-a8fe-2c682c7cc362",
+      "peer_result_id": "6dbfdc7b-4765-47b0-88e9-27ca87504bb7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on MCM3 and FANCM ChIP data (C13-C15, C57). Both evaluations support these as orthogonal evidence for fork stalling. Peer review groups these separately from SMARD data, while OpenEval combines them.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "fb09f15c-77c3-40ea-aa20-82e605d5b289",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e",
+      "peer_result_id": "9fbd0611-d859-4884-9458-aeea9eb46702",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on localized \u03b3H2AX accumulation (C17-C19, C35-C36). Both evaluations find the ChIP-qPCR and PLA data convincing for demonstrating localized response at the RFB site. OpenEval also includes comparison to Cas9 (C20-C22) which peer review evaluates separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "5e5ddfb2-20e2-4fcb-b081-76d6a88f0827",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e",
+      "peer_result_id": "1b5f7a5e-1f53-444e-bbdc-cf04f8948fbc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on C20 (Cas9 comparison). OpenEval includes this with localized \u03b3H2AX data, while peer review emphasizes it as a key distinction between DSB and fork stalling responses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "b28d8285-86bf-45d2-9c40-80117722cdbb",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "1b3c685d-2a8c-4054-bc97-8390e3a96988",
+      "peer_result_id": "1b5f7a5e-1f53-444e-bbdc-cf04f8948fbc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on the distinction between localized and spreading \u03b3H2AX responses (C42-C43). Both evaluations support the contrast between Tus-TerB (localized, ATR-dependent) and Cas9-induced DSB (spreading). OpenEval provides more mechanistic detail about ATM vs ATR.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "e3bd13e6-2b1d-435f-8f2f-b350ce371416",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909",
+      "peer_result_id": "164c83d7-46d0-4a98-8c53-001d97bbb9cb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on lack of global checkpoint activation (C24-C25, C38-C39). Both evaluations confirm the absence of ATR-T1989, CHK1-S345, and RPA2-S33 phosphorylation, contrasting with HU treatment. OpenEval also includes ATRi experiments (C26-C28, C40) which peer review evaluates separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "31f9a5bf-18e0-4c24-9bcb-bc34fd00d9a3",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "7a94a330-ec3d-4bdc-9b42-bb4328263909",
+      "peer_result_id": "9cbd6a05-9b2c-491e-9f86-9788a6ca2c8f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ATR-dependence of localized \u03b3H2AX response (C27-C28, C40). Both evaluations confirm ATRi experiments demonstrate ATR-dependence. Peer review emphasizes this as key evidence, while OpenEval groups it with broader checkpoint activation data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "ec3ca792-b78c-4a0a-8dc5-2ccf6659c68f",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "7acb350c-2b46-4af4-994e-d6ddeac76b8e",
+      "peer_result_id": "c6687079-59ab-4b00-90fd-31b24a3f6acf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on C21 (lack of global \u03b3H2AX signal). OpenEval includes this with localized response data, while peer review uses it to contrast with HU-induced global response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "18fdd723-4c72-4c42-93a3-dd0e3b021125",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "55ea995b-f10e-4f48-ae50-900f2225321f",
+      "peer_result_id": "cc715a15-bdac-4dd8-980d-2e88735b100b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on main conclusions (C34, C61, C63, C76-C77) about localized ATR-dependent checkpoint response distinct from global responses. Both evaluations find the overall model well-supported by the collective data. Peer review also includes C43 which OpenEval evaluates in R8.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "c915ffa3-2cf6-4227-90bd-45baed7a6a78",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "88dc4576-56d4-4fa5-97e3-8709d84f58d1",
+      "peer_result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty of mechanistic claims (C29, C49-C50, C62). Both evaluations recognize these as speculative about downstream consequences and future directions rather than directly demonstrated findings. Peer review also includes C45, C58-C60 as speculative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "1f7e87bd-ecaa-4eb4-a01b-eefcdc7b6e64",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "2a582b66-2439-42c2-8a76-9a75255f3c45",
+      "peer_result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty of ATR activation mechanism (C44-C45, C79). Both evaluations recognize this as a hypothesis requiring future investigation. OpenEval rates as UNCERTAIN due to lack of direct evidence; peer review does not explicitly evaluate but notes mechanistic details remain to be determined.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "b18028c7-ebc2-4484-8f20-8f2650e7b403",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "21dc2ab8-b272-49ca-b55d-16f677c40d6a",
+      "peer_result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial agreement on RFB resolution mechanisms (C52-C55). OpenEval rates as UNCERTAIN due to reliance on yeast data and lack of direct demonstration in human cells. Peer review groups these with other discussion points and affirms the overall system's utility without specifically challenging the resolution mechanism claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "fed48edc-68ce-4c75-b39d-2848407ba990",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "edc6706b-8025-4f31-83a7-3997347e82f5",
+      "peer_result_id": "6dbfdc7b-4765-47b0-88e9-27ca87504bb7",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on FANCM enrichment (C57). OpenEval rates the enrichment as supported but notes uncertainty about mechanistic details (C58-C59). Peer review explicitly confirms FANCM ChIP data as valid evidence for fork stalling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "02286905-cab1-44ea-ab9f-1a20750bd8d6",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "edc6706b-8025-4f31-83a7-3997347e82f5",
+      "peer_result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty about temporal relationships and mechanistic details (C58-C59). Both evaluations recognize these as areas requiring further investigation. OpenEval explicitly rates as UNCERTAIN; peer review notes 'it is unclear for how long forks remain stalled.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "dddb2542-a25e-4ed4-b5d7-5108ceb05b94",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "01cb19fd-a9e4-4407-966a-0b951c320d90",
+      "peer_result_id": "20c74ce0-7db9-4556-9d5b-30f5998b0d9e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C41 citing prior yeast work. Both evaluations accept this as appropriate comparative context. OpenEval evaluates separately as SUPPORTED background; peer review includes with discussion claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "0f0a7716-7e9e-4667-bbe9-8eb9a2c48857",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "4faaf398-2dca-4e4d-9ab9-9dc47d11e231",
+      "peer_result_id": "c99a0066-2ab3-4035-803e-fb4b397b973f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on C60 as future direction. OpenEval explicitly identifies this as appropriately framed future work. Peer review groups with other speculative claims without specific challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    },
+    {
+      "id": "b42c595e-04e2-4d8a-871e-a125546f9030",
+      "submission_id": "1d380555-fa16-4290-891c-92c502f181f2",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "46c3c5a6-0d1a-457e-97df-87fcc9626f12",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates C37 (torsional stress mechanism for localized \u03b3H2AX) as UNCERTAIN due to lack of direct experimental evidence. No corresponding peer review evaluation found specifically addressing this mechanistic claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:43:43.704407Z"
+    }
+  ]
+}

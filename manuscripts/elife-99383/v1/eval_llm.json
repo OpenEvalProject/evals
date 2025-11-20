@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C56",
+      "C66"
+    ],
+    "result": "Neural power modulation in the alpha-beta band (Corrected Cluster 234) marks anticipated temporal locations on a sub-second scale and correlates with tone detection performance. This neural signature shows peaks at the three temporal locations (500 ms, 1000 ms, 1500 ms) with decreasing peak latencies (0.24 s, 0.16 s, 0.13 s) and decreasing peak magnitudes across locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C16, C23-C35, C56, and C66 collectively demonstrate robust neural power modulation in the alpha-beta band that tracks temporal locations. The modulation spectrum analysis (C23) identified four significant clusters, which were merged into Cluster 234 based on coupling relationships (C27-C29) and frequency overlap (C28). The corrected Cluster 234 shows clear peaks at anticipated temporal locations (C30, C31) with a precession pattern (C32) and decreasing magnitudes (C34, C35). The positive correlation with behavioral performance (C4, C41) and ruling out of alternative explanations like expectation violation (C35) and false alarms (C44) provide strong converging evidence. The data-driven modulation spectrum approach and statistical validation through surrogate tests support the reliability of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C68",
+      "C71",
+      "C80"
+    ],
+    "result": "Task-optimized RNNs replicate human neural dynamics and reveal that the 2 Hz neural modulation implements a dynamic gain control mechanism that enhances sensitivity at anticipated temporal locations while suppressing irrelevant noise periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C48-C55, C68, C71, and C80 demonstrate that CRNNs trained on the tone detection task successfully replicate human neural dynamics (C5, C52) and provide mechanistic insights. The modulation strength at 2 Hz increased with external noise level (C50, C51), supporting the hypothesis that this mechanism assists tone detection in noisy conditions (C49). The uniform distribution experiment (C53, C54) provides critical evidence: when trained without fixed temporal locations, CRNNs showed flat hidden activities and different performance patterns, demonstrating that the 2 Hz modulation specifically enhances sensitivity at anticipated locations while suppressing noise elsewhere (C55, C68, C71). The convergence of neural data and computational modeling provides strong mechanistic support for the gain control interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C58",
+      "C59",
+      "C69",
+      "C70",
+      "C81"
+    ],
+    "result": "Sequential temporal anticipation is executed as a dynamic gain control process that involves both anticipating significant future moments and actively disregarding irrelevant events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C58, C59, C69, C70, and C81 represent the main theoretical synthesis of the study. This conclusion is well-supported by the convergence of behavioral data, neural findings (alpha-beta band modulation), and RNN modeling results. The gain control interpretation is supported by: (1) neural power modulation that marks temporal locations while showing suppression between them, (2) RNN experiments demonstrating enhanced sensitivity at anticipated locations and suppression elsewhere, and (3) comparison to spatial attention mechanisms. The integration of multiple lines of evidence (neural recordings, behavioral correlations, computational modeling) provides strong support for this mechanistic interpretation of temporal anticipation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C67",
+      "C122"
+    ],
+    "result": "The peak magnitudes of Corrected Cluster 234 positively correlate with tone detection performance (r=0.24, p<0.001), indicating that anticipation of temporal locations enhances tone detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, C67, and C122 demonstrate a significant positive correlation between neural markers of temporal anticipation and behavioral performance. The correlation is statistically significant (p<0.001) and consistent across analyses. This brain-behavior correlation provides important evidence that the neural signature is functionally relevant to task performance. However, the correlation is modest (r=0.24), suggesting that other factors also contribute to performance variability. The correlation analysis appropriately uses d-prime values from signal detection theory, and alternative explanations (false alarms, expectation violation) were ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Neural power precession (decreasing peak latencies across temporal locations) is observed in Corrected Cluster 234, likely reflecting facilitation of sequential anticipation and associated with enhanced inhibitory circuit activity, as demonstrated by E/I perturbation experiments in CRNNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C61-C65 describe the precession phenomenon and its mechanistic basis. The permutation tests (C45, C46) provide statistical validation that peak latencies significantly decrease across temporal locations. The interpretation that earlier anticipations facilitate later ones (C47) is supported by the E/I perturbation experiments in CRNNs (C61, C62), which show that enhanced inhibitory activity (E/I ratio 95/105) reproduces the precession pattern while maintaining human-level performance. The link to inhibitory circuits is further supported by citations to previous research on alpha-beta band function (C65). The convergence of neural observations and computational modeling provides strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C35",
+      "C44"
+    ],
+    "result": "The neural modulation components marking temporal locations cannot be fully explained by expectation violation or false alarms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C35, and C44 address alternative explanations for the neural findings. The expectation violation explanation is ruled out because peak magnitudes decrease rather than increase with temporal location (C35), opposite to what would be predicted by increasing probability of tone occurrence. The false alarm explanation is ruled out by negative correlations between false alarm rates and peak magnitudes (C44, Figure 3\u2014figure supplement 1D). These control analyses strengthen the interpretation that Corrected Cluster 234 reflects genuine temporal anticipation rather than artifacts or alternative cognitive processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C22"
+    ],
+    "result": "Event-related potentials (ERPs) to the target tone show larger responses at later temporal locations, with significant differences between all three locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C22 describe ERP findings that replicate previous research on temporal anticipation effects on sensory processing. The statistical analysis with FDR correction (C22) demonstrates significant increases in ERP magnitude across temporal locations in two regions of interest. This finding validates the experimental manipulation and is consistent with previous literature showing that temporal anticipation modulates sensory responses. However, this is a confirmatory finding rather than a novel discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Tone detection performance decreased across blocks, attributed to fatigue or decreased effort, with a significant interaction between temporal location and block number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe behavioral effects of block number. The statistical analyses (rmANOVA) are appropriately conducted and show significant main effects and interactions. The interpretation of decreased performance as fatigue (C20) is reasonable but speculative, as no direct measures of fatigue were obtained. This finding is important for understanding the experimental context but is not central to the main conclusions about temporal anticipation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "No learning effect was observed across blocks for neural coding of temporal locations, suggesting participants quickly learned the temporal structure even in the initial block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 describe the absence of learning effects on neural markers. The statistical analysis (two-way rmANOVA) shows no significant interaction between block number and temporal location for peak magnitudes (C39). The interpretation that participants learned quickly (C40) is supported by the data but somewhat surprising given the authors' initial hypothesis. This finding is important for understanding the time course of learning but is secondary to the main mechanistic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Cluster 1 in the delta band (1-4 Hz) tracks the elapsed time of noise pieces, consistent with previous research on interval estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe Cluster 1, which shows ramping activity corresponding to noise piece duration. This finding replicates previous research (C26) and validates the modulation spectrum analysis method. However, the authors explicitly state this was not their primary focus and did not further investigate this cluster. This is a confirmatory finding that supports the validity of the analytical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The experimental methods, including participant recruitment, task design, stimulus generation, EEG recording, and data analysis procedures, are described in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C101 provide methodological details about participants, experimental procedures, stimulus generation, EEG recording, and preprocessing. These are factual descriptions of methods that are necessary for reproducibility and evaluation of the study. The methods appear appropriate and well-documented, including important details like individualized SNR calibration (C91, C92), threshold measurement procedures (C93), and EEG recording parameters (C94, C95). The justifications for methodological choices (e.g., filter cutoffs based on previous literature, C98) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The power modulation spectrum (PMS) analysis focuses on induced power rather than phase-locked responses, as ITPC analysis revealed only onset/offset responses without coding of temporal locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 describe the distinction between power and phase analyses and justify focusing on power rather than phase. The ITPC analysis (C104) showed only one cluster corresponding to onset/offset responses, not temporal location coding. This methodological decision is well-justified and important for understanding why the study focuses on power modulation. The distinction between induced and evoked power is appropriately discussed with citations (C102, C103).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The power modulation spectrum analysis methodology, including time window selection, surrogate testing, cluster identification, and baseline correction procedures, is described in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C121 provide detailed methodological descriptions of the PMS analysis, including rationale for time window selection (C107), explanation of Trend and Sampling bounds (C108, C109), justification for surrogate testing approach (C111), and baseline correction procedures (C116, C117, C121). These methodological details are important for reproducibility and evaluation of the analytical approach. The explanations of constraints and bounds are mathematically sound (C108, C109, C110).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Permutation tests were used to quantify peak latency changes across blocks and temporal locations, constructing null distributions to test for significant differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 describe the permutation testing approach used to analyze peak latencies. This methodological choice is justified because individual participant data were too noisy for reliable Gaussian fits. The permutation procedure (1000 iterations) is appropriate for constructing null distributions and testing hypotheses about peak latency differences. This is a methodological detail supporting the main findings about neural precession.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C132",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "CRNNs were designed with Dale's rule (80% excitatory, 20% inhibitory units), trained at multiple noise levels, and analyzed to match human behavioral performance and neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C127, C132, C135-C139 describe the CRNN architecture and training procedures. The design choices are well-justified: Dale's rule for biological plausibility (C135), 100 hidden units based on preliminary testing (C132), systematic variation of noise levels (C137), and matching to human performance (C138). These methodological details are important for evaluating the computational modeling approach and its validity for drawing mechanistic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "A control CRNN was trained with uniform temporal distribution of tones to test whether 2 Hz modulation depends on specific temporal locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 describe the uniform distribution control experiment. This is a critical control for testing the specificity of the 2 Hz modulation to fixed temporal locations. The experimental design is appropriate, with clear motivation (C141, C142) and successful training (C144). The comparison between the two CRNNs (C145) provides important evidence for the functional interpretation of the 2 Hz modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "E/I perturbation experiments were conducted on trained CRNNs to investigate the mechanistic basis of neural power precession.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 describe the E/I perturbation methodology. The experimental design is appropriate for testing the hypothesis that inhibitory activity contributes to neural precession (C146). The systematic perturbation approach (C149) and selection of perturbations with meaningful performance (C150) are methodologically sound. This is a methodological detail supporting the main mechanistic findings about inhibitory circuits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The study addresses a gap in temporal anticipation research by investigating sequential anticipation of multiple moments without external timing cues, in contrast to previous studies focusing on single events or rhythmic sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C15 provide the theoretical motivation and context for the study. The characterization of previous research (C10, C11, C13) is supported by appropriate citations. The claim that sequential temporal anticipation offers a more thorough understanding (C9) is a reasonable inference based on the task demands. The methodological innovation of studying anticipation without external cues (C14) is clearly described. These claims establish the rationale and novelty of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C72"
+    ],
+    "result": "Neural activities in alpha-beta bands are associated with noise suppression and information flow regulation, similar to spatial attention mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C72 connect the current findings to previous research on alpha-beta band function. These claims are supported by multiple citations to previous work. The comparison to spatial attention (C72) provides a useful conceptual framework for understanding temporal anticipation. However, these are primarily literature-based claims that contextualize the current findings rather than novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The precise mechanisms of temporal anticipation may vary according to functional demands, and the need to represent probability distributions may be task-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73 and C74 propose theoretical reinterpretations and hypotheses based on the findings. C73 suggests that temporal anticipation mechanisms vary with task demands, which is a reasonable inference from the RNN results showing task-dependent neural dynamics. However, C74 is explicitly speculative (\"it's plausible\") and proposed as a hypothesis for future research. These claims represent theoretical implications rather than directly tested hypotheses, making their support uncertain without additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The neural modulation component may originate from subcortical areas, potentially the basal ganglia/striatum, based on EEG topography and functional considerations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C78 discuss potential brain regions involved in sequential temporal anticipation. C75 is supported by citations about supra-second timing. However, C76 and C77 are explicitly speculative (\"leading us to hypothesize,\" \"One potential area\"), based on EEG topography (limited spatial resolution) and functional analogies to motor sequence generation (C78). Without source localization or direct recording from these regions, these claims remain hypotheses for future research rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The brain utilizes neural power modulations across alpha and beta bands to anticipate sequential local temporal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is a summary statement of the main neural finding. This conclusion is well-supported by the modulation spectrum analyses, statistical validation, and correlation with behavior. It represents a synthesis of the neural results (Cluster 234 findings) and is appropriately stated as a conclusion based on the data presented.",
+    "result_type": "MAJOR"
+  }
+]

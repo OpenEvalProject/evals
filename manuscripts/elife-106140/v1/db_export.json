@@ -1,0 +1,2359 @@
+{
+  "submission": {
+    "id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T18:54:24.144231Z",
+    "updated_at": "2025-11-19T18:54:24.144231Z"
+  },
+  "content": [
+    {
+      "id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "content_type": "manuscript",
+      "content_text": "# Rhythmic sampling and competition of target and distractor in a motion detection task\n\n## Authors\n\n- Changhao Xiong<sup>1</sup> ([ORCID: 0009-0008-2766-8373](https://orcid.org/0009-0008-2766-8373))\n- Nathan M Petro<sup>2</sup> ([ORCID: 0000-0002-7553-4459](https://orcid.org/0000-0002-7553-4459))\n- Ke Bo<sup>3</sup> ([ORCID: 0000-0003-3286-7891](https://orcid.org/0000-0003-3286-7891))\n- Lihan Cui<sup>1</sup> ([ORCID: 0000-0001-7722-3550](https://orcid.org/0000-0001-7722-3550))\n- Andreas Keil<sup>4</sup> ([ORCID: 0000-0002-4064-1924](https://orcid.org/0000-0002-4064-1924)) \u2020\n- Mingzhou Ding<sup>1</sup> ([ORCID: 0000-0002-1024-3503](https://orcid.org/0000-0002-1024-3503)) \u2020\n\n### Affiliations\n\n1. J. Crayton Pruitt Family Department of Biomedical Engineering, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n2. Institute for Human Neuroscience, Boys Town National Research Hospital Boys Town United States ([ROR:01q9r1072](https://ror.org/01q9r1072))\n3. Department of Psychological and Brain Science, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))\n4. Department of Psychology, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt has been suggested that the visual system samples attended information rhythmically. Does rhythmic sampling also apply to distracting information? How do attended information and distracting information compete temporally for neural representations? We recorded electroencephalography (EEG) from participants who detected instances of coherent motion in a random-dot kinematogram (RDK; the target), overlayed on different categories (pleasant, neutral, and unpleasant) of affective images from the International Affective Picture System (IAPS) (the distractor). The moving dots were flickered at 4.29 Hz, whereas the IAPS pictures were flickered at 6 Hz. The time course of EEG spectral power at 4.29 Hz was taken to index the temporal dynamics of target processing. The spatial pattern of the EEG spectral power at 6 Hz was similarly extracted and subjected to a moving-window MVPA decoding analysis to index the temporal dynamics of processing pleasant, neutral, or unpleasant distractor pictures. We found that (1) both target processing and distractor processing exhibited rhythmicity at ~1 Hz and (2) the phase difference between the two rhythmic time courses was related to task performance, i.e., relative phase closer to \u03c0 predicted a higher rate of coherent motion detection whereas relative phase closer to 0 predicted a lower rate of coherent motion detection. These results suggest that (1) in a target-distractor scenario, both attended and distracting information were sampled rhythmically and (2) the more target sampling and distractor sampling were separated in time within a sampling cycle, the less distraction effects were observed, both at the neural and the behavioral level.\n\n## Introduction\n\nSustained visual attention is required in many real-life situations such as driving a vehicle or operating machinery and is characterized by limited capacity; not all information available to the visual system can be processed in-depth. Recent work has suggested that to manage the limited capacity problem, the visual system samples the attended information in a rhythmic fashion, mediated by low-frequency intrinsic brain oscillations (Chota et al., 2022; Dugu\u00e9 et al., 2015; Fiebelkorn et al., 2013; Fiebelkorn et al., 2018; Fiebelkorn and Kastner, 2019; Helfrich et al., 2018; Michel et al., 2022; Re et al., 2019; VanRullen, 2013; Zalta et al., 2020). In this view, the cycle of a low-frequency intrinsic brain oscillation can be divided into two phases: a high excitability phase and a low excitability phase. When a stimulus occurs during the high excitability phase, behavioral performance tends to be better than average; conversely, if the stimulus occurs during the low excitability phase, performance is generally worse than average (Lakatos et al., 2008; VanRullen, 2013). Behavioral performance may thus exhibit rhythmic fluctuations at the frequency of the aforementioned low-frequency intrinsic brain oscillation. One paradigm that has been used to test the idea of rhythmic visual sampling is the cue-target paradigm (Posner, 1980; Posner et al., 1987; Posner et al., 1988). The cue at the beginning of each trial, in addition to providing instructions on how the impending target stimulus should be responded to, helps to reset the phase of the low-frequency intrinsic oscillation such that all the trials start at approximately the same phase. By varying the stimulus onset asynchrony (SOA) between the cue and the target, one obtains the behavioral response (e.g. accuracy and/or reaction time) as a function of the SOA. The rhythmic nature and the frequency of this function can then be assessed by applying time-domain and/or spectral-domain analysis.\n\nWhen attending to one object in isolation, the frequency of rhythmic sampling tends to be in the high theta or low alpha frequency range, i.e., around 8 Hz (Fiebelkorn et al., 2013; Senoussi et al., 2019; van der Werf et al., 2023). When attention is directed to multiple objects in the environment, it has been suggested that rather than sampling all the objects simultaneously, the brain samples the objects in a serial fashion (Cohen et al., 1990; Wyart et al., 2012). This would then lead to a slower rhythmic sampling of any given object, in the low range of the theta frequency band, i.e., around 4 Hz (Thigpen et al., 2019). For example, when participants were cued to attend one visual hemifield but were asked to detect the appearance of a weak stimulus in either the cued or the uncued visual hemifield, the rhythmic detection rate for the target appearing in a given visual hemifield decreased from 8 Hz to 4 Hz (Chota et al., 2022; Fiebelkorn et al., 2013; VanRullen, 2013). Interestingly, when the detection rate functions of the cued and uncued targets were compared, a 180-degree relative phase was apparent, suggesting that the visual system indeed sampled the two visual hemifields in a serial, alternating fashion (Fiebelkorn et al., 2013; Jiang et al., 2024). In another example, two spatially overlapping clouds of moving dots, one in red color and the other in blue color, moved in orthogonal directions (Re et al., 2019), and the participant was cued to attend both the red dots and the blue dots and instructed to report the change in either the red dots or the blue dots as soon as it occurred. When there was only one cloud of moving dots, the detection accuracy exhibited rhythmic fluctuations as a function of the SOA at a frequency around 8 Hz. When both clouds of moving dots were present, rhythmic fluctuations in the accuracy of detecting changes in a given cloud of moving dots were again identified, and the sampling frequency was reduced to 4 Hz. In this case, however, no apparent 180-degree relative phase between the rhythmic behavioral response functions to the red and blue dots was found, suggesting that there was no serial, alternating sampling between the two attended objects if they appeared at the same spatial location.\n\nThe real world visual environment contains both task-relevant information (target) and task-irrelevant (distractor) information. It is well established that in the presence of a distractor, the processing of the target is negatively impacted, leading to reduced task performance (Lavie, 2005; Murphy et al., 2016). This implies that the distractor, despite the need for it to be suppressed by the brain\u2019s executive control system (Kastner et al., 1998; Kastner et al., 1999; Kastner and Pinsk, 2004; Seidl et al., 2012; Kastner and Ungerleider, 2000), is nevertheless processed in the brain, and the competition between the target and the distractor at the neural representational level causes the detriment in behavioral performance. Does the rhythmic sampling theory extend to the target-distractor scenario? If so, what is the temporal relationship between the rhythmic sampling of attended vs distracting stimuli? These questions have hitherto not been addressed. Part of the reason is that the majority of the studies on rhythmic environmental sampling focuses on behavioral evidence, e.g., rhythmicity in the aforementioned performance-vs-SOA function (Fiebelkorn and Kastner, 2019; Landau and Fries, 2012). Since the distractor is not responded to, its sampling by the visual system cannot be inferred purely on the basis of response behavior, and consequently, it is also not possible to study how the target and the distractor might compete for neural representations purely behaviorally.\n\nIn this study, we addressed these limitations by recording neural activities and investigating rhythmic sampling during a target-distractor scenario using steady-state visual evoked potential (SSVEP) frequency tagging. The stimuli were a cloud of randomly moving dots (the target) superimposed on emotional images from the International Affective Picture System (IAPS; Lang et al., 1997) (the distractor). The target and the distractor were flickered at two different frequencies for an extended duration of ~12 s. The participants were asked to focus on the randomly moving dots and report the number of times the dots moved coherently. In this paradigm, the onset of the stimulus array is the event that resets the phase of the putative low-frequency brain oscillation underlying rhythmic sampling, and the time from the stimulus array onset, referred to as time-from-onset (TFO), is analogous to the SOA in the traditional cue-target paradigm. It is worth noting that, although this paradigm has been used extensively in studies of target-distractor competition with electroencephalography (EEG) (Hindi Attar and M\u00fcller, 2012; M\u00fcller et al., 2008), it has not yet been examined in the context of rhythmic sampling. Aided by frequency tagging, from the EEG data, we extracted neural representations of target and distractor processing separately as a function of TFO. By examining the rhythmicity of these representations as functions of TFO and the phase relationship between these functions, we assessed (1) whether the target and the distractor were sampled rhythmically and (2) how their temporal competition for neural representations impacted behavioral performance.\n\n## Results\n\nEEG data were collected from 27 subjects performing a sustained attention task. The paradigm is shown in Figure 1A. The stimulus consisted of a random-dot kinematogram (RDK; the target) overlayed on different categories (pleasant, neutral, and unpleasant) of affective images from the IAPS (the distractor). The moving dots were flickered at 4.29 Hz, whereas the IAPS pictures were flickered at 6 Hz. The participant was instructed to detect brief episodes of coherent motion (0, 1, or 2) and report the number of such episodes at the end of the trial; each trial lasted ~12 s. Depending on the emotional category of the distracting images, the trials were divided into pleasant trials (28), neutral trials (28), and unpleasant trials (28). Each participant performed 84 trials.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/106140/elife-106140-fig1-v1.jpg)\n\n**Figure 1.:** (A) Motion detection task. Randomly moving dots flickered at 4.29 Hz (target) were superimposed in International Affective Picture System (IAPS) images flickered at 6 Hz (distractor). Participants detected brief episodes of coherent motion. (B) Target-specific signals and distractor-specific signals were estimated and subjected to (1) whole trial analysis and (2) moving window analysis. MVPA decoding analysis was done using an \u2018ERP\u2019 decoding method. See Materials and methods for more details.\n\n### Behavioral analysis\n\nThe overall coherent motion detection accuracy was 55.73% \u00b1 2.94%, with that for pleasant, neutral, and unpleasant trials being 55.67% \u00b1 2.76%, 55.03% \u00b1 3.10%, and 56.48% \u00b1 3.61%, respectively. A one-way ANOVA found no significant difference in behavioral performance between the three types of trials (F2, 78 = 0.053, p=0.949), suggesting that the three types of distractors exerted similar distracting influence on the detection of coherent motion, irrespective of their emotional significance.\n\n### SSVEP analysis at the whole trial level\n\nThe grand average SSVEP at Oz and its Fourier spectrum are shown in Figure 2. From Figure 2B, spectral peaks corresponding to the flicker frequencies of 4.29 Hz (target) and 6 Hz (distractor) are clearly seen. Filtering the SSVEP between 4.29\u20130.5 Hz and 4.29+0.5 Hz yielded the signal specific to target processing, whereas filtering the SSVEP between 6\u20130.5 Hz and 6+0.5 Hz yielded the signal specific to distractor processing. Averaging target amplitude and distractor amplitude across all electrodes, the 4.29 Hz amplitude was significantly greater than the 6 Hz amplitude (p=2.6 \u00d7 10\u20134); see Figure 2C. SSVEP amplitude topographies for target and distractor in Figure 2D showed that the strongest response for both frequencies was concentrated in the occipital channels. In Figure 2E, we assessed the relationship between SSVEP amplitude and task performance. Across participants, there was no correlation between target SSVEP amplitude and task performance (p=0.7536); see Figure 2E, left. The SSVEP amplitude of the distractor has a slight negative correlation with task performance, indicating that the stronger the distractor processing, the worse the performance, but it is not statistically significant (p=0.1896).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/106140/elife-106140-fig2-v1.jpg)\n\n**Figure 2.:** (A) Grand average SSVEP at Oz. (B) Fourier spectrum of the data in A. (C) Target amplitude across all electrodes is significantly larger than distractor amplitude at p=2.6 \u00d7 10\u20134. (D) Topographical distributions of target and distractor amplitude. (E) Correlation between target SSVEP amplitude and task performance (left) and between distractor SSVEP amplitude and task performance (right). Both correlation values are not significant.\n\n### MVPA at the whole trial level\n\nOur previous work has shown that IAPS pictures from different emotion categories evoke distinct spatial patterns in EEG which can be decoded using machine-learning-based MVPA methods (Bo et al., 2022). If we were able to decode the emotion categories of the distractor from the spatial patterns of the 6 Hz SSVEP amplitude, the decoding accuracy can then be used to indicate the strength of the distractor representation in the brain, complementing the 6 Hz SSVEP amplitude considered earlier. The decoding was done between different types of emotion trials (e.g. pleasant vs neutral) using an \u2018ERP\u2019 decoding method (Bae and Luck, 2019). See Figure 1B and Materials and methods for more details. As shown in Figure 3A, for pleasant vs neutral, unpleasant vs neutral, and unpleasant vs neutral, the pairwise decoding accuracy was 57.86% \u00b1 9.86%, 55.14% \u00b1 8.17%, and 59.45% \u00b1 9.73%, respectively, which were all significantly above the chance level of 50% at p=3.2 \u00d7 10\u20134, p=3.0 \u00d7 10\u20133, and p=3.0 \u00d7 10\u20135, respectively. As shown in Figure 3B, the three-way decoding accuracy was found to be 41.09% \u00b1 6.25%, which is again significantly above chance level of 33.33% at p=3.9 \u00d7 10\u20137. Similar to distractor SSVEP amplitude, no correlation was found between distractor decoding accuracy and task performance; see Figure 3C. Also, in order to verify that the distractor decoding accuracy and the distractor amplitude were independent indices of distractor processing, we correlated the two across participants. As Figure 3D shows, no correlation was found, suggesting that the two quantities provided complementary characterization of distractor processing (also see Appendix 1\u2014figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/106140/elife-106140-fig3-v1.jpg)\n\n**Figure 3.:** (A) Pairwise decoding accuracies between pleasant vs neutral, unpleasant vs neutral, and pleasant vs unpleasant are 57.86% \u00b1 9.86%, 55.14% \u00b1 8.17%, and 59.45% \u00b1 9.73%, respectively, which are all significantly above chance level of 50% (red dashed line) at p=3.2 \u00d7 10\u20134, p=3.0 \u00d7 10\u20133, and p=3.0 \u00d7 10\u20135. (B) Three-way decoding accuracy is 41.09% \u00b1 6.25%, which is significantly higher than the chance level of 33% (red dashed line) at p=3.9 \u00d7 10\u20137. (C) Decoding accuracy vs task performance. The correlation of r=\u20130.0313 (p=0.8769) is not significant. (D) Distractor decoding accuracy vs distractor steady-state visual evoked potential (SSVEP) amplitude. The correlation of r=0.1531 (p=0.4458) is not significant.\n\n### Moving window analysis of target and distractor processing\n\nTo examine the temporal dynamics of target processing, the target SSVEP amplitude time series was obtained using the moving window approach, where the window duration was 0.5 s and the step size 0.25 s. Fourier analysis was then applied to assess the rhythmicity of the time series. The results of these analyses for one representative participant are shown in Figure 4Ai. The rhythmic nature of target processing is apparent with a spectral peak at ~1 Hz. Across all participants, the averaged Fourier spectrum is shown in Figure 4Aii, where the frequency of the spectral peak was found to be 1.08\u00b10.11 Hz. These results supported the idea that the attended target was sampled rhythmically with a sampling frequency at ~1 Hz (delta frequency band).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/106140/elife-106140-fig4-v1.jpg)\n\n**Figure 4.:** (A) (i) Target amplitude time series from the moving window approach for a representative subject (left) and its Fourier spectrum (right). (A) (ii) The average target amplitude spectrum across 27 subjects. (B) (i) Distractor decoding accuracy time series from the moving window approach for a representative subject (left) and its Fourier spectrum (right). (B) (ii) The average distractor decoding accuracy spectrum across 27 subjects.\n\nTo examine the temporal dynamics of distractor processing, three-way MVPA decoding was performed for the three types of emotion trials using the moving window approach with the same window duration and step; see Figure 1A and Materials and methods for more details. The three-way decoding accuracy time series and the Fourier spectrum from one representative participant are shown in Figure 4Bi. The rhythmic nature of the decoding accuracy time series is again apparent, and the spectral peak is at ~1 Hz. Across all participants, the averaged spectrum is shown in Figure 4Bii, where the peak frequency was determined to be 1.08\u00b10.11 Hz. These results supported the idea that the distractor was also sampled rhythmically with a sampling frequency at ~1 Hz (delta frequency band).\n\n### Target-distractor competition and task performance\n\nAs shown above, the present evidence suggests that both the target and the distractor were sampled rhythmically, at ~1 Hz. Since the sampling frequency was approximately the same for the two rhythmic time series, the relative phase between them can then be assessed, which characterizes the temporal relationship between the sampling of target and distractor. Figure 5A shows the distribution of the relative phase for all participants (mean relative phase = 0.51 \u00b1 0.31\u03c0). A Kolmogorov-Smirnov (K-S) test was applied to the relative phase distribution to see whether it departed from the uniform distribution (Figure 5B). A K-S statistic of 0.10 showed that the relative phase distribution is not different from the uniform distribution at p=0.92, suggesting that there was no systematic relative phase between rhythmic samplings of target vs distractor across participants.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/106140/elife-106140-fig5-v1.jpg)\n\n**Figure 5.:** (A) Phase polar histogram for the relative phase between target processing time series and distractor processing time series (1 Hz). The average relative phase is 0.51\u03c0. (B) Kolmogorov-Smirnov test showed that the relative phase distribution is not different from uniform distribution. (C) Temporal relationship between target processing and distractor processing for (i) a high performer (accuracy = 83.84%; relative phase = 0.877\u03c0) and (ii) a low performer (accuracy = 33.33%; relative phase = 0.053\u03c0). (D) Task performance vs 1 Hz relative phase. The significant positive correlation (r=0.6041, p=0.0008) indicated that the more separated the target and distractor sampling within the 1 Hz oscillation cycle, the better the behavioral performance. CDF: cumulative distribution function.\n\nSince simultaneously presented target and distractor compete for neural representations and the stronger the competition, the worse the task performance, one may expect that if the target sampling and the distractor sampling are well separated in time, namely, if they occur in opposite phases of the 1 Hz brain oscillation, the competition will be minimized, and the task performance will be maximized. Conversely, if the target and the distractor were sampled during the same phase within the 1 Hz cycle, the target-distractor competition will be maximized, and the task performance will be minimized. This notion is tested in Figure 5C, using data from a high-performing participant (accuracy = 84.34%) and a low-performing participant (accuracy = 33.33%). Here, the target processing time series and the distractor processing time series were z-scored so they can be displayed in the same graph. In the high performer, the two time courses are highly anticorrelated (relative phase is around \u03c0), indicating that the target and the distractor were sampled in opposite parts of the cycle, while for the low performer, the two time courses are highly correlated (relative phase is around 0), indicating that the target and the distractor were sampled in the same part of the cycle. Across all participants, as shown in Figure 5D, a significant positive correlation between relative phase and task performance was observed (r=0.6041, p=0.0008), suggesting that the more the target sampling and the distractor sampling are separated in time (i.e. in opposite phases of the cycle), the less the interference between target and distractor processing, the better the task performance.\n\n## Discussion\n\nIn natural vision, task-relevant information (the target) and task-irrelevant information (the distractor) often appear at the same time, and often overlap in visual space. The distractor information, upon entering the nervous system, interferes with the neural representations of task-relevant information, causing degraded task performance (Deweese et al., 2016). In this study, we examined the temporal dynamics of target and distractor processing during sustained visual attention by analyzing EEG data from an SSVEP paradigm in which random moving dots (target) flickered at one frequency were superimposed on IAPS pictures (distractor) flickered at another frequency. In particular, we tested whether rhythmic sampling applied to distracting information and how target-distractor competition affected behavior. The results showed that (1) distractor information (i.e. IAPS pictures from different emotion categories) can be decoded from the distributed patterns of scalp EEG, (2) both the target and the distractor are sampled rhythmically with the same sampling frequency of ~1 Hz (delta frequency band), and (3) the more negative (i.e. closer to 180 degrees) the phase relationship between the sampling of the target and that of the distractor, i.e., the more temporally separated between target sampling and distractor sampling within a sampling cycle, the better the behavioral performance.\n\n### Rhythmic sampling of attended and ignored information\n\nPrevious studies have investigated how attended information is temporally sampled using the cue-target paradigm. In particular, if some behavioral measures such as the stimulus detection accuracy or reaction time are found to be a periodic function of the time between the cue and the target, i.e., the stimulus-onset asynchrony or SOA, then it is taken as evidence in support of rhythmic sampling. If there is only one attended target, the frequency of rhythmic sampling tends to fall in the upper end of the theta frequency band (~8 Hz) (Busch and VanRullen, 2010; Huang and Luo, 2020; Huang et al., 2015; VanRullen, 2013). When there are more than one attended targets in the environment, each target is again sampled rhythmically, but the sampling frequency is slower, often falling in the lower end of the theta frequency band (~4 Hz) (Fiebelkorn et al., 2013; Landau and Fries, 2012; Re et al., 2019). When the attended targets appear in different visual hemifields, an alternating sampling strategy was observed, evidenced by the 180-degree phase relationship between the two behavioral time courses (Chota et al., 2022; Fiebelkorn et al., 2018).\n\nHow distractors are temporally sampled has not been investigated to date. One of the reasons is that distractors do not elicit behavioral responses, and as such, a pure behavioral approach is not able to address this question. We overcame the problem by recording EEG in an SSVEP paradigm in which the target and the distractor overlapped in space and time and flickered at different frequencies, a method referred to as frequency tagging. Separately extracting the EEG signals underlying the neural response to the target and that to the distractor according to their flickering frequencies (4.29 Hz for target and 6 Hz for distractor), we found that at the whole trial level, target processing exhibited higher SSVEP amplitude than distractor processing, and for both target and distractor processing, the signal power is maximal at the posterior channels. Cognizant of the possibility that the power at 4.29 Hz may leak into neighboring frequency bands where the power is weaker (see Appendix 1\u2014figures 4), instead of using the 6 Hz SSVEP amplitude to quantify distractor processing, we adopted the MVPA decoding approach to quantify the distractor processing by leveraging the previous finding that different categories of emotional images evoked different patterns of neural responses in scalp EEG (Bo et al., 2022). This led us to construct classifiers that took the 6 Hz SSVEP amplitude across all electrodes as input to decode the spatial patterns evoked by different categories of emotional distractors, with higher classification or decoding accuracy taken to indicate stronger distractor processing. At the whole trial level, the observed above-chance decoding accuracy suggested that the distractor information is present in the brain and could be revealed and quantified by combining machine learning with distractor-specific scalp EEG.\n\nPrior studies of visual environmental sampling used the cue-target paradigm in which the cue serves both to instruct the participant on how the target should be responded to and to reset the brain oscillation mediating the rhythmic visual sampling (Kayser, 2009). In our paradigm, the resetting was prompted by the onset of the compound stimulus array. The time elapsed after the stimulus array onset, referred to as TFO here, plays the role of the SOA in the cue-target paradigm. To index the temporal dynamics of target and distractor processing, we applied a moving window approach, in which the window duration was 0.5 s, and the step size was 0.25 s. Within each window, the 4.29 Hz SSVEP amplitude was taken to index target processing and the accuracy of decoding different categories of emotional distractors based on the 6 Hz SSVEP amplitude pattern was taken to index distractor processing. Plotting these two indices as functions of TFO, we assessed the temporal dynamics of target and distractor processing. The results revealed that both the target and the distractor were sampled rhythmically with the same sampling frequency of ~1 Hz (delta frequency band), which is considerably slower than those reported in previous studies (Re et al., 2019) in which the sampling frequency tends to fall in the theta frequency band (4\u20138 Hz).\n\nDelta oscillations (0.5\u20133.5 Hz), traditionally associated with deep sleep and homeostatic processes (Amzica and Steriade, 1998; Franken et al., 2001; Franken and Dijk, 2024; Frohlich et al., 2021; Torres-Herraez et al., 2022), are being increasingly recognized for their role in a variety of cognitive functions (Basar et al., 1999; Ba\u015far et al., 2001; Ba\u015far-Eroglu et al., 1992). In the auditory domain, rhythmic sampling of an auditory scene is shown to be mediated by delta oscillations (Kubetschek and Kayser, 2021; Morillon et al., 2019). Our findings suggest that similar mechanisms could also operate in the visual domain. In a recent study, when observers directed temporal attention to one of two sequential grating targets with predictable timing, the steady-state visual evoked response of the flashing target was modulated at 2 Hz (Denison et al., 2022), which falls in the delta frequency band. In addition, extensive evidence has shown that expecting a stimulus, which is known to require the deployment of attentional resources, engages delta oscillations (Arnal et al., 2011; Arnal et al., 2015; Breska and Deouell, 2017; Cravo et al., 2013; Lakatos et al., 2008; Schroeder and Lakatos, 2009; Stefanics et al., 2010). Delta oscillations were also involved in mechanisms that synchronize distributed regions within functional neural networks in supporting cognitive control (Helfrich et al., 2017; Helfrich et al., 2019; Helfrich and Knight, 2016). The spatially overlapping target and distractor in our paradigm places high demand on the brain\u2019s cognitive control system, shown recently to be operating in the delta frequency band (Pagnotta et al., 2024), which could be another reason underlying the observed mediation by delta oscillations in the rhythmic sampling of the target-distractor environment.\n\n### Phase relationship between target and distractor sampling and its functional significance\n\nAs mentioned earlier, when two attended objects are presented simultaneously in different visual hemifields, the visual system tends to sample them in a serial, alternating fashion, as evidenced by two rhythmic behavioral time series exhibiting a 180-degree relative phase (antiphase) (Denison et al., 2022; Fiebelkorn et al., 2013; Mo et al., 2019). When two attended objects overlap in space, however, this alternating sampling pattern is not observed, and the relative phase between the two rhythmic behavioral time series appears to be uniformly distributed across participants (Re et al., 2019). In our experimental design, the target and the distractor overlapped in space, which is a configuration known to maximize the distraction effect, and the relative phase between the rhythmic samplings of the target and the distractor is also uniformly distributed across participants. Thus, regardless of the behavioral relevance of the two superimposed stimuli, there is no preferred phase relationship between their samplings at the population level.\n\nAlthough a clear phase relationship between the target sampling and the distractor sampling is absent at the population level, the relative phase between the two time series may nonetheless have functional significance. In particular, when the target sampling and the distractor sampling occur in opposite phases of a sampling cycle, i.e., when they are 180 degrees out of phase, the interference should be minimized, and consequently, the task performance should be maximized. On the contrary, when the target sampling and the distractor sampling occur in the same phase of a sampling cycle, i.e., when the target and the distractor are sampled at the same time, the interference should be maximized, and the task performance should be minimized. Our results supported this hypothesis. Specifically, we showed that there was a positive correlation between the relative phase of the target and distractor sampling time series and the behavioral performance, namely, the greater the relative phase between the two time series, the higher the rate of correctly detecting the instances of coherent motion in the moving dots (attended target). The additional significance of this finding can be understood by considering the analysis results at the whole trial level. One may expect that at the whole trial level, the stronger the distractor representation indexed by higher decoding accuracy, the worse the task performance. This turned out to be not the case. As shown in Figure 3D, the distractor decoding accuracy at the whole trial level was not correlated with task performance, nor was the overall power of the target evoked activity at the whole trial level. Thus, what we found should be considered a new mechanism underlying the competition between distractor and target. In this mechanism, the key is not how well the target and the distractor are each represented but how their respective rhythmic sampling aligns over time: The more target sampling and distractor sampling are separated in time, the less direct competition between the two, the better the attended information is processed, and the better the behavioral performance.\n\n### Signal processing considerations\n\nFirst, when the amplitude of a periodic signal with a frequency f is modulated at 1 Hz, we should observe sidebands at f+1 and f\u20131 Hz in the Fourier spectrum of the signal. These sidebands are not clearly seen in the Fourier spectrum of the SSVEP time series (see Figure 2B). We investigated the underlying reason in Appendix 1. The starting point is the observation that biological data is noisy. The SSVEP from the subjects contains a varying amount of noise quantified by the signal-to-noise ratio (SNR). We showed using both simulations and actual data that when the SNR is high, the sidebands are visible, whereas when the SNR is low, the sidebands are indistinguishable from the noise floor (Appendix 1\u2014figure 1). The majority of our subjects have low SNR for observing sidebands. This is why the sidebands in the Fourier spectrum in Figure 2B are not readily identifiable. Second, when a 4.29 Hz periodic component and a 6 Hz component are combined, one should observe a beating frequency at 1.71 Hz. This beating frequency is clearly seen in the Fourier spectra of the amplitude envelope of the SSVEP in Figure 4A. However, this spectral peak is secondary to a much stronger spectral peak occurring at ~1 Hz, which cannot be explained from a pure signal processing perspective (see Appendix 1\u2014figure 2 for further investigation). This suggests that the 1 Hz amplitude modulation of the SSVEP amplitude, as well as decoding accuracy time series, is of an endogenous origin and represents the frequency of the rhythmic sampling of the environment by the visual attention system in our paradigm. Third, we tested the effect of moving window parameters on the temporal dynamics of target and distractor processing. Using a 0.1 s window length and a 0.05 s step size (Appendix 1\u2014figures 5 and 6) and applying the window-free Hilbert transform method (Appendix 1\u2014figures 7 and 8), we found the same results as those reported in the main manuscript, suggesting that the ~1 Hz rhythmic sampling and the phase-related target-distractor competition are robust findings. Fourth, to further test the robustness of the decoding results, we implemented a random permutation procedure. Appendix 1\u2014figure 9 shows the results based on 1000 permutations. For each of the three pairwise classifications\u2014pleasant vs neutral, unpleasant vs. neutral, and pleasant vs. unpleasant\u2014as well as the three-way classification, the actual decoding accuracies fall far outside the null-hypothesis distribution (p<0.001), and the effect sizes are extremely large.\n\n### Limitations\n\nFirst, the experimental paradigm lacked a no-distractor baseline condition. The SSVEP amplitude of the target at the whole trial level thus reflected the combined effect of the stimulus parameters (e.g. contrast of the moving dots), as well as attention. However, the time course of the target SSVEP amplitude within a trial, derived from the moving window analysis, reflected the temporal fluctuations of target processing, since the stimulus parameters remained the same during the trial. Second, target processing and distractor processing are quantified differently: SSVEP amplitude for the former and decoding accuracy for the latter. However, using SSVEP amplitude to quantify target processing is a well-established approach, and given that decoding is between different classes of distractors, we are also confident that the decoding accuracy reflects distractor processing. For comparing the two, we normalized each time course to make them dimensionless and then computed correlations. Third, no fusion was attempted between simultaneously recorded EEG and fMRI. However, given that this study concerns the temporal dynamics of target and distractor processing, it is felt that fMRI data, which is known to possess low temporal resolution, has limited potential to contribute.\n\n### Summary\n\nIn this work, we reported two main findings: (1) in sustained visual attention under distraction, both the distractor and the target are sampled rhythmically, with the sampling frequency being ~1 Hz (i.e. in the delta frequency band) and (2) the temporal relationship between the distractor sampling and the target sampling is a significant factor underlying task performance with a more antiphase relationship giving rise to better behavioral performance. To further illustrate the importance of the second finding, we note that neither target nor distractor processing strength at the whole trial level correlates with behavioral accuracy. These results extend the rhythmic sampling theory to distractor processing and provide further support for the important role of low-frequency brain oscillations in organizing cognitive operations. They also demonstrate the utility of applying machine learning methods in uncovering the temporal dynamics of sustained attention in target-distractor scenarios.\n\n## Materials and methods\n\n### Participants\n\nThe experimental protocol was approved by the Institutional Review Board of the University of Florida. Thirty undergraduate students from the University of Florida gave written informed consent and participated in the experiment to earn credit in an introductory psychology course. Because the EEG data were recorded inside the MRI scanner (simultaneous EEG-fMRI), participants underwent screening for ferromagnetic implants, claustrophobia, and personal or family history of epilepsy or photic seizures. Female participants were also administered a pregnancy test before participation. Three participants were excluded due to excessive movements during recording. The EEG data from n=27 participants (18 women, 9 men, mean age = 19.2 \u00b1 1.1 years) were analyzed and reported here.\n\n### Stimuli\n\nThe stimulus comprised an RDK overlaid on affective images selected from the IAPS database. The RDK consisted of 175 yellow dots randomly distributed within a circular aperture in the center of the screen, with each dot spanning <0.5 degrees of visual angle. The IAPS images portrayed three broad categories of emotions: pleasant, neutral, and unpleasant. They were similar in overall composition and rated complexity and matched in picture file size to minimize confounds across categories. The stimulus was presented on a 30-inch MR-compatible LCD monitor placed approximately 230 cm from the participant\u2019s head outside the bore of the MRI scanner. A white fixation dot was displayed at the center of the screen throughout the experiment.\n\n### Procedure\n\nSee Figure 1A for the schematic illustration of the experimental task. After 5\u201311 s of fixation, the participant was presented the compound stimulus array consisting of the randomly moving dots (RDK) superimposed on the IAPS pictures for a duration of 11.667 s. The moving dots and the background pictures were flickered on and off at 4.29 Hz and 6 Hz, respectively. For each 4.29 Hz flicker cycle, the moving dots were displayed for 100 ms, which was followed by a 133 ms off period. Similarly, for each 6 Hz flicker cycle, the IAPS background picture was shown for 100 ms and followed by a 66.7 ms off period. During each on-off cycle, the moving dots in the RDK were randomly displaced by 0.3 degrees of visual angle in either random directions or one coherent direction. Coherent motion instances lasted for four on-off cycles (933 ms) and appeared once in 39 trials (13 trials per emotion condition) or twice in 4 trials. The remaining 41 trials contained no instances of coherent motion. Each trial lasted 11.667 s (50 moving dot cycles and 70 IAPS background picture cycles). The coherent motion instances occurred in the interval between 2.3 s and 10.4 s post stimulus array onset. The participant was asked to fixate on the central white dot during the trial, to monitor the motion coherence of the random dots, and report the number of coherent motion instances at the end of the trial. Both the number of coherent motion instances and the underlying emotion category of IAPS image were randomized in each trial. A total of 42 IAPS pictures were equally divided into three content categories based on valence: pleasant (erotic couples), neutral (workplace people), or unpleasant (bodily mutilation). Depending on the emotion category of the IAPS picture used in a given trial, the trials are referred to as pleasant, neutral, and unpleasant trials. There was a total of 84 trials: 28 pleasant trials, 28 unpleasant trials, and 28 neutral trials, and each picture was used twice during the experiment.\n\n### EEG data collection and preprocessing\n\nEEG data was recorded using a 32-channel MR-compatible EEG recording system (Brain Products, Germany). The system was synchronized to the internal clock of the scanner to facilitate the subsequent scanner noise removal. Thirty-one Ag/AgCl electrodes were placed on the scalp according to the 10\u201320 system via an elastic cap. One additional electrode was located on the participant\u2019s upper back to record the electrocardiogram (ECG). Electrode FCz was used as the reference during recording. Impedances were kept below 20 k\u03a9 for all scalp electrodes and below 50 k\u03a9 for the ECG electrode, as suggested by the manufacturer. EEG data was digitized at 16-bit resolution and sampled at 5 kHz with a 0.1\u2013250 Hz (3 dB point) bandpass filter applied online (Butterworth, 18 dB/octave roll off). The digitized data was transferred to a laptop computer via a fiber-optic cable.\n\nArtifact removal from EEG data, specifically the removal of magnetic gradient and cardioballistic artifacts, was conducted using the Brain Vision Analyzer 2.0 software (Brain Products GmbH). The elimination of magnetic gradient artifacts was based on an algorithm initially proposed by Allen et al., 2000. The process involves the creation of an artifact template through averaging EEG data over 41 consecutive fMRI volumes, which was subsequently subtracted from the EEG recordings. Additionally, cardioballistic artifacts were removed by employing a technique developed by Allen et al., 1998, in which R peaks were detected via the EKG electrode, and a corrective template was computed from 21 successive heart beats and subtracted from the EEG data.\n\nSubsequent to scanner artifact removal, data was downsampled to 500 Hz and exported into EEGLab software (Delorme and Makeig, 2004). The data underwent further filtering using a 0.1\u201340 Hz band-pass Butterworth filter. Independent components analysis was applied to remove components associated with eye blinks, horizontal eye movements, and residual cardioballistic artifacts. The data were then converted to the average reference.\n\n### EEG data analysis\n\n#### Overview\n\nAccording to the task design, the IAPS pictures were behaviorally irrelevant and thus the distractor to be ignored, while the moving dots were behaviorally relevant and thus the target to be attended. To minimize the transient effect resulting from the stimulus array onset and the possible effect resulting from anticipating the end of a trial, the EEG data from the beginning and the end of a trial were discarded, namely, the analyzed EEG data came from the period from 2 to 11 s post array onset, which contained the period from 2.3 to 10.4 s post stimulus array onset during which instances of coherent motion in the moving dots took place.\n\n#### Quantifying target processing\n\nThe moving dots were flickered at 4.29 Hz. For a given type of emotion trials (i.e. pleasant, neutral, or unpleasant), the SSVEP was computed by averaging all the trials within the type. Filtering the SSVEP between 4.29\u20130.5 Hz and 4.29+0.5 Hz yielded the data specific for target processing. Obtaining the magnitude of the band-pass filtered data at the whole trial level allowed the assessment of the overall strength of target processing; see Figure 1B. To assess target processing as a function of TFO, i.e., the temporal dynamics of target processing, the magnitude of the band-passed filtered data was obtained using a moving window approach, where the window duration was 0.5 s and the step size was 0.25 s. See Figure 1B for illustration.\n\n#### Quantifying distractor processing\n\nThe IAPS pictures were flickered at 6 Hz. Band-pass filtering the EEG data between 6\u20130.5 Hz and 6+0.5 Hz resulted in signals that were specific to distractor processing. Following a recent study where we showed that the emotion category of IAPS pictures can be decoded from scalp EEG data using the MVPA method (Bo et al., 2022), we assessed distractor processing using an MVPA decoding approach at the whole trial level, as well as at the level of moving windows. The MVPA analysis was conducted with the linear support vector machine (SVM) method as implemented in the LibSVM package (http://www.csie.ntu.edu.tw/~cjlin/libsvm/) (Chang and Lin, 2011). The decoding was between two types of emotion trials (e.g. pleasant vs neutral) or between all three types of emotion trials based on a one-vs-all strategy. Above-chance decoding accuracy (50% for pairwise decoding and 33.3% for three-way decoding) is taken to indicate distractor processing in the brain with higher decoding accuracy indicating stronger distractor processing. For both the whole trial and moving window analysis, the trials from each of the three different emotional categories were divided into three subsets of trials randomly. We averaged the trials within each subset to yield the subset SSVEP. For the whole trial analysis, we calculated the 6 Hz SSVEP over the whole trial, whereas for the moving window analysis, the 6 Hz SSVEP amplitude was obtained for each 0.5 s analysis window. For the decoding strategy, the SSVEP amplitude from the two subsets within each emotion category served as training data for constructing an SVM classifier, while the SSVEP amplitude from the third subset was used as testing data for calculating decoding accuracy. This process was iterated 100 times to ensure the stability of the decoding result, and the average of the decoding accuracy values was analyzed and reported (Bae and Luck, 2019; Haxby et al., 2014; Zhang et al., 2024). See Figure 1B for an illustration of the method.\n\n#### Quantifying the relationship between target and distractor processing\n\nTo investigate the temporal relationship between target processing and distractor processing, we calculated the phase relationship between the target amplitude time series from the moving window approach which quantified the temporal fluctuation of the strength of target processing and the distractor decoding accuracy time series which quantified the temporal fluctuation of the strength of distractor processing. To investigate the effect of temporal competition between target processing and distractor processing, we correlated the relative phase relationship between the target processing time series and the distractor processing time series with behavioral performance.\n",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "e2ca3e9c-605c-42b8-9455-44921e3ce9b6",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Redmond G O'Connell, Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.106140.3.sa0](https://doi.org/10.7554/eLife.106140.3.sa0)\n\nThis work presents important information on rhythmicity of overlapping target and distractor processing and how this affects behaviour. The methods are, in general, clearly laid out and defensible, with several supplementary analyses leading to a solid base of evidence for their claims.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.106140.3.sa1](https://doi.org/10.7554/eLife.106140.3.sa1)\n\nSummary:\n\nUsing a combination of EEG and behavioural measurements, the authors investigate the degree to which processing of spatially-overlapping targets (coherent motion) and distractors (affective images) are sampled rhythmically and how this affects behaviour. They found that both target processing (via measurement of amplitude modulations of SSVEP amplitude to target frequency) and distractor processing (via MVPA decoding accuracy of bandpassed EEG relative to distractor SSVEP frequency) displayed a pronounced rhythm at ~1Hz, time-locked to stimulus onset. Furthermore, the relative phase of this target/distractor sampling predicted accuracy of coherent motion detection across participants.\n\nStrengths:\n\n- The authors are addressing a very interesting question with respect to sampling of targets and distractors, using neurophysiological measurements to their advantage in order to parse out target and distractor processing.\n\n- The general EEG analysis pipeline is sensible and well-described.\n\n- The main result of rhythmic sampling of targets and distractors is striking and very clear even on a participant-level.\n\n- The authors have gone to quite a lot of effort to ensure the validity of their analyses, especially in the Supplementary Material.\n\n- It is incredibly striking how the phase of both target and distractor processing are so aligned across trials for a given participant. I would have thought that any endogenous fluctuation in attention or stimulus processing like that would not be so phase aligned. I know there is literature on phase resetting in this context, the results seem very strong here and it is worth noting. The authors have performed many analyses to rule out signal processing artifacts, e.g. the sideband and beating frequency analyses.\n\nWeaknesses:\n\n- In general, the representation of target and distractor processing is a bit of a reach. Target processing is represented by SSVEP amplitude, which is going to most likely be related to the contrast of the dots, as opposed to representing coherent motion energy which is the actual target. These may well be linked (e.g. greater attention to the coherent motion task might increase SSVEP amplitude) but I would call it a limitation of the interpretation. Decoding accuracy of emotional content makes sense as a measure of distractor processing, and the supplementary analysis comparing target SSVEP amplitude to distractor decoding accuracy is duly noted. Overall, this limitation remains and has been noted in the Limitations section.\n\n- Then comparing SSVEP amplitude to emotional category decoding accuracy feels a bit like comparing apples with oranges. They have different units and scales and reflect probably different neural processes. Is the result the authors find not a little surprising in this context? This relationship does predict performance and is thus intriguing, but I think this methodological aspect needs to be discussed further. For example, is the phase relationship with behaviour a result of a complex interaction between different levels of processing (fundamental contrast vs higher order emotional processing)? Again, this has been noted in the Limitations section, but changing the data to z-scores doesn't really take care of the conceptual issue, i.e. that on-screen contrast changes would necessarily be distracting during emotional category decision-making.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.106140.3.sa2](https://doi.org/10.7554/eLife.106140.3.sa2)\n\nIn this study, Xiong et al. investigate whether rhythmic sampling - a process typically observed in the attended processing of visual stimuli - extends to task-irrelevant distractors. By using EEG with frequency tagging and multivariate pattern analysis (MVPA), they aimed to characterize the temporal dynamics of both target and distractor processing and examine whether these processes oscillate in time. The central hypothesis is that target and distractor processing occur rhythmically, and the phase relationship between these rhythms correlates with behavioral performance.\n\nMajor Strengths\n\n(1) The extension of rhythmic attentional sampling to include distractors is a novel and interesting question.\n\n(2) The decoding of emotional distractor content using MVPA from SSVEP signals is an elegant solution to the problem of assessing distractor engagement in the absence of direct behavioral measures.\n\n(3) The finding that relative phase (between 1 Hz target and distractor processes) predicts behavioral performance is compelling.\n\nMajor Weaknesses and Limitations\n\n(1) The central claim of 1 Hz rhythmic sampling is insufficiently validated. The windowing procedure (0.5s windows with 0.25s step) inherently restricts frequency resolution, potentially biasing toward low-frequency components like 1 Hz. Testing different window durations or providing controls would significantly strengthen this claim.\n\n(2) The study lacks a baseline or control condition without distractors. This makes it difficult to determine whether the distractor-related decoding signals or the 1 Hz effect reflect genuine distractor processing or more general task dynamics.\n\n(3) The pairwise decoding accuracies for distractor categories hover close to chance (~55%), raising concerns about robustness. While statistically above chance, the small effect sizes need careful interpretation, particularly when linked to behavior.\n\n(4) Neither target nor distractor signal strength (SSVEP amplitude) correlates with behavioral accuracy. The study instead relies heavily on relative phase, which-while interesting-may benefit from additional converging evidence.\n\n(5) Phase analysis is performed between different types of signals hindering their interpretability (time-resolved SSVEP amplitude and time-resolved decoding accuracy).\n\nThe authors largely achieved their stated goal of assessing rhythmic sampling of distractors. However, the conclusions drawn - particularly regarding the presence of 1 Hz rhythmicity - rest on analytical choices that should be scrutinized further. While the observed phase-performance relationship is interesting and potentially impactful, the lack of stronger and convergent evidence on the frequency component itself reduces confidence in the broader conclusions.\n\nIf validated, the findings will advance our understanding of attentional dynamics and competition in complex visual environments. Demonstrating that ignored distractors can be rhythmically sampled at similar frequencies to targets has implications for models of attention and cognitive control. However, the methodological limitations currently constrain the paper's impact.\n\nAdditional Considerations\n\n\u2022 The use of EEG-fMRI is mentioned but not leveraged. If BOLD data were collected, even exploratory fMRI analyses (e.g., distractor modulation in visual cortex) could provide valuable converging evidence.\n\n\u2022 In turn, removal of fMRI artifacts might introduce biases or alter the data. For instance, the authors might consider investigating potential fMRI artifact harmonics around 1 Hz to address concerns regarding induced spectral components.\n\nComments on revisions:\n\nThe authors have addressed my previous points, and the manuscript is substantially improved. The key methodological clarifications have been incorporated, and the interpretation of findings has been appropriately moderated. I have no further major concerns.\n",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2c7cb459-32f7-43ce-8aeb-d754b54e4bb7",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C1",
+      "claim": "The visual system samples attended information rhythmically.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the visual system samples attended information rhythmically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on rhythmic visual sampling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "ddcac92f-e19a-49b2-b194-4f3cb80132a0",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C2",
+      "claim": "Rhythmic visual sampling is mediated by low-frequency intrinsic brain oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has suggested that to manage the limited capacity problem, the visual system samples the attended information in a rhythmic fashion, mediated by low-frequency intrinsic brain oscillations (Chota et al., 2022; Dugu\u00e9 et al., 2015; Fiebelkorn et al., 2013; Fiebelkorn et al., 2018; Fiebelkorn and Kastner, 2019; Helfrich et al., 2018; Michel et al., 2022; Re et al., 2019; VanRullen, 2013; Zalta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations support this claim about the mechanism of rhythmic sampling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "157c532c-dca2-41ba-b4f9-8825852aed23",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C3",
+      "claim": "When a stimulus occurs during the high excitability phase of a low-frequency brain oscillation, behavioral performance tends to be better than average.",
+      "claim_type": "EXPLICIT",
+      "source": "When a stimulus occurs during the high excitability phase, behavioral performance tends to be better than average; conversely, if the stimulus occurs during the low excitability phase, performance is generally worse than average (Lakatos et al., 2008; VanRullen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior studies support this claim about phase-dependent performance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "6392c16d-4d1b-4233-a2eb-db1a14b83d0d",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C4",
+      "claim": "When attending to one object in isolation, the frequency of rhythmic sampling tends to be around 8 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "When attending to one object in isolation, the frequency of rhythmic sampling tends to be in the high theta or low alpha frequency range, i.e., around 8 Hz (Fiebelkorn et al., 2013; Senoussi et al., 2019; van der Werf et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior studies support this specific frequency claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "220cf648-0126-40f3-b540-40c7059e77f7",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C5",
+      "claim": "When attention is directed to multiple objects, the brain samples the objects in a serial fashion rather than simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "When attention is directed to multiple objects in the environment, it has been suggested that rather than sampling all the objects simultaneously, the brain samples the objects in a serial fashion (Cohen et al., 1990; Wyart et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support this claim about serial sampling of multiple objects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "0c127390-5354-435a-adc4-f538c1cdf774",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C6",
+      "claim": "Serial sampling of multiple objects leads to a slower rhythmic sampling frequency around 4 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "This would then lead to a slower rhythmic sampling of any given object, in the low range of the theta frequency band, i.e., around 4 Hz (Thigpen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation supports this claim about reduced sampling frequency with multiple objects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "bf446f3c-ee0b-416f-8cfa-b631f811f194",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C7",
+      "claim": "When participants attend to both cued and uncued visual hemifields, the rhythmic detection rate for targets in a given hemifield decreases from 8 Hz to 4 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when participants were cued to attend one visual hemifield but were asked to detect the appearance of a weak stimulus in either the cued or the uncued visual hemifield, the rhythmic detection rate for the target appearing in a given visual hemifield decreased from 8 Hz to 4 Hz (Chota et al., 2022; Fiebelkorn et al., 2013; VanRullen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to prior studies support this specific finding about frequency reduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "9f062c61-613a-4872-95b4-423f833445f5",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C8",
+      "claim": "The visual system samples cued and uncued visual hemifields in a serial, alternating fashion with a 180-degree relative phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when the detection rate functions of the cued and uncued targets were compared, a 180-degree relative phase was apparent, suggesting that the visual system indeed sampled the two visual hemifields in a serial, alternating fashion (Fiebelkorn et al., 2013; Jiang et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support this claim about alternating sampling with specific phase relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "1efaa9ba-d9ad-4e1a-955d-ac567ad15191",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C9",
+      "claim": "In the presence of a distractor, the processing of the target is negatively impacted, leading to reduced task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that in the presence of a distractor, the processing of the target is negatively impacted, leading to reduced task performance (Lavie, 2005; Murphy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support this established finding about distractor effects.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "228282dd-2330-4b80-8687-d2330a2f65c5",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C10",
+      "claim": "Distractors are processed in the brain despite needing to be suppressed by the executive control system.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the distractor, despite the need for it to be suppressed by the brain's executive control system (Kastner et al., 1998; Kastner et al., 1999; Kastner and Pinsk, 2004; Seidl et al., 2012; Kastner and Ungerleider, 2000), is nevertheless processed in the brain, and the competition between the target and the distractor at the neural representational level causes the detriment in behavioral performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support this claim about distractor processing and suppression.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "8c8e2cd3-b904-41eb-896a-8e233c3fdccf",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C11",
+      "claim": "The moving dots in the experiment were flickered at 4.29 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The moving dots were flickered at 4.29 Hz, whereas the IAPS pictures were flickered at 6 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "e2a355dd-4895-4ac5-a141-19847d6c5cd4",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C12",
+      "claim": "The IAPS pictures in the experiment were flickered at 6 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The moving dots were flickered at 4.29 Hz, whereas the IAPS pictures were flickered at 6 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "96280a5a-2aec-4869-a7a1-f83d473a74bf",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C13",
+      "claim": "Each trial in the experiment lasted approximately 12 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The target and the distractor were flickered at two different frequencies for an extended duration of ~12 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "aa46ce45-5fe9-4dfd-a18f-97d5b877993f",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C14",
+      "claim": "EEG data were collected from 27 subjects performing a sustained attention task.",
+      "claim_type": "EXPLICIT",
+      "source": "EEG data were collected from 27 subjects performing a sustained attention task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "01545c3c-0400-4977-be32-447d8e666303",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C15",
+      "claim": "Each participant performed 84 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Each participant performed 84 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "fac70def-9d0b-4ee9-b824-49727a68546a",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C16",
+      "claim": "The overall coherent motion detection accuracy was 55.73% \u00b1 2.94%.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall coherent motion detection accuracy was 55.73% \u00b1 2.94%, with that for pleasant, neutral, and unpleasant trials being 55.67% \u00b1 2.76%, 55.03% \u00b1 3.10%, and 56.48% \u00b1 3.61%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of behavioral data from the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "63dfe3a6-2ee6-40d0-a70e-cc764b904e0b",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C17",
+      "claim": "There was no significant difference in behavioral performance between the three types of trials (pleasant, neutral, unpleasant).",
+      "claim_type": "EXPLICIT",
+      "source": "A one-way ANOVA found no significant difference in behavioral performance between the three types of trials (F2, 78 = 0.053, p=0.949), suggesting that the three types of distractors exerted similar distracting influence on the detection of coherent motion, irrespective of their emotional significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "9ddf32ce-36a8-4fd8-8241-cd1de3c8ae93",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C18",
+      "claim": "The three types of distractors exerted similar distracting influence on the detection of coherent motion, irrespective of their emotional significance.",
+      "claim_type": "EXPLICIT",
+      "source": "A one-way ANOVA found no significant difference in behavioral performance between the three types of trials (F2, 78 = 0.053, p=0.949), suggesting that the three types of distractors exerted similar distracting influence on the detection of coherent motion, irrespective of their emotional significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the statistical test showing no difference between conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f30df34b-8b44-4cd7-9e53-ccce9db4a80c",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C19",
+      "claim": "Spectral peaks corresponding to the flicker frequencies of 4.29 Hz (target) and 6 Hz (distractor) are clearly seen in the Fourier spectrum of the grand average SSVEP at Oz.",
+      "claim_type": "EXPLICIT",
+      "source": "From Figure 2B, spectral peaks corresponding to the flicker frequencies of 4.29 Hz (target) and 6 Hz (distractor) are clearly seen.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "62838e47-43bd-4979-a459-d31a59544b36",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C20",
+      "claim": "The 4.29 Hz amplitude was significantly greater than the 6 Hz amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging target amplitude and distractor amplitude across all electrodes, the 4.29 Hz amplitude was significantly greater than the 6 Hz amplitude (p=2.6 \u00d7 10\u20134); see Figure 2C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of amplitudes supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "7d500f1c-f520-412f-94c5-6484e06667ed",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C21",
+      "claim": "The strongest SSVEP response for both target and distractor frequencies was concentrated in the occipital channels.",
+      "claim_type": "EXPLICIT",
+      "source": "SSVEP amplitude topographies for target and distractor in Figure 2D showed that the strongest response for both frequencies was concentrated in the occipital channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Topographical analysis shown in Figure 2D supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "346ecb57-0b64-4bc8-8ee2-6bbdff8b6477",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C22",
+      "claim": "There was no correlation between target SSVEP amplitude and task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Across participants, there was no correlation between target SSVEP amplitude and task performance (p=0.7536); see Figure 2E, left.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "21b7fe03-dab9-4967-b76d-7486d529fad6",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C23",
+      "claim": "The SSVEP amplitude of the distractor has a slight negative correlation with task performance, but it is not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The SSVEP amplitude of the distractor has a slight negative correlation with task performance, indicating that the stronger the distractor processing, the worse the performance, but it is not statistically significant (p=0.1896).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "57e204c8-91e8-41a0-8bcd-1e4970fcc232",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C24",
+      "claim": "IAPS pictures from different emotion categories evoke distinct spatial patterns in EEG which can be decoded using machine-learning-based MVPA methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work has shown that IAPS pictures from different emotion categories evoke distinct spatial patterns in EEG which can be decoded using machine-learning-based MVPA methods (Bo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work supports this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "fed4ffcc-6141-42e5-b7d5-640c9495c344",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C25",
+      "claim": "The pairwise decoding accuracy for pleasant vs neutral was 57.86% \u00b1 9.86%, which was significantly above the chance level of 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A, for pleasant vs neutral, unpleasant vs neutral, and unpleasant vs neutral, the pairwise decoding accuracy was 57.86% \u00b1 9.86%, 55.14% \u00b1 8.17%, and 59.45% \u00b1 9.73%, respectively, which were all significantly above the chance level of 50% at p=3.2 \u00d7 10\u20134, p=3.0 \u00d7 10\u20133, and p=3.0 \u00d7 10\u20135, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results and Figure 3A support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "70dad99a-db12-4cd7-802a-55ea28f96a47",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C26",
+      "claim": "The pairwise decoding accuracy for unpleasant vs neutral was 55.14% \u00b1 8.17%, which was significantly above the chance level of 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A, for pleasant vs neutral, unpleasant vs neutral, and unpleasant vs neutral, the pairwise decoding accuracy was 57.86% \u00b1 9.86%, 55.14% \u00b1 8.17%, and 59.45% \u00b1 9.73%, respectively, which were all significantly above the chance level of 50% at p=3.2 \u00d7 10\u20134, p=3.0 \u00d7 10\u20133, and p=3.0 \u00d7 10\u20135, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results and Figure 3A support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "3dbfcd88-3b84-432b-a56b-8bc6337d30c4",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C27",
+      "claim": "The pairwise decoding accuracy for pleasant vs unpleasant was 59.45% \u00b1 9.73%, which was significantly above the chance level of 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A, for pleasant vs neutral, unpleasant vs neutral, and unpleasant vs neutral, the pairwise decoding accuracy was 57.86% \u00b1 9.86%, 55.14% \u00b1 8.17%, and 59.45% \u00b1 9.73%, respectively, which were all significantly above the chance level of 50% at p=3.2 \u00d7 10\u20134, p=3.0 \u00d7 10\u20133, and p=3.0 \u00d7 10\u20135, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results and Figure 3A support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "cc02f7ce-44c3-4b41-ad2e-7f33b9e00930",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C28",
+      "claim": "The three-way decoding accuracy was 41.09% \u00b1 6.25%, which is significantly above chance level of 33.33%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, the three-way decoding accuracy was found to be 41.09% \u00b1 6.25%, which is again significantly above chance level of 33.33% at p=3.9 \u00d7 10\u20137.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results and Figure 3B support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "9f610dab-c1d7-45c5-9d85-ddab16dc750c",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C29",
+      "claim": "No correlation was found between distractor decoding accuracy and task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to distractor SSVEP amplitude, no correlation was found between distractor decoding accuracy and task performance; see Figure 3C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis and Figure 3C support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "2abcce69-cf49-4f54-9f30-da29725fb262",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C30",
+      "claim": "Distractor decoding accuracy and distractor amplitude are independent indices of distractor processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, in order to verify that the distractor decoding accuracy and the distractor amplitude were independent indices of distractor processing, we correlated the two across participants. As Figure 3D shows, no correlation was found, suggesting that the two quantities provided complementary characterization of distractor processing (also see Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Lack of correlation between the two measures supports their independence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "9963e32a-c149-4c71-b7f7-e6b73b6b35db",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C31",
+      "claim": "The attended target was sampled rhythmically with a sampling frequency at approximately 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all participants, the averaged Fourier spectrum is shown in Figure 4Aii, where the frequency of the spectral peak was found to be 1.08\u00b10.11 Hz. These results supported the idea that the attended target was sampled rhythmically with a sampling frequency at ~1 Hz (delta frequency band).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Spectral analysis of target processing time series shown in Figure 4A supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "bbb59b2b-b12a-4dcd-8031-3b3468f55e45",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C32",
+      "claim": "The distractor was sampled rhythmically with a sampling frequency at approximately 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all participants, the averaged spectrum is shown in Figure 4Bii, where the peak frequency was determined to be 1.08\u00b10.11 Hz. These results supported the idea that the distractor was also sampled rhythmically with a sampling frequency at ~1 Hz (delta frequency band).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Spectral analysis of distractor processing time series shown in Figure 4B supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "32356397-2be3-4955-ab43-95473db88a42",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C33",
+      "claim": "Both the target and the distractor were sampled rhythmically at approximately 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown above, the present evidence suggests that both the target and the distractor were sampled rhythmically, at ~1 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the spectral analyses presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f7cc7bc6-25a8-42aa-b665-67bcb9156dbb",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C34",
+      "claim": "The mean relative phase between target and distractor sampling was 0.51 \u00b1 0.31\u03c0.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5A shows the distribution of the relative phase for all participants (mean relative phase = 0.51 \u00b1 0.31\u03c0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phase analysis shown in Figure 5A supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "263369d1-1f43-4e8b-a870-ca588143931e",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C35",
+      "claim": "The relative phase distribution between target and distractor sampling is not different from the uniform distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "A Kolmogorov-Smirnov (K-S) test was applied to the relative phase distribution to see whether it departed from the uniform distribution (Figure 5B). A K-S statistic of 0.10 showed that the relative phase distribution is not different from the uniform distribution at p=0.92, suggesting that there was no systematic relative phase between rhythmic samplings of target vs distractor across participants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f19cf78f-b16b-4c6e-8738-84212ee3e7cb",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C36",
+      "claim": "There was no systematic relative phase between rhythmic samplings of target vs distractor across participants.",
+      "claim_type": "EXPLICIT",
+      "source": "A K-S statistic of 0.10 showed that the relative phase distribution is not different from the uniform distribution at p=0.92, suggesting that there was no systematic relative phase between rhythmic samplings of target vs distractor across participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the K-S test showing uniform distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "7635929d-3c25-42a1-b5a3-d24d05d917ca",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C37",
+      "claim": "If target sampling and distractor sampling are well separated in time (opposite phases), competition will be minimized and task performance will be maximized.",
+      "claim_type": "EXPLICIT",
+      "source": "Since simultaneously presented target and distractor compete for neural representations and the stronger the competition, the worse the task performance, one may expect that if the target sampling and the distractor sampling are well separated in time, namely, if they occur in opposite phases of the 1 Hz brain oscillation, the competition will be minimized, and the task performance will be maximized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the competition model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "2395a48f-35c9-4000-b47e-be38127198f3",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C38",
+      "claim": "If target and distractor are sampled during the same phase, competition will be maximized and task performance will be minimized.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, if the target and the distractor were sampled during the same phase within the 1 Hz cycle, the target-distractor competition will be maximized, and the task performance will be minimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the competition model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "1bcf4300-4025-4c5f-9bab-4a6ef451daf0",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C39",
+      "claim": "In a high-performing participant, target and distractor processing time courses are highly anticorrelated with relative phase around \u03c0.",
+      "claim_type": "EXPLICIT",
+      "source": "In the high performer, the two time courses are highly anticorrelated (relative phase is around \u03c0), indicating that the target and the distractor were sampled in opposite parts of the cycle, while for the low performer, the two time courses are highly correlated (relative phase is around 0), indicating that the target and the distractor were sampled in the same part of the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of individual participant data shown in Figure 5C supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "dcca081d-dc7b-4dd7-9ad2-e79e71506ea7",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C40",
+      "claim": "In a low-performing participant, target and distractor processing time courses are highly correlated with relative phase around 0.",
+      "claim_type": "EXPLICIT",
+      "source": "In the high performer, the two time courses are highly anticorrelated (relative phase is around \u03c0), indicating that the target and the distractor were sampled in opposite parts of the cycle, while for the low performer, the two time courses are highly correlated (relative phase is around 0), indicating that the target and the distractor were sampled in the same part of the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of individual participant data shown in Figure 5C supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "81491ede-6081-4a67-b917-6b0251420470",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C41",
+      "claim": "There is a significant positive correlation between relative phase and task performance (r=0.6041, p=0.0008).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all participants, as shown in Figure 5D, a significant positive correlation between relative phase and task performance was observed (r=0.6041, p=0.0008), suggesting that the more the target sampling and the distractor sampling are separated in time (i.e. in opposite phases of the cycle), the less the interference between target and distractor processing, the better the task performance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis shown in Figure 5D supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "4c8076f0-9e33-4e0f-8b47-77ec48333dfb",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C42",
+      "claim": "The more target sampling and distractor sampling are separated in time, the less the interference between target and distractor processing, and the better the task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all participants, as shown in Figure 5D, a significant positive correlation between relative phase and task performance was observed (r=0.6041, p=0.0008), suggesting that the more the target sampling and the distractor sampling are separated in time (i.e. in opposite phases of the cycle), the less the interference between target and distractor processing, the better the task performance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the positive correlation between relative phase and performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "6f9f37ee-246a-451c-be74-300f36bbf296",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C43",
+      "claim": "Both target processing and distractor processing exhibited rhythmicity at approximately 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that (1) both target processing and distractor processing exhibited rhythmicity at ~1 Hz and (2) the phase difference between the two rhythmic time courses was related to task performance, i.e., relative phase closer to \u03c0 predicted a higher rate of coherent motion detection whereas relative phase closer to 0 predicted a lower rate of coherent motion detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the spectral analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "d16ba0d1-b0e8-4ccf-8c5c-d52575a6de72",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C44",
+      "claim": "Relative phase closer to \u03c0 predicted a higher rate of coherent motion detection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that (1) both target processing and distractor processing exhibited rhythmicity at ~1 Hz and (2) the phase difference between the two rhythmic time courses was related to task performance, i.e., relative phase closer to \u03c0 predicted a higher rate of coherent motion detection whereas relative phase closer to 0 predicted a lower rate of coherent motion detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the correlation analysis between relative phase and performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "62bfc15d-76ee-4291-8cef-eae04c8da29a",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C45",
+      "claim": "Relative phase closer to 0 predicted a lower rate of coherent motion detection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that (1) both target processing and distractor processing exhibited rhythmicity at ~1 Hz and (2) the phase difference between the two rhythmic time courses was related to task performance, i.e., relative phase closer to \u03c0 predicted a higher rate of coherent motion detection whereas relative phase closer to 0 predicted a lower rate of coherent motion detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the correlation analysis between relative phase and performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "87745f97-cc8b-401f-aca3-e93e324278bb",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C46",
+      "claim": "In a target-distractor scenario, both attended and distracting information were sampled rhythmically.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that (1) in a target-distractor scenario, both attended and distracting information were sampled rhythmically and (2) the more target sampling and distractor sampling were separated in time within a sampling cycle, the less distraction effects were observed, both at the neural and the behavioral level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the spectral analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "a4346974-36fa-4097-965d-9845200db47a",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C47",
+      "claim": "The more target sampling and distractor sampling were separated in time within a sampling cycle, the less distraction effects were observed at both neural and behavioral levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that (1) in a target-distractor scenario, both attended and distracting information were sampled rhythmically and (2) the more target sampling and distractor sampling were separated in time within a sampling cycle, the less distraction effects were observed, both at the neural and the behavioral level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the phase-performance correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "cbf93371-fc5f-4d97-95fe-d4738a1e377d",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C48",
+      "claim": "Delta oscillations (0.5\u20133.5 Hz) are traditionally associated with deep sleep and homeostatic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Delta oscillations (0.5\u20133.5 Hz), traditionally associated with deep sleep and homeostatic processes (Amzica and Steriade, 1998; Franken et al., 2001; Franken and Dijk, 2024; Frohlich et al., 2021; Torres-Herraez et al., 2022), are being increasingly recognized for their role in a variety of cognitive functions (Basar et al., 1999; Ba\u015far et al., 2001; Ba\u015far-Eroglu et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support this established knowledge about delta oscillations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "583abdbf-6c4a-47e8-ac7b-7269d2cfd55e",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C49",
+      "claim": "Delta oscillations are being increasingly recognized for their role in a variety of cognitive functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Delta oscillations (0.5\u20133.5 Hz), traditionally associated with deep sleep and homeostatic processes (Amzica and Steriade, 1998; Franken et al., 2001; Franken and Dijk, 2024; Frohlich et al., 2021; Torres-Herraez et al., 2022), are being increasingly recognized for their role in a variety of cognitive functions (Basar et al., 1999; Ba\u015far et al., 2001; Ba\u015far-Eroglu et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support this emerging understanding of delta oscillations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "fc0fc8f5-6298-47db-a0f2-eebb65a3334c",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C50",
+      "claim": "Rhythmic sampling of an auditory scene is mediated by delta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the auditory domain, rhythmic sampling of an auditory scene is shown to be mediated by delta oscillations (Kubetschek and Kayser, 2021; Morillon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support this claim about delta oscillations in auditory processing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "05b1db50-b207-4351-971f-f61cddcf30ba",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C51",
+      "claim": "When observers directed temporal attention to one of two sequential grating targets with predictable timing, the steady-state visual evoked response was modulated at 2 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study, when observers directed temporal attention to one of two sequential grating targets with predictable timing, the steady-state visual evoked response of the flashing target was modulated at 2 Hz (Denison et al., 2022), which falls in the delta frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation supports this specific finding about 2 Hz modulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "9914ea94-77f2-436b-92bf-432edc7e33d3",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C52",
+      "claim": "Expecting a stimulus engages delta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, extensive evidence has shown that expecting a stimulus, which is known to require the deployment of attentional resources, engages delta oscillations (Arnal et al., 2011; Arnal et al., 2015; Breska and Deouell, 2017; Cravo et al., 2013; Lakatos et al., 2008; Schroeder and Lakatos, 2009; Stefanics et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations support this claim about delta oscillations in expectation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "24d44297-394e-40c5-a167-29821bbcfae3",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C53",
+      "claim": "Delta oscillations are involved in mechanisms that synchronize distributed regions within functional neural networks in supporting cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "Delta oscillations were also involved in mechanisms that synchronize distributed regions within functional neural networks in supporting cognitive control (Helfrich et al., 2017; Helfrich et al., 2019; Helfrich and Knight, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support this claim about delta oscillations in cognitive control.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "43360d36-77f8-4c96-a5eb-6d4826759e42",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C54",
+      "claim": "The spatially overlapping target and distractor in the paradigm places high demand on the brain's cognitive control system, which operates in the delta frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatially overlapping target and distractor in our paradigm places high demand on the brain's cognitive control system, shown recently to be operating in the delta frequency band (Pagnotta et al., 2024), which could be another reason underlying the observed mediation by delta oscillations in the rhythmic sampling of the target-distractor environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation and inference support this claim about cognitive control demands.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "5ba1b8c0-240e-4948-81fe-fff835fb917f",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C55",
+      "claim": "When two attended objects overlap in space, the relative phase between the two rhythmic behavioral time series appears to be uniformly distributed across participants.",
+      "claim_type": "EXPLICIT",
+      "source": "When two attended objects overlap in space, however, this alternating sampling pattern is not observed, and the relative phase between the two rhythmic behavioral time series appears to be uniformly distributed across participants (Re et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation supports this claim about phase distribution with overlapping objects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "81ffe82e-6c2f-455d-8b0d-2d93ec737a48",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C56",
+      "claim": "Regardless of the behavioral relevance of two superimposed stimuli, there is no preferred phase relationship between their samplings at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, regardless of the behavioral relevance of the two superimposed stimuli, there is no preferred phase relationship between their samplings at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the uniform phase distribution observed in the current study and prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "0895858f-497b-4c4c-898a-3b501479c8d9",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C57",
+      "claim": "The distractor decoding accuracy at the whole trial level was not correlated with task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3D, the distractor decoding accuracy at the whole trial level was not correlated with task performance, nor was the overall power of the target evoked activity at the whole trial level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "58858e46-ea3f-4c6f-86c3-9c7a9b10c2ce",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C58",
+      "claim": "The overall power of the target evoked activity at the whole trial level was not correlated with task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3D, the distractor decoding accuracy at the whole trial level was not correlated with task performance, nor was the overall power of the target evoked activity at the whole trial level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis supports this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "9ef3a599-5405-45d0-814b-0adf0c435e4a",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C59",
+      "claim": "The key mechanism underlying target-distractor competition is not how well the target and distractor are each represented but how their respective rhythmic sampling aligns over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, what we found should be considered a new mechanism underlying the competition between distractor and target. In this mechanism, the key is not how well the target and the distractor are each represented but how their respective rhythmic sampling aligns over time: The more target sampling and distractor sampling are separated in time, the less direct competition between the two, the better the attended information is processed, and the better the behavioral performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pattern of results showing phase but not amplitude correlates with performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "bc33c232-694a-4b04-afbd-03e39a6a01ab",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C60",
+      "claim": "When the signal-to-noise ratio (SNR) is high, sidebands are visible in the Fourier spectrum, whereas when the SNR is low, the sidebands are indistinguishable from the noise floor.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed using both simulations and actual data that when the SNR is high, the sidebands are visible, whereas when the SNR is low, the sidebands are indistinguishable from the noise floor (Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulations and data analysis shown in Appendix support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "3ed2eb6e-87c9-4e80-b4ac-d89f3525826e",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C61",
+      "claim": "The majority of subjects have low SNR for observing sidebands.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of our subjects have low SNR for observing sidebands. This is why the sidebands in the Fourier spectrum in Figure 2B are not readily identifiable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of SNR in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "9b6949ce-7b07-4330-a0f1-a7d7d030c8cc",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C62",
+      "claim": "The 1 Hz amplitude modulation of the SSVEP amplitude and decoding accuracy time series is of an endogenous origin and represents the frequency of rhythmic sampling in the paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the 1 Hz amplitude modulation of the SSVEP amplitude, as well as decoding accuracy time series, is of an endogenous origin and represents the frequency of the rhythmic sampling of the environment by the visual attention system in our paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the 1 Hz peak cannot be explained by signal processing alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "57e00754-9545-4cde-b7f1-2ca154afa4a9",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C63",
+      "claim": "The approximately 1 Hz rhythmic sampling and the phase-related target-distractor competition are robust findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a 0.1 s window length and a 0.05 s step size (Appendix 1\u2014figures 5 and 6) and applying the window-free Hilbert transform method (Appendix 1\u2014figures 7 and 8), we found the same results as those reported in the main manuscript, suggesting that the ~1 Hz rhythmic sampling and the phase-related target-distractor competition are robust findings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Replication with different analysis parameters supports robustness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "17783725-2098-472b-a115-6fedfc886c51",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C64",
+      "claim": "Thirty undergraduate students from the University of Florida participated in the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty undergraduate students from the University of Florida gave written informed consent and participated in the experiment to earn credit in an introductory psychology course.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about participant recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "3c626964-2c46-4346-bd98-73b072187c86",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C65",
+      "claim": "Three participants were excluded due to excessive movements during recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Three participants were excluded due to excessive movements during recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data exclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "fca4e8b4-5b81-4f60-a407-32062fc2db38",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C66",
+      "claim": "The final sample consisted of 18 women and 9 men with a mean age of 19.2 \u00b1 1.1 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The EEG data from n=27 participants (18 women, 9 men, mean age = 19.2 \u00b1 1.1 years) were analyzed and reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the final sample demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "1cf8bcd7-667f-486a-bb11-a637e58f17da",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C67",
+      "claim": "The RDK consisted of 175 yellow dots randomly distributed within a circular aperture.",
+      "claim_type": "EXPLICIT",
+      "source": "The RDK consisted of 175 yellow dots randomly distributed within a circular aperture in the center of the screen, with each dot spanning <0.5 degrees of visual angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the stimulus properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f87e0e61-401a-4a1b-9c8c-36d34bd77711",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C68",
+      "claim": "Each dot spanned less than 0.5 degrees of visual angle.",
+      "claim_type": "EXPLICIT",
+      "source": "The RDK consisted of 175 yellow dots randomly distributed within a circular aperture in the center of the screen, with each dot spanning <0.5 degrees of visual angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the stimulus properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "b5f41e0e-1d2f-43c6-b7c3-d80bcc85a329",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C69",
+      "claim": "The IAPS images portrayed three broad categories of emotions: pleasant, neutral, and unpleasant.",
+      "claim_type": "EXPLICIT",
+      "source": "The IAPS images portrayed three broad categories of emotions: pleasant, neutral, and unpleasant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the stimulus categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "27dd1e53-5f9e-427d-9094-f6f1ddca8ccc",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C70",
+      "claim": "The stimulus was presented on a 30-inch MR-compatible LCD monitor placed approximately 230 cm from the participant's head.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulus was presented on a 30-inch MR-compatible LCD monitor placed approximately 230 cm from the participant's head outside the bore of the MRI scanner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "47efad21-bfde-4809-84eb-ab1503d08236",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C71",
+      "claim": "For each 4.29 Hz flicker cycle, the moving dots were displayed for 100 ms followed by a 133 ms off period.",
+      "claim_type": "EXPLICIT",
+      "source": "For each 4.29 Hz flicker cycle, the moving dots were displayed for 100 ms, which was followed by a 133 ms off period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the stimulus timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "869022c9-1c8c-49bc-b7f6-8a4b558abea6",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C72",
+      "claim": "For each 6 Hz flicker cycle, the IAPS background picture was shown for 100 ms followed by a 66.7 ms off period.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, for each 6 Hz flicker cycle, the IAPS background picture was shown for 100 ms and followed by a 66.7 ms off period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the stimulus timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "946b2147-4469-4e71-9c72-9544b458573f",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C73",
+      "claim": "Coherent motion instances lasted for four on-off cycles (933 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Coherent motion instances lasted for four on-off cycles (933 ms) and appeared once in 39 trials (13 trials per emotion condition) or twice in 4 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the coherent motion duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "d530d173-17b4-492c-8621-607d405b58d7",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C74",
+      "claim": "Coherent motion instances appeared once in 39 trials or twice in 4 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Coherent motion instances lasted for four on-off cycles (933 ms) and appeared once in 39 trials (13 trials per emotion condition) or twice in 4 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "6393d0e0-8d11-4ada-886c-bdac088841ba",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C75",
+      "claim": "The remaining 41 trials contained no instances of coherent motion.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 41 trials contained no instances of coherent motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "1a6f26a7-7cdf-47f5-a51b-9ff66c1a82ea",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C76",
+      "claim": "Each trial lasted 11.667 s (50 moving dot cycles and 70 IAPS background picture cycles).",
+      "claim_type": "EXPLICIT",
+      "source": "Each trial lasted 11.667 s (50 moving dot cycles and 70 IAPS background picture cycles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the trial duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "4713b3a0-fcfc-4a0e-b1d6-d377d9c8fc6a",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C77",
+      "claim": "The coherent motion instances occurred in the interval between 2.3 s and 10.4 s post stimulus array onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The coherent motion instances occurred in the interval between 2.3 s and 10.4 s post stimulus array onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the timing of coherent motion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "2b4c278f-6714-45b3-9865-876f89790889",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C78",
+      "claim": "A total of 42 IAPS pictures were equally divided into three content categories based on valence: pleasant (erotic couples), neutral (workplace people), or unpleasant (bodily mutilation).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 42 IAPS pictures were equally divided into three content categories based on valence: pleasant (erotic couples), neutral (workplace people), or unpleasant (bodily mutilation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the stimulus set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "29a5a376-15f8-41e0-89f5-ba38a3a8aa34",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C79",
+      "claim": "There was a total of 84 trials: 28 pleasant trials, 28 unpleasant trials, and 28 neutral trials.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a total of 84 trials: 28 pleasant trials, 28 unpleasant trials, and 28 neutral trials, and each picture was used twice during the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f1af6904-05e2-4c42-a34c-e2adcd780cb4",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C80",
+      "claim": "Each picture was used twice during the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a total of 84 trials: 28 pleasant trials, 28 unpleasant trials, and 28 neutral trials, and each picture was used twice during the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "76e57d4b-d1e2-4940-a9eb-e026999f2def",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C81",
+      "claim": "EEG data was recorded using a 32-channel MR-compatible EEG recording system.",
+      "claim_type": "EXPLICIT",
+      "source": "EEG data was recorded using a 32-channel MR-compatible EEG recording system (Brain Products, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the recording equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "3d747812-1f92-422d-8bc6-9ef0328c7423",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C82",
+      "claim": "Thirty-one Ag/AgCl electrodes were placed on the scalp according to the 10\u201320 system.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-one Ag/AgCl electrodes were placed on the scalp according to the 10\u201320 system via an elastic cap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the electrode placement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "736c4962-4f92-4c04-b8a5-962b43c8c6ce",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C83",
+      "claim": "Electrode FCz was used as the reference during recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrode FCz was used as the reference during recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the recording reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f137fb80-90cd-41a7-9c0a-11f73a912d93",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C84",
+      "claim": "EEG data was digitized at 16-bit resolution and sampled at 5 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "EEG data was digitized at 16-bit resolution and sampled at 5 kHz with a 0.1\u2013250 Hz (3 dB point) bandpass filter applied online (Butterworth, 18 dB/octave roll off).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f4ba2118-30c1-479c-b674-a704499f4c3d",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C85",
+      "claim": "The analyzed EEG data came from the period from 2 to 11 s post array onset.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize the transient effect resulting from the stimulus array onset and the possible effect resulting from anticipating the end of a trial, the EEG data from the beginning and the end of a trial were discarded, namely, the analyzed EEG data came from the period from 2 to 11 s post array onset, which contained the period from 2.3 to 10.4 s post stimulus array onset during which instances of coherent motion in the moving dots took place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data analysis window.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "3f90743a-2f5a-4037-8645-1bf531659b34",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C86",
+      "claim": "The moving window duration was 0.5 s and the step size was 0.25 s.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess target processing as a function of TFO, i.e., the temporal dynamics of target processing, the magnitude of the band-passed filtered data was obtained using a moving window approach, where the window duration was 0.5 s and the step size was 0.25 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the analysis parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "3ac5ef48-c593-479f-af83-646be8533c8b",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C87",
+      "claim": "The MVPA analysis was conducted with the linear support vector machine (SVM) method as implemented in the LibSVM package.",
+      "claim_type": "EXPLICIT",
+      "source": "The MVPA analysis was conducted with the linear support vector machine (SVM) method as implemented in the LibSVM package (http://www.csie.ntu.edu.tw/~cjlin/libsvm/) (Chang and Lin, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "731793ef-affd-44fc-8dbd-d1d32a7ef567",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "claim_id": "C88",
+      "claim": "The decoding process was iterated 100 times to ensure the stability of the decoding result.",
+      "claim_type": "EXPLICIT",
+      "source": "This process was iterated 100 times to ensure the stability of the decoding result, and the average of the decoding accuracy values was analyzed and reported (Bae and Luck, 2019; Haxby et al., 2014; Zhang et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employed an SSVEP frequency-tagging paradigm with 27 participants detecting coherent motion in random dots (4.29 Hz flicker) superimposed on emotional IAPS images (6 Hz flicker), with EEG recorded using a 32-channel system and analyzed using moving window approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims (C14-C88) are internally consistent and provide sufficient detail about experimental design, participant characteristics, stimulus parameters, data acquisition, and analysis procedures. These are standard methods appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "6f489458-bfc1-428c-9724-f2af50a032b4",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Behavioral performance showed no significant difference across emotional distractor conditions (pleasant, neutral, unpleasant), with overall coherent motion detection accuracy of 55.73% \u00b1 2.94% and ANOVA showing F(2,78)=0.053, p=0.949.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by appropriate statistical testing (one-way ANOVA) with clear reporting of means, standard deviations, and p-values. The inference that emotional distractors exert similar influence is reasonable given the non-significant result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "4026c135-2d0f-4d46-be85-976ad9a550bc",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Whole-trial SSVEP analysis revealed clear spectral peaks at target (4.29 Hz) and distractor (6 Hz) frequencies, with target amplitude significantly greater than distractor amplitude (p=2.6\u00d710\u207b\u2074), both concentrated in occipital channels, but neither correlated with task performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 are supported by spectral analysis and topographical data shown in Figure 2. The statistical comparison is appropriate, and the lack of correlation with performance (C22, C23) is properly tested and reported with p-values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "00cd7491-f925-4d7c-9a55-b42c8859b09a",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MVPA decoding of emotional distractor categories from 6 Hz SSVEP spatial patterns achieved above-chance accuracy for all pairwise comparisons (57.86%, 55.14%, 59.45%) and three-way classification (41.09%), with decoding accuracy independent of distractor amplitude but not correlated with task performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 demonstrate successful decoding with appropriate statistical testing against chance levels and highly significant p-values (10\u207b\u00b3 to 10\u207b\u2077 range). The independence of decoding accuracy from amplitude (C30) and lack of performance correlation (C29) are properly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "fc92c6f5-13ae-49b0-a68f-f380face0c13",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both target and distractor processing exhibited rhythmic sampling at approximately 1 Hz (delta band), with spectral peaks at 1.08\u00b10.11 Hz for both target SSVEP amplitude and distractor decoding accuracy time series.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C43, C46 are supported by moving-window spectral analysis shown in Figure 4, with consistent peak frequencies across both measures. The finding is replicated with different analysis parameters (C63), demonstrating robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "966719de-f467-43fb-b1fb-5de762f48298",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The relative phase between target and distractor sampling showed uniform distribution across participants (K-S test: p=0.92) but significantly correlated with task performance (r=0.6041, p=0.0008), with phase closer to \u03c0 predicting better performance and phase closer to 0 predicting worse performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C42, C44-C45, C47 are well-supported by phase analysis (Figure 5) with appropriate statistical tests. The K-S test confirms uniform distribution at population level, while the strong correlation (r=0.6041) with performance is highly significant and illustrated with individual examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "fc7b0663-5524-4f23-bca7-0e0d1d2a5cc6",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors predict that temporal separation of target and distractor sampling (opposite phases) minimizes competition and maximizes performance, while same-phase sampling maximizes competition and minimizes performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 represent theoretical predictions that are subsequently validated by the empirical correlation between relative phase and performance (C41-C42). The predictions are logical given the competition framework and are borne out by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "ce440505-e757-46b2-92d1-c135f491576f",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The key mechanism underlying target-distractor competition is the temporal alignment of rhythmic sampling rather than the strength of target or distractor representations, as neither whole-trial target amplitude nor distractor decoding accuracy correlated with performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 present a novel mechanistic interpretation supported by the pattern of results: lack of correlation at whole-trial level (C57-C58) contrasts with strong phase-performance correlation (C41), supporting the temporal alignment mechanism over representation strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "a3a04aba-6235-4e80-bd36-d59bc1022201",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The observed ~1 Hz rhythmic sampling is mediated by delta oscillations, which are increasingly recognized for cognitive functions including auditory scene sampling, temporal attention, stimulus expectation, and cognitive control, with the spatially overlapping target-distractor paradigm placing high demands on delta-band cognitive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 provide appropriate contextualization through citations to prior literature. The interpretation linking delta oscillations to the current findings (C54) is reasonable given the cited evidence and the task demands, though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f67decc2-0b10-4a29-8856-6f482ca26672",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When two stimuli overlap in space, there is no preferred phase relationship between their samplings at the population level, regardless of behavioral relevance, consistent with prior findings for attended objects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 appropriately cite prior work and extend it to the target-distractor scenario. The uniform phase distribution (C35-C36) supports this generalization, though the inference about behavioral relevance being irrelevant is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "a95a62e5-32bd-46d7-ade3-20249eeb291d",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Signal processing considerations demonstrate that the 1 Hz modulation is of endogenous origin rather than arising from signal processing artifacts, as sidebands are not visible due to low SNR, the 1 Hz peak dominates over the expected 1.71 Hz beating frequency, and results are robust to different analysis parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 address important methodological concerns with simulations and alternative analyses (Appendix figures). The demonstration that 1 Hz cannot be explained by signal processing alone (C62) strengthens the interpretation of endogenous rhythmic sampling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777",
+      "content_id": "fd7eb095-42da-4796-b9ad-7ff8d3ebe58a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior literature establishes that visual attention samples information rhythmically via low-frequency oscillations, with sampling frequency depending on task demands (~8 Hz for single objects, ~4 Hz for multiple objects), and that distractors are processed despite suppression attempts, leading to target-distractor competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 accurately summarize prior literature with appropriate citations. These provide the necessary background for the current study's contributions, though the specific frequency claims from prior work differ from the ~1 Hz observed here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "4aeee4bf-90dd-4b63-a3ab-2b18abd554f5",
+      "content_id": "e2ca3e9c-605c-42b8-9455-44921e3ce9b6",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "SSVEP responses at 4.29 Hz (target) and 6 Hz (distractor) were detected in occipital channels, with target amplitude significantly greater than distractor amplitude. Neither target nor distractor SSVEP amplitude correlated significantly with task performance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these basic SSVEP findings without challenge. Reviewer 1 noted 'the general EEG analysis pipeline is sensible and well-described,' and both reviewers focused their critiques on higher-level interpretations rather than these foundational measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "521b659a-e8de-42d6-bf09-f758b8231ed0",
+      "content_id": "e2ca3e9c-605c-42b8-9455-44921e3ce9b6",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Emotional distractor content (pleasant, neutral, unpleasant) could be decoded from EEG using MVPA with accuracies significantly above chance (pairwise: 55-59%; three-way: 41%). Decoding accuracy did not correlate with task performance and was independent of distractor SSVEP amplitude.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raised concerns that 'pairwise decoding accuracies for distractor categories hover close to chance (~55%), raising concerns about robustness' and noted 'small effect sizes need careful interpretation.' Reviewer 1 acknowledged the approach as 'elegant' but questioned comparing SSVEP amplitude to decoding accuracy as 'apples with oranges.' The revision comments indicate improvements were made, but the modest effect sizes remain a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f019c2db-d5d0-4ac1-b245-9173916a359f",
+      "content_id": "e2ca3e9c-605c-42b8-9455-44921e3ce9b6",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Both target processing (via SSVEP amplitude) and distractor processing (via decoding accuracy) exhibited rhythmic sampling at approximately 1 Hz. This rhythmicity was determined to be of endogenous origin rather than a signal processing artifact, and was robust across different analysis parameters.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 stated 'the central claim of 1 Hz rhythmic sampling is insufficiently validated' and noted 'the windowing procedure (0.5s windows with 0.25s step) inherently restricts frequency resolution, potentially biasing toward low-frequency components like 1 Hz.' While the authors provided supplementary analyses with different parameters (C63), and Reviewer 2's final comment states 'the manuscript is substantially improved,' the initial methodological concern about frequency resolution bias was significant. Reviewer 1 found the results 'striking and very clear' but also noted the limitation of comparing different signal types.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "ec06e2f2-f928-4df3-9453-0e998cafae6b",
+      "content_id": "e2ca3e9c-605c-42b8-9455-44921e3ce9b6",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The relative phase between target and distractor sampling showed no systematic pattern across participants (uniform distribution), but individual relative phase significantly predicted task performance (r=0.6041, p=0.0008). Greater phase separation (closer to \u03c0) predicted better performance, while in-phase sampling (closer to 0) predicted worse performance. This phase relationship, rather than signal strength, was proposed as the key mechanism underlying target-distractor competition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers found this result compelling. Reviewer 2 stated 'the finding that relative phase (between 1 Hz target and distractor processes) predicts behavioral performance is compelling,' and Reviewer 1 noted 'it is incredibly striking how the phase of both target and distractor processing are so aligned across trials for a given participant.' While Reviewer 2 noted that 'neither target nor distractor signal strength correlates with behavioral accuracy' and suggested the phase finding 'may benefit from additional converging evidence,' the final revision comment states 'I have no further major concerns,' indicating acceptance of the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "50490efc-07cd-45a6-9da6-00e092acb8a4",
+      "content_id": "e2ca3e9c-605c-42b8-9455-44921e3ce9b6",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Overall coherent motion detection accuracy was 55.73% \u00b1 2.94%, with no significant difference between pleasant, neutral, and unpleasant distractor conditions, suggesting similar distracting influence regardless of emotional content.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these behavioral findings. The lack of emotional modulation of performance was accepted as supporting the conclusion that distractors had similar effects across conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e",
+      "content_id": "e2ca3e9c-605c-42b8-9455-44921e3ce9b6",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The experimental design involved 27 participants performing 84 trials each of a sustained attention task with frequency-tagged stimuli (4.29 Hz moving dots as target, 6 Hz emotional IAPS images as distractor) presented for ~12 seconds. EEG was recorded with standard methods and analyzed using moving window approaches (0.5s window, 0.25s step) and MVPA with SVM.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 stated 'the general EEG analysis pipeline is sensible and well-described' and 'the methods are, in general, clearly laid out and defensible.' Reviewer 2 raised concerns about the windowing procedure potentially biasing results, but after revisions noted 'the key methodological clarifications have been incorporated' and 'I have no further major concerns.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf",
+      "content_id": "e2ca3e9c-605c-42b8-9455-44921e3ce9b6",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The study is situated within established literature on rhythmic attentional sampling (typically 4-8 Hz for spatial attention), distractor competition, and the emerging role of delta oscillations (0.5-3.5 Hz) in cognitive functions including attention and cognitive control.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the background literature or theoretical framing. These claims provide context for the novel findings and were accepted as part of the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa46ce45-5fe9-4dfd-a18f-97d5b877993f",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "01545c3c-0400-4977-be32-447d8e666303",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "17783725-2098-472b-a115-6fedfc886c51",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "3c626964-2c46-4346-bd98-73b072187c86",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "fca4e8b4-5b81-4f60-a407-32062fc2db38",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "8c8e2cd3-b904-41eb-896a-8e233c3fdccf",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "e2a355dd-4895-4ac5-a141-19847d6c5cd4",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "96280a5a-2aec-4869-a7a1-f83d473a74bf",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "1cf8bcd7-667f-486a-bb11-a637e58f17da",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "f87e0e61-401a-4a1b-9c8c-36d34bd77711",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "b5f41e0e-1d2f-43c6-b7c3-d80bcc85a329",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "27dd1e53-5f9e-427d-9094-f6f1ddca8ccc",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "47efad21-bfde-4809-84eb-ab1503d08236",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "869022c9-1c8c-49bc-b7f6-8a4b558abea6",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "946b2147-4469-4e71-9c72-9544b458573f",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "d530d173-17b4-492c-8621-607d405b58d7",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "6393d0e0-8d11-4ada-886c-bdac088841ba",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "1a6f26a7-7cdf-47f5-a51b-9ff66c1a82ea",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "4713b3a0-fcfc-4a0e-b1d6-d377d9c8fc6a",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "2b4c278f-6714-45b3-9865-876f89790889",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "29a5a376-15f8-41e0-89f5-ba38a3a8aa34",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "f1af6904-05e2-4c42-a34c-e2adcd780cb4",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "76e57d4b-d1e2-4940-a9eb-e026999f2def",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "3d747812-1f92-422d-8bc6-9ef0328c7423",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "736c4962-4f92-4c04-b8a5-962b43c8c6ce",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "f137fb80-90cd-41a7-9c0a-11f73a912d93",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "f4ba2118-30c1-479c-b674-a704499f4c3d",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "3f90743a-2f5a-4037-8645-1bf531659b34",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "3ac5ef48-c593-479f-af83-646be8533c8b",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "731793ef-affd-44fc-8dbd-d1d32a7ef567",
+      "result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e"
+    },
+    {
+      "claim_id": "fac70def-9d0b-4ee9-b824-49727a68546a",
+      "result_id": "6f489458-bfc1-428c-9724-f2af50a032b4"
+    },
+    {
+      "claim_id": "63dfe3a6-2ee6-40d0-a70e-cc764b904e0b",
+      "result_id": "6f489458-bfc1-428c-9724-f2af50a032b4"
+    },
+    {
+      "claim_id": "9ddf32ce-36a8-4fd8-8241-cd1de3c8ae93",
+      "result_id": "6f489458-bfc1-428c-9724-f2af50a032b4"
+    },
+    {
+      "claim_id": "f30df34b-8b44-4cd7-9e53-ccce9db4a80c",
+      "result_id": "4026c135-2d0f-4d46-be85-976ad9a550bc"
+    },
+    {
+      "claim_id": "62838e47-43bd-4979-a459-d31a59544b36",
+      "result_id": "4026c135-2d0f-4d46-be85-976ad9a550bc"
+    },
+    {
+      "claim_id": "7d500f1c-f520-412f-94c5-6484e06667ed",
+      "result_id": "4026c135-2d0f-4d46-be85-976ad9a550bc"
+    },
+    {
+      "claim_id": "346ecb57-0b64-4bc8-8ee2-6bbdff8b6477",
+      "result_id": "4026c135-2d0f-4d46-be85-976ad9a550bc"
+    },
+    {
+      "claim_id": "21b7fe03-dab9-4967-b76d-7486d529fad6",
+      "result_id": "4026c135-2d0f-4d46-be85-976ad9a550bc"
+    },
+    {
+      "claim_id": "57e204c8-91e8-41a0-8bcd-1e4970fcc232",
+      "result_id": "00cd7491-f925-4d7c-9a55-b42c8859b09a"
+    },
+    {
+      "claim_id": "fed4ffcc-6141-42e5-b7d5-640c9495c344",
+      "result_id": "00cd7491-f925-4d7c-9a55-b42c8859b09a"
+    },
+    {
+      "claim_id": "70dad99a-db12-4cd7-802a-55ea28f96a47",
+      "result_id": "00cd7491-f925-4d7c-9a55-b42c8859b09a"
+    },
+    {
+      "claim_id": "3dbfcd88-3b84-432b-a56b-8bc6337d30c4",
+      "result_id": "00cd7491-f925-4d7c-9a55-b42c8859b09a"
+    },
+    {
+      "claim_id": "cc02f7ce-44c3-4b41-ad2e-7f33b9e00930",
+      "result_id": "00cd7491-f925-4d7c-9a55-b42c8859b09a"
+    },
+    {
+      "claim_id": "9f610dab-c1d7-45c5-9d85-ddab16dc750c",
+      "result_id": "00cd7491-f925-4d7c-9a55-b42c8859b09a"
+    },
+    {
+      "claim_id": "2abcce69-cf49-4f54-9f30-da29725fb262",
+      "result_id": "00cd7491-f925-4d7c-9a55-b42c8859b09a"
+    },
+    {
+      "claim_id": "9963e32a-c149-4c71-b7f7-e6b73b6b35db",
+      "result_id": "fc92c6f5-13ae-49b0-a68f-f380face0c13"
+    },
+    {
+      "claim_id": "bbb59b2b-b12a-4dcd-8031-3b3468f55e45",
+      "result_id": "fc92c6f5-13ae-49b0-a68f-f380face0c13"
+    },
+    {
+      "claim_id": "32356397-2be3-4955-ab43-95473db88a42",
+      "result_id": "fc92c6f5-13ae-49b0-a68f-f380face0c13"
+    },
+    {
+      "claim_id": "6f9f37ee-246a-451c-be74-300f36bbf296",
+      "result_id": "fc92c6f5-13ae-49b0-a68f-f380face0c13"
+    },
+    {
+      "claim_id": "87745f97-cc8b-401f-aca3-e93e324278bb",
+      "result_id": "fc92c6f5-13ae-49b0-a68f-f380face0c13"
+    },
+    {
+      "claim_id": "f7cc7bc6-25a8-42aa-b665-67bcb9156dbb",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "263369d1-1f43-4e8b-a870-ca588143931e",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "f19cf78f-b16b-4c6e-8738-84212ee3e7cb",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "1bcf4300-4025-4c5f-9bab-4a6ef451daf0",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "dcca081d-dc7b-4dd7-9ad2-e79e71506ea7",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "81491ede-6081-4a67-b917-6b0251420470",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "4c8076f0-9e33-4e0f-8b47-77ec48333dfb",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "d16ba0d1-b0e8-4ccf-8c5c-d52575a6de72",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "62bfc15d-76ee-4291-8cef-eae04c8da29a",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "a4346974-36fa-4097-965d-9845200db47a",
+      "result_id": "966719de-f467-43fb-b1fb-5de762f48298"
+    },
+    {
+      "claim_id": "7635929d-3c25-42a1-b5a3-d24d05d917ca",
+      "result_id": "fc7b0663-5524-4f23-bca7-0e0d1d2a5cc6"
+    },
+    {
+      "claim_id": "2395a48f-35c9-4000-b47e-be38127198f3",
+      "result_id": "fc7b0663-5524-4f23-bca7-0e0d1d2a5cc6"
+    },
+    {
+      "claim_id": "0895858f-497b-4c4c-898a-3b501479c8d9",
+      "result_id": "ce440505-e757-46b2-92d1-c135f491576f"
+    },
+    {
+      "claim_id": "58858e46-ea3f-4c6f-86c3-9c7a9b10c2ce",
+      "result_id": "ce440505-e757-46b2-92d1-c135f491576f"
+    },
+    {
+      "claim_id": "9ef3a599-5405-45d0-814b-0adf0c435e4a",
+      "result_id": "ce440505-e757-46b2-92d1-c135f491576f"
+    },
+    {
+      "claim_id": "cbf93371-fc5f-4d97-95fe-d4738a1e377d",
+      "result_id": "a3a04aba-6235-4e80-bd36-d59bc1022201"
+    },
+    {
+      "claim_id": "583abdbf-6c4a-47e8-ac7b-7269d2cfd55e",
+      "result_id": "a3a04aba-6235-4e80-bd36-d59bc1022201"
+    },
+    {
+      "claim_id": "fc0fc8f5-6298-47db-a0f2-eebb65a3334c",
+      "result_id": "a3a04aba-6235-4e80-bd36-d59bc1022201"
+    },
+    {
+      "claim_id": "05b1db50-b207-4351-971f-f61cddcf30ba",
+      "result_id": "a3a04aba-6235-4e80-bd36-d59bc1022201"
+    },
+    {
+      "claim_id": "9914ea94-77f2-436b-92bf-432edc7e33d3",
+      "result_id": "a3a04aba-6235-4e80-bd36-d59bc1022201"
+    },
+    {
+      "claim_id": "24d44297-394e-40c5-a167-29821bbcfae3",
+      "result_id": "a3a04aba-6235-4e80-bd36-d59bc1022201"
+    },
+    {
+      "claim_id": "43360d36-77f8-4c96-a5eb-6d4826759e42",
+      "result_id": "a3a04aba-6235-4e80-bd36-d59bc1022201"
+    },
+    {
+      "claim_id": "5ba1b8c0-240e-4948-81fe-fff835fb917f",
+      "result_id": "f67decc2-0b10-4a29-8856-6f482ca26672"
+    },
+    {
+      "claim_id": "81ffe82e-6c2f-455d-8b0d-2d93ec737a48",
+      "result_id": "f67decc2-0b10-4a29-8856-6f482ca26672"
+    },
+    {
+      "claim_id": "bc33c232-694a-4b04-afbd-03e39a6a01ab",
+      "result_id": "a95a62e5-32bd-46d7-ade3-20249eeb291d"
+    },
+    {
+      "claim_id": "3ed2eb6e-87c9-4e80-b4ac-d89f3525826e",
+      "result_id": "a95a62e5-32bd-46d7-ade3-20249eeb291d"
+    },
+    {
+      "claim_id": "9b6949ce-7b07-4330-a0f1-a7d7d030c8cc",
+      "result_id": "a95a62e5-32bd-46d7-ade3-20249eeb291d"
+    },
+    {
+      "claim_id": "57e00754-9545-4cde-b7f1-2ca154afa4a9",
+      "result_id": "a95a62e5-32bd-46d7-ade3-20249eeb291d"
+    },
+    {
+      "claim_id": "2c7cb459-32f7-43ce-8aeb-d754b54e4bb7",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "ddcac92f-e19a-49b2-b194-4f3cb80132a0",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "157c532c-dca2-41ba-b4f9-8825852aed23",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "6392c16d-4d1b-4233-a2eb-db1a14b83d0d",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "220cf648-0126-40f3-b540-40c7059e77f7",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "0c127390-5354-435a-adc4-f538c1cdf774",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "bf446f3c-ee0b-416f-8cfa-b631f811f194",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "9f062c61-613a-4872-95b4-423f833445f5",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "1efaa9ba-d9ad-4e1a-955d-ac567ad15191",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "228282dd-2330-4b80-8687-d2330a2f65c5",
+      "result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777"
+    },
+    {
+      "claim_id": "f30df34b-8b44-4cd7-9e53-ccce9db4a80c",
+      "result_id": "4aeee4bf-90dd-4b63-a3ab-2b18abd554f5"
+    },
+    {
+      "claim_id": "62838e47-43bd-4979-a459-d31a59544b36",
+      "result_id": "4aeee4bf-90dd-4b63-a3ab-2b18abd554f5"
+    },
+    {
+      "claim_id": "7d500f1c-f520-412f-94c5-6484e06667ed",
+      "result_id": "4aeee4bf-90dd-4b63-a3ab-2b18abd554f5"
+    },
+    {
+      "claim_id": "346ecb57-0b64-4bc8-8ee2-6bbdff8b6477",
+      "result_id": "4aeee4bf-90dd-4b63-a3ab-2b18abd554f5"
+    },
+    {
+      "claim_id": "21b7fe03-dab9-4967-b76d-7486d529fad6",
+      "result_id": "4aeee4bf-90dd-4b63-a3ab-2b18abd554f5"
+    },
+    {
+      "claim_id": "57e204c8-91e8-41a0-8bcd-1e4970fcc232",
+      "result_id": "521b659a-e8de-42d6-bf09-f758b8231ed0"
+    },
+    {
+      "claim_id": "fed4ffcc-6141-42e5-b7d5-640c9495c344",
+      "result_id": "521b659a-e8de-42d6-bf09-f758b8231ed0"
+    },
+    {
+      "claim_id": "70dad99a-db12-4cd7-802a-55ea28f96a47",
+      "result_id": "521b659a-e8de-42d6-bf09-f758b8231ed0"
+    },
+    {
+      "claim_id": "3dbfcd88-3b84-432b-a56b-8bc6337d30c4",
+      "result_id": "521b659a-e8de-42d6-bf09-f758b8231ed0"
+    },
+    {
+      "claim_id": "cc02f7ce-44c3-4b41-ad2e-7f33b9e00930",
+      "result_id": "521b659a-e8de-42d6-bf09-f758b8231ed0"
+    },
+    {
+      "claim_id": "9f610dab-c1d7-45c5-9d85-ddab16dc750c",
+      "result_id": "521b659a-e8de-42d6-bf09-f758b8231ed0"
+    },
+    {
+      "claim_id": "2abcce69-cf49-4f54-9f30-da29725fb262",
+      "result_id": "521b659a-e8de-42d6-bf09-f758b8231ed0"
+    },
+    {
+      "claim_id": "9963e32a-c149-4c71-b7f7-e6b73b6b35db",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "bbb59b2b-b12a-4dcd-8031-3b3468f55e45",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "32356397-2be3-4955-ab43-95473db88a42",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "6f9f37ee-246a-451c-be74-300f36bbf296",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "87745f97-cc8b-401f-aca3-e93e324278bb",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "bc33c232-694a-4b04-afbd-03e39a6a01ab",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "3ed2eb6e-87c9-4e80-b4ac-d89f3525826e",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "9b6949ce-7b07-4330-a0f1-a7d7d030c8cc",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "57e00754-9545-4cde-b7f1-2ca154afa4a9",
+      "result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f"
+    },
+    {
+      "claim_id": "f7cc7bc6-25a8-42aa-b665-67bcb9156dbb",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "263369d1-1f43-4e8b-a870-ca588143931e",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "f19cf78f-b16b-4c6e-8738-84212ee3e7cb",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "7635929d-3c25-42a1-b5a3-d24d05d917ca",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "2395a48f-35c9-4000-b47e-be38127198f3",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "1bcf4300-4025-4c5f-9bab-4a6ef451daf0",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "dcca081d-dc7b-4dd7-9ad2-e79e71506ea7",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "81491ede-6081-4a67-b917-6b0251420470",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "4c8076f0-9e33-4e0f-8b47-77ec48333dfb",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "d16ba0d1-b0e8-4ccf-8c5c-d52575a6de72",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "62bfc15d-76ee-4291-8cef-eae04c8da29a",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "a4346974-36fa-4097-965d-9845200db47a",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "81ffe82e-6c2f-455d-8b0d-2d93ec737a48",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "0895858f-497b-4c4c-898a-3b501479c8d9",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "58858e46-ea3f-4c6f-86c3-9c7a9b10c2ce",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "9ef3a599-5405-45d0-814b-0adf0c435e4a",
+      "result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b"
+    },
+    {
+      "claim_id": "fac70def-9d0b-4ee9-b824-49727a68546a",
+      "result_id": "50490efc-07cd-45a6-9da6-00e092acb8a4"
+    },
+    {
+      "claim_id": "63dfe3a6-2ee6-40d0-a70e-cc764b904e0b",
+      "result_id": "50490efc-07cd-45a6-9da6-00e092acb8a4"
+    },
+    {
+      "claim_id": "9ddf32ce-36a8-4fd8-8241-cd1de3c8ae93",
+      "result_id": "50490efc-07cd-45a6-9da6-00e092acb8a4"
+    },
+    {
+      "claim_id": "8c8e2cd3-b904-41eb-896a-8e233c3fdccf",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "e2a355dd-4895-4ac5-a141-19847d6c5cd4",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "96280a5a-2aec-4869-a7a1-f83d473a74bf",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "aa46ce45-5fe9-4dfd-a18f-97d5b877993f",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "01545c3c-0400-4977-be32-447d8e666303",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "17783725-2098-472b-a115-6fedfc886c51",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "3c626964-2c46-4346-bd98-73b072187c86",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "fca4e8b4-5b81-4f60-a407-32062fc2db38",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "1cf8bcd7-667f-486a-bb11-a637e58f17da",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "f87e0e61-401a-4a1b-9c8c-36d34bd77711",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "b5f41e0e-1d2f-43c6-b7c3-d80bcc85a329",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "27dd1e53-5f9e-427d-9094-f6f1ddca8ccc",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "47efad21-bfde-4809-84eb-ab1503d08236",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "869022c9-1c8c-49bc-b7f6-8a4b558abea6",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "946b2147-4469-4e71-9c72-9544b458573f",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "d530d173-17b4-492c-8621-607d405b58d7",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "6393d0e0-8d11-4ada-886c-bdac088841ba",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "1a6f26a7-7cdf-47f5-a51b-9ff66c1a82ea",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "4713b3a0-fcfc-4a0e-b1d6-d377d9c8fc6a",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "2b4c278f-6714-45b3-9865-876f89790889",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "29a5a376-15f8-41e0-89f5-ba38a3a8aa34",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "f1af6904-05e2-4c42-a34c-e2adcd780cb4",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "76e57d4b-d1e2-4940-a9eb-e026999f2def",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "3d747812-1f92-422d-8bc6-9ef0328c7423",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "736c4962-4f92-4c04-b8a5-962b43c8c6ce",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "f137fb80-90cd-41a7-9c0a-11f73a912d93",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "f4ba2118-30c1-479c-b674-a704499f4c3d",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "3f90743a-2f5a-4037-8645-1bf531659b34",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "3ac5ef48-c593-479f-af83-646be8533c8b",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "731793ef-affd-44fc-8dbd-d1d32a7ef567",
+      "result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e"
+    },
+    {
+      "claim_id": "2c7cb459-32f7-43ce-8aeb-d754b54e4bb7",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "ddcac92f-e19a-49b2-b194-4f3cb80132a0",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "157c532c-dca2-41ba-b4f9-8825852aed23",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "6392c16d-4d1b-4233-a2eb-db1a14b83d0d",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "220cf648-0126-40f3-b540-40c7059e77f7",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "0c127390-5354-435a-adc4-f538c1cdf774",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "bf446f3c-ee0b-416f-8cfa-b631f811f194",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "9f062c61-613a-4872-95b4-423f833445f5",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "1efaa9ba-d9ad-4e1a-955d-ac567ad15191",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "228282dd-2330-4b80-8687-d2330a2f65c5",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "cbf93371-fc5f-4d97-95fe-d4738a1e377d",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "583abdbf-6c4a-47e8-ac7b-7269d2cfd55e",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "fc0fc8f5-6298-47db-a0f2-eebb65a3334c",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "05b1db50-b207-4351-971f-f61cddcf30ba",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "9914ea94-77f2-436b-92bf-432edc7e33d3",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "24d44297-394e-40c5-a167-29821bbcfae3",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "43360d36-77f8-4c96-a5eb-6d4826759e42",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    },
+    {
+      "claim_id": "5ba1b8c0-240e-4948-81fe-fff835fb917f",
+      "result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "ba9d40c4-c49f-473c-ac9f-71e9bf913668",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "9b190bde-4d93-4fe3-9a68-1fadfe30e55e",
+      "peer_result_id": "7a7483f2-65e2-403f-85a8-91a5b2b61b0e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate methodological claims (C11-C88) as SUPPORTED. OpenEval finds methods internally consistent with sufficient detail. Peer reviewers initially raised concerns about windowing procedures but after revisions stated 'key methodological clarifications have been incorporated' and 'I have no further major concerns,' ultimately accepting the methods as 'sensible and well-described.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "135ce653-364f-42b8-90d4-7a7d3a3fc7be",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "6f489458-bfc1-428c-9724-f2af50a032b4",
+      "peer_result_id": "50490efc-07cd-45a6-9da6-00e092acb8a4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address behavioral findings (C16-C18). OpenEval rates SUPPORTED with appropriate statistical testing. Peer reviewers also rate SUPPORTED, accepting the lack of emotional modulation without challenge as supporting similar distractor effects across conditions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "33768750-6d38-463f-89ba-75b47c43ee5d",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "4026c135-2d0f-4d46-be85-976ad9a550bc",
+      "peer_result_id": "4aeee4bf-90dd-4b63-a3ab-2b18abd554f5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate basic SSVEP findings (C19-C23) as SUPPORTED. OpenEval finds spectral analysis and topographical data appropriate with proper statistical testing. Peer reviewers accepted these foundational measurements without challenge, noting 'the general EEG analysis pipeline is sensible and well-described.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "1be9cf6b-ccf3-4c6f-b08c-d61fdeced5c4",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "00cd7491-f925-4d7c-9a55-b42c8859b09a",
+      "peer_result_id": "521b659a-e8de-42d6-bf09-f758b8231ed0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address decoding claims (C24-C30) but differ in evaluation. OpenEval rates SUPPORTED with highly significant p-values and appropriate statistical testing. Peer reviewers rate UNCERTAIN, noting 'pairwise decoding accuracies for distractor categories hover close to chance (~55%)' and concerns about 'small effect sizes' and comparing 'apples with oranges' between SSVEP amplitude and decoding accuracy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "131ec242-ec5f-49ae-9e14-292380e17a56",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "fc92c6f5-13ae-49b0-a68f-f380face0c13",
+      "peer_result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate 1 Hz rhythmic sampling claims (C31-C33, C43, C46) but differ in assessment. OpenEval rates SUPPORTED, noting replication with different parameters (C63) demonstrates robustness. Peer reviewers rate UNCERTAIN, with Reviewer 2 stating 'the central claim of 1 Hz rhythmic sampling is insufficiently validated' and noting windowing procedure 'potentially biasing toward low-frequency components like 1 Hz.' Despite improvements, methodological concerns about frequency resolution bias remained significant.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "d067f5d9-bfc1-4806-943d-71b927894e4f",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "966719de-f467-43fb-b1fb-5de762f48298",
+      "peer_result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate phase analysis claims (C34-C42, C44-C45, C47) as SUPPORTED. OpenEval finds strong correlation (r=0.6041) with performance highly significant. Peer reviewers found this 'compelling' and 'incredibly striking,' with Reviewer 2's final comment stating 'I have no further major concerns.' Peer review also includes C56-C59 in their evaluation, extending to mechanistic interpretation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "294f018a-29ec-4626-bdb8-ffe9bbb36628",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "fc7b0663-5524-4f23-bca7-0e0d1d2a5cc6",
+      "peer_result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates theoretical predictions (C37-C38) as SUPPORTED, noting they are validated by empirical phase-performance correlation. Peer reviewers include these claims within their broader SUPPORTED evaluation of phase findings (R4), finding the overall pattern compelling despite some requests for additional converging evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "07bf06eb-df2c-40fb-8c89-3cdebfe4080d",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "ce440505-e757-46b2-92d1-c135f491576f",
+      "peer_result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates mechanistic interpretation (C57-C59) as SUPPORTED, noting the contrast between lack of whole-trial correlation and strong phase correlation supports temporal alignment mechanism. Peer reviewers include these claims in their SUPPORTED evaluation of phase findings, noting 'neither target nor distractor signal strength correlates with behavioral accuracy' strengthens the phase interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "5cfafc95-2251-4faa-a89d-b59e9a2750ad",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "a3a04aba-6235-4e80-bd36-d59bc1022201",
+      "peer_result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate literature contextualization claims (C48-C54) as SUPPORTED. OpenEval finds appropriate citations with reasonable interpretation linking delta oscillations to findings, though somewhat speculative. Peer reviewers accepted background literature and theoretical framing without challenge as part of the study's rationale.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "80558c93-cec9-49cf-b2c1-d53697d4bc92",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "f67decc2-0b10-4a29-8856-6f482ca26672",
+      "peer_result_id": "ec06e2f2-f928-4df3-9453-0e998cafae6b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates claims about prior work extension (C55-C56) as SUPPORTED, noting uniform phase distribution supports generalization though inference is somewhat speculative. Peer reviewers include C56 in their SUPPORTED evaluation of phase findings (R4), accepting the broader interpretation. Peer review R7 also includes C55 among accepted background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "f4f5d313-fd35-4f9a-854d-d5fb9dd4d8cd",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a95a62e5-32bd-46d7-ade3-20249eeb291d",
+      "peer_result_id": "f019c2db-d5d0-4ac1-b245-9173916a359f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates methodological validation claims (C60-C63) as SUPPORTED, noting simulations and alternative analyses strengthen interpretation of endogenous rhythmic sampling. Peer reviewers rate UNCERTAIN, with these claims grouped with the 1 Hz sampling findings. While authors provided supplementary analyses (C63), Reviewer 2's initial concern about frequency resolution bias remained significant despite manuscript improvements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    },
+    {
+      "id": "0f48af7a-e714-4973-8b00-71df1ad96d94",
+      "submission_id": "bb7d8efd-2ff1-4c3f-9f12-17091dedb4b9",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "707957a9-de77-4c9f-96ce-9b4bb5ac4777",
+      "peer_result_id": "8c006be4-7c66-4a44-8ac2-04aa15daefcf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate background literature claims (C1-C10) as SUPPORTED. OpenEval finds accurate summarization with appropriate citations providing necessary background, noting prior frequency claims differ from ~1 Hz observed. Peer reviewers accepted background literature without challenge as part of the study's rationale and context for novel findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T18:54:24.144231Z"
+    }
+  ]
+}

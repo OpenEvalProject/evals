@@ -1,0 +1,108 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C46",
+      "C47",
+      "C51",
+      "C58",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors claim that ESM2 identifies a substantial population of conserved, mutation-resistant amino acids in IDRs, and that ESM2 scores correlate strongly with MSA-based conservation scores, thereby validating ESM2's ability to capture evolutionary conservation in disordered regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly states that 'the argument about correlation between ESM2 scores and MSA conservation is circular' because 'protein language models already encode residue\u2011level conservation, so agreement with conservation does not establish new predictive power.' This critique directly challenges the claim that ESM2 provides independent validation of conservation. The reviewer further notes that 'without a family\u2011level holdout and prospective tests, overlap with known motifs cannot rule out training\u2011data memorization/near\u2011duplicates,' raising concerns about whether ESM2 is truly identifying novel conservation patterns or simply recapitulating training data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C81"
+    ],
+    "result": "The authors report that driving IDRs (regions actively involved in phase separation) are enriched in conserved disordered residues compared to client or non-phase-separating IDRs, as shown by both ESM2 and MSA analyses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the editors note the study is 'valuable' and 'convincing overall,' one reviewer raises fundamental concerns about validation, stating that 'conservation is a poor surrogate for function because many functions are mediated by short, degenerate SLiMs that are frequently gained and lost.' This directly challenges the interpretation that enrichment of conserved residues in driving IDRs demonstrates functional significance. The reviewer also emphasizes that 'sequence\u2011only predictions need orthogonal (preferably experimental or at the least in silico) tests,' which are absent from this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C91",
+      "C93"
+    ],
+    "result": "The authors identify conserved sequence motifs in driving IDRs that include both 'sticker' and 'spacer' residues, and claim these motifs are functionally significant units under evolutionary selection, with many experimentally validated as essential for phase separation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer raises critical concerns about the interpretation of motif conservation, noting that 'without a family\u2011level holdout (e.g., cluster de\u2011duplication at low identity) and prospective tests, overlap with known motifs cannot rule out training\u2011data memorization/near\u2011duplicates.' This directly challenges the claim that ESM2 is identifying genuinely conserved functional motifs rather than recapitulating patterns from the training data. Additionally, the reviewer's statement that 'conservation is a poor surrogate for function' in IDRs undermines the inference that conserved motifs are necessarily functional units.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C58",
+      "C89"
+    ],
+    "result": "The authors claim that ESM2's ability to model mutational landscapes reflects its capacity to learn sequence-level constraints imposed by natural selection, and that this property is equally applicable to IDRs as to folded proteins, making ESM2 a more direct approach than MSA for identifying functionally significant residues in disordered regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editors acknowledge that 'the theoretical grounding could benefit from further development,' and one reviewer explicitly states that 'concerns about lack of theoretical grounding and validation persist.' The reviewer's critique that ESM2 scores and MSA conservation are circular (because language models encode conservation) directly challenges the claim that ESM2 provides an independent or superior method for identifying functional constraints in IDRs. Without orthogonal validation, the theoretical basis for applying ESM2 to IDRs remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors report that mutations with low ESM2 LLR values are enriched among pathogenic variants in ClinVar, and that mutations within conserved motifs are more likely to be pathogenic, suggesting ESM2 has potential as a screening tool for clinically relevant residues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the ClinVar analysis provides some external validation, one reviewer emphasizes that 'sequence\u2011only predictions need orthogonal (preferably experimental or at the least in silico) tests.' The ClinVar data is observational and does not constitute prospective experimental validation. Moreover, the reviewer's concern about training-data memorization raises the possibility that ESM2's predictions may reflect patterns already present in databases used during training, rather than genuine predictive power for novel variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors acknowledge that their analysis is entirely computational without direct experimental validation, and that while identified motifs are located within experimentally validated phase-separating regions, they represent only a small fraction of those regions and their specific biological roles remain uncharacterized.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers' critiques align with the authors' own acknowledgment of these limitations. One reviewer explicitly notes the 'lack of theoretical grounding and validation,' and another states that the study 'supports, complements and extends previous related analyses,' implicitly recognizing the computational nature of the work. The authors' transparent discussion of these limitations is consistent with the reviewers' concerns.",
+    "result_type": "MINOR"
+  }
+]

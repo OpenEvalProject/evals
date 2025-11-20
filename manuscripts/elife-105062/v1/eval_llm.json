@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Using super-resolution microscopy with mEos3.2-tagged RNase E, the authors quantified that ~93% of RNase E localizes to the inner membrane in E. coli, with the remaining ~7% exhibiting cytoplasmic localization. This quantification was validated using LacY (membrane protein, 99% MB%) and LacZ (cytoplasmic protein, 3.4% MB%) as controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C37-C44 collectively establish membrane localization quantification using single-molecule tracking and mathematical modeling. The methodology is well-described (C39-C40), controls are appropriate (C41-C42), and the MB% determination (C43) is supported by validation with known membrane and cytoplasmic proteins. The cytoplasmic subpopulation (C44) is identified based on diffusion analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The MTS (residues 568-582) is essential for membrane binding of RNase E, with phenylalanine residues at positions 575 and 582 being critical. Deletion of MTS results in cytoplasmic localization, while point mutations F575E and F582E reduce MB% to ~50%, whereas the F574AA mutation maintains membrane binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 provide converging evidence for MTS essentiality and identify critical residues. The deletion analysis (C45) establishes necessity, while point mutations (C52-C54) identify specific residues. The helical wheel diagram (C50) provides structural context. The nucleoid exclusion hypothesis (C48) for \u0394MTS is speculative but supported by citation and size-based reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "RNase E exhibits slow diffusion (D = 0.0184 \u00b1 0.0002 \u00b5m\u00b2/s), comparable to ribosome-bound mRNAs. Membrane binding reduces RNE mobility by a factor of ~5, as demonstrated by comparing membrane-bound and cytoplasmic variants (\u0394MTS diffuses ~5.5 times faster).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 establish diffusion measurements using MSD analysis with appropriate controls. The detection limit (C58) validates measurement capability. The comparison between membrane-bound and cytoplasmic variants (C60-C61) controls for mass effects, supporting the conclusion that membrane binding is the primary factor reducing mobility (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Upon rifampicin treatment (mRNA depletion), RNase E diffusion increased modestly (1.47-fold), similar to the membrane protein LacY (1.25-fold), but much less than ribosomal protein L1 (7-fold). This suggests RNE-mRNA interactions are brief (<20 ms), unlike the prolonged RNA engagement of ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C74 provide a logical analysis of RNE-mRNA interaction dynamics. The comparison with LacY (C64-C66) controls for physical environmental changes, while comparison with L1 (C67-C69) provides context for RNA-binding proteins. The chloramphenicol and lacZ overexpression experiments (C72) rule out alternative explanations, supporting the brief interaction hypothesis (C73-C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The amphipathic MTS exhibits slower diffusion than transmembrane (TM) segments (LacY2, LacY6) despite being smaller, contrary to size-dependent diffusion expectations. MD simulations revealed that MTS has stronger membrane interaction energy than LacY2, explaining its slower diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 combine experimental diffusion measurements (C76-C78) with MD simulations (C81-C84) to explain the unexpected diffusion behavior. The Saffman-Delbr\u00fcck model (C79) provides theoretical context. The MD simulations (C82-C84) support the mechanistic explanation (C85) that stronger lipid interactions slow MTS diffusion. However, absolute D values from simulations are higher than experimental values, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Chimeric RNase E variants with LacY TM segments replacing the MTS show that the CTD weakens membrane association. RNE-LacY2-CTD and RNE-LacY6-CTD exhibit reduced MB% (69% and 86%, respectively), while \u0394CTD versions show 100% membrane binding. This effect is not observed with the larger LacY12 motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 demonstrate the CTD's negative effect on membrane binding through systematic comparison of CTD-containing and \u0394CTD variants. The experimental design (C86-C87) ensures functional activity. The observation that \u0394CTD variants consistently show higher MB% (C91-C93) across different membrane motifs supports the conclusion. The LacY12 exception (C94) is noted with a plausible explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In \u0394CTD variants, LacY2-based RNE diffuses 1.33-fold faster than MTS-based RNE, but LacY6 does not show increased diffusion, possibly due to high TM load (24 helices). In CTD-containing variants, diffusion increases are influenced by cytoplasmic subpopulations. Overall, the CTD weakens membrane association and small TM motifs can facilitate RNE diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 analyze diffusion across chimeric variants. The \u0394CTD comparison (C95-C96) is well-controlled for mass effects. The TM load hypothesis (C97) for LacY6 is speculative but reasonable. The CTD-containing variant analysis (C98-C99) appropriately accounts for cytoplasmic populations. The overall conclusion (C100) is supported by the collective data, though some mechanistic details remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "RNase E variants with partial cytoplasmic localization (MB% < ~70%) display enhanced co-transcriptional degradation (kd1) of lacZ mRNA, approaching levels seen in fully cytoplasmic \u0394MTS. RNE-LacY2-CTD (69% MB%) and MTS point mutants F582E and F575E show high kd1, while RNE-LacY6-CTD (86% MB%) does not, suggesting a threshold cytoplasmic population is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 establish a functional consequence of cytoplasmic localization using a transient induction assay. The methodology is validated by prior work (C101-C103). Multiple variants with different MB% (C104-C107) provide converging evidence. The threshold hypothesis (C108) is reasonable given the data, though the exact threshold is not precisely defined. Statistical comparisons are provided (p-values mentioned).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In the presence of the CTD, post-transcriptional mRNA degradation rate (kd2) does not vary significantly across membrane-targeting variants with different diffusion rates. Overexpression of WT RNE does not change kd2, indicating that neither RNE copy number nor diffusion of membrane-bound RNE limits kd2 when the CTD is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 demonstrate that kd2 is not limited by RNE diffusion or abundance when CTD is present. The comparison across variants with different diffusion rates (C109-C110) is well-controlled. The overexpression experiment (C111) is a critical control that rules out copy number effects. The conclusion (C112) is logically supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In \u0394CTD variants, kd2 is generally lower than CTD-containing counterparts, confirming the CTD's importance for catalytic activity. Among \u0394CTD variants, cytoplasmic localization increases kd2 (F575E, F582E), but faster diffusion of membrane-bound variants (LacY2) does not rescue the reduced kd2. Large TM motifs (LacY12) further impair kd2. The CTD appears to buffer effects of membrane-binding motifs on catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 analyze kd2 across \u0394CTD variants, revealing complex relationships between localization, diffusion, and activity. The general reduction in kd2 for \u0394CTD (C114-C115) is consistent with prior work. The observation that faster diffusion doesn't rescue kd2 (C117-C119) is important but somewhat unexpected. The buffering role of CTD (C121) is a reasonable interpretation of the collective data, though mechanistic details are not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on RNase E: RNase E is the main endoribonuclease in E. coli, essential for viability, with homologs across bacteria. It consists of an essential N-terminal catalytic domain (NTD), a membrane-targeting sequence (MTS), and a C-terminal domain (CTD) that binds degradosome components. The MTS and CTD are not essential and not broadly conserved, unlike the NTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide well-established background information, all supported by appropriate citations to published literature. These claims set the context for the study and are not novel findings but rather established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on RNase E membrane localization function: Cytoplasmic RNE (\u0394MTS) strains are viable but grow slowly. Membrane localization sequesters RNE from cytoplasmic mRNAs, limiting co-transcriptional degradation while allowing post-transcriptional degradation. This enables differential regulation of mRNA stability for cytoplasmic versus membrane protein-encoding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 summarize prior work (including authors' recent study) on the functional significance of membrane localization. All claims are supported by citations. These provide important context but are not novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on RNase E localization diversity: RNE can localize to the cytoplasm under certain conditions (anaerobic growth, reduced membrane fluidity). Across bacteria, some \u03b1-proteobacteria have cytoplasmic RNE, while B. subtilis RNase Y uses a transmembrane motif instead of an amphipathic motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 provide background on RNE localization diversity across conditions and species, all supported by citations. These establish the rationale for studying different membrane-binding motifs but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on the CTD: The CTD is an intrinsically disordered region that enhances NTD activity and serves as the primary binding site for degradosome components. Previous work suggested the CTD facilitates degradation by recruiting degradosome proteins, but recent work showed degradosome proteins have minimal impact on lacZ mRNA degradation while CTD deletion stabilizes the transcript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 provide background on the CTD, supported by citations including authors' recent work. These establish the context for investigating the CTD's role in membrane binding but are not novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C34",
+      "C35"
+    ],
+    "result": "The CTD modulates membrane-binding affinity and slows diffusion: The current study shows the CTD modulates membrane-binding affinity of RNE, possibly by affecting conformation. The CTD slows diffusion by increasing mass but unexpectedly weakens membrane association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C34-C35 summarize key findings from the current study regarding the CTD's dual effects. These are supported by data presented in the manuscript (referenced in other result groups). The conformational mechanism (C29) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Summary finding: The native amphipathic MTS confers slower diffusion and stronger membrane binding compared to transmembrane motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 summarize a key finding supported by detailed experimental and computational data (covered in other result groups). This is a major finding but is redundant with the more detailed result group covering C75-C85.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Summary finding: RNase E mutants with partial cytoplasmic localization displayed enhanced co-transcriptional degradation of lacZ mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 summarizes a key finding supported by detailed data (covered in the result group with C101-C108). This is a major finding but is redundant with the more detailed result group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Discussion: The study supports that membrane sequestration of RNE provides spatial and temporal separation between mRNA synthesis and decay. Processing of rRNA, tRNA, and small RNA-based gene regulation by RNE likely occur on the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are interpretations supported by the study's findings and prior literature. C122 is directly supported by the current work. C123 is a reasonable inference based on membrane localization, supported by citations, though not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Discussion on MB% stability: The measured MB% (93%) agrees with prior electron microscopy data (91%). The MTS alone shows reduced MB% under different growth conditions (100% to 83%), while WT RNE is less affected, possibly due to tetramer formation stabilizing membrane binding, analogous to MinD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 discuss MB% measurements and stability. C124 validates the method against prior work. C125-C126 present new data on growth condition effects. The tetramer stabilization hypothesis (C127, C129) is speculative but supported by analogy to MinD (C128). This is a reasonable interpretation but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Discussion on CTD effects on membrane binding: Individual TM motifs show strong membrane association regardless of growth conditions, but LacY2-based RNE loses membrane affinity only when CTD is present. All \u0394CTD variants show higher MB% than CTD-containing counterparts, supporting that the CTD negatively affects membrane binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 discuss the CTD's negative effect on membrane binding across variants. The data (C130-C135) consistently support this conclusion. This is a restatement of findings covered in other result groups but provides additional context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Discussion on CTD mechanism: The CTD's effect on membrane association may relate to its role in promoting phase-separated ribonucleoprotein condensates, as observed in C. crescentus. In E. coli, a modest increase in RNE clustering was observed compared to \u0394CTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C136 is speculative, drawing an analogy to C. crescentus. Claim C137 presents new data showing modest clustering increase, but the connection to phase separation and membrane binding is not established. The hypothesis is reasonable but requires further investigation to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Discussion on RNE diffusion across species: The measured DRNE (0.018 \u00b5m\u00b2/s) is comparable to values in other bacterial species (C. crescentus ~0.03 \u00b5m\u00b2/s, B. subtilis RNase Y 0.031 or 0.3 \u00b5m\u00b2/s). Two-population fitting of E. coli RNE identified slow and fast subpopulations differing by a factor of 4, consistent with membrane-bound versus cytoplasmic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 compare diffusion measurements across species and analyze subpopulations. The comparisons (C138-C141) are supported by citations. The two-population analysis (C142-C143) is supported by data and consistent with the MB% measurements. This provides context and validation for the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Discussion on rifampicin effects: RNE diffusion increased less upon rifampicin treatment than other RNA-binding proteins (ribosomes, tRNA, RNA polymerase showed 10-20-fold increases; Hfq showed 2-fold). This is consistent with prior studies and suggests RNE-mRNA interactions are brief (<20 ms) compared to the frame interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 discuss rifampicin effects in the context of other RNA-binding proteins. The comparisons (C144-C146) are supported by citations. The consistency with prior work (C147) validates the findings. The brief interaction hypothesis (C148) is a reasonable interpretation supported by the data and prior knowledge of elongation times.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Discussion on MTS diffusion mechanism: The slow diffusion of MTS compared to TM segments suggests MTS is less favorable for rapid lateral motion. MD simulations showed stronger MTS-membrane interaction energy. Whether this is specific to MTS or generalizable to peripheral versus integral membrane motifs remains to be tested. Peripheral motifs may interact orthogonally with lipids while integral motifs align parallel and diffuse more freely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C153 discuss the mechanism of MTS slow diffusion. C149-C150 are supported by data. C151 acknowledges the need for further testing. C152 is speculative but reasonable. C153 provides general context supported by citation. The mechanistic explanation is plausible but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Discussion on applications: Membrane-bound RNE lacking CTD can stabilize mRNAs and increase protein expression, an approach used in commercial E. coli strains. RNE variants with environmentally responsive MB% could be used to tune mRNA half-lives under different growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155 discuss an established application supported by citation. Claim C156 proposes a potential application based on the study's findings. These are reasonable applications but represent future work rather than findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

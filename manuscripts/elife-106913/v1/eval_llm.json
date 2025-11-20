@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "A 46 kb candidate CSD locus was identified on chromosome 4 where all 19 diploid females were heterozygous, but 11 out of 16 diploid males were homozygous for either allele. The CSD index peak on chromosome 4 deviated significantly from the null distribution, and homozygosity levels differed significantly between males and females at this peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43-C48 provide converging evidence from genetic mapping (CSD index analysis with statistical significance), direct observation of loss of heterozygosity patterns in 11/16 diploid males, and demonstration that males can be homozygous for either allele. The sample sizes (16 males, 19 females) are adequate, statistical tests show significance, and the pattern is consistent with CSD expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C86",
+      "C104"
+    ],
+    "result": "Diploid males arise from rare copy-neutral losses of heterozygosity resulting from crossover recombination during meiosis that span the CSD locus. Read depth analysis confirmed that runs of homozygosity were not accompanied by changes in copy number, and the shortest LOH was 46 kb, consistent with crossover recombination rather than gene conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C86, C104 provide mechanistic evidence through read depth analysis ruling out deletions (C49), inference about the mechanism (C50), and size analysis of LOH regions (C104). The copy-neutral nature of LOH and the 46 kb minimum size provide strong support for the crossover recombination mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C60",
+      "C73",
+      "C75"
+    ],
+    "result": "The candidate CSD locus exhibits elevated nucleotide diversity with seven alleles identified among five clonal lines, consistent with balancing selection expected for CSD loci. The locus colocalizes with a peak of nucleotide diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C60, C73, C75 demonstrate elevated genetic diversity through nucleotide diversity analysis and identification of seven distinct haplotypes from de novo assembly of haploid male genomes. This pattern is consistent with theoretical expectations for CSD loci under balancing selection, though the number of clonal lines sampled (5-6) is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C61"
+    ],
+    "result": "The nucleotide diversity peak at the CSD locus negligibly affects amino acid sequences of protein-coding genes, suggesting that heterozygosity of a non-coding genomic sequence triggers female development in O. biroi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C61 show through sequence analysis that protein-coding genes lack substantial amino acid-level heterozygosity despite high nucleotide diversity. This supports the inference that non-coding sequences are responsible for sex determination, though functional validation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The O. biroi CSD locus is homologous to CSD loci mapped in V. emeryi (V.emeryiCsdQTL2) and L. humile, but distinct from the honeybee CSD locus. The O. biroi CSD index peak contains four protein-coding genes also present in V.emeryiCsdQTL2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C54-C56 demonstrate homology through comparative genomic analysis using OrthoFinder to identify orthologs. The presence of shared genes (HCF, COPA, uncharacterized gene, CRELD2) and mapping within homologous regions provides strong evidence for conservation, though synteny alone does not prove functional conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C76"
+    ],
+    "result": "The CSD molecular mechanism has been conserved since a common ancestor of O. biroi, V. emeryi, and L. humile that lived approximately 112 million years ago, before the divergence of Dorylinae from other formicoid ants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C76 infer ancient conservation from the homology data and phylogenetic dating (citing Borowiec et al., 2025). The inference is reasonable given the homology across three distantly related ant species in different subfamilies, though functional conservation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "All diploid females from all six clonal lines (including 26 from clonal line B) were heterozygous at the CSD index peak, consistent with its role as a CSD locus across O. biroi clonal lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 demonstrates universality of the CSD locus across clonal lines through genomic analysis of 6 clonal lines with adequate sample size (at least 26 females from line B alone). The consistent heterozygosity pattern strongly supports the locus's role in sex determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C81"
+    ],
+    "result": "Five of 16 sequenced diploid males retained heterozygosity at the mapped CSD locus, and no mutations or losses of heterozygosity in genes with annotated sex-determining functions were found in these individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C52, C81 identify an anomaly (5/16 males heterozygous at CSD locus) but cannot explain it. The authors searched for alternative explanations but found none in annotated sex-determining genes. This could represent incomplete penetrance, stochastic effects, or undetected mutations, but remains unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C78"
+    ],
+    "result": "Diploid male production differs significantly between clonal lines, with 22/114 males from clonal line A being diploid versus 0/78 from clonal line B (\u03c7\u00b2=15.4, p<0.0001), despite many males being collected from other clonal lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C78 demonstrate a statistically significant difference in diploid male production between clonal lines using appropriate statistical tests (chi-square). The sample sizes are adequate (114 and 78 males), and the p-value is highly significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C79",
+      "C80"
+    ],
+    "result": "No additional candidate CSD loci were identified beyond the chromosome 4 locus. Clonal line A is ancestrally homozygous for a portion of the region homologous to V. emeryi QTL1, but this region lacks elevated nucleotide diversity and functional heterozygosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C79-C80 report negative findings from genome-wide mapping and analysis of the V. emeryi QTL1 homologous region. The lack of elevated diversity and functional heterozygosity in the QTL1 region argues against it being a second CSD locus, though multi-locus CSD cannot be definitively ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C96"
+    ],
+    "result": "The mode of CSD in O. biroi is not homologous to the A. mellifera system mediated by csd and fem. O. biroi has only a single tra homolog rather than two closely linked tra homologs found in other ants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C96 demonstrate lack of homology through absence of a CSD index peak at the tra locus and prior knowledge of single tra homolog in O. biroi (citing Oxley et al., 2014; Privman et al., 2013). This distinguishes O. biroi from the honeybee mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "All clonal lines are heterozygous in the region containing O. biroi's tra ortholog, and this gene is sex-specifically spliced, similar to tra homologs in other Holometabola.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 demonstrate through genomic analysis and RNA-seq that tra is heterozygous across clonal lines and shows sex-specific splicing. This is consistent with tra's downstream role in sex determination, though it is not the primary signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Many genes (24.6% of expressed genes) were differentially expressed between males and females, including four genes near the CSD index peak with differentially used exons, but none overlapped with the region of elevated genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 report differential expression analysis results from 3 male and 3 female pupae. The finding that differentially expressed genes don't overlap the diversity peak is consistent with non-coding regulation, though the sample size is small and timing may be suboptimal for detecting primary sex determination signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "No homology was found between genes within the O. biroi CSD index peak and genes within the putative L. fabarum CSD loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 reports a negative finding from comparative genomic analysis. This suggests independent evolution or different mechanisms, though the L. fabarum loci are only candidates and not definitively validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The candidate CSD region in O. biroi includes a large stretch of sequence with no annotated genes downstream of an uncharacterized lncRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 describes a genomic feature based on annotation. The presence of an unannotated lncRNA near the diversity peak is potentially significant given the L. humile ANTSR findings, though functional characterization is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Sex determination is a developmental switch that triggers sex-specific programs. Many lineages have evolved sex chromosomes, but haplodiploidy (occurring in ~12% of animal species) is incompatible with sex chromosomes. In CSD, heterozygosity at a sex determination locus triggers female development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C14-C17 provide background knowledge about sex determination, haplodiploidy, and CSD mechanisms. These are well-established concepts supported by citations and logical reasoning about genetic inheritance in haplodiploid systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Prior work has mapped CSD loci in honeybees (A. mellifera) and ants (V. emeryi, L. humile), demonstrating various molecular mechanisms including protein-based (honeybee csd) and lncRNA-based (L. humile ANTSR) systems. These loci show signatures of balancing selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C18-C38 summarize prior research on CSD in other species, all supported by appropriate citations. This provides essential context for interpreting the O. biroi findings and establishing the comparative framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "O. biroi reproduces via central fusion automixis, maintaining heterozygosity with high fidelity despite meiotic recombination, though occasional losses of heterozygosity occur. Diploid males occur sporadically, suggesting CSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe O. biroi's reproductive biology based on prior work (citing Kronauer et al., 2012; Oxley et al., 2014; Lacy et al., 2024). This provides essential biological context for understanding how diploid males arise in this asexual species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C97",
+      "C98"
+    ],
+    "result": "No sex determination locus with homology to V. emeryi QTL1 was found in L. humile. The role of V.emeryiCsdQTL1 may have evolved independently after V. emeryi diverged from L. humile, and it has not been demonstrated that either V. emeryi tra homolog acts as a primary sex determination signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C72, C97-C98 discuss the evolutionary relationship of the tra-containing QTL across species. The negative findings and speculation about independent evolution are reasonable given the data, though definitive conclusions require functional studies in V. emeryi.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "O. biroi is one of three ant species (along with L. humile and V. emeryi) for which heterozygosity-dependent female development has been demonstrated at mapped CSD loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 summarizes the contribution of this work in the context of prior studies. This is a fair assessment based on the mapping and heterozygosity data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C102",
+      "C103"
+    ],
+    "result": "The rarity of diploid males in O. biroi compared to sexual species, and the unusual inheritance system that maintains heterozygosity, may be explained by the fitness costs of CSD in asexual reproduction. In O. biroi, diploid males only result from rare LOH, whereas in sexual species they arise more frequently from shared alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C87-C90, C102-C103 provide evolutionary context and comparative reasoning about CSD in asexual versus sexual reproduction. The logic is sound and supported by citations, though some aspects are speculative (C102).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In L. humile, the lncRNA ANTSR affects sex-specific splicing of tra, though heterozygosity in ANTSR exons is not required. The heterozygosity-dependent function may depend on local regulatory interactions between homologous chromosomes, similar to transvection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 discuss the L. humile mechanism (citing Pan et al., 2024) and propose a speculative transvection-like mechanism. The L. humile findings are well-supported by citation, but the transvection hypothesis (C93) is explicitly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Males in O. biroi are exceedingly rare and only morphologically identifiable at the pupal stage, well after primary sex determination signals are transduced during early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 explain a methodological limitation based on O. biroi biology and general knowledge about sex determination timing (citing Gempe and Beye, 2011). This justifies why sex-specific expression analysis in pupae may miss primary signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C101"
+    ],
+    "result": "Multi-locus CSD has been suggested to limit diploid male production in asexual species. However, clonal line B lacks nonsynonymous heterozygosity in the region homologous to V. emeryi QTL1, and this region shows limited heterozygosity without elevated nucleotide diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101 discuss multi-locus CSD as a hypothesis (citing Vorburger, 2014; Matthey-Doret et al., 2019) but show that the V. emeryi QTL1 homologous region lacks characteristics expected for a CSD locus. This argues against multi-locus CSD in O. biroi, though it cannot be definitively ruled out.",
+    "result_type": "MINOR"
+  }
+]

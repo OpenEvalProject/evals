@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The IKs channel complex, composed of KCNQ1, calmodulin, and KCNE1, plays a critical role in cardiac repolarization, particularly at high heart rates, and protects against arrhythmia syndromes. Loss-of-function mutations in KCNQ1 and KCNE1 are implicated in long QT syndrome (LQTS) and atrial fibrillation, with 50% of LQTS mutations occurring in KCNQ1. Enhancing IKs currents is proposed as a therapeutic approach for LQTS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C13-C17 are well-established background knowledge supported by multiple citations (Sanguinetti et al., 1996; Barhanin et al., 1996; Hedley et al., 2009; Ackerman et al., 2011). These claims provide the physiological and clinical context for the study and are appropriately referenced to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "IKs activators are classified into two groups: those active on KCNQ1 alone (e.g., ML277) and those requiring KCNE1 (e.g., mefenamic acid, DIDS). ML277 binds deep in the KCNQ1 core and lacks efficacy with KCNE1 due to steric hindrance. Mefenamic acid and DIDS depend on extracellular KCNE1 residues (K41 for mefenamic acid, residues 39-43 for DIDS), with K41C mutation abolishing mefenamic acid effects up to 1 mM. Cross-linking studies identified interactions between KCNE1's extracellular region and KCNQ1's S1 and S6 segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C18-C24 are supported by cited literature (Abitbol et al., 1999; Wang et al., 2020; Willegems et al., 2022; Xu et al., 2008; Chung et al., 2009). The classification of activators and the critical role of K41 are established by prior work, providing a solid foundation for the current study's investigation of the binding mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "100 \u00b5M mefenamic acid transforms slowly activating IKs currents into nearly linear waveforms, completely inhibits tail current decay at -40 mV, hyperpolarizes the G-V relationship by \u0394V1/2 = -105.7 mV, and decreases the G-V slope (control k=19.4 mV, Mef k=41.3 mV). The K41C-KCNE1 mutation had only a minor effect on the G-V relationship but prevented changes induced by 100 \u00b5M or 1 mM mefenamic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by experimental data presented in Figure 1 and Table 1, with appropriate citations to prior work (Abitbol et al., 1999; Uns\u00f6ld et al., 2000; Wang et al., 2020). The electrophysiological measurements are consistent with established methods, and the K41C mutation's effect is clearly demonstrated, confirming the critical role of K41 in mefenamic acid action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The ps-IKs model, based on the KCNQ1-KCNE3 cryo-EM structure (PDB ID: 6v01), reveals that mefenamic acid binds to a pocket formed by extracellular KCNE1 residues, the S6 helix of one KCNQ1 subunit, the S1 domain of a neighboring subunit, and the pore turret of a third subunit. The binding pocket has an estimated volume of ~307 \u00c5\u00b3 and hydrophobicity of ~0.65 kcal/mol. Free energy calculations (MM/GBSA: -37.9\u00b11.22 kcal/mol; MM/PBSA: -31.8\u00b11.46 kcal/mol) and MD simulations identified key residues: Y46 and E43 in KCNE1 form stable H-bonds (79.7% and 22.5% frequency, respectively), while W323, V324 (S6), and L142, Q147, Y148 (S1) exhibit the lowest interaction free energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C33-C41 are supported by molecular modeling data (Figures 2, 4, Table 4, Figure 2\u2014figure supplement 2) and MD simulations. The model is based on a published cryo-EM structure (Sun and MacKinnon, 2020), and the docking and MD methods are described in detail. The free energy calculations and H-bond analyses provide quantitative support for the binding pocket structure and key residue interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mutagenesis of residues in the predicted binding pocket revealed differential effects on mefenamic acid action. Most mutations produced slowly activating currents with rapid tail decay in control conditions. EQ-W323A was largely unaffected by 100 \u00b5M mefenamic acid (\u0394V1/2 = -14.1 mV vs. -105.7 mV in WT), while EQ-W323C showed intermediate effects (\u0394V1/2 = -26.5 mV), suggesting the size of W323 is important. EQ-W323C and A44C-EQ showed slowed tail decay but unchanged waveforms, interpreted as less stable drug-channel complexes with drug unbinding during interpulse intervals. V324W and V324A mutations reduced \u0394V1/2 to -14 to -19 mV. EQ-Y148C reduced \u0394V1/2 to -19.3 mV, while EQ-Q147C showed \u0394V1/2 = -37.6 mV. KCNE1 mutations L42C, E43C, A44C, and Y46A showed reduced but significant V1/2 shifts (except K41C: \u0394V1/2 = -3.8 mV), with tail current decay inhibited. Y46A-EQ showed potent mefenamic acid effects (\u0394V1/2 = -106.2 mV), suggesting mutations further from K41 have diminishing effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C55 are supported by extensive electrophysiological data (Figures 3, Table 1, Figure 3\u2014figure supplement 1). The mutagenesis systematically tests residues identified by modeling, and the results are consistent with the predicted binding pocket. The interpretation of less stable drug-channel complexes for W323C and A44C (C45) is reasonable based on the observed tail current behavior. The data support the importance of W323, K41, and A44 in mefenamic acid binding and action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The EQ-L142C mutant displayed an almost instantaneous current onset and no tail current decay in control conditions, resembling WT EQ in the presence of 100 \u00b5M mefenamic acid. At a 15 s interpulse interval, the EQ-L142C G-V plot closely overlapped that of WT EQ + mefenamic acid, and both depolarized significantly at a 30 s interval. The L142C mutation augmented channel activation as much as 100 \u00b5M mefenamic acid on WT channels, indicating EQ-L142C is still responsive to mefenamic acid but from a heightened state of activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by data in Figure 3\u2014figure supplement 2 and Table 3. The observation that L142C mimics the effect of mefenamic acid on WT channels is striking and suggests that this residue is critical for maintaining the S1/KCNE1/pore interface. The interpretation that L142C is responsive to mefenamic acid from a heightened state is reasonable given the G-V plot shifts at different interpulse intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MD simulations of mutant ps-IKs channels revealed that mefenamic acid detached from K41C and W323A mutants within 120 ns in all three independent runs (AMBER force field), while remaining bound to WT and Y46C-ps-IKs complexes for the entire simulation. Mefenamic acid unbound from A44C-ps-IKs within 80-110 ns. In CHARMM force field simulations with lipid membranes, mefenamic acid unbound from WT ps-IKs in two of five 1250 ns runs, and from W323A and K41C in all five 500 ns runs. Y46C showed unbinding or conformational changes in three of five 500 ns runs. Free interaction energy (\u0394G) was significantly reduced for K41C and W323A mutants compared to WT, with a small but significant change for Y46C, confirming Y46 is less important than K41 and W323 for mefenamic acid binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by MD simulation data (Table 4, Figure 4A, Figure 4\u2014figure supplement 1, Videos 1-4). The simulations used two different force fields (AMBER and CHARMM) and multiple independent runs, providing robust evidence for the differential stability of mefenamic acid binding to WT and mutant channels. The free energy calculations are consistent with the unbinding observations, and the results align with the electrophysiological data showing that K41C and W323A mutations abolish or greatly reduce mefenamic acid effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "K41C and W323A mutations modestly increased the RMSF of D39-A44 ps-KCNE1 residues compared to WT ps-IKs without mefenamic acid, while Y46C had much less impact on N-terminal KCNE1 mobility, perhaps due to its deeper membrane location. These results suggest that K41 and W323 side chains normally stabilize the conformation of the external KCNE1 region, so mutations increase random motion and reduce drug binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by RMSF analysis from MD simulations (Figure 4C-E). The increased flexibility of the KCNE1 N-terminus in K41C and W323A mutants provides a mechanistic explanation for the reduced drug binding stability observed in the simulations and the reduced drug effects in electrophysiology. The interpretation (C69) is reasonable and consistent with the overall data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "100 \u00b5M DIDS had no effect on endogenous currents in GFP-transfected tsA201 cells but transformed WT EQ slowly activating waveforms into ones with faster onset (though not instantaneous like mefenamic acid) and inhibited tail current decay. DIDS changed the G-V relationship shape, slope, and V1/2 in the direction of increased activation (\u0394V1/2 = -46.6 mV; control k=20.3 mV, DIDS k=25.3 mV), but the effects were less pronounced than mefenamic acid at 100 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by electrophysiological data (Figure 5, Table 5). The control experiment with GFP-transfected cells confirms DIDS specificity for IKs. The comparison with mefenamic acid is appropriate and shows that while both drugs activate IKs, their potencies and effects differ at the same concentration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Docking analyses revealed that both mefenamic acid and DIDS bind to the same general extracellular inter-subunit interface, with some differences in key residues. In docking experiments, DIDS is stabilized by hydrophobic and van der Waals contacts with KCNQ1 and KCNE1, and by H-bonds with ps-KCNE1 residue L42 and KCNQ1 residue Q147. During MD simulations, H-bonding occurs between DIDS and E43, Y46, I47 (KCNE1) and W323, S298, Y299 (KCNQ1). K41 was noticeably less critical to DIDS coordination than for mefenamic acid, with significantly smaller \u0394G values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by docking and MD simulation data (Figure 6, Table 2, Figure 6\u2014figure supplement 1, Figure 2\u2014figure supplement 2). The finding that DIDS and mefenamic acid bind to the same general region but with different key residues is consistent with their structural differences and provides insight into the generalized nature of the binding pocket. The reduced importance of K41 for DIDS is supported by both modeling and electrophysiology (see C78-C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Mutagenesis studies of DIDS effects revealed that K41C only partially prevented DIDS action (\u0394V1/2 = -24.7 mV), with hyperpolarized V1/2, changed G-V shape, faster activation, and slowed tail decay. L42C responded similarly (\u0394V1/2 = -34 mV), suggesting DIDS binding involves KCNE1 residues closer to the transmembrane region. A44C showed little response (\u0394V1/2 = -18.5 mV), and Y46A showed greatly reduced effects on waveform and tail decay, though V1/2 hyperpolarization was observed, suggesting unstable, short-lived binding sufficient to interfere with gating. EQ-W323A was only partially responsive, with affected tail decay but preserved slowly-activating waveform (\u0394V1/2 = -27.3 mV), supporting drug dissociation between pulses. The DIDS binding pocket involves the N-terminal end of S6 and the deeper extracellular surface of KCNE1. EQ-Y148C showed no alteration in V1/2 or G-V shape with DIDS, and tail decay was not markedly slowed, suggesting DIDS binding determinants extend to the S1 region and Y148 is an important contributor. L142C-EQ became voltage-independent after DIDS treatment, proving hyper-responsive to both activators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C91 are supported by extensive electrophysiological data (Figure 7, Table 5, Figure 7\u2014figure supplement 1). The mutagenesis systematically tests the predicted DIDS binding site and reveals key differences from mefenamic acid. The partial effects of K41C, L42C, A44C, Y46A, and W323A mutations are consistent with DIDS binding deeper in the pocket and depending more on residues like Y46, A44, and Y148. The interpretation that unstable binding can still affect gating (C85) is reasonable. The hyper-responsiveness of L142C to both drugs (C91) further supports the importance of the S1/KCNE1/pore interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "MD simulations with AMBER force field showed DIDS stayed bound to WT ps-IKs but detached from W323A in two of three 300 ns runs and from Y46C in one of three runs. DIDS did not unbind from K41C mutant ps-IKs, even after 300 ns, though the binding pose changed in one run. Free interaction energy calculations showed only DIDS binding to W323A and Y46C (in one run) had significantly lower free energy than WT. The small change in free energy and more stable binding of DIDS to K41C suggest this residue is not as important as W323 or Y46 for DIDS binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by MD simulation data (Table 6). The differential stability of DIDS binding to WT and mutant channels is consistent with the electrophysiological data showing that K41C only partially prevents DIDS action, while W323A and Y46A have greater effects. The interpretation that K41 is less important for DIDS than for mefenamic acid (C95) is supported by both modeling and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "In 500 ns CHARMM force field simulations with lipid membranes, DIDS remained bound to WT ps-IKs during all runs, and to K41C in two runs. Both W323A and Y46C mutants unbound DIDS during 500 ns simulations (all runs for Y46C), consistent with AMBER force field results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by MD simulation data (Figure 6\u2014figure supplement 3, Videos 5-8). The use of a second force field (CHARMM) with lipid membranes provides additional validation of the AMBER results and strengthens the conclusion that W323 and Y46 are critical for DIDS binding, while K41 is less important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "A generalized activator binding pocket is formed extracellularly by KCNE1, the domain-swapped S1 helices of one KCNQ1 subunit, and the pore/turret region of two other KCNQ1 subunits. Key residues K41, A44, Y46 (KCNE1), W323 (KCNQ1 pore), and Y148 (KCNQ1 S1) are critical for binding structurally diverse molecules. Induced fit by structurally different molecules underlies the generalized nature of the binding pocket. Activation of IKs is enhanced by stabilization of the KCNQ1-S1/KCNE1/pore complex, which slows deactivation and promotes outward current summation at higher pulse rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 represent the main conclusions of the study, integrating findings from modeling (C5, C9) and mutagenesis (C6-C8) with mechanistic interpretation (C10-C12). These claims are well-supported by the combined evidence from molecular modeling (Figures 2, 6), MD simulations (Tables 4, 6, 7), and electrophysiology (Figures 1, 3, 5, 7, Tables 1, 5). The concept of a generalized binding pocket accommodating structurally diverse molecules through induced fit (C9) is supported by the observation that both mefenamic acid and DIDS bind to the same general region but with different key residues and binding poses. The mechanistic model (C10-C12) is consistent with the observed slowing of deactivation and the effects of mutations that destabilize the S1/KCNE1/pore interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mefenamic acid and DIDS induce conformational changes upon binding to shape a cryptic binding pocket formed by residues from the external S1 domain, KCNE1, and the pore domain. This pocket is not detectable in the absence of drug, similar to toxin-induced binding sites in other channels. Analysis of the binding site before and after mefenamic acid unbinds shows residues moving into the space vacated by the drug, a collapse of the pocket. Given high modeled binding energy (~-39 kcal/mol for mefenamic acid, ~-35 kcal/mol for DIDS) but relatively low affinities (micromolar concentrations required), mefenamic acid and DIDS likely bind/unbind at high frequency. Slowed deactivation results from rapid binding/unbinding interactions stabilizing the activated S1/KCNE1/pore domain/drug complex. Cross-linking studies previously showed that cysteines at key locations in KCNE1 N-terminus, top of S1, and S6 can form disulfide bonds and slow/eliminate deactivation, similar to drug effects. W323A mutation destabilizes the external S1/KCNE1/pore domain interface and eliminates direct hydrophobic contacts with mefenamic acid, facilitating drug dissociation. K41 electrostatic interactions help stabilize the S1/KCNE1/pore complex by contacts with drug, linking the static pore domain to the dynamic voltage-sensor. K41C mutation may prevent stable IKs activator binding by increasing fluctuations of the external KCNE1 region and reducing drug contacts. Shifts in and reductions in ps-KCNE1 association for both drugs that lead to loss of efficacy suggest interactions with KCNE1 and S1 are key to maintaining the activated state, similar to tight S1-KCNE3 interactions maintaining constitutive activity in KCNE3-associated channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 present the mechanistic interpretation of the results, integrating findings from modeling, MD simulations, and electrophysiology with prior literature. The concept of a cryptic binding pocket (C98-C100) is supported by MD simulation data (Figure 4B, Figure 4\u2014figure supplement 2, Video 9) and is consistent with similar phenomena in other channels (Lange et al., 2006; Zachariae et al., 2008). The dynamic binding model (C101-C102) reconciles the high modeled binding energy with the micromolar affinities observed experimentally and is supported by MD simulations showing unbinding events. The comparison with cross-linking studies (C103) is appropriate and supported by citation (Chung et al., 2009). The mechanistic explanations for W323A (C104) and K41C (C105-C106) effects are well-supported by the combined modeling and experimental data. The conclusion about the importance of KCNE1 and S1 interactions (C107-C108) is supported by Table 7 and is consistent with prior work on KCNE3 (Kasuya and Nakajo, 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Gain-of-function mutations in S1 (S140G, V141M) have been reported to slow deactivation in the presence of KCNE1, with current waveforms qualitatively similar to those after exposure to IKs activators, suggesting the same mechanism may underlie the effects of mefenamic acid, DIDS, and these mutations. In the KCNQ1-KCNE3 cryo-EM structure, L142 interacts with KCNE3, while V141 interacts with both KCNE3 and the pore domain, suggesting V141M and L142C mutations could directly alter S1-pore and/or KCNE1 interactions. The co-evolved S1-pore interface is thought to be important for bracing the VSD for efficient force transmission to the pore, but can also impact permeation, as S140G and V141M mutations enhance rubidium permeation through IKs complexes. The A300T mutant (pore region) has a ~-20 mV shift in V1/2 and faster activation, mirroring the effects of the two activators studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 connect the current findings to prior work on gain-of-function mutations in the S1-pore interface. The citations to prior work (El Harchi et al., 2010; Peng et al., 2017; Sun and MacKinnon, 2020; Lee et al., 2009; Smith et al., 2007; Bianchi et al., 2000) support the claims about these mutations. The proposal that the same mechanism underlies drug effects and these mutations (C110) is reasonable given the qualitative similarity of current waveforms and the location of these residues in or near the drug binding pocket. The observation that L142C mimics drug effects (C56-C59) provides strong support for this proposal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Binding of mefenamic acid and DIDS to the extracellular end of KCNE1 and KCNQ1 S6 and S1 helices is facilitated by key residues. K41 acts as a 'lid' holding mefenamic acid in place, while W323 impacts the size of the binding pocket. Size reduction mutations of K41 or W323 destabilize mefenamic acid binding and lead to drug detachment. The larger drug DIDS interacts with many of the same residues but those deeper in the pocket (Y46, A44, Y148) appear more important. IKs activators most likely cause their effects by modulating interactions between the S1 helix, pore turret, KCNE1, and S6 helix. Upon binding, both DIDS and mefenamic acid induce conformational changes in an occult binding pocket and stabilize the S1/KCNE1/pore complex, which ultimately slows deactivation. This extracellular inter-subunit interface forms a generalized binding site which different drugs can access and through which induce common effects on channel activation and deactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 represent the main conclusions of the study, summarizing the key findings about the binding site, mechanism of action, and generalized nature of the binding pocket. These conclusions are well-supported by the combined evidence from molecular modeling, MD simulations, and electrophysiology presented throughout the manuscript. The metaphor of K41 as a 'lid' (C117) is supported by MD simulations (Video 2) and the observation that K41C abolishes mefenamic acid effects. The conclusion about the generalized binding site (C123) is supported by the observation that structurally diverse molecules (mefenamic acid and DIDS) bind to the same general region but with different key residues, accommodated through induced fit.",
+    "result_type": "MAJOR"
+  }
+]

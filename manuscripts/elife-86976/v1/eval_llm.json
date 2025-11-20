@@ -1,0 +1,470 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "MASTL protein levels are upregulated within hours after DNA damage treatment across multiple cell lines (HEK293, SCC38, HeLa) and DNA damaging agents (DOX, HU, CPT, IR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively demonstrate MASTL upregulation across multiple cell lines and DNA damage agents using immunoblotting. The data show consistent upregulation patterns with appropriate loading controls (\u03b1-tubulin, \u03b2-actin), supporting the robustness of this observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "DNA damage-induced MASTL upregulation occurs concurrently with ATM/ATR activation and is not caused by completion of DNA repair, as evidenced by persistent phosphorylation of RPA, H2AX, and ATM/ATR substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by immunoblotting data showing concurrent MASTL upregulation and persistent DNA damage markers. The temporal correlation between MASTL upregulation and active DNA damage signaling is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C81"
+    ],
+    "result": "DNA damage-induced MASTL upregulation is unique among mitotic kinases, as other mitotic kinases (CDK1/cyclin B, Aurora A, Aurora B, PLK1) do not show similar upregulation after DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 and C81 are supported by immunoblotting data showing no upregulation of other mitotic kinases after DNA damage treatment. This specificity strengthens the significance of MASTL upregulation and distinguishes it from general mitotic kinase regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "ATM/ATR activation acts upstream of MASTL upregulation, as caffeine treatment (ATM/ATR inhibitor) abrogates HU-induced MASTL upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by immunoblotting data showing that caffeine blocks MASTL upregulation. However, caffeine is a non-specific inhibitor that affects multiple kinases beyond ATM/ATR, which introduces some uncertainty about the specificity of this pathway. More specific ATM/ATR inhibitors would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C82"
+    ],
+    "result": "MASTL upregulation after DNA damage occurs at the post-translational level through decreased protein degradation, not through increased transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C82 are supported by RT-PCR data showing no significant change in MASTL mRNA levels and cycloheximide chase experiments demonstrating increased protein stability. The combination of transcriptional and protein stability data provides strong evidence for post-translational regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Exogenous MASTL expressed from a different promoter undergoes similar upregulation after DNA damage, occurring concurrently with ATM/ATR substrate phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by immunoblotting and immunofluorescence data showing that exogenous CFP-MASTL exhibits similar upregulation patterns. This control experiment strengthens the conclusion that regulation occurs post-translationally rather than at the transcriptional level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "DNA damage treatment (CPT in HeLa cells, HU in SCC38 and HEK293 cells) increases MASTL protein stability and prolongs its half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by cycloheximide chase experiments showing slower MASTL degradation after DNA damage. The experiments include appropriate controls and quantification, providing strong evidence for increased protein stability as the mechanism of MASTL upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "E6AP (encoded by UBE3A) is the founding member of the HECT-domain ubiquitin ligase family and was identified as a potential MASTL binding partner through proteomic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by citations to established literature and a previous proteomic study. These claims provide important background context for the E6AP-MASTL interaction studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "E6AP associates with MASTL through direct protein-protein interaction, as demonstrated by co-immunoprecipitation, pulldown assays, and in vitro binding of purified proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by multiple complementary approaches (co-IP, pulldown with recombinant protein, and purified protein binding). The convergence of evidence from different experimental methods provides strong support for a direct E6AP-MASTL interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The N-terminal region of MASTL (mediating E6AP binding) and the N-terminal region of E6AP (aa 208-280, mediating MASTL binding) are responsible for the E6AP-MASTL interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by domain mapping experiments using protein segments in both HeLa cells and Xenopus egg extracts. The bidirectional mapping approach strengthens the identification of interaction domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "E6AP regulates MASTL protein levels: E6AP depletion increases MASTL protein without affecting mRNA, E6AP overexpression reduces MASTL, and E6AP knockout augments MASTL in a manner reversed by E6AP re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by multiple complementary approaches (siRNA, overexpression, CRISPR knockout, and rescue experiments). The consistency across different experimental methods and the rescue experiment provide strong evidence for E6AP-mediated regulation of MASTL protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "E6AP modulates MASTL protein stability: E6AP depletion increases MASTL stability while E6AP overexpression reduces it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by cycloheximide chase experiments with quantification. The bidirectional effects (depletion vs. overexpression) strengthen the conclusion that E6AP directly regulates MASTL protein stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C83"
+    ],
+    "result": "E6AP is the E3 ubiquitin ligase that mediates MASTL ubiquitination and degradation, as demonstrated by reduced MASTL ubiquitination in E6AP KO cells, in vitro ubiquitination assays, and requirement for the E6AP-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C83 are supported by cellular ubiquitination assays, in vitro reconstitution experiments, and domain deletion studies. The combination of cellular and biochemical evidence, along with the specificity controls (MG132 treatment, domain deletion), provides strong support for E6AP as the E3 ligase for MASTL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "E6AP and MASTL have opposing effects on DNA damage checkpoint recovery: MASTL depletion hinders recovery while E6AP knockout accelerates it, and the E6AP knockout effect depends on MASTL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by mitotic index measurements and FACS cell cycle profiling after DNA damage. The epistasis experiment (E6AP KO + MASTL KD) demonstrates that E6AP's effect on checkpoint recovery is mediated through MASTL, providing strong mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "MASTL knockdown does not significantly disrupt cell proliferation under unperturbed conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by cell proliferation data showing similar growth rates. This control experiment is important for demonstrating that MASTL's role is specific to DNA damage recovery rather than general cell proliferation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C85",
+      "C86"
+    ],
+    "result": "E6AP promotes DNA damage checkpoint signaling by counteracting MASTL: E6AP knockout reduces checkpoint signaling (phosphorylation of SMC1, CHK1, CHK2, H2AX, ATM/ATR substrates) in a MASTL-dependent manner, and promotes cell cycle recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59, C85-C86 are supported by immunoblotting data showing reduced checkpoint markers in E6AP KO cells and rescue by either E6AP re-expression or MASTL depletion. The epistasis analysis provides strong evidence that E6AP's effect on checkpoint signaling is mediated through MASTL regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C84"
+    ],
+    "result": "DNA damage disrupts the E6AP-MASTL association in an ATM/ATR-dependent manner, as HU treatment reduces co-immunoprecipitation and caffeine (ATM/ATR inhibitor) preserves the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C84 are supported by co-immunoprecipitation experiments. However, the reliance on caffeine as an ATM/ATR inhibitor introduces some uncertainty due to its non-specificity. More specific inhibitors would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "E6AP contains a conserved serine at position 218 (Ser-218) that represents a potential ATM/ATR phosphorylation consensus site (SQ motif), and this phosphorylation has been documented in multiple proteomic databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by sequence alignment data and citations to multiple proteomic studies. This provides strong bioinformatic and literature support for E6AP Ser-218 as an ATM/ATR target site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C87"
+    ],
+    "result": "E6AP is phosphorylated at Ser-218 by ATM after DNA damage (HU or DOX treatment), as demonstrated by a phospho-specific antibody and ATM inhibitor experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 and C87 are supported by immunoblotting with a custom phospho-specific antibody, validated by absence of signal in E6AP KO cells and S218A mutant, and reduced by ATM inhibitor. The antibody validation and pharmacological inhibition provide strong evidence for ATM-mediated phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C88"
+    ],
+    "result": "E6AP Ser-218 phosphorylation regulates E6AP-MASTL association: the phospho-mimetic S218D mutant shows reduced MASTL binding, and DNA damage disrupts WT E6AP-MASTL association but not S218A mutant association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 and C88 are supported by immunoprecipitation experiments with phospho-mutants. The use of both phospho-mimetic (S218D) and phospho-deficient (S218A) mutants, along with DNA damage treatment, provides strong evidence that Ser-218 phosphorylation regulates the E6AP-MASTL interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C89"
+    ],
+    "result": "E6AP S218A mutation prevents MASTL protein accumulation after DNA damage, indicating that Ser-218 phosphorylation is required for MASTL stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C89 are supported by immunoblotting data showing no MASTL increase in cells expressing S218A E6AP after DNA damage. This result logically follows from the persistent E6AP-MASTL association observed with the S218A mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C90"
+    ],
+    "result": "E6AP Ser-218 phosphorylation is required for timely DNA damage checkpoint recovery: cells expressing S218A E6AP show defective recovery (reduced mitotic entry, delayed cell cycle progression, reduced CDK substrate phosphorylation) and elevated DNA damage signaling compared to WT E6AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 and C90 are supported by multiple complementary assays (mitotic index, FACS, CDK substrate phosphorylation, checkpoint marker phosphorylation). The consistency across different readouts provides strong evidence that Ser-218 phosphorylation is functionally important for checkpoint recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "ATM/ATR-dependent signaling initiates cell cycle recovery while activating the DNA damage checkpoint, creating a timer-like mechanism that ensures the transient nature of checkpoint arrest through the ATM-E6AP-MASTL axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 represent the central model of the paper, integrating findings from multiple experiments. The model is well-supported by the data showing that ATM phosphorylates E6AP, leading to E6AP-MASTL dissociation, MASTL stabilization, and checkpoint recovery. However, C92 contains some speculative elements about the 'timer-like mechanism' that, while reasonable, extend beyond direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "DNA damage activates ATM and ATR kinases, which phosphorylate and activate checkpoint kinases CHK1 and CHK2, which in turn inhibit CDC25 to prevent CDK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 represent established knowledge about DNA damage checkpoint signaling, supported by citations to foundational literature. These claims provide necessary background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "MASTL is an important mitotic regulator that is activated during mitotic entry and promotes mitosis by phosphorylating ENSA and ARPP19, which inhibit PP2A/B55 phosphatase, though mitotic entry can still occur in MASTL-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 represent established knowledge about MASTL function in mitosis, supported by multiple citations. These claims provide essential background for understanding MASTL's role in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "MASTL is required for cell cycle recovery from DNA damage checkpoint in Xenopus egg extracts and promotes cell proliferation under DNA damage in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by citations to previous studies from the same research group. These claims provide important background establishing MASTL's role in checkpoint recovery, which motivated the current mechanistic study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "E6AP mutations cause Angelman syndrome in humans, and mouse embryo fibroblasts lacking E6AP exhibit multiple oncogenic phenotypes including escape from replicative senescence, proliferation under stress, anchorage-independent growth, and enhanced tumor growth in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are supported by citations to established literature. These claims provide important context for understanding E6AP's biological significance and potential tumor suppressor function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The oncogenic phenotypes of E6AP-deficient mouse embryo fibroblasts can potentially be attributed to MASTL upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is speculative and represents a hypothesis rather than a tested result. While the current study shows that E6AP regulates MASTL, the connection to the previously observed oncogenic phenotypes of E6AP-deficient cells has not been experimentally tested. This would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "ATM-mediated MASTL upregulation may provide an initial signal to trigger positive feedback reactions that shift the balance from cell cycle arrest to recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is speculative and represents a proposed model. While the data support ATM-mediated MASTL upregulation and its role in checkpoint recovery, the specific mechanism involving positive feedback loops has not been directly tested. This remains a reasonable hypothesis requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The timer-like mechanism involving ATM-E6AP-MASTL can contribute to the transient nature of the DNA damage checkpoint observed in yeast, frog, and mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is supported by the experimental data showing that ATM activation simultaneously initiates checkpoint signaling and checkpoint recovery mechanisms. The citations to previous observations of transient checkpoint arrest in multiple organisms provide additional support, though the specific contribution of the MASTL pathway to this phenomenon in different organisms has not been directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The impact of MASTL upregulation on promoting checkpoint recovery and cell cycle progression can be attributed to inhibition of PP2A/B55, though additional mechanisms are not excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is a reasonable inference based on established knowledge of MASTL function (inhibiting PP2A/B55) and the current data showing MASTL's role in checkpoint recovery. However, the specific mechanism by which MASTL promotes checkpoint recovery was not directly tested in this study (e.g., through PP2A/B55 manipulation). The authors appropriately acknowledge that additional mechanisms may be involved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "MASTL kinase has emerged as an important factor in tumorigenesis and treatment resistance in multiple types of cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by citations to previous studies and provides important context for the clinical relevance of understanding MASTL regulation.",
+    "result_type": "MINOR"
+  }
+]

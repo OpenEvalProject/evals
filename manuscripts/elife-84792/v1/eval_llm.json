@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors designed a 22-nucleotide ARTi shRNA sequence matrix (TTCGWWWNNAHHWWCATCCGGN) by analyzing nucleotide biases in high-scoring siRNA predictions and low off-target seed sequences, then eliminated sequences with perfect transcriptome matches and selected six candidates for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C49-C54 describe a systematic computational design approach combining DSIR and siSPOTR analyses with transcriptome filtering. The methodology is clearly described, the design matrix is explicitly stated, and the selection criteria are justified. The nucleotide bias statistics (C50-C53) provide quantitative support for the design decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "All six ARTi-shRNAmirs matched or outperformed previously validated potent shRNAmirs and ranked among top performers when compared to 592 gene-specific shRNAs in knockdown reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by experimental data in Figure 1C and Figure 1\u2014figure supplement 1C comparing ARTi performance to established controls and a large panel of gene-specific shRNAs. The comparison provides strong evidence for ARTi knockdown efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "ARTi-shRNAmirs showed minimal off-target effects, with no impact on proliferation in most cell lines (except mild effects of ARTi.6634 in RN2 and ARTi.6786 in MV4-11) and only marginal transcriptome changes compared to MEK inhibitor controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by competitive proliferation assays (Figure 1D, Figure 1\u2014figure supplement 1D) and transcriptome profiling (Figure 1E-F, Figure 1\u2014figure supplement 1E-F) across multiple cell lines. The comparison to trametinib as a positive control strengthens the conclusion about minimal off-target effects. The exceptions (C13-C14) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "ARTi-mediated suppression of engineered EGFRdel19 in PC-9 cells caused tumor regression in vivo that was indistinguishable from osimertinib treatment, with on-target effects confirmed by RNA-seq showing transgene suppression and downstream pathway inhibition, and no effect in parental cells lacking the ARTi target site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C25-C26, C28-C31 collectively demonstrate ARTi validation for EGFR. The functional rescue (C22), RNA-seq confirmation of target and pathway suppression (C25-C26), in vivo tumor regression matching drug effects (C28-C29), and negative control in parental cells (C30) provide strong converging evidence for on-target activity (C31). Figure 2D and supplementary figures support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "ARTi-mediated suppression of engineered KRASG12R in MIA PaCa-2 cells led to full tumor regression when KRASG12C was absent, but only delayed progression when both KRAS alleles were present, suggesting both oncogenes contribute to tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 demonstrate ARTi validation for KRASG12R with appropriate controls. The resistance to AMG-510 (C32) validates the model switch, mRNA/protein suppression (C33-C34) confirms knockdown, and the differential in vivo effects (C36-C37) support the inference about dual oncogene contribution (C38). Data in Figure 2F-H and supplementary figures support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ARTi-mediated suppression of STAG1 impaired proliferation in vitro and tumor progression in vivo specifically in STAG2-deficient HCT 116 cells, with no effect when STAG2 was present, validating the synthetic lethal interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 demonstrate ARTi validation of the STAG1-STAG2 synthetic lethal interaction. The context-dependent effects (impairment only in STAG2-deficient cells, C39-C40, but not in STAG2-wildtype cells, C41) provide strong evidence for specificity. Data in Figure 2L and Figure 2\u2014figure supplement 3C support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "ARTi is established as a versatile and precise loss-of-function method that provides full control over on- and off-target effects and can be applied to any coding or non-coding gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 represent the main conclusion synthesizing results from all three target validation studies (EGFR, KRAS, STAG1). The demonstration of efficacy across multiple targets with controlled off-target effects supports versatility (C42), the design allowing side-by-side wildtype comparison supports control claims (C43), and the principle of engineering target sites rather than targeting endogenous sequences supports broad applicability (C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Placement of ARTi target sites in non-coding transcript regions leaves the endogenous target protein unaltered, providing an advantage over degron-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by the design principle demonstrated in the STAG1 experiments where ARTi sites were placed in the 3'-UTR (Figure 2I), and by comparison to degron methods via citations. The claim is conceptually sound and demonstrated in practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "ARTi enables inducible, titratable, and likely reversible loss-of-function perturbations without altering endogenous transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 is partially supported: inducibility is demonstrated throughout (dox-induction), titratability is implied by the system design but not explicitly tested, and reversibility is explicitly stated as not tested in the study. The claim about not altering transcriptional regulation is supported by the design principle but would benefit from direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "ARTi potentially enables combinatorial loss-of-function perturbations and can establish on-target benchmark phenotypes for drug development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 are explicitly speculative and not experimentally demonstrated in this study. While the principles are sound based on the ARTi design, these represent proposed future applications rather than validated results. The evidence type is correctly labeled as SPECULATION.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "RNAi and CRISPR/Cas9 methods have known limitations including off-target effects and incomplete loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the motivation for ARTi by citing known limitations of existing methods. C1 is supported by three citations, while C2-C4 are stated as established knowledge. These background claims appropriately contextualize the need for the ARTi approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The miR-E backbone shRNAmir system used for ARTi does not interfere with endogenous miRNA processing and can be expressed from tet-responsive elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 describe the chosen RNAi system and are supported by citations to Premsrirut et al., 2011 and Zuber et al., 2011. These are methodological choices based on prior work that justify the ARTi design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "EGFR, KRAS, and STAG1 were selected as validation targets based on their established roles as oncogenes or synthetic lethal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 establish the rationale for target selection and are supported by appropriate citations. These background claims justify the choice of validation targets for demonstrating ARTi utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "RAF-MEK-ERK signaling acts as a key effector pathway of EGFRdel19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is established knowledge about EGFR signaling that contextualizes the RNA-seq results showing DUSP6 downregulation. This is appropriately used to interpret the mechanistic effects of EGFR suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The cell lines and compounds used in the study have established characteristics relevant to the validation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe established properties of cell lines and drugs used in the study. These are appropriately cited or stated as knowledge and provide necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  }
+]

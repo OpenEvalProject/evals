@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C74",
+      "C98",
+      "C99",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors identify a generalized extracellular binding pocket for IKs activators formed by KCNE1, the domain-swapped S1 helices of KCNQ1, and the pore/turret region. This cryptic binding pocket is induced upon drug binding through conformational changes and stabilizes the S1/KCNE1/pore complex, ultimately slowing deactivation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm this as an important finding. The editor states the study 'identifies a common binding site for two structurally distinct activators' with 'convincing functional and computational data.' Reviewer 1 notes the authors 'successfully identified some critical amino acid residues' and that 'the data are solid and well support their conclusions.' Reviewer 2 describes the work as proposing 'an overall similar binding site' with 'convincing' evidence from parallel experimental and simulation approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C40",
+      "C41",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors identify specific critical residues for drug binding: K41, A44, and Y46 in KCNE1; W323 in the KCNQ1 pore; and Y148 in the KCNQ1 S1 domain. K41 acts as a 'lid' holding mefenamic acid in place, while W323 impacts the size of the binding pocket.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support these findings. Reviewer 1 states the authors 'successfully identified some critical amino acid residues, including W323 of KCNQ1 and K41 and A44 of KCNE1' and that they 'confirmed that they were critical for the binding of the activator.' Reviewer 2 notes 'the authors have experimentally assessed the putative relevance of a large set of residues based on simulation predictions,' indicating acceptance of these key residue identifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose an induced-fit mechanism where structurally different molecules induce conformational changes in an occult binding pocket that is not detectable in the absence of drug, with residues moving into the space vacated when drug unbinds.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'The authors propose an induced-fit model for the binding site' as a key finding of the study. Reviewer 1 notes the work is 'valuable to the field, not only for future drug design but also for the biophysical understanding of the binding/unbinding of drugs to ion channel complexes,' implicitly accepting the mechanistic model. No reviewer challenges this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mefenamic acid (100 \u00b5M) transforms slowly activating IKs currents into nearly linear waveforms, completely inhibits tail current decay, and causes a large hyperpolarizing shift in the G-V relationship (\u0394V1/2 = -105.7 mV). The K41C mutation prevents these effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are core functional data that reviewers accept without challenge. Reviewer 1 states 'the data are solid and well support their conclusions,' and Reviewer 3 notes the authors used 'electrophysiological recording, calculating V1/2 of different mutants, and looking at the instantaneous and tail currents' to identify mechanisms. The editor describes the data as 'convincing functional and computational data.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mutagenesis scanning of predicted binding pocket residues shows that W323A largely abolishes mefenamic acid effects (minimal V1/2 shift of -14.1 mV), W323C shows intermediate effects, and mutations of other KCNE1 residues (L42C, E43C, A44C) show reduced but significant responses, with effects diminishing for residues further from K41.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states the authors 'tested these identified amino acid residues by analyzing the point mutants and confirmed that they were critical for the binding of the activator.' Reviewer 2 notes 'the authors have experimentally assessed the putative relevance of a large set of residues based on simulation predictions' as a strength. No concerns are raised about these mutagenesis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The L142C mutation produces channels with nearly instantaneous activation and no tail current decay in control conditions, mimicking the effects of mefenamic acid on wild-type channels. The mutant remains responsive to mefenamic acid but from a heightened state of activation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these data. Reviewer 2 acknowledges 'A minor limitation is that not all residues of putative importance for drug binding/effects can be reliable evaluated in experiments,' but this refers to technical challenges rather than questioning the L142C findings. The data support the mechanistic model that reviewers accept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MD simulations show that mefenamic acid rapidly detaches from K41C and W323A mutant channels (within 120 ns) but remains bound to WT and Y46C channels throughout simulations. Free energy calculations confirm significantly reduced binding energy for K41C and W323A mutants, with Y46 being less important than K41 and W323.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises a significant limitation: 'unbinding may be facilitated in the closed state, whereas they had to use the open channel for the MD simulation. Therefore, their MD simulations do not necessarily reflect the unbinding process in the closed state, which should occur in the comparable electrophysiological experiments.' This indicates the simulation results may not fully correspond to experimental conditions, though the reviewer still concludes 'the data are solid and well support their conclusions.' The editor describes the computational data as 'convincing,' but the state-dependence concern introduces uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "K41C and W323A mutations increase the RMSF (flexibility) of the D39-A44 KCNE1 region, suggesting these residues normally stabilize the external KCNE1 conformation. Y46C has less impact on mobility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the computational analysis without specific challenge. Reviewer 3 notes 'The manuscript has been substantially revised from the previous version with a greater depth of computational analysis,' indicating acceptance of these findings. The mechanistic interpretation aligns with the induced-fit model that reviewers support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "DIDS (100 \u00b5M) transforms IKs currents with faster onset and inhibited tail decay, causing a hyperpolarizing V1/2 shift of -46.6 mV in WT channels. Effects are less pronounced than mefenamic acid. Docking analyses reveal DIDS binds to the same general extracellular interface as mefenamic acid.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states the authors 'examined another activator, but structurally different DIDS, and reported that DIDS and mefenamic acid share the binding pocket, and concluded that the extracellular region composed of S1, S6, and KCNE1 is a generic binding pocket for the IKS activators.' This directly supports the claim. The editor's statement about 'a common binding site for two structurally distinct activators' also affirms this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "DIDS mutagenesis shows K41 is less critical for DIDS than mefenamic acid (K41C only partially prevents DIDS action), while residues deeper in the pocket (A44C, Y46A, W323A, Y148C) show greater importance. This suggests DIDS binding involves KCNE1 residues closer to the transmembrane region and extends to the S1 region.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes the authors 'reported that DIDS and mefenamic acid share the binding pocket' with 'some differences in key residues,' which aligns with these differential mutagenesis effects. Reviewer 2 acknowledges the parallel experimental and computational approaches enable 'functional testing and mechanistic predictions,' supporting these comparative findings. No reviewer challenges the DIDS mutagenesis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "MD simulations show DIDS remains bound to WT channels but detaches from W323A and Y46C mutants. Interestingly, DIDS does not unbind from K41C mutants even after 300 ns, with only small changes in free energy, suggesting K41 is less important for DIDS than for mefenamic acid.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The same limitation raised by Reviewer 1 for mefenamic acid simulations applies here: simulations use open channels while unbinding may be facilitated in closed states. However, Reviewer 1 acknowledges 'some binding properties and stability of some mutations, were only partially validated by electrophysiology data, which might be explained by the limitations of the applied methods,' suggesting acceptance of partial validation despite methodological constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The ps-IKs model was constructed based on the cryo-EM structure of KCNQ1-KCNE3 (PDB ID: 6v01) by substituting extracellular KCNE3 residues with KCNE1 residues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly identifies this as a limitation: 'they had to use the KCNQ1-KCNE3-based structural model for the docking simulation. Although they only focused on the extracellular region substituted by the six amino acid residues of KCNE1, the binding mode or location of KCNE1 might be different from KCNE3.' This indicates uncertainty about whether the model accurately represents the true KCNQ1-KCNE1 structure, though the reviewer concludes the work is still valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Free energy calculations and hydrogen bond analysis from MD simulations identify key stabilizing interactions: Y46 and E43 form the most stable H-bonds with mefenamic acid (79.7% and 22.5% frequency), and energy decomposition reveals W323, V324, L142, Q147, and Y148 as critical contributors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes 'The contribution of each residue within the binding pocket was analysed using GBSA and PBSA and traditional molecular dynamics simulation,' indicating acceptance of these computational analyses. Reviewer 2 describes the computational approaches as enabling 'mechanistic predictions and interpretations.' The editor describes the computational data as 'convincing.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose a dynamic binding model where drugs bind/unbind at high frequency, with slowed deactivation resulting from stabilization of the S1/KCNE1/pore complex. This is supported by similarity to cross-linking studies showing that disulfide bonds at these locations slow deactivation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this mechanistic interpretation. Reviewer 2 notes the authors 'discuss possible mechanisms of action of how drug binding to this site may enhance channel function' as part of the study's contributions. Reviewer 1 states the work is valuable for 'the biophysical understanding of the binding/unbinding of drugs to ion channel complexes.' The comparison to cross-linking data strengthens the interpretation without reviewer challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose that gain-of-function mutations in S1 (S140G, V141M, L142C) and pore region (A300T) may operate through the same mechanism as drug activators, as these mutations produce qualitatively similar current waveforms and are located near the drug-binding pocket.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this comparative analysis. The mechanistic similarity between mutations and drug effects supports the overall model that reviewers accept. Reviewer 2 notes the study provides 'mechanistic insights into how channel modulators enhance the function of the channel,' which encompasses this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims about IKs channel composition, physiological role, disease associations, and previous findings about activator classifications and binding sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background facts cited from literature that reviewers do not question. Reviewer 2 notes 'The authors have through several previous studies provided mechanistic insights into how small-molecule activators like ML277 act on KCNQ1,' acknowledging the cited background. These claims provide context rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

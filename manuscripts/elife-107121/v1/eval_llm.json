@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "EGLN1 mutations cause erythrocytosis and rarely neuroendocrine tumors as part of pseudohypoxic diseases. Since 2006, 152 cases with 96 distinct EGLN1 mutations have been reported, with three cases developing PPGL. These diseases share overlapping phenotypes due to dysregulated HIF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C34-C39, C47-C50 collectively establish the clinical landscape of EGLN1-driven disease through literature compilation and established knowledge. The data on case numbers (C38) and PPGL cases (C39) are supported by citations and supplementary files. The mechanistic link to HIF dysregulation (C50) is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Clinical analysis of PHD2-driven erythrocytosis reveals that most cases are heterozygous mutations (~70% male), with ~74% being missense mutations. EPO levels are largely normal, consistent with EPO hypersensitivity. Erythrocytosis develops from heterozygous mutations (haploinsufficiency), while PPGL requires loss of heterozygosity in chromaffin cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C70 present a comprehensive clinical characterization based on compiled case reports (Supplementary file 1). The observations about mutation types (C66), sex distribution (C54), inheritance patterns (C55-C57), and EPO levels (C59) are data-driven. The mechanistic hypotheses about haploinsufficiency (C62, C69) and LOH for PPGL (C65, C70) are reasonable inferences from the clinical data, though C69-C70 are explicitly stated as hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C106",
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "In HRE-luciferase reporter assays, PHD2 mutants P317R and H374R showed significantly reduced ability to suppress HIF1\u03b1 activity (~2-fold and ~2.5-fold respectively), while other mutants (G206C, W334R, A228S, F366L, R371H) showed comparable activity to WT. The assay is not reliable for revealing functional defects of PHD2 mutants, particularly those prone to aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 present clear experimental data from Figure 2A showing differential effects. However, the conclusion that the luciferase assay is unreliable (C109-C110) creates internal inconsistency\u2014if the assay is unreliable, the positive results for P317R and H374R are also questionable. The hypothesis (C107) that unstable mutants may be continuously translated during the assay is speculative and not tested. The discrepancy between cellular and biochemical assays needs resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "PHD2 mutants G206C, W334R, F366L, R371H, and H374R showed noticeable protein instability by 24 hr in cycloheximide chase assays. However, protein stability alone cannot explain the impact of these mutations on HIF1\u03b1-driven HRE-luciferase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by experimental data in Figure 2B-C showing differential stability. The inference (C74) that stability alone doesn't explain functional defects is reasonable given that some unstable mutants (G206C, W334R) showed WT-like activity in luciferase assays. Statistical analysis was performed (Figure 2C) with appropriate replication (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Biophysical characterization revealed that PHD2 mutants G206C, W334R, and H374R aggregated severely and could not be purified. The remaining mutants (A228S, P317R, F366L, R371H) showed altered SEC elution volumes, similar CD spectra to WT, but reduced thermal stability (lower Tm values: 43.8-48.3\u00b0C vs 52.3\u00b0C for WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 present systematic biophysical characterization with appropriate techniques (SEC, CD, thermal denaturation). The data in Figure 3 and Table 1 support the observations. The inference that mutations affect hydrodynamic size (C77) and cause thermal instability (C81) are reasonable interpretations of SEC and CD data. The conclusion that overall structure is mostly unaffected (C79) is supported by similar CD spectra (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Microscale thermophoresis revealed that PHD2 WT binds tightly to HIF1\u03b1CODD and HIF2\u03b1CODD (Kd 7.5 and 15 \u00b5M). Most mutants (A228S, F366L, R371H) showed mild binding defects (~2-fold), while P317R showed severe binding defect (Kd 320 \u00b5M for HIF1\u03b1CODD). Similar patterns were observed for both HIF paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C86 present MST binding data from Figure 4 and Table 2. However, the severe binding defect for P317R (C84) is later contradicted by BLI data (C92) showing only slightly weaker binding. The authors acknowledge this discrepancy (C93) and attribute it to fluorescent labeling artifacts. This methodological issue undermines confidence in the MST results, particularly for P317R. The mild defects for other mutants may be more reliable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C111"
+    ],
+    "result": "Time-resolved NMR directly measured PHD2-mediated hydroxylation of HIF1\u03b1 ODD, confirming P564 (CODD) is hydroxylated faster than P402 (NODD) by WT PHD2. PHD2 A228S showed near-WT activity on both sites. Critically, PHD2 P317R retained near-WT hydroxylation of P564 but completely failed to hydroxylate P402.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91, C111 present the key experimental finding using a novel NMR approach (He et al., 2024). The data in Figure 5A-B clearly show differential activity of P317R on CODD vs NODD. The method is well-validated (C87 cites previous work), and technical duplicates were performed. This is the central discovery of the manuscript\u2014a disease-causing mutant with selective loss of NODD hydroxylation activity while retaining CODD activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Bio-layer interferometry showed that PHD2 P317R binds to HIF1\u03b1CODD only slightly weaker than WT (Kd 6.0 vs 2.1 \u00b5M) and binds to HIF1\u03b1NODD similarly to WT (Kd 2.0 \u00b5M for both). The failure of P317R to hydroxylate P402 is unlikely due to binding defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 present BLI data (Table 3, Figure 5\u2014figure supplement 2) that resolve the MST discrepancy. The BLI results are more reliable as they avoid fluorescent labeling artifacts (C93). The key conclusion (C95) that the catalytic defect is not due to binding is well-supported by the data showing normal binding to NODD despite complete loss of hydroxylation activity. This is a critical mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C115",
+      "C116"
+    ],
+    "result": "The selective defect of PHD2 P317R on NODD hydroxylation contributes to erythrocytosis development, demonstrating that NODD prolyl-hydroxylation is not dispensable in normal oxygen-sensing and that HIF deregulation underlies PHD2-driven erythrocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C115-C116 present the major biological conclusion of the study. The logic is sound: P317R is a disease-causing mutation (established clinically), it retains CODD activity but loses NODD activity (demonstrated by NMR), yet still causes disease. This implies NODD hydroxylation is functionally important, challenging the prevailing view (C113). The conclusion is well-supported by the convergence of clinical, cellular, and biochemical data, though it remains an inference rather than direct proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "All seven examined disease-associated PHD2 mutants have structural and/or catalytic defects. H374R affects the catalytic site, G206C and W334R cause severe aggregation due to structural disruption, F366L disrupts the hydrophobic core, while A228S shows minimal defects. Some mutants may affect interactions with non-HIF substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C101-C105, C108, C122-C124 synthesize the structural and functional characterization across all mutants. The statement that all mutants have defects (C7) is supported by the combined data from stability, binding, and enzymatic assays. The structural interpretations (C101-C105, C122-C123) are reasonable based on known PHD2 structure. The speculation about non-HIF substrates (C124) is appropriately tentative. This represents a comprehensive characterization of the mutant panel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The molecular basis for P317R's selective NODD defect may involve altered interactions with the LXXLAP motif or increased distance between P402 and the active site without compromising substrate binding. Sequence differences between NODD and CODD may influence PHD2 substrate selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C121 present mechanistic hypotheses for P317R's selective defect. While C117 is supported by structural analysis from Chowdhury et al. 2016, the remaining claims (C118-C121) are speculative. The hypothesis about increased distance (C120) is plausible given the 4-5 \u00c5 requirement for Fe/2OG-oxygenases (C119), but lacks direct experimental support. These are reasonable hypotheses for future work but remain unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C112",
+      "C113"
+    ],
+    "result": "Background on HIF regulation: PHD2 hydroxylates one or both prolines in HIF\u03b1 ODD, marking it for VHL-mediated degradation. CODD (P564) hydroxylation is predominant and sufficient for degradation, with single hydroxylation being adequate. The biological significance of NODD (P402) hydroxylation was previously unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C29-C33, C112-C113 establish the background knowledge that frames the research question. These are well-established facts in the field, supported by multiple citations (He et al., 2021; Chan et al., 2005; He et al., 2024; Tian et al., 2011). The statement that NODD significance was unclear (C6, C33, C113) accurately represents the knowledge gap that motivated this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Mouse genetic studies show that complete PHD2 deletion causes embryonic lethality, while conditional inactivation causes erythrocytosis. PHD2 is uniquely required, as PHD1/PHD3 deletion alone doesn't cause erythrocytosis, though they have supporting roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 summarize established knowledge from mouse genetic studies, appropriately cited (Minamishima et al., 2008; Li et al., 2010; Franke et al., 2013; Takeda et al., 2008). This background supports the importance of PHD2 and provides context for understanding human disease. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on erythropoiesis and hypoxia response: Erythrocytes deliver oxygen; their levels must be regulated to avoid tissue hypoxia or thrombosis. EPO, produced in kidneys, stimulates erythropoiesis via EPO receptors. EPO production is regulated by HIF binding to HREs. The oxygen-sensing pathway is conserved across animals and essential for cellular adaptation to hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C28 provide essential background on erythropoiesis and the hypoxia response pathway. These are well-established physiological facts, appropriately cited (Lee and Percy, 2011; Weidemann et al., 2009; Richmond et al., 2005; Bhoopalan et al., 2020; Semenza and Wang, 1992; Mithoowani et al., 2020; Lippl et al., 2018; Dengler et al., 2014; Sch\u00f6del et al., 2011). This background is necessary context but not a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PHD2 is the most critical of three PHD isozymes, with high expression in various cell types and unique ability to target both prolines in HIF1\u03b1/2\u03b1 ODDs. PHD2 belongs to the 2-oxoglutarate-dependent dioxygenase superfamily with conserved structural features and iron-coordinating residues (His313, Asp315, His374).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 establish the biochemical and structural properties of PHD2, supported by appropriate citations (Berra et al., 2003; Chan et al., 2005; Appelhoff et al., 2004; Flashman et al., 2008; Schofield and Ratcliffe, 2004; Clifton et al., 2006; Figg et al., 2023). This background justifies the focus on PHD2 and provides structural context for interpreting mutant effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Previous work by Chowdhury et al. (2016) showed PHD2 P317R has no activity on NODD using an indirect metabolic method with individual peptides while effectively hydroxylating CODD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 accurately cites previous work that observed the same selective defect of P317R. This provides independent validation of the current study's NMR findings (C89) using a different methodology. The congruence between methods strengthens confidence in the result.",
+    "result_type": "MINOR"
+  }
+]

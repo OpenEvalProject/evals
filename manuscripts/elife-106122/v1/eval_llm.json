@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Current multisensory integration models are not stimulus-computable and rely on experimenter-defined abstractions rather than raw audiovisual input, fundamentally limiting understanding of how biological systems extract and combine task-relevant cues from natural stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13-C16 collectively establish a well-documented limitation of existing models through multiple citations and logical argumentation. The characterization is consistent with cited literature and provides clear motivation for the proposed approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The proposed MCD population model replicates mammalian audiovisual behavior across 69 experiments spanning humans, rats, and monkeys with correlations exceeding 0.97, using only 0-4 free parameters and operating directly on pixels and audio samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C19-C21, C56-C58 present the core quantitative findings with specific correlation values and experimental scope. The high correlations across diverse species and tasks with minimal parameters represent strong empirical support, though the funnel plot (Figure 2\u2014supplement 1I) shows correlation varies with sample size as expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C61"
+    ],
+    "result": "The model captures stimulus-specific effects on behavior, as demonstrated by permutation testing showing significantly better fit with matching versus mismatching stimuli (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C61 describe a permutation test providing statistical evidence that low-level stimulus properties drive model predictions. The p<0.001 result and 4.7 SD separation (Figure 2\u2014supplement 1K) provide strong support for stimulus-specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C62"
+    ],
+    "result": "The model predicts scaling of subjective audiovisual synchrony with distance without explicit physics modeling, instead exploiting auditory envelope cues (direct-to-reverberant ratio) that naturally vary with source proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C62 demonstrate the model replicates the Alais & Carlile (2005) distance effect through low-level acoustic features rather than explicit distance computation. The mechanism is plausible and supported by simulation results (Figure 2B), though the stimuli were digitally extracted from figures rather than original recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model accounts for rat audiovisual behavior with temporal constants 4\u00d7 faster than humans, mirroring interspecies differences in physiological rhythms (heart rate ~4.7\u00d7, breathing rate ~6.3\u00d7 faster in rats).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C72-C74 show cross-species generalization with biologically plausible parameter differences. The correlation between temporal tuning and physiological rhythms is compelling (C31, C74), though this remains correlational rather than mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C71"
+    ],
+    "result": "Pharmacologically-induced changes in rat audiovisual perception and effects of expertise/age in humans can be accounted for by decision-level adjustments without altering low-level temporal processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C33, C71 show that decision parameters alone suffice to fit pharmacological and individual difference data. However, C33 explicitly acknowledges this doesn't prove low-level processing was unchanged\u2014only that changes weren't necessary for the fits. The authors appropriately note that richer temporal stimuli would be needed to definitively separate sensory from decisional contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "During audiovisual speech, model responses cluster around the mouth and eyes\u2014regions where pixel luminance changes synchronously with the audio track.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 describe model output patterns for speech stimuli shown in Figure 3 and Videos 1-2. The spatial clustering is a direct consequence of the model's correlation detection mechanism and is visually demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C47"
+    ],
+    "result": "The time-averaged MCD population response is mathematically equivalent to Maximum Likelihood Estimation (MLE), accounting for observed bias and precision in bimodal spatial localization with zero free parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C47 establish formal equivalence between MCD and MLE through mathematical analysis and simulation of Alais & Burr (2004). The zero-parameter prediction of both bias and precision (Figure 4D-E) provides strong support, though spatial uncertainty was injected into stimuli rather than modeled separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The MCD model implements Bayesian Causal Inference (BCI), replicating the breakdown of integration with spatial disparity and near-perfectly matching human data (\u03c1=0.99) from K\u00f6rding et al. (2007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 demonstrate the model can compute common-cause probability and implement BCI with correlation matching or exceeding the original BCI model. The fit quality (\u03c1=0.99) with same or fewer parameters than BCI provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The model predicts both the probability of single versus double fixations and the full distribution of gaze locations in humans and monkeys (Mohl et al. 2020) with zero additional free parameters after fitting fixation probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 show the model generalizes from fixation probability (3 parameters) to predict spatial distributions (0 additional parameters) with correlations of 0.9-0.93. This demonstrates genuine predictive power beyond curve fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C59",
+      "C60",
+      "C91"
+    ],
+    "result": "Unlike computational-level models (MLE, BCI), the MCD operates at Marr's algorithmic level as a stimulus-computable model, providing a mechanistic substrate that could implement Bayesian ideal observer computations while making all processing steps explicit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C59-C60, C91 position the model theoretically using Marr's framework. The distinction between computational and algorithmic levels is well-established, and the model demonstrably operates on raw stimuli while reproducing normative model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C54",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "The model generates audiovisual saliency maps without free parameters that predict spontaneous gaze direction, with gaze directed toward regions in the top 2% of MCD response (mean SMD=2.03) across 16,000+ frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51, C54, C79, C81-C82 present eye-tracking validation with quantitative metrics (SMD=2.03, top 2% response). The zero-parameter prediction of gaze in natural viewing (Figure 6, Video 4) represents strong evidence for the model's ecological validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "Complex multisensory phenomena (McGurk illusion, temporal synchrony, saliency) emerge from elementary pixel-level operations on luminance and sound level, with identical low-level analyses accounting for all 69 experiments regardless of stimulus type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C65, C68 present the study's central theoretical claim. The breadth of phenomena explained with fixed temporal parameters and minimal decision parameters provides strong support, though the claim of 'emergence' from low-level operations doesn't preclude contributions from higher-level processes not tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C70"
+    ],
+    "result": "Psychometric functions differ significantly across stimulus types (speech vs. non-speech), expertise levels (musicians vs. non-musicians), age groups, and pharmacological states, which has been interpreted as evidence for specialized processing mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C69-C70 accurately characterize prior literature with appropriate citations. These establish the empirical phenomena that the model addresses, though the interpretation of 'specialized mechanisms' (C67) is from cited work, not the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Physiological arousal modulates perceptual rhythms within individuals, and no major spatial tuning differences were found between humans and macaques, possibly reflecting phylogenetic proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by citation to Legrand et al. (2018). Claim C76 reports a negative finding from the spatial simulations with appropriate caution ('possibly'). Both are adequately supported though C76 is speculative regarding phylogenetic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Previous MEG studies identified neural responses in posterior superior temporal sulcus, superior temporal gyrus, and left superior parietal gyrus that tracked MCD model output during audiovisual temporal tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 cite prior neurophysiological work (Pesnot Lerousseau et al., 2022) establishing neural correlates of the model. This provides external validation though it's from the same research group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model offers advantages for machine perception applications including computational efficiency, interpretability, and potential for self-supervised learning in robotics, AR/VR, and low-latency systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C83-C85 discuss potential applications with supporting citations to machine learning literature. However, these are largely speculative (C83, C85 marked as SPECULATION) and no actual implementations or benchmarks against existing machine perception systems are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The model does not explain phoneme categorization or incorporate linguistic mechanisms, top-down processes, or cognitive/affective factors, though the modular approach could potentially be extended to include these.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 appropriately acknowledge model limitations with supporting citations. The statement about potential extensibility (C89) is speculative but reasonable given the modular architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "The approach could extend to other sensory modalities (visuo-tactile, audio-tactile) and animal classes, and holds similar potential for multisensory perception as the Hassenstein-Reichardt detector did for insect motion vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C92-C93 propose future extensions and draw analogies to successful models in other domains. While the Hassenstein-Reichardt comparison is supported by citation to formal similarities (C93), the claims about extensibility (C90) and future impact (C93) remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C17",
+      "C18",
+      "C52",
+      "C53"
+    ],
+    "result": "Background claims establish that animals integrate multisensory information, that integration occurs with spatiotemporal proximity and enhances reliability and salience, and that audiovisual correspondence can be detected by local correlation across space and time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C12, C17-C18, C52-C53 present established background knowledge supported by appropriate citations to foundational work (McGurk & MacDonald, Stratton, Stein, Ernst & Banks, Talsma et al., Parise et al.). These provide well-supported context for the study.",
+    "result_type": "MINOR"
+  }
+]

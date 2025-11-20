@@ -1,0 +1,1802 @@
+{
+  "submission": {
+    "id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T21:36:33.283426Z",
+    "updated_at": "2025-11-19T21:36:33.283426Z"
+  },
+  "content": [
+    {
+      "id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "content_type": "manuscript",
+      "content_text": "# Precision RNAi using synthetic shRNAmir target sites\n\n## Authors\n\n- Thomas Hoffmann<sup>1</sup> ([ORCID: 0000-0002-1589-0013](https://orcid.org/0000-0002-1589-0013))\n- Alexandra H\u00f6rmann<sup>3</sup>\n- Maja Corcokovic<sup>3</sup>\n- Jakub Zmajkovic<sup>1</sup> ([ORCID: 0000-0001-7061-6538](https://orcid.org/0000-0001-7061-6538))\n- Matthias Hinterndorfer<sup>1</sup> ([ORCID: 0000-0003-2435-4690](https://orcid.org/0000-0003-2435-4690))\n- Jasko Salkanovic<sup>3</sup>\n- Fiona Spreitzer<sup>3</sup>\n- Anna K\u00f6ferle<sup>3</sup> ([ORCID: 0000-0003-1601-7774](https://orcid.org/0000-0003-1601-7774))\n- Katrin Gitschtaler<sup>3</sup>\n- Alexandra Popa<sup>3</sup>\n- Sarah Oberndorfer<sup>3</sup>\n- Florian Andersch<sup>1</sup>\n- Markus Schaefer<sup>1</sup>\n- Michaela Fellner<sup>1</sup>\n- Nicole Budano<sup>3</sup>\n- Jan G Ruppert<sup>3</sup>\n- Paolo Chetta<sup>3</sup>\n- Melanie Wurm<sup>3</sup>\n- Johannes Zuber<sup>1</sup> ([ORCID: 0000-0001-8810-6835](https://orcid.org/0000-0001-8810-6835)) \u2020\n- Ralph A Neum\u00fcller<sup>3</sup> ([ORCID: 0000-0002-1514-6278](https://orcid.org/0000-0002-1514-6278)) \u2020\n\n### Affiliations\n\n1. Research Institute of Molecular Pathology (IMP), Campus-Vienna-Biocenter 1 Vienna Austria ([ROR:02c5jsm26](https://ror.org/02c5jsm26))\n2. Vienna BioCenter PhD Program, Doctoral School of the University at Vienna and Medical University of Vienna, Vienna BioCenter (VBC) Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))\n3. Boehringer Ingelheim RCV GmbH & Co KG, Doktor-Boehringer-Gasse Vienna Austria\n4. Medical University of Vienna, Vienna BioCenter Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLoss-of-function genetic tools are widely applied for validating therapeutic targets, but their utility remains limited by incomplete on- and uncontrolled off-target effects. We describe artificial RNA interference (ARTi) based on synthetic, ultra-potent, off-target-free shRNAs that enable efficient and inducible suppression of any gene upon introduction of a synthetic target sequence into non-coding transcript regions. ARTi establishes a scalable loss-of-function tool with full control over on- and off-target effects.\n\n## Introduction\n\nDrug development is guided by genetic loss-of-function (LOF) experiments that validate a therapeutic target, study its general and disease-specific functions, and thereby model and benchmark expected activities of inhibitory molecules. Applied genetic tools include RNAi, CRISPR/Cas9, and site-specific recombination technologies such as the Cre-Lox or Flp-FRT systems (Mohr et al., 2014; Housden et al., 2017). While these technologies have undoubtedly revolutionized genetic screening, target identification and validation, each method is associated with drawbacks that limit the usability for certain aspects of target validation. Specifically, RNAi is prone to off-target effects (Jackson et al., 2003; Scacheri et al., 2004; Lin et al., 2005) and insufficient knockdown levels, while CRISPR/Cas9-based methods are associated with off-target effects and incomplete LOF across cell populations. These limitations are particularly problematic for candidate targets in oncology, which should ideally be validated genetically in cancer cell lines and tumor models in vivo. In both cases, insufficient LOF or off-target effects can lead to far-reaching misconceptions about target suppression effects. Outgrowth of wild-type clones that retain gene function upon CRISPR- and recombination-based gene editing can result in transient phenotypes that complicate data interpretation. Similarly, insufficient knockdown or uncontrolled off-target effects induced by RNAi can lead to an unjustified de-prioritization or pursuit of candidate targets, respectively. Prior to initiating the time- and resource-intense process of drug development, more informative target validation assays would be highly desirable.\n\n## Results\n\nTo develop such an assay system, we reasoned that instead of using gene-specific LOF triggers for every new candidate gene, the expression of any gene could be efficiently suppressed by engineering the target site of a pre-validated, highly potent, synthetic short-hairpin RNA (shRNA) into its exonic sequence (Figure 1A). Besides ensuring efficient target knockdown in a highly standardized manner, such an approach would also provide control over off-target activities through expressing the shRNA side-by-side in target-site engineered and wildtype cells. This approach leaves the genome engineering procedure, needed to integrate the pre-validated artificial RNA interference (ARTi) target site into a gene of interest, as the only potential source of off-target effects. As suitable RNAi system, we chose optimized micro-RNA embedded shRNAs (shRNAmirs) in the miR-E backbone (Fellmann et al., 2013), which do not interfere with endogenous miRNA processing (Premsrirut et al., 2011) and can be expressed from tet-responsive elements and other Pol-II promoters in the 3\u2032-UTR of fluorescent reporter genes, thus providing a versatile system for inducible RNAi (Zuber et al., 2011). To identify potent ARTi sequences with minimal off-target activity, we analyzed the nucleotide composition of shRNAs that reach exceptionally high-performance scores in common shRNA design algorithms (Vert et al., 2006) and of miRNA seed sequences with exceptionally low off-target scores according to siSPOTR (Boudreau et al., 2013). By merging nucleotide biases identified in both analyses, we derived a 22-nt base composition matrix for the design of ARTi shRNAmirs (TTCGWWWNNAHHWWCATCCGGN; W = A/T, H = A/T/C; N = A/T/G/C) (Figure 1B and Figure 1\u2014figure supplement 1A and B). To further reduce possible off-target effects, we eliminated all shRNAs whose extended seed sequence (guide positions 2\u201314) had a perfect match in the human or mouse transcriptome and, finally, selected six top-scoring ARTi predictions for experimental validation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic outline of the ARTi approach. (B) Sequence logo (https://weblogo.berkeley.edu) displaying nucleotide position biases of 2161 shRNAs with exceptionally high Designer of Small Interfering RNA (DSIR) scores (>105). Inlay depicts miRNA seed sequence biases. (C) Reporter assay comparing gene-specific shRNAs to ARTi-shRNAmirs. (D) Competitive proliferation assays in human cell lines after transduction with ARTi-shRNAmirs, neutral (shRen.713) and essential control shRNAs (shRPL9.324 or shPSMA3.164) (n=3, error bars represent SD). (E) Principal component (PC) analysis of gene expression profiling upon stable expression of indicated shRNAs or treatment with MEK inhibitor (trametinib) in RKO cells. (F) Volcano plots visualizing de-regulated genes upon expression of indicated shRNAs and trametinib treatment in RKO cells compared to empty vector control. ARTi, artificial RNA interference; shRNAmirs, micro-RNA embedded shRNAs.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Sequence logo displaying nucleotide position biases of seed sequences (guide positions 2\u20138) with the lowest off-target score in siSPOTR analysis (top 1%). (B) Sequence logo displaying position biases in sequences from a that harbor a T in guide position 2. (C) Knockdown efficiency of ARTi-shRNAmirs. Flow cytometric quantification of GFP knockdown efficiency in immortalized mouse embryonic fibroblastss (MEFs) 2 d after transduction with indicated ARTi-shRNAmir or control short-hairpin RNAs (shRNAs). Percent knockdown is normalized to shRen.713 control. shRen.660 served as a neutral control whose target site was not included in the reporter. Red asterisks indicate ARTi-shRNAmirs that were selected for follow-up studies. (D) Toxicity of ARTi-shRNAmirs. Competitive proliferation assays of three murine cell lines after transduction with ARTi-shRNAmirs, shRen.713, or shMyc.1834 control, showing the relative fraction of shRNA-expressing cells at indicated time points following the initial measurement (day 4 after shRNA transduction). (E) Principal component analysis of gene expression profiling in HT-1080 cells. Respective shRNAmirs and treatments are indicated in the respective colors. X-axis: principal component 1; Y-axis: principal component 2. (F) Volcano plots visualizing de-regulated genes in HT 1080 cells. All shRNAmirs and treatments were tested against the empty vector control. X-axis: -log10(p-value); Y-axis: log2 fold change. (G) Cell growth assay for ARTi-shRNAmir transduced cells and their parental controls in the presence and absence of dox. ARTi, artificial RNA interference; shRNAmirs, micro-RNA embedded shRNAs.\n\nWe tested these ARTi-shRNAmirs using an established knockdown reporter assay (Fellmann et al., 2013) for their ability to suppress expression of a GFP transgene that harbors the respective target sites in its 3\u2032-UTR. In all six cases, ARTi-shRNAmir matched or outperformed previously validated highly potent shRNAmirs targeting Renilla luciferase or PTEN (Fellmann et al., 2013; Figure 1\u2014figure supplement 1C). We compared these results to a panel of 592 gene-specific shRNAs that were tested using the same assay and found that ARTi-shRNAmirs ranked among top-performing shRNAmirs overall (Figure 1C). Next, we selected the three top-performing ARTi-shRNAmirs and evaluated possible off-target activities using competitive proliferation assays and transcriptome profiling. ARTi-shRNAmir expression had no effects on proliferation or survival in four human and three mouse cell lines (Figure 1D and Figure 1\u2014figure supplement 1D), with the exception of ARTi.6634 and ARTi.6786, which induced a mild fitness defect in the murine leukemia cell line RN2 and MV4-11, respectively. In contrast to the effects of a MEK inhibitor trametinib, which we included as a positive control, stable expression of ARTi-shRNAmirs had only marginal effects on the transcriptome in two commonly used human cell lines (Figure 1E and F and Figure 1\u2014figure supplement 1E and F) and no effect in proliferation assays (Figure 1\u2014figure supplement 1G), indicating that they do not trigger major off-target effects, even in the absence of their respective target site. Together, these studies established a set of highly potent, off-target-free ARTi-shRNAmirs, among which we selected ARTi.6570 (ARTi-shRNAmir) for further investigations.\n\nTo establish ARTi as a method for target validation, we performed ARTi-based LOF experiments in cancer cell lines and xenograft models for three prominent oncology targets: EGFR and KRAS, which act as driving oncogenes in various cancer types (Hynes and MacDonald, 2009; Punekar et al., 2022), and STAG1, which has been identified as a synthetic lethal interaction with recurrent LOF mutations of STAG2 (Bailey et al., 2021; van der Lelij et al., 2020; Benedetti et al., 2014; van der Lelij et al., 2017). To establish an ARTi-repressible version of oncogenic EGFRdel19, we cloned ARTi-shRNAmir target sequences into an expression construct encoding EGFRdel19 fused to dsRed (Figure 2A), which rendered Ba/F3 cells cytokine-independent and sensitive to EGFR inhibition (Figure 2\u2014figure supplement 1A). We introduced this construct into human EGFRdel19-dependent PC-9 lung adenocarcinoma cells and subsequently knocked out the endogenous EGFR gene. The EGFRdel19::V5::dsRed::ARTi transgene fully rescued the loss of endogenous EGFRdel19, while doxycycline (dox)-induced expression of the ARTi-shRNAmir (ARTi.6570) strongly inhibited proliferation of PC-9 cells and triggered a near-complete suppression of the EGFRdel19::V5::dsRed::ARTi protein (Figure 2B and C and Figure 2\u2014figure supplement 1B). Consistently, in RNA-sequencing we observed an almost complete drop of reads mapping to the codon-optimized EGFRdel19::V5::dsRed::ARTi transgene upon dox-inducible expression of the ARTi-shRNAmir, as well as a downregulation of DUSP6 and other canonical targets of RAF-MEK-ERK signaling, which acts as key effector pathway of EGFRdel19 (Figure 2\u2014figure supplement 1C-E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of EGFRdel19::V5::dsRed::ARTi engineering in PC-9 cells. Blue color denotes overexpressed ARTi variant. Green denotes endogenous gene. (B) Western blot demonstrating knockdown of EGFRdel19::V5::dsRed::ARTi. Western blot is a representative example of three independent biological repeat experiments. (C) Proliferation assay and crystal violet staining of parental and engineered PC-9 cells in the absence or presence of doxycycline (dox). Crystal violet staining is a representative example of two independent biological repeat experiments.( D) In vivo experiment comparing dox-induced EGFRdel19::V5::dsRed::ARTi knockdown to pharmacological EGFRdel19 inhibition. Mean tumor volume and \u00b1 SEM is plotted for all in vivo experiments. (E) Schematic of MIA PaCa-2 engineering. Blue color denotes overexpressed ARTi variant. Green denotes endogenous gene. (F) Western blot for KRAS and Actin in indicated engineered MIA PaCa-2 cells in the presence and absence of dox. Western blot is a representative example of two independent biological repeat experiments. (G) Proliferation assay and crystal violet staining of parental and engineered MIA PaCa-2 cells in the absence or presence of dox. Crystal violet staining is a representative example of two independent biological repeat experiments. (H) Growth curves of tumors implanted with engineered MIA PaCa-2 cells in the absence and presence of dox in vivo. (I) Schematic of C-terminal endogenous tagging of STAG1. Green color denotes endogenous genes. (J) Western blot demonstrating knockdown of STAG1-ARTi. Western blot is a representative example of three independent biological repeat experiments. (K) Immunohistochemistry staining of STAG1 in engineered HCT 116 cells in the absence and presence of dox. Asterisk marks an area of murine fibroblasts that serve as an internal positive control. (I) Growth curves of tumors implanted with engineered HCT 116 cells in the absence and presence of dox.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Functional validation of the EGFRdel19 construct in Ba/F3 cells. Provided are GI50 values (nM) for indicated conditions and compounds (parental cells IL-3-dependent; other cells dependent on transgenes [no IL-3]). Numbers represent GI50 value calculated from three technical repeats. Three biological repeat experiments were conducted, and one representative experiment is shown in (A). (B) Western blot analysis confirming expression of EGFRdel19::V5::dsRed::ARTi constructs, knockout of endogenous EGFR and doxycycline (dox)-induced knockdown or EGFRdel19::V5::dsRed::ARTi. Western blot is a representative example of three independent biological repeat experiments. (C) Expression levels (y-axis: normalized counts) of the EGFRdel19::V5::dsRed::ARTi construct in parental and engineered PC-9 cells after 4 and 8 d of dox treatment or no treatment. Individual datapoints of three biological replicates overlay the boxplots. (D) Expression levels (y-axis: normalized counts) of the MAPK target gene DUSP6 in parental and engineered PC-9 cells after 4 and 8 d of dox treatment or no treatment. Individual datapoints of three biological replicates overlay the boxplots. (E) Heatmap visualizing the gene expression changes in MAPK pathway target and ERBB genes in engineered cells in the presence and absence of dox. (F) In vivo experiment comparing dox-induced expression of the ARTi-shRNAmir to drinking water control in PC-9 parental cells. Lines connect mean tumor volume data and \u00b1 SEM.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic of MIA PaCa-2 genome engineering. (B) AMG-510 GI50 values in MIA PaCa-2 parental and engineered cells. Numbers represent GI50 value calculated from three technical repeats. Three biological repeat experiments were conducted, and one representative experiment is shown in (B). (C) Expression levels (y-axis: normalized counts) of the dsRed::KRASG12R transgene in parental and engineered MIA PaCa-2 cells after 4 and 8 d of doxycycline (dox) treatment or no treatment. Individual datapoints of three biological replicates overlay the boxplots. (D) Western blot for KRAS (green) and Actin (magenta) (upper plot) and dsRed (green) and Actin (magenta) (bottom plot) for indicated engineered MIA PaCa-2 cells in the presence and absence of dox. Western blot is a representative example of three independent biological repeat experiments.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schematic of synthetic lethal interaction between STAG1 and STAG2. Cells survive loss of either paralog but are incapable of growing upon combined loss of STAG1 and STAG2. (B) Western blot confirmation of STAG2 knockout and ARTi-shRNAmir-induced knockdown of endogenous STAG1::V5::ARTi. Western blot is a representative example of three independent biological repeat experiments. (C) Proliferation assay of ARTi engineered HCT 116 cells in vitro, visualized by crystal violet staining following a 9-day doxycycline (dox) or control treatment. Staining is a representative example of three independent biological repeat experiments. (D) Quantification of nuclear Stag1 level (Figure 2k) using engineered HCT 116 cells in an in vivo xenotransplantation experiment the control group (-dox) and dox (+dox) treated group.\n\nTo evaluate whether ARTi can recapitulate drug activities in vivo, we xenotransplanted EGFRdel19::V5::dsRed::ARTi engineered PC-9 cells harboring the dox-inducible ARTi-shRNAmir and treated recipient mice upon tumor formation with either dox or the clinically approved EGFR inhibitor osimertinib. Dox-induced expression of the ARTi-shRNAmir led to rapid and durable tumor regression that was indistinguishable from the effects of osimertinib (Figure 2D) and not observed in parental PC-9 cells that lack the ARTi target site (Figure 2\u2014figure supplement 1F). We therefore conclude that ARTi-induced phenotypes are to be attributed to on-target effects that predict the activity of advanced small-molecule inhibitors in vivo.\n\nIn a second study, we used ARTi to investigate KRASG12R, an oncogenic KRAS variant with no available in vivo compatible inhibitors. To establish a suitable KRASG12R-driven model, we engineered a dsRed::KRASG12R-ARTi transgene and the dox-inducible ARTi-shRNAmir into KRASG12C-dependent MIA PaCa-2 pancreatic adenocarcinoma cells and subsequently knocked out endogenous KRAS alleles (Figure 2E and Figure 2\u2014figure supplement 2A). As expected, switching the driving oncogene from KRASG12C to KRASG12R rendered MIA PaCa-2 cells resistant to the KRASG12C inhibitor AMG-510 (Fakih et al., 2020; Lanman et al., 2020; Fakih et al., 2019; Figure 2\u2014figure supplement 2B). ARTi-shRNAmir induction led to a strong suppression of dsRed::KRASG12R expression at the mRNA and protein level (Figure 2F and Figure 2\u2014figure supplement 2C and D) and marked antiproliferative effects (Figure 2G). In xenograft experiments, ARTi-mediated suppression of KRASG12R led to full tumor regression in the absence of KRASG12C (Figure 2H), while tumors harboring both oncogenic KRAS alleles only displayed a delay in tumor progression, suggesting that both oncogenes contribute to tumor growth in vivo.\n\nTo evaluate STAG1 as synthetic-lethal dependency that is relevant in a wide range of STAG2-deficient cancers (Figure 2\u2014figure supplement 3A; Bailey et al., 2021; van der Lelij et al., 2020; Benedetti et al., 2014; van der Lelij et al., 2017), we engineered an isogenic pair of STAG2-wildtype and -deficient HCT 116 colon carcinoma cells and homozygously inserted ARTi target sites (besides an AID::V5 tag; explained in the \u2018Materials and methods\u2019 section) into the 3\u2032-UTR of endogenous STAG1 (Figure 2I). Western blotting confirmed the knockout of STAG2, the insertion of the targeting cassette into the STAG1 locus, and potent suppression of STAG1 following dox-induced ARTi-shRNAmir expression (Figure 2J and K and Figure 2\u2014figure supplement 3B). Suppression of STAG1 in STAG2-deficient HCT 116 cells impaired their proliferation in vitro (Figure 2\u2014figure supplement 3C) and the progression of xenografted tumors in vivo (Figure 2L), while dox-induced expression of the ARTi-shRNAmir had no antiproliferative effects in the presence of STAG2.\n\n## Discussion\n\nTogether, these studies establish ARTi as a versatile and precise LOF method for target validation in oncology and beyond. Instead of designing gene-specific LOF reagents that remain prone to off-target effects, ARTi involves a simple, highly standardized experimental procedure that provides full control over on- and off-target effects and can be applied to any coding and non-coding gene. In cells that are pre-engineered to express the dox-inducible ARTi-shRNAmir, candidate genes can be converted into ARTi target genes and subsequently evaluated head-to-head in a highly standardized manner, either through knocking in ARTi target sites into endogenous loci or through knockout rescue approaches. Placement of ARTi target sites in non-coding transcript regions leaves the endogenous target protein unaltered, which is a key advantage over chemical-genetic LOF methods relying on the introduction of degron tags (Lai and Crews, 2017; Cromm and Crews, 2017). Targeting endogenously engineered ARTi target sites through tetracycline (Tet)-inducible ARTi-shRNAmir expression enables inducible, titratable, and likely reversible (not tested in this study) LOF perturbations of candidate genes without altering their endogenous transcriptional regulation, which is not possible using conventional Tet-expression systems. In principle, by engineering multiple target sites in the same cell, ARTi enables combinatorial LOF perturbations, for example, for modeling synergistic target interactions, without multiplying the risk for off-target effects. Although ARTi requires the design of gene-specific sgRNAs and genome engineering steps that can be non-trivial, the method enables researchers to reach well-interpretable, comparable, and unambiguous experimental results that can guide larger investments in targets of high medical interest. Beyond providing a scalable method for early target validation, we foresee that ARTi can be used to establish on-target benchmark phenotypes for guiding the development and optimization of inhibitory molecules.\n\n## Materials and methods\n\n### Design and cloning of ARTi shRNAs\n\nTo design pairs of artificial shRNAs and matching target sites that trigger effective and selective target suppression with minimal off-target effects, nucleotide composition of shRNAs that reach exceptionally high-performance scores in a well-established siRNA prediction tool (DSIR [Designer of Small Interfering RNA]; Vert et al., 2006) and contain no A or T in guide position 20 to eliminate shRNAmirs that produce RISC-loadable small RNAs from the passenger strand were analyzed. To establish the criteria for ARTi design, siRNA predictions for the human and mouse genome were retrieved from DSIR (Vert et al., 2006) using default parameters. Top-scoring predictions (DSIR score >105) harboring G or C in position 20 were analyzed for nucleotide biases, which were used to define basic design criteria at the 5\u2032-end the 3\u2032-half. Next, possible off-targets were minimized using siSPOTR (Boudreau et al., 2013), an siRNA-based prediction tool that assesses off-target potential of different siRNA seed sequences (guide positions 2\u20138) in the human and mouse genome. Seed sequences with the lowest predicted off-target activity (top 1%) showed biases for C and/or G in guide positions 2\u20136, but 23% contained a T at the 5\u2032 end of the seed sequence that is required in our design (Figure 1B). Among these, we observed particularly strong biases for CG in the following two positions (Figure 1B), which were found in 73% of all seed sequences harboring a 5\u2032 T. Overall, 17% of all top-scoring seed sequences harbored TCG at their 5\u2032 end, making it the second most common triplet (after CGC, which was found in 20%). Based on these analyses, we fixed the first four nucleotides of the guide to TTCG. For the following positions, we reasoned that introducing additional GC biases would destroy 5\u2032\u20133\u2032 asymmetry of small RNA duplexes that is critically required for efficient RISC loading. To maintain sufficient asymmetry, we therefore decided to bias the next three positions toward A or T, which in most positions is in alignment with nucleotide biases associated with knockdown efficacy.\n\nFor the remaining sequence 3\u2032 of the seed region, we adhered to nucleotide features associated with knockdown efficacy based on our DSIR analysis, which are remarkably prominent and cannot all be explained through established processing requirements. Altogether, this established a 22-nt matrix for the design of ARTi shRNAmirs (TTCGWWWNNAHHWWCATCCGGN; W = A/T, H = A/T/C; N = A/T/G/C). In a last step, we further reduced possible off-target effects by eliminating all guides whose extended seed sequence (guide positions 2\u201314) had a perfect match in the human or mouse transcriptome and, finally, selected the following six top-scoring ARTi predictions for experimental validation:\n\nARTi.6588 \u2013 target site: TCCGGATGAAGTTTATATCGAA/shRNAmir (97mer):\n\nARTi.6570 \u2013 target site: TCCGGATGATATTGTTATCGAA/shRNAmir (97mer):\n\nARTi.6634 \u2013 target site: TCCGGATGATGTTTTAATCGAA/shRNAmir (97mer):\n\nARTi.6786 \u2013 target site: TCCGGATGATATTGTATACGAA/shRNAmir (97mer):\n\nARTi.6834 \u2013 target site: TCCGGATGATATTGCATACGAA/shRNAmir (97mer):\n\nARTi.6516 \u2013 target site: TCCGGATGAAGTTTAATTCGAA/shRNAmir (97mer):\n\nThe following ARTi target sequences were used for experimental validation studies:\n\nInsertion into the coding sequence before the STOP codon:\n\nInsertion after the STOP codon:\n\nshRNAs were ordered as single-stranded DNA Ultramer oligonucleotides (Integrated DNA Technologies), amplified by PCR and cloned into different retroviral or lentiviral miRE/miRF shRNAmir expression vectors (LT3GFPIR Fellmann et al., 2013) using EcoR/XhoI restriction digest or Gibson assembly.\n\n### Cell culture\n\nHuman HCT 116 cells (ATCC: CCL-247) were cultured in RPMI 1640 medium (Thermo Fisher) and PC-9 cells in McCoy\u2019s 5A medium (Thermo Fisher), supplemented with 10% FBS and 1x GlutaMAX (Thermo Fisher). RKO (ATCC: CRL-2577) and MOLM-13 cells (DSMZ: ACC 584) were cultured in RPMI 1640, supplemented with 10% FBS (Sigma-Aldrich), 4 mM L-glutamine (Thermo Fisher), 1 mM sodium pyruvate (Sigma-Aldrich), and penicillin/streptomycin (100 U ml\u22121/100 \u03bcg ml\u22121, Sigma-Aldrich). HT-1080 (ATCC: CCL-121) and LentiX lentiviral packaging cells (Clontech, Cat# 632180) were cultivated in DMEM (Thermo Fisher) with 10% FBS, 4 mM L-glutamine, 1 mM sodium pyruvate, and penicillin/streptomycin (100 U ml\u22121/100 \u03bcg ml\u22121). MV4-11 cells (ATCC: CRL-9591) were cultured in IMDM with 10% FBS, 4 mM L-glutamine, 1 mM sodium pyruvate, and penicillin/streptomycin (100 U ml\u22121/100 \u03bcg ml\u22121).\n\nMurine MLL-AF9OE, NrasG12D AML cells (RN2; Zuber et al., 2011) were cultured in RPMI 1640 medium supplemented with 10% FBS, 20 mM L-glutamine, 10 mM sodium pyruvate, 10 mM HEPES (pH 7.3), penicillin/streptomycin (100 U ml\u22121/100 \u03bcg ml\u22121), and 50 \u03bcM \u03b2\u2010ME. KrasG12D, Trp53-/-, MYCOE PDAC cells (EPP2), SV40 large T antigen immortalized mouse embryonic fibroblasts (RRT-MEF; Fellmann et al., 2011), and NIH/3T3 (ATCC: CRL-1658) were cultured in DMEM supplemented with 10% FBS, 20 mM glutamine, 10 mM sodium pyruvate, and penicillin/streptomycin (100 U ml\u22121/100 \u03bcg ml\u22121). MIA PaCa-2 (ATCC: CRL-1420) and GP2d (Ecacc: 95090714) cells were cultured in DMEM supplemented with 10% FBS. Ba/F3 (DSMZ: ACC300) cells were cultured in RPMI 1640 medium supplemented with 10% FBS, 10 ng ml-1 IL-3 (R&D Systems), and Ls513 cells were cultured in RPMI 1640 medium supplemented with 10% FBS. All cell lines were maintained at 37\u00b0C with 5% CO2, routinely tested for mycoplasma contamination, and authenticated by short tandem repeat analysis.\n\n### Reporter assay\n\nSFFV-GFP-P2A-Puro-ARTi-target sensor was cloned into pRSF91 retroviral plasmid (Galla et al., 2011) using Gibson assembly. RRT-MEFs were transduced with retroviruses expressing a GFP-reporter harboring the target sites for validated shRNAs and one ARTi-shRNA in its 3\u2032-UTR. For each reporter cell line, single cells were FACS-sorted into 96-well plates using a FACSAria III cell sorter (BD Biosciences) to obtain single-cell-derived clones. These clones were transduced with retrovirus constructs in pSin-TRE3G-mCherry-miRE-PGK-Neo (TCmPNe) backbone expressing either the respective dox-inducible ARTi shRNA or validated shRNAs and mCherry fluorescence marker. shRNA expression was induced with dox and GFP levels were quantified via flow cytometry 2 d post induction. Knockdown efficiency was calculated as 1 minus the ratio of mean GFP signal in mCherry+ (shRNA+) cells over mCherry- cells and normalized to Renilla luciferase specific neutral control shRNA (Ren.713).\n\n### Competitive proliferation assay\n\nTo investigate the effect of ARTi constructs in the absence of the endogenous target gene, competitive proliferation assays were performed in several human and murine cell lines. Human HT-1080, RKO, MOLM-13, and MV4-11 cell lines were lentivirally transduced with shRNAmir expression constructs cloned into pRRL-SFFV-GFP-miRF-PGK-Neo (SGFN) backbone at 20\u201360% efficiency. Initial infection efficiency was determined at day 4 post transfection (day 0) by measuring GFP expression as a readout using iQue Screener Plus flow cytometer (IntelliCyt). Percentage of shRNA+ cells (GFP positive) was monitored by flow cytometry in regular intervals, and results were normalized to day 0.\n\nHuman GP2d, Ls513, and MIA PaCa-2 cell lines were lentivirally transduced with shRNAmir constructs cloned into pRRL-TRE3G-GFP-miRE-PGK-Puro-IRES-rtTA3 backbone (LT3GEPIR, Addgene plasmid #111177). 500 cells were seeded in duplicates in 96-well plates and treated with 1 \u00b5g ml-1 dox for 9\u201310 d and analyzed with Incucyte (Sartorius). Untreated cells served as reference.\n\nMurine NIH-3T3, EPP2, and RN2 cells were retrovirally transduced with shRNAmir constructs cloned into pMSCV-miR-E-PGK-Neo-IRES-mCherry backbone (LENC; Addgene plasmid #111163), and initial infection levels were determined by flow cytometry based on mCherry expression 4 d post transduction (day 0).\n\n### Crystal violet staining\n\nTo visualize ARTi-shRNAmir\u2019s effect, crystal violet staining assays were performed. 25,000 HCT 116 cells and 15,000 PC-9 cells per well were seeded in a 6-well plate containing 2 ml tetracycline-free growth medium and 1 \u00b5g ml-1 dox. Medium was exchanged every 2\u20133 d. After 9 d, wells were washed with ice-cold PBS and subsequently stained with 1 ml of 2.3% crystal violet solution for 10 min. Subsequently, wells were washed with ultrapure water and dried overnight. Images were obtained with a scanner.\n\n### Transcriptional profiling\n\nFor the unbiased identification of ARTi shRNA off-targets, RKO and HT-1080 shRNA+ cells from the competition proliferative assay experiment were selected with Geneticin/G418 Sulfate (Gibco) for 7 d and checked for GFP expression. On day 7, one arm of the empty vector control group was treated with IC50 concentration of trametinib (MedChem Express: HY-10999) for 24 hr based on the data in the Genomics of Drug Sensitivity in Cancer database (https://www.cancerrxgene.org; Yang et al., 2013). Subsequently, cells were trypsinized, washed with ice-cold PBS, pelleted, and snap frozen. Total RNA was isolated using in-house magnetic beads kit and King Fisher Duo Prime Purification System (Thermo Fisher). NGS libraries were prepared with QuantSeq 3' mRNA-Seq Library Prep Kit (FWD) HT for Illumina (Lexogen) and UMI Second Strand Synthesis Module for QuantSeq FWD (Lexogen). Samples were sequenced on Illumina NovaSeq platform with 100 bp single-read protocol.\n\nEngineered MIA PaCa-2 and PC-9 cells were cultured in the presence of 1 \u00b5g ml-1 dox to induce expression of the ARTi shRNA. dox-containing media were replenished twice weekly and on days 4 and 8 after the initial treatment. 2 \u00d7 106 dox-treated and untreated control cells were harvested, washed with PBS, lysed, treated with DNAse I (QIAGEN), and total RNA was extracted using the RNeasy Mini Kit (QIAGEN). NGS libraries were prepared as above. Samples were sequenced on an Illumina NextSeq 2000 platform with a 75 bp protocol.\n\n### Bioinformatic analyses of 3\u2032 mRNA-seq\n\nFor 3\u2032 mRNA-seq reads derived from the human cell lines HT-1080 and RKO, the 6-nt-long 5\u2032 UMIs were attached to each read name with umi-tools (v1.0.0; Smith et al., 2017). Subsequently, the UMIs plus the next four nucleotides (UMI spacer), as well as 3\u2032 adapters (stringency of 3) and bases with low quality (threshold of 25) were trimmed away using cutadapt (v1.18; Martin, 2011) and its wrapper tool trimgalore (v0.6.2). Read quality control was performed with FastQC (v0.11.8). The remaining reads were sample-wise aligned to the human (GRCh38.p13; GCA_000001405.28) reference genome. Mapping and subsequent filtering of 3\u2032-UTR mapped reads was performed with slamdunk (v0.4.3; Neumann et al., 2019) in QuantSeq mode (slamdunk map -5 12 -n 100 -q). 3\u2032 UTR regions were assembled based on the description in Muhar et al., 2018. Aligned and filtered reads were deduplicated with umi-tools (v1.0.0) (Housden et al., 2017), based on the mapping coordinate and the UMI attached to the read name, prior to quantifying read abundances within 3\u2032-UTR regions using feature Counts (v2.0.1; Liao et al., 2014). Differential expression analysis (DEA) was performed with DESeq2 (v1.30.1; Love et al., 2014) for each ARTi shRNA to empty vector control. Here, the number of up- and downregulated genes were calculated by filtering the DEA results for genes with a log2 fold-change \u22652 (up) or \u22642 (down) and a -log10 p-value \u22655. Principal component analysis was performed on the 1000 most variable expressed genes with the prcomp function from the stats (v4.2.0) R package.\n\nFor transcriptional profiling of the human cell lines MIA PaCa-2 and PC-9, the genome reference file and annotations were constructed based on the GRCh38 assembly and the Ensembl 86 version, respectively. The sequences of the shRNA construct (ARTi.6570 [RN_v_76, RN_v_118]) as well as the EGFRdel19::V5::dsRed::ARTi (RN_v_108) and the dsRed::Linker::KRASG12R-ARTi (RN_v_287) were also included. Mapping of the sequencing reads derived from the human cell lines was performed with STAR (v2.5.2b; Dobin et al., 2013) aligner allowing for soft clipping of adapter sequences. Quantification of read counts to transcript annotations was implemented using RSEM (v1.3.0; Li and Dewey, 2011) and featureCounts (v1.5.1; Liao et al., 2014). Normalization of read counts and differential analysis was implemented with the limma (Ritchie et al., 2015) and voom (Law et al., 2014) R packages.\n\n### Genome engineering of EGFR in PC-9 and Ba/F3\n\nGenome engineering of PC-9 cells was done as previously described (Wilding et al., 2022). In brief: PC-9_RIEN cells were transduced with an ecotropic pMSCV-EGFRdel19_V5_dsRed_ARTi-PGK-Blasticidin retrovirus cloned at GenScript and produced in Platinum E cells (Cell Biolabs) in the presence of 8 \u03bcg ml-1 Polybrene (Merck Millipore). After 24 hr, stable transgenic cell pools were selected using 10 \u00b5g ml-1 Blasticidin (Sigma-Aldrich). Subsequently, cells were diluted to obtain single cell clones. After 14 d of culture, single cell-derived colonies were transferred to 6-well plates and analyzed by western blot. Identified homozygous PC-9_ EGFRdel19-ARTi clones were further engineered by cutting endogenous EGFR with a CRISPR all-in-one vector pX458_Exon20_gRNA TAGTCCAGGAGGCAGCCGAA (GenScript) using X-tremeGENE 9 DNA transfection reagent (Roche) according to the protocol supplied by the vendor. 48 hr after transfection, GFP-positive cells were sorted by FACS (SONY cell sorter S800Z) and diluted to obtain single-cell clones. Positive clones, which contained only the exogenous EGFRdel19-ARTi, but not the endogenous EGFR, were identified by western blot. Next, the selected EGFR clone was transduced with a pantropic LT3GEPIR_Puro_ARTi-shRNA TTCGATAACAATATCATCCGGA retrovirus cloned at GenScript, China, and produced via the Lenti-X Single Shot system (Clontech). 72 hr later, stable transgenic cell pools were selected using 0.5 \u00b5g ml-1 Puromycin (Sigma-Aldrich). Following the selection, cells were diluted to obtain single cell clones. After 14 d of culture, single cell-derived colonies were transferred to 6-well plates and induced via 1 \u00b5g ml-1 dox. Positive clones were characterized by a strong GFP-induction that was identified by flow cytometry.\n\nBa/F3 cells were transduced with an ecotropic pMSCV-EGFRdel19_V5_dsRed_ARTi-PGK-Blasticidin retrovirus cloned at GenScript and produced in Platinum E cells in the presence of 4 \u03bcg ml-1 Polybrene. After 72 hr, stable transgenic cells were selected by using 50 \u00b5g ml-1 Blasticidin, without adding IL-3.\n\n### Genome engineering of KRAS in MIA PaCa-2\n\nMIA PaCa-2 ARTi-shRNAmir-expressing cells were transduced with an ecotropic pMSCV-dsRed::KRASG12R-ARTi-PGK-Blasticidin retrovirus cloned at GenScript, China, and produced in Platinum E cells in the presence of 8 \u03bcg ml-1 Polybrene. After 24 hr, stable transgenic cell pools were selected using 10 \u00b5g ml-1 Blasticidin. Subsequently, endogenous KRAS was knocked out by transient transfection of three gRNAs targeting exon 2, and the region containing the G12C variant (present in MIA PaCa-2 cells) was used in a co-transfection (gRNA#3: GAATATAAACTTGTGGTAGT; gRNA#6: CTTGTGGTAGTTGGACTTG; gRNA#7: GTAGTTGGAGCTTGTGGCGT). Knockout clones were identified by the absence of the endogenous KRAS protein using western blot.\n\n### Genome engineering of STAG1/STAG2 in HCT 116\n\nHCT 116 cell line was engineered by cutting STAG1 with gRNAs targeting the region close to the STOP codon. Guide RNAs TTCTTCAGACTTCAGAACAT or CTGAAGAAAATTTACAAATC were cloned into the pSpCas9(BB)\u20132A-GFP plasmid (pX458; Addgene plasmid 48138) and used in a co-transfection. Simultaneously, a STAG1_AID_V5_P2A_Blasti_STOP_ARTi repair template with 800 bp of left and right homologous arms of the STAG1 genomic locus (in pUC57-Simple backbone) was transfected into HCT 116 cells using Lipofectamine 3000 transfection reagent (Thermo Fisher) according to the manufacturer\u2019s instructions. A stable transgenic cell pool was selected 48 hr after transfection using 5 \u00b5g ml-1 Blasticidin and diluted to obtain single-cell clones. Positive clones were identified by western blot.\n\nIdentified homozygous HCT 116_STAG1_ARTi clones were further engineered by disrupting STAG2 gene with a CRISPR all-in-one vector Hs0000077505_U6gRNA-Cas9-2A-GFP and Hs0000077502_U6gRNA-Cas9-2A-GFP, respectively. Cells were transfected using X-tremeGENE 9 DNA transfection reagent according to the manufacturer\u2019s instructions, sorted 48 hr post transfection for GFP-positive cells, and diluted to obtain single-cell clones. Positive clones were identified by western blot.\n\nNext, the selected HCT 116 clone was transduced with a pantropic LT3GEPIR_Puro_ARTi-shRNA TTCGATAACAATATCATCCGGAretrovirus cloned at GenScript, China, and produced via the Lenti-X Single Shot system (Clontech). 72 hr later, stable transgenic cell pools were selected using 2 \u00b5g ml-1 Puromycin (Sigma, P9620). Following the selection, cells were diluted to obtain single-cell clones. After 14 d of culture, single cell-derived colonies were transferred to 6-well plates and induced via 1 \u00b5g ml-1 dox. Positive clones were characterized by a strong GFP-induction that was identified by flow cytometry.\n\n### Western blot\n\nThe following primary antibodies were used for immunoblot analyses: EGFR (Cell Signaling, #4267); STAG1 (GeneTex, GTX129912); STAG2 (Bethyl, A300-159A); b-actin (Sigma, A5441); KRAS (LSbio, LS-C17566); and V5 (Sigma, V8012). PC-9, MIA PaCa-2, and HCT 116 cell pellets harboring EGFR, KRAS, and STAG1/STAG constructs respectively were lysed in Triton X-100 lysis buffer, sonicated, and stored at \u201380\u00b0C. For protein detection, the pellets were thawed on ice, followed by 15 min centrifugation at 13,000 rpm and 4\u00b0C. Furthermore, cell lysates were loaded onto a pre-casted SDS\u2013polyacrylamide gel (4\u201312%) and proteins were transferred onto a nitrocellulose or PVDF membrane. Membranes were probed with the respective primary antibodies overnight. The next day, secondary antibodies conjugated with fluorescent dye were added and the proteins were detected by the Odyssey detection system.\n\n### Compound treatment\n\nTo investigate sensitivity to EGFR-targeting compounds, cell viability was determined using the Cell Titer Glo assay (Promega). For this purpose, 10 mM stock solutions in DMSO of afatinib (Li et al., 2008), osimertinib (Liu et al., 2018; Soria et al., 2018; Liu et al., 2018), and poziotinib (Kim et al., 2019; Robichaux et al., 2019) were used. 5000 cells per well were seeded in 150 \u00b5l of the medium in technical triplicates in 96-well plates and incubated at 37\u00b0C and 5% CO2 for 5 hr, followed by the compound addition. Cells were treated with seven different concentrations of inhibitors in a serial eightfold dilutions starting with the highest concentration of 3 \u00b5M. For comparability, DMSO normalization to the highest added volume was performed. Subsequently, cells were cultivated for 96 hr at 37\u00b0C and 5% CO2. 50 \u00b5l of Cell Titer Glo reagent was added to each well, incubated for 10 min in the dark, and luminescence was measured using the multilabel Plate Reader VICTOR X4. The measurement time was set to 0.2 s. Luminescence values relative to DMSO-treated cells were plotted in GraphPad Prism and fitted using nonlinear regression with a variable slope to calculate IC50 values at 50% inhibition. MIA PaCa-2 KRAS G12C inhibitor (AMG-510) (Fakih et al., 2020; Lanman et al., 2020; Fakih et al., 2019) treatments were performed as described for EGFR with the following modifications: 2000 cells per well and 0.5 nM to 3 \u00b5M concentration range of AMG-510.\n\n### In vivo experiments\n\nThe PC-9 EGFR k.o., EGFRdel19::ARTi study was performed at the AAALAC-accredited animal facility of CrownBio Leicestershire, UK. Female NSG (NOD.Cg-PrkdcscidII2rgtm1wjl/SzJ) Crl mice were obtained from Charles River. The age of animals at study initiation was 7\u20138 wk and had an acclimatization period of \u226514 d. Mice were group-housed in IVCs. The study complies with the UK Animals Scientific Procedures Act 1986 (ASPA) in line with Directive 2010/63/EU of the European Parliament and the Council of September 22, 2010, on the protection of animals used for scientific purposes.\n\nAll other in vivo experiments were performed at the AAALAC-accredited animal facility of Boehringer Ingelheim RCV GmbH & CoKG. Female BomTac:NMRI-Foxn1nu mice were obtained from Taconic Denmark at 6\u20138 wk of age. After the arrival, mice were allowed to adjust to the housing conditions at least for 5 d before the start of the experiment. Mice were housed in pathogen-free and controlled environmental conditions (open-cage housing), and handled according to the institutional, governmental, and European Union guidelines (Austrian Animal Protection Laws, GV-SOLAS and FELASA guidelines).\n\nStudies were approved by the internal ethics committee (called \u2018ethics committee\u2019) of Boehringer Ingelheim RCV GmbH & Co KG in the Department of Cancer Pharmacology and Disease Positioning. Furthermore, all protocols were approved by the Austrian governmental committee (MA 60 Veterinary office; approval numbers GZ: 903122/2017/21 and GZ: 416181-2020-29).\n\nTo establish subcutaneous tumors, mice were injected with 2 \u00d7 106 HCT 116 in PBS, 5 \u00d7 106 MIA PaCa-2 in 1:2 Matrigel:PBS with 5% FBS or with 1 \u00d7 107 PC-9 cells in PBS with 5% FBS.\n\nTumor diameters were measured with a caliper three times a week. The volume of each tumor (in mm3) was calculated according to the formula \u2018tumor volume = length * diameter2 * \u03c0/6.\u2019 Mice were randomized into the treatment groups when tumor size reached between ~130 and 190 mm3. Group sizes were calculated for each tumor model based on tumor growth during model establishment experiments. A power analysis was performed using a sample size calculator (https://www.stat.ubc.ca/~rollin/stats/ssize/n2.html). For all models used in the studies, 10 mice per group were used. 2 mg ml-1 doxycycline hyclate (Sigma) and 5 mg ml-1 sucrose were added to the drinking water of the treatment groups, the control group received water with 5 mg ml-1 sucrose only. Osimertinib (Tagrisso, AstraZeneca, 40 mg tablet) was dosed per os daily at a dose of 25 mg kg-1 in Natrosol, and control mice were dosed per os daily with Natrosol. To monitor side effects of treatment, mice were inspected daily for abnormalities and body weight was determined three times per week. Animals were sacrificed when the tumors reached a size of 1500 mm3. Food and water were provided ad libitum. In vivo experiments were not repeated.\n\n### Immunohistochemistry\n\nXenograft samples were fixed in 4% formaldehyde for 24 hr and embedded in paraffin. 2-\u00b5m-thick sections were cut using a microtome. STAG1 was stained with Polink 2 Plus HRP rat NM detection system (GBI Labs #D46-6) according to the manufacturer\u2019s instructions using a recombinant rat monoclonal STAG1 antibody (Abcam ab241544, Lot:GR3334172-1; 1:200) after cooking 10 min at 110\u00b0C in antigen unmasking solution (Vector #H3301). After staining, the slides were digitalized (scanner: Leica Aperio AT2). All slides were reviewed and evaluated for quality by a board-certified MD pathologist. Imaging analysis was performed using the digital pathology platform HALO (Indica Labs). A tissue-classifying algorithm was trained to selectively recognize viable tumor tissue against stroma, necrosis, and skin. The tissue classification output for each scan was reviewed and manually edited as necessary. A cell detection and scoring algorithm was trained to measure DAB optical density (OD) in the nuclei of tumor cells. A positivity threshold for DAB OD was determined by normalization with respect to the DAB OD as calculated from bona fide negative tissue (e.g., murine stroma as background). The object data for background-normalized nuclear ODs for each tumor cell were exported from three control and three doxycycline-treated cases (207945 and 33331 pooled objects, respectively). The cumulative distribution of the background-normalized DAB OD for each tumor cell nucleus was then plotted for control and doxycycline-treated cases, separately (Figure 2K).\n\n### Cell lines\n\nAll newly generated ARTi cell lines are available upon request. The following parental cell lines were used:\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell line name</th>\n      <th>Species</th>\n      <th>Supplier name</th>\n      <th>Catalog number</th>\n      <th>Clone number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PC-9</td>\n      <td>Human</td>\n      <td>ECACC</td>\n      <td>90071810</td>\n      <td>Lot# 14A030</td>\n    </tr>\n    <tr>\n      <td>MIA PaCa-2</td>\n      <td>Human</td>\n      <td>ATCC</td>\n      <td>CRL-1420</td>\n      <td>Lot# 1350798</td>\n    </tr>\n    <tr>\n      <td>HT 1080</td>\n      <td>Human</td>\n      <td>ATCC</td>\n      <td>CCL-121</td>\n      <td>Lot# 63835574</td>\n    </tr>\n    <tr>\n      <td>HCT 116</td>\n      <td>Human</td>\n      <td>ATCC</td>\n      <td>CCL-247</td>\n      <td>Lot# 6028631</td>\n    </tr>\n    <tr>\n      <td>RKO</td>\n      <td>Human</td>\n      <td>ATCC</td>\n      <td>CRL-2577</td>\n      <td>Lot# 59354083</td>\n    </tr>\n    <tr>\n      <td>MV4-11</td>\n      <td>Human</td>\n      <td>ATCC</td>\n      <td>CRL-9591 (old number)</td>\n      <td>Lot# 58352230</td>\n    </tr>\n    <tr>\n      <td>MOLM-13</td>\n      <td>Human</td>\n      <td>DSMZ</td>\n      <td>ACC 554</td>\n      <td>Lot# 11</td>\n    </tr>\n    <tr>\n      <td>NIH-3T3</td>\n      <td>Human</td>\n      <td>ATCC</td>\n      <td>CRL-1658</td>\n      <td>Lot# 63292276</td>\n    </tr>\n    <tr>\n      <td>EPP2</td>\n      <td></td>\n      <td>KrasG12D, Trp53-/-, MYCOE PDAC cells (EPP2)</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>RN2</td>\n      <td>Murine</td>\n      <td>MLL-AF9OE, NrasG12D AML cells (RN2; Zuber et al., 2011)</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Gp2d</td>\n      <td>Human</td>\n      <td>ECACC</td>\n      <td>95090714</td>\n      <td>Lot# 11E013</td>\n    </tr>\n    <tr>\n      <td>Ls513</td>\n      <td>Human</td>\n      <td>ATCC</td>\n      <td>CRL-2134</td>\n      <td>Lot# 57761342</td>\n    </tr>\n    <tr>\n      <td>Ba/F3</td>\n      <td>Murine</td>\n      <td>DSMZ</td>\n      <td>ACC300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>293T-Lenti-X</td>\n      <td>Human</td>\n      <td>Clontech</td>\n      <td>632180</td>\n      <td>Lot# 1404558A</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael B Eisen, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84792.3.sa0](https://doi.org/10.7554/eLife.84792.3.sa0)\n\nThis manuscript describes a valuable method to study the mechanism of action of essential genes and novel putative drug targets. Evidence for the effectiveness of the system, which is based on engineering pre-validated targets for RNA-mediated knockdown into genes of interest, is compelling, and the method should find use as an orthogonal method for generating gene-specific knockdowns.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.84792.3.sa1](https://doi.org/10.7554/eLife.84792.3.sa1)\n\nIn this manuscript the authors proposed a novel system by which they can suppress the expression of any gene of interest precisely and efficiently with a pre-validated, highly specific and efficient synthetic short-hairpin RNA. The idea of identifying potent artificial RNAi (ARTi) triggers is intriguing, and the authors successfully identify six ARTi with robust knockdown efficiency and limited to no off-target effects. As a proof-of-concept, the authors examined three oncology targets for validation, including EGFRdel19 (which already has a clinically approved drug for validation), KRASG12R (for which there are no in vivo compatible inhibitors yet) and STAG1 (which has a synthetic lethal interaction with recurrent loss-of-function mutations of STAG2). The authors demonstrated significant suppression of colony formation and in vivo tumor growth for all three oncology targets.\n\nThis novel system could serve as a powerful tool for loss-of-function experiments that are often used to validate a drug target. Not only this tool can be applied in exogenous systems (like EGFRdel19 and KRASG12R in this paper), the authors successfully demonstrated that ARTi can also be used in endogenous systems by CRISPR knocking in the ARTi target sites to the 3'UTR of the gene of interest (like STAG2 in this paper).\n\nARTi enables specific, efficient, and inducible suppression of these genes of interest, and can potentially improve therapeutic target validations. However, the system cannot be easily generalized as there are some limitations in this system:\n\n\u2022 The authors claim in the introduction that CRISPR/Cas9-based methods are associated with off-target effects, however, the author's system requires the use CRISPR/Cas9 to knock out a given endogenous genes or to knock-in ARTi target sites to the 3' UTR of the gene of interest. Though the authors used a transient CRISPR/Cas9 system to minimize the potential off-target effects, the methods does not, as the authors acknowledge, eliminate the possibility of off-target effects.\n\n\u2022 Instead of generating gene-specific loss-of-function triggers for every new candidate gene, the authors identified a universal and potent ARTi to ensure standardized and controllable knockdown efficiency. It seems this would save time and effort in validating each lost-of-function siRNAs/sgRNAs for each gene. However, users will still have to design and validate the best sgRNA to knock out endogenous genes or to knock in ARTi target sites by CRISPR/Cas9. The latter is by no-means trivial. Users will need to design and clone an expression construct for their cDNA replacement construct of interest, which will still be challenging for big proteins. This is not, as the authors point out, a replacement for other LOF methods, and there are other ways to achieve gene-specific regulation via, for example, degrons. However it is an effective orthogonal approach that many users may find compelling for their applications.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.84792.3.sa2](https://doi.org/10.7554/eLife.84792.3.sa2)\n\nIn this manuscript, Hoffmann et al. introduce a novel and innovative method to validate and study the mechanism of action of essential genes and novel putative drug targets. In the wake of many functional genomics approaches geared towards identifying novel drug targets or synthetic lethal interactions, there is a dire need for methods that allow scientists to ablate a gene of interest and study its immediate effect in culture or in xenograft models. In general, these genes are lethal, rendering conventional genetic tools such as CRISPR or RNAi inept.\n\nThe ARTi system is based on expression of a transgene with an artificial RNAi target site in the 3'-UTR as well as a TET-inducible miR-E-based shRNAi. Using this system, the authors convincingly show that they can target strong oncogenes such as EGFRdel19 or KRasG12 as well as synthetic lethal interactions (STAG1/2) in various human cancer cell lines in vivo and in vitro.\n\nThe system is very innovative, likely easy to be established and used by the scientific community and thus very meaningful.\n",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "97193548-ac3e-4acd-b230-ffbcc0b27967",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C1",
+      "claim": "RNAi is prone to off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, RNAi is prone to off-target effects (Jackson et al., 2003; Scacheri et al., 2004; Lin et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three published studies (Jackson et al., 2003; Scacheri et al., 2004; Lin et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "150eec83-3d08-4a2e-85e4-05a7a4a94288",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C2",
+      "claim": "RNAi is associated with insufficient knockdown levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, RNAi is prone to off-target effects (Jackson et al., 2003; Scacheri et al., 2004; Lin et al., 2005) and insufficient knockdown levels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a known limitation of RNAi technology, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "5ec8a990-e644-434f-875b-8c1db483e5f7",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C3",
+      "claim": "CRISPR/Cas9-based methods are associated with off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "while CRISPR/Cas9-based methods are associated with off-target effects and incomplete LOF across cell populations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a known limitation of CRISPR/Cas9 technology, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "1ae97a70-d3a2-429b-82c0-d8bf5db81343",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C4",
+      "claim": "CRISPR/Cas9-based methods are associated with incomplete loss-of-function across cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "while CRISPR/Cas9-based methods are associated with off-target effects and incomplete LOF across cell populations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a known limitation of CRISPR/Cas9 technology, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "3bb2cb1d-c018-4c07-9c42-9738717a4e4c",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C5",
+      "claim": "Optimized micro-RNA embedded shRNAs in the miR-E backbone do not interfere with endogenous miRNA processing.",
+      "claim_type": "EXPLICIT",
+      "source": "As suitable RNAi system, we chose optimized micro-RNA embedded shRNAs (shRNAmirs) in the miR-E backbone (Fellmann et al., 2013), which do not interfere with endogenous miRNA processing (Premsrirut et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Premsrirut et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "7be3ea51-6d1a-44bd-81bb-4ac60a05cbaf",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C6",
+      "claim": "shRNAmirs in the miR-E backbone can be expressed from tet-responsive elements and other Pol-II promoters in the 3\u2032-UTR of fluorescent reporter genes.",
+      "claim_type": "EXPLICIT",
+      "source": "which do not interfere with endogenous miRNA processing (Premsrirut et al., 2011) and can be expressed from tet-responsive elements and other Pol-II promoters in the 3\u2032-UTR of fluorescent reporter genes, thus providing a versatile system for inducible RNAi (Zuber et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zuber et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "433bf3c9-998c-4d81-88f9-7edefba22891",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C7",
+      "claim": "The ARTi design matrix is TTCGWWWNNAHHWWCATCCGGN (W = A/T, H = A/T/C; N = A/T/G/C).",
+      "claim_type": "EXPLICIT",
+      "source": "By merging nucleotide biases identified in both analyses, we derived a 22-nt base composition matrix for the design of ARTi shRNAmirs (TTCGWWWNNAHHWWCATCCGGN; W = A/T, H = A/T/C; N = A/T/G/C) (Figure 1B and Figure 1\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of nucleotide composition and is presented as a derived result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "bfb5ec28-c391-4883-a531-4d5b3b74d090",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C8",
+      "claim": "All shRNAs whose extended seed sequence (guide positions 2\u201314) had a perfect match in the human or mouse transcriptome were eliminated from ARTi design.",
+      "claim_type": "EXPLICIT",
+      "source": "To further reduce possible off-target effects, we eliminated all shRNAs whose extended seed sequence (guide positions 2\u201314) had a perfect match in the human or mouse transcriptome and, finally, selected six top-scoring ARTi predictions for experimental validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological step taken by the authors to reduce off-target effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "5399a7f6-0f79-43ae-9fcc-54c98f29d1e1",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C9",
+      "claim": "Six top-scoring ARTi predictions were selected for experimental validation.",
+      "claim_type": "EXPLICIT",
+      "source": "To further reduce possible off-target effects, we eliminated all shRNAs whose extended seed sequence (guide positions 2\u201314) had a perfect match in the human or mouse transcriptome and, finally, selected six top-scoring ARTi predictions for experimental validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the authors' experimental design and selection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "e6cc6d39-88ee-4087-a7b6-73d99902bf3c",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C10",
+      "claim": "All six ARTi-shRNAmirs matched or outperformed previously validated highly potent shRNAmirs targeting Renilla luciferase or PTEN.",
+      "claim_type": "EXPLICIT",
+      "source": "In all six cases, ARTi-shRNAmir matched or outperformed previously validated highly potent shRNAmirs targeting Renilla luciferase or PTEN (Fellmann et al., 2013; Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C and comparison to previously validated shRNAmirs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "784f9082-e0be-4aba-80c8-abea26f41621",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C11",
+      "claim": "ARTi-shRNAmirs ranked among top-performing shRNAmirs overall when compared to a panel of 592 gene-specific shRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared these results to a panel of 592 gene-specific shRNAs that were tested using the same assay and found that ARTi-shRNAmirs ranked among top-performing shRNAmirs overall (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data comparing ARTi-shRNAmirs to 592 gene-specific shRNAs, as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "083a5d62-b30e-4755-843d-344be5ef8dd1",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C12",
+      "claim": "ARTi-shRNAmir expression had no effects on proliferation or survival in four human and three mouse cell lines, with the exception of ARTi.6634 and ARTi.6786.",
+      "claim_type": "EXPLICIT",
+      "source": "ARTi-shRNAmir expression had no effects on proliferation or survival in four human and three mouse cell lines (Figure 1D and Figure 1\u2014figure supplement 1D), with the exception of ARTi.6634 and ARTi.6786, which induced a mild fitness defect in the murine leukemia cell line RN2 and MV4-11, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from competitive proliferation assays shown in Figure 1D and Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "8c879cec-9ad3-4340-bd34-dc20b0a36a4b",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C13",
+      "claim": "ARTi.6634 induced a mild fitness defect in the murine leukemia cell line RN2.",
+      "claim_type": "EXPLICIT",
+      "source": "with the exception of ARTi.6634 and ARTi.6786, which induced a mild fitness defect in the murine leukemia cell line RN2 and MV4-11, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from competitive proliferation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "8a5e129f-3583-4519-a1c1-14faba71c342",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C14",
+      "claim": "ARTi.6786 induced a mild fitness defect in MV4-11 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "with the exception of ARTi.6634 and ARTi.6786, which induced a mild fitness defect in the murine leukemia cell line RN2 and MV4-11, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from competitive proliferation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "9e2fe437-b5e1-4780-857a-07f18f8f6999",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C15",
+      "claim": "Stable expression of ARTi-shRNAmirs had only marginal effects on the transcriptome in two commonly used human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the effects of a MEK inhibitor trametinib, which we included as a positive control, stable expression of ARTi-shRNAmirs had only marginal effects on the transcriptome in two commonly used human cell lines (Figure 1E and F and Figure 1\u2014figure supplement 1E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transcriptome profiling data shown in Figure 1E and F and Figure 1\u2014figure supplement 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "c219f089-ea64-4f51-ad22-6c05f729110c",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C16",
+      "claim": "ARTi-shRNAmirs do not trigger major off-target effects, even in the absence of their respective target site.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that they do not trigger major off-target effects, even in the absence of their respective target site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the transcriptome profiling and proliferation assay data showing minimal effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "a5e34990-3092-47ed-a897-778948a2e3d9",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C17",
+      "claim": "EGFR acts as a driving oncogene in various cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish ARTi as a method for target validation, we performed ARTi-based LOF experiments in cancer cell lines and xenograft models for three prominent oncology targets: EGFR and KRAS, which act as driving oncogenes in various cancer types (Hynes and MacDonald, 2009; Punekar et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hynes and MacDonald, 2009 and Punekar et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "edf1784d-1879-4ebf-8f89-790a0677c15b",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C18",
+      "claim": "KRAS acts as a driving oncogene in various cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish ARTi as a method for target validation, we performed ARTi-based LOF experiments in cancer cell lines and xenograft models for three prominent oncology targets: EGFR and KRAS, which act as driving oncogenes in various cancer types (Hynes and MacDonald, 2009; Punekar et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hynes and MacDonald, 2009 and Punekar et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "6c0dc0e8-e479-45ea-a944-a43065c2f622",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C19",
+      "claim": "STAG1 has been identified as a synthetic lethal interaction with recurrent LOF mutations of STAG2.",
+      "claim_type": "EXPLICIT",
+      "source": "and STAG1, which has been identified as a synthetic lethal interaction with recurrent LOF mutations of STAG2 (Bailey et al., 2021; van der Lelij et al., 2020; Benedetti et al., 2014; van der Lelij et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bailey et al., 2021; van der Lelij et al., 2020; Benedetti et al., 2014; van der Lelij et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "5569dd9d-99e6-4591-bc85-39656f7b242f",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C20",
+      "claim": "The EGFRdel19::V5::dsRed::ARTi transgene rendered Ba/F3 cells cytokine-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish an ARTi-repressible version of oncogenic EGFRdel19, we cloned ARTi-shRNAmir target sequences into an expression construct encoding EGFRdel19 fused to dsRed (Figure 2A), which rendered Ba/F3 cells cytokine-independent and sensitive to EGFR inhibition (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "efab3015-7d75-47e7-bfdb-2e1e96927c7a",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C21",
+      "claim": "The EGFRdel19::V5::dsRed::ARTi transgene rendered Ba/F3 cells sensitive to EGFR inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish an ARTi-repressible version of oncogenic EGFRdel19, we cloned ARTi-shRNAmir target sequences into an expression construct encoding EGFRdel19 fused to dsRed (Figure 2A), which rendered Ba/F3 cells cytokine-independent and sensitive to EGFR inhibition (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "9c565d26-b701-4d68-99e7-4b304eee60cc",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C22",
+      "claim": "The EGFRdel19::V5::dsRed::ARTi transgene fully rescued the loss of endogenous EGFRdel19 in PC-9 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The EGFRdel19::V5::dsRed::ARTi transgene fully rescued the loss of endogenous EGFRdel19",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing functional rescue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "70d4ebff-427c-43e2-ba11-0c4461f9e15d",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C25",
+      "claim": "Dox-inducible expression of the ARTi-shRNAmir resulted in an almost complete drop of reads mapping to the codon-optimized EGFRdel19::V5::dsRed::ARTi transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in RNA-sequencing we observed an almost complete drop of reads mapping to the codon-optimized EGFRdel19::V5::dsRed::ARTi transgene upon dox-inducible expression of the ARTi-shRNAmir, as well as a downregulation of DUSP6 and other canonical targets of RAF-MEK-ERK signaling, which acts as key effector pathway of EGFRdel19 (Figure 2\u2014figure supplement 1C-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing data shown in Figure 2\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "bb034b8d-5897-494f-a789-8573a41bf730",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C26",
+      "claim": "Dox-inducible expression of the ARTi-shRNAmir resulted in downregulation of DUSP6 and other canonical targets of RAF-MEK-ERK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in RNA-sequencing we observed an almost complete drop of reads mapping to the codon-optimized EGFRdel19::V5::dsRed::ARTi transgene upon dox-inducible expression of the ARTi-shRNAmir, as well as a downregulation of DUSP6 and other canonical targets of RAF-MEK-ERK signaling, which acts as key effector pathway of EGFRdel19 (Figure 2\u2014figure supplement 1C-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-sequencing data shown in Figure 2\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "89e1a55d-2850-4318-aa4c-a1a585820919",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C27",
+      "claim": "RAF-MEK-ERK signaling acts as key effector pathway of EGFRdel19.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as a downregulation of DUSP6 and other canonical targets of RAF-MEK-ERK signaling, which acts as key effector pathway of EGFRdel19 (Figure 2\u2014figure supplement 1C-E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about EGFR signaling pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "c966274f-d8f6-4c76-a11d-b69675be83b1",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C28",
+      "claim": "Dox-induced expression of the ARTi-shRNAmir led to rapid and durable tumor regression in PC-9 xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Dox-induced expression of the ARTi-shRNAmir led to rapid and durable tumor regression that was indistinguishable from the effects of osimertinib (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "e86487a7-f08e-4505-b5a9-31218a7c584d",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C29",
+      "claim": "Dox-induced expression of the ARTi-shRNAmir led to tumor regression that was indistinguishable from the effects of osimertinib in PC-9 xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Dox-induced expression of the ARTi-shRNAmir led to rapid and durable tumor regression that was indistinguishable from the effects of osimertinib (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo experimental data shown in Figure 2D comparing ARTi-shRNAmir to osimertinib treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "911d1170-30f4-46fb-b7cd-3666dcadd7f7",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C30",
+      "claim": "Dox-induced expression of the ARTi-shRNAmir was not observed to cause tumor regression in parental PC-9 cells that lack the ARTi target site.",
+      "claim_type": "EXPLICIT",
+      "source": "and not observed in parental PC-9 cells that lack the ARTi target site (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo experimental data shown in Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "132c0dd1-5244-416e-b7d4-f1b7bb7d62cb",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C31",
+      "claim": "ARTi-induced phenotypes are to be attributed to on-target effects that predict the activity of advanced small-molecule inhibitors in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that ARTi-induced phenotypes are to be attributed to on-target effects that predict the activity of advanced small-molecule inhibitors in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of ARTi effects to osimertinib and the lack of effects in parental cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "98a6dc8b-aa24-45da-854a-fcbe604a2e82",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C32",
+      "claim": "Switching the driving oncogene from KRASG12C to KRASG12R rendered MIA PaCa-2 cells resistant to the KRASG12C inhibitor AMG-510.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, switching the driving oncogene from KRASG12C to KRASG12R rendered MIA PaCa-2 cells resistant to the KRASG12C inhibitor AMG-510 (Fakih et al., 2020; Lanman et al., 2020; Fakih et al., 2019; Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 2B and citations to studies on AMG-510.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "27d6f7df-322a-446f-b668-80f30e0b0dae",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C33",
+      "claim": "ARTi-shRNAmir induction led to a strong suppression of dsRed::KRASG12R expression at the mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "ARTi-shRNAmir induction led to a strong suppression of dsRed::KRASG12R expression at the mRNA and protein level (Figure 2F and Figure 2\u2014figure supplement 2C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F and Figure 2\u2014figure supplement 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "42d8d66b-be66-4b75-87c4-c424b321d0e3",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C34",
+      "claim": "ARTi-shRNAmir induction led to a strong suppression of dsRed::KRASG12R expression at the protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "ARTi-shRNAmir induction led to a strong suppression of dsRed::KRASG12R expression at the mRNA and protein level (Figure 2F and Figure 2\u2014figure supplement 2C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F and Figure 2\u2014figure supplement 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "8c1dc220-3d81-4fd1-bed0-f7b5573c10be",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C35",
+      "claim": "ARTi-shRNAmir induction led to marked antiproliferative effects in MIA PaCa-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ARTi-shRNAmir induction led to a strong suppression of dsRed::KRASG12R expression at the mRNA and protein level (Figure 2F and Figure 2\u2014figure supplement 2C and D) and marked antiproliferative effects (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "8b7f89da-00df-41a0-bed7-3ffde2b55581",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C36",
+      "claim": "ARTi-mediated suppression of KRASG12R led to full tumor regression in the absence of KRASG12C in xenograft experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In xenograft experiments, ARTi-mediated suppression of KRASG12R led to full tumor regression in the absence of KRASG12C (Figure 2H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "633861cf-f6e9-463e-9d2f-94f9a3043f73",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C37",
+      "claim": "Tumors harboring both KRASG12R and KRASG12C oncogenic alleles only displayed a delay in tumor progression upon ARTi-mediated suppression of KRASG12R.",
+      "claim_type": "EXPLICIT",
+      "source": "while tumors harboring both oncogenic KRAS alleles only displayed a delay in tumor progression, suggesting that both oncogenes contribute to tumor growth in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vivo experimental data comparing tumors with different KRAS allele combinations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "3fbfdc89-b250-4f6a-b5a9-fdaaa98106cb",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C38",
+      "claim": "Both KRASG12R and KRASG12C oncogenes contribute to tumor growth in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "while tumors harboring both oncogenic KRAS alleles only displayed a delay in tumor progression, suggesting that both oncogenes contribute to tumor growth in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that tumors with both alleles showed delayed progression rather than full regression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "9c606d35-b316-447f-905e-ea3987620a4d",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C39",
+      "claim": "Suppression of STAG1 in STAG2-deficient HCT 116 cells impaired their proliferation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of STAG1 in STAG2-deficient HCT 116 cells impaired their proliferation in vitro (Figure 2\u2014figure supplement 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "5d670b43-9133-4520-a763-56f121b37f86",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C40",
+      "claim": "Suppression of STAG1 in STAG2-deficient HCT 116 cells impaired the progression of xenografted tumors in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of STAG1 in STAG2-deficient HCT 116 cells impaired their proliferation in vitro (Figure 2\u2014figure supplement 3C) and the progression of xenografted tumors in vivo (Figure 2L)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vivo experimental data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "c04ebcfb-6c58-495b-9647-50cd18b052b0",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C41",
+      "claim": "Dox-induced expression of the ARTi-shRNAmir had no antiproliferative effects in HCT 116 cells in the presence of STAG2.",
+      "claim_type": "EXPLICIT",
+      "source": "while dox-induced expression of the ARTi-shRNAmir had no antiproliferative effects in the presence of STAG2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing STAG2-wildtype and STAG2-deficient cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "2756ffda-1d8e-41a9-a49c-e812795ed563",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C42",
+      "claim": "ARTi is a versatile and precise LOF method for target validation in oncology and beyond.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these studies establish ARTi as a versatile and precise LOF method for target validation in oncology and beyond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the collective experimental results demonstrating ARTi's effectiveness across multiple targets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "d6ed3eb5-9ecb-4934-883b-49a35cf9babb",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C43",
+      "claim": "ARTi provides full control over on- and off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of designing gene-specific LOF reagents that remain prone to off-target effects, ARTi involves a simple, highly standardized experimental procedure that provides full control over on- and off-target effects and can be applied to any coding and non-coding gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the design of ARTi, which uses pre-validated shRNAs and allows side-by-side comparison with wildtype cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "02c64656-2f0d-486f-a94b-9e6877bd965c",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C44",
+      "claim": "ARTi can be applied to any coding and non-coding gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of designing gene-specific LOF reagents that remain prone to off-target effects, ARTi involves a simple, highly standardized experimental procedure that provides full control over on- and off-target effects and can be applied to any coding and non-coding gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the design principle of ARTi, which involves engineering target sites rather than targeting endogenous sequences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "1f7e9e4d-db70-427c-b944-68f847bf5d22",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C45",
+      "claim": "Placement of ARTi target sites in non-coding transcript regions leaves the endogenous target protein unaltered.",
+      "claim_type": "EXPLICIT",
+      "source": "Placement of ARTi target sites in non-coding transcript regions leaves the endogenous target protein unaltered, which is a key advantage over chemical-genetic LOF methods relying on the introduction of degron tags (Lai and Crews, 2017; Cromm and Crews, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the design principle of ARTi and is compared to degron-based methods via citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "09d2637e-eef0-47b0-9f93-75efc720cdd7",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C46",
+      "claim": "Targeting endogenously engineered ARTi target sites through tetracycline-inducible ARTi-shRNAmir expression enables inducible, titratable, and likely reversible LOF perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting endogenously engineered ARTi target sites through tetracycline (Tet)-inducible ARTi-shRNAmir expression enables inducible, titratable, and likely reversible (not tested in this study) LOF perturbations of candidate genes without altering their endogenous transcriptional regulation, which is not possible using conventional Tet-expression systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the design of the ARTi system using Tet-inducible expression, though reversibility was not experimentally tested.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "7b834063-51f1-42c9-a5e3-b3214aad763f",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C47",
+      "claim": "ARTi enables combinatorial LOF perturbations by engineering multiple target sites in the same cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, by engineering multiple target sites in the same cell, ARTi enables combinatorial LOF perturbations, for example, for modeling synergistic target interactions, without multiplying the risk for off-target effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the principle of ARTi design but not experimentally demonstrated in this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "ab58a3ef-b0a2-4ed1-bfba-a0c207e3460e",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C48",
+      "claim": "ARTi can be used to establish on-target benchmark phenotypes for guiding the development and optimization of inhibitory molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond providing a scalable method for early target validation, we foresee that ARTi can be used to establish on-target benchmark phenotypes for guiding the development and optimization of inhibitory molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, representing a potential future application of ARTi.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "ddd9969a-074d-44b3-933c-6e1b795c368a",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C49",
+      "claim": "Top-scoring siRNA predictions with DSIR score >105 harboring G or C in position 20 were analyzed for nucleotide biases.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish the criteria for ARTi design, siRNA predictions for the human and mouse genome were retrieved from DSIR (Vert et al., 2006) using default parameters. Top-scoring predictions (DSIR score >105) harboring G or C in position 20 were analyzed for nucleotide biases, which were used to define basic design criteria at the 5\u2032-end the 3\u2032-half.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodological approach used to design ARTi shRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "36185488-b40c-44a3-8d48-4bfe007be824",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C50",
+      "claim": "Seed sequences with the lowest predicted off-target activity (top 1%) showed biases for C and/or G in guide positions 2\u20136.",
+      "claim_type": "EXPLICIT",
+      "source": "Seed sequences with the lowest predicted off-target activity (top 1%) showed biases for C and/or G in guide positions 2\u20136, but 23% contained a T at the 5\u2032 end of the seed sequence that is required in our design (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of siSPOTR predictions, as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "0af62e04-5c05-4bf6-92c1-6f7f026be634",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C51",
+      "claim": "73% of seed sequences with a 5\u2032 T harbored CG in the following two positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, we observed particularly strong biases for CG in the following two positions (Figure 1B), which were found in 73% of all seed sequences harboring a 5\u2032 T.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of seed sequence composition, as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "45fd0af1-a1d5-4478-b8b0-f5fa9fd58bef",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C52",
+      "claim": "17% of all top-scoring seed sequences harbored TCG at their 5\u2032 end.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 17% of all top-scoring seed sequences harbored TCG at their 5\u2032 end, making it the second most common triplet (after CGC, which was found in 20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of seed sequence composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "7fb58cf4-75ee-4260-9d57-7b410a60d470",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C53",
+      "claim": "CGC was the most common triplet at the 5\u2032 end of top-scoring seed sequences, found in 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 17% of all top-scoring seed sequences harbored TCG at their 5\u2032 end, making it the second most common triplet (after CGC, which was found in 20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of seed sequence composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "75b44f2b-638d-43de-9ea9-8fac449f2052",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C54",
+      "claim": "The first four nucleotides of the ARTi guide were fixed to TTCG.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these analyses, we fixed the first four nucleotides of the guide to TTCG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a design decision made by the authors based on their analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "36f3bcbe-ce7a-4cbf-ba88-dbd19e8979b4",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C55",
+      "claim": "PC-9 cells are human EGFRdel19-dependent lung adenocarcinoma cells.",
+      "claim_type": "IMPLICIT",
+      "source": "We introduced this construct into human EGFRdel19-dependent PC-9 lung adenocarcinoma cells and subsequently knocked out the endogenous EGFR gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text describing the cell line used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "0eb8043c-40ca-42f0-91cc-2fc01d65e75d",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C56",
+      "claim": "MIA PaCa-2 cells are KRASG12C-dependent pancreatic adenocarcinoma cells.",
+      "claim_type": "IMPLICIT",
+      "source": "To establish a suitable KRASG12R-driven model, we engineered a dsRed::KRASG12R-ARTi transgene and the dox-inducible ARTi-shRNAmir into KRASG12C-dependent MIA PaCa-2 pancreatic adenocarcinoma cells and subsequently knocked out endogenous KRAS alleles (Figure 2E and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text describing the cell line used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "c73fb24a-56a3-4d3e-b3e3-a6e33ce91957",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C57",
+      "claim": "HCT 116 cells are colon carcinoma cells.",
+      "claim_type": "IMPLICIT",
+      "source": "To evaluate STAG1 as synthetic-lethal dependency that is relevant in a wide range of STAG2-deficient cancers (Figure 2\u2014figure supplement 3A; Bailey et al., 2021; van der Lelij et al., 2020; Benedetti et al., 2014; van der Lelij et al., 2017), we engineered an isogenic pair of STAG2-wildtype and -deficient HCT 116 colon carcinoma cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text describing the cell line used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "cf1d466a-e4d4-42df-a36d-0f56dcef1170",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C58",
+      "claim": "Osimertinib is a clinically approved EGFR inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate whether ARTi can recapitulate drug activities in vivo, we xenotransplanted EGFRdel19::V5::dsRed::ARTi engineered PC-9 cells harboring the dox-inducible ARTi-shRNAmir and treated recipient mice upon tumor formation with either dox or the clinically approved EGFR inhibitor osimertinib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text and is based on established knowledge about osimertinib.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "188a919b-3cd6-4533-bcce-d3cb8b63c783",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C59",
+      "claim": "AMG-510 is a KRASG12C inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, switching the driving oncogene from KRASG12C to KRASG12R rendered MIA PaCa-2 cells resistant to the KRASG12C inhibitor AMG-510 (Fakih et al., 2020; Lanman et al., 2020; Fakih et al., 2019; Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text and supported by citations to studies on AMG-510.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "c2e0ea74-5441-4d63-a138-c65d58f45fb8",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "claim_id": "C60",
+      "claim": "There are no available in vivo compatible inhibitors for KRASG12R.",
+      "claim_type": "EXPLICIT",
+      "source": "In a second study, we used ARTi to investigate KRASG12R, an oncogenic KRAS variant with no available in vivo compatible inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text and represents the current state of drug development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "77e14841-d833-4ee8-9470-be2213b0a77b",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors designed a 22-nucleotide ARTi shRNA sequence matrix (TTCGWWWNNAHHWWCATCCGGN) by analyzing nucleotide biases in high-scoring siRNA predictions and low off-target seed sequences, then eliminated sequences with perfect transcriptome matches and selected six candidates for validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 and C49-C54 describe a systematic computational design approach combining DSIR and siSPOTR analyses with transcriptome filtering. The methodology is clearly described, the design matrix is explicitly stated, and the selection criteria are justified. The nucleotide bias statistics (C50-C53) provide quantitative support for the design decisions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "3b67a7a2-eac4-4df4-986e-febbbd8583c6",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All six ARTi-shRNAmirs matched or outperformed previously validated potent shRNAmirs and ranked among top performers when compared to 592 gene-specific shRNAs in knockdown reporter assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 are supported by experimental data in Figure 1C and Figure 1\u2014figure supplement 1C comparing ARTi performance to established controls and a large panel of gene-specific shRNAs. The comparison provides strong evidence for ARTi knockdown efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "0c5d8b61-69de-4210-8bb4-9252dfd0a945",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ARTi-shRNAmirs showed minimal off-target effects, with no impact on proliferation in most cell lines (except mild effects of ARTi.6634 in RN2 and ARTi.6786 in MV4-11) and only marginal transcriptome changes compared to MEK inhibitor controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 are supported by competitive proliferation assays (Figure 1D, Figure 1\u2014figure supplement 1D) and transcriptome profiling (Figure 1E-F, Figure 1\u2014figure supplement 1E-F) across multiple cell lines. The comparison to trametinib as a positive control strengthens the conclusion about minimal off-target effects. The exceptions (C13-C14) are appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ARTi-mediated suppression of engineered EGFRdel19 in PC-9 cells caused tumor regression in vivo that was indistinguishable from osimertinib treatment, with on-target effects confirmed by RNA-seq showing transgene suppression and downstream pathway inhibition, and no effect in parental cells lacking the ARTi target site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C25-C26, C28-C31 collectively demonstrate ARTi validation for EGFR. The functional rescue (C22), RNA-seq confirmation of target and pathway suppression (C25-C26), in vivo tumor regression matching drug effects (C28-C29), and negative control in parental cells (C30) provide strong converging evidence for on-target activity (C31). Figure 2D and supplementary figures support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "d3834895-8bcc-40e4-b835-fd08a94c5d30",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ARTi-mediated suppression of engineered KRASG12R in MIA PaCa-2 cells led to full tumor regression when KRASG12C was absent, but only delayed progression when both KRAS alleles were present, suggesting both oncogenes contribute to tumor growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 demonstrate ARTi validation for KRASG12R with appropriate controls. The resistance to AMG-510 (C32) validates the model switch, mRNA/protein suppression (C33-C34) confirms knockdown, and the differential in vivo effects (C36-C37) support the inference about dual oncogene contribution (C38). Data in Figure 2F-H and supplementary figures support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "3ce30309-254b-44a5-aaf5-8160a3dc67f0",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ARTi-mediated suppression of STAG1 impaired proliferation in vitro and tumor progression in vivo specifically in STAG2-deficient HCT 116 cells, with no effect when STAG2 was present, validating the synthetic lethal interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 demonstrate ARTi validation of the STAG1-STAG2 synthetic lethal interaction. The context-dependent effects (impairment only in STAG2-deficient cells, C39-C40, but not in STAG2-wildtype cells, C41) provide strong evidence for specificity. Data in Figure 2L and Figure 2\u2014figure supplement 3C support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "ab1285ac-3061-4f7d-918e-65e67001bc2c",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ARTi is established as a versatile and precise loss-of-function method that provides full control over on- and off-target effects and can be applied to any coding or non-coding gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 represent the main conclusion synthesizing results from all three target validation studies (EGFR, KRAS, STAG1). The demonstration of efficacy across multiple targets with controlled off-target effects supports versatility (C42), the design allowing side-by-side wildtype comparison supports control claims (C43), and the principle of engineering target sites rather than targeting endogenous sequences supports broad applicability (C44).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "a520ba13-a2fa-415d-af7e-68690cd83573",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Placement of ARTi target sites in non-coding transcript regions leaves the endogenous target protein unaltered, providing an advantage over degron-based methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by the design principle demonstrated in the STAG1 experiments where ARTi sites were placed in the 3'-UTR (Figure 2I), and by comparison to degron methods via citations. The claim is conceptually sound and demonstrated in practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "3791abd6-fb2a-40e4-8ead-9f2eab3c6ab5",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ARTi enables inducible, titratable, and likely reversible loss-of-function perturbations without altering endogenous transcriptional regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C46 is partially supported: inducibility is demonstrated throughout (dox-induction), titratability is implied by the system design but not explicitly tested, and reversibility is explicitly stated as not tested in the study. The claim about not altering transcriptional regulation is supported by the design principle but would benefit from direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "1d7f0ff4-1aa3-49bb-a34c-8338f3dc9470",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ARTi potentially enables combinatorial loss-of-function perturbations and can establish on-target benchmark phenotypes for drug development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C48 are explicitly speculative and not experimentally demonstrated in this study. While the principles are sound based on the ARTi design, these represent proposed future applications rather than validated results. The evidence type is correctly labeled as SPECULATION.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "2c3855d5-5a3c-4a52-914b-1d28cad52422",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RNAi and CRISPR/Cas9 methods have known limitations including off-target effects and incomplete loss-of-function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the motivation for ARTi by citing known limitations of existing methods. C1 is supported by three citations, while C2-C4 are stated as established knowledge. These background claims appropriately contextualize the need for the ARTi approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "b0bd46dd-a77c-464b-8d62-8203207e171c",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The miR-E backbone shRNAmir system used for ARTi does not interfere with endogenous miRNA processing and can be expressed from tet-responsive elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 describe the chosen RNAi system and are supported by citations to Premsrirut et al., 2011 and Zuber et al., 2011. These are methodological choices based on prior work that justify the ARTi design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "cc367c85-2355-4581-bbe7-30d7c30c5d13",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "EGFR, KRAS, and STAG1 were selected as validation targets based on their established roles as oncogenes or synthetic lethal interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 establish the rationale for target selection and are supported by appropriate citations. These background claims justify the choice of validation targets for demonstrating ARTi utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "7248863d-0361-4e5b-8b8a-3743e6530d2d",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RAF-MEK-ERK signaling acts as a key effector pathway of EGFRdel19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is established knowledge about EGFR signaling that contextualizes the RNA-seq results showing DUSP6 downregulation. This is appropriately used to interpret the mechanistic effects of EGFR suppression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "365c7366-9b58-4bf0-ae58-253a75301129",
+      "content_id": "51fa178b-9dd6-4f43-ae5a-0d5cd03b987e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The cell lines and compounds used in the study have established characteristics relevant to the validation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 describe established properties of cell lines and drugs used in the study. These are appropriately cited or stated as knowledge and provide necessary context for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors derived a 22-nt base composition matrix (TTCGWWWNNAHHWWCATCCGGN) for ARTi shRNAmir design by analyzing nucleotide biases in top-scoring siRNA predictions and eliminating sequences with perfect matches in the transcriptome. Six top-scoring ARTi predictions were selected for experimental validation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not question the ARTi design methodology or the derived sequence matrix. The first reviewer states the authors 'successfully identify six ARTi with robust knockdown efficiency,' implicitly accepting the design approach. No concerns were raised about the computational analysis or selection criteria.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "35f69acd-2c37-49ab-b981-c0b19bc5fd59",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "All six ARTi-shRNAmirs matched or outperformed previously validated highly potent shRNAmirs and ranked among top-performing shRNAmirs when compared to a panel of 592 gene-specific shRNAs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirmed this finding. The first reviewer states the authors 'successfully identify six ARTi with robust knockdown efficiency,' and the third reviewer notes the system allows scientists to 'ablate a gene of interest' effectively. No concerns were raised about the comparative performance data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "6780af23-c0cb-4672-a27c-055e868da60a",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "ARTi-shRNAmir expression had minimal effects on proliferation/survival in multiple cell lines (except mild defects with ARTi.6634 and ARTi.6786 in specific lines) and only marginal effects on the transcriptome, indicating no major off-target effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these findings without challenge. The first reviewer explicitly states the authors identified ARTi with 'limited to no off-target effects,' directly supporting these claims. The editor notes 'evidence for the effectiveness of the system...is compelling,' encompassing the off-target characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "ARTi-mediated suppression of EGFRdel19 in PC-9 cells led to rapid and durable tumor regression indistinguishable from osimertinib treatment in xenografts, with RNA-seq confirming transgene suppression and downstream pathway effects. Effects were not observed in parental cells lacking the ARTi target site.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirmed this result. The first reviewer states 'the authors demonstrated significant suppression of colony formation and in vivo tumor growth' for EGFRdel19, and notes it 'already has a clinically approved drug for validation,' acknowledging the comparison to osimertinib. The third reviewer states the authors 'convincingly show that they can target strong oncogenes such as EGFRdel19.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "00e725fd-f84c-4a12-9cf1-f233f008711d",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "ARTi-mediated suppression of KRASG12R in MIA PaCa-2 cells led to strong suppression at mRNA and protein levels, marked antiproliferative effects, and full tumor regression in xenografts lacking KRASG12C. Tumors with both KRAS alleles showed only delayed progression, suggesting both oncogenes contribute to tumor growth.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly supported this finding. The first reviewer notes the authors 'demonstrated significant suppression of colony formation and in vivo tumor growth' for KRASG12R, 'for which there are no in vivo compatible inhibitors yet,' highlighting the value of this result. The third reviewer states the authors 'convincingly show that they can target strong oncogenes such as...KRasG12.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "b3c372e1-388d-4c01-9495-88366380a697",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Suppression of STAG1 in STAG2-deficient HCT 116 cells impaired proliferation in vitro and tumor progression in vivo, while having no antiproliferative effects in STAG2-wildtype cells, demonstrating synthetic lethality.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirmed this result. The first reviewer states 'the authors demonstrated significant suppression of colony formation and in vivo tumor growth' for STAG1 and notes it 'has a synthetic lethal interaction with recurrent loss-of-function mutations of STAG2.' The third reviewer states the authors 'convincingly show' they can target 'synthetic lethal interactions (STAG1/2).'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "094c0309-50fd-4e82-8e7d-985f02dba725",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "ARTi is established as a versatile and precise LOF method for target validation that provides full control over on- and off-target effects and can be applied to any coding and non-coding gene.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers expressed mixed views on the generalizability claim. While the editor calls the method 'valuable' and evidence 'compelling,' the first reviewer notes 'the system cannot be easily generalized' and points out limitations including the need for CRISPR/Cas9 (which has off-target effects) and the challenge of designing constructs for large proteins. The reviewer concludes it is 'an effective orthogonal approach' but 'not...a replacement for other LOF methods.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "3da68f53-7501-4936-8c48-300b9d3a8a9b",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "CRISPR/Cas9-based methods are associated with off-target effects and incomplete loss-of-function across cell populations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The first reviewer challenges the framing of this claim, noting 'the authors claim in the introduction that CRISPR/Cas9-based methods are associated with off-target effects, however, the author's system requires the use CRISPR/Cas9' and that their transient system 'does not...eliminate the possibility of off-target effects.' This suggests the reviewer questions whether ARTi truly overcomes CRISPR limitations as implied.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "28b69a00-27c2-4602-87c4-5d6f02cdd317",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Placement of ARTi target sites in non-coding regions leaves the endogenous protein unaltered, and the system enables inducible, titratable, and likely reversible LOF perturbations without altering endogenous transcriptional regulation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these design principles. The first reviewer acknowledges the system enables 'specific, efficient, and inducible suppression' and notes it is 'not...a replacement for other LOF methods' like degrons, implicitly accepting the comparison. The manuscript's acknowledgment that reversibility was 'not tested' is consistent with the claim's cautious framing.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "89f65d3e-74fd-4b74-b38e-00ca9258efbc",
+      "content_id": "2c85ad6b-992a-4a55-88e5-eef6896af590",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "ARTi enables combinatorial LOF perturbations by engineering multiple target sites and can establish on-target benchmark phenotypes for guiding inhibitor development.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these potential applications. The editor notes the method 'should find use as an orthogonal method for generating gene-specific knockdowns,' and the third reviewer states it is 'likely easy to be established and used by the scientific community,' supporting the feasibility of these applications.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "433bf3c9-998c-4d81-88f9-7edefba22891",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "bfb5ec28-c391-4883-a531-4d5b3b74d090",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "5399a7f6-0f79-43ae-9fcc-54c98f29d1e1",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "ddd9969a-074d-44b3-933c-6e1b795c368a",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "36185488-b40c-44a3-8d48-4bfe007be824",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "0af62e04-5c05-4bf6-92c1-6f7f026be634",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "45fd0af1-a1d5-4478-b8b0-f5fa9fd58bef",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "7fb58cf4-75ee-4260-9d57-7b410a60d470",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "75b44f2b-638d-43de-9ea9-8fac449f2052",
+      "result_id": "77e14841-d833-4ee8-9470-be2213b0a77b"
+    },
+    {
+      "claim_id": "e6cc6d39-88ee-4087-a7b6-73d99902bf3c",
+      "result_id": "3b67a7a2-eac4-4df4-986e-febbbd8583c6"
+    },
+    {
+      "claim_id": "784f9082-e0be-4aba-80c8-abea26f41621",
+      "result_id": "3b67a7a2-eac4-4df4-986e-febbbd8583c6"
+    },
+    {
+      "claim_id": "083a5d62-b30e-4755-843d-344be5ef8dd1",
+      "result_id": "0c5d8b61-69de-4210-8bb4-9252dfd0a945"
+    },
+    {
+      "claim_id": "8c879cec-9ad3-4340-bd34-dc20b0a36a4b",
+      "result_id": "0c5d8b61-69de-4210-8bb4-9252dfd0a945"
+    },
+    {
+      "claim_id": "8a5e129f-3583-4519-a1c1-14faba71c342",
+      "result_id": "0c5d8b61-69de-4210-8bb4-9252dfd0a945"
+    },
+    {
+      "claim_id": "9e2fe437-b5e1-4780-857a-07f18f8f6999",
+      "result_id": "0c5d8b61-69de-4210-8bb4-9252dfd0a945"
+    },
+    {
+      "claim_id": "c219f089-ea64-4f51-ad22-6c05f729110c",
+      "result_id": "0c5d8b61-69de-4210-8bb4-9252dfd0a945"
+    },
+    {
+      "claim_id": "5569dd9d-99e6-4591-bc85-39656f7b242f",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "efab3015-7d75-47e7-bfdb-2e1e96927c7a",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "9c565d26-b701-4d68-99e7-4b304eee60cc",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "70d4ebff-427c-43e2-ba11-0c4461f9e15d",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "bb034b8d-5897-494f-a789-8573a41bf730",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "c966274f-d8f6-4c76-a11d-b69675be83b1",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "e86487a7-f08e-4505-b5a9-31218a7c584d",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "911d1170-30f4-46fb-b7cd-3666dcadd7f7",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "132c0dd1-5244-416e-b7d4-f1b7bb7d62cb",
+      "result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff"
+    },
+    {
+      "claim_id": "98a6dc8b-aa24-45da-854a-fcbe604a2e82",
+      "result_id": "d3834895-8bcc-40e4-b835-fd08a94c5d30"
+    },
+    {
+      "claim_id": "27d6f7df-322a-446f-b668-80f30e0b0dae",
+      "result_id": "d3834895-8bcc-40e4-b835-fd08a94c5d30"
+    },
+    {
+      "claim_id": "42d8d66b-be66-4b75-87c4-c424b321d0e3",
+      "result_id": "d3834895-8bcc-40e4-b835-fd08a94c5d30"
+    },
+    {
+      "claim_id": "8c1dc220-3d81-4fd1-bed0-f7b5573c10be",
+      "result_id": "d3834895-8bcc-40e4-b835-fd08a94c5d30"
+    },
+    {
+      "claim_id": "8b7f89da-00df-41a0-bed7-3ffde2b55581",
+      "result_id": "d3834895-8bcc-40e4-b835-fd08a94c5d30"
+    },
+    {
+      "claim_id": "633861cf-f6e9-463e-9d2f-94f9a3043f73",
+      "result_id": "d3834895-8bcc-40e4-b835-fd08a94c5d30"
+    },
+    {
+      "claim_id": "3fbfdc89-b250-4f6a-b5a9-fdaaa98106cb",
+      "result_id": "d3834895-8bcc-40e4-b835-fd08a94c5d30"
+    },
+    {
+      "claim_id": "9c606d35-b316-447f-905e-ea3987620a4d",
+      "result_id": "3ce30309-254b-44a5-aaf5-8160a3dc67f0"
+    },
+    {
+      "claim_id": "5d670b43-9133-4520-a763-56f121b37f86",
+      "result_id": "3ce30309-254b-44a5-aaf5-8160a3dc67f0"
+    },
+    {
+      "claim_id": "c04ebcfb-6c58-495b-9647-50cd18b052b0",
+      "result_id": "3ce30309-254b-44a5-aaf5-8160a3dc67f0"
+    },
+    {
+      "claim_id": "2756ffda-1d8e-41a9-a49c-e812795ed563",
+      "result_id": "ab1285ac-3061-4f7d-918e-65e67001bc2c"
+    },
+    {
+      "claim_id": "d6ed3eb5-9ecb-4934-883b-49a35cf9babb",
+      "result_id": "ab1285ac-3061-4f7d-918e-65e67001bc2c"
+    },
+    {
+      "claim_id": "02c64656-2f0d-486f-a94b-9e6877bd965c",
+      "result_id": "ab1285ac-3061-4f7d-918e-65e67001bc2c"
+    },
+    {
+      "claim_id": "1f7e9e4d-db70-427c-b944-68f847bf5d22",
+      "result_id": "a520ba13-a2fa-415d-af7e-68690cd83573"
+    },
+    {
+      "claim_id": "09d2637e-eef0-47b0-9f93-75efc720cdd7",
+      "result_id": "3791abd6-fb2a-40e4-8ead-9f2eab3c6ab5"
+    },
+    {
+      "claim_id": "7b834063-51f1-42c9-a5e3-b3214aad763f",
+      "result_id": "1d7f0ff4-1aa3-49bb-a34c-8338f3dc9470"
+    },
+    {
+      "claim_id": "ab58a3ef-b0a2-4ed1-bfba-a0c207e3460e",
+      "result_id": "1d7f0ff4-1aa3-49bb-a34c-8338f3dc9470"
+    },
+    {
+      "claim_id": "97193548-ac3e-4acd-b230-ffbcc0b27967",
+      "result_id": "2c3855d5-5a3c-4a52-914b-1d28cad52422"
+    },
+    {
+      "claim_id": "150eec83-3d08-4a2e-85e4-05a7a4a94288",
+      "result_id": "2c3855d5-5a3c-4a52-914b-1d28cad52422"
+    },
+    {
+      "claim_id": "5ec8a990-e644-434f-875b-8c1db483e5f7",
+      "result_id": "2c3855d5-5a3c-4a52-914b-1d28cad52422"
+    },
+    {
+      "claim_id": "1ae97a70-d3a2-429b-82c0-d8bf5db81343",
+      "result_id": "2c3855d5-5a3c-4a52-914b-1d28cad52422"
+    },
+    {
+      "claim_id": "3bb2cb1d-c018-4c07-9c42-9738717a4e4c",
+      "result_id": "b0bd46dd-a77c-464b-8d62-8203207e171c"
+    },
+    {
+      "claim_id": "7be3ea51-6d1a-44bd-81bb-4ac60a05cbaf",
+      "result_id": "b0bd46dd-a77c-464b-8d62-8203207e171c"
+    },
+    {
+      "claim_id": "a5e34990-3092-47ed-a897-778948a2e3d9",
+      "result_id": "cc367c85-2355-4581-bbe7-30d7c30c5d13"
+    },
+    {
+      "claim_id": "edf1784d-1879-4ebf-8f89-790a0677c15b",
+      "result_id": "cc367c85-2355-4581-bbe7-30d7c30c5d13"
+    },
+    {
+      "claim_id": "6c0dc0e8-e479-45ea-a944-a43065c2f622",
+      "result_id": "cc367c85-2355-4581-bbe7-30d7c30c5d13"
+    },
+    {
+      "claim_id": "89e1a55d-2850-4318-aa4c-a1a585820919",
+      "result_id": "7248863d-0361-4e5b-8b8a-3743e6530d2d"
+    },
+    {
+      "claim_id": "36f3bcbe-ce7a-4cbf-ba88-dbd19e8979b4",
+      "result_id": "365c7366-9b58-4bf0-ae58-253a75301129"
+    },
+    {
+      "claim_id": "0eb8043c-40ca-42f0-91cc-2fc01d65e75d",
+      "result_id": "365c7366-9b58-4bf0-ae58-253a75301129"
+    },
+    {
+      "claim_id": "c73fb24a-56a3-4d3e-b3e3-a6e33ce91957",
+      "result_id": "365c7366-9b58-4bf0-ae58-253a75301129"
+    },
+    {
+      "claim_id": "cf1d466a-e4d4-42df-a36d-0f56dcef1170",
+      "result_id": "365c7366-9b58-4bf0-ae58-253a75301129"
+    },
+    {
+      "claim_id": "188a919b-3cd6-4533-bcce-d3cb8b63c783",
+      "result_id": "365c7366-9b58-4bf0-ae58-253a75301129"
+    },
+    {
+      "claim_id": "c2e0ea74-5441-4d63-a138-c65d58f45fb8",
+      "result_id": "365c7366-9b58-4bf0-ae58-253a75301129"
+    },
+    {
+      "claim_id": "433bf3c9-998c-4d81-88f9-7edefba22891",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "bfb5ec28-c391-4883-a531-4d5b3b74d090",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "5399a7f6-0f79-43ae-9fcc-54c98f29d1e1",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "ddd9969a-074d-44b3-933c-6e1b795c368a",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "36185488-b40c-44a3-8d48-4bfe007be824",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "0af62e04-5c05-4bf6-92c1-6f7f026be634",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "45fd0af1-a1d5-4478-b8b0-f5fa9fd58bef",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "7fb58cf4-75ee-4260-9d57-7b410a60d470",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "75b44f2b-638d-43de-9ea9-8fac449f2052",
+      "result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34"
+    },
+    {
+      "claim_id": "e6cc6d39-88ee-4087-a7b6-73d99902bf3c",
+      "result_id": "35f69acd-2c37-49ab-b981-c0b19bc5fd59"
+    },
+    {
+      "claim_id": "784f9082-e0be-4aba-80c8-abea26f41621",
+      "result_id": "35f69acd-2c37-49ab-b981-c0b19bc5fd59"
+    },
+    {
+      "claim_id": "083a5d62-b30e-4755-843d-344be5ef8dd1",
+      "result_id": "6780af23-c0cb-4672-a27c-055e868da60a"
+    },
+    {
+      "claim_id": "8c879cec-9ad3-4340-bd34-dc20b0a36a4b",
+      "result_id": "6780af23-c0cb-4672-a27c-055e868da60a"
+    },
+    {
+      "claim_id": "8a5e129f-3583-4519-a1c1-14faba71c342",
+      "result_id": "6780af23-c0cb-4672-a27c-055e868da60a"
+    },
+    {
+      "claim_id": "9e2fe437-b5e1-4780-857a-07f18f8f6999",
+      "result_id": "6780af23-c0cb-4672-a27c-055e868da60a"
+    },
+    {
+      "claim_id": "c219f089-ea64-4f51-ad22-6c05f729110c",
+      "result_id": "6780af23-c0cb-4672-a27c-055e868da60a"
+    },
+    {
+      "claim_id": "5569dd9d-99e6-4591-bc85-39656f7b242f",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "efab3015-7d75-47e7-bfdb-2e1e96927c7a",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "9c565d26-b701-4d68-99e7-4b304eee60cc",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "70d4ebff-427c-43e2-ba11-0c4461f9e15d",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "bb034b8d-5897-494f-a789-8573a41bf730",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "c966274f-d8f6-4c76-a11d-b69675be83b1",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "e86487a7-f08e-4505-b5a9-31218a7c584d",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "911d1170-30f4-46fb-b7cd-3666dcadd7f7",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "132c0dd1-5244-416e-b7d4-f1b7bb7d62cb",
+      "result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998"
+    },
+    {
+      "claim_id": "98a6dc8b-aa24-45da-854a-fcbe604a2e82",
+      "result_id": "00e725fd-f84c-4a12-9cf1-f233f008711d"
+    },
+    {
+      "claim_id": "27d6f7df-322a-446f-b668-80f30e0b0dae",
+      "result_id": "00e725fd-f84c-4a12-9cf1-f233f008711d"
+    },
+    {
+      "claim_id": "42d8d66b-be66-4b75-87c4-c424b321d0e3",
+      "result_id": "00e725fd-f84c-4a12-9cf1-f233f008711d"
+    },
+    {
+      "claim_id": "8c1dc220-3d81-4fd1-bed0-f7b5573c10be",
+      "result_id": "00e725fd-f84c-4a12-9cf1-f233f008711d"
+    },
+    {
+      "claim_id": "8b7f89da-00df-41a0-bed7-3ffde2b55581",
+      "result_id": "00e725fd-f84c-4a12-9cf1-f233f008711d"
+    },
+    {
+      "claim_id": "633861cf-f6e9-463e-9d2f-94f9a3043f73",
+      "result_id": "00e725fd-f84c-4a12-9cf1-f233f008711d"
+    },
+    {
+      "claim_id": "3fbfdc89-b250-4f6a-b5a9-fdaaa98106cb",
+      "result_id": "00e725fd-f84c-4a12-9cf1-f233f008711d"
+    },
+    {
+      "claim_id": "9c606d35-b316-447f-905e-ea3987620a4d",
+      "result_id": "b3c372e1-388d-4c01-9495-88366380a697"
+    },
+    {
+      "claim_id": "5d670b43-9133-4520-a763-56f121b37f86",
+      "result_id": "b3c372e1-388d-4c01-9495-88366380a697"
+    },
+    {
+      "claim_id": "c04ebcfb-6c58-495b-9647-50cd18b052b0",
+      "result_id": "b3c372e1-388d-4c01-9495-88366380a697"
+    },
+    {
+      "claim_id": "2756ffda-1d8e-41a9-a49c-e812795ed563",
+      "result_id": "094c0309-50fd-4e82-8e7d-985f02dba725"
+    },
+    {
+      "claim_id": "d6ed3eb5-9ecb-4934-883b-49a35cf9babb",
+      "result_id": "094c0309-50fd-4e82-8e7d-985f02dba725"
+    },
+    {
+      "claim_id": "02c64656-2f0d-486f-a94b-9e6877bd965c",
+      "result_id": "094c0309-50fd-4e82-8e7d-985f02dba725"
+    },
+    {
+      "claim_id": "5ec8a990-e644-434f-875b-8c1db483e5f7",
+      "result_id": "3da68f53-7501-4936-8c48-300b9d3a8a9b"
+    },
+    {
+      "claim_id": "1ae97a70-d3a2-429b-82c0-d8bf5db81343",
+      "result_id": "3da68f53-7501-4936-8c48-300b9d3a8a9b"
+    },
+    {
+      "claim_id": "1f7e9e4d-db70-427c-b944-68f847bf5d22",
+      "result_id": "28b69a00-27c2-4602-87c4-5d6f02cdd317"
+    },
+    {
+      "claim_id": "09d2637e-eef0-47b0-9f93-75efc720cdd7",
+      "result_id": "28b69a00-27c2-4602-87c4-5d6f02cdd317"
+    },
+    {
+      "claim_id": "7b834063-51f1-42c9-a5e3-b3214aad763f",
+      "result_id": "89f65d3e-74fd-4b74-b38e-00ca9258efbc"
+    },
+    {
+      "claim_id": "ab58a3ef-b0a2-4ed1-bfba-a0c207e3460e",
+      "result_id": "89f65d3e-74fd-4b74-b38e-00ca9258efbc"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "1cdb61ba-b61f-4abf-9f3e-06b3076e2da7",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "77e14841-d833-4ee8-9470-be2213b0a77b",
+      "peer_result_id": "f6ec31d5-67a5-4f5f-b608-574afbe17b34",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on ARTi design methodology (C7-C9, C49-C54). Both evaluations find the computational design approach, sequence matrix, and selection criteria well-supported. OpenEval emphasizes quantitative nucleotide bias statistics; peer reviewers implicitly accept the approach without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "9faf9b51-5e71-444c-b996-78f5ecba3e0e",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3b67a7a2-eac4-4df4-986e-febbbd8583c6",
+      "peer_result_id": "35f69acd-2c37-49ab-b981-c0b19bc5fd59",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on ARTi knockdown efficiency (C10-C11). Both evaluations affirm the comparative performance data showing ARTi effectiveness relative to controls and gene-specific shRNAs. Peer reviewers explicitly state 'robust knockdown efficiency' was successfully demonstrated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "07955460-7f3e-4f30-8460-31ca5f0e8134",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0c5d8b61-69de-4210-8bb4-9252dfd0a945",
+      "peer_result_id": "6780af23-c0cb-4672-a27c-055e868da60a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on minimal off-target effects (C12-C16). Both evaluations support the claims based on competitive proliferation assays and transcriptome profiling. Peer reviewers explicitly affirm 'limited to no off-target effects,' and the editor notes evidence is 'compelling.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "5bd81b58-1f20-4e61-a0da-5807f8db7a8c",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "70b2b2b8-0960-45d6-9d94-d4e3992a1aff",
+      "peer_result_id": "0d5b8dea-ee3c-4ad3-af57-efa5574ec998",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on EGFR validation (C20-C22, C25-C26, C28-C31). Both evaluations find strong converging evidence for on-target activity including functional rescue, RNA-seq confirmation, and in vivo tumor regression. Peer reviewers explicitly affirm 'significant suppression' and note the value of comparison to clinically approved drugs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "5df31326-72da-4f6b-92fe-b28a163918be",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d3834895-8bcc-40e4-b835-fd08a94c5d30",
+      "peer_result_id": "00e725fd-f84c-4a12-9cf1-f233f008711d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on KRASG12R validation (C32-C38). Both evaluations support the demonstration of mRNA/protein suppression and differential in vivo effects. Peer reviewers explicitly affirm the findings and highlight the value for a target 'for which there are no in vivo compatible inhibitors yet.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "7410e4a2-6867-40b1-8f26-1480e9c71ec6",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "3ce30309-254b-44a5-aaf5-8160a3dc67f0",
+      "peer_result_id": "b3c372e1-388d-4c01-9495-88366380a697",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on STAG1-STAG2 synthetic lethality validation (C39-C41). Both evaluations support the context-dependent effects demonstrating specificity. Peer reviewers explicitly affirm the demonstration of 'significant suppression' and the synthetic lethal interaction.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "fde6c4b3-2157-4cff-b6f0-0dbc54c017fc",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ab1285ac-3061-4f7d-918e-65e67001bc2c",
+      "peer_result_id": "094c0309-50fd-4e82-8e7d-985f02dba725",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on generalizability claims (C42-C44). OpenEval finds the main conclusions about versatility and broad applicability supported by the three validation studies. Peer reviewers express mixed views: while acknowledging the method is 'valuable' and 'compelling,' they note 'the system cannot be easily generalized' due to CRISPR requirements and challenges with large proteins, concluding it is 'an effective orthogonal approach' but 'not...a replacement for other LOF methods.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "1e3ed093-aab4-4674-847d-1257917c7121",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a520ba13-a2fa-415d-af7e-68690cd83573",
+      "peer_result_id": "28b69a00-27c2-4602-87c4-5d6f02cdd317",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address design principles (C45-C46). OpenEval evaluates C45 (3'-UTR placement advantage) as supported and C46 (inducibility/titratability/reversibility) as uncertain. Peer reviewers group these together and find them supported, acknowledging 'specific, efficient, and inducible suppression' while accepting the manuscript's acknowledgment that reversibility was not tested.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "0a5451ba-33ba-44ea-b1ee-3db083fb6733",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "3791abd6-fb2a-40e4-8ead-9f2eab3c6ab5",
+      "peer_result_id": "28b69a00-27c2-4602-87c4-5d6f02cdd317",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on system properties (C46). OpenEval finds C46 uncertain due to lack of explicit testing for titratability and reversibility. Peer reviewers support the design principles without challenge, acknowledging the system enables 'inducible suppression' and accepting the cautious framing about untested features.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "b7ad3394-a337-4b5f-83f7-07ec97d5d1bd",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "1d7f0ff4-1aa3-49bb-a34c-8338f3dc9470",
+      "peer_result_id": "89f65d3e-74fd-4b74-b38e-00ca9258efbc",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on speculative future applications (C47-C48). Both evaluations recognize these as proposed applications rather than validated results. OpenEval labels them as uncertain speculation; peer reviewers support the feasibility, noting the method 'should find use' and is 'likely easy to be established and used by the scientific community.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "30e3bb39-ab6e-4fa3-9f08-88b91ef8e335",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "2c3855d5-5a3c-4a52-914b-1d28cad52422",
+      "peer_result_id": "3da68f53-7501-4936-8c48-300b9d3a8a9b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on CRISPR limitation claims (C1-C4, with C3-C4 overlap). OpenEval finds the background claims about existing method limitations appropriately supported by citations. Peer reviewers challenge the framing, noting 'the authors claim...that CRISPR/Cas9-based methods are associated with off-target effects, however, the author's system requires the use CRISPR/Cas9,' questioning whether ARTi truly overcomes these limitations as implied.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "30e6ba35-cb3e-439d-bbc3-0e48d9602ffd",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "b0bd46dd-a77c-464b-8d62-8203207e171c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates RNAi system choice (C5-C6) as supported by appropriate citations. No corresponding peer review evaluation found; reviewers did not comment on this methodological background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "06f9db42-b887-4749-b46d-656c8671f3f2",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "cc367c85-2355-4581-bbe7-30d7c30c5d13",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates target selection rationale (C17-C19) as supported by appropriate citations. No corresponding peer review evaluation found; reviewers did not comment on this background justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "e09d3372-72dd-4f33-9f19-99f2c9f35d54",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "7248863d-0361-4e5b-8b8a-3743e6530d2d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates EGFR signaling background (C27) as supported established knowledge. No corresponding peer review evaluation found; reviewers did not comment on this contextual claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    },
+    {
+      "id": "282243ea-6aef-4108-ac42-1aa93112b118",
+      "submission_id": "0e4db751-e9df-42a0-9416-49ab2a1a9f47",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "365c7366-9b58-4bf0-ae58-253a75301129",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates cell line and drug properties (C55-C60) as supported established knowledge. No corresponding peer review evaluation found; reviewers did not comment on these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T21:36:33.283426Z"
+    }
+  ]
+}

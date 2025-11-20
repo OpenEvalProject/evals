@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors present a large-scale comparative genomic analysis integrating alternative splicing data from nearly 1,500 high-quality genome assemblies across the tree of life, including 694 eukaryotic species and 800 prokaryotic species. The dataset was filtered to include only genomes annotated by NCBI RefSeq with assembly levels of 'chromosome' or 'complete genome'.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm the scope and quality of the dataset. Reviewer sa0 describes it as 'solid work, based on nearly 1500 high-quality genome assemblies,' and Reviewer sa2 commends the use of 'rich annotation features from nearly 1,500 high-quality NCBI genome assemblies.' Reviewer sa3 confirms the study 'relies on annotations from NCBI for high-quality genomes.' No concerns are raised about dataset composition or filtering criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors developed a novel genome-scale metric called the Alternative Splicing Ratio (ASR) that quantifies the extent to which coding sequences generate multiple mRNA transcripts via alternative splicing. A normalization procedure (ASR*) was implemented using polynomial regression to remove annotation-related biases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Reviewers sa0 and sa2 praise the ASR metric as 'novel' and enabling 'cross-species comparisons,' Reviewer sa3 raises major methodological concerns, stating 'The definition of ASR is very confusing' and 'A major revision...was the correction/normalisation of the ASR metric. This normalisation is not explained. The authors argue that they will write another paper about it, I do not think this is acceptable for the publication of the present manuscript.' The lack of clarity about the normalization procedure undermines confidence in the metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The study reveals clear phylogenetic patterns in alternative splicing rates: mammals exhibit the highest ASR (3.1) and ASR* (2.8), followed by birds (2.7/2.5), fish and arthropods (2.2/2.3), plants (1.6/2.0), and unicellular organisms (1/minimal), indicating minimal or no alternative splicing in prokaryotes and unicellular eukaryotes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm these phylogenetic patterns. Reviewer sa0 states the authors 'found that the rate of alternative splicing varies with taxonomic groups,' and Reviewer sa2 notes the study 'reveals clear phylogenetic patterns: minimal AS in prokaryotes and unicellular eukaryotes, moderate AS in plants, and high AS in mammals and birds.' Reviewer sa1 confirms the manuscript 'serves as a guide to understand how alternative splicing has evolved within different phyla.' No concerns are raised about these taxonomic comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "PGLS analyses revealed no significant correlation between alternative splicing (ASR and ASR*) and genome size across any taxonomic group.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the finding is presented in the manuscript with reference to Figure 3, Reviewer sa2 questions whether 'the lack of correlation between splicing and coding region fraction in prokaryotes may reflect a statistical power issue, particularly given their limited number of annotated isoforms, rather than a biological absence of pattern.' This suggests the null result may be methodologically driven rather than biologically meaningful, introducing uncertainty about the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "In mammals and birds specifically, alternative splicing showed a strong association with both gene content and coding content, contrasting with the lack of correlation with genome size.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is supported by PGLS regression analyses shown in Figure 3 supplements 2-5, and reviewers do not challenge this lineage-specific pattern. Reviewer sa2 acknowledges the identification of 'genome size and genic coding fraction thresholds (~20 Mb and ~50%, respectively) as tipping points for increased splicing activity' as adding 'conceptual depth.' The lineage-specific associations are accepted as valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Alternative splicing (ASR and ASR*) is strongly associated with two key genomic ratios: the genomic fraction occupied by genes and the proportion of coding sequence within genes. A strong negative correlation is observed between alternative splicing and the proportion of coding content within genes, supporting the hypothesis that genes with higher intronic fractions are more likely to generate multiple isoforms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Reviewer sa2 describes 'the negative correlation between alternative splicing and coding content' as 'compelling,' they immediately note 'the biological significance of this pattern remains ambiguous: it is unclear whether it reflects functional constraint, genome organization, or annotation bias. This uncertainty weakens the manuscript's broader evolutionary inferences.' The pattern is observed but its interpretation is contested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "A phase-like transition in alternative splicing activity is observed at approximately 20 Mb of coding DNA, appearing as a threshold separating unicellular and multicellular organisms, with species below this threshold exhibiting negligible alternative splicing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer sa2 explicitly acknowledges 'the identification of genome size and genic coding fraction thresholds (~20 Mb and ~50%, respectively) as tipping points for increased splicing activity adds conceptual depth and potential generalizability.' This threshold finding is treated as a meaningful contribution, and no reviewer challenges the observation or its interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Both ASR and ASR* reach their highest values in genomes with approximately 50% intergenic content, supporting the hypothesis that this genomic configuration may favor optimal conditions for alternative splicing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer sa2 explicitly notes the identification of the '~50%' intergenic content threshold as a 'tipping point for increased splicing activity' that 'adds conceptual depth and potential generalizability.' Reviewer sa0 confirms the study found 'the rate of alternative splicing varies with...genome coding content,' and this specific 50% threshold is presented as a key finding. No reviewer challenges this observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Bacteria and archaea exhibit the highest gene content proportions (~86% of genomes), while plants have the lowest (~25%). The coding-to-gene proportion increases progressively across taxa, with mammals at ~3%, birds at ~5%, and prokaryotes at ~99%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These genomic architecture patterns are presented in Table 1 and are not challenged by any reviewer. Reviewer sa0 confirms the study examined 'genome coding content' across taxonomic groups, and Reviewer sa2 acknowledges the manuscript's treatment of 'genome organization' patterns. The descriptive genomic statistics are accepted as accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Only birds and mammals display variability ratios exceeding 1 for both ASR and ASR*, indicating greater interspecific heterogeneity in splicing relative to the proportion of coding composing genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding about interspecific variability in birds and mammals is presented as part of the genomic analysis and is not contested by reviewers. Reviewer sa2 notes the manuscript addresses 'lineage-specific patterns' and acknowledges that mammals and birds show distinct characteristics. The variability observation is treated as a valid descriptive finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Evaluation of the NCBI annotation pipeline reveals that the only significant bias is related to the level of experimental support, with better-supported annotations showing higher alternative splicing estimates. The number of CDSs introduced in the pipeline is positively correlated with higher alternative splicing values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer sa3 raises major concerns about bias assessment, stating 'The Methods section lacks clarity and precision. A large part is devoted to explaining the biases in the data without any reference or quantification.' Reviewer sa2 notes 'the assessment of annotation-related bias warrants greater methodological clarity' and that 'the normalization strategy for variation in transcriptomic sampling (e.g., tissue breadth vs sequencing depth) is insufficiently described.' The bias evaluation is acknowledged but its rigor is questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Mammals and birds exhibit highly conserved, intron-rich gene structures with low and stable coding DNA proportions across species. Despite this structural conservation, these groups display substantial interspecific variability in alternative splicing levels that is strongly negatively correlated with the proportion of coding DNA within genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding about mammals and birds is part of the broader genomic architecture analysis and is not challenged by reviewers. Reviewer sa2 acknowledges the work presents 'lineage-specific patterns' and notes the negative correlation between splicing and coding content, though questioning its biological significance. The observation itself is accepted as valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Monte Carlo permutation tests with 10,000 random permutations were used to validate findings from Welch's ANOVA, testing differences using both mean and median values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer sa3 directly challenges the statistical approach, asking 'Could the authors motivate why they do not directly focus on the MC permutation test? They motivate the use of permutations because the data contains extreme outliers and are non normal in most cases. Hence, it seems the Welch's ANOVA is not adapted.' The reviewer also notes 'Where is the comparison shown? I did not see any report of the results for the non-permuted version of the Welch's ANOVA.' The statistical methodology is questioned as potentially inappropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The phylogenetic tree used for PGLS analysis consists of 1,078 species across nine major taxonomic groups, including 170 archaea, 213 bacteria, 35 unicellular eukaryotes, 79 fungi, 110 plants, 116 arthropods, 163 fish, 70 birds, and 122 mammals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the phylogenetic tree composition is described, Reviewer sa3 raises fundamental questions about the PGLS methodology: 'What are the assumptions for the Phylogenetic Generalized Least Squares? Which evolution model was chosen and why? What is the impact of changing the model? Could the authors define more precisely (e.g. with equations) what is lambda? Is it estimated or fixed?' These methodological concerns about the PGLS implementation cast uncertainty on analyses using this tree.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction presents established knowledge about alternative splicing as a post-transcriptional mechanism generating protein isoforms, its role in functional diversification and biological innovation, evolutionary patterns across taxa, and relationships with genome architecture including coding/non-coding sequence evolution and intron length.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer sa2 critiques the introduction, stating 'Sections of the Introduction, particularly lines 72-90, lack cohesion and logical flow, shifting abruptly between topics without a clear structure' and notes 'some interpretive claims lack nuance. For example, the assertion that splicing in plants \"evolved independently\" seems overstated given the available evidence, and the citation regarding slower evolution of highly expressed genes overlooks counterexamples from the immunity and reproductive gene literature.' While the background is citation-supported, its presentation and some interpretations are questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The discussion reviews established knowledge about alternative splicing mechanisms (intron retention in plants vs. exon skipping in animals), functional relevance, conservation patterns, roles in environmental adaptation and stress response, and biological differentiation at multiple organizational levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer sa3 critiques the discussion as 'very long (almost longer than the Results section) and the items discussed are sometimes not in direct connection with the present work,' suggesting merging paragraphs 'since the before last paragraph is essentially a review of the literature without direct connection to the present work.' Reviewer sa2 notes 'the discussion gestures toward adaptive and non-adaptive mechanisms, these interpretations are not developed early or prominently enough to anchor the reader.' The discussion content is not directly challenged but its relevance and organization are questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study relies on NCBI annotation pipelines: the Eukaryotic Genome Annotation Pipeline (EGAP) for eukaryotes and the Prokaryotic Genome Annotation Pipeline (PGAP) for bacteria and archaea. Fungi and unicellular eukaryotes use submitted annotations with methodological variation and generally lack RNA-Seq-based annotation of alternative isoforms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details about annotation sources are descriptive and citation-supported. While reviewers raise concerns about bias assessment and normalization (addressed in other results), the basic description of the annotation pipelines used is not contested. Reviewer sa3 confirms 'the methodology relies on annotations from NCBI for high-quality genomes.'",
+    "result_type": "MINOR"
+  }
+]

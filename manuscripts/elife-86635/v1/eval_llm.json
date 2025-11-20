@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The apparent absence of adolescent length growth spurts in non-human primates is a methodological artifact resulting from scaling issues when comparing linear length growth rates with cubic (volume/weight) growth rates. The cubic relationship between weight and length means that a weight growth spurt may not produce a detectable linear length growth spurt unless weight acceleration exceeds a quadratic function, making the dichotomy between present/absent linear length acceleration arbitrary and misleading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 provide a mathematically sound theoretical framework supported by citations (Cullen et al., 2021; Schmidt-Nielsen, 1984) and Figure 1. The mathematical relationships are correctly derived from scaling laws. Claims C1-C3 establish the scientific context from prior literature. The theoretical argument is internally consistent and addresses a fundamental measurement issue in comparative growth studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Zoo-housed bonobos exhibit pronounced growth spurts in both body weight and forearm length that are aligned in timing and amplitude when analyzed at comparable scales (cm^2.5 for length). Males reach peak growth velocity 2 years later than females (8 vs 6 years) and achieve larger adult body size. The female length growth spurt is detectable even at linear scale (cm/year) but peaks 1 year earlier than when scale-corrected, demonstrating the predicted mathematical artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 are supported by comprehensive data from 258 bonobos (Figures 2, 4, Table 1) analyzed with appropriate GAMMs accounting for individual variation, zoo effects, and temporal changes. The statistical models show high explanatory power (R\u00b2adj >0.98 for growth measures). The scale-correction analysis directly validates the theoretical predictions from the first result group, and results replicate in reduced datasets (Figure 2\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C65"
+    ],
+    "result": "Male bonobos show a growth spurt in lean body mass (measured via urinary creatinine) occurring 1.5 years after the length and weight growth spurts, though this timing difference is not statistically significant. Females show no distinct peak in lean body mass growth rate, with highest rates until age 5 followed by decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C43 are based on data presented in Figures 3A and 4A, but C65 notes that creatinine measurements show high uncertainty before age 3 years (Emery Thompson et al., 2012), which could mask a female muscle growth spurt. The authors themselves state results should be interpreted with caution and need further validation. The timing difference in males is within confidence intervals and not significant (C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "DHEA levels in bonobos show no association with growth patterns and no sex differences in levels or age trajectories that align with sex differences in growth, consistent with predictions for an adolescent (rather than juvenile) growth spurt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by data in Figure 4 and statistical analysis (Table 1). DHEA is established as a marker of adrenarche/juvenile period (C13), so lack of association with the observed growth spurts supports their classification as adolescent rather than juvenile growth spurts. The statistical model shows no significant sex difference in DHEA trajectories (p=0.276, Table 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Testosterone and IGFBP-3 levels in bonobos increase in a sex-specific manner aligned with growth spurts. In females, testosterone rises at ~4 years and peaks at ~5 years before peak growth velocity, while IGFBP-3 directly aligns with and peaks simultaneously with the length/weight growth spurt at ~6 years. In males, testosterone rises at ~7 years and peaks at ~9 years after the length/weight growth spurt peak but aligned with muscle growth, while IGFBP-3 peaks after weight/length growth and better matches muscle growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 are supported by data in Figures 3C-D, 4B, and statistical models (Table 1) showing significant sex-specific trajectories. The patterns align with established roles of testosterone (C15-C16) and IGFBP-3 (C18-C19) in primate growth and sexual maturation. However, IGFBP-3 confidence intervals are noted as wide (C47), and the temporal relationships rely on visual inspection of overlapping curves with broad confidence intervals rather than formal statistical tests of synchrony.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The testosterone trajectories in bonobos confirm sex-specific patterns with females showing rapid rise at ~4 years and peak at ~5 years, and males showing rapid rise at ~7 years and peak at ~9 years. These patterns align with known markers of sexual maturation including genital swelling onset (5-6 years in wild females), menarche (6-11.3 years in zoo females), testicular descent (9 years in wild males, 6-10 years in captive males), and ages at first reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by the study's data (Figures 3C, 4) and confirm prior findings (Behringer et al., 2014). Claims C20-C26 provide independent validation from published literature on sexual maturation markers in bonobos. The convergence of hormonal data with behavioral/morphological markers of sexual maturation strengthens the interpretation that observed growth spurts are adolescent. However, ages at sexual maturation markers show considerable variation, particularly in females.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C89"
+    ],
+    "result": "The growth spurts observed in bonobos mirror human adolescence patterns in their alignment with testosterone and IGFBP-3 changes, representing adolescent growth spurts. These findings provide proof that at least some bonobo populations show pronounced adolescent length growth spurts, challenging and rebutting the hypothesis that adolescent length growth spurts are a unique human trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C89 represent the main conclusions, supported by the convergence of growth data (C31-C40), hormonal markers (C47-C55, C66-C68), and sexual maturation indicators (C20-C26). The inference is strengthened by the theoretical framework (C4-C10) explaining why previous studies failed to detect these spurts. However, C70 appropriately limits the conclusion to \"at least some bonobo populations\" given the zoo-based sample, and the authors acknowledge limitations regarding generalizability to wild populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Literature review of 13 primate species reveals that nine show evidence of linear length growth acceleration in at least one sex, and when scale-corrected data are available (e.g., Assamese macaques, Pigtailed macaques), they show alignment between weight and length growth spurts. In 10 species with parallel weight data, linear length patterns coincide with weight growth spurts but appear at younger ages as predicted by scaling relationships. This indicates that weight and length growth spurts in non-human primates are aligned rather than decoupled, with apparent absence of length spurts being a mathematical artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 and C81-C84 are based on systematic literature review presented in Table 2 and Appendix 1-table 1. The reanalysis of published data (C58-C59) provides direct empirical support for the scaling hypothesis. The finding that linear length patterns appear younger than weight spurts (C60) matches theoretical predictions (C86). However, the review is described as \"non-systematic\" and comparisons with adolescence markers are noted as \"often coarse and non-conclusive\" (C61), limiting certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The commonly reported temporal lag between length and weight growth spurts in humans and other primates, where length spurts appear to precede weight spurts, is likely a mathematical artifact of comparing growth rates at different dimensions. Linear length growth rate peaks earlier than weight growth rate by definition due to scaling relationships, even when the spurts are perfectly synchronous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide a reinterpretation of prior findings (Hamada et al., 1999; Leigh, 2009; Tanner et al., 1990) based on the scaling framework. The mathematical argument is sound and supported by Figure 1F. The bonobo data (C38) provide empirical demonstration: female linear length growth peaks 1 year before scale-corrected length growth despite perfect alignment. This represents an important correction to prior interpretations in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "While human adolescent length growth spurts remain more pronounced than in other primates even on linear scale, the absolute peak velocities are similar between humans and great apes (9-11 cm/year in human boys vs 8-10 cm/year in male chimpanzees; bonobo forearm growth rates match or exceed human rates). Human uniqueness may derive from: (1) a juvenile period of particularly slow growth absent in other primates, (2) a more compressed/squeezed growth spurt, (3) delayed onset at higher body weight, and (4) accomplishing a larger proportion of adult length during the growth spurt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 provide nuanced comparison with humans, supported by literature citations (Bogin, 2020; Hamada and Udono, 2002; Leigh, 2001; Smith, 1993; Nowak-Szczepanska and Koziel, 2016). C73-C75 show similar absolute growth rates across species. C76-C80 identify specific differences that may explain greater detectability in humans. However, C80 involves speculation (\"may indicate\") about allometric differences. The analysis appropriately acknowledges human distinctiveness while challenging the categorical present/absent dichotomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The bonobo weight growth results largely match previous findings (Leigh, 1996) but show peak velocity occurring 1 year later in both sexes, indicating stronger human-like delay than previously assumed. Unlike previous studies on smaller samples, this study found adult sex differences in forearm length, indicating sexual size dimorphism in length exists in bonobos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 compare current findings with prior work. The weight growth comparison (C62-C63) is supported by data convergence with Leigh (1996) and the larger sample provides more precise age estimates. The finding of sexual dimorphism in length (C64) contradicts prior studies (Behringer et al., 2016a; Druelle et al., 2018) but is supported by the much larger sample size (135 individuals vs previous smaller samples) and statistical significance (Table 1, p<0.001 for sex difference in forearm length).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study analyzed 258 zoo-housed bonobos from European and North American zoos, including 220 zoo-born individuals with known birthdates and 40 wild-born individuals with estimated ages (average 2.5 years at capture). Adult males were significantly larger, heavier, and had higher lean body mass than females, with wide overlap between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 describe the study population and are supported by Table 3 and methods section. Sample sizes are substantial (8,355 weight measurements, 641 length measurements from 258 individuals across 19 zoos). The inclusion of wild-born individuals with uncertain birthdates (C91, C94) is a limitation acknowledged by the authors, who conducted sensitivity analyses excluding these individuals (Figure 2\u2014figure supplement 1) that yielded identical patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "A recent study provides initial evidence of an adolescent bone growth spurt in wild-living chimpanzees, corroborating the findings on bonobos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 cites Sandel et al., 2023 as independent corroboration. This represents convergent evidence from a different species (chimpanzees) and population (wild vs zoo), strengthening the generalizability of the findings. However, the claim only states \"initial evidence\" and the cited work is not evaluated in detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "When compared at comparable scales, adolescent growth spurts in bonobos and probably primates in general encompass similar changes in weight and length growth rates that correspond well with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 synthesizes the empirical findings from bonobos (C31-C40) with the literature review (C57-C61, C81-C84). The bonobo data directly demonstrate alignment when scale-corrected, and the literature review suggests this pattern extends to other primates. The inference to \"primates in general\" is appropriately qualified with \"probably\" given the non-systematic literature review and limited reanalysis of published data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The study employs three physiological markers to characterize developmental stages: DHEA/DHEA-S for adrenarche onset (juvenile period), testosterone for sexual maturation onset (adolescence), and IGFBP-3 which increases with testosterone and is linked to length and muscle growth during adolescent growth spurts in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 establish the biological rationale for using these markers, supported by citations to established literature (Hochberg, 2011; Bribiescas, 2010; Muller, 2017; Bogin, 2020; Bernstein et al., 2008; Juul et al., 1995; Miller, 2022). C14 appropriately uses \"might be\" for speculative aspects. These markers are standard in human growth studies and their application to bonobos is methodologically sound, though C14's speculation about DHEA inhibiting bone growth is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Previous findings show similar peak velocities in weight growth between humans and non-human primates during adolescent growth spurts. Weight growth (biomass production) rather than length growth is the resource-limited dimension relevant for life history trade-offs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by citations to Leigh (1996, 2001) and Schmidt-Nielsen (1984). C12 provides important theoretical justification for focusing on weight growth as the primary dimension for life history analysis, with length growth being derivative. This framing is consistent with energetic and life history theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Sexual dimorphism in adult body weight is exceptionally small in bonobos compared to other hominoids, and preliminary data suggested complete absence of sexual size dimorphism in body length. Previous work on limited samples (13 males, 23 females) suggested both sexes experience subadult weight growth spurts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 accurately represent prior literature (Leigh and Shea, 1995; Behringer et al., 2016a; Druelle et al., 2018; Leigh, 1996). C29 appropriately qualifies the length dimorphism claim as \"preliminary data\" and \"suggest,\" acknowledging the small sample sizes. These claims establish the scientific context and knowledge gaps that motivated the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "DHEA and testosterone levels declined after 30 years of age in bonobos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by data in Figures 3B and 3C showing declining trajectories after age 30. This represents a secondary finding about aging patterns in bonobos, though the sample sizes at older ages are likely limited and confidence intervals are wide in this age range.",
+    "result_type": "MINOR"
+  }
+]

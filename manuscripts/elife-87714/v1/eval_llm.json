@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "H3 variants form heterotypic nucleosomes and do not preferentially associate with specific H2A variants. Mass spectrometry analysis revealed that ~60% of H3.1 and ~42% of H3.3 nucleosomes contain both H3 variants, and western blotting showed no preferential association between H3.1 or H3.3 and specific H2A variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 provide quantitative MS data showing heterotypic H3 nucleosomes, while C19-C21 demonstrate through western blotting and MS that H3 variants do not preferentially associate with H2A variants. The data from Figure 1A-B directly support these conclusions with appropriate experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Most H3 modifications are not H3 variant-specific, with notable exceptions of H3K36 and H3K37 modifications preferentially associated with H3.3. Western blotting and mass spectrometry analyses showed that methylation and acetylation marks are present on both H3.1 and H3.3, though H3K36me and H3K37 modifications show enrichment on H3.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C33 collectively demonstrate through western blotting (Figure 1C) and MS analysis (Figure 1D-E, supplements) that H3 modifications are largely variant-independent. The exception for H3K36/H3K37 is well-documented with quantitative data. The contrast with previous reports (C25) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "H2A variants form homotypic nucleosomes with specific histone modification patterns. H2A.W associates with constitutive heterochromatin marks (H3K9me1/2, H3K27me1), H2A.Z with facultative heterochromatin marks (H3K27me3), and H2A/H2A.X with euchromatin marks (H3K36me3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are supported by western blot data in Figure 1F showing distinct enrichment patterns of histone modifications with specific H2A variants. The co-precipitation data (C40-C41) demonstrates complex interplay between marks. This contrasts sharply with the H3 variant results, establishing H2A variants as key chromatin state determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A 26-state ChromHMM model defines distinct chromatin domains in Arabidopsis. The model identifies constitutive heterochromatin (H1-6, 17% of genome), facultative heterochromatin (F1-6, 20%), euchromatin (E1-11), and intergenic regions (I1-3) based on histone modifications, variants, and genomic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 describe the ChromHMM analysis with supporting data in Figure 2 and supplements. The 26-state model is justified as parsimonious (C44, Figure 2-supplement 2A), and each chromatin domain is characterized by distinct features (accessibility, methylation, transcription). The genome coverage percentages align with previous estimates (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Chromatin states recapitulate H2A variant-histone modification associations observed in mononucleosomes. H2A.W and H3K9me1 define heterochromatic states, H2A.Z with H2AK121ub and H3K27me3 mark facultative heterochromatin, and H2A/H2A.X with H2Bub and H3K36me3 mark euchromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 demonstrate consistency between genome-wide chromatin states (Figure 2A) and mononucleosome biochemistry (Figure 1F). The emission probabilities in the ChromHMM model directly reflect the preferential associations observed in immunoprecipitation experiments, validating both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "H2A variants are the most important histone variants for defining chromatin states. Sub-epigenome modeling showed that removing H2A variants caused loss of several states (Jaccard index <0.7), while removing H2B variants had minimal effect. Removing all histone variants had stronger impact than removing all H3 modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by systematic sub-epigenome analysis (Figure 2F) comparing models with different components removed. The Jaccard index quantitatively demonstrates H2A variants' importance. The comparison with the 9-state model (C58) and the hierarchy of contributions (H2A > H3 > H2B) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Loss of DDM1 profoundly perturbs chromatin states, particularly in constitutive heterochromatin. Concatenated modeling of wild-type and ddm1 showed that constitutive heterochromatin is replaced by facultative heterochromatin and intergenic states, while facultative heterochromatin and euchromatin states remain relatively stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by concatenated ChromHMM analysis (Figure 3, Figure 3-supplement 1). The tissue/developmental stage comparison (C66) validates the approach, while the ddm1 analysis shows specific disruption of heterochromatic states with quantified genomic overlaps and Jaccard indices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "DDM1 binds both H2A.W and H2A.Z through the same conserved binding sites. Pull-down assays showed His6-tagged DDM1 co-precipitates H2A.W and H2A.Z but not H2A or H2A.X, with binding sites mapped to residues 100-123 and 639-673. The C-terminal tail of H2A.W is dispensable for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by systematic pull-down assays (Figure 3G-H, Figure 3-supplement 2). The experiments test full-length and truncated DDM1 fragments against different H2A variants, clearly demonstrating specific binding to H2A.W and H2A.Z through conserved regions. The deletion analysis (C75) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C92"
+    ],
+    "result": "DDM1 prevents replacement of H2A.W by H2A.Z at TE genes in a transcription-independent manner. ChIP-seq analysis showed H2A.Z enrichment over TE genes in ddm1, including non-transcribed TEs, supporting that the H2A variant exchange is not governed by transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C92 are supported by ChIP-seq data (Figure 4A) showing H2A.Z accumulation on both transcribed and non-transcribed TEs in ddm1. The key observation that non-transcribed TEs also accumulate H2A.Z (C84) directly supports the transcription-independent mechanism (C85, C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Transcription of TEs in ddm1 leads to acquisition of euchromatic chromatin states. Transcribed TEs show H2A.Z at TSS and H2A.X on gene bodies, with increased H3K36me3 enrichment correlating with transcription levels. Strongly expressed TEs accumulate euchromatic states while non-expressed TEs acquire facultative heterochromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by ChIP-seq and chromatin state analysis (Figure 4A-C, Figure 4-supplement 1-2). The data show clear correlation between TE transcription levels and chromatin state transitions, with appropriate quantification of histone modifications and state assignments across expression quartiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Histone variants and modifications combine to define chromatin states across developmental stages and cell types. The study demonstrates strongest associations between homotypic H2A variant nucleosomes and histone modifications, while H3 variants form heterotypic nucleosomes with weaker modification associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 represent the main conclusions synthesizing results from chromatin state modeling, biochemical analyses, and developmental comparisons. These are well-supported by the comprehensive dataset including ChromHMM models (Figure 2), mononucleosome analysis (Figure 1), and concatenated models (Figure 3-supplement 1A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C34"
+    ],
+    "result": "High H3K27me1 levels on H3.3 may result from demethylation of H3K27me3 or intermediate methylation states, and H3K36/H3K37 preference for H3.3 may relate to position 41 substitutions distinguishing H3.1 from H3.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27 and C34 are speculative interpretations ('likely product', 'might be related') of observed data. While the observations of H3K27me1 on H3.3 and H3K36/37 enrichment are supported by data, the mechanistic explanations are hypotheses requiring additional experimental validation. The citations provide context but not direct evidence for these specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The mechanism of H2A.W to H2A.Z replacement in ddm1 remains unclear. Two models are proposed: direct exchange by DDM1 (supported by convergent evolution with LSH) or indirect replacement due to loss of DNA methylation. Loss of H2A.W alone is unlikely to cause H2A.Z deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C108 present alternative mechanistic models that are speculative. While the observation of H2A.Z replacement is well-supported (C103), the mechanism is not definitively established. The evidence from H2A.W mutants (C108) argues against one possibility, but neither model is directly tested. Additional experiments would be needed to distinguish between mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "H2A variants may control chromatin writer/eraser activity with different affinities and efficacies. Examples include H2A.Z tail inhibiting H2B ubiquitin ligase, H2A.Z as major substrate for PRC1-mediated H2AK121Ub, and PRC2 preference for H2A.Z arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 propose a general model based on specific examples supported by citations (Surface et al. 2016, G\u00f3mez-Zambrano et al. 2019, Wang et al. 2018) and the current study's chromatin state data. While the general model (C116-C117) is somewhat speculative, the specific examples are well-documented. The proposal represents a reasonable synthesis of existing evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Chromatin state maintenance involves replication-dependent recycling of histones in dividing cells, with H3.1 sustaining H3K27me3 and H3K27me1 deposition. In non-dividing cells, these mechanisms become inactive, allowing chromatin state changes through H3.3 deposition and H2A.Z eviction by INO80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 synthesize literature on chromatin maintenance mechanisms with appropriate citations (Rever\u00f3n-G\u00f3mez et al. 2018, Jiang and Berger 2017, Jacob et al. 2014, Flury et al. 2023, Zhao et al. 2023, Willige et al. 2023). The logic connecting replication-dependent and -independent mechanisms is sound, though some aspects (C122, C124) involve inference beyond direct citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Unknown mechanisms may link H2A and H3 variant deposition to orchestrate PTM deposition in distinct chromatin states. A relationship between H3.3 and H3K36me1/2 was observed, and H3.3-H2A.Z dynamics appear coordinated in Arabidopsis and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 propose speculative models about coordinated histone variant deposition. While C129 is supported by citations showing H3.3-H2A.Z coordination, C128 is speculative ('possible preference'), and C130-C131 explicitly acknowledge unknown mechanisms. These represent hypotheses for future investigation rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on chromatin structure, histone variants, and their roles in transcription and chromatin organization. This includes established knowledge about nucleosome composition, histone variant diversity, ChromHMM applications, and variant-specific associations with chromatin domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 represent well-established background knowledge supported by appropriate citations to foundational and recent literature. These provide context for the study but are not novel findings. All claims are appropriately referenced to primary literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C72",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background on DDM1 function and evolutionary context. DDM1 causes H2A.W.6 deposition to heterochromatin and binds H2A.W specifically. H2A.W evolved independently in plants from macroH2A in animals, though both associate with heterochromatin and their deposition depends on related remodelers (DDM1/LSH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C72, C78-C81 provide background on DDM1 and evolutionary context, all supported by appropriate citations including the authors' previous work (Osakabe et al. 2021). These establish the foundation for the current study's investigation of DDM1's role in H2A variant dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "H3.1 shows relative enrichment with constitutive heterochromatin modifications, consistent with H3.1 being the preferred substrate for H3K27me1 deposition by ATXR5/6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 confirm previous findings (Johnson et al. 2004, Jacob et al. 2014) with the current study's data. This represents validation of prior work rather than a novel finding, but provides important context for interpreting the H3 variant results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Specialized cell types like gametes likely harbor specific chromatin states not reflected in this study of vegetative tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is a reasonable prediction based on knowledge of gamete-specific histone variants (cited: Borg et al. 2020, 2021), but represents speculation about unstudied cell types. This appropriately acknowledges limitations of the current study's scope.",
+    "result_type": "MINOR"
+  }
+]

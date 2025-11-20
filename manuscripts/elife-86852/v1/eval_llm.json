@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors developed a dual-barcoding system for influenza virus that enables simultaneous measurement of viral transcription, progeny production, and viral genotype in single cells. Random nucleotide barcodes were inserted into the HA and NA genes near the 3' end of viral mRNAs using a duplicated packaging signal scheme. The barcoded viruses grew to similar titers as unmodified viruses and maintained barcode diversity across passages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C23 describe the development and validation of the barcoding system. The experimental design is well-documented with appropriate controls (C20, C21), and barcode diversity was verified through rarefaction analysis (C22, C23). The duplicated packaging signal approach is supported by citations to prior work (C19), and the system successfully captures both transcription and progeny production measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C12",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Viral transcription and progeny production are poorly correlated in single influenza-infected cells. Cells with the highest viral transcription often do not produce the most progeny. Progeny production is more heterogeneous than transcription (Gini coefficients 0.78-0.88 vs 0.46 for low MOI). At low MOI, cells with >25% viral transcripts produce no detectable progeny, while most progeny come from cells with moderate transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, C12, C58-C62 collectively demonstrate poor correlation between transcription and progeny production. The evidence includes quantitative Gini coefficients (C12, C54-C57), visual data from Figures 4 and 5, and specific observations about high-transcribing cells (C59, C60). The statistical analysis is appropriate and the findings are consistent across both MOI conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C84"
+    ],
+    "result": "Cells lacking NS gene expression exhibit aberrantly high viral transcription but produce no progeny. At both low and high MOI, many of the highest transcribing cells fail to express NS, and cells without NS have significantly higher mean viral transcription (p<0.01) compared to cells expressing all genes. This suggests NS acts as a negative regulator of viral transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C66-C69, C84 describe the NS gene phenotype with strong statistical support (C68, C146). The permutation test with 5000 iterations is appropriate for non-normal data (C145). The biological interpretation (C69) is reasonable given the known function of NEP (C70, C85, C86), though it remains somewhat inferential. The observation is consistent across both MOI conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C77",
+      "C78",
+      "C79",
+      "C88",
+      "C89"
+    ],
+    "result": "Viral gene absence and mutations only partially explain the discrepancy between transcription and progeny production. Even among cells expressing unmutated copies of all viral genes, progeny production remains highly variable (though less so than across all cells). This suggests cellular or uncharacterized viral factors also contribute to heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C77-C79, C88-C89 are supported by data in Figure 6 showing persistent heterogeneity even in cells with complete unmutated genomes. The Gini coefficients for this subset (0.68 for physical progeny) remain high, though lower than for all cells (0.78). The conclusion about additional factors (C79) is a reasonable inference from the unexplained variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Viral transcription is extremely heterogeneous across infected cells, with most cells having <10% viral transcripts but some exceeding 50%. At low MOI, ~40% of cells failed to express all eight viral genes, while fewer cells showed this deficit at high MOI, likely due to complementation. Each viral gene showed variable absence rates across cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 describe heterogeneity in viral transcription and gene expression, supported by Figure 2 and citations to prior work. The observations are consistent with established findings in the field (C36, C40). The explanation for reduced gene absence at high MOI through complementation (C41) is supported by appropriate citations. The data presentation is clear and quantitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Long-read sequencing of viral genomes at low MOI revealed that about one-third of infected cells expressed all eight genes without non-synonymous mutations. The remainder had missing genes, mutations, or both. Mutated virions typically had 1-3 non-synonymous mutations, and some had large internal deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe viral genome sequencing results supported by Figure 3. The sequencing coverage (131/254 cells, C43) is reasonable given technical limitations. The mutation frequencies and types are clearly documented. The observation of deletions (C47) is supported by citations to prior work. The data quality appears adequate with strand exchange affecting <1% of sequences (C125).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Progeny production is extremely heterogeneous across infected cells. At low MOI, nearly half of infected cells produced no detectable progeny, while a few cells each generated >10% of all progeny. Just 6 of 91 cells produced half the physical progeny, compared to 23 cells for half the transcripts. Gini coefficients for progeny (0.78-0.88) exceeded those for transcription (0.40-0.46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 quantify progeny heterogeneity with appropriate metrics (Gini coefficients, cumulative distributions). The data in Figures 4 and 4-supplement 1 clearly support these claims. The comparison between progeny and transcription heterogeneity is well-documented. Technical replicates were performed (C133) and detection limits established (C151).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Cells failing to express any viral gene produce little or no progeny regardless of transcription levels, presumably because the absent protein impairs virion formation. However, cells expressing all viral genes often still fail to produce detectable progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by Figure 5D. The inference about impaired virion formation (C64) is reasonable based on known viral biology, though the analysis is limited to cells expressing HA and NA (the barcoded genes). The observation that complete gene expression doesn't guarantee progeny production (C65) is important and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "At low MOI, both mutated and unmutated viruses produce physical progeny, but more infectious progeny come from unmutated genomes, likely because some mutations interfere with functions required for infection. Physical and infectious progeny production are more correlated (R=0.39) than transcription and progeny production (R=-0.14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe the relationship between mutations and progeny types, supported by Figure 5A and supplement. The Pearson correlation values are explicitly stated (C76). The interpretation about mutations affecting infectivity (C75) is a reasonable inference. The comparison of correlations is quantitative and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Infections were performed at low MOI (~0.15, empirical 0.17) with ~10,000 cells and high MOI (~0.6, empirical 0.59) with ~7,000 cells. Ammonium chloride was added after 1 hour to prevent secondary infection. Single-cell RNA sequencing was performed at 12 hours post-infection, capturing 254 infected cells at low MOI and 357 at high MOI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34 describe experimental conditions and are straightforward methodological details. The MOI calculations are appropriate, and the use of ammonium chloride is supported by citations (C29). The empirical MOI values (C32, C34) are calculated from the actual data. These are well-documented experimental parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study has several limitations: many cells are lost during single-cell RNA sequencing preparation, experiments used a cell line rather than differentiated airway cells, only one H1N1 strain was tested at a single timepoint, and single-cell RNA sequencing captures only a fraction of input cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C90-C92 acknowledge study limitations appropriately. These are honest assessments of the experimental system's constraints. The cell loss issue (C35) is supported by citations and is a known limitation of the technology. These limitations are important for interpreting the results but don't invalidate the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The NEP protein encoded by the NS gene exports viral ribonucleoproteins from the nucleus, terminating their transcriptional activity, and may mediate a switch from transcription to genome replication through direct protein-protein interactions with the viral polymerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C85-C87 describe established knowledge about NEP function, supported by appropriate citations to prior work (O'Neill et al., 1998; Bullido et al., 2001; Robb et al., 2009; M\u00e4nz et al., 2012). These are accurate representations of the literature and provide biological context for the NS gene observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C101"
+    ],
+    "result": "The findings suggest it is important to measure progeny production across airway cell types, as cells expressing the most transcripts may not produce the most progeny. Failure to express specific viral genes, particularly NS, contributes to the transcription-progeny discordance. Physical transmission bottlenecks may be further narrowed by heterogeneous progeny production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97, C101 present implications of the findings. These are reasonable inferences from the data, though they represent suggestions for future work rather than direct experimental results. The implications are logically connected to the observations and appropriately framed as suggestions rather than definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C125"
+    ],
+    "result": "A control virus with synonymous mutations was used to detect multiplets and strand exchange artifacts. Genetic tags enabled detection of transcriptomes from droplets with multiple cells and strand exchange during library preparation. Fewer than 1% of sequences were affected by strand exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118, C125 describe quality control measures. The use of genetic tags for detecting technical artifacts is well-designed. The strand exchange rate (<1%, C125) is quantified and acceptably low. These controls strengthen confidence in the data quality and demonstrate appropriate attention to technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Computational analysis used a reproducible Snakemake pipeline with STARsolo for alignment. Cells were called as infected using MOI-specific thresholds (1% for low MOI, 2.5% for high MOI). Viral genes were called as expressed if above the 99th percentile in uninfected cells. Statistical significance was assessed using non-parametric permutation tests with 5000 permutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C146 describe computational methods. The pipeline is publicly available (C138), enhancing reproducibility. The thresholds for calling infected cells (C142, C143) and expressed genes (C144) are reasonable and data-driven. The permutation test (C145) is appropriate for non-normal data. The statistical approach is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Prior work has shown heterogeneity in viral transcription, protein expression, mutations, genome replication, and progeny production across infected cells. However, most single-cell studies measure intracellular products rather than progeny virions, and prior progeny studies lacked measurements of other cellular properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11, C80-C83 accurately summarize prior work with appropriate citations. These claims establish the context and motivation for the study. The characterization of prior work's limitations (C11, C83) is fair and supported by the cited literature. This provides appropriate background for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The HA and NA segments were engineered using duplicated packaging signals with synonymous recoding to avoid RNA-RNA interactions. The G155E cell-culture adaptation mutation was included to enhance viral growth. Virus was generated by reverse genetics in 39 independent transfections and passaged at low MOI to maintain genotype-phenotype linkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C112 describe detailed molecular engineering and virus generation methods. The approach is based on established techniques with appropriate citations (Heaton et al., 2013; Gao and Palese, 2009). The rationale for each design choice is provided (e.g., C103 for G155E, C111 for low MOI passage). The methods are sufficiently detailed for reproduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Physical progeny were quantified by sequencing vRNA from supernatants at 12 hours. Infectious progeny were quantified by infecting new cells with supernatant and sequencing intracellular vRNA at 13 hours. Technical replicates were performed for both measurements. Barcodes were amplified, size-selected, and sequenced on Illumina MiSeq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C137 describe progeny quantification methods in detail. The distinction between physical and infectious progeny (C126, C127) is important and well-implemented. Technical replicates (C133) strengthen the measurements. The molecular biology protocols are standard and appropriate. The methods are reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Long-read sequencing data were processed with PacBio's ccs program requiring 0.99 accuracy. Consensus sequences were called using >50% frequency thresholds at both the CCS and UMI levels. Viral barcodes were error-corrected using UMI-tools. Detection limits were set at 1e-5 based on replicate correlation analysis. Progeny contributions were calculated as geometric means of HA and NA frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C154 describe bioinformatics methods with appropriate quality thresholds. The consensus calling approach (C148, C149) is conservative, requiring majority support at multiple levels. The detection limit (C151) is empirically determined from replicate data. The use of geometric mean (C153) is appropriate for combining HA and NA measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Cells contributing most to transcriptomic studies often represent aberrant non-productive infections that don't contribute viral progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is an important inference from the NS gene observations and the poor correlation between transcription and progeny production. This is supported by the data showing high-transcribing cells often lack NS and produce no progeny. The conclusion has significant implications for interpreting bulk transcriptomic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The method should be extensible to other systems and larger cell numbers. Recent studies have examined viral transcription/protein expression in airway cells and identified narrow transmission bottlenecks for influenza and SARS-CoV-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C98-C100 discuss future applications and cite relevant prior work on transmission bottlenecks. C93 is a reasonable speculation about method extensibility. The citations about transmission bottlenecks (C98-C100) are accurate and provide context for the study's implications.",
+    "result_type": "MINOR"
+  }
+]

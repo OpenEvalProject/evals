@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "LC axons in the cortex respond to unsigned visuomotor prediction errors. LC axonal calcium responses increase with visuomotor mismatches in a speed-dependent manner, respond to unexpected visual flow onsets during stationary periods, and scale with the magnitude of the absolute error between locomotion and visual flow speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 provide converging experimental evidence from two-photon calcium imaging showing LC responses to multiple stimulus conditions (mismatches, playback halts, visual flow onsets) with appropriate controls. The speed-dependence (C43), coupling-dependence (C42), and scaling with error magnitude (C48) provide strong support for the prediction error interpretation. Statistical comparisons between conditions are reported with appropriate controls for visual and locomotor confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "LC axons broadcast similar visuomotor prediction error signals across distinct cortical regions. Responses to visuomotor mismatches, visual flow, air puffs, and locomotion onsets were statistically indistinguishable between anterior (motor) and posterior (visual) cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by direct experimental comparison between two imaging window locations (Figure 2B-D) showing no significant differences in LC axonal responses across multiple stimulus types. This supports the broadcast hypothesis, though the sample is limited to two cortical regions and the number of anterior sites (n=9 FoVs) is smaller than posterior (n=31 FoVs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Optogenetic stimulation of LC axons has minimal direct effects on average calcium responses of layer 2/3 neurons in V1. While transient enhancement of visual flow onset responses was observed, averaging across full response duration showed no significant effects of LC stimulation on mismatch or visual flow responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are well-supported by experimental data comparing ChrimsonR-expressing and control mice (Figure 3D-H). The use of control mice without LC ChrimsonR expression effectively controls for visual effects of the laser. The lack of effect is consistent across different functional cell types (C59), strengthening the conclusion. However, the negative result depends on the sensitivity of calcium imaging to detect LC-mediated changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ChrimsonR-expressing mice showed reversed locomotion modulation of visual responses compared to controls, with visual responses suppressed rather than enhanced during locomotion. This reversal may reflect plasticity induced by earlier LC axon stimulation during the imaging session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by experimental data (Figure 3I) showing significant differences between ChrimsonR and control groups. However, C68 is speculative about the mechanism (plasticity vs. other effects). The interpretation that this reflects cumulative plasticity from earlier stimulation is plausible but not directly tested - an alternative explanation could be tonic effects of repeated LC activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Optogenetic LC axon stimulation during closed-loop visuomotor coupling facilitates stimulus-specific suppression of visual responses during locomotion. This effect is specific to nasotemporal visual flow (the reafferent direction), depends on high ChrimsonR expression levels, and requires visuomotor coupling rather than mere visual flow exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 provide strong converging evidence for LC-gated plasticity with multiple critical controls: direction specificity (C71), expression-level dependence (C72), coupling requirement (C73-C74), and behavioral controls (C76). The experimental design systematically tests alternative explanations. The comparison between closed-loop and open-loop stimulation (C73-C74) is particularly important for establishing that visuomotor coupling is necessary. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "LC-induced plasticity over minutes recapitulates the effects of visuomotor learning that normally occur over days of developmental training. Both LC stimulation and coupled training produce locomotion-speed-dependent suppression of visual flow responses with similar patterns across functional cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 are supported by comparison between newly acquired data (LC stimulation) and previously published developmental training data. The similarity in locomotion-speed dependence (C80-C82) and patterns across cell types (C83) strengthens the parallel. However, C79's control for dark rearing uses a different dataset (non-coupled trained mice), and the comparison involves different experimental protocols and potentially different analysis methods across datasets, which could introduce confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Validation of LC axon labeling and recording quality. GCaMP6s-expressing cells in the LC are tyrosine hydroxylase positive, and LC axonal fluorescence shows expected correlations with pupil diameter, responses to air puffs, and locomotion onset dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide important validation controls supported by immunohistochemistry (C33) and comparison with previous literature (C34-C36). The high correlation between axon segments within a field of view (C37) is documented but creates an analytical challenge that the authors address by pooling data within FoVs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C104"
+    ],
+    "result": "Optogenetic stimulation produces pupil dilation in ChrimsonR-expressing mice in a manner dependent on axon labeling density, likely due to antidromic activation of the LC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C104 are supported by experimental data (Figures 3C, 4B) showing expression-dependent pupil dilation. The inference of antidromic activation (C53, C104) is reasonable given the known effects of LC stimulation on pupil diameter, though direct confirmation of antidromic activation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Proposed working model: The LC integrates prediction errors across modalities to compute a global measure of prediction inaccuracy, broadcasting this signal to modulate cortical learning rates rather than directly driving plasticity. This allows adaptive control of internal model updating based on environmental volatility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C95 present a theoretical model that is consistent with the experimental findings but goes beyond what is directly demonstrated. The model makes specific claims about LC computation (integration across modalities, unsigned nature) and function (learning rate modulation) that are plausible interpretations but remain speculative. The data support that LC responds to prediction errors and facilitates plasticity, but do not directly test the integration, broadcasting, or learning rate modulation mechanisms proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "LC responses to locomotion onsets are larger than visuomotor mismatch responses and may reflect multiple sources including visuomotor prediction errors and internally generated movement signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by experimental data showing larger locomotion onset responses and their partial dependence on visuomotor coupling (C97). The acknowledgment of multiple potential sources (C98) is appropriately cautious. However, the interpretation remains somewhat uncertain as the relative contributions of different error types cannot be fully disentangled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The measured plasticity effects may not result entirely from LC output in V1 alone, as LC neurons are electrically coupled and have divergent projections. However, the functional impact strongly suggests a role in facilitating plasticity, potentially through molecular cascades or modulation of circuits outside layer 2/3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 provide important caveats about interpretation. C105 is supported by citation, and C106-C107 appropriately acknowledge limitations of the optogenetic approach. C108 offers plausible mechanistic explanations for how plasticity occurs despite minimal activity effects, supported by citations to GPCR signaling literature. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Proposed general principle: Catecholamines gate plasticity underlying predictive learning across all modalities, extending beyond reward learning to sensorimotor associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 proposes a broad generalization based on the current visuomotor findings and previous reward learning literature. While the parallel is conceptually appealing and the current data support the principle in the visuomotor domain, the claim of generality across \"all modalities\" exceeds what is directly demonstrated. This represents a hypothesis for future testing rather than a supported conclusion.",
+    "result_type": "MAJOR"
+  }
+]

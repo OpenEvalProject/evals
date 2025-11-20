@@ -1,0 +1,132 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C59",
+      "C60"
+    ],
+    "result": "The model demonstrates that activity-dependent regulation of channel voltage dependence alone is insufficient to assemble bursting activity from low-conductance initial states, requiring changes in channel density (maximal conductances) to attain activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly challenges this claim, stating 'I still have a bone to pick with the claim that activity-dependent changes in channel voltage-dependence alone are insufficient to attain bursting,' arguing that the same limitation applies to conductance-only regulation if parameters are chosen unreasonably. The reviewer remains 'baffled what exactly is the point that the authors are trying to make,' indicating fundamental disagreement with the interpretation of this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C47",
+      "C48"
+    ],
+    "result": "The timescale of half-(in)activation modulation significantly shapes the specific electrical activity patterns (period, interburst interval, spike height, maximum hyperpolarization) and intrinsic parameters that achieve a target activity profile, playing a general role in sculpting stable activity states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm this finding. The editor states the model 'convincingly demonstrate[s] the potential functional importance of these mechanisms,' and one reviewer notes 'the timescale of these voltage-dependent shifts influences the final steady-state configuration of the model, shaping both channel parameters and activity features.' Another reviewer acknowledges the work 'provides results that are consistent with previous work performed by the same group.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46"
+    ],
+    "result": "Alterations in channel voltage dependence impact a neuron's ability to recover from perturbations, with eight models requiring some form of half-(in)activation modulation to stabilize after perturbation, and some models only recovering when changes were fast or slow.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these recovery findings without challenge. One reviewer notes that 'the results...demonstrate that activity-dependent regulation of voltage dependence can interact with conductance plasticity to enable neurons to attain and maintain target activity patterns.' The editor's note confirms 'the authors have adequately addressed the concerns raised in the public reviews.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C44"
+    ],
+    "result": "Bursters assembled with different timescales of half-(in)activation alterations use the same termination mechanism (hyperpolarization via IKCa) but achieve this through different parameter configurations, with bursters without half-(in)activation alterations having higher IKCa maximal conductance and more hyperpolarized half-activations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mechanistic details are not questioned by reviewers. One reviewer notes the work 'appears to be well performed,' and the editor confirms the model simulations 'convincingly demonstrate the potential functional importance of these mechanisms,' implicitly accepting the underlying mechanistic observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Fast shifts in half-(in)activation constrain the types of activity characteristics and intrinsic properties a neuron ultimately expresses, with these alterations manifesting over long timescales and exemplifying how processes operating on different timescales can influence one another.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer raises concerns about the scope of this conclusion, noting 'it would be helpful to clarify that this effect primarily applies during periods of adaptation, such as neurodevelopment or in response to perturbations, and not necessarily once the system has reached a stable, steady state.' The reviewer points out that 'the simulations do not test whether modifying the timescale can influence activity after the model has stabilized,' suggesting the generality of the claim may be overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C21",
+      "C22",
+      "C33",
+      "C34"
+    ],
+    "result": "The model successfully assembles bursters from random starting parameters when both mechanisms are active, with different starting parameters producing bursters with different final intrinsic properties, and different timescales leading through different paths in parameter space to distinct final activity patterns that all meet calcium targets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these basic modeling results. One reviewer states 'the modeling work appears to be well performed,' and the editor notes the work 'extends previous analyses of calcium-dependent homeostatic mechanisms' convincingly. These foundational results are implicitly accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The computational model is a single-compartment Hodgkin-Huxley type neuron with seven intrinsic currents, using intracellular Ca2+ concentrations as a proxy for activity with three Ca2+ sensors to differentiate between tonic spiking and bursting.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the model structure without objection. One reviewer notes 'implementing activity-dependent regulation of gating properties of ion channels is biologically relevant' and 'the modeling work appears to be well performed,' indicating acceptance of the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Neurons homeostatically regulate both channel number and voltage dependence through various mechanisms (post-translational modifications, subunit synthesis/degradation) associated with calcium-mediated second messengers, though most computational modeling has focused on channel number changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are not disputed by reviewers. One reviewer explicitly states 'implementing activity-dependent regulation of gating properties of ion channels is biologically relevant,' affirming the biological basis for the study. The editor notes the work 'extends previous analyses' of these mechanisms.",
+    "result_type": "MINOR"
+  }
+]

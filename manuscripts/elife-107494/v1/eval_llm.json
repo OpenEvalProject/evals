@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C95"
+    ],
+    "result": "Slc35g3 is an evolutionarily conserved gene among vertebrates, emerging in amphibians and conserved in primates. In mice, it comprises two coding exons on chromosome 11, while in humans it is located on chromosome 17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C95 are well-supported by phylogenetic database analysis (TreeFam) and direct genomic characterization. The chromosomal locations are verifiable facts, and the evolutionary conservation is demonstrated through comparative genomics data presented in Figure 1A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C115"
+    ],
+    "result": "Slc35g3 exhibits testis-specific expression beginning at 21 days postpartum in mice, corresponding to round spermatids. It is the only SLC35 family member showing testis-specific transcription, with Slc35b4 expressed earlier in spermatogenesis and replaced by Slc35g3 in later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C115 are supported by multiple lines of evidence including RT-PCR (Figure 1B), database analysis (Mammalian Reproductive Genetics Database), and scRNA-seq data (Mouse Cell Atlas). The temporal expression pattern and tissue specificity are well-documented with appropriate experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "SLC35G3 has 10 transmembrane domains and likely forms a homodimer based on structural predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by computational structure prediction using two independent methods (AlphaFold2 and TOPCONS). The homodimer formation is further supported by western blot data showing a band at approximately twice the expected molecular weight (Figure 1\u2014figure supplement 2). However, the homodimer claim remains somewhat speculative without direct biochemical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C20"
+    ],
+    "result": "SLC35G3 localizes to the Golgi apparatus in mouse testicular germ cells, as demonstrated by colocalization with Golgi marker GM130, and this localization is absent in Slc35g3-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C20 are well-supported by immunostaining data (Figure 1E and Figure 2\u2014figure supplement 2) showing clear colocalization with the established Golgi marker GM130. The absence of signal in knockout mice provides appropriate negative control validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C20"
+    ],
+    "result": "Slc35g3 knockout mice were generated using CRISPR/Cas9 with an 1804 bp deletion that removes the entire coding region, creating a null allele verified by RNA-seq and western blot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C16-C17, and C20 are well-supported by molecular characterization including sequencing data (Figure 2A-B), RNA-seq (Figure 2\u2014figure supplement 1), western blot (Figure 2C), and immunofluorescence (Figure 2\u2014figure supplement 2). The complete absence of both mRNA and protein confirms the null allele status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Slc35g3-/- mice exhibit grossly normal development and testis morphology with normal sperm motility, but males are completely sterile despite successful copulation, indicating SLC35G3 function is restricted to spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C18-C19, and C21-C25 are supported by comprehensive phenotypic characterization including testis weight measurements (p=0.42), histological analysis (Figure 2G), fertility testing (p=2.87\u00d710\u207b\u00b9\u2070), and computer-assisted sperm analysis (Figure 2\u2014figure supplement 4). The statistical analyses are appropriate and the complete sterility phenotype is robustly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Slc35g3-/- sperm exhibit abnormal head morphology with loss of hook shape, similar to Fam71f2-/- mice, but with a more severe fertility phenotype, suggesting sperm head morphology is not the sole cause of sterility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by quantitative morphological analysis using elliptic Fourier descriptors and principal component analysis (Figure 3). The comparison with Fam71f2-/- mice (average litter size 0 vs 4.4 pups/litter) provides strong evidence that additional factors beyond head morphology contribute to sterility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Slc35g3-/- sperm exhibit severe defects in zona pellucida binding and oolemma fusion in IVF assays, but can produce viable offspring when used at 10-fold higher concentration, demonstrating quantitative rather than absolute fertilization defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 are supported by comprehensive IVF experiments with appropriate statistical analyses (p=0.0079 for ZP binding, p=1.71\u00d710\u207b\u00b2\u00b9 for fusion). The dose-response experiments and successful generation of 10 live pups demonstrate that the defects can be partially overcome, providing important mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Slc35g3-/- sperm fail to migrate through the uterotubal junction, remaining in the uterus rather than reaching the oviduct, representing a primary cause of male infertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by fluorescence microscopy data from sperm migration assays using transgenic reporter mice (Figure 5). The clear presence of control sperm in the oviduct and absence of knockout sperm provides direct evidence for UTJ migration defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Loss of SLC35G3 results in reduced ZPBP1 levels and altered SPACA1 glycosylation patterns in testis, with PNGase F treatment revealing N-glycosylation-dependent differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by western blot analyses (Figure 6A-C) including enzymatic deglycosylation experiments. The differential effects of PNGase F treatment between testis and sperm lysates provide mechanistic insights into glycosylation defects. The comparison to Fam71f1-/- mice adds supporting context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Multiple zona pellucida binding proteins show altered expression or processing in Slc35g3-/- mice, including reduced CMTM2A/2B and LY6K in testis, and aberrant ADAM3 processing in sperm that is glycosylation-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 are supported by comprehensive western blot analyses (Figure 6D-E) examining multiple proteins involved in ZP binding. The PNGase F treatment experiments (Figure 6\u2014figure supplement 1) demonstrate that ADAM3 processing defects are glycosylation-dependent. The unchanged levels of TEX101 and t-ACE help rule out alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "LYPD4 shows decreased levels in Slc35g3-/- testis and loss of a lower molecular weight band in sperm, indicating protein processing errors or non-N-linked oligosaccharide defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by western blot data (Figure 6E) showing clear differences in LYPD4 band patterns. The inference about processing errors is reasonable given the known role of SLC35G3 in glycosylation, though the specific nature of the defect requires further characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "IZUMO1, an N-glycosylated protein essential for sperm-oolemma fusion, shows decreased levels in Slc35g3-/- testis and sperm, but can still relocate to the equatorial segment after acrosome reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by western blot data showing reduced IZUMO1 levels and immunofluorescence data (Figure 6\u2014figure supplement 2) demonstrating proper relocalization. The functional significance is supported by citation to established knowledge about IZUMO1's essential role in fusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "EQTN protein is present at normal levels in Slc35g3-/- sperm by mass spectrometry, but the antibody signal disappears in western blot, indicating aberrant O-glycosylation rather than protein loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are supported by the discrepancy between mass spectrometry (Supplementary file 1) and western blot data, combined with knowledge about the MN9 antibody recognizing both peptide and glycan structures. This provides strong evidence for glycosylation defects rather than protein absence, though direct glycan analysis would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "SPACA6 levels and band patterns are unchanged in Slc35g3-/- mice, distinguishing this model from other fusion-defective knockout models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by western blot analysis showing no differences in SPACA6. The comparison to other knockout models (Dcst1/2, Fimp, Izumo1, Sof1, Spaca6, Tmem95) that lose SPACA6 provides important mechanistic distinction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Lectin blot analysis reveals altered glycan structures in Slc35g3-/- testis and sperm, with increased PNA binding suggesting disrupted core 1 modifications and decreased LSL-N signals indicating reduced LacNAc structures, while mannose, fucose, and sialic acid patterns remain normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by comprehensive lectin blot analyses (Figure 7A-B) using multiple lectins with different specificities. The interpretation of increased PNA binding as indicating disrupted galactose modifications is consistent with known lectin specificity. The differential effects on different glycan structures provide mechanistic insights into SLC35G3 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SLC35G3 functions as a UDP-GlcNAc transporter, as demonstrated by rescue experiments in SLC35B4 knockout HEK293T cells where Slc35g3 but not Slc35b2 transfection restored GlcNAc-dependent glycosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by lectin blot rescue experiments (Figure 7C) in SLC35B4 knockout cells. The specificity is demonstrated by the failure of Slc35b2 (a different transporter) to rescue, while both Slc35b4 and Slc35g3 successfully restore LSL-N signals. This provides direct functional evidence for UDP-GlcNAc transport activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Human SLC35G3 contains a relatively common frameshift mutation (T179HfsTer27, allele frequency 1.88\u00d710\u207b\u00b3) found in 54 homozygous individuals, and AlphaMissense predicts 35 pathogenic missense mutations including F267L identified in human genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by population genetics data from gnomAD and computational predictions from AlphaMissense and PolyPhen-2. The allele frequencies and homozygote counts are verifiable database queries. However, the clinical significance of these mutations in humans remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Human SLC35G3 mutations T179HfsTer27 and F267L result in loss of UDP-GlcNAc transporter function, as demonstrated by failure to rescue glycosylation defects in SLC35B4-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by lectin blot rescue experiments (Figure 7D) showing that wild-type SLC35G3 rescues the glycosylation defect while the mutants do not. This provides direct functional evidence for loss of transporter activity, though the experiments are performed in a heterologous cell system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C96",
+      "C97",
+      "C98",
+      "C141",
+      "C142"
+    ],
+    "result": "SLC35G3 is a testis-specific UDP-GlcNAc transporter during late spermatogenesis, and its ablation causes abnormal glycoprotein processing leading to impaired sperm functions in UTJ passage, ZP binding, and oocyte fusion, resulting in male sterility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C96-C98, C141-C142 represent the main conclusions supported by the comprehensive experimental evidence including expression analysis, knockout phenotyping, IVF assays, protein analysis, and functional rescue experiments. All major claims are well-supported by multiple independent lines of evidence with appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C143",
+      "C144"
+    ],
+    "result": "Human SLC35G3 mutations F267L and T179HfsTer27 diminish UDP-GlcNAc transporter activity and may cause male infertility in carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 and C143-C144 are partially supported by in vitro functional assays showing loss of transporter activity, but the clinical implications for human male fertility remain speculative. No human patient data is presented, and the extrapolation from mouse phenotype to human infertility risk requires validation. The observed/expected ratio of 0.53 (C137) suggests some selective pressure, but this is insufficient to confirm infertility in human carriers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Normal ConA lectin binding indicates intact high-mannose N-glycan formation in the ER of Slc35g3-/- cells, suggesting SLC35G3 plays a more important role in glycan elongation rather than core structure formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are supported by lectin blot data (Figure 7B) showing normal mannose-containing glycans but altered elongated structures. The inference about SLC35G3's role in elongation rather than core structure is logical given the normal ER glycosylation but defective Golgi-dependent modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126",
+      "C129"
+    ],
+    "result": "Despite grossly normal spermatogenesis, Slc35g3-/- spermatozoa display multiple functional abnormalities, with SLC35G3-mediated UDP-GlcNAc transport being important for ZPBP1 stabilization and SPACA1 processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126 and C129 are supported by the combination of normal histology (Figure 2) with multiple functional defects (Figures 3-5) and protein analysis (Figure 6). The specific effects on ZPBP1 and SPACA1 are well-documented, though the complete molecular mechanisms remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Unlike most knockout mice with defective UTJ passage and ZP binding that lack ADAM3, Slc35g3-/- sperm retain ADAM3 but may have dysfunctional protein, or an unknown factor may be responsible for these defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 are supported by western blot data showing ADAM3 presence (Figure 6E) and comparison to published knockout models. However, the speculation about ADAM3 dysfunction or unknown factors (C132) remains unproven and requires further investigation to determine the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The observed/expected ratio of loss-of-function variants in SLC35G3 is 0.53, suggesting selective pressure, and assessment of sperm function in individuals with mutations would benefit understanding of human spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 is supported by population genetics analysis from gnomAD, and the inference about selective pressure is reasonable. Claim C138 is a proposal for future research that is logical given the findings, but represents speculation about potential benefits rather than a current result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Healthy offspring can be obtained by IVF with high concentration Slc35g3-/- sperm, suggesting ICSI might not be necessary for treating infertility caused by SLC35G3 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 is well-supported by experimental data showing 10 live pups from high-concentration IVF (Figure 4\u2014figure supplement 2). However, claim C140 about clinical implications for human SLC35G3 mutations is speculative, as it extrapolates from mouse data without human validation. The inference is reasonable but requires clinical confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "During spermatogenesis, Slc35b4 is expressed early but decreases and is replaced by Slc35g3 in later stages, possibly due to higher transporter activity requirements in spermatids or functional differences between the transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is supported by expression data (Figure 1\u2014figure supplement 1) and claim C120 is supported by quantitative transcriptomics (TPM values). However, claims C116-C119 and C121 are acknowledged as speculative by the authors themselves. The in vitro data (Figure 7C) shows no clear functional differences, leaving the biological rationale for the switch uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Since ADAM3 is no longer active in humans, LYPD4 deserves more attention for understanding human sperm-fertilizing ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is established knowledge about human-mouse differences in ADAM3 function. Claim C134 is a reasonable inference about research priorities given the species difference and the observed LYPD4 defects in Slc35g3-/- mice, though it represents a recommendation rather than an experimental result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "Further research on SLC35G3 and sperm glycoprotein synthesis has potential to contribute to understanding male infertility causes, developing treatments, and advancing contraceptive methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 is a reasonable statement about potential future applications based on the current findings. While speculative about specific outcomes, the potential is supported by the demonstrated essential role of SLC35G3 in male fertility and the identification of human mutations affecting transporter function.",
+    "result_type": "MINOR"
+  }
+]

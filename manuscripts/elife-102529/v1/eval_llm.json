@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Bulk nuclei RNA-seq analysis revealed that FT-expressing cells in cotyledons and true leaves show distinct gene expression profiles, with the biggest difference being between tissue types rather than cell types. True leaves of pFT:NTF lines showed lower expression of FT repressors compared to pSUC2:NTF lines, suggesting that lack of FT repression is crucial for specifying FT-expressing cells. The respective cells in true leaves have diverged more than comparable ones in cotyledons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C45 collectively demonstrate tissue-specific differences in FT-expressing cells using bulk RNA-seq with appropriate controls (p35S:NTF, pCAB2:NTF). The PCA analysis (C21-C23), marker gene validation (C24-C32), and differential expression analysis (C33-C45) provide converging evidence. Statistical significance is reported (e.g., C31: padj = 1.5 x 10\u207b\u2074), and biological replicates (n=3) are used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C81"
+    ],
+    "result": "Single-nucleus RNA-seq analysis identified a unique cluster (cluster 7) of companion cells with high FT expression. A total of 4,823 nuclei were captured and clustered into 11 groups, with cluster 7 containing nuclei with the highest FT expression and 268 differentially expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C52, C81 are supported by snRNA-seq data with adequate sample size (4,823 nuclei total, 1,173 from pFT:NTF, 3,650 from pSUC2:NTF). The clustering analysis using UMAP and identification of cluster 7 with high FT expression is well-documented with figures. The median of 149 genes per nucleus is relatively low but acknowledged as a limitation (C140-C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Cluster 7 cells express genes encoding small proteins including FLP1 and BFT. The median amino acid length of proteins encoded by cluster 7 genes is smaller than other clusters. Spatial validation using promoter-reporter fusions confirmed co-expression of cluster 7 genes with FT in distal minor veins, though expression patterns did not completely overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C54, C89-C92 are supported by snRNA-seq data (268 genes in cluster 7), cross-validation with prior TRAP-seq data (202/268 genes confirmed), and confocal imaging of promoter-reporter fusions. The spatial validation provides orthogonal evidence for the snRNA-seq findings. The acknowledgment of incomplete overlap (C92) demonstrates appropriate caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C82",
+      "C130"
+    ],
+    "result": "Genes involved in oxidative phosphorylation and ATP synthesis are enriched in cluster 7, suggesting that FT-expressing cells are metabolically active and generate substantial ATP, potentially for transport of sugars, solutes, and small proteins including FT into phloem sieve elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61, C82, C130 are supported by GO term enrichment analysis and expression data for mitochondrial complex genes. However, the functional interpretation (C61, C130) that ATP is used for FT transport is speculative and based on inference from known phloem function (C60). The enrichment analysis is appropriate, but the mechanistic link to FT transport requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cluster 4 represents phloem companion cells in the main vein that are active in solute transport, characterized by high SUC2 expression and enrichment of aquaporin genes. PIP2;6 promoter activity showed strongest signal in the main vein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by snRNA-seq data, GO term enrichment analysis, and spatial validation using pPIP2;6:FLAG-GFP-RPL18 reporter. The inference that these are main vein phloem cells active in solute transport (C66) is reasonable based on marker gene expression and spatial localization, though direct functional evidence is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cluster 5 consists predominantly of pSUC2:NTF-derived nuclei expressing defense-related genes including JA biosynthetic genes (LOX3, LOX4, OPR3, OPCL1) and the JA response regulator MYC2. This may represent a subpopulation of phloem cells involved in JA-dependent defense, though the expression may be induced by wounding during sample preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C72 identify a JA-responsive cluster supported by snRNA-seq data and prior literature (C70). However, the authors acknowledge (C72) that the nuclei isolation process (chopping without fixation) may have triggered wounding responses, making it unclear whether this represents a genuine cell subpopulation or an artifact. The lack of fixation is a significant methodological concern that undermines confidence in this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cluster 6 contains both phloem parenchyma and bundle sheath cells, with enrichment of genes involved in sulfur metabolism and glucosinolate biosynthesis, consistent with prior studies showing these pathways are active in bundle sheath cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by snRNA-seq data, subclustering analysis, marker gene expression, and GO term enrichment. The identification is validated by comparison with prior scRNA-seq data (C74) and known biology of bundle sheath cells (C76). The mixed cell type composition is appropriately resolved through subclustering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Clusters 1, 2, and 3 showed expression of mesophyll cell marker genes, suggesting contamination with mesophyll cells during sorting, possibly due to weak induction of FT and SUC2 promoters in mesophyll cells. Both genes were expressed at low levels in mesophyll protoplasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 acknowledge contamination with mesophyll cells, supported by marker gene expression in snRNA-seq and qRT-PCR validation in mesophyll protoplasts. The proposed explanation (C79) is reasonable and supported by prior work. This demonstrates appropriate quality control and transparency about limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C131",
+      "C132"
+    ],
+    "result": "Subclustering of cluster 7 revealed three subclusters, with subcluster 7.2 containing nuclei with highest FT expression and stronger companion cell identity (high SUC2, AHA3; low mesophyll markers). Subcluster 7.3 may represent developmentally younger companion cells that have not fully matured, based on the developmental gradient in leaf vasculature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88, C131-C132 are supported by subclustering analysis and marker gene expression patterns. The developmental interpretation (C88, C132) is speculative but reasonable given known vascular development patterns (C87). The negative correlation between vascular and mesophyll markers (C86) is consistent with prior scRNA-seq studies. However, the developmental trajectory interpretation would benefit from additional validation such as pseudotime analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C143",
+      "C144",
+      "C156"
+    ],
+    "result": "Overexpression of BFT using the SUC2 promoter severely delayed flowering under LD+FR conditions, contrasting with prior results under standard laboratory conditions. This suggests BFT proteins might be mobile or more functionally active under natural light conditions, and BFT may act as an anti-florigen under specific growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95, C143-C144, C156 are supported by flowering time measurements in T1 transgenic plants (n\u226531). The contrast with prior work (C94, C143) is appropriately noted. However, the mechanistic interpretation (C95, C144) that BFT is more mobile or active under LD+FR is speculative without direct evidence of protein mobility or activity. The result is significant but the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Overexpression of other cluster 7 genes (besides BFT) using the SUC2 promoter did not show noticeable changes in flowering time, though AT1G24575 overexpression slightly decreased leaf number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 report negative results for most cluster 7 genes tested, with only a minor effect for AT1G24575. The data are clearly presented and appropriate for publication as they help define which cluster 7 genes affect flowering. However, the lack of effect could be due to insufficient expression levels, functional redundancy, or other factors not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Motif enrichment analysis identified NIGT1.2 binding motif as most enriched in promoters of cluster 7 genes (p=9.3\u00d710\u207b\u2076). NIGT1 binding sites are located within/adjacent to conserved S1/S2 domains in the FT regulatory region, near CO binding motifs. Y1H screening confirmed that NIGT1.1, NIGT1.2, NIGT1.3, NIGT1.4, and HHO5 bind to FT promoter sequences containing S1/S2 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C98-C104 are supported by appropriate computational analysis (motif enrichment with proper controls: 268 cluster 7 genes vs. 3,000 random genes) and Y1H screening of 1,957 TFs. The identification of NIGT1 binding sites near functionally important FT regulatory elements is well-documented. The speculation about NIGT1 affecting CO binding (C103) is reasonable but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Overexpression of NIGT1.2 and NIGT1.4 using the SUC2 promoter delayed flowering under LD+FR conditions and downregulated cluster 7 genes including FT, BFT, and SAQR. Tobacco transient LUC assays showed that NIGT1.2 and NIGT1.4 directly repress FT promoter activity, with reduced effect when NIGT1 binding sites are mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C105-C111 are supported by multiple lines of evidence: flowering time measurements in T3 transgenic lines, RNA-seq analysis showing downregulation of target genes, and functional validation using tobacco transient LUC assays with mutated binding sites. The combination of genetic and biochemical evidence provides strong support for direct repression of FT by NIGT1s. Statistical significance is reported for flowering time (Figure 5A) and LUC assays (Figure 5C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "NIGT1.2 is expressed broadly in shoots while NIGT1.4 is expressed only in roots, suggesting NIGT1.2 is the major player in FT regulation. Neither NIGT1.2 nor NIGT1.4 are highly expressed in cluster 7, suggesting they prevent misexpression of FT in non-cluster 7 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by snRNA-seq data and prior literature. The inference that NIGT1s prevent FT misexpression in non-cluster 7 cells (C115) is speculative but reasonable given the expression patterns. However, this hypothesis would benefit from additional experimental validation such as cell-type-specific knockout experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "NIGT1 genes are induced under high nitrogen conditions and act as nitrate-dependent regulators of flowering. The nigtQ quadruple mutant showed enhanced FT and BFT expression under high nitrogen (+N) but not low nitrogen (-N) conditions, and bolted earlier than WT under 20 mM NH4NO3 but not 2 mM NH4NO3. However, leaf number at bolting was similar on media, suggesting the mutation enhanced growth speed rather than developmental timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C126 are supported by qRT-PCR data (n=6 biological replicates) and flowering time measurements under different nitrogen conditions. The nitrogen-dependent effect is clearly demonstrated. However, the interpretation is complex: on media, nigtQ bolted earlier in days but with similar leaf number (C123-C124), while on soil, nigtQ had slightly more leaves (C125). This suggests context-dependent effects that require further investigation. The conclusion that NIGT1s provide nitrogen-dependent fine-tuning (C126) is reasonable but the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Cell-type-specific knockdown of FT using amiRNA showed that pROXY10:amiR-ft (cluster 7 marker) and pSUC2:amiR-ft severely delayed flowering, while pPIP2;6:amiR-ft (cluster 4 marker) did not. This indicates that FT expressed in cluster 7 is biologically significant for flowering time regulation, though FT from other companion cells may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 provide functional validation that cluster 7-derived FT is important for flowering using cell-type-specific knockdown. The control showing that the effect is not due to promoter strength (C164-C165) is appropriate. However, the experiment uses T1 plants which may have variable expression levels. The acknowledgment that other companion cells may contribute (C167) is appropriate given that pSUC2:amiR-ft had a stronger effect than pROXY10:amiR-ft.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "True leaves, but not cotyledons, of pSUC2:NTF and pFT:NTF lines showed differences in expression of FT negative regulators, suggesting that FT expression is strongly repressed in most true leaf companion cells, contributing to the spatial expression pattern of FT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by bulk RNA-seq data showing differential expression of FT repressors between pSUC2:NTF and pFT:NTF lines in true leaves but not cotyledons. The inference about spatial patterning (C129) is reasonable but would benefit from spatial validation such as in situ hybridization or immunolocalization of the repressors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Nuclei from phloem cells with high aquaporin and JA-related gene expression (clusters 4 and 5) were not identified in previous protoplast-based scRNA-seq, possibly because these cells are highly embedded and difficult to isolate by protoplasting. This suggests SUC2/FT-expressing vasculature cells consist of functionally distinct subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 compare current snRNA-seq results with prior protoplast-based scRNA-seq, identifying novel cell populations. The speculation about difficulty in protoplasting (C134) is reasonable. The inference about water transport in phloem subpopulations (C138) is supported by aquaporin expression patterns but would benefit from functional validation. The overall conclusion about functional heterogeneity (C139) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "A limitation of the snRNA-seq analysis was shallow reads per nucleus (median 149 genes), likely due to low mRNA abundance in FANS-isolated nuclei from 2-week-old leaves (approximately 0.2 pg mRNA per nucleus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 appropriately acknowledge a significant limitation of the study. The calculation of mRNA per nucleus (C142) is straightforward and transparent. This limitation affects the depth of analysis but does not invalidate the major findings, as key results were validated by other methods (bulk RNA-seq, reporter assays, functional studies).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The authors deployed single-nucleus RNA-seq (snRNA-seq) combined with fluorescence-activated nuclei sorting (FANS) to isolate GFP-labeled cell-type-specific nuclei at a specific time of the day, overcoming technical challenges of isolating rare, time-specific FT-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 describes the methodological approach, which is well-documented in the Materials and Methods section and supplementary figures. The approach is appropriate for the biological question and addresses limitations of protoplasting for embedded phloem cells. The time-specific sampling (ZT4, morning FT peak) is clearly stated.",
+    "result_type": "MINOR"
+  }
+]

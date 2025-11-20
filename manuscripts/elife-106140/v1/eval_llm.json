@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C64",
+      "C65",
+      "C66",
+      "C11",
+      "C12",
+      "C13",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study employed an SSVEP frequency-tagging paradigm with 27 participants detecting coherent motion in random dots (4.29 Hz flicker) superimposed on emotional IAPS images (6 Hz flicker), with EEG recorded using a 32-channel system and analyzed using moving window approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C14-C88) are internally consistent and provide sufficient detail about experimental design, participant characteristics, stimulus parameters, data acquisition, and analysis procedures. These are standard methods appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Behavioral performance showed no significant difference across emotional distractor conditions (pleasant, neutral, unpleasant), with overall coherent motion detection accuracy of 55.73% \u00b1 2.94% and ANOVA showing F(2,78)=0.053, p=0.949.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by appropriate statistical testing (one-way ANOVA) with clear reporting of means, standard deviations, and p-values. The inference that emotional distractors exert similar influence is reasonable given the non-significant result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Whole-trial SSVEP analysis revealed clear spectral peaks at target (4.29 Hz) and distractor (6 Hz) frequencies, with target amplitude significantly greater than distractor amplitude (p=2.6\u00d710\u207b\u2074), both concentrated in occipital channels, but neither correlated with task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by spectral analysis and topographical data shown in Figure 2. The statistical comparison is appropriate, and the lack of correlation with performance (C22, C23) is properly tested and reported with p-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MVPA decoding of emotional distractor categories from 6 Hz SSVEP spatial patterns achieved above-chance accuracy for all pairwise comparisons (57.86%, 55.14%, 59.45%) and three-way classification (41.09%), with decoding accuracy independent of distractor amplitude but not correlated with task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 demonstrate successful decoding with appropriate statistical testing against chance levels and highly significant p-values (10\u207b\u00b3 to 10\u207b\u2077 range). The independence of decoding accuracy from amplitude (C30) and lack of performance correlation (C29) are properly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C43",
+      "C46"
+    ],
+    "result": "Both target and distractor processing exhibited rhythmic sampling at approximately 1 Hz (delta band), with spectral peaks at 1.08\u00b10.11 Hz for both target SSVEP amplitude and distractor decoding accuracy time series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C43, C46 are supported by moving-window spectral analysis shown in Figure 4, with consistent peak frequencies across both measures. The finding is replicated with different analysis parameters (C63), demonstrating robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "The relative phase between target and distractor sampling showed uniform distribution across participants (K-S test: p=0.92) but significantly correlated with task performance (r=0.6041, p=0.0008), with phase closer to \u03c0 predicting better performance and phase closer to 0 predicting worse performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42, C44-C45, C47 are well-supported by phase analysis (Figure 5) with appropriate statistical tests. The K-S test confirms uniform distribution at population level, while the strong correlation (r=0.6041) with performance is highly significant and illustrated with individual examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The authors predict that temporal separation of target and distractor sampling (opposite phases) minimizes competition and maximizes performance, while same-phase sampling maximizes competition and minimizes performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 represent theoretical predictions that are subsequently validated by the empirical correlation between relative phase and performance (C41-C42). The predictions are logical given the competition framework and are borne out by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The key mechanism underlying target-distractor competition is the temporal alignment of rhythmic sampling rather than the strength of target or distractor representations, as neither whole-trial target amplitude nor distractor decoding accuracy correlated with performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present a novel mechanistic interpretation supported by the pattern of results: lack of correlation at whole-trial level (C57-C58) contrasts with strong phase-performance correlation (C41), supporting the temporal alignment mechanism over representation strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The observed ~1 Hz rhythmic sampling is mediated by delta oscillations, which are increasingly recognized for cognitive functions including auditory scene sampling, temporal attention, stimulus expectation, and cognitive control, with the spatially overlapping target-distractor paradigm placing high demands on delta-band cognitive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 provide appropriate contextualization through citations to prior literature. The interpretation linking delta oscillations to the current findings (C54) is reasonable given the cited evidence and the task demands, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "When two stimuli overlap in space, there is no preferred phase relationship between their samplings at the population level, regardless of behavioral relevance, consistent with prior findings for attended objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 appropriately cite prior work and extend it to the target-distractor scenario. The uniform phase distribution (C35-C36) supports this generalization, though the inference about behavioral relevance being irrelevant is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Signal processing considerations demonstrate that the 1 Hz modulation is of endogenous origin rather than arising from signal processing artifacts, as sidebands are not visible due to low SNR, the 1 Hz peak dominates over the expected 1.71 Hz beating frequency, and results are robust to different analysis parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 address important methodological concerns with simulations and alternative analyses (Appendix figures). The demonstration that 1 Hz cannot be explained by signal processing alone (C62) strengthens the interpretation of endogenous rhythmic sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior literature establishes that visual attention samples information rhythmically via low-frequency oscillations, with sampling frequency depending on task demands (~8 Hz for single objects, ~4 Hz for multiple objects), and that distractors are processed despite suppression attempts, leading to target-distractor competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 accurately summarize prior literature with appropriate citations. These provide the necessary background for the current study's contributions, though the specific frequency claims from prior work differ from the ~1 Hz observed here.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors constructed the MLO-hProt dataset containing 939 human proteins associated with membraneless organelle (MLO) formation, identified by cross-referencing proteins with disordered residues (pLDDT \u226470) from UniProtKB with the CD-code Database. The dataset includes proteins with varying numbers of disordered residues involved in various MLO types, and is further classified into drivers (n=82) and clients (n=814).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C111-C116 describe a systematic dataset construction methodology with clear inclusion criteria (10% disordered residues, pLDDT \u226470 threshold, cross-referencing with CD-code Database). The resulting dataset size (939 proteins) and classifications are explicitly stated and supported by Figure 1A. The methodology is reproducible and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors constructed an expanded dMLO-IDR dataset from 780 Driver proteins in MLOsMetaDB, filtering for overlap between disordered and phase-separating regions (399 candidates across 40 species), then removing sequences with >50% identity to yield 341 non-redundant candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 describe a clear filtering pipeline with specific criteria (overlap requirement, 50% identity threshold) and report the resulting dataset sizes at each step. The methodology is documented in the Methods section and results are shown in Figure 4A. The approach is systematic and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C78",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors used the ESM2 protein language model (esm2_t33_650M_UR50D, 650M parameters) to predict mutational tolerance across protein sequences. ESM2 generates log-likelihood ratios (LLRs) for all possible amino acid substitutions at each position, which are condensed into a single ESM2 score per residue using an entropy-based formula. Lower ESM2 scores indicate higher mutational constraint and functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C78, C120-C122 describe the ESM2 methodology with appropriate technical detail. The model choice is justified (comparable accuracy to larger model), the scoring metric is mathematically defined (Equation 1), and the interpretation is clearly stated. Figure 1B illustrates the workflow. The approach is standard for protein language model applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The authors used a pLDDT threshold of 70 to distinguish ordered from disordered residues, following prior studies. This threshold reflects amino acid composition preferences for folded versus disordered proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe a standard threshold choice supported by citations to prior literature (Ruff and Pappu, 2021; Alderson et al., 2023) and validated by Figure 2\u2014figure supplement 1 showing amino acid composition differences. The threshold is widely used in the field and appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of human HP1\u03b1 demonstrates that structured domains (pLDDT >70) consistently show low ESM2 scores reflecting strong mutational constraints, while disordered regions show variable patterns. The KRK patch in the hinge domain exhibits low ESM2 scores despite being disordered, leading to classification of disordered regions into 'flexible disordered' (high ESM2) and 'conserved disordered' (low ESM2) categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 present a detailed case study of HP1\u03b1 supported by Figure 2A-B showing ESM2 scores, pLDDT values, and LLR predictions. The observation of the conserved KRK patch is supported by prior literature citations. The classification scheme (flexible vs. conserved disordered) is a logical inference from the observed bimodal distribution. The correlation with protein stability is supported by citations to prior ESM2 validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C79"
+    ],
+    "result": "Genome-wide analysis of MLO-hProt proteins reveals that folded regions (pLDDT >70) predominantly show low ESM2 scores (\u22640.5), while disordered residues (pLDDT \u226470) predominantly show high ESM2 scores (\u22652.0). However, a substantial subset of disordered amino acids (region I) exhibits low ESM2 scores, suggesting evolutionary conservation and functional significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 and C79 describe distributions supported by Figure 2C-D showing clear bimodal patterns. The identification of region I (conserved disordered residues) is a key observation supported by quantitative data. The interpretation is consistent with established knowledge about protein evolution (supported by citations). The finding of mutation-resistant amino acids in IDRs is a major result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors performed multiple sequence alignment (MSA) using HHblits against UniRef30 database with three iterations and E-value threshold of 0.001. Sequences with \u226520% identity to the reference were retained, yielding homologous sets ranging from tens to thousands per protein. Conservation scores were calculated as the ratio of conserved residues to total non-gap residues at each position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C123-C127 describe a standard MSA methodology with appropriate parameters (E-value threshold, identity cutoff, iteration count). The choice of HHblits is justified for disordered proteins with citations. The conservation score calculation (Equation 2) is clearly defined. Figure 3A illustrates the approach and shows the distribution of homolog counts. The methodology is reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C80"
+    ],
+    "result": "ESM2 scores strongly correlate with MSA-derived conservation scores across all structural order categories (pLDDT ranges). Bimodal distributions are observed in all categories, with strong negative correlation between ESM2 scores and conservation. In disordered regions, hydrophilic residues (Q, K, R) show lower ESM2 scores while hydrophobic residues (V, I) show higher scores, with patterns reversing in folded domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 and C80 present a comprehensive validation of ESM2 predictions against MSA conservation. Figure 3B-C show strong correlations with Pearson coefficients reported for each structural category. The amino acid-specific patterns are consistent with known conservation trends (supported by citations to Yang et al., 2023; Chavali et al., 2020). The bimodal distributions and correlation analyses provide strong evidence that ESM2 captures evolutionary conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C81"
+    ],
+    "result": "There is a progressive increase in conserved disordered residues from non-phase-separating proteins (nMLO-hIDR) to clients (cMLO-hIDR) to drivers (dMLO-hIDR and dMLO-IDR), with driver proteins showing notable reduction in flexible residues. This suggests that disordered regions involved in phase separation contain functionally significant and evolutionarily conserved regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 and C81 describe a clear trend supported by Figure 4A showing progressive shifts in ESM2 score distributions across protein categories. The statistical significance is demonstrated in Figure 4\u2014figure supplement 4. The inference that phase-separation-associated IDRs are more conserved is logical and supported by the quantitative data. This is a key finding linking conservation to function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Within driver proteins (dMLO-IDR), driving IDRs show significantly higher proportions of conserved disordered residues compared to non-participating IDRs, as confirmed by both ESM2 predictions and MSA-based conservation analysis. This demonstrates that ESM2 effectively identifies evolutionarily conserved functional sites enriched in phase-separation-driving regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 present a more refined analysis within driver proteins, supported by Figure 4C showing distributions for driving, participating, and non-participating IDRs. Both ESM2 and MSA methods show consistent enrichment of conserved residues in driving IDRs. Statistical significance is demonstrated. This validates ESM2's ability to identify functionally important regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C91"
+    ],
+    "result": "In driving IDRs, mutations to most amino acids are generally unfavorable (low, negative LLR values), with this trend more pronounced than in non-driving regions. Hierarchical clustering reveals that aromatic 'sticker' residues (W, F, Y) form a highly conserved group (Group I), supporting the expectation that amino acids essential to phase separation are evolutionarily conserved. Conserved amino acids encompass both 'sticker' and 'spacer' classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C91 present mutational landscape analysis supported by Figure 5A-B showing LLR matrices and UMAP clustering. The grouping of aromatic stickers is consistent with their known role in phase separation (supported by citations). Figure 5\u2014figure supplement 1 shows the comparison across protein types. The finding that both stickers and spacers are conserved is a key observation that challenges simple residue-level classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Traditional 'spacer' residues (G, A, P, S) in Groups II and III show high conservation and resistance to mutations, particularly hydrophobic mutations. This unexpected conservation of spacers suggests broader functional relevance than previously assumed, potentially reflecting conservation of sequence stretches rather than isolated residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present a surprising finding supported by Figure 5A showing conservation patterns for spacer residues. The observation challenges conventional understanding of spacer roles. However, C71 is explicitly labeled as a hypothesis/speculation by the authors, which is appropriate given the data. The finding motivates the subsequent motif analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C93",
+      "C128"
+    ],
+    "result": "ESM2 motifs, defined as continuous sequences with average ESM2 score <0.5, contain the majority of conserved amino acids. Conserved glycine has 97.9% likelihood of being in a motif, with similar high probabilities for other spacers (A: 99.0%, P: 93.1%) and stickers (Y, W, F). Many identified motifs have been experimentally validated as essential for phase separation. This suggests IDRs cluster conserved residues into motifs that act as functional units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77, C93, and C128 present the motif analysis supported by Figure 5C and Figure 5\u2014figure supplement 2A showing high co-localization of conserved residues within motifs. The quantitative probabilities are specific and data-driven. The experimental validation (C76) is documented in supplementary files. The motif merging procedure (C128) is clearly described. The word cloud (Figure 5D) visualizes the motifs. This is a major conceptual advance suggesting sequence-level rather than residue-level functional units.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Outside conserved motifs, IDRs display greater mutational tolerance with preference for hydrophilic residues. This structural arrangement\u2014functionally constrained motifs embedded in flexible regions\u2014is consistent with a generalized stickers-and-spacers framework where conserved motifs engage in stronger interactions driving phase separation while non-motif regions remain attenuated, supporting MLO formation with defined compositions and specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 present an interpretive framework. C95 is supported by the ESM2 data. C96 is a reasonable inference from the observed patterns. However, C97 and C98 involve mechanistic speculation about interaction strengths and MLO properties that are not directly tested in this computational study. The framework is plausible and consistent with prior work (Sood and Zhang, 2024), but lacks direct experimental validation of the proposed interaction mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Analysis of ClinVar data shows that single-point mutations with low LLR values are enriched among pathogenic variants, while benign variants show higher LLR values. Mutations within conserved motifs are significantly more likely to be pathogenic than those in non-motif regions, highlighting ESM2's potential as a screening tool for identifying clinically relevant residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 present clinical validation supported by Figure 5\u2014figure supplement 3A-B showing clear separation between pathogenic and benign variants based on LLR values and motif location. The statistical significance is demonstrated. This provides independent validation of the functional importance of conserved residues and motifs identified by ESM2. The inference about screening potential (C101) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C88"
+    ],
+    "result": "The authors clarify that Figure 4 results do not directly demonstrate preferential location of conserved residues in phase-separating regions, as these regions may be shorter than non-phase-separating regions, potentially resulting in higher absolute numbers of conserved residues outside phase-separating regions. Future studies with expanded datasets may be necessary to clarify this trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 and C88 represent an important limitation acknowledged by the authors in the Discussion. Figure 4\u2014figure supplement 6 shows that while the average probability p of finding conserved residues in phase-separating regions exceeds 0.5, the difference is not statistically significant. This honest assessment of the data's limitations is appropriate and demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The ESM2 approach is more direct than multiple sequence alignment as it identifies conserved residues without relying on alignment or presupposing that functional significance requires stable 3D structures. Many conserved residues identified exhibit low pLDDT scores, implying functional roles independent of stable conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 present a methodological advantage of the ESM2 approach. C89 is a valid comparison supported by the understanding of both methods. C90 is supported by Figure 2 showing conserved residues with low pLDDT. This addresses a key challenge in studying IDRs where traditional alignment-based methods struggle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C94"
+    ],
+    "result": "Residue-level classification may obscure functional roles in MLO formation. The authors suggest that perturbing conserved motifs in in vivo systems may offer a productive strategy for elucidating their biological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is a reasonable inference from the observation that both stickers and spacers are conserved within motifs. Claim C94 is a suggestion for future experimental work, which is appropriate speculation based on the computational findings. These represent logical next steps for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors suggest that conserved motifs may serve as priorities for future mechanistic and therapeutic studies. Future studies should use targeted mutagenesis, biophysical assays, and cellular perturbations to establish whether motifs act as discrete functional units or as components of broader sequence context required for biomolecular condensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C109, and C110 represent appropriate suggestions for future work based on the computational findings. These are reasonable research directions that would address the limitations of the current study and test the mechanistic hypotheses proposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors acknowledge key limitations: the analysis is entirely computational without direct experimental validation; specific biological roles of many conserved motifs remain uncharacterized; identified motifs are located within broader experimentally-validated phase-separating regions but represent only small fractions of these regions; and the current evidence does not constitute direct experimental validation of motif-level functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 represent honest and thorough acknowledgment of the study's limitations. The authors clearly distinguish between computational predictions, circumstantial support from prior experiments, and the need for direct experimental validation. This demonstrates appropriate scientific caution and sets realistic expectations for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establishing that IDRs play critical roles in phase separation and MLO formation, facilitate multivalent interactions, and that mutations in IDRs can disrupt phase behavior contributing to diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C12 present established background knowledge supported by extensive citations to prior literature. These are well-accepted facts in the field and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims describing the stickers-and-spacers framework and evolutionary perspective on IDRs, including the proposal that evolutionary pressure supports enrichment of low-complexity domains while preserving conserved stickers critical for condensate specificity and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 present established frameworks from prior literature (supported by citations including Sood and Zhang, 2024). These provide the theoretical foundation for interpreting the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establishing that evolutionary analysis of IDRs is challenging due to alignment difficulties, that protein language models like ESM2 can capture evolutionary constraints without relying on alignment, and that these models are increasingly used to analyze variant effects in IDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 present the rationale for using protein language models to study IDRs, supported by appropriate citations. The explanation of ESM2's training and capabilities is accurate and provides justification for the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C82"
+    ],
+    "result": "Summary claims stating the main findings: IDRs participating in phase separation contain conserved amino acids (including both stickers and spacers) that frequently form continuous motifs, with conservation evident through ESM2 predictions and MSA analysis, suggesting these motifs act as functional units under evolutionary selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C82 summarize the main findings of the study, which are supported by the detailed analyses in Figures 2-5 and the corresponding claims evaluated above. These represent accurate summaries of the supported results.",
+    "result_type": "MAJOR"
+  }
+]

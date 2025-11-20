@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The manuscript establishes the biological context and rationale for targeting TopBP1 condensates in cancer therapy. Claims describe the role of ATR signaling in cancer cells, the function of TopBP1 in forming condensates to amplify ATR activity, the limitations of current ATR inhibitors, and the potential of targeting biomolecular condensates as a novel therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by extensive citations to prior literature (C9-C34) and established knowledge in the field (C1, C3, C10, C18, C23). The authors appropriately cite foundational work on DNA damage response, ATR signaling, TopBP1 structure and function, and biomolecular condensates. The rationale for the study is clearly grounded in prior work, including the authors' own previous findings (C2, C29, C33, C34).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C99"
+    ],
+    "result": "TopBP1 condensates are significantly increased in SN-38-resistant HCT116-SN50 cells compared to parental HCT116 cells, with HCT116-SN50 cells being 50-fold more resistant to SN-38.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by experimental data in Figure 1\u2014figure supplement 1 showing statistically significant differences (p<2.2e-16) in TopBP1 foci numbers between cell lines using appropriate statistical methods (generalized linear model with Poisson distribution). Claim C36 is supported by citation to Candeil et al., 2004. This establishes a link between TopBP1 condensates and drug resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed an optogenetic high-throughput screening system to identify modulators of TopBP1 condensation, screening 4730 compounds and identifying AZD2858 as a lead compound that shows synergy with FOLFIRI chemotherapy at low concentrations (1 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screening methodology is well-described and supported by data in Figure 1. The optogenetic approach using Cry2-tagged TopBP1 (C37, supported by citation to Frattini et al., 2021) is validated. The screening identified >300 potential inhibitors (C38), which were narrowed to 131 compounds (C39), then to 10 compounds (C40), with AZD2858 showing the strongest synergy with FOLFIRI (C41, C42). The multi-stage screening approach with orthogonal validation methods (immunofluorescence and synergy assays) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "AZD2858 (100 nM) significantly reduces endogenous TopBP1 condensates induced by SN-38 and inhibits ATR/Chk1 signaling without affecting the ATM pathway or initial DNA damage levels (\u03b3H2AX) at 2 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by multiple complementary experimental approaches: immunofluorescence showing reduced TopBP1 foci (C43, Figure 2A with statistical significance p<2.2e-16), western blots showing decreased pChk1(S345) and pRPA32(S33) but unchanged pATM(S1981) and pChk2(T68) (C49, C50, Figure 2B), and unchanged \u03b3H2AX levels (C51, Figure 2B-C). The specificity for ATR pathway over ATM pathway is well-demonstrated. Similar results at 20 hr (C52) support consistency. Statistical analyses using linear modeling are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C93",
+      "C94"
+    ],
+    "result": "The mechanism of AZD2858 action on TopBP1 condensates is independent of its known GSK-3\u03b2 inhibitory activity, as demonstrated by experiments in GSK-3\u03b2-depleted cells and lack of GSK-3\u03b2 phosphorylation changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support GSK-3\u03b2 independence: (1) AZD2858 inhibits Chk1 phosphorylation equally in GSK-3\u03b2-depleted and control cells (C55, C56, Figure 2\u2014figure supplement 3A); (2) AZD2858+SN-38 does not increase pGSK-3\u03b2(S9) unlike insulin control (C57, Figure 2\u2014figure supplement 3B); (3) other more specific GSK-3\u03b2 inhibitors do not affect optoTopBP1 condensation (C59, Supplementary file 1). The conclusion that GSK-3\u03b2 is not involved (C60, C94) is well-supported by these orthogonal experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C61"
+    ],
+    "result": "AZD2858 disrupts TopBP1 self-interaction and its binding to ATR in mammalian cells, as demonstrated by TurboID proximity labeling experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim is supported by TurboID proximity labeling data (Figure 2D) showing drastic reduction in TopBP1 proximity with both recombinant and endogenous TopBP1, as well as with ATR, upon AZD2858 treatment. The TurboID approach is appropriate for detecting protein-protein interactions and proximity. However, the manuscript could benefit from quantification of band intensities and additional replicates (only 2 replicates mentioned).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C63",
+      "C102"
+    ],
+    "result": "In cell-free X. laevis egg extracts, AZD2858 increases TopBP1 and RPA chromatin recruitment, particularly when combined with CPT, possibly due to increased origin activation from S-phase checkpoint inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chromatin extraction data from X. laevis egg extracts (Figure 2E) support increased accumulation of TopBP1, RPA, and Pol \u03b5 on chromatin with CPT+AZD2858 treatment at 60 min (C62, C102). However, the interpretation that this is due to increased origin activation (C63) is speculative and appropriately qualified with 'may be due to' and supported by citation to Marheineke and Hyrien, 2004. The experiment was replicated twice, which is adequate for this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "AZD2858 acts primarily on the ATR signaling pathway through TopBP1 self-association inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C64) is well-supported by the collective evidence from C43-C63, including: (1) reduction of TopBP1 condensates, (2) inhibition of ATR/Chk1 signaling, (3) disruption of TopBP1-TopBP1 and TopBP1-ATR interactions, (4) independence from GSK-3\u03b2, and (5) effects on chromatin recruitment. The inference is logical and consistent with all experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "AZD2858 inhibits the SN-38-induced S-phase checkpoint, as evidenced by partially restored BrdU incorporation, heterogeneous effects on replication fork progression (DNA fiber analysis), and weakening of the S-phase checkpoint over time (6-12 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays support S-phase checkpoint inhibition: (1) BrdU/PI flow cytometry showing partially restored BrdU incorporation with combination treatment (C66, C67, Figure 3A); (2) DNA fiber analysis showing heterogeneous CldU tract lengths with some restoration of fork progression (C68, C69, Figure 3B, statistically significant with p<0.001); (3) time-course showing progressive weakening of S-phase checkpoint at 6 and 12 hr (C70, Figure 3C). The heterogeneity in DNA fiber data is acknowledged and appropriately discussed. Statistical analyses using ANOVA and t-tests are appropriate, though the non-normal distributions limit precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Pulse-chase experiments reveal that AZD2858+SN-38 combination allows cells to enter S-phase and progress to G2, suggesting attenuation of the S-phase checkpoint and activation of a compensatory post-replicative G2 checkpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The pulse-chase data (Figure 3\u2014figure supplement 1A-B) show increased S-phase entry (C72) and accumulation of BrdU-positive 4N cells (C73). However, the G2 accumulation increase was modest and did not reach statistical significance (p=0.0654, Figure 3\u2014figure supplement 1F). The interpretation of a compensatory post-replicative checkpoint (C74) is reasonable but speculative given the lack of statistical significance and absence of direct G2 checkpoint markers. Additional experiments (e.g., G2/M checkpoint markers, mitotic entry assays) would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C103"
+    ],
+    "result": "The AZD2858+SN-38 combination leads to persistent DNA double-strand breaks, increased \u03b3H2AX and cleaved PARP1 at later timepoints, and unscheduled DNA synthesis due to checkpoint abrogation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support increased DNA damage: (1) PFGE showing elevated DSBs (C75, Figure 3D); (2) western blots showing increased \u03b3H2AX and cleaved PARP1 at later timepoints (C76, Figure 3E); (3) integration with cell cycle data suggesting unscheduled DNA synthesis (C103). The conclusion that this results from checkpoint abrogation (C77) is well-supported by the totality of evidence. The experiments were replicated three times, providing good reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C115"
+    ],
+    "result": "AZD2858 combined with SN-38 or FOLFIRI induces apoptosis in HCT116 cells, as evidenced by increased sub-G1 population (40% increase), elevated cleaved PARP1 and caspase-3, accumulation of DSBs, and synergistic inhibition of cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays demonstrate apoptosis induction: (1) sub-G1 analysis showing 40% increase in apoptotic cells (C78, Figure 4A-B, p<0.0001); (2) western blots showing increased cleaved PARP1 and caspase-3 (C79, Figure 4C); (3) PFGE showing DSB accumulation (C80, Figure 4D); (4) SRB assays showing synergistic cell survival inhibition (C81, Figure 4E). The consistency across multiple assays and statistical significance strengthen the conclusion. The 48 hr timepoint is appropriate for detecting apoptosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Individual drugs (AZD2858, SN-38, FOLFIRI) are primarily cytostatic, but the AZD2858+FOLFIRI combination becomes cytotoxic at higher doses in cancer cells (HCT116, CT-26) but not in untransformed colorectal cells (CCD 841 CoN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PI/Hoechst labeling experiments (Figure 5\u2014figure supplement 1A-C) demonstrate cytostatic effects of individual drugs and dose-dependent cytotoxicity of combinations in cancer cells. The lack of synergy in untransformed CCD 841 CoN cells (C84, Figure 5\u2014figure supplement 2) suggests cancer cell selectivity. However, only three independent experiments are shown for CCD 841 CoN, and the variability across experiments is notable. Additional replicates and mechanistic investigation of selectivity would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The FOLFIRI+AZD2858 combination shows synergistic effects across multiple human CRC cell lines (HCT116, HT29, SW620, SW480), SN-38-resistant cell lines (HCT116 SN-6, HCT116 SN-50), and 3D spheroid cultures, with nearly complete spheroid elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Extensive synergy matrix analyses across multiple cell lines (Figure 5C-G) and 3D spheroid cultures (Figure 5B, E, G) demonstrate robust synergistic effects. The synergy in SN-38-resistant cell lines (C87) is particularly important, suggesting potential to overcome drug resistance (C88). The 3D spheroid data (C89) showing near-complete elimination is compelling and more physiologically relevant than 2D cultures. All experiments were replicated three times. The consistency across diverse cell lines and culture systems strongly supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "53BP1 forms biomolecular condensates and might interact with TopBP1, with AZD2858 reducing 53BP1 foci numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by citation to Kilic et al., 2019. Claim C46 about potential TopBP1 interaction is appropriately qualified with 'might' and supported by citations to Cescutti et al., 2010 and Bigot et al., 2019. The reduction in 53BP1 foci with AZD2858 treatment (C44, Figure 2\u2014figure supplement 1A, p<0.0001) is well-demonstrated. However, the functional significance of this observation is not explored, and whether 53BP1 condensate disruption contributes to the therapeutic effects remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "AZD2858 does not affect PML nuclear bodies, demonstrating specificity for certain condensate types, while arsenic treatment induces PML body formation as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence data (Figure 2\u2014figure supplement 1B) show no change in PML nuclear body numbers with AZD2858 treatment, while arsenic (positive control) induces PML bodies as expected (C48, supported by citation to Jaffray et al., 2023). This demonstrates specificity of AZD2858 for TopBP1 condensates over other membrane-less organelles. Statistical analysis using Kruskal-Wallis with Dunn's multiple comparison test is appropriate (p<0.0001 for arsenic comparisons).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The manuscript contextualizes findings within existing literature on AZD2858, TopBP1 in cancer, ATR inhibitors, and chemotherapy resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant literature to contextualize the findings. Citations cover: AZD2858's known activities (C90-C92), TopBP1 overexpression in cancer (C95-C98), prior TopBP1-targeting compounds (C100-C101), ATR inhibitor mechanisms (C104-C107), FOLFIRI use (C110), and resistance mechanisms (C112-C114). The citations appear accurate and relevant. This provides appropriate context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "The authors propose that targeting TopBP1 assembly rather than ATR kinase activity may prevent resistance development and selectively inhibit ATR/Chk1 signaling while preserving other TopBP1 functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative hypotheses about potential advantages of the approach. Claim C108 is an inference from the data but lacks direct experimental support. Claim C109 hypothesizes resistance prevention but provides no resistance evolution experiments or kinase mutation analysis. Claim C111 proposes selective inhibition of ATR/Chk1 signaling while preserving other TopBP1 functions, but no experiments directly test whether replication or transcription functions are preserved. These are reasonable hypotheses for future work but are not experimentally validated in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background on Alzheimer's disease (AD), establishing that AD is the leading cause of dementia, that abnormal biomarkers can appear years before symptoms in preclinical AD, that cognitive decline occurs across multiple domains as early as a decade before dementia, and that memory impairment is the predominant first symptom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by appropriate citations to established literature (Nandi et al., 2022; Sperling et al., 2011, 2014; Amieva et al., 2008; Knopman et al., 2021; Barnes et al., 2015). These are standard background claims about AD that are widely accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C50",
+      "C51",
+      "C52",
+      "C73",
+      "C74"
+    ],
+    "result": "The AppNL-G-F knock-in mouse model carries specific APP mutations (Swedish KM670/671 NL, Iberian I716F, and Arctic E693G), displays age-dependent A\u03b2 plaque accumulation and neuroinflammation, and reproduces neuropathological changes in preclinical AD without APP overexpression artifacts. The study confirms widespread A\u03b2 accumulation in AppNL-G-F mice, with significantly higher plaque area in 12-month-old compared to 6-month-old mice in both anterior and posterior brain sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by appropriate citations (Saito et al., 2014; Sasaguri et al., 2017; Masuda et al., 2016; Sakakibara et al., 2018). Claims C50-C52 are supported by immunohistochemistry data with statistical analysis (Figure 2\u2014figure supplement 1), showing significant age-dependent increases in A\u03b2 plaque area (p = 0.023 and p = 0.003). The characterization of the mouse model is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C75",
+      "C76"
+    ],
+    "result": "In the fear conditioning reinstatement paradigm, both control and AppNL-G-F mice showed successful acquisition of fear memory (increasing freezing rates during CS-US pairings) and extinction (decreasing freezing rates during CS-alone presentations). However, AppNL-G-F mice exhibited higher freezing rates in test 1 (p = 0.002), and significantly lower discrimination indices (DI) between test 3 and test 1 compared to control mice (p < 0.001), indicating a lower extent of reinstatement of fear memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C31, C75-C76 are supported by experimental data with appropriate statistical analyses (Figures 2B-H, Figure 2\u2014figure supplement 2). The study used one-way ANCOVA with age as covariate and Student's t-tests with adequate sample sizes (n=24-25 per group). The statistical results are clearly reported with F-statistics, p-values, and effect sizes. The interpretation that reinstatement involves both context and CS-specific memory reactivation (C76) is supported by the comparison of preCS and CS freezing rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The latent cause model, as proposed by Gershman et al., provides a computational framework for understanding memory modification in Pavlovian fear conditioning. The model assumes agents infer latent causes as sources of co-occurring events, with the prior following a Chinese restaurant process governed by concentration parameter \u03b1. Higher \u03b1 biases toward differentiation (inferring new causes) rather than generalization (inferring old causes). The model has been successfully applied to explain spontaneous recovery in humans and maladaptive decision-making in PTSD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17, C65-C72 are well-supported by appropriate citations to the original work (Gershman et al., 2010, 2017b; Gershman and Hartley, 2015; Norbury et al., 2022; Rescorla and Wagner, 1972; Gershman and Blei, 2012). These claims accurately describe the theoretical framework and prior applications of the latent cause model. The mathematical formulation and computational implementation are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Computational modeling simulations revealed distinct internal state trajectories between control and AppNL-G-F mice. In 6-month-old mice, both groups inferred two latent causes during acquisition, but control mice maintained higher associative weights during extinction. In 12-month-old mice, new latent causes were inferred during extinction in both groups, but control mice successfully updated weights after unsignaled shock while AppNL-G-F mice inferred redundant new causes. The model fit the data well with little systematic bias, except for underestimating reinstatement in 12-month-old control mice in test 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C88 are supported by computational modeling results (Figure 3, Figure 3\u2014figure supplement 1). The simulations replicated observed discrimination indices well, and model fit analysis showed comparable residuals between groups except in test 3 for 12-month-old mice. The parameter estimation procedure using MCMC with convergence criteria (Gelman-Rubin statistic < 1.1) is appropriate. However, the uniqueness of the parameter estimates is acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In 12-month-old mice, AppNL-G-F mice had significantly lower concentration parameter \u03b1 (p = 0.002) and lower stimulus variance \u03c3x\u00b2 (p = 0.008) than control mice. Both parameters were positively correlated with discrimination index (DI) between test 3 and test 1. Lower \u03b1 biased AppNL-G-F mice toward overgeneralization (inferring fewer latent causes), while lower \u03c3x\u00b2 biased them toward overdifferentiation (inferring new causes for similar observations). This resulted in AppNL-G-F mice inferring more latent causes after extinction with higher posterior probabilities, impeding weight updates and leading to lower reinstatement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39, C89-C97 are supported by computational modeling analysis with appropriate statistical tests (Mann-Whitney U tests, Spearman correlations) shown in Figures 4A-H and supplements. The interpretation linking lower \u03b1 to overgeneralization and lower \u03c3x\u00b2 to overdifferentiation is consistent with the mathematical properties of the latent cause model. The correlations between parameters and behavioral outcomes (DI) provide evidence for the mechanistic interpretation. However, the causal claims about how these parameters 'bias' behavior are inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In 6-month-old mice, AppNL-G-F mice had significantly lower \u03b1 (p = 0.012) than control mice, which was significantly correlated with DI. The \u03c3x\u00b2 was comparable between groups but also correlated with DI. The hyperparameter \u03b8 (response threshold) was significantly higher in AppNL-G-F mice. Unlike the 12-month-old group, correlations between parameters and DI were not preserved within subgroups, suggesting genotype as a confounder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C98-C101 are supported by computational modeling analysis (Figure 5A-B, supplements) with appropriate statistical tests. The finding of lower \u03b1 in 6-month-old AppNL-G-F mice suggests early emergence of internal state alterations before obvious behavioral deficits. The lack of within-subgroup correlations (Figure 5\u2014figure supplement 2) appropriately identifies genotype as a confounding variable. The interpretation of \u03b8's subtle effect is reasonable given the model's properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C132"
+    ],
+    "result": "In the reversal Barnes maze task, AppNL-G-F and control mice showed similar initial learning curves. However, during reversal training, control mice (especially 12-month-old) used significantly more confirmatory strategy (selectively exploring first and second target holes), while AppNL-G-F mice primarily used perimeter search strategy. In probe test 2, control mice showed DI significantly higher than 0.5 for the second target hole, while AppNL-G-F mice showed DI comparable to 0.5 and significantly lower than controls, indicating failure to modify spatial memories after reversal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49, C102-C105, C132 are supported by Barnes maze experimental data with appropriate statistical analyses (Figure 6, supplements). The strategy analysis using algorithm-based classification provides objective quantification of navigation approaches. The finding that AppNL-G-F mice achieved comparable performance through different strategies (perimeter vs. confirmatory) is well-documented. Statistical tests (mixed-design ANOVA, Wilcoxon tests) are appropriate for the data. The interpretation that control mice retained competing spatial memories while AppNL-G-F mice did not is supported by the DI analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C118",
+      "C119",
+      "C127",
+      "C128",
+      "C146"
+    ],
+    "result": "The study's main finding is that AppNL-G-F mice exhibited deficits in memory modification processes, specifically lower reinstatement of fear memory and failure to infer coexisting memories in the Barnes maze. Computational modeling revealed these deficits are due to altered internal states biased toward overgeneralization or overdifferentiation, leading to misclassification of observations into memories and failure to retain competing memories. This represents the first report of reinstatement deficits in AppNL-G-F mice and the first application of internal state modeling to characterize cognitive changes in this AD model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C118-C119, C127-C128, C146 represent the study's core conclusions, which are well-supported by converging evidence from behavioral experiments (fear conditioning and Barnes maze) and computational modeling. The behavioral deficits are statistically significant and replicated across two different paradigms. The computational modeling provides mechanistic insight into how altered parameters (\u03b1 and \u03c3x\u00b2) lead to the observed behavioral phenotypes. The novelty claims (C118, C146) appear justified as the authors cite prior work showing inconsistent results in fear conditioning with this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "No significant correlations were detected between discrimination indices in the reinstatement experiment and the Barnes maze experiment (12-month: \u03c1 = 0.062, p = 0.738; 6-month: \u03c1 = -0.029, p = 0.862), potentially due to differential effects of A\u03b2 accumulation on associative versus instrumental learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by appropriate statistical analysis (Spearman correlation). The lack of correlation between the two tasks is clearly reported with correlation coefficients and p-values. However, claim C107 is speculative\u2014the authors acknowledge this is a potential explanation but provide no direct evidence for differential effects on associative vs. instrumental learning. This limitation is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C141"
+    ],
+    "result": "The discussion proposes that dysfunctions in the VTA-hippocampus circuit, particularly in brain regions critical for fear memory (amygdala, hippocampus, medial prefrontal cortex, VTA), may underlie the observed deficits in AppNL-G-F mice. Evidence from prior studies shows hippocampal dysfunction in AppNL-G-F mice (lower CA1 firing rates, degraded CA3 gamma oscillations, disrupted place cell remapping) and VTA dysfunction in other AD models (Tg2576 mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C64, C141 are appropriately cited to relevant literature but represent speculation about neural mechanisms rather than direct findings of this study. The authors acknowledge they 'did not explicitly provide evidence about neural mechanisms' and that these are 'potential candidates.' While the speculation is well-grounded in prior literature, no direct neural measurements were made in this study to test these hypotheses. This represents a reasonable discussion of potential mechanisms but not a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C129",
+      "C130",
+      "C131",
+      "C144",
+      "C145"
+    ],
+    "result": "The discussion argues that identifying early cognitive decline in AD is critical but challenging due to heterogeneous phenotypes and limitations of standard tests. The authors propose that internal state modeling could provide deeper insights into cognitive deficits, serve as computational phenotypes, and contribute to early detection and evaluation of interventions in AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C117, C129-C131, C144-C145 are appropriately supported by citations to relevant literature (Duara and Barker, 2022; Jutten et al., 2023; Snyder et al., 2014; Hwang et al., 2023; Sutter et al., 2024; Kocagoncu et al., 2021; Montague et al., 2012). The argument for computational phenotyping is reasonable and the study provides proof-of-concept evidence. However, claims about future utility (C117, C131, C145) are speculative and would require validation in human studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The discussion contextualizes the findings within prior literature, noting inconsistent results in fear conditioning studies with AppNL-G-F mice and proposing that lower \u03b1 may explain discrimination deficits reported in AD models and patients, while lower \u03c3x\u00b2 might underlie delusions in AD dementia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C122 are appropriately supported by citations showing inconsistent prior results. However, claims C123-C126 are speculative connections between the current findings and other cognitive deficits in AD. While these are reasonable hypotheses grounded in the model's properties, they represent extrapolations beyond the current data. The authors appropriately use cautious language ('may, in part, explain' and 'might underlie') but these remain untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142",
+      "C143"
+    ],
+    "result": "The discussion acknowledges limitations of the latent cause model (built for fear conditioning, doesn't explicitly model other cognitive functions like attention or working memory) and proposes that future work should integrate computational models encompassing different cognitive functions. The authors also note that AD pathology involves multiple factors beyond A\u03b2 and suggest examining models with tau pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C140, C142-C143 appropriately acknowledge limitations and propose future directions. The recognition that the latent cause model doesn't directly address which parameters relate to Barnes maze performance (C137-C138) is an important limitation. The suggestions for future work (integrating models, examining tau pathology) are reasonable and appropriately cited. These represent honest assessment of the study's scope and limitations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A viral insertion screen in zebrafish identified dreammist (dmist), a novel gene whose loss results in reduced sleep and behavioral hyperactivity. The dmistvir/vir mutants showed decreased daytime sleep (~50% reduction) due to fewer sleep bouts, reduced sleep bout length at night, and increased daytime waking activity. These effects were not due to circadian rhythm alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C35-C43 collectively demonstrate the identification and characterization of dmist through a viral insertion screen. The behavioral phenotypes are well-documented with quantitative data (Figures 1A-F), statistical analysis across multiple experiments (Figure 1G), and controls for circadian effects (Figure 1\u2014figure supplement 2A-C). The methodology is clearly described and the results are reproducible across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The dmist gene encodes a novel, highly conserved vertebrate protein of 70 amino acids with an N-terminal signal peptide and C-terminal transmembrane domain. The viral insertion specifically reduced dmist expression by >70% without affecting flanking genes. Dmist orthologs show 38-84% sequence identity across vertebrates with three highly conserved motifs (QNLV, CVYKP, RRR), but no non-vertebrate orthologs were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are well-supported by RT-qPCR data (Figure 2B), computational predictions (Figure 2C), sequence alignments (Figure 2C, Figure 2\u2014figure supplement 1D), and BLAST searches. The molecular characterization is thorough with appropriate controls showing specificity of the viral insertion effect on dmist expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "dmist is specifically expressed in neurons throughout development in both zebrafish and mouse. In zebrafish, dmist transcripts are maternally deposited, detected in embryonic brain regions at 24 hpf, and widespread throughout the brain by 5 dpf. Expression does not oscillate with circadian rhythms. In mouse, Dmist_Mm co-clusters with neuronal genes and is highly correlated with neuronal markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by in situ hybridization data (Figure 2D), RT-qPCR time-course (Figure 1\u2014figure supplement 2D), hierarchical clustering analysis (Figure 2\u2014figure supplement 1E), and Pearson correlation analysis. The neuronal specificity is demonstrated across species with appropriate controls and multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Dmist-GFP localizes to the plasma membrane, and mutation of the signal peptide cleavage site (DmistA22W-GFP) prevents proper membrane trafficking, likely causing retention in the endoplasmic reticulum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by confocal imaging data (Figure 2E-F) showing clear differences in subcellular localization between wild-type and mutant Dmist-GFP constructs. The experiments validate computational predictions about protein structure and trafficking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A CRISPR-generated dmisti8 allele, predicted to be a null mutation encoding a truncated protein lacking the signal peptide and transmembrane domain, shows reduced night-time sleep due to fewer sleep bouts and increased waking activity. This phenotype persists into adulthood. The dmisti8 transcript levels were 60% lower than wild-type, consistent with nonsense-mediated decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are well-supported by molecular characterization (Figure 3A-B, Figure 3\u2014figure supplement 1A-B), behavioral tracking data in larvae (Figure 3C-I) and adults (Figure 3J-L), and statistical analysis across multiple experiments. The independent allele confirms the phenotype observed in the viral insertion line, strengthening the conclusion that dmist loss causes sleep deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Dmist shares 27-34% amino acid homology with Fxyd1/Phospholemman, including a conserved RRR motif, though it lacks a canonical FXYD sequence. Computational structural predictions using AlphaFold revealed structural similarities between Dmist and Fxyd1, suggesting Dmist may belong to a class of small, single-pass transmembrane ion pump regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by sequence alignment data (Figure 4A) and AlphaFold structural predictions. However, C70 is appropriately labeled as speculation. The homology is modest but significant, and the structural similarity provides a reasonable hypothesis for Dmist function, though the lack of the FXYD domain indicates Dmist is not a canonical FXYD family member.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "fxyd1 is expressed in cells along the brain ventricle and choroid plexus (not neurons). fxyd1\u039428/\u039428 mutants are viable without brain ventricle defects and show reduced night-time sleep mainly due to shorter sleep bouts, indicating impaired sleep maintenance rather than initiation. This contrasts with dmist mutants which have fewer sleep bouts (impaired initiation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by in situ hybridization (Figure 4C), behavioral tracking data (Figure 4D-F), and sleep architecture analysis. The distinction between fxyd1 and dmist phenotypes is clearly demonstrated. The contradiction with prior morpholino studies (C72) is appropriately noted and the genetic mutant data is more reliable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Pharmacological inhibition of the Na+/K+ pump with ouabain reduced night-time sleep and increased waking activity. atp1a3a, which is widely expressed in the larval zebrafish brain, is required for normal sleep. atp1a3a\u039419/\u039419 mutants showed hyperactivity throughout day and night, and large reduction in night-time sleep due to shorter sleep bouts. atp1a3b\u039414/\u039414 mutants showed increased daytime activity but minimal sleep phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C89 are well-supported by dose-response data (Figure 5\u2014figure supplement 1A), behavioral tracking (Figure 5A-D, H-J), in situ hybridization (Figure 5F, Figure 5\u2014figure supplement 1C), and sleep architecture analysis. The differential effects of atp1a3a vs atp1a3b mutations are clearly demonstrated. The contradiction with morpholino studies (C84) is noted. The stronger phenotype of atp1a3a mutants compared to dmist mutants is consistent with a modulatory vs. catalytic role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C104"
+    ],
+    "result": "Both dmist and atp1a3a mutants have elevated intracellular Na+ levels after PTZ exposure and cannot restore Na+ balance as quickly as wild-type siblings. Baseline brain Na+ levels in dmist mutants are elevated at night but not during the day, mirroring the timing of sleep disruption. This indicates Dmist is required for proper maintenance of brain intracellular Na+ levels specifically at night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92, C104 are supported by Sodium Green fluorescence measurements (Figure 6A-B) with appropriate controls and statistical analysis. The time-of-day specificity of the Na+ elevation in dmist mutants (C92, C104) is particularly compelling and matches the behavioral phenotype. The methodology is clearly described and the results are quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C110"
+    ],
+    "result": "dmist mutants show exaggerated sleep rebound following PTZ-induced neuronal activity. All dmisti8/i8 larvae showed increased rebound sleep compared to wild-type siblings, whereas only ~50% of wild-type larvae show sleep rebound after low-dose PTZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C110 are supported by behavioral tracking data after PTZ exposure (Figure 6C-E). The exaggerated homeostatic response is consistent with impaired Na+ pump function and provides additional evidence for Dmist's role in regulating neuronal excitability and sleep homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "dmist-/-; atp1a3a-/- double mutants have a sleep reduction similar to atp1a3a-/- mutants alone, demonstrating a non-additive genetic interaction. This non-additivity is also observed in dmist-/-; atp1a3a+/- animals, indicating it is not due to a floor effect. This genetic interaction is consistent with Atp1a3a and Dmist acting in the same pathway\u2014the Na+/K+ pump\u2014to influence sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by genetic interaction data (Figure 6F, Figure 6\u2014figure supplement 1) analyzed with appropriate statistical methods (LME model). The non-additive interaction is a strong genetic argument that Dmist and Atp1a3a function in the same pathway. The control for floor effects (C95) strengthens this conclusion. However, C96 is an inference that, while well-supported, could benefit from additional biochemical evidence of direct interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors propose that Dmist-dependent enhancement of Na+ pump function modulates neuronal excitability to maintain normal sleep behavior, based on observations that both atp1a3a and dmist mutants have elevated intracellular Na+ levels and non-additive effects on sleep amount at night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by experimental data (Sodium Green measurements and genetic interactions). However, C15 is appropriately labeled as a proposed mechanism/speculation. While the model is well-supported by the data presented, direct evidence of Dmist enhancing Na+ pump function (e.g., biochemical assays of pump activity) is not provided. The conclusion is reasonable but remains a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C111"
+    ],
+    "result": "The authors speculate that decreased night-time sleep in dmist mutants is due to a specific requirement for Dmist modulation of the Na+/K+ pump at night, and that exaggerated sleep rebound is a consequence of increased neuronal depolarization due to defective Na+ pump activity. Acute ouabain treatment after development impacts sleep, arguing against a purely developmental role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105 and C111 are explicitly labeled as speculation and represent mechanistic hypotheses. While C106 provides some evidence against a developmental role, the authors acknowledge they cannot exclude developmental effects in specific neuronal populations. The time-of-day specificity of Na+ elevation (C92) supports C105, but the precise mechanism remains unclear. Additional experiments (e.g., conditional knockouts, cell-type-specific rescue) would be needed to definitively test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C27",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript provides background on sleep as a conserved behavior across animals, the current gaps in knowledge about molecular sleep regulators, and the rationale for vertebrate genetic screens. The authors note that while many sleep genes are conserved across species, some vertebrate-specific regulators (like hypocretin/orexin) lack invertebrate orthologs, justifying vertebrate-specific screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C16-C19, C27, C30-C32 represent background knowledge and rationale for the study. These are appropriately supported by citations to the literature and represent accurate summaries of the field. The logic for conducting vertebrate screens is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C33",
+      "C34"
+    ],
+    "result": "The manuscript reviews prior genetic screens that identified sleep regulators in various model organisms, including Shaker in Drosophila, DMSR-1 in C. elegans, SIK3 in mice, and neuropeptides in zebrafish. The authors note that larval zebrafish is an attractive system for sleep screens due to genetic tractability, high-throughput assays, and conserved sleep genetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26, C28-C29, C33-C34 accurately summarize prior work in the field with appropriate citations. The characterization of zebrafish as a screening platform is well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The authors speculate that many other sleep genes remain to be discovered based on the success of finding dmist in a screen of only 26 lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is appropriately labeled as speculation. The logic is sound\u2014finding a novel sleep gene in a small screen suggests more remain undiscovered. However, this is a forward-looking statement rather than a result of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C107",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The manuscript discusses the known roles of FXYD1 and ATP1A3 in other systems, including cardiac function, movement disorders in humans and mice, and the relationship between extracellular ions and sleep/wake states. The authors note that high intracellular Na+ in mutants is likely accompanied by high extracellular K+, and that Na+/K+ pump activity can be modulated by circadian clocks and other factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103, C107-C109, C112-C115 represent discussion of prior work and mechanistic speculation. The citations are appropriate and the inferences (e.g., C109 about extracellular K+) are reasonable based on known pump function. C103 appropriately connects the zebrafish findings to human disease. These claims provide important context but are not primary results of the current study.",
+    "result_type": "MINOR"
+  }
+]

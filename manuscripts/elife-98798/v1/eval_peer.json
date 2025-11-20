@@ -1,0 +1,141 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors used well-tempered metadynamics simulations with two replicas to capture unbinding pathways of MDMB-FUBINACA and HU-210. They found that ligands follow similar pathways in each replica, with dissociation occurring via an opening formed by TM2, TM3, ECL2, and N-terminus for both ligands, matching previous metadynamics studies on cannabinoid receptors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raised concerns about metadynamics parameters, asking 'were multiple Gaussian heights/widths tried to see what, if any, impact that has on the unbinding pathway? That would be useful to help ensure all the relevant pathways were explored.' This suggests uncertainty about whether the simulations adequately sampled all relevant pathways. The authors' response indicated they addressed this, but the initial concern reflects methodological uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors compared TRAM and MSM predictions for binding thermodynamics and kinetics. They found that TRAM and MSM predictions of standard binding free energy are within 0.6 kcal/mol of each other, relative free energies match experimental values within 0.6 kcal/mol, and TRAM provides better predictions with less unbiased data compared to MSM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 initially questioned 'what advantage TRAM would hold' given similar thermodynamic values between methods, but after revision noted 'the authors have addressed most of the queries of the reviewer in an adequate manner.' Reviewer 2 also 'provided appropriate responses' after revision. The methodological comparison is accepted as valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors characterized distinct binding pocket interactions for MDMB-FUBINACA versus HU-210. They found that HU-210 shows stronger interactions with TM7 residues (especially S383^7.39 and F379^7.35) compared to MDMB-FUBINACA, with this pattern consistent across other NPS and classical cannabinoids. The unbinding kinetics differ by an order of magnitude, with HU-210 dissociation occurring in millisecond timescale versus microsecond for MDMB-FUBINACA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accepted these findings. Reviewer 1 stated the manuscript 'provides solid evidence for differences in the binding/unbinding of classical cannabinoid drugs from new psychoactive substances.' Reviewer 2 noted the authors 'provided appropriate responses' and Reviewer 3 confirmed 'the authors have addressed most of the queries.' The interaction patterns and kinetic differences are treated as established results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C57"
+    ],
+    "result": "The authors demonstrated that MDMB-FUBINACA bound CB1 shows higher allosteric coupling between the binding pocket and NPxxY motif compared to HU-210, leading to higher probability of triad interaction formation (Y397^7.53-Y294^5.58-T210^3.46). This was validated using both NRI analysis and mutual information calculations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 initially criticized that 'the last part of using a machine learning-based approach to analyse allosteric interaction seems to be very much forced, as there are numerous distance-based more traditional precedent analyses that do a fair job.' While the authors addressed this concern and Reviewer 3 acknowledged adequate responses, the initial skepticism about the necessity and appropriateness of the ML approach suggests some uncertainty about this analytical choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors described their system preparation methods, including modeling of missing residues using Rosetta, selection of brain membrane composition, use of CHARMM36m force field, and docking of HU-210 based on comparison to experimentally determined structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raised significant concerns about starting simulations from docked structures: 'The method section of the manuscript seems to suggest all the simulations were started from a docked structure. This casts doubt on the reliability of the kinetics derived from these simulations that were spawned from docked structure, instead of any crystallographic pose.' While the authors addressed this and Reviewer 3 accepted the response, the initial concern about reliability of kinetics from docked poses indicates methodological uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors provide background context on NPS as societal threats with greater adverse effects linked to higher \u03b2-arrestin signaling compared to classical cannabinoids, and present their hypothesis that distinct orthosteric pocket interactions cause differential allosteric modulation of intracellular dynamics facilitating triad interaction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this background and hypothesis framework. Reviewer 1 noted the work 'could aid in mitigating the public health threat these drugs pose' and Reviewer 2 stated the manuscript 'seeks to understand how new psychoactive substances...elicit more signaling through \u03b2-arrestin than classical cannabinoids' without challenging the premise. The hypothesis is treated as reasonable motivation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C9",
+      "C20",
+      "C21",
+      "C38",
+      "C40"
+    ],
+    "result": "The authors provide standard background information on CB1 receptor biology, GPCR function, cannabinoid structures, and binding affinities from the literature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are citation-based and were not questioned by any reviewer. They serve as accepted context for the study.",
+    "result_type": "MINOR"
+  }
+]

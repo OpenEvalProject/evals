@@ -1,0 +1,547 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study addresses a knowledge gap regarding the mechanisms behind long-lasting neurological changes following IAV infection, focusing on the hypothalamus as a central regulator of homeostatic responses during viral challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the background knowledge and rationale for the study. These claims are well-supported by the literature and clearly define the research problem: while IAV causes brain-mediated symptoms that normally resolve, severe infections can cause long-lasting neurological disturbances (C3), and the mechanisms are unknown (C4). The hypothalamus is appropriately identified as a key regulatory center (C5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C39",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The experimental design involved intranasal infection of female mice with H1N1 pdm09, with tissue collection at 3, 7, and 23 dpi for snRNA-seq analysis of the hypothalamus. Time points were selected to capture innate immunity (3 dpi), adaptive immunity (7 dpi), and recovery (23 dpi).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C39, C45-C50 describe a well-designed experimental approach with clear rationale for time point selection. The use of snRNA-seq to profile hypothalamic cell populations at multiple disease stages is appropriate for addressing the research question. The experimental design is adequately described and justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Infected mice exhibited weight loss starting around 4 dpi with maximum loss at 10 dpi, followed by complete recovery by 23 dpi. Viral mRNA was detected in lungs at 3 and 7 dpi but not at 23 dpi, while in the olfactory bulb, viral mRNA was detected at all time points including 23 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 present physiological and virological data supporting successful infection and recovery. The weight loss pattern is consistent with H1N1 infection models. The persistent detection of viral mRNA in the olfactory bulb at 23 dpi (C55) is notable and supported by the data, though the biological significance requires further investigation. Three animals that did not lose weight still showed viral mRNA (C56), confirming infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Single-nucleus RNA sequencing yielded 44,201 nuclei, which after quality control filtering resulted in 30,452 cells for analysis. Cells were classified as neuronal or non-neuronal based on marker gene expression, with non-neuronal cells expressing fewer genes and transcripts than neurons. A shift in cell densities was observed in non-neuronal populations at 3 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 describe the data processing pipeline and basic quality metrics. The filtering steps are appropriate, and the difference in gene/transcript counts between neuronal and non-neuronal cells (C60-C61) is expected. The shift in cell densities at 3 dpi (C63) is noted but attributed to technical variation in tissue collection, which is a reasonable interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Nine distinct non-neuronal cell populations were identified in the hypothalamus, including oligodendrocytes (mature and precursors), astrocytes, tanycytes, vascular cells, leptomeningeal cells, pericytes, and microglia, based on cell-type-specific marker genes and validated against published datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 describe comprehensive cell type identification using established marker genes and validation against multiple published datasets. The use of label transfer with high prediction scores (C75) strengthens confidence in cell type assignments. The identification of tanycytes (C69-C70) is well-supported by both marker expression and cross-dataset validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A cluster (NonN_4) expressing general neuronal markers but lacking discriminatory markers for specific neuronal subtypes was identified and tentatively classified as neuroblasts/progenitors based on marker gene expression and alignment with developmental datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 describe an unassigned cluster with ambiguous identity. While marker genes and alignment with developmental datasets suggest a neuroblast identity (C77-C78), the authors acknowledge low confidence and weak alignment. The cluster remains unassigned, which is appropriate given the uncertainty. Further validation would be needed to definitively classify this population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The neuronal population comprised 26 GABAergic and 30 glutamatergic clusters, including small populations of histaminergic, dopaminergic, HCRT-expressing, and MCH-expressing neurons. The cellular composition aligned well with previously published hypothalamic datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe comprehensive neuronal subtype identification. The detection of well-characterized hypothalamic populations (HCRT, MCH, histaminergic neurons) and good overlap with published datasets (C82-C83) validates the approach. The identification of an Agrp+/Npy+ co-expressing cluster (C84) adds to the characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Principal component analysis of pseudo-bulk data showed clear clustering by time point, with 3 dpi samples distinctly separated from other time points, 7 dpi samples intermediate, and 23 dpi samples mostly overlapping with controls, indicating transcriptional changes during the first 7 days of infection with partial recovery by 23 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 present PCA results showing temporal transcriptional dynamics. The clear separation of 3 dpi samples (C86) and intermediate positioning of 7 dpi samples (C87) support a strong early transcriptional response. The observation that one 23 dpi sample clusters with 7 dpi (C90) suggests inter-individual variation in recovery, which is a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Overall gene expression counts were lower at 3 dpi in both GABAergic and glutamatergic cells, with this effect lasting until 23 dpi in glutamatergic cells. Immune-related gene categories, including virus-related cytokines, IFN-response genes, and TLRs, were predominantly downregulated, strongest at 3 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 describe a surprising pattern of widespread gene downregulation, including immune genes. This is unexpected for a viral infection but is well-documented in the data. The downregulation of TLRs (C97) and cytokines (C96) at 3 dpi is particularly notable. The interpretation that this represents decreased gene expression affecting immune processes (C98) is supported by the data, though the biological mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Differential gene expression analysis at the cell population level confirmed strong downregulation at 3 dpi across GABAergic, glutamatergic, and non-neuronal cells. The number of downregulated genes decreased at 7 and 23 dpi, but GABAergic cells showed more DEGs at 23 dpi than at 7 dpi. Gene overlap analysis revealed that 27% of highly regulated genes at 3 dpi were shared across all three populations, with no DEGs detected in non-neuronal cells at 23 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C108 provide detailed quantification of differential gene expression patterns. The finding that non-neuronal cells show no DEGs at 23 dpi (C107) while GABAergic cells show increased DEGs (C101) is well-supported and indicates cell-type-specific temporal dynamics. The gene overlap analysis (C102-C106) provides insight into shared versus cell-type-specific responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "A down-sampled dataset with similar transcript counts between neurons and non-neurons confirmed the pattern of high downregulation at 3 dpi in all cells, with transcriptional responses at 23 dpi restricted to neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 address a potential technical confound (different transcript capture rates between cell types). The down-sampling analysis confirms that the observed differences are not artifacts of transcript count differences, strengthening the conclusion that neurons show persistent transcriptional changes while non-neuronal cells return to baseline by 23 dpi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Gene ontology enrichment analysis revealed that immune response genes were enriched at 3 dpi in all three cell populations but restricted to neuronal clusters at 7 dpi and only the glutamatergic cluster at 23 dpi. Neuropeptide signaling and hormone activity pathways showed similar patterns, lasting until 23 dpi only in neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 describe pathway-level analysis supporting the conclusion that long-term effects primarily affect neurons (C114). The temporal restriction of immune response enrichment from all cell types to only neurons is well-documented. This provides functional context for the differential gene expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Cluster-level analysis confirmed that the strongest transcriptional effects occurred at 3 dpi and lasted partially until 23 dpi. Several GABAergic clusters downregulated more genes at 23 dpi than at 7 dpi, and these clusters were spatially proximate in UMAP space. Glutamatergic populations showed similar patterns with strongest response at 3 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 provide cluster-level detail supporting the population-level findings. The observation that spatially proximate GABAergic clusters (C117) show similar temporal patterns suggests functional relationships. The consistency across glutamatergic populations (C118) indicates a general neuronal response pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "All 22 immune-related genes identified were regulated in microglia at 3 and 7 dpi, while other non-neuronal clusters showed regulation of less than half these genes at 3 dpi and none at 7 or 23 dpi. Some GABAergic cell types showed immune gene responses lasting until 23 dpi, indicating microglia as the main immune orchestrating cell population in the medial hypothalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 establish microglia as the primary immune-responsive cell type. The complete regulation of all 22 immune genes in microglia (C119) versus partial or absent regulation in other cell types (C120-C121) strongly supports this conclusion. The interpretation that microglia are the main immune orchestrating population (C122) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Microglia were the only cell cluster showing strong upregulation of genes at 3 dpi (75 genes) and long-lasting downregulation until 23 dpi (52 and 12 genes at 7 and 23 dpi respectively). Upregulated genes were involved in cell adhesion, signaling, differentiation, synapse organization, and apoptosis signaling, while downregulated genes participated in complement system, immune and antigen processing, microglia state genes, and protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 provide detailed characterization of microglia responses. The unique upregulation pattern in microglia (C123) contrasts with the general downregulation seen in other cell types. The functional categories of up- and downregulated genes (C125-C126) suggest a shift in microglia function rather than simple activation or suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Typical M1 and M2 microglia markers were not regulated during disease progression. Alternative markers including lncRNAs Meg3 and Ipw, and Fgf14, which are associated with pro-inflammatory microglia states, were enriched in microglia at 3 and 7 dpi, while anti-inflammatory markers were expressed in fewer cells during acute infection. This indicates a shift from homeostatic to pro-inflammatory state during 3-7 dpi, completely resolved by 23 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 address microglia activation state using alternative markers due to limitations of snRNA-seq (C128). The use of recently identified markers (C129-C130) and the pattern of pro-inflammatory marker enrichment with anti-inflammatory marker depletion (C131) support the interpretation of a pro-inflammatory shift (C132) that resolves by recovery (C133). This is a reasonable approach given the technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Oligodendrocytes and astrocytes showed 144-244 genes up- or downregulated at 3 and/or 7 dpi, accompanied by a shift in dimensional reduction space, especially at 7 dpi. Oligodendrocytes showed upregulation of stress-related and glucocorticoid pathway genes, while astrocytes did not. Transport pathway genes were significantly upregulated in oligodendrocytes at 3 and 7 dpi, with GABAergic transport genes uniquely upregulated at 7 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 describe cell-type-specific responses in oligodendrocytes and astrocytes. The shift in dimensional reduction space (C135) provides visual evidence of altered cell states. The differential response to glucocorticoid pathways between oligodendrocytes and astrocytes (C136-C137) and the specific upregulation of transport genes (C138-C140) are well-documented and suggest distinct functional roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Marker genes for the astrocytic 7-dpi cluster included Aldh1a1, Lrrc8a, and Zfhx3, with Zfhx3 showing particularly distinct expression. The GO term oxidoreductase activity was highly and uniquely enriched at 7 dpi, with oxidoreductase genes highly upregulated in the 7 dpi cluster. These results suggest that IAV infection induces slowly evolving transcriptional changes in oligodendrocytes and astrocytes, leading to distinct sub-populations at 7 dpi that disappear by 23 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 characterize the 7 dpi astrocyte subpopulation. The identification of specific marker genes (C141-C142) and the unique enrichment of oxidoreductase activity (C143-C144) are well-supported. The interpretation that these represent slowly evolving changes that resolve by 23 dpi (C145-C146) is consistent with the temporal dynamics observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "At the neuronal subcluster level, 6 of 26 GABAergic and 17 of 30 glutamatergic clusters contained significantly regulated genes at 23 dpi. Cluster-based case-control analysis showed similar dysregulation at 3 and 7 dpi but did not reproduce long-lasting changes, while cluster-free expression shift analysis detected mainly transcriptional changes in neurons at 23 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 compare different analytical approaches. The discrepancy between cluster-based and cluster-free analyses (C149-C151) highlights methodological considerations but both approaches support the conclusion of persistent neuronal changes. The cluster-free analysis detecting mainly neuronal changes at 23 dpi (C151) is consistent with other findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The same regulatory processes were regulated across many neuronal cell types, with pathways remaining altered at 23 dpi including translational processes in the cytosol, metabolic processes in mitochondria, and apoptotic processes. Most neuronal subpopulations responded with overall downregulation, but POMC+ neurons showed a different pattern with equal and strong up- and downregulation. Neuronal populations were the only cells affected until recovery, with changes including inhibition of metabolic and translational processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C157 synthesize neuronal responses across subtypes. The identification of common pathways (C152-C153) and the general downregulation pattern (C154) are well-supported. The distinct response of POMC+ neurons (C155) is notable and well-documented. The conclusion that neurons are uniquely affected long-term (C156) is strongly supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "This study represents the first comprehensive transcriptome profiling at single-nuclei level of the hypothalamus during peripheral IAV infection, detecting 26 GABAergic, 30 glutamatergic, and 9 non-neuronal cell types. Viral infection of the olfactory bulb using H1N1 pdm09 was reported, comparable to previous studies using the non-neurotropic H1N1 strain PR8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 establish the novelty and context of the study. The claim of being the first comprehensive single-nuclei profiling (C158) appears justified based on the literature review. The detection of viral infection in the olfactory bulb (C160) and comparison to PR8 studies (C161) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "In contrast to PR8 studies showing elevated cytokine expression at 24 hr and 6 days post-infection, this study found general downregulation of virus-related cytokines and IFN-response genes at 3 dpi with no differential regulation at 7 dpi. This indicates either no neuroinflammatory processes in the hypothalamus or that 3 dpi is too late to capture innate immune activation in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C164 compare findings to PR8 studies and offer two alternative interpretations. The contrast with PR8 studies (C162) is clearly documented, but the interpretation (C164) remains uncertain. The authors appropriately acknowledge that the 3 dpi time point may be too late to capture early innate responses, or that strain differences may explain the discrepancy. Earlier time points would be needed to resolve this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "A prominent feature is long-lasting downregulation of gene transcripts until 23 dpi in many neuronal populations, mainly related to mitochondrial processes (TCA cycle, ATP synthesis) and cytosolic protein translation. This could represent a defensive mechanism to escape viral entry/replication and protect from apoptosis, as TCA intermediates and ATP are beneficial for IAV replication. Alternative explanations include energy resource depletion from weight loss, though changes persist after weight regain. The presence of virus in the olfactory bulb until 23 dpi is suggested as a potential trigger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C176 present the key finding of persistent neuronal downregulation and offer multiple interpretations. The data supporting long-lasting downregulation (C167-C168) is strong. However, the mechanistic interpretations (C169, C172, C173, C176) are speculative. The observation that changes persist after weight regain (C174) argues against the energy depletion hypothesis. The viral persistence in the olfactory bulb (C175-C176) is intriguing but causality is not established. Additional experiments would be needed to distinguish between these hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Subanalysis of specific neuronal subtypes showed particularly strong response of POMC+ neurons compared to other subtypes. POMC+ neurons have been previously shown to be activated during inflammation and are speculated to be important for sickness behaviors, consistent with the observation that the POMC gene itself is strongly upregulated at 3 and 7 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C179 highlight the specific response of POMC+ neurons. The strong response (C177) is well-documented in the data. The connection to prior literature on POMC neuron activation during inflammation (C178) and the upregulation of the POMC gene itself (C179) provide converging evidence for POMC neuron involvement in the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Results demonstrate activation of pro-inflammatory genes in microglia with depletion of anti-inflammatory transcripts. General microglia signature genes were downregulated at 3 and partly at 7 dpi, indicating a shift in microglia homeostasis supported by activation of genes for cell adhesion, signaling, differentiation, and synapse signaling. Rather than an acute inflammatory process, the data suggest an increased alert state of resident immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C186 characterize the microglia response. The pro-inflammatory gene activation with anti-inflammatory depletion (C180) and downregulation of homeostatic markers (C181) are well-documented. The interpretation of an 'alert state' rather than acute inflammation (C186) is reasonable given the pattern of changes, though this is somewhat speculative. The supporting evidence from cell adhesion and signaling genes (C182) strengthens this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The most striking shift in gene expression was detected in oligodendrocytes and astrocytes at 3 and 7 dpi, causing separation into distinct sub-populations at 7 dpi. Oligodendrocytes showed distinct expression of Sgk1 and Fkbp5 at 7 dpi, both associated with glucocorticoid signaling. Given the bi-phasic pattern of glucocorticoid release during immune activation (initial peak at 2-3 dpi from pro-inflammatory cytokines, second peak at 7-8 dpi from T-cell cytokines), the 7-dpi oligodendrocyte subpopulation is likely driven by T-cell specific cytokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C197 provide detailed characterization of oligodendrocyte responses. The identification of Sgk1 and Fkbp5 as markers of the 7 dpi population (C188, C191) and their connection to glucocorticoid signaling (C189, C192) is well-supported by literature. The interpretation linking the 7 dpi response to T-cell cytokines based on the bi-phasic glucocorticoid release pattern (C196-C197) is reasonable and well-argued, though direct evidence of T-cell involvement is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "The astrocytic 7-dpi population was characterized by expression of Lrrc8a (a VRAC subunit involved in cell volume changes and glutamate release) and Zfhx3 (associated with body mass index, circadian rhythm, and sleep). The upregulation of Lrrc8a suggests changes in astrocytic morphology comparable to what has been reported in the hippocampus during peripheral IAV infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C205 characterize the 7 dpi astrocyte population. The identification of Lrrc8a (C198) and its function (C199-C200) is well-documented. The comparison to hippocampal changes during IAV infection (C201) appropriately contextualizes the finding. The identification of Zfhx3 (C202) and its associations (C203-C204) suggest potential functional relevance, though the connection to circadian and metabolic regulation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "Aldh1a1, which contributes to retinol metabolism and mediates GABA synthesis in astrocytes, was distinctively expressed in part of the astrocyte population. GABA transporters Slc6a1 and Slc6a11 were robustly expressed but not differentially regulated. Glutamate transporters Slc1a2 and Slc1a3 were highly expressed. An upregulation of oxidoreductase system genes was identified, which may be a regulatory feature enabling astrocytes to fine-tune transitions between microglia homeostatic and inflammatory states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C216 describe astrocyte gene expression patterns related to neurotransmitter metabolism and oxidative stress. The identification of Aldh1a1 (C206) and its functions (C207-C209) is well-documented. The expression of GABA and glutamate transporters (C211-C213) provides context for astrocyte function. The interpretation that oxidoreductase upregulation may regulate microglia states (C215-C216) is speculative but supported by the cited literature on oxidoreductase-microglia interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "The data suggest activation of two different transport processes in astrocytes: VRAC expression might facilitate glutamine release for neuronal uptake and conversion to glutamate or GABA, potentially supporting neuronal signaling affected by downregulation of TCA cycle genes. Simultaneously, transmembrane transporters might contribute to astrocyte swelling through glutamate uptake, which is connected to appetite regulation. The 7-dpi astrocyte population might be fundamental for sickness-related weight loss and gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C217-C222 present an integrated model of astrocyte function during infection. The identification of two transport processes (C217) is supported by the gene expression data. However, the functional interpretations are highly speculative. The proposed role in supporting neuronal signaling (C218-C219) and appetite regulation (C220-C222) are plausible but lack direct experimental evidence. These hypotheses would require functional validation through manipulation of these pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "The data show how cellular states of non-neuronal and neuronal populations in the hypothalamus change during peripheral IAV, suggesting tight co-regulation where one cell type affects another. This connectivity potentially ensures tissue protection by surveillant microglia while counterbalancing microglia activity through astrocytic regulation of antioxidant machinery. Non-neuronal cell types may support neurons with metabolic and signaling integrity through nutrient transport and neuropeptide supply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C223-C227 present an integrated model of cellular interactions during IAV infection. While the data clearly show coordinated changes across cell types (C223-C224), the specific mechanistic interactions proposed (C225-C226) are speculative. The model is plausible and consistent with the data, but direct evidence of cell-cell interactions and causal relationships is lacking. The claim of providing 'first evidence' (C227) is supported for the descriptive findings but not for the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239",
+      "C240"
+    ],
+    "result": "The methods describe ethical approval, animal subjects, virus preparation, infection protocol, tissue collection, RNA extraction, sequencing, and data processing including quality control, normalization, and integration steps using established computational tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C228-C240 describe the experimental and computational methods. The methods are generally well-described and use established protocols and tools. Ethical approval is documented (C228). The infection protocol (C233) and tissue collection timing (C234) are appropriate. The computational pipeline using Cell Ranger, Seurat, and appropriate QC steps (C237-C240) follows best practices for snRNA-seq analysis. The methods appear sufficient for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

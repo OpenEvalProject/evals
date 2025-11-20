@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C32"
+    ],
+    "result": "The Tus protein efficiently binds to TerB sequences in the MCF7 5C-TerB cell line, which contains a unique integrated copy of the pWB15 plasmid at chromosome 12. This binding was demonstrated using ChIP-qPCR showing >20-fold enrichment and PLA showing 19% of cells with positive signals versus 9% in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 and C32 collectively demonstrate specific Tus-TerB binding in human cells through multiple orthogonal methods (ChIP-qPCR, PLA, whole-genome sequencing). The quantitative data (C4, C5) show statistically significant enrichment, and the integration site is validated by sequencing (C3). The convergence of multiple techniques strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C33",
+      "C78"
+    ],
+    "result": "The Tus-TerB system creates an efficient site-specific replication fork barrier (RFB) in human cells. SMARD analysis showed accumulation of replication forks at TerB sites when Tus was expressed, with threefold enrichment of MCM3 and enrichment of FANCM at the barrier, without affecting global replication fork speed or direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15, C33, and C78 provide converging evidence from SMARD (C8, C9), ChIP-qPCR for MCM3 (C13) and FANCM (C14), and global replication analysis (C10, C11). The data demonstrate local fork stalling without global effects, supported by quantitative measurements and appropriate controls. The SMARD technique provides direct visualization of fork accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C35",
+      "C36"
+    ],
+    "result": "\u03b3H2AX accumulates locally at the Tus-TerB RFB site. Co-immunoprecipitation showed GFP-Tus and \u03b3H2AX interact, PLA showed 16% of HA-Tus cells had signals versus 3% controls, and ChIP-qPCR demonstrated enrichment strictly co-localizing with TerB sites (PP9, PP47), contrasting with spreading observed after Cas9-induced DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22, C35-C36 demonstrate localized \u03b3H2AX accumulation through co-IP (C17), PLA (C18), and ChIP-qPCR (C19). The comparison to Cas9-induced DSBs (C20) provides important context showing the signal is localized rather than spreading. The lack of global \u03b3H2AX signal (C21) supports the local nature of the response. Multiple orthogonal methods converge on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The Tus-TerB RFB activates a local, but not global, ATR-dependent checkpoint response. Tus expression did not activate global checkpoint markers (pRPA, pCHK1, pATR) or alter cell cycle progression, but ATR inhibitor treatment significantly reduced \u03b3H2AX enrichment at TerB sites, demonstrating local ATR-dependent H2AX phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 and C38-C40 provide strong evidence for local ATR activation through: (1) absence of global checkpoint activation by immunoblotting (C24, C38) and cell cycle analysis (C25), (2) validation of ATRi efficacy (C26), and (3) ATRi-dependent reduction of \u03b3H2AX at TerB sites (C27, C40). The experimental design with appropriate controls (HU treatment, ATRi) and multiple readouts supports the conclusion of local versus global checkpoint activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C61",
+      "C63",
+      "C76",
+      "C77"
+    ],
+    "result": "The integrated Tus-TerB system acts as an efficient site-specific RFB that activates local ATR checkpoint signaling, leading to localized \u03b3H2AX phosphorylation within a kilobase of the stall site, without triggering global checkpoint responses or affecting cell cycle progression. This supports a model of local management of fork stalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C61, C63, C76, and C77 represent the main conclusions synthesizing the experimental findings. These summary claims are well-supported by the collective data from SMARD, ChIP, PLA, immunoblotting, and cell cycle analyses presented in the other claim groups. The model of local versus global checkpoint activation is consistently supported across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The \u03b3H2AX signal is constrained to less than a kilobase from TerB sites by torsional stress generated when the replication fork encounters the barrier, and is not influenced by topological domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 proposes a mechanism (torsional stress) for the localized \u03b3H2AX signal based on the observed tight localization. While the localization is well-documented (C19, C20), the specific mechanism of torsional stress is inferred rather than directly demonstrated. The claim about topological domains not influencing the signal is speculative without direct experimental evidence testing this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C49",
+      "C50",
+      "C62"
+    ],
+    "result": "Local ATR activation and \u03b3H2AX phosphorylation could mediate recruitment of repair factors to resolve the RFB, potentially including factors involved in fork stabilization, reversal, cleavage, and homology-dependent restart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29, C49, C50, and C62 are speculative about downstream consequences of the local checkpoint activation. While FANCM enrichment is observed (C14, C57), the broader recruitment of repair factors and the functional consequences for RFB resolution are not directly demonstrated in this study. These claims represent reasonable hypotheses for future work rather than supported conclusions from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The localized ATR-dependent \u03b3H2AX response differs from ATM-dependent spreading after DSBs and suggests activation of a distinct local intra-S phase checkpoint in response to the single RFB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by the comparison between Tus-TerB-induced \u03b3H2AX (localized, C19-C20) and Cas9-induced DSB \u03b3H2AX (spreading, C20), along with citations to prior work on ATM-dependent spreading. The ATR-dependence is demonstrated by ATRi experiments (C27, C40). The distinction between local and global responses is well-established by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C79"
+    ],
+    "result": "In the Tus-TerB system, ATR is expected to be activated independently of ATRIP, likely due to local chromatin changes, by analogy to ATM activation independent of the MRE11 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44, C45, and C79 propose a mechanism for ATR activation based on the absence of known helicase-polymerase uncoupling and analogy to ATM activation. While the reasoning is logical, this mechanism is not directly tested. The claim acknowledges this is speculative and requires future investigation. Without direct experimental evidence for ATRIP-independent ATR activation or measurement of chromatin changes, this remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The Tus-TerB block is robust and not dissociated by helicases like PIF1. Fork cleavage is proposed as the most likely mechanism for RFB resolution, as fork reversal has been observed in yeast but not mammalian systems, and incoming forks could lead to termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C55 discuss RFB resolution mechanisms based primarily on prior work in yeast (C52, C54) and inference (C53, C55). While the robustness of the Tus-TerB block is supported by citations, the specific resolution mechanism in this human cell system is not directly demonstrated. The claim that fork cleavage is \"most likely\" is speculative without direct experimental evidence in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "FANCM is enriched at the Tus-TerB RFB site, but the temporal relationship between FANCM recruitment and \u03b3H2AX phosphorylation is undetermined. The 9-1-1 complex and TOPBP1 may also play roles at this checkpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 showing FANCM enrichment is supported by ChIP data (Figure 2\u2014figure supplement 2). However, C58 explicitly acknowledges uncertainty about the temporal relationship with \u03b3H2AX phosphorylation, and C59 about 9-1-1/TOPBP1 involvement is speculative. While FANCM enrichment is demonstrated, the mechanistic details and involvement of other factors require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C51",
+      "C74",
+      "C75"
+    ],
+    "result": "The Tus-TerB system from E. coli has been successfully used in yeast and mice to create artificial RFBs, and the Tus-Ter interaction causes polar site-specific arrest of replication forks in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C51, C74, and C75 describe prior work and established knowledge about the Tus-TerB system, supported by multiple citations. These claims provide important context for the current study but represent background rather than new findings. The citations appear appropriate and the claims accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C23",
+      "C30",
+      "C31",
+      "C46",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background on replication stress, checkpoint pathways, and the distinction between local and global checkpoint responses based on established knowledge and prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C23, C30-C31, C46, C64-C73 represent established scientific knowledge and prior work, supported by appropriate citations. These provide necessary background and context for the study but do not represent new findings. The claims accurately represent current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "A similar localized response without global checkpoint activation but with \u03b3H2AX signaling was previously observed in yeast with site-specific DSBs in G1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 accurately cites prior work in yeast (Janke et al., 2010) showing a similar phenomenon of localized response without global checkpoint activation. This provides important comparative context for the current findings and is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Future work should test whether the local S-phase checkpoint model applies to endogenous lesions such as R-loops, G-quadruplexes, and common fragile sites with trinucleotide repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 appropriately identifies important future directions for the research. This is a reasonable suggestion for extending the findings to physiologically relevant contexts, though it represents proposed future work rather than current results. The claim is appropriately framed as a future direction.",
+    "result_type": "MINOR"
+  }
+]

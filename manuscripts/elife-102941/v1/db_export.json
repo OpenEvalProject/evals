@@ -1,0 +1,2060 @@
+{
+  "submission": {
+    "id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-19T19:08:02.026989Z",
+    "updated_at": "2025-11-19T19:08:02.026989Z"
+  },
+  "content": [
+    {
+      "id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "content_type": "manuscript",
+      "content_text": "# Twist is the key to the gating of mechanosensitive ion channel NOMPC\n\n## Authors\n\n- Jingze Duan<sup>1</sup> ([ORCID: 0009-0008-4677-7583](https://orcid.org/0009-0008-4677-7583))\n- Chen Song<sup>1</sup> ([ORCID: 0000-0001-9730-3216](https://orcid.org/0000-0001-9730-3216)) \u2020\n\n### Affiliations\n\n1. Center for Quantitative Biology, Academy for Advanced Interdisciplinary Studies, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))\n2. Peking-Tsinghua Center for Life Sciences, Academy for Advanced Interdisciplinary Studies, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNOMPC, a tethered mechanosensitive ion channel belonging to the transient receptor potential (TRP) family, converts mechanical stimuli into ionic electric signals that excite neuronal cells (Yan et al., 2013). Previous investigations have demonstrated that a pushing force applied to the linker helix domain or the compression of NOMPC\u2019s ankyrin repeat (AR) domain can trigger channel opening (Wang et al., 2021). In this study, we explored the direct mechanical causes of NOMPC channel opening as well as the torsional properties of the AR domain, using all-atom molecular dynamics simulations. Our results indicate that a torque directed toward the extracellular side, exerted on the amphipathic TRP domain, is the primary factor driving channel opening. The coupling between compression and twisting of the AR domain ensures that both types of deformation can induce channel opening. Therefore, we propose a twist-to-open model, facilitated by the compression-twist coupling property of the AR domain, to provide further insight into the gating mechanism of the NOMPC channel.\n\n## Introduction\n\nMechanosensitive (MS) ion channels are critical components of mechanosensory transduction, playing an essential role in the perception of sensory stimuli in living organisms. In both vertebrates and invertebrates, MS ion channels are widely expressed in peripheral sensory neurons located near or within the surface tissues responsible for detecting mechanical stimuli. Their primary function is to receive and transduce mechanical signals from the external environment, ultimately converting these signals into electrical impulses. This intricate process, known as mechano-electrical transduction (MET), induces changes in neuronal excitability, thereby facilitating the transmission of vital information to higher-order neural centers (Hehlert et al., 2021).\n\nAmong these, NOMPC, a transient receptor potential (TRP) superfamily MS channel identified in Caenorhabditis elegans, Drosophila, and zebrafish, plays a central role in various mechanosensing-related activities, including soft touch perception, auditory function, and locomotion (Yan et al., 2013; Li et al., 2006; Effertz et al., 2011; Cheng et al., 2010; Sidi et al., 2003). A salient characteristic that distinguishes NOMPC from its counterparts is its unique intracellular domain, which comprises 29 ankyrin repeats (ARs) arranged into a distinctive spring-like conformation. This exceptional architecture, proposed to be associated with microtubules within cellular contexts, designates NOMPC as the only known standalone tether-gating MS channel (Jin et al., 2017). Consequently, in contrast to the extensively studied force-from-lipid MS ion channels (Kefauver et al., 2020; Jin et al., 2020), a detailed investigation into the specific molecular mechanism of NOMPC gating is poised to provide fundamental insights into the field of tethered MS ion channels.\n\nIn previous studies, it was proposed that compression of the intracellular AR domain, or a pushing force exerted on the AR domain from the intracellular side, could facilitate the opening of the channel (Wang et al., 2021; Argudo et al., 2019). Interestingly, the TRP domain, widely recognized as crucial in the gating process of TRP channels (Liao et al., 2013), was observed to tilt up when viewed along the membrane surface and rotate clockwise when viewed from the intracellular side (Wang et al., 2021). It appears that compression of the AR domain can generate both a membrane-normal pushing force and a membrane-parallel twisting force on the TRP domain (Wang et al., 2021; Argudo et al., 2019). However, it remains unclear whether the pushing force or the twisting torque acting on the TRP domain is the direct mechanical cause of channel gating. In this work, we determine the critical force component for the gating of NOMPC using all-atom molecular dynamics (MD) simulations. Our results suggest that the twisting force is the key factor in channel gating, while the compression-twist coupling of the AR domain ensures that the compression of the AR domain can also activate the channel.\n\n## Results\n\n### Membrane-parallel torsion force was observed on the TRP domain during the push-to-open gating process\n\nFor a comprehensive exploration of the atomistic gating details through MD simulations with an affordable computational cost, we employed a divide-and-conquer strategy as depicted in Figure 1a. Essentially, the membrane-protein simulation system was divided into two subsystems. System I was composed of the transmembrane (TM) region, intracellular linker helices (LH) domain, and AR 29. The TM region contains six TM helices (S1\u2013S6) in each chain. Four S6 helices of each chain collectively constitute the central pore of NOMPC, and the TRP domain is sandwiched between the TM domain and the LH domain. System II included the LH domain and 29 AR units. The four spring-like AR chains of the tetrameric protein were organized into a bundled structure, which is believed to be a crucial element in mechanical perception (Mosavi et al., 2004; Liang et al., 2013; Zhang et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig1-v1.jpg)\n\n**Figure 1.:** (a) The simulation systems of NOMPC. The NOMPC molecule was divided into two subsystems, denoted by the orange and purple rectangular boxes, for molecular dynamics (MD) simulations. The interface between the linker helices (LH) and the TRP domains is shown in a circular inset (bottom view). (b) The membrane-parallel (purple line) and membrane-normal (yellow line) components of the net forces on the TRP domain exerted by the LH domain. The error bars denote the standard deviations from two compressive trajectories (CI-1/2) and two free trajectories (FI-1/2). (c) The net forces on the TRP domain exerted by the LH domain. The gray quiver on each residue showed the net force exerted by the LH domain. The black shows the resultant force on the residues of the TRP domain. Two major points of force application, E1571 and R1581, are marked. $\u2a02$ represents the inward force component. The data were averaged for the four subunits by rotationally symmetrized around the protein center.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) The simulation systems and domain structures. (b) The pore dilation process in the push-to-open trajectory. (c) The motion tendency of the LH domain. The purple arrows represent each \u03b1-C, and the orange arrows represent the mass center of the LH domain. The data were averaged for the four subunits by rotationally symmetrized around the protein center. (d) The rotation of the TRP domain, projected in the XY plane (light purple line, positive values a clockwise rotation viewing from the intracellular side) and Z direction (dark purple line, the positive value meant a tilt-up rotation from intracellular side to extracellular side), respectively.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The size and color of each marker denote the magnitude of the corresponding pairwise FDA results labeled in the two sides. The circle marker and square marker show the FDA results between AR29-LH and TRP-LH, respectively.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** A superimposed quiver plot of the FDA results for each residue of the TRP domain, exerted by the LH domain, was calculated from the trajectories FI-1/2 and CI-1/2.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) The scalar FDA of the TM domain exerted by the TRP domain. The size of each marker indicates the magnitude of the corresponding pairwise interaction in FDA. The TM domain is subdivided into four regions with strong interactions, which are illustrated by circles of distinct colors: mint green for S1, violet for the S2-S3 linker, pink for the S4-S5 linker, and yellow for S6. (b) The quiver plot illustrates the membrane-normal component of the net-FDA of the TM domain exerted by the TRP domain. (c) Intracellular view and (d) side view of the structure. The regions of significant interactions are highlighted using the same color code as in (a).\n\nBuilding upon the previously proposed push-to-open model (Wang et al., 2021), we performed steered molecular dynamics (SMD) simulations for system I. In this context, a pushing/compressive force was applied to the AR29, pointing from the intracellular to the extracellular side (trajectories: CI-1/2). Consistent with our previous findings, the TM central pore of NOMPC exhibited a discernible dilation, accompanied by the upward tilt and clockwise rotation of the TRP domain (Figure 1\u2014figure supplement 1). The upward tilt was probably caused by the membrane-normal component of the applied mechanical force, while the clockwise rotation was generated by the membrane-parallel component that led to a torque pointing to the extracellular side, raising the question of which of these two components was the direct driving force for the channel opening.\n\nTo address this pivotal question, we quantitatively analyzed the force distribution in the above simulations CI-1/2, so that we could decompose the force into the membrane-normal and membrane-parallel components to investigate which one could open the channel. In particular, we used the force distribution analysis (FDA) method (Costescu and Gr\u00e4ter, 2013) to quantify the interactions between pairwise residues along the force transmission pathway within system I (Figure 1a). According to our simulation condition and trajectory analyses, the force transmission initiated from the AR29 domain, traversed through the LH domain, and then proceeded to influence the geometrically adjacent yet non-covalently bonded TRP domain, ultimately guiding the S6 domain and instigating the pore opening. Our analysis showed that the strongest interactions between these domains were predominantly located between a few pairs of residues at the interfaces (Figure 1\u2014figure supplement 2), including A1118-N1148, Y1109-D1142 on the AR29-LH interface, and K1244-E1571, D1236-R1581, L1256-S1577 on the LH-TRP interface. Their proximity in space made their Coulomb and Lennard\u2013Jones interactions stronger upon the conformational changes. This facilitated the stability of hydrogen bonds, particularly those between K1244-E1571, D1236-R1581, and L1256-S1577, with occupancies of 57%, 71%, and 24%, respectively. This finding was consistent with the hydrogen bond pairs identified in previous studies when a pushing force was applied (Wang et al., 2021).\n\nTo provide a clear depiction of the net mechanical force distribution resulting from the externally applied mechanical force, we subtracted the FDA results of the force-free simulation trajectories (trajectory: FI-1/2) from the simulation trajectories with pushing/compressive force (trajectory: CI-1/2). The residual force distribution was defined as the net-FDA results (Figure 1\u2014figure supplement 3). By analyzing the net mechanical force distribution between the LH and TRP domains using the net-FDA method, we observed that, in addition to the membrane-normal force component, the total net mechanical force transmitted from the LH domain to the TRP domain also exhibited a membrane-parallel torsion force component. This generated a torque directed toward the extracellular side, perpendicular to the membrane (Figure 1b and c). Moreover, the transmitted force was primarily concentrated on the E1571 and R1581 residues of the TRP domain (Figure 1c).\n\nTo determine the role of the TRP helix in gating, we analyzed the force transmission from the TRP domain to the TM region. The FDA results indicated that the TRP domain interacted with four TM segments, including portions of the S1 helix, the S2-S3 linker, the S4-S5 linker, and S6 (Figure 1\u2014figure supplement 4a, c, and d). The strongest interaction occurred with a segment of the S6 domain that encompasses the constriction site of the TM pore (Figure 1\u2014figure supplement 4a). Consequently, the TRP domain appears to exert an outward force on S6, potentially contributing to gating (Figure 1\u2014figure supplement 4b). Furthermore, the TRP domain interacts strongly with D1360, located on the S2-S3 linker (Figure 1\u2014figure supplement 4a), and with S1421 and F1422, located on the S4-S5 linker (Figure 1\u2014figure supplement 4a). The presence of two pairs of hydrogen bonds between D1360 (S2-S3 linker) and K1578 (TRP), as well as S1421 (S4-S5 linker) and W1572 (TRP) was observed in our simulation and has also been reported in previous work (Wang et al., 2021; Jin et al., 2017).\n\nThe FDA results at the interface between the TM and intracellular domains elucidated a discernible pathway of force transfer, primarily through several residues located at the AR-LH-TRP interface. In the TRP domain, both membrane-normal and membrane-parallel force components were observed, providing a foundation for further investigation into which component serves as the primary factor in channel gating. As previous studies showed that a clockwise rotation of the TRP domain may be related to channel opening, it was of particular interest to study the effect of the torsion force on the channel structure.\n\n### Membrane-parallel torsion force can open NOMPC, but not the membrane-normal pushing force on the TRP domain\n\nMotivated by the above net-FDA results, we aimed to separate the contributions of the membrane-normal and membrane-parallel force components to the gating process and pinpoint whether one or both of these components played an indispensable role in gating. To achieve this, we needed to determine the point of application, the magnitude, and the direction of the exerted mechanical force. As the TRP domain is sandwiched between the AR and TM domains and its conformational change was proposed to be directly related to the channel gating, it is a natural choice to select the TRP domain to apply the decomposed forces in the MD simulations.\n\nNotably, our FDA in the last section showed that the predominant forces propagated from the LH domain to the TRP domain were distributed on two key residues, E1571 and R1581 (Figure 1b and c). Therefore, we devised simulations to individually apply membrane-normal and membrane-parallel forces on these two residues of the TRP domain, and the magnitude and direction of the exerted forces were equivalent to those derived from the aforementioned net-FDA results (Figures 1b and c and 2a and b). As the force transmission occurred mainly via side-chain interactions along the interface between the LH and TRP domains, we selected the side chains of the E1571 and R1581 as the point of application of the exerted forces.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig2-v1.jpg)\n\n**Figure 2.:** (a, b) The side view (a) and bottom view (b) of the net-FDA of the E1571 and R1581 on the TRP domain exerted from the LH domain, which was decomposed into the membrane-parallel and membrane-normal components. $\u2a02$ represents membrane-normal forces pointing into the membrane. (c, d) The transmembrane pore size evolution in the simulations with membrane-parallel forces (c) or membrane-normal forces (d), three replicates for each condition (trajectories: MPI-1/2/3, MNI-1/2/3, see \u2018Methods\u2019).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) A snapshot of trajectory MPI-1 at 800 ns. The pore was dilated so water molecules (red) could spontaneously pass through. (b) The number of water molecules in the gate region around I1554, which was the narrowest part. We counted the water molecules whose oxygen atom was within 4 \u00c5 in the Z-direction from the \u03b1-C of I1554.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The vertical coordinates denote all residue IDs of the TRP domains across the four chains. The analysis was conducted with DSSP.\n\nOur simulations revealed that the membrane-parallel torsion force alone was sufficient to open the gate in all three MD simulation replicates (trajectories: MPI-1/2/3, Figure 2c), whereas the membrane-normal pushing component did not trigger pore opening within the simulation time (trajectories: MNI-1/2/3, Figure 2d). According to the pore size evolution in the trajectories MPI-1/2/3 (Figure 2c), it became evident that the most constricted region along the pore, the gate situated around the hydrophobic I1554, exhibited an initial radius measuring less than 1.0 \u00c5, as calculated by the HOLE program (Smart et al., 1996). This configuration represented a closed architecture. Under the influence of the membrane-parallel torsion force, the radius of the lower constriction was significantly dilated to above 2.0 \u00c5 after 600 ns. This dilation meant that water molecules could smoothly pass through the channel (Figure 2\u2014figure supplement 1), a phenomenon often indicative of the first step of channel opening. This is highly similar to our previous observation when a pushing force was applied to the AR domain (Wang et al., 2021).\n\nIn contrast, in the trajectories MN-1/2/3 with the membrane-normal force on the TRP domain, no pore dilation was observed (Figure 2d) within our simulation time. In fact, the channel appeared to become even more constricted at the upper constriction region (filter), as depicted in Figure 2d. This indicated that the membrane-normal force component on the TRP domain was probably not able to open the channel, at least no such sign was observed within our simulation time.\n\nIt should be noted that, according to our analysis, the membrane-normal pushing forces exerted on residues 1571 and 1581 are approximately one-third and two-thirds of the membrane-parallel twisting force, respectively. This observation indicates that the twisting component is inherently stronger than the pushing component when a compressive force is applied to the AR domain. To examine the impact of the two force components when they are of equal magnitudes, we conducted additional simulations (Figure 2\u2014figure supplement 2, see \u2018Methods\u2019). To ensure the stability of the protein and membrane structure, we opted to reduce the membrane-parallel force rather than increase the membrane-normal force. As illustrated in Figure 2\u2014figure supplement 2, halving the membrane-parallel force resulted in channel opening in two out of three trajectories, while reducing it to one-third resulted in channel opening in one out of three trajectories. These results suggest that, when force components of equal magnitude are applied to the key residues on the TRP domain, the membrane-parallel (twisting) force is more effective in promoting channel opening than the membrane-normal (pushing) force.\n\nThus, our investigations substantiated that a torque on the TRP domain, pointing to the extracellular side, was the key to driving the channel open. On the basis of the original push-to-open or compress-to-open model, here we provide further details on the force analysis and channel opening, arguing that it is the membrane-parallel torsion force that acts as the direct mechanical cause to open the channel. It should be noted, though, this does not mean the push-to-open or compress-to-open model was wrong, as our simulations showed that a pushing force on the LH domain can generate a torsion force on the TRP domain (Wang et al., 2021), so does the compression of the AR domain (Argudo et al., 2019). Apparently, the unique structure of NOMPC ensures that a straightforward pushing force or compression of the AR spring can spontaneously generate a torsion force to open the channel. Therefore, the torsional mechanical properties of the AR domain became more intriguing.\n\n### Torsional mechanical properties of the AR domain and force transmission pathway\n\nTo study the torsion property of the AR spring, we performed all-atom SMD simulations for system II, in which we enforced a gradual clockwise rotation to the lower end of the AR domain (AR1-AR8) at a rate of 0.05 \u00b0ns\u22121 along the membrane-normal axis of NOMPC while keeping the upper end (LH domain) position-restrained (Figure 3a, trajectory: RII). From the trajectory, we extracted structural snapshots at an interval of 2.5 \u00b0 during the twisting process and relaxed these structures for 200 ns with both ends position-restrained. This protocol was employed to further relax the twisted AR spring to improve the accuracy of the calculated torsional mechanical parameters (Figure 3\u2014figure supplement 1). Additionally, to ensure the convergence of the RII trajectory calculations, we simulated a set of trajectories with a faster application of the torsional force (trajectory: RII-fast). The results were highly consistent with those of RII (Figure 3\u2014figure supplement 2). Please refer to the \u2018Methods section for more details.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig3-v1.jpg)\n\n**Figure 3.:** (a) The sketch of the steered molecular dynamics simulation. The dotted arrows reveal the direction of twisting. (b) The relationships between the torque on AR1-8 (left Y-axis), the length of the AR domain (right Y-axis), and the rotational angle of AR1-8. This was calculated from the rotating trajectories RII (0\u20134).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The black line illustrates the trajectory RII-0 (the second step of the rotation of system II), while the other colored lines starting from a circle depict the third step of the rotation of system II at every 2.5\u00b0 rotation for a duration of 100 ns in the trajectory RII-1/2/3/4. The solid line corresponds to the data of the AR1-8, whereas the dotted line corresponds to the LH domain (Figure 3).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) The sketch of the steered molecular dynamics simulation. The dotted arrows reveal the direction of twisting. (b) The relationships between the torque on AR1-8 (left Y-axis), the length of the AR domain (right Y-axis), and the rotational angle of AR1-8. This was calculated from the rotating trajectories RII-fast (0\u20134). The torque (c) and rotational angle (d) versus time of trajectory RII-fast, respectively. The black line illustrates the trajectory RII-fast-0 (the second step of the rotation of system II), while the other colored lines starting from a circle depict the third step of the rotation of system II at every 2.5\u00b0 rotation for a duration of 100 ns in the trajectory RII-fast-1/2/3/4. The solid line corresponds to the data of the AR1-8, whereas the dotted line corresponds to the LH domain. The fitted torsion coefficient from RII-fast is (2.31 \u00d7 0.44) \u00d7 103 kJ mol\u22121 rad\u22121 and the compression-twist coupling coefficient, $k_{ct}=\\frac{\u0394L}{\u0394\u03d5}$, is (1.67\u00b10.14) nm rad\u22121.\n\nWith the above simulation data (trajectory: RII), we calculated the torsional coefficient of the AR bundle, using the equation:\n\n$$\nM=c\\phi\n$$\n\nwhere M represents the torque applied to both ends, $c$ denotes the torsion coefficient of the AR domain bundle, and $`$ is the average torsion angle of AR1-8 with respect to its initial position. As shown by the green plots in Figure 3b, the fitted torsion coefficient turned out to be (2.30\u00b10.31) \u00d7 103 kJ mol\u22121 rad\u22121. Such a torsion coefficient roughly corresponds to a similarly sized cylindrical volume of uniform polyethylene or rubber material (Escudier and Atkins, 2019).\n\nInterestingly, we observed a gradual increase in the compressive deformation of the AR spring as the torsional angle increased in our simulations (Figure 3b). This implies a coupling between the twist and compression of the AR domain. To quantitatively characterize this coupling property, we defined the compression-twist coupling coefficient $k_{ct}=\\frac{\u0394L}{\u0394\u03d5}$. This coefficient represents the compressive deformation induced by a unit torsional deformation. For the AR8-AR29 of NOMPC, the fitted value of the compression-twist coupling coefficient $k_{ct}$ was (1.32\u00b10.11) nm rad\u22121 within a 10 \u00b0 torsion range. Indeed, it was also noticed that a torque could be generated during the application of compressive forces in previous investigations (Wang et al., 2021; Argudo et al., 2019). In light of these findings, we believe that the unique structure of the AR and LH domains enhances NOMPC\u2019s robustness in sensing external stimuli. Specifically, the compression-twist coupling property of the AR bundle ensures that both the twist and compression of the intracellular domain can generate torque to rotate the TRP domain, thereby facilitating the opening of the pore.\n\nTo pinpoint the force transmission pathway along the AR spring while it is twisted, we utilized the same net-FDA method as above to analyze the force distribution during the twisting process of the trajectory RII. The net-FDA results of each $(i+1)^{th}$ AR unit exerted from the adjacent ith AR unit unveiled a spiral force transmission route, rooted in the helical structure inherent to the AR spring (Figure 4a). Strong pairwise interactions predominantly resided in bonded residue pairs, while only a small fraction was associated with non-bonded residue pairs (Figure 4b). Clearly, these bonded residue pairs, which are integral to the spiral backbone of the AR spring, were critical for transferring external forces. The non-bonded residue pairs were primarily situated at the adjacent turns within the AR \u03b1-helices and the interfaces between AR units. To clearly illustrate the details, we have magnified the local structure of AR13-15 (Figure 4\u2014figure supplement 1). As depicted in Figure 4c -left, a representative non-bonded net-FDA of the local region of AR13-15 was shown. The data around the diagonal line represented the pairwise residues located at the adjacent turns between \u03b1-helices, while the wing-shaped data positioned further away from the diagonal indicated pairwise residues situated at the interfaces between AR units. Apparently, although the bonded residue pair interactions are predominant, the non-bonded interactions, both within the same AR unit and across different AR units, are important for the force transmission too.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig4-v1.jpg)\n\n**Figure 4.:** (a) The quiver plot of net-FDA (XY planar) of each $(i+1)^{th}$ AR unit exerted from the ith AR unit shows the force transmission from the intracellular terminal to the transmembrane side of the AR domain viewing from AR1 toward AR29. $\u2a00$ represents the outward Z-component force. (b) The distribution of the pairwise residue-residue net-FDA within AR9 to AR29 (weak interaction under 5 pN neglected). The inset shows local information over 70 pN. (c) The representative interaction heatmaps (AR13-AR15) show the magnitude of non-bonded pairwise residue-residue net-FDA (left) and hydrogen bonds occupancy (right). (d) The Pearson correlation coefficient (PCC) between net-FDA and hbonds in AR units. The inset shows the mean value and standard deviation of Intra-AR (diagonal) and Inter-AR (sub-diagonal) PCCs.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig4-figsupp1-v1.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The vertical coordinates denote all residue IDs of the AR9-AR11 units of one chain. The analysis was conducted with DSSP.\n\nFurthermore, we noticed that there is a correlation between the distribution of non-bonded net-FDA and the existence/strength of hydrogen bonds, as demonstrated by similar patterns in Figure 4c. For clarity, we divided these two 737 \u00d7 737 matrices (ResID of AR9-AR29: 400-1136) into 21 \u00d7 21 subgroups (grouped by AR unit). Then, we calculated the Pearson correlation coefficient (PCC) between the non-bonded net-FDA and the occupancy of hydrogen bonds of each subgroup, resulting in a 21 \u00d7 21 PCC matrix (Figure 4d). Relatively high PCCs in the sub-diagonal grids of Figure 4d (inter-AR), and even higher PCCs in the diagonal grids (intra-AR), are observed (inset of Figure 4d). This underscored the crucial role of the hydrogen bonding network in facilitating force transmission.\n\nTherefore, we conclude that the force transmission route primarily comprises bonded residues that constitute the spiral backbone of the AR chains, supplemented by the hydrogen bonding network formed by adjacent residues within the same or neighboring AR units. Although this may initially seem trivial, it offers valuable insights into the mechanism by which a twisting force can be formed and transmitted along the AR spring architecture. Furthermore, it underscores the stabilizing roles of both covalent and non-covalent interactions in preserving the stability of the force transmission pathway.\n\n## Discussion\n\nThe unique structure of NOMPC and its fascinating AR spring have sparked great curiosity. Building upon the push-to-open and compress-to-open mechanism, here we propose a twist-to-open model, as illustrated in Figure 5. At the core of this model was the idea that a twisting force on the TRP domain is the key to the opening of the pore. This is not to say the compress-to-open or push-to-open models are wrong, but that a compression/pushing on the AR domain will lead to a twist force on the TRP domain, and this twist force is the direct cause of the pore opening. The spiral structure of each AR chain, as well as the hydrogen bonding network formed among spatially adjacent residues, enables the AR bundle to convert the compression deformation to a twist deformation, thus exerting a membrane-parallel torsional force on the LH domain. In addition, the structure around the LH domain can also convert a membrane-normal pushing force to a membrane-parallel torsional force, as shown in our previous study (Wang et al., 2021). Consequently, the compression of the AR domain, or a pushing force from the intracellular side, can be converted to a torque on the TRP domain, which points to the extracellular side. We believe that this torque is the direct mechanical cause that drives the TRP domain to rotate clockwise (looking from the intracellular side) to open the channel.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig5-v1.jpg)\n\n**Figure 5.:** The side view (left) and bottom view (right) of the twist-to-open model. Both the compression and clockwise twisting of the AR domain can generate a membrane-parallel twisting force on the TRP domain, which is the key component for gating.\n\nThe highly conserved TRP domain serves as a structural characteristic of the TRP protein superfamily. In our simulations of NOMPC, we observed a clockwise rotation of the TRP domain during the gating process of the proteins. Interestingly, such rotation was also observed in many other TRP channels. We investigated the likely conformational changes of multiple channels within the TRP family upon opening and found that the rotation of the TRP domain is a universal conformational change, whereas the tilt of the TRP domain is considerably less consistent (Figure 6). Based on these findings, we believe that the rotation of the TRP domain may be a common feature in the gating mechanism of these TRP channels, and the unique structure and compression-twist coupling property of the intracellular domain of NOMPC ensure its robustness in the perception of multiple forms of mechanical stimuli: not only twist, but also compression, can result in the clockwise rotation of the TRP domain, thereby facilitating channel opening.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig6-v1.jpg)\n\n**Figure 6.:** (a) The membrane-parallel rotational angle of the TRP helix (a positive value indicates clockwise rotation when viewed from the intracellular side). (b) The tilt angle of the TRP domain relative to the membrane surface (a positive value indicates tilt-up). S1-S4 helices were aligned for analysis. (c) and (d) represent the rotational and tilting conformational changes of the TRP domain upon gating, respectively. In the majority of the studied cases, the TRP domain rotates clockwise (c). The exception of counterclockwise rotation is observed for HsTRPA1. (Please refer to Table 1 for the protein structures used in this analysis).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102941/elife-102941-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Structure of squirrel TRPV1. (b) Overlay of TRPV1 conformations at 0 ns (gray) and 500 ns (red) under torsional force, as viewed from the intracellular side. The dark red denotes the AR1-2 units, while the light red indicates the TRP domain. (c) Rotation of AR1-2 units (dark red, rotating around the center of TRPV1) and the TRP domain (light red, self-rotating) under torsional force. (d) Similar to (b), but under pushing force. (e) Rotation of the TRP domain under pushing force (light red, self-rotating).\n\nGiven the universal conformational change of the TRP domain and the preceding analysis of the interactions between the TRP helix and the TM region, it is pertinent to discuss the potential role of this amphipathic helix. As initially suggested in the MS channel MscL, researchers have identified that the amphipathic N-terminus of MscL provides a structural framework for bilayer-mediated gating of MS channels (Bavi et al., 2016). Subsequent studies have further demonstrated that many MS channels share a common structural feature: amphipathic helices that are directly or indirectly connected to pore-lining regions (Kefauver et al., 2020). These amphipathic helices interact with surrounding lipids and transmit membrane tension, which is consistent with the force-from-lipid gating mechanism. Although the present study primarily focuses on the force-from-tether model, it appears that the amphipathic TRP helix, which is connected to the pore-lining S6, is also crucial to the gating of NOMPC. The observed interaction between the TRP domain and the S4\u2013S5 linker suggests that these two structural elements may function together as a composite amphipathic unit, potentially playing a significant role in perceiving and propagating gating signals. In addition, the TRP helix and the S4-S5 linker form the binding site for ligand-gated TRP channels, such as TRPV1. Therefore, we propose that the combined TRP-S4-S5 unit may constitute a key structural element responsible for multimodal gating mechanisms within the TRP channel family.\n\nMammalian TRPs possess shorter ARs than NOMPC, raising the question of whether they can also convey force in a manner similar to NOMPC. As an initial exploration, we selected the full-length squirrel TRPV1 (PDB: 7LQY) (Nadezhdin et al., 2021a) and applied pushing or torsional forces to the intracellular end of TRPV1, separately (Figure 6\u2014figure supplement 1). Rotation of the TRP domain was observed under both types of mechanical stimulation (Figure 6\u2014figure supplement 1). The torsional force-induced conformational change in the TRP domain resembles that observed in NOMPC. This suggests that a torsional force applied to the shorter ARs of mammalian TRPs may generate similar effects on channel gating. However, since these ARs are not tethered, the implications of these results in the context of biological functions remain unclear.\n\nAlthough we calculated the detailed interactions between residue pairs of NOMPC, it should be noted that, due to the limitations of the FDA method, our force analysis lacked the entropic force, which may also play a significant role in the force transmission along the AR spring. Nonetheless, this won\u2019t affect our twist-to-open model, since the entropic effect was present in our MD simulations. Another limitation of the present study is that the simulation time is very short compared to the physiological time scale, so we only observed a partially open state of the structure in our simulations and cannot exclude the possibility that other factors, such as the membrane-normal force component, may also assist in the gating process. However, we found that the mechanical stimuli are transferred at a fast speed along AR springs in simulations, at around 1.8 nmps \u22121 (Wang et al., 2021). Therefore, the mechanical stimuli were nearly instant for our simulation time, which allowed us to determine the trend or the direction of the conformational changes, even though the observation of the complete gating process is still challenging. In this context, we think that the dilation of the pore under a torsion force on the TRP domain is a piece of strong evidence that twist is the key to the channel opening.\n\n**Table 1.**\n PDB ID of resolved cryo-EM structures used in Figure 6.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th>State description</th>\n      <th>PDB ID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RnTRPV1</td>\n      <td>apo\u2192open (+RTX/DkTx)</td>\n      <td>5IRZ, 7L2L, 5IRX; Gao et al., 2016; Zhang et al., 2021</td>\n    </tr>\n    <tr>\n      <td>RnTRPV1</td>\n      <td>apo\u2192open (+RTX,4\u00b0\u219225\u00b0C)</td>\n      <td>5IRZ, 7RQU, 7RQX, 7RQZ; Gao et al., 2016; Kwon et al., 2022</td>\n    </tr>\n    <tr>\n      <td>RnTRPV1</td>\n      <td>apo\u2192open (+capsaisin,48\u00b0C)</td>\n      <td>5IRZ, 7LPD, 7LPE; Gao et al., 2016; Kwon et al., 2021</td>\n    </tr>\n    <tr>\n      <td>RnTRPV2</td>\n      <td>apo\u2192open (+2APB,agonist)</td>\n      <td>6U84, 7N0N; Pumroy et al., 2019; Pumroy et al., 2022</td>\n    </tr>\n    <tr>\n      <td>HsTRPV3</td>\n      <td>apo\u2192open (+THCV)</td>\n      <td>8V6K, 8V6M, 8V6L; Nadezhdin et al., 2024</td>\n    </tr>\n    <tr>\n      <td>HsTRPV3</td>\n      <td>apo\u2192open (+2-APB)</td>\n      <td>8V6K, 8V6O, 8V6N; Nadezhdin et al., 2024</td>\n    </tr>\n    <tr>\n      <td>MmTRPV3</td>\n      <td>apo\u2192open (42 \u00b0)</td>\n      <td>7MIM, 7MIL, 7MIO; Nadezhdin et al., 2021b</td>\n    </tr>\n    <tr>\n      <td>HsTRPV4</td>\n      <td>apo\u2192open (+4a-PDD)</td>\n      <td>8T1B, 8T1D; Nadezhdin et al., 2023b</td>\n    </tr>\n    <tr>\n      <td>HsTRPV4</td>\n      <td>close\u2192open (\u2212antagonist, +agonist)</td>\n      <td>8FC7, 8FC9, 8FCB; Kwon et al., 2023</td>\n    </tr>\n    <tr>\n      <td>OcTRPV5</td>\n      <td>apo\u2192open (+CoA)</td>\n      <td>7T6J, 8FHI; Fluck et al., 2022; Lee et al., 2023</td>\n    </tr>\n    <tr>\n      <td>DmTRPA1</td>\n      <td>close\u2192sensitized (warm)</td>\n      <td>7YKR, 7YKS; Wang et al., 2023</td>\n    </tr>\n    <tr>\n      <td>HsTRPA1</td>\n      <td>close\u2192open (inhibitor:A96; agonist:IA)</td>\n      <td>6V9Y, 6V9X; Zhao et al., 2020</td>\n    </tr>\n    <tr>\n      <td>DrTRPM2</td>\n      <td>apo\u2192open (+ADPR, Ca2+)</td>\n      <td>6DRK,6DRJ; Huang et al., 2018</td>\n    </tr>\n    <tr>\n      <td>SrTRPM2</td>\n      <td>apo\u2192open (+ADPR, Mg2+)</td>\n      <td>8SRJ,8SRD; Huang et al., 2024</td>\n    </tr>\n    <tr>\n      <td>NvTRPM2</td>\n      <td>close\u2192pre-open (+ADPR, Ca2+)</td>\n      <td>6CO7,9JJE; Zhang et al., 2018; T\u00f3th et al., 2024</td>\n    </tr>\n    <tr>\n      <td>HsTRPM4</td>\n      <td>cold close\u2192warm open (+DVT,Ca2+)</td>\n      <td>9B92, 9B8W, 9B8Y; Hu et al., 2024</td>\n    </tr>\n    <tr>\n      <td>DrTRPM5</td>\n      <td>apo\u2192open (+Ca2+)</td>\n      <td>7MBP, 7MBS; Ruan et al., 2021</td>\n    </tr>\n    <tr>\n      <td>MmTRPM7</td>\n      <td>apo\u2192open (+agonist)</td>\n      <td>8SI2, 8SI5; Nadezhdin et al., 2023a</td>\n    </tr>\n    <tr>\n      <td>MmTRPM8</td>\n      <td>apo\u2192open (+cooling agonist)</td>\n      <td>8E4P, 8E4L; Yin et al., 2022</td>\n    </tr>\n  </tbody>\n</table>\n\n## Methods\n\n### All-atom simulation systems\n\nTo set up the MD simulations, we first prepared the simulation systems using the cryo-EM structure of NOMPC (PDB: 5VKQ) (Jin et al., 2020). CHARMM-GUI was used to generate the configuration and topology of the simulation systems (Jo et al., 2009). The parameter files were created for the CHARMM36m force field (Lee et al., 2016; Huang et al., 2017).\n\nThe system I included the TM domain, the LH domain, and the AR29 of NOMPC. The PPM server was used to reorient the NOMPC structure to ensure that the TM domain of NOMPC was well located in a lipid bilayer (Huang et al., 2017). The protein was embedded in a POPC bilayer. Then, we solvated the protein-membrane complex in a water box using the TIP3P water model. Counterions were added to neutralize the system, ensuring physiological ionic strength by adding Na+ and Cl\u2212 ions to achieve a concentration of 0.15 M. The details of simulation system I are shown in Table 2.\n\n**Table 2.**\n Molecular dynamics simulation systems.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>System I</th>\n      <th>System II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Protein</td>\n      <td>TM, LH, AR29</td>\n      <td>LH, AR1-AR29</td>\n    </tr>\n    <tr>\n      <td>Box size</td>\n      <td>145 \u00d7 145 \u00d7 145 \u00c53</td>\n      <td>290 \u00d7 193 \u00d7 200 \u00c53</td>\n    </tr>\n    <tr>\n      <td>Atom number</td>\n      <td>314,352</td>\n      <td>1,134,213</td>\n    </tr>\n    <tr>\n      <td>Membrane</td>\n      <td>492 POPC</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td>Ions</td>\n      <td>0.15 M NaCl</td>\n      <td>0.15 M NaCl</td>\n    </tr>\n    <tr>\n      <td>Water number</td>\n      <td>71,968</td>\n      <td>354,567</td>\n    </tr>\n  </tbody>\n</table>\n\nThe system II included the LH domain and the AR domain (AR1-AR29) of NOMPC. The protein structures were immersed in a rectangular box of TIP3 water molecules and 0.15 M NaCl. The details of simulation system II are shown in Table 2.\n\n### All-atom MD simulations\n\nAll of the MD simulations were performed with GROMACS 5.1.2 (Hess et al., 2008). The REDUCE program in AMBER was used to add hydrogens to the original PDB files and determine the protonation state of the histidine residues (Case et al., 2005; Word et al., 1999).\n\nFor system I, we used the steepest descent algorithm to achieve energy minimization. Then, following up with a two-stage equilibration, a 0.4 ns NVT equilibration simulation with harmonic restraint was applied to the protein molecule (force constants of 4000 kJ mol\u22121 nm\u22122 on the backbone and 2000 kJ mol\u22121 nm\u22122 on the side chains), and a 20 ns NPT equilibration simulation with gradually decreased restraint (from 2000\u2013100 kJ mol\u22121 nm\u22122 on the backbone and from 1000\u201350 kJ mol\u22121 nm\u22122 on the side chains). During the equilibration processes, planar restraints were used to keep the positions of lipid head groups along the membrane-normal direction. The simulation temperature of the system I was set to 300 K. The time step was 2 fs. The cubic periodic boundary condition was used during the simulations, and the van der Waals interaction was switched off from 10 to 12\u00c5. The long-range electrostatic interactions were calculated using the particle mesh Ewald (PME) method (Darden et al., 1993). The Nos\u00e9\u2013Hoover thermostat (Nos\u00e9, 1984) was applied separately to the protein, membrane, and solvent with a coupling constant of 1.0 ps and reference temperature of 300 K. Semiisotropic pressure coupling was applied using the Parrinello\u2013Rahman algorithm (Parrinello and Rahman, 1981) with a reference pressure of 1 bar and a coupling constant of 5.0 ps. The compressibility was set to 4.5 \u00d7 10\u22125 bar\u22121. All bonds involving hydrogen were constrained using the LINCS algorithm (Hess et al., 1997).\n\nFor system II, we used the steepest descent algorithm to achieve energy minimization. Then, also followed by a two-stage equilibration, a 0.2 ns NVT equilibration simulation with harmonic restraint was applied to the protein molecule (force constants of 400 kJ mol\u22121 nm\u22122 on the backbone and 40 kJ mol\u22121 nm\u22122 on the side chains), and a 10 ns NPT equilibration simulation with harmonic restraint (force constants of 400 kJ mol\u22121 nm\u22122 on the backbone and 40 kJ mol\u22121 nm\u22122 on the side chains). The simulation temperature of the system II was set to 300 K. The time step was 2 fs. The cubic periodic boundary condition was used during the simulations, and the van der Waals interaction was switched off from 10 to 12 \u00c5. The long-range electrostatic interactions were calculated using the PME method (Darden et al., 1993). The Nos\u00e9\u2013Hoover thermostat (Nos\u00e9, 1984) was applied separately to the protein and solvent with a coupling constant of 1.0 ps and reference temperature of 300 K. Semiisotropic pressure coupling was applied using the Parrinello\u2013Rahman algorithm (Parrinello and Rahman, 1981) with a reference pressure of 1 bar and a coupling constant of 5.0 ps. The compressibility was set to 4.5 \u00d7 10\u22125 bar\u22121. All bonds involving hydrogen were constrained using the LINCS algorithm (Hess et al., 1997).\n\n### SMD simulations\n\nSMD simulations were utilized to probe the mechanical gating mechanisms of the ion channels. SMD was performed by attaching a virtual spring to a specific group of atoms. To gradually apply a force to the designated group of atoms and prevent sudden conformational changes that could cause structural damage, a constant velocity was first applied to the spring to pull the molecule along a predefined reaction coordinate, followed by the application of a constant force. The force exerted on the molecule was recorded throughout the simulation. To ensure reproducibility, multiple independent SMD simulations were performed in this research.\n\nThe SMD simulation detail of the compressive trajectories of system I (CI-1/2) and free trajectories of system I (FI-1/2) can be found in previous work (Wang et al., 2021).\n\nFor trajectories MPI-1/2/3 (membrane-parallel force component on system I Replicate-1/2/3) and MNI-1/2/3 (membrane-normal force component on system I Replicate-1/2/3) of system I (Figure 2c and d), we separately exerted membrane-parallel (MPI-1/2/3) or membrane-normal (MNI-1/2/3) external force on the side chain of E1571 and R1581 (reference group: S1-S4), as shown in Table 3. At the first 200 ns, we applied an increasing force by using the constant-rate pulling method. The pulling was performed with a spring constant of 100 kJ mol\u22121 nm\u22122 and a pulling velocity of 0.005 nm s\u22121. Then we applied the calculated constant force (Table 3) by using the constant-force pulling method in the last 600 ns. For additional simulations with smaller magnitude of membrane-parallel force component, we have trajectories MPI-h1/2/3 (half of membrane-parallel force component on system I Replicate-1/2/3) and trajectories MPI-t1/2/3 (one third of membrane-parallel force component on system I Replicate-1/2/3), as shown in Table 3.\n\n**Table 3.**\n Simulation trajectories of system I.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Trajectory (label)</th>\n      <th>MPI-1/2/3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pulling group</td>\n      <td>Side chain of 1571 and 1581</td>\n    </tr>\n    <tr>\n      <td>Force vector of each chain (kJ mol\u22121 nm\u22121)</td>\n      <td>On 1571: (3.4, 69.4, 0.0) On 1581: (13.1, 91.5, 0.0)</td>\n    </tr>\n    <tr>\n      <td>Simulation time</td>\n      <td>800 ns \u00d7 3 replicates</td>\n    </tr>\n    <tr>\n      <td>Trajectory (label)</td>\n      <td>MPI-h1/2/3</td>\n    </tr>\n    <tr>\n      <td>Pulling group</td>\n      <td>Side chain of 1571 and 1581</td>\n    </tr>\n    <tr>\n      <td>Force vector of each chain (kJ mol\u22121 nm\u22121)</td>\n      <td>On 1571: (1.7, 34.7, 0.0) On 1581: (6.6, 45.8, 0.0)</td>\n    </tr>\n    <tr>\n      <td>Simulation time</td>\n      <td>1000 ns \u00d7 3 replicates</td>\n    </tr>\n    <tr>\n      <td>Trajectory (label)</td>\n      <td>MPI-t1/2/3</td>\n    </tr>\n    <tr>\n      <td>Pulling group</td>\n      <td>Side chain of 1571 and 1581</td>\n    </tr>\n    <tr>\n      <td>Force vector of each chain (kJ mol\u22121 nm\u22121)</td>\n      <td>On 1571: (1.1, 23.1, 0.0) On 1581: (4.4, 30.5, 0.0)</td>\n    </tr>\n    <tr>\n      <td>Simulation time</td>\n      <td>1000 ns \u00d7 3 replicates</td>\n    </tr>\n    <tr>\n      <td>Trajectory (label)</td>\n      <td>MNI-1/2/3</td>\n    </tr>\n    <tr>\n      <td>Pulling group</td>\n      <td>Side chain of 1571 and 1581</td>\n    </tr>\n    <tr>\n      <td>Force vector of each chain (kJ mol\u22121 nm\u22121)</td>\n      <td>On 1571: (0.0, 0.0, 28.3) On 1581: (0.0, 0.0, 61.2)</td>\n    </tr>\n    <tr>\n      <td>Simulation time</td>\n      <td>800 ns \u00d7 3 replicates</td>\n    </tr>\n  </tbody>\n</table>\n\n_The force vectors are described in an X'Y'Z' coordinate system for each subunit. The positive direction of the X'-axis is oriented parallel to the TRP helix, pointing from the center of the pore towards the membrane. The positive direction of the Y'-axis is perpendicular to the TRP helix. The positive direction of the Z'-axis is perpendicular to the membrane, pointing towards the extracellular direction. The X'Y'Z' coordinate system follows the right-hand rule._\n\nBesides, to prevent the protein from rotation as a whole, we used the enforced rotation method (Kutzner et al., 2011), setting the rotation speed as zero for the S1-S4 helices in the TM region of the protein. The rotation potential was rm2 with a force constant of 25 kJ mol\u22121 nm\u22122 and the pivot point for the potential was the center of the protein. The norm method was used to determine the angle of rotation group. Distance restraints were applied between the acceptors and donors on the side chains of residue pairs 1564\u20131568 and 1567\u20131571, to maintain the hydrogen bonds and prevent structural damage in the \u03b1-helix under the applied mechanical force.\n\nThe SMD simulation temperature of the system I was set to 300 K. The time step was 2 fs. The cubic periodic boundary condition was used during the simulations, and the van der Waals interaction was switched off from 10 to 12\u00c5. The long-range electrostatic interactions were calculated using the PME method (Darden et al., 1993). The Nos\u00e9\u2013Hoover thermostat (Nos\u00e9, 1984) was applied separately to the protein, membrane, and solvent with a coupling constant of 1.0 ps and reference temperature of 300 K. Semiisotropic pressure coupling was applied using the Parrinello\u2013Rahman algorithm (Parrinello and Rahman, 1981) with a reference pressure of 1 bar and a coupling constant of 5.0 ps. The compressibility was set to 4.5 \u00d7 10\u22125 bar\u22121. All bonds involving hydrogen were constrained using the LINCS algorithm (Hess et al., 1997).\n\nFor trajectory RII (Rotation of system II), we performed a three-step simulation to better study the torsional mechanical properties of the AR domain, as shown in Table 4.\n\n**Table 4.**\n Simulation trajectories of system II.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Trajectory (label)</th>\n      <th>RII-0</th>\n      <th>RII-1/2/3/4</th>\n      <th>RII-fast-0</th>\n      <th>RII-fast-1/2/3/4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Rotation group 1</td>\n      <td>LH</td>\n      <td>LH</td>\n      <td>LH</td>\n      <td>LH</td>\n    </tr>\n    <tr>\n      <td>Rotation group 2</td>\n      <td>AR1-8</td>\n      <td>AR1-8</td>\n      <td>AR1-8</td>\n      <td>AR1-8</td>\n    </tr>\n    <tr>\n      <td>Rotational speed (\u00b0/ns)</td>\n      <td>0.05</td>\n      <td>0</td>\n      <td>0.1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Simulation time (ns)</td>\n      <td>200</td>\n      <td>200</td>\n      <td>100</td>\n      <td>100</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the first step, we aimed to relax the structure by fixing the relative rotational angle between both ends along the rotational axis, which is the Z axis of system II. We choose to manipulate AR1-AR8 as a whole, considering the fact that the cryo-EM structure of AR1-AR7 was not resolved but modeled. Therefore, it was prudent to exert and transmit torque starting from the more reliably resolved structure, that is, from AR8 upward, while preserving the integrity of the entire protein structure. With the help of the enforced rotation function of GROMACS (Kutzner et al., 2011), we used the $pm$ rotational potential on the bottom terminal of the AR domain (AR1-AR8) with a force constant of 100 kJ mol\u22121 nm\u22122 and a zero angular velocity for 20 ns, and the up terminal (LH domain) with a force constant of 50 kJ mol\u22121 nm\u22122 and a zero angular velocity for 20 ns. The $pm$ rotational potential can constrain the group of atoms to rotate within the rotational plane as required, while allowing free movement in the direction perpendicular to the rotational plane. This means that the entire AR bundle will be subjected to torsion, while being able to stretch and compress freely. The pivot point for the potential was the center of the protein. The norm method was used to determine the angle of the rotation group.\n\nIn the second step, we clockwise rotated the AR1-8 along the Z axis at an angular velocity of 0.05\u00b0 ns\u22121 with a force constant of 100 kJ mol\u22121 nm\u22122 and, while keeping the LH domain still (Figure 3a) with $pm$ rotational potential with a force constant of 50 kJ mol\u22121 nm\u22122. The difference in rotation angle between the bottom and up terminal gradually increased to 10\u00b0 over 200 ns (Figure 3\u2014figure supplement 1, trajectory: RII-0). The pivot point for the potential was the center of the protein. The norm method was used to determine the angle of the rotation group.\n\nIn the third step, when rotating at every 2.5\u00b0 in trajectory RII-0, we extracted structural snapshots and held both ends of the AR domain for 200 ns to get a better equilibrated structure (Figure 3\u2014figure supplement 1, trajectory: RII-1 for the 2.5\u00b0-rotational angle, RII-2 for 5\u00b0, RII-3 for 7.5\u00b0, and RII-4 for 10\u00b0), and the readouts of torques on both ends gradually increased with opposite directions. The other parameters for enforced rotation were kept consistent with those used in the previous two steps. Specifically, we used the trajectory RII-1/2/3/4 to calculate the torsional mechanical properties of the AR bundle and the trajectory RII-0 to study the force transmission pathway along the AR chain. When the torsional angles of the AR bundle are 2.5i\u00b0 ($i$=1, 2, 3, 4), we analyze the 200 ns-long RII-i trajectories. For the torques at both ends of the AR, we collect torque data on the LH domain every 2 ps. Under equilibrium conditions, the torques at the top and bottom of the AR bundle are equal in magnitude but opposite in direction. To assess the length change of the AR bundle, we measure the distance between the centroids of the LH domain and AR8 unit.\n\nTo further investigate the convergence of the torsional mechanical properties of the AR bundle and better compare the results with trajectory RII, we conducted additional simulations with a faster velocity of force loading to ensure robustness and consistency. We adopted the same first step as in trajectory RII. The rotational speed in the second step was doubled to 0.1\u00b0 ns\u22121, resulting in a total twist of 10\u00b0 within 100 ns. The holding time in the third step was adjusted to 100 ns. This accelerated simulation trajectory is referred to as RII-fast (see Table 4). All other simulation parameters remained unchanged. The mechanical properties derived from the RII and RII-fast trajectories were found to be close (see SI), indicating that the results from the RII trajectory set are converged.\n\nThe SMD simulation temperature of the system II was set to 300 K. The time step was 2 fs. The cubic periodic boundary condition was used during the simulations, and the van der Waals interaction was switched off from 10 to 12 \u00c5. The long-range electrostatic interactions were calculated using the PME method (Darden et al., 1993). The Nos\u00e9\u2013Hoover thermostat (Nos\u00e9, 1984) was applied separately to the protein and solvent with a coupling constant of 1.0 ps and reference temperature of 300 K. Semiisotropic pressure coupling was applied using the Parrinello\u2013Rahman algorithm (Parrinello and Rahman, 1981) with a reference pressure of 1 bar and a coupling constant of 5.0 ps. The compressibility was set to 4.5 \u00d7 10\u22125 bar\u22121. All bonds involving hydrogen were constrained using the LINCS algorithm (Hess et al., 1997).\n\nWe used Define Secondary Structure of Proteins (DSSP) analysis to ensure the stability of the secondary structure of NOMPC when applying SMD, for the TRP domain in system I and the AR units in system II (Figure 2\u2014figure supplement 3, Figure 4\u2014figure supplement 2).\n\n### Force distribution analysis\n\nFDA focuses on computational efficiency and low-memory usage and makes possible time series analysis of pairwise forces variation in long MD simulations and for large molecular systems (Costescu and Gr\u00e4ter, 2013). It can compute atomic pairwise forces for all types of bonded interactions as well as Coulomb and Lennard\u2013Jones potential by rerunning the trajectories. By summing up all the atomic pairwise forces within the two residues of interest, it can also calculate the pairwise force of the interaction between residues $r_{i}$ and $r_{j}$, which is labeled as $F\u2192_{r_{i},r_{j}}$. Similarly, if we focus on the interaction between two domains, we can sum up all the pairwise forces of the residues from these two domains.\n\nIn the calculation, we made an input file which contained all the parameters that FDA needed to run. We set onepair = detailed and type = all so that all pairwise forces of different types between the same pair of residues are stored separately. The option residuebased was set as pairwise_forces_vector so that the residue-based pairwise forces were written to output files as vector values. The forces for every frame were written by setting time_averages_period = 0.\n\nThen, forces sampled by MD simulations under two conditions (with and without perturbation) were compared. We analyzed the interactions between residues in the trajectories with the external force (CI-1/2), labeled as $F\u2192_{r_{i},r_{j},CI\u22121}$, $F\u2192_{r_{i},r_{j},CI\u22122}$, and without the external force (FI-1/2), labeled as $F\u2192_{r_{i},r_{j},FI\u22121}$, $F\u2192_{r_{i},r_{j},FI\u22122}$, respectively. Then the average net force distribution induced by the compressive external force, which was named net-FDA, $F\u2192_{r_{i},r_{j},net}\u00af$, was obtained by subtracting the FDA result of trajectories without the external force from the FDA result of trajectories with the external force,\n\n$$\nF\u2192_{r_{i},r_{j},net}\u00af=\\frac{F\u2192_{r_{i},r_{j},CI-1}+F\u2192_{r_{i},r_{j},CI-2}\u2212(F\u2192_{r_{i},r_{j},FI-1}+F\u2192_{r_{i},r_{j},FI-2})}{2}.\n$$\n\nIn the end, we averaged the vector net-FDA results of the four subunits by rotationally symmetrized around the protein center.\n\n### Supplementary MD simulations of TRPV1\n\nTo conduct additional MD simulations of TRPV1, we prepared the simulation systems using the high-resolution cryo-EM structure of sqTRPV1 (PDB: 7LQY) (Nadezhdin et al., 2021a) which comprises six AR units (Figure 6\u2014figure supplement 1). CHARMM-GUI was utilized to generate the configuration and topology of the simulation systems (Jo et al., 2009) and the CHARMM36m force field was used for the simulations (Huang et al., 2017).\n\nThe protein system consisted of the AR domain (AR1-AR6), the Linker domain, the Pre-S1 domain, the TM domain (TM domain, including the S1-S6 helix), the TRP domain, and the C-terminal of TRPV1. The PPM server was employed to reorient the TRPV1 structure, ensuring that the TM domain was properly inserted into a POPC lipid bilayer (Lomize et al., 2012). Then, we solvated the protein-membrane complex in a water box using the TIP3P water model. Counterions were added to neutralize the system and achieve physiological ionic strength by adding Na+ and Cl\u2212 ions to reach a concentration of 0.15 M. The size of the box is 164 \u00d7 164 \u00d7 167 \u00c5 and the system contains 462,787 atoms.\n\nAll of the supplementary MD simulations were performed with GROMACS 2023.1 (Hess et al., 2008). The REDUCE program within AMBER was utilized to add hydrogen atoms to the original PDB files and to determine the protonation states of the histidine residues (Case et al., 2005; Word et al., 1999). We employed the steepest descent algorithm for energy minimization. Subsequently, a two-stage equilibration was conducted, which included a 0.4 ns NVT equilibration simulation with harmonic restraints applied to the protein molecule (with force constants of 4000 kJ mol\u22121 nm\u22122 for the backbone and 2000 kJ mol\u22121 nm\u22122 for the side chains), followed by a 20 ns NPT equilibration simulation with gradually decreasing restraints (ranging from 2000\u2013100 kJ mol\u22121 nm\u22122 for the backbone and from 1000\u201350 kJ mol\u22121 nm\u22122 for the side chains). During the equilibration processes, planar restraints were implemented to maintain the positions of lipid head groups along the membrane-normal direction. The simulation temperature of the system I was set to 300 K. The time step was 2 fs. The cubic periodic boundary condition was used during the simulations, and the van der Waals interaction was switched off from 10 to 12 \u00c5. The long-range electrostatic interactions were calculated using the PME method (Darden et al., 1993). The v-rescale thermostat was applied separately to the protein, membrane, and solvent with a coupling constant of 1.0 ps and reference temperature of 300 K (Bussi et al., 2007). Semiisotropic pressure coupling was applied using the c-rescale algorithm with a reference pressure of 1 bar and a coupling constant of 5.0 ps (Bernetti and Bussi, 2020). The compressibility was set to 4.5 \u00d7 10\u22125 bar\u22121. All bonds involving hydrogen were constrained using the LINCS algorithm.\n\nFor SMD simulations involving compressive force, a membrane-normal pushing force of 20 pN was applied to the AR1-2 units of each chain over a duration of 500 ns (Figure 6\u2014figure supplement 1). In the case of SMD with rotational force, enforced rotation was implemented, whereby the AR1-2 units were rotated clockwise (when viewed from the intracellular side) around the center of TRPV1 along the Z-axis at an angular velocity of 0.0025\u00b0 ns\u22121 with rotational potential pm at the force constant 25 kJ mol\u22121 nm\u22122. During this process, the S1-S4 domain was held stationary through the application of the $pm$ rotational potential at the force constant 25 kJ mol\u22121 nm\u22122. This resulted in a rotation angle of 10\u00b0 accumulated over 400 ns (Figure 6\u2014figure supplement 1d, e). The SMD simulation temperature of the system was set to 300 K. The time step was 2 fs. The cubic periodic boundary condition was used during the simulations, and the van der Waals interaction was switched off from 10 to 12 \u00c5. The long-range electrostatic interactions were calculated using the PME method (Darden et al., 1993). The v-rescale thermostat was applied separately to the protein, membrane, and solvent with a coupling constant of 1.0 ps and reference temperature of 300 K (Bussi et al., 2007). Semiisotropic pressure coupling was applied using the c-rescale algorithm with a reference pressure of 1 bar and a coupling constant of 5.0 ps (Bernetti and Bussi, 2020). The compressibility was set to 4.5 \u00d7 10\u22125 bar\u22121. All bonds involving hydrogen were constrained using the LINCS algorithm.\n",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Toby W Allen, RMIT University Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.102941.3.sa0](https://doi.org/10.7554/eLife.102941.3.sa0)\n\nThis study uses steered molecular dynamics simulations to interrogate force transmission in the mechanosensitive NOMPC channel, which plays roles including soft-touch perception, auditory function, and locomotion. The valuable finding that the ankyrin spring transmits force through torsional rather than compression forces may help understand the entire TRP channel family. The evidence is considered to be solid, although full opening of the channel is not seen, and it has been noted that experimental validation of reduced mechanosensitivity through mutagenesis of proposed ankyrin/TRP domain coupling interactions would help substantiate the findings.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.102941.3.sa1](https://doi.org/10.7554/eLife.102941.3.sa1)\n\nSummary:\n\nThis manuscript uses molecular dynamics simulations to understand how forces felt by the intracellular domain are coupled to opening of the mechanosensitive ion channel NOMPC. The concept is interesting - as the only clearly defined example of an ion channel that opens due to forces on a tethered domain, the mechanism by which this occur are yet to be fully elucidated. The main finding is that twisting of the transmembrane portion of the protein - specifically via the TRP domain that is conserved within the broad family of channels- is required to open the pore. That this could be a common mechanism utilised by a wide range of channels in the family, not just mechanically gated ones, makes the result significant. It is intriguing to consider how different activating stimuli can produce a similar activating motion within this family. While the authors do not see full opening of the channel, only an initial dilation, this motion is consistent with partial opening of structurally characterized members of this family.\n\nStrengths:\n\nDemonstrating that rotation of the TRP domain is the essential requirement for channel opening would have significant implcaitions for other members of this channel family.\n\nWeaknesses:\n\nThe manuscript centres around 3 main computational experiments. In the first, a compression force is applied on a truncated intracellular domain and it is shown that this creates both a membrane normal (compression) and membrane parallel (twisting) force on the TRP domain. This is a point that was demonstrated in the authors prior eLife paper - so the point here is to quantify these forces for the second experiment.\n\nThe second experiment is the most important in the manuscript. In this, forces are applied directly to two residues on the TRP domain with either a membrane normal (compression) or membrane parallel (twisting) direction, with the magnitude and directions chosen to match that found in the first experiment. Only the twisting force is seen to widen the pore in the triplicate simulations, suggesting that twisting, but not compression can open the pore. This result is intriguing and there appears to be a significant difference between the dilation of pore with the two force directions. When the forces are made of similar magnitude, twisting still has a larger effect than forces along the membrane normal.\n\nThe second important consideration is that the study never sees full pore opening, rather a widening that is less than that seen in open state structures of other TRP channels and insufficient for rapid ion currents. This is something the authors acknowledge in their prior manuscript Twist may be the key to get this dilation, but we don't know if it is the key to full pore opening. Structural comparison to open state TRP channels supports that this represents partial opening along the expected pathway of channel gating.\n\nExperiment three considers the intracellular domain and determines the link between compression and twisting of the intracellular AR domain. In this case, the end of the domain is twisted and it is shown that the domain compresses, the converse to the similar study previously done by the authors in which compression of the domain was shown to generate torque.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.102941.3.sa2](https://doi.org/10.7554/eLife.102941.3.sa2)\n\nThis study uses all atom MD simulation to explore the mechanics of channel opening for the NOMPC mechanosensitive channel. Previously the authors used MD to show that external forces directed along the long-axis of the protein (normal to the membrane) results in AR domain compression and channel opening. This force causes two changes to the key TRP domains adjacent to the channel gate: (1) a compressive force pushes the TRP domain along the membrane normal, while (2) a twisting torque induces a clock-wise rotation on the TRP domain helix when viewing the bottom of the channel from the cytoplasm. Here, the authors wanted to understand which of those two changes are responsible for increasing the inner pore radius, and they show that it is the torque. The simulations in Figure 2 probe this question with different forces, and we can see the pore open with parallel forces in the membrane, but not with the membrane-normal forces. I believe this result as it is reproducible, the timescales are reaching 1 microsecond, and the gate is clearly increasing diameter to about 4 \u00c5. This seems to be the most important finding in the paper, but the impact is limited since the authors already shows how forces lead to channel opening, and this is further teasing apart the forces and motions that are actually the ones that cause the opening.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.102941.3.sa3](https://doi.org/10.7554/eLife.102941.3.sa3)\n\nSummary:\n\nThis manuscript by Duan and Song interrogates the gating mechanisms and specifically force transmission in mechanosensitive NOMPC channels using steered molecular dynamics simulations. They propose that the ankyrin spring can transmit force to the gate through torsional forces adding molecular detail to the force transduction pathways in this channel.\n\nStrengths:\n\nDetailed, rigorous simulations coupled with a novel model for force transduction.\n\nWeaknesses:\n\nExperimental validation of reduced mechanosensitivity through mutagenesis of proposed ankyrin/TRP domain coupling interactions would greatly enhance the manuscript.\n",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "001b7dbf-e311-4c15-85b7-f1e7d58cd99f",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C1",
+      "claim": "NOMPC is a tethered mechanosensitive ion channel belonging to the transient receptor potential (TRP) family.",
+      "claim_type": "EXPLICIT",
+      "source": "NOMPC, a tethered mechanosensitive ion channel belonging to the transient receptor potential (TRP) family, converts mechanical stimuli into ionic electric signals that excite neuronal cells (Yan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yan et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "a270ad64-f92c-44cc-88bd-4b219f1aea34",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C2",
+      "claim": "NOMPC converts mechanical stimuli into ionic electric signals that excite neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NOMPC, a tethered mechanosensitive ion channel belonging to the transient receptor potential (TRP) family, converts mechanical stimuli into ionic electric signals that excite neuronal cells (Yan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yan et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "2c673b72-76af-422b-9739-fde411a445e9",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C3",
+      "claim": "A pushing force applied to the linker helix domain can trigger NOMPC channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous investigations have demonstrated that a pushing force applied to the linker helix domain or the compression of NOMPC's ankyrin repeat (AR) domain can trigger channel opening (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "a1e994ed-4823-4783-93aa-95f6611115b4",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C4",
+      "claim": "Compression of NOMPC's ankyrin repeat (AR) domain can trigger channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous investigations have demonstrated that a pushing force applied to the linker helix domain or the compression of NOMPC's ankyrin repeat (AR) domain can trigger channel opening (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "48e16d55-b8f3-4248-90f5-5cd42dc8780d",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C5",
+      "claim": "A torque directed toward the extracellular side, exerted on the amphipathic TRP domain, is the primary factor driving NOMPC channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that a torque directed toward the extracellular side, exerted on the amphipathic TRP domain, is the primary factor driving channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the results from all-atom molecular dynamics simulations presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "a8e503bc-ac03-4008-8fb6-15c192d7f716",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C6",
+      "claim": "The coupling between compression and twisting of the AR domain ensures that both types of deformation can induce channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The coupling between compression and twisting of the AR domain ensures that both types of deformation can induce channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the simulation results showing compression-twist coupling properties of the AR domain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "01847a2e-c022-4420-a1f1-bd5970464820",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C7",
+      "claim": "Mechanosensitive ion channels are critical components of mechanosensory transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanosensitive (MS) ion channels are critical components of mechanosensory transduction, playing an essential role in the perception of sensory stimuli in living organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about mechanosensitive ion channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "47efa14a-b573-4a66-904d-63a30e65ac2a",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C8",
+      "claim": "MS ion channels play an essential role in the perception of sensory stimuli in living organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanosensitive (MS) ion channels are critical components of mechanosensory transduction, playing an essential role in the perception of sensory stimuli in living organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about mechanosensitive ion channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "930c4bcb-8cd9-4410-aea5-bda5b4495f30",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C9",
+      "claim": "MS ion channels are widely expressed in peripheral sensory neurons located near or within the surface tissues responsible for detecting mechanical stimuli in both vertebrates and invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In both vertebrates and invertebrates, MS ion channels are widely expressed in peripheral sensory neurons located near or within the surface tissues responsible for detecting mechanical stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the distribution of MS ion channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "336b4e21-93c3-4230-9673-06a95d0de2d1",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C10",
+      "claim": "The primary function of MS ion channels is to receive and transduce mechanical signals from the external environment, ultimately converting these signals into electrical impulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Their primary function is to receive and transduce mechanical signals from the external environment, ultimately converting these signals into electrical impulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the function of MS ion channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "8ec99bfa-2109-46cc-b586-3d2772f34aef",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C11",
+      "claim": "Mechano-electrical transduction (MET) induces changes in neuronal excitability, thereby facilitating the transmission of vital information to higher-order neural centers.",
+      "claim_type": "EXPLICIT",
+      "source": "This intricate process, known as mechano-electrical transduction (MET), induces changes in neuronal excitability, thereby facilitating the transmission of vital information to higher-order neural centers (Hehlert et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hehlert et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "f118f34c-7f7c-48fa-b403-950ce1a68158",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C12",
+      "claim": "NOMPC is a transient receptor potential (TRP) superfamily MS channel identified in Caenorhabditis elegans, Drosophila, and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, NOMPC, a transient receptor potential (TRP) superfamily MS channel identified in Caenorhabditis elegans, Drosophila, and zebrafish, plays a central role in various mechanosensing-related activities, including soft touch perception, auditory function, and locomotion (Yan et al., 2013; Li et al., 2006; Effertz et al., 2011; Cheng et al., 2010; Sidi et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "7c184210-6f46-47c2-83cd-fd171fcc00ca",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C13",
+      "claim": "NOMPC plays a central role in various mechanosensing-related activities, including soft touch perception, auditory function, and locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, NOMPC, a transient receptor potential (TRP) superfamily MS channel identified in Caenorhabditis elegans, Drosophila, and zebrafish, plays a central role in various mechanosensing-related activities, including soft touch perception, auditory function, and locomotion (Yan et al., 2013; Li et al., 2006; Effertz et al., 2011; Cheng et al., 2010; Sidi et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "6ad4cfc0-3441-4137-9a9e-a8ede03a8eba",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C14",
+      "claim": "NOMPC's unique intracellular domain comprises 29 ankyrin repeats (ARs) arranged into a distinctive spring-like conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "A salient characteristic that distinguishes NOMPC from its counterparts is its unique intracellular domain, which comprises 29 ankyrin repeats (ARs) arranged into a distinctive spring-like conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about NOMPC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "a4db60f1-0547-497f-b0f1-e9f044f36985",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C15",
+      "claim": "NOMPC's AR domain is proposed to be associated with microtubules within cellular contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "This exceptional architecture, proposed to be associated with microtubules within cellular contexts, designates NOMPC as the only known standalone tether-gating MS channel (Jin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "4c953436-a216-4c97-88f2-d38e5387c2ba",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C16",
+      "claim": "NOMPC is the only known standalone tether-gating MS channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This exceptional architecture, proposed to be associated with microtubules within cellular contexts, designates NOMPC as the only known standalone tether-gating MS channel (Jin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1e557eec-c731-448f-9aa2-69fa0d31ccb8",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C17",
+      "claim": "Compression of the intracellular AR domain could facilitate the opening of the NOMPC channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, it was proposed that compression of the intracellular AR domain, or a pushing force exerted on the AR domain from the intracellular side, could facilitate the opening of the channel (Wang et al., 2021; Argudo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wang et al., 2021 and Argudo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "2a61ec7c-dd9e-4f3d-bb1c-8529aeaa8576",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C18",
+      "claim": "A pushing force exerted on the AR domain from the intracellular side could facilitate the opening of the NOMPC channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, it was proposed that compression of the intracellular AR domain, or a pushing force exerted on the AR domain from the intracellular side, could facilitate the opening of the channel (Wang et al., 2021; Argudo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wang et al., 2021 and Argudo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "cd06370d-4c37-45ca-af86-cb594b52a847",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C19",
+      "claim": "The TRP domain is widely recognized as crucial in the gating process of TRP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the TRP domain, widely recognized as crucial in the gating process of TRP channels (Liao et al., 2013), was observed to tilt up when viewed along the membrane surface and rotate clockwise when viewed from the intracellular side (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liao et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "bac984f2-77be-4c21-b07c-1c374b88b56d",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C20",
+      "claim": "The TRP domain was observed to tilt up when viewed along the membrane surface and rotate clockwise when viewed from the intracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the TRP domain, widely recognized as crucial in the gating process of TRP channels (Liao et al., 2013), was observed to tilt up when viewed along the membrane surface and rotate clockwise when viewed from the intracellular side (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "d3cdd8a2-47cb-41b5-99b3-5a273ac3af12",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C21",
+      "claim": "Compression of the AR domain can generate both a membrane-normal pushing force and a membrane-parallel twisting force on the TRP domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that compression of the AR domain can generate both a membrane-normal pushing force and a membrane-parallel twisting force on the TRP domain (Wang et al., 2021; Argudo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wang et al., 2021 and Argudo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "367f63b3-c3ed-4ce2-b72c-c862e5b6fff1",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C22",
+      "claim": "The twisting force is the key factor in NOMPC channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the twisting force is the key factor in channel gating, while the compression-twist coupling of the AR domain ensures that the compression of the AR domain can also activate the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the simulation results presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "ef95a3eb-b0d5-4095-8970-b2d8a0ea4c0a",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C23",
+      "claim": "The compression-twist coupling of the AR domain ensures that the compression of the AR domain can also activate the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the twisting force is the key factor in channel gating, while the compression-twist coupling of the AR domain ensures that the compression of the AR domain can also activate the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the simulation results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "edd9ecff-3bec-4c3e-9e2c-65f1aab26bd2",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C24",
+      "claim": "The TM central pore of NOMPC exhibited a discernible dilation in SMD simulations with pushing/compressive force applied to AR29.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous findings, the TM central pore of NOMPC exhibited a discernible dilation, accompanied by the upward tilt and clockwise rotation of the TRP domain (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "ec0dd55d-ec05-4029-9eca-ae7f03db14cb",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C25",
+      "claim": "The TM central pore dilation was accompanied by the upward tilt and clockwise rotation of the TRP domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous findings, the TM central pore of NOMPC exhibited a discernible dilation, accompanied by the upward tilt and clockwise rotation of the TRP domain (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "0634bc8b-cce3-4326-a0f5-e8ebb458471b",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C26",
+      "claim": "The strongest interactions between AR29, LH, and TRP domains were predominantly located between a few pairs of residues at the interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis showed that the strongest interactions between these domains were predominantly located between a few pairs of residues at the interfaces (Figure 1\u2014figure supplement 2), including A1118-N1148, Y1109-D1142 on the AR29-LH interface, and K1244-E1571, D1236-R1581, L1256-S1577 on the LH-TRP interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FDA analysis results shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "27bfa2ee-ce12-4d8c-9c26-59b954738335",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C27",
+      "claim": "Hydrogen bonds between K1244-E1571, D1236-R1581, and L1256-S1577 have occupancies of 57%, 71%, and 24%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This facilitated the stability of hydrogen bonds, particularly those between K1244-E1571, D1236-R1581, and L1256-S1577, with occupancies of 57%, 71%, and 24%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by hydrogen bond analysis from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1da43dc5-dcb4-4baf-a32e-193bd3c3ad16",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C28",
+      "claim": "The total net mechanical force transmitted from the LH domain to the TRP domain exhibited a membrane-parallel torsion force component that generated a torque directed toward the extracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing the net mechanical force distribution between the LH and TRP domains using the net-FDA method, we observed that, in addition to the membrane-normal force component, the total net mechanical force transmitted from the LH domain to the TRP domain also exhibited a membrane-parallel torsion force component. This generated a torque directed toward the extracellular side, perpendicular to the membrane (Figure 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by net-FDA analysis shown in Figure 1b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "bbc443d3-423e-41c1-8f1c-c095fce79d16",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C29",
+      "claim": "The transmitted force from LH to TRP domain was primarily concentrated on the E1571 and R1581 residues of the TRP domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the transmitted force was primarily concentrated on the E1571 and R1581 residues of the TRP domain (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FDA analysis shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "23b806f5-e72d-4fa0-837f-371c6847e24d",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C30",
+      "claim": "The TRP domain interacted with four TM segments, including portions of the S1 helix, the S2-S3 linker, the S4-S5 linker, and S6.",
+      "claim_type": "EXPLICIT",
+      "source": "The FDA results indicated that the TRP domain interacted with four TM segments, including portions of the S1 helix, the S2-S3 linker, the S4-S5 linker, and S6 (Figure 1\u2014figure supplement 4a, c, and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FDA analysis shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "4b11f5d8-5ba9-4a12-b259-ef42011b3ed9",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C31",
+      "claim": "The strongest interaction of the TRP domain occurred with a segment of the S6 domain that encompasses the constriction site of the TM pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest interaction occurred with a segment of the S6 domain that encompasses the constriction site of the TM pore (Figure 1\u2014figure supplement 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FDA analysis shown in Figure 1\u2014figure supplement 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "2f27cecb-d730-43a6-8505-a8c6be667c69",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C32",
+      "claim": "The TRP domain appears to exert an outward force on S6, potentially contributing to gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the TRP domain appears to exert an outward force on S6, potentially contributing to gating (Figure 1\u2014figure supplement 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from FDA analysis shown in Figure 1\u2014figure supplement 4b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "20d55b08-f2ac-4e1f-91ef-2275ec8565b3",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C33",
+      "claim": "Two pairs of hydrogen bonds exist between D1360 (S2-S3 linker) and K1578 (TRP), as well as S1421 (S4-S5 linker) and W1572 (TRP).",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of two pairs of hydrogen bonds between D1360 (S2-S3 linker) and K1578 (TRP), as well as S1421 (S4-S5 linker) and W1572 (TRP) was observed in our simulation and has also been reported in previous work (Wang et al., 2021; Jin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data and citations to Wang et al., 2021 and Jin et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "9a4e3700-8209-4a09-9496-45870c1633bb",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C34",
+      "claim": "The membrane-parallel torsion force alone was sufficient to open the gate in all three MD simulation replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations revealed that the membrane-parallel torsion force alone was sufficient to open the gate in all three MD simulation replicates (trajectories: MPI-1/2/3, Figure 2c), whereas the membrane-normal pushing component did not trigger pore opening within the simulation time (trajectories: MNI-1/2/3, Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation results shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "ad168d3d-ba64-4862-b24a-05121e159e21",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C35",
+      "claim": "The membrane-normal pushing component did not trigger pore opening within the simulation time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations revealed that the membrane-parallel torsion force alone was sufficient to open the gate in all three MD simulation replicates (trajectories: MPI-1/2/3, Figure 2c), whereas the membrane-normal pushing component did not trigger pore opening within the simulation time (trajectories: MNI-1/2/3, Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation results shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "39279cbf-b447-443a-80f8-fafca8b4ac92",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C36",
+      "claim": "Under the influence of the membrane-parallel torsion force, the radius of the lower constriction was significantly dilated to above 2.0 \u00c5 after 600 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the influence of the membrane-parallel torsion force, the radius of the lower constriction was significantly dilated to above 2.0 \u00c5 after 600 ns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pore size analysis from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "6771da51-641b-42d5-b545-4b0e8710f898",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C37",
+      "claim": "Water molecules could smoothly pass through the channel when the pore radius dilated to above 2.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "This dilation meant that water molecules could smoothly pass through the channel (Figure 2\u2014figure supplement 1), a phenomenon often indicative of the first step of channel opening.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "bbe7b03e-3df4-41c0-a0ca-d79f40e1ad44",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C38",
+      "claim": "The membrane-normal pushing forces exerted on residues 1571 and 1581 are approximately one-third and two-thirds of the membrane-parallel twisting force, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that, according to our analysis, the membrane-normal pushing forces exerted on residues 1571 and 1581 are approximately one-third and two-thirds of the membrane-parallel twisting force, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on force analysis from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "a932fd22-d3e3-436f-9c48-c5ab7afef074",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C39",
+      "claim": "When force components of equal magnitude are applied to the key residues on the TRP domain, the membrane-parallel (twisting) force is more effective in promoting channel opening than the membrane-normal (pushing) force.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that, when force components of equal magnitude are applied to the key residues on the TRP domain, the membrane-parallel (twisting) force is more effective in promoting channel opening than the membrane-normal (pushing) force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from additional simulation results shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "7e3a992d-ed6f-4d46-81b6-36261dcf644c",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C40",
+      "claim": "A torque on the TRP domain, pointing to the extracellular side, is the key to driving the channel open.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our investigations substantiated that a torque on the TRP domain, pointing to the extracellular side, was the key to driving the channel open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the simulation results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "18ee2af3-5b72-47f5-a916-5bc2e9a9570f",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C41",
+      "claim": "A pushing force on the LH domain can generate a torsion force on the TRP domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted, though, this does not mean the push-to-open or compress-to-open model was wrong, as our simulations showed that a pushing force on the LH domain can generate a torsion force on the TRP domain (Wang et al., 2021), so does the compression of the AR domain (Argudo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results and a citation to Wang et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "455d097e-bc9c-4301-95d0-e8cb7ff09eed",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C42",
+      "claim": "Compression of the AR domain can generate a torsion force on the TRP domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted, though, this does not mean the push-to-open or compress-to-open model was wrong, as our simulations showed that a pushing force on the LH domain can generate a torsion force on the TRP domain (Wang et al., 2021), so does the compression of the AR domain (Argudo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Argudo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "38842e80-fe38-42d0-aa56-ab4c3d79577b",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C43",
+      "claim": "The fitted torsion coefficient of the AR bundle is (2.30\u00b10.31) \u00d7 10\u00b3 kJ mol\u207b\u00b9 rad\u207b\u00b9.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by the green plots in Figure 3b, the fitted torsion coefficient turned out to be (2.30\u00b10.31) \u00d7 103 kJ mol\u22121 rad\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calculation from simulation data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1f381e1a-47c4-4d5e-b839-6ddef02d230b",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C44",
+      "claim": "The torsion coefficient of the AR bundle roughly corresponds to a similarly sized cylindrical volume of uniform polyethylene or rubber material.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a torsion coefficient roughly corresponds to a similarly sized cylindrical volume of uniform polyethylene or rubber material (Escudier and Atkins, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with known material properties, supported by a citation to Escudier and Atkins, 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "121dfbc2-78c2-48b0-a472-20b5568931bb",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C45",
+      "claim": "A gradual increase in the compressive deformation of the AR spring was observed as the torsional angle increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a gradual increase in the compressive deformation of the AR spring as the torsional angle increased in our simulations (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "803f0ceb-c949-49b3-880e-6678de0578c2",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C47",
+      "claim": "A torque could be generated during the application of compressive forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was also noticed that a torque could be generated during the application of compressive forces in previous investigations (Wang et al., 2021; Argudo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wang et al., 2021 and Argudo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "504d90cf-d9f5-4e73-9b3b-d357a3cbacb1",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C48",
+      "claim": "The compression-twist coupling property of the AR bundle ensures that both the twist and compression of the intracellular domain can generate torque to rotate the TRP domain, thereby facilitating the opening of the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of these findings, we believe that the unique structure of the AR and LH domains enhances NOMPC's robustness in sensing external stimuli. Specifically, the compression-twist coupling property of the AR bundle ensures that both the twist and compression of the intracellular domain can generate torque to rotate the TRP domain, thereby facilitating the opening of the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "3011ea24-7648-4e78-9c87-d2ac46602e51",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C50",
+      "claim": "Strong pairwise interactions predominantly resided in bonded residue pairs, while only a small fraction was associated with non-bonded residue pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong pairwise interactions predominantly resided in bonded residue pairs, while only a small fraction was associated with non-bonded residue pairs (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FDA analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "51352ee3-97d2-4802-8799-81d0fb1cbfb3",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C51",
+      "claim": "Bonded residue pairs, which are integral to the spiral backbone of the AR spring, are critical for transferring external forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, these bonded residue pairs, which are integral to the spiral backbone of the AR spring, were critical for transferring external forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from FDA analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1f03a338-a7e4-4380-84cb-4ca9a468b3bd",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C52",
+      "claim": "Non-bonded residue pairs were primarily situated at the adjacent turns within the AR \u03b1-helices and the interfaces between AR units.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-bonded residue pairs were primarily situated at the adjacent turns within the AR \u03b1-helices and the interfaces between AR units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by FDA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "c05c9ec4-5205-47d9-9419-696680b650e8",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C53",
+      "claim": "There is a correlation between the distribution of non-bonded net-FDA and the existence/strength of hydrogen bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we noticed that there is a correlation between the distribution of non-bonded net-FDA and the existence/strength of hydrogen bonds, as demonstrated by similar patterns in Figure 4c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of FDA and hydrogen bond analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "e7466188-ed6f-40b9-b194-e63a91d33fd5",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C54",
+      "claim": "Relatively high Pearson correlation coefficients (PCCs) were observed in the sub-diagonal grids (inter-AR), and even higher PCCs in the diagonal grids (intra-AR).",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively high PCCs in the sub-diagonal grids of Figure 4d (inter-AR), and even higher PCCs in the diagonal grids (intra-AR), are observed (inset of Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCC analysis shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "b6a7b7be-57bd-451c-9d62-a6901248cc77",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C55",
+      "claim": "The hydrogen bonding network plays a crucial role in facilitating force transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "This underscored the crucial role of the hydrogen bonding network in facilitating force transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the correlation analysis between FDA and hydrogen bonds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "3e4e2d94-79e1-45dd-b421-4db2722ba365",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C56",
+      "claim": "The force transmission route primarily comprises bonded residues that constitute the spiral backbone of the AR chains, supplemented by the hydrogen bonding network formed by adjacent residues within the same or neighboring AR units.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that the force transmission route primarily comprises bonded residues that constitute the spiral backbone of the AR chains, supplemented by the hydrogen bonding network formed by adjacent residues within the same or neighboring AR units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from FDA and hydrogen bond analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "b8779bbc-c89a-4504-b678-43435cfe38eb",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C57",
+      "claim": "A twisting force on the TRP domain is the key to the opening of the pore in the twist-to-open model.",
+      "claim_type": "EXPLICIT",
+      "source": "Building upon the push-to-open and compress-to-open mechanism, here we propose a twist-to-open model, as illustrated in Figure 5. At the core of this model was the idea that a twisting force on the TRP domain is the key to the opening of the pore.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is the central conclusion of the study, supported by simulation data and illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "f1e8014b-228d-4e9e-a6e1-f9d16227ca24",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C58",
+      "claim": "A compression/pushing on the AR domain will lead to a twist force on the TRP domain, and this twist force is the direct cause of the pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not to say the compress-to-open or push-to-open models are wrong, but that a compression/pushing on the AR domain will lead to a twist force on the TRP domain, and this twist force is the direct cause of the pore opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "28d496d3-f555-448b-b40e-277309fc8a93",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C59",
+      "claim": "The spiral structure of each AR chain, as well as the hydrogen bonding network formed among spatially adjacent residues, enables the AR bundle to convert the compression deformation to a twist deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The spiral structure of each AR chain, as well as the hydrogen bonding network formed among spatially adjacent residues, enables the AR bundle to convert the compression deformation to a twist deformation, thus exerting a membrane-parallel torsional force on the LH domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the structural and force analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "85c34566-e66a-48db-9e65-eca7bc2ba32a",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C60",
+      "claim": "The structure around the LH domain can convert a membrane-normal pushing force to a membrane-parallel torsional force.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the structure around the LH domain can also convert a membrane-normal pushing force to a membrane-parallel torsional force, as shown in our previous study (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "05cca8a9-845f-4879-b949-e1f2344c20f7",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C61",
+      "claim": "The highly conserved TRP domain serves as a structural characteristic of the TRP protein superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly conserved TRP domain serves as a structural characteristic of the TRP protein superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TRP channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1d4e9bfe-bd6d-4c12-aad4-3034dbe4f9e4",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C62",
+      "claim": "A clockwise rotation of the TRP domain was observed during the gating process of NOMPC.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations of NOMPC, we observed a clockwise rotation of the TRP domain during the gating process of the proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "bb93345d-46f8-48a2-a593-d7b39e58289a",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C63",
+      "claim": "Rotation of the TRP domain was observed in many other TRP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, such rotation was also observed in many other TRP channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of multiple TRP channel structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "7415d75e-9417-478f-b0f7-64ec2c043236",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C64",
+      "claim": "The rotation of the TRP domain is a universal conformational change in TRP channels, whereas the tilt of the TRP domain is considerably less consistent.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated the likely conformational changes of multiple channels within the TRP family upon opening and found that the rotation of the TRP domain is a universal conformational change, whereas the tilt of the TRP domain is considerably less consistent (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "6cf0548d-796d-4d78-8272-05dc9dd3a320",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C65",
+      "claim": "The rotation of the TRP domain may be a common feature in the gating mechanism of TRP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we believe that the rotation of the TRP domain may be a common feature in the gating mechanism of these TRP channels, and the unique structure and compression-twist coupling property of the intracellular domain of NOMPC ensure its robustness in the perception of multiple forms of mechanical stimuli: not only twist, but also compression, can result in the clockwise rotation of the TRP domain, thereby facilitating channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from comparative analysis of TRP channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "ae69c48b-ffaf-4704-9e8d-183adc9ec754",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C66",
+      "claim": "The unique structure and compression-twist coupling property of the intracellular domain of NOMPC ensure its robustness in the perception of multiple forms of mechanical stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we believe that the rotation of the TRP domain may be a common feature in the gating mechanism of these TRP channels, and the unique structure and compression-twist coupling property of the intracellular domain of NOMPC ensure its robustness in the perception of multiple forms of mechanical stimuli: not only twist, but also compression, can result in the clockwise rotation of the TRP domain, thereby facilitating channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "fa0adafa-382a-4dc6-8a68-9c2f91749041",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C67",
+      "claim": "Amphipathic helices in many MS channels interact with surrounding lipids and transmit membrane tension, which is consistent with the force-from-lipid gating mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies have further demonstrated that many MS channels share a common structural feature: amphipathic helices that are directly or indirectly connected to pore-lining regions (Kefauver et al., 2020). These amphipathic helices interact with surrounding lipids and transmit membrane tension, which is consistent with the force-from-lipid gating mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kefauver et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1b491780-6630-43a8-8cdf-ed145cba45cb",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C68",
+      "claim": "The amphipathic TRP helix, which is connected to the pore-lining S6, is crucial to the gating of NOMPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the present study primarily focuses on the force-from-tether model, it appears that the amphipathic TRP helix, which is connected to the pore-lining S6, is also crucial to the gating of NOMPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the FDA analysis showing interactions between TRP and S6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "1be53549-ee34-42eb-95eb-3e3d708b3512",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C69",
+      "claim": "The TRP domain and the S4\u2013S5 linker may function together as a composite amphipathic unit, potentially playing a significant role in perceiving and propagating gating signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed interaction between the TRP domain and the S4\u2013S5 linker suggests that these two structural elements may function together as a composite amphipathic unit, potentially playing a significant role in perceiving and propagating gating signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "b6c0a1ad-c15e-448d-9731-26ed84df99a0",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C70",
+      "claim": "The TRP helix and the S4-S5 linker form the binding site for ligand-gated TRP channels, such as TRPV1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the TRP helix and the S4-S5 linker form the binding site for ligand-gated TRP channels, such as TRPV1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TRP channel structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "83861537-3497-4f38-9f79-55f952f12cdb",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C71",
+      "claim": "The combined TRP-S4-S5 unit may constitute a key structural element responsible for multimodal gating mechanisms within the TRP channel family.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that the combined TRP-S4-S5 unit may constitute a key structural element responsible for multimodal gating mechanisms within the TRP channel family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from structural and functional observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "462921cd-6dc0-479f-9166-8c43bf9da79d",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C72",
+      "claim": "Rotation of the TRP domain was observed in TRPV1 under both pushing and torsional forces applied to the intracellular end.",
+      "claim_type": "EXPLICIT",
+      "source": "As an initial exploration, we selected the full-length squirrel TRPV1 (PDB: 7LQY) (Nadezhdin et al., 2021a) and applied pushing or torsional forces to the intracellular end of TRPV1, separately (Figure 6\u2014figure supplement 1). Rotation of the TRP domain was observed under both types of mechanical stimulation (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "5d1fd948-d4cd-4f12-b3a2-9231281e2b52",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C73",
+      "claim": "A torsional force applied to the shorter ARs of mammalian TRPs may generate similar effects on channel gating as observed in NOMPC.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a torsional force applied to the shorter ARs of mammalian TRPs may generate similar effects on channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from TRPV1 simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "63cac01a-015e-43db-9b06-a3f6f6b28679",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C74",
+      "claim": "The mechanical stimuli are transferred at a fast speed along AR springs in simulations, at around 1.8 nm/ps.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the mechanical stimuli are transferred at a fast speed along AR springs in simulations, at around 1.8 nmps \u22121 (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data and a citation to Wang et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "db0e235b-c8e6-47e8-a226-3ce1634bbc5e",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "claim_id": "C75",
+      "claim": "The dilation of the pore under a torsion force on the TRP domain is strong evidence that twist is the key to the channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, we think that the dilation of the pore under a torsion force on the TRP domain is a piece of strong evidence that twist is the key to the channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0925d1f5-36c7-42d7-876c-a110aff54700",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In SMD simulations with pushing/compressive force applied to AR29, the TM central pore of NOMPC exhibited dilation accompanied by upward tilt and clockwise rotation of the TRP domain. FDA analysis revealed that the strongest interactions between AR29, LH, and TRP domains were located at specific residue pairs at the interfaces, with the transmitted force from LH to TRP domain exhibiting both membrane-normal and membrane-parallel (torsion) components, primarily concentrated on residues E1571 and R1581.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 are well-supported by simulation data and FDA analysis shown in Figures 1 and supplementary figures. The structural changes, force distributions, and hydrogen bond occupancies are quantitatively characterized and consistent with the simulation methodology described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "a86d808d-15c3-4ab3-a01e-dfac9c560caf",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FDA analysis showed that the TRP domain interacted with four TM segments (S1, S2-S3 linker, S4-S5 linker, and S6), with the strongest interaction occurring with S6 at the constriction site. The TRP domain appears to exert an outward force on S6, and hydrogen bonds were observed between D1360 (S2-S3 linker) and K1578 (TRP), as well as S1421 (S4-S5 linker) and W1572 (TRP).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by FDA analysis (Figure 1\u2014figure supplement 4) and hydrogen bond analysis from simulations. The interactions are consistent with prior work (Wang et al., 2021; Jin et al., 2017), providing convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Simulations applying isolated force components to the TRP domain revealed that membrane-parallel torsion force alone was sufficient to open the gate in all three replicates (dilating the pore radius to above 2.0 \u00c5 and allowing water passage), whereas membrane-normal pushing force did not trigger opening within simulation time. When force components of equal magnitude are applied, the membrane-parallel (twisting) force is more effective than the membrane-normal (pushing) force in promoting channel opening, establishing that a torque on the TRP domain pointing to the extracellular side is the key to driving channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 are strongly supported by systematic simulation experiments (Figure 2 and supplements) with three replicates per condition and additional control simulations with varied force magnitudes. The pore size analysis and water permeation data provide quantitative evidence for the differential effectiveness of force components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "b6c4fb97-7b20-4c64-9a76-002808899bb3",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The torsion coefficient of the AR bundle was calculated to be (2.30\u00b10.31) \u00d7 10\u00b3 kJ mol\u207b\u00b9 rad\u207b\u00b9, roughly corresponding to a similarly sized cylindrical volume of polyethylene or rubber. A gradual increase in compressive deformation was observed as torsional angle increased, demonstrating compression-twist coupling. This coupling property ensures that both twist and compression of the intracellular domain can generate torque to rotate the TRP domain, facilitating pore opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 are supported by quantitative analysis from trajectory RII (Figure 3b) with error estimates and convergence checks (RII-fast). The compression-twist coupling coefficient is calculated and the material comparison provides physical context. The inference about functional implications is reasonable given the demonstrated coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FDA analysis of force transmission along the AR domain revealed that strong pairwise interactions predominantly resided in bonded residue pairs forming the spiral backbone, supplemented by non-bonded residue pairs at adjacent turns and AR interfaces. A correlation was observed between non-bonded net-FDA distribution and hydrogen bond existence/strength, with high Pearson correlation coefficients (PCCs) in both intra-AR and inter-AR regions, demonstrating that the hydrogen bonding network plays a crucial role in force transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 are well-supported by comprehensive FDA and hydrogen bond analysis (Figure 4) with quantitative PCC calculations. The correlation analysis provides statistical evidence for the relationship between force transmission and hydrogen bonding networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "c9d9404c-695a-47f9-8560-1c8daa0c900c",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose a 'twist-to-open' model for NOMPC gating, where a torque directed toward the extracellular side on the amphipathic TRP domain is the primary factor driving channel opening. The compression-twist coupling of the AR domain ensures that both compression and twisting can induce channel opening by generating this critical torque. The spiral structure of AR chains and hydrogen bonding network enable conversion of compression to twist deformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C22, C23, C40, C57-C59 collectively present the central model of the paper, supported by multiple lines of simulation evidence including force decomposition experiments, FDA analysis, and mechanical property characterization. The model integrates findings from all major experimental components and is consistent with prior work while providing mechanistic refinement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "f9be4d40-1369-4edf-8b02-70db2b1ee5f8",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Comparative analysis of multiple TRP channels revealed that clockwise rotation of the TRP domain during gating is a universal conformational change across the TRP family, whereas tilt of the TRP domain is considerably less consistent. This suggests that TRP domain rotation may be a common feature in the gating mechanism of TRP channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by systematic comparative structural analysis of multiple TRP channel structures (Figure 6, Table 1). The analysis covers diverse TRP subfamilies and gating conditions, providing broad evidence for the universality of TRP rotation while noting the exception of HsTRPA1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "a2274e5f-b98a-4167-96db-0653df5c7a26",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The unique structure and compression-twist coupling property of NOMPC's intracellular domain ensure its robustness in perceiving multiple forms of mechanical stimuli, as both twist and compression can result in clockwise rotation of the TRP domain to facilitate channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C48 are supported by the demonstrated compression-twist coupling (Figure 3) and the force decomposition experiments showing both force types can lead to opening. The inference about functional robustness is reasonable given the mechanical properties characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "b36c23c1-088f-4d29-b9fc-361607a6fd3c",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that the amphipathic TRP helix is crucial to NOMPC gating, and that the TRP domain and S4-S5 linker may function together as a composite amphipathic unit potentially playing a significant role in perceiving and propagating gating signals. They further propose this combined TRP-S4-S5 unit may constitute a key structural element responsible for multimodal gating mechanisms within the TRP channel family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C71 are speculative proposals based on observed interactions (FDA analysis) and established knowledge about ligand binding sites. While the TRP-S6 interaction is well-documented (C68), the functional role of the TRP-S4-S5 composite unit (C69, C71) remains hypothetical without direct experimental validation. The proposals are reasonable but require further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "2c5f9b53-3717-4354-9821-607377b388a6",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Exploratory simulations on TRPV1 showed that rotation of the TRP domain was observed under both pushing and torsional forces applied to the intracellular end, suggesting that torsional force applied to the shorter ARs of mammalian TRPs may generate similar effects on channel gating as observed in NOMPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C73 are based on preliminary simulations (Figure 6\u2014figure supplement 1) on a single mammalian TRP channel. While C72 is supported by the simulation data shown, C73 is speculative and the authors acknowledge uncertainty about biological relevance since mammalian AR domains are not tethered. Additional validation would be needed to establish generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "219cf202-aa61-46c4-98ca-fbe7123667d6",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing NOMPC as a tethered mechanosensitive TRP channel with 29 ankyrin repeats that plays a central role in mechanosensing activities including touch perception, auditory function, and locomotion in various organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C16 are well-established background knowledge supported by appropriate citations to prior literature. These provide necessary context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "d305f7d4-829a-4d0f-9080-e818a824e2ff",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has demonstrated that pushing force on the linker helix domain or compression of the AR domain can trigger NOMPC channel opening, and that the TRP domain undergoes tilt and clockwise rotation during this process. Compression of the AR domain can generate both membrane-normal pushing and membrane-parallel twisting forces on the TRP domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C17-C21, C41-C42, C47, C60 accurately summarize prior work with appropriate citations (Wang et al., 2021; Argudo et al., 2019; Liao et al., 2013). These establish the foundation for the current study's refinement of the gating mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "61844bca-8a6e-4057-9a6b-36b4acf834a0",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about TRP channel structure and mechanosensitive channel mechanisms, including the conserved TRP domain, amphipathic helices in MS channels interacting with lipids, and the TRP helix/S4-S5 linker forming ligand binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C67, C70 represent established knowledge about TRP channels and MS channel mechanisms, appropriately cited (Kefauver et al., 2020). These provide context for interpreting the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "244306b4-6f89-46c0-b999-ab239f351555",
+      "content_id": "da4c4f8c-7539-42c8-a672-171b9d4a2224",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors note that mechanical stimuli are transferred at a fast speed along AR springs (~1.8 nm/ps) and argue that pore dilation under torsion force on the TRP domain is strong evidence that twist is key to channel opening, despite the short simulation timescale relative to physiological processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 address limitations of the simulation approach. C74 is supported by prior simulation data (Wang et al., 2021), and C75 provides reasonable justification for why short-timescale simulations can still reveal mechanistic trends despite not capturing complete gating. This represents appropriate acknowledgment of methodological limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "9562a3df-5be8-4678-99e1-acd7eff00a99",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors claim that torsional (twisting) force on the TRP domain, rather than membrane-normal (pushing) force, is the primary mechanism driving NOMPC channel opening. This is demonstrated through simulations showing that membrane-parallel torsion forces alone opened the pore in all three replicates, while membrane-normal pushing forces did not trigger opening within simulation time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge this as the 'most important finding' and find the result 'intriguing' with 'reproducible' data reaching microsecond timescales. However, multiple reviewers note a critical limitation: the study 'never sees full pore opening, rather a widening' to ~4 \u00c5 that is 'insufficient for rapid ion currents.' One reviewer states 'Twist may be the key to get this dilation, but we don't know if it is the key to full pore opening.' The editor notes 'full opening of the channel is not seen' as a weakness.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "dafe209e-0953-487e-97fc-2a389e3a204f",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors claim that the AR domain exhibits compression-twist coupling, where compression of the AR domain generates torque and twisting of the AR domain causes compression. This coupling ensures that both compression and twist can activate the channel through the same torsional mechanism on the TRP domain.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding as part of the 'valuable finding that the ankyrin spring transmits force through torsional rather than compression forces.' One reviewer describes the third computational experiment showing 'the end of the domain is twisted and it is shown that the domain compresses, the converse to the similar study previously done by the authors.' The compression-twist coupling is treated as a supporting mechanistic detail that explains how different force inputs converge on the same gating mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "8a552bd1-9071-4c1d-93c0-53da0ed0f4d7",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors use force distribution analysis (FDA) to identify that mechanical force is transmitted from the LH domain to the TRP domain through specific residue pairs, with forces concentrated on E1571 and R1581 of the TRP domain. The analysis reveals both membrane-normal and membrane-parallel force components.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the simulations as 'detailed, rigorous' and note that the first computational experiment 'quantifies these forces for the second experiment.' The FDA methodology and force quantification are not questioned by reviewers and serve as the basis for the subsequent force application experiments that reviewers discuss in detail.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "e55a4fca-dfa4-4f01-858e-ac3cb0e229f1",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "FDA analysis shows that the TRP domain interacts with multiple transmembrane segments (S1, S2-S3 linker, S4-S5 linker, and S6), with the strongest interaction occurring with S6 at the pore constriction site. The TRP domain appears to exert outward force on S6, contributing to gating.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these structural interaction findings. The editor notes that 'experimental validation of reduced mechanosensitivity through mutagenesis of proposed ankyrin/TRP domain coupling interactions would greatly enhance the manuscript,' suggesting the interactions are accepted but would benefit from experimental confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "11aba375-c074-4fc5-89e6-a706eeed2574",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors identify the force transmission pathway through the AR domain, showing that bonded residue pairs forming the spiral backbone are critical for force transfer, supplemented by hydrogen bonding networks between adjacent residues. FDA analysis correlates with hydrogen bond strength.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers characterize the work as 'detailed, rigorous simulations' that 'add molecular detail to the force transduction pathways in this channel.' The force transmission analysis through the AR domain is not questioned and is treated as a mechanistic detail supporting the main torsional gating model.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "44436a53-2bb7-43c8-b69d-939cb2e3c340",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors propose that clockwise rotation of the TRP domain is a universal conformational change across TRP channels during gating, while TRP domain tilt is less consistent. This suggests rotation may be a common gating feature in the TRP channel family.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers find this result significant, noting 'That this could be a common mechanism utilised by a wide range of channels in the family, not just mechanically gated ones, makes the result significant.' Another reviewer states 'Demonstrating that rotation of the TRP domain is the essential requirement for channel opening would have significant implications for other members of this channel family.' The comparative analysis across TRP channels is accepted without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "739a9089-5155-4b11-a9be-cfbd6f6dc953",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Simulations on TRPV1 show that rotation of the TRP domain occurs under both pushing and torsional forces applied to the intracellular end, suggesting that torsional forces on shorter AR domains in mammalian TRPs may produce similar gating effects as in NOMPC.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these TRPV1 simulation results. One reviewer notes it is 'intriguing to consider how different activating stimuli can produce a similar activating motion within this family,' implicitly accepting the TRPV1 findings as supporting evidence for the broader applicability of the torsional gating mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "ae67fe50-632d-4c8c-b2c0-7897379b4733",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose that the TRP domain and S4-S5 linker may function as a composite amphipathic unit that could be a key structural element for multimodal gating mechanisms in TRP channels, integrating both force-from-tether and force-from-lipid mechanisms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these speculative proposals about the TRP-S4-S5 unit. The claims are presented as interpretations and potential mechanisms rather than definitive findings, and reviewers accept them as reasonable hypotheses arising from the simulation data without requesting additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "e193f0a0-432e-4453-90c3-aed53b55faea",
+      "content_id": "1aea2889-d149-4526-9acd-e16ab73db85e",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "In SMD simulations with pushing/compressive force applied to AR29, the transmembrane pore exhibited dilation accompanied by upward tilt and clockwise rotation of the TRP domain, consistent with previous findings.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note this reproduces prior work, with one stating 'This is a point that was demonstrated in the authors prior eLife paper - so the point here is to quantify these forces for the second experiment.' The finding is accepted as consistent with previous results and serves as a foundation for the novel force decomposition experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "edd9ecff-3bec-4c3e-9e2c-65f1aab26bd2",
+      "result_id": "0925d1f5-36c7-42d7-876c-a110aff54700"
+    },
+    {
+      "claim_id": "ec0dd55d-ec05-4029-9eca-ae7f03db14cb",
+      "result_id": "0925d1f5-36c7-42d7-876c-a110aff54700"
+    },
+    {
+      "claim_id": "0634bc8b-cce3-4326-a0f5-e8ebb458471b",
+      "result_id": "0925d1f5-36c7-42d7-876c-a110aff54700"
+    },
+    {
+      "claim_id": "27bfa2ee-ce12-4d8c-9c26-59b954738335",
+      "result_id": "0925d1f5-36c7-42d7-876c-a110aff54700"
+    },
+    {
+      "claim_id": "1da43dc5-dcb4-4baf-a32e-193bd3c3ad16",
+      "result_id": "0925d1f5-36c7-42d7-876c-a110aff54700"
+    },
+    {
+      "claim_id": "bbc443d3-423e-41c1-8f1c-c095fce79d16",
+      "result_id": "0925d1f5-36c7-42d7-876c-a110aff54700"
+    },
+    {
+      "claim_id": "23b806f5-e72d-4fa0-837f-371c6847e24d",
+      "result_id": "a86d808d-15c3-4ab3-a01e-dfac9c560caf"
+    },
+    {
+      "claim_id": "4b11f5d8-5ba9-4a12-b259-ef42011b3ed9",
+      "result_id": "a86d808d-15c3-4ab3-a01e-dfac9c560caf"
+    },
+    {
+      "claim_id": "2f27cecb-d730-43a6-8505-a8c6be667c69",
+      "result_id": "a86d808d-15c3-4ab3-a01e-dfac9c560caf"
+    },
+    {
+      "claim_id": "20d55b08-f2ac-4e1f-91ef-2275ec8565b3",
+      "result_id": "a86d808d-15c3-4ab3-a01e-dfac9c560caf"
+    },
+    {
+      "claim_id": "9a4e3700-8209-4a09-9496-45870c1633bb",
+      "result_id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b"
+    },
+    {
+      "claim_id": "ad168d3d-ba64-4862-b24a-05121e159e21",
+      "result_id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b"
+    },
+    {
+      "claim_id": "39279cbf-b447-443a-80f8-fafca8b4ac92",
+      "result_id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b"
+    },
+    {
+      "claim_id": "6771da51-641b-42d5-b545-4b0e8710f898",
+      "result_id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b"
+    },
+    {
+      "claim_id": "bbe7b03e-3df4-41c0-a0ca-d79f40e1ad44",
+      "result_id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b"
+    },
+    {
+      "claim_id": "a932fd22-d3e3-436f-9c48-c5ab7afef074",
+      "result_id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b"
+    },
+    {
+      "claim_id": "7e3a992d-ed6f-4d46-81b6-36261dcf644c",
+      "result_id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b"
+    },
+    {
+      "claim_id": "38842e80-fe38-42d0-aa56-ab4c3d79577b",
+      "result_id": "b6c4fb97-7b20-4c64-9a76-002808899bb3"
+    },
+    {
+      "claim_id": "1f381e1a-47c4-4d5e-b839-6ddef02d230b",
+      "result_id": "b6c4fb97-7b20-4c64-9a76-002808899bb3"
+    },
+    {
+      "claim_id": "121dfbc2-78c2-48b0-a472-20b5568931bb",
+      "result_id": "b6c4fb97-7b20-4c64-9a76-002808899bb3"
+    },
+    {
+      "claim_id": "803f0ceb-c949-49b3-880e-6678de0578c2",
+      "result_id": "b6c4fb97-7b20-4c64-9a76-002808899bb3"
+    },
+    {
+      "claim_id": "504d90cf-d9f5-4e73-9b3b-d357a3cbacb1",
+      "result_id": "b6c4fb97-7b20-4c64-9a76-002808899bb3"
+    },
+    {
+      "claim_id": "3011ea24-7648-4e78-9c87-d2ac46602e51",
+      "result_id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216"
+    },
+    {
+      "claim_id": "51352ee3-97d2-4802-8799-81d0fb1cbfb3",
+      "result_id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216"
+    },
+    {
+      "claim_id": "1f03a338-a7e4-4380-84cb-4ca9a468b3bd",
+      "result_id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216"
+    },
+    {
+      "claim_id": "c05c9ec4-5205-47d9-9419-696680b650e8",
+      "result_id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216"
+    },
+    {
+      "claim_id": "e7466188-ed6f-40b9-b194-e63a91d33fd5",
+      "result_id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216"
+    },
+    {
+      "claim_id": "b6a7b7be-57bd-451c-9d62-a6901248cc77",
+      "result_id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216"
+    },
+    {
+      "claim_id": "3e4e2d94-79e1-45dd-b421-4db2722ba365",
+      "result_id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216"
+    },
+    {
+      "claim_id": "48e16d55-b8f3-4248-90f5-5cd42dc8780d",
+      "result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c"
+    },
+    {
+      "claim_id": "a8e503bc-ac03-4008-8fb6-15c192d7f716",
+      "result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c"
+    },
+    {
+      "claim_id": "367f63b3-c3ed-4ce2-b72c-c862e5b6fff1",
+      "result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c"
+    },
+    {
+      "claim_id": "ef95a3eb-b0d5-4095-8970-b2d8a0ea4c0a",
+      "result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c"
+    },
+    {
+      "claim_id": "7e3a992d-ed6f-4d46-81b6-36261dcf644c",
+      "result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c"
+    },
+    {
+      "claim_id": "b8779bbc-c89a-4504-b678-43435cfe38eb",
+      "result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c"
+    },
+    {
+      "claim_id": "f1e8014b-228d-4e9e-a6e1-f9d16227ca24",
+      "result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c"
+    },
+    {
+      "claim_id": "28d496d3-f555-448b-b40e-277309fc8a93",
+      "result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c"
+    },
+    {
+      "claim_id": "1d4e9bfe-bd6d-4c12-aad4-3034dbe4f9e4",
+      "result_id": "f9be4d40-1369-4edf-8b02-70db2b1ee5f8"
+    },
+    {
+      "claim_id": "bb93345d-46f8-48a2-a593-d7b39e58289a",
+      "result_id": "f9be4d40-1369-4edf-8b02-70db2b1ee5f8"
+    },
+    {
+      "claim_id": "7415d75e-9417-478f-b0f7-64ec2c043236",
+      "result_id": "f9be4d40-1369-4edf-8b02-70db2b1ee5f8"
+    },
+    {
+      "claim_id": "6cf0548d-796d-4d78-8272-05dc9dd3a320",
+      "result_id": "f9be4d40-1369-4edf-8b02-70db2b1ee5f8"
+    },
+    {
+      "claim_id": "ae69c48b-ffaf-4704-9e8d-183adc9ec754",
+      "result_id": "a2274e5f-b98a-4167-96db-0653df5c7a26"
+    },
+    {
+      "claim_id": "504d90cf-d9f5-4e73-9b3b-d357a3cbacb1",
+      "result_id": "a2274e5f-b98a-4167-96db-0653df5c7a26"
+    },
+    {
+      "claim_id": "1b491780-6630-43a8-8cdf-ed145cba45cb",
+      "result_id": "b36c23c1-088f-4d29-b9fc-361607a6fd3c"
+    },
+    {
+      "claim_id": "1be53549-ee34-42eb-95eb-3e3d708b3512",
+      "result_id": "b36c23c1-088f-4d29-b9fc-361607a6fd3c"
+    },
+    {
+      "claim_id": "83861537-3497-4f38-9f79-55f952f12cdb",
+      "result_id": "b36c23c1-088f-4d29-b9fc-361607a6fd3c"
+    },
+    {
+      "claim_id": "462921cd-6dc0-479f-9166-8c43bf9da79d",
+      "result_id": "2c5f9b53-3717-4354-9821-607377b388a6"
+    },
+    {
+      "claim_id": "5d1fd948-d4cd-4f12-b3a2-9231281e2b52",
+      "result_id": "2c5f9b53-3717-4354-9821-607377b388a6"
+    },
+    {
+      "claim_id": "001b7dbf-e311-4c15-85b7-f1e7d58cd99f",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "a270ad64-f92c-44cc-88bd-4b219f1aea34",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "01847a2e-c022-4420-a1f1-bd5970464820",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "47efa14a-b573-4a66-904d-63a30e65ac2a",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "930c4bcb-8cd9-4410-aea5-bda5b4495f30",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "336b4e21-93c3-4230-9673-06a95d0de2d1",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "8ec99bfa-2109-46cc-b586-3d2772f34aef",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "f118f34c-7f7c-48fa-b403-950ce1a68158",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "7c184210-6f46-47c2-83cd-fd171fcc00ca",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "6ad4cfc0-3441-4137-9a9e-a8ede03a8eba",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "a4db60f1-0547-497f-b0f1-e9f044f36985",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "4c953436-a216-4c97-88f2-d38e5387c2ba",
+      "result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6"
+    },
+    {
+      "claim_id": "2c673b72-76af-422b-9739-fde411a445e9",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "a1e994ed-4823-4783-93aa-95f6611115b4",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "1e557eec-c731-448f-9aa2-69fa0d31ccb8",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "2a61ec7c-dd9e-4f3d-bb1c-8529aeaa8576",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "cd06370d-4c37-45ca-af86-cb594b52a847",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "bac984f2-77be-4c21-b07c-1c374b88b56d",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "d3cdd8a2-47cb-41b5-99b3-5a273ac3af12",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "18ee2af3-5b72-47f5-a916-5bc2e9a9570f",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "455d097e-bc9c-4301-95d0-e8cb7ff09eed",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "803f0ceb-c949-49b3-880e-6678de0578c2",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "85c34566-e66a-48db-9e65-eca7bc2ba32a",
+      "result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff"
+    },
+    {
+      "claim_id": "05cca8a9-845f-4879-b949-e1f2344c20f7",
+      "result_id": "61844bca-8a6e-4057-9a6b-36b4acf834a0"
+    },
+    {
+      "claim_id": "fa0adafa-382a-4dc6-8a68-9c2f91749041",
+      "result_id": "61844bca-8a6e-4057-9a6b-36b4acf834a0"
+    },
+    {
+      "claim_id": "b6c0a1ad-c15e-448d-9731-26ed84df99a0",
+      "result_id": "61844bca-8a6e-4057-9a6b-36b4acf834a0"
+    },
+    {
+      "claim_id": "63cac01a-015e-43db-9b06-a3f6f6b28679",
+      "result_id": "244306b4-6f89-46c0-b999-ab239f351555"
+    },
+    {
+      "claim_id": "db0e235b-c8e6-47e8-a226-3ce1634bbc5e",
+      "result_id": "244306b4-6f89-46c0-b999-ab239f351555"
+    },
+    {
+      "claim_id": "48e16d55-b8f3-4248-90f5-5cd42dc8780d",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "367f63b3-c3ed-4ce2-b72c-c862e5b6fff1",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "9a4e3700-8209-4a09-9496-45870c1633bb",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "ad168d3d-ba64-4862-b24a-05121e159e21",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "39279cbf-b447-443a-80f8-fafca8b4ac92",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "6771da51-641b-42d5-b545-4b0e8710f898",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "a932fd22-d3e3-436f-9c48-c5ab7afef074",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "7e3a992d-ed6f-4d46-81b6-36261dcf644c",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "b8779bbc-c89a-4504-b678-43435cfe38eb",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "db0e235b-c8e6-47e8-a226-3ce1634bbc5e",
+      "result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99"
+    },
+    {
+      "claim_id": "a8e503bc-ac03-4008-8fb6-15c192d7f716",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "ef95a3eb-b0d5-4095-8970-b2d8a0ea4c0a",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "38842e80-fe38-42d0-aa56-ab4c3d79577b",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "1f381e1a-47c4-4d5e-b839-6ddef02d230b",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "121dfbc2-78c2-48b0-a472-20b5568931bb",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "803f0ceb-c949-49b3-880e-6678de0578c2",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "504d90cf-d9f5-4e73-9b3b-d357a3cbacb1",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "28d496d3-f555-448b-b40e-277309fc8a93",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "ae69c48b-ffaf-4704-9e8d-183adc9ec754",
+      "result_id": "dafe209e-0953-487e-97fc-2a389e3a204f"
+    },
+    {
+      "claim_id": "1da43dc5-dcb4-4baf-a32e-193bd3c3ad16",
+      "result_id": "8a552bd1-9071-4c1d-93c0-53da0ed0f4d7"
+    },
+    {
+      "claim_id": "bbc443d3-423e-41c1-8f1c-c095fce79d16",
+      "result_id": "8a552bd1-9071-4c1d-93c0-53da0ed0f4d7"
+    },
+    {
+      "claim_id": "0634bc8b-cce3-4326-a0f5-e8ebb458471b",
+      "result_id": "8a552bd1-9071-4c1d-93c0-53da0ed0f4d7"
+    },
+    {
+      "claim_id": "27bfa2ee-ce12-4d8c-9c26-59b954738335",
+      "result_id": "8a552bd1-9071-4c1d-93c0-53da0ed0f4d7"
+    },
+    {
+      "claim_id": "23b806f5-e72d-4fa0-837f-371c6847e24d",
+      "result_id": "e55a4fca-dfa4-4f01-858e-ac3cb0e229f1"
+    },
+    {
+      "claim_id": "4b11f5d8-5ba9-4a12-b259-ef42011b3ed9",
+      "result_id": "e55a4fca-dfa4-4f01-858e-ac3cb0e229f1"
+    },
+    {
+      "claim_id": "2f27cecb-d730-43a6-8505-a8c6be667c69",
+      "result_id": "e55a4fca-dfa4-4f01-858e-ac3cb0e229f1"
+    },
+    {
+      "claim_id": "20d55b08-f2ac-4e1f-91ef-2275ec8565b3",
+      "result_id": "e55a4fca-dfa4-4f01-858e-ac3cb0e229f1"
+    },
+    {
+      "claim_id": "3011ea24-7648-4e78-9c87-d2ac46602e51",
+      "result_id": "11aba375-c074-4fc5-89e6-a706eeed2574"
+    },
+    {
+      "claim_id": "51352ee3-97d2-4802-8799-81d0fb1cbfb3",
+      "result_id": "11aba375-c074-4fc5-89e6-a706eeed2574"
+    },
+    {
+      "claim_id": "1f03a338-a7e4-4380-84cb-4ca9a468b3bd",
+      "result_id": "11aba375-c074-4fc5-89e6-a706eeed2574"
+    },
+    {
+      "claim_id": "c05c9ec4-5205-47d9-9419-696680b650e8",
+      "result_id": "11aba375-c074-4fc5-89e6-a706eeed2574"
+    },
+    {
+      "claim_id": "e7466188-ed6f-40b9-b194-e63a91d33fd5",
+      "result_id": "11aba375-c074-4fc5-89e6-a706eeed2574"
+    },
+    {
+      "claim_id": "b6a7b7be-57bd-451c-9d62-a6901248cc77",
+      "result_id": "11aba375-c074-4fc5-89e6-a706eeed2574"
+    },
+    {
+      "claim_id": "3e4e2d94-79e1-45dd-b421-4db2722ba365",
+      "result_id": "11aba375-c074-4fc5-89e6-a706eeed2574"
+    },
+    {
+      "claim_id": "1d4e9bfe-bd6d-4c12-aad4-3034dbe4f9e4",
+      "result_id": "44436a53-2bb7-43c8-b69d-939cb2e3c340"
+    },
+    {
+      "claim_id": "bb93345d-46f8-48a2-a593-d7b39e58289a",
+      "result_id": "44436a53-2bb7-43c8-b69d-939cb2e3c340"
+    },
+    {
+      "claim_id": "7415d75e-9417-478f-b0f7-64ec2c043236",
+      "result_id": "44436a53-2bb7-43c8-b69d-939cb2e3c340"
+    },
+    {
+      "claim_id": "6cf0548d-796d-4d78-8272-05dc9dd3a320",
+      "result_id": "44436a53-2bb7-43c8-b69d-939cb2e3c340"
+    },
+    {
+      "claim_id": "462921cd-6dc0-479f-9166-8c43bf9da79d",
+      "result_id": "739a9089-5155-4b11-a9be-cfbd6f6dc953"
+    },
+    {
+      "claim_id": "5d1fd948-d4cd-4f12-b3a2-9231281e2b52",
+      "result_id": "739a9089-5155-4b11-a9be-cfbd6f6dc953"
+    },
+    {
+      "claim_id": "1b491780-6630-43a8-8cdf-ed145cba45cb",
+      "result_id": "ae67fe50-632d-4c8c-b2c0-7897379b4733"
+    },
+    {
+      "claim_id": "1be53549-ee34-42eb-95eb-3e3d708b3512",
+      "result_id": "ae67fe50-632d-4c8c-b2c0-7897379b4733"
+    },
+    {
+      "claim_id": "83861537-3497-4f38-9f79-55f952f12cdb",
+      "result_id": "ae67fe50-632d-4c8c-b2c0-7897379b4733"
+    },
+    {
+      "claim_id": "edd9ecff-3bec-4c3e-9e2c-65f1aab26bd2",
+      "result_id": "e193f0a0-432e-4453-90c3-aed53b55faea"
+    },
+    {
+      "claim_id": "ec0dd55d-ec05-4029-9eca-ae7f03db14cb",
+      "result_id": "e193f0a0-432e-4453-90c3-aed53b55faea"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "1c7133d1-297a-4f22-bbc3-d4a9726f7324",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a86d808d-15c3-4ab3-a01e-dfac9c560caf",
+      "peer_result_id": "e55a4fca-dfa4-4f01-858e-ac3cb0e229f1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C30-C33 regarding structural interactions between AR domain and TRP helix. Both evaluations find these claims SUPPORTED. OpenEval emphasizes FDA analysis and convergent evidence from prior work, while peer reviewers accept the findings but suggest experimental validation through mutagenesis would enhance the manuscript.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "e58dddbd-fbdb-4e7f-90bf-e534269f5ced",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "94cd1cbf-2752-4f45-bcab-eb2d65b32216",
+      "peer_result_id": "11aba375-c074-4fc5-89e6-a706eeed2574",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C50-C56 regarding force transmission and hydrogen bonding networks. Both evaluations find these claims SUPPORTED. OpenEval highlights the quantitative PCC calculations and statistical evidence, while peer reviewers characterize the work as 'detailed, rigorous simulations' that add molecular detail to force transduction pathways.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "8e3e4003-3de3-48fc-8c99-833ae6cc0828",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "f9be4d40-1369-4edf-8b02-70db2b1ee5f8",
+      "peer_result_id": "44436a53-2bb7-43c8-b69d-939cb2e3c340",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C62-C65 regarding universality of TRP rotation across TRP channel subfamilies. Both evaluations find these claims SUPPORTED. OpenEval notes the systematic comparative analysis and the HsTRPA1 exception, while peer reviewers emphasize the significance for the broader TRP channel family and potential implications for non-mechanically gated channels.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "66c53bd6-9529-43b4-8cbd-7a6288feec04",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b36c23c1-088f-4d29-b9fc-361607a6fd3c",
+      "peer_result_id": "ae67fe50-632d-4c8c-b2c0-7897379b4733",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C68-C71 regarding TRP-S4-S5 composite unit functional role. OpenEval rates these as UNCERTAIN, noting they are 'speculative proposals' requiring further investigation. Peer reviewers rate them as SUPPORTED, accepting them as reasonable hypotheses arising from simulation data without requesting additional evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "6aedd4d2-7eb5-4330-bb94-3d6e94fe1129",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "2c5f9b53-3717-4354-9821-607377b388a6",
+      "peer_result_id": "739a9089-5155-4b11-a9be-cfbd6f6dc953",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C72-C73 regarding TRPV1 simulations and AR domain role. OpenEval rates these as UNCERTAIN due to preliminary nature and acknowledged uncertainty about biological relevance in mammalian channels. Peer reviewers rate them as SUPPORTED, accepting the findings as evidence for broader applicability of the torsional gating mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "ea528bac-5fe0-43c0-8d32-db0b93579f26",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "0925d1f5-36c7-42d7-876c-a110aff54700",
+      "peer_result_id": "8a552bd1-9071-4c1d-93c0-53da0ed0f4d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address structural changes and force distributions (C26-C29) from FDA analysis. OpenEval finds claims C24-C29 SUPPORTED with emphasis on quantitative characterization. Peer reviewers find C26-C29 SUPPORTED, describing simulations as 'detailed, rigorous' and noting they quantify forces for subsequent experiments. OpenEval R1 also covers C24-C25 which peer reviewers address separately in R9.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "65c43523-fb37-47e5-979d-f1b13a02f146",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "b6c4fb97-7b20-4c64-9a76-002808899bb3",
+      "peer_result_id": "dafe209e-0953-487e-97fc-2a389e3a204f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address compression-twist coupling (C43-C48). OpenEval finds these claims SUPPORTED based on quantitative analysis from trajectory RII. Peer reviewers also find them SUPPORTED (C43-C45, C47-C48 in their R2), describing it as a 'valuable finding' about torsional force transmission and treating compression-twist coupling as a supporting mechanistic detail.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "6cc658bb-5e1b-42a4-8798-ccdc607f09ce",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "2e2a8329-96a6-4e25-b96a-9d84ce0dfb7b",
+      "peer_result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on claims C34-C40 regarding differential effectiveness of force components. OpenEval finds these SUPPORTED by systematic simulation experiments with quantitative pore size and water permeation data. Peer reviewers rate as UNCERTAIN, acknowledging it as the 'most important finding' with 'reproducible' data, but noting critical limitation that simulations 'never see full pore opening' only widening to ~4\u00c5 'insufficient for rapid ion currents.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "8c3886c2-0c09-479f-add2-1a3271f33039",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0925d1f5-36c7-42d7-876c-a110aff54700",
+      "peer_result_id": "e193f0a0-432e-4453-90c3-aed53b55faea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C24-C25 regarding AR domain compression and force distribution. OpenEval finds these SUPPORTED as part of broader analysis (R1 covers C24-C29). Peer reviewers also find them SUPPORTED, noting this reproduces prior work and serves as foundation for novel force decomposition experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "2c7029a6-f74c-434d-8803-02aa4d8961e7",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c",
+      "peer_result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on central model claims (C5, C22, C40, C57). OpenEval R6 finds the integrated central model SUPPORTED across claims C5-C6, C22-C23, C40, C57-C59. Peer R1 addresses subset of these (C5, C22, C34-C37, C39-C40, C57, C75) but rates as UNCERTAIN due to incomplete pore opening in simulations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "bc967cc8-6824-4369-baa0-d1bf14085289",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "c9d9404c-695a-47f9-8560-1c8daa0c900c",
+      "peer_result_id": "dafe209e-0953-487e-97fc-2a389e3a204f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on central model claims (C6, C23, C59). OpenEval R6 finds the integrated model SUPPORTED including these claims. Peer R2 addresses C6, C23, C59 as part of compression-twist coupling findings and rates them SUPPORTED, treating them as supporting mechanistic details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "eca0be8e-e62a-4ea5-bb33-54b0a9138d79",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "a2274e5f-b98a-4167-96db-0653df5c7a26",
+      "peer_result_id": "dafe209e-0953-487e-97fc-2a389e3a204f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address functional robustness claims (C48, C66). OpenEval finds these SUPPORTED based on demonstrated compression-twist coupling and force decomposition experiments. Peer reviewers also find them SUPPORTED as part of the broader torsional force transmission mechanism (addressed within their R2 evaluation).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "e316f0d4-e05e-4d46-8db5-01d4e3defd34",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "244306b4-6f89-46c0-b999-ab239f351555",
+      "peer_result_id": "9562a3df-5be8-4678-99e1-acd7eff00a99",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address simulation limitations (C75). OpenEval finds C74-C75 SUPPORTED as appropriate acknowledgment of methodological limitations, noting short-timescale simulations can still reveal mechanistic trends. Peer reviewers include C75 in their UNCERTAIN evaluation of the main findings, with editor noting 'full opening of the channel is not seen' as a weakness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "6bc47982-8f30-4197-938a-8e75edbaf691",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "219cf202-aa61-46c4-98ca-fbe7123667d6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R11 addresses background knowledge claims C1-C2, C7-C16, finding them SUPPORTED as well-established context from prior literature. No corresponding peer review evaluation found, as reviewers focused on novel findings rather than background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "e08069a0-b605-4e08-a495-6d3beec05b07",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "d305f7d4-829a-4d0f-9080-e818a824e2ff",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R12 addresses claims C3-C4, C17-C21, C41-C42, C47, C60 that summarize prior work, finding them SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as reviewers did not separately evaluate literature summary claims. Peer R2 includes C47 but in context of novel compression-twist coupling findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    },
+    {
+      "id": "c11d89de-ca05-49a2-8c73-89e7f03e11eb",
+      "submission_id": "f50f0b0a-b44e-43ac-bc53-ac5753c32c69",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "61844bca-8a6e-4057-9a6b-36b4acf834a0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R13 addresses established knowledge claims C61, C67, C70 about TRP channels and MS channel mechanisms, finding them SUPPORTED as appropriate context. No corresponding peer review evaluation found, as reviewers focused on novel contributions rather than contextual background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-19T19:08:02.026989Z"
+    }
+  ]
+}
